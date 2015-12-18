@@ -1,0 +1,367 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install' ]
+2 info using npm@2.14.4
+3 info using node@v4.1.1
+4 verbose readDependencies loading dependencies from /home/vagrant/Code/ERSTemplate/package.json
+5 verbose install where, deps [ '/home/vagrant/Code/ERSTemplate',
+5 verbose install   [ 'laravel-elixir', 'bootstrap-sass', 'gulp' ] ]
+6 verbose install where, peers [ '/home/vagrant/Code/ERSTemplate', [] ]
+7 verbose installManyTop reading for lifecycle /home/vagrant/Code/ERSTemplate/package.json
+8 info preinstall @
+9 verbose installManyTop reading scoped package data from /home/vagrant/Code/ERSTemplate/node_modules/bootstrap-sass/package.json
+10 verbose installManyTop reading scoped package data from /home/vagrant/Code/ERSTemplate/node_modules/gulp/package.json
+11 verbose installManyTop reading scoped package data from /home/vagrant/Code/ERSTemplate/node_modules/laravel-elixir/package.json
+12 verbose readDependencies loading dependencies from /home/vagrant/Code/ERSTemplate/package.json
+13 verbose targetResolver reading package data from /home/vagrant/Code/ERSTemplate/node_modules/bootstrap-sass/package.json
+14 verbose targetResolver reading package data from /home/vagrant/Code/ERSTemplate/node_modules/gulp/package.json
+15 verbose targetResolver reading package data from /home/vagrant/Code/ERSTemplate/node_modules/laravel-elixir/package.json
+16 verbose targetResolver reading package data from /home/vagrant/Code/ERSTemplate/node_modules/.bin/gulp/package.json
+17 verbose targetResolver reading package data from /home/vagrant/Code/ERSTemplate/node_modules/.bin/gulp.cmd/package.json
+18 verbose already installed skipping gulp@^3.8.8 /home/vagrant/Code/ERSTemplate
+19 silly cache add args [ 'laravel-elixir@^4.0.0', null ]
+20 verbose cache add spec laravel-elixir@^4.0.0
+21 silly cache add parsed spec Result {
+21 silly cache add   raw: 'laravel-elixir@^4.0.0',
+21 silly cache add   scope: null,
+21 silly cache add   name: 'laravel-elixir',
+21 silly cache add   rawSpec: '^4.0.0',
+21 silly cache add   spec: '>=4.0.0 <5.0.0',
+21 silly cache add   type: 'range' }
+22 silly addNamed laravel-elixir@>=4.0.0 <5.0.0
+23 verbose addNamed ">=4.0.0 <5.0.0" is a valid semver range for laravel-elixir
+24 silly addNameRange { name: 'laravel-elixir',
+24 silly addNameRange   range: '>=4.0.0 <5.0.0',
+24 silly addNameRange   hasData: false }
+25 silly mapToRegistry name laravel-elixir
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry uri https://registry.npmjs.org/laravel-elixir
+29 verbose addNameRange registry:https://registry.npmjs.org/laravel-elixir not in flight; fetching
+30 verbose already installed skipping bootstrap-sass@^3.0.0 /home/vagrant/Code/ERSTemplate
+31 verbose request uri https://registry.npmjs.org/laravel-elixir
+32 verbose request no auth needed
+33 info attempt registry request try #1 at 14:47:27
+34 verbose request id 94aca382d2eee1fc
+35 http request GET https://registry.npmjs.org/laravel-elixir
+36 http 200 https://registry.npmjs.org/laravel-elixir
+37 silly get cb [ 200,
+37 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+37 silly get     etag: '"BACYI83TDEBUF5OMQCTMKF045"',
+37 silly get     'content-type': 'application/json',
+37 silly get     'cache-control': 'max-age=300',
+37 silly get     'content-length': '289016',
+37 silly get     'accept-ranges': 'bytes',
+37 silly get     date: 'Wed, 16 Dec 2015 14:47:28 GMT',
+37 silly get     via: '1.1 varnish',
+37 silly get     age: '58',
+37 silly get     connection: 'keep-alive',
+37 silly get     'x-served-by': 'cache-fra1231-FRA',
+37 silly get     'x-cache': 'HIT',
+37 silly get     'x-cache-hits': '1',
+37 silly get     'x-timer': 'S1450277248.144329,VS0,VE0',
+37 silly get     vary: 'Accept' } ]
+38 verbose get saving laravel-elixir to /home/vagrant/.npm/registry.npmjs.org/laravel-elixir/.cache.json
+39 silly addNameRange number 2 { name: 'laravel-elixir',
+39 silly addNameRange   range: '>=4.0.0 <5.0.0',
+39 silly addNameRange   hasData: true }
+40 silly addNameRange versions [ 'laravel-elixir',
+40 silly addNameRange   [ '0.1.0',
+40 silly addNameRange     '0.1.1',
+40 silly addNameRange     '0.1.2',
+40 silly addNameRange     '0.1.3',
+40 silly addNameRange     '0.1.4',
+40 silly addNameRange     '0.1.5',
+40 silly addNameRange     '0.1.6',
+40 silly addNameRange     '0.1.7',
+40 silly addNameRange     '0.1.8',
+40 silly addNameRange     '0.1.9',
+40 silly addNameRange     '0.2.0',
+40 silly addNameRange     '0.2.1',
+40 silly addNameRange     '0.2.2',
+40 silly addNameRange     '0.3.0',
+40 silly addNameRange     '0.3.1',
+40 silly addNameRange     '0.3.2',
+40 silly addNameRange     '0.3.3',
+40 silly addNameRange     '0.3.4',
+40 silly addNameRange     '0.3.5',
+40 silly addNameRange     '0.3.7',
+40 silly addNameRange     '0.3.8',
+40 silly addNameRange     '0.3.9',
+40 silly addNameRange     '0.3.10',
+40 silly addNameRange     '0.3.11',
+40 silly addNameRange     '0.4.0',
+40 silly addNameRange     '0.4.1',
+40 silly addNameRange     '0.4.3',
+40 silly addNameRange     '0.4.4',
+40 silly addNameRange     '0.4.5',
+40 silly addNameRange     '0.4.6',
+40 silly addNameRange     '0.4.7',
+40 silly addNameRange     '0.4.8',
+40 silly addNameRange     '0.4.9',
+40 silly addNameRange     '0.4.10',
+40 silly addNameRange     '0.4.11',
+40 silly addNameRange     '0.4.12',
+40 silly addNameRange     '0.4.13',
+40 silly addNameRange     '0.4.14',
+40 silly addNameRange     '0.4.15',
+40 silly addNameRange     '0.4.16',
+40 silly addNameRange     '0.4.17',
+40 silly addNameRange     '0.5.0',
+40 silly addNameRange     '0.5.1',
+40 silly addNameRange     '0.5.2',
+40 silly addNameRange     '0.5.3',
+40 silly addNameRange     '0.5.4',
+40 silly addNameRange     '0.5.5',
+40 silly addNameRange     '0.5.6',
+40 silly addNameRange     '0.5.7',
+40 silly addNameRange     '0.5.8',
+40 silly addNameRange     '0.6.0',
+40 silly addNameRange     '0.6.1',
+40 silly addNameRange     '0.6.2',
+40 silly addNameRange     '0.6.3',
+40 silly addNameRange     '0.6.4',
+40 silly addNameRange     '0.6.5',
+40 silly addNameRange     '0.6.6',
+40 silly addNameRange     '0.7.0',
+40 silly addNameRange     '0.6.7',
+40 silly addNameRange     '0.6.8',
+40 silly addNameRange     '0.7.1',
+40 silly addNameRange     '0.7.3',
+40 silly addNameRange     '0.7.4',
+40 silly addNameRange     '0.7.5',
+40 silly addNameRange     '0.7.6',
+40 silly addNameRange     '0.7.7',
+40 silly addNameRange     '0.7.8',
+40 silly addNameRange     '0.7.9',
+40 silly addNameRange     '0.7.10',
+40 silly addNameRange     '0.7.11',
+40 silly addNameRange     '0.8.0',
+40 silly addNameRange     '0.8.1',
+40 silly addNameRange     '0.9.1',
+40 silly addNameRange     '0.10.0',
+40 silly addNameRange     '0.10.1',
+40 silly addNameRange     '0.10.2',
+40 silly addNameRange     '0.10.3',
+40 silly addNameRange     '0.10.4',
+40 silly addNameRange     '0.10.5',
+40 silly addNameRange     '0.10.6',
+40 silly addNameRange     '0.10.7',
+40 silly addNameRange     '0.11.0',
+40 silly addNameRange     '0.12.0',
+40 silly addNameRange     '0.12.2',
+40 silly addNameRange     '0.12.3',
+40 silly addNameRange     '0.13.0',
+40 silly addNameRange     '0.13.1',
+40 silly addNameRange     '0.13.2',
+40 silly addNameRange     '0.13.3',
+40 silly addNameRange     '0.14.0',
+40 silly addNameRange     '0.14.2',
+40 silly addNameRange     '0.14.3',
+40 silly addNameRange     '0.14.4',
+40 silly addNameRange     '0.15.0',
+40 silly addNameRange     '0.15.1',
+40 silly addNameRange     '0.15.2',
+40 silly addNameRange     '0.15.3',
+40 silly addNameRange     '0.15.4',
+40 silly addNameRange     '0.15.5',
+40 silly addNameRange     '0.16.0',
+40 silly addNameRange     '0.16.1',
+40 silly addNameRange     '0.16.2',
+40 silly addNameRange     '0.16.3',
+40 silly addNameRange     '0.18.0',
+40 silly addNameRange     '0.18.1',
+40 silly addNameRange     '0.18.2',
+40 silly addNameRange     '0.18.3',
+40 silly addNameRange     '0.18.4',
+40 silly addNameRange     '0.18.5',
+40 silly addNameRange     '0.18.6',
+40 silly addNameRange     '0.18.7',
+40 silly addNameRange     '1.0.1',
+40 silly addNameRange     '1.0.2',
+40 silly addNameRange     '1.0.3',
+40 silly addNameRange     '2.0.0',
+40 silly addNameRange     '2.0.1',
+40 silly addNameRange     '2.1.0',
+40 silly addNameRange     '2.1.1',
+40 silly addNameRange     '2.1.2',
+40 silly addNameRange     '2.2.0',
+40 silly addNameRange     '2.2.1',
+40 silly addNameRange     '2.2.2',
+40 silly addNameRange     '2.2.3',
+40 silly addNameRange     '2.2.4',
+40 silly addNameRange     '2.3.0',
+40 silly addNameRange     '2.3.1',
+40 silly addNameRange     '2.3.2',
+40 silly addNameRange     '2.3.3',
+40 silly addNameRange     '2.3.4',
+40 silly addNameRange     '2.3.5',
+40 silly addNameRange     '2.3.6',
+40 silly addNameRange     '2.3.8',
+40 silly addNameRange     '2.3.9',
+40 silly addNameRange     '2.3.10',
+40 silly addNameRange     '2.3.11',
+40 silly addNameRange     '2.3.12',
+40 silly addNameRange     '2.3.13',
+40 silly addNameRange     '3.0.0-beta1',
+40 silly addNameRange     '3.0.0-beta2',
+40 silly addNameRange     '3.0.0',
+40 silly addNameRange     '3.0.1',
+40 silly addNameRange     '3.0.3',
+40 silly addNameRange     '3.0.4',
+40 silly addNameRange     '3.0.5',
+40 silly addNameRange     '3.0.6',
+40 silly addNameRange     '3.0.7',
+40 silly addNameRange     '3.1.0',
+40 silly addNameRange     '3.1.1',
+40 silly addNameRange     '3.1.2',
+40 silly addNameRange     '3.2.1',
+40 silly addNameRange     '3.2.2',
+40 silly addNameRange     '3.2.3',
+40 silly addNameRange     '3.2.4',
+40 silly addNameRange     '3.2.5',
+40 silly addNameRange     '3.2.6',
+40 silly addNameRange     '3.2.7',
+40 silly addNameRange     '3.2.8',
+40 silly addNameRange     '3.3.0',
+40 silly addNameRange     '3.3.1',
+40 silly addNameRange     '3.3.2',
+40 silly addNameRange     '3.3.3',
+40 silly addNameRange     '3.3.4',
+40 silly addNameRange     '3.3.5',
+40 silly addNameRange     '3.4.0',
+40 silly addNameRange     '3.4.1',
+40 silly addNameRange     '3.4.2',
+40 silly addNameRange     '4.0.0',
+40 silly addNameRange     '3.4.3',
+40 silly addNameRange     '4.0.1',
+40 silly addNameRange     '4.0.3',
+40 silly addNameRange     '4.0.4',
+40 silly addNameRange     '4.1.0',
+40 silly addNameRange     '4.1.1' ] ]
+41 silly addNamed laravel-elixir@4.1.1
+42 verbose addNamed "4.1.1" is a plain semver version for laravel-elixir
+43 silly mapToRegistry name laravel-elixir
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry uri https://registry.npmjs.org/laravel-elixir
+47 verbose addRemoteTarball https://registry.npmjs.org/laravel-elixir/-/laravel-elixir-4.1.1.tgz not in flight; adding
+48 verbose addRemoteTarball [ 'https://registry.npmjs.org/laravel-elixir/-/laravel-elixir-4.1.1.tgz',
+48 verbose addRemoteTarball   '4cec7b759240e604c6c419532b776fa48f1bb4f1' ]
+49 info retry fetch attempt 1 at 14:47:27
+50 info attempt registry request try #1 at 14:47:27
+51 http fetch GET https://registry.npmjs.org/laravel-elixir/-/laravel-elixir-4.1.1.tgz
+52 http fetch 200 https://registry.npmjs.org/laravel-elixir/-/laravel-elixir-4.1.1.tgz
+53 silly fetchAndShaCheck shasum 4cec7b759240e604c6c419532b776fa48f1bb4f1
+54 verbose addTmpTarball /tmp/npm-2876-2a345be1/registry.npmjs.org/laravel-elixir/-/laravel-elixir-4.1.1.tgz not in flight; adding
+55 verbose addTmpTarball already have metadata; skipping unpack for laravel-elixir@4.1.1
+56 silly cache afterAdd laravel-elixir@4.1.1
+57 verbose afterAdd /home/vagrant/.npm/laravel-elixir/4.1.1/package/package.json not in flight; writing
+58 verbose afterAdd /home/vagrant/.npm/laravel-elixir/4.1.1/package/package.json written
+59 silly install resolved [ { name: 'laravel-elixir',
+59 silly install resolved     version: '4.1.1',
+59 silly install resolved     description: 'Laravel Elixir Core',
+59 silly install resolved     main: 'index.js',
+59 silly install resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+59 silly install resolved     repository:
+59 silly install resolved      { type: 'git',
+59 silly install resolved        url: 'git+https://github.com/laravel/elixir.git' },
+59 silly install resolved     keywords: [ 'laravel', 'elixir', 'gulp' ],
+59 silly install resolved     author: { name: 'Taylor Otwell, Jeffrey Way' },
+59 silly install resolved     license: 'MIT',
+59 silly install resolved     homepage: 'https://github.com/laravel/elixir',
+59 silly install resolved     dependencies:
+59 silly install resolved      { babelify: '^7.2.0',
+59 silly install resolved        'browser-sync': '^2.7.10',
+59 silly install resolved        browserify: '^11.2.0',
+59 silly install resolved        del: '^1.2.0',
+59 silly install resolved        glob: '^5.0.14',
+59 silly install resolved        'gulp-autoprefixer': '^2.3.1',
+59 silly install resolved        'gulp-babel': '^6.1.0',
+59 silly install resolved        'babel-preset-es2015': '^6.1.0',
+59 silly install resolved        'babel-preset-react': '^6.1.18',
+59 silly install resolved        'gulp-batch': '^1.0.5',
+59 silly install resolved        'gulp-coffee': '^2.3.1',
+59 silly install resolved        'gulp-concat': '^2.6.0',
+59 silly install resolved        'gulp-if': '^1.2.5',
+59 silly install resolved        'gulp-less': '^3.0.3',
+59 silly install resolved        'gulp-load-plugins': '^1.0.0-rc.1',
+59 silly install resolved        'gulp-minify-css': '^1.2.0',
+59 silly install resolved        'gulp-notify': '^2.2.0',
+59 silly install resolved        'gulp-phpspec': '^0.5.3',
+59 silly install resolved        'gulp-phpunit': '0.9.0',
+59 silly install resolved        'gulp-rename': '^1.2.2',
+59 silly install resolved        'gulp-rev': '^5.1.0',
+59 silly install resolved        'gulp-rev-replace': '^0.4.2',
+59 silly install resolved        'gulp-sass': '^2.0.3',
+59 silly install resolved        'gulp-sourcemaps': '^1.5.2',
+59 silly install resolved        'gulp-uglify': '^1.4.2',
+59 silly install resolved        'gulp-util': '^3.0.6',
+59 silly install resolved        'gulp-watch': '^4.2.4',
+59 silly install resolved        'insert-css': '^0.2.0',
+59 silly install resolved        'merge-stream': '^0.1.8',
+59 silly install resolved        'parse-filepath': '^0.5.0',
+59 silly install resolved        partialify: '^3.1.3',
+59 silly install resolved        path: '^0.11.14',
+59 silly install resolved        'require-dir': '^0.3.0',
+59 silly install resolved        'run-sequence': '^1.1.1',
+59 silly install resolved        underscore: '^1.8.3',
+59 silly install resolved        'underscore-deep-extend': '0.0.5',
+59 silly install resolved        'vinyl-buffer': '^1.0.0',
+59 silly install resolved        'vinyl-paths': '^1.0.0',
+59 silly install resolved        'vinyl-source-stream': '^1.1.0',
+59 silly install resolved        watchify: '^3.2.3' },
+59 silly install resolved     devDependencies:
+59 silly install resolved      { gulp: '^3.8.8',
+59 silly install resolved        chai: '^3.2.0',
+59 silly install resolved        mocha: '^2.2.5',
+59 silly install resolved        rimraf: '^2.4.2' },
+59 silly install resolved     gitHead: '7daeedc0e687639510baf1909f6fc788a66ff83c',
+59 silly install resolved     bugs: { url: 'https://github.com/laravel/elixir/issues' },
+59 silly install resolved     _id: 'laravel-elixir@4.1.1',
+59 silly install resolved     _shasum: '4cec7b759240e604c6c419532b776fa48f1bb4f1',
+59 silly install resolved     _from: 'laravel-elixir@>=4.0.0 <5.0.0',
+59 silly install resolved     _npmVersion: '3.3.12',
+59 silly install resolved     _nodeVersion: '5.1.0',
+59 silly install resolved     _npmUser: { name: 'jeffreyway', email: 'jeffrey@laracasts.com' },
+59 silly install resolved     maintainers: [ [Object] ],
+59 silly install resolved     dist:
+59 silly install resolved      { shasum: '4cec7b759240e604c6c419532b776fa48f1bb4f1',
+59 silly install resolved        tarball: 'http://registry.npmjs.org/laravel-elixir/-/laravel-elixir-4.1.1.tgz' },
+59 silly install resolved     directories: {},
+59 silly install resolved     _resolved: 'https://registry.npmjs.org/laravel-elixir/-/laravel-elixir-4.1.1.tgz' } ]
+60 info install laravel-elixir@4.1.1 into /home/vagrant/Code/ERSTemplate
+61 info installOne laravel-elixir@4.1.1
+62 verbose installOne of laravel-elixir to /home/vagrant/Code/ERSTemplate not in flight; installing
+63 verbose lock using /home/vagrant/.npm/_locks/laravel-elixir-588751a6faabbef0.lock for /home/vagrant/Code/ERSTemplate/node_modules/laravel-elixir
+64 silly install write writing laravel-elixir 4.1.1 to /home/vagrant/Code/ERSTemplate/node_modules/laravel-elixir
+65 verbose unbuild node_modules/laravel-elixir
+66 silly gentlyRm /home/vagrant/Code/ERSTemplate/node_modules/laravel-elixir is being purged from base /home/vagrant/Code/ERSTemplate
+67 verbose gentlyRm don't care about contents; nuking /home/vagrant/Code/ERSTemplate/node_modules/laravel-elixir
+68 silly vacuum-fs purging /home/vagrant/Code/ERSTemplate/node_modules/laravel-elixir
+69 verbose unlock done using /home/vagrant/.npm/_locks/laravel-elixir-588751a6faabbef0.lock for /home/vagrant/Code/ERSTemplate/node_modules/laravel-elixir
+70 verbose stack Error: ENOTEMPTY: directory not empty, rmdir '/home/vagrant/Code/ERSTemplate/node_modules/laravel-elixir/node_modules/babel-preset-react/node_modules/babel-plugin-transform-react-jsx/node_modules/babel-helper-builder-react-jsx/node_modules/babel-types/node_modules/babel-traverse/node_modules/.bin'
+70 verbose stack     at Error (native)
+71 verbose cwd /home/vagrant/Code/ERSTemplate
+72 error Linux 3.19.0-25-generic
+73 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install"
+74 error node v4.1.1
+75 error npm  v2.14.4
+76 error path /home/vagrant/Code/ERSTemplate/node_modules/laravel-elixir/node_modules/babel-preset-react/node_modules/babel-plugin-transform-react-jsx/node_modules/babel-helper-builder-react-jsx/node_modules/babel-types/node_modules/babel-traverse/node_modules/.bin
+77 error code ENOTEMPTY
+78 error errno -39
+79 error syscall rmdir
+80 error ENOTEMPTY: directory not empty, rmdir '/home/vagrant/Code/ERSTemplate/node_modules/laravel-elixir/node_modules/babel-preset-react/node_modules/babel-plugin-transform-react-jsx/node_modules/babel-helper-builder-react-jsx/node_modules/babel-types/node_modules/babel-traverse/node_modules/.bin'
+81 error If you need help, you may report this error at:
+81 error     <https://github.com/npm/npm/issues>
+82 verbose exit [ -39, true ]
+83 verbose unbuild node_modules/laravel-elixir
+84 silly gentlyRm /home/vagrant/Code/ERSTemplate/node_modules/laravel-elixir is being purged from base /home/vagrant/Code/ERSTemplate
+85 verbose gentlyRm don't care about contents; nuking /home/vagrant/Code/ERSTemplate/node_modules/laravel-elixir
+86 silly vacuum-fs purging /home/vagrant/Code/ERSTemplate/node_modules/laravel-elixir
+87 error error rolling back Error: ENOTEMPTY: directory not empty, rmdir '/home/vagrant/Code/ERSTemplate/node_modules/laravel-elixir/node_modules/babel-preset-react/node_modules/babel-plugin-transform-react-jsx/node_modules/babel-helper-builder-react-jsx/node_modules/babel-types/node_modules/babel-traverse/node_modules/.bin'
+87 error error rolling back     at Error (native)
+87 error error rolling back  { [Error: ENOTEMPTY: directory not empty, rmdir '/home/vagrant/Code/ERSTemplate/node_modules/laravel-elixir/node_modules/babel-preset-react/node_modules/babel-plugin-transform-react-jsx/node_modules/babel-helper-builder-react-jsx/node_modules/babel-types/node_modules/babel-traverse/node_modules/.bin']
+87 error error rolling back   errno: -39,
+87 error error rolling back   code: 'ENOTEMPTY',
+87 error error rolling back   syscall: 'rmdir',
+87 error error rolling back   path: '/home/vagrant/Code/ERSTemplate/node_modules/laravel-elixir/node_modules/babel-preset-react/node_modules/babel-plugin-transform-react-jsx/node_modules/babel-helper-builder-react-jsx/node_modules/babel-types/node_modules/babel-traverse/node_modules/.bin' }
