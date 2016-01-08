@@ -2,7 +2,7 @@
   [Splash screen]
 */
 .ers-splash-screen{
-	background-color: darken(@dark-color, 2%);
+	background-color: @body-background;
 
 	.ers-wrapper{
 		padding-top: 0;
@@ -11,12 +11,17 @@
 			margin: 0;
 
 			a{
-				color: darken(@light-color, 33%);
+				color: @body-color;
+				text-decoration: underline;
 
 				&:hover{
 					color: @light-color;
 				}
 			}
+		}
+
+		.input-group-addon{
+			padding: 0;
 		}
 	}
 }

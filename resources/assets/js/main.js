@@ -400,7 +400,7 @@ var App = (function () {
         colors.alt1    = getColor('clr-alt1');
         colors.alt2    = getColor('clr-alt2');
         colors.alt3    = getColor('clr-alt3');
-        colors.alt4    = getColor('clr-alt4');
+        colors.school    = getColor('clr-school');
 
       //Prevent Connections Dropdown closes on click
         $(".ers-connections").on("click",function( e ){
@@ -415,6 +415,21 @@ var App = (function () {
         $('.dropdown').on('shown.bs.dropdown', function () {
           $(".ers-scroller").nanoScroller();
         });
+
+        
+          $('.ers-icons-nav > .dropdown').on('shown.bs.dropdown', function () {
+            if ($(window).width() < 768){
+              $(".ers-user-nav").css('min-height', '140px');
+            }
+          });
+          
+          $('.ers-icons-nav > .dropdown').on('hidden.bs.dropdown', function () {
+            if ($(window).width() < 768){
+              $(".ers-user-nav").css('min-height', '0px');
+            }
+          });
+
+
         
       /*Tabs refresh hidden elements*/
         $('.nav-tabs').on('shown.bs.tab', function (e) {

@@ -4,7 +4,7 @@
 /*Page Title*/
 .page-head {
 		background: none repeat scroll 0 0 @light-color;
-		padding: 20px @content-padding;
+		padding: 5px @content-padding;
 		position: relative;
 
 		h2{
@@ -28,13 +28,19 @@
 		.ers-white-header &{
 			background-color: darken(@light-color, 2.8%);
 		}
+		
+		//Blue header style
+		.ers-blue-header &{
+			background-color: @primary-color;
+			border-top: 1px solid darken(@primary-color, 5%);
+		}
 
 		@media @tablet{
-			padding: 20px @content-padding-tablet;
+			padding: 5px @content-padding-tablet;
 		}
 
 		@media @phone{
-				padding: 18px @content-padding-phone 20px;
+				padding: 5px @content-padding-phone 5px;
 
 				h2{
 						font-size: 24px;

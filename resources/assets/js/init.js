@@ -14,5 +14,13 @@ $(document).ready(function(){
     App.uiNotifications();
     //Modal trigger
     $('.md-trigger').modalEffects();
+    //Form Elements
+    App.formElements();
+    //Form Masks
+    //App.masks();
+    //Form Validation
+    $('form').parsley();
+    //Form Wizard
+    //App.wizard();
 
 });

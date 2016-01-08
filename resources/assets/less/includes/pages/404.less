@@ -2,20 +2,27 @@
   [Error pages]
 */
 .ers-error{
+
+
+	a{
+		color:@body-color;
+	}
 	
 	.error-container{
 		text-align: center;
+		margin-top: 95px;
 	}
 
 	.error-number{
 		display: block;
 		color: @light-color;
 		font-size: 130px;
-		font-family: @raleway;
+		font-family: @DinPro;
 		font-weight: 400;
 		line-height: 120px;
 		text-shadow: 6px 5px 0 rgba(0, 0, 0, 0.1);
 		margin-bottom: 30px;
+		margin-top: 50px;
 
 		@media @phone{
 			font-size: 90px;
@@ -28,7 +35,8 @@
 		font-size: 26px;
 		font-weight: 300;
 		line-height: 32px;
-		color: darken(@light-color, 20%);
+		color: @body-color;
+		margin-bottom:50px;
 
 		@media @phone{
 			font-size: 19px;
@@ -38,9 +46,8 @@
 	.error-goback-text{
 		font-size: 20px;
 		font-weight: 300;
-		color: darken(@light-color, 35%);
-		margin-bottom: 30px;
-		margin-top: 15px;
+		color: @light-color !important;
+		text-decoration: none !important;
 
 		@media @phone{
 			font-size: 15px;
@@ -57,25 +64,25 @@
 
 		.error-image{
 			display: inline-block;
-			background: url("@{img-path}/404-img.png") no-repeat right center;
-			background-size: 387px 292px;
+			background: url("@{img-path}/logo-white.png") no-repeat right center;
+			background-size: 100px 100px;
 			width: 100%;
-			max-width: 587px;
-			height: 292px;
+			max-width: 100px;
+			height: 100px;
 
 			img{
-				max-width: 607px;
-				max-height: 459px;
+				max-width: 100px;
+				max-height: 100px;
 			}
 
 			@media @retina{
-				background-image: url("@{img-path}/404-img-2x.png");
+				background-image: url("@{img-path}/logo-white.png");
 			}
 
 			@media @phone{
-				background-size: 190px 142px;
-				max-width: 295px;
-				height: 142px;
+				background-size: 100px 100px;
+				max-width: 100px;
+				height: 100px;
 			}
 		}
 	}

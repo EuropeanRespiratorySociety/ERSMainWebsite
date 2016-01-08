@@ -14,13 +14,33 @@
     <link rel="stylesheet" href="../css/all.css" type="text/css"/>
   </head>
   <body>
-    <div class="ers-wrapper ers-fixed-sidebar ers-white-header">
-      <nav class="navbar navbar-default navbar-fixed-top ers-top-header">
+    <div class="ers-wrapper ers-fixed-sidebar ers-blue-header">
+
+    <!-- Start Top Nav -->  
+      <nav class="navbar navbar-default navbar-fixed-top ers-top-header">       
         <div class="container-fluid">
           <div class="navbar-header">
-            <div class="page-title"><span>UI Notifications</span></div><a href="#" class="ers-toggle-left-sidebar navbar-toggle collapsed"><span class="icon-bar"><span></span><span></span><span></span></span></a><a href="index.html" class="navbar-brand"></a>
-          </div><a href="#" class="ers-toggle-right-sidebar"><span class="icon s7-menu2"></span></a><a href="#" data-toggle="collapse" data-target="#ers-navbar-collapse" class="ers-toggle-top-header-menu collapsed"><span class="icon s7-angle-down"></span></a>
-          <div id="ers-navbar-collapse" class="collapse navbar-collapse">
+          
+            <!-- Page title Visible on Mobile size screen -->
+            <div class="page-title">
+              <span>myERS</span>
+            </div>
+            <!-- Page title Visible on Mobile size screen -->
+
+            <a href="#" class="ers-toggle-left-sidebar navbar-toggle collapsed">
+              <span class="icon-bar"><span></span><span></span><span></span></span>
+            </a>
+            <a href="index.html" class="navbar-brand"></a>
+          </div>
+          <a href="#" class="ers-toggle-right-sidebar">
+            <span class="icon s7-menu2"></span>
+          </a>
+          <a href="#" data-toggle="collapse" data-target=".ers-navbar-collapse" class="ers-toggle-top-header-menu collapsed">
+            <span class="icon s7-angle-down"></span>
+          </a>         
+          <div id="" class="ers-navbar-collapse collapse navbar-collapse">
+
+            <!-- Start User Menu -->
             <ul class="nav navbar-nav navbar-right ers-user-nav">
               <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><img src="../images/avatar.jpg"><span class="user-name">Samantha Amaretti</span><span class="angle-down s7-angle-down"></span></a>
                 <ul role="menu" class="dropdown-menu">
@@ -31,49 +51,22 @@
                 </ul>
               </li>
             </ul>
-            <ul class="nav navbar-nav ers-nav-right">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle">Services <span class="angle-down s7-angle-down"></span></a>
-                <ul role="menu" class="dropdown-menu">
-                  <li><a href="#">UI Consulting</a></li>
-                  <li><a href="#">Web Development</a></li>
-                  <li><a href="#">Database Management</a></li>
-                  <li><a href="#">Seo Improvement</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Support</a></li>
+            <!-- Start User Menu --> 
+
+            <!-- End Breadcrumb/title bar -->
+            <ul class="nav navbar-left breadcrumb hidden-xs">
+              <li><a href="#"><h2>myERS</h2></a></li>
+              <li><a href="#">UI Elements</a></li>
+              <li class="active">Notifications</li>
             </ul>
+            <!-- End Breadcrumb/title bar -->
+
             <ul class="nav navbar-nav navbar-right ers-icons-nav">
-              <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><span class="icon s7-comment"></span></a>
-                <ul class="dropdown-menu ers-messages">
-                  <li>
-                    <div class="title">Messages<span class="badge">3</span></div>
-                    <div class="list">
-                      <div class="ers-scroller nano">
-                        <div class="content nano-content">
-                          <ul>
-                            <li class="active"><a href="#">
-                                <div class="logo"><img src="../images/avatar2.jpg"></div>
-                                <div class="user-content"><span class="date">April 25</span><span class="name">Jessica Caruso</span><span class="text-content">Request you to be a part of the same so that we can work...</span></div></a></li>
-                            <li><a href="#">
-                                <div class="logo"><img src="../images/avatar3.jpg"></div>
-                                <div class="user-content"><span class="date">March 18</span><span class="name">Joel King</span><span class="text-content"> We wish to extend the building.</span></div></a></li>
-                            <li><a href="#">
-                                <div class="logo"><img src="../images/avatar4.jpg"></div>
-                                <div class="user-content"><span class="date">January 3</span><span class="name">Claire Sassu</span><span class="text-content"> We the ladies of a block are wiling to join together to set up a catering...</span></div></a></li>
-                            <li><a href="#">
-                                <div class="logo"><img src="../images/avatar5.jpg"></div>
-                                <div class="user-content"><span class="date">January 2</span><span class="name">Emily Carter</span><span class="text-content"> Request you to be a part of the same so that we can work...</span></div></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="footer"> <a href="#">View all messages</a></div>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><span class="icon s7-bell"></span><span class="indicator"></span></a>
+              <li class="dropdown">
+                <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle">
+                  <span class="icon s7-bell"></span>
+                  <span class="indicator"></span>
+                </a>
                 <ul class="dropdown-menu ers-notifications">
                   <li>
                     <div class="title">Notifications<span class="badge">3</span></div>
@@ -101,78 +94,80 @@
                   </li>
                 </ul>
               </li>
-              <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><span class="icon s7-share"></span></a>
-                <ul class="dropdown-menu ers-connections">
+              <li class="dropdown">
+                <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle">
+                  <span class="icon s7-mail"></span>
+                </a>
+                <ul class="dropdown-menu ers-messages">
                   <li>
-                    <div class="title">Connections</div>
+                    <div class="title">Messages<span class="badge">3</span></div>
                     <div class="list">
-                      <div class="content">
-                        <ul>
-                          <li>
-                            <div class="logo"><img src="../images/github.png"></div>
-                            <div class="field"><span>GitHub</span>
-                              <div class="pull-right">
-                                <div class="switch-button switch-button-sm">
-                                  <input type="checkbox" checked="" name="check1" id="switch1"><span>
-                                    <label for="switch1"></label></span>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="logo"><img src="../images/bitbucket.png"></div>
-                            <div class="field"><span>Bitbucket</span>
-                              <div class="pull-right">
-                                <div class="switch-button switch-button-sm">
-                                  <input type="checkbox" name="check2" id="switch2"><span>
-                                    <label for="switch2"></label></span>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="logo"><img src="../images/slack.png"></div>
-                            <div class="field"><span>Slack</span>
-                              <div class="pull-right">
-                                <div class="switch-button switch-button-sm">
-                                  <input type="checkbox" checked="" name="check3" id="switch3"><span>
-                                    <label for="switch3"></label></span>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="logo"><img src="../images/dribbble.png"></div>
-                            <div class="field"><span>Dribbble</span>
-                              <div class="pull-right">
-                                <div class="switch-button switch-button-sm">
-                                  <input type="checkbox" name="check4" id="switch4"><span>
-                                    <label for="switch4"> </label></span>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
+                      <div class="ers-scroller nano">
+                        <div class="content nano-content">
+                          <ul>
+                            <li class="active"><a href="#">
+                                <div class="logo"><img src="../images/avatar2.jpg"></div>
+                                <div class="user-content"><span class="date">April 25</span><span class="name">Jessica Caruso</span><span class="text-content">Request you to be a part of the same so that we can work...</span></div></a></li>
+                            <li><a href="#">
+                                <div class="logo"><img src="../images/avatar3.jpg"></div>
+                                <div class="user-content"><span class="date">March 18</span><span class="name">Joel King</span><span class="text-content"> We wish to extend the building.</span></div></a></li>
+                            <li><a href="#">
+                                <div class="logo"><img src="../images/avatar4.jpg"></div>
+                                <div class="user-content"><span class="date">January 3</span><span class="name">Claire Sassu</span><span class="text-content"> We the ladies of a block are wiling to join together to set up a catering...</span></div></a></li>
+                            <li><a href="#">
+                                <div class="logo"><img src="../images/avatar5.jpg"></div>
+                                <div class="user-content"><span class="date">January 2</span><span class="name">Emily Carter</span><span class="text-content"> Request you to be a part of the same so that we can work...</span></div></a></li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                    <div class="footer"> <a href="#">View all connections</a></div>
+                    <div class="footer"> <a href="#">View all messages</a></div>
                   </li>
                 </ul>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
+    </nav>  
+    <!-- End Top Nav -->  
+
+    <!-- Start Main Navigation -->    
+    <nav class="navbar navbar-default navbar-fixed-top ers-top-header ers-top-header-bellow-bar ers-navbar-collapse navbar-collapse collapse">
+      <div class="container-fluid">
+        <div id="" class="ers-navbar-collapse collapse navbar-collapse">
+          <ul class="nav ers-nav-right ers-main-nav-blue">
+            <li class="active"><a href="#">Dashboard</a></li>
+            <li><a href="#">Publications</a></li>
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle">Services 
+                <span class="angle-down s7-angle-down"></span>
+              </a>
+                <ul role="menu" class="dropdown-menu">
+                  <li><a href="#">Something</a></li>
+                  <li><a href="#">Something else</a></li>
+                  <li><a href="#">What do you need?</a></li>
+                  <li><a href="#">Blabla bla</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Main Navigation -->  
+
+    <!-- Start Left Sidebar --> 
       <div class="ers-left-sidebar">
         <div class="content">
           <div class="ers-logo"></div>
+
           <!-- Start Metanavigation -->
           <ul class="sidebar-elements">
             <li class="parent"><a href="#"><i class="icon s7-monitor"></i><span>Home</span></a>
               <ul class="sub-menu">
                 <li><a href="/pages/blank.html">Blank Page</a>
                 </li>
-                <li><a href="../index.html">Blank Page Header</a>
+                <li><a href="/pages/blank-header.html">Blank Page Header</a>
                 </li>
                 <li><a href="/pages/blank-aside.html">Blank Page Aside</a>
                 </li>
@@ -210,19 +205,32 @@
                 </li>
               </ul>
             </li>
+            <li class="parent"><a href="#"><i class="icon s7-ribbon"></i><span>Forms</span></a>
+              <ul class="sub-menu">
+                <li><a href="/pages/form-elements.html">Elements</a>
+                </li>
+                <li><a href="/pages/form-validation.html">Validation</a>
+                </li>
+                <!-- 
+                <li><a href="/pages/form-wizard.html">Wizard</a>
+                </li>
+                <li><a href="/pages/form-masks.html">Input Masks</a>
+                </li>
+                <li><a href="/pages/form-upload.html">Multi Upload</a>
+                </li> 
+                -->
+              </ul>
+            </li>
           </ul>
           <!-- end Metanavigation -->
-          <!--Sidebar bottom content-->
         </div>
       </div>
+      <!-- End Left Sidebar -->
+
+      <!-- Stat main content Area -->
       <div class="ers-content">
         <div class="page-head">
           <h2>Notifications</h2>
-          <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">UI Elements</a></li>
-            <li class="active">Notifications</li>
-          </ol>
         </div>
         <div class="main-content">
           <div class="row">
@@ -316,6 +324,8 @@
           </div>
         </div>
       </div>
+      <!-- End main content Area -->
+
       <nav class="ers-right-sidebar">
         <div class="sb-content">
           <div class="user-info"><img src="../images/avatar.jpg"><span class="name">Samantha Amaretti<span class="status"></span></span><span class="position">Art Director</span></div>

@@ -1,5 +1,5 @@
 //Color shades
-@primary-color-dark: 			darken(@primary-color, 10%);
+@primary-color-dark: 		darken(@primary-color, 10%);
 @primary-color-darkest: 	darken(@primary-color, 20%);
 @primary-color-light: 		lighten(@primary-color, 10%);
 @primary-color-lightest: 	lighten(@primary-color, 20%);
@@ -19,13 +19,23 @@
 @alt-color3-light: 				lighten(@alt-color3, 10%);
 @alt-color3-lightest: 		lighten(@alt-color3, 20%);
 
-@alt-color4-dark: 				darken(@alt-color4, 10%);
-@alt-color4-darkest: 			darken(@alt-color4, 20%);
-@alt-color4-light: 				lighten(@alt-color4, 10%);
-@alt-color4-lightest: 		lighten(@alt-color4, 20%);
+@alt-special-dark: 				darken(@alt-special, 10%);
+@alt-special-darkest: 			darken(@alt-special, 20%);
+@alt-special-light: 			lighten(@alt-special, 10%);
+@alt-sspecial-lightest: 		lighten(@alt-special, 20%);
+
+@school-dark: 				darken(@school, 10%);
+@school-darkest: 			darken(@school, 20%);
+@school-light: 				lighten(@school, 10%);
+@school-lightest: 			lighten(@school, 20%);
+
+@scientific-dark: 				darken(@scientific, 10%);
+@scientific-darkest: 			darken(@scientific, 20%);
+@scientific-light: 				lighten(@scientific, 10%);
+@scientific-lightest: 		lighten(@scientific, 20%);
 
 //Text contrast
-@primary-color-text: 			@primary-color;
+@primary-color-text: 			@dark-color;
 
 @success-color-text: 			@success-color;	
 @info-color-text: 				@info-color;	
@@ -35,5 +45,7 @@
 @alt-color1-text: 				darken(@alt-color1, 14%);
 @alt-color2-text: 				spin(darken(@alt-color2, 4%), -3);
 @alt-color3-text: 				@alt-color3;
-@alt-color4-text: 				darken(@alt-color4, 6%);
+@alt-special-text: 					darken(@alt-special, 6%);
+@school-text: 					darken(@school, 6%);
+@scientific-text: 				darken(@scientific, 6%);
 @dark-color-text: 				@dark-color;

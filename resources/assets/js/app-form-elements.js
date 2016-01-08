@@ -22,7 +22,7 @@ var App = (function () {
     $(".tags").select2({tags: true, width: '100%'});
 
     //Bootstrap Slider
-    $('.bslider').bootstrapSlider();
+   // $('.bslider').bootstrapSlider();
     
   };
 

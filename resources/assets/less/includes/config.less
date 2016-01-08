@@ -1,25 +1,30 @@
 //Paths
-@img-path: 		"../imgages"; 
+@img-path: 		"../images"; 
 @fonts-path: 	"../fonts"; 
 @lib-path: 		"../vendor"; 
 
 //General colors palette
-@primary-color: saturate(#e66b6b, 10%);
-@alt-color1: 		#95d9f0;
-@alt-color2: 		#ffdc7a;
-@alt-color3: 		#7a98bf;
-@alt-color4: 		#cccccc;
+@primary-color: 	#015291;
+@alt-color1: 		#dfdcd5;
+@alt-color2: 		#d8d8d8;
+@alt-color3: 		#ffd73f;
+@alt-special: 		#002746;
 
-@dark-color: 		#3d3c3c;
-@light-color: 	#ffffff;
-@black-color: 	#000000;
-@body-color: 		#555555;
+@school: 		#03aea9;
+@scientific:    #cf003d;
+
+@dark-color: 		#313131;
+@dark-primary-color:#004274;
+@light-color: 		#ffffff;
+@black-color: 		#000000;
+@body-color: 		#78a1c4;
+@main-nav-blue-color:    #014983;
 
 //States Color
-@success-color: #7ACCBE;
-@warning-color: #FFC870;
-@danger-color: 	#EF6262;
-@info-color: 		#8dcadf;
+@success-color: #83b97d;
+@warning-color: #ffa050;
+@danger-color: 	#cf0000;
+@info-color: 	#005291;
 
 //Color variations
 @import "colors.less";
@@ -29,7 +34,7 @@
 @full-logo-height: 				39px;
 @small-logo-width: 				67px;
 @small-logo-height: 			39px;
-@body-background: 				darken(@light-color, 6%);
+@body-background: 				#002947;
 @content-padding: 				35px;
 @content-padding-tablet: 	25px;
 @content-padding-phone: 	15px;
@@ -41,37 +46,41 @@
 @page-aside-padding: 		20px;
 
 //Top Header
-@top-header-height: 				80px;
+@top-header-height: 		80px;
 @top-header-height-phone: 	70px;
 @icons-nav-dropdown-width: 	300px;
 
 //Left Sidebar
-@left-sidebar-bg: 									@dark-color;
-@left-sidebar-width: 								100px;
+@left-sidebar-bg: 							@light-color;
+@left-sidebar-width: 						100px;
 @left-sidebar-submenu-width: 				280px;
 @left-sidebar-width-phone: 					85%;
-@left-sidebar-color: 								darken(@light-color, 11.8%);
-@left-sidebar-color-sub-item: 			darken(@light-color, 30%);
-@left-sidebar-background-sub-item: 	lighten(@dark-color, 4.3%);
-@left-sidebar-hover-item: 					lighten(@dark-color, 2%);
-@left-sidebar-logo-bg: 							darken(@dark-color, 1.5%);
-@left-sidebar-main-level-font-size: 12px;
+@left-sidebar-color: 						@dark-color;
+@left-sidebar-color-sub-item: 				@dark-color;
+@left-sidebar-background-sub-item: 	 		@light-color;
+@left-sidebar-hover-item: 					darken(@light-color, 4%);
+@left-sidebar-logo-bg: 						@light-color;
+@left-sidebar-main-level-font-size: 		12px;
 
 //Right Sidebar
-@right-sidebar-width: 							255px;
+@right-sidebar-width: 						255px;
 @right-sidebar-width-phone: 				85%;
 @right-sidebar-icons-color: 				darken(@light-color, 33.2%);
-@right-sidebar-color: 							darken(@light-color, 11.8%);
-@right-sidebar-low-contrast-color: 	darken(@light-color, 30%);
+@right-sidebar-color: 						darken(@light-color, 11.8%);
+@right-sidebar-low-contrast-color: 			darken(@light-color, 30%);
 @right-sidebar-background: 					lighten(@dark-color, 4.3%);
 @right-sidebar-dark-color: 					lighten(@dark-color, 2%);
 
 //Fonts
-@raleway-path: 						"@{fonts-path}/raleway";
-@raleway: 								'Raleway', sans-serif;
-@open-sans-path: 					"@{fonts-path}/open-sans";
-@open-sans: 							'Open Sans', sans-serif;
-@icons-font:							'Stroke 7';
+@raleway-path: 		"@{fonts-path}/raleway";
+@raleway: 			'Raleway', sans-serif;
+@open-sans-path: 	"@{fonts-path}/open-sans";
+@open-sans: 		'Open Sans', sans-serif;
+@icons-font:		'Stroke 7';
+@DinPro-path:		"@{fonts-path}/Din-pro";
+@DinPro:			'DinPro', sans-serif;
+@MinionPro-path:	"@{fonts-path}/minion-pro";
+@MinionPro:			'DinPro', sans-serif;
 
 @font-size-base:        	13px;
 @font-size-large:         ceil((@font-size-base * 1.15)); // ~18px
@@ -149,13 +158,21 @@
 @btn-alt2-bg:                 	 @alt-color2-text;
 @btn-alt2-border:              	 darken(@btn-alt2-bg, 5%);
 
-@btn-alt3-color:								 #fff;
+@btn-alt3-color:				#fff;
 @btn-alt3-bg:                 	 @alt-color3-text;
 @btn-alt3-border:              	 darken(@btn-alt3-bg, 5%);
 
-@btn-alt4-color:								 #fff;
-@btn-alt4-bg:                 	 @alt-color4-text;
-@btn-alt4-border:              	 darken(@btn-alt4-bg, 5%);
+@btn-alt-special-color:				#fff;
+@btn-alt-special-bg:                @alt-special;
+@btn-alt-special-border:            darken(@btn-alt-special-bg, 5%);
+
+@btn-school-color:					#fff;
+@btn-school-bg:                 	 @school-text;
+@btn-school-border:              	 darken(@btn-school-bg, 5%);
+
+@btn-scientific-color:								 #fff;
+@btn-scientific-bg:                 	 @scientific-text;
+@btn-scientific-border:              	 darken(@btn-scientific-bg, 5%);
 
 @btn-link-disabled-color:        @gray-light;
 

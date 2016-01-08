@@ -19,19 +19,42 @@ elixir(function(mix) {
     mix.less('style.less');
     mix.styles([
     	'../../../public/css/style.css',
-        '../vendor/jquery.gritter/css/jquery.gritter.css'
+        '../vendor/jquery.gritter/css/jquery.gritter.css',
+        '../vendor/datetimepicker/css/bootstrap-datetimepicker.min.css',
+        '../vendor/select2/css/select2.min.css',
+        '../vendor/bootstrap-slider/css/bootstrap-slider.css',
+        '../vendor/dropzone/dist/dropzone.css',
+        '../vendor/jquery.niftymodals/css/component.css',
+        '../vendor/jquery.vectormap/jquery-jvectormap-1.2.2.css',
+        '../../../public/css/style.css'
     	]);
     mix.scripts([
     	'../vendor/jquery/jquery.min.js',
-    	'../vendor/jquery.nanoscroller/javascripts/jquery.nanoscroller.js',
-    	'main.js',
         '../vendor/bootstrap/dist/js/bootstrap.min.js',
+
+        'main.js',
+
+        '../vendor/jquery.nanoscroller/javascripts/jquery.nanoscroller.js',
         '../vendor/jquery.gritter/js/jquery.gritter.js',
         '../vendor/jquery.nestable/jquery.nestable.js',
         '../vendor/jquery.niftymodals/js/jquery.modalEffects.js',
         '../vendor/prettify/prettify.js',
+        '../vendor/datetimepicker/js/bootstrap-datetimepicker.min.js',        
+        //'../vendor/fuelux/js/wizard.js',
+        '../vendor/select2/js/select2.min.js',
+        //'../vendor/bootstrap-slider/js/bootstrap-slider.js',
+        '../vendor/parsley/parsley.min.js',
+        //'../vendor/dropzone/dist/dropzone.js',
+        //'../vendor/jquery.maskedinput/jquery.maskedinput.min.js',
+        '../vendor/moment.js/min/moment.min.js',
+
+
         'app-ui-notifications.js',
         'app-ui-nestable-lists.js',
+        //'app-form-wizard.js',
+        //'app-form-masks.js',
+        'app-form-elements.js',
+
     	'init.js'
     	]);
 });
