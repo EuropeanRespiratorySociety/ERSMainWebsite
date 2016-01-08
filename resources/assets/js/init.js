@@ -12,15 +12,18 @@ $(document).ready(function(){
     App.uiNestableLists();
     //Runs notifications
     App.uiNotifications();
-    //Modal trigger
-    $('.md-trigger').modalEffects();
     //Form Elements
     App.formElements();
+    //Tables
+    App.dataTables();
+    //Modal trigger
+    $('.md-trigger').modalEffects();
     //Form Masks
     //App.masks();
     //Form Validation
     $('form').parsley();
     //Form Wizard
     //App.wizard();
+
 
 });

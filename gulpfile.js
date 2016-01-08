@@ -26,6 +26,7 @@ elixir(function(mix) {
         '../vendor/dropzone/dist/dropzone.css',
         '../vendor/jquery.niftymodals/css/component.css',
         '../vendor/jquery.vectormap/jquery-jvectormap-1.2.2.css',
+        '../vendor/datatables/css/dataTables.bootstrap.min.css',
         '../../../public/css/style.css'
     	]);
     mix.scripts([
@@ -38,6 +39,16 @@ elixir(function(mix) {
         '../vendor/jquery.gritter/js/jquery.gritter.js',
         '../vendor/jquery.nestable/jquery.nestable.js',
         '../vendor/jquery.niftymodals/js/jquery.modalEffects.js',
+
+        '../vendor/datatables/js/jquery.dataTables.min.js',
+        '../vendor/datatables/js/dataTables.bootstrap.min.js',
+        '../vendor/datatables/plugins/buttons/js/dataTables.buttons.js',
+        '../vendor/datatables/plugins/buttons/js/buttons.html5.js',
+        '../vendor/datatables/plugins/buttons/js/buttons.flash.js',
+        '../vendor/datatables/plugins/buttons/js/buttons.print.js',
+        '../vendor/datatables/plugins/buttons/js/buttons.colVis.js',
+        '../vendor/datatables/plugins/buttons/js/buttons.bootstrap.js',
+
         '../vendor/prettify/prettify.js',
         '../vendor/datetimepicker/js/bootstrap-datetimepicker.min.js',        
         //'../vendor/fuelux/js/wizard.js',
@@ -48,7 +59,7 @@ elixir(function(mix) {
         //'../vendor/jquery.maskedinput/jquery.maskedinput.min.js',
         '../vendor/moment.js/min/moment.min.js',
 
-
+        'app-tables-datatables.js',
         'app-ui-notifications.js',
         'app-ui-nestable-lists.js',
         //'app-form-wizard.js',
