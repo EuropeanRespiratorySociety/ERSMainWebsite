@@ -15,6 +15,12 @@ elixir(function(mix) {
 	mix.copy('resources/assets/fonts', 'public/fonts');
     mix.copy('resources/html/pages', 'public/pages');
     mix.copy('resources/html/images', 'public/images');
+    mix.copy('resources/assets/js/main.js', 'public/js-source/main.js');
+    mix.copy('resources/assets/js/init.js', 'public/js-source/init.js');
+    mix.copy('resources/assets/js/app-ui-notifications.js', 'public/js-source/app-ui-notifications.js');
+    mix.copy('resources/assets/js/app-ui-nestable-lists.js', 'public/js-source/app-ui-nestable-lists.js');
+    mix.copy('resources/assets/js/app-tables-datatables.js', 'public/js-source/app-tables-datatables.js');
+    mix.copy('resources/assets/js/app-form-elements.js', 'public/js-source/app-form-elements.js');
 	mix.copy('resources/html/index.html', 'public/index.html');
     mix.less('style.less');
     mix.styles([
@@ -60,7 +66,7 @@ elixir(function(mix) {
         '../vendor/moment.js/min/moment.min.js',
 
         'app-tables-datatables.js',
-        'app-ui-notifications.js',
+        //'app-ui-notifications.js',
         'app-ui-nestable-lists.js',
         //'app-form-wizard.js',
         //'app-form-masks.js',
@@ -68,4 +74,7 @@ elixir(function(mix) {
 
     	'init.js'
     	]);
+
+        mix.copy('resources/assets/js/app-ui-notifications.js', 'public/js/app-ui-notifications.js');
+
 });
