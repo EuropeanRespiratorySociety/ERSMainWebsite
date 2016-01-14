@@ -24,5 +24,7 @@ $(document).ready(function(){
     $('form').parsley();
     //Form Wizard
     //App.wizard();
+    //Profile Page
+    App.pageProfile();
 
 });

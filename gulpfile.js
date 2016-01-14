@@ -12,6 +12,17 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
+
+    /*
+    |--------------------------------------------------------------------------
+    | Development Tip
+    |--------------------------------------------------------------------------    
+    | 
+    | To compile faster, we do not need to compile/move all files each time,
+    | thust we can comment all lines that are not necessary.
+    |
+    */
+
 	mix.copy('resources/assets/fonts', 'public/fonts');
     mix.copy('resources/html/pages', 'public/pages');
     mix.copy('resources/html/images', 'public/images');
@@ -45,6 +56,7 @@ elixir(function(mix) {
         '../vendor/jquery.gritter/js/jquery.gritter.js',
         '../vendor/jquery.nestable/jquery.nestable.js',
         '../vendor/jquery.niftymodals/js/jquery.modalEffects.js',
+        '../vendor/jquery-ui/jquery-ui.min.js',
 
         '../vendor/datatables/js/jquery.dataTables.min.js',
         '../vendor/datatables/js/dataTables.bootstrap.min.js',
@@ -71,6 +83,7 @@ elixir(function(mix) {
         //'app-form-wizard.js',
         //'app-form-masks.js',
         'app-form-elements.js',
+        'app-page-profile.js',
 
     	'init.js'
     	]);

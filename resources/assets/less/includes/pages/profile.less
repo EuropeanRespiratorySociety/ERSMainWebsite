@@ -3,12 +3,40 @@
 */
 .user-profile{
 
+	color: @text-color-dark;
+
 	.user-display{
 		margin-bottom: 30px;
 
 		.photo{
 			max-height: 300px;
 			overflow: hidden;
+
+
+
+			> .cover{
+				height: 300px;
+				width: 100%;
+				background: transparent url('../images/profile.jpg') center center fixed;
+				-webkit-background-size: cover;
+  				-moz-background-size: cover;
+  				-o-background-size: cover;
+  				background-size: cover;
+
+	  			> .edit-cover-picture{
+					float:right;
+					margin: 15px 15px 0 0;
+
+					@media @phone{
+						float:right;
+					}
+				}
+
+
+				@media @phone{
+					min-height: 130px;
+				}
+			}
 
 			img{
 				width: 100%;
@@ -26,6 +54,10 @@
 
 			> div{
 				display: inline-block;
+			}
+
+			> .btn {
+				float:right;
 			}
 
 			.user-avatar{
@@ -49,7 +81,12 @@
 						left: 53px;
 						top: 51px;
 					}
+					
 				}
+
+				.member-since{
+					padding-top: 15px;
+				}	
 
 				img{
 					width: 135px;
@@ -61,6 +98,10 @@
 						width: 70px;
 						height: 70px;
 					}
+				}
+
+				.small{
+					font-size: 80%;
 				}
 
 				@media @phone{
@@ -83,10 +124,36 @@
 					font-size: 14px;
 					font-weight: 300;
 					color: lighten(@text-color, 15%);
+
+					&.badge-default{
+						color: @light-color;
+					}
+				}
+
+				.list-inline{
+					margin-bottom:20px;
+				}
+
+
+
+				.dl-horizontal{
+					dt{
+						width: 80px;
+					}
+
+					dd{
+						margin-left: 85px;
+
+					}
 				}
 
 				@media @phone{
 					line-height: 22px;
+					margin-top: 20px;
+
+					dd{
+						margin-top: -17x;
+					}
 				}
 			}
 
@@ -94,6 +161,11 @@
 				padding: 30px 30px 25px 25px;
 			}
 		}
+
+	}
+
+	.user-edit{
+		position:relative;
 	}
 
 	.info-block{
@@ -138,4 +210,42 @@
 			}
 		}		
 	}
+
+	.panel{
+		> .panel-body{
+
+			> .content{
+				
+				> .row{
+					margin-bottom: 10px;
+				}
+			}
+		}
+
+		#profile-nav{
+			li{
+
+			> a{
+				 padding:10px;
+				}
+			}
+		}
+
+		.profile-edit-save{
+			float:right;
+			margin: 10px 15px;
+		}
+
+		h3 {
+			margin-bottom:30px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid @subtitle-border-color
+		}
+
+		.edit-subtitle{
+			margin-top: 50px;
+
+		}
+	}
+
 }

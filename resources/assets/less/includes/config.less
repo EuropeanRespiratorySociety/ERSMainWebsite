@@ -13,18 +13,26 @@
 @school: 		#03aea9;
 @scientific:    #cf003d;
 
-@dark-color: 		#313131;
-@dark-primary-color:#004274;
-@light-color: 		#ffffff;
-@black-color: 		#000000;
-@body-color: 		#78a1c4;
-@main-nav-blue-color:    #014983;
+@dark-color: 			#313131;
+@light-color: 			#ffffff;
+@black-color: 			#000000;
+@body-color: 			#78a1c4;
+
+@dark-primary-color:	#004274;
+@main-nav-blue-color:   #014983;
+
+//text-color is in bootstrap-variables
+@text-color-dark: #808080;
+@text-color-placeholder: d7d7d7;
+
+@subtitle-border-color: #ddd;
 
 //States Color
 @success-color: #83b97d;
 @warning-color: #ffa050;
 @danger-color: 	#cf0000;
-@info-color: 	#005291;
+
+@info-color: 	#005291; // = primary-color
 
 //Color variations
 @import "colors.less";
@@ -120,15 +128,19 @@
 
 //Buttons
 @btn-font-weight:                normal;
-@btn-icon-margin:								 3px;	
+@btn-icon-margin:				 3px;	
 
-@btn-default-color:              @text-color;
+@btn-default-color:              @text-color-dark;
 @btn-default-bg:                 #fff;
 @btn-default-border:             #dedede;
 
 @btn-primary-color:              #fff;
 @btn-primary-bg:                 @brand-primary;
 @btn-primary-border:             darken(@btn-primary-bg, 5%);
+
+@btn-dark-primary-color:         #fff;
+@btn-dark-primary-bg:            @dark-primary-color;
+@btn-dark-primary-border:        darken(@btn-dark-primary-bg, 5%);
 
 @btn-dark-color:              	 #fff;
 @btn-dark-bg:                 	 @dark-color;
@@ -188,7 +200,7 @@
 @status-away: 			#f2c329;
 
 //Gritter Notifications
-@notification-width: 					360px;
+@notification-width: 			360px;
 @notification-top-position: 	82px;
 
 //Social colors
