@@ -23,11 +23,11 @@ elixir(function(mix) {
     |
     */
 
-	mix.copy('resources/assets/fonts', 'public/fonts');
+	//mix.copy('resources/assets/fonts', 'public/fonts');
     mix.copy('resources/html/pages', 'public/pages');
-    mix.copy('resources/html/images', 'public/images');
-    
-    /* */
+    //mix.copy('resources/html/images', 'public/images');
+
+    /* 
     mix.copy('resources/assets/js/main.js', 'public/js-source/main.js');
     mix.copy('resources/assets/js/init.js', 'public/js-source/init.js');
     mix.copy('resources/assets/js/app-ui-notifications.js', 'public/js-source/app-ui-notifications.js');
@@ -35,8 +35,8 @@ elixir(function(mix) {
     mix.copy('resources/assets/js/app-tables-datatables.js', 'public/js-source/app-tables-datatables.js');
     mix.copy('resources/assets/js/app-form-elements.js', 'public/js-source/app-form-elements.js');
 	mix.copy('resources/html/index.html', 'public/index.html');
-    
-    /* */
+    */
+    /*     */
     mix.less('style.less');
     mix.styles([
     	'../../../public/css/style.css',
@@ -51,6 +51,7 @@ elixir(function(mix) {
         '../../../public/css/style.css'
     	]);
 
+    /**/ 
     mix.scripts([
     	'../vendor/jquery/jquery.min.js',
         '../vendor/bootstrap/dist/js/bootstrap.min.js',
@@ -78,7 +79,7 @@ elixir(function(mix) {
         '../vendor/select2/js/select2.min.js',
         //'../vendor/bootstrap-slider/js/bootstrap-slider.js',
         '../vendor/parsley/parsley.min.js',
-        //'../vendor/dropzone/dist/dropzone.js',
+        '../vendor/dropzone/dist/dropzone.js',
         //'../vendor/jquery.maskedinput/jquery.maskedinput.min.js',
         '../vendor/moment.js/min/moment.min.js',
 
@@ -92,8 +93,11 @@ elixir(function(mix) {
 
     	'init.js'
     	]);
-
-        mix.copy('resources/assets/js/app-ui-notifications.js', 'public/js/app-ui-notifications.js');
         
+        //Specific copies of files
+        //mix.copy('resources/assets/js/app-ui-notifications.js', 'public/js/app-ui-notifications.js');
+        mix.copy('resources/assets/vendor/dropzone/upload.php', 'public/pages/upload.php');
+
+       
 
 });
