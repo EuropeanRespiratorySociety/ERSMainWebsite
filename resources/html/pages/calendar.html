@@ -42,7 +42,7 @@
 
             <!-- Start User Menu -->
             <ul class="nav navbar-nav navbar-right ers-user-nav">
-              <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><img src="../images/user.png"><span class="user-name">Jane Doe</span><span class="angle-down s7-angle-down"></span></a>
+              <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><img src="../images/avatar.jpg"><span class="user-name">Jane Doe</span><span class="angle-down s7-angle-down"></span></a>
                 <ul role="menu" class="dropdown-menu">
                   <li><a href="#"> <span class="icon s7-user"></span>My profile</a></li>
                   <li><a href="#"> <span class="icon s7-config"></span>Settings</a></li>
@@ -57,7 +57,7 @@
             <ul class="nav navbar-left breadcrumb hidden-xs">
               <li><a href="#"><h2>myERS</h2></a></li>
               <li><a href="#">Pages</a></li>
-              <li class="active">blank</li>
+              <li class="active">Calendar</li>
             </ul>
             <!-- End Breadcrumb/title bar -->
 
@@ -164,8 +164,7 @@
           <ul class="sidebar-elements">
             <li class="parent"><a href="#"><i class="icon s7-monitor"></i><span>Pages</span></a>
               <ul class="sub-menu">
-                <li><a href="/pages/blank.html">Blank Page</a>
-                </li>
+                <li><a href="/pages/blank.html">Blank Page</a></li>
                 <li><a href="/pages/blank-header.html">Blank Page Header</a>
                 </li>
                 <li><a href="/pages/blank-aside.html">Blank Page Aside</a>
@@ -178,7 +177,7 @@
                 </li>
                 <li><a href="/pages/404.html">404 Page</a>
                 </li>
-                <li><a href="/pages/calendar.html">Calendar</a>
+                <li class="active"><a href="/pages/calendar.html">Calendar</a>
                 </li>
               </ul>
             </li>
@@ -236,7 +235,7 @@
                 </li>
                 <li><a href="/pages/profile-edit.html">Profile Edit</a>
                 </li>
-                <li class="active"><a href="/pages/profile-non-member.html">Profile Non Member</a>
+                <li><a href="/pages/profile-non-member.html">Profile Non Member</a>
                 </li>
                 <li><a href="/pages/profile-variations.html">Profile Variations</a>
                 </li>
@@ -250,131 +249,64 @@
 
       <!-- Start main content Area --> 
       <div class="ers-content">
+        <div class="page-head">
+          <h2>Calendar</h2>
+        </div>
         <div class="main-content">
-
-          <div class="user-profile">
-
-            <!-- Start of the Top part of the profile -->
-            <div class="user-display">  
-              <div class="photo">
-                <div class="cover">
-                  <a class="hidden btn btn-default edit-cover-picture" href="#" role="button">Change cover picture</a>
-                </div>
-              </div>
-              <div class="bottom">
-                <a class="btn btn-default" href="#" role="button">Edit Profile</a>
-                <div class="user-avatar">
-                  <span class="status"></span>
-                  <img src="../images/user.png">
-                  <div class="clearfix member-since">
-                    <a href="#">Become an <br />ERS Member</a>
-                  </div>
-                </div>
-                <div class="clearfix user-info">
-                  <ul class="list-inline">
-                    <li>
-                      <span class="badge badge-default">E-access</span>
-                    </li>
-                  </ul>  
-                    <h4>Dr. Prof. Jane Doe</h4>
-                    <dl class="dl-horizontal">
-                      <dt>Interested in:</dt>
-                      <dd>Sales/Marketing</dd>
-                    </dl>
+          <div class="row full-calendar">
+            <div class="col-md-9">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div id="calendar"></div>
                 </div>
               </div>
             </div>
-            <!-- End of the Top part of the profile -->
-
-            <div class="row">
-
-
-              <div class="col-md-6">
-              <!-- Start Membership info -->
-                <div class="panel panel-full-primary">
-                  <div class="panel-heading">Account information</div>
-                  <div class="panel-body">
-                    <div class="content">
-                      <table class="table table-condensed">
-                          <tr>
-                            <td>Username:</td>
-                            <td>myusername</td>
-                            <td><a href="#" class="btn btn-dark-primary btn-xs">Change</a></td>
-                          </tr>
-                          <tr>
-                            <td>Password:</td>
-                            <td>******</td>
-                            <td><a href="#" class="btn btn-dark-primary btn-xs">Change</a></td>
-                          </tr>
-                          <tr>
-                            <td>Membership number:</td>
-                            <td>123456</td>
-                            <td></td>
-                          </tr>
-                        </table>
-                    </div>
-                  </div>
-                </div>    
-              <!-- End Membership info -->
-
-              <!-- Start Contact details -->
-                <div class="panel panel-default">
-                  <div class="panel-heading">Contact information</div>
-                  <div class="panel-body">
-                    <div class="content">
-                      <table class="table table-condensed">
-                          <tr>
-                            <td>Email:</td>
-                            <td>email@email.com</td>
-                            <td><a href="#" class="btn btn-default btn-xs">Change</a></td>
-                          </tr>
-                          <tr>
-                            <td>Phone number:</td>
-                            <td>+41 21 123 12 34</td>
-                            <td><a href="#" class="btn btn-default btn-xs">Change</a></td>
-                          </tr>
-                          <tr>
-                            <td>Location:</td>
-                            <td>Lausanne, Switzerland</td>
-                            <td><a href="#" class="btn btn-default btn-xs">Change</a></td>
-                          </tr>
-                        </table>
-                    </div>
+            <div class="col-md-3">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3>Draggable Events</h3>
+                </div>
+                <div class="panel-body">
+                  <div id="external-events">
+                    <div class="external-event">My Event 1</div>
+                    <div class="external-event">My Event 2</div>
+                    <div class="external-event">My Event 3</div>
+                    <div class="external-event">My Event 4</div>
+                    <div class="external-event">My Event 5</div>
+                    <p>
+                      <input id="drop-remove" type="checkbox">
+                      <label for="drop-remove">remove after drop</label>
+                    </p>
                   </div>
                 </div>
-              <!-- End Contact details -->
-
               </div>
-
-              <!-- Start membersip add -->
-              <div class="col-md-6">
-                <div class="panel panel-warning">
-                  <div class="panel-heading">ERS Membershio</div>
-                  <div class="panel-body">
-                    <div class="content">
-                    <h3>Benefits </h3>
-                    <p>Nunc nibh urna, feugiat in blandit a, interdum non turpis. Quisque rhoncus semper lorem, id elementum massa mollis ac. Vestibulum sed congue lectus. Suspendisse potenti. Nam a suscipit ante. Nullam faucibus malesuada diam, sed sagittis lorem vehicula a. Nulla sodales libero hendrerit odio varius imperdiet. Mauris ex tellus, dignissim at ullamcorper sit amet, euismod ac turpis. Vestibulum ut maximus lectus. Fusce fringilla ex sed est tempor, sed hendrerit metus aliquam. </p>
+              <div class="widget widget-weather">
+                <div class="wt-container">
+                  <div class="wt-hour"><span class="hour">2:45</span><span class="meridian">PM</span></div>
+                  <div class="wt-info">
+                    <div class="wt-day"><span class="day">Today</span>
+                      <canvas height="35" width="55" class="icon1"></canvas><span class="date">30°/28°</span>
                     </div>
-                    <div class="btn-white-space">
-                      <a href="#" class="btn btn-warning" >Become an ERS Member</a>
-                    </div>  
-                  </div> 
+                    <div class="wt-day"><span class="day">Tue</span>
+                      <canvas height="35" width="45" class="icon2"></canvas><span class="date">28°/25°</span>
+                    </div>
+                    <div class="wt-day"><span class="day">Wed</span>
+                      <canvas height="35" width="45" class="icon3"></canvas><span class="date">23°/18°</span>
+                    </div>
+                  </div>
+                  <div class="wt-location"><span class="icon s7-map-marker"></span><span class="city">Lausanne, Switzerland</span></div>
                 </div>
               </div>
-              <!-- End membership add-->
-
-          </div>
-
-
+            </div>
           </div>
         </div>
       </div>
       <!-- End main content Area -->
 
-      <!-- Start Right SideBar -->
+      <!-- Start Right SideBar -->      
       <nav class="ers-right-sidebar">
         <div class="sb-content">
-          <div class="user-info"><img src="../images/user.png"><span class="name">Jane Doe<span class="status"></span></span><span class="position">Art Director</span></div>
+          <div class="user-info"><img src="../images/avatar.jpg"><span class="name">Jane Doe<span class="status"></span></span><span class="position">Art Director</span></div>
           <div class="tab-navigation">
             <ul role="tablist" class="nav nav-tabs nav-justified">
               <li role="presentation" class="active"><a href="#tab1" aria-controls="home" role="tab" data-toggle="tab"> <span class="icon s7-smile"></span></a></li>
@@ -421,7 +353,7 @@
                           <div class="user"><a href="#"><img src="../images/avatar7.jpg">
                               <div class="user-data"><span class="status"></span><span class="name">Maggie jackson</span><span class="message">I confirmed the info.</span></div></a></div>
                           <div class="user"><a href="#"><img src="../images/avatar3.jpg">
-                              <div class="user-data"><span class="status offline"></span><span class="name">Joel King   </span><span class="message">Ready for the meeti...</span></div></a></div>
+                              <div class="user-data"><span class="status offline"></span><span class="name">Joel King		</span><span class="message">Ready for the meeti...</span></div></a></div>
                         </div>
                         <h2>Contacts</h2>
                         <div class="contact">
@@ -544,10 +476,16 @@
         </div>
       </nav>
       <!-- End Right Sidebar -->
+
     </div>
+
     <script src="../js/all.js" type="text/javascript"></script>
-
-    <script src="../js/app-ui-notifications.js" type="text/javascript"></script>
-
+    <script src="../js/app-page-calendar.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+      	//initialize the javascript
+      	App.pageCalendar();
+      });
+    </script>
   </body>
 </html>

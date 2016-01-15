@@ -25,33 +25,35 @@ elixir(function(mix) {
 
 	//mix.copy('resources/assets/fonts', 'public/fonts');
     mix.copy('resources/html/pages', 'public/pages');
+    mix.copy('resources/html/index.html', 'public/index.html');
     //mix.copy('resources/html/images', 'public/images');
 
-    /* 
+/*
     mix.copy('resources/assets/js/main.js', 'public/js-source/main.js');
     mix.copy('resources/assets/js/init.js', 'public/js-source/init.js');
     mix.copy('resources/assets/js/app-ui-notifications.js', 'public/js-source/app-ui-notifications.js');
     mix.copy('resources/assets/js/app-ui-nestable-lists.js', 'public/js-source/app-ui-nestable-lists.js');
     mix.copy('resources/assets/js/app-tables-datatables.js', 'public/js-source/app-tables-datatables.js');
     mix.copy('resources/assets/js/app-form-elements.js', 'public/js-source/app-form-elements.js');
-	mix.copy('resources/html/index.html', 'public/index.html');
-    */
-    /*     */
+*/     
+/*     
     mix.less('style.less');
     mix.styles([
     	'../../../public/css/style.css',
         '../vendor/jquery.gritter/css/jquery.gritter.css',
+        '../vendor/jquery.niftymodals/css/component.css',
+        '../vendor/jquery.vectormap/jquery-jvectormap-1.2.2.css',
+        '../vendor/jquery.fullcalendar/fullcalendar.css',
+        '../vendor/jquery.fullcalendar/fullcalendar.print.css',
         '../vendor/datetimepicker/css/bootstrap-datetimepicker.min.css',
         '../vendor/select2/css/select2.min.css',
         '../vendor/bootstrap-slider/css/bootstrap-slider.css',
         '../vendor/dropzone/dist/dropzone.css',
-        '../vendor/jquery.niftymodals/css/component.css',
-        '../vendor/jquery.vectormap/jquery-jvectormap-1.2.2.css',
         '../vendor/datatables/css/dataTables.bootstrap.min.css',
         '../../../public/css/style.css'
     	]);
-
-    /**/ 
+*/
+/* 
     mix.scripts([
     	'../vendor/jquery/jquery.min.js',
         '../vendor/bootstrap/dist/js/bootstrap.min.js',
@@ -82,6 +84,8 @@ elixir(function(mix) {
         '../vendor/dropzone/dist/dropzone.js',
         //'../vendor/jquery.maskedinput/jquery.maskedinput.min.js',
         '../vendor/moment.js/min/moment.min.js',
+        '../vendor/jquery.fullcalendar/fullcalendar.js',
+        '../vendor/skycons/skycons.js',
 
         'app-tables-datatables.js',
         //'app-ui-notifications.js',
@@ -96,8 +100,9 @@ elixir(function(mix) {
         
         //Specific copies of files
         //mix.copy('resources/assets/js/app-ui-notifications.js', 'public/js/app-ui-notifications.js');
-        mix.copy('resources/assets/vendor/dropzone/upload.php', 'public/pages/upload.php');
-
+        mix.copy('resources/assets/js/app-page-calendar.js', 'public/js/app-page-calendar.js');
+        //mix.copy('resources/assets/vendor/dropzone/upload.php', 'public/pages/upload.php');
+*/
        
 
 });
