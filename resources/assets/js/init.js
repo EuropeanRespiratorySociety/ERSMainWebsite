@@ -11,7 +11,7 @@ $(document).ready(function(){
     //Runs nestable
     App.uiNestableLists();
     //Runs notifications
-    App.uiNotifications();
+    //App.uiNotifications();
     //Form Elements
     App.formElements();
     //Tables
