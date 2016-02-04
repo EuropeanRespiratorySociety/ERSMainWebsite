@@ -31,7 +31,7 @@ class Navigation
               $menu->add('Forms',  'forms');
                 $menu->forms->add('Elements',  'forms/elements');
                 $menu->forms->add('Upload',  'forms/upload');
-                $menu->forms->add('Validations',  'forms/validations');
+                $menu->forms->add('Validations',  'forms/validation');
 
               $menu->add('UI', 'ui');
                 $menu->uI->add('General', 'ui/general');
