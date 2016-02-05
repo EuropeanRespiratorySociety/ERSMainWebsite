@@ -31,6 +31,10 @@ Route::group(['prefix' => 'pages'], function () {
 	Route::get('calendar', function () {
 	    return view('pages.calendar');
 	});
+
+	Route::get('stats', function () {
+	    return view('pages.stats');
+	});
 });
 
 Route::group(['prefix' => 'errors'], function () {
