@@ -68,6 +68,10 @@ Route::group(['prefix' => 'profile'], function () {
 	});
 	
 	Route::get('member', function () {
+	    return view('profile.member');
+	});
+	
+	Route::get('non-member', function () {
 	    return view('profile.non-member');
 	});
 

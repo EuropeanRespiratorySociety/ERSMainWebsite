@@ -46,9 +46,9 @@ class Navigation
                 $menu->uI->add('Tabs & Accordions', 'ui/tabs-accordions');    
               
               $menu->add('Profile', 'profile');
+                $menu->profile->add('Member', 'profile/member');
                 $menu->profile->add('Edit', 'profile/edit');
                 $menu->profile->add('Non-member', 'profile/non-member');
-                $menu->profile->add('Member', 'profile/member');
                 $menu->profile->add('Variations', 'profile/variations');
               
               $menu->add('Tables', 'tables');
