@@ -25,8 +25,6 @@ class Navigation
                   $menu->pages->add('Blank With Header','pages/blank-header');
                   $menu->pages->add('Blank With Aside','pages/blank-aside');
                   $menu->pages->add('Calendar','pages/calendar');
-              $menu->add('Errors', 'errors');
-                $menu->errors->add('404', 'errors/404');
 
               $menu->add('Forms',  'forms');
                 $menu->forms->add('Elements',  'forms/elements');
@@ -59,6 +57,10 @@ class Navigation
                 $menu->special->add('Login', 'special/login');
                 $menu->special->add('Signup', 'special/sign-up');
                 $menu->special->add('Forgot Password', 'special/forgot');
+
+              $menu->add('Errors', 'errors');
+                $menu->errors->add('404', 'errors/404');
+                $menu->errors->add('503', 'errors/503');  
 
         });
 

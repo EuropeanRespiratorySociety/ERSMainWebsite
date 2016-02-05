@@ -34,8 +34,8 @@ Route::group(['prefix' => 'pages'], function () {
 });
 
 Route::group(['prefix' => 'errors'], function () {
-	Route::get('404', function () {
-	    return view('errors.404');
+	Route::get('{errorCode}', function ($errorCode) {
+	    return view('errors.error',['error' => $errorCode]);
 	});
 });
 

@@ -36,9 +36,8 @@
 
             <!-- Start Breadcrumb/title bar -->
             <ul class="nav navbar-left breadcrumb hidden-xs">
-              <li><a href="#"><h2>myERS</h2></a></li>
-              <li><a href="#">Pages</a></li>
-              <li class="active">other page</li>
+              <li><a href="/"><h2>myERS</h2></a></li>
+              @include('nav.breadcrumb-items', array('items' => $BreadCrumb->roots()))
             </ul>
             <!-- End Breadcrumb/title bar -->
 
