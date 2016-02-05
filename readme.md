@@ -24,8 +24,9 @@ Here is what is avalaible for now:
 * Login
 * Sign-up
 * Forgot-password
-* 404
+* 403/404/503 etc... (try it by passing the last param of the url with the code you whish to dispay.)
 * Calendar
+* Stats
 
 ## User pages (Profile)
 
@@ -46,11 +47,9 @@ The status is there, but not necessary as we did not plan any "social features" 
 ## More pages to come
 
 * Dashboard
-* Charts
 * Sliders
 * Form Wizzards
 * Form Masks
-* maps
 
 ## Available libraries for now
 ### All these libraries are included in the all.css and all.js compiled and minified
@@ -66,9 +65,13 @@ Library | Version
 [jQuery Masked Input](https://github.com/digitalBush/jquery.maskedinput) | 1.4.1
 [jVectorMap](https://github.com/bjornd/jvectormap/) | 1.2.2
 [jQuery Sparkline](https://github.com/kapusta/jquery.sparkline) | 2.1.3
+[jQuery Vectormap](http://jvectormap.com/) | 1.2.2
+[jQuery Flot](https://travis-ci.org/flot/flot) | 0.8.3
 [Bootstrap](http://getbootstrap.com/) | 3.3.5
 [Bootstrap DateTime Picker](http://www.malot.fr/bootstrap-datetimepicker/) | 2.3.5
 [Bootstrap Slider](http://seiyria.github.io/bootstrap-slider/) | 4.8.3
+[Chartjs](http://chartjs.org/) | 1.0.2
+[Countup](https://inorganik.github.io/countUp.js/) | 1.6.1
 [nanoScroller](http://jamesflorentino.github.io/nanoScrollerJS/) | 0.8.7
 [Google Prettify](https://github.com/google/code-prettify) | latest
 [dataTables](http://datatables.net/) | 1.10.9

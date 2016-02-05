@@ -20,7 +20,7 @@
         <div class="main-content">
           <div class="error-container">
             <div class="error-image"></div>
-            <div class="error-number">404</div>
+            <div class="error-number">403</div>
             <p class="error-description">Something went wrong or the page you are looking for might have been removed.</p>
 
             <div class="btn btn-lg btn-alt-special"> <a class="error-goback-text" href="/">Would you like to go home ?</a></div>
