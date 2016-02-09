@@ -23,23 +23,14 @@ elixir(function(mix) {
     |
     */
 
-	//mix.copy('resources/assets/fonts', 'public/fonts');
-    //mix.copy('resources/html/images', 'public/images');
+    mix.copy('resources/assets/fonts', 'public/fonts');
+    mix.copy('resources/assets/vendor/bootstrap/dist/fonts', 'public/fonts/glyphicons');
 
-    mix.copy('resources/html/pages', 'public/pages');
-    mix.copy('resources/html/index.html', 'public/index.html');
-
-
+    mix.copy('resources/html/images', 'public/images');
       
-    //mix.copy('resources/assets/vendor/jquery/jquery.min.js', 'public/js/jquery.min.js');
-/*     
-    mix.copy('resources/assets/js/main.js', 'public/js-source/main.js');
-    mix.copy('resources/assets/js/init.js', 'public/js-source/init.js');
-    mix.copy('resources/assets/js/app-ui-notifications.js', 'public/js-source/app-ui-notifications.js');
-    mix.copy('resources/assets/js/app-ui-nestable-lists.js', 'public/js-source/app-ui-nestable-lists.js');
-    mix.copy('resources/assets/js/app-tables-datatables.js', 'public/js-source/app-tables-datatables.js');
-    mix.copy('resources/assets/js/app-form-elements.js', 'public/js-source/app-form-elements.js');
-*/     
+    //this was taken out from the main file for Kendo to work on myERS
+    mix.copy('resources/assets/vendor/jquery/jquery.min.js', 'public/js/jquery.min.js');
+ 
 /**/     
     mix.less('style.less');
     mix.styles([
@@ -49,6 +40,7 @@ elixir(function(mix) {
         '../vendor/jquery.vectormap/jquery-jvectormap-1.2.2.css',
         '../vendor/jquery.fullcalendar/fullcalendar.css',
         '../vendor/jquery.fullcalendar/fullcalendar.print.css',
+        '../vendor/jquery.vectormap/jquery-jvectormap-1.2.2.css',
         '../vendor/datetimepicker/css/bootstrap-datetimepicker.min.css',
         '../vendor/select2/css/select2.min.css',
         '../vendor/bootstrap-slider/css/bootstrap-slider.css',
@@ -57,7 +49,8 @@ elixir(function(mix) {
         '../../../public/css/style.css'
     	]);
 /**/
-/*
+
+/* */
     mix.scripts([
         '../vendor/bootstrap/dist/js/bootstrap.min.js',
 
@@ -101,11 +94,39 @@ elixir(function(mix) {
     	'init.js'
     	]);
         
+        
+        mix.scripts([  
+        '../vendor/jquery-flot/jquery.flot.js', 
+        '../vendor/jquery-flot/jquery.flot.pie.js', 
+        '../vendor/jquery-flot/jquery.flot.resize.js', 
+        '../vendor/jquery-flot/plugins/jquery.flot.orderBars.js', 
+        '../vendor/jquery-flot/plugins/curvedLines.js', 
+        
+        '../vendor/jquery.sparkline/jquery.sparkline.min.js', 
+       
+        '../vendor/jquery.vectormap/jquery-jvectormap-1.2.2.min.js', 
+        '../vendor/jquery.vectormap/maps/jquery-jvectormap-us-merc-en.js', 
+        '../vendor/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js', 
+        '../vendor/jquery.vectormap/maps/jquery-jvectormap-uk-mill-en.js', 
+        '../vendor/jquery.vectormap/maps/jquery-jvectormap-fr-merc-en.js', 
+        '../vendor/jquery.vectormap/maps/jquery-jvectormap-us-il-chicago-mill-en.js',
+        '../vendor/jquery.vectormap/maps/jquery-jvectormap-au-mill-en.js', 
+        '../vendor/jquery.vectormap/maps/jquery-jvectormap-in-mill-en.js', 
+        '../vendor/jquery.vectormap/maps/jquery-jvectormap-map.js', 
+        '../vendor/jquery.vectormap/maps/jquery-jvectormap-ca-lcc-en.js', 
+
+        '../vendor/countup/countUp.min.js',
+        '../vendor/chartjs/Chart.min.js'
+        ], 'public/js/stats.js');
+        
         //Specific copies of files
         mix.copy('resources/assets/js/app-ui-notifications.js', 'public/js/app-ui-notifications.js');
         mix.copy('resources/assets/js/app-page-calendar.js', 'public/js/app-page-calendar.js');
+
+        mix.copy('resources/assets/js/app-stats.js', 'public/js/app-stats.js');
+        
         mix.copy('resources/assets/vendor/dropzone/upload.php', 'public/pages/upload.php');
-*/
+/**/
        
 
 });

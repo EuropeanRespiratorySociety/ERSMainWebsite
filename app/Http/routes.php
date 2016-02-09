@@ -12,5 +12,41 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.blank');
 });
+
+//Special Routes
+Route::group(['prefix' => 'errors'], function () {
+	Route::get('{errorCode}', function ($errorCode) {
+	    return view('errors.error',['error' => $errorCode]);
+	});
+});
+
+Route::get('/cache-flush', function () {
+	ResponseCache::flush();
+	return "ok";
+});
+
+//Genera routing Vies fiels need to follow the correct partern
+Route::get('/{param1}/{param2}', function ($param1,$param2) {
+    return view($param1.'.'.$param2);
+});
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Application Routes
+|--------------------------------------------------------------------------
+|
+| This route group applies the "web" middleware group to every route
+| it contains. The "web" middleware group is defined in your HTTP
+| kernel and includes session state, CSRF protection, and more.
+|
+*/
+
+/*Route::group(['middleware' => ['web']], function () {
+    Route::resource('blog', 'Blog');
+});*/
+

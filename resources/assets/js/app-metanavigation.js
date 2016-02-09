@@ -42,12 +42,15 @@ var App = (function() {
     function main() { 
         jQuery(document).ready(function($) { 
             /******* Load CSS *******/
+            //if needed
+            /*
             var css_link = $("<link>", { 
                 rel: "stylesheet", 
                 type: "text/css", 
                 href: "style.css" 
             });
-            css_link.appendTo('head');          
+            css_link.appendTo('head'); 
+            */          
 
             /******* Load HTML *******/
             var jsonp_url = "http://al.smeuh.org/cgi-bin/webwidget_tutorial.py?callback=?";
