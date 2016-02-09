@@ -49,6 +49,7 @@ elixir(function(mix) {
         '../vendor/bootstrap-slider/css/bootstrap-slider.css',
         '../vendor/dropzone/dist/dropzone.css',
         '../vendor/datatables/css/dataTables.bootstrap.min.css',
+        '../vendor/fullpagejs/dist/jquery.fullpage.min.css',
         '../../../public/css/style.css'
     	]);
 /**/
@@ -107,7 +108,7 @@ elixir(function(mix) {
         '../vendor/jquery.sparkline/jquery.sparkline.min.js', 
        
         '../vendor/jquery.vectormap/jquery-jvectormap-1.2.2.min.js', 
-        '../vendor/jquery.vectormap/maps/jquery-jvectormap-us-merc-en.js', 
+        '../vendor/jquery.vectormap/maps/jquery-jvectormap-us-merc-en.js',
         '../vendor/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js', 
         '../vendor/jquery.vectormap/maps/jquery-jvectormap-uk-mill-en.js', 
         '../vendor/jquery.vectormap/maps/jquery-jvectormap-fr-merc-en.js', 
@@ -120,11 +121,18 @@ elixir(function(mix) {
         '../vendor/countup/countUp.min.js',
         '../vendor/chartjs/Chart.min.js'
         ], 'public/js/stats.js');
+
+        mix.scripts([  
+        '../vendor/fullpagejs/vendors/jquery.easings.min.js.',
+        '../vendor/fullpagejs/vendors/jquery.slimscroll.min.js.',
+        '../vendor/fullpagejs/dist/jquery.fullpage.min.js.'
+        ], 'public/js/fullpage.js');
         
         //Specific copies of files
         mix.copy('resources/assets/js/app-ui-notifications.js', 'public/js/app-ui-notifications.js');
         mix.copy('resources/assets/js/app-page-calendar.js', 'public/js/app-page-calendar.js');
         mix.copy('resources/assets/js/app-stats.js', 'public/js/app-stats.js');
+        mix.copy('resources/assets/js/app-fullpage.js', 'public/js/app-fullpage.js');
         
         mix.copy('resources/assets/vendor/dropzone/upload.php', 'public/pages/upload.php');
 /**/

@@ -292,8 +292,15 @@ var App = (function () {
           },
           hover: {
             "fill-opacity": 0.8
+          },
+          selected: { 
+            fill:'#000' 
           }
         },
+        selectedRegions: [          
+        'US',
+        'RU'
+          ],
         markerStyle:{
             initial:{
               r: 10

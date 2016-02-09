@@ -172,6 +172,7 @@
       $(document).ready(function(){
       	//initialize the javascript
       	App.stats();
+        
       });
     </script>
     @stop()

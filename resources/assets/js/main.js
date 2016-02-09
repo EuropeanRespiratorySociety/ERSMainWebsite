@@ -401,6 +401,7 @@ var App = (function () {
         colors.alt2    = getColor('clr-alt2');
         colors.alt3    = getColor('clr-alt3');
         colors.school    = getColor('clr-school');
+        colors.scientific    = getColor('clr-scientific');
 
       //Prevent Connections Dropdown closes on click
         $(".ers-connections").on("click",function( e ){

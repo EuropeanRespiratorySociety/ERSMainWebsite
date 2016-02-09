@@ -40,7 +40,6 @@
     </div>
     
     <script src="../js/all.js" type="text/javascript"></script>
-    <script src="../js/app-ui-notifications.js" type="text/javascript"></script>
     @yield('scripts')
 
   </body>

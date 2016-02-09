@@ -72,14 +72,15 @@ Library | Version
 [Bootstrap Slider](http://seiyria.github.io/bootstrap-slider/) | 4.8.3
 [Chartjs](http://chartjs.org/) | 1.0.2
 [Countup](https://inorganik.github.io/countUp.js/) | 1.6.1
-[nanoScroller](http://jamesflorentino.github.io/nanoScrollerJS/) | 0.8.7
-[Google Prettify](https://github.com/google/code-prettify) | latest
 [dataTables](http://datatables.net/) | 1.10.9
 [dataTables Buttons](https://github.com/DataTables/Buttons) | 1.0.3
 [Font Awesome](https://fortawesome.github.io/Font-Awesome/) | 4.4.0
+[Fullpagejs](https://github.com/alvarotrigo/fullPage.js) | 2.7.7
+[Google Prettify](https://github.com/google/code-prettify) | latest
 [Gritter](https://github.com/jboesch/Gritter) | 1.7.4
 [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/) | 1.0.0
 [Moment](http://momentjs.com/) | 2.5.1
+[nanoScroller](http://jamesflorentino.github.io/nanoScrollerJS/) | 0.8.7
 [Parsley](http://parsleyjs.org/) | 2.1.3
 [Select2](https://select2.github.io/) | 4.0.0
 [Dropzonejs](http://www.dropzonejs.com) | 4.0.0

@@ -26,6 +26,7 @@ class Navigation
                   $menu->pages->add('Blank With Aside','pages/blank-aside');
                   $menu->pages->add('Calendar','pages/calendar');
                   $menu->pages->add('Stats','pages/stats');
+                  $menu->pages->add('Fullpage','pages/fullpage');
 
               $menu->add('Forms',  'forms');
                 $menu->forms->add('Elements',  'forms/elements');
