@@ -24,9 +24,9 @@
 	border:	0;
 	margin-bottom: 0;
 
-	.ers-animate & {
+  .ers-animate & {
     transition: @sidebars-push-effect;
-  	}
+  }
 
 	//logo and toggle button
 	.navbar-header{
@@ -223,7 +223,6 @@
 			> li{
 				> a{
 					color: @text-color;
-					
 					font-family: @DinPro;
 					background: transparent;
 					display: inline-block;
@@ -342,9 +341,6 @@
 					}
 				}
 			}
-
-			
-		
 		}
 
 		.ers-user-nav{
@@ -806,14 +802,13 @@
 	}
 
 	//White version
-	.ers-white-header &{
-		background-color: @light-color;
-
-		@media @non-responsive{
+	@media @non-responsive{
+		.ers-white-header &{
+			background-color: @light-color;
 			border-bottom: 1px solid darken(@light-color, 10%);
 			
 			.navbar-brand{
-				background-color: @light-color;
+				background-color: @primary-color;
 				border-bottom-color: lighten(@dark-color, 4%);
 				position: relative;
 				top: 1px;
@@ -828,14 +823,6 @@
 					top: -1px;
 					left: 0;
 				}
-			}
-
-			h2{
-				margin:0;G
-				padding:0;
-				lign-height: 12px;
-				//color: @light-color;
-				color: @left-sidebar-color-sub-item;
 			}
 
 			.navbar-collapse{
@@ -883,59 +870,6 @@
 						}
 					}
 				}
-
-				//add Rika 260116
-				.breadcrumb{
-
-					.active{
-					color: @gray-dark !important;
-					}
-
-					> li{
-
-						> a{
-						color: @gray-light;
-
-							&:hover, &:focus, &:active{
-							background-color: transparent;
-							color: @gray-dark !important;
-							}
-						}
-					}
-					
-
-				}
-
-				//add Rika 260116
-				.ers-main-nav-blue{
-			
-					> li{
-						&.active{
-
-							> a{
-							background-color: darken(@light-color, 2.8%);
-							color: @left-sidebar-color-sub-item !important;
-							}	
-						}
-
-						> a{
-						background-color: @light-color;
-						//color: lighten(@lleft-sidebar-color-sub-item, 50%) !important;
-						color: @gray-light;
-
-							&:hover, &:active{
-							background-color: darken(@light-color, 2.8%);
-							color: @left-sidebar-color-sub-item !important;
-							}
-						}
-					}	
-
-
-	
-				}
-
-
-				
 			}
 
 			.ers-icons-nav{
@@ -945,9 +879,7 @@
 					> a{
 
 						.icon{
-							//color: fade(@text-color, 80%);
-							// add Rika 260116
-							color: @gray-light;
+							color: fade(@text-color, 80%);
 						}
 
 						.indicator{
@@ -972,9 +904,7 @@
 			}
 
 			.ers-toggle-right-sidebar{
-				//color: fade(@text-color, 80%);
-				// add Rika 260116
-				color: @gray-light;
+				color: fade(@text-color, 80%);
 			}
 
 			.ers-toggle-main-menu{

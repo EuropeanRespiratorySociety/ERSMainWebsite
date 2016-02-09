@@ -31,8 +31,8 @@ elixir(function(mix) {
 
 
       
-    mix.copy('resources/assets/vendor/jquery/jquery.min.js', 'public/js/jquery.min.js');
-/*      
+    //mix.copy('resources/assets/vendor/jquery/jquery.min.js', 'public/js/jquery.min.js');
+/*     
     mix.copy('resources/assets/js/main.js', 'public/js-source/main.js');
     mix.copy('resources/assets/js/init.js', 'public/js-source/init.js');
     mix.copy('resources/assets/js/app-ui-notifications.js', 'public/js-source/app-ui-notifications.js');
@@ -57,7 +57,7 @@ elixir(function(mix) {
         '../../../public/css/style.css'
     	]);
 /**/
-/* 
+/*
     mix.scripts([
         '../vendor/bootstrap/dist/js/bootstrap.min.js',
 
@@ -102,9 +102,9 @@ elixir(function(mix) {
     	]);
         
         //Specific copies of files
-        //mix.copy('resources/assets/js/app-ui-notifications.js', 'public/js/app-ui-notifications.js');
+        mix.copy('resources/assets/js/app-ui-notifications.js', 'public/js/app-ui-notifications.js');
         mix.copy('resources/assets/js/app-page-calendar.js', 'public/js/app-page-calendar.js');
-        //mix.copy('resources/assets/vendor/dropzone/upload.php', 'public/pages/upload.php');
+        mix.copy('resources/assets/vendor/dropzone/upload.php', 'public/pages/upload.php');
 */
        
 

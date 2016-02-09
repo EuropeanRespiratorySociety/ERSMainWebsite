@@ -24,9 +24,9 @@
 	border:	0;
 	margin-bottom: 0;
 
-	.ers-animate & {
+  .ers-animate & {
     transition: @sidebars-push-effect;
-  	}
+  }
 
 	//logo and toggle button
 	.navbar-header{
@@ -230,7 +230,8 @@
 
 					&:hover, &:focus, &:active{
 					background-color: transparent;
-					color: @light-color;
+					//color: @light-color;
+					color: @gray-dark !important;
 					}
 				}
 			}
@@ -343,8 +344,32 @@
 				}
 			}
 
+			//White header style
+			//add Rika 260116
+			.ers-white-header &{
 			
-		
+				> li{
+					&.active{
+
+					> a{
+						background-color: darken(@light-color, 2.8%);
+						color: @left-sidebar-color-sub-item !important;
+						}	
+					}
+
+					> a{
+					background-color: @light-color;
+					//color: lighten(@lleft-sidebar-color-sub-item, 50%) !important;
+					color: @gray-light;
+
+						&:hover, &:active{
+							background-color: darken(@light-color, 2.8%);
+							color: @left-sidebar-color-sub-item !important;
+						}
+					}
+				}
+
+			}
 		}
 
 		.ers-user-nav{
@@ -806,10 +831,9 @@
 	}
 
 	//White version
-	.ers-white-header &{
-		background-color: @light-color;
-
-		@media @non-responsive{
+		.ers-white-header &{
+			background-color: @light-color;
+	@media @non-responsive{
 			border-bottom: 1px solid darken(@light-color, 10%);
 			
 			.navbar-brand{
@@ -887,54 +911,16 @@
 				//add Rika 260116
 				.breadcrumb{
 
-					.active{
-					color: @gray-dark !important;
-					}
-
 					> li{
 
 						> a{
 						color: @gray-light;
 
-							&:hover, &:focus, &:active{
-							background-color: transparent;
-							color: @gray-dark !important;
-							}
 						}
+
 					}
-					
 
 				}
-
-				//add Rika 260116
-				.ers-main-nav-blue{
-			
-					> li{
-						&.active{
-
-							> a{
-							background-color: darken(@light-color, 2.8%);
-							color: @left-sidebar-color-sub-item !important;
-							}	
-						}
-
-						> a{
-						background-color: @light-color;
-						//color: lighten(@lleft-sidebar-color-sub-item, 50%) !important;
-						color: @gray-light;
-
-							&:hover, &:active{
-							background-color: darken(@light-color, 2.8%);
-							color: @left-sidebar-color-sub-item !important;
-							}
-						}
-					}	
-
-
-	
-				}
-
-
 				
 			}
 
