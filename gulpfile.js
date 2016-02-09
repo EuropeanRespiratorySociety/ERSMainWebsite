@@ -50,8 +50,6 @@ elixir(function(mix) {
         '../../../public/css/style.css'
     	]);
 /**/
-
-/* */
     mix.scripts([
         '../vendor/bootstrap/dist/js/bootstrap.min.js',
 
