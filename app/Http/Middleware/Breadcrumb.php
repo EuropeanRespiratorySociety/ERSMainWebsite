@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Lavary\Menu\Menu;
 
 class Breadcrumb
 {
@@ -15,7 +16,6 @@ class Breadcrumb
      */
     public function handle($request, Closure $next)
     {
-
         \Menu::make('BreadCrumb', function($menu){
           $mainNav = \Menu::get('MainNav');
           foreach ($mainNav->items as $key => $item) {

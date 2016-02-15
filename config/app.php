@@ -143,10 +143,12 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Artisaninweb\SoapWrapper\ServiceProvider::class,
 
         /*
          * Custom Service Provides...
          */
+        App\Providers\ErsAuthServiceProvider::class,
         Lavary\Menu\ServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Incraigulous\Contentful\ContentfulServiceProvider::class,
@@ -209,6 +211,7 @@ return [
         'Html'      => Collective\Html\HtmlFacade::class,
         'Markdown'  => AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra::class,
         'ResponseCache' => Spatie\ResponseCache\ResponseCacheFacade::class,
+        'SoapWrapper' => Artisaninweb\SoapWrapper\Facades\SoapWrapper::class,
 
     ],
 

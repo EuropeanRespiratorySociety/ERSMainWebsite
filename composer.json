@@ -11,7 +11,8 @@
         "spatie/laravel-responsecache": "^1.1",
         "incraigulous/contentful-laravel": "0.0.*",
         "laravelcollective/html": "5.2.*",
-        "alfredo-ramos/parsedown-extra-laravel": "~0.4"
+        "alfredo-ramos/parsedown-extra-laravel": "~0.4",
+        "artisaninweb/laravel-soap": "0.2.5.10"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

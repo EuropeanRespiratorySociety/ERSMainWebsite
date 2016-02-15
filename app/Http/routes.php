@@ -27,11 +27,6 @@ Route::get('/cache-flush', function () {
 	return "ok";
 });
 
-//Genera routing Vies fiels need to follow the correct partern
-Route::get('/{param1}/{param2}', function ($param1,$param2) {
-    return view($param1.'.'.$param2);
-});
-
 
 
 
@@ -46,7 +41,16 @@ Route::get('/{param1}/{param2}', function ($param1,$param2) {
 |
 */
 
-/*Route::group(['middleware' => ['web']], function () {
-    Route::resource('blog', 'Blog');
-});*/
+Route::group(['middleware' => ['web']], function () {
 
+	Route::auth();
+    Route::get('/home', 'HomeController@index');
+    
+    //Blog using contentful
+    Route::resource('blog', 'Blog');
+
+	//General routing - View files need to follow the correct patern 
+	Route::get('/{param1}/{param2}', function ($param1,$param2) {
+	    return view($param1.'.'.$param2);
+	});
+});
