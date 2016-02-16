@@ -1,5 +1,9 @@
 # ERS Template
 
+Version 1.0.0
+
+The *html structure has changed since previous version* for the header and the left bar. Now the logo is included in the left bar. As such the header had to be moved to the left of the width of the left bar.
+
 All pages type can be found in the directory... pages as well as the basic user interface structure. **Bootstrap** and **Jquery** are used (see bellow for the list of libraries) . 
 
 Here is what is avalaible for now:
