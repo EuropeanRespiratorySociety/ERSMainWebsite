@@ -12,10 +12,10 @@ var App = (function () {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors: ['Events', 'Education', 'Scientific', 'Something Else'],
+        anchors: ['Events', 'Education', 'Scientific', 'animation-support'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Events', 'Education', 'Scientific', 'Something Else'],
+        navigationTooltips: ['Events', 'Education', 'Scientific', 'Animation Support'],
         showActiveTooltip: false,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
@@ -26,7 +26,7 @@ var App = (function () {
         autoScrolling: true,
         fitToSection: true,
         fitToSectionDelay: 1000,
-        scrollBar: false,
+        scrollBar: true, //needs to be true for WOW to work
         easing: 'easeInOutCubic',
         easingcss3: 'ease',
         loopBottom: false,
@@ -60,7 +60,7 @@ var App = (function () {
 
         //events
         onLeave: function(index, nextIndex, direction){
-           /* var leavingSection = $(this);
+         /*   var leavingSection = $(this);
 
             //after leaving section 2
             if(index == 1 && direction =='down'){
@@ -74,8 +74,8 @@ var App = (function () {
             else if(index == 2 && direction == 'up'){
                 $('.ers-top-header').show('slow');
                 $('#main-nav').css('margin-top', '81px');
-            }*/
-
+            }
+        */
         },
         afterLoad: function(anchorLink, index){},
         afterRender: function(){},

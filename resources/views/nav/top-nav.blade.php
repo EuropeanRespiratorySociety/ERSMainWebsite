@@ -7,11 +7,9 @@
               <span>myERS</span>
             </div>
             <!-- End Page title Visible on Mobile size screen -->
-
-            <a href="#" class="ers-toggle-left-sidebar navbar-toggle collapsed">
+              <a href="#" class="ers-toggle-left-sidebar navbar-toggle collapsed">
               <span class="icon-bar"><span></span><span></span><span></span></span>
             </a>
-            <a href="/" class="navbar-brand"></a>
           </div>
           <a href="#" class="ers-toggle-right-sidebar">
             <span class="icon s7-menu2"></span>

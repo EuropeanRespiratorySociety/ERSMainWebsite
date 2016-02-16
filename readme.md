@@ -56,17 +56,6 @@ The status is there, but not necessary as we did not plan any "social features" 
 
 Library | Version
 ------- | -------
-[jQuery](https://jquery.com/) | >= 1.9.1
-[jQuery Breakpoint Check](https://github.com/cakebake/jquery-breakpoint-check) | 1.0.0
-[jQuery Nestable](https://github.com/thesabbir/jquery-nestable) | 1.0
-[jQuery Nifty Modals](https://github.com/foxythemes/jquery-niftymodals) | 1.0.2
-[FullCalendar](http://fullcalendar.io/) | 1.6.4
-[jQuery UI](https://jqueryui.com/) | 1.11.4
-[jQuery Masked Input](https://github.com/digitalBush/jquery.maskedinput) | 1.4.1
-[jVectorMap](https://github.com/bjornd/jvectormap/) | 1.2.2
-[jQuery Sparkline](https://github.com/kapusta/jquery.sparkline) | 2.1.3
-[jQuery Vectormap](http://jvectormap.com/) | 1.2.2
-[jQuery Flot](https://travis-ci.org/flot/flot) | 0.8.3
 [Bootstrap](http://getbootstrap.com/) | 3.3.5
 [Bootstrap DateTime Picker](http://www.malot.fr/bootstrap-datetimepicker/) | 2.3.5
 [Bootstrap Slider](http://seiyria.github.io/bootstrap-slider/) | 4.8.3
@@ -74,8 +63,20 @@ Library | Version
 [Countup](https://inorganik.github.io/countUp.js/) | 1.6.1
 [dataTables](http://datatables.net/) | 1.10.9
 [dataTables Buttons](https://github.com/DataTables/Buttons) | 1.0.3
+[Dropzonejs](http://www.dropzonejs.com) | 4.0.0
 [Font Awesome](https://fortawesome.github.io/Font-Awesome/) | 4.4.0
+[FullCalendar](http://fullcalendar.io/) | 1.6.4
 [Fullpagejs](https://github.com/alvarotrigo/fullPage.js) | 2.7.7
+[jQuery](https://jquery.com/) | >= 1.9.1
+[jQuery Breakpoint Check](https://github.com/cakebake/jquery-breakpoint-check) | 1.0.0
+[jQuery Flot](https://travis-ci.org/flot/flot) | 0.8.3
+[jQuery Nestable](https://github.com/thesabbir/jquery-nestable) | 1.0
+[jQuery Nifty Modals](https://github.com/foxythemes/jquery-niftymodals) | 1.0.2
+[jVectorMap](https://github.com/bjornd/jvectormap/) | 1.2.2
+[jQuery Masked Input](https://github.com/digitalBush/jquery.maskedinput) | 1.4.1
+[jQuery Sparkline](https://github.com/kapusta/jquery.sparkline) | 2.1.3
+[jQuery UI](https://jqueryui.com/) | 1.11.4
+[jQuery Vectormap](http://jvectormap.com/) | 1.2.2
 [Google Prettify](https://github.com/google/code-prettify) | latest
 [Gritter](https://github.com/jboesch/Gritter) | 1.7.4
 [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/) | 1.0.0
@@ -83,7 +84,8 @@ Library | Version
 [nanoScroller](http://jamesflorentino.github.io/nanoScrollerJS/) | 0.8.7
 [Parsley](http://parsleyjs.org/) | 2.1.3
 [Select2](https://select2.github.io/) | 4.0.0
-[Dropzonejs](http://www.dropzonejs.com) | 4.0.0
+[WOW](http://mynameismatthieu.com/WOW/) | 1.1.2
+
 
 # How to use
 
@@ -210,6 +212,21 @@ The calendar is configured in `/js/app-page-calendar.js`and is initialized on th
     </script>
   ```  
 It uses [fullCalendar](http://fullcalendar.io/docs/). There are many examples in the documentation.
+
+## WOW
+
+You can effects by adding the class `.wow` and the class of the effect like `.bounceInLeft` to the element you want to animate.
+You also need to initialize WOW:
+
+  ```
+    <script type="text/javascript">
+      $(document).ready(function(){
+        //initialize the javascript
+        new WOW({offset: 110 }).init();
+      });
+    </script>
+  ```  
+The offset is used to offset the top navigation. You can [test all effects](http://daneden.github.io/animate.css/). You can also see a [selection live](http://erstemplate.app/pages/fullpage#animation-support).
 
 ## About the white bar on the left
 

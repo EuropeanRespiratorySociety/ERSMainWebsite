@@ -12,10 +12,10 @@ var App = (function () {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors: ['Events', 'Education', 'Scientific', 'Something Else'],
+        anchors: ['Events', 'Education', 'Scientific', 'animation-support'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Events', 'Education', 'Scientific', 'Something Else'],
+        navigationTooltips: ['Events', 'Education', 'Scientific', 'Animation Support'],
         showActiveTooltip: false,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
@@ -26,7 +26,7 @@ var App = (function () {
         autoScrolling: true,
         fitToSection: true,
         fitToSectionDelay: 1000,
-        scrollBar: true,
+        scrollBar: true, //needs to be true for WOW to work
         easing: 'easeInOutCubic',
         easingcss3: 'ease',
         loopBottom: false,
@@ -49,7 +49,7 @@ var App = (function () {
         resize : false,
         sectionsColor : [alt2, school, scientific, alt1],
         paddingTop: '0px',
-        paddingBottom: '20px',
+        paddingBottom: '0px',
         fixedElements: '#header, .footer',
         responsiveWidth: 765,
         responsiveHeight: 0,
@@ -60,26 +60,22 @@ var App = (function () {
 
         //events
         onLeave: function(index, nextIndex, direction){
-           /* var leavingSection = $(this);
+         /*   var leavingSection = $(this);
 
             //after leaving section 2
             if(index == 1 && direction =='down'){
                 $('#top-bar').hide('slow');
                 $('#main-nav').css('margin-top', '0px');
                 var height;
-                height = $('.section').height();
-                $('.section').height(height + 81);
-
+                $('.section').css('height');
+                alert(height);
             }
 
             else if(index == 2 && direction == 'up'){
                 $('.ers-top-header').show('slow');
                 $('#main-nav').css('margin-top', '81px');
-                var height;
-                height = $('.section').height();
-                $('.section').height(height - 81);
-            } */
-
+            }
+        */
         },
         afterLoad: function(anchorLink, index){},
         afterRender: function(){},

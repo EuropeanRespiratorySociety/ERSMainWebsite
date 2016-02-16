@@ -23,7 +23,7 @@ elixir(function(mix) {
     |
     */
 
-    mix.copy('resources/assets/fonts', 'public/fonts');
+  /*  mix.copy('resources/assets/fonts', 'public/fonts');
     mix.copy('resources/assets/vendor/bootstrap/dist/fonts', 'public/fonts/glyphicons');
 
     mix.copy('resources/html/images', 'public/images');
@@ -31,7 +31,7 @@ elixir(function(mix) {
     //this was taken out from the main file for Kendo to work on myERS
     mix.copy('resources/assets/vendor/jquery/jquery.min.js', 'public/js/jquery.min.js');
  
-/**/     
+/*  */
     mix.less('style.less');
     mix.styles([
     	'../../../public/css/style.css',
@@ -47,6 +47,7 @@ elixir(function(mix) {
         '../vendor/dropzone/dist/dropzone.css',
         '../vendor/datatables/css/dataTables.bootstrap.min.css',
         '../vendor/fullpagejs/dist/jquery.fullpage.min.css',
+        '../vendor/wow/wow.css',
         '../../../public/css/style.css'
     	]);
 /**/
@@ -81,6 +82,7 @@ elixir(function(mix) {
         '../vendor/moment.js/min/moment.min.js',
         '../vendor/jquery.fullcalendar/fullcalendar.js',
         '../vendor/skycons/skycons.js',
+        '../vendor/wow/wow.js',
 
         'app-tables-datatables.js',
         //'app-ui-notifications.js',
@@ -93,7 +95,7 @@ elixir(function(mix) {
     	'init.js'
     	]);
         
-        
+   
         mix.scripts([  
         '../vendor/jquery-flot/jquery.flot.js', 
         '../vendor/jquery-flot/jquery.flot.pie.js', 
@@ -116,6 +118,7 @@ elixir(function(mix) {
 
         '../vendor/countup/countUp.min.js',
         '../vendor/chartjs/Chart.min.js'
+
         ], 'public/js/stats.js');
 
         mix.scripts([  
@@ -123,16 +126,17 @@ elixir(function(mix) {
         '../vendor/fullpagejs/vendors/jquery.slimscroll.min.js.',
         '../vendor/fullpagejs/dist/jquery.fullpage.min.js.'
         ], 'public/js/fullpage.js');
-        
+      
         //Specific copies of files
         mix.copy('resources/assets/js/app-ui-notifications.js', 'public/js/app-ui-notifications.js');
         mix.copy('resources/assets/js/app-page-calendar.js', 'public/js/app-page-calendar.js');
 
         mix.copy('resources/assets/js/app-stats.js', 'public/js/app-stats.js');
         mix.copy('resources/assets/js/app-fullpage.js', 'public/js/app-fullpage.js');
+        //mix.copy('resources/assets/js/app-wow.js', 'public/js/app-wow.js');
         
         mix.copy('resources/assets/vendor/dropzone/upload.php', 'public/pages/upload.php');
-/**/
+
        
 
 });
