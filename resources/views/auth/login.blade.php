@@ -23,11 +23,18 @@
                         <div class="panel-heading"><img src="../images/logo-white.png" alt="logo" width="100px" height="100px" class="logo-img">
                             <h2>myERS</h2>
                         </div>
+                            @if($errors->any())
+                              <ul class="alert alert-danger">
+                                @foreach($errors->all() as $error)
+                                  <li>{{$error}}</li>
+                                @endforeach
+                              </ul>
+                            @endif
                         <div class="panel-body">
                             <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
                             <div class="login-form">
                                     {!! csrf_field() !!}
-                                <div class="form-group{{ $errors->has('usernmae') ? ' has-error' : '' }}">
+                                <div class="form-group{{ $errors->has('username') ? ' has-error' : '' }}">
                                   <div class="input-group">
                                     <span class="input-group-addon">
                                       <input id="username" type="text" placeholder="Username" autocomplete="off" class="form-control" name="username"> 

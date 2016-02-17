@@ -2,7 +2,7 @@
 
 namespace App\Extensions;
 
-use App\User;
+use App\User as User;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Contracts\Auth\UserProvider;
@@ -67,11 +67,7 @@ class ErsUserProvider implements UserProvider
         //is the user in local DB?
         $query = $this->createModel()->newQuery();
         
-        //@todo add check if ers_id is in invitation_permissions table. If not reject the user.	
-
-        
         $result = $this->checkUser($credentials, $query);
-
 
         //if the user is not in DB but in MyERS we need to create that user
         if (!$result) {
@@ -98,6 +94,7 @@ class ErsUserProvider implements UserProvider
 
         return $this->hasher->check($plain, $user->getAuthPassword());
     }
+
     /**
      * Create a new instance of the model.
      *
@@ -105,9 +102,11 @@ class ErsUserProvider implements UserProvider
      */
     public function createModel()
     {
-        $class = '\\'.ltrim($this->model, '\\');
+        //$class = '\\'.ltrim($this->model, '\\');
 
-        return new $class;
+        $class = new User; 
+
+        return $class;
     }
 
     /**
@@ -167,10 +166,12 @@ class ErsUserProvider implements UserProvider
     protected function userCreateOrUpdate($credentials, $id)
     {
         $user = [
-                'name'        => $credentials['name'],
+                'first_name'        => $credentials['first_name'],
+                'last_name'        => $credentials['last_name'],
                 'username'    => $credentials['username'],
                 'password'    => bcrypt($credentials['password']),
                 'email'     => $credentials['email'],
+                'title'     => $credentials['title'],
                 'group'     => $credentials['group'],
                 'ers_id'    => $credentials['ers_id']
                 ] ;

@@ -2,10 +2,10 @@
 
 namespace App\Providers;
 
+use Auth;
 use App\Extensions\ErsUserProvider;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Contracts\Auth\UserProvider;
+
 
 class ErsAuthServiceProvider extends ServiceProvider
 

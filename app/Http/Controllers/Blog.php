@@ -14,10 +14,10 @@ use Incraigulous\ContentfulSDK\PayloadBuilders\Space;
 
 class Blog extends Controller
 {
-   /* public function __construct()
+ public function __construct()
     {
         $this->middleware('auth');
-    } */
+    } 
 
     protected $fields = [
         'title' => '',
