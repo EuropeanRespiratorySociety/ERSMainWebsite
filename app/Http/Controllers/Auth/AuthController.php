@@ -96,8 +96,8 @@ class AuthController extends Controller
 
         $data = [
             'whitepaw' => env('ERS_WHITEPAW'),
-            'username'   => $credentials['username'],
-            'password'     => $credentials['password']
+            'username' => $credentials['username'],
+            'password' => $credentials['password']
         ];
 
         // Using the added service
