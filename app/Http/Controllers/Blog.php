@@ -43,7 +43,6 @@ class Blog extends Controller
                 ->includeLinks(1)
                 ->get();
 
-           // dd($entries);
             //get a specific asset
             $assets = Contentful::assets()
                 //->setWidth(100)

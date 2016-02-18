@@ -43,7 +43,9 @@ Route::get('/cache-flush', function () {
 
 Route::group(['middleware' => ['web']], function () {
 
-	Route::auth(['middleware' => 'doNotResponseCache']);
+	Route::get('logout', ['middleware' => 'doNotCacheResponse', 'uses' => 'Auth\AuthController@getLogout']);
+	Route::get('login', ['middleware' => 'doNotCacheResponse', 'uses' => 'Auth\AuthController@showLoginForm']);
+	Route::post('login', ['middleware' => 'doNotCacheResponse', 'uses' => 'Auth\AuthController@login']);
     Route::get('/home', 'HomeController@index');
     
     //Blog using contentful
