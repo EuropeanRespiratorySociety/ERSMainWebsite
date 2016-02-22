@@ -17,6 +17,7 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
         \App\Http\Middleware\Navigation::class,
         \App\Http\Middleware\Breadcrumb::class,
+        \App\Http\Middleware\Metanavigation::class,
     ];
 
     /**

@@ -16,7 +16,7 @@
                 <a class="btn btn-default" href="#" role="button">Edit Profile</a>
                 <div class="user-avatar">
                   <span class="status"></span>
-                  <img src="../images/avatar.jpg">
+                  <img src="../images/avatar.png">
                   <div class="clearfix member-since">
                     <span>ERS Member since 2010</span>
                   </div>
@@ -55,7 +55,7 @@
                 <a class="btn btn-default" href="#" role="button">Edit Profile</a>
                 <div class="user-avatar">
                   <span class="status"></span>
-                  <img src="../images/avatar.jpg">
+                  <img src="../images/avatar.png">
                   <div class="clearfix member-since">
                     <span>ERS Member since 2010</span>
                   </div>

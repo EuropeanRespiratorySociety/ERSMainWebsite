@@ -21,7 +21,7 @@
 
             <!-- Start User Menu -->
             <ul class="nav navbar-nav navbar-right ers-user-nav">
-              <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><img src="../images/avatar.jpg"><span class="user-name">Jane Doe</span><span class="angle-down s7-angle-down"></span></a>
+              <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><img src="../images/avatar.png"><span class="user-name">Jane Doe</span><span class="angle-down s7-angle-down"></span></a>
                 <ul role="menu" class="dropdown-menu">
                   <li><a href="#"> <span class="icon s7-user"></span>My profile</a></li>
                   <li><a href="#"> <span class="icon s7-config"></span>Settings</a></li>

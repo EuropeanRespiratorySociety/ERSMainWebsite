@@ -7,6 +7,9 @@
         <div class="ers-logo"></a></div>
 
           <!-- Start Metanavigation -->
+          <ul class="sidebar-elements">
+            @include('nav.metanav', array('items' => $Metanav->roots()))
+          </ul>
    <!--       
           <ul class="sidebar-elements">
             <li class="parent"><a href="#"><i class="icon s7-monitor"></i><span>Pages</span></a>

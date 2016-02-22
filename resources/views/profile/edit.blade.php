@@ -15,7 +15,7 @@
               <div class="bottom">
                 <div class="user-avatar">
                   <span class="status"></span>
-                  <img src="../images/avatar.jpg">
+                  <img src="../images/avatar.png">
                   <div class="clearfix member-since">
                     <a href="#">Change profile picture</a>
                   </div>  

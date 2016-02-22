@@ -1,10 +1,17 @@
 # ERS Template
 
-Version 1.0.0
+Version 1.0.1
 
 The *html structure has changed since previous version* for the header and the left bar. Now the logo is included in the left bar. As such the header had to be moved to the left of the width of the left bar.
 
 All pages type can be found in the directory... pages as well as the basic user interface structure. **Bootstrap** and **Jquery** are used (see bellow for the list of libraries) . 
+
+This version makes use of the first version of the *Metanavigation* in the left bar. It is **not finished**. It is just a test for many sub-levels and it needs to be styled.
+
+### What is new in 1.0.1
+* Errors example for signup/login forms
+* Neutral image for users with no profile image
+* Metanavigation first draft.  
 
 Here is what is avalaible for now:
 
@@ -27,6 +34,7 @@ Here is what is avalaible for now:
 * Blank with aside position (*e.g.* for a submenu)
 * Login
 * Sign-up
+* Sign-up with errors
 * Forgot-password
 * 403/404/503 etc... (try it by passing the last param of the url with the code you whish to dispay.)
 * Calendar
