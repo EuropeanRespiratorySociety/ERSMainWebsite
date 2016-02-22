@@ -19,7 +19,7 @@ class Metanavigation
 
         \Menu::make('Metanav', function($menu){
 
-            $menu->add('The Society')->prepend('<i class="s7-culture"></i><span>')->append('</span>');
+            $menu->add('The Society')->prepend('<i class="s7-culture icon"></i><span>')->append('</span>');
                 $menu->theSociety->add('Who we are', 'who-we-are');
                 $menu->theSociety->add('Assemblies', 'assembles');
                     $menu->assemblies->add('Assembly 1', 'assembly-1');

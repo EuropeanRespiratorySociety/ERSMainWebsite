@@ -178,7 +178,6 @@
                 </div>
               </div>
             </div>
-          </div>
             <div class="col-md-4">
               <div class="panel panel-warning">
                 <div class="panel-heading">
@@ -189,7 +188,7 @@
                   <p>Velit numquam possimus eum delectus maiores dicta perspiciatis quae aperiam dolores facere, doloribus non, iusto, sit.</p>
                 </div>
               </div>
-            </div>
+              </div>
           </div>
           <div class="row">
             <div class="col-md-4">
