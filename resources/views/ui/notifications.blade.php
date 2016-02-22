@@ -99,4 +99,11 @@
 	@stop()  
 
     @section('scripts')
+    <script src="../js/app-ui-notifications.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        //initialize the javascript
+        App.uiNotifications();             
+      });
+    </script>
     @stop()

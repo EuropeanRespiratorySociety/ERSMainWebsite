@@ -227,7 +227,7 @@ It uses [fullCalendar](http://fullcalendar.io/docs/). There are many examples in
 
 ## WOW
 
-You can effects by adding the class `.wow` and the class of the effect like `.bounceInLeft` to the element you want to animate.
+You can add effects by adding the class `.wow` and the class of the effect like `.bounceInLeft` to the element you want to animate.
 You also need to initialize WOW:
 
   ```
