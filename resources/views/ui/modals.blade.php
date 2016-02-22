@@ -44,7 +44,7 @@
           </div>
           <div class="row">    
             <div class="page-head">
-              <h2>Do not use the example bellow</h2>
+              <h2>Do not use the examples bellow</h2>
             </div>
 
           </div>
