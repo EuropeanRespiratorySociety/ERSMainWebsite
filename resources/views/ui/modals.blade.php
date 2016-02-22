@@ -12,7 +12,7 @@
                 <div class="panel-heading"><span class="title">Modal Alerts</span></div>
                 <div class="panel-body">
                   <h4>Examples</h4>
-                  <p>Nunc condimentum tincidunt augue, ut sagittis nunc iaculis in. Proin vel enim mollis, porta dui eu, faucibus augue. Etiam viverra massa non nibh ultrices, eu vestibulum diam egestas. </p>
+                  <p>Nunc condimentum tincidunt augue, ut sagittis nunc iaculis in. Proin vel enim mollis, porta dui eu, faucibus augue.</p>
                   <div class="spacer xs-mt-30 xs-mb-20 text-center">
                     <button data-toggle="modal" data-target="#mod-success" type="button" class="btn btn-space btn-success"><i class="icon icon-left s7-check"></i>Success</button>
                     <button data-toggle="modal" data-target="#mod-info" type="button" class="btn btn-space btn-info"><i class="icon icon-left s7-info"></i>Information</button>
@@ -22,7 +22,35 @@
                 </div>
               </div>
             </div>
-            <!--Full Color Alerts-->
+            <!--Bootstrap Modals-->
+            <div class="col-sm-6">
+              <div class="panel panel-default">
+                <div class="panel-heading"><span class="title">Bootstrap Modals</span></div>
+                <div class="panel-body">
+                  <h4>Examples</h4>
+
+                  <p>You can add the classe <code>.danger</code>, <code>.warning</code>, etc in order to change the color of the modal.</p>
+                  <div class="spacer xs-mt-30 xs-mb-20 text-center">
+                    <button data-toggle="modal" data-target="#md-default" type="button" class="btn btn-space btn-primary"> Default</button>
+                    <button data-toggle="modal" data-target="#md-fullWidth" type="button" class="btn btn-space btn-primary"> Full Width</button>
+                    <button data-toggle="modal" data-target="#md-custom" type="button" class="btn btn-space btn-primary"> Custom width</button>
+                    <button data-toggle="modal" data-target="#md-colored" type="button" class="btn btn-space btn-primary"> Colored Header</button>
+                    <button data-toggle="modal" data-target="#md-fullColor" type="button" class="btn btn-space btn-primary"> Full Color</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="row">    
+            <div class="page-head">
+              <h2>Do not use the example bellow</h2>
+            </div>
+
+          </div>
+          <div class="main-content">
+          <div class="row">
+                      <!--Full Color Alerts-->
             <div class="col-sm-6">
               <div class="panel panel-default">
                 <div class="panel-heading"><span class="title">Full Color Alerts</span></div>
@@ -158,25 +186,6 @@
                     </div>
                   </div>
                   <div class="md-overlay"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <!--Bootstrap Modals-->
-            <div class="col-sm-6">
-              <div class="panel panel-default">
-                <div class="panel-heading"><span class="title">Bootstrap Modals</span></div>
-                <div class="panel-body">
-                  <h4>Examples</h4>
-                  <p>Nunc condimentum tincidunt augue, ut sagittis nunc iaculis in. Proin vel enim mollis, porta dui eu, faucibus augue. Etiam viverra massa non nibh ultrices, eu vestibulum diam egestas. </p>
-                  <div class="spacer xs-mt-30 xs-mb-20 text-center">
-                    <button data-toggle="modal" data-target="#md-default" type="button" class="btn btn-space btn-primary"> Default</button>
-                    <button data-toggle="modal" data-target="#md-fullWidth" type="button" class="btn btn-space btn-primary"> Full Width</button>
-                    <button data-toggle="modal" data-target="#md-custom" type="button" class="btn btn-space btn-primary"> Custom width</button>
-                    <button data-toggle="modal" data-target="#md-colored" type="button" class="btn btn-space btn-primary"> Colored Header</button>
-                    <button data-toggle="modal" data-target="#md-fullColor" type="button" class="btn btn-space btn-primary"> Full Color</button>
-                  </div>
                 </div>
               </div>
             </div>
@@ -939,6 +948,7 @@
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>	
