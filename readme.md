@@ -1,6 +1,6 @@
 # ERS Template
 
-Version 1.0.1
+**Version 1.0.1**
 
 The *html structure has changed since previous version* for the header and the left bar. Now the logo is included in the left bar. As such the header had to be moved to the left of the width of the left bar.
 
@@ -8,11 +8,16 @@ All pages type can be found in the directory... pages as well as the basic user 
 
 This version makes use of the first version of the *Metanavigation* in the left bar. It is **not finished**. It is just a test for many sub-levels and it needs to be styled.
 
+
+## Change log
+
 ### What is new in 1.0.1
 * Errors example for signup/login forms
 * Ads section with animations on signup/login pages
 * Neutral image for users with no profile image
 * Metanavigation first draft.  
+
+-------------------
 
 Here is what is avalaible for now:
 
