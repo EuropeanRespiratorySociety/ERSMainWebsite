@@ -59,6 +59,7 @@ class Navigation
                 $menu->special->add('Login', 'special/login');
                 $menu->special->add('Signup', 'special/sign-up');
                 $menu->special->add('Signup Errors', 'special/sign-up-errors');
+                $menu->special->add('Signup with Ads', 'special/sign-up-ads');
                 $menu->special->add('Forgot Password', 'special/forgot');
 
               $menu->add('Errors', 'errors');

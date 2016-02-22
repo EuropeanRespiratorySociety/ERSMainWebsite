@@ -10,6 +10,7 @@ This version makes use of the first version of the *Metanavigation* in the left 
 
 ### What is new in 1.0.1
 * Errors example for signup/login forms
+* Ads section with animations on signup/login pages
 * Neutral image for users with no profile image
 * Metanavigation first draft.  
 
@@ -35,6 +36,7 @@ Here is what is avalaible for now:
 * Login
 * Sign-up
 * Sign-up with errors
+* Sign-up with ads and animation
 * Forgot-password
 * 403/404/503 etc... (try it by passing the last param of the url with the code you whish to dispay.)
 * Calendar

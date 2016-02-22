@@ -50,7 +50,7 @@ elixir(function(mix) {
         '../vendor/wow/wow.css',
         '../../../public/css/style.css'
     	]);
-/**/
+/*
     mix.scripts([
         '../vendor/bootstrap/dist/js/bootstrap.min.js',
 
@@ -136,7 +136,7 @@ elixir(function(mix) {
         //mix.copy('resources/assets/js/app-wow.js', 'public/js/app-wow.js');
         
         mix.copy('resources/assets/vendor/dropzone/upload.php', 'public/pages/upload.php');
-
+*/
        
 
 });
