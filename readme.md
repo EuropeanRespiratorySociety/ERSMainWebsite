@@ -1,15 +1,19 @@
 # ERS Template
 
-**Version 1.0.1**
+**Version 1.1.0**
 
 The *html structure has changed since previous version* for the header and the left bar. Now the logo is included in the left bar. As such the header had to be moved to the left of the width of the left bar.
 
-All pages type can be found in the directory... pages as well as the basic user interface structure. **Bootstrap** and **Jquery** are used (see bellow for the list of libraries) . 
+ **Bootstrap** and **Jquery** are used (see bellow for the list of libraries) . 
 
 This version makes use of the first version of the *Metanavigation* in the left bar. It is **not finished**. It is just a test for many sub-levels and it needs to be styled.
 
 
 ## Change log
+
+### What is new in 1.1.0
+* Dashboard
+* Few bug fixes
 
 ### What is new in 1.0.1
 * Errors example for signup/login forms
@@ -63,9 +67,13 @@ The status is there, but not necessary as we did not plan any "social features" 
  * Form validation
  * Drag and Drop Upload (Multi uploads)
 
-## More pages to come
+## Dashboard (Alpha)
+* Member
+* Non-member
+* Not connected
+* Variation (for different types of membership/status within the society/etc...)
 
-* Dashboard
+## More pages to come
 * Sliders
 * Form Wizzards
 * Form Masks

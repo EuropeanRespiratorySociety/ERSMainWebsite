@@ -20,19 +20,6 @@ class Navigation
 
               $menu->add('Home');
 
-              $menu->add('Pages', 'pages');
-                  $menu->pages->add('Blank','pages/blank');
-                  $menu->pages->add('Blank With Header','pages/blank-header');
-                  $menu->pages->add('Blank With Aside','pages/blank-aside');
-                  $menu->pages->add('Calendar','pages/calendar');
-                  $menu->pages->add('Stats','pages/stats');
-                  $menu->pages->add('Fullpage','pages/fullpage');
-
-              $menu->add('Forms',  'forms');
-                $menu->forms->add('Elements',  'forms/elements');
-                $menu->forms->add('Upload',  'forms/upload');
-                $menu->forms->add('Validations',  'forms/validation');
-
               $menu->add('UI', 'ui');
                 $menu->uI->add('General', 'ui/general');
                 $menu->uI->add('Buttons', 'ui/buttons');
@@ -43,17 +30,36 @@ class Navigation
                 $menu->uI->add('Modals', 'ui/modals');
                 $menu->uI->add('Nestable-lists', 'ui/nestable-lists');
                 $menu->uI->add('Panels', 'ui/panels');
-                $menu->uI->add('Tabs & Accordions', 'ui/tabs-accordions');    
-              
+                $menu->uI->add('Tabs & Accordions', 'ui/tabs-accordions');
+
+              $menu->add('Forms',  'forms');
+                $menu->forms->add('Elements',  'forms/elements');
+                $menu->forms->add('Upload',  'forms/upload');
+                $menu->forms->add('Validations',  'forms/validation');
+
+              $menu->add('Tables', 'tables');
+                $menu->tables->add('General', 'tables/general');
+                $menu->tables->add('Datatables', 'tables/datatables');  
+
+              $menu->add('Pages', 'pages');
+                  $menu->pages->add('Blank','pages/blank');
+                  $menu->pages->add('Blank With Header','pages/blank-header');
+                  $menu->pages->add('Blank With Aside','pages/blank-aside');
+                  $menu->pages->add('Calendar','pages/calendar');
+                  $menu->pages->add('Fullpage','pages/fullpage');
+                  $menu->pages->add('Stats','pages/stats');
+    
               $menu->add('Profile', 'profile');
                 $menu->profile->add('Member', 'profile/member');
                 $menu->profile->add('Edit', 'profile/edit');
                 $menu->profile->add('Non-member', 'profile/non-member');
                 $menu->profile->add('Variations', 'profile/variations');
-              
-              $menu->add('Tables', 'tables');
-                $menu->tables->add('General', 'tables/general');
-                $menu->tables->add('Datatables', 'tables/datatables');
+
+              $menu->add('Dashboard', 'dashboard');
+                $menu->dashboard->add('Member', 'dashboard/member');  
+                $menu->dashboard->add('Non member', 'dashboard/non-member');  
+                $menu->dashboard->add('Not Connected', 'dashboard/not-connected');  
+                $menu->dashboard->add('Variations', 'dashboard/variations');  
             
               $menu->add('Special',  'special');
                 $menu->special->add('Login', 'special/login');

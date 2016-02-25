@@ -100,7 +100,7 @@
               <!-- Start membersip add -->
               <div class="col-md-6">
                 <div class="panel panel-warning">
-                  <div class="panel-heading">ERS Membershio</div>
+                  <div class="panel-heading">ERS Membership</div>
                   <div class="panel-body">
                     <div class="content">
                     <h3>Benefits </h3>
