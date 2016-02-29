@@ -1,6 +1,6 @@
 # ERS Template
 
-**Version 1.1.0**
+**Version 1.1.1**
 
 The *html structure has changed since previous version* for the header and the left bar. Now the logo is included in the left bar. As such the header had to be moved to the left of the width of the left bar.
 
@@ -10,6 +10,12 @@ This version makes use of the first version of the *Metanavigation* in the left 
 
 
 ## Change log
+
+### What is new in 1.1.1
+* Bug fix, select2 displays now correctly.
+* Bug fix, multitag input displays now correctly.
+* Bug fix, multitag select displays now correctly.
+* Bug fix (temporary until nicer dropdown), contrast is now better for active links in dropdown.
 
 ### What is new in 1.1.0
 * Dashboard

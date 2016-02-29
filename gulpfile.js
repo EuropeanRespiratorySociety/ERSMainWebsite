@@ -34,6 +34,7 @@ elixir(function(mix) {
 /*  */
     mix.less('style.less');
     mix.styles([
+        '../vendor/select2/css/select2.min.css',
     	'../../../public/css/style.css',
         '../vendor/jquery.gritter/css/jquery.gritter.css',
         '../vendor/jquery.niftymodals/css/component.css',
@@ -42,7 +43,6 @@ elixir(function(mix) {
         '../vendor/jquery.fullcalendar/fullcalendar.print.css',
         '../vendor/jquery.vectormap/jquery-jvectormap-1.2.2.css',
         '../vendor/datetimepicker/css/bootstrap-datetimepicker.min.css',
-        '../vendor/select2/css/select2.min.css',
         '../vendor/bootstrap-slider/css/bootstrap-slider.css',
         '../vendor/dropzone/dist/dropzone.css',
         '../vendor/datatables/css/dataTables.bootstrap.min.css',
