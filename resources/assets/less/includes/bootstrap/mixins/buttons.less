@@ -61,6 +61,69 @@
   }
 }
 
+.button-variant-dark(@color; @background; @border) {
+  @background-dark: darken(@background,10%);
+  @border-dark: lighten(@border,10%);
+
+  color: @color;
+  background-color: @background-dark;
+  border-color: @background-dark;
+
+  &:focus,
+  &.focus {
+    color: @color;
+    background-color: @background-dark;
+        border-color: @background-dark;
+  }
+
+  &:hover {
+    color: @color;
+    background-color: lighten(@background-dark, 5%);
+        border-color: lighten(@background-dark, 5%);
+  }
+
+  &:active,
+  &.active,
+  .open > .dropdown-toggle& {
+    color: @color;
+    background-color: darken(@background-dark, 5%);
+        border-color: darken(@background-dark, 5%);
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: @color;
+      background-color: darken(@background-dark, 5%);
+          border-color: darken(@background-dark, 5%);
+    }
+  }
+
+  &:active,
+  &.active,
+  .open > .dropdown-toggle& {
+    background-image: none;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: @background-dark;
+          border-color: @background-dark;
+    }
+  }
+
+  .badge {
+    color: @background-dark;
+    background-color: @color;
+  }
+}
+
 .button-shade(@background) {
   background-color: @background;
   border-color: @background;

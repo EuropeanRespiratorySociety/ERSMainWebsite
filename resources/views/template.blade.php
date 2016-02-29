@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <base href="/">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="">
@@ -15,8 +16,11 @@
     <script src="../js/jquery.min.js" type="text/javascript"></script>
   </head>
   <body>
+    @if($color == "white")
+    <div class="ers-wrapper ers-fixed-sidebar ers-white-header">
+    @else
     <div class="ers-wrapper ers-fixed-sidebar ers-blue-header">
-
+    @endif
         <!-- Start Top Nav -->  
             @include('nav.top-nav')
         <!-- End Top Nav -->  

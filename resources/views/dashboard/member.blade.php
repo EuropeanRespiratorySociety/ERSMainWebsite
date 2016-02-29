@@ -227,7 +227,7 @@
 								</ul>	
 		               		</div>
 		               		<div class="buttons">
-									<a href="#" class="btn btn-school submit col-md-4">Vote</a>
+									<a href="#" class="btn btn-dark-school submit col-md-4">Vote</a>
 							</div>	
 	                </div>
 	    		</div>
@@ -250,7 +250,7 @@
 								</ul>	
 		               		</div>
 		               		<div class="buttons">
-									<a href="#" class="btn btn-scientific submit col-md-4">Vote</a>
+									<a href="#" class="btn btn-dark-scientific submit col-md-4">Vote</a>
 							</div>	
 	                </div>
 	    		</div>
@@ -273,7 +273,7 @@
 								</ul>	
 		               		</div>
 		               		<div class="buttons">
-									<a href="#" class="btn btn-danger submit col-md-4">Vote</a>
+									<a href="#" class="btn btn-dark-danger submit col-md-4">Vote</a>
 							</div>	
 	                </div>
 	    		</div>
@@ -296,7 +296,7 @@
 								</ul>	
 		               		</div>
 		               		<div class="buttons">
-									<a href="#" class="btn btn-warning submit col-md-4">Vote</a>
+									<a href="#" class="btn btn-dark-warning submit col-md-4">Vote</a>
 							</div>	
 	                </div>
 	    		</div>

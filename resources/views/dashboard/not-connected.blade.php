@@ -41,7 +41,7 @@
 		                    </div>
 	                    </div>
 	                    <div class="buttons">
-	                      <a href="#" class="btn btn-warning col-md-6" >Join ERS</a>
+	                      <a href="#" class="btn btn-dark-warning col-md-6" >Join ERS</a>
 	                      <a href="#" class="btn btn-default col-md-6" >More about membership</a>
 	                    </div>  
 	                </div> 

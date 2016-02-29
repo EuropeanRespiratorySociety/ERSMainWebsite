@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.blank');
+Route::get('/{param1?}', function ($param1 = null) {
+    return view('pages.blank')->with('color', $param1);
 });
+
 
 //Special Routes
 Route::group(['prefix' => 'errors'], function () {
@@ -53,7 +54,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::resource('blog', 'Blog');
 
 	//General routing - View files need to follow the correct patern 
-	Route::get('/{param1}/{param2}', function ($param1,$param2) {
-	    return view($param1.'.'.$param2);
+	Route::get('/{param1}/{param2}/{param3?}', function ($param1,$param2,$param3 = null) {
+			return view($param1.'.'.$param2)->with('color', $param3);
 	});
 });

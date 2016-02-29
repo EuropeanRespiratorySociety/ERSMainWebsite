@@ -11,6 +11,10 @@ This version makes use of the first version of the *Metanavigation* in the left 
 
 ## Change log
 
+### What is new in 1.1.2
+* New buttons color variations
+* White header with specific param to add at the end of url `/white` it breaks the active and breadcrumb menus.
+
 ### What is new in 1.1.1
 * Bug fix, select2 displays now correctly.
 * Bug fix, multitag input displays now correctly.

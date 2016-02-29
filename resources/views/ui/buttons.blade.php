@@ -7,13 +7,14 @@
         <div class="main-content">
           <!--Color Variants-->
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-2">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Default</div>
                 <div class="panel-body text-center">
                   <div class="content">
                     <button class="btn btn-default">Button Text</button>
                   </div>
+                  <code class="code">.btn-default</code>
                   <div class="color-swatch">
                     <div class="row colors">
                       <div class="col-xs-4 clr-btn-default"></div>
@@ -29,13 +30,15 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+
+            <div class="col-md-2">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Primary</div>
                 <div class="panel-body text-center">
                   <div class="content">
                     <button class="btn btn-primary">Button Text</button>
                   </div>
+                   <code class="code">.btn-primary</code>
                   <div class="color-swatch">
                     <div class="row colors">
                       <div class="col-xs-4 clr-btn-primary"></div>
@@ -51,13 +54,15 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+
+            <div class="col-md-2">
               <div class="panel panel-full-primary">
                 <div class="panel-heading text-center">Dark Primary</div>
                 <div class="panel-body text-center">
                   <div class="content">
                     <button class="btn btn-dark-primary">Button Text</button>
                   </div>
+                   <code class="code">.btn-dark-primary</code>
                   <div class="color-swatch">
                     <div class="row colors">
                       <div class="col-xs-4 clr-btn-dark-primary"></div>
@@ -73,13 +78,15 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+
+            <div class="col-md-2">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Dark</div>
                 <div class="panel-body text-center">
                   <div class="content">
                     <button class="btn btn-dark">Button Text</button>
                   </div>
+                   <code class="code">.btn-dark</code>
                   <div class="color-swatch">
                     <div class="row colors">
                       <div class="col-xs-4 clr-btn-dark"></div>
@@ -95,15 +102,39 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
+
+            <div class="col-md-2">
+              <div class="panel panel-full-dark">
+                <div class="panel-heading text-center">Dark Dark</div>
+                <div class="panel-body text-center">
+                  <div class="content">
+                    <button class="btn btn-dark-dark">Button Text</button>
+                  </div>
+                   <code class="code">.btn-dark-dark</code>
+                  <div class="color-swatch">
+                    <div class="row colors">
+                      <div class="col-xs-4 clr-btn-dark-dark"></div>
+                      <div class="col-xs-4 clr-btn-dark-dark-hover"></div>
+                      <div class="col-xs-4 clr-btn-dark-dark-active"></div>
+                    </div>
+                    <div class="row desc">
+                      <div class="col-xs-4"><span>Normal</span></div>
+                      <div class="col-xs-4"><span>Hover</span></div>
+                      <div class="col-xs-4"><span>Active</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Alt Color 1</div>
                 <div class="panel-body text-center">
                   <div class="content">
                     <button class="btn btn-alt1">Button Text</button>
                   </div>
+                   <code class="code">.btn-alt1</code>
                   <div class="color-swatch">
                     <div class="row colors">
                       <div class="col-xs-4 clr-btn-alt1"></div>
@@ -119,13 +150,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-2">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Alt Color 2</div>
                 <div class="panel-body text-center">
                   <div class="content">
                     <button class="btn btn-alt2">Button Text</button>
                   </div>
+                   <code class="code">.btn-alt2</code>
                   <div class="color-swatch">
                     <div class="row colors">
                       <div class="col-xs-4 clr-btn-alt2"></div>
@@ -141,13 +173,15 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            
+            <div class="col-md-2">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Alt Color 3</div>
                 <div class="panel-body text-center">
                   <div class="content">
                     <button class="btn btn-alt3">Button Text</button>
                   </div>
+                   <code class="code">.btn-alt3</code>
                   <div class="color-swatch">
                     <div class="row colors">
                       <div class="col-xs-4 clr-btn-alt3"></div>
@@ -163,15 +197,39 @@
                 </div>
               </div>
             </div>
+            
+            <div class="col-md-2">
+              <div class="panel panel-full-alt3">
+                <div class="panel-heading text-center">Alt Color 3</div>
+                <div class="panel-body text-center">
+                  <div class="content">
+                    <button class="btn btn-dark-alt3">Button Text</button>
+                  </div>
+                   <code class="code">.btn-dark-alt3</code>
+                  <div class="color-swatch">
+                    <div class="row colors">
+                      <div class="col-xs-4 clr-btn-dark-alt3"></div>
+                      <div class="col-xs-4 clr-btn-dark-alt3-hover"></div>
+                      <div class="col-xs-4 clr-btn-dark-alt3-active"></div>
+                    </div>
+                    <div class="row desc">
+                      <div class="col-xs-4"><span>Normal</span></div>
+                      <div class="col-xs-4"><span>Hover</span></div>
+                      <div class="col-xs-4"><span>Active</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="row">
-            <div class="col-md-6">
+
+            <div class="col-md-2">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">School</div>
                 <div class="panel-body text-center">
                   <div class="content">
                     <button class="btn btn-school">Button Text</button>
                   </div>
+                   <code class="code">.btn-school</code>
                   <div class="color-swatch">
                     <div class="row colors">
                       <div class="col-xs-4 clr-btn-school"></div>
@@ -187,13 +245,39 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+
+            <div class="col-md-2">
+              <div class="panel panel-full-school">
+                <div class="panel-heading text-center">School</div>
+                <div class="panel-body text-center">
+                  <div class="content">
+                    <button class="btn btn-dark-school">Button Text</button>
+                  </div>
+                   <code class="code">.btn-dark-school</code>
+                  <div class="color-swatch">
+                    <div class="row colors">
+                      <div class="col-xs-4 clr-btn-dark-school"></div>
+                      <div class="col-xs-4 clr-btn-dark-school-hover"></div>
+                      <div class="col-xs-4 clr-btn-dark-school-active"></div>
+                    </div>
+                    <div class="row desc">
+                      <div class="col-xs-4"><span>Normal</span></div>
+                      <div class="col-xs-4"><span>Hover</span></div>
+                      <div class="col-xs-4"><span>Active</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Scientific</div>
                 <div class="panel-body text-center">
                   <div class="content">
                     <button class="btn btn-scientific">Button Text</button>
                   </div>
+                   <code class="code">.btn-scientific</code>
                   <div class="color-swatch">
                     <div class="row colors">
                       <div class="col-xs-4 clr-btn-scientific"></div>
@@ -209,15 +293,39 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3">
+
+            <div class="col-md-2">
+              <div class="panel panel-full-scientific">
+                <div class="panel-heading text-center">Scientific</div>
+                <div class="panel-body text-center">
+                  <div class="content">
+                    <button class="btn btn-dark-scientific">Button Text</button>
+                  </div>
+                   <code class="code">.btn-dark-scientific</code>
+                  <div class="color-swatch">
+                    <div class="row colors">
+                      <div class="col-xs-4 clr-btn-dark-scientific"></div>
+                      <div class="col-xs-4 clr-btn-dark-scientific-hover"></div>
+                      <div class="col-xs-4 clr-btn-dark-scientific-active"></div>
+                    </div>
+                    <div class="row desc">
+                      <div class="col-xs-4"><span>Normal</span></div>
+                      <div class="col-xs-4"><span>Hover</span></div>
+                      <div class="col-xs-4"><span>Active</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Success</div>
                 <div class="panel-body text-center">
                   <div class="content">
                     <button class="btn btn-success">Button Text</button>
                   </div>
+                   <code class="code">.btn-success</code>
                   <div class="color-swatch">
                     <div class="row colors">
                       <div class="col-xs-4 clr-btn-success"></div>
@@ -233,13 +341,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Info</div>
                 <div class="panel-body text-center">
                   <div class="content">
                     <button class="btn btn-info">Button Text</button>
                   </div>
+                   <code class="code">.btn-info</code>
                   <div class="color-swatch">
                     <div class="row colors">
                       <div class="col-xs-4 clr-btn-info"></div>
@@ -255,13 +364,15 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+
+            <div class="col-md-2">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Warning</div>
                 <div class="panel-body text-center">
                   <div class="content">
                     <button class="btn btn-warning">Button Text</button>
                   </div>
+                   <code class="code">.btn-warning</code>
                   <div class="color-swatch">
                     <div class="row colors">
                       <div class="col-xs-4 clr-btn-warning"></div>
@@ -277,13 +388,39 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+
+            <div class="col-md-2">
+              <div class="panel panel-full-warning">
+                <div class="panel-heading text-center">Warning</div>
+                <div class="panel-body text-center">
+                  <div class="content">
+                    <button class="btn btn-dark-warning">Button Text</button>
+                  </div>
+                   <code class="code">.btn-dark-warning</code>
+                  <div class="color-swatch">
+                    <div class="row colors">
+                      <div class="col-xs-4 clr-btn-dark-warning"></div>
+                      <div class="col-xs-4 clr-btn-dark-warning-hover"></div>
+                      <div class="col-xs-4 clr-btn-dark-warning-active"></div>
+                    </div>
+                    <div class="row desc">
+                      <div class="col-xs-4"><span>Normal</span></div>
+                      <div class="col-xs-4"><span>Hover</span></div>
+                      <div class="col-xs-4"><span>Active</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Danger</div>
                 <div class="panel-body text-center">
                   <div class="content">
                     <button class="btn btn-danger">Button Text</button>
                   </div>
+                   <code class="code">.btn-danger</code>
                   <div class="color-swatch">
                     <div class="row colors">
                       <div class="col-xs-4 clr-btn-danger"></div>
@@ -299,7 +436,38 @@
                 </div>
               </div>
             </div>
+
+            <div class="col-md-2">
+              <div class="panel panel-full-danger">
+                <div class="panel-heading text-center">Danger</div>
+                <div class="panel-body text-center">
+                  <div class="content">
+                    <button class="btn btn-dark-danger">Button Text</button>
+                  </div>
+                   <code class="code">.btn-dark-danger</code>
+                  <div class="color-swatch">
+                    <div class="row colors">
+                      <div class="col-xs-4 clr-btn-dark-danger"></div>
+                      <div class="col-xs-4 clr-btn-dark-danger-hover"></div>
+                      <div class="col-xs-4 clr-btn-dark-danger-active"></div>
+                    </div>
+                    <div class="row desc">
+                      <div class="col-xs-4"><span>Normal</span></div>
+                      <div class="col-xs-4"><span>Hover</span></div>
+                      <div class="col-xs-4"><span>Active</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+        </div>
+     <div class="ers-content">         
+        <div class="page-head">
+          <h2>Button Utilities</h2>
+        </div>  
+      <div class="main-content">
           <!--Button sizes-->
           <div class="row">
             <div class="col-sm-6">
