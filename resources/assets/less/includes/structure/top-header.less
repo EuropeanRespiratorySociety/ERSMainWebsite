@@ -11,7 +11,7 @@
 			}
 }
   .ers-top-header-bellow-bar {
-    margin-left: 100px;
+    margin-left: @left-sidebar-width;
     margin-top: 81px;
     min-height: 30px;
     z-index: 1029;
@@ -245,7 +245,7 @@
 			}
 
 		}
-		.ers-main-nav-blue{
+		.ers-main-nav{
 	
 			> li{
 
@@ -820,10 +820,12 @@
 
 		@media @non-responsive{
 			border-bottom: 1px solid darken(@light-color, 10%);
+			border-left: 1px solid darken(@light-color, 10%);
 			
 			.navbar-brand{
 				background-color: @light-color;
 				border-bottom-color: lighten(@dark-color, 4%);
+				border-left: 1px solid darken(@light-color, 10%);
 				position: relative;
 				top: 1px;
 
@@ -870,7 +872,7 @@
 					}
 				}
 
-				.ers-main-nav-white{
+				.ers-main-nav{
 
 					> li{
 
@@ -916,7 +918,7 @@
 				}
 
 				//add Rika 260116
-				.ers-main-nav-blue{
+				.ers-main-nav{
 			
 					> li{
 						&.active{
@@ -1046,7 +1048,7 @@
 					}
 				}
 
-				.ers-main-nav-blue{
+				.ers-main-nav{
 
 					> li{
 
@@ -1191,7 +1193,7 @@
 				}
 			}
 
-			> .ers-main-nav-blue{
+			> .ers-main-nav{
 				margin: 0;
 
 				> li{

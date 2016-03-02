@@ -11,6 +11,10 @@ This version makes use of the first version of the *Metanavigation* in the left 
 
 ## Change log
 
+### What is new in 1.1.3
+* `.ers-main-nav-blue` has been renamed to `.ers-main-nav` it works with the white and blue header. 
+* Gray border added on the left of the header for the white bar.
+
 ### What is new in 1.1.2
 * New buttons color variations
 * White header with specific param to add at the end of url `/white` it breaks the active and breadcrumb menus.
