@@ -7,7 +7,7 @@
         <div class="main-content">
           <!--Color Variants-->
           <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Default</div>
                 <div class="panel-body text-center">
@@ -31,7 +31,7 @@
               </div>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Primary</div>
                 <div class="panel-body text-center">
@@ -55,7 +55,7 @@
               </div>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="panel panel-full-primary">
                 <div class="panel-heading text-center">Dark Primary</div>
                 <div class="panel-body text-center">
@@ -79,7 +79,7 @@
               </div>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Dark</div>
                 <div class="panel-body text-center">
@@ -103,7 +103,7 @@
               </div>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="panel panel-full-dark">
                 <div class="panel-heading text-center">Dark Dark</div>
                 <div class="panel-body text-center">
@@ -127,7 +127,7 @@
               </div>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Alt Color 1</div>
                 <div class="panel-body text-center">
@@ -150,7 +150,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Alt Color 2</div>
                 <div class="panel-body text-center">
@@ -174,7 +174,7 @@
               </div>
             </div>
             
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Alt Color 3</div>
                 <div class="panel-body text-center">
@@ -198,7 +198,7 @@
               </div>
             </div>
             
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="panel panel-full-alt3">
                 <div class="panel-heading text-center">Alt Color 3</div>
                 <div class="panel-body text-center">
@@ -222,7 +222,7 @@
               </div>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">School</div>
                 <div class="panel-body text-center">
@@ -246,7 +246,7 @@
               </div>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="panel panel-full-school">
                 <div class="panel-heading text-center">School</div>
                 <div class="panel-body text-center">
@@ -270,7 +270,7 @@
               </div>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Scientific</div>
                 <div class="panel-body text-center">
@@ -294,7 +294,7 @@
               </div>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="panel panel-full-scientific">
                 <div class="panel-heading text-center">Scientific</div>
                 <div class="panel-body text-center">
@@ -318,7 +318,7 @@
               </div>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Success</div>
                 <div class="panel-body text-center">
@@ -341,7 +341,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Info</div>
                 <div class="panel-body text-center">
@@ -365,7 +365,7 @@
               </div>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Warning</div>
                 <div class="panel-body text-center">
@@ -389,7 +389,7 @@
               </div>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="panel panel-full-warning">
                 <div class="panel-heading text-center">Warning</div>
                 <div class="panel-body text-center">
@@ -413,7 +413,7 @@
               </div>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Danger</div>
                 <div class="panel-body text-center">
@@ -437,7 +437,7 @@
               </div>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="panel panel-full-danger">
                 <div class="panel-heading text-center">Danger</div>
                 <div class="panel-body text-center">
