@@ -1,6 +1,6 @@
 # ERS Template
 
-**Version 1.1.1**
+**Version 1.1.4**
 
 The *html structure has changed since previous version* for the header and the left bar. Now the logo is included in the left bar. As such the header had to be moved to the left of the width of the left bar.
 
@@ -10,6 +10,11 @@ This version makes use of the first version of the *Metanavigation* in the left 
 
 
 ## Change log
+
+### What is new in 1.1.4
+* New class for full screen website: `.ers-full-screen`
+* New class for full screen website with metanavigation: `.ers-full-screen-with-metanav` example on fullpage
+* bug fixes
 
 ### What is new in 1.1.3
 * `.ers-main-nav-blue` has been renamed to `.ers-main-nav` it works with the white and blue header. 
@@ -281,3 +286,11 @@ The use of the white bar on this "bootstrap" website is **not** correct as the l
 ## About the right menu
 
 It is not in its final form. We need to see what exactly will be put in it. The Idea is to put what we call "tools" or "myERS tools" *e.g* reimbursment, vote, CME, officer email tool, etc...
+
+## Fullpage websites
+
+You just need to add the class `.ers-full-screen` to the `.ers-wrapper` or you can use the class`.ers-full-screen-with-metanav` in order to keep the metanavigation (left sidebar)
+
+## Blue or White header
+
+Add the class `.ers-blue-header` or `.ers-white-header` to the `.ers-wrapper` in order to change the color. The blue is intended for myERS the white for the ERS main website.

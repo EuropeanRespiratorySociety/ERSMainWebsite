@@ -50,7 +50,7 @@ elixir(function(mix) {
         '../vendor/wow/wow.css',
         '../../../public/css/style.css'
     	]);
-/*
+/**/
     mix.scripts([
         '../vendor/bootstrap/dist/js/bootstrap.min.js',
 
@@ -122,9 +122,9 @@ elixir(function(mix) {
         ], 'public/js/stats.js');
 
         mix.scripts([  
-        '../vendor/fullpagejs/vendors/jquery.easings.min.js.',
-        '../vendor/fullpagejs/vendors/jquery.slimscroll.min.js.',
-        '../vendor/fullpagejs/dist/jquery.fullpage.min.js.'
+        '../vendor/fullpagejs/vendors/jquery.easings.min.js',
+        '../vendor/fullpagejs/vendors/jquery.slimscroll.min.js',
+        '../vendor/fullpagejs/dist/jquery.fullpage.min.js'
         ], 'public/js/fullpage.js');
       
         //Specific copies of files
@@ -136,7 +136,6 @@ elixir(function(mix) {
         //mix.copy('resources/assets/js/app-wow.js', 'public/js/app-wow.js');
         
         mix.copy('resources/assets/vendor/dropzone/upload.php', 'public/pages/upload.php');
-*/
        
 
 });

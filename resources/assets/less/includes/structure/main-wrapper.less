@@ -9,4 +9,60 @@
 	@media @phone{
 		padding-top: 0;
 	}
+
+	&.ers-full-screen{
+
+		padding-top: 0;
+
+			#top-bar{
+				display:none;
+				margin-left:0;
+				
+				-webkit-transition-delay: 1s; /* Safari */
+    			transition-delay: 1s;
+				-webkit-transition: height 2s; /* Safari */
+    			transition: height 2s;
+			}
+
+			#main-nav{
+				display:none!important;
+				margin-top:0;
+
+				-webkit-transition: height 2s; /* Safari */
+    			transition: height 2s;
+			}
+
+			.ers-left-sidebar{
+			display:none;
+			-webkit-transition: width 2s; /* Safari */
+    		transition: width 2s;
+			}
+
+			.ers-content{
+				margin-left:0;
+			}
+	}
+
+	&.ers-full-screen-with-metanav{
+
+		padding-top: 0;
+
+			#top-bar{
+				display:none;
+				
+				-webkit-transition-delay: 1s; /* Safari */
+    			transition-delay: 1s;
+				-webkit-transition: height 10s; /* Safari */
+    			transition: height 10s;
+			}
+
+			#main-nav{
+				display:none!important;
+				margin-top:0;
+
+				-webkit-transition: height 2s; /* Safari */
+    			transition: height 2s;
+			}
+
+	}
 }

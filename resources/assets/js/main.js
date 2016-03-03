@@ -96,7 +96,7 @@ var App = (function () {
 
     /*Sub-menu title func*/
       firstAnchor.on('mouseover',function(){
-        var amScroller = $(this).parent().find(".ers-scroller");
+        var ersScroller = $(this).parent().find(".ers-scroller");
         var li = $(this).parent();
         var subMenu = li.find("> ul");
 
@@ -105,8 +105,8 @@ var App = (function () {
           subMenu.addClass("visible");
         }
 
-        amScroller.nanoScroller({ destroy: true });
-        amScroller.nanoScroller();
+        ersScroller.nanoScroller({ destroy: true });
+        ersScroller.nanoScroller();
 
         //Create sub-menu elements
         if( config.syncSubMenuOnHover ){
@@ -181,7 +181,7 @@ var App = (function () {
             scroller.nanoScroller({ destroy: true });
             scroller.nanoScroller();
           }
-        }, 500, "am_check_phone_classes");
+        }, 500, "ers_check_phone_classes");
       });
   }
 

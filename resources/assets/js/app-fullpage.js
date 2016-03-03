@@ -54,28 +54,24 @@ var App = (function () {
         responsiveWidth: 765,
         responsiveHeight: 0,
 
-        //Custom selectors
+        //Custom selectors 
         sectionSelector: '.section',
         slideSelector: '.slide',
 
         //events
         onLeave: function(index, nextIndex, direction){
-         /*   var leavingSection = $(this);
+            var leavingSection = $(this);
 
             //after leaving section 2
             if(index == 1 && direction =='down'){
-                $('#top-bar').hide('slow');
-                $('#main-nav').css('margin-top', '0px');
-                var height;
-                $('.section').css('height');
-                alert(height);
+                $('div.ers-wrapper').addClass('ers-full-screen-with-metanav');
             }
 
             else if(index == 2 && direction == 'up'){
-                $('.ers-top-header').show('slow');
-                $('#main-nav').css('margin-top', '81px');
+                $('div.ers-wrapper').removeClass('ers-full-screen-with-metanav');           
+
             }
-        */
+        
         },
         afterLoad: function(anchorLink, index){},
         afterRender: function(){},
