@@ -124,6 +124,70 @@
   }
 }
 
+
+.button-variant-transparent(@color; @border) {
+  @background-transparent: transparent;
+  @border-transparent: @border;
+
+  color: @color;
+  background-color: @background-transparent;
+  border-color: @border-transparent;
+
+  &:focus,
+  &.focus {
+    color: @color;
+    background-color: @background-transparent;
+        border-color: lighten(@border-transparent, 40%);
+  }
+
+  &:hover {
+    color: @color;
+    background-color: @background-transparent;
+        border-color: lighten(@border-transparent, 40%);
+  }
+
+  &:active,
+  &.active,
+  .open > .dropdown-toggle& {
+    color: @color;
+    background-color: @background-transparent;
+        border-color: lighten(@border-transparent, 40%);
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: @color;
+      background-color: @background-transparent;
+          border-color: lighten(@border-transparent, 40%);
+    }
+  }
+
+  &:active,
+  &.active,
+  .open > .dropdown-toggle& {
+    background-image: none;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: @background-transparent;
+          border-color: @background-transparent;
+    }
+  }
+
+  .badge {
+    color: @background-transparent;
+    background-color: @color;
+  }
+}
+
 .button-shade(@background) {
   background-color: @background;
   border-color: @background;

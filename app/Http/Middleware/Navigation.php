@@ -30,6 +30,7 @@ class Navigation
                 $menu->uI->add('Modals', 'ui/modals');
                 $menu->uI->add('Nestable-lists', 'ui/nestable-lists');
                 $menu->uI->add('Panels', 'ui/panels');
+                $menu->uI->add('Cards', 'ui/cards');
                 $menu->uI->add('Tabs & Accordions', 'ui/tabs-accordions');
 
               $menu->add('Forms',  'forms');

@@ -1,6 +1,6 @@
 # ERS Template
 
-**Version 1.1.4**
+**Version 1.1.5**
 
 The *html structure has changed since previous version* for the header and the left bar. Now the logo is included in the left bar. As such the header had to be moved to the left of the width of the left bar.
 
@@ -10,6 +10,17 @@ This version makes use of the first version of the *Metanavigation* in the left 
 
 
 ## Change log
+
+### What is new in 1.1.5
+* New class for full screen website with metanavigation: `.ers-full-screen-with-metanav-and-main-nav` example on fullpage
+* Added routing `*/fullscreen`, `*/fullscreen-metanav`, `*/fullscreen-metanav-mainnav`
+* Changed the not connected dashboard page (newsfeed size, login panel, panels height)
+* Modified the non-member dashboard (added modal on icon click, Added new panels)
+* Modified the member dashboard (added hermes panel (member only))
+* Added a new variation for member dashboards -> membership status
+* Added new features in the news feed (Colored panels)
+* Added new transparent buttons
+* Added material design cards (UI) 
 
 ### What is new in 1.1.4
 * New class for full screen website: `.ers-full-screen`
@@ -54,6 +65,7 @@ Here is what is avalaible for now:
 * nestable-lists
 * notifications
 * panels
+* cards
 * tabs-accordions
 * Tables
 
@@ -289,8 +301,19 @@ It is not in its final form. We need to see what exactly will be put in it. The 
 
 ## Fullpage websites
 
-You just need to add the class `.ers-full-screen` to the `.ers-wrapper` or you can use the class`.ers-full-screen-with-metanav` in order to keep the metanavigation (left sidebar)
+You just need to add the class `.ers-full-screen` to the `.ers-wrapper` or you can use the class `.ers-full-screen-with-metanav` in order to keep the metanavigation (left sidebar). Use `.ers-full-screen-with-metanav-and-main-nav` to keep the main navigation of the website.
 
 ## Blue or White header
 
 Add the class `.ers-blue-header` or `.ers-white-header` to the `.ers-wrapper` in order to change the color. The blue is intended for myERS the white for the ERS main website.
+
+## Special test routes
+
+Add to any url:
+* `/white` to see the white header
+* `/fullscreen` to see the website in fullscreen
+* `/fullscreen-metanav` to see the website in fullscreen with the metanavigation only
+* `/fullscreen-metanav-mainnav` to see the website in fullscreen with the metanavigation and the mainnavigation
+
+You can see a "real" example here `/pages/fullpage`
+

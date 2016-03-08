@@ -16,11 +16,9 @@
     <script src="../js/jquery.min.js" type="text/javascript"></script>
   </head>
   <body>
-    @if($color == "white")
-    <div class="ers-wrapper ers-fixed-sidebar ers-white-header">
-    @else
-    <div class="ers-wrapper ers-fixed-sidebar ers-blue-header">
-    @endif
+
+    <div class="ers-wrapper ers-fixed-sidebar {!! $color !!} {!! $display !!}">
+
         <!-- Start Top Nav -->  
             @include('nav.top-nav')
         <!-- End Top Nav -->  

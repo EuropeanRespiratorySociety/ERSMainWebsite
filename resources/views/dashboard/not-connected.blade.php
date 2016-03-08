@@ -2,11 +2,11 @@
 @section('content')
 <div class="ers-content ers-dashboard">
 
-	<div class="ers-dashboard-content col-md-7">
+	<div class="ers-dashboard-content col-md-8">
 		<div class="row">
 			<div class="col-sm-12 col-md-12">
 				<div class="panel info panel-full-info">
-	                <div class="panel-body npaddig">
+	                <div class="panel-body paddig">
 			            <div class="">
 		                    <div class="">
 			                    <h3>Free registration</h3>
@@ -20,7 +20,7 @@
 	            </div>
 	    	</div>
 		</div>
-	    <div class="row">
+	    <div class="row not-connected">
 	    	<div class="col-sm-6 col-md-6">
 				<div class="panel become-a-member panel-full-warning">
 	                <div class="panel-heading">
@@ -48,48 +48,55 @@
 	            </div>
 	    	</div>
 	    	<div class="col-sm-6 col-md-6">
-				<div class="login-container">
-            		<div class="panel panel-primary">
+		        <div class="login-container">
+            		<div class="panel panel-full-primary colored-panel">
+	            		<div class="panel-heading">
+		                	<span class="icon s7-key"></span>
+		                	<span class="title">Login</span>
+		        	    </div>
 	              		<div class="panel-body">
-		                	<form class="form-horizontal" method="get" action="index.html" novalidate="">
-		                  		<div class="login-form">
-				                    <div class="form-group">
-				                      <div class="input-group">
-				                        <span class="input-group-addon">
-				                          <input type="text" class="form-control" autocomplete="off" placeholder="Username" id="username" data-parsley-id="4">
-				                        </span>
-				                      </div>
-				                    </div>
-				                    <div class="form-group">
-				                      <div class="input-group">
-				                        <span class="input-group-addon">
-				                          <input type="password" class="form-control" placeholder="Password" id="password" data-parsley-id="6">
-				                        </span>
-				                      </div>
-				                    </div>
-				                    <div class="form-group login-submit">
-				                      <p class="conditions">Need a myERS account? <a href="#">Sign up</a>.</p>
-				                      <button class="btn btn-alt-special btn-lg" type="submit" data-dismiss="modal">Log me in</button>
-				                    </div>
-				                    <div class="form-group footer row">
-				                      <div class="col-xs-6"><a href="#">Forgot Password?</a></div>
-				                      <div class="col-xs-6 remember">
-				                        <label for="remember">Remember Me</label>
-				                        <div class="ers-checkbox">
-				                          <input type="checkbox" id="remember" data-parsley-multiple="remember" data-parsley-id="9">
-				                          <label for="remember"></label>
-				                        </div>
-				                      </div>
-				                    </div>
-		                  		</div>
-		                	</form>
+		              		
+
+			                	<form class="form-horizontal" method="get" action="index.html" novalidate="">
+			                  		<div class="login-form">
+					                    <div class="form-group">
+					                      <div class="input-group">
+					                        <span class="input-group-addon">
+					                          <input type="text" class="form-control" autocomplete="off" placeholder="Username" id="username" data-parsley-id="4">
+					                        </span>
+					                      </div>
+					                    </div>
+					                    <div class="form-group">
+					                      <div class="input-group">
+					                        <span class="input-group-addon">
+					                          <input type="password" class="form-control" placeholder="Password" id="password" data-parsley-id="6">
+					                        </span>
+					                      </div>
+					                    </div>
+					                    <div class="form-group login-submit">
+					                      <p class="conditions">Need a myERS account? <a href="#">Sign up</a>.</p>
+					                      <button class="btn btn-alt-special btn-lg" type="submit" data-dismiss="modal">Log me in</button>
+					                    </div>
+					                    <div class="form-group footer row">
+					                      <div class="col-xs-6"><a href="#">Forgot Password?</a></div>
+					                      <div class="col-xs-6 remember">
+					                        <label for="remember">Remember Me</label>
+					                        <div class="ers-checkbox">
+					                          <input type="checkbox" id="remember" data-parsley-multiple="remember" data-parsley-id="9">
+					                          <label for="remember"></label>
+					                        </div>
+					                      </div>
+					                    </div>
+			                  		</div>
+			                	</form>
+			                </div>
+
 	              		</div>
             		</div>
-          		</div>
 	        </div>
 	   	</div>
 	</div>
-	@include('newsfeed.newsfeed', array('class' => 'col-md-5'))
+	@include('newsfeed.newsfeed', array('class' => 'col-md-4'))
 
 </div>
 @stop()  

@@ -1,0 +1,218 @@
+.card-variants(@background-color, @text-color){
+  margin:15px 0;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: @background-color;
+  z-index: -1;
+  position: relative;
+  background-clip: padding-box;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+  &.card-dashboard{
+    &.margin{
+      margin:15px 0;
+    }
+    margin:0;
+    max-height:300px;
+    overflow:hiden;
+    z-index:0;
+
+    .nano{
+      height:130px;
+    }
+
+    .card-title{
+      h3{
+        font-size:15px;
+      }
+    }
+
+    .card-image{
+      max-height:100px;
+    }
+
+  }
+
+  &.card-padded{
+    .card-image{
+      z-index:-1;
+    }
+    .card-title{
+      margin: -65px 20px 0;
+      padding-top:5px;
+      border-radius: 2px 2px 0 0;
+      position:relative;
+      z-index:1
+    }
+
+    .card-content{
+      margin: 0 20px 0;
+      position:relative;
+      z-index:1
+    }
+  }
+
+  &.card-centered{
+    .card-title{
+      display:none;
+    }
+
+    .card-image{
+      border-radius: 2px 2px 2px 2px;
+      max-height:100%;
+    }
+
+    .card-content{
+      width:66%;
+      height:66%;
+      margin: auto;
+      position:absolute;
+      border-radius: 2px 2px 2px 2px;
+      left:0;
+      right:0;
+      top:0;
+      bottom:0;
+      z-index:1;
+      padding:16px;
+    }
+
+    .card-action{
+      display:none;
+    }
+  }
+
+  &.card-events{
+    height:120px;
+    overflow:hidden;
+    .card-title{
+      display:none;
+    }
+
+    &.card-xs{
+      height:80px;
+    }
+
+    .card-image{
+      border-radius: 2px 0 0 2px;
+      max-height:120px;
+
+      img{
+        height:120px;
+      }
+    }
+
+    .card-content{
+      width:66%;
+      height:100%;
+      position:absolute;
+      border-radius: 0 2px 2px 0;
+      right:0;
+      top:0;
+      z-index:1;
+      padding:10px;
+
+      a.btn{
+        position:absolute;
+        bottom:5px;
+        right:5px;
+      }
+    }
+
+    .card-action{
+      display:none;
+    }
+
+  }
+ 
+  .card-image {
+    position: relative;
+    overflow: hidden;
+    max-height:170px;
+
+
+    .label{
+      position:absolute;
+      top:5px;
+      left: 5px;
+      z-index:2;
+    }
+
+    img {
+      border-radius: 2px 2px 0 0;
+      background-clip: padding-box;
+      position: relative;
+
+    }
+  }
+
+  .card-title {
+    padding: 16px 16px 1px;
+    background-clip: padding-box;
+    background-color: @background-color;
+    box-sizing: border-box;
+
+
+    h3 {
+        color:@text-color;
+        font-size: 20px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+
+  }
+
+  .card-content {
+    padding: 2px 16px 16px;
+    
+    background-clip: padding-box;
+    background-color: @background-color;
+    box-sizing: border-box;
+
+    p {
+      margin: 0;
+      color: @text-color;
+      .date, .event-type{
+        display:block;
+        font-size:10px;
+        color:lighten(@background-color, 50%);
+      }
+    }
+
+  h3 {
+      color:@text-color;
+      font-size: 20px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+
+    .list-group{
+      color:@light-color;
+    }
+  }
+
+
+  .card-content span.card-title {
+    line-height: 48px;
+  }
+
+  .card-action {
+    border-top: 1px solid darken(@background-color, 5%);
+    border-radius: 0 0 2px 2px;
+    background-color: @background-color;
+    padding: 16px;
+  }
+
+  .card-action a {
+    /*color: @primary-color;
+    margin-right: 16px;
+    transition: color 0.3s ease;
+    text-transform: uppercase;*/
+  }
+
+  .card-action a:hover {
+    /*color: darken(@primary-color,10%);
+    text-decoration: none; */
+  }
+
+
+}

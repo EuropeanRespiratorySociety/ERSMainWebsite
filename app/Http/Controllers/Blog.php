@@ -32,7 +32,7 @@ class Blog extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($param1 = null, $param2 = null)
     {
 
 
@@ -71,9 +71,14 @@ class Blog extends Controller
 
             }
 
-            $posts = (object) $blog;    
+            
+            $params = display($param1, $param2);
 
-            return view('blog.category')->with('posts', $posts);    
+            $posts = (object) $blog;
+
+            $params['posts'] =  $posts;    
+
+            return view('blog.category')->with($params);    
     }
 
     /**
@@ -118,7 +123,7 @@ class Blog extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($id, $param1 = null, $param2 = null)
     {
             //Get a specific item
             $entry = Contentful::entries()
@@ -209,7 +214,11 @@ class Blog extends Controller
             //setting the width of the image on the fly!
             $blog ['imageUrl'] = $assets['items'][0]['fields']['file']['url'].'?'.'w=400&fm=jpg';     
 
-         return view('blog.item')->with('blog', $blog);         
+         $params = display($param1, $param2);
+
+         $params['blog'] = $blog;
+
+         return view('blog.item')->with($params);         
     }
 
     /**
@@ -248,7 +257,50 @@ class Blog extends Controller
 
     
 
+    function display($color, $screen){
 
+            if($screen === null ){
+                $screen = '';
+            }
+
+            if($screen == 'fullscreen' ){
+                $screen = 'ers-full-screen';
+            }
+
+            if($screen == 'fullscreen-metanav' ){
+                $screen = 'ers-full-screen-with-metanav';
+            }
+
+            if($screen == 'fullscreen-metanav-mainnav' ){
+                $screen = 'ers-full-screen-with-metanav-and-main-nav';
+            }
+
+
+            if($color == 'white'){
+                $color = 'ers-white-header';
+            } elseif ($color == 'fullscreen') {
+                $screen = 'ers-full-screen';
+                $color = 'ers-blue-header';
+            }elseif ($color == 'fullscreen-metanav') {
+                $screen = 'ers-full-screen-with-metanav';
+                $color = 'ers-blue-header';
+            }elseif ($color == 'fullscreen-metanav-mainnav') {
+                $screen = 'ers-full-screen-with-metanav-and-main-nav';
+                $color = 'ers-blue-header';
+            }
+            else {
+                $color = 'ers-blue-header';
+            }
+
+
+            $params = array(
+                    'color'     => $color,
+                    'display'   => $screen,
+                );
+
+            return $params;
+
+    }
 
 
 

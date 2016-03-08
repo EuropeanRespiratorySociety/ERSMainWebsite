@@ -36,6 +36,49 @@
 	              </div>
 		    	</div>
 	    	</div>
+
+	    	<div class="user-card col-sm-6 col-md-6">
+		    	<div class="col-md-6">
+					<div class="panel user-panel panel-full-primary">
+						<div class="panel-heading">
+							<a href="/profile/edit"><i class="fa fa-pencil"></i></a>
+						</div>
+		                <div class="panel-body">
+		                	<span class="pull-right"><a href="/profile/member">full profile</a></span>
+		                  <h4>ERS National Delegate</h4>	
+		                  <h3>Dr. Prof. Jane Doe</h3>
+		                </div>
+		             </div>
+			    </div>
+		    	<div class="col-md-6">
+					<div class="panel member-status-panel panel-full-primary">
+		                <div class="panel-heading">
+		                <span class="icon s7-user"></span>
+		                <span class="title">ERS Member</span>
+		            </div>
+					<div class="panel-body">
+	                    <div class="content">
+
+	                            <div>
+	                            	<p>ERS Gold <span class="label label-success pull-right">Active</span></p>
+	                            </div>
+
+	                            <div> 
+	                              <div class="progress primary">
+	                                <div style="width: 90%" class="progress-bar progress-bar-primary"></div>
+	                               </div> 
+	                             </div>
+	                           </tr>
+	                           <div>  
+	                             <td style="width:20%">330 days left</td>
+	                            <td style="width:10%"><a class="btn btn-dark-primary btn-xs pull-right" href="#">Renew</a></td>
+	                          </div>
+
+	                    </div>
+                 	</div>
+	              </div>
+		    	</div>
+	    	</div>
 	</div>
 
 	</div>

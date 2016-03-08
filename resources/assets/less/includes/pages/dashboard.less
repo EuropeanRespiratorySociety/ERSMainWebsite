@@ -12,13 +12,13 @@
 		}
 
 		@media @desktop{
-			.col-md-3,.col-md-6, .col-md-12{
+			.col-md-3,.col-md-6, .col-md-8, .col-md-12{
 				padding-right:0;
 			}
 		}
 
 		@media @laptop{
-			.col-md-3,.col-md-6, .col-md-12{
+			.col-md-3,.col-md-6, .col-md-8, .col-md-12{
 				padding-right:0;
 			}
 		}
@@ -72,11 +72,39 @@
 				}
 				> .panel-body{
 					height:125px;
+
+					h4{
+						margin-top:35px;
+						font-size:12px;
+						text-transform: uppercase;
+					}
 				}
 			}
 
 			.officer-panel{
 				height:300px;
+			}
+
+			.member-status-panel{
+				height:300px;
+
+				.panel-heading{
+					color:@light-color;
+
+					.title{
+						color:@light-color;
+					}
+				}
+
+				.content{
+					padding: 50px 20px 20px;
+
+					div{
+						width:100%;
+						text-align:left;
+						margin-bottom:20px;
+					}
+				}
 			}
 		}
 
@@ -129,6 +157,10 @@
 						font-size: 18px;
 						margin:0;
 						position:absolute;
+					}
+
+					a{
+						cursor:pointer;
 					}
 				}
 
@@ -208,9 +240,10 @@
 				&.padding{
 					padding: 10px 10px 0 10px;
 				}
-
+ 
 				h4{
-					margin-top:35px;
+					margin:10px 0 0 0;
+					padding: 0 20px;
 					font-size:12px;
 					text-transform: uppercase;
 				}
@@ -241,6 +274,8 @@
 
 			&.become-a-member{
 				&.panel{
+					height:300px;
+
 					> .panel-heading{
 						> .title{
 							color: @light-color;
@@ -334,6 +369,18 @@
 					}
 				}
 			}
+
+			&.panel-card{
+				> .panel-heading{
+					-webkit-background-size: contain!important;
+  					-moz-background-size: contain!important;
+  					-o-background-size: contain!important;
+  					background-size: contain !important;
+  					min-height:106px;
+  					margin:0;
+  					padding:10px;
+				}
+			}
 		}
 
 		.login-container{
@@ -345,6 +392,124 @@
 				padding: 20px 50px 0;
 			}
 		}
+
+		.not-connected{
+			.colored-panel{
+				height:450px;
+			}
+
+		.become-a-member{
+				&.panel{
+					height:450px;
+				}
+
+				.scrollable{
+					height: 285px;
+				}
+		}
+			
+		@media @tablet{
+			.login-container{
+				padding-right:15px;
+			}
+		}	
+		@media @phone{
+			.login-container{
+				padding-right:15px;
+			}
+		}
+		/* All this needs to be moved to the login-container */
+			.login-container .panel-full-primary .panel-body form {
+				margin-top:30px;
+			}
+
+			.login-container .panel-full-primary .panel-body .form-group .input-group .form-control {
+			    background-color: transparent;
+			    border: 0 none;
+			    box-shadow: none;
+			    color: #78a1c4;
+			    font-size: 14px;
+			    font-weight: 500;
+			    height: 36px;
+			    padding: 0;
+			}
+
+			.login-container .panel-full-primary .panel-body .form-group .input-group .input-group-addon {
+				    background-color: transparent;
+				    border: 0 none;
+			}
+
+			.login-container .panel-full-primary .panel-body .form-group .input-group {
+			    border-bottom: 1px solid #78a1c4;
+			    padding: 0;
+			}
+
+			.login-container .panel-full-primary .panel-body .form-group {
+				    margin: 0;
+				    padding: 0;
+			}
+			.login-container .panel-full-primary .panel-body .form-group.login-submit {
+				    padding-bottom: 15px;
+				    padding-top: 40px;
+			}
+			.login-container .panel-full-primary .panel-body .form-group {
+			    margin: 0;
+			    padding: 0;
+			}
+
+			.login-container .panel-full-primary .panel-body .form-group.footer {
+			    font-size: 12px;
+			    line-height: 15px;
+			    margin-top: 3px;
+			}
+			.login-container .panel-full-primary .panel-body .form-group {
+			    margin: 0;
+			    padding: 0;
+			}
+
+			.login-container .panel-full-primary .panel-body .form-group.footer {
+			    font-size: 12px;
+			    line-height: 15px;
+			}
+
+			.login-container .panel-full-primary .panel-body .form-group.footer {
+			    font-size: 12px;
+			    line-height: 15px;
+			}
+
+			.login-container .panel-full-primary .panel-body .form-group .remember {
+			    color: #78a1c4;
+			    font-size: 12px;
+			    text-align: right;
+			}
+
+			.login-container .panel-full-primary .panel-body .form-group .remember {
+			    color: #78a1c4;
+			    font-size: 12px;
+			    text-align: right;
+			}
+			.login-container .panel-full-primary .panel-body .form-group .remember label {
+			    cursor: pointer;
+			    font-size: 12px;
+			    margin: 0;
+			}
+			.login-container .panel-full-primary .panel-body .form-group .remember .ers-checkbox {
+			    display: inline-block;
+			    line-height: 0;
+			    margin-left: 7px;
+			}
+
+			.login-container .panel-full-primary .panel-body .form-group .remember .ers-checkbox input[type="checkbox"] + label::before {
+			    border: 1px solid #78a1c4;
+			    height: 14px;
+			    vertical-align: middle;
+			    width: 14px;
+			}
+
+			.login-container .panel-full-primary .panel-body .form-group.login-submit .btn {
+			    width: 100%;
+			}
+		}	
 
 	}
 
@@ -361,6 +526,17 @@
 
 			@media @laptop{	
 					padding-left: 55px;
+			}
+		}
+
+
+	    &.col-md-4{
+			@media @desktop{	
+					padding-left: 50px;
+			}
+
+			@media @laptop{	
+					padding-left: 50px;
 			}
 		}
 
@@ -433,7 +609,26 @@
 				}
 
 				.list-group-item:last-child{
-					min-height:500px;
+					min-height:550px;
+				}
+
+				.list-group-item{
+					&.panel{
+						margin-bottom:0;
+						padding: 20px;
+
+						.content{
+							padding: 20px 0 0 0;
+							.event-type, a{
+							color: @light-color;
+							}
+
+							.buttons{
+								margin-top:20px;
+							}
+							
+						}
+					}
 				}
 
 			}

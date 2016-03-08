@@ -32,6 +32,30 @@
             </div>
 
             <div class="col-md-3">
+              <div class="panel panel-full-primary">
+                <div class="panel-heading text-center">Default Transparent</div>
+                <div class="panel-body text-center">
+                  <div class="content">
+                    <button class="btn btn-transparent">Button Text</button>
+                  </div>
+                  <code class="code">.btn-transparent</code>
+                  <div class="color-swatch">
+                    <div class="row colors">
+                      <div class="col-xs-4 clr-btn-transparent"></div>
+                      <div class="col-xs-4 clr-btn-transparent-hover"></div>
+                      <div class="col-xs-4 clr-btn-transparent-active"></div>
+                    </div>
+                    <div class="row desc">
+                      <div class="col-xs-4"><span>Normal</span></div>
+                      <div class="col-xs-4"><span>Hover</span></div>
+                      <div class="col-xs-4"><span>Active</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
               <div class="panel panel-default">
                 <div class="panel-heading text-center">Primary</div>
                 <div class="panel-body text-center">

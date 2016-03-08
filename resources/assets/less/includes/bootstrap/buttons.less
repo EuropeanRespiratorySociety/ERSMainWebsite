@@ -100,6 +100,10 @@
 }
 
 //Alternative color styles
+.btn-transparent{
+	.button-variant-transparent(@light-color; #efefef);
+}
+
 .btn-dark{
 	.button-variant(@btn-dark-color; @btn-dark-bg; @btn-dark-border);
 }
@@ -132,12 +136,20 @@
 	.button-variant(@btn-school-color; @btn-school-bg; @btn-school-border);
 }
 
+.btn-transparent-school{
+	.button-variant-transparent(@light-color; @btn-school-border);
+}
+
 .btn-dark-school{
 	.button-variant-dark(@btn-school-color; @btn-school-bg; @btn-school-border);
 }
 
 .btn-scientific{
 		.button-variant(@btn-scientific-color; @btn-scientific-bg; @btn-scientific-border);
+}
+
+.btn-transparent-scientific{
+	.button-variant-transparent(@light-color; @btn-scientific-border);
 }
 	
 .btn-dark-scientific{
@@ -152,8 +164,16 @@
 	.button-variant-dark(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
 }
 
+.btn-transparent-danger{
+	.button-variant-transparent(@light-color; @btn-danger-border);
+}
+
 .btn-dark-warning{
 	.button-variant-dark(@btn-warning-color; @btn-warning-bg; @btn-warning-border);
+}
+
+.btn-transparent-warning{
+	.button-variant-transparent(@light-color; @btn-warning-border);
 }
 
 //Shade colors
