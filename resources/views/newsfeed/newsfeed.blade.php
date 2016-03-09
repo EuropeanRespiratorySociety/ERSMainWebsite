@@ -50,8 +50,8 @@
 							                        <h3>Material Cards</h3>
 							                    </div> 
 							                    <div class="card-content">
-							                        <p>Cards for display in portfolio style material design by Google</p>
-							                        <a href="#" target="new_blank" class="btn btn-xs btn-dark-primary pull-right">Link</a>
+							                        <p class="truncate">Cards for display in portfolio style material design by Google</p>
+							                        <a href="#" target="new_blank" class="btn btn-xs btn-dark-primary pull-right absolute">Link</a>
 							                    </div>  
 							                </div>
 							            

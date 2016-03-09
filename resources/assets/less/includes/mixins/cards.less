@@ -10,7 +10,7 @@
 
   &.card-dashboard{
     &.margin{
-      margin:15px 0;
+      margin:0 0 15px 0;
     }
     margin:0;
     max-height:300px;
@@ -36,7 +36,9 @@
   &.card-padded{
     .card-image{
       z-index:-1;
+      max-height:120px;
     }
+
     .card-title{
       margin: -65px 20px 0;
       padding-top:5px;
@@ -74,6 +76,26 @@
       bottom:0;
       z-index:1;
       padding:16px;
+
+      .truncate {
+        width: inherit;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      } 
+
+      .absolute{
+        position:absolute;
+        bottom:10px;
+
+       &.pull-right{
+        right:20px;
+       } 
+      }
+
+      h3{
+        margin-top:10px;
+      }
     }
 
     .card-action{
@@ -127,7 +149,7 @@
   .card-image {
     position: relative;
     overflow: hidden;
-    max-height:170px;
+    max-height:120px;
 
 
     .label{

@@ -318,8 +318,8 @@
                     </div> 
 
                     <div class="card-content">
-                        <p>Cards for display in portfolio style material design by Google.</p>
-                        <a href="#" target="new_blank" class="btn btn-default pull-right">Link</a>
+                        <p class="truncate">Cards for display in portfolio style material design by Google.</p>
+                        <a href="#" target="new_blank" class="btn btn-default pull-right absolute">Link</a>
                     </div>
                     
                 </div>
@@ -335,8 +335,8 @@
                     </div> 
 
                     <div class="card-content">
-                        <p>Cards for display in portfolio style material design by Google.</p>
-                        <a href="#" target="new_blank" class="btn btn-dark-primary pull-right">Link</a>
+                        <p class="truncate">Cards for display in portfolio style material design by Google.</p>
+                        <a href="#" target="new_blank" class="btn btn-dark-primary pull-right absolute">Link</a>
                     </div>
                     
                 </div>
@@ -352,8 +352,8 @@
                     </div> 
 
                     <div class="card-content">
-                        <p>Cards for display in portfolio style material design by Google.</p>
-                        <a href="#" target="new_blank" class="btn btn-dark-school pull-right">Link</a>
+                        <p class="truncate">Cards for display in portfolio style material design by Google.</p>
+                        <a href="#" target="new_blank" class="btn btn-dark-school pull-right absolute">Link</a>
                     </div>
                     
                 </div>
@@ -370,10 +370,10 @@
 
                     <div class="card-content">
                         <h3>Something about school</h3>
-                        <p>Cards for display in portfolio style material design by Google. Cards for display in portfolio style material design by Google.</p>
+                        <p class="truncate">Cards for display in portfolio style material design by Google. Cards for display in portfolio style material design by Google.</p>
                         <p>&nbsp;</p>
-                        <a href="#" target="new_blank" class="btn btn-transparent">Link</a>
-                        <a href="#" target="new_blank" class="btn btn-dark-school pull-right">Link</a>
+                        <a href="#" target="new_blank" class="btn btn-transparent absolute">Link</a>
+                        <a href="#" target="new_blank" class="btn btn-dark-school pull-right absolute">Link</a>
                     </div>
                     
                 </div>
@@ -390,10 +390,10 @@
 
                     <div class="card-content">
                         <h3>Something about school</h3>
-                        <p>Cards for display in portfolio style material design by Google. Cards for display in portfolio style material design by Google.</p>
+                        <p class="truncate">Cards for display in portfolio style material design by Google. Cards for display in portfolio style material design by Google.</p>
                         <p>&nbsp;</p>
-                        <a href="#" target="new_blank" class="btn btn-transparent">Link</a>
-                        <a href="#" target="new_blank" class="btn btn-dark-primary pull-right">Link</a>
+                        <a href="#" target="new_blank" class="btn btn-transparent absolute">Link</a>
+                        <a href="#" target="new_blank" class="btn btn-dark-primary pull-right absolute">Link</a>
                     </div>
                     
                 </div>

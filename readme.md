@@ -1,6 +1,6 @@
 # ERS Template
 
-**Version 1.1.5**
+**Version 1.1.6**
 
 The *html structure has changed since previous version* for the header and the left bar. Now the logo is included in the left bar. As such the header had to be moved to the left of the width of the left bar.
 
@@ -10,6 +10,9 @@ This version makes use of the first version of the *Metanavigation* in the left 
 
 
 ## Change log
+
+### What is new in 1.1.6
+* Bug fixes (Cards)
 
 ### What is new in 1.1.5
 * New class for full screen website with metanavigation: `.ers-full-screen-with-metanav-and-main-nav` example on fullpage
@@ -316,4 +319,16 @@ Add to any url:
 * `/fullscreen-metanav-mainnav` to see the website in fullscreen with the metanavigation and the mainnavigation
 
 You can see a "real" example here `/pages/fullpage`
+
+# How to use Design elements
+
+## Cards
+
+### Default Cards
+
+### Padded Cards
+
+### Centered Cards
+
+### Events Cards
 

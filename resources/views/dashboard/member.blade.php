@@ -395,7 +395,7 @@
 	    	</div>
 
             <div class="col-sm-6 col-md-3">
-                 <div class="card card-school card-events card-dashboard">
+                 <div class="card card-school card-events card-dashboard margin">
                     <div class="card-image">
                         <span class="label label-danger">Few days left</span>
                         <img class="img-responsive" src="../images/hermes.jpg">
@@ -413,7 +413,7 @@
             </div> 
 
             <div class="col-sm-6 col-md-3">
-                 <div class="card card-school card-events card-dashboard">
+                 <div class="card card-school card-events card-dashboard margin">
                     <div class="card-image">
                         <span class="label label-danger">Few days left</span>
                         <img class="img-responsive" src="../images/hermes.jpg">
