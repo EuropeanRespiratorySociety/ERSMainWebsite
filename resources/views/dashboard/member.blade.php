@@ -72,37 +72,46 @@
               </div>
 	    	</div>
 	    	<div class="col-sm-6 col-md-3">
-		    	<div class="panel colored-panel panel-full-primary">
-	                <div class="panel-heading">
+		    	<div class="card card-primary card-dashboard margin panel panel-full-primary">
+	                <div class="card-title panel-heading">
 	                	<span class="icon s7-piggy"></span>
 	                	<span class="title">Reimbursment app</span>
 		                <span class="sub-title">Open Claims</span>
 	                </div>
-	                <div class="panel-body">
-		                	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
-								<ul class="list-group carousel-inner"  role="listbox">
-									<li class="list-group-item item active">
+	                
+		                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+		                	 <div class="carousel-inner">
+								<div class="item active">
+								<a href="#">
+										<div class="card-content">
 										<span class="date">16 June, 2016</span>
 										<span class="event-type">ERS Course</span>
-										<a href="#" class="content">Weaning patients on prolonged mechanical ventilation: a MDT approach</a>		
-									</li>
-									<li class="list-group-item item">
-										<span class="date">16 June, 2016</span>
-										<span class="event-type">ERS International Congress</span>
-										<a href="#" class="content">Session so and so, you have got money for it</a>		
-									</li>
-								</ul>	
-		               		</div>
-		               		<div class="buttons">
-									<a class="btn btn-dark-primary pull-left col-md-2" data-slide="prev" href="#myCarousel">
+										Weaning patients on prolonged mechanical ventilation: a MDT approach		
+									</div>
+									</a>
+								</div>
+								<div class="item ">
+									<a href="#">
+										<div class="card-content">
+										
+											<span class="date">16 June, 2016</span>
+											<span class="event-type">ERS International Congress</span>
+											Session so and so, you have got money for it
+													
+										</div>	
+									</a>
+								</div>
+							</div>	
+		               	</div>
+		               		<div class="card-action">
+									<a class="btn btn-dark-primary" data-slide="prev" href="#myCarousel">
 										<span class="icon s7-angle-left"></span>
 									</a>
-									<a href="#" class="btn btn-dark-primary submit col-md-8">Submit</a>
-									<a class="btn btn-dark-primary pull-right col-md-2" data-slide="next" href="#myCarousel">
+									<a class="btn btn-dark-primary pull-right" data-slide="next" href="#myCarousel">
 										<span class="icon s7-angle-right"></span>
 									</a>	
 							</div>	
-	                </div>
+	                
 	    		</div>
 	    	</div>
 
@@ -211,7 +220,9 @@
 	    	</div>
 
 	    	<div class="col-sm-6 col-md-3">
-		    	 <div class="card card-primary card-dashboard">
+		    	 <div class="card card-primary card-dashboard margin
+		    	 	panel panel-full-primary colored-panel
+		    	 ">
 	                <div class="card-image">
 	                	<span class="label label-danger">Few days left</span>
 	                    <img class="img-responsive" src="../images/london2016.jpg">
@@ -238,7 +249,9 @@
 	    	</div>
 
 	    	<div class="col-sm-6 col-md-3">
-		    	 <div class="card card-school card-dashboard">
+		    	 <div class="card card-school card-dashboard margin
+		    	 	panel panel-full-school colored-panel
+		    	 ">
 	                <div class="card-image">
 	                	<span class="label label-danger">Few days left</span>
 	                    <img class="img-responsive" src="../images/hermes.jpg">

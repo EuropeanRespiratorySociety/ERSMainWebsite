@@ -1,6 +1,6 @@
 # ERS Template
 
-**Version 1.1.6**
+**Version 1.1.7**
 
 The *html structure has changed since previous version* for the header and the left bar. Now the logo is included in the left bar. As such the header had to be moved to the left of the width of the left bar.
 
@@ -10,6 +10,15 @@ This version makes use of the first version of the *Metanavigation* in the left 
 
 
 ## Change log
+
+### What is new in 1.1.7
+* New feature: Guided tour
+* Added Javascript Cookies
+* Bug fix: Z-index on cards prevented to click buttons.
+* Reimbursment app fix -> moved into a card with special tricks (fixed height like a panel, whole content of each slide is a link, etc.)
+* Fixed card color for school cards.
+* @ToDo fix login/signup for colors and weight.
+
 
 ### What is new in 1.1.6
 * Bug fixes (Cards)
@@ -84,6 +93,7 @@ Here is what is avalaible for now:
 * 403/404/503 etc... (try it by passing the last param of the url with the code you whish to dispay.)
 * Calendar
 * Stats
+* Guided Tour
 
 ## User pages (Profile)
 
@@ -125,6 +135,7 @@ Library | Version
 [dataTables](http://datatables.net/) | 1.10.9
 [dataTables Buttons](https://github.com/DataTables/Buttons) | 1.0.3
 [Dropzonejs](http://www.dropzonejs.com) | 4.0.0
+[EnjoyHint](http://xbsoftware.github.io/enjoyhint/) | 3.1.0
 [Font Awesome](https://fortawesome.github.io/Font-Awesome/) | 4.4.0
 [FullCalendar](http://fullcalendar.io/) | 1.6.4
 [Fullpagejs](https://github.com/alvarotrigo/fullPage.js) | 2.7.7
@@ -138,6 +149,7 @@ Library | Version
 [jQuery Sparkline](https://github.com/kapusta/jquery.sparkline) | 2.1.3
 [jQuery UI](https://jqueryui.com/) | 1.11.4
 [jQuery Vectormap](http://jvectormap.com/) | 1.2.2
+[JS Cookie](https://github.com/js-cookie/js-cookie) | 2.1.0
 [Google Prettify](https://github.com/google/code-prettify) | latest
 [Gritter](https://github.com/jboesch/Gritter) | 1.7.4
 [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/) | 1.0.0
@@ -287,7 +299,56 @@ You also need to initialize WOW:
       });
     </script>
   ```  
-The offset is used to offset the top navigation. You can [test all effects](http://daneden.github.io/animate.css/). You can also see a [selection live](http://erstemplate.app/pages/fullpage#animation-support).
+The offset is used to offset the top navigation. You can [test all effects](http://daneden.github.io/animate.css/). You can also see a [selection live](http://bootstrap.ersnet.org/pages/fullpage#animation-support).
+
+## EnjoyHint
+
+You can create a guided tour with enjoy hint. Load the specific script for your tour (Check how to add your own JS above) by creating your own componsent.  Initialize it as follow:
+
+
+  ```
+    <script src="../js/app-enjoyhint-demo.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        //initialize the javascript
+        App.enjoyHintDemo();
+      });
+    </script>
+  ```  
+Replace `enjoyHintDemo()` by your own function such as `enjoyHintRegisterToCongress()`. EnjoyHint is available within the main JS File.
+
+Use cookies in order to show the Guided tour only once. You can continue a tour on the next page also by setting cookies.
+
+## Setting and Getting cookies
+
+Anywhere on the site you can get or set cookies as follow:
+
+Create a cookie, valid across the entire site:
+
+```javascript
+Cookies.set('name', 'value');
+```
+
+Create a cookie that expires 7 days from now, valid across the entire site:
+
+```javascript
+Cookies.set('name', 'value', { expires: 7 });
+```
+
+Read cookie:
+
+```javascript
+Cookies.get('name'); // => 'value'
+Cookies.get('nothing'); // => undefined
+```
+
+Delete cookie:
+
+```javascript
+Cookies.remove('name');
+```
+
+For more read the plugin's documentation
 
 ## About the white bar on the left
 

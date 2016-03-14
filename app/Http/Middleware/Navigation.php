@@ -48,6 +48,7 @@ class Navigation
                   $menu->pages->add('Blank With Aside','pages/blank-aside');
                   $menu->pages->add('Calendar','pages/calendar');
                   $menu->pages->add('Fullpage','pages/fullpage');
+                  $menu->pages->add('Guided Tour','pages/guided-tour');
                   $menu->pages->add('Stats','pages/stats');
     
               $menu->add('Profile', 'profile');

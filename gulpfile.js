@@ -23,15 +23,18 @@ elixir(function(mix) {
     |
     */
 
-  /*  mix.copy('resources/assets/fonts', 'public/fonts');
+  /**/  
+
+    mix.copy('resources/assets/fonts', 'public/fonts');
     mix.copy('resources/assets/vendor/bootstrap/dist/fonts', 'public/fonts/glyphicons');
+    mix.copy('resources/assets/vendor/enjoyhint/src/Casino_Hand', 'public/fonts/Casino_Hand');
 
     mix.copy('resources/html/images', 'public/images');
       
     //this was taken out from the main file for Kendo to work on myERS
     mix.copy('resources/assets/vendor/jquery/jquery.min.js', 'public/js/jquery.min.js');
  
-/*  */
+/**/
     mix.less('style.less');
     mix.styles([
         '../vendor/select2/css/select2.min.css',
@@ -48,9 +51,10 @@ elixir(function(mix) {
         '../vendor/datatables/css/dataTables.bootstrap.min.css',
         '../vendor/fullpagejs/dist/jquery.fullpage.min.css',
         '../vendor/wow/wow.css',
+        '../vendor/enjoyhint/src/jquery.enjoyhint.css',
         '../../../public/css/style.css'
     	]);
-/*
+/**/
     mix.scripts([
         '../vendor/bootstrap/dist/js/bootstrap.min.js',
 
@@ -83,6 +87,8 @@ elixir(function(mix) {
         '../vendor/jquery.fullcalendar/fullcalendar.js',
         '../vendor/skycons/skycons.js',
         '../vendor/wow/wow.js',
+        '../vendor/js-cookie/src/js.cookie.js',
+        '../vendor/enjoyhint/enjoyhint.min.js', //url of the font has to be changed in case of update of this file
 
         'app-tables-datatables.js',
         //'app-ui-notifications.js',
@@ -133,9 +139,10 @@ elixir(function(mix) {
 
         mix.copy('resources/assets/js/app-stats.js', 'public/js/app-stats.js');
         mix.copy('resources/assets/js/app-fullpage.js', 'public/js/app-fullpage.js');
+        mix.copy('resources/assets/js/app-enjoyhint-demo.js', 'public/js/app-enjoyhint-demo.js');
         //mix.copy('resources/assets/js/app-wow.js', 'public/js/app-wow.js');
         
         mix.copy('resources/assets/vendor/dropzone/upload.php', 'public/pages/upload.php');
-     */  
+      
 
 });
