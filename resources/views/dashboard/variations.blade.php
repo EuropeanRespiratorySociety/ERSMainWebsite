@@ -23,7 +23,7 @@
 		                <div class="panel-heading">
 		                <span class="icon s7-bell"></span>
 		                <span class="title">ERS Officer</span>
-		                <span class="sub-title">To-do list</span>
+		                <span class="sub-title">Notifications</span>
 		                </div>
 		                <div class="panel-body">
 							<ul class="list-group">
@@ -54,7 +54,7 @@
 					<div class="panel member-status-panel panel-full-primary">
 		                <div class="panel-heading">
 		                <span class="icon s7-user"></span>
-		                <span class="title">ERS Member</span>
+		                <span class="title">Membership</span>
 		            </div>
 					<div class="panel-body">
 	                    <div class="content">

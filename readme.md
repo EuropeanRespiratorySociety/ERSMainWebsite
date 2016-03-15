@@ -1,6 +1,6 @@
 # ERS Template
 
-**Version 1.1.7**
+**Version 1.1.8**
 
 The *html structure has changed since previous version* for the header and the left bar. Now the logo is included in the left bar. As such the header had to be moved to the left of the width of the left bar.
 
@@ -8,60 +8,9 @@ The *html structure has changed since previous version* for the header and the l
 
 This version makes use of the first version of the *Metanavigation* in the left bar. It is **not finished**. It is just a test for many sub-levels and it needs to be styled.
 
+-------------------
 
-## Change log
-
-### What is new in 1.1.7
-* New feature: Guided tour
-* Added Javascript Cookies
-* Bug fix: Z-index on cards prevented to click buttons.
-* Reimbursment app fix -> moved into a card with special tricks (fixed height like a panel, whole content of each slide is a link, etc.)
-* Fixed card color for school cards.
-* @ToDo fix login/signup for colors and weight.
-
-
-### What is new in 1.1.6
-* Bug fixes (Cards)
-
-### What is new in 1.1.5
-* New class for full screen website with metanavigation: `.ers-full-screen-with-metanav-and-main-nav` example on fullpage
-* Added routing `*/fullscreen`, `*/fullscreen-metanav`, `*/fullscreen-metanav-mainnav`
-* Changed the not connected dashboard page (newsfeed size, login panel, panels height)
-* Modified the non-member dashboard (added modal on icon click, Added new panels)
-* Modified the member dashboard (added hermes panel (member only))
-* Added a new variation for member dashboards -> membership status
-* Added new features in the news feed (Colored panels)
-* Added new transparent buttons
-* Added material design cards (UI) 
-
-### What is new in 1.1.4
-* New class for full screen website: `.ers-full-screen`
-* New class for full screen website with metanavigation: `.ers-full-screen-with-metanav` example on fullpage
-* bug fixes
-
-### What is new in 1.1.3
-* `.ers-main-nav-blue` has been renamed to `.ers-main-nav` it works with the white and blue header. 
-* Gray border added on the left of the header for the white bar.
-
-### What is new in 1.1.2
-* New buttons color variations
-* White header with specific param to add at the end of url `/white` it breaks the active and breadcrumb menus.
-
-### What is new in 1.1.1
-* Bug fix, select2 displays now correctly.
-* Bug fix, multitag input displays now correctly.
-* Bug fix, multitag select displays now correctly.
-* Bug fix (temporary until nicer dropdown), contrast is now better for active links in dropdown.
-
-### What is new in 1.1.0
-* Dashboard
-* Few bug fixes
-
-### What is new in 1.0.1
-* Errors example for signup/login forms
-* Ads section with animations on signup/login pages
-* Neutral image for users with no profile image
-* Metanavigation first draft.  
+The Change log is now at the end of this file.
 
 -------------------
 
@@ -392,4 +341,70 @@ You can see a "real" example here `/pages/fullpage`
 ### Centered Cards
 
 ### Events Cards
+
+
+
+-------------------
+## Change log
+
+### What is new in 1.1.8
+* Newsfeed - All panels are now standardized
+* Newsfeed - Each news can now be hidden
+* Dashboard - fixed Reimbursment app
+* Dashboard - Added Congress certificate panel @ToDo create a square image for the congress image
+* Dashboard - Added CME summary card
+* Dashboard - Vote now vertically aligned and no text.
+* Dashboard - Fixed some titles.
+* Added language switcher
+
+### What is new in 1.1.7
+* New feature: Guided tour
+* Added Javascript Cookies
+* Bug fix: Z-index on cards prevented to click buttons.
+* Reimbursment app fix -> moved into a card with special tricks (fixed height like a panel, whole content of each slide is a link, etc.)
+* Fixed card color for school cards.
+* @ToDo fix login/signup for colors and weight.
+
+### What is new in 1.1.6
+* Bug fixes (Cards)
+
+### What is new in 1.1.5
+* New class for full screen website with metanavigation: `.ers-full-screen-with-metanav-and-main-nav` example on fullpage
+* Added routing `*/fullscreen`, `*/fullscreen-metanav`, `*/fullscreen-metanav-mainnav`
+* Changed the not connected dashboard page (newsfeed size, login panel, panels height)
+* Modified the non-member dashboard (added modal on icon click, Added new panels)
+* Modified the member dashboard (added hermes panel (member only))
+* Added a new variation for member dashboards -> membership status
+* Added new features in the news feed (Colored panels)
+* Added new transparent buttons
+* Added material design cards (UI) 
+
+### What is new in 1.1.4
+* New class for full screen website: `.ers-full-screen`
+* New class for full screen website with metanavigation: `.ers-full-screen-with-metanav` example on fullpage
+* bug fixes
+
+### What is new in 1.1.3
+* `.ers-main-nav-blue` has been renamed to `.ers-main-nav` it works with the white and blue header. 
+* Gray border added on the left of the header for the white bar.
+
+### What is new in 1.1.2
+* New buttons color variations
+* White header with specific param to add at the end of url `/white` it breaks the active and breadcrumb menus.
+
+### What is new in 1.1.1
+* Bug fix, select2 displays now correctly.
+* Bug fix, multitag input displays now correctly.
+* Bug fix, multitag select displays now correctly.
+* Bug fix (temporary until nicer dropdown), contrast is now better for active links in dropdown.
+
+### What is new in 1.1.0
+* Dashboard
+* Few bug fixes
+
+### What is new in 1.0.1
+* Errors example for signup/login forms
+* Ads section with animations on signup/login pages
+* Neutral image for users with no profile image
+* Metanavigation first draft.  
 
