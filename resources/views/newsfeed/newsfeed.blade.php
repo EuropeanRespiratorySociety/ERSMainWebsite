@@ -24,118 +24,165 @@
 		                <div class="ers-scroller nano has-scrollbar scrollable">
 		                	<div class="nano-content">
 								<ul class="list-group">
-									<li class="list-group-item panel panel-full-school">
-										<div class="cover-image" style="background: transparent url('../images/cover-image.png') center center no-repeat;">
-											<span class="flag label label-default pull-left">New</span>
-										</div>
-										<div class="content">	
-											<span class="date">26-27 Sept, 2016</span>
-											<span class="event-type">ERS Course</span>
-											<a href="#">Interventional pulomonology</a>
-											<div class="buttons">
-												<a class="btn btn-transparent-school col-md-9" href="#">view</a>
-												<a class="btn btn-dark-school col-md-3" href="#">register</a>
-											</div>	
-											<div class="clearfix"></div>												
-										</div>									
-									</li>
 
-									<li class="list-group-item panel panel-full-default">							
-										
-							                <div class="card card-primary card-centered card-dashboard">
-							                    <div class="card-image">
-							                        <img class="img-responsive" src="../images/london2016.jpg">
-							                    </div>        
-							                    <div class="card-title">
-							                        <h3>Material Cards</h3>
-							                    </div> 
-							                    <div class="card-content">
-							                        <p class="truncate">Cards for display in portfolio style material design by Google</p>
-							                        <a href="#" target="new_blank" class="btn btn-xs btn-dark-primary pull-right absolute">Link</a>
-							                    </div>  
-							                </div>
-							            
-							        </li>    
-									<li class="list-group-item panel panel-full-warning">
-										<div class="cover-image" style="background: transparent url('../images/cover-image.png') center center no-repeat;">
-											<span class="flag label label-default pull-left">New</span>
-										</div>
-										<div class="content">	
-											<span class="date">26-27 Sept, 2016</span>
-											<span class="event-type">ERS Course</span>
-											<a href="#">Interventional pulomonology</a>
-											<div class="buttons">
-												<a class="btn btn-transparent-warning col-md-9" href="#">view</a>
-												<a class="btn btn-dark-warning col-md-3" href="#">register</a>
-											</div>	
-											<div class="clearfix"></div>												
-										</div>		
-									</li>
 									<li class="list-group-item panel panel-full-default">
-										<div class="card card-primary card-events card-dashboard">
-						                    <div class="card-image">
-						                        <span class="label label-danger">Few days left</span>
-						                        <img class="img-responsive" src="../images/london2016.jpg">
-						                    </div>
-				                            <div class="card-content">
-				                                <p>
-				                                    <span class="date">Abstract submissions closes on August 5, 2016</span>
-				                                    <span class="event-type">Congress 2016</span>
-				                                    Submit your abstract for the International congress 2016
-				                                          
-				                                </p>
-				                                <a href="#" target="new_blank" class="btn btn-xs btn-dark-primary pull-right">Link</a>
-				                            </div>
-                        				</div> 
-									</li>
-									<li class="list-group-item panel panel-full-school">
-										<div class="card card-dark card-dashboard">
+										<div class="card card-default card-dashboard">
 							                <div class="card-image">
 							                    <img class="img-responsive" src="../images/london2016.jpg">
 							                </div>
 							                <div class="card-title">
-							                    <h3>Material Cards - Dark</h3>
+							                	<div class="icon pull-right">
+													<a href="#">hide this news <span class="s7-close pull-right"></span></a>
+												</div>
+							                    <h3>Default News</h3>
+							                </div>                 
+							                <div class="card-content">
+							                    <p>The panel is set to default and the card to primary.</p>
+							                </div>
+							                
+							                <div class="card-action">
+							                    <a href="#" target="new_blank" class="btn btn-default">Link</a>
+							                    <a href="#" target="new_blank"  class="btn btn-dark-primary pull-right">Link</a>
+							                </div>
+							            </div>
+           							 </li>
+
+									<li class="list-group-item panel panel-full-default">
+										<div class="card card-primary card-dashboard">
+							                <div class="card-image">
+							                    <img class="img-responsive" src="../images/london2016.jpg">
+							                </div>
+							                <div class="card-title">
+							                	<div class="icon pull-right">
+													<a href="#">hide this news <span class="s7-close pull-right"></span></a>
+												</div>
+							                    <h3>Default News with impact</h3>
+							                </div>                 
+							                <div class="card-content">
+							                    <p>The panel is set to default and the card to primary.</p>
+							                </div>
+							                
+							                <div class="card-action">
+							                    <a href="#" target="new_blank" class="btn btn-transparent">Link</a>
+							                    <a href="#" target="new_blank"  class="btn btn-dark-primary pull-right">Link</a>
+							                </div>
+							            </div>
+           							 </li>
+           							 
+									<li class="list-group-item panel panel-full-school">
+										<div class="card card-school card-dashboard">
+							                <div class="card-image">
+							                    <img class="img-responsive" src="../images/london2016.jpg">
+							                </div>
+							                <div class="card-title">
+							                	<div class="icon pull-right">
+													<a href="#">hide this news <span class="s7-close pull-right"></span></a>
+												</div>							                
+							                    <h3>Education news</h3>
 							                </div>                 
 							                <div class="card-content">
 							                    <p>Cards for display in portfolio style material design by Google.</p>
 							                </div>
 							                
 							                <div class="card-action">
-							                    <a href="#" target="new_blank" class="btn btn-dark-dark">Link</a>
-							                    <a href="#" target="new_blank"  class="btn btn-danger pull-right">Link</a>
+							                    <a href="#" target="new_blank" class="btn btn-transparent">Link</a>
+							                    <a href="#" target="new_blank"  class="btn btn-dark-school pull-right">Link</a>
 							                </div>
 							            </div>
            							 </li>
-									<li class="list-group-item">
-										<div class="cover-image" style="background: transparent url('../images/cover-image.png') center center no-repeat;">
-											<span class="flag label label-default pull-left">New</span>
-										</div>
-										<div class="content">	
-											<span class="date">26-27 Sept, 2016</span>
-											<span class="event-type">ERS Course</span>
-											<a href="#">Interventional pulomonology</a>
-											<div class="buttons">
-												<a class="btn btn-default col-md-9" href="#">view</a>
-												<a class="btn btn-dark col-md-3" href="#">register</a>
-											</div>	
-											<div class="clearfix"></div>												
-										</div>		
-									</li>
+           							 
+									<li class="list-group-item panel panel-full-scientific">
+										<div class="card card-scientific card-dashboard">
+							                <div class="card-image">
+							                    <img class="img-responsive" src="../images/london2016.jpg">
+							                </div>
+							                <div class="card-title">
+							                	<div class="icon pull-right">
+													<a href="#">hide this news <span class="s7-close pull-right"></span></a>
+												</div>							                
+							                    <h3>Scientific news</h3>
+							                </div>                 
+							                <div class="card-content">
+							                    <p>Cards for display in portfolio style material design by Google.</p>
+							                </div>
+							                
+							                <div class="card-action">
+							                    <a href="#" target="new_blank" class="btn btn-transparent">Link</a>
+							                    <a href="#" target="new_blank"  class="btn btn-dark-scientific pull-right">Link</a>
+							                </div>
+							            </div>
+           							 </li>
+
 									<li class="list-group-item panel panel-full-danger">
-										<div class="cover-image" style="background: transparent url('../images/cover-image.png') center center no-repeat;">
-											<span class="flag label label-default pull-left">New</span>
-										</div>
-										<div class="content">	
-											<span class="date">26-27 Sept, 2016</span>
-											<span class="event-type">ERS Course</span>
-											<a href="#">Interventional pulomonology</a>
-											<div class="buttons">
-												<a class="btn btn-transparent-danger col-md-9" href="#">view</a>
-												<a class="btn btn-dark-danger col-md-3" href="#">register</a>
-											</div>	
-											<div class="clearfix"></div>												
-										</div>		
-									</li>
+										<div class="card card-danger card-dashboard">
+							                <div class="card-image">
+							                    <img class="img-responsive" src="../images/london2016.jpg">
+							                </div>
+							                <div class="card-title">
+							                	<div class="icon pull-right">
+													<a href="#">hide this news <span class="s7-close pull-right"></span></a>
+												</div>							                
+							                    <h3>Danger news</h3>
+							                </div>                 
+							                <div class="card-content">
+							                    <p>Cards for display in portfolio style material design by Google.</p>
+							                </div>
+							                
+							                <div class="card-action">
+							                    <a href="#" target="new_blank" class="btn btn-transparent">Link</a>
+							                    <a href="#" target="new_blank"  class="btn btn-dark-danger pull-right">Link</a>
+							                </div>
+							            </div>
+           							 </li>
+
+									<li class="list-group-item panel panel-full-default">
+										<div class="card card-default card-dashboard">
+							                <div class="card-image">
+							                    <img class="img-responsive" src="../images/london2016.jpg">
+							                </div>
+							                <div class="card-title">
+							                	<div class="icon pull-right">
+													<a href="#">hide this news <span class="s7-close pull-right"></span></a>
+												</div>							                
+							                    <h3>Default News</h3>
+							                </div>                 
+							                <div class="card-content">
+							                    <p>The panel is set to default and the card to primary.</p>
+							                </div>
+							                
+							                <div class="card-action">
+							                    <a href="#" target="new_blank" class="btn btn-default">Link</a>
+							                    <a href="#" target="new_blank" class="btn btn-default">Link</a>
+							                    <a href="#" target="new_blank"  class="btn btn-dark-primary pull-right">Link</a>
+							                </div>
+							            </div>
+           							 </li>
+
+									<li class="list-group-item panel panel-full-default">
+										<div class="card card-primary card-dashboard">
+							                <div class="card-image">
+							                    <img class="img-responsive" src="../images/london2016.jpg">
+							                </div>
+							                <div class="card-title">
+							                	<div class="icon pull-right">
+													<a href="#">hide this news <span class="s7-close pull-right"></span></a>
+												</div>							                
+							                    <h3>Default News with impact</h3>
+							                </div>                 
+							                <div class="card-content">
+							                    <p>The panel is set to default and the card to primary.</p>
+							                </div>
+							                
+							                <div class="card-action">
+							                    <a href="#" target="new_blank" class="btn btn-transparent">Link</a>
+							                    <a href="#" target="new_blank" class="btn btn-transparent">Link</a>
+							                    <a href="#" target="new_blank" class="btn btn-transparent">Link</a>
+							                    <a href="#" target="new_blank"  class="btn btn-dark-primary pull-right">Link</a>
+							                </div>
+							            </div>
+           							 </li>
+
+
 								</ul>
 							</div>
 		                </div>

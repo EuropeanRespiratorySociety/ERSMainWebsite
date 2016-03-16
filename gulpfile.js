@@ -23,8 +23,9 @@ elixir(function(mix) {
     |
     */
 
+  /* 
 
- /**/ 
+ /*
     mix.copy('resources/assets/fonts', 'public/fonts');
  
     
@@ -36,8 +37,8 @@ elixir(function(mix) {
     //this was taken out from the main file for Kendo to work on myERS
     mix.copy('resources/assets/vendor/jquery/jquery.min.js', 'public/js/jquery.min.js');
 
-    
- 
+   */ 
+ 0
 /**/
     mix.less('style.less');
     mix.styles([
@@ -92,6 +93,7 @@ elixir(function(mix) {
         '../vendor/skycons/skycons.js',
         '../vendor/wow/wow.js',
         '../vendor/js-cookie/src/js.cookie.js',
+        '../vendor/countup/countUp.min.js',
         '../vendor/enjoyhint/enjoyhint.min.js', //url of the font has to be changed in case of update of this file
 
         'app-tables-datatables.js',
@@ -104,8 +106,7 @@ elixir(function(mix) {
 
     	'init.js'
     	]);
-        
-   
+
         mix.scripts([  
         '../vendor/jquery-flot/jquery.flot.js', 
         '../vendor/jquery-flot/jquery.flot.pie.js', 
@@ -126,7 +127,7 @@ elixir(function(mix) {
         '../vendor/jquery.vectormap/maps/jquery-jvectormap-map.js', 
         '../vendor/jquery.vectormap/maps/jquery-jvectormap-ca-lcc-en.js', 
 
-        '../vendor/countup/countUp.min.js',
+       
         '../vendor/chartjs/Chart.min.js'
 
         ], 'public/js/stats.js');
@@ -147,6 +148,5 @@ elixir(function(mix) {
         //mix.copy('resources/assets/js/app-wow.js', 'public/js/app-wow.js');
         
         mix.copy('resources/assets/vendor/dropzone/upload.php', 'public/pages/upload.php');
-      
 
 });

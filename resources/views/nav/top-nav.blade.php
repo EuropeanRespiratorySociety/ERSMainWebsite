@@ -27,6 +27,20 @@
                   <li><a href="#"> <span class="icon s7-config"></span>Settings</a></li>
                   <li><a href="#"> <span class="icon s7-help1"></span>Help</a></li>
                   <li><a href="#"> <span class="icon s7-power"></span>Sign Out</a></li>
+                  <li class="divider"></li>
+                  <li>
+                        <div class="input-group input-group-sm xs-mb-15">
+                          <select class="form-control">
+                            <option>English</option>
+                            <option>French</option>
+                            <option>German</option>
+                            <option>Spanish</option>
+                            <option>Japanese</option>
+                            <option>Russian</option>
+                          </select>
+                        </div>
+                  </li>
+
                 </ul>
               </li>
             </ul>
