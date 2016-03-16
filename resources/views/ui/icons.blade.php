@@ -1056,6 +1056,37 @@
               </div>
             </div>
 
+            <div class="col-xs-6 col-sm-3 col-lg-2">
+              <div class="icon-container">
+                <div class="icon"><span class="icon-hotel"></span></div><span class="class">icon-hotel</span>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-lg-2">
+              <div class="icon-container">
+                <div class="icon"><span class="icon-hotel-2"></span></div><span class="class">icon-hotel-2</span>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-lg-2">
+              <div class="icon-container">
+                <div class="icon"><span class="icon-parking"></span></div><span class="class">icon-parking</span>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-lg-2">
+              <div class="icon-container">
+                <div class="icon"><span class="icon-taxi"></span></div><span class="class">icon-taxi</span>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-lg-2">
+              <div class="icon-container">
+                <div class="icon"><span class="icon-train"></span></div><span class="class">icon-train</span>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>	
