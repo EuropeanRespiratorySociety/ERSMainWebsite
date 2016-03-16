@@ -23,9 +23,11 @@ elixir(function(mix) {
     |
     */
 
-  /**/  
 
+ /**/ 
     mix.copy('resources/assets/fonts', 'public/fonts');
+ 
+    
     mix.copy('resources/assets/vendor/bootstrap/dist/fonts', 'public/fonts/glyphicons');
     mix.copy('resources/assets/vendor/enjoyhint/src/Casino_Hand', 'public/fonts/Casino_Hand');
 
@@ -33,6 +35,8 @@ elixir(function(mix) {
       
     //this was taken out from the main file for Kendo to work on myERS
     mix.copy('resources/assets/vendor/jquery/jquery.min.js', 'public/js/jquery.min.js');
+
+    
  
 /**/
     mix.less('style.less');

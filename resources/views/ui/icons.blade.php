@@ -1049,6 +1049,13 @@
                 <div class="icon"><span class="s7-airplay"></span></div><span class="class">s7-airplay</span>
               </div>
             </div>
+
+             <div class="col-xs-6 col-sm-3 col-lg-2">
+              <div class="icon-container">
+                <div class="icon"><span class="icon-meal"></span></div><span class="class">icon-meal</span>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>	
