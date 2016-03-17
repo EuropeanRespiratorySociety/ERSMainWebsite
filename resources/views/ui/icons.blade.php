@@ -1082,9 +1082,11 @@
 
             <div class="col-xs-6 col-sm-3 col-lg-2">
               <div class="icon-container">
-                <div class="icon"><span class=""></span></div><span class="class">...</span>
+                <div class="icon"><span class="icon-handout"></span></div><span class="class">icon-handout</span>
               </div>
             </div>
+
+
 
           
 
