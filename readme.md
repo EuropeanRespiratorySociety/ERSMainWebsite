@@ -330,22 +330,13 @@ Add to any url:
 
 You can see a "real" example here `/pages/fullpage`
 
-# How to use Design elements
-
-## Cards
-
-### Default Cards
-
-### Padded Cards
-
-### Centered Cards
-
-### Events Cards
-
 
 
 -------------------
 ## Change log
+
+### What is new in 1.1.9
+* New Metanavigation (sliding with small breadcrumb)
 
 ### What is new in 1.1.8
 * Newsfeed - All panels are now standardized

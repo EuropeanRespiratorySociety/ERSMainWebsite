@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -36,7 +37,7 @@
   </head>
   <body>
 
-    <div class="ers-wrapper ers-fixed-sidebar {!! $color !!} {!! $display !!}">
+    <div class="ers-wrapper ers-fixed-sidebar @if($color){!! $color !!}@endif @if($display){!! $display !!}@endif">
 
         <!-- Start Top Nav -->  
             @include('nav.top-nav')
@@ -47,7 +48,7 @@
         <!-- End Main Navigation -->  
 
         <!-- Start Left Sidebar -->
-            @include('sidebar.left')
+            @include('sidebar.left-variant')
         <!-- End Left Sidebar -->
 
         <!-- Start main content Area -->
@@ -61,6 +62,7 @@
     </div>
     
     <script src="../js/all.js" type="text/javascript"></script>
+
     @yield('scripts')
 
   </body>

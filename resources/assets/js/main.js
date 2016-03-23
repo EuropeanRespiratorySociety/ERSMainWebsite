@@ -25,9 +25,11 @@ var App = (function () {
   var colors = {};
   var body = $("body");
   var wrapper = $(".ers-wrapper");
-  var leftSidebar = $(".ers-left-sidebar");
+  var leftSidebar = $(".ers-left-sidebar"); //context
+  var subMenuContext = $(".sub-menu-hook"); //context
   var rightSidebar = $(".ers-right-sidebar");
   var openSidebar = false;
+  var openSubSidebar = false;
 
   //Get the template css colors into js vars
   function getColor( c ){
@@ -39,6 +41,8 @@ var App = (function () {
   }
 
   //Core private functions
+
+  //Metanav variant 1
   function leftSidebarInit(){
 
     function oSidebar(){
@@ -46,7 +50,17 @@ var App = (function () {
       openSidebar = true;
     }
 
+    function oSubSidebar(){
+      body.addClass( config.openLeftSidebarClass + " " + config.transitionClass );
+      openSubSidebar = true;
+    }
+
     function cSidebar(){
+      body.removeClass( config.openLeftSidebarClass ).addClass( config.transitionClass );
+      sidebarDelay();
+    }
+
+    function cSubSidebar(){
       body.removeClass( config.openLeftSidebarClass ).addClass( config.transitionClass );
       sidebarDelay();
     }
@@ -64,12 +78,35 @@ var App = (function () {
         var ul = $(this).find("> ul");
         var subEls = $("> li", ul);
         var title = $('<li class="title">' + title + '</li>');
-        var subContainer = $('<li class="nav-items"><div class="ers-scroller nano"><div class="content nano-content"><ul></ul></div></div></li>');
+        var subContainer = $('<li class="nav-items"><div class="ers-scroller nano"><div class="content nano-content"><ul class="sub-menu-hook"></ul></div></div></li>');
 
         if( !ul.find("> li.title").length > 0 ){
          ul.prepend( title );
           subEls.appendTo( subContainer.find(".content ul") );
           subContainer.appendTo( ul );
+        }
+      });
+    }
+
+    function syncSubSubMenu( subItem ){
+      var elements = $(".sub-menu-hook > li");
+
+      if( typeof subItem !== "undefined" ) {
+        elements = subItem;
+      }
+
+      $.each( elements, function(i, v){
+
+        var title = $(this).find("> a span").html();
+        var ul = $(this).find(".sub-sub-menu");
+        var subSubEls = $("> li", ul);
+        var subtitle = $('<li class="subtitle">' + title + '</li>');
+        var subSubContainer = $('<li class="sub-nav-items"><div class="ers-scroller nano"><div class="content nano-content"><ul></ul></div></div></li>');
+
+        if( !ul.find("> li.subtitle").length > 0 ){
+         ul.prepend( subtitle );
+          subSubEls.appendTo( subSubContainer.find(".content ul") );
+          subSubContainer.appendTo( ul );
         }
       });
     }
@@ -93,6 +130,8 @@ var App = (function () {
       });
 
     var firstAnchor = $(".sidebar-elements > li > a", leftSidebar);
+    var secondAnchor = $(".third-level-hook");
+    var thirdAnchor = $(".last-level-hook");
 
     /*Sub-menu title func*/
       firstAnchor.on('mouseover',function(){
@@ -115,16 +154,90 @@ var App = (function () {
         
       });
 
+    /*Sub-sub-menu title func*/
+      secondAnchor.on('mouseover',function(){
+
+        var ersScroller = $(this).parent().find(".ers-scroller");
+        var li = $(this).parent();
+        var subSubMenu = li.find("> ul");
+
+        //Delay after mouse leave
+        if( !$.isXs() ){
+          subSubMenu.addClass("visible");
+        }
+      
+        ersScroller.nanoScroller({ destroy: true });
+        ersScroller.nanoScroller();
+
+        //Create sub-menu elements
+        if( config.syncSubSubMenuOnHover ){
+          syncSubSubMenu( li );
+        } 
+      
+        
+      });
+
+    /*Third level title func*/
+      thirdAnchor.on('mouseover',function(){
+        var subMenu = $(this).closest('.sub-menu');
+        var subSubMenu = $(this).closest('.sub-sub-menu');
+
+        //Delay after mouse leave
+        if( !$.isXs() ){
+            subSubMenu.addClass("visible");
+            subMenu.addClass("visible");            
+        }
+      
+        
+      });
+ 
     /*Sub-menu delay on mouse leave*/
       firstAnchor.on('mouseleave',function(){
         var subMenu = $(this).parent().find("> ul");
-        
         if( !$.isXs() ){
           setTimeout(function(){
             subMenu.removeClass("visible");
           }, 300);
         }
       });
+
+    /*Sub-sub-menu delay on mouse leave*/
+      secondAnchor.on('mouseleave',function(){
+        var subSubMenu = $(this).parent().find("> ul");
+        
+        if( !$.isXs() ){
+            subSubMenu.removeClass("visible");
+        }
+      });
+
+    /*Sub-sub-menu delay on mouse leave*/
+      thirdAnchor.on('mouseleave',function(){
+        var subMenu =  $(this).closest('.sub-menu')
+        var subSubMenu = $(this).parent().find("> ul");
+        
+        if( !$.isXs() ){
+          setTimeout(function(){
+            subSubMenu.removeClass("visible");
+            subMenu.removeClass("visible");
+          }, 300);
+        }  
+
+      });
+
+      //make links clickable
+
+      if(!$.isXs() ){
+
+        firstAnchor.on('click', function(){
+          window.location = this;
+        });
+
+        secondAnchor.on('click', function(){
+          window.location = this;
+        });
+      }
+
+
 
     /*Open sub-menu on small devices*/
       $(".sidebar-elements li a", leftSidebar).on("click",function( e ){
@@ -165,6 +278,9 @@ var App = (function () {
     /*Create sub menu elements*/
       syncSubMenu();
 
+    /*Create sub sub menu elements*/
+      syncSubSubMenu();
+
     /*Nanoscroller when left sidebar is fixed*/
       if( wrapper.hasClass("ers-fixed-sidebar") ){
         var lsc = $(".ers-left-sidebar > .content");
@@ -184,6 +300,23 @@ var App = (function () {
         }, 500, "ers_check_phone_classes");
       });
   }
+
+  //Metanav vartiant 2
+  (function() {
+        var menuEl = document.getElementById('ml-menu'),
+            mlmenu = new MLMenu(menuEl, {
+                // breadcrumbsCtrl : true, // show breadcrumbs
+                // initialBreadcrumb : 'all', // initial breadcrumb text
+                backCtrl : false, // show back button
+                // itemsDelayInterval : 60, // delay between each menu item sliding animation
+                onItemClick: loadPage // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
+            });
+
+            function loadPage(ev, itemName) {
+                //ev.preventDefault();
+                window.location.href = ev.target.href
+            } 
+  })();
 
   function rightSidebarInit(){
 

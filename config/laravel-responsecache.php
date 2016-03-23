@@ -27,7 +27,7 @@ return [
      * with the cache time should be added to a cached response. This
      * can be handy when debugging.
      */
-    'addCacheTimeHeader' => true,
+    'addCacheTimeHeader' => false,
 
     /*
      * Here you may define the cache store that should be used to store

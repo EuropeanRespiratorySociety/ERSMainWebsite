@@ -38,8 +38,8 @@ elixir(function(mix) {
     mix.copy('resources/assets/vendor/jquery/jquery.min.js', 'public/js/jquery.min.js');
 
    */ 
- 0
-/**/
+
+/* */ 
     mix.less('style.less');
     mix.styles([
         '../vendor/select2/css/select2.min.css',
@@ -59,11 +59,14 @@ elixir(function(mix) {
         '../vendor/enjoyhint/src/jquery.enjoyhint.css',
         '../../../public/css/style.css'
     	]);
+      
 /**/
     mix.scripts([
         '../vendor/bootstrap/dist/js/bootstrap.min.js',
 
+        'metanav.js', //The metanav needs to be before the main.js as we call the metanav from it
         'main.js',
+
 
         '../vendor/jquery.nanoscroller/javascripts/jquery.nanoscroller.js',
         '../vendor/jquery.gritter/js/jquery.gritter.js',
@@ -103,10 +106,10 @@ elixir(function(mix) {
         //'app-form-masks.js',
         'app-form-elements.js',
         'app-page-profile.js',
-
-    	'init.js'
+ 
+    	'init.js' 
     	]);
-
+    /*
         mix.scripts([  
         '../vendor/jquery-flot/jquery.flot.js', 
         '../vendor/jquery-flot/jquery.flot.pie.js', 
@@ -131,7 +134,8 @@ elixir(function(mix) {
         '../vendor/chartjs/Chart.min.js'
 
         ], 'public/js/stats.js');
-
+    */    
+    /*
         mix.scripts([  
         '../vendor/fullpagejs/vendors/jquery.easings.min.js',
         '../vendor/fullpagejs/vendors/jquery.slimscroll.min.js',
@@ -148,5 +152,5 @@ elixir(function(mix) {
         //mix.copy('resources/assets/js/app-wow.js', 'public/js/app-wow.js');
         
         mix.copy('resources/assets/vendor/dropzone/upload.php', 'public/pages/upload.php');
-
+    */
 });

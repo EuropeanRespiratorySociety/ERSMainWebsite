@@ -18,6 +18,7 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\Navigation::class,
         \App\Http\Middleware\Breadcrumb::class,
         \App\Http\Middleware\Metanavigation::class,
+        \App\Http\Middleware\SlidingMetanavigation::class,
     ];
 
     /**

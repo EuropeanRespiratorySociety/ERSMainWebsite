@@ -12,7 +12,6 @@
 */
 
 
-
 //Special Routes
 Route::group(['prefix' => 'errors'], function () {
 	Route::get('{errorCode}', function ($errorCode) {
@@ -50,10 +49,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/home', 'HomeController@index');
     
     //Blog using contentful
-    //Route::resource('blog', 'Blog');
-
-    Route::get('blog/{param1?}/{param2?}, Blog@index');
-    Route::get('blog/{blog}/, Blog@show');
+    Route::resource('blog', 'Blog');
 
 	//General routing - View files need to follow the correct patern 
 	Route::get('/{param1}/{param2}/{param3?}/{param4?}', function ($param1, $param2, $param3 = null, $param4 = null) {
