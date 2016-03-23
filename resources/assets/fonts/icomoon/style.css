@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src:    url('fonts/icomoon.eot?d6qejw');
-    src:    url('fonts/icomoon.eot?d6qejw#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?d6qejw') format('truetype'),
-        url('fonts/icomoon.woff?d6qejw') format('woff'),
-        url('fonts/icomoon.svg?d6qejw#icomoon') format('svg');
+    src:    url('fonts/icomoon.eot?mwk35k');
+    src:    url('fonts/icomoon.eot?mwk35k#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?mwk35k') format('truetype'),
+        url('fonts/icomoon.woff?mwk35k') format('woff'),
+        url('fonts/icomoon.svg?mwk35k#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -24,13 +24,16 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-handout:before {
+    content: "\e905";
+}
 .icon-meal:before {
     content: "\e900";
 }
 .icon-hotel:before {
     content: "\e901";
 }
-.icon-paking:before {
+.icon-parking:before {
     content: "\e902";
 }
 .icon-taxi:before {
