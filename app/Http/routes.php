@@ -12,13 +12,6 @@
 */
 
 
-//Special Routes
-Route::group(['prefix' => 'errors'], function () {
-	Route::get('{errorCode}', function ($errorCode) {
-	    return view('errors.error',['error' => $errorCode]);
-	});
-});
-
 Route::get('/cache-flush', function () {
 	ResponseCache::flush();
 	return "ok";
@@ -46,70 +39,9 @@ Route::group(['middleware' => ['web']], function () {
 	
 	Route::Auth();
     
-    Route::get('/home', 'HomeController@index');
+    Route::get('/', 'HomeController@index');
     
     //Blog using contentful
     Route::resource('blog', 'Blog');
 
-	//General routing - View files need to follow the correct patern 
-	Route::get('/{param1}/{param2}/{param3?}/{param4?}', function ($param1, $param2, $param3 = null, $param4 = null) {
-
-			$params = display($param3, $param4);
-
-			return view($param1.'.'.$param2)->with($params);
-	});
-
-
-	Route::get('/{param1?}/{param2?}', function ($param1 = null , $param2 = null ) {
-
-	$params = display($param1, $param2);
-
-    return view('pages.blank')->with($params);
-	});
-
-	
-	function display($color, $screen){
-
-			if($screen === null ){
-				$screen = '';
-			}
-
-			if($screen == 'fullscreen' ){
-				$screen = 'ers-full-screen';
-			}
-
-			if($screen == 'fullscreen-metanav' ){
-				$screen = 'ers-full-screen-with-metanav';
-			}
-
-			if($screen == 'fullscreen-metanav-mainnav' ){
-				$screen = 'ers-full-screen-with-metanav-and-main-nav';
-			}
-
-
-			if($color == 'white'){
-				$color = 'ers-white-header';
-			} elseif ($color == 'fullscreen') {
-				$screen = 'ers-full-screen';
-				$color = 'ers-blue-header';
-			}elseif ($color == 'fullscreen-metanav') {
-				$screen = 'ers-full-screen-with-metanav';
-				$color = 'ers-blue-header';
-			}elseif ($color == 'fullscreen-metanav-mainnav') {
-				$screen = 'ers-full-screen-with-metanav-and-main-nav';
-				$color = 'ers-blue-header';
-			}
-			else {
-				$color = 'ers-blue-header';
-			}
-
-
-			$params = array(
-					'color' 	=> $color,
-					'display'	=> $screen,
-				);
-
-			return $params;
-
-	}
 });

@@ -4,22 +4,26 @@
 
             <!-- Start Page title Visible on Mobile size screen -->
             <div class="page-title">
-              <span>myERS</span>
+              <span>European Respiratory Society</span>
             </div>
             <!-- End Page title Visible on Mobile size screen -->
               <a href="#" class="ers-toggle-left-sidebar navbar-toggle collapsed">
               <span class="icon-bar"><span></span><span></span><span></span></span>
             </a>
           </div>
+          <!-- -->
           <a href="#" class="ers-toggle-right-sidebar">
             <span class="icon s7-menu2"></span>
           </a>
+
           <a href="#" data-toggle="collapse" data-target=".ers-navbar-collapse" class="ers-toggle-top-header-menu collapsed">
             <span class="icon s7-angle-down"></span>
           </a>         
           <div id="" class="ers-navbar-collapse collapse navbar-collapse">
+         
 
             <!-- Start User Menu -->
+            <!--
             <ul class="nav navbar-nav navbar-right ers-user-nav">
               <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><img src="../images/avatar.png"><span class="user-name">Jane Doe</span><span class="angle-down s7-angle-down"></span></a>
                 <ul role="menu" class="dropdown-menu">
@@ -44,15 +48,16 @@
                 </ul>
               </li>
             </ul>
+            -->
             <!-- Start User Menu --> 
 
             <!-- Start Breadcrumb/title bar -->
             <ul class="nav navbar-left breadcrumb hidden-xs">
-              <li><a href="/"><h2>myERS</h2></a></li>
+              <li><a href="/"><h2>European Respiratory Society</h2></a></li>
               @include('nav.breadcrumb-items', array('items' => $BreadCrumb->roots()))
             </ul>
             <!-- End Breadcrumb/title bar -->
-
+            <!--
             <ul class="nav navbar-nav navbar-right ers-icons-nav">
               <li class="dropdown">
                 <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle">
@@ -118,6 +123,7 @@
                 </ul>
               </li>
             </ul>
+            -->
           </div>
         </div>
     </nav> 

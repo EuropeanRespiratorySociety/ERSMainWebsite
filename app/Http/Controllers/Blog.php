@@ -33,7 +33,7 @@ class Blog extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($param1 = null, $param2 = null)
+    public function index()
     {
 
 
@@ -78,9 +78,6 @@ class Blog extends Controller
                 
 
             }
-
-            
-            $params = display($param1, $param2);
 
             $posts = (object) $blog;
 
@@ -131,7 +128,7 @@ class Blog extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id, $param1 = null, $param2 = null)
+    public function show($id)
     {
             //Get a specific item
             $entry = Contentful::entries()
@@ -229,8 +226,6 @@ class Blog extends Controller
                 $image->make('http:'.$assets['items'][0]['fields']['file']['url'].'?'.'w=400&fm=jpg')->greyscale()->encode('data-url');   
               },null,false);  
 
-         $params = display($param1, $param2);
-
          $params['blog'] = $blog;
 
          return view('blog.item')->with($params);         
@@ -270,52 +265,6 @@ class Blog extends Controller
         //
     }
 
-    
-
-    function display($color, $screen){
-
-            if($screen === null ){
-                $screen = '';
-            }
-
-            if($screen == 'fullscreen' ){
-                $screen = 'ers-full-screen';
-            }
-
-            if($screen == 'fullscreen-metanav' ){
-                $screen = 'ers-full-screen-with-metanav';
-            }
-
-            if($screen == 'fullscreen-metanav-mainnav' ){
-                $screen = 'ers-full-screen-with-metanav-and-main-nav';
-            }
-
-
-            if($color == 'white'){
-                $color = 'ers-white-header';
-            } elseif ($color == 'fullscreen') {
-                $screen = 'ers-full-screen';
-                $color = 'ers-blue-header';
-            }elseif ($color == 'fullscreen-metanav') {
-                $screen = 'ers-full-screen-with-metanav';
-                $color = 'ers-blue-header';
-            }elseif ($color == 'fullscreen-metanav-mainnav') {
-                $screen = 'ers-full-screen-with-metanav-and-main-nav';
-                $color = 'ers-blue-header';
-            }
-            else {
-                $color = 'ers-blue-header';
-            }
-
-
-            $params = array(
-                    'color'     => $color,
-                    'display'   => $screen,
-                );
-
-            return $params;
-
-    }
 
 
 

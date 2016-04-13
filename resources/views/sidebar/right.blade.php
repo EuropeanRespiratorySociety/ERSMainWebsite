@@ -1,4 +1,4 @@
-<nav class="ers-right-sidebar">
+<!--<nav class="ers-right-sidebar">
         <div class="sb-content">
           <div class="user-info"><img src="../images/avatar.jpg"><span class="name">Jane Doe<span class="status"></span></span><span class="position">Art Director</span></div>
           <div class="tab-navigation">
@@ -168,4 +168,4 @@
             </div>
           </div>
         </div>
-      </nav>
+      </nav>-->
