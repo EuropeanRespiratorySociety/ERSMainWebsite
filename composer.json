@@ -12,7 +12,9 @@
         "incraigulous/contentful-laravel": "0.0.*",
         "laravelcollective/html": "5.2.*",
         "alfredo-ramos/parsedown-extra-laravel": "~0.4",
-        "artisaninweb/laravel-soap": "0.2.5.10"
+        "artisaninweb/laravel-soap": "0.2.5.10",
+        "intervention/image": "^2.3",
+        "intervention/imagecache": "^2.3"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

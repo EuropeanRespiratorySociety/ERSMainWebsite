@@ -5,18 +5,19 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Incraigulous\Contentful\Facades\Contentful;
-use AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra as Markdown;
+use Intervention\Image\Facades\Image;
 use Incraigulous\ContentfulSDK\ManagementSDK;
+use Incraigulous\Contentful\Facades\Contentful;
 use Incraigulous\ContentfulSDK\PayloadBuilders\Entry;
-use Incraigulous\ContentfulSDK\PayloadBuilders\EntryField;
 use Incraigulous\ContentfulSDK\PayloadBuilders\Space;
+use Incraigulous\ContentfulSDK\PayloadBuilders\EntryField;
+use AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra as Markdown;
 
 class Blog extends Controller
 {
  public function __construct()
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
     } 
 
     protected $fields = [
@@ -68,6 +69,13 @@ class Blog extends Controller
                 $arrayKey = recursive_array_search($blog[$key]['imageId'], $assets['items']);             
 
                 $blog[$key]['imageUrl'] = $assets['items'][$arrayKey]['fields']['file']['url'].'?'.'w=300&h=100&fit=thumb';
+                $img = 'http:'.$assets['items'][$arrayKey]['fields']['file']['url'].'?'.'w=300&h=100&fit=thumb';
+                //dd($img);
+
+                $blog[$key]['imageUrl'] = Image::cache(function($image) use($img){
+                     return $image->make($img)->encode('data-url');
+                  });
+                
 
             }
 
@@ -168,7 +176,7 @@ class Blog extends Controller
             foreach ($entry['items'] as $key => $post) {
                if($post['fields']['slug'] == $id) {
 
-                    
+                   //global $post;
                     //content
                     $blog['title'] = $post['fields']['title'];
                     $blog['body'] = Markdown::parse($post['fields']['body']);
@@ -199,6 +207,11 @@ class Blog extends Controller
                     if(isset($post['fields']['video3'])){
                         $blog['video'] = youtube_id_from_url($post['fields']['video3']);
                     }
+                    if(isset($post['fields']['image'])){
+                        $blog['image'] = Image::cache(function($image) use($post) {
+                          $image->make($post['fields']['image'])->encode('data-url');
+                        },null,false);
+                    }
 
                     //metadeta
                     $blog['createdAt'] = $post['sys']['createdAt'];
@@ -212,7 +225,9 @@ class Blog extends Controller
                 ->get();   
 
             //setting the width of the image on the fly!
-            $blog ['imageUrl'] = $assets['items'][0]['fields']['file']['url'].'?'.'w=400&fm=jpg';     
+            $blog ['imageUrl'] = Image::cache(function($image) use($assets) {
+                $image->make('http:'.$assets['items'][0]['fields']['file']['url'].'?'.'w=400&fm=jpg')->greyscale()->encode('data-url');   
+              },null,false);  
 
          $params = display($param1, $param2);
 

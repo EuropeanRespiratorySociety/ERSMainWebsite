@@ -1,6 +1,6 @@
 # ERS Template
 
-**Version 1.1.8**
+**Version 1.1.9**
 
 The *html structure has changed since previous version* for the header and the left bar. Now the logo is included in the left bar. As such the header had to be moved to the left of the width of the left bar.
 
@@ -115,14 +115,14 @@ For the pages to work, only two files need to be included 'all.css' (in the head
 
 You can include the files on your server or remotely with the following urls:
 
-* http://bootstrap.ersnet.org/css/all.css
-* http://bootstrap.ersnet.org/js/all.js
+* https://bootstrap.ersnet.org/css/all.css
+* https://bootstrap.ersnet.org/js/all.js
 
 You can add your own JS or CSS under the ERS Template files. See bellow.
 
 You can also use all images avaible in this demo with the following example url:
 
-* http://bootstrap.ersnet.org/images/logo.png
+* https://bootstrap.ersnet.org/images/logo.png
 
 ## How to add your own JS
 
@@ -337,6 +337,9 @@ You can see a "real" example here `/pages/fullpage`
 
 ### What is new in 1.1.9
 * New Metanavigation (sliding with small breadcrumb)
+* Now HTTPS ready -> actually all is now https.
+* Small fixes and experiments with contentful
+* Ready for forking for corporate website.
 
 ### What is new in 1.1.8
 * Newsfeed - All panels are now standardized

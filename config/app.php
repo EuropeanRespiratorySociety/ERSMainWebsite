@@ -154,6 +154,7 @@ return [
         Incraigulous\Contentful\ContentfulServiceProvider::class,
         AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class,
         Spatie\ResponseCache\ResponseCacheServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
 
     ],
 
@@ -212,6 +213,7 @@ return [
         'Markdown'  => AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra::class,
         'ResponseCache' => Spatie\ResponseCache\ResponseCacheFacade::class,
         'SoapWrapper' => Artisaninweb\SoapWrapper\Facades\SoapWrapper::class,
+        'Image' => Intervention\Image\Facades\Image::class,
 
     ],
 

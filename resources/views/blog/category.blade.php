@@ -13,7 +13,7 @@
 					                  <div class="tools"><span class="icon s7-upload"></span><span class="icon s7-edit"></span><span class="icon s7-close"></span></div><span class="title">{{ $post['title'] }}</span>
 					                </div>
 					                <div class="panel-body">
-					                <img src="http:{!! $post['imageUrl'] !!}">
+					                <img src="{!! $post['imageUrl'] !!}">
 										{!! $post['body'] !!}
 									<a href="/blog/{{$post['slug']}}" class="btn btn-primary">Read more...</a>
 					                </div>
