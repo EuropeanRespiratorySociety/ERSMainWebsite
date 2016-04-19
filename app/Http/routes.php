@@ -42,6 +42,10 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/', 'HomeController@index');
     
     //Blog using contentful
-    Route::resource('blog', 'Blog');
+    Route::resource('blog', 'Blog');    
+
+    //Blog using CloudCms
+    Route::get('cc', 'CloudCms@index');
+    //Route::get('cc', 'CloudCms');
 
 });
