@@ -65,11 +65,10 @@ Route::group(['middleware' => ['web']], function () {
         return view('professional.ers-courses');
     });
 
+ 
 
-    
-    
-
-    //Blog using contentful
-    Route::resource('blog', 'Blog');
+    //Blog using CloudCms
+    Route::get('cc', 'CloudCms@index');
+    //Route::get('cc', 'CloudCms');
 
 });

@@ -151,7 +151,7 @@ return [
         App\Providers\ErsAuthServiceProvider::class,
         Lavary\Menu\ServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
-        Incraigulous\Contentful\ContentfulServiceProvider::class,
+        //Incraigulous\Contentful\ContentfulServiceProvider::class,
         AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class,
         Spatie\ResponseCache\ResponseCacheServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
