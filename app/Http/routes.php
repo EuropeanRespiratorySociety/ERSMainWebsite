@@ -40,7 +40,35 @@ Route::group(['middleware' => ['web']], function () {
 	Route::Auth();
     
     Route::get('/', 'HomeController@index');
+
+    Route::get('sam', function(){
+    	return view('pages.blank-aside');
+    });
+
+    Route::get('the-society/assemblies', function(){
+    	return view('society.assemblies');
+    });
+
+    Route::get('the-society/who-we-are', function(){
+    	return view('society.who-we-are');
+    });
+
+    //Route::get('the-society/who-we-are/executive-office', function(){
+    	//return view('society.who-we-are.executive-office');
+    //});
+
+    Route::get('the-society/executive-office', function(){
+        return view('society.executive-office');
+    });
+
+    Route::get('professional-development/ers-courses', function(){
+        return view('professional.ers-courses');
+    });
+
+
     
+    
+
     //Blog using contentful
     Route::resource('blog', 'Blog');
 
