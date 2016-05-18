@@ -155,6 +155,7 @@ return [
         AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class,
         Spatie\ResponseCache\ResponseCacheServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        Idealley\CloudCms\CloudCmsServiceProvider::class,
 
     ],
 

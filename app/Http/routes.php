@@ -36,16 +36,16 @@ Route::group(['middleware' => ['web']], function () {
 	//Route::get('logout', ['middleware' => 'doNotCacheResponse', 'uses' => 'Auth\AuthController@logout']);
 	//Route::get('login', ['middleware' => 'doNotCacheResponse', 'uses' => 'Auth\AuthController@showLoginForm']);
 	//Route::post('login', ['middleware' => 'doNotCacheResponse', 'uses' => 'Auth\AuthController@login']);
-	
+	Route::get('test-sam', 'CloudCms@requestTest');
 	Route::Auth();
     
-    Route::get('/', 'HomeController@index');
-    
-    //Blog using contentful
-    Route::resource('blog', 'Blog');    
+    Route::get('/', 'HomeController@index');   
 
     //Blog using CloudCms
     Route::get('cc', 'CloudCms@index');
-    //Route::get('cc', 'CloudCms');
+    Route::get('cc/{slug}', 'CloudCms@show');
+
+    Route::get('search/{query}', 'CloudCms@search');
+    Route::get('full-search', 'CloudCms@fullSearch');
 
 });

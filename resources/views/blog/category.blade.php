@@ -9,13 +9,13 @@
 				@foreach ($posts as $post)
 					<div class="col-md-6">
 					              <div class="panel panel-default">
-					                <div class="panel-heading"> 
+					                <div class="panel-heading">
+					                	<img src="{!!$post['image']!!}" /> 
 					                  <div class="tools"><span class="icon s7-upload"></span><span class="icon s7-edit"></span><span class="icon s7-close"></span></div><span class="title">{{ $post['title'] }}</span>
 					                </div>
 					                <div class="panel-body">
-					                <img src="{!! $post['imageUrl'] !!}">
 										{!! $post['body'] !!}
-									<a href="/blog/{{$post['slug']}}" class="btn btn-primary">Read more...</a>
+									<a href="/cc/{{$post['slug']}}" class="btn btn-primary">Read more...</a>
 					                </div>
 					              </div>
 					 </div>

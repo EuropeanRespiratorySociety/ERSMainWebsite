@@ -7,7 +7,6 @@
 	    <div class="main-content">	
 			<div class="row">
 				<article class="article">
-				<img src="{!! $blog['imageUrl'] !!}">
 				<p>{!! $blog['body'] !!}</p>
 				</article>
 				
