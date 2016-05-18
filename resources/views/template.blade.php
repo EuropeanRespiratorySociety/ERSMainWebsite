@@ -33,9 +33,13 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="https://bootstrap.ersnet.org/css/all.css/" type="text/css"/>
+    <!--link rel="stylesheet" href="http://erstemplate.app/css/all.css" type="text/css"/-->
+
     <script src="https://bootstrap.ersnet.org/js/jquery.min.js" type="text/javascript"></script>
+    <!--script src="http://erstemplate.app/js/jquery.min.js" type="text/javascript"></script-->
+
   </head>
-  <body>
+  <body id="ersMainWebsite">
 
     <div class="ers-wrapper ers-fixed-sidebar ers-white-header">
 
@@ -62,6 +66,9 @@
     </div>
     
     <script src="https://bootstrap.ersnet.org/js/all.js" type="text/javascript"></script>
+
+    <!--script src="http://erstemplate.app/js/all.js" type="text/javascript"></script-->
+
 
     @yield('scripts')
 
