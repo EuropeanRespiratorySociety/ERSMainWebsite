@@ -11,10 +11,10 @@
               <span class="icon-bar"><span></span><span></span><span></span></span>
             </a>
           </div>
-          <!-- -->
+          <!-- 
           <a href="#" class="ers-toggle-right-sidebar">
             <span class="icon s7-menu2"></span>
-          </a>
+          </a>-->
 
           <a href="#" data-toggle="collapse" data-target=".ers-navbar-collapse" class="ers-toggle-top-header-menu collapsed">
             <span class="icon s7-angle-down"></span>

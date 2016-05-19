@@ -23,11 +23,10 @@
         <div class="row">
           <div class="col-md-3 col-md-offset-3 xs-mb-15">
             <img src="../images/ers-staff/wbill.jpg" class="img-circle">
-            <p class="photo_caption"><strong>Werner Bill</strong>
+            <p class="photo_caption"><strong>{!! Html::mailto('werner.bill@ersnet.org', 'Werner Bill') !!}</strong>
             Deputy Executive Director,<br>
             Director of Finance and Administration<br>
-            T +41 21 213 01 20<br>
-            <a href="mailto:werner.bill@ersnet.org">werner.bill@ersnet.org</a>
+            T +41 21 213 01 20
             </p>
           </div>
           <div class="col-md-3 xs-mb-15">
