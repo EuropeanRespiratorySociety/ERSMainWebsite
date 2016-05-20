@@ -4,6 +4,7 @@
 	<div class="ers-content assemblies-content">
     <div id="fullpage">
       <div class="section fp-auto-height">
+      <div class="main-content">
         <div class="page-head">
           <h2 class="">The ERS Scientific Assemblies</h2>
         </div>
@@ -62,7 +63,7 @@
                     </div>
               </div>
           </div>
-
+    </div>
     </div>
 
 

@@ -4,6 +4,7 @@
 	<div class="ers-content executive-content">
     <div id="fullpage">
       <div class="section fp-auto-height">
+      <div class="main-content">
         <div class="page-head">
         <h2 class="">Executive</h2>
         </div>
@@ -49,7 +50,7 @@
         </div>
 
         <!--Departments Menu-->
-        <div class="row">
+        <div class="row row_depertment">
           <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -155,11 +156,12 @@
 
 
 
-
+    </div>
     </div>
 
     <!--1 Section Finance-->
     <div class="section fp-auto-height">
+    <div class="main-content">
       <div class="page-head">
           <h2 class="">Finance and Administration</h2>
       </div>
@@ -235,10 +237,12 @@
 
       </div>
     </div>
+    </div>
     <!--Fin 1 Section Finance-->
 
     <!--2 Corporate Relations-->
     <div class="section fp-auto-height">
+    <div class="main-content">
       <div class="page-head">
           <h2 class="">Corporate Relations, Marketing and Communications</h2>
       </div>
@@ -307,10 +311,12 @@
 
       </div>
     </div>
+    </div>
     <!--Fin 2 Corporate Relations-->
 
     <!--3 Membership-->
     <div class="section fp-auto-height">
+    <div class="main-content">
       <div class="page-head">
           <h2 class="">Membership and National Societies Relations</h2>
       </div>
@@ -333,10 +339,12 @@
 
       </div>
     </div>
+    </div>
     <!--Fin 3 Membership-->
 
     <!--4 IT Infrastructure-->
     <div class="section fp-auto-height">
+    <div class="main-content">
       <div class="page-head">
           <h2 class="">IT Infrastructure</h2>
       </div>
@@ -388,10 +396,12 @@
         </div>
       </div>
     </div>
+    </div>
     <!--Fin 4 IT Infrastructure-->
 
     <!--5 Educational-->
     <div class="section fp-auto-height">
+    <div class="main-content">
       <div class="page-head">
           <h2 class="">Educational Activities</h2>
       </div>
@@ -514,10 +524,12 @@
        
       </div>
     </div>
+    </div>
     <!--Fin 5 Educational-->
 
     <!--6 Scientific-->
     <div class="section fp-auto-height">
+    <div class="main-content">
       <div class="page-head">
           <h2 class="">Scientific Activities</h2>
       </div>
@@ -612,10 +624,12 @@
 
       </div>
     </div>
+    </div>
     <!--Fin 6 Scientific-->
 
     <!--7 Publications-->
     <div class="section fp-auto-height">
+    <div class="main-content">
       <div class="page-head">
           <h2 class="">Publications</h2>
       </div>
@@ -741,10 +755,12 @@
 
       </div>
     </div>
+    </div>
     <!--Fin 7 Publications-->
 
     <!--8 ELF-->
     <div class="section fp-auto-height">
+    <div class="main-content">
       <div class="page-head">
           <h2 class="">European Lung Foundation</h2>
       </div>
@@ -797,10 +813,12 @@
         
       </div>
     </div>
+    </div>
     <!--Fin 8 ELF-->
 
     <!--9 Congress-->
     <div class="section fp-auto-height">
+    <div class="main-content">
       <div class="page-head">
           <h2 class="">Congress and Events</h2>
       </div>
@@ -853,10 +871,12 @@
 
       </div>
     </div>
+    </div>
     <!--Fin 8 Congress-->
 
     <!--8 EU Affairs-->
     <div class="section fp-auto-height">
+    <div class="main-content">
       <div class="page-head">
           <h2 class="">EU Affairs</h2>
       </div>
@@ -913,6 +933,7 @@
         </div>
         
       </div>
+    </div>
     </div>
     <!--Fin 8 EU Affairs-->
 
