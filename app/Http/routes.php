@@ -36,7 +36,8 @@ Route::group(['middleware' => ['web']], function () {
 	//Route::get('logout', ['middleware' => 'doNotCacheResponse', 'uses' => 'Auth\AuthController@logout']);
 	//Route::get('login', ['middleware' => 'doNotCacheResponse', 'uses' => 'Auth\AuthController@showLoginForm']);
 	//Route::post('login', ['middleware' => 'doNotCacheResponse', 'uses' => 'Auth\AuthController@login']);
-	Route::get('test-sam', 'CloudCms@requestTest');
+    Route::get('test-sam2', 'CloudCms@requestTest2');
+    Route::get('test-sam', 'CloudCms@requestTest');
 	Route::Auth();
     
     Route::get('/', 'HomeController@index');

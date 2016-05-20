@@ -32,8 +32,10 @@ private $headers;
         $nodes = CC::nodes()
                 ->listChildren($catnode)
                 ->addParams(['full' => 'true'])
+                ->addParams(['metadata' => 'true'])
+                ->addParams(['sort' => '{"_system.created_on.ms": -1}'])
                 ->get();           
-
+                dd($nodes);
         foreach ($nodes['rows'] as $key => $post) {
                 $blog[$key]['title'] = $post['title'];
                 //$blog[$key]['body'] = Markdown::parse($post['headline']);
@@ -50,27 +52,6 @@ private $headers;
                 
 
             }
-
-        
-        // print out info about the repositories
-
-        //$response['Rep info'] = "Showing: " . sizeof($repositories["rows"]) . " of: " . $repositories["total_rows"] . " total repositories\n";
-        /*for ($i = 0; $i < sizeof($repositories["rows"]); $i++)
-        {
-            $repository = $repositories["rows"][$i];
-            //$repositoryTitle = ($repository["title"] ? $repository["title"] : $repository["_doc"]);
-            
-            //$response['Repository'.$i] = "> " . $repositoryTitle . " (" . $repository["_doc"] . ")\n";
-             
-        }*/
-        
-        // inspect the raw array
-        // var_dump($repositories);
-    
-
-    //return '<img src="https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/4439543d9959261676a7/features/test">';
-    //return '<img src="https://api.cloudcms.com/nodes/0158e1c30704e4a5ab36/attachments/default">';
-    //return $test;
 
     $posts = (object) $blog;
     $params['posts'] =  $posts;    
@@ -144,7 +125,7 @@ private $headers;
      */
     public function edit($id)
     {
-        //
+        
     }
 
     /**
@@ -170,6 +151,21 @@ private $headers;
         //
     }
 
+    public function requestTest2()
+    {
+
+        $body = '{"title": "Review"}';
+        //$nodeId = 'o:9a8195e6286a4f7b40ae'; //product
+        $nodeId = 'o:386c912312c77e21425e'; //strawberry
+        $association = 'catalog:product-has-review';
+        $direction = 'outgoing';
+        $node = CC::nodes()
+                    ->queryAssociationItems($nodeId, $association, $body )
+                    ->addParams(['full' => 'true']) 
+                    ->get();
+        
+        dd($node);
+    }
     public function requestTest()
     {
     $clientKey = '1a13e498-1dd6-45ec-a03a-af5689c45a33';
@@ -193,26 +189,13 @@ private $headers;
     $token = $accessToken->getToken();
     
     $headers = array('authorization' => 'Bearer '.$token);
-    $body = '{"filename": "Strabery_Cupacake"}';
+    $body = '{"categories": "birthdays"}';
     $sort = '&sort={"_system.created_on.ms": 1}';    
     $client = new Client();
     //$request = new GRequest('POST', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/o:9a8195e6286a4f7b40ae/children?full=true', $headers, $body);
-   // $request = new GRequest('POST', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/query?full=true&metadata=true'.$sort, $headers, $body);
+   //$request = new GRequest('POST', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/query?full=true&metadata=true'.$sort, $headers, $body);
    //$request = new GRequest('POST', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/o:9a8195e6286a4f7b40ae/list/catalog:product-has-review/items/query?full=true&metadata=true', $headers);
-   //$request = new GRequest('POST', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/o:9a8195e6286a4f7b40ae/relatives/query?type=d:association&full=true&metadata=true', $headers);
-    
-    /////
-   //$request = new GRequest('GET', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/o:9a8195e6286a4f7b40ae/relatives?type=a:child&full=true&metadata=true', $headers);
-    //// OUTGOING
-   //$request = new GRequest('GET', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/o:386c912312c77e21425e/outgoing?full=true', $headers);
-    //// INCOMING
-   //$request = new GRequest('GET', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/o:386c912312c77e21425e/incoming?full=true', $headers);
-    //// list all associations
-   //$request = new GRequest('GET', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/o:386c912312c77e21425e/associations?full=true', $headers);
-   //// ASSOCIATION ID catalog:product-has-review
-   //$request = new GRequest('GET', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/o:386c912312c77e21425e/list/catalog:product-has-review/items?full=true', $headers);
-   ////ASSOCIATION ID POST body
-   //$request = new GRequest('POST', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/o:386c912312c77e21425e/list/catalog:product-has-review/items?full=true&metadata=true', $headers, $body);
+
     /////
    //$request = new GRequest('POST', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/o:386c912312c77e21425e/list/catalog:product-has-review/items/search?text=chocolate&full=true&metadata=true', $headers);
     /////This is the url that we need to proxy to get the image
@@ -222,7 +205,7 @@ private $headers;
    //path/tree tests bof..
    //$request = new GRequest('GET', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/n:root/path/catalog:product?base=root&depth=3', $headers);
    //traverse
-   $request = new GRequest('POST', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/catalog:product/traverse?depth=3', $headers);
+   //$request = new GRequest('POST', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/catalog:product/traverse?depth=3', $headers);
 
 
     //dd($request);
