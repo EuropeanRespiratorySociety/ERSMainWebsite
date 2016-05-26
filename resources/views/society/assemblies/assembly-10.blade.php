@@ -4,11 +4,11 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/assemblies/Stefano_Aliberti.jpg" class="img-circle">
+                  <img src="../images/stories/people/Stefano_Aliberti.jpg" class="img-circle">
                   <p class="photo_caption">Head: <a href="mailto:alibertistefano@hotmail.com">Stefano Aliberti</a></p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/assemblies/Giovanni_Sotgiu.jpg" class="img-circle">
+                  <img src="../images/stories/people/Giovanni_Sotgiu.jpg" class="img-circle">
                   <p class="photo_caption">Secretary: <a href="mailto:gsotgiu@uniss.it">Giovanni Sotgiu</a></p>
                  
                 </div>
@@ -25,7 +25,7 @@
 
           
 
-            <div class="row">
+            <div class="row　row_assemblies_card">
               <div class="col-md-4 col-md-offset-2">
                  <div class="card card-padded">
                   <div class="card-image">

@@ -4,11 +4,11 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/assemblies/Fabio_Midulla.jpg" class="img-circle">
+                  <img src="../images/stories/people/Fabio_Midulla.jpg" class="img-circle">
                   <p class="photo_caption">Head: <a href="mailto:midulla@uniroma1.it">Fabio Midulla</a></p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/assemblies/Jonathan_Grigg.jpg" class="img-circle">
+                  <img src="../images/stories/people/Jonathan_Grigg.jpg" class="img-circle">
                   <p class="photo_caption">Secretary: <a href="mailto:j.grigg@qmul.ac.uk">Jonathan Grigg</a></p>
                  
                 </div>
@@ -20,7 +20,7 @@
 
           
 
-            <div class="row">
+            <div class="row　row_assemblies_card">
               
               <div class="col-md-4">
                 <div class="card card-padded">

@@ -4,11 +4,11 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/assemblies/Dick_Heederik.jpg" class="img-circle">
+                  <img src="../images/stories/people/Dick_Heederik.jpg" class="img-circle">
                   <p class="photo_caption">Head: <a href="mailto:d.heederik@uu.nl">Dick Heederik</a></p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/assemblies/Christer_Jansen.jpg" class="img-circle">
+                  <img src="../images/stories/people/Christer_Jansen.jpg" class="img-circle">
                   <p class="photo_caption">Secretary: <a href="mailto:christer.janson@medsci.uu.se">Christer Jansen</a></p>
                  
                 </div>
@@ -22,7 +22,7 @@ The Epidemiology Group has mainly focused on elucidating the natural history of 
 
           
 
-            <div class="row">
+            <div class="row　row_assemblies_card">
               <div class="col-md-4">
                 <div class="card card-padded">
                   <div class="card-image">

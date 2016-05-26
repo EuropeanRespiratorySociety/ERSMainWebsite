@@ -4,11 +4,11 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/assemblies/Maria_R_Bonsignore.jpg" class="img-circle">
+                  <img src="../images/stories/people/Maria_R_Bonsignore.jpg" class="img-circle">
                   <p class="photo_caption">Head: <a href="mailto:marisa@ibim.cnr.it">Maria R. Bonsignore</a></p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/assemblies/Andrea_Aliverti.jpg" class="img-circle">
+                  <img src="../images/stories/people/Andrea_Aliverti.jpg" class="img-circle">
                   <p class="photo_caption">Secretary: <a href="mailto:andrea.aliverti@polimi.it">Andrea Aliverti</a></p>
                  
                 </div>
@@ -26,7 +26,7 @@ The Pulmonary Circulation and Pulmonary Vascular Disease Group focuses on more b
 
           
 
-            <div class="row">
+            <div class="row　row_assemblies_card">
               <div class="col-md-4">
                 <div class="card card-padded">
                   <div class="card-image">

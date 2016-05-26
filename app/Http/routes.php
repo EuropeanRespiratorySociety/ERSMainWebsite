@@ -54,6 +54,40 @@ Route::group(['middleware' => ['web']], function () {
     	return view('society.who-we-are');
     });
 
+    Route::get('the-society/leadership', function(){
+        return view('society.leadership');
+    });
+
+    Route::get('the-society/leadership/national-delegates', function(){
+        return view('society.leadership.national-delegates');
+    });
+
+    Route::get('the-society/leadership/science-council', function(){
+        return view('society.leadership.science-council');
+    });
+
+    Route::get('the-society/leadership/assembly-heads', function(){
+        return view('society.leadership.assembly-heads');
+    });
+
+    Route::get('the-society/leadership/education-council', function(){
+        return view('society.leadership.education-council');
+    });
+
+    Route::get('the-society/leadership/assembly-secretaries', function(){
+        return view('society.leadership.assembly-secretaries');
+    });
+
+    Route::get('the-society/leadership/council', function(){
+        return view('society.leadership.council');
+    });
+
+    Route::get('the-society/leadership/elections-2016', function(){
+        return view('society.leadership.elections-2016');
+    });
+
+
+
     //Route::get('the-society/who-we-are/executive-office', function(){
     	//return view('society.who-we-are.executive-office');
     //});

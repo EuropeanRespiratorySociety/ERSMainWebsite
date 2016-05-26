@@ -4,11 +4,11 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/assemblies/Christian_M_Kaehler.jpg" class="img-circle">
+                  <img src="../images/stories/people/Christian_M_Kaehler.jpg" class="img-circle">
                   <p class="photo_caption">Head: <a href="mailto:c.m.kaehler@i-med.ac.at">Christian M. Kaehler</a></p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/assemblies/Philipp_A_Schnabel.jpg" class="img-circle">
+                  <img src="../images/stories/people/Philipp_A_Schnabel.jpg" class="img-circle">
                   <p class="photo_caption">Secretary: <a href="mailto:philipp.schnabel@med.uni-heidelberg.de">Philipp A. Schnabel</a></p>
                  
                 </div>
@@ -20,7 +20,7 @@
 
           
 
-            <div class="row">
+            <div class="row　row_assemblies_card">
               <div class="col-md-4">
                 <div class="card card-padded">
                   <div class="card-image">

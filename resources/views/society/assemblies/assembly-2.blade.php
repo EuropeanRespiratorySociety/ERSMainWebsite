@@ -4,11 +4,11 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/assemblies/Paolo_Navalesi.jpg" class="img-circle">
+                  <img src="../images/stories/people/Paolo_Navalesi.jpg" class="img-circle">
                   <p class="photo_caption">Head: <a href="mailto:pnavalesi@gmail.com">Paolo Navalesi</a></p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/assemblies/Stylianos_Orfanos.jpg" class="img-circle">
+                  <img src="../images/stories/people/Stylianos_Orfanos.jpg" class="img-circle">
                   <p class="photo_caption">Secretary: <a href="mailto:sorfanos@med.uoa.gr">Stylianos Orfanos</a></p>
                  
                 </div>
@@ -20,7 +20,7 @@
 
           
 
-            <div class="row">
+            <div class="row　row_assemblies_card">
               <div class="col-md-4 col-md-offset-2">
                  <div class="card card-padded">
                   <div class="card-image">

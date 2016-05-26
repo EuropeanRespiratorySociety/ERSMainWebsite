@@ -6,11 +6,11 @@
       <div class="section fp-auto-height">
       <div class="main-content">
         <div class="page-head">
-          <h2 class="">The ERS Scientific Assemblies</h2>
+          <h2>The ERS Scientific Assemblies</h2>
         </div>
         
           <!--h3 class="pageTitle">The ERS Scientific Assemblies</h3-->
-          <h4 class="pageSubTitle"><strong>Exchange knowledge with the experts</strong></h4>
+          <h4><strong>Exchange knowledge with the experts</strong></h4>
 
           <div class="col-md-8 center-block lead"> The Scientific Assemblies help set the scientific and educational agenda across all ERS activities. They also serve as a forum to present and discuss scientific work, especially at the annual ERS International Congress. Every member of the Society has the chance to join a specialised assembly and become part of the ERS community. <br><br>
           When becoming a member you will be asked to choose three Groups among the 11 Assemblies. </div>

@@ -4,11 +4,11 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/assemblies/Ian_M_Adcock.jpg" class="img-circle">
+                  <img src="../images/stories/people/Ian_M_Adcock.jpg" class="img-circle">
                   <p class="photo_caption">Head: <a href="mailto:ian.adcock@imperial.ac.uk">Ian M. Adcock</a></p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/assemblies/Antonio_Spanevello.jpg" class="img-circle">
+                  <img src="../images/stories/people/Antonio_Spanevello.jpg" class="img-circle">
                   <p class="photo_caption">Secretary: <a href="mailto:aspanevello@fsm.it">Antonio Spanevello</a></p>
                  
                 </div>
@@ -22,7 +22,7 @@ A substantial number of pharmacologists and basic scientists have joined clinici
 
           
 
-            <div class="row">
+            <div class="row　row_assemblies_card">
               <div class="col-md-4">
                 <div class="card card-padded">
                   <div class="card-image">

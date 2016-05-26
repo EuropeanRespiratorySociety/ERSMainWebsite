@@ -4,11 +4,11 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/assemblies/Irene_Steenbruggen.jpg" class="img-circle">
+                  <img src="../images/stories/people/Irene_Steenbruggen.jpg" class="img-circle">
                   <p class="photo_caption">Head: <a href="mailto:i.steenbruggen@isala.nl">Irene Steenbruggen</a></p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/assemblies/Martijn_A_Spruit.jpg" class="img-circle">
+                  <img src="../images/stories/people/Martijn_A_Spruit.jpg" class="img-circle">
                   <p class="photo_caption">Secretary: <a href="mailto:martijnspruit@ciro-horn.nl">Martijn A. Spruit</a></p>
                  
                 </div>
@@ -20,7 +20,7 @@
 
           
 
-            <div class="row">
+            <div class="row　row_assemblies_card">
               
               <div class="col-md-4">
                 <div class="card card-padded">
