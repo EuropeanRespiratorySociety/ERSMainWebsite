@@ -88,6 +88,8 @@ Route::group(['middleware' => ['web']], function () {
 
 
 
+
+
     //Route::get('the-society/who-we-are/executive-office', function(){
     	//return view('society.who-we-are.executive-office');
     //});
@@ -99,6 +101,11 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('professional-development/ers-courses', function(){
         return view('professional.ers-courses');
     });
+
+    Route::get('professional-development/courses-item', function(){
+        return view('professional.courses-item');
+    });
+
 
     //Blog using CloudCms
     Route::get('cc', 'CloudCms@index');
