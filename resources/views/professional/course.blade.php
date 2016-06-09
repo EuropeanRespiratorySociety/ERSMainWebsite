@@ -65,7 +65,13 @@
             </button>
             <p>COURSE VENUE<br><br>
 
-            <a href="{{$course->venue->url}}">{{$course->venue->name}}</a><br/>
+            if(isset($course->venue->url))
+              <a href="{{$course->venue->url}}">
+            @endif {{$course->venue->name}} 
+            @if(isset($course->venue->url))
+              </a>
+            @endif
+            <br/>
             {{$course->venue->streetAddress}}<br>
             @if(isset($course->venue->streetAddress2))
             {{$course->venue->streetAddress2}}<br>
