@@ -110,7 +110,9 @@
             <p class="deadline">EXTENDED registration deadline : {{$course->extendedDeadline}}</p>
             @endif
             <p><a href="">Cancellation policy</a></p>
-            <a href="{{$course->registerButton['link']}}"" class="btn btn-primary">Register</a>
+            @if(isset($course->registerButton['link']))
+              <a href="{{$course->registerButton['link']}}"" class="btn btn-primary">Register</a>
+            @endif
           </div>
           <div id="profile" class="tab-pane cont">
                      @if(isset($course->bursaryApplication->text)))
