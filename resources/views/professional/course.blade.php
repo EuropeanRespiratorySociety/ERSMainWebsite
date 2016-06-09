@@ -106,10 +106,18 @@
             <a href="{{$course->registerButton['link']}}"" class="btn btn-primary">Register</a>
           </div>
           <div id="profile" class="tab-pane cont">
+                     @if(isset($course->bursaryApplication->text)))
                      {!!$course->bursaryApplication->text!!}
+                     @endif
+                     @if(isset($course->bursaryApplication->deadline))
                      {{$course->bursaryApplication->deadline}}
+                     @endif
+                     @if(isset($course->bursaryApplication->results))
                      {{$course->bursaryApplication->results}}
+                     @endif
+                     @if(isset($course->bursaryApplication->url))
                      {{$course->bursaryApplication->url}}
+                     @endif
           </div>
           <div id="messages" class="tab-pane"> </div>
         </div>
