@@ -1,7 +1,7 @@
   @extends('template')
-	@section('content')
+  @section('content')
 
-	<div class="ers-content assemblies-content">
+  <div class="ers-content assemblies-content">
     <div id="fullpage">
       <div class="section fp-auto-height">
       <div class="main-content">
@@ -845,7 +845,7 @@ Among this Group, we would like to help the respiratory physician's practice by 
 
 
 
-	@stop()  
+  @stop()  
 
     @section('scripts')
     <!--script src="../js/fullpage.js" type="text/javascript"></script-->
@@ -859,7 +859,7 @@ Among this Group, we would like to help the respiratory physician's practice by 
 
     <script type="text/javascript">
       $(document).ready(function(){
-      	//initialize the javascript
+        //initialize the javascript
         new WOW({offset: 0, mobile: false }).init();
         App.assemblies();             
       });
