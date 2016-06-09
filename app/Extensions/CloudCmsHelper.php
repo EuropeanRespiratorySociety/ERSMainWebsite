@@ -115,16 +115,13 @@ class CloudCmsHelper
     }
 
     public function getBursary($bursary){
-    	if(isset($bursary)){
-    		$parsed['text'] = Markdown::parse($bursary->text);
-    		$parsed['deadline'] = $this->ersDate($bursary->deadline);
-    		$parsed['results'] = $this->ersDate($bursary->notificationOfResults);
-    		$parsed['url'] = $bursary->applyButtonUrl;
+    	
+    		if(isset($bursary->text)){$parsed['text'] = Markdown::parse($bursary->text);}
+    		if(isset($bursary->deadline)){$parsed['deadline'] = $this->ersDate($bursary->deadline);}
+    		if(isset($bursary->notificationOfResults)){$parsed['results'] = $this->ersDate($bursary->notificationOfResults);}
+    		if(isset($bursary->applyButtonUrl)){$parsed['url'] = $bursary->applyButtonUrl;}
 
     		return (object) $parsed;
-    	}
-
-    	return null;
 
     }
 
