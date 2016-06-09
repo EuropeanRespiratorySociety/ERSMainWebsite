@@ -1,24 +1,24 @@
-@foreach ($courses as $course)
+@foreach ($items as $item)
     <div class="col-md-4">
         <div class="card card-event">
-            <span class="label label-school">{{ $course['type'] }}</span>
+            <span class="label label-school">{{ $item['type'] }}</span>
             <div class="card-image">
-                <img class="img-responsive" src="../images/course/course_event.jpg">
+                <img class="img-responsive" src="../images/item/course_event.jpg">
             </div>
             <div class="card-content">
-                <p class="title">{{ $course['title'] }}
-                    <span>Next upcomming course</span>
+                <p class="title">{{ $item['title'] }}
+                    <span>Next upcomming item</span>
                 </p>
-                <p class="date">{{ $course['eventDates'] }}</p>
-                <p>{{ $course['lead'] }}</p>
-                <p class="btn-rounded early_bird">Early Bird deadline {{ $course['earlybirdDeadline'] }}</p>
-                <p class="place"><span class="icon s7-map-marker"></span>{{ $course['eventLocation'] }}</p>
+                <p class="date">{{ $item['eventDates'] }}</p>
+                <div class="">{!! $item['lead'] !!}</div>
+                <p class="btn-rounded early_bird">Early Bird deadline {{ $item['earlybirdDeadline'] }}</p>
+                <p class="place"><span class="icon s7-map-marker"></span>{{ $item['eventLocation'] }}</p>
             </div>
             <div class="card-action clearfix">
-            @if(isset($course['registerButton']['link']))
-            <a href="{{$course['registerButton']['link']}}" target="new_blank"  class="btn pull-right btn-register">register</a>
+            @if(isset($item['registerButton']['link']))
+            <a href="{{$item['registerButton']['link']}}" target="new_blank"  class="btn btn-register">register</a>
             @endif
-            <a href="professional-development/courses/{{$course['slug']}}" target="new_blank"  class="btn pull-left btn-register">more</a>
+            <a href="professional-development/courses/{{$item['slug']}}" target="new_blank"  class="btn btn-register">more</a>
             </div>
         </div>
     </div>
