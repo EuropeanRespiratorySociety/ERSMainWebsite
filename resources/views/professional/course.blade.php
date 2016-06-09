@@ -35,7 +35,9 @@
         </div>
       </div>
       <h2 class="article-title">{{$course->title}}</h2>
+      @if(isset($course->organisers))
       <h5>Organisers : {{$course->organisers}}</a></h5>
+      @endif
 
       <div class="article text-left">
         <p>{{$course->lead}}</p>
