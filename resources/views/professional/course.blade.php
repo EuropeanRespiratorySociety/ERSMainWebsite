@@ -65,9 +65,10 @@
             </button>
             <p>COURSE VENUE<br><br>
 
-            if(isset($course->venue->url))
+            @if(isset($course->venue->url))
               <a href="{{$course->venue->url}}">
-            @endif {{$course->venue->name}} 
+            @endif 
+              {{$course->venue->name}} 
             @if(isset($course->venue->url))
               </a>
             @endif
