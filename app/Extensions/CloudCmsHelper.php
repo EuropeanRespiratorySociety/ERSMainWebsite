@@ -48,16 +48,15 @@ class CloudCmsHelper
                     $parsed[$key]['lead'] = $item->leadParagraph;
 
                     if(!$lead){
-	                    $parsed[$key]['organisers'] = $item->organisers;
-	                    $parsed[$key]['body'] = Markdown::parse($item->body);
-	                    $parsed[$key]['feeList'] = $item->feeList;
-	                    $parsed[$key]['cancellationPolicy'] = $item->cancellationPolicy;
-	                    $parsed[$key]['sponsors'] = $item->sponsors;
-	                    $parsed[$key]['documents'] = $item->documents;//document url/name
-	                    $parsed[$key]['venue'] = $item->venue;
-	                    $parsed[$key]['suggestedAccommodation'] = $item->suggestedAccommodation;
+	                    if(isset($item->organisers)){ $parsed[$key]['organisers'] = $item->organisers;}
+	                    if(isset($item->body)){$parsed[$key]['body'] = Markdown::parse($item->body);}
+	                    if(isset($item->feeList)){$parsed[$key]['feeList'] = $item->feeList;}
+	                    if(isset($item->cancellationPolicy)){$parsed[$key]['cancellationPolicy'] = $item->cancellationPolicy;}
+	                    if(isset($item->sponsors)){$parsed[$key]['sponsors'] = $item->sponsors;}
+	                    if(isset($item->venue)){$parsed[$key]['venue'] = $item->venue;}
+	                    if(isset($item->suggestedAccommodation)){$parsed[$key]['suggestedAccommodation'] = $item->suggestedAccommodation;}
 	                    $parsed[$key]['bursaryApplication'] = $this->getBursary($item->bursaryApplication);
-	            		$parsed[$key]['documents'] = $this->getDocuments($item->documents);
+	            		if(isset($item->documents)){$parsed[$key]['documents'] = $this->getDocuments($item->documents);}
 
 	                    
                 	}
