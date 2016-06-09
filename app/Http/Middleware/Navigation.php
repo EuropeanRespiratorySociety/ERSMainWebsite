@@ -44,7 +44,7 @@ class Navigation
 
             $menu->add('Publications','publications');
             $menu->add('Professional development','professional-development');
-                $menu->professionalDevelopment->add('ERS Courses','professional-development/ers-courses');
+                $menu->professionalDevelopment->add('ERS Courses','professional-development/courses');
 
             $menu->add('Research','research');
             $menu->add('Advocacy','advocacy');

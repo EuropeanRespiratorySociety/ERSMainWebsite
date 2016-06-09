@@ -35,8 +35,8 @@ return array(
     'clientKey'     => env('CC_CLIENT_KEY', ''),
     'clientSecret'  => env('CC_CLIENT_SECRET', ''),
     'redirectUri'   => 'http://www.ersnet.org/',
-    'deploymentUrl' => 'https://5a0b7ae6-4372-406a-a293-88d22608dbc3-hosted.cloudcms.net/',
-    'repositoryId'  => '126d630737b199cfa4e7',
+    'deploymentUrl' => 'https://53ed64a9-671f-4e65-9f57-5e736e3d5d62-hosted.cloudcms.net',
+    'repositoryId'  => '607e97e4474d46e40345',
     'branch'        => 'master'
 
    

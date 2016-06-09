@@ -94,6 +94,7 @@ private $headers;
                     ->find($query)
                     ->addParams(['full' => 'true'])   
                     ->get();
+
         $path = 'Samples/Catalog/Products/';            
         $img = CC::nodes()
                     ->getImage($node['rows'][0]['_qname'])
@@ -154,11 +155,11 @@ private $headers;
     public function requestTest2()
     {
 
-        $body = '{"title": "Review"}';
-        //$nodeId = 'o:9a8195e6286a4f7b40ae'; //product
-        $nodeId = 'o:386c912312c77e21425e'; //strawberry
-        $association = 'catalog:product-has-review';
-        $direction = 'outgoing';
+        $body = '{ "categories": "birthdays"}';
+        $nodeId = 'o:9a8195e6286a4f7b40ae'; //product
+        //$nodeId = 'o:386c912312c77e21425e'; //strawberry
+        $association = 'a:child';
+        $direction = 'OUTGOING';
         $node = CC::nodes()
                     ->queryAssociationItems($nodeId, $association, $body )
                     ->addParams(['full' => 'true']) 
@@ -189,11 +190,12 @@ private $headers;
     $token = $accessToken->getToken();
     
     $headers = array('authorization' => 'Bearer '.$token);
-    $body = '{"categories": "birthdays"}';
+    $body = '{"categories": "birthdays",
+ “_doc”: {“$in”: [“9abda266065283f50554”]}  }';
     $sort = '&sort={"_system.created_on.ms": 1}';    
     $client = new Client();
-    //$request = new GRequest('POST', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/o:9a8195e6286a4f7b40ae/children?full=true', $headers, $body);
-   //$request = new GRequest('POST', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/query?full=true&metadata=true'.$sort, $headers, $body);
+    //$request = new GRequest('GET', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/o:9a8195e6286a4f7b40ae/children?full=true', $headers, $body);
+   $request = new GRequest('POST', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/query?full=true&metadata=true'.$sort, $headers, $body);
    //$request = new GRequest('POST', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/o:9a8195e6286a4f7b40ae/list/catalog:product-has-review/items/query?full=true&metadata=true', $headers);
 
     /////
@@ -205,7 +207,7 @@ private $headers;
    //path/tree tests bof..
    //$request = new GRequest('GET', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/n:root/path/catalog:product?base=root&depth=3', $headers);
    //traverse
-   //$request = new GRequest('POST', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/catalog:product/traverse?depth=3', $headers);
+   //$request = new GRequest('POST', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/catalog:product/traverse', $headers, $body);
 
 
     //dd($request);
@@ -229,9 +231,7 @@ private $headers;
     public function fullSearch()
     {
     
-    $payload = '{
-        "search": "cupcake"       
-    }';
+    $payload = '{ "search": "cupcake", }';
     $payload1 = '{
         "search": {
             "query_string" : {
@@ -266,7 +266,7 @@ private $headers;
     }';
 
     $node = CC::nodes()
-                    ->fullSearch($payload2)
+                    ->fullSearch($payload)
                     ->addParams(['full' => 'true'])  
                     ->get();
 

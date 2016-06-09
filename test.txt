@@ -1,0 +1,4 @@
+email	name	firstname	sendto
+sam@sam.com	pouyt	sam		 test1
+lauren@lauren.com	Anderson	lauren	test1
+dawn@ould.com	ould	dawn 	test1	

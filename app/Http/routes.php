@@ -98,18 +98,14 @@ Route::group(['middleware' => ['web']], function () {
         return view('society.executive-office');
     });
 
-    Route::get('professional-development/ers-courses', function(){
-        return view('professional.ers-courses');
-    });
+    Route::get('professional-development/courses', 'CourseController@index');
 
-    Route::get('professional-development/courses-item', function(){
-        return view('professional.courses-item');
-    });
+    Route::get('professional-development/courses/{slug}', 'CourseController@show');
 
 
     //Blog using CloudCms
-    Route::get('cc', 'CloudCms@index');
-    Route::get('cc/{slug}', 'CloudCms@show');
+    Route::get('cc', 'CourseController@index');
+    Route::get('cc/{slug}', 'CourseController@show');
 
     Route::get('search/{query}', 'CloudCms@search');
     Route::get('full-search', 'CloudCms@fullSearch');

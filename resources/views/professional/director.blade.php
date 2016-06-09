@@ -6,16 +6,25 @@
         </p>
     </div>
 </div>
-    <p>Professor Nicolino Ambrosino is currently Director of the Respiratory Unit at the Cardio-Thoracic Department, University Hospital of Pisa, as well as Director of the Pulmonary Rehabilitation and Weaning Center, and Scientific Director of Auxilium Vitae, Volterra.</p>
-    <p><strong>Are you interested in organising an ERS course?</strong></p>
+<div class="row">
+    <div class="col-md-12">   
+        <p>Professor Nicolino Ambrosino is currently Director of the Respiratory Unit at the Cardio-Thoracic Department, University Hospital of Pisa, as well as Director of the Pulmonary Rehabilitation and Weaning Center, and Scientific Director of Auxilium Vitae, Volterra.</p>
+    </div>
+</div>
+<div class="row"> 
+    <div class="col-md-12">   
+        <h4>Are you interested in organising an ERS course?</h4>
 
-    <p>Please download and fill one of the following forms: <a href="">External course, Skills based course, Online course.</a><br><br>
+        <p>Please download and fill one of the following forms: <a href="">External course, Skills based course, Online course.</a>
+        </p>
 
-    If you would like ERS endorsement for your event please complete the following <a href="">form</a> please see these <a href="">guidelines</a> for further information. Forms can be returned either by email <a href="">education@ersnet.org</a> or fax +41 21 213 0100.
+        <p>
+        If you would like ERS endorsement for your event please complete the following <a href="">form</a> please see these <a href="">guidelines</a> for further information. Forms can be returned either by email <a href="">education@ersnet.org</a> or fax +41 21 213 0100.
+        </p>
+    </div>  
+</div>
 
-    </p><br><br>
-
-    <div class="links">
+<div class="col-md-12">
 
     <p><strong>CME Accredited Activities</strong></p>
     <ul>
@@ -27,12 +36,7 @@
     	<li><a href="">ERS Handbook of Respiratory Medicine - CME Test</a></li>
     </ul>
 
-    <p><strong>my.ersnet.org</strong></p>
-    <ul>
-    	<li><a href="">Update your profile</a></li>
-    	<li><a href="">Renew your membership</a></li>
-    </ul>
-    </div>
+</div>
 
 
 </div>
