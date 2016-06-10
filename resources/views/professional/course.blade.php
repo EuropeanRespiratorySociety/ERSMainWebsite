@@ -40,7 +40,7 @@
       @endif
 
       <div class="article text-left">
-        <p>{{$course->lead}}</p>
+        {!!$course->lead!!}
         {!!$course->body!!}
       </div>
     </div>

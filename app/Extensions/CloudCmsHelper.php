@@ -45,7 +45,7 @@ class CloudCmsHelper
                     if(isset($item->extendedDeadline)){ $parsed[$key]['extendedDeadline'] = $this->ersDate($item->extendedDeadline); }
                     $parsed[$key]['eventLocation'] = $item->eventLocation;                
                     
-                    $parsed[$key]['lead'] = $this->truncate($item->leadParagraph);
+                    $parsed[$key]['lead'] = $this->truncate(Markdown::parse($item->leadParagraph));
 
                     if(!$lead){
 	                    if(isset($item->organisers)){ $parsed[$key]['organisers'] = $item->organisers;}
