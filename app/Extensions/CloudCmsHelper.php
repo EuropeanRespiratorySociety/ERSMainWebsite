@@ -45,7 +45,7 @@ class CloudCmsHelper
                     if(isset($item->extendedDeadline)){ $parsed[$key]['extendedDeadline'] = $this->ersDate($item->extendedDeadline); }
                     $parsed[$key]['eventLocation'] = $item->eventLocation;                
                     
-                    $parsed[$key]['lead'] = $item->leadParagraph;
+                    $parsed[$key]['lead'] = $this->truncate($item->leadParagraph);
 
                     if(!$lead){
 	                    if(isset($item->organisers)){ $parsed[$key]['organisers'] = $item->organisers;}
@@ -122,6 +122,19 @@ class CloudCmsHelper
     		if(isset($bursary->applyButtonUrl)){$parsed['url'] = $bursary->applyButtonUrl;}
 
     		return (object) $parsed;
+
+    }
+
+    public function truncate($string, $length=80, $append="&hellip;"){
+    	$string = trim($string);
+
+    	if(strlen($string) > $length) {
+    		$string = wordwrap($string, $length);
+    		$string = explode("\n", $string, 2);
+    		$string = $string[0]. $append;
+    	}
+
+    	return $string;
 
     }
 
