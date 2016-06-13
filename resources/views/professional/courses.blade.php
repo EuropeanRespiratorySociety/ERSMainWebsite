@@ -2,6 +2,7 @@
 @section('content')
 <div class="ers-content ers-courses">
 
+<div class="clearfix">
 <div class="col-md-9 light-grey-bg">
     <div class="main-content">
         <div class="page-head">
@@ -13,10 +14,19 @@
         <div class="row row_event">
             @include('partials.category-items',array('items' => $courses))
         </div>
+
+        
+    
     </div>
+
+
 </div>
 
+
 @include('professional.director', array('class' => 'col-md-3'))
+</div>
+
+@include('professional.course-footer', array('class' => 'col-md-12'))
 
 @stop()  
 
