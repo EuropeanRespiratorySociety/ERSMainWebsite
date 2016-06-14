@@ -22,6 +22,7 @@ class Navigation
             $menu->add('The Society','the-society');
                 $menu->theSociety->add('Who we are', 'the-society/who-we-are' );
                 $menu->theSociety->add('Leadership and committees', 'the-society/leadership' );
+                $menu->theSociety->add('Membership', 'the-society/membership' );
                     $menu->leadershipAndCommittees->add('National Delegates', 'the-society/leadership/national-delegates' );
                     $menu->leadershipAndCommittees->add('Science Council', 'the-society/leadership/science-council' );
                     $menu->leadershipAndCommittees->add('Science Council', 'the-society/leadership/assembly-heads' );
@@ -44,10 +45,14 @@ class Navigation
 
             $menu->add('Publications','publications');
             $menu->add('Professional development','professional-development');
+                $menu->professionalDevelopment->add('Fellowships','professional-development/fellowships');
                 $menu->professionalDevelopment->add('ERS Courses','professional-development/courses');
+
 
             $menu->add('Research','research');
             $menu->add('Advocacy','advocacy');
+                $menu->advocacy->add('EU-Affairs','advocacy/eu-affairs');
+                $menu->advocacy->add('EU-Projects','advocacy/eu-projects');
 
 
 

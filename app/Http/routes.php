@@ -86,6 +86,16 @@ Route::group(['middleware' => ['web']], function () {
         return view('society.leadership.elections-2016');
     });
 
+    Route::get('the-society/membership', function(){
+        return view('society.membership');
+    });
+
+    Route::get('congress-and-events/ers-research-seminars', function(){
+        return view('congress-and-events.ers-research-seminars');
+    });
+
+
+
 
 
 
@@ -101,6 +111,24 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('professional-development/courses', 'CourseController@index');
 
     Route::get('professional-development/courses/{slug}', 'CourseController@show');
+
+    Route::get('professional-development/fellowships', function(){
+        return view('professional.fellowships');
+    });
+
+    Route::get('professional-development/fellowship', function(){
+        return view('professional.fellowship');
+    });
+
+    Route::get('advocacy/eu-affairs', function(){
+        return view('advocacy.eu-affairs');
+    });
+
+    Route::get('advocacy/eu-projects', function(){
+        return view('advocacy.eu-projects');
+    });
+
+
 
 
     //Blog using CloudCms
