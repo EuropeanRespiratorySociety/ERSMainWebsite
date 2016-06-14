@@ -1,5 +1,5 @@
 <div class="section fp-auto-height home-scientific-content" id="">
-	<div class="main-content">
+	<div class="main-content scientific-top">
 		<div class="row row_event">
 			<div class="col-md-6 top-left-col">
 				<div class="page-head"><h2>Scientific and educational meetings</h2></div>

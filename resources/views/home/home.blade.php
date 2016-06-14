@@ -19,14 +19,23 @@
     <!-- Start Section 2 -->  
     @include('home.home-sections.community')
 
-    <!-- Start Section 2 -->  
+    <!-- Start Section 3 -->  
     @include('home.home-sections.scientific')
 
-    <!-- Start Section 3 -->  
+    <!-- Start Section 4 -->  
     @include('home.home-sections.publications')
 
-    <!-- Start Section 3 -->  
+    <!-- Start Section 5 -->  
     @include('home.home-sections.professional')
+
+     <!-- Start Section 6 -->  
+    @include('home.home-sections.research')
+
+     <!-- Start Section 7 -->  
+    @include('home.home-sections.advocacy')
+
+    <!-- Start Section 8 -->  
+    @include('home.home-sections.elf')
 
     
 

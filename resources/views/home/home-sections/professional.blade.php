@@ -72,9 +72,9 @@ We offer a range of activities from e-learning, interactive teaching and activit
 	        	</ul>
 	        	<a href="">
         			<div class="card card-event">
-        				<span class="label label-scientific">Fellowship</span>
+        				<span class="label label-school">ERS course</span>
         				<div class="card-image">
-        					<img class="img-responsive" src="../images/course/course_event.jpg">
+        					<img class="img-responsive" src="../images/home/educational_courses.jpg">
         				</div>
         				<div class="card-content">
         					<p class="title">Lung transplantation

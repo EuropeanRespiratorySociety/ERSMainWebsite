@@ -36,7 +36,7 @@
               <a href="#">
                 <div class="card card-padded" style="    background-color: #000000;">
                   <figure class="hover-gradation">
-                    <span class="label label-hlfl">Latest News</span>
+                    <span class="label label-news">Latest News</span>
                     <img src="../images/news/wcd2016.jpg" alt=""/>
                   <figcaption>
                     <h2>FIRS supports<br>
