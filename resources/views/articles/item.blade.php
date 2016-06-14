@@ -1,9 +1,10 @@
 @extends('template')
 @section('content')<div class="ers-content">
   <div class="row">
-    <div class="col-md-3 midium-grey-bg left-photo-map">
-    <p><img src="../images/course/item_photo.jpg" class="img-rounded img-responsive"></p>
-    <p><img src="../images/course/map.jpg" class="img-rounded img-responsive"></p>
+    <div class="col-md-3 midium-grey-bg left-photo-map">    
+    @if(isset($item->image))
+    <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
+    @endif
     </div>
     <!-- Beginning Main Content Area -->
     <div class="col-md-6 lighter-grey-bg">
