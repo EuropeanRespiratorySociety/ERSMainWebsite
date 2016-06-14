@@ -28,6 +28,7 @@
 
 @include('professional.course-footer', array('class' => 'col-md-12'))
 
+</div>
 @stop()  
 
 @section('scripts')  
