@@ -36,31 +36,36 @@ class CloudCmsHelper
                     }	
                     $parsed[$key]['slug'] = $item->slug;
                     $parsed[$key]['tags'] = $item->tags;
-                    $parsed[$key]['flags'] = $this->getFlags($item->flags);
-                    $parsed[$key]['type'] = $item->type;
-                    $parsed[$key]['category'] = $item->category->title;
-                    $parsed[$key]['categoryId'] = $item->category->qname;
-                    $parsed[$key]['eventDates'] = $this->ersDate($item->eventDate, $item->eventEndDate);   
-                    $parsed[$key]['earlybirdDeadline'] = $this->ersDate($item->earlybirdDeadline);
+                    if(isset($item->flags)){$parsed[$key]['flags'] = $this->getFlags($item->flags);}
+                    if(isset($item->type)){$parsed[$key]['type'] = $item->type;}
+                    if(isset($item->category)){
+                    	$parsed[$key]['category'] = $item->category->title;
+                    	$parsed[$key]['categoryId'] = $item->category->qname;
+                    }	
+                    $parsed[$key]['_qname'] = $item->_qname;
+                    $parsed[$key]['_type'] = $item->_type;
+                    if(isset($item->eventDate)){$parsed[$key]['eventDates'] = $this->ersDate($item->eventDate, $item->eventEndDate);}   
+                    if(isset($item->earlybirdDeadline)){$parsed[$key]['earlybirdDeadline'] = $this->ersDate($item->earlybirdDeadline);}
                     if(isset($item->extendedDeadline)){ $parsed[$key]['extendedDeadline'] = $this->ersDate($item->extendedDeadline); }
-                    $parsed[$key]['eventLocation'] = $item->eventLocation;                
+                    if(isset($item->eventLocation)){$parsed[$key]['eventLocation'] = $item->eventLocation;}                
                     
-                    $parsed[$key]['lead'] = $this->truncate(Markdown::parse($item->leadParagraph));
+                    if(isset($item->leadParagraph)){$parsed[$key]['lead'] = $this->truncate(Markdown::parse($item->leadParagraph));}
 
                     if(!$lead){
 	                    if(isset($item->organisers)){ $parsed[$key]['organisers'] = $item->organisers;}
+	                    if(isset($item->faculty)){ $parsed[$key]['faculty'] = $item->faculty;}
 	                    if(isset($item->body)){$parsed[$key]['body'] = Markdown::parse($item->body);}
 	                    if(isset($item->feeList)){$parsed[$key]['feeList'] = $item->feeList;}
-	                    if(isset($item->cancellationPolicy)){$parsed[$key]['cancellationPolicy'] = $item->cancellationPolicy;}
+	                    if(isset($item->cancellationPolicy)){$parsed[$key]['cancellationPolicy'] = Markdown::parse($item->cancellationPolicy);}
 	                    if(isset($item->sponsors)){$parsed[$key]['sponsors'] = $item->sponsors;}
 	                    if(isset($item->venue)){$parsed[$key]['venue'] = $item->venue;}
-	                    if(isset($item->suggestedAccommodation)){$parsed[$key]['suggestedAccommodation'] = $item->suggestedAccommodation;}
-	                    $parsed[$key]['bursaryApplication'] = $this->getBursary($item->bursaryApplication);
+	                    if(isset($item->suggestedAccommodation)){$parsed[$key]['suggestedAccommodation'] = $this->getSuggestedAccommodations($item->suggestedAccommodation);}
+	                    if(isset($item->bursaryApplication)){$parsed[$key]['bursaryApplication'] = $this->getBursary($item->bursaryApplication);}
 	            		if(isset($item->documents)){$parsed[$key]['documents'] = $this->getDocuments($item->documents);}
 
 	                    
                 	}
-                	$parsed[$key]['registerButton'] = (array) $item->registerButton;
+                	if(isset($item->registerButton)){$parsed[$key]['registerButton'] = (array) $item->registerButton;}
                     //$img = CC::nodes()->deploymentUrl.'static/path/Samples/Catalog/Products/'.$item['_features']['f:filename']['filename'];
                     $features = (array) $item->_features;
                    //link to documents https://53ed64a9-671f-4e65-9f57-5e736e3d5d62-hosted.cloudcms.net/static/path/documents/documents/Bedroom_reservation_form_ERS_26-30_10_2016.pdf
@@ -112,6 +117,25 @@ class CloudCmsHelper
     	if(isset($parsed)){
     		return $parsed[0];
     	}
+    }
+
+    public function getSuggestedAccommodations($items){
+    	foreach ($items as $key => $item) {
+    
+    		if(isset($item->info)){$parsed[$key]['info'] = Markdown::parse($item->info);}
+    		if(isset($item->name)){$parsed[$key]['name'] = $item->name;}
+    		if(isset($item->url)){$parsed[$key]['url'] = $item->url;}
+    		if(isset($item->streetAddress)){$parsed[$key]['streetAddress'] = $item->streetAddress;}
+    		if(isset($item->streetAddress2)){$parsed[$key]['streetAddress2'] = $item->streetAddress2;}
+    		if(isset($item->postalCode)){$parsed[$key]['zip'] = $item->postalCode;}
+    		if(isset($item->city)){$parsed[$key]['city'] = $item->city;}
+    		if(isset($item->country)){$parsed[$key]['country'] = $item->country;}
+    		if(isset($item->phoneNumber)){$parsed[$key]['phone'] = $item->phoneNumber;}
+
+    	}
+
+    		return (object) $parsed;
+
     }
 
     public function getBursary($bursary){

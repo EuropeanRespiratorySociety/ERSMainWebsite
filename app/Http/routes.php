@@ -50,9 +50,9 @@ Route::group(['middleware' => ['web']], function () {
     	return view('society.assemblies');
     });
 
-    Route::get('the-society/who-we-are', function(){
-    	return view('society.who-we-are');
-    });
+    Route::get('the-society/who-we-are', 'WhoWeAreController@index');
+    Route::get('the-society/who-we-are/{slug}', 'WhoWeAreController@show');
+
 
     Route::get('the-society/leadership', function(){
         return view('society.leadership');
