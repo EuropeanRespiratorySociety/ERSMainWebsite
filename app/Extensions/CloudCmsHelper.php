@@ -49,7 +49,10 @@ class CloudCmsHelper
                     if(isset($item->extendedDeadline)){ $parsed[$key]['extendedDeadline'] = $this->ersDate($item->extendedDeadline); }
                     if(isset($item->eventLocation)){$parsed[$key]['eventLocation'] = $item->eventLocation;}                
                     
-                    if(isset($item->leadParagraph)){$parsed[$key]['lead'] = $this->truncate(Markdown::parse($item->leadParagraph));}
+                    if(isset($item->leadParagraph)){
+                    	$parsed[$key]['shortLead'] = $this->truncate(Markdown::parse($item->leadParagraph));
+                    	$parsed[$key]['lead'] = Markdown::parse($item->leadParagraph);
+                    }
 
                     if(!$lead){
 	                    if(isset($item->organisers)){ $parsed[$key]['organisers'] = $item->organisers;}
@@ -120,6 +123,7 @@ class CloudCmsHelper
     }
 
     public function getSuggestedAccommodations($items){
+    	$parsed = [];
     	foreach ($items as $key => $item) {
     
     		if(isset($item->info)){$parsed[$key]['info'] = Markdown::parse($item->info);}

@@ -22,9 +22,9 @@ class WhoWeAreController extends Controller
         $CC = new CC();
         $results = $CC->getItem($slug);
         //Slug should be unique, so we should get only one item
-        $who = $CC->parseItems($results->rows);
-        $params['who'] =  (object) $who[0]; 
-        return view('society.who-we-are')->with($params); 
+        $item = $CC->parseItems($results->rows);
+        $params['item'] =  (object) $item[0]; 
+        return view('articles.item')->with($params); 
 
     }
 
@@ -61,8 +61,8 @@ class WhoWeAreController extends Controller
         $results = $CC->getItem($slug);
         //Slug should be unique, so we should get only one item
         $course = $CC->parseItems($results->rows);
-        $params['course'] =  (object) $course[0]; 
-        return view('professional.course')->with($params); 
+        $params['item'] =  (object) $course[0]; 
+        return view('articles.item')->with($params); 
     }
 
     /**

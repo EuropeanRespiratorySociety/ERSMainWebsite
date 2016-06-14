@@ -10,7 +10,7 @@
                     <span>Next upcomming item</span>
                 </p>
                 <p class="date">{{ $item['eventDates'] }}</p>
-                <div class="lead-card">{!! $item['lead'] !!}</div>
+                <div class="lead-card">{!! $item['shortLead'] !!}</div>
                 <p class="btn-rounded early_bird">Early Bird deadline {{ $item['earlybirdDeadline'] }}</p>
                 <p class="place"><span class="icon s7-map-marker"></span>{{ $item['eventLocation'] }}</p>
             </div>

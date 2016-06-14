@@ -23,7 +23,7 @@ class Navigation
                 $menu->theSociety->add('Who we are', 'the-society/who-we-are' );
                     $menu->whoWeAre->add('Satutes and Policies', 'the-society/who-we-are/statutes-policies-and-annual-report' );
                     $menu->whoWeAre->add('Awards', 'the-society/who-we-are/awards' );
-                    $menu->whoWeAre->add('Fellows of ERS', 'the-society/who-we-are/fellows-of-ers' );
+                    $menu->whoWeAre->add('Fellow of ERS', 'the-society/who-we-are/fellow-of-ers' );
                 $menu->theSociety->add('Leadership and committees', 'the-society/leadership' );
                     $menu->leadershipAndCommittees->add('National Delegates', 'the-society/leadership/national-delegates' );
                     $menu->leadershipAndCommittees->add('Science Council', 'the-society/leadership/science-council' );
