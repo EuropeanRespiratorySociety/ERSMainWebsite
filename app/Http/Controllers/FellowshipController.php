@@ -26,7 +26,7 @@ class FellowshipController extends Controller
         return view('professional.fellowships');
 
     }
-
+ 
     /**
      * Display a listing of the resource.
      *
@@ -125,7 +125,7 @@ class FellowshipController extends Controller
     {
         //
     }
-
+ 
     /**
      * Remove the specified resource from storage.
      *
