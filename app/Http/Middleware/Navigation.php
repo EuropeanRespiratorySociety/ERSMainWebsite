@@ -76,6 +76,8 @@ class Navigation
 
             $menu->add('Professional development','professional-development');
                 $menu->professionalDevelopment->add('Fellowships','professional-development/fellowships');
+                    $menu->fellowships->add('Short Term','professional-development/fellowships/short-term');
+                    $menu->fellowships->add('Long Term','professional-development/fellowships/long-term');
                 $menu->professionalDevelopment->add('ERS Courses','professional-development/courses');
 
 
