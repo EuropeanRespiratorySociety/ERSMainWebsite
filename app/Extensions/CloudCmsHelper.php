@@ -29,6 +29,7 @@ class CloudCmsHelper
 	}
 
 	public function parseItems($items, $lead = false){
+        //dd($items);
 		        foreach ($items as $key => $item) {
                     $parsed[$key]['title'] = $item->title;
                     if(isset($item->subTitle)){
@@ -72,17 +73,19 @@ class CloudCmsHelper
                     //$img = CC::nodes()->deploymentUrl.'static/path/Samples/Catalog/Products/'.$item['_features']['f:filename']['filename'];
                     $features = (array) $item->_features;
                    //link to documents https://53ed64a9-671f-4e65-9f57-5e736e3d5d62-hosted.cloudcms.net/static/path/documents/documents/Bedroom_reservation_form_ERS_26-30_10_2016.pdf
+                    //$img = CC::nodes()->deploymentUrl.'/static/path/images/'.$features['f:filename']->filename;
                     //This function can be used by passing the _qname of the image
-                    //CC::nodes()->getImage($_qname);
-                    
-                    //The path is correct, just put the file name there, but somehow it does not get attached to the element...
-                    /*$img = CC::nodes()->deploymentUrl.'/static/path/images/'.$features['f:filename']->filename;
-
-                    $parsed[$key]['image'] = Image::cache(function($image) use($img){
-                     return $image->make($img)->resize(420, 115, function ($constraint) {
-                            $constraint->aspectRatio();
-                        })->encode('data-url');
-                 });*/
+                    if(isset($item->image)){
+                        $img_qname = $item->image->qname;
+                        $img = CC::nodes()->getImage($img_qname);
+                    }
+                    if(isset($img)){
+                        $parsed[$key]['image'] = Image::cache(function($image) use($img){
+                         return $image->make($img->imageUrl)->resize(420, null, function ($constraint) {
+                                $constraint->aspectRatio();
+                            })->encode('data-url');
+                        });
+                    }
 
             }  
             //dd($parsed);

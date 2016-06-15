@@ -2,8 +2,9 @@
 @section('content')<div class="ers-content event-items-content">
   <div class="row">
     <div class="col-md-3 midium-grey-bg left-photo-map">
-    <p><img src="../images/course/item_photo.jpg" class="img-rounded img-responsive"></p>
-    <p><img src="../images/course/map.jpg" class="img-rounded img-responsive"></p>
+    @if(isset($course->image))
+    <p><img src="{{ $course->image }}" class="img-rounded img-responsive"></p>
+    @endif
     </div>
 
     <div class="col-md-6 lighter-grey-bg">

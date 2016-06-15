@@ -18,7 +18,6 @@ class Navigation
     {
         \Menu::make('MainNav', function($menu){
 
-            $menu->add('Home'); 
             $menu->add('The Society','the-society');
                 $menu->theSociety->add('Who we are', 'the-society/who-we-are' );
                     $menu->whoWeAre->add('Satutes and Policies', 'the-society/who-we-are/statutes-policies-and-annual-report' );
@@ -36,6 +35,7 @@ class Navigation
                 $menu->theSociety->add('Executive office', 'the-society/executive-office' );
                     #$menu->theSociety->whoWeAre->add('Executive office', 'the-society/who-we-are/executive-office' );
                 $menu->theSociety->add('Assemblies', 'the-society/assemblies' );
+
             $menu->add('Congress and events','congress-and-events');
                 $menu->congressAndEvents->add('Events calendar','congress-and-events/events-calendar');
                 $menu->congressAndEvents->add('ERS International Congress','http://erscongress.org');
@@ -46,7 +46,34 @@ class Navigation
                 $menu->congressAndEvents->add('Past International Congresses','congress-and-events/past-international-congresses');
                 $menu->congressAndEvents->add('Event endorsement','congress-and-events/event-endorsement');
 
-            $menu->add('Publications','publications');
+            $menu->add('Publications','#publications');
+                $menu->publications->add('European Respiratory Journal', 'http://erj.ersjournals.com/')
+                    ->link->attr(array('target' => '_blank'));
+                $menu->publications->add('ERJ Open Research', 'http://openres.ersjournals.com/')
+                    ->link->attr(array('target' => '_blank'));
+                $menu->publications->add('European Respiratory Review', 'http://err.ersjournals.com/')
+                    ->link->attr(array('target' => '_blank'));
+                $menu->publications->add('Monograph', 'http://erm.ersjournals.com/')
+                    ->link->attr(array('target' => '_blank'));
+                $menu->publications->add('Breathe', 'http://breathe.ersjournals.com/')
+                    ->link->attr(array('target' => '_blank'));
+                $menu->publications->add('Guidelines', 'http://www.ers-education.org/pages/default.aspx?id=2005')
+                    ->link->attr(array('target' => '_blank'));
+                $menu->publications->add('White Books', 'http://www.erswhitebook.org/')
+                    ->link->attr(array('target' => '_blank'));
+                $menu->publications->add('ERS Handbooks', 'http://www.ers-education.org/publications/handbook-series.aspx')
+                    ->link->attr(array('target' => '_blank'));                
+                $menu->publications->add('FIRS World Report', 'pdf/publications/firs-world-report.pdf')
+                    ->link->attr(array('target' => '_blank'));
+                $menu->publications->add('Air Quality and Health','publications/air-quality-and-health');
+                $menu->publications->add('ERS Road Map', 'http://www.ersroadmap.org/')
+                    ->link->attr(array('target' => '_blank'));
+                $menu->publications->add('RED Congress Magazine', 'http://www.ersbuyersguide.org/')
+                    ->link->attr(array('target' => '_blank'));
+                $menu->publications->add('COPD Audit', 'pdf/publications/copd_audit_web_version.pdf')
+                    ->link->attr(array('target' => '_blank'));
+
+
             $menu->add('Professional development','professional-development');
                 $menu->professionalDevelopment->add('Fellowships','professional-development/fellowships');
                 $menu->professionalDevelopment->add('ERS Courses','professional-development/courses');
