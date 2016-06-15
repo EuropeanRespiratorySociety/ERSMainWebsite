@@ -33,9 +33,6 @@ Route::get('/cache-flush', function () {
 
 Route::group(['middleware' => ['web']], function () {
 
-	//Route::get('logout', ['middleware' => 'doNotCacheResponse', 'uses' => 'Auth\AuthController@logout']);
-	//Route::get('login', ['middleware' => 'doNotCacheResponse', 'uses' => 'Auth\AuthController@showLoginForm']);
-	//Route::post('login', ['middleware' => 'doNotCacheResponse', 'uses' => 'Auth\AuthController@login']);
     Route::get('test-sam2', 'CloudCms@requestTest2');
     Route::get('test-sam', 'CloudCms@requestTest');
 	Route::Auth();
@@ -50,9 +47,11 @@ Route::group(['middleware' => ['web']], function () {
     	return view('society.assemblies');
     });
 
-    Route::get('the-society/who-we-are', function(){
-    	return view('society.who-we-are');
-    });
+    Route::get('the-society/who-we-are', 'WhoWeAreController@index');
+    Route::get('the-society/who-we-are/{slug}', 'WhoWeAreController@show');
+    Route::get('publications', 'GeneralController@index');
+    Route::get('publications/{slug}', 'GeneralController@show');
+
 
     Route::get('the-society/leadership', function(){
         return view('society.leadership');
