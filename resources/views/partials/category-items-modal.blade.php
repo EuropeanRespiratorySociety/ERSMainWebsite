@@ -40,14 +40,15 @@
           <div class="modal-header">
             <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
             <h3 class="modal-title">{{$item['title']}}</h3>
+            <h4 class="modal-title">{{$item['subtitle']}}</h4>
           </div>
           <div class="modal-body">
             <div class="text-left">
             @if(isset($item['sponsors']))
             <div class="">
-                <h6 class="">Sponsor: {{$item['sponsors']['text']}}
+                <p class="">Sponsor: {{$item['sponsors']['text']}}
                     <img style="height:25px;" src="{{ $item['sponsors']['image']}}" class="img-responsive">
-                </h6>
+                </p>
             </div>
             @endif  
               {!! $item['lead'] !!}

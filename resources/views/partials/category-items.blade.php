@@ -26,7 +26,7 @@
             @if(isset($item['registerButton']['link']))
             <a href="{{$item['registerButton']['link']}}" target="new_blank"  class="btn btn-register">register</a>
             @endif
-            <a href="{{Request::path().$item['slug']}}" target="new_blank"  class="btn btn-register">more</a>
+            <a href="{{Request::path().'/'.$item['slug']}}" target="new_blank"  class="btn btn-register">more</a>
             </div>
         </div>
     </div>
