@@ -87,6 +87,21 @@ class CloudCmsHelper
                         });
                     }
 
+                    if(isset($item->programme)){
+                        $path = "path/documents/programme/";
+                        $file_title = $item->programme->title;
+                        $file = CC::nodes()->getFile($file_title, $path);
+                        $parsed[$key]['programmeFile'] = $file;
+                    }
+
+                    if(isset($item->practicalInfo)){
+                        $path = "path/documents/practical_info/";
+                        $file_title = $item->practicalInfo->title;
+                        $file = CC::nodes()->getFile($file_title, $path);
+                        $parsed[$key]['practicalInfoFile'] = $file;
+                    }
+                    
+
             }  
             //dd($parsed);
         return $parsed; 

@@ -6,7 +6,6 @@
     <p><img src="{{ $course->image }}" class="img-rounded img-responsive"></p>
     @endif
     </div>
-
     <div class="col-md-6 lighter-grey-bg">
       <div class="header">
         <div class="clearfix notification">
@@ -27,12 +26,12 @@
           View <a href="/professional-development/courses">all ERS courses</a>
         </div>
         <div class="col-md-6 text-right">
-          
-          <button type="button" class="btn btn-light-primary text-left">
-            <span class="icon s7-map" style="font-size: 24px;"></span>
-            Course Programme
-           
-          </button>
+          @if(isset($course->programmeFile))  
+            <a href="{{$course->programmeFile->fileUrl}}" target="_blank" type="button" class="btn btn-light-primary text-left">
+              <span class="icon s7-map" style="font-size: 24px;"></span>
+              Course Programme
+            </a>
+          @endif
         </div>
       </div>
       <h2 class="article-title">{{$course->title}}</h2>
@@ -49,25 +48,36 @@
     <div class="col-md-3 white-bg event-items-tab">
       <div class="tab-container">
         <ul class="nav nav-tabs">
+        @if(isset($course->venue))
           <li class="active"><a href="#home" data-toggle="tab">
             <span class="icon icon-hotel"></span>Venue and<br>accomodation</a>
           </li>
+        @endif
+        @if(isset($course->bursaryApplication))
           <li><a href="#profile" data-toggle="tab">
             <span class="icon s7-piggy"></span>Bursary<br>application</a>
           </li>
+        @endif
         </ul>
+
         <div class="tab-content text-left">
           <div id="home" class="tab-pane active cont">
             
             <div class="ers-scroller nano scrollable has-scrollbar" style="height:200px;">
               <div class="nano-content">
                 
-                <button  type="button" class="btn btn-light-primary pratical-info">
-                  <span class="icon s7-info" style="font-size: 24px;"></span>
-                  Pratical information
-                </button>
-
-                <p><a data-toggle="modal" data-target="#md-venue_accmmodation" type="button" class="">VENUE AND ACCOMMODATION</a></p>
+                @if(isset($course->practicalInfoFile))  
+                  <a href="{{$course->practicalInfoFile->fileUrl}}" target="_blank" type="button" class="btn btn-light-primary text-left">
+                    <span class="icon s7-map" style="font-size: 24px;"></span>
+                    Practical Info
+                  </a>
+                @endif
+                @if(isset($course->venue))
+                <p><a data-toggle="modal" data-target="#md-venue_accommodation" type="button" class="">Venue</a></p>
+                @endif
+                @if(isset($course->suggestedAccommodation))
+                <p><a data-toggle="modal" data-target="#md-suggested_accommodation" type="button" class="">Suggested Accommodation</a></p>
+                @endif
 
                 <div class="list-group">
                   <a href="#" class="list-group-item midium-grey-bg">
@@ -103,24 +113,28 @@
             @if(isset($course->extendedDeadline))
             <p class="deadline">EXTENDED registration deadline : {{$course->extendedDeadline}}</p>
             @endif
+            @if(isset($course->cancellationPolicy))
             <p><a data-toggle="modal" data-target="#md-cancellation" type="button" class="">Cancellation policy</a></p>
+            @endif
             @if(isset($course->registerButton['link']))
               <a href="{{$course->registerButton['link']}}"" class="btn btn-primary tab-register-bt">Register</a>
             @endif
             
           </div>
           <div id="profile" class="tab-pane cont">
-                     @if(isset($course->bursaryApplication->text)))
+                     @if(isset($course->bursaryApplication->text))
                      {!!$course->bursaryApplication->text!!}
                      @endif
+                     <ul>
                      @if(isset($course->bursaryApplication->deadline))
-                     {{$course->bursaryApplication->deadline}}
+                     <li>Bursaries application deadline:<b>{{$course->bursaryApplication->deadline}}</b></li>
                      @endif
                      @if(isset($course->bursaryApplication->results))
-                     {{$course->bursaryApplication->results}}
+                     <li>Notification of selection results:<b>{{$course->bursaryApplication->results}}</b></li>
                      @endif
+                     </ul>
                      @if(isset($course->bursaryApplication->url))
-                     {{$course->bursaryApplication->url}}
+                      <a href="{{$course->bursaryApplication->url}}"" class="btn btn-primary tab-register-bt">Apply</a>
                      @endif
           </div>
           <div id="messages" class="tab-pane"> </div>
@@ -133,19 +147,20 @@
 </div>
 
 <!--Modal contents div-->
-<!--Venue and accmmodation-->
-<div id="md-venue_accmmodation" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+<!--Venue and accommodation-->
+@if(isset($course->venue))
+<div id="md-venue_accommodation" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+        <h3 class="modal-title">Course Venue</h3>
       </div>
       <div class="modal-body">
         <div class="text-left">
-          <h4>COURSE VENUE</h4>
           <p>
             @if(isset($course->venue->url))
-              <a href="{{$course->venue->url}}">
+              <a target="_blank" href="{{$course->venue->url}}">
             @endif 
               {{$course->venue->name}} 
             @if(isset($course->venue->url))
@@ -164,20 +179,58 @@
     </div>
   </div>
 </div>
+@endif
+@if(isset($course->suggestedAccommodation))
+<div id="md-suggested_accommodation" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+        <h3 class="modal-title">Suggested Accomodation</h3>
+      </div>
+      <div class="modal-body">
+        <div class="text-left">
+        @foreach ($course->suggestedAccommodation as $accommodation)
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              @if(isset($accommodation['url']))
+                <a target="_blank" href="{{$accommodation['url']}}">
+              @endif 
+                {{$accommodation['name']}} 
+              @if(isset($accommodation['url']))
+                </a>
+              @endif
+              <br/>
+              {{$accommodation['streetAddress']}}<br>
+              @if(isset($accommodation['streetAddress2']))
+              {{$accommodation['streetAddress2']}}<br>
+              @endif
+              {{$accommodation['zip']}} {{$accommodation['city']}}<br>
+              {{$accommodation['country']}}
+            </p>
+          </div>
+          </div>
+        @endforeach
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+@endif
+@if(isset($course->cancellationPolicy))
 <!--Cancellation policy-->
 <div id="md-cancellation" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+        <h3 class="modal-title">Cancellation policy</h3>
       </div>
       <div class="modal-body">
         <div class="text-left">
-          <h4>Cancellation policy</h4>
           <p>
-          Upon receipt of a written cancellation, a refund of fees, minus €50 administrative fee, will be applied up to 6 weeks before the course. After this date no refund will be made for cancellations.
-
-If you require visa documents for your travel please ensure that these are organised in advance, the ERS is not responsible for obtaining or financing your visa.
+            {!! $course->cancellationPolicy !!}
            
           </p>
         </div>
@@ -186,6 +239,7 @@ If you require visa documents for your travel please ensure that these are organ
   </div>
 </div>
 <!--END Modal contents div-->
+@endif
 
 @stop()  
 
