@@ -9,7 +9,7 @@
             <span class="label {{ $item['typeColor'] }}">{{ $item['type'] }}</span>
             @endif
             @if(isset($item['flags']))
-            <span style="left:0;right:auto;" class="label {{ 'label-'.$item['flags']['color'] }}">{{ $item['flags']['text'] }}</span>
+            <span class="label {{ 'label-'.$item['flags']['color'] }}">{{ $item['flags']['text'] }}</span>
             @endif
              @if(isset($item['image']))
             <div class="card-image">

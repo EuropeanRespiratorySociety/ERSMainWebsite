@@ -9,7 +9,7 @@
           <!--<p>
           <img src="../images/community/become_member.jpg" class="img-rounded img-responsive">
           </p>-->
-          <iframe width="340" height="191" src="https://www.youtube.com/embed/TU8ZjGZVM9c?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <iframe width="100%" height="191" src="https://www.youtube.com/embed/TU8ZjGZVM9c?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
 
         <div class="col-md-8 lighter-grey-bg event-items-fs-title">
