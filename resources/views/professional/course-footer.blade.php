@@ -15,6 +15,9 @@
 		<p>
 		</p>
 
+		<div class="space"></div>
+
+		<div class="col-md-6 center-block">
 		<p><strong>CME Accredited Activities</strong></p>
 	<ul>
 		<li><a href="">Courses</a></li>
@@ -24,7 +27,7 @@
 		<li><a href="">Breathe - CME Test</a></li>
 		<li><a href="">ERS Handbook of Respiratory Medicine - CME Test</a></li>
 	</ul>
-
+	</div>
 	</div>
 
 	<div class="col-md-3"></div>
