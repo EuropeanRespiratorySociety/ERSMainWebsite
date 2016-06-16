@@ -28,8 +28,22 @@ class CloudCmsHelper
         return $result;            
 	}
 
+    public function getContentByProperty($property, $contentType){
+        $query = '{"'.$property.'": "'.$contentType.'"}';
+        $result = CC::nodes()
+                    ->query($query)
+                    ->addParams(['full' => 'true']) 
+                    ->addParams(['metadata' => 'true'])
+                    ->get();
+        return $result;  
+
+    }
+
 	public function parseItems($items, $lead = false){
         //dd($items);
+            if(empty($items)){
+                abort(404);
+            }
 		        foreach ($items as $key => $item) {
                     $parsed[$key]['title'] = $item->title;
                     if(isset($item->subTitle)){
@@ -101,9 +115,7 @@ class CloudCmsHelper
                         $file = CC::nodes()->getFile($file_title, $path);
                         $parsed[$key]['practicalInfoFile'] = $file;
                     }
-                    
-
-            }  
+                }  
             //dd($parsed);
         return $parsed; 
 	}

@@ -1,17 +1,14 @@
 @foreach ($items as $item)
-@if(!isset($class))
-    <div class="col-md-4">
-@else
-    <div class="{{$class}}">  
-@endif      
-        <div class="card card-event">
+<!-- Start Lead -->
+    <div class="col-md-3">
+        <div class="card card-event">            
             @if(isset($item['type']))
             <span class="label {{ $item['typeColor'] }}">{{ $item['type'] }}</span>
-            @endif
+            @endif            
             @if(isset($item['flags']))
             <span style="left:0;right:auto;" class="label {{ 'label-'.$item['flags']['color'] }}">{{ $item['flags']['text'] }}</span>
             @endif
-             @if(isset($item['image']))
+            @if(isset($item['image']))
             <div class="card-image">
                 <img class="img-responsive" src="{{ $item['image']}}">
             </div>
@@ -39,8 +36,8 @@
             </div>
         </div>
     </div>
-    <!-- End Lead -->
-    <!-- Start Modal -->
+<!-- End Lead -->
+<!-- Start Modal -->
     <div id="{{$item['slug']}}" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -65,5 +62,5 @@
         </div>
       </div>
     </div>
-    <!-- End Modal -->
+<!-- End Modal -->
 @endforeach

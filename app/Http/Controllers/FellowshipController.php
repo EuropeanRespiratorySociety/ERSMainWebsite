@@ -10,6 +10,8 @@ use App\Extensions\CloudCmsHelper as CC;
 
 class FellowshipController extends Controller
 {
+    protected $property = "contentType";
+    protected $propertyValue = "event_fellowship";
     protected $shortTerm = "o:aa1d863fcbb1c83e06c3";
     protected $longTerm = " o:35da974d3c05ca528f3f";
 
@@ -20,10 +22,12 @@ class FellowshipController extends Controller
      */
     public function index()
     {
-
-        //Here we have to do differently than for courses
-        //indeed we need to fetch content from different "subcategories"
-        return view('professional.fellowships');
+        $CC = new CC();
+        $results = $CC->getContentByProperty($this->property, $this->propertyValue);
+        $items = $CC->parseItems($results->rows);
+        shuffle($items);
+        $params['items'] =  (object) $items;
+        return view('professional.fellowships')->with($params);
 
     }
  

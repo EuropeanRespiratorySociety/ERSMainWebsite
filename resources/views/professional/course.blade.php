@@ -36,7 +36,10 @@
       </div>
       <h2 class="article-title">{{$course->title}}</h2>
       @if(isset($course->organisers))
-      <h5>Organisers : {{$course->organisers}}</a></h5>
+      <h5><b>Organisers :</b> {{$course->organisers}}</h5>
+      @endif
+      @if(isset($course->faculty))
+      <h5><b>Faculty :</b> {{$course->faculty}}</h5>
       @endif
 
       <div class="article text-left">

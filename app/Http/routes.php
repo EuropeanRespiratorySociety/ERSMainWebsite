@@ -113,13 +113,6 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('professional-development/fellowships/short-term', 'FellowshipController@indexShortTerm');
     Route::get('professional-development/fellowships/long-term', 'FellowshipController@indexLongTerm');
 
-    Route::get('professional-development/fellowships', function(){
-        return view('professional.fellowships');
-    });
-
-    Route::get('professional-development/fellowship', function(){
-        return view('professional.fellowship');
-    });
 
     Route::get('advocacy/eu-affairs', function(){
         return view('advocacy.eu-affairs');
