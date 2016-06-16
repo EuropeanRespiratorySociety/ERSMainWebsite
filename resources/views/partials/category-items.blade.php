@@ -4,7 +4,7 @@
             <span class="label label-school">{{ $item['type'] }}</span>
              @if(isset($item['image']))
             <div class="card-image">
-                <img class="img-responsive" src="{{ $item['image']}}">
+                <img class="" src="{{ $item['image']}}">
             </div>
             @endif
             <div class="card-content">
