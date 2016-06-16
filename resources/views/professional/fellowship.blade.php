@@ -29,7 +29,7 @@
 
      </div>
      <div class="row fellowship-categories main-content">
-        @include('partials.category-items',array('items' => $courses))
+        @include('partials.category-items', array('items' => $courses))
       <div class="col-md-4">
         <div class="card card-padded">
           <div class="card-image">
@@ -135,5 +135,15 @@
 @stop()  
 
 @section('scripts')
-
+<script type="text/javascript">
+    $('.fellowship-categories').isotope({
+        layoutMode: 'packery',
+        packery: {
+            columnWidth: '.col-md-4',
+            gutter:0
+        },            
+        percentPosition: true
+        
+    });
+</script>
 @stop()

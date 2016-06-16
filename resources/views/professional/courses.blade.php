@@ -31,5 +31,15 @@
 </div>
 @stop()  
 
-@section('scripts')  
+@section('scripts')
+<script type="text/javascript">
+    $('.row_event').isotope({
+        layoutMode: 'packery',
+        packery: {
+            columnWidth: '.col-md-4',
+        },            
+        percentPosition: true
+        
+    });
+</script>  
 @stop()

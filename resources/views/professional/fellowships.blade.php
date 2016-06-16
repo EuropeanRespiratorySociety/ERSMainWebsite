@@ -22,7 +22,7 @@
                 <div class="row">
                     <h3 class="text-left">all fellowships:</h3>
                 </div>            
-                <div class="row row_event">
+                <div class="row row_event rel">
                     @include('partials.category-items-modal',array('items' => $items, 'class' => 'col-md-3'))
                 </div>
             </div>
@@ -30,4 +30,15 @@
 @stop()  
 
 @section('scripts')  
+<script type="text/javascript">
+    $('.row_event').isotope({
+        layoutMode: 'packery',
+        packery: {
+            columnWidth: '.col-md-3',
+            gutter:0
+        },            
+        percentPosition: true
+        
+    });
+</script>
 @stop()

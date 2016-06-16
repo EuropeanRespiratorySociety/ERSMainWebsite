@@ -96,5 +96,15 @@
 @stop()  
 
 @section('scripts')
+<script type="text/javascript">
+    $('.fellowship-categories').isotope({
+        layoutMode: 'packery',
+        packery: {
+            columnWidth: '.col-md-4',
+        },            
+        percentPosition: true
+        
+    });
+</script>
 
 @stop()

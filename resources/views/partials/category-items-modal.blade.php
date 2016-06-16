@@ -4,7 +4,7 @@
 @else
     <div class="{{$class}}">  
 @endif      
-        <div class="card card-event">
+        <div class="card card-event" style="min-height:0;">
             @if(isset($item['type']))
             <span class="label {{ $item['typeColor'] }}">{{ $item['type'] }}</span>
             @endif
