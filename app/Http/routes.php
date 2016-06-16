@@ -47,8 +47,16 @@ Route::group(['middleware' => ['web']], function () {
     	return view('society.assemblies');
     });
 
+    //The order matters!!!
     Route::get('the-society/who-we-are', 'WhoWeAreController@index');
     Route::get('the-society/who-we-are/{slug}', 'WhoWeAreController@show');
+    Route::get('the-society/news', 'NewsController@index');
+    Route::get('the-society/news/respiratory-world-wide', 'NewsController@indexRespiratoryWorldWide');
+    Route::get('the-society/news/respiratory-matters', 'NewsController@indexRespiratoryMatters');
+    Route::get('the-society/news/respiratory-world-wide/{slug}', 'NewsController@show');    
+    Route::get('the-society/news/respiratory-matters/{slug}', 'NewsController@show');    
+    Route::get('the-society/news/{slug}', 'NewsController@show');
+
     Route::get('publications', 'GeneralController@index');
     Route::get('publications/{slug}', 'GeneralController@show');
 

@@ -33,8 +33,11 @@ class Navigation
                     $menu->leadershipAndCommittees->add('Science Council', 'the-society/leadership/council' );
                     $menu->leadershipAndCommittees->add('Science Council', 'the-society/leadership/elections-2016' );
                 $menu->theSociety->add('Executive office', 'the-society/executive-office' );
-                    #$menu->theSociety->whoWeAre->add('Executive office', 'the-society/who-we-are/executive-office' );
+                    //$menu->theSociety->whoWeAre->add('Executive office', 'the-society/who-we-are/executive-office' );
                 $menu->theSociety->add('Assemblies', 'the-society/assemblies' );
+                $menu->theSociety->add('News And Features', 'the-society/news' );
+                    $menu->newsAndFeatures->add('Respiratory World Wide', 'the-society/news/respiratory-world-wide' );
+                    $menu->newsAndFeatures->add('Respiratory Maters', 'the-society/news/respiratory-matters' );
 
             $menu->add('Congress and events','congress-and-events');
                 $menu->congressAndEvents->add('Events calendar','congress-and-events/events-calendar');

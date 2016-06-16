@@ -34,6 +34,7 @@ class CloudCmsHelper
                     ->query($query)
                     ->addParams(['full' => 'true']) 
                     ->addParams(['metadata' => 'true'])
+                    ->addParams(['sort' => '{"_system.created_on.ms": -1}']) 
                     ->get();
         return $result;  
 
@@ -41,9 +42,10 @@ class CloudCmsHelper
 
 	public function parseItems($items, $lead = false){
         //dd($items);
-            if(empty($items)){
+          /*  if(empty($items)){
                 abort(404);
-            }
+            }*/
+                $parsed = [];
 		        foreach ($items as $key => $item) {
                     $parsed[$key]['title'] = $item->title;
                     if(isset($item->subTitle)){

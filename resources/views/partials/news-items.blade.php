@@ -1,9 +1,6 @@
 @foreach ($items as $item)
     <div class="col-md-4">
         <div class="card card-event">
-            @if(isset($item['type']))
-                <span class="label {{ $item['typeColor'] }}">{{ $item['type'] }}</span>
-            @endif
             @if(isset($item['flags']))
             <span style="left:0;right:auto;" class="label {{ 'label-'.$item['flags']['color'] }}">{{ $item['flags']['text'] }}</span>
             @endif
@@ -19,7 +16,7 @@
                 @if(isset($item['eventDates']))
                     <p class="date">{{ $item['eventDates'] }}</p>
                 @endif
-                <div class="lead-card">{!! $item['shortLead'] !!}</div>
+                <div class="lead-card">{!! $item['lead'] !!}</div>
                 @if(isset($item['earlybirdDeadline']))
                 <p class="btn-rounded early_bird">Early Bird deadline {{ $item['earlybirdDeadline'] }}</p>
                 @endif

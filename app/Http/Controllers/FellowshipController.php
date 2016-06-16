@@ -38,9 +38,6 @@ class FellowshipController extends Controller
      */
     public function indexShortTerm()
     {
-
-        //Here we have to do differently than for courses
-        //indeed we need to fetch content from different "subcategories"
         $CC = new CC();
         $results = $CC->getCategory($this->shortTerm);
         $items = $CC->parseItems($results->rows);
@@ -57,9 +54,6 @@ class FellowshipController extends Controller
      */
     public function indexLongTerm()
     {
-
-        //Here we have to do differently than for courses
-        //indeed we need to fetch content from different "subcategories"
         $CC = new CC();
         $results = $CC->getCategory($this->longTerm);
         $items = $CC->parseItems($results->rows);
