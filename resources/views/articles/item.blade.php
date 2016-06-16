@@ -1,13 +1,12 @@
 @extends('template')
-@section('content')<div class="ers-content">
+@section('content')
+<div class="ers-content article-items">
   <div class="row">
-    <div class="col-md-3 midium-grey-bg left-photo-map">    
-    @if(isset($item->image))
-    <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
-    @endif
-    </div>
+    <!--div class="col-md-3 midium-grey-bg left-photo-map">    
+    
+    </div-->
     <!-- Beginning Main Content Area -->
-    <div class="col-md-6 lighter-grey-bg">
+    <div class="col-md-9 lighter-grey-bg article-text">
       <div class="header">
         <div class="clearfix notification">
           @if(isset($item->flags))
@@ -26,7 +25,15 @@
     </div>
     <!-- Beginning Main Content Area -->
     <!-- Beginning Right Side-bar -->
-    <div class="col-md-3 white-bg event-items-tab">
+    <div class="col-md-3 white-bg right-photo">
+      <div class="right-photo-inner">
+
+      @if(isset($item->image))
+      <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
+      @endif
+
+      </div>
+
     </div>
     <!-- End Right Sidebar -->
   </div>
