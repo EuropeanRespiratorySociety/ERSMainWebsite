@@ -18,7 +18,7 @@ class Navigation
     {
         \Menu::make('MainNav', function($menu){
 
-            $menu->add('The Society','the-society');
+            $menu->add('The Society', array('url' => 'the-society', 'class' => 'horizontal'));
                 $menu->theSociety->add('Who we are', 'the-society/who-we-are' );
                     $menu->whoWeAre->add('Satutes and Policies', 'the-society/who-we-are/statutes-policies-and-annual-report' );
                     $menu->whoWeAre->add('Awards', 'the-society/who-we-are/awards' );
