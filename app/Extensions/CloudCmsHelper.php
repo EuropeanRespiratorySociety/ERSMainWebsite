@@ -28,8 +28,22 @@ class CloudCmsHelper
         return $result;            
 	}
 
+    public function getContentByProperty($property, $contentType){
+        $query = '{"'.$property.'": "'.$contentType.'"}';
+        $result = CC::nodes()
+                    ->query($query)
+                    ->addParams(['full' => 'true']) 
+                    ->addParams(['metadata' => 'true'])
+                    ->get();
+        return $result;  
+
+    }
+
 	public function parseItems($items, $lead = false){
         //dd($items);
+            if(empty($items)){
+                abort(404);
+            }
 		        foreach ($items as $key => $item) {
                     $parsed[$key]['title'] = $item->title;
                     if(isset($item->subTitle)){
@@ -39,6 +53,7 @@ class CloudCmsHelper
                     $parsed[$key]['tags'] = $item->tags;
                     if(isset($item->flags)){$parsed[$key]['flags'] = $this->getFlags($item->flags);}
                     if(isset($item->type)){$parsed[$key]['type'] = $item->type;}
+                    if(isset($item->type)){$parsed[$key]['typeColor'] = $this->setTypeColor($item->type);}
                     if(isset($item->category)){
                     	$parsed[$key]['category'] = $item->category->title;
                     	$parsed[$key]['categoryId'] = $item->category->qname;
@@ -61,7 +76,7 @@ class CloudCmsHelper
 	                    if(isset($item->body)){$parsed[$key]['body'] = Markdown::parse($item->body);}
 	                    if(isset($item->feeList)){$parsed[$key]['feeList'] = $item->feeList;}
 	                    if(isset($item->cancellationPolicy)){$parsed[$key]['cancellationPolicy'] = Markdown::parse($item->cancellationPolicy);}
-	                    if(isset($item->sponsors)){$parsed[$key]['sponsors'] = $item->sponsors;}
+	                    if(isset($item->sponsors)){$parsed[$key]['sponsors'] = $this->getSponsors($item->sponsors);}
 	                    if(isset($item->venue)){$parsed[$key]['venue'] = $item->venue;}
 	                    if(isset($item->suggestedAccommodation)){$parsed[$key]['suggestedAccommodation'] = $this->getSuggestedAccommodations($item->suggestedAccommodation);}
 	                    if(isset($item->bursaryApplication)){$parsed[$key]['bursaryApplication'] = $this->getBursary($item->bursaryApplication);}
@@ -100,9 +115,7 @@ class CloudCmsHelper
                         $file = CC::nodes()->getFile($file_title, $path);
                         $parsed[$key]['practicalInfoFile'] = $file;
                     }
-                    
-
-            }  
+                }  
             //dd($parsed);
         return $parsed; 
 	}
@@ -121,6 +134,15 @@ class CloudCmsHelper
         return $start->day.' '.$start->format('F').', '.$start->year;     
     }
 
+    public function setTypeColor($type){
+        if($type == "ERS Course" || $type == "ERS Online Course" || $type == "e-learning"){
+            return "label-school";
+        }
+
+        return "label-scientific";
+
+    }
+
     public function getDocuments($documents){
     	$files = [];
     	foreach($documents as $key => $document){
@@ -131,13 +153,33 @@ class CloudCmsHelper
     }
 
     public function getFlags($flags){
-    	foreach ($flags as $key => $flag) {
-    		$parsed[$key]['text'] = $flag->text;
-    		$parsed[$key]['color'] = $flag->color;
-    	}
-    	if(isset($parsed)){
-    		return $parsed[0];
-    	}
+        foreach ($flags as $key => $flag) {
+            $parsed[$key]['text'] = $flag->text;
+            $parsed[$key]['color'] = $flag->color;
+        }
+        if(isset($parsed)){
+            return $parsed[0];
+        }
+    }
+
+    public function getSponsors($sponsors){
+        foreach ($sponsors as $key => $sponsor) {
+            if(isset($sponsor->text)){$parsed[$key]['text'] = $sponsor->text;}
+            if(isset($sponsor->image)){
+                        $img_qname = $sponsor->image->qname;
+                        $img = CC::nodes()->getImage($img_qname);
+                    }
+                    if(isset($img)){
+                        $parsed[$key]['image'] = Image::cache(function($image) use($img){
+                         return $image->make($img->imageUrl)->resize(null, 50, function ($constraint) {
+                                $constraint->aspectRatio();
+                            })->encode('data-url');
+                        });
+                    }
+        }
+        if(isset($parsed)){
+            return $parsed[0];
+        }
     }
 
     public function getSuggestedAccommodations($items){

@@ -29,46 +29,7 @@
 
      </div>
      <div class="row fellowship-categories main-content">
-        @include('partials.category-items',array('items' => $courses))
-      <div class="col-md-4">
-        <div class="card card-padded">
-          <div class="card-image">
-          </div>
-          <div class="card-title text-left">
-            <h3>ERS International Short-Term Fellowship</h3>
-          </div> 
-          <div class="card-content text-left">
-            <p>For clinicians/researchers from Europe going overseas. Funded by ERS, these fellowships are for projects outside of Europe/overseas. There are two fellowships on offer, based on scientific merit. <a href="">Read more...</a></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card card-padded">
-          <div class="card-image">
-          </div>
-          <div class="card-title text-left">
-            <h3>ERS Standard Short-Term Fellowship</h3>
-          </div> 
-          <div class="card-content text-left">
-            <p>For clinicians/researchers from Europe going overseas. Funded by ERS, these fellowships are for projects outside of Europe/overseas. There are two fellowships on offer, based on scientific merit. <a href="">Read more...</a></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card card-padded">
-          <div class="card-image">
-          </div>
-          <div class="card-title text-left">
-            <h3>New - ERS Fellowship in memory of Dr Valia Kechagia</h3>
-          </div> 
-          <div class="card-content text-left">
-            <p>For clinicians/researchers from Europe going overseas. Funded by ERS, these fellowships are for projects outside of Europe/overseas. There are two fellowships on offer, based on scientific merit. <a href="">Read more...</a></p>
-          </div>
-        </div>
-      </div>
-
+        @include('partials.category-items-modal', array('items' => $fellowships))
      </div>
    </div>
 
@@ -77,7 +38,7 @@
    <div class="col-md-3 white-bg event-items-right">
 
 
-    <p class="deadline">APPLICATION now open. deadline: 1 April, 2016</p>
+    <p class="deadline">Call closed. Application platform open from 1 August, 2016.</p>
 
 
     <div class="list-group text-left">
@@ -110,9 +71,8 @@
   </div>
 
   <p class="rules text-left">
-    <a href="">Rules & Regulations</a> <br>
-    More information, contact <a href="">fellowships@ersnet.org</a>
-
+    <a href="pdf/scientific/Rules_and_Regulations_STRF.pdf">Rules & Regulations</a> <br>
+    <a href="mailto:fellowships@ersnet.org">More information</a>
   </p>
 
 
