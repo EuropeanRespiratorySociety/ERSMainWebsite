@@ -63,8 +63,8 @@
         <div class="tab-content text-left">
           <div id="home" class="tab-pane active cont">
             
-            <div class="ers-scroller nano scrollable has-scrollbar" style="height:200px;">
-              <div class="nano-content">
+            <div class="">
+              <div class="">
                 
                 @if(isset($course->practicalInfoFile))  
                   <a href="{{$course->practicalInfoFile->fileUrl}}" target="_blank" type="button" class="btn btn-light-primary text-left">
@@ -110,6 +110,7 @@
               </div>
             </div>
             
+            <div class="event-items-right-bt">
             @if(isset($course->extendedDeadline))
             <p class="deadline">EXTENDED registration deadline : {{$course->extendedDeadline}}</p>
             @endif
@@ -119,7 +120,8 @@
             @if(isset($course->registerButton['link']))
               <a href="{{$course->registerButton['link']}}"" class="btn btn-primary tab-register-bt">Register</a>
             @endif
-            
+            </div>
+
           </div>
           <div id="profile" class="tab-pane cont">
                      @if(isset($course->bursaryApplication->text))
