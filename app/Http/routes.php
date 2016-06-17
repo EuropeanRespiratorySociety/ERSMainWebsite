@@ -123,11 +123,15 @@ Route::group(['middleware' => ['web']], function () {
 
 
     Route::get('advocacy/eu-affairs', function(){
-        return view('advocacy.eu-affairs');
+        return view('partials.category-tab-items');
     });
 
     Route::get('advocacy/eu-projects', function(){
         return view('advocacy.eu-projects');
+    });
+
+    Route::get('advocacy/policy-areas', function(){
+        return view('advocacy.policy-areas');
     });
 
 

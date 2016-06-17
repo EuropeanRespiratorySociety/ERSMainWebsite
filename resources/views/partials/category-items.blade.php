@@ -1,14 +1,16 @@
 @foreach ($items as $item)
     <div class="col-md-4">
         <div class="card card-event">
-            @if(isset($item['type']))
-                <span class="label {{ $item['typeColor'] }}">{{ $item['type'] }}</span>
-            @endif
-            @if(isset($item['flags']))
-            <span style="left:0;right:auto;" class="label {{ 'label-'.$item['flags']['color'] }}">{{ $item['flags']['text'] }}</span>
-            @endif
+            
              @if(isset($item['image']))
             <div class="card-image">
+
+                @if(isset($item['type']))
+                    <span class="label {{ $item['typeColor'] }}">{{ $item['type'] }}</span>
+                @endif
+                @if(isset($item['flags']))
+                <span class="label {{ 'label-'.$item['flags']['color'] }}">{{ $item['flags']['text'] }}</span>
+                @endif
                 <img class="" src="{{ $item['image']}}">
             </div>
             @endif
