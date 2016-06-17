@@ -43,8 +43,12 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
-            <h3 class="modal-title">{{$item['title']}}</h3>
-            <h4 class="modal-title">{{$item['subtitle']}}</h4>
+            <h3 class="modal-title">{{$item['title']}}</h3>            
+            @if(isset($item['subtitle']))
+            <h4 class="modal-title">
+              {{$item['subtitle']}}
+            </h4>
+            @endif
           </div>
           <div class="modal-body">
             <div class="text-left">

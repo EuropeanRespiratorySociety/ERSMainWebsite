@@ -9,12 +9,12 @@
                 </div>
                 <div class="row fellowships-links">
                     <div class="col-md-4 col-md-offset-2">
-                        <a href="fellowships/short-term">
+                        <a href="professional-development/fellowships/short-term">
                             <h3>Short-Term Research Training Fellowships <span class="icon s7-angle-right"></h3>
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="fellowships/long-term">
+                        <a href="professional-development/fellowships/long-term">
                             <h3>Long-Term Research Training Fellowships <span class="icon s7-angle-right"></h3>
                         </a>
                     </div>
@@ -24,11 +24,11 @@
                 </div>            
 
                 <div class="row row_event rel">
-
-                    @include('partials.category-items-modal',array('items' => $items, 'class' => 'col-md-3'))
+                    @include('partials.fellowships-items',array('items' => $items, 'class' => 'col-md-3'))
                 </div>
             </div>
 </div>
+ @include('partials.modal-items', array('items' => $items))
 @stop()  
 
 @section('scripts')  

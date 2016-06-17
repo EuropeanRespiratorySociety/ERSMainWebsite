@@ -28,7 +28,7 @@
        </div>
 
      </div>
-     <div class="row fellowship-categories main-content">
+     <div class="row fellowship-categories main-content col-md-12">
         @include('partials.category-items-modal', array('items' => $fellowships))
      </div>
    </div>
@@ -90,7 +90,7 @@
 
 </div>
 
-
+ @include('partials.modal-items', array('items' => $fellowships))
 
 @stop()  
 
@@ -99,7 +99,7 @@
     $('.fellowship-categories').isotope({
         layoutMode: 'packery',
         packery: {
-            columnWidth: '.col-md-4',
+            gutter:0
         },            
         percentPosition: true
         

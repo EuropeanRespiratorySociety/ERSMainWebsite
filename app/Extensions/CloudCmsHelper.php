@@ -64,7 +64,7 @@ class CloudCmsHelper
                     $parsed[$key]['_type'] = $item->_type;
                     if(isset($item->eventDate)){$parsed[$key]['eventDates'] = $this->ersDate($item->eventDate, $item->eventEndDate);}   
                     if(isset($item->earlybirdDeadline)){$parsed[$key]['earlybirdDeadline'] = $this->ersDate($item->earlybirdDeadline);}
-                    if(isset($item->extendedDeadline)){ $parsed[$key]['extendedDeadline'] = $this->ersDate($item->extendedDeadline); }
+                    if(isset($item->extendedDeadline)){ $parsed[$key]['extendedDeadline'] = $this->ersDate($item->extendedDeadline);}
                     if(isset($item->eventLocation)){$parsed[$key]['eventLocation'] = $item->eventLocation;}                
                     
                     if(isset($item->leadParagraph)){
@@ -79,6 +79,7 @@ class CloudCmsHelper
 	                    if(isset($item->feeList)){$parsed[$key]['feeList'] = $item->feeList;}
 	                    if(isset($item->cancellationPolicy)){$parsed[$key]['cancellationPolicy'] = Markdown::parse($item->cancellationPolicy);}
 	                    if(isset($item->sponsors)){$parsed[$key]['sponsors'] = $this->getSponsors($item->sponsors);}
+                        if(isset($item->deadlines)){$parsed[$key]['deadlines'] = $this->getDeadlines($item->deadlines);}
 	                    if(isset($item->venue)){$parsed[$key]['venue'] = $item->venue;}
 	                    if(isset($item->suggestedAccommodation)){$parsed[$key]['suggestedAccommodation'] = $this->getSuggestedAccommodations($item->suggestedAccommodation);}
 	                    if(isset($item->bursaryApplication)){$parsed[$key]['bursaryApplication'] = $this->getBursary($item->bursaryApplication);}
@@ -102,6 +103,8 @@ class CloudCmsHelper
                                 $constraint->aspectRatio();
                             })->encode('data-url');
                         });
+                        unset($img);
+
                     }
 
                     if(isset($item->programme)){
@@ -109,6 +112,12 @@ class CloudCmsHelper
                         $file_title = $item->programme->title;
                         $file = CC::nodes()->getFile($file_title, $path);
                         $parsed[$key]['programmeFile'] = $file;
+                    }
+                    if(isset($item->rulesAndRegulations)){
+                        $path = "path/documents/rules_and_regulations/";
+                        $file_title = $item->rulesAndRegulations->title;
+                        $file = CC::nodes()->getFile($file_title, $path);
+                        $parsed[$key]['rulesAndRegulations'] = $file->fileUrl;
                     }
 
                     if(isset($item->practicalInfo)){
@@ -185,22 +194,36 @@ class CloudCmsHelper
     }
 
     public function getSuggestedAccommodations($items){
-    	$parsed = [];
-    	foreach ($items as $key => $item) {
+        $parsed = [];
+        foreach ($items as $key => $item) {
     
-    		if(isset($item->info)){$parsed[$key]['info'] = Markdown::parse($item->info);}
-    		if(isset($item->name)){$parsed[$key]['name'] = $item->name;}
-    		if(isset($item->url)){$parsed[$key]['url'] = $item->url;}
-    		if(isset($item->streetAddress)){$parsed[$key]['streetAddress'] = $item->streetAddress;}
-    		if(isset($item->streetAddress2)){$parsed[$key]['streetAddress2'] = $item->streetAddress2;}
-    		if(isset($item->postalCode)){$parsed[$key]['zip'] = $item->postalCode;}
-    		if(isset($item->city)){$parsed[$key]['city'] = $item->city;}
-    		if(isset($item->country)){$parsed[$key]['country'] = $item->country;}
-    		if(isset($item->phoneNumber)){$parsed[$key]['phone'] = $item->phoneNumber;}
+            if(isset($item->info)){$parsed[$key]['info'] = Markdown::parse($item->info);}
+            if(isset($item->name)){$parsed[$key]['name'] = $item->name;}
+            if(isset($item->url)){$parsed[$key]['url'] = $item->url;}
+            if(isset($item->streetAddress)){$parsed[$key]['streetAddress'] = $item->streetAddress;}
+            if(isset($item->streetAddress2)){$parsed[$key]['streetAddress2'] = $item->streetAddress2;}
+            if(isset($item->postalCode)){$parsed[$key]['zip'] = $item->postalCode;}
+            if(isset($item->city)){$parsed[$key]['city'] = $item->city;}
+            if(isset($item->country)){$parsed[$key]['country'] = $item->country;}
+            if(isset($item->phoneNumber)){$parsed[$key]['phone'] = $item->phoneNumber;}
 
-    	}
+        }
 
-    		return (object) $parsed;
+            return (object) $parsed;
+
+    }
+
+    public function getDeadlines($item){
+        $parsed = [];
+    
+            if(isset($item->applicationDeadline)){$parsed['applicationDeadline'] = $this->ersDate($item->applicationDeadline);}    
+            if(isset($item->applicationDeadline2)){$parsed['applicationDeadline2'] = $this->ersDate($item->applicationDeadline2);} 
+            if(isset($item->notification)){$parsed['notification'] = $item->notification;}
+            if(isset($item->notification2)){$parsed['notification2'] = $item->notification2;}
+            if(isset($item->startDate)){$parsed['startDate'] = $item->startDate;}
+            if(isset($item->startDate2)){$parsed['startDate2'] = $item->startDate2;}
+
+            return (object) $parsed;
 
     }
 

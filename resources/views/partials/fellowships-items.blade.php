@@ -1,6 +1,6 @@
 @foreach ($items as $item)
 @if(!isset($class))
-    <div class="col-md-4" style="width:30%">
+    <div class="col-md-4">
 @else
     <div class="{{$class}}">  
 @endif      
@@ -11,11 +11,13 @@
             @if(isset($item['flags']))
             <span class="label {{ 'label-'.$item['flags']['color'] }}">{{ $item['flags']['text'] }}</span>
             @endif
-             @if(isset($item['image']))
+
             <div class="card-image">
-                <img class="img-responsive" src="{{ $item['image']}}">
+                @if(isset($item['image']))
+                    <img class="img-responsive" src="{{ $item['image']}}">
+                @endif
             </div>
-            @endif
+
             <div class="card-content">
                 <p class="title">{{ $item['title'] }}
                     <!--<span>Next upcomming item</span>-->
@@ -35,7 +37,11 @@
             @if(isset($item['registerButton']['link']))
             <a href="{{$item['registerButton']['link']}}" target="new_blank"  class="btn btn-register">register</a>
             @endif
+            @if(!isset($item['type']))
+            <a href="professional-development/fellowships/{{$item['slug']}}" class="btn btn-register">more</a>
+            @else
             <a data-toggle="modal" data-target="#{{$item['slug']}}" class="btn btn-register">more</a>
+            @endif
             </div>
         </div>
     </div>

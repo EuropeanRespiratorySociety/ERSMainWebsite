@@ -117,9 +117,12 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::get('professional-development/courses', 'CourseController@index');
     Route::get('professional-development/courses/{slug}', 'CourseController@show');
-    Route::get('professional-development/fellowships', 'FellowshipController@index'); 
     Route::get('professional-development/fellowships/short-term', 'FellowshipController@indexShortTerm');
+    Route::get('professional-development/fellowships/short-term/{slug?}', 'FellowshipController@indexShortTerm');
     Route::get('professional-development/fellowships/long-term', 'FellowshipController@indexLongTerm');
+    Route::get('professional-development/fellowships/long-term/{slug?}', 'FellowshipController@indexLongTerm');
+    Route::get('professional-development/fellowships', 'FellowshipController@index'); 
+    Route::get('professional-development/fellowships/{slug}', 'FellowshipController@show');
 
 
     Route::get('advocacy/eu-affairs', function(){
