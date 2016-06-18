@@ -88,6 +88,7 @@ class Navigation
             $menu->add('Advocacy','advocacy');
                 $menu->advocacy->add('EU-Affairs','advocacy/eu-affairs');
                 $menu->advocacy->add('EU-Projects','advocacy/eu-projects');
+                $menu->advocacy->add('policy-Areas','advocacy/policy-areas');
 
 
 
