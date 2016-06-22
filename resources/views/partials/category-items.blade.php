@@ -16,7 +16,7 @@
             @if(isset($item['type']))
             <span class="label {{ $item['typeColor'] }}">{{ $item['type'] }}</span>
             @endif
-            @if(isset($item['flags']) && $item['flags']['color'] !== 'info'd)
+            @if(isset($item['flags']) && $item['flags']['color'] !== 'info')
             <span class="label {{ 'label-'.$item['flags']['color'] }}">{{ $item['flags']['text'] }}</span>
             @endif
             @if($item['fullyBooked'])
