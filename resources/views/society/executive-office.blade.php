@@ -54,100 +54,100 @@
           <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/executive-office#finance"><img class="img-responsive" src="../images/stories/executive-office/finance.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#finance"><img class="img-responsive" src="../images/stories/executive-office/finance.jpg"></a>
                     </div>
                     <div class="card-title">
-                        <a href="the-society/executive-office#finance">Finance and Administration</a>
+                        <a href="the-society/who-we-are/executive-office#finance">Finance and Administration</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/executive-office#corporate-relations"><img class="img-responsive" src="../images/stories/executive-office/corporate.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#corporate-relations"><img class="img-responsive" src="../images/stories/executive-office/corporate.jpg"></a>
                     </div>
                     <div class="card-title">
-                        <a href="the-society/executive-office#corporate-relations">Corporate Relations, Marketing</a>
+                        <a href="the-society/who-we-are/executive-office#corporate-relations">Corporate Relations, Marketing</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/executive-office#membership_national"><img class="img-responsive" src="../images/stories/executive-office/membership.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#membership_national"><img class="img-responsive" src="../images/stories/executive-office/membership.jpg"></a>
                     </div>
                     <div class="card-title">
-                        <a href="the-society/executive-office#membership_national">Membership</a>
+                        <a href="the-society/who-we-are/executive-office#membership_national">Membership</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/executive-office#it"><img class="img-responsive" src="../images/stories/executive-office/it.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#it"><img class="img-responsive" src="../images/stories/executive-office/it.jpg"></a>
                     </div>
                     <div class="card-title">
-                        <a href="the-society/executive-office#it">IT Infrastructure</a>
+                        <a href="the-society/who-we-are/executive-office#it">IT Infrastructure</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/executive-office#educational"><img class="img-responsive" src="../images/stories/executive-office/educational.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#educational"><img class="img-responsive" src="../images/stories/executive-office/educational.jpg"></a>
                     </div>
                     <div class="card-title">
-                        <a href="the-society/executive-office#educational">Educational Activities</a>
+                        <a href="the-society/who-we-are/executive-office#educational">Educational Activities</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/executive-office#scientific"><img class="img-responsive" src="../images/stories/executive-office/scientific.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#scientific"><img class="img-responsive" src="../images/stories/executive-office/scientific.jpg"></a>
                     </div>
                     <div class="card-title">
-                        <a href="the-society/executive-office#scientific">Scientific Activities</a>
+                        <a href="the-society/who-we-are/executive-office#scientific">Scientific Activities</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/executive-office#publications"><img class="img-responsive" src="../images/stories/executive-office/publications.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#publications"><img class="img-responsive" src="../images/stories/executive-office/publications.jpg"></a>
                     </div>
                     <div class="card-title">
-                        <a href="the-society/executive-office#publications">Publications</a>
+                        <a href="the-society/who-we-are/executive-office#publications">Publications</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/executive-office#elf"><img class="img-responsive" src="../images/stories/executive-office/elf.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#elf"><img class="img-responsive" src="../images/stories/executive-office/elf.jpg"></a>
                     </div>
                     <div class="card-title">
-                        <a href="the-society/executive-office#elf">European Lung Foundation</a>
+                        <a href="the-society/who-we-are/executive-office#elf">European Lung Foundation</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/executive-office#congress"><img class="img-responsive" src="../images/stories/executive-office/congress.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#congress"><img class="img-responsive" src="../images/stories/executive-office/congress.jpg"></a>
                     </div>
                     <div class="card-title">
-                        <a href="the-society/executive-office#congress">Congress and Events</a>
+                        <a href="the-society/who-we-are/executive-office#congress">Congress and Events</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/executive-office#eu"><img class="img-responsive" src="../images/stories/executive-office/eu.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#eu"><img class="img-responsive" src="../images/stories/executive-office/eu.jpg"></a>
                     </div>
                     <div class="card-title">
-                        <a href="the-society/executive-office#eu">EU Affairs</a>
+                        <a href="the-society/who-we-are/executive-office#eu">EU Affairs</a>
                     </div>
                 </div>
             </div>
@@ -966,8 +966,7 @@
     <script type="text/javascript">
       $(document).ready(function(){
       	//initialize the javascript
-        new WOW({offset: 110, mobile: false }).init();
-        App.assemblies();             
+        App.executiveOffice();             
       });
     </script>
     @stop()

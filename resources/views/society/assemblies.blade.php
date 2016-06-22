@@ -860,7 +860,6 @@ Among this Group, we would like to help the respiratory physician's practice by 
     <script type="text/javascript">
       $(document).ready(function(){
         //initialize the javascript
-        new WOW({offset: 0, mobile: false }).init();
         App.assemblies();             
       });
     </script>

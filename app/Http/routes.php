@@ -49,7 +49,17 @@ Route::group(['middleware' => ['web']], function () {
 
     //The order matters!!!
     Route::get('the-society/who-we-are', 'WhoWeAreController@index');
+    Route::get('the-society/who-we-are/executive-office', function(){ return view('society.executive-office');});
+    Route::get('the-society/who-we-are/leadership', function(){ return view('society.leadership');});
+    Route::get('the-society/who-we-are/leadership/national-delegates', function(){return view('society.leadership.national-delegates');});
+    Route::get('the-society/who-we-are/leadership/science-council', function(){return view('society.leadership.science-council');});
+    Route::get('the-society/who-we-are/leadership/assembly-heads', function(){return view('society.leadership.assembly-heads');});
+    Route::get('the-society/who-we-are/leadership/education-council', function(){return view('society.leadership.education-council');});
+    Route::get('the-society/who-we-are/leadership/assembly-secretaries', function(){return view('society.leadership.assembly-secretaries');});
+    Route::get('the-society/who-we-are/leadership/council', function(){return view('society.leadership.council');});
+    Route::get('the-society/who-we-are/leadership/elections-2016', function(){return view('society.leadership.elections-2016');});
     Route::get('the-society/who-we-are/{slug}', 'WhoWeAreController@show');
+
     Route::get('the-society/news', 'NewsController@index');
     Route::get('the-society/news/respiratory-world-wide', 'NewsController@indexRespiratoryWorldWide');
     Route::get('the-society/news/respiratory-matters', 'NewsController@indexRespiratoryMatters');
@@ -60,53 +70,12 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('publications', 'GeneralController@publications');
     Route::get('publications/{slug}', 'GeneralController@show');
 
-
-    Route::get('the-society/leadership', function(){
-        return view('society.leadership');
-    });
-
-    Route::get('the-society/leadership/national-delegates', function(){
-        return view('society.leadership.national-delegates');
-    });
-
-    Route::get('the-society/leadership/science-council', function(){
-        return view('society.leadership.science-council');
-    });
-
-    Route::get('the-society/leadership/assembly-heads', function(){
-        return view('society.leadership.assembly-heads');
-    });
-
-    Route::get('the-society/leadership/education-council', function(){
-        return view('society.leadership.education-council');
-    });
-
-    Route::get('the-society/leadership/assembly-secretaries', function(){
-        return view('society.leadership.assembly-secretaries');
-    });
-
-    Route::get('the-society/leadership/council', function(){
-        return view('society.leadership.council');
-    });
-
-    Route::get('the-society/leadership/elections-2016', function(){
-        return view('society.leadership.elections-2016');
-    });
-
     Route::get('the-society/membership', function(){
         return view('society.membership');
     });
 
     Route::get('congress-and-events/ers-research-seminars', 'ResearchController@researchSeminarsRedirect');
     Route::get('congress-and-events/{slug}', 'GeneralController@show');
-
-    //Route::get('the-society/who-we-are/executive-office', function(){
-    	//return view('society.who-we-are.executive-office');
-    //});
-
-    Route::get('the-society/executive-office', function(){
-        return view('society.executive-office');
-    });
 
     Route::get('professional-development/educational-activities/courses', 'CourseController@index');
     Route::get('professional-development/educational-activities/courses/{slug}', 'CourseController@show');
