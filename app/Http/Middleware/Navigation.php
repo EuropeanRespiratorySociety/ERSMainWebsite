@@ -47,7 +47,7 @@ class Navigation
                 $menu->congressAndEvents->add('ERS Presidential Summit','congress-and-events/ers-presidential-summit');
                 $menu->congressAndEvents->add('ERS Research Seminars','congress-and-events/ers-research-seminars');
                 $menu->congressAndEvents->add('Past International Congresses','congress-and-events/past-international-congresses');
-                $menu->congressAndEvents->add('Event endorsement','congress-and-events/event-endorsement');
+                $menu->congressAndEvents->add('Event endorsement','congress-and-events/external-events-endorsement');
 
             $menu->add('Publications','#publications');
                 $menu->publications->add('European Respiratory Journal', 'http://erj.ersjournals.com/')
@@ -77,18 +77,30 @@ class Navigation
                     ->link->attr(array('target' => '_blank'));
 
 
-            $menu->add('Professional development','professional-development');
+            $menu->add('Professional development','#professional-development');
                 $menu->professionalDevelopment->add('Fellowships','professional-development/fellowships');
                     $menu->fellowships->add('Short-Term','professional-development/fellowships/short-term');
                     $menu->fellowships->add('Long-Term','professional-development/fellowships/long-term');
-                $menu->professionalDevelopment->add('ERS Courses','professional-development/courses');
+                $menu->professionalDevelopment->add('Educational Activities','professional-development/educational-activities');
+                    $menu->educationalActivities->add('ERS Courses','professional-development/educational-activities/courses');
+                $menu->professionalDevelopment->add('Grants and Sponsorships','professional-development/grants-and-sponsorships');
+                $menu->professionalDevelopment->add('Accreditation','professional-development/accreditation');
 
 
             $menu->add('Research','research');
-            $menu->add('Advocacy','advocacy');
+                $menu->research->add('Task Forces', 'research/task-forces');
+                $menu->research->add('Published Guidelines', 'research/published-guidelines');
+                $menu->research->add('Clinical Research Collaborations', 'research/clinical-research-collaborations');
+                $menu->research->add('Research Seminars', 'research/research-seminars');
+                $menu->research->add('Research Agency', 'research/research-agency');
+
+            $menu->add('Advocacy','#advocacy');
                 $menu->advocacy->add('EU-Affairs','advocacy/eu-affairs');
                 $menu->advocacy->add('EU-Projects','advocacy/eu-projects');
-                $menu->advocacy->add('policy-Areas','advocacy/policy-areas');
+                $menu->advocacy->add('Policy Areas','advocacy/policy-areas');
+                    $menu->policyAreas->add('The ERS Tobacco Control Committee','advocacy/policy-areas/the-ers-tobacco-control-committee');
+                    $menu->policyAreas->add('Environment and Health Committee','advocacy/policy-areas/environment-and-health-committee');
+                $menu->advocacy->add('Alliances','advocacy/alliances');
 
 
 

@@ -1,5 +1,6 @@
 @extends('template')
-@section('content')<div class="ers-content event-items-content">
+@section('content')
+<div class="ers-content event-items-content">
   <div class="row">
     <div class="col-md-3 midium-grey-bg left-photo-map">
     @if(isset($course->image))
@@ -11,6 +12,9 @@
         <div class="clearfix notification">
           @if(isset($course->flags))
           <p class="pull-right {{$course->flags['color'] }}">{{ $course->flags['text'] }}</p>
+          @endif
+          @if($course->fullyBooked)
+              <p class="pull-right text-danger">Fully Booked</p>
           @endif
         </div>
         <h2 class="text-left clearfix date-venue">
@@ -52,19 +56,19 @@
       <div class="tab-container">
         <ul class="nav nav-tabs">
         @if(isset($course->venue))
-          <li class="active"><a href="#home" data-toggle="tab">
+          <li class="active"><a href="#venue" data-toggle="tab">
             <span class="icon icon-hotel"></span>Venue and<br>accomodation</a>
           </li>
         @endif
-        @if(isset($course->bursaryApplication))
-          <li><a href="#profile" data-toggle="tab">
+        @if(isset($course->bursaryApplication) && !empty($course->bursaryApplication))
+          <li><a href="#bursary" data-toggle="tab">
             <span class="icon s7-piggy"></span>Bursary<br>application</a>
           </li>
         @endif
         </ul>
 
         <div class="tab-content text-left">
-          <div id="home" class="tab-pane active cont">
+          <div id="venue" class="tab-pane active cont">
             
             <div class="">
               <div class="">
@@ -120,13 +124,18 @@
             @if(isset($course->cancellationPolicy))
             <p><a data-toggle="modal" data-target="#md-cancellation" type="button" class="">Cancellation policy</a></p>
             @endif
-            @if(isset($course->registerButton['link']))
+            @if(isset($course->registerButton['link']) && !$course->fullyBooked)
               <a href="{{$course->registerButton['link']}}"" class="btn btn-primary tab-register-bt">Register</a>
+            @endif
+            @if($course->fullyBooked)
+              <p>Please contact <a href="mailto:educaion@ersnet.org">education@ersnet.org</a> to be added to the waiting list.</p>
+              <a href="#" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
             @endif
             </div>
 
           </div>
-          <div id="profile" class="tab-pane cont">
+          @if(isset($course->bursaryApplication))
+          <div id="bursary" class="tab-pane cont">
                      @if(isset($course->bursaryApplication->text))
                      {!!$course->bursaryApplication->text!!}
                      @endif
@@ -142,6 +151,7 @@
                       <a href="{{$course->bursaryApplication->url}}"" class="btn btn-primary tab-register-bt">Apply</a>
                      @endif
           </div>
+          @endif
           <div id="messages" class="tab-pane"> </div>
         </div>
       </div>
@@ -211,8 +221,8 @@
               @if(isset($accommodation['streetAddress2']))
               {{$accommodation['streetAddress2']}}<br>
               @endif
-              {{$accommodation['zip']}} {{$accommodation['city']}}<br>
-              {{$accommodation['country']}}
+              @if(isset($accomodation['zip'])){{$accommodation['zip']}} {{$accommodation['city']}}<br>@endif
+              @if(isset($accomodation['zip'])){{$accommodation['country']}}@endif
             </p>
           </div>
           </div>

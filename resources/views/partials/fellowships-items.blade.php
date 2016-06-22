@@ -4,17 +4,23 @@
 @else
     <div class="{{$class}}">  
 @endif      
-        <div class="card card-event" style="min-height:0;">
-            @if(isset($item['type']))
-            <span class="label {{ $item['typeColor'] }}">{{ $item['type'] }}</span>
-            @endif
-            @if(isset($item['flags']))
-            <span class="label {{ 'label-'.$item['flags']['color'] }}">{{ $item['flags']['text'] }}</span>
-            @endif
-
-            <div class="card-image">
+        <div class="card card-event">            
+            <div class="card-image" 
+            @if(isset($item['image'])) 
+                style="height:100px;" 
+            @elseif(isset($item['image']) && isset($item['flags'])) 
+                style="height:48px;" 
+            @else 
+                style="height:24px;" 
+            @endif >
+                @if(isset($item['type']))
+                <span class="label {{ $item['typeColor'] }}">{{ $item['type'] }}</span>
+                @endif
+                @if(isset($item['flags']))
+                <span class="label {{ 'label-'.$item['flags']['color'] }}">{{ $item['flags']['text'] }}</span>
+                @endif
                 @if(isset($item['image']))
-                    <img class="img-responsive" src="{{ $item['image']}}">
+                    <img class="" src="{{ $item['image']}}">
                 @endif
             </div>
 

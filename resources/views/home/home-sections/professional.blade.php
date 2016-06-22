@@ -1,6 +1,6 @@
-<div class="section fp-auto-height home-professional-content">
+<div class="section home-professional-content fp-auto-height">
 	<div class="main-content">
-		<div class="page-head"><h2>Professional resources</h2></div>
+		<div class="page-head"><h2>Professional Development</h2></div>
 		<div class="row">
 			<div class="col-md-6 center-block lead">
 				We are committed to driving standards in respiratory health through education and professional development opportunities. 

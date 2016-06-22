@@ -11,14 +11,14 @@
         <div class="clearfix notification">
           @if(isset($item->flags))
           <p class="pull-right {{$item->flags['color'] }}">{{ $item->flags['text'] }}</p>
-          @endif
+          @endif 
         </div>
       </div>
       <div class="page-head">
         <h2 class="">{{$item->title}}</h2>
       </div>
 
-      <div class="article text-left">
+      <div class="article text-left @if($item->articleTwoColumns) two-columns @endif">
         {!!$item->lead!!}
         {!!$item->body!!}
       </div>

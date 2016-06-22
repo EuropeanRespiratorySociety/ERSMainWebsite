@@ -1,4 +1,4 @@
-<div class="section fp-auto-height home-community-content" id="">
+<div class="section home-community-content fp-auto-height" id="">
   <div class="main-content">
     <div class="page-head"><h2>ERS community</h2></div>
     <div class="col-md-6 center-block lead">

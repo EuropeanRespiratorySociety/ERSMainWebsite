@@ -1,10 +1,10 @@
 @foreach ($items as $item)
-<div class="col-md-4">
+@if(!isset($class))
+    <div class="col-md-4" style="width:30%">
+@else
+    <div class="{{$class}}">  
+@endif    
     <div class="card card-event">
-        
-       
-
-
         <div class="card-image" 
         @if(isset($item['image'])) 
             style="height:100px;" 
@@ -13,16 +13,18 @@
         @else 
             style="height:24px;" 
         @endif >
-         @if(isset($item['type']))
-        <span class="label {{ $item['typeColor'] }}">{{ $item['type'] }}</span>
-        @endif
-        @if(isset($item['flags']))
-        <span class="label {{ 'label-'.$item['flags']['color'] }}">{{ $item['flags']['text'] }}</span>
-        @endif
-
-        @if(isset($item['image']))
-            <img class="" src="{{ $item['image']}}">
-        @endif
+            @if(isset($item['type']))
+            <span class="label {{ $item['typeColor'] }}">{{ $item['type'] }}</span>
+            @endif
+            @if(isset($item['flags']) && $item['flags']['color'] !== 'info')
+            <span class="label {{ 'label-'.$item['flags']['color'] }}">{{ $item['flags']['text'] }}</span>
+            @endif
+            @if($item['fullyBooked'])
+            <span class="label label-danger">Fully Booked</span>
+            @endif
+            @if(isset($item['image']))
+                <img class="img-responsive" src="{{ $item['image']}}">
+            @endif
         </div>
 
         <div class="card-content">
@@ -32,7 +34,7 @@
             @if(isset($item['eventDates']))
             <p class="date">{{ $item['eventDates'] }}</p>
             @endif
-            <div class="lead-card">{!! $item['shortLead'] !!}</div>
+            <div class="lead-card">@if(isset($item['shortLead'])){{ $item['shortLead'] }}@endif</div>
             @if(isset($item['earlybirdDeadline']))
             <p class="btn-rounded early_bird">Early Bird deadline {{ $item['earlybirdDeadline'] }}</p>
             @endif
@@ -41,10 +43,10 @@
             @endif
         </div>
         <div class="card-action clearfix">
-            @if(isset($item['registerButton']['link']))
+            @if(isset($item['registerButton']['link']) && !$item['fullyBooked'])
             <a href="{{$item['registerButton']['link']}}" target="new_blank"  class="btn btn-register">register</a>
             @endif
-            <a href="{{Request::path().'/'.$item['slug']}}"  class="btn btn-register">more</a>
+            <a href="{{Request::path().'/'.$item['slug']}}" class="btn btn-register">more</a>
         </div>
     </div>
 </div>

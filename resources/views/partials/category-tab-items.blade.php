@@ -3,17 +3,12 @@
 <div class="ers-content category-tab-items">
     <div class="main-content">
         <div class="page-head"><h2 class="">EU Affairs</h2></div>
-        <div class="col-md-9 center-block lead">
-            The ERS EU Affairs department works closely with the EU Institutions, global organisations such as the Global NCD Alliance, the Framework Convention Alliance and WHO to support science-based policy development in the respiratory field. The ERS EU Affairs department works closely with the European Lung Foundation to put patients at the heart of policy and participates in meetings of the Forum of International Respiratory Societies. 
-            The Society is also involved in various alliances with other scientific societies.  The Tobacco Control Committee, the Environment and Health Committee and the ERS Secretary for EU Affairs promote better communication about European opportunities for research. 
-            ERS has provided data which has informed several WHO and EU documents, directives and policies. Find out more about our areas of focus on our policy page.
+            <div class="col-md-9 center-block lead">
+                The ERS EU Affairs department works closely with the EU Institutions, global organisations such as the Global NCD Alliance, the Framework Convention Alliance and WHO to support science-based policy development in the respiratory field. The ERS EU Affairs department works closely with the European Lung Foundation to put patients at the heart of policy and participates in meetings of the Forum of International Respiratory Societies. 
+                The Society is also involved in various alliances with other scientific societies.  The Tobacco Control Committee, the Environment and Health Committee and the ERS Secretary for EU Affairs promote better communication about European opportunities for research. 
+                ERS has provided data which has informed several WHO and EU documents, directives and policies. Find out more about our areas of focus on our policy page.
+            </div>
         </div>
-
-        
-
-
-
-    </div>
 
     <!-- Tabs -->
 
@@ -44,9 +39,6 @@
                                 </div>
                             </div>
                         </div>
-                        
-
-
                     </div>
                 </div>
                 <div id="eu_a_2" class="tab-pane cont">

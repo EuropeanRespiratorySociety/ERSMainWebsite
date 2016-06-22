@@ -57,7 +57,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('the-society/news/respiratory-matters/{slug}', 'NewsController@show');    
     Route::get('the-society/news/{slug}', 'NewsController@show');
 
-    Route::get('publications', 'GeneralController@index');
+    Route::get('publications', 'GeneralController@publications');
     Route::get('publications/{slug}', 'GeneralController@show');
 
 
@@ -97,15 +97,8 @@ Route::group(['middleware' => ['web']], function () {
         return view('society.membership');
     });
 
-    Route::get('congress-and-events/ers-research-seminars', function(){
-        return view('congress-and-events.ers-research-seminars');
-    });
-
-
-
-
-
-
+    Route::get('congress-and-events/ers-research-seminars', 'ResearchController@researchSeminarsRedirect');
+    Route::get('congress-and-events/{slug}', 'GeneralController@show');
 
     //Route::get('the-society/who-we-are/executive-office', function(){
     	//return view('society.who-we-are.executive-office');
@@ -115,27 +108,33 @@ Route::group(['middleware' => ['web']], function () {
         return view('society.executive-office');
     });
 
-    Route::get('professional-development/courses', 'CourseController@index');
-    Route::get('professional-development/courses/{slug}', 'CourseController@show');
+    Route::get('professional-development/educational-activities/courses', 'CourseController@index');
+    Route::get('professional-development/educational-activities/courses/{slug}', 'CourseController@show');
+    Route::get('professional-development', 'CourseController@professionalDevelopment');
     Route::get('professional-development/fellowships/short-term', 'FellowshipController@indexShortTerm');
     Route::get('professional-development/fellowships/short-term/{slug?}', 'FellowshipController@indexShortTerm');
     Route::get('professional-development/fellowships/long-term', 'FellowshipController@indexLongTerm');
     Route::get('professional-development/fellowships/long-term/{slug?}', 'FellowshipController@indexLongTerm');
     Route::get('professional-development/fellowships', 'FellowshipController@index'); 
     Route::get('professional-development/fellowships/{slug}', 'FellowshipController@show');
+    Route::get('professional-development/grants-and-sponsorships', 'GeneralController@grantsAndSponsorships');
+    Route::get('professional-development/educational-activities', 'CourseController@educationalActivities');
+    Route::get('professional-development/{slug}', 'GeneralController@show'); //acreditation uses this route
 
-
-    Route::get('advocacy/eu-affairs', function(){
-        return view('partials.category-tab-items');
-    });
-
-    Route::get('advocacy/eu-projects', function(){
-        return view('advocacy.eu-projects');
-    });
-
+    Route::get('research', 'ResearchController@index'); 
+    Route::get('research/research-seminars', 'ResearchController@researchSeminars'); 
+    Route::get('research/research-seminars/{slug}', 'ResearchController@showRS'); 
+    Route::get('research/{slug}', 'ResearchController@show');   
+    
+    Route::get('advocacy', 'GeneralController@advocacy');
+    Route::get('advocacy/eu-affairs', 'GeneralController@euAffairs');
+    Route::get('advocacy/eu-affairs/{slug}', 'GeneralController@show');
+    Route::get('advocacy/eu-projects', 'GeneralController@euProjects');
     Route::get('advocacy/policy-areas', function(){
         return view('advocacy.policy-areas');
     });
+    Route::get('advocacy/policy-areas/{slug}', 'GeneralController@show');
+    Route::get('advocacy/{slug}', 'GeneralController@show');
 
 
 

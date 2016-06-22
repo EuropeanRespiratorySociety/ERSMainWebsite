@@ -60,13 +60,23 @@
     <script src="http://erstemplate.app/js/app-home.js" type="text/javascript"></script-->
 
     <script src="https://bootstrap.ersnet.org/js/fullpage.js" type="text/javascript"></script>
-    <script src="https://bootstrap.ersnet.org/js/app-home.js" type="text/javascript"></script>
+    <!--script src="https://bootstrap.ersnet.org/js/app-home.js" type="text/javascript"></script-->
+    <script src="http://erstemplate.app//js/app-home.js" type="text/javascript"></script>
 
     <script type="text/javascript">
       $(document).ready(function(){
         //initialize the javascript
-        new WOW({offset: 0, mobile: false }).init();
-        App.assemblies();             
+        new WOW().init();
+        App.home(); 
+
+        $('.row-books').isotope({
+        layoutMode: 'packery',
+        packery: {
+            columnWidth: '.col-md-3',
+            gutter:0
+        },            
+        percentPosition: true
+        });            
       });
     </script>
   @stop()

@@ -11,6 +11,7 @@ use App\Extensions\CloudCmsHelper as CC;
 class CourseController extends Controller
 {
     protected $courses = 'o:f913cff03624ac461283'; //courses category node
+    protected $educationalActivities = "";
 
     /**
      * Display a listing of the resource.
@@ -26,6 +27,26 @@ class CourseController extends Controller
         $params['courses'] =  (object) $courses; 
         return view('professional.courses')->with($params);    
 
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function professionalDevelopment()
+    {
+        return redirect('/#professional-development'); 
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function educationalActivities()
+    {
+        return view('professional.educational-activities'); 
     }
 
     /**

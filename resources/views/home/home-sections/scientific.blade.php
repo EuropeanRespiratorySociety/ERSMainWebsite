@@ -1,4 +1,4 @@
-<div class="section fp-auto-height home-scientific-content" id="">
+<div class="section home-scientific-content fp-auto-height" id="">
 	<div class="main-content scientific-top">
 		<div class="row row_event">
 			<div class="col-md-6 top-left-col">

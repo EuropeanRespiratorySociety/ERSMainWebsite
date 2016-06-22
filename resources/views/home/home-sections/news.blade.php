@@ -1,4 +1,4 @@
-      <div class="section fp-auto-height home-news-content" id="">
+      <div class="section home-news-content fp-auto-height" id="">
           <div class="main-content">
           <div class="page-head"><h2>Latest News</h2></div>
 

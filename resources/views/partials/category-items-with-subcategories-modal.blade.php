@@ -2,17 +2,24 @@
 <!-- Start Lead -->
     <div class="col-md-3">
         <div class="card card-event">            
-            @if(isset($item['type']))
-            <span class="label {{ $item['typeColor'] }}">{{ $item['type'] }}</span>
-            @endif            
-            @if(isset($item['flags']))
-            <span style="left:0;right:auto;" class="label {{ 'label-'.$item['flags']['color'] }}">{{ $item['flags']['text'] }}</span>
-            @endif
-            @if(isset($item['image']))
-            <div class="card-image">
-                <img class="img-responsive" src="{{ $item['image']}}">
+            <div class="card-image" 
+            @if(isset($item['image'])) 
+                style="height:100px;" 
+            @elseif(isset($item['image']) && isset($item['flags'])) 
+                style="height:48px;" 
+            @else 
+                style="height:24px;" 
+            @endif >
+                @if(isset($item['type']))
+                <span class="label {{ $item['typeColor'] }}">{{ $item['type'] }}</span>
+                @endif
+                @if(isset($item['flags']))
+                <span class="label {{ 'label-'.$item['flags']['color'] }}">{{ $item['flags']['text'] }}</span>
+                @endif
+                @if(isset($item['image']))
+                    <img class="" src="{{ $item['image']}}">
+                @endif
             </div>
-            @endif
             <div class="card-content">
                 <p class="title">{{ $item['title'] }}
                     <!--<span>Next upcomming item</span>-->

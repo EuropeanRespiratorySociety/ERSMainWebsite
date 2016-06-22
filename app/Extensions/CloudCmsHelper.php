@@ -52,8 +52,10 @@ class CloudCmsHelper
                     	$parsed[$key]['subtitle'] = $item->subTitle;
                     }	
                     $parsed[$key]['slug'] = $item->slug;
-                    $parsed[$key]['tags'] = $item->tags;
+                    if (isset($item->tags)){$parsed[$key]['tags'] = $item->tags;}
                     if(isset($item->flags)){$parsed[$key]['flags'] = $this->getFlags($item->flags);}
+                    $parsed[$key]['fullyBooked'] = false;
+                    if(isset($item->fullyBooked)){$parsed[$key]['fullyBooked'] = $item->fullyBooked;}
                     if(isset($item->type)){$parsed[$key]['type'] = $item->type;}
                     if(isset($item->type)){$parsed[$key]['typeColor'] = $this->setTypeColor($item->type);}
                     if(isset($item->category)){
@@ -68,14 +70,16 @@ class CloudCmsHelper
                     if(isset($item->eventLocation)){$parsed[$key]['eventLocation'] = $item->eventLocation;}                
                     
                     if(isset($item->leadParagraph)){
-                    	$parsed[$key]['shortLead'] = $this->truncate(Markdown::parse($item->leadParagraph));
+                    	$parsed[$key]['shortLead'] = $this->truncate(strip_tags(Markdown::parse($item->leadParagraph)));
                     	$parsed[$key]['lead'] = Markdown::parse($item->leadParagraph);
                     }
 
                     if(!$lead){
 	                    if(isset($item->organisers)){ $parsed[$key]['organisers'] = $item->organisers;}
 	                    if(isset($item->faculty)){ $parsed[$key]['faculty'] = $item->faculty;}
-	                    if(isset($item->body)){$parsed[$key]['body'] = Markdown::parse($item->body);}
+                        if(isset($item->body)){$parsed[$key]['body'] = Markdown::parse($item->body);}
+                        $parsed[$key]['articleTwoColumns'] = false;
+                        if(isset($item->articleTwoColumns)){$parsed[$key]['articleTwoColumns'] = $item->articleTwoColumns;}
 	                    if(isset($item->feeList)){$parsed[$key]['feeList'] = $item->feeList;}
 	                    if(isset($item->cancellationPolicy)){$parsed[$key]['cancellationPolicy'] = Markdown::parse($item->cancellationPolicy);}
 	                    if(isset($item->sponsors)){$parsed[$key]['sponsors'] = $this->getSponsors($item->sponsors);}
@@ -228,13 +232,18 @@ class CloudCmsHelper
     }
 
     public function getBursary($bursary){
-    	
-    		if(isset($bursary->text)){$parsed['text'] = Markdown::parse($bursary->text);}
-    		if(isset($bursary->deadline)){$parsed['deadline'] = $this->ersDate($bursary->deadline);}
-    		if(isset($bursary->notificationOfResults)){$parsed['results'] = $this->ersDate($bursary->notificationOfResults);}
-    		if(isset($bursary->applyButtonUrl)){$parsed['url'] = $bursary->applyButtonUrl;}
+    	   $parsed = [];
 
-    		return (object) $parsed;
+    	   if(isset($bursary->text)){$parsed['text'] = Markdown::parse($bursary->text);}
+    	   if(isset($bursary->deadline)){$parsed['deadline'] = $this->ersDate($bursary->deadline);}
+    	   if(isset($bursary->notificationOfResults)){$parsed['results'] = $this->ersDate($bursary->notificationOfResults);}
+    	   if(isset($bursary->applyButtonUrl)){$parsed['url'] = $bursary->applyButtonUrl;}
+
+           if(empty($parsed)){
+                return $parsed = false;
+           }
+
+    	   return (object) $parsed;
 
     }
 

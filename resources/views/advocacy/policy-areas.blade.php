@@ -51,11 +51,50 @@
   <script src="https://bootstrap.ersnet.org/js/fullpage.js" type="text/javascript"></script>
   <script src="https://bootstrap.ersnet.org/js/app-policy-areas.js" type="text/javascript"></script>
 
-    	<script type="text/javascript">
+  <script type="text/javascript">
     		$(document).ready(function(){
       	//initialize the javascript
       	new WOW({offset: 110, mobile: false }).init();
       	App.assemblies();             
       });
+  </script>
+  <script type="text/javascript">
+      var options = {
+        useEasing : true,
+      };
+      var data94 = new CountUp("data94", 0, 94, 0, 2.5, options);
+      var data33 = new CountUp("data33", 0, 33, 0, 5, options);
+      var data1 = new CountUp("data1", 0, 1, 1, 4, options);
+
+      var data50 = new CountUp("data50", 0, 50, 0, 7, options);
+      var data10 = new CountUp("data10", 0, 10, 0, 9, options);
+      var data42 = new CountUp("data42", 0, 42, 0, 11, options);
+
+      var data400k = new CountUp("data400k", 0, 400000, 0, 9, options);
+      var data50bis = new CountUp("data50bis", 0, 50, 0, 11, options);
+      var data15 = new CountUp("data15", 0, 15, 0, 13, options);
+      var data20 = new CountUp("data20", 0, 20, 0, 14, options);
+
+      var data53 = new CountUp("data53", 0, 53, 0, 7, options);
+      var data194 = new CountUp("data194", 0, 194, 0, 9, options);
+      var data14 = new CountUp("data14", 0, 14, 0, 11, options);
+
+      data94.start();
+      data1.start();
+      data33.start();
+
+      data50.start();
+      data10.start();
+      data42.start();
+
+      data400k.start();
+      data50bis.start();
+      data15.start();
+      data20.start();
+
+      data53.start();
+      data194.start();
+      data14.start();
+
   </script>
   @stop()
