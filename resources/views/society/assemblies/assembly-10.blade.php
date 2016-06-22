@@ -1,4 +1,4 @@
-      <div class="section fp-auto-height">
+      <div class="section fp-auto-height" style="min-height:1015px;">
           <div class="main-content">
           <div class="page-head"><h2>ERS Assembly 10: Respiratory Infections</h2></div>
 

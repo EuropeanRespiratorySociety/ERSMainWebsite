@@ -61,6 +61,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('the-society/who-we-are/{slug}', 'WhoWeAreController@show');
 
     Route::get('the-society/news', 'NewsController@index');
+    Route::get('the-society/news/contact', function(){ return view('society.contact');});
     Route::get('the-society/news/respiratory-world-wide', 'NewsController@indexRespiratoryWorldWide');
     Route::get('the-society/news/respiratory-matters', 'NewsController@indexRespiratoryMatters');
     Route::get('the-society/news/respiratory-world-wide/{slug}', 'NewsController@show');    

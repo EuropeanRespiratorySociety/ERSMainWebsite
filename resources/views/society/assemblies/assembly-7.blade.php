@@ -1,4 +1,4 @@
-      <div class="section fp-auto-height">
+      <div class="section fp-auto-height" style="min-height:1335px;">
           <div class="main-content">
           <div class="page-head"><h2>ERS Assembly 7: Paediatrics </h2></div>
 

@@ -38,9 +38,26 @@ class Navigation
                     $menu->membership->add('Categories', 'the-society/membership#categories' );
                     $menu->membership->add('FAQs', 'the-society/membership#faqs' );
                 $menu->theSociety->add('Assemblies', 'the-society/assemblies' );
+                    $menu->assemblies->add('1. Clinical', 'the-society/assemblies#clinical' );
+                    $menu->assemblies->add('2. Respiratory Intensive Care', 'the-society/assemblies#respiratory-intensive-care' );
+                    $menu->assemblies->add('3. Cell and Molecular Biology', 'the-society/assemblies#cell-and-molecular-biology' );
+                    $menu->assemblies->add('4. Clinical Physiology, Sleep and Pulomonary Circulation', 'the-society/assemblies#clinical-physiology' );
+                    $menu->assemblies->add('5. Airway Diseases', 'the-society/assemblies#airway-diseases' );
+                    $menu->assemblies->add('6. Occupation and Epidemiology', 'the-society/assemblies#occupation-and-epidemiology' );
+                    $menu->assemblies->add('7. Paediatrics', 'the-society/assemblies#paediatrics' );
+                    $menu->assemblies->add('8. Thoracic Surgery and Transplantation', 'the-society/assemblies#thoracic-surgery' );
+                    $menu->assemblies->add('9. Allied Respiratory Professionals', 'the-society/assemblies#allied-respiratory' );
+                    $menu->assemblies->add('10. Respiratory Infections', 'the-society/assemblies#respiratory-infections' );
+                    $menu->assemblies->add('11. Thoracic Oncology', 'the-society/assemblies#thoracic-oncology' );
                 $menu->theSociety->add('News And Features', 'the-society/news' );
                     $menu->newsAndFeatures->add('Respiratory World Wide', 'the-society/news/respiratory-world-wide' );
                     $menu->newsAndFeatures->add('Respiratory Maters', 'the-society/news/respiratory-matters' );
+                    $menu->newsAndFeatures->add('ERS Vision', 'http://www.ersvision.org/')->link->attr(array('target' => '_blank'));
+                    $menu->newsAndFeatures->add('Press Office', 'the-society/news/press-office');
+                    $menu->newsAndFeatures->add('Contact', 'the-society/news/contact')
+                                            ->prepend('<i class="s7-mail icon"></i><span>')
+                                            ->append('</span>')
+                                            ->link->attr(array('class' => 'contact'));
 
             $menu->add('Congress and events','congress-and-events');
                 $menu->congressAndEvents->add('Events calendar','congress-and-events/events-calendar');

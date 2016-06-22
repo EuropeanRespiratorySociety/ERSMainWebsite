@@ -4,66 +4,66 @@
   <div class="ers-content assemblies-content">
     <div id="fullpage">
       <div class="section fp-auto-height">
-      <div class="main-content">
-        <div class="page-head">
-          <h2>The ERS Scientific Assemblies</h2>
-        </div>
-        
-          <!--h3 class="pageTitle">The ERS Scientific Assemblies</h3-->
-          <h4><strong>Exchange knowledge with the experts</strong></h4>
-
-          <div class="col-md-8 center-block lead"> The Scientific Assemblies help set the scientific and educational agenda across all ERS activities. They also serve as a forum to present and discuss scientific work, especially at the annual ERS International Congress. Every member of the Society has the chance to join a specialised assembly and become part of the ERS community. <br><br>
-          When becoming a member you will be asked to choose three Groups among the 11 Assemblies. </div>
+        <div class="main-content">
+          <div class="page-head">
+            <h2>The ERS Scientific Assemblies</h2>
+          </div>
           
-         
+            <!--h3 class="pageTitle">The ERS Scientific Assemblies</h3-->
+            <h4><strong>Exchange knowledge with the experts</strong></h4>
 
-          <div class="row assemblies_menu">
-            <div class="col-md-4 col-md-offset-2">
-              <div class="bs-grid-block">
-                <div class="content">
-                 <ul class="text-left">
-                  <li data-menuanchor="clinical">
-                    <a href="the-society/assemblies#clinical">1 Clinical</a>
-                  </li>
-                  <li data-menuanchor="respiratory-intensive-care">
-                    <a href="the-society/assemblies#respiratory-intensive-care">2 Respiratory Intensive Care</a>
-                  </li>
-                  <li data-menuanchor="cell-and-molecular-biology">
-                    <a href="the-society/assemblies#cell-and-molecular-biology">3 Cell and Molecular Biology</a>
-                  </li>
-                  <li data-menuanchor="clinical-physiology">
-                    <a href="the-society/assemblies#clinical-physiology">4 Clinical Physiology, Sleep and Pulmonary Circulation</a>
-                  </li>
-                  <li data-menuanchor="airway-diseases">
-                    <a href="the-society/assemblies#airway-diseases">5 Airway Diseases</a>
-                  </li>
+            <div class="col-md-8 center-block lead"> The Scientific Assemblies help set the scientific and educational agenda across all ERS activities. They also serve as a forum to present and discuss scientific work, especially at the annual ERS International Congress. Every member of the Society has the chance to join a specialised assembly and become part of the ERS community. <br><br>
+            When becoming a member you will be asked to choose three Groups among the 11 Assemblies. </div>
+            
+           
 
-                </ul>
-              </div>
-             </div>
-          </div>
-              <div class="col-md-4">
+            <div class="row assemblies_menu">
+              <div class="col-md-4 col-md-offset-2">
                 <div class="bs-grid-block">
-                      <div class="content">
-                        <ul class="text-left">
-                          <li data-menuanchor="occupation-and-epidemiology">
-                            <a href="the-society/assemblies#occupation-and-epidemiology">6 Occupation and Epidemiology</a>
-                          </li>
-                          <li data-menuanchor="paediatrics">
-                            <a href="the-society/assemblies#paediatrics">7 Paediatrics</a>
-                          </li>
-                          <li data-menuanchor="thoracic-surgery">
-                            <a href="the-society/assemblies#thoracic-surgery">8 Thoracic Surgery and Transplantation</a>
-                          </li>
-                          <li data-menuanchor="allied-respiratory"><a href="the-society/assemblies#allied-respiratory">9 Allied Respiratory Professionals</a></li>
-                          <li data-menuanchor="respiratory-infections"><a href="the-society/assemblies#respiratory-infections">10 Respiratory Infections</a></li>
-                          <li data-menuanchor="thoracic-oncology"><a href="the-society/assemblies#thoracic-oncology">11 Thoracic Oncology</a></li>
-                        </ul>
+                  <div class="content">
+                   <ul class="text-left">
+                    <li data-menuanchor="clinical">
+                      <a href="the-society/assemblies#clinical">1 Clinical</a>
+                    </li>
+                    <li data-menuanchor="respiratory-intensive-care">
+                      <a href="the-society/assemblies#respiratory-intensive-care">2 Respiratory Intensive Care</a>
+                    </li>
+                    <li data-menuanchor="cell-and-molecular-biology">
+                      <a href="the-society/assemblies#cell-and-molecular-biology">3 Cell and Molecular Biology</a>
+                    </li>
+                    <li data-menuanchor="clinical-physiology">
+                      <a href="the-society/assemblies#clinical-physiology">4 Clinical Physiology, Sleep and Pulmonary Circulation</a>
+                    </li>
+                    <li data-menuanchor="airway-diseases">
+                      <a href="the-society/assemblies#airway-diseases">5 Airway Diseases</a>
+                    </li>
+
+                  </ul>
+                </div>
+               </div>
+            </div>
+                <div class="col-md-4">
+                  <div class="bs-grid-block">
+                        <div class="content">
+                          <ul class="text-left">
+                            <li data-menuanchor="occupation-and-epidemiology">
+                              <a href="the-society/assemblies#occupation-and-epidemiology">6 Occupation and Epidemiology</a>
+                            </li>
+                            <li data-menuanchor="paediatrics">
+                              <a href="the-society/assemblies#paediatrics">7 Paediatrics</a>
+                            </li>
+                            <li data-menuanchor="thoracic-surgery">
+                              <a href="the-society/assemblies#thoracic-surgery">8 Thoracic Surgery and Transplantation</a>
+                            </li>
+                            <li data-menuanchor="allied-respiratory"><a href="the-society/assemblies#allied-respiratory">9 Allied Respiratory Professionals</a></li>
+                            <li data-menuanchor="respiratory-infections"><a href="the-society/assemblies#respiratory-infections">10 Respiratory Infections</a></li>
+                            <li data-menuanchor="thoracic-oncology"><a href="the-society/assemblies#thoracic-oncology">11 Thoracic Oncology</a></li>
+                          </ul>
+                        </div>
                       </div>
-                    </div>
-              </div>
-          </div>
-    </div>
+                </div>
+            </div>
+      </div>
     </div>
 
 
@@ -116,15 +116,6 @@
         <!-- Start Asesembly 11 -->  
             @include('society.assemblies.assembly-11')
         <!-- End Assembly 11 -->
-
-
-
-
-        
-
-       
-
-     
 
     </div>
   </div>

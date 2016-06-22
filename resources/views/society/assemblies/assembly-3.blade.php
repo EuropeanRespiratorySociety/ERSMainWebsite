@@ -1,4 +1,4 @@
-      <div class="section fp-auto-height">
+      <div class="section fp-auto-height" style="min-height:755px;">
           <div class="main-content">
           <div class="page-head"><h2>ERS Assembly 3: Cell and Molecular Biology</h2></div>
 
