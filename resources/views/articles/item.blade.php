@@ -31,6 +31,9 @@
       @if(isset($item->image))
       <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
       @endif
+      @if(isset($relatedItems))
+        @include('partials.related-items', array('relatedItems' => $relatedItems)) 
+      @endif
 
       </div>
 

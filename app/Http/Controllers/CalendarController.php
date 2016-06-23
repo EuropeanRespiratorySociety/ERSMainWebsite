@@ -8,8 +8,9 @@ use App\Http\Requests;
 
 use App\Extensions\CloudCmsHelper as CC;
 
-class WhoWeAreController extends Controller
+class CalendarController extends Controller
 {
+    protected $calendarCategory = "o:cc1c5be57719dade0371";
 
     /**
      * Display a listing of the resource.
@@ -18,15 +19,20 @@ class WhoWeAreController extends Controller
      */
     public function index()
     {
-        $slug = "who-we-are";
         $CC = new CC();
-        $results = $CC->getItem($slug);
-        //Slug should be unique, so we should get only one item
-        $item = $CC->parseItems($results->rows);
-        $params['item'] =  (object) $item[0]; 
-        return view('articles.item')->with($params); 
+        $results = $CC->getCategorySorted($this->calendarCategory);
+
+        $items = $CC->parseItems($results->rows, true);
+
+        $array = array_values(array_sort($items, function ($value) {
+            return $value['calendar']->timestamp;
+        }));
+                        dd($array);
+        $params['items'] =  (object) $items; 
+        return view('congress-and-events.calendar')->with($params);    
 
     }
+
 
     /**
      * Display the specified resource.
@@ -40,12 +46,8 @@ class WhoWeAreController extends Controller
         $results = $CC->getItem($slug);
         //Slug should be unique, so we should get only one item
         $course = $CC->parseItems($results->rows);
-        $params['item'] =  (object) $course[0]; 
-
-        $related = $CC->getRelatedArticle($item[0]['_qname']);
-        $relatedItems = $CC->parseItems($related->rows);
-        $params['relatedItems'] =  (object) $relatedItems;
-        return view('articles.item')->with($params); 
+        $params['course'] =  (object) $course[0]; 
+        return view('professional.course')->with($params); 
     }
 
 }

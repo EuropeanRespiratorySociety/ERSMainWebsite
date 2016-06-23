@@ -76,6 +76,10 @@ class FellowshipController extends Controller
         //Slug should be unique, so we should get only one item
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0]; 
+
+        $related = $CC->getRelatedArticle($item[0]['_qname']);
+        $relatedItems = $CC->parseItems($related->rows);
+        $params['relatedItems'] =  (object) $relatedItems;
         return view('professional.fellowship')->with($params); 
     }
 

@@ -17,7 +17,9 @@
             @if(isset($item['sponsors']))
             <div class="">
                 <p class="">Sponsor: {{$item['sponsors']['text']}}
+                @if(isset($item['sponsors']['image']))
                     <img style="height:25px;" src="{{ $item['sponsors']['image']}}" class="img-responsive">
+                @endif    
                 </p>
             </div>
             @endif  

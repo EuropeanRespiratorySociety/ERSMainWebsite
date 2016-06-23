@@ -9,15 +9,39 @@ use AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra as Markdown;
 
 class CloudCmsHelper
 {
-	public function getCategory($catnode){
-		$results = CC::nodes()
+    public function getCategory($catnode){
+        $results = CC::nodes()
             ->listRelatives($catnode)
             ->addParams(['type' => 'ers:category-association'])
             ->addParams(['full' => 'true'])
             ->get();
 
         return $results;    
-	}
+    }
+
+    public function getRelatedArticle($node){
+        $results = CC::nodes()
+            ->listRelatives($node)
+            ->addParams(['type' => 'ers:related-association']) 
+            ->addParams(['full' => 'true'])
+            ->get();
+
+        return $results;    
+    }
+
+    public function getCategorySorted($catnode){
+        $results = CC::nodes()
+            ->listRelatives($catnode)
+            ->addParams(['type' => 'ers:category-association'])
+            ->addParams(['sort' => '{"eventDate": 1}']) 
+            ->addParams(['metadata' => 'true'])
+            //->addParams(['skip' => 2]) 
+            //->addParams(['limit' => 2]) 
+            ->addParams(['full' => 'true'])
+            ->get();
+
+        return $results;    
+    }
 
 	public function getItem($slug){
 		$query = '{"slug": "'.$slug.'"}';
@@ -64,9 +88,11 @@ class CloudCmsHelper
                     }	
                     $parsed[$key]['_qname'] = $item->_qname;
                     $parsed[$key]['_type'] = $item->_type;
-                    if(isset($item->eventDate)){$parsed[$key]['eventDates'] = $this->ersDate($item->eventDate, $item->eventEndDate);}   
+                    if(isset($item->eventDate)){$parsed[$key]['eventDates'] = $this->ersDate($item->eventDate, $item->eventEndDate);}  
+                    if(isset($item->eventDate)){$parsed[$key]['calendar'] = $this->calendar($item->eventDate);}   
                     if(isset($item->earlybirdDeadline)){$parsed[$key]['earlybirdDeadline'] = $this->ersDate($item->earlybirdDeadline);}
                     if(isset($item->extendedDeadline)){ $parsed[$key]['extendedDeadline'] = $this->ersDate($item->extendedDeadline);}
+                    if(isset($item->openingDate)){ $parsed[$key]['openingDate'] = $this->ersDate($item->openingDate);}
                     if(isset($item->eventLocation)){$parsed[$key]['eventLocation'] = $item->eventLocation;}                
                     
                     if(isset($item->leadParagraph)){
@@ -84,9 +110,14 @@ class CloudCmsHelper
 	                    if(isset($item->cancellationPolicy)){$parsed[$key]['cancellationPolicy'] = Markdown::parse($item->cancellationPolicy);}
 	                    if(isset($item->sponsors)){$parsed[$key]['sponsors'] = $this->getSponsors($item->sponsors);}
                         if(isset($item->deadlines)){$parsed[$key]['deadlines'] = $this->getDeadlines($item->deadlines);}
-	                    if(isset($item->venue)){$parsed[$key]['venue'] = $item->venue;}
-	                    if(isset($item->suggestedAccommodation)){$parsed[$key]['suggestedAccommodation'] = $this->getSuggestedAccommodations($item->suggestedAccommodation);}
-	                    if(isset($item->bursaryApplication)){$parsed[$key]['bursaryApplication'] = $this->getBursary($item->bursaryApplication);}
+	                    if(isset($item->venue)){
+                            $parsed[$key]['venue'] = $item->venue ;
+                            $parsed[$key]['venue']->info = Markdown::parse($item->venue->info) ;
+                        }
+	                    if(isset($item->suggestedAccommodation)){$parsed[$key]['suggestedAccommodation'] = $this->parseVenues($item->suggestedAccommodation);}
+                        if(isset($item->abstracts)){$parsed[$key]['abstracts'] = $this->getBursary($item->abstracts);}
+                        if(isset($item->mentorship)){$parsed[$key]['mentorship'] = $this->getBursary($item->mentorship);}
+                        if(isset($item->bursaryApplication)){$parsed[$key]['bursaryApplication'] = $this->getBursary($item->bursaryApplication);}
 	            		if(isset($item->documents)){$parsed[$key]['documents'] = $this->getDocuments($item->documents);}
 
 	                    
@@ -100,7 +131,9 @@ class CloudCmsHelper
                     if(isset($item->image)){
                         $img_qname = $item->image->qname;
                         $img = CC::nodes()->getImage($img_qname);
+                        $parsed[$key]['image'] = $img->imageUrl."?name=image5000&size=500";
                     }
+                    /*
                     if(isset($img)){
                         $parsed[$key]['image'] = Image::cache(function($image) use($img){
                          return $image->make($img->imageUrl)->resize(420, null, function ($constraint) {
@@ -109,7 +142,7 @@ class CloudCmsHelper
                         });
                         unset($img);
 
-                    }
+                    }*/
 
                     if(isset($item->programme)){
                         $path = "path/documents/programme/";
@@ -117,6 +150,8 @@ class CloudCmsHelper
                         $file = CC::nodes()->getFile($file_title, $path);
                         $parsed[$key]['programmeFile'] = $file;
                     }
+                    if(isset($item->programmeButtonText)){ $parsed[$key]['programmeButtonText'] =$item->programmeButtonText;}
+                    if(isset($item->programmeNotice)){ $parsed[$key]['programmeNotice'] =$item->programmeNotice;}
                     if(isset($item->rulesAndRegulations)){
                         $path = "path/documents/rules_and_regulations/";
                         $file_title = $item->rulesAndRegulations->title;
@@ -134,6 +169,17 @@ class CloudCmsHelper
             //dd($parsed);
         return $parsed; 
 	}
+
+    public function calendar($date){
+        $date = new \DateTime($date);
+        $calendar = Carbon::instance($date);
+
+        $cal['year'] = $calendar->year;
+        $cal['month'] = $calendar->format('F');
+        $cal['timestamp'] = $calendar->timestamp;
+
+        return (object) $cal;
+    }
 
 	public function ersDate($start, $end = null)
     {
@@ -178,26 +224,28 @@ class CloudCmsHelper
     }
 
     public function getSponsors($sponsors){
+        unset($parsed);
         foreach ($sponsors as $key => $sponsor) {
             if(isset($sponsor->text)){$parsed[$key]['text'] = $sponsor->text;}
             if(isset($sponsor->image)){
                         $img_qname = $sponsor->image->qname;
                         $img = CC::nodes()->getImage($img_qname);
+                        $parsed[$key]['image'] = $img->imageUrl."?name=image200&size=200";
                     }
-                    if(isset($img)){
+                    /*if(isset($img)){
                         $parsed[$key]['image'] = Image::cache(function($image) use($img){
                          return $image->make($img->imageUrl)->resize(null, 50, function ($constraint) {
                                 $constraint->aspectRatio();
                             })->encode('data-url');
                         });
-                    }
+                    }*/
         }
         if(isset($parsed)){
             return $parsed[0];
         }
     }
 
-    public function getSuggestedAccommodations($items){
+    public function parseVenues($items){
         $parsed = [];
         foreach ($items as $key => $item) {
     

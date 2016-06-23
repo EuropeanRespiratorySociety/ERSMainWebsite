@@ -76,7 +76,11 @@ class NewsController extends Controller
         $results = $CC->getItem($slug);
         //Slug should be unique, so we should get only one item
         $course = $CC->parseItems($results->rows);
-        $params['item'] =  (object) $course[0]; 
+        $params['item'] =  (object) $course[0];
+
+        $related = $CC->getRelatedArticle($item[0]['_qname']);
+        $relatedItems = $CC->parseItems($related->rows);
+        $params['relatedItems'] =  (object) $relatedItems; 
         return view('articles.item')->with($params); 
     }
 

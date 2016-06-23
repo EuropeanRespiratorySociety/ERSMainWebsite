@@ -63,6 +63,9 @@ class Navigation
                 $menu->congressAndEvents->add('Events calendar','congress-and-events/events-calendar');
                 $menu->congressAndEvents->add('ERS International Congress','http://erscongress.org');
                 $menu->congressAndEvents->add('The Lung Science Conference','congress-and-events/the-lung-science-conference');
+                    $menu->theLungScienceConference->add('Estoril, your host city','congress-and-events/the-lung-science-conference/estoril-your-host-city');
+                    $menu->theLungScienceConference->add('Previous Conferences','http://old.ersnet.org/previous-conferences.html')
+                                            ->link->attr(array('target' => '_blank'));
                 $menu->congressAndEvents->add('Sleep and Breathing Conference','http://www.sleepandbreathing.org');
                 $menu->congressAndEvents->add('ERS Presidential Summit','congress-and-events/ers-presidential-summit');
                 $menu->congressAndEvents->add('ERS Research Seminars','congress-and-events/ers-research-seminars');
@@ -71,39 +74,49 @@ class Navigation
 
             $menu->add('Publications','#publications');
                 $menu->publications->add('European Respiratory Journal', 'http://erj.ersjournals.com/')
-                    ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array('target' => '_blank'));
                 $menu->publications->add('ERJ Open Research', 'http://openres.ersjournals.com/')
-                    ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array('target' => '_blank'));
                 $menu->publications->add('European Respiratory Review', 'http://err.ersjournals.com/')
-                    ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array('target' => '_blank'));
                 $menu->publications->add('Monograph', 'http://erm.ersjournals.com/')
-                    ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array('target' => '_blank'));
                 $menu->publications->add('Breathe', 'http://breathe.ersjournals.com/')
-                    ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array('target' => '_blank'));
                 $menu->publications->add('Guidelines', 'http://www.ers-education.org/pages/default.aspx?id=2005')
-                    ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array('target' => '_blank'));
                 $menu->publications->add('White Books', 'http://www.erswhitebook.org/')
-                    ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array('target' => '_blank'));
                 $menu->publications->add('ERS Handbooks', 'http://www.ers-education.org/publications/handbook-series.aspx')
-                    ->link->attr(array('target' => '_blank'));                
+                                            ->link->attr(array('target' => '_blank'));                
                 $menu->publications->add('FIRS World Report', 'pdf/publications/firs-world-report.pdf')
-                    ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array('target' => '_blank'));
                 $menu->publications->add('Air Quality and Health','publications/air-quality-and-health');
                 $menu->publications->add('ERS Road Map', 'http://www.ersroadmap.org/')
-                    ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array('target' => '_blank'));
                 $menu->publications->add('RED Congress Magazine', 'http://www.ersbuyersguide.org/')
-                    ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array('target' => '_blank'));
                 $menu->publications->add('COPD Audit', 'pdf/publications/copd_audit_web_version.pdf')
-                    ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array('target' => '_blank'));
 
 
             $menu->add('Professional development','#professional-development');
                 $menu->professionalDevelopment->add('Fellowships','professional-development/fellowships');
+                $menu->professionalDevelopment->add('HERMES projects','http://hermes.ersnet.org/projects.html')
+                                            ->link->attr(array('target' => '_blank'));                 
+                $menu->professionalDevelopment->add('HERMES exams','http://hermes.ersnet.org/exams.html')
+                                            ->link->attr(array('target' => '_blank'));                 
                     $menu->fellowships->add('Short-Term','professional-development/fellowships/short-term');
                     $menu->fellowships->add('Long-Term','professional-development/fellowships/long-term');
                 $menu->professionalDevelopment->add('Educational Activities','professional-development/educational-activities');
                     $menu->educationalActivities->add('ERS Courses','professional-development/educational-activities/courses');
                 $menu->professionalDevelopment->add('Grants and Sponsorships','professional-development/grants-and-sponsorships');
+                $menu->professionalDevelopment->add('E-learning','http://www.ers-education.org/home.aspx')
+                                            ->link->attr(array('target' => '_blank'));                 
+                $menu->professionalDevelopment->add('Junior Members','http://juniors.ersnet.org')
+                                            ->link->attr(array('target' => '_blank')); 
+                $menu->professionalDevelopment->add('Respipedia','http://respipedia.ers-education.org/home.aspx')
+                                            ->link->attr(array('target' => '_blank'));               
                 $menu->professionalDevelopment->add('Accreditation','professional-development/accreditation');
 
 
@@ -121,6 +134,10 @@ class Navigation
                     $menu->policyAreas->add('The ERS Tobacco Control Committee','advocacy/policy-areas/the-ers-tobacco-control-committee');
                     $menu->policyAreas->add('Environment and Health Committee','advocacy/policy-areas/environment-and-health-committee');
                 $menu->advocacy->add('Alliances','advocacy/alliances');
+                $menu->advocacy->add('Healthy Lungs for Life','http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/')
+                                            ->link->attr(array('target' => '_blank')); 
+                $menu->advocacy->add('European Lung Foundation','http://www.europeanlung.org/en/')
+                                            ->link->attr(array('target' => '_blank'));                   
 
 
 

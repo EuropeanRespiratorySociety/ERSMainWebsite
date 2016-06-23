@@ -37,6 +37,9 @@
               Seminar Programme
             </a>
           @endif
+          @if(isset($item->programmeNotice))
+          <p class="text-danger">{{$item->programmeNotice}}</p>
+          @endif
         </div>
       </div>
       <h2 class="article-title">{{$item->title}}</h2>

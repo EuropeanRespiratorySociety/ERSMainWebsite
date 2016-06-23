@@ -23,7 +23,6 @@ class CourseController extends Controller
         $CC = new CC();
         $results = $CC->getCategory($this->courses);
         $courses = $CC->parseItems($results->rows, true);
-   
         $params['courses'] =  (object) $courses; 
         return view('professional.courses')->with($params);    
 
@@ -62,6 +61,10 @@ class CourseController extends Controller
         //Slug should be unique, so we should get only one item
         $course = $CC->parseItems($results->rows);
         $params['course'] =  (object) $course[0]; 
+
+        $related = $CC->getRelatedArticle($item[0]['_qname']);
+        $relatedItems = $CC->parseItems($related->rows);
+        $params['relatedItems'] =  (object) $relatedItems;
         return view('professional.course')->with($params); 
     }
 

@@ -76,6 +76,9 @@ Route::group(['middleware' => ['web']], function () {
     });
 
     Route::get('congress-and-events/ers-research-seminars', 'ResearchController@researchSeminarsRedirect');
+    Route::get('congress-and-events/the-lung-science-conference', 'LscController@index');
+    Route::get('congress-and-events/the-lung-science-conference/{slug}', 'LscController@show');
+    Route::get('congress-and-events/events-calendar', 'CalendarController@index');
     Route::get('congress-and-events/{slug}', 'GeneralController@show');
 
     Route::get('professional-development/educational-activities/courses', 'CourseController@index');
@@ -105,6 +108,7 @@ Route::group(['middleware' => ['web']], function () {
     });
     Route::get('advocacy/policy-areas/{slug}', 'GeneralController@show');
     Route::get('advocacy/{slug}', 'GeneralController@show');
+    Route::get('related/{slug}', 'GeneralController@show');
 
 
 
