@@ -62,7 +62,7 @@ class CourseController extends Controller
         $course = $CC->parseItems($results->rows);
         $params['course'] =  (object) $course[0]; 
 
-        $related = $CC->getRelatedArticle($item[0]['_qname']);
+        $related = $CC->getRelatedArticle($course[0]['_qname']);
         $relatedItems = $CC->parseItems($related->rows);
         $params['relatedItems'] =  (object) $relatedItems;
         return view('professional.course')->with($params); 

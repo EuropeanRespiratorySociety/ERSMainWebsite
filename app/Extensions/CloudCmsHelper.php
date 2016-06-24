@@ -107,12 +107,14 @@ class CloudCmsHelper
                         $parsed[$key]['articleTwoColumns'] = false;
                         if(isset($item->articleTwoColumns)){$parsed[$key]['articleTwoColumns'] = $item->articleTwoColumns;}
 	                    if(isset($item->feeList)){$parsed[$key]['feeList'] = $item->feeList;}
-	                    if(isset($item->cancellationPolicy)){$parsed[$key]['cancellationPolicy'] = Markdown::parse($item->cancellationPolicy);}
+                        if(isset($item->cancellationPolicy)){$parsed[$key]['cancellationPolicy'] = Markdown::parse($item->cancellationPolicy);}
+                        if(isset($item->travelInfo)){$parsed[$key]['travelInfo'] = Markdown::parse($item->travelInfo);}
+                        if(isset($item->technicalInfo)){$parsed[$key]['technicalInfo'] = Markdown::parse($item->technicalInfo);}
 	                    if(isset($item->sponsors)){$parsed[$key]['sponsors'] = $this->getSponsors($item->sponsors);}
                         if(isset($item->deadlines)){$parsed[$key]['deadlines'] = $this->getDeadlines($item->deadlines);}
 	                    if(isset($item->venue)){
-                            $parsed[$key]['venue'] = $item->venue ;
-                            $parsed[$key]['venue']->info = Markdown::parse($item->venue->info) ;
+                            if(isset($item->venue)){$parsed[$key]['venue'] = $item->venue ;}
+                            if(isset($parsed[$key]['venue']->info)){$parsed[$key]['venue']->info = Markdown::parse($item->venue->info) ;}
                         }
 	                    if(isset($item->suggestedAccommodation)){$parsed[$key]['suggestedAccommodation'] = $this->parseVenues($item->suggestedAccommodation);}
                         if(isset($item->abstracts)){$parsed[$key]['abstracts'] = $this->getBursary($item->abstracts);}
@@ -165,6 +167,7 @@ class CloudCmsHelper
                         $file = CC::nodes()->getFile($file_title, $path);
                         $parsed[$key]['practicalInfoFile'] = $file;
                     }
+                    if(isset($item->practicalInfoButton)){$parsed[$key]['practicalInfoButton'] = $item->practicalInfoButton;}
                 }  
             //dd($parsed);
         return $parsed; 

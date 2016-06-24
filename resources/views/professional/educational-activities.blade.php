@@ -9,7 +9,24 @@
             <p>ERS provides essential learning opportunities covering the latest advances in respiratory medicine.</p>
         </div>           
         <div class="row row_event rel">
+            <div class="col-md-3">
+            <!-- START Courses -->  
+                <div class="card card-event">
+                    <div class="card-image" style="height:100px;">
+                        <img class="img-responsive" src="images/research/research_4.jpg">
+                    </div>
 
+                    <div class="card-content">
+                        <p class="title">ERS courses
+                        </p>
+                        <div class="lead-card">ERS provides essential learning opportunities covering…</div>
+                    </div>
+                    <div class="card-action clearfix">
+                        <a href="professional-development/educational-activities/courses" class="btn btn-register">more</a>
+                    </div>
+                </div>
+            <!-- END Courses -->    
+            </div>
         </div>
     </div>
 </div>

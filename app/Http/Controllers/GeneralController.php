@@ -30,6 +30,26 @@ class GeneralController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function community()
+    { 
+        return redirect('/#community');
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function sciAndEduEvents()
+    { 
+        return redirect('/#scientific-and-educational-events');
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function advocacy()
     { 
         return redirect('/#advocacy');

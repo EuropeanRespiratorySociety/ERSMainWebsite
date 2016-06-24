@@ -87,16 +87,6 @@
             <span class="icon s7-piggy"></span>Bursary<br>application</a>
           </li>
         @endif
-        @if(isset($item->mentorship))
-          <li><a href="#mentor" data-toggle="tab">
-            <span class="icon s7-users"></span>Mentorship<br>programme</a>
-          </li>
-        @endif
-        @if(isset($item->abstracts))
-          <li><a href="#abstracts" data-toggle="tab">
-            <span class="icon s7-file"></span>Abstracts</a>
-          </li>
-        @endif
         </ul>
 
         <div class="tab-content text-left">
@@ -111,6 +101,22 @@
                     Practical Info
                   </a>
                 @endif
+                <ul class="list-group">
+                  @if(isset($item->mentorship))
+                    <li class="list-group-item">
+                      <a href="#md-mentor" type="button" data-toggle="modal" data-target="#md-mentor">
+                        <span class="icon s7-users"></span>Mentorship programme
+                      </a>
+                    </li>
+                  @endif
+                  @if(isset($item->abstracts))
+                    <li class="list-group-item">
+                      <a href="#md-abstracts" data-toggle="modal" data-target="#md-abstracts">
+                        <span class="icon s7-file"></span>Abstracts
+                      </a>
+                    </li>
+                  @endif
+                </ul>
 
                 @if(isset($item->venue))
                         <h4 class="modal-title">Conference Venue</h4>
@@ -213,9 +219,49 @@
                      @endif
           </div>
           @endif
-          @if(isset($item->mentorship))
-          <div id="mentor" class="tab-pane cont">
-                     @if(isset($item->mentorship->text))
+        </div>
+      </div>
+
+    </div>
+    <!-- End Right Sidebar -->
+  </div>
+</div>
+
+<!-- Modal windows -->
+@if(isset($course->cancellationPolicy))
+<!--Cancellation policy-->
+<div id="md-cancellation" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+        <h3 class="modal-title">Cancellation policy</h3>
+      </div>
+      <div class="modal-body">
+        <div class="text-left">
+          <p>
+            {!! $course->cancellationPolicy !!}
+           
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+@endif
+
+@if(isset($item->mentorship))
+<!-- Mentors -->
+<div id="md-mentor" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+        <h3 class="modal-title">Mentorship programme</h3>
+      </div>
+      <div class="modal-body">
+        <div class="text-left">
+                    @if(isset($item->mentorship->text))
                      {!!$item->mentorship->text!!}
                      @endif
                      <ul>
@@ -229,11 +275,25 @@
                      @if(isset($item->mentorship->url))
                       <a href="{{$item->mentorship->url}}"" class="btn btn-primary tab-register-bt">Apply</a>
                      @endif
-          </div>
-          @endif
-          @if(isset($item->abstracts))
-          <div id="abstracts" class="tab-pane cont">
-                     @if(isset($item->abstracts->text))
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END Mentors -->
+@endif
+@if(isset($item->abstracts))
+<!-- Abstracts -->
+<div id="md-abstracts" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+        <h3 class="modal-title">Abstract Submission</h3>
+      </div>
+      <div class="modal-body">
+        <div class="text-left">
+                    @if(isset($item->abstracts->text))
                      {!!$item->abstracts->text!!}
                      @endif
                      <ul>
@@ -247,17 +307,14 @@
                      @if(isset($item->abstracts->url))
                       <a href="{{$item->abstracts->url}}"" class="btn btn-primary tab-register-bt">Apply</a>
                      @endif
-          </div>
-          @endif
-          <div id="messages" class="tab-pane"> </div>
         </div>
       </div>
-
     </div>
-    <!-- End Right Sidebar -->
   </div>
 </div>
-
+<!-- END Abstracts -->
+@endif
+<!--END Modal contents div-->
 
 @stop()  
 

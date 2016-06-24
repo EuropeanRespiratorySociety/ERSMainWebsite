@@ -34,8 +34,8 @@
             <h3 class="">Or use the contact form</h3>
         </div>
         <div class="row">
-          <div class="col-md-6 col-md-offset-4">
-            <iframe seamless="seamless" scrolling="no" style="height:441px;border:none;padding-bottom:20px;margin-top:20px;" width="100%" height="100%" src="http://forms.ersnet.org/contact?tmpl=component"></iframe>
+          <div class="col-md-6 col-md-offset-3" style="margin-top: 50px; margin-bottom:50px;">
+          <a href="https://forms.ersnet.org/contact" class="btn btn-primary btn-lg"><span class="s7-mail icon"></span>Contact form</a>
           </div>
         </div>
         <div class="page-head">

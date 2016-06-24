@@ -36,6 +36,25 @@ class ResearchController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function summits()
+    { 
+        $CC = new CC();
+        $results = $CC->getItem('ers-presidential-summits');
+        $item = $CC->parseItems($results->rows);
+        $params['item'] =  (object) $item[0]; 
+
+        $results = $CC->getCategory($params['item']->_qname);
+        $items = $CC->parseItems($results->rows);
+        $params['items'] =  (object) $items; 
+
+        return view('research.summits')->with($params);  
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function researchSeminars()
     { 
         $CC = new CC();

@@ -18,7 +18,7 @@ class Navigation
     {
         \Menu::make('MainNav', function($menu){
 
-            $menu->add('The Society', array('url' => 'the-society', 'class' => 'horizontal'));
+            $menu->add('The Society', array('url' => '#community', 'class' => 'horizontal'));
                 $menu->theSociety->add('Who we are', 'the-society/who-we-are' );
                     $menu->whoWeAre->add('Leadership and committees', 'the-society/who-we-are/leadership' );
                         $menu->leadershipAndCommittees->add('National Delegates', 'the-society/who-we-are/leadership/national-delegates' );
@@ -59,7 +59,7 @@ class Navigation
                                             ->append('</span>')
                                             ->link->attr(array('class' => 'contact'));
 
-            $menu->add('Congress and events','congress-and-events');
+            $menu->add('Congress and events','#scientific-and-educational-events');
                 $menu->congressAndEvents->add('Events calendar','congress-and-events/events-calendar');
                 $menu->congressAndEvents->add('ERS International Congress','http://erscongress.org');
                 $menu->congressAndEvents->add('The Lung Science Conference','congress-and-events/the-lung-science-conference');
@@ -67,7 +67,7 @@ class Navigation
                     $menu->theLungScienceConference->add('Previous Conferences','http://old.ersnet.org/previous-conferences.html')
                                             ->link->attr(array('target' => '_blank'));
                 $menu->congressAndEvents->add('Sleep and Breathing Conference','http://www.sleepandbreathing.org');
-                $menu->congressAndEvents->add('ERS Presidential Summit','congress-and-events/ers-presidential-summit');
+                $menu->congressAndEvents->add('ERS Presidential Summits','congress-and-events/ers-presidential-summits');
                 $menu->congressAndEvents->add('ERS Research Seminars','congress-and-events/ers-research-seminars');
                 $menu->congressAndEvents->add('Past International Congresses','congress-and-events/past-international-congresses');
                 $menu->congressAndEvents->add('Event endorsement','congress-and-events/external-events-endorsement');

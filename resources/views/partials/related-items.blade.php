@@ -1,5 +1,5 @@
     @foreach($relatedItems as $related)
-    <div style="padding:20px 20px 20px 40px" class="text-left">
+    <div class="related-items text-left">
       <div class="card card-default card-events">          
         @if(isset($related['image']))
           <div class="card-image">
@@ -10,9 +10,9 @@
         <div class="card-content">
           <h4>
             {{$related['title']}}
-          </h4>
+          </h4>  
           <p>
-            {{$related['shortLead']}}
+            @if(isset($related['shortLead'])){{$related['shortLead']}}@endif
           </p>
           <a href="related/{{$related['slug'] }}" target="new_blank" class="btn btn-xs btn-default pull-right">More...</a>
         </div>

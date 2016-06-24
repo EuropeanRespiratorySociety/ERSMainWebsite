@@ -6,6 +6,9 @@
     @if(isset($course->image))
     <p><img src="{{ $course->image }}" class="img-rounded img-responsive"></p>
     @endif
+    @if(isset($relatedItems))
+        @include('partials.related-items', array('relatedItems' => $relatedItems)) 
+    @endif
     </div>
     <div class="col-md-6 lighter-grey-bg">
       <div class="header">
@@ -19,7 +22,7 @@
         </div>
         <h2 class="text-left clearfix date-venue">
         <!--<a href=""><span class="icon s7-angle-left pull-left" style="font-size: 24px;"></span></a>-->
-        <label>{{$course->eventDates}} <a href="">{{$course->eventLocation}}</a></label>
+        <label>{{$course->eventDates}} @if(isset($course->eventLocation))<a href="">{{$course->eventLocation}}</a>@endif</label>
         <!--<a href=""><span class="icon s7-angle-right pull-right" style="font-size: 24px;"></span></a>-->
         </h2>
       </div>
@@ -76,16 +79,21 @@
                 @if(isset($course->practicalInfoFile))  
                   <a href="{{$course->practicalInfoFile->fileUrl}}" target="_blank" type="button" class="btn btn-light-primary text-left">
                     <span class="icon s7-map" style="font-size: 24px;"></span>
-                    Practical Info
+                    @if(isset($course->practicalInfoButton)){{$course->practicalInfoButton}}@else Practical Info @endif
                   </a>
                 @endif
-                @if(isset($course->venue))
-                <p><a data-toggle="modal" data-target="#md-venue_accommodation" type="button" class="">Venue</a></p>
-                @endif
-                @if(isset($course->suggestedAccommodation))
-                <p><a data-toggle="modal" data-target="#md-suggested_accommodation" type="button" class="">Suggested Accommodation</a></p>
-                @endif
-
+                <ul class="list-group">
+                  @if(isset($course->technicalInfo))
+                  <li class="list-group-item"><a data-toggle="modal" data-target="#md-technical-info" type="button" class=""><span class="s7-tools"></span>Technical Info</a></li>
+                  @endif
+                  @if(isset($course->venue))
+                  <li class="list-group-item"><a data-toggle="modal" data-target="#md-venue_accommodation" type="button" class="">Venue</a></li>
+                  @endif
+                  @if(isset($course->suggestedAccommodation))
+                  <li class="list-group-item"><a data-toggle="modal" data-target="#md-suggested_accommodation" type="button" class="">Suggested Accommodation</a></li>
+                  @endif
+                </ul>
+<hr>
                 <div class="list-group">
                   <a href="#" class="list-group-item midium-grey-bg">
                     <span class="badge">
@@ -123,6 +131,9 @@
             @endif
             @if(isset($course->cancellationPolicy))
             <p><a data-toggle="modal" data-target="#md-cancellation" type="button" class="">Cancellation policy</a></p>
+            @endif
+            @if(isset($course->travelInfo))
+            <p><a data-toggle="modal" data-target="#md-travel_info" type="button" class="">Travel Info</a></p>
             @endif
             @if(isset($course->registerButton['link']) && !$course->fullyBooked)
               <a href="{{$course->registerButton['link']}}"" class="btn btn-primary tab-register-bt">Register</a>
@@ -177,17 +188,20 @@
             @if(isset($course->venue->url))
               <a target="_blank" href="{{$course->venue->url}}">
             @endif 
-              {{$course->venue->name}} 
+              @if(isset($course->venue->name)){{$course->venue->name}}@endif
             @if(isset($course->venue->url))
               </a>
             @endif
             <br/>
+            @if(isset($course->venue->streetAddress))
             {{$course->venue->streetAddress}}<br>
+            @endif
             @if(isset($course->venue->streetAddress2))
             {{$course->venue->streetAddress2}}<br>
             @endif
-            {{$course->venue->postalCode}} {{$course->venue->city}}<br>
-            {{$course->venue->country}}
+            @if(isset($course->venue->streetAddress)){{$course->venue->postalCode}}@endif
+            @if(isset($course->venue->streetAddress)){{$course->venue->city}}@endif<br>
+            @if(isset($course->venue->streetAddress)){{$course->venue->country}}@endif
           </p>
         </div>
       </div>
@@ -247,6 +261,48 @@
           <p>
             {!! $course->cancellationPolicy !!}
            
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--END Modal contents div-->
+@endif
+@if(isset($course->travelInfo))
+<!--Cancellation policy-->
+<div id="md-travel_info" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+        <h3 class="modal-title">Travel Info</h3>
+      </div>
+      <div class="modal-body">
+        <div class="text-left">
+          <p>
+            {!! $course->travelInfo !!}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--END Modal contents div-->
+@endif
+@if(isset($course->technicalInfo))
+<!--Cancellation policy-->
+<div id="md-technical-info" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+        <h3 class="modal-title">Travel Info</h3>
+      </div>
+      <div class="modal-body">
+        <div class="text-left">
+          <p>
+            {!! $course->technicalInfo !!}
           </p>
         </div>
       </div>

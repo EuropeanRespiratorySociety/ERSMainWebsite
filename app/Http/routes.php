@@ -32,20 +32,9 @@ Route::get('/cache-flush', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
-
-    Route::get('test-sam2', 'CloudCms@requestTest2');
-    Route::get('test-sam', 'CloudCms@requestTest');
 	Route::Auth();
     
     Route::get('/', 'HomeController@index');
-
-    Route::get('sam', function(){
-    	return view('pages.blank-aside');
-    });
-
-    Route::get('the-society/assemblies', function(){
-    	return view('society.assemblies');
-    });
 
     //The order matters!!!
     Route::get('the-society/who-we-are', 'WhoWeAreController@index');
@@ -68,6 +57,9 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('the-society/news/respiratory-matters/{slug}', 'NewsController@show');    
     Route::get('the-society/news/{slug}', 'NewsController@show');
 
+//Few redirects to avoid user missbehaviours
+    Route::get('community', 'GeneralController@community');
+    Route::get('scientific-and-educational-events', 'GeneralController@sciAndEduEvents');
     Route::get('publications', 'GeneralController@publications');
     Route::get('publications/{slug}', 'GeneralController@show');
 
@@ -75,7 +67,13 @@ Route::group(['middleware' => ['web']], function () {
         return view('society.membership');
     });
 
+    Route::get('the-society/assemblies', function(){
+        return view('society.assemblies');
+    });
+
     Route::get('congress-and-events/ers-research-seminars', 'ResearchController@researchSeminarsRedirect');
+    Route::get('congress-and-events/ers-presidential-summits', 'ResearchController@summits');
+    Route::get('congress-and-events/ers-presidential-summits/{slug}', 'ResearchController@showRS');
     Route::get('congress-and-events/the-lung-science-conference', 'LscController@index');
     Route::get('congress-and-events/the-lung-science-conference/{slug}', 'LscController@show');
     Route::get('congress-and-events/events-calendar', 'CalendarController@index');
@@ -111,11 +109,6 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('related/{slug}', 'GeneralController@show');
 
 
-
-
-    //Blog using CloudCms
-    Route::get('cc', 'CourseController@index');
-    Route::get('cc/{slug}', 'CourseController@show');
 
     Route::get('search/{query}', 'CloudCms@search');
     Route::get('full-search', 'CloudCms@fullSearch');

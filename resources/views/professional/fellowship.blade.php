@@ -8,7 +8,11 @@
           @if(isset($item->image))
               <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
           @endif
+          @if(isset($relatedItems))
+            @include('partials.related-items', array('relatedItems' => $relatedItems)) 
+          @endif          
           </div>
+
           <div class="col-md-8 lighter-grey-bg event-items-fs-title">
             <div class="page-head"><h2 class="article-title">{{$item->title}}</h2></div>
             <div class="article text-left">
