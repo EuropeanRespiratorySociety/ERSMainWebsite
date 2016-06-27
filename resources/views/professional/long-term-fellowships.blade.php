@@ -29,11 +29,12 @@
        </div>
 
      </div>
-     <div class="row fellowship-categories main-content col-md-12">
+    <div class="main-content">
+     <div class="row fellowship-categories">
         @include('partials.category-items-modal', array('items' => $fellowships))
      </div>
    </div>
-
+     </div>
 
    <!-- Beginning Right Side-bar -->
    <div class="col-md-3 white-bg event-items-right">
@@ -100,7 +101,7 @@
     $('.fellowship-categories').isotope({
         layoutMode: 'packery',
         packery: {
-            columnWidth: '.col-md-4',
+            columnWidth: '.isotope',
             gutter:0
         },            
         percentPosition: true

@@ -1,4 +1,5 @@
 /vendor
+/resources/views/template.blade.php
 /node_modules
 /config/laravel-responsecache.php
 Homestead.yaml

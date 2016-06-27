@@ -39,8 +39,8 @@ class WhoWeAreController extends Controller
         $CC = new CC();
         $results = $CC->getItem($slug);
         //Slug should be unique, so we should get only one item
-        $course = $CC->parseItems($results->rows);
-        $params['item'] =  (object) $course[0]; 
+        $item = $CC->parseItems($results->rows);
+        $params['item'] =  (object) $item[0]; 
 
         $related = $CC->getRelatedArticle($item[0]['_qname']);
         $relatedItems = $CC->parseItems($related->rows);

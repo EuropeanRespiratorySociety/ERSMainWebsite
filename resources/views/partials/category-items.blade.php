@@ -1,8 +1,8 @@
 @foreach ($items as $item)
 @if(!isset($class))
-    <div class="col-md-4" style="width:30%">
+    <div class="col-md-4 isotope">
 @else
-    <div class="{{$class}}">  
+    <div class="{{$class}} isotope">  
 @endif    
     <div class="card card-event">
         <div class="card-image" 

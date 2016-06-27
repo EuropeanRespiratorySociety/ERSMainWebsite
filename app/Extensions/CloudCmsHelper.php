@@ -29,11 +29,11 @@ class CloudCmsHelper
         return $results;    
     }
 
-    public function getCategorySorted($catnode){
+    public function getCategorySorted($catnode, $field="eventDate", $direction=1){
         $results = CC::nodes()
             ->listRelatives($catnode)
             ->addParams(['type' => 'ers:category-association'])
-            ->addParams(['sort' => '{"eventDate": 1}']) 
+            ->addParams(['sort' => '{"'.$field.'": '.$direction.'}']) 
             ->addParams(['metadata' => 'true'])
             //->addParams(['skip' => 2]) 
             //->addParams(['limit' => 2]) 
@@ -199,7 +199,7 @@ class CloudCmsHelper
     }
 
     public function setTypeColor($type){
-        if($type == "ERS Course" || $type == "ERS Online Course" || $type == "e-learning"){
+        if($type == "ERS Course" || $type == "ERS Online Course" || $type == "e-learning" || $type == "Skill Workshop" || $type == "Skill Course"){
             return "label-school";
         }
 
@@ -290,7 +290,7 @@ class CloudCmsHelper
     	   if(isset($bursary->notificationOfResults)){$parsed['results'] = $this->ersDate($bursary->notificationOfResults);}
     	   if(isset($bursary->applyButtonUrl)){$parsed['url'] = $bursary->applyButtonUrl;}
 
-           if(empty($parsed)){
+           if(empty($parsed) || !isset($bursary->applyButtonUrl)){
                 return $parsed = false;
            }
 

@@ -1,11 +1,11 @@
 @foreach ($items as $item)
 <!-- Start Lead -->
-    <div class="col-md-3">
+    <div class="col-md-3 isotope">
         <div class="card card-event">            
             <div class="card-image" 
             @if(isset($item['image'])) 
                 style="height:100px;" 
-            @elseif(isset($item['image']) && isset($item['flags'])) 
+            @elseif(!isset($item['image']) && isset($item['flags'])) 
                 style="height:48px;" 
             @else 
                 style="height:24px;" 

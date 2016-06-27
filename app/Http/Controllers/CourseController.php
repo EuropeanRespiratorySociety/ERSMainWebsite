@@ -21,7 +21,11 @@ class CourseController extends Controller
     public function index()
     {
         $CC = new CC();
-        $results = $CC->getCategory($this->courses);
+        $results = $CC->getItem('courses');
+        $item = $CC->parseItems($results->rows);
+        $params['item'] =  (object) $item[0]; 
+
+        $results = $CC->getCategory($params['item']->_qname);
         $courses = $CC->parseItems($results->rows, true);
         $params['courses'] =  (object) $courses; 
         return view('professional.courses')->with($params);    

@@ -7,9 +7,9 @@
 			</div>
 			<div class="space"></div>
 		</div>
-		<div class="row text-left row-books">
+		<div class="row text-left isotope row-books">
 
-			<div class="col-md-3">
+			<div class="col-md-3 isotope">
 				<div class="card card-padded">
 					<h2>ERJ</h2>
 					<div class="row clearfix">
@@ -21,7 +21,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-md-3 isotope">
 				<div class="card card-padded">
 					<h2>ERJ Open Research</h2>
 					<div class="row clearfix">
@@ -33,7 +33,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-md-3 isotope">
 				<div class="card card-padded">
 					<h2>ERR</h2>
 					<div class="row clearfix">
@@ -45,7 +45,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-md-3 isotope">
 				<div class="card card-padded">
 					<h2>Monograph</h2>
 					<div class="row clearfix">
@@ -58,7 +58,7 @@
 			</div>
 
 
-			<div class="col-md-3">
+			<div class="col-md-3 isotope">
 				<div class="card card-padded">
 					<h2>Breathe</h2>
 					<div class="row clearfix">
@@ -70,7 +70,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-md-3 isotope">
 				<div class="card card-padded">
 					<h2>European Lung White Book</h2>
 					<div class="row clearfix">
@@ -83,7 +83,7 @@
 			</div>
 
 
-			<div class="col-md-3">
+			<div class="col-md-3 isotope">
 				<div class="card card-padded">
 					<h2>ERS Handbooks</h2>
 					<div class="row clearfix">
@@ -95,7 +95,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-md-3 isotope">
 				<div class="card card-padded">
 					<h2>ERS Red Book</h2>
 					<div class="row clearfix">
@@ -108,7 +108,7 @@
 			</div>
 
 
-			<div class="col-md-3">
+			<div class="col-md-3 isotope">
 				<div class="card card-padded">
 					<h2>FIRS World Report</h2>
 					<div class="row clearfix">
@@ -120,7 +120,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-md-3 isotope">
 				<div class="card card-padded">
 					<h2>Air Quality and Health</h2>
 					<div class="row clearfix">
@@ -132,7 +132,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-md-3 isotope">
 				<div class="card card-padded">
 					<h2>European Respiratory Roadmap</h2>
 					<div class="row clearfix">
@@ -144,7 +144,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-md-3 isotope">
 				<div class="card card-padded">
 					<h2>European Respiratory Roadmap</h2>
 					<div class="row clearfix">

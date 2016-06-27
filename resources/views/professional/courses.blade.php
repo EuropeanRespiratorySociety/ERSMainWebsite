@@ -6,9 +6,10 @@
 <div class="col-md-9 light-grey-bg">
     <div class="main-content">
         <div class="page-head">
-            <h2 class="">ERS courses</h2>
+            <h2 class="">@if(isset($item->title)){{$item->title}}@endif</h2>
         </div>
-        <div class="col-md-9 center-block lead">ERS provides essential learning opportunities covering the latest advances in respiratory medicine. Working with leaders at the forefront of respiratory education and knowledge, ERS courses cover the latest advances in respiratory medicine and deliver detailed overviews of key topics.
+        <div class="col-md-9 center-block lead">
+            @if(isset($item->body)){!!$item->body!!}@endif
         </div>
 
         <div class="row row_event">
@@ -36,7 +37,7 @@
     $('.row_event').isotope({
         layoutMode: 'packery',
         packery: {
-            columnWidth: '.col-md-4',
+            columnWidth: '.isotope',
         },            
         percentPosition: true
         

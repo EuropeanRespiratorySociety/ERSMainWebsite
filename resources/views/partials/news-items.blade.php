@@ -1,5 +1,5 @@
 @foreach ($items as $item)
-    <div class="col-md-4">
+    <div class="col-md-4 isotope">
         <div class="card card-event">          
             <div class="card-image" 
             @if(isset($item['image'])) 

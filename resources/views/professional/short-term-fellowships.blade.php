@@ -2,35 +2,24 @@
 @section('content')
 <div class="ers-content event-items-content">
   <div class="row">
-
     <div class="col-md-9">
       <div class="row">
         <div class="col-md-4 midium-grey-bg left-photo-map">
           <p><img src="../images/community/become_member.jpg" class="img-rounded img-responsive"></p>
         </div>
-
         <div class="col-md-8 lighter-grey-bg event-items-fs-title">
-
           <div class="page-head"><h2 class="article-title">Short-Term Research Training Fellowships</h2></div>
-
-
-        
-
-          <!--h5>Organisers : F. Gamarra A. Scherepereel K. Zaragoulidi</h5-->
-
-
           <div class="article text-left">
            <p>Research Training Fellowships are established to enable young scientists and clinicians in the early-stages of their research career in respiratory medicine to visit a Host Unit in a (European) country other than the candidate's own, with the aim of learning a research technique not available in the Home Unit. The research training should benefit the Home Unit when the applicant returns there, by leading to research developments and activities back onsite.
-
-
            </p>
          </div>
        </div>
-
      </div>
-     <div class="row fellowship-categories main-content col-md-12">
-        @include('partials.category-items-modal', array('items' => $fellowships))
+         <div class="main-content">
+     <div class="row row_event fellowship-categories"> 
+        @include('partials.category-items-modal', array('items' => $fellowships, 'class' => 'col-md-4'))
      </div>
+   </div>
    </div>
 
 
@@ -99,9 +88,10 @@
     $('.fellowship-categories').isotope({
         layoutMode: 'packery',
         packery: {
+            columnWidth: '.isotope',
             gutter:0
         },            
-        percentPosition: true
+        percentPosition: false
         
     });
 </script>

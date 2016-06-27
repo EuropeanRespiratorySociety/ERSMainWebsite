@@ -3,13 +3,11 @@
 <div class="ers-content ers-courses light-grey-bg fellowships-content">
             <div class="main-content">
                 <div class="page-head">
-                    <h2 class="">Grants and sponsorships</h2>
+                    <h2 class="">@if(isset($item->title)){{$item->title}}@endif</h2>
                 </div>
-                <div class="col-md-9 center-block lead">Here you can review and apply for our current grant and sponsorship opportunities. Find out more about our previous recipients. 
-                </div>
-                <div class="row">
-                <h4><strong>All Grants and Sponsorships:</strong></h4>
-                </div>            
+                <div class="col-md-9 center-block lead">
+                    @if(isset($item->body)){!!$item->body!!}@endif
+                </div>         
 
                 <div class="row row_event rel">
                     @include('partials.category-items-modal',array('items' => $items, 'class' => 'col-md-3'))

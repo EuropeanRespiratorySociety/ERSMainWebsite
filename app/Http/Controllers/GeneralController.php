@@ -62,8 +62,10 @@ class GeneralController extends Controller
      */
     public function euAffairs()
     { 
+        $field = "createdAt";
+        $direction = 1;
         $CC = new CC();
-        $results = $CC->getCategory($this->euAffairs);
+        $results = $CC->getCategorySorted($this->euAffairs, $field, $direction);
         $items = $CC->parseItems($results->rows);
         $params['items'] =  (object) $items; 
         return view('advocacy.eu-affairs')->with($params);
@@ -91,9 +93,13 @@ class GeneralController extends Controller
     public function grantsAndSponsorships()
     { 
         $CC = new CC();
-        $results = $CC->getCategory($this->grantsAndSponsorships);
-        $items = $CC->parseItems($results->rows);
-        $params['items'] =  (object) $items; 
+        $results = $CC->getItem('grants-and-sponsorships');
+        $item = $CC->parseItems($results->rows);
+        $params['item'] =  (object) $item[0]; 
+
+        $results = $CC->getCategory($params['item']->_qname);
+        $courses = $CC->parseItems($results->rows, true);
+        $params['items'] =  (object) $courses;
         return view('professional.grants-and-sponsorships')->with($params);
     }
 

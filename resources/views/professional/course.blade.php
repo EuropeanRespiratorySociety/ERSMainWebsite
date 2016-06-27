@@ -72,10 +72,9 @@
 
         <div class="tab-content text-left">
           <div id="venue" class="tab-pane active cont">
-            
-            <div class="">
-              <div class="">
-                
+
+            <div class="ers-scroller nano scrollable" style="height:350px;">
+                <div class="nano-content">   
                 @if(isset($course->practicalInfoFile))  
                   <a href="{{$course->practicalInfoFile->fileUrl}}" target="_blank" type="button" class="btn btn-light-primary text-left">
                     <span class="icon s7-map" style="font-size: 24px;"></span>
@@ -93,7 +92,7 @@
                   <li class="list-group-item"><a data-toggle="modal" data-target="#md-suggested_accommodation" type="button" class="">Suggested Accommodation</a></li>
                   @endif
                 </ul>
-<hr>
+                <hr>
                 <div class="list-group">
                   <a href="#" class="list-group-item midium-grey-bg">
                     <span class="badge">

@@ -36,7 +36,7 @@
     $('.row_event').isotope({
         layoutMode: 'packery',
         packery: {
-            columnWidth: '.col-md-3',
+            columnWidth: '.isotope',
             gutter:0
         },            
         percentPosition: true
