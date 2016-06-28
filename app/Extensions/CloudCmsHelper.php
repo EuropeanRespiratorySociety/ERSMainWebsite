@@ -19,10 +19,29 @@ class CloudCmsHelper
         return $results;    
     }
 
+    public function getAuthoredArticles($catnode){
+        $results = CC::nodes()
+            ->listRelatives($catnode)
+            ->addParams(['type' => 'ers:author-association'])
+            ->addParams(['full' => 'true'])
+            ->get();
+
+        return $results;    
+    }
+
     public function getRelatedArticle($node){
         $results = CC::nodes()
             ->listRelatives($node)
             ->addParams(['type' => 'ers:related-association']) 
+            ->addParams(['full' => 'true'])
+            ->get();
+
+        return $results;    
+    }
+    public function getAuthor($node){
+        $results = CC::nodes()
+            ->listRelatives($node)
+            ->addParams(['type' => 'ers:author-association']) 
             ->addParams(['full' => 'true'])
             ->get();
 
@@ -72,6 +91,11 @@ class CloudCmsHelper
                 $parsed = [];
 		        foreach ($items as $key => $item) {
                     $parsed[$key]['title'] = $item->title;
+                    if(isset($item->salutation)){$parsed[$key]['salutation']=$item->salutation;}
+                    if(isset($item->firstName)){$parsed[$key]['firstName']=$item->firstName;}
+                    if(isset($item->lastName)){$parsed[$key]['lastName']=$item->lastName;}
+                    if(isset($item->email)){$parsed[$key]['email']=$item->email;}
+                    if(isset($item->tagLine)){$parsed[$key]['tagLine']=$item->tagLine;}
                     if(isset($item->subTitle)){
                     	$parsed[$key]['subtitle'] = $item->subTitle;
                     }	
@@ -135,6 +159,7 @@ class CloudCmsHelper
                         $img = CC::nodes()->getImage($img_qname);
                         $parsed[$key]['image'] = $img->imageUrl."?name=image5000&size=500";
                     }
+                    if(isset($item->imageDescription)){$parsed[$key]['imageDescription'] = $item->imageDescription;}
                     /*
                     if(isset($img)){
                         $parsed[$key]['image'] = Image::cache(function($image) use($img){

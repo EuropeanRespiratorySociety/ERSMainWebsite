@@ -3,9 +3,9 @@
         <div class="card card-event">          
             <div class="card-image" 
             @if(isset($item['image'])) 
-                style="height:100px;" 
+                style="height:200px;max-height:200px" 
             @elseif(isset($item['image']) && isset($item['flags'])) 
-                style="height:48px;" 
+                style="height:50px;" 
             @else 
                 style="height:24px;" 
             @endif >
@@ -20,9 +20,9 @@
                 @endif
             </div>
             <div class="card-content">
-                <p class="title">{{ $item['title'] }}
-                    <!--<span>Next upcomming item</span>-->
-                </p>
+                <h3 class="title">
+                    <a href="{{Request::path().'/'.$item['slug']}}">{{ $item['title'] }}</a>
+                </h3>
                 @if(isset($item['eventDates']))
                     <p class="date">{{ $item['eventDates'] }}</p>
                 @endif

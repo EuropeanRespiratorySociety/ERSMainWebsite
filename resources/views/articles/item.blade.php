@@ -16,10 +16,21 @@
       </div>
       <div class="page-head">
         <h2 class="">{{$item->title}}</h2>
+        <h4 class="">@if(isset($item->subtitle)){{$item->subtitle}}@endif</h4>
+        @if(isset($author))
+        <h4 calss="author">
+          <a href="authors/{{$author->slug}}">
+            @if(isset($author->image))
+              <img src="{{$author->image}}" alt="@if(isset($author->imageDescription)){{$author->imageDescription}}@endif" class="img-circle">
+            @endif
+            {{$author->title}}
+          </a>
+        </h4>
+        @endif
       </div>
 
       <div class="article text-left @if($item->articleTwoColumns) two-columns @endif">
-        {!!$item->lead!!}
+        @if(isset($item->lead)){!!$item->lead!!}@endif
         {!!$item->body!!}
       </div>
     </div>

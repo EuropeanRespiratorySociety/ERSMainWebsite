@@ -1,14 +1,10 @@
 @foreach ($items as $item)
-@if(!isset($class))
     <div class="col-md-4 isotope">
-@else
-    <div class="{{$class}} isotope">  
-@endif      
-        <div class="card card-event">            
+        <div class="card card-event">          
             <div class="card-image" 
             @if(isset($item['image'])) 
-                style="height:100px;" 
-            @elseif(!isset($item['image']) && isset($item['flags'])) 
+                style="height:200px;max-height:200px" 
+            @elseif(isset($item['image']) && isset($item['flags'])) 
                 style="height:50px;" 
             @else 
                 style="height:24px;" 
@@ -23,11 +19,10 @@
                     <img class="" src="{{ $item['image']}}">
                 @endif
             </div>
-
             <div class="card-content">
-                <p class="title">{{ $item['title'] }}
-                    <!--<span>Next upcomming item</span>-->
-                </p>
+                <h3 class="title">
+                    <a href="{{Request::path().'/'.$item['slug']}}">{{ $item['title'] }}</a>
+                </h3>
                 @if(isset($item['eventDates']))
                     <p class="date">{{ $item['eventDates'] }}</p>
                 @endif
@@ -43,13 +38,8 @@
             @if(isset($item['registerButton']['link']))
             <a href="{{$item['registerButton']['link']}}" target="new_blank"  class="btn btn-register">register</a>
             @endif
-            @if(!isset($item['type']))
-            <a href="professional-development/fellowships/{{$item['slug']}}" class="btn btn-register">more</a>
-            @else
-            <a data-toggle="modal" data-target="#{{$item['slug']}}" class="btn btn-register">more</a>
-            @endif
+            <a href="the-society/news/respiratory-matters/{{$item['slug']}}"  class="btn btn-register">more</a>
             </div>
         </div>
     </div>
-    <!-- End Lead -->
 @endforeach

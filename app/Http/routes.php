@@ -108,6 +108,11 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('advocacy/{slug}', 'GeneralController@show');
     Route::get('related/{slug}', 'GeneralController@show');
 
+    Route::get('authors', 'NewsController@authors');
+    Route::get('authors/{slug}', 'NewsController@showAuthor');
+
+
+
 
 
     Route::get('search/{query}', 'CloudCms@search');

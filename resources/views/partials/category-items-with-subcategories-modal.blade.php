@@ -6,7 +6,7 @@
             @if(isset($item['image'])) 
                 style="height:100px;" 
             @elseif(!isset($item['image']) && isset($item['flags'])) 
-                style="height:48px;" 
+                style="height:50px;" 
             @else 
                 style="height:24px;" 
             @endif >

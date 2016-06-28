@@ -36,10 +36,25 @@ class NewsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function authors()
+    {
+        $CC = new CC();
+        $results = $CC->getContentByProperty("_type", "ers:author");
+        $items = $CC->parseItems($results->rows);
+        $params['items'] =  (object) $items;
+        return view('articles.authors')->with($params);
+
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function indexRespiratoryWorldWide()
     {
         $CC = new CC();
-        $results = $CC->getCategory($this->respiratoryWorldWide);
+        $results = $CC->getCategorySorted($this->respiratoryWorldWide, "_system.created_on", -1);
         $items = $CC->parseItems($results->rows);
         $params['items'] =  (object) $items; 
         return view('articles.respiratory-world-wide')->with($params); 
@@ -54,7 +69,7 @@ class NewsController extends Controller
     public function indexRespiratoryMatters()
     {
         $CC = new CC();
-        $results = $CC->getCategory($this->respiratoryMatters);
+        $results = $CC->getCategorySorted($this->respiratoryMatters, "_system.created_on", -1);
         $items = $CC->parseItems($results->rows);
    
         $params['items'] =  (object) $items; 
@@ -80,8 +95,34 @@ class NewsController extends Controller
 
         $related = $CC->getRelatedArticle($item[0]['_qname']);
         $relatedItems = $CC->parseItems($related->rows);
-        $params['relatedItems'] =  (object) $relatedItems; 
+        $params['relatedItems'] =  (object) $relatedItems;
+
+        $author = $CC->getAuthor($item[0]['_qname']);
+        $authorItem = $CC->parseItems($author->rows);
+        $params['author'] = (object) $authorItem[0];
+
         return view('articles.item')->with($params); 
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function showAuthor($slug)
+    {
+        $CC = new CC();
+        $results = $CC->getItem($slug);
+        //Slug should be unique, so we should get only one item
+        $item = $CC->parseItems($results->rows);
+        $params['item'] =  (object) $item[0];
+
+        $items = $CC->getAuthoredArticles($params['item']->_qname);
+        $authoredItems = $CC->parseItems($items->rows);
+        $params['items'] = (object) $authoredItems;
+
+        return view('articles.author')->with($params); 
     }
 
 }
