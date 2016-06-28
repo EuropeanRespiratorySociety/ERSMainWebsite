@@ -9,7 +9,7 @@
             <p>ERS provides essential learning opportunities covering the latest advances in respiratory medicine.</p>
         </div>           
         <div class="row row_event rel">
-            <div class="col-md-3">
+            <div class="col-md-4">
             <!-- START Courses -->  
                 <div class="card card-event">
                     <div class="card-image" style="height:100px;">
