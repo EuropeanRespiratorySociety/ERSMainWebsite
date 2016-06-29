@@ -108,8 +108,8 @@ class Navigation
                                             ->link->attr(array('target' => '_blank'));                 
                     $menu->fellowships->add('Short-Term','professional-development/fellowships/short-term');
                     $menu->fellowships->add('Long-Term','professional-development/fellowships/long-term');
-                $menu->professionalDevelopment->add('Educational Activities','professional-development/educational-activities');
-                    $menu->educationalActivities->add('ERS Courses','professional-development/educational-activities/courses');
+                //$menu->professionalDevelopment->add('Educational Activities','professional-development/educational-activities');
+                $menu->professionalDevelopment->add('ERS Courses','professional-development/courses');
                 $menu->professionalDevelopment->add('Grants and Sponsorships','professional-development/grants-and-sponsorships');
                 $menu->professionalDevelopment->add('E-learning','http://www.ers-education.org/home.aspx')
                                             ->link->attr(array('target' => '_blank'));                 

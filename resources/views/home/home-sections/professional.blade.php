@@ -13,9 +13,9 @@ We offer a range of activities from e-learning, interactive teaching and activit
 			<div class="col-md-3">
 				<h2><a href="">e-Learning</a></h2>
 					<ul>
-	        		<li><a href="">Respipedia</a></li>
-	        		<li><a href="">Slides and webcasts</a></li>
-	        		<li><a href="">Case reports and Videos</a></li>
+	        		<li><a href="http://respipedia.ers-education.org/home.aspx" target="_blank">Respipedia</a></li>
+	        		<li><a href="http://www.ers-education.org/events.aspx" target="_blank">Slides and webcasts</a></li>
+	        		<li><a href="http://www.ers-education.org/e-learning/case-reports.aspx" target="_blank">Case reports</a> and <a href="http://www.ers-education.org/e-learning/procedure-videos.aspx" target="_blank">Videos</a></li>
 	        		</ul>
         		<a href="">
         			<div class="card card-event">
@@ -35,7 +35,7 @@ We offer a range of activities from e-learning, interactive teaching and activit
 	        <div class="col-md-3">
 				<h2><a href="">Funding opportunities</a></h2>
 					<ul>
-	        		<li><a href="">Fellowships</a></li>
+	        		<li><a href="professional-development/fellowships">Fellowships</a></li>
 	        		<li><a href="">Task forces </a></li>
 	        		<li><a href="">Awards and Medal</a></li>
 	        		</ul>

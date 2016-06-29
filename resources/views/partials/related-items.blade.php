@@ -14,7 +14,9 @@
           <p>
             @if(isset($related['shortLead'])){{$related['shortLead']}}@endif
           </p>
-          <a href="related/{{$related['slug'] }}" target="new_blank" class="btn btn-xs btn-default pull-right">More...</a>
+          @if(isset($related['uri']))
+          <a href="{{url($related['uri'])}}" target="new_blank" class="btn btn-xs btn-default pull-right">More...</a>
+          @endif
         </div>
       </div>
     </div>

@@ -52,7 +52,7 @@
             @include('nav.main-nav')
         <!-- End Main Navigation -->  
 
-        <!-- Start Left Sidebar -->
+        <!-- Start Left Sidebar -->r
             @include('sidebar.left-variant')
         <!-- End Left Sidebar -->
 

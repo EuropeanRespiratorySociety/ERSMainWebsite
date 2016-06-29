@@ -79,8 +79,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('congress-and-events/events-calendar', 'CalendarController@index');
     Route::get('congress-and-events/{slug}', 'GeneralController@show');
 
-    Route::get('professional-development/educational-activities/courses', 'CourseController@index');
-    Route::get('professional-development/educational-activities/courses/{slug}', 'CourseController@show');
+    Route::get('professional-development/courses', 'CourseController@index');
+    Route::get('professional-development/courses/{slug}', 'CourseController@show');
     Route::get('professional-development', 'CourseController@professionalDevelopment');
     Route::get('professional-development/fellowships/short-term', 'FellowshipController@indexShortTerm');
     Route::get('professional-development/fellowships/short-term/{slug?}', 'FellowshipController@indexShortTerm');
@@ -113,7 +113,7 @@ Route::group(['middleware' => ['web']], function () {
 
 
 
-
+    Route::get('cc', 'CloudCms@requestTest');
 
     Route::get('search/{query}', 'CloudCms@search');
     Route::get('full-search', 'CloudCms@fullSearch');

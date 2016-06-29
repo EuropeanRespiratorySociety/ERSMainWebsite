@@ -30,6 +30,9 @@
       </div>
 
       <div class="article text-left @if($item->articleTwoColumns) two-columns @endif">
+                      @if(isset($item->createdOn))
+                    <h4 class="date">{{ $item->createdOn }}</h4>
+                @endif
         @if(isset($item->lead)){!!$item->lead!!}@endif
         {!!$item->body!!}
       </div>

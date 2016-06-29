@@ -93,13 +93,23 @@ class NewsController extends Controller
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0];
 
+        if(!isset($results->rows[0]->url)||!isset($results->rows[0]->uri)){
+            $uri= request()->path();
+            $url = "https://www.ersnet.org/".$uri;
+            $results->rows[0]->url = $url;
+            $results->rows[0]->uri = $uri;
+            $CC->setCanonical($results->rows[0]->_qname ,json_encode($results->rows[0]));
+        }
+
         $related = $CC->getRelatedArticle($item[0]['_qname']);
         $relatedItems = $CC->parseItems($related->rows);
         $params['relatedItems'] =  (object) $relatedItems;
 
         $author = $CC->getAuthor($item[0]['_qname']);
         $authorItem = $CC->parseItems($author->rows);
-        $params['author'] = (object) $authorItem[0];
+        if(isset($authorItem[0])){
+            $params['author'] = (object) $authorItem[0];
+        }
 
         return view('articles.item')->with($params); 
     }
@@ -117,6 +127,15 @@ class NewsController extends Controller
         //Slug should be unique, so we should get only one item
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0];
+
+
+        if(!isset($results->rows[0]->url)||!isset($results->rows[0]->uri)){
+            $uri= request()->path();
+            $url = "https://www.ersnet.org/".$uri;
+            $results->rows[0]->url = $url;
+            $results->rows[0]->uri = $uri;
+            $CC->setCanonical($results->rows[0]->_qname ,json_encode($results->rows[0]));
+        }
 
         $items = $CC->getAuthoredArticles($params['item']->_qname);
         $authoredItems = $CC->parseItems($items->rows);

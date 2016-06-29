@@ -66,9 +66,21 @@ class CourseController extends Controller
         $course = $CC->parseItems($results->rows);
         $params['course'] =  (object) $course[0]; 
 
+                
+        if(!isset($results->rows[0]->url)||!isset($results->rows[0]->uri)){
+            $uri= request()->path();
+            $url = "https://www.ersnet.org/".$uri;
+            $results->rows[0]->url = $url;
+            $results->rows[0]->uri = $uri;
+            $CC->setCanonical($results->rows[0]->_qname ,json_encode($results->rows[0]));
+        }
+
         $related = $CC->getRelatedArticle($course[0]['_qname']);
         $relatedItems = $CC->parseItems($related->rows);
         $params['relatedItems'] =  (object) $relatedItems;
+        if($params['course']->contentType == "event_course_ebus" ){
+            return view('professional.ebus')->with($params);
+        }
         return view('professional.course')->with($params); 
     }
 

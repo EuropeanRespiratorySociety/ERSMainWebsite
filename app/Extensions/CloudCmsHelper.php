@@ -3,6 +3,7 @@
 namespace App\Extensions;
 
 use Carbon\Carbon;
+use Lavary\Menu\Menu;
 use Idealley\CloudCms\Facades\CloudCms as CC;
 use Intervention\Image\Facades\Image;
 use AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra as Markdown;
@@ -66,7 +67,8 @@ class CloudCmsHelper
 		$query = '{"slug": "'.$slug.'"}';
 		$result = CC::nodes()
                     ->query($query)
-                    ->addParams(['full' => 'true'])   
+                    ->addParams(['full' => 'true'])
+                    ->addParams(['metadata' => 'true'])   
                     ->get();
         return $result;            
 	}
@@ -81,6 +83,11 @@ class CloudCmsHelper
                     ->get();
         return $result;  
 
+    }
+
+    public function setCanonical($node, $payload){
+        $result = CC::nodes()->updateNode($node, $payload)->get();
+        //add test if success or not
     }
 
 	public function parseItems($items, $lead = false){
@@ -104,6 +111,7 @@ class CloudCmsHelper
                     if(isset($item->flags)){$parsed[$key]['flags'] = $this->getFlags($item->flags);}
                     $parsed[$key]['fullyBooked'] = false;
                     if(isset($item->fullyBooked)){$parsed[$key]['fullyBooked'] = $item->fullyBooked;}
+                    if(isset($item->contentType)){$parsed[$key]['contentType'] = $item->contentType;}
                     if(isset($item->type)){$parsed[$key]['type'] = $item->type;}
                     if(isset($item->type)){$parsed[$key]['typeColor'] = $this->setTypeColor($item->type);}
                     if(isset($item->category)){
@@ -112,10 +120,12 @@ class CloudCmsHelper
                     }	
                     $parsed[$key]['_qname'] = $item->_qname;
                     $parsed[$key]['_type'] = $item->_type;
+                    if(isset($item->ebusDate)){$parsed[$key]['ebusDate'] = $item->ebusDate;}  
                     if(isset($item->eventDate)){$parsed[$key]['eventDates'] = $this->ersDate($item->eventDate, $item->eventEndDate);}  
                     if(isset($item->eventDate)){$parsed[$key]['calendar'] = $this->calendar($item->eventDate);}   
                     if(isset($item->earlybirdDeadline)){$parsed[$key]['earlybirdDeadline'] = $this->ersDate($item->earlybirdDeadline);}
                     if(isset($item->extendedDeadline)){ $parsed[$key]['extendedDeadline'] = $this->ersDate($item->extendedDeadline);}
+                    if(isset($item->_system->created_on->timestamp)){ $parsed[$key]['createdOn'] = $this->ersDate($item->_system->created_on->timestamp);}
                     if(isset($item->openingDate)){ $parsed[$key]['openingDate'] = $this->ersDate($item->openingDate);}
                     if(isset($item->eventLocation)){$parsed[$key]['eventLocation'] = $item->eventLocation;}                
                     
@@ -123,6 +133,17 @@ class CloudCmsHelper
                     	$parsed[$key]['shortLead'] = $this->truncate(strip_tags(Markdown::parse($item->leadParagraph)));
                     	$parsed[$key]['lead'] = Markdown::parse($item->leadParagraph);
                     }
+
+                    if(isset($item->registerButton)){$parsed[$key]['registerButton'] = (array) $item->registerButton;}
+
+                    if(isset($item->image)){
+                        $img_qname = $item->image->qname;
+                        $img = CC::nodes()->getImage($img_qname);
+                        $parsed[$key]['image'] = $img->imageUrl."?name=image5000&size=500";
+                    }
+                    if(isset($item->imageDescription)){$parsed[$key]['imageDescription'] = $item->imageDescription;}
+                    if(isset($item->url)){$parsed[$key]['url'] = $item->url;}
+                    if(isset($item->uri)){$parsed[$key]['uri'] = $item->uri;}
 
                     if(!$lead){
 	                    if(isset($item->organisers)){ $parsed[$key]['organisers'] = $item->organisers;}
@@ -140,59 +161,42 @@ class CloudCmsHelper
                             if(isset($item->venue)){$parsed[$key]['venue'] = $item->venue ;}
                             if(isset($parsed[$key]['venue']->info)){$parsed[$key]['venue']->info = Markdown::parse($item->venue->info) ;}
                         }
-	                    if(isset($item->suggestedAccommodation)){$parsed[$key]['suggestedAccommodation'] = $this->parseVenues($item->suggestedAccommodation);}
+                        if(isset($item->suggestedAccommodation)){$parsed[$key]['suggestedAccommodation'] = $this->parseVenues($item->suggestedAccommodation);}
+                        if(isset($item->ebusVenues)){$parsed[$key]['ebusVenues'] = $this->parseVenues($item->ebusVenues);}
                         if(isset($item->abstracts)){$parsed[$key]['abstracts'] = $this->getBursary($item->abstracts);}
                         if(isset($item->mentorship)){$parsed[$key]['mentorship'] = $this->getBursary($item->mentorship);}
                         if(isset($item->bursaryApplication)){$parsed[$key]['bursaryApplication'] = $this->getBursary($item->bursaryApplication);}
 	            		if(isset($item->documents)){$parsed[$key]['documents'] = $this->getDocuments($item->documents);}
+                        if(isset($item->programme)){
+                            $path = "path/documents/programme/";
+                            $file_title = $item->programme->title;
+                            $file = CC::nodes()->getFile($file_title, $path);
+                            $parsed[$key]['programmeFile'] = $file;
+                        }
+                        if(isset($item->programmeButtonText)){ $parsed[$key]['programmeButtonText'] =$item->programmeButtonText;}
+                        if(isset($item->programmeNotice)){ $parsed[$key]['programmeNotice'] =$item->programmeNotice;}
+                        if(isset($item->rulesAndRegulations)){
+                            $path = "path/documents/rules_and_regulations/";
+                            $file_title = $item->rulesAndRegulations->title;
+                            $file = CC::nodes()->getFile($file_title, $path);
+                            $parsed[$key]['rulesAndRegulations'] = $file->fileUrl;
+                        }
 
-	                    
+                        if(isset($item->practicalInfo)){
+                            $path = "path/documents/practical_info/";
+                            $file_title = $item->practicalInfo->title;
+                            $file = CC::nodes()->getFile($file_title, $path);
+                            $parsed[$key]['practicalInfoFile'] = $file;
+                        }
+
+                        if(isset($item->disclosure)){
+                            $path = "path/documents/disclosures/";
+                            $file_title = $item->disclosure->title;
+                            $file = CC::nodes()->getFile($file_title, $path);
+                            $parsed[$key]['disclosureFile'] = $file;
+                        }
+                        if(isset($item->practicalInfoButton)){$parsed[$key]['practicalInfoButton'] = $item->practicalInfoButton;}                    
                 	}
-                	if(isset($item->registerButton)){$parsed[$key]['registerButton'] = (array) $item->registerButton;}
-                    //$img = CC::nodes()->deploymentUrl.'static/path/Samples/Catalog/Products/'.$item['_features']['f:filename']['filename'];
-                    $features = (array) $item->_features;
-                   //link to documents https://53ed64a9-671f-4e65-9f57-5e736e3d5d62-hosted.cloudcms.net/static/path/documents/documents/Bedroom_reservation_form_ERS_26-30_10_2016.pdf
-                    //$img = CC::nodes()->deploymentUrl.'/static/path/images/'.$features['f:filename']->filename;
-                    //This function can be used by passing the _qname of the image
-                    if(isset($item->image)){
-                        $img_qname = $item->image->qname;
-                        $img = CC::nodes()->getImage($img_qname);
-                        $parsed[$key]['image'] = $img->imageUrl."?name=image5000&size=500";
-                    }
-                    if(isset($item->imageDescription)){$parsed[$key]['imageDescription'] = $item->imageDescription;}
-                    /*
-                    if(isset($img)){
-                        $parsed[$key]['image'] = Image::cache(function($image) use($img){
-                         return $image->make($img->imageUrl)->resize(420, null, function ($constraint) {
-                                $constraint->aspectRatio();
-                            })->encode('data-url');
-                        });
-                        unset($img);
-
-                    }*/
-
-                    if(isset($item->programme)){
-                        $path = "path/documents/programme/";
-                        $file_title = $item->programme->title;
-                        $file = CC::nodes()->getFile($file_title, $path);
-                        $parsed[$key]['programmeFile'] = $file;
-                    }
-                    if(isset($item->programmeButtonText)){ $parsed[$key]['programmeButtonText'] =$item->programmeButtonText;}
-                    if(isset($item->programmeNotice)){ $parsed[$key]['programmeNotice'] =$item->programmeNotice;}
-                    if(isset($item->rulesAndRegulations)){
-                        $path = "path/documents/rules_and_regulations/";
-                        $file_title = $item->rulesAndRegulations->title;
-                        $file = CC::nodes()->getFile($file_title, $path);
-                        $parsed[$key]['rulesAndRegulations'] = $file->fileUrl;
-                    }
-
-                    if(isset($item->practicalInfo)){
-                        $path = "path/documents/practical_info/";
-                        $file_title = $item->practicalInfo->title;
-                        $file = CC::nodes()->getFile($file_title, $path);
-                        $parsed[$key]['practicalInfoFile'] = $file;
-                    }
-                    if(isset($item->practicalInfoButton)){$parsed[$key]['practicalInfoButton'] = $item->practicalInfoButton;}
                 }  
             //dd($parsed);
         return $parsed; 
@@ -282,6 +286,7 @@ class CloudCmsHelper
             if(isset($item->url)){$parsed[$key]['url'] = $item->url;}
             if(isset($item->streetAddress)){$parsed[$key]['streetAddress'] = $item->streetAddress;}
             if(isset($item->streetAddress2)){$parsed[$key]['streetAddress2'] = $item->streetAddress2;}
+            if(isset($item->streetAddress3)){$parsed[$key]['streetAddress3'] = $item->streetAddress3;}
             if(isset($item->postalCode)){$parsed[$key]['zip'] = $item->postalCode;}
             if(isset($item->city)){$parsed[$key]['city'] = $item->city;}
             if(isset($item->country)){$parsed[$key]['country'] = $item->country;}

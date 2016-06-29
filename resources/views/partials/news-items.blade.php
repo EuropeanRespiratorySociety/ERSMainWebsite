@@ -23,6 +23,9 @@
                 <h3 class="title">
                     <a href="{{Request::path().'/'.$item['slug']}}">{{ $item['title'] }}</a>
                 </h3>
+                @if(isset($item['createdOn']))
+                    <h4 class="date">{{ $item['createdOn'] }}</h4>
+                @endif
                 @if(isset($item['eventDates']))
                     <p class="date">{{ $item['eventDates'] }}</p>
                 @endif

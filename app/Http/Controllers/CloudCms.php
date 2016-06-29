@@ -207,7 +207,10 @@ private $headers;
    //path/tree tests bof..
    //$request = new GRequest('GET', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/n:root/path/catalog:product?base=root&depth=3', $headers);
    //traverse
-   //$request = new GRequest('POST', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/catalog:product/traverse', $headers, $body);
+
+   $body='{"_doc":"9112bffa2b829773463c","title":"Dean Martin","name":"dean.martin","email":"dean.martin@celebrityroast.com","firstName":"Dean","lastName":"Martin", "url":"test-url"}';
+   $body='{"new":"value5"}';
+   $request = new GRequest('PUT', 'https://api.cloudcms.com/repositories/126d630737b199cfa4e7/branches/master/nodes/9112bffa2b829773463c?inject=true', $headers, $body);
 
 
     //dd($request);

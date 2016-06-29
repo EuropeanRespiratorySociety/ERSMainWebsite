@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 //Laravel Defaults
 use Iluminate\Http\Request;
-use App\Http\Requests;
+//use App\Http\Requests\Request;
 
 use App\Extensions\CloudCmsHelper as CC;
 
@@ -109,6 +109,14 @@ class ResearchController extends Controller
         //Slug should be unique, so we should get only one item
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0]; 
+        
+        if(!isset($results->rows[0]->url)||!isset($results->rows[0]->uri)){
+            $uri= request()->path();
+            $url = "https://www.ersnet.org/".$uri;
+            $results->rows[0]->url = $url;
+            $results->rows[0]->uri = $uri;
+            $CC->setCanonical($results->rows[0]->_qname ,json_encode($results->rows[0]));
+        }
 
         $related = $CC->getRelatedArticle($item[0]['_qname']);
         $relatedItems = $CC->parseItems($related->rows);

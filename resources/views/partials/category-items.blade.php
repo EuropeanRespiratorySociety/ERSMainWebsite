@@ -44,9 +44,9 @@
         </div>
         <div class="card-action clearfix">
             @if(isset($item['registerButton']['link']) && !$item['fullyBooked'])
-            <a href="{{$item['registerButton']['link']}}" target="new_blank"  class="btn btn-register">register</a>
+            <a href="{{$item['registerButton']['link']}}" target="new_blank"  class="pull-left btn btn-register">register</a>
             @endif
-            <a href="{{Request::path().'/'.$item['slug']}}" class="btn btn-register">more</a>
+            <a href="{{Request::path().'/'.$item['slug']}}" class="pull-right btn btn-register">more</a>
         </div>
     </div>
 </div>

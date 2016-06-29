@@ -17,11 +17,6 @@
           <div class="page-head"><h2 class="article-title">Long-Term Research Training Fellowships</h2></div>
 
 
-        
-
-          <!--h5>Organisers : F. Gamarra A. Scherepereel K. Zaragoulidi</h5-->
-
-
           <div class="article text-left">
            <p>Long-Term Research Fellowships (LTRF) enable investigators and clinicians in the early stages of their career to carry out basic, translational or clinical research projects. Through this experience, young scientists learn and apply advanced research procedures and techniques not available at their home institute. Since 2015, ERS has increased the number of fellowships on offer by welcoming applicants from scientifically developing countries, and through partnerships with other organisations. Applicants are selected based on their scientific merit and the skills and experience they can bring to a new centre. 
            </p>
