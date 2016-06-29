@@ -27,6 +27,15 @@ class NewsController extends Controller
         $results = $CC->getContentByProperty($this->property, $this->propertyValue);
         $items = $CC->parseItems($results->rows);
         $params['items'] =  (object) $items;
+
+        if(!isset($results->rows[0]->url)||!isset($results->rows[0]->uri)){
+            $uri= request()->path();
+            $url = "https://www.ersnet.org/".$uri;
+            $results->rows[0]->url = $url;
+            $results->rows[0]->uri = $uri;
+            $CC->setCanonical($results->rows[0]->_qname ,json_encode($results->rows[0]));
+        }
+
         return view('articles.news')->with($params);
 
     }
@@ -42,6 +51,15 @@ class NewsController extends Controller
         $results = $CC->getContentByProperty("_type", "ers:author");
         $items = $CC->parseItems($results->rows);
         $params['items'] =  (object) $items;
+
+        if(!isset($results->rows[0]->url)||!isset($results->rows[0]->uri)){
+            $uri= request()->path();
+            $url = "https://www.ersnet.org/".$uri;
+            $results->rows[0]->url = $url;
+            $results->rows[0]->uri = $uri;
+            $CC->setCanonical($results->rows[0]->_qname ,json_encode($results->rows[0]));
+        }
+
         return view('articles.authors')->with($params);
 
     }
@@ -57,6 +75,14 @@ class NewsController extends Controller
         $results = $CC->getCategorySorted($this->respiratoryWorldWide, "_system.created_on", -1);
         $items = $CC->parseItems($results->rows);
         $params['items'] =  (object) $items; 
+
+        if(!isset($results->rows[0]->url)||!isset($results->rows[0]->uri)){
+            $uri= request()->path();
+            $url = "https://www.ersnet.org/".$uri;
+            $results->rows[0]->url = $url;
+            $results->rows[0]->uri = $uri;
+            $CC->setCanonical($results->rows[0]->_qname ,json_encode($results->rows[0]));
+        }        
         return view('articles.respiratory-world-wide')->with($params); 
 
     }
@@ -71,6 +97,14 @@ class NewsController extends Controller
         $CC = new CC();
         $results = $CC->getCategorySorted($this->respiratoryMatters, "_system.created_on", -1);
         $items = $CC->parseItems($results->rows);
+
+        if(!isset($results->rows[0]->url)||!isset($results->rows[0]->uri)){
+            $uri= request()->path();
+            $url = "https://www.ersnet.org/".$uri;
+            $results->rows[0]->url = $url;
+            $results->rows[0]->uri = $uri;
+            $CC->setCanonical($results->rows[0]->_qname ,json_encode($results->rows[0]));
+        }
    
         $params['items'] =  (object) $items; 
         return view('articles.respiratory-matters')->with($params); 
