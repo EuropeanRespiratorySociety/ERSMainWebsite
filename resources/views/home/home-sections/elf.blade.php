@@ -9,7 +9,7 @@
 
    <div class="row">
     <div class="col-md-3">
-      <a href="#">
+      <a target="_blank" href="http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/">
         <div class="card card-padded card-home">
 
           <img src="../images/elf/elf_1.jpg" alt=""/>
@@ -18,7 +18,7 @@
       </a>
     </div>
     <div class="col-md-3">
-      <a href="#">
+      <a href="{{url('advocacy/policy-areas')}}">
         <div class="card card-padded card-home">
 
           <img src="../images/elf/elf_2.jpg" alt=""/>
@@ -27,7 +27,7 @@
       </a>
     </div>
     <div class="col-md-3">
-      <a href="#">
+      <a href="{{url('advocacy/eu-projects')}}">
         <div class="card card-padded card-home">
 
           <img src="../images/elf/elf_3.jpg" alt=""/>
@@ -36,7 +36,7 @@
       </a>
     </div>
     <div class="col-md-3">
-      <a href="#">
+      <a href="{{url('advocacy/alliances')}}">
         <div class="card card-padded card-home">
 
           <img src="../images/elf/elf_4.jpg" alt=""/>

@@ -9,7 +9,7 @@
 
     <div class="row">
       <div class="col-md-3">
-        <a href="#">
+        <a target="_blank" href="http://taskforces.ersnet.org">
           <div class="card card-padded card-home">
 
             <img src="../images/research/research_1.jpg" alt=""/>
@@ -18,7 +18,7 @@
         </a>
       </div>
       <div class="col-md-3">
-        <a href="#">
+        <a target="_blank" href="http://www.ers-education.org/pages/default.aspx?id=2005">
           <div class="card card-padded card-home">
 
             <img src="../images/research/research_2.jpg" alt=""/>
@@ -27,16 +27,16 @@
         </a>
       </div>
       <div class="col-md-3">
-        <a href="#">
+        <a href="{{url('research/clinical-research-collaborations')}}">
           <div class="card card-padded card-home">
 
             <img src="../images/research/research_3.jpg" alt=""/>
-            <div class="title-box research-title-box"><h2>CRC</h2></div>
+            <div class="title-box research-title-box"><h2>Clinical Research Collaborations</h2></div>
           </div>
         </a>
       </div>
       <div class="col-md-3">
-        <a href="#">
+        <a href="{{url('research/research-seminars')}}">
           <div class="card card-padded card-home">
 
             <img src="../images/research/research_4.jpg" alt=""/>

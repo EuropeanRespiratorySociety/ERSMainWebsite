@@ -17,72 +17,135 @@ We offer a range of activities from e-learning, interactive teaching and activit
 	        		<li><a href="http://www.ers-education.org/events.aspx" target="_blank">Slides and webcasts</a></li>
 	        		<li><a href="http://www.ers-education.org/e-learning/case-reports.aspx" target="_blank">Case reports</a> and <a href="http://www.ers-education.org/e-learning/procedure-videos.aspx" target="_blank">Videos</a></li>
 	        		</ul>
-        		<a href="">
-        			<div class="card card-event">
-        				<span class="label label-school">e-Learning</span>
-        				<div class="card-image">
-        					<img class="img-responsive" src="../images/home/education.jpg">
-        				</div>
-        				<div class="card-content">
-        					<p class="title">CME Online module on NIV
-        						<span>Latest post</span>
-        					</p>
-        				</div>
-        			</div>
-        		</a>
+	        @if(isset($eLearning))		
+        		@if(isset($eLearning->uri))
+					<a href="{{url($eLearning->uri)}}">
+				@endif
+					<div class="card card-event card-event-large">
+						@if(isset($eLearning->type))
+              				<span class="label @if(isset($eLearning->typeColor)){{$eLearning->typeColor}}@else label-default @endif">{{$eLearning->type}}</span>
+            			@endif
+						@if(isset($eLearning->image))
+						<div class="card-image">
+              				<img class="img-responsive" src="{{url($eLearning->image)}}" @if(isset($eLearning->imageDescription))alt="{{$eLearning->imageDescription}}" @endif />
+						</div>
+						@endif
+						<div class="card-content white-bg">
+						@if(isset($eLearning->title))
+							<p class="title">
+								{{$eLearning->title}}
+							</p>
+						@endif
+						@if(isset($eLearning->eventDates))
+						<p class="date">
+							{{$eLearning->eventDates}}
+						</p>
+						@endif	
+						@if(isset($eLearning->earlybirdDeadline))
+							<p class="btn-rounded early_bird">Early Bird deadline: {{$eLearning->earlybirdDeadline}}</p>
+						@endif	
+						@if(isset($eLearning->eventLocation))
+							<p class="place"><span class="icon s7-map-marker"></span>{{$eLearning->eventLocation}}</p>
+						@endif	
+						</div>
+					</div>
+				</a>
+			@endif	
 	        </div>
 
 	        <div class="col-md-3">
 				<h2><a href="">Funding opportunities</a></h2>
 					<ul>
-	        		<li><a href="professional-development/fellowships">Fellowships</a></li>
-	        		<li><a href="">Task forces </a></li>
-	        		<li><a href="">Awards and Medal</a></li>
+	        		<li><a href="{{url('professional-development/fellowships')}}">Fellowships</a></li>
+	        		<li><a href="http://taskforces.ersnet.org/" target="_blank">Task forces </a></li>
+	        		<li><a href="{{url('the-society/who-we-are/awards')}}">Awards and Medal</a></li>
 	        		</ul>
-        		<a href="">
-        			<div class="card card-event">
-        				<span class="label label-scientific">Fellowship</span>
-        				<div class="card-image">
-        					<img class="img-responsive" src="../images/course/course_event.jpg">
-        				</div>
-        				<div class="card-content">
-        					<p class="title">ERS Fellowship in Industry
-        						<span>Upcoming deadline</span>
-        					</p>
-        				</div>
-        			</div>
-        		</a>
+@if(isset($funding))		
+        		@if(isset($funding->uri))
+					<a href="{{url($funding->uri)}}">
+				@endif
+					<div class="card card-event card-event-large">
+						@if(isset($funding->type))
+              				<span class="label @if(isset($funding->typeColor)){{$funding->typeColor}}@else label-default @endif">{{$funding->type}}</span>
+            			@endif
+						@if(isset($funding->image))
+						<div class="card-image">
+              				<img class="img-responsive" src="{{url($funding->image)}}" @if(isset($funding->imageDescription))alt="{{$funding->imageDescription}}" @endif />
+						</div>
+						@endif
+						<div class="card-content white-bg">
+						@if(isset($funding->title))
+							<p class="title">
+								{{$funding->title}}
+							</p>
+						@endif
+						@if(isset($funding->eventDates))
+						<p class="date">
+							{{$funding->eventDates}}
+						</p>
+						@endif	
+						@if(isset($funding->earlybirdDeadline))
+							<p class="btn-rounded early_bird">Early Bird deadline: {{$funding->earlybirdDeadline}}</p>
+						@endif	
+						@if(isset($funding->eventLocation))
+							<p class="place"><span class="icon s7-map-marker"></span>{{$funding->eventLocation}}</p>
+						@endif	
+						</div>
+					</div>
+				</a>
+			@endif	
 	        </div>
 
 	        <div class="col-md-3">
 	        	<h2><a href="">Harmonising education</a></h2>
 	        	<ul>
-	        		<li><a href="">Exams</a></li>
-	        		<li><a href="">Projects</a></li>
-	        		<li><a href="">Curricula</a></li>
+	        		<li><a target="_blank" href="http://hermes.ersnet.org/exams.html">Exams</a></li>
+	        		<li><a target="_blank" href="http://hermes.ersnet.org/projects.html">Projects</a></li>
+	        		<li><!--<a target="_blank" href="">Curricula</a>--></li>
 	        	</ul>
 	        </div>
 
 	        <div class="col-md-3">
 	        	<h2><a href="">Educational courses</a></h2>
 	        	<ul>
-	        		<li><a href="">Skills courses</a></li>
-	        		<li><a href="">Online courses</a></li>
-	        		<li><a href="">&nbsp;</a></li>
+	        		<li><a href="{{url('professional-development/courses')}}">Skills courses</a></li>
+	        		<li><a href="{{url('professional-development/courses')}}">Online courses</a></li>
+	        		<li><a>&nbsp;</a></li>
 	        	</ul>
-	        	<a href="">
-        			<div class="card card-event">
-        				<span class="label label-school">ERS course</span>
-        				<div class="card-image">
-        					<img class="img-responsive" src="../images/home/educational_courses.jpg">
-        				</div>
-        				<div class="card-content">
-        					<p class="title">Lung transplantation
-        						<span>Upcoming course</span>
-        					</p>
-        				</div>
-        			</div>
-        		</a>
+ @if(isset($course))		
+        		@if(isset($course->uri))
+					<a href="{{url($course->uri)}}">
+				@endif
+					<div class="card card-event card-event-large">
+						@if(isset($course->type))
+              				<span class="label @if(isset($course->typeColor)){{$course->typeColor}}@else label-default @endif">{{$course->type}}</span>
+            			@endif
+						@if(isset($course->image))
+						<div class="card-image">
+              				<img class="img-responsive" src="{{url($course->image)}}" @if(isset($course->imageDescription))alt="{{$course->imageDescription}}" @endif />
+						</div>
+						@endif
+						<div class="card-content white-bg">
+						@if(isset($course->title))
+							<p class="title">
+								{{$course->title}}
+							</p>
+						@endif
+						@if(isset($course->eventDates))
+						<p class="date">
+							{{$course->eventDates}}
+						</p>
+						@endif	
+						@if(isset($course->earlybirdDeadline))
+							<p class="btn-rounded early_bird">Early Bird deadline: {{$course->earlybirdDeadline}}</p>
+						@endif	
+						@if(isset($course->eventLocation))
+							<p class="place"><span class="icon s7-map-marker"></span>{{$course->eventLocation}}</p>
+						@endif	
+						</div>
+					</div>
+				</a>
+			@endif	
 	        </div>
 
 

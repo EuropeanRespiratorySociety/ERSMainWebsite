@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 
+use App\Extensions\CloudCmsHelper as CC;
+
 class HomeController extends Controller
 {
     /**
@@ -24,6 +26,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home.home');
+        $CC = new CC();
+        $results = $CC->getContentByProperty("availableOnHomepage", "true");
+        $items = $CC->parseItems($results->rows);
+        $items =  (object) $items;
+
+        $params['items'] =  $CC->sortHomepage($items);
+
+        return view('home.home')->with($params);
     }
 }

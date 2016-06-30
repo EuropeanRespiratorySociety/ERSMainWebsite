@@ -7,146 +7,103 @@
 					We organise a range of scientific and educational events including the ERS International Congress, the largest conference in the respiratory field. 
 					Other events include courses, research seminars and the Lung Science Conference and Sleep and Breathing Conference
 				</div>
-
 			</div>
-
 			<div class="col-md-6 pull-right top-right-col text-left">
-			<a href="">
-				<div class="card card-event card-event-large">
-					<!--span class="label label-school">ERS Course</span-->
-					<div class="card-image">
-						<img class="img-responsive" src="../images/london2016.jpg">
-					</div>
-					<div class="card-content white-bg">
-						<p class="title">ERS International Congress 2016
-							<!--span>Next upcomming course</span-->
+				@if(isset($first->uri))
+					<a href="{{url($first->uri)}}">
+				@endif
+					<div class="card card-event card-event-large">
+						@if(isset($first->type))
+              				<span class="label @if(isset($first->typeColor)){{$first->typeColor}}@else label-default @endif">{{$first->type}}</span>
+            			@endif
+						@if(isset($first->image))
+						<div class="card-image">
+              				<img class="img-responsive" src="{{url($first->image)}}" @if(isset($first->imageDescription))alt="{{$first->imageDescription}}" @endif />
+						</div>
+						@endif
+						<div class="card-content white-bg">
+						@if(isset($first->title))
+							<p class="title">
+								{{$first->title}}
+							</p>
+						@endif
+						@if(isset($first->eventDates))
+						<p class="date">
+							{{$first->eventDates}}
 						</p>
-						<p class="date">3-7 September 2016</p>
-					<!--p>Overview of different ILDs, including their diagnostic procedures…</p>
-					<p class="btn-rounded early_bird">Early Bird deadline 3 May</p-->
-						<p class="place"><span class="icon s7-map-marker"></span>London, United Kingdom</p>
+						@endif	
+						@if(isset($first->shortLead))
+							<p>
+								{{$first->shortLead}}
+							</p>
+						@endif
+						@if(isset($first->earlybirdDeadline))
+							<p class="btn-rounded early_bird">Early Bird deadline: {{$first->earlybirdDeadline}}</p>
+						@endif	
+						@if(isset($first->eventLocation))
+							<p class="place"><span class="icon s7-map-marker"></span>{{$first->eventLocation}}</p>
+						@endif	
+						</div>
 					</div>
-					<!--div class="card-action clearfix">
-						<a href="#" target="new_blank"  class="btn pull-right btn-register">register</a>
-						<a href="#" target="new_blank" class="btn pull-right btn-default">register</a>
-					</div-->
-				</div>
-			</a>
+				</a>
 			</div>
-
-
 		</div>
 		<div class="space"></div>
-
-		
-
-		
-
-
 	</div>
 	<div class="light-grey-bg">
         <div class="main-content">
-        <div class="row row_event">
+        	<div class="row row_event">
+        	@foreach($items as $item)
 				<div class="col-md-3">
 					<div class="card card-event">
-						<!--span class="label label-school">ERS Course</span-->
+						@if(isset($item->type))
+              				<span class="label @if(isset($item->typeColor)){{$item->typeColor}}@else label-default @endif">{{$item->type}}</span>
+            			@endif
+						@if(isset($item->image))
 						<div class="card-image">
-							<img class="img-responsive" src="../images/home/lsc.jpg">
+              				<img class="img-responsive" src="{{url($item->image)}}" @if(isset($item->imageDescription))alt="{{$item->imageDescription}}" @endif />
 						</div>
+						@endif
 						<div class="card-content">
-							<p class="title">Lung Science Conference
-								<!--span>Next upcomming course</span-->
+						@if(isset($item->title))
+							<p class="title">
+								{{$item->title}}
 							</p>
-							<p class="date">10–13 Mar. 2016</p>
-							<p>The Lung Science Conference is at the forefront of basic and translational...</p>
-							<!--p class="btn-rounded early_bird">Early Bird deadline 3 May</p-->
-
-							<p class="place"><span class="icon s7-map-marker"></span>Estoril, Portugal</p>
+						@endif
+						@if(isset($item->eventDates))
+						<p class="date">
+							{{$item->eventDates}}
+						</p>
+						@endif	
+						@if(isset($item->shortLead))
+							<p>
+								{{$item->shortLead}}
+							</p>
+						@endif
+						@if(isset($item->earlybirdDeadline))
+							<p class="btn-rounded early_bird">Early Bird deadline: {{$item->earlybirdDeadline}}</p>
+						@endif	
+						@if(isset($item->eventLocation))
+							<p class="place"><span class="icon s7-map-marker"></span>{{$item->eventLocation}}</p>
+						@endif	
 						</div>
 						<div class="card-action clearfix">
-							<!--a href="#" target="new_blank" class="btn btn-default">register</a-->
-							<a href="#" target="new_blank"  class="btn btn-register">register</a>
-							
+							@if(isset($item->category) && $item->category == "ERS Courses")
+								<a href="#" target="new_blank" class="btn btn-default text-capitalize">All Courses</a>
+							@endif
+							@if(isset($item->category) && $item->category == "Research Seminars")
+								<a href="#" target="new_blank" class="btn btn-default text-capitalize">All Seminars</a>
+							@endif
+							@if(isset($item->uri))
+								<a href="{{url($item->uri)}}"  class="btn btn-default">more...</a>
+							@endif
 						</div>
 					</div>
 				</div>
-
-				<div class="col-md-3">
-					<div class="card card-event">
-						<!--span class="label label-school">ERS Course</span-->
-						<div class="card-image">
-							<img class="img-responsive" src="../images/home/sb.jpg">
-						</div>
-						<div class="card-content">
-							<p class="title">Sleep & Breathing
-								<!--span>Next upcomming course</span-->
-							</p>
-							<p class="date">10–13 Mar. 2016</p>
-							<p>The Sleep and Breathing conference is the largest pan-European meeting of its type…</p>
-							<!--p class="btn-rounded early_bird">Early Bird deadline 3 May</p-->
-
-							<p class="place"><span class="icon s7-map-marker"></span>Estoril, Portugal</p>
-						</div>
-						<div class="card-action clearfix">
-							<!--a href="#" target="new_blank" class="btn btn-default">register</a-->
-							<a href="#" target="new_blank"  class="btn btn-register">register</a>
-							
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="card card-event">
-						<span class="label label-school">ERS Course</span>
-						<div class="card-image">
-							<img class="img-responsive" src="../images/home/education.jpg">
-						</div>
-						<div class="card-content">
-							<p class="title">ERS Education programme - Part 1
-								<span>Next upcomming course</span>
-							</p>
-							<p class="date">10–13 Mar. 2016</p>
-							<p>Plumonary hypertension and plumonary vascular disease</p>
-							<p class="btn-rounded early_bird">Early Bird deadline 3 May</p>
-							<p class="place"><span class="icon s7-map-marker"></span>Estoril, Portugal</p>
-						</div>
-						<div class="card-action clearfix">
-							<a href="#" target="new_blank" class="btn btn-default text-capitalize">All Courses</a>
-							<a href="#" target="new_blank"  class="btn btn-register">register</a>
-							
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="card card-event">
-						<span class="label label-scientific">Research seminar</span>
-						<div class="card-image">
-							<img class="img-responsive" src="../images/home/education_2.jpg">
-						</div>
-						<div class="card-content">
-							<p class="title">ERS Education
-								<span>Next upcomming course</span>
-							</p>
-							<p class="date">10–13 Mar. 2016</p>
-							<p>Plumonary hypertension and plumonary vascular disease</p>
-							<p class="btn-rounded early_bird">Early Bird deadline 3 May</p>
-							<p class="place"><span class="icon s7-map-marker"></span>Estoril, Portugal</p>
-						</div>
-						<div class="card-action clearfix">
-							<a href="#" target="new_blank" class="btn btn-default text-capitalize">All Courses</a>
-							<a href="#" target="new_blank"  class="btn btn-register">register</a>
-							
-						</div>
-					</div>
-				</div>
-
+			@endforeach	
 			</div>
-
         </div>
-    </div>
-	
-			
+    </div>		
 </div>
 
 

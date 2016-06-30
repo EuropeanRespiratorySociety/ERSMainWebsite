@@ -1,67 +1,30 @@
-      <div class="section home-news-content fp-auto-height" id="">
-          <div class="main-content">
-          <div class="page-head"><h2>Latest News</h2></div>
-
-            <div class="row center-block">
-              <div class="col-md-4">
-              <a href="#">
-                <div class="card card-padded">
-                  <figure class="hover-gradation">
-                    <span class="label label-vision">ERS Vision</span>
-                    <img src="../images/news/take-the-active.jpg" alt=""/>
-                  <figcaption>
-                    <h2>Take the Active Option</h2>
-                  </figcaption>     
-                  </figure>
-                </div>
-              </a>
-              </div>
-
-
-              <div class="col-md-4">
-              <a href="#">
-                <div class="card card-padded">
-                  <figure class="hover-gradation">
-                    <span class="label label-hlfl">Healthy Lungs for Life</span>
-                    <img src="../images/news/hlfl.jpg" alt=""/>
-                  <figcaption>
-                    <h2>Healthy lungs for life</h2>
-                  </figcaption>     
-                  </figure>
-                </div>
-              </a>
-              </div>
-
-              <div class="col-md-4">
-              <a href="#">
-                <div class="card card-padded" style="    background-color: #000000;">
-                  <figure class="hover-gradation">
-                    <span class="label label-news">Latest News</span>
-                    <img src="../images/news/wcd2016.jpg" alt=""/>
-                  <figcaption>
-                    <h2>FIRS supports<br>
-World Cancer Day</h2>
-                  </figcaption>     
-                  </figure>
-                </div>
-              </a>
-              </div>
-
-
-
-
-
-              
-
-             
-
-             
-
-
-            </div>
-
-          </div>  
+<div class="section home-news-content fp-auto-height" id="">
+  <div class="main-content">
+    <div class="page-head"><h2>Latest News</h2></div>
+    <div class="row center-block">
+      @foreach($items as $item)
+        <div class="col-md-4">
+          <a href="@if(isset($item->uri)){{url($item->uri)}}@endif">
+          <div class="card card-padded @if(!isset($item->image)) card-primary @endif">
+            <figure class="hover-gradation">
+            @if(isset($item->type))
+              <span class="label @if(isset($item->typeColor)){{$item->typeColor}}@else label-default @endif">{{$item->type}}</span>
+            @endif
+            @if(isset($item->image))
+              <img src="{{url($item->image)}}" @if(isset($item->imageDescription))alt="{{$item->imageDescription}}" @endif />
+            @endif
+            <figcaption>
+            <h4>@if(isset($item->createdOn)){{$item->createdOn}}@endif</h4>
+            <h2>@if(isset($item->title)){{$item->title}}@endif</h2>
+            </figcaption>     
+            </figure>
+          </div>
+          </a>
         </div>
+      @endforeach  
+    </div>  
+  </div>
+</div>  
 
 
 

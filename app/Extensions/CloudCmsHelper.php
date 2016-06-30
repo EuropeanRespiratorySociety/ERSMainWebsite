@@ -73,13 +73,13 @@ class CloudCmsHelper
         return $result;            
 	}
 
-    public function getContentByProperty($property, $contentType){
+    public function getContentByProperty($property, $contentType, $sort = -1){
         $query = '{"'.$property.'": "'.$contentType.'"}';
         $result = CC::nodes()
                     ->query($query)
                     ->addParams(['full' => 'true']) 
                     ->addParams(['metadata' => 'true'])
-                    ->addParams(['sort' => '{"_system.created_on.ms": -1}']) 
+                    ->addParams(['sort' => '{"_system.created_on.ms": '.$sort.'}']) 
                     ->get();
         return $result;  
 
@@ -88,6 +88,59 @@ class CloudCmsHelper
     public function setCanonical($node, $payload){
         $result = CC::nodes()->updateNode($node, $payload)->get();
         //add test if success or not
+    }
+
+    public function sortHomepage($items){
+        $articleCounter = 1;
+        $calendarCounter = 1;
+        $fundingCounter = 1;
+        $elearningCounter = 1;
+        $courseCounter = 1;
+
+        foreach ($items as $key => $item) {
+
+            $item = (object) $item;
+
+            if(isset($item->type) && $item->type == "e-learning" && $elearningCounter <= 1){
+                $sorted['eLearning'] = $item;
+                $elearningCounter++;
+            }
+
+            if($item->contentType == "event_course" && $item->featuredCourse && $courseCounter <= 1){
+                $sorted['featuredCourse'] = $item;
+                $courseCounter++;
+            }
+
+            if(($item->contentType == "event_fellowship" || $item->contentType == "event_seminar") && $item->featuredFunding && $fundingCounter <= 1){
+                $sorted['featuredFunding'] = $item;
+                $fundingCounter++;
+            }
+
+            if(isset($item->category2) && $calendarCounter <= 5){
+                if($this->isCalendar($item->category2)){
+                    if(isset($sorted['firstEvent'])){
+                      $sorted['calendar'][$key] = $item;  
+                    }
+                    if($calendarCounter <= 1){
+                        $sorted['firstEvent'] = $item;
+                    }
+                    $calendarCounter++;
+                }
+            }
+            
+            if($item->contentType == "article" && $articleCounter <= 4){
+
+                if(isset($sorted['mainNews'])){
+                    $sorted['news'][$key] = $item;
+                }
+
+                if($articleCounter <= 1){
+                    $sorted['mainNews'] = $item;
+                }
+                $articleCounter++;
+            }
+        }
+            return $sorted;
     }
 
 	public function parseItems($items, $lead = false){
@@ -117,6 +170,9 @@ class CloudCmsHelper
                     if(isset($item->category)){
                     	$parsed[$key]['category'] = $item->category->title;
                     	$parsed[$key]['categoryId'] = $item->category->qname;
+                    }
+                    if(isset($item->category2)){
+                        $parsed[$key]['category2'] = $item->category2;
                     }	
                     $parsed[$key]['_qname'] = $item->_qname;
                     $parsed[$key]['_type'] = $item->_type;
@@ -126,6 +182,7 @@ class CloudCmsHelper
                     if(isset($item->earlybirdDeadline)){$parsed[$key]['earlybirdDeadline'] = $this->ersDate($item->earlybirdDeadline);}
                     if(isset($item->extendedDeadline)){ $parsed[$key]['extendedDeadline'] = $this->ersDate($item->extendedDeadline);}
                     if(isset($item->_system->created_on->timestamp)){ $parsed[$key]['createdOn'] = $this->ersDate($item->_system->created_on->timestamp);}
+                    if(isset($item->_system->created_on->ms)){ $parsed[$key]['ms'] = $item->_system->created_on->ms;}
                     if(isset($item->openingDate)){ $parsed[$key]['openingDate'] = $this->ersDate($item->openingDate);}
                     if(isset($item->eventLocation)){$parsed[$key]['eventLocation'] = $item->eventLocation;}                
                     
@@ -141,9 +198,21 @@ class CloudCmsHelper
                         $img = CC::nodes()->getImage($img_qname);
                         $parsed[$key]['image'] = $img->imageUrl."?name=image5000&size=500";
                     }
+
+                    if(isset($item->highResImage)){
+                        $img_qname = $item->highResImage->qname;
+                        $img = CC::nodes()->getImage($img_qname);
+                        $parsed[$key]['highResImage'] = $img->imageUrl."?name=image1800&size=1800";
+                    }
+
+                    if(isset($item->imageAlignment)){$parsed[$key]['imageAlignment'] = $item->imageAlignment;}
                     if(isset($item->imageDescription)){$parsed[$key]['imageDescription'] = $item->imageDescription;}
                     if(isset($item->url)){$parsed[$key]['url'] = $item->url;}
                     if(isset($item->uri)){$parsed[$key]['uri'] = $item->uri;}
+                    $parsed[$key]['featuredCourse'] = false;
+                    if(isset($item->featuredCourse)){$parsed[$key]['featuredCourse'] = $item->featuredCourse;}
+                    $parsed[$key]['featuredFunding'] = false;
+                    if(isset($item->featuredFunding)){$parsed[$key]['featuredFunding'] = $item->featuredFunding;}
 
                     if(!$lead){
 	                    if(isset($item->organisers)){ $parsed[$key]['organisers'] = $item->organisers;}
@@ -212,6 +281,16 @@ class CloudCmsHelper
 
         return (object) $cal;
     }
+
+    public function isCalendar($array){
+        $cal = false;
+        foreach($array as $cat)
+            if(in_array("Events Calendar", (array) $cat)){
+               $cal = true;
+        }
+
+        return $cal;
+    } 
 
 	public function ersDate($start, $end = null)
     {

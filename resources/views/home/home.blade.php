@@ -4,29 +4,33 @@
 <div class="ers-content home-content">
   <div id="fullpage">
     <div class="section fp-auto-height">
-      <div class="top-box">
+      <div class="top-box" style="background-image: url('{{$items['mainNews']->highResImage}}');background-position: center {{$items['mainNews']->imageAlignment}}">
         <div class="subject">
                <div class="text-center">
-               <em>“ Member states encouraged to adopt plain packaging to tackle smoking epidemic ”</em>
-               <label><em>ERS News 2 June, 2016</em></label>
+               <em>{{$items['mainNews']->title}}</em>
+               <h4><em>{{$items['mainNews']->createdOn}}</em></h4>
                </div>
         </div>
       </div>
     </div>
     <!-- Start Section 1 --> 
-    @include('home.home-sections.news')
+    @include('home.home-sections.news', array('items' => $items['news']))
 
     <!-- Start Section 2 -->  
     @include('home.home-sections.community')
 
     <!-- Start Section 3 -->  
-    @include('home.home-sections.scientific')
+    @include('home.home-sections.scientific', array('items' => $items['calendar'], 'first' => $items['firstEvent']))
 
     <!-- Start Section 4 -->  
     @include('home.home-sections.publications')
 
     <!-- Start Section 5 -->  
-    @include('home.home-sections.professional')
+    @include('home.home-sections.professional', array(
+              'funding' => $items['featuredFunding'],
+              'eLearning' => $items['eLearning'],
+              'course' => $items['featuredCourse']
+              ))
 
      <!-- Start Section 6 -->  
     @include('home.home-sections.research')
@@ -53,12 +57,6 @@
   @stop()  
 
     @section('scripts')
-    <!--script src="../js/fullpage.js" type="text/javascript"></script-->
-    <!--script src="../js/app-assemblies.js" type="text/javascript"></script-->
-
-    <!--script src="http://erstemplate.app/js/fullpage.js" type="text/javascript"></script>
-    <script src="http://erstemplate.app/js/app-home.js" type="text/javascript"></script-->
-
     <script src="https://bootstrap.ersnet.org/js/fullpage.js" type="text/javascript"></script>
     <script src="https://bootstrap.ersnet.org/js/app-home.js" type="text/javascript"></script>
     <!--script src="http://erstemplate.app//js/app-home.js" type="text/javascript"></script-->

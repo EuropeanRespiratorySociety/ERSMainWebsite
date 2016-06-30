@@ -1,4 +1,4 @@
-<div class="section fp-auto-height home-publications-content" id="">
+<div class="section fp-auto-height home-publications-content" id="" style="min-height:900px;">
 	<div class="main-content">
 		<div class="page-head"><h2>Publications</h2></div>
 		<div class="row">

@@ -1,4 +1,7 @@
     @foreach($relatedItems as $related)
+    @if(isset($related['uri']))
+    <a href="{{url($related['uri'])}}">
+    @endif
     <div class="related-items text-left">
       <div class="card card-default card-events">          
         @if(isset($related['image']))
@@ -14,10 +17,10 @@
           <p>
             @if(isset($related['shortLead'])){{$related['shortLead']}}@endif
           </p>
-          @if(isset($related['uri']))
-          <a href="{{url($related['uri'])}}" target="new_blank" class="btn btn-xs btn-default pull-right">More...</a>
-          @endif
         </div>
       </div>
     </div>
+    @if(isset($related['uri']))
+    </a>
+    @endif
     @endforeach
