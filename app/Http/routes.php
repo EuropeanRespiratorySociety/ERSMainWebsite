@@ -12,10 +12,10 @@
 */
 
 
-Route::get('/cache-flush', function () {
+/*Route::get('/cache-flush', function () {
 	ResponseCache::flush();
 	return "ok";
-});
+});*/
 
 
 
@@ -81,7 +81,6 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::get('professional-development/courses', 'CourseController@index');
     Route::get('professional-development/courses/{slug}', 'CourseController@show');
-    Route::get('professional-development', 'CourseController@professionalDevelopment');
     Route::get('professional-development/fellowships/short-term', 'FellowshipController@indexShortTerm');
     Route::get('professional-development/fellowships/short-term/{slug?}', 'FellowshipController@indexShortTerm');
     Route::get('professional-development/fellowships/long-term', 'FellowshipController@indexLongTerm');
@@ -90,7 +89,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('professional-development/fellowships/{slug}', 'FellowshipController@show');
     Route::get('professional-development/grants-and-sponsorships', 'GeneralController@grantsAndSponsorships');
     Route::get('professional-development/educational-activities', 'CourseController@educationalActivities');
-    Route::get('professional-development/{slug}', 'GeneralController@show'); //acreditation uses this route
+    Route::get('professional-development/{slug}', 'GeneralController@show'); //acreditation uses this route   
+    Route::get('professional-development', 'CourseController@professionalDevelopment');
 
     Route::get('research', 'ResearchController@index'); 
     Route::get('research/research-seminars', 'ResearchController@researchSeminars'); 
@@ -113,7 +113,7 @@ Route::group(['middleware' => ['web']], function () {
 
 
 
-    Route::get('cc', 'CloudCms@requestTest');
+    //Route::get('cc', 'CloudCms@requestTest');
 
     Route::get('search/{query}', 'CloudCms@search');
     Route::get('full-search', 'CloudCms@fullSearch');

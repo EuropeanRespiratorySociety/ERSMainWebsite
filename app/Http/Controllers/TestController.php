@@ -82,7 +82,7 @@ dd($results);
 
 
             }  
-        dd($courses);    
+        //dd($courses);    
         $params['courses'] =  (object) $courses; 
         return view('professional.ers-courses')->with($params);    
 
