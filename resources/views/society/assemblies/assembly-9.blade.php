@@ -1,4 +1,4 @@
-      <div class="section fp-auto-height" style="min-height:760px;">
+      <div class="section fp-auto-height" style="min-height:820px;">
           <div class="main-content">
           <div class="page-head"><h2>ERS Assembly 9: Allied Respiratory Professionals</h2></div>
 

@@ -1,4 +1,4 @@
-      <div class="section fp-auto-height" style="min-height:1300px;">
+      <div class="section fp-auto-height" style="min-height:1400px;">
           <div class="main-content">
           <div class="page-head"><h2>ERS Assembly 6: Occupation and Epidemiology </h2></div>
 

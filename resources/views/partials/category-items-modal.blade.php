@@ -30,7 +30,9 @@
                 @if(isset($item['eventDates']))
                     <p class="date">{{ $item['eventDates'] }}</p>
                 @endif
+                @if(isset($item['lead']))
                 <div class="lead-card">{!! $item['lead'] !!}</div>
+                @endif
                 @if(isset($item['earlybirdDeadline']))
                 <p class="btn-rounded early_bird">Early Bird deadline {{ $item['earlybirdDeadline'] }}</p>
                 @endif

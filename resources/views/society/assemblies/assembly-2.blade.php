@@ -1,4 +1,4 @@
-      <div class="section fp-auto-height" style="min-height:740px;">
+      <div class="section fp-auto-height" style="min-height:800px;">
           <div class="main-content">
             <div class="page-head"><h2>ERS Assembly 2: Respiratory Intensive Care</h2></div>
             <div class="row">

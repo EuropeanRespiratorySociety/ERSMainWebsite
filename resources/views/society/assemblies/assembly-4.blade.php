@@ -1,4 +1,4 @@
-      <div class="section fp-auto-height" style="min-height:955px;">
+      <div class="section fp-auto-height" style="min-height:1000px;">
           <div class="main-content">
           <div class="page-head"><h2>ERS Assembly 4: Clinical physiology, sleep and pulmonary circulation</h2></div>
 

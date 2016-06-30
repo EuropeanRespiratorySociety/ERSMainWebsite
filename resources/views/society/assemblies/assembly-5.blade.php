@@ -1,4 +1,4 @@
-      <div class="section fp-auto-height" style="min-height:940px;">
+      <div class="section fp-auto-height" style="min-height:1000px;">
           <div class="main-content">
           <div class="page-head"><h2>ERS Assembly 5: Airway Diseases </h2></div>
 
