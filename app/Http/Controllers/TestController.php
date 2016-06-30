@@ -15,7 +15,7 @@ use Intervention\Image\Facades\Image;
 use League\OAuth2\Client\Provider\GenericProvider;
 use AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra as Markdown;
 
-class CourseController extends Controller
+class TestController extends Controller
 {
     /**
      * Display a listing of the resource.

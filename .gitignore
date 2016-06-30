@@ -4,5 +4,7 @@
 /config/laravel-responsecache.php
 Homestead.yaml
 Homestead.json
+composer-setup.php
+composer.phar
 .env
 
