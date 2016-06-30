@@ -24,6 +24,7 @@ class CourseController extends Controller
      */
     public function index()
     {
+        dd("ok - TestController");
         //$node = "o:f913cff03624ac461283"; //courses
         $node = "o:1700d6e06750917d4d86" ; //Noninvasive ventilation: basic concepts
         $node ="ers:homePageAvailable";
@@ -53,7 +54,7 @@ class CourseController extends Controller
 
         //$homepage = CC::nodes()->find($query)->get();   
        //dd($homepage);
-dd($results);
+//dd($results);
         foreach ($results->rows as $key => $course) {
                     $courses[$key]['title'] = $course->title;
                     $courses[$key]['slug'] = $course->slug;

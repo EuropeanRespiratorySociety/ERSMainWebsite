@@ -27,7 +27,7 @@ private $headers;
      */
     public function index()
     {
-        $catnode = 'o:9a8195e6286a4f7b40ae';
+       // $catnode = 'o:9a8195e6286a4f7b40ae';
    
         $nodes = CC::nodes()
                 ->listChildren($catnode)
@@ -35,7 +35,7 @@ private $headers;
                 ->addParams(['metadata' => 'true'])
                 ->addParams(['sort' => '{"_system.created_on.ms": -1}'])
                 ->get();           
-                dd($nodes);
+              //  dd($nodes);
         foreach ($nodes['rows'] as $key => $post) {
                 $blog[$key]['title'] = $post['title'];
                 //$blog[$key]['body'] = Markdown::parse($post['headline']);
