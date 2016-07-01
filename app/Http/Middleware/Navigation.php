@@ -51,7 +51,7 @@ class Navigation
                     $menu->assemblies->add('11. Thoracic Oncology', 'the-society/assemblies#thoracic-oncology' );
                 $menu->theSociety->add('News And Features', 'the-society/news' );
                     $menu->newsAndFeatures->add('Respiratory World Wide', 'the-society/news/respiratory-world-wide' );
-                    $menu->newsAndFeatures->add('Respiratory Maters', 'the-society/news/respiratory-matters' );
+                    $menu->newsAndFeatures->add('Respiratory Matters', 'the-society/news/respiratory-matters' );
                     $menu->newsAndFeatures->add('ERS Vision', 'http://www.ersvision.org/')->link->attr(array('target' => '_blank'));
                     $menu->newsAndFeatures->add('Press Office', 'the-society/news/press-office');
                     $menu->newsAndFeatures->add('Contact', 'the-society/news/contact')
