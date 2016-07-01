@@ -48,10 +48,13 @@
       @if(isset($course->faculty))
       <h5><b>Faculty :</b> {{$course->faculty}}</h5>
       @endif
+      @if(isset($course->disclosureFile))
+      <h5><a href="{{$course->disclosureFile->fileUrl}}" >Faculty disclosure</a></b></h5>
+      @endif
 
       <div class="article text-left">
-        {!!$course->lead!!}
-        {!!$course->body!!}
+        @if(isset($course->body)){!!$course->lead!!}@endif
+        @if(isset($course->body)){!!$course->body!!}@endif
       </div>
     </div>
     <!-- Beginning Right Side-bar -->
@@ -220,7 +223,7 @@
         <div class="text-left">
         @foreach ($course->suggestedAccommodation as $accommodation)
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-12">
             <p>
               @if(isset($accommodation['url']))
                 <a target="_blank" href="{{$accommodation['url']}}">
@@ -234,8 +237,10 @@
               @if(isset($accommodation['streetAddress2']))
               {{$accommodation['streetAddress2']}}<br>
               @endif
-              @if(isset($accomodation['zip'])){{$accommodation['zip']}} {{$accommodation['city']}}<br>@endif
-              @if(isset($accomodation['zip'])){{$accommodation['country']}}@endif
+              @if(isset($accommodation['zip'])){{$accommodation['zip']}} {{$accommodation['city']}}<br>@endif
+              @if(isset($accommodation['country'])){{$accommodation['country']}}@endif
+              <hr>
+              @if(isset($accommodation['info'])){!!$accommodation['info']!!}@endif
             </p>
           </div>
           </div>

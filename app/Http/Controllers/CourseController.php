@@ -30,6 +30,7 @@ class CourseController extends Controller
             $url = "https://www.ersnet.org/".$uri;
             $results->rows[0]->url = $url;
             $results->rows[0]->uri = $uri;
+            dd($results->rows[0]);
             $CC->setCanonical($results->rows[0]->_qname ,json_encode($results->rows[0]));
         }
 
@@ -78,9 +79,8 @@ class CourseController extends Controller
         if(!isset($results->rows[0]->url)||!isset($results->rows[0]->uri)){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
-            $results->rows[0]->url = $url;
-            $results->rows[0]->uri = $uri;
-            $CC->setCanonical($results->rows[0]->_qname ,json_encode($results->rows[0]));
+            $payload = json_encode(['url' => $url, 'uri' => $uri]);
+            $CC->setCanonical($results->rows[0]->_qname, json_encode($results->rows[0]));
         }
 
         $related = $CC->getRelatedArticle($course[0]['_qname']);

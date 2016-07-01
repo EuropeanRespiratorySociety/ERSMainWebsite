@@ -86,7 +86,10 @@ class CloudCmsHelper
     }
 
     public function setCanonical($node, $payload){
-        $result = CC::nodes()->updateNode($node, $payload)->get();
+        $result = CC::nodes()
+            ->updateNode($node, $payload)
+            ->addParams(['inject' => 'true'])
+            ->get();
         //add test if success or not
     }
 
