@@ -25,13 +25,11 @@ class CourseController extends Controller
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0]; 
 
-        if(!isset($results->rows[0]->url)||!isset($results->rows[0]->uri)){
-            $uri= request()->path();
+        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
+            $uri = request()->path();
             $url = "https://www.ersnet.org/".$uri;
-            $results->rows[0]->url = $url;
-            $results->rows[0]->uri = $uri;
-            dd($results->rows[0]);
-            $CC->setCanonical($results->rows[0]->_qname ,json_encode($results->rows[0]));
+            $payload = json_encode(['url' => $url, 'uri' => $uri]);
+            $CC->setCanonical($results->rows[0]->_qname, $payload);
         }
 
         $results = $CC->getCategory($params['item']->_qname);
@@ -75,12 +73,11 @@ class CourseController extends Controller
         $course = $CC->parseItems($results->rows);
         $params['course'] =  (object) $course[0]; 
 
-
-        if(!isset($results->rows[0]->url)||!isset($results->rows[0]->uri)){
-            $uri= request()->path();
+        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
+            $uri = request()->path();
             $url = "https://www.ersnet.org/".$uri;
             $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, json_encode($results->rows[0]));
+            $CC->setCanonical($results->rows[0]->_qname, $payload);
         }
 
         $related = $CC->getRelatedArticle($course[0]['_qname']);

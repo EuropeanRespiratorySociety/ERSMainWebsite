@@ -67,14 +67,14 @@
         new WOW().init();
         App.home(); 
 
-        $('.row-books').isotope({
+      /*  $('.row-books').isotope({
         layoutMode: 'packery',
         packery: {
             columnWidth: '.isotope',
             gutter:0
         },            
         percentPosition: true
-        });            
+        });    */        
       });
     </script>
   @stop()

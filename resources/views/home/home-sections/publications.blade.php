@@ -7,7 +7,8 @@
 			</div>
 			<div class="space"></div>
 		</div>
-		<div class="row text-left isotope row-books">
+       <div class="col-md-8 col-md-offset-3"> 
+		<div class="row text-left row-books">
 
 			<div class="col-md-3 isotope">
 				<div class="card card-default card-events">
@@ -84,6 +85,8 @@
                     </div>
             	</div>
             </div>
+        </div>
+        <div class="row text-left row-books">    
 			<div class="col-md-3 isotope">
 				<div class="card card-default card-events">
                     <div class="card-image">
@@ -159,6 +162,8 @@
                     </div>
             	</div>
             </div>
+        </div>
+        <div class="row text-left row-books">            
 			<div class="col-md-3 isotope">
 				<div class="card card-default card-events">
                     <div class="card-image">
@@ -189,6 +194,7 @@
             	</div>
             </div>
 		</div>
+        </div>
 		</div>
 
 		<div class="space"></div>

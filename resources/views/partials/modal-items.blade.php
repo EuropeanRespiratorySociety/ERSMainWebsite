@@ -23,7 +23,7 @@
                 </p>
             </div>
             @endif  
-              {!! $item['lead'] !!}
+              @if(isset($item['lead'])){!! $item['lead'] !!}@endif
               @if(isset($item['body'])){!! $item['body'] !!}@endif
             </div>
           </div>

@@ -67,12 +67,11 @@ class GeneralController extends Controller
         $CC = new CC();
         $results = $CC->getCategorySorted($this->euAffairs, $field, $direction);
 
-        if(!isset($results->rows[0]->url)||!isset($results->rows[0]->uri)){
+        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
-            $results->rows[0]->url = $url;
-            $results->rows[0]->uri = $uri;
-            $CC->setCanonical($results->rows[0]->_qname ,json_encode($results->rows[0]));
+            $payload = json_encode(['url' => $url, 'uri' => $uri]);
+            $CC->setCanonical($results->rows[0]->_qname, $payload);
         }
 
         $items = $CC->parseItems($results->rows);
@@ -92,12 +91,11 @@ class GeneralController extends Controller
         $items = $CC->parseItems($results->rows);
         $params['items'] =  (object) $items; 
 
-        if(!isset($results->rows[0]->url)||!isset($results->rows[0]->uri)){
+        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
-            $results->rows[0]->url = $url;
-            $results->rows[0]->uri = $uri;
-            $CC->setCanonical($results->rows[0]->_qname ,json_encode($results->rows[0]));
+            $payload = json_encode(['url' => $url, 'uri' => $uri]);
+            $CC->setCanonical($results->rows[0]->_qname, $payload);
         }
 
         return view('advocacy.eu-projects')->with($params);
@@ -115,12 +113,11 @@ class GeneralController extends Controller
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0]; 
 
-        if(!isset($results->rows[0]->url)||!isset($results->rows[0]->uri)){
+        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
-            $results->rows[0]->url = $url;
-            $results->rows[0]->uri = $uri;
-            $CC->setCanonical($results->rows[0]->_qname ,json_encode($results->rows[0]));
+            $payload = json_encode(['url' => $url, 'uri' => $uri]);
+            $CC->setCanonical($results->rows[0]->_qname, $payload);
         }
 
         $results = $CC->getCategory($params['item']->_qname);
@@ -143,13 +140,12 @@ class GeneralController extends Controller
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0];
 
-        if(!isset($results->rows[0]->url)||!isset($results->rows[0]->uri)){
+        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
-            $results->rows[0]->url = $url;
-            $results->rows[0]->uri = $uri;
-            $CC->setCanonical($results->rows[0]->_qname ,json_encode($results->rows[0]));
-        } 
+            $payload = json_encode(['url' => $url, 'uri' => $uri]);
+            $CC->setCanonical($results->rows[0]->_qname, $payload);
+        }
 
         $related = $CC->getRelatedArticle($item[0]['_qname']);
         $relatedItems = $CC->parseItems($related->rows);

@@ -24,6 +24,14 @@ class WhoWeAreController extends Controller
         //Slug should be unique, so we should get only one item
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0]; 
+
+        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
+            $uri= request()->path();
+            $url = "https://www.ersnet.org/".$uri;
+            $payload = json_encode(['url' => $url, 'uri' => $uri]);
+            $CC->setCanonical($results->rows[0]->_qname, $payload);
+        }
+
         return view('articles.item')->with($params); 
 
     }
@@ -42,13 +50,12 @@ class WhoWeAreController extends Controller
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0];
 
-        if(!isset($results->rows[0]->url)||!isset($results->rows[0]->uri)){
+        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
-            $results->rows[0]->url = $url;
-            $results->rows[0]->uri = $uri;
-            $CC->setCanonical($results->rows[0]->_qname ,json_encode($results->rows[0]));
-        } 
+            $payload = json_encode(['url' => $url, 'uri' => $uri]);
+            $CC->setCanonical($results->rows[0]->_qname, $payload);
+        }
 
         $related = $CC->getRelatedArticle($item[0]['_qname']);
         $relatedItems = $CC->parseItems($related->rows);

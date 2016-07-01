@@ -28,12 +28,11 @@ class FellowshipController extends Controller
         shuffle($items);
         $params['items'] =  (object) $items;
 
-        if(!isset($results->rows[0]->url)||!isset($results->rows[0]->uri)){
+        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
-            $results->rows[0]->url = $url;
-            $results->rows[0]->uri = $uri;
-            $CC->setCanonical($results->rows[0]->_qname ,json_encode($results->rows[0]));
+            $payload = json_encode(['url' => $url, 'uri' => $uri]);
+            $CC->setCanonical($results->rows[0]->_qname, $payload);
         }
 
         return view('professional.fellowships')->with($params);
@@ -51,12 +50,11 @@ class FellowshipController extends Controller
         $results = $CC->getCategory($this->shortTerm);
         $items = $CC->parseItems($results->rows);
 
-        if(!isset($results->rows[0]->url)||!isset($results->rows[0]->uri)){
+        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
-            $results->rows[0]->url = $url;
-            $results->rows[0]->uri = $uri;
-            $CC->setCanonical($results->rows[0]->_qname ,json_encode($results->rows[0]));
+            $payload = json_encode(['url' => $url, 'uri' => $uri]);
+            $CC->setCanonical($results->rows[0]->_qname, $payload);
         }
    
         $params['fellowships'] =  (object) $items; 
@@ -75,12 +73,12 @@ class FellowshipController extends Controller
         $results = $CC->getCategory($this->longTerm);
         $items = $CC->parseItems($results->rows);
 
-        if(!isset($results->rows[0]->url)||!isset($results->rows[0]->uri)){
+
+        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
-            $results->rows[0]->url = $url;
-            $results->rows[0]->uri = $uri;
-            $CC->setCanonical($results->rows[0]->_qname ,json_encode($results->rows[0]));
+            $payload = json_encode(['url' => $url, 'uri' => $uri]);
+            $CC->setCanonical($results->rows[0]->_qname, $payload);
         }
    
         $params['fellowships'] =  (object) $items; 
@@ -103,13 +101,12 @@ class FellowshipController extends Controller
         $params['item'] =  (object) $item[0];
 
 
-        if(!isset($results->rows[0]->url)||!isset($results->rows[0]->uri)){
+        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
-            $results->rows[0]->url = $url;
-            $results->rows[0]->uri = $uri;
-            $CC->setCanonical($results->rows[0]->_qname ,json_encode($results->rows[0]));
-        } 
+            $payload = json_encode(['url' => $url, 'uri' => $uri]);
+            $CC->setCanonical($results->rows[0]->_qname, $payload);
+        }
 
         $related = $CC->getRelatedArticle($item[0]['_qname']);
         $relatedItems = $CC->parseItems($related->rows);

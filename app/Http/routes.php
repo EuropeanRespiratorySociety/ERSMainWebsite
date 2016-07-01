@@ -76,7 +76,10 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('congress-and-events/ers-presidential-summits/{slug}', 'ResearchController@showRS');
     Route::get('congress-and-events/the-lung-science-conference', 'LscController@index');
     Route::get('congress-and-events/the-lung-science-conference/{slug}', 'LscController@show');
-    Route::get('congress-and-events/events-calendar', 'CalendarController@index');
+    //Route::get('congress-and-events/events-calendar', 'CalendarController@index');
+    Route::get('congress-and-events/events-calendar', function(){
+        return view('pages.coming-soon');
+    });
     Route::get('congress-and-events/{slug}', 'GeneralController@show');
 
     Route::get('professional-development/courses', 'CourseController@index');
