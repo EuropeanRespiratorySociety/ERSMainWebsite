@@ -1,15 +1,25 @@
 @extends('template')
+@section('meta')
+        @include('partials.meta', array('meta' => 
+              [
+              'url' => 'https://www.ersnet.org'
+              ],
+              ['pagination' => isset($pagination) ? $pagination : null]
+              )) 
+@stop()
 @section('content')
 
 <div class="ers-content home-content">
   <div id="fullpage">
     <div class="section fp-auto-height">
-      <div class="top-box" style="background-image: url('{{$items['mainNews']->highResImage}}');background-position: center {{$items['mainNews']->imageAlignment}}">
+      <div class="top-box" @if(isset($items['mainNews']->highResImage))style="background-image: url('{{$items['mainNews']->highResImage}}');background-position: center {{$items['mainNews']->imageAlignment}}" @endif>
         <div class="subject">
+          <a href="{{url($items['mainNews']->uri)}}">
                <div class="text-center">
                <em>{{$items['mainNews']->title}}</em>
                <h4><em>{{$items['mainNews']->createdOn}}</em></h4>
                </div>
+          </a>      
         </div>
       </div>
     </div>

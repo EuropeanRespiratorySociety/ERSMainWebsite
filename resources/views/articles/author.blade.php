@@ -1,4 +1,12 @@
 @extends('template')
+@section('meta')
+        @include('partials.meta', array('meta' => [
+              'url' => isset($item->url) ? $item->url : null , 
+              'title' => $item->title
+              ]
+              , ['pagination' => isset($pagination) ? $pagination : null]
+              )) 
+@stop()
 @section('content')
 <div class="ers-content ers-courses light-grey-bg">
             <div class="main-content">

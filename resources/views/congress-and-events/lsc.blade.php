@@ -1,6 +1,14 @@
 @extends('template')
+@section('meta')
+        @include('partials.meta', array('meta' =>
+              [
+              'url' => isset($item->url) ? $item->url : null , 
+              'title' => $item->title
+              ],
+              ['pagination' => isset($pagination) ? $pagination : null]
+              )) 
+@stop()
 @section('content')
-
 <div class="ers-content event-items-content">
   <div class="row">
     <div class="col-md-3 midium-grey-bg left-photo-map">

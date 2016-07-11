@@ -1,4 +1,13 @@
 @extends('template')
+@section('meta')
+        @include('partials.meta', array('meta' =>
+              [
+              'url' => isset($course->url) ? $course->url : null , 
+              'title' => $course->title
+              ],
+              ['pagination' => isset($pagination) ? $pagination : null]
+              )) 
+@stop()
 @section('content')
 <div class="ers-content event-items-content">
   <div class="row">

@@ -169,10 +169,7 @@ private $headers;
     }
     public function requestTest()
     {
-    $clientKey = '1a13e498-1dd6-45ec-a03a-af5689c45a33';
-    $clientSecret = '91sxqgI8+vhc33Hs+vhMCRNhr2CTGVE4HgrX06NNaTkbz3DxqlLCco9ppTd4VWLXUEVBAOGKg8TFmCv7zKNcaHq9KBGu0X99LBDzoU02cwo=';
-    $username = 'c3130b25-77a8-4131-a8c1-1ddbdb72173a';
-    $password = 'o6g2C20ciq911uHcFHAzvYMzsHbRUghqQT1t2CK4p0ZzCHNudKombLahz4tJaFOzEYsd64f7Z73FlntBoTngaVqgrYHpKzIxG4ovKGLJsFE=';
+;
 
     $provider = new GenericProvider([
         'clientId'                => $clientKey,    // The client ID assigned to you by the provider

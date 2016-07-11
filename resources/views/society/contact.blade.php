@@ -1,4 +1,12 @@
     @extends('template')
+      @section('meta')
+        @include('partials.meta', array('meta' =>
+              [
+              'url' => 'https://www.ersnet.org/the-society/news/contact' , 
+              'title' => 'Contact us'
+              ]
+              )) 
+@stop()
     @section('content')
     <div class="ers-content">
       <div class="main-content">

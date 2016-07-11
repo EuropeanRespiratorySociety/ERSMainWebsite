@@ -25,7 +25,8 @@ class CourseController extends Controller
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0]; 
 
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
+        // == false set in purpose as CC sets the field to "false" wich is a string...
+        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
             $uri = request()->path();
             $url = "https://www.ersnet.org/".$uri;
             $payload = json_encode(['url' => $url, 'uri' => $uri]);
@@ -72,8 +73,9 @@ class CourseController extends Controller
         //Slug should be unique, so we should get only one item
         $course = $CC->parseItems($results->rows);
         $params['course'] =  (object) $course[0]; 
-
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
+        
+        // == false set in purpose as CC sets the field to "false" wich is a string...
+        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
             $uri = request()->path();
             $url = "https://www.ersnet.org/".$uri;
             $payload = json_encode(['url' => $url, 'uri' => $uri]);

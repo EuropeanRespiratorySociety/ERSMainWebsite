@@ -143,19 +143,21 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Artisaninweb\SoapWrapper\ServiceProvider::class,
 
         /*
          * Custom Service Provides...
          */
+
+        Artisaninweb\SoapWrapper\ServiceProvider::class,
         App\Providers\ErsAuthServiceProvider::class,
         Lavary\Menu\ServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
-        //Incraigulous\Contentful\ContentfulServiceProvider::class,
         AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class,
         Spatie\ResponseCache\ResponseCacheServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Idealley\CloudCms\CloudCmsServiceProvider::class,
+        Spatie\Geocoder\GeocoderServiceProvider::class,
+        Cohensive\Embed\EmbedServiceProvider::class,
 
     ],
 
@@ -215,6 +217,8 @@ return [
         'ResponseCache' => Spatie\ResponseCache\ResponseCacheFacade::class,
         'SoapWrapper' => Artisaninweb\SoapWrapper\Facades\SoapWrapper::class,
         'Image'     => Intervention\Image\Facades\Image::class,
+        'Geocoder' => Spatie\Geocoder\GeocoderFacade::class,
+        'Embed' => Cohensive\Embed\Facades\Embed::class
 
     ],
 

@@ -106,8 +106,8 @@ class Navigation
                                             ->link->attr(array('target' => '_blank'));                 
                 $menu->professionalDevelopment->add('HERMES exams','http://hermes.ersnet.org/exams.html')
                                             ->link->attr(array('target' => '_blank'));                 
-                    $menu->fellowships->add('Short-Term','professional-development/fellowships/short-term');
-                    $menu->fellowships->add('Long-Term','professional-development/fellowships/long-term');
+                    $menu->fellowships->add('Short-Term','professional-development/fellowships/short-term-research-training-fellowships');
+                    $menu->fellowships->add('Long-Term','professional-development/fellowships/long-term-research-fellowships');
                 //$menu->professionalDevelopment->add('Educational Activities','professional-development/educational-activities');
                 $menu->professionalDevelopment->add('ERS Courses','professional-development/courses');
                 $menu->professionalDevelopment->add('Grants and Sponsorships','professional-development/grants-and-sponsorships');

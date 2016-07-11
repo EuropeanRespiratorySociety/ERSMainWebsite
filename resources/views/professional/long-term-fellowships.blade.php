@@ -1,4 +1,13 @@
 @extends('template')
+@section('meta')
+        @include('partials.meta', array('meta' =>
+              [
+              'url' => isset($category->url) ? $category->url : null , 
+              'title' => $category->title
+              ],
+              ['pagination' => isset($pagination) ? $pagination : null]
+              )) 
+@stop()
 @section('content')
 <div class="ers-content event-items-content">
   <div class="row">
@@ -6,21 +15,25 @@
     <div class="col-md-9">
       <div class="row">
         <div class="col-md-4 midium-grey-bg left-photo-map">
-          <!--<p>
-          <img src="../images/community/become_member.jpg" class="img-rounded img-responsive">
-          </p>-->
-          <iframe width="100%" height="191" src="https://www.youtube.com/embed/TU8ZjGZVM9c?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          @if(isset($category->image))
+          <p><img src="{{ $category->image }}" class="img-rounded img-responsive"></p>
+          @endif
+          @if(isset($category->video))
+          <div class="videoWrapper">
+            {!!$category->video!!} 
+          </div>
+          @endif
         </div>
 
         <div class="col-md-8 lighter-grey-bg event-items-fs-title">
 
-          <div class="page-head"><h2 class="article-title">Long-Term Research Training Fellowships</h2></div>
+          <div class="page-head"><h2 class="article-title">{{$category->title}}</h2></div>
 
-
-          <div class="article text-left">
-           <p>Long-Term Research Fellowships (LTRF) enable investigators and clinicians in the early stages of their career to carry out basic, translational or clinical research projects. Through this experience, young scientists learn and apply advanced research procedures and techniques not available at their home institute. Since 2015, ERS has increased the number of fellowships on offer by welcoming applicants from scientifically developing countries, and through partnerships with other organisations. Applicants are selected based on their scientific merit and the skills and experience they can bring to a new centre. 
-           </p>
+          @if(isset($category->body))
+          <div class="article text-left">          
+                    {!! $category->body !!}
          </div>
+          @endif 
        </div>
 
      </div>
@@ -35,7 +48,11 @@
    <div class="col-md-3 white-bg event-items-right">
 
 
-    <p class="deadline">Call closed for 2016.</p>
+    @if(isset($category->flags))
+          <div class="alert {{'alert-'.$category->flags['color'] }}">
+          <div class="message"> {{ $category->flags['text'] }}</div>
+          </div>
+    @endif
 
 
     <div class="list-group text-left">

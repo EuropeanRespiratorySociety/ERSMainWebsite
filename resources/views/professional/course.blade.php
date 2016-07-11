@@ -1,20 +1,38 @@
 @extends('template')
+@section('meta')@section('meta')
+        @include('partials.meta', array('meta' =>
+              [
+              'url' => isset($course->url) ? $course->url : null , 
+              'title' => $course->title
+              ],
+              ['pagination' => isset($pagination) ? $pagination : null]
+              )) 
+@stop()
+@stop()
 @section('content')
 <div class="ers-content event-items-content">
   <div class="row">
     <div class="col-md-3 midium-grey-bg left-photo-map">
-    @if(isset($course->image))
-    <p><img src="{{ $course->image }}" class="img-rounded img-responsive"></p>
-    @endif
-    @if(isset($relatedItems))
-        @include('partials.related-items', array('relatedItems' => $relatedItems)) 
-    @endif
+      @if(isset($course->image))
+      <p><img src="{{ $course->image }}" class="img-rounded img-responsive"></p>
+      @endif
+      @if(isset($course->video))
+        <div class="videoWrapper">
+          {!!$course->video!!} 
+        </div>
+      @endif
+      @if(isset($course->location->lat)&&isset($course->location->long))
+          <div id="map"></div>
+      @endif
+      @if(isset($relatedItems))
+          @include('partials.related-items', array('relatedItems' => $relatedItems)) 
+      @endif
     </div>
     <div class="col-md-6 lighter-grey-bg">
       <div class="header">
         <div class="clearfix notification">
           @if(isset($course->flags))
-          <p class="pull-right {{$course->flags['color'] }}">{{ $course->flags['text'] }}</p>
+          <p class="pull-right alert {{'alert-'.$course->flags['color'] }}">{{ $course->flags['text'] }}</p>
           @endif
           @if($course->fullyBooked)
               <p class="pull-right text-danger">Fully Booked</p>
@@ -319,5 +337,30 @@
 @stop()  
 
 @section('scripts')
+  @if(isset($course->location->lat)&&isset($course->location->long))
+    <script>
+    function initMap() {
+      function initialize(){
+        var myLatLng ={ lat: {{$course->location->lat}}, lng: {{$course->location->long}} };
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: myLatLng,
+          disableDefaultUI: true,
+          fullscreenControl: true
+        });
+
+        var marker = new google.maps.Marker({
+        map: map,  
+        position: myLatLng
+        });
+      }
+      google.maps.event.addDomListener(window, "load", initialize);
+      }
+
+
+    </script> 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-tI78_Glb_dewK0yre49LLKgCyBZuj5c&callback=initMap" async defer></script>    
+  @endif
     
 @stop()

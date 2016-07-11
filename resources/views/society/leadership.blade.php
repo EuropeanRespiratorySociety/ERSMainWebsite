@@ -1,4 +1,12 @@
 @extends('template')
+@section('meta')
+        @include('partials.meta', array('meta' =>
+              [
+              'url' => 'https://www.ersnet.org/the-society/who-we-are/leadership' , 
+              'title' => 'Leadership'
+              ]
+              )) 
+@stop()
 @section('content')
 <div class="ers-content leadership-content">
 

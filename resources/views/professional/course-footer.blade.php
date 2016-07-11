@@ -20,7 +20,7 @@
 		<div class="col-md-6 center-block">
 		<p><strong>CME Accredited Activities</strong></p>
 	<ul>
-		<li><a href="http://ersnet.org/courses.html">Courses</a></li>
+		<li><a href="{{url('professional-development/courses')}}">Courses</a></li>
 		<li><a target="_blank" href="http://www.ers-education.org/cmeOnline/">CME Online</a></li>
 		<li><a target="_blank" href="http://www.ers-education.org/e-learning/cme-tests/cme-accredited-case-reports.aspx">Case Reports - CME Test</a></li>
 		<li><a target="_blank" href="http://www.ers-education.org/e-learning/cme-tests/cme-accredited-guidelines.aspx">Guidelines - CME Test</a></li>

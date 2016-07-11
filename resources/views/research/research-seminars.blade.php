@@ -1,4 +1,13 @@
 @extends('template')
+@section('meta')
+        @include('partials.meta', array('meta' =>
+              [
+              'url' => isset($category->url) ? $category->url : null , 
+              'title' => $category->title
+              ],
+              ['pagination' => isset($pagination) ? $pagination : null]
+              )) 
+@stop()
 @section('content')
 <div class="ers-content event-items-content">
   <div class="row">
@@ -6,20 +15,27 @@
     <div class="col-md-9">
       <div class="row">
         <div class="col-md-4 midium-grey-bg left-photo-map">
-          <p><img src="../images/research/research_4.jpg" class="img-rounded img-responsive"></p>
+          @if(isset($category->image))
+          <p><img src="{{ $category->image }}" class="img-rounded img-responsive"></p>
+          @endif
+          @if(isset($category->video))
+          <div class="videoWrapper">
+            {!!$category->video!!} 
+          </div>
+          @endif
         </div>
+
         <div class="col-md-8 lighter-grey-bg event-items-fs-title">
-          <div class="page-head"><h2 class="article-title">Research Seminars</h2></div>
-          <div class="article text-left">
-           <p>ERS Research Seminars promote in-depth discussion between experts on topics of importance. The events are designed to facilitate continued medical education by generating discussion on recently published papers and on-going research projects.</p> 
-          <p>The seminars gather a small number (20 to 100) of well-established or young investigators, to address scientific topics in depth and break new ground.</p>
-          <ul>
-            <li>Organise an <a href="">ERS seminar programme</a></li>
-            <li>Get your event <a href="">endorsed by ERS</a></li>
-            <li>Find out about our <a href="">past seminars</a></li>
-          </ul>
+
+          <div class="page-head"><h2 class="article-title">{{$category->title}}</h2></div>
+
+          @if(isset($category->body))
+          <div class="article text-left">          
+                    {!! $category->body !!}
          </div>
+          @endif 
        </div>
+
      </div>
      <div class="main-content">
        <div class="row fellowship-categories">
@@ -29,6 +45,11 @@
    </div>
   <!-- Beginning Right Side-bar -->
    <div class="col-md-3 white-bg event-items-right">
+       @if(isset($category->flags))
+          <div class="alert {{'alert-'.$category->flags['color'] }}">
+          <div class="message"> {{ $category->flags['text'] }}</div>
+          </div>
+    @endif
     <div class="list-group text-left">
       <a href="#" class="list-group-item clearfix">
         <span class="icon s7-alarm"></span>

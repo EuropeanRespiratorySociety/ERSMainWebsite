@@ -7,10 +7,10 @@
 			</div>
 			<div class="space"></div>
 		</div>
-       <div class="col-md-8 col-md-offset-3"> 
-		<div class="row text-left row-books">
+       <div class="col-md-8 col-sm-12 center-block"> 
+		<div class="row text-left center-block row-books">
 
-			<div class="col-md-3 isotope">
+			<div class="col-md-3 col-sm-2 isotope">
 				<div class="card card-default card-events">
                     <div class="card-image">
                         <img class="img-responsive" src="../images/publications/erj.jpg">
@@ -25,7 +25,7 @@
                     </div>
             	</div>
             </div>
-			<div class="col-md-3 isotope">
+			<div class="col-md-3 col-sm-2 isotope">
 				<div class="card card-default card-events">
                     <div class="card-image">
                         <img class="img-responsive" src="../images/publications/erj_op.jpg">
@@ -40,7 +40,7 @@
                     </div>
             	</div>
             </div>
-			<div class="col-md-3 isotope">
+			<div class="col-md-3 col-sm-2 isotope">
 				<div class="card card-default card-events">
                     <div class="card-image">
                         <img class="img-responsive" src="../images/publications/err.jpg">
@@ -55,7 +55,7 @@
                     </div>
             	</div>
             </div>
-			<div class="col-md-3 isotope">
+			<div class="col-md-3 col-sm-2 isotope">
 				<div class="card card-default card-events">
                     <div class="card-image">
                         <img class="img-responsive" src="../images/publications/monograph.jpg">
@@ -70,7 +70,7 @@
                     </div>
             	</div>
             </div>
-			<div class="col-md-3 isotope">
+			<div class="col-md-3 col-sm-2 isotope">
 				<div class="card card-default card-events">
                     <div class="card-image">
                         <img class="img-responsive" src="../images/publications/breathe.jpg">
@@ -84,10 +84,8 @@
                         <a href="http://breathe.ersjournals.com/" target="new_blank" class="btn btn-default pull-right">Read online</a>
                     </div>
             	</div>
-            </div>
-        </div>
-        <div class="row text-left row-books">    
-			<div class="col-md-3 isotope">
+            </div> 
+			<div class="col-md-3 col-sm-2 isotope">
 				<div class="card card-default card-events">
                     <div class="card-image">
                         <img class="img-responsive" src="../images/publications/european_lung_white_book.jpg">
@@ -102,7 +100,7 @@
                     </div>
             	</div>
             </div>
-			<div class="col-md-3 isotope">
+			<div class="col-md-3 col-sm-2 isotope">
 				<div class="card card-default card-events">
                     <div class="card-image">
                         <img class="img-responsive" src="../images/publications/hand_book.jpg">
@@ -117,7 +115,7 @@
                     </div>
             	</div>
             </div>
-			<div class="col-md-3 isotope">
+			<div class="col-md-3 col-sm-2 isotope">
 				<div class="card card-default card-events">
                     <div class="card-image">
                         <img class="img-responsive" src="../images/publications/red_book.jpg">
@@ -132,7 +130,7 @@
                     </div>
             	</div>
             </div>
-			<div class="col-md-3 isotope">
+			<div class="col-md-3 col-sm-2 isotope">
 				<div class="card card-default card-events">
                     <div class="card-image">
                         <img class="img-responsive" src="../images/publications/firs_world_report.jpg">
@@ -147,7 +145,7 @@
                     </div>
             	</div>
             </div>
-			<div class="col-md-3 isotope">
+			<div class="col-md-3 col-sm-2 isotope">
 				<div class="card card-default card-events">
                     <div class="card-image">
                         <img class="img-responsive" src="../images/publications/air_quality_and_health.jpg">
@@ -162,9 +160,8 @@
                     </div>
             	</div>
             </div>
-        </div>
-        <div class="row text-left row-books">            
-			<div class="col-md-3 isotope">
+        
+			<div class="col-md-3 col-sm-2 isotope">
 				<div class="card card-default card-events">
                     <div class="card-image">
                         <img class="img-responsive" src="../images/publications/roadmap.jpg">
@@ -179,7 +176,7 @@
                     </div>
             	</div>
             </div>
-			<div class="col-md-3 isotope">
+			<div class="col-md-3 col-sm-2 isotope">
 				<div class="card card-default card-events">
                     <div class="card-image">
                         <img class="img-responsive" src="../images/publications/copd.jpg">

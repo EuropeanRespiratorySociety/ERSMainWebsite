@@ -1,4 +1,12 @@
   @extends('template')
+@section('meta')
+        @include('partials.meta', array('meta' =>
+              [
+              'url' => 'https://www.ersnet.org/the-society/who-we-are/executive-office' , 
+              'title' => 'Executive Office'
+              ]
+              )) 
+@stop()
 	@section('content')
 
 	<div class="ers-content executive-content">
@@ -6,7 +14,7 @@
       <div class="section fp-auto-height">
       <div class="main-content">
         <div class="page-head">
-        <h2 class="">Executive</h2>
+        <h2 class="">Executive Office</h2>
         </div>
 
         <h4><strong>ERS Headquarters</strong></h4>

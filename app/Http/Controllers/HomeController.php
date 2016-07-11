@@ -27,7 +27,7 @@ class HomeController extends Controller
     public function index()
     {
         $CC = new CC();
-        $results = $CC->getContentByProperty("availableOnHomepage", "true");
+        $results = $CC->getContentByProperty("availableOnHomepage", "true", -1, false);
         $items = $CC->parseItems($results->rows);
         $items =  (object) $items;
 

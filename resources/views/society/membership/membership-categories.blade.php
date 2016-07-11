@@ -16,7 +16,7 @@
 		</div>
 
 		<div class="col-md-7 center-block lead">
-			<strong>Joint membership agreement</strong> – <a href="">list of National and Regional societies</a>
+			<strong>Joint membership agreement</strong> – <a href="{{url('the-society/membership/ers-partnerships-with-national-societies')}}">list of National and Regional societies</a>
 		</div>
 
 		<div class="col-md-8 center-block text-left">

@@ -67,6 +67,8 @@ Route::group(['middleware' => ['web']], function () {
         return view('society.membership');
     });
 
+    Route::get('the-society/membership/{slug}', "GeneralController@show");
+
     Route::get('the-society/assemblies', function(){
         return view('society.assemblies');
     });
@@ -84,10 +86,10 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::get('professional-development/courses', 'CourseController@index');
     Route::get('professional-development/courses/{slug}', 'CourseController@show');
-    Route::get('professional-development/fellowships/short-term', 'FellowshipController@indexShortTerm');
-    Route::get('professional-development/fellowships/short-term/{slug?}', 'FellowshipController@indexShortTerm');
-    Route::get('professional-development/fellowships/long-term', 'FellowshipController@indexLongTerm');
-    Route::get('professional-development/fellowships/long-term/{slug?}', 'FellowshipController@indexLongTerm');
+    Route::get('professional-development/fellowships/short-term-research-training-fellowships', 'FellowshipController@indexShortTerm');
+    Route::get('professional-development/fellowships/short-term-research-training-fellowships/{slug?}', 'FellowshipController@indexShortTerm');
+    Route::get('professional-development/fellowships/long-term-research-fellowships', 'FellowshipController@indexLongTerm');
+    Route::get('professional-development/fellowships/long-term-research-fellowships/{slug?}', 'FellowshipController@indexLongTerm');
     Route::get('professional-development/fellowships', 'FellowshipController@index'); 
     Route::get('professional-development/fellowships/{slug}', 'FellowshipController@show');
     Route::get('professional-development/grants-and-sponsorships', 'GeneralController@grantsAndSponsorships');

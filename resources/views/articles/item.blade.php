@@ -1,4 +1,12 @@
 @extends('template')
+@section('meta')
+        @include('partials.meta', array('meta' => [
+              'url' => isset($item->url) ? $item->url : null , 
+              'title' => $item->title
+              ]
+              , ['pagination' => isset($pagination) ? $pagination : null]
+              )) 
+@stop()
 @section('content')
 <div class="ers-content article-items">
   <div class="row">
@@ -44,6 +52,11 @@
 
       @if(isset($item->image))
       <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
+      @endif
+      @if(isset($item->video))
+        <div class="videoWrapper">
+          {!!$item->video!!} 
+        </div>
       @endif
       @if(isset($relatedItems))
         @include('partials.related-items', array('relatedItems' => $relatedItems)) 

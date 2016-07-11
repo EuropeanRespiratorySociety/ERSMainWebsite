@@ -1,19 +1,40 @@
 @extends('template')
+@section('meta')
+        @include('partials.meta', array('meta' =>
+              [
+              'url' => isset($category->url) ? $category->url : null , 
+              'title' => $category->title
+              ],
+              ['pagination' => isset($pagination) ? $pagination : null]
+              )) 
+@stop()
 @section('content')
 <div class="ers-content event-items-content">
   <div class="row">
     <div class="col-md-9">
       <div class="row">
         <div class="col-md-4 midium-grey-bg left-photo-map">
-          <p><img src="../images/community/become_member.jpg" class="img-rounded img-responsive"></p>
+          @if(isset($category->image))
+          <p><img src="{{ $category->image }}" class="img-rounded img-responsive"></p>
+          @endif
+          @if(isset($category->video))
+          <div class="videoWrapper">
+            {!!$category->video!!} 
+          </div>
+          @endif
         </div>
+
         <div class="col-md-8 lighter-grey-bg event-items-fs-title">
-          <div class="page-head"><h2 class="article-title">Short-Term Research Training Fellowships</h2></div>
-          <div class="article text-left">
-           <p>Research Training Fellowships are established to enable young scientists and clinicians in the early-stages of their research career in respiratory medicine to visit a Host Unit in a (European) country other than the candidate's own, with the aim of learning a research technique not available in the Home Unit. The research training should benefit the Home Unit when the applicant returns there, by leading to research developments and activities back onsite.
-           </p>
+
+          <div class="page-head"><h2 class="article-title">{{$category->title}}</h2></div>
+
+          @if(isset($category->body))
+          <div class="article text-left">          
+                    {!! $category->body !!}
          </div>
+          @endif 
        </div>
+
      </div>
          <div class="main-content">
      <div class="row row_event fellowship-categories"> 
@@ -26,9 +47,11 @@
    <!-- Beginning Right Side-bar -->
    <div class="col-md-3 white-bg event-items-right">
 
-
-    <p class="deadline">Call closed. Application platform open from 1 August, 2016.</p>
-
+    @if(isset($category->flags))
+          <div class="alert {{'alert-'.$category->flags['color'] }}">
+          <div class="message"> {{ $category->flags['text'] }}</div>
+          </div>
+    @endif
 
     <div class="list-group text-left">
       <a href="#" class="list-group-item clearfix">

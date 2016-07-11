@@ -2,11 +2,13 @@
 
 namespace App\Extensions;
 
+use Embed;
 use Carbon\Carbon;
 use Lavary\Menu\Menu;
 use Idealley\CloudCms\Facades\CloudCms as CC;
 use Intervention\Image\Facades\Image;
 use AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra as Markdown;
+use Spatie\Geocoder\GeocoderFacade as Geocoder;
 
 class CloudCmsHelper
 {
@@ -73,16 +75,76 @@ class CloudCmsHelper
         return $result;            
 	}
 
-    public function getContentByProperty($property, $contentType, $sort = -1){
+    /**
+    *   To use this method do not forget to set the skip value to false if you do not need pagination
+    *
+    */
+    public function getContentByProperty($property, $contentType, $sort = -1, $skip = null){
         $query = '{"'.$property.'": "'.$contentType.'"}';
-        $result = CC::nodes()
-                    ->query($query)
-                    ->addParams(['full' => 'true']) 
-                    ->addParams(['metadata' => 'true'])
-                    ->addParams(['sort' => '{"_system.created_on.ms": '.$sort.'}']) 
-                    ->get();
-        return $result;  
 
+        if($skip === null){
+            $results = CC::nodes()
+                        ->query($query)
+                        ->addParams(['metadata' => 'true'])
+                        ->get();
+            return $results; 
+        } 
+        if($skip === false){
+            $results = CC::nodes()
+                        ->query($query)  
+                        ->addParams(['full' => 'true']) 
+                        ->addParams(['metadata' => 'true'])
+                        ->addParams(['sort' => '{"_system.created_on.ms": '.$sort.'}']) 
+                        ->get();
+            return $results; 
+        } 
+        $results = CC::nodes()
+                        ->query($query)
+                        ->addParams(['full' => 'true']) 
+                        ->addParams(['metadata' => 'true'])
+                        ->addParams(['sort' => '{"_system.created_on.ms": '.$sort.'}']) 
+                        ->addParams(['skip' => $skip]) 
+                        ->get();
+        return $results; 
+
+    }
+
+    public function paginate($results, $page, $limit = 25){
+        $totalItems = $results->total_rows;
+
+        $maxNumberOfPages = 1;
+        if($limit){
+            $maxNumberOfPages = ceil($totalItems / $limit);
+
+            for ($i=0; $i < $maxNumberOfPages; $i++) { 
+                $params[$i + 1]['active'] = false;
+                if(!$page && $i == 0){
+                    $params[$i + 1]['page'] = null;                
+                    $params[$i + 1]['active'] = true;
+                } else {
+                    $params[$i + 1]['page'] = "?page=".($i + 1);
+                }
+
+                if($page == ($i + 1)){
+                    $params[$i + 1]['active'] = true;
+                }
+
+                $params[$i + 1]['pageNumber'] = $i + 1;
+            }
+        }
+
+        if($page > $maxNumberOfPages){
+            abort(404);
+        }
+
+        $skip = 0;
+        if($page > 1 && $limit !== 0){
+            $skip = ($page -1) * $limit;
+        }
+
+        $pagination = array('totalItems' => $totalItems, 'numberOfPages' => (int) $maxNumberOfPages, 'page' => $page, 'skip' => $skip, 'pages' => $params);
+
+        return (object) $pagination;
     }
 
     public function setCanonical($node, $payload){
@@ -93,13 +155,25 @@ class CloudCmsHelper
         //add test if success or not
     }
 
+    public function setCoordinates($node, $lat, $long, $accuracy){
+        if($accuracy !== 'NOT_FOUND'){
+        $payload = json_encode(['loc' => ['lat' => $lat, 'long' => $long]]);
+        } else {
+            $payload = json_encode(['loc' => ['lat' => $accuracy, 'long' => $accuracy]]);
+        }
+        $result = CC::nodes()
+            ->updateNode($node, $payload)
+            ->addParams(['inject' => 'true'])
+            ->get();
+    }
+
     public function sortHomepage($items){
         $articleCounter = 1;
         $calendarCounter = 1;
         $fundingCounter = 1;
         $elearningCounter = 1;
         $courseCounter = 1;
-
+        
         foreach ($items as $key => $item) {
 
             $item = (object) $item;
@@ -146,6 +220,31 @@ class CloudCmsHelper
             return $sorted;
     }
 
+    /**          
+     *
+     * @param  object $address
+     * @return array
+     */
+    public function getCoordinates($address){
+        $addressLine1 = "";
+        $addressLine2 = "";
+        $addressLine3 = "";
+        $addressLine4 = "";
+        $addressLine5 = "";
+        if(isset($address->streetAddress)){$addressLine1 = $address->streetAddress;}
+        if(isset($address->streetAddress2)){$addressLine2 = $address->streetAddress2;}
+        if(isset($address->postalCode)){$addressLine3 = $address->postalCode;}
+        if(isset($address->city)){$addressLine4 = $address->city;}
+        if(isset($address->country)){$addressLine5 = $address->country;}
+        $cordinates = Geocoder::getCoordinatesForQuery($addressLine1.', '.
+                                                        $addressLine2.', '.
+                                                        $addressLine3.' '.
+                                                        $addressLine4.', '.
+                                                        $addressLine5);
+        return $cordinates;
+
+    }
+
 	public function parseItems($items, $lead = false){
         //dd($items);
           /*  if(empty($items)){
@@ -153,7 +252,7 @@ class CloudCmsHelper
             }*/
                 $parsed = [];
 		        foreach ($items as $key => $item) {
-                    $parsed[$key]['title'] = $item->title;
+                    if(isset($item->title)){$parsed[$key]['title'] = $item->title;}
                     if(isset($item->salutation)){$parsed[$key]['salutation']=$item->salutation;}
                     if(isset($item->firstName)){$parsed[$key]['firstName']=$item->firstName;}
                     if(isset($item->lastName)){$parsed[$key]['lastName']=$item->lastName;}
@@ -162,7 +261,7 @@ class CloudCmsHelper
                     if(isset($item->subTitle)){
                     	$parsed[$key]['subtitle'] = $item->subTitle;
                     }	
-                    $parsed[$key]['slug'] = $item->slug;
+                    if(isset($item->slug)){$parsed[$key]['slug'] = $item->slug;}
                     if (isset($item->tags)){$parsed[$key]['tags'] = $item->tags;}
                     if(isset($item->flags)){$parsed[$key]['flags'] = $this->getFlags($item->flags);}
                     $parsed[$key]['fullyBooked'] = false;
@@ -177,8 +276,8 @@ class CloudCmsHelper
                     if(isset($item->category2)){
                         $parsed[$key]['category2'] = $item->category2;
                     }	
-                    $parsed[$key]['_qname'] = $item->_qname;
-                    $parsed[$key]['_type'] = $item->_type;
+                    if(isset($item->_qname)){$parsed[$key]['_qname'] = $item->_qname;}
+                    if(isset($item->_type)){$parsed[$key]['_type'] = $item->_type;}
                     if(isset($item->ebusDate)){$parsed[$key]['ebusDate'] = $item->ebusDate;}  
                     if(isset($item->eventDate)){$parsed[$key]['eventDates'] = $this->ersDate($item->eventDate, $item->eventEndDate);}  
                     if(isset($item->eventDate)){$parsed[$key]['calendar'] = $this->calendar($item->eventDate);}   
@@ -267,7 +366,16 @@ class CloudCmsHelper
                             $file = CC::nodes()->getFile($file_title, $path);
                             $parsed[$key]['disclosureFile'] = $file;
                         }
-                        if(isset($item->practicalInfoButton)){$parsed[$key]['practicalInfoButton'] = $item->practicalInfoButton;}                    
+                        if(isset($item->practicalInfoButton)){$parsed[$key]['practicalInfoButton'] = $item->practicalInfoButton;}
+                        if(isset($item->loc->lat)&&isset($item->loc->long)){
+                            $parsed[$key]['location'] = (object) $item->loc;
+                        } else {
+                            if(isset($item->venue)){
+                                $coordinates = $this->getCoordinates($item->venue);
+                                $this->setCoordinates($item->_qname, $coordinates['lat'], $coordinates['lng'], $coordinates['accuracy']);
+                            }
+                        }
+                        if(isset($item->video)){$parsed[$key]['video'] = $this->getVideo($item->video, 400);}                   
                 	}
                 }  
             //dd($parsed);
@@ -325,6 +433,16 @@ class CloudCmsHelper
     	}
 
     	return $files;
+    }
+
+    public function getVideo($url, $width){
+        $video = Embed::make($url)->parseUrl();
+        if($video){
+            $video->setAttribute(['width' => $width]);
+            return $video->getHtml();
+        }
+
+        return $video; //should return false
     }
 
     public function getFlags($flags){

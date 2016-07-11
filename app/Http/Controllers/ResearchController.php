@@ -24,7 +24,8 @@ class ResearchController extends Controller
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0]; 
 
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
+        // == false set in purpose as CC sets the field to "false" wich is a string...
+        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
             $payload = json_encode(['url' => $url, 'uri' => $uri]);
@@ -50,7 +51,8 @@ class ResearchController extends Controller
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0]; 
 
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
+        // == false set in purpose as CC sets the field to "false" wich is a string...
+        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
             $payload = json_encode(['url' => $url, 'uri' => $uri]);
@@ -70,18 +72,24 @@ class ResearchController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function researchSeminars()
-    { 
+    {   
         $CC = new CC();
-        $results = $CC->getCategory($this->researchSeminars);
-        $items = $CC->parseItems($results->rows);
-        $params['items'] =  (object) $items; 
+        
+        $category = $CC->getItem('research-seminars');
+        $category = $CC->parseItems($category->rows);
+        $params['category'] = (object) $category[0];
 
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
+        // == false set in purpose as CC sets the field to "false" wich is a string...
+        if(!isset($category[0]['url']) || !isset($category[0]['uri']) || $category[0]['url'] == "false" || $category[0]['uri'] == "false"){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
             $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+            $CC->setCanonical($category[0]['_qname'], $payload);
         }
+
+        $results = $CC->getCategory($this->researchSeminars);
+        $items = $CC->parseItems($results->rows);
+        $params['items'] =  (object) $items; 
 
         return view('research.research-seminars')->with($params);  
     }
@@ -111,7 +119,8 @@ class ResearchController extends Controller
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0]; 
 
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
+        // == false set in purpose as CC sets the field to "false" wich is a string...
+        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
             $payload = json_encode(['url' => $url, 'uri' => $uri]);
@@ -138,7 +147,8 @@ class ResearchController extends Controller
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0]; 
 
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
+        // == false set in purpose as CC sets the field to "false" wich is a string...
+        if(!isset($item[0]->url) || !isset($item[0]->uri) || $item[0]->url == "false" || $item[0]->uri == "false"){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
             $payload = json_encode(['url' => $url, 'uri' => $uri]);

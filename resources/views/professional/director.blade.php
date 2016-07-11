@@ -10,9 +10,4 @@
             <p>Professor Nicolino Ambrosino is currently Director of the Respiratory Unit at the Cardio-Thoracic Department, University Hospital of Pisa, as well as Director of the Pulmonary Rehabilitation and Weaning Center, and Scientific Director of Auxilium Vitae, Volterra.</p>
         </div>
     </div>
-
-
-
-
-
 </div>

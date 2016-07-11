@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use Iluminate\Http\Request;
 use App\Http\Requests;
 
+use Input;
 use App\Extensions\CloudCmsHelper as CC;
 
 class FellowshipController extends Controller
@@ -22,18 +23,32 @@ class FellowshipController extends Controller
      */
     public function index()
     {
+        //$page = Input::get('page', false);
+        //$limit = Input::get('limit', 25);
+        
         $CC = new CC();
-        $results = $CC->getContentByProperty($this->property, $this->propertyValue);
-        $items = $CC->parseItems($results->rows);
-        shuffle($items);
-        $params['items'] =  (object) $items;
+        
+        $category = $CC->getItem('fellowships');
+        $category = $CC->parseItems($category->rows);
+        $params['category'] = (object) $category[0];
 
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
+        // == false set in purpose as CC sets the field to "false" wich is a string...
+        if(!isset($item[0]->url) || !isset($item[0]->uri) || $item[0]->url == "false" || $item[0]->uri == "false"){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
             $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+            $CC->setCanonical($category[0]['_qname'], $payload);
         }
+
+        //$toPaginate = $CC->getContentByProperty($this->property, $this->propertyValue);
+        //$pagination = $CC->paginate($toPaginate, $page, $limit);
+        //$params['pagination'] = $pagination;
+
+        //$results = $CC->getContentByProperty($this->property, $this->propertyValue, -1, $pagination->skip);
+        $results = $CC->getContentByProperty($this->property, $this->propertyValue, -1, false);
+        $items = $CC->parseItems($results->rows);
+        shuffle($items);
+        $params['items'] =  (object) $items;
 
         return view('professional.fellowships')->with($params);
 
@@ -45,17 +60,30 @@ class FellowshipController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function indexShortTerm()
-    {
+    { 
+        //$page = Input::get('page', false);
+        //$limit = Input::get('limit', 25);
+        
         $CC = new CC();
-        $results = $CC->getCategory($this->shortTerm);
-        $items = $CC->parseItems($results->rows);
+        
+        $category = $CC->getItem('short-term-research-training-fellowships');
+        $category = $CC->parseItems($category->rows);
+        $params['category'] = (object) $category[0];
 
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
+        // == false set in purpose as CC sets the field to "false" wich is a string...
+        if(!isset($category[0]['url']) || !isset($category[0]['uri']) || $category[0]['url'] == "false" || $category[0]['uri'] == "false"){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
             $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+            $CC->setCanonical($category[0]['_qname'], $payload);
         }
+
+        //$toPaginate = $CC->getContentByProperty($this->property, $this->propertyValue);
+        //$pagination = $CC->paginate($toPaginate, $page, $limit);
+        //$params['pagination'] = $pagination;
+
+        $results = $CC->getCategory($this->shortTerm);
+        $items = $CC->parseItems($results->rows);
    
         $params['fellowships'] =  (object) $items; 
         return view('professional.short-term-fellowships')->with($params);    
@@ -69,17 +97,29 @@ class FellowshipController extends Controller
      */
     public function indexLongTerm()
     {
+        //$page = Input::get('page', false);
+        //$limit = Input::get('limit', 25);
+        
         $CC = new CC();
-        $results = $CC->getCategory($this->longTerm);
-        $items = $CC->parseItems($results->rows);
+        
+        $category = $CC->getItem('long-term-research-fellowships');
+        $category = $CC->parseItems($category->rows);
+        $params['category'] = (object) $category[0];
 
-
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
+        // == false set in purpose as CC sets the field to "false" wich is a string...
+        if(!isset($category[0]['url']) || !isset($category[0]['uri']) || $category[0]['url'] == "false" || $category[0]['uri'] == "false"){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
             $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+            $CC->setCanonical($category[0]['_qname'], $payload);
         }
+
+        //$toPaginate = $CC->getContentByProperty($this->property, $this->propertyValue);
+        //$pagination = $CC->paginate($toPaginate, $page, $limit);
+        //$params['pagination'] = $pagination;
+
+        $results = $CC->getCategory($this->longTerm);
+        $items = $CC->parseItems($results->rows);
    
         $params['fellowships'] =  (object) $items; 
         return view('professional.long-term-fellowships')->with($params);    
@@ -100,8 +140,8 @@ class FellowshipController extends Controller
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0];
 
-
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
+        // == false set in purpose as CC sets the field to "false" wich is a string...
+        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
             $payload = json_encode(['url' => $url, 'uri' => $uri]);
