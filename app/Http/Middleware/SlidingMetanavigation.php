@@ -31,13 +31,13 @@ class SlidingMetanavigation
                     ->prepend('<i class="icon-vision icon"></i><span>')->append('</span>')
                     ->link->attr(array('target' => '_blank')); 
             $menu->add('Healthy Lung For Life', 'http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/')
-                    /*->prepend('<i class="icon-vision icon"></i><span>')->append('</span>')*/
+                    ->prepend('<i class="icon-hlfl icon"></i><span>')->append('</span>')
                     ->link->attr(array('target' => '_blank')); 
             $menu->add('European Lung Foundation', 'http://www.europeanlung.org/en/')
                     ->prepend('<i class="icon-elf icon"></i><span>')->append('</span>')
                     ->link->attr(array('target' => '_blank')); 
             $menu->add('TB Consilium', 'https://www.tbconsilium.org/')
-                    ->prepend('<div class="tb_consilium_nav clearfix"><i class="icon-ers icon"></i><img src="../images/navigation/who.png" class=""></div><span>')->append('</span>')
+                    ->prepend('<div class="tb_consilium_nav clearfix"><i class="icon-ers icon pull-left"></i><i class="icon-who icon pull-right"></i></div><span>')->append('</span>')
                     ->link->attr(array('target' => '_blank')); 
               
 
