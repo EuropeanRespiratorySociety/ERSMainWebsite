@@ -37,7 +37,7 @@ class SlidingMetanavigation
                     ->prepend('<i class="icon-elf icon"></i><span>')->append('</span>')
                     ->link->attr(array('target' => '_blank')); 
             $menu->add('TB Consilium', 'https://www.tbconsilium.org/')
-                    ->prepend('<div class="tb_consilium_nav clearfix"><i class="icon-ers icon pull-left"></i><i class="icon-who icon pull-right"></i></div><span>')->append('</span>')
+                    ->prepend('<div class="tb_consilium_nav clearfix"><i class="icon-ers icon pull-left"></i><i class="icon-who icon pull-right who-icon"></i></div><span>')->append('</span>')
                     ->link->attr(array('target' => '_blank')); 
               
 
