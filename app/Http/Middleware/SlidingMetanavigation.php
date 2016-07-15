@@ -27,7 +27,7 @@ class SlidingMetanavigation
                     ->prepend('<i class="icon-e-learn icon"></i><span>')->append('</span>')
                     ->link->attr(array('target' => '_blank'));
                     
-            $menu->add('Vision', 'http://www.ersvision.org/')
+            $menu->add('ERS Vision', 'http://www.ersvision.org/')
                     ->prepend('<i class="icon-vision icon"></i><span>')->append('</span>')
                     ->link->attr(array('target' => '_blank')); 
             $menu->add('Healthy Lung For Life', 'http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/')
