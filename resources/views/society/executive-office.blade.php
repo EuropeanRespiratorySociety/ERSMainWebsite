@@ -72,10 +72,10 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/who-we-are/executive-office#corporate-relations"><img class="img-responsive" src="../images/stories/executive-office/corporate.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#corporate"><img class="img-responsive" src="../images/stories/executive-office/corporate.jpg"></a>
                     </div>
                     <div class="card-title">
-                        <a href="the-society/who-we-are/executive-office#corporate-relations">Corporate Relations, Marketing</a>
+                        <a href="the-society/who-we-are/executive-office#corporate">Corporate Relations, Marketing</a>
                     </div>
                 </div>
             </div>

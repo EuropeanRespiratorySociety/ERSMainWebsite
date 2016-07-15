@@ -30,21 +30,21 @@
 	            </p>
         	</div>
         	<div class="col-md-4 xs-mb-15">
-	            <img src="../images/120x120.jpg" class="img-circle">
+                <img src="images/stories/people/elisabeth_bell.jpg" class="img-circle">
 	            <p class="photo_caption"><strong>{!! Html::mailto('e.h.bel@amc.uva.nl', 'Elisabeth Bel') !!}</strong>
 	            Past President <br>
 	            <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=450&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a>
             	</p>
         	</div>
 			<div class="col-md-4 xs-mb-15">
-	            <img src="../images/120x120.jpg" class="img-circle">
+                <img src="images/stories/people/guy_joos.jpg" class="img-circle">
 	            <p class="photo_caption"><strong>{!! Html::mailto('guy.joos@ugent.be', 'Guy Joos') !!}</strong>
 	            President Elect<br>
 	            <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=451&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a>
 	            </p>
         	</div>
         	<div class="col-md-4 xs-mb-15">
-	            <img src="../images/120x120.jpg" class="img-circle">
+	            <img src="images/stories/people/mina_gaga.jpg" class="img-circle">
 	            <p class="photo_caption"><strong>{!! Html::mailto('minagaga@yahoo.com', 'Mina Gaga') !!}</strong>
 	            Vice President <br>
 	            </p>
@@ -71,14 +71,14 @@
 	            </p>
         	</div>
         	<div class="col-md-4 xs-mb-15">
-	            <img src="../images/120x120.jpg" class="img-circle">
+	            <img src="images/stories/people/stephen_holgate.jpg" class="img-circle">
 	            <p class="photo_caption"><strong>{!! Html::mailto('S.Holgate@soton.ac.uk', 'Stephen Holgate') !!}</strong>
 	            Science Council Chair <br>
 	            <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=454&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a>
 	            </p>
         	</div>
         	<div class="col-md-4 xs-mb-15">
-	            <img src="../images/120x120.jpg" class="img-circle">
+	            <img src="images/stories/people/christina_gratziou.jpg" class="img-circle">
 	            <p class="photo_caption"><strong>{!! Html::mailto('chgratziou@yahoo.com', 'Christina Gratziou') !!}</strong>
 	            Advocacy Council Chair <br>
 	            <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=597&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a>
@@ -92,24 +92,24 @@
 	            </p>
         	</div>
         	<div class="col-md-4 xs-mb-15">
-	            <img src="../images/120x120.jpg" class="img-circle">
+	            <img src="images/stories/people/john_gibson.jpg" class="img-circle">
 	            <p class="photo_caption"><strong>{!! Html::mailto('John.Gibson@newcastle.ac.uk', 'John Gibson') !!}</strong>
 	            Publications Chair <br>
 	            <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=596&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a>
         	</div>
         	<div class="col-md-4 xs-mb-15">
-	            <img src="../images/120x120.jpg" class="img-circle">
+	            <img src="images/stories/people/guy_brusselle.jpg" class="img-circle">
 	            <p class="photo_caption"><strong>{!! Html::mailto('guy.brusselle@ugent.be', 'Guy Brusselle') !!}</strong>
 	            Science Council Chair-Elect <br>
 	            <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=1057&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a>
         	</div>
         	<div class="col-md-4 xs-mb-15">
-	            <img src="../images/120x120.jpg" class="img-circle">
+	            <img src="images/stories/people/otto_chris_burghuber.jpg" class="img-circle">
 	            <p class="photo_caption"><strong>Otto Chris Burghuber</strong>
 	            Treasurer-Elect <br>
         	</div>
         	<div class="col-md-4 xs-mb-15">
-	            <img src="images/stories/people//Carlos_Robalo.jpg" class="img-circle">
+	            <img src="images/stories/people/Carlos_Robalo.jpg" class="img-circle">
 	            <p class="photo_caption"><strong>Carlos Robalo Cordeiro</strong>
 	            Secretary General-Elect <br>
 	            <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=1059&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a>

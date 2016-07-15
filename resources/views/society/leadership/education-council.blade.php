@@ -16,55 +16,43 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/120x120.jpg" class="img-circle">
+		            <img src="../images/course/Nicolino_Ambrosino.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('nico.ambrosino@gmail.com ', 'Nicolino Ambrosino') !!}</strong>
 		            External Activities Director <br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/120x120.jpg" class="img-circle">
+		            <img src="../images/stories/people/frans_de_jongh.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('f.h.dejongh@amc.uva.nl', 'Frans de Jongh') !!}</strong>
 		            Learning Resources Director <br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/120x120.jpg" class="img-circle">
+		            <img src="../images/stories/people/ernst_eber.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('ernst.eber@medunigraz.at', 'Ernst Eber') !!}</strong>
 		            HERMES Director<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/120x120.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('text', 'text') !!}</strong>
-		            text<br>
-		            </p>
-	        	</div>
-	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/120x120.jpg" class="img-circle">
+		            <img src="../images/stories/people/ildiko_horvath.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('kiss.horvath1@t-online.hu', 'Ildiko Horvath') !!}</strong>
 		            Assessments Director-Elect<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/120x120.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('text', 'text') !!}</strong>
-		            text<br>
-		            </p>
-	        	</div>
-	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/120x120.jpg" class="img-circle">
+		            <img src="../images/stories/people/erik-driessen.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('e.driessen@maastrichtuniversity.nl', 'Erik Driessen') !!}</strong>
 		            Medical Education Advisor <br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/120x120.jpg" class="img-circle">
+		            <img src="../images/stories/people/Renata_Riha.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('rlriha@hotmail.com', 'Renata Riha') !!}</strong>
 		            Breathe Chief Editor <br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/120x120.jpg" class="img-circle">
+		            <img src="../images/stories/people/robert-bals.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('robert.bals@uks.eu', 'ROBERT BALS') !!}</strong>
 		            ERS Monograph Chief Editor <br>
 		            </p>
