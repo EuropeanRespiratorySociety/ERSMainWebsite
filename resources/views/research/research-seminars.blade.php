@@ -12,7 +12,7 @@
 <div class="ers-content event-items-content">
   <div class="row">
 
-    <div class="col-md-9">
+    <div class="col-md-9 light-grey-bg">
       <div class="row">
         <div class="col-md-4 midium-grey-bg left-photo-map">
           @if(isset($category->image))
@@ -25,7 +25,7 @@
           @endif
         </div>
 
-        <div class="col-md-8 lighter-grey-bg event-items-fs-title">
+        <div class="col-md-8 event-items-fs-title">
 
           <div class="page-head"><h2 class="article-title">{{$category->title}}</h2></div>
 
