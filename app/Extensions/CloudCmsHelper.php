@@ -3,9 +3,9 @@
 namespace App\Extensions;
 
 use Embed;
+use CC;
 use Carbon\Carbon;
 use Lavary\Menu\Menu;
-use Idealley\CloudCms\Facades\CloudCms as CC;
 use Intervention\Image\Facades\Image;
 use AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra as Markdown;
 use Spatie\Geocoder\GeocoderFacade as Geocoder;
