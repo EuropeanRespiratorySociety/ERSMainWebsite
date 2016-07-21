@@ -28,7 +28,7 @@
           @include('partials.related-items', array('relatedItems' => $relatedItems)) 
       @endif
     </div>
-    <div class="col-md-6 lighter-grey-bg">
+    <div class="col-md-6 lighter-grey-bg ers-course-info">
       <div class="header">
         <div class="clearfix notification">
           @if(isset($course->flags))
@@ -61,10 +61,10 @@
       </div>
       <h2 class="article-title">{{$course->title}}</h2>
       @if(isset($course->organisers))
-      <h5><b>Organisers :</b> {{$course->organisers}}</h5>
+      <h5 class="ers-course-organisers"><b>Organisers :</b> {{$course->organisers}}</h5>
       @endif
       @if(isset($course->faculty))
-      <h5><b>Faculty :</b> {{$course->faculty}}</h5>
+      <h5 class="ers-course-organisers"><b>Faculty :</b> {{$course->faculty}}</h5>
       @endif
       @if(isset($course->disclosureFile))
       <h5><a href="{{$course->disclosureFile->fileUrl}}" >Faculty disclosure</a></b></h5>
@@ -98,7 +98,7 @@
                 <div class="nano-content">   
                 @if(isset($course->practicalInfoFile))  
                   <a href="{{$course->practicalInfoFile->fileUrl}}" target="_blank" type="button" class="btn btn-light-primary text-left">
-                    <span class="icon s7-map" style="font-size: 24px;"></span>
+                    <span class="icon s7-info" style="font-size: 24px;"></span>
                     @if(isset($course->practicalInfoButton)){{$course->practicalInfoButton}}@else Practical Info @endif
                   </a>
                 @endif
