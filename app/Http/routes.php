@@ -11,11 +11,27 @@
 |
 */
 
+//this route will be use as a web hook
+//to purge we need the full url (http://...)
+Route::get('cache', function(){
+    //param: url=https://www.ersnet.org/the/url/to/clean
+    $url = Input::get('url', false);
+    //param: all=true
+    $all = Input::get('all', false);
+    
+    if($url){
+       $cleaned = App::make('http_cache.store')->purge($url);
+    }
+    if($all){
+        $cleaned = \File::cleanDirectory(app('http_cache.cache_dir'));
+    }
 
-/*Route::get('/cache-flush', function () {
-	ResponseCache::flush();
-	return "ok";
-});*/
+    if(!$cleaned){
+        return "The cache has not been cleaned";
+       }
+       return "The cache has been cleaned";
+
+});
 
 
 

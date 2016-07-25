@@ -63,11 +63,19 @@
     </div>
     
     <script src="https://bootstrap.ersnet.org/js/all.js" type="text/javascript"></script>
+    <script src="/js/sw-registration.js" type="text/javascript"></script>
 
     <!--script src="http://erstemplate.app/js/all.js" type="text/javascript"></script-->
 
 
     @yield('scripts')
+    <script>
+   /*   if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+                 .register('/sw.js')
+                 .then(function() { console.log("Service Worker Registered"); });
+      }*/
+    </script>
 
   </body>
 </html>

@@ -1,4 +1,78 @@
-email	name	firstname	sendto
-sam@sam.com	pouyt	sam		 test1
-lauren@lauren.com	Anderson	lauren	test1
-dawn@ould.com	ould	dawn 	test1	
+What is the language used?
+
+<div class="page-head">
+    <h2 class="">@if(isset($item->title)){{$item->title}}@endif</h2>
+</div>
+
+–––––––––––––––––––––––––––––
+–––––––––––––––––––––––––––––
+What is the language used?
+What is "isotope()"?
+Is there any issue in the code or potential problem?
+
+
+    $('.row_event').isotope({
+        layoutMode: 'packery',
+        packery: {
+            columnWidth: '.isotope',
+        },            
+        percentPosition: true
+        
+    });
+
+–––––––––––––––––––––––––––––
+–––––––––––––––––––––––––––––
+What is the language used?
+Where is it used?
+What "void" means?
+
+    /**
+     * This method displays the given quantity value on the screen.
+     */
+    private void display(int number) {
+        TextView quantityTextView = (TextView) findViewById(
+                R.id.quantity_text_view);
+        quantityTextView.setText("" + number);
+    } 
+
+
+–––––––––––––––––––––––––––––
+––––––––––––––––––––––––––––– 
+What is the language used?
+What is it?
+What means $end = null ?
+What means !== ?
+
+	public function ersDate($start, $end = null)
+    {
+        $startDate = new \DateTime($start);
+        $start = Carbon::instance($startDate);
+
+        if($end !== null){
+        	$endDate = new \DateTime($end);   
+        	$end = Carbon::instance($endDate);
+        	return $start->day.'-'.$end->day.' '.$end->format('F').', '.$end->year; 
+        }
+
+        return $start->day.' '.$start->format('F').', '.$start->year;     
+    }  
+
+
+
+–––––––––––––––––––––––––––––
+––––––––––––––––––––––––––––– 
+What is the language used?
+What is it?
+    
+interface TokenStorageInterface
+{
+    /**
+     * @return mixed
+     */
+    public function read();
+
+    /**
+     * @param  array $content
+     * @return mixed
+     */
+    public function write(array $content);    

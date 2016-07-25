@@ -49,7 +49,7 @@ class NewsController extends Controller
         $items = $CC->parseItems($results->rows);
         $params['items'] =  (object) $items;
 
-        return view('articles.news')->with($params);
+        return response()->view('articles.news', $params)->setTtl(60 * 60 * 24 * 7); //caching a week
 
     }
 

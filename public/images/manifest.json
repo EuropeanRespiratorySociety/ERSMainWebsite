@@ -1,5 +1,10 @@
 {
- "name": "App",
+ "name": "European Respiratory Society",
+ "description": "Official website of the European Respiratory Society",
+ "short_name": "ERS",
+ "lang": "en",
+ "dir": "ltr",
+ "display": "fullscreen",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",

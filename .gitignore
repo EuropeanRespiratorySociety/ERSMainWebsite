@@ -1,4 +1,5 @@
 /vendor
+/storage/token
 /Http/Contollers/Blog.php
 /Http/Contollers/TestController.php
 /Http/Extensions/ContentfullHelper.php

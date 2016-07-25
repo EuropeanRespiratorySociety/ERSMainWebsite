@@ -153,11 +153,11 @@ return [
         Lavary\Menu\ServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         AlfredoRamos\ParsedownExtra\ParsedownExtraServiceProvider::class,
-        Spatie\ResponseCache\ResponseCacheServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Idealley\CloudCms\CloudCmsServiceProvider::class,
         Spatie\Geocoder\GeocoderServiceProvider::class,
         Cohensive\Embed\EmbedServiceProvider::class,
+        Barryvdh\HttpCache\ServiceProvider::class,
 
     ],
 
@@ -214,7 +214,6 @@ return [
         'Form'      => Collective\Html\FormFacade::class, 
         'Html'      => Collective\Html\HtmlFacade::class,
         'Markdown'  => AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra::class,
-        'ResponseCache' => Spatie\ResponseCache\ResponseCacheFacade::class,
         'SoapWrapper' => Artisaninweb\SoapWrapper\Facades\SoapWrapper::class,
         'Image'     => Intervention\Image\Facades\Image::class,
         'Geocoder' => Spatie\Geocoder\GeocoderFacade::class,
