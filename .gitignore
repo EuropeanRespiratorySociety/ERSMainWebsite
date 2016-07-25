@@ -1,5 +1,6 @@
 /vendor
 /storage/token
+/storage/httpcache
 /Http/Contollers/Blog.php
 /Http/Contollers/TestController.php
 /Http/Extensions/ContentfullHelper.php
