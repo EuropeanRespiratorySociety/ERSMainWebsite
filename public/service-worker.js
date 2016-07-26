@@ -310,9 +310,9 @@ self.addEventListener('fetch', function(event) {
 
 // Runtime cache configuration, using the sw-toolbox library.
 
-toolbox.router.get(/^https:\/\/new\.ersnet\.org/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"european-respiratory-offline-pages"}});
-toolbox.router.get(/^https:\/\/new\.ersnet\.org\//, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"european-respiratory-offline-pages"}});
-toolbox.router.get(/^https:\/\/new\.ersnet\.org\/#home/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"european-respiratory-offline-pages"}});
+toolbox.router.get(/^https:\/\/new\.ersnet\.org/, toolbox.networkFirst, {"cache":{"name":"european-respiratory-offline-pages"}});
+toolbox.router.get(/^https:\/\/new\.ersnet\.org\//, toolbox.networkFirst, {"cache":{"name":"european-respiratory-offline-pages"}});
+toolbox.router.get(/^https:\/\/new\.ersnet\.org\/#home/, toolbox.networkFirst, {"cache":{"name":"european-respiratory-offline-pages"}});
 toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/news/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"european-respiratory-offline-pages"}});
 toolbox.router.get(/^https:\/\/new\.ersnet\.org\/#news/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"european-respiratory-offline-pages"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/js\/all\.js/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"european-respiratory-assets"}});

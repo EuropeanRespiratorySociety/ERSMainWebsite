@@ -44,30 +44,27 @@ gulp.task('generate-service-worker', function(callback) {
     runtimeCaching: [
 	    {
 	  		urlPattern: /^https:\/\/new\.ersnet\.org/,
-	  		handler: 'cacheFirst',
+	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
-			      maxEntries: 10,
 			      name: 'european-respiratory-offline-pages'
 			    }
 			  }
 		},
 	    {
 	  		urlPattern: /^https:\/\/new\.ersnet\.org\//,
-	  		handler: 'cacheFirst',
+	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
-			      maxEntries: 10,
 			      name: 'european-respiratory-offline-pages'
 			    }
 			  }
 		},
 	    {
 	  		urlPattern: /^https:\/\/new\.ersnet\.org\/#home/,
-	  		handler: 'cacheFirst',
+	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
-			      maxEntries: 10,
 			      name: 'european-respiratory-offline-pages'
 			    }
 			  }
