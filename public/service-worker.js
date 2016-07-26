@@ -312,7 +312,18 @@ self.addEventListener('fetch', function(event) {
 
 toolbox.router.get(/^https:\/\/new\.ersnet\.org/, toolbox.networkFirst, {"cache":{"name":"european-respiratory-offline-pages"}});
 toolbox.router.get(/^https:\/\/new\.ersnet\.org\//, toolbox.networkFirst, {"cache":{"name":"european-respiratory-offline-pages"}});
-toolbox.router.get(/^https:\/\/new\.ersnet\.org\/#home/, toolbox.networkFirst, {"cache":{"name":"european-respiratory-offline-pages"}});
+toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/who-we-are/, toolbox.cacheFirst, {"cache":{"name":"european-respiratory-offline-pages"}});
+toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/who-we-are/, toolbox.cacheFirst, {"cache":{"name":"european-respiratory-offline-pages"}});
+toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/leadership/, toolbox.cacheFirst, {"cache":{"name":"european-respiratory-offline-pages"}});
+toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/executive-office/, toolbox.cacheFirst, {"cache":{"name":"european-respiratory-offline-pages"}});
+toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/statuetes-policies-and-annual-report/, toolbox.cacheFirst, {"cache":{"name":"european-respiratory-offline-pages"}});
+toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/awards/, toolbox.cacheFirst, {"cache":{"name":"european-respiratory-offline-pages"}});
+toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/fellow-of-ers/, toolbox.cacheFirst, {"cache":{"name":"european-respiratory-offline-pages"}});
+toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/membership/, toolbox.cacheFirst, {"cache":{"name":"european-respiratory-offline-pages"}});
+toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/assemblies/, toolbox.cacheFirst, {"cache":{"name":"european-respiratory-offline-pages"}});
+toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/news\/respiratory-world-wide/, toolbox.cacheFirst, {"cache":{"name":"european-respiratory-offline-pages"}});
+toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/news\/respiratory-matters/, toolbox.cacheFirst, {"cache":{"name":"european-respiratory-offline-pages"}});
+toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/news\/press-office/, toolbox.cacheFirst, {"cache":{"name":"european-respiratory-offline-pages"}});
 toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/news/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"european-respiratory-offline-pages"}});
 toolbox.router.get(/^https:\/\/new\.ersnet\.org\/#news/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"european-respiratory-offline-pages"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/js\/all\.js/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"european-respiratory-assets"}});

@@ -26,20 +26,8 @@ gulp.task('generate-service-worker', function(callback) {
 
   swPrecache.write(path.join(rootDir, 'service-worker.js'), {
     staticFileGlobs: [
-    	rootDir + '/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}',
-    	'/',
-    	'/#home',
-    	'/#latest-news',
-    	'/#community',
-    	'/#scientific-and-educational-events',
-    	'/#publication',
-    	'/#professional-development',
-    	'/#research',
-    	'/#advocacy',
-    	'/#elf',
-    	'/the-society/who-we-are',
-    	'/the-society/news'
-    ],
+    	rootDir + '/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'
+   	],
     stripPrefix: rootDir,
     runtimeCaching: [
 	    {
@@ -61,8 +49,107 @@ gulp.task('generate-service-worker', function(callback) {
 			  }
 		},
 	    {
-	  		urlPattern: /^https:\/\/new\.ersnet\.org\/#home/,
-	  		handler: 'networkFirst',
+	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/who-we-are/,
+	  		handler: 'cacheFirst',
+	  		options: {
+			    cache: {
+			      name: 'european-respiratory-offline-pages'
+			    }
+			  }
+		},
+	    {
+	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/who-we-are/,
+	  		handler: 'cacheFirst',
+	  		options: {
+			    cache: {
+			      name: 'european-respiratory-offline-pages'
+			    }
+			  }
+		},
+	    {
+	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/leadership/,
+	  		handler: 'cacheFirst',
+	  		options: {
+			    cache: {
+			      name: 'european-respiratory-offline-pages'
+			    }
+			  }
+		},
+	    {
+	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/executive-office/,
+	  		handler: 'cacheFirst',
+	  		options: {
+			    cache: {
+			      name: 'european-respiratory-offline-pages'
+			    }
+			  }
+		},
+	    {
+	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/statuetes-policies-and-annual-report/,
+	  		handler: 'cacheFirst',
+	  		options: {
+			    cache: {
+			      name: 'european-respiratory-offline-pages'
+			    }
+			  }
+		},
+	    {
+	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/awards/,
+	  		handler: 'cacheFirst',
+	  		options: {
+			    cache: {
+			      name: 'european-respiratory-offline-pages'
+			    }
+			  }
+		},
+	    {
+	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/fellow-of-ers/,
+	  		handler: 'cacheFirst',
+	  		options: {
+			    cache: {
+			      name: 'european-respiratory-offline-pages'
+			    }
+			  }
+		},
+	    {
+	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/membership/,
+	  		handler: 'cacheFirst',
+	  		options: {
+			    cache: {
+			      name: 'european-respiratory-offline-pages'
+			    }
+			  }
+		},
+	    {
+	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/assemblies/,
+	  		handler: 'cacheFirst',
+	  		options: {
+			    cache: {
+			      name: 'european-respiratory-offline-pages'
+			    }
+			  }
+		},
+	    {
+	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/news\/respiratory-world-wide/,
+	  		handler: 'cacheFirst',
+	  		options: {
+			    cache: {
+			      name: 'european-respiratory-offline-pages'
+			    }
+			  }
+		},
+	    {
+	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/news\/respiratory-matters/,
+	  		handler: 'cacheFirst',
+	  		options: {
+			    cache: {
+			      name: 'european-respiratory-offline-pages'
+			    }
+			  }
+		},
+	    {
+	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/news\/press-office/,
+	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
 			      name: 'european-respiratory-offline-pages'

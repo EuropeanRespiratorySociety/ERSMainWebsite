@@ -49,7 +49,7 @@
             @include('nav.main-nav')
         <!-- End Main Navigation -->  
 
-        <!-- Start Left Sidebar -->r
+        <!-- Start Left Sidebar -->
             @include('sidebar.left-variant')
         <!-- End Left Sidebar -->
 
