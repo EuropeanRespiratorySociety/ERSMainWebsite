@@ -61,10 +61,7 @@
         <!-- End right Sidebar -->
       
     </div>
-    
     <script src="https://bootstrap.ersnet.org/js/all.js" type="text/javascript"></script>
-    <script src="/js/sw-registration.js" type="text/javascript"></script>
-
     <!--script src="http://erstemplate.app/js/all.js" type="text/javascript"></script-->
 
 
@@ -76,6 +73,6 @@
                  .then(function() { console.log("Service Worker Registered"); });
       }*/
     </script>
-
+    <script src="/js/sw-registration.js" type="text/javascript"></script>
   </body>
 </html>

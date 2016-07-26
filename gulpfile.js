@@ -28,6 +28,16 @@ gulp.task('generate-service-worker', function(callback) {
     staticFileGlobs: [
     	rootDir + '/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}',
     	'/',
+    	'/#home',
+    	'/#latest-news',
+    	'/#community',
+    	'/#scientific-and-educational-events',
+    	'/#publication',
+    	'/#professional-development',
+    	'/#research',
+    	'/#advocacy',
+    	'/#elf',
+    	'/the-society/who-we-are',
     	'/the-society/news'
     ],
     stripPrefix: rootDir,
@@ -44,6 +54,16 @@ gulp.task('generate-service-worker', function(callback) {
 		},
 	    {
 	  		urlPattern: /^https:\/\/bootstrap\.ersnet\.org\/js\/all\.js/,
+	  		handler: 'cacheFirst',
+	  		options: {
+			    cache: {
+			      maxEntries: 10,
+			      name: 'european-respiratory-assets'
+			    }
+			  }
+		},
+	    {
+	  		urlPattern: /^https:\/\/bootstrap\.ersnet\.org\/js\/jquery\.min\.js/,
 	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
