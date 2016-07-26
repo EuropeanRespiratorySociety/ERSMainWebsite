@@ -53,6 +53,46 @@ gulp.task('generate-service-worker', function(callback) {
 			  }
 		},
 	    {
+	  		urlPattern: /^https:\/\/new\.ersnet\.org\//,
+	  		handler: 'cacheFirst',
+	  		options: {
+			    cache: {
+			      maxEntries: 10,
+			      name: 'european-respiratory-offline-pages'
+			    }
+			  }
+		},
+	    {
+	  		urlPattern: /^https:\/\/new\.ersnet\.org\/#home/,
+	  		handler: 'cacheFirst',
+	  		options: {
+			    cache: {
+			      maxEntries: 10,
+			      name: 'european-respiratory-offline-pages'
+			    }
+			  }
+		},
+	    {
+	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/news/,
+	  		handler: 'cacheFirst',
+	  		options: {
+			    cache: {
+			      maxEntries: 10,
+			      name: 'european-respiratory-offline-pages'
+			    }
+			  }
+		},
+	    {
+	  		urlPattern: /^https:\/\/new\.ersnet\.org\/#news/,
+	  		handler: 'cacheFirst',
+	  		options: {
+			    cache: {
+			      maxEntries: 10,
+			      name: 'european-respiratory-offline-pages'
+			    }
+			  }
+		},
+	    {
 	  		urlPattern: /^https:\/\/bootstrap\.ersnet\.org\/js\/all\.js/,
 	  		handler: 'cacheFirst',
 	  		options: {
