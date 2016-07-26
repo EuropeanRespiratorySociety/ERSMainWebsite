@@ -4,7 +4,9 @@
  "short_name": "ERS",
  "lang": "en",
  "dir": "ltr",
- "display": "fullscreen",
+ "display": "standalone",
+ "start_url": "/",
+ "theme_color": "#ffffff",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
