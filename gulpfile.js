@@ -26,16 +26,15 @@ gulp.task('generate-service-worker', function(callback) {
 
   swPrecache.write(path.join(rootDir, 'service-worker.js'), {
     staticFileGlobs: [
-    	rootDir + '/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'
+    	//rootDir + '/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'
    	],
-    stripPrefix: rootDir,
     runtimeCaching: [
 	    {
 	  		urlPattern: /^https:\/\/new\.ersnet\.org/,
 	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages'
+			      name: 'ers-offline-pages'
 			    }
 			  }
 		},
@@ -44,7 +43,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages'
+			      name: 'ers-offline-pages'
 			    }
 			  }
 		},
@@ -53,7 +52,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages-who-we-are'
+			      name: 'ers-offline-pages-who-we-are'
 			    }
 			  }
 		},
@@ -62,7 +61,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages-leadership'
+			      name: 'ers-offline-pages-leadership'
 			    }
 			  }
 		},
@@ -71,7 +70,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages-executive-office'
+			      name: 'ers-offline-pages-executive-office'
 			    }
 			  }
 		},
@@ -80,7 +79,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages-satutes-policies'
+			      name: 'ers-offline-pages-satutes-policies'
 			    }
 			  }
 		},
@@ -89,7 +88,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages-awards'
+			      name: 'ers-offline-pages-awards'
 			    }
 			  }
 		},
@@ -98,7 +97,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages-fellows'
+			      name: 'ers-offline-pages-fellows'
 			    }
 			  }
 		},
@@ -107,7 +106,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages-membersip'
+			      name: 'ers-offline-pages-membersip'
 			    }
 			  }
 		},
@@ -116,7 +115,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages-assemblies'
+			      name: 'ers-offline-pages-assemblies'
 			    }
 			  }
 		},
@@ -125,7 +124,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages-rww'
+			      name: 'ers-offline-pages-rww'
 			    }
 			  }
 		},
@@ -134,7 +133,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages-rm'
+			      name: 'ers-offline-pages-rm'
 			    }
 			  }
 		},
@@ -143,7 +142,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages-press'
+			      name: 'ers-offline-pages-press'
 			    }
 			  }
 		},
@@ -152,7 +151,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages-contact'
+			      name: 'ers-offline-pages-contact'
 			    }
 			  }
 		},
@@ -162,7 +161,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		options: {
 			    cache: {
 			      maxEntries: 10,
-			      name: 'european-respiratory-offline-pages-news'
+			      name: 'ers-offline-pages-news'
 			    }
 			  }
 		},
@@ -172,7 +171,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		options: {
 			    cache: {
 			      maxEntries: 10,
-			      name: 'european-respiratory-assets'
+			      name: 'ers-assets'
 			    }
 			  }
 		},
@@ -182,7 +181,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		options: {
 			    cache: {
 			      maxEntries: 10,
-			      name: 'european-respiratory-assets'
+			      name: 'ers-assets'
 			    }
 			  }
 		},
@@ -192,7 +191,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		options: {
 			    cache: {
 			      maxEntries: 10,
-			      name: 'european-respiratory-assets'
+			      name: 'ers-assets'
 			    }
 			  }
 		},
@@ -202,7 +201,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		options: {
 			    cache: {
 			      maxEntries: 10,
-			      name: 'european-respiratory-assets'
+			      name: 'ers-assets'
 			    }
 			  }
 		},
@@ -212,7 +211,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		options: {
 			    cache: {
 			      maxEntries: 10,
-			      name: 'european-respiratory-assets'
+			      name: 'ers-assets'
 			    }
 			  }
 		},
@@ -222,7 +221,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		options: {
 			    cache: {
 			      maxEntries: 10,
-			      name: 'european-respiratory-assets'
+			      name: 'ers-assets'
 			    }
 			  }
 		},
@@ -232,7 +231,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		options: {
 			    cache: {
 			      maxEntries: 10,
-			      name: 'european-respiratory-assets'
+			      name: 'ers-assets'
 			    }
 			  }
 		},
@@ -242,7 +241,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		options: {
 			    cache: {
 			      maxEntries: 10,
-			      name: 'european-respiratory-assets'
+			      name: 'ers-assets'
 			    }
 			  }
 		},
@@ -252,7 +251,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		options: {
 			    cache: {
 			      maxEntries: 10,
-			      name: 'european-respiratory-assets'
+			      name: 'ers-assets'
 			    }
 			  }
 		},
@@ -262,7 +261,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		options: {
 			    cache: {
 			      maxEntries: 10,
-			      name: 'european-respiratory-assets'
+			      name: 'ers-assets'
 			    }
 			  }
 		},
@@ -272,7 +271,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		options: {
 			    cache: {
 			      maxEntries: 10,
-			      name: 'european-respiratory-assets'
+			      name: 'ers-assets'
 			    }
 			  }
 		},
@@ -282,7 +281,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		options: {
 			    cache: {
 			      maxEntries: 10,
-			      name: 'european-respiratory-assets'
+			      name: 'ers-assets'
 			    }
 			  }
 		}
