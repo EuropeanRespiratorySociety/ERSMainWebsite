@@ -53,16 +53,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages'
-			    }
-			  }
-		},
-	    {
-	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/who-we-are/,
-	  		handler: 'cacheFirst',
-	  		options: {
-			    cache: {
-			      name: 'european-respiratory-offline-pages'
+			      name: 'european-respiratory-offline-pages-who-we-are'
 			    }
 			  }
 		},
@@ -71,7 +62,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages'
+			      name: 'european-respiratory-offline-pages-leadership'
 			    }
 			  }
 		},
@@ -80,16 +71,16 @@ gulp.task('generate-service-worker', function(callback) {
 	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages'
+			      name: 'european-respiratory-offline-pages-executive-office'
 			    }
 			  }
 		},
 	    {
-	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/statuetes-policies-and-annual-report/,
+	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/statutes-policies-and-annual-report/,
 	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages'
+			      name: 'european-respiratory-offline-pages-satutes-policies'
 			    }
 			  }
 		},
@@ -98,7 +89,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages'
+			      name: 'european-respiratory-offline-pages-awards'
 			    }
 			  }
 		},
@@ -107,7 +98,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages'
+			      name: 'european-respiratory-offline-pages-fellows'
 			    }
 			  }
 		},
@@ -116,7 +107,7 @@ gulp.task('generate-service-worker', function(callback) {
 	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages'
+			      name: 'european-respiratory-offline-pages-membersip'
 			    }
 			  }
 		},
@@ -125,25 +116,25 @@ gulp.task('generate-service-worker', function(callback) {
 	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages'
+			      name: 'european-respiratory-offline-pages-assemblies'
 			    }
 			  }
 		},
 	    {
 	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/news\/respiratory-world-wide/,
-	  		handler: 'cacheFirst',
+	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages'
+			      name: 'european-respiratory-offline-pages-rww'
 			    }
 			  }
 		},
 	    {
 	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/news\/respiratory-matters/,
-	  		handler: 'cacheFirst',
+	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages'
+			      name: 'european-respiratory-offline-pages-rm'
 			    }
 			  }
 		},
@@ -152,27 +143,26 @@ gulp.task('generate-service-worker', function(callback) {
 	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
-			      name: 'european-respiratory-offline-pages'
+			      name: 'european-respiratory-offline-pages-press'
+			    }
+			  }
+		},
+	    {
+	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/news\/contact/,
+	  		handler: 'cacheFirst',
+	  		options: {
+			    cache: {
+			      name: 'european-respiratory-offline-pages-contact'
 			    }
 			  }
 		},
 	    {
 	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/news/,
-	  		handler: 'cacheFirst',
+	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
 			      maxEntries: 10,
-			      name: 'european-respiratory-offline-pages'
-			    }
-			  }
-		},
-	    {
-	  		urlPattern: /^https:\/\/new\.ersnet\.org\/#news/,
-	  		handler: 'cacheFirst',
-	  		options: {
-			    cache: {
-			      maxEntries: 10,
-			      name: 'european-respiratory-offline-pages'
+			      name: 'european-respiratory-offline-pages-news'
 			    }
 			  }
 		},
