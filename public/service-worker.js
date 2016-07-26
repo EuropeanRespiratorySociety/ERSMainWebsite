@@ -310,7 +310,7 @@ self.addEventListener('fetch', function(event) {
 
 // Runtime cache configuration, using the sw-toolbox library.
 
-toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/js\/jquery\.min\.js/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"european-respiratory-assets"}});
+toolbox.router.get(/^https:\/\/new\.ersnet\.org/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"european-respiratory-offline-pages"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/js\/all\.js/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"european-respiratory-assets"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/js\/fullpage\.js/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"european-respiratory-assets"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/js\/app-home\.js/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"european-respiratory-assets"}});

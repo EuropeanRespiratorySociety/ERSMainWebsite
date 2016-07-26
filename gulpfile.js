@@ -30,12 +30,12 @@ gulp.task('generate-service-worker', function(callback) {
     ],
     runtimeCaching: [
 	    {
-	  		urlPattern: /^https:\/\/bootstrap\.ersnet\.org\/js\/jquery\.min\.js/,
+	  		urlPattern: /^https:\/\/new\.ersnet\.org/,
 	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
 			      maxEntries: 10,
-			      name: 'european-respiratory-assets'
+			      name: 'european-respiratory-offline-pages'
 			    }
 			  }
 		},
