@@ -33,6 +33,6 @@ class HomeController extends Controller
 
         $params['items'] =  $CC->sortHomepage($items);
 
-        return view('home.home')->with($params);
+        return response()->view('home.home', $params)->setTtl(60 * 60 * 24 * 7); //caching a week
     }
 }

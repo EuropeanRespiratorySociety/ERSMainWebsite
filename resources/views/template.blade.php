@@ -49,7 +49,7 @@
             @include('nav.main-nav')
         <!-- End Main Navigation -->  
 
-        <!-- Start Left Sidebar -->r
+        <!-- Start Left Sidebar -->
             @include('sidebar.left-variant')
         <!-- End Left Sidebar -->
 
@@ -61,13 +61,18 @@
         <!-- End right Sidebar -->
       
     </div>
-    
     <script src="https://bootstrap.ersnet.org/js/all.js" type="text/javascript"></script>
-
     <!--script src="http://erstemplate.app/js/all.js" type="text/javascript"></script-->
 
 
     @yield('scripts')
-
+    <script>
+   /*   if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+                 .register('/sw.js')
+                 .then(function() { console.log("Service Worker Registered"); });
+      }*/
+    </script>
+    <script src="/js/sw-registration.js" type="text/javascript"></script>
   </body>
 </html>
