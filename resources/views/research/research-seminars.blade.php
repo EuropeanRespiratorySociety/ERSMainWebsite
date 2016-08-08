@@ -14,7 +14,7 @@
 
     <div class="col-md-9 light-grey-bg">
       <div class="row">
-        <div class="col-md-4 midium-grey-bg left-photo-map">
+        <div class="col-md-4 medium-grey-bg left-photo-map">
           @if(isset($category->image))
           <p><img src="{{ $category->image }}" class="img-rounded img-responsive"></p>
           @endif

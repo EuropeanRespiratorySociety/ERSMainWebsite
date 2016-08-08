@@ -10,7 +10,7 @@
 @section('content')
 <div class="ers-content article-items">
   <div class="row">
-    <!--div class="col-md-3 midium-grey-bg left-photo-map">    
+    <!--div class="col-md-3 medium-grey-bg left-photo-map">    
     
     </div-->
     <!-- Beginning Main Content Area -->

@@ -12,7 +12,7 @@
 
 <div class="ers-content event-items-content">
   <div class="row">
-    <div class="col-md-3 midium-grey-bg left-photo-map">
+    <div class="col-md-3 medium-grey-bg left-photo-map">
     @if(isset($item->image))
     <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
     @endif
@@ -20,7 +20,7 @@
         @include('partials.related-items', array('relatedItems' => $relatedItems)) 
       @endif
     </div>
-    <div class="col-md-6 lighter-grey-bg">
+    <div class="col-md-6 lighter-grey-bg ers-research-seminar-info">
       <div class="header">
         <div class="clearfix notification">
           @if(isset($item->flags) && $item->flags['color'] !== 'info')
@@ -57,10 +57,10 @@
       <h2 class="article-title">{{$item->title}}</h2>
       @if(isset($item->subtitle))<h4 class="article-title">{{$item->subtitle}}</h4>@endif
       @if(isset($item->organisers))
-      <h5><b>Organisers :</b> {{$item->organisers}}</h5>
+      <h5 class="ers-course-organisers"><b>Organisers :</b> {{$item->organisers}}</h5>
       @endif
       @if(isset($item->faculty))
-      <h5><b>Faculty :</b> {{$item->faculty}}</h5>
+      <h5 class="ers-course-organisers"><b>Faculty :</b> {{$item->faculty}}</h5>
       @endif
 
       <div class="article text-left">

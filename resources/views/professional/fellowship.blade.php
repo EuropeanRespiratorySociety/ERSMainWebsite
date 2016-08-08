@@ -13,7 +13,7 @@
   <div class="row">
     <div class="col-md-9">
         <div class="row">
-          <div class="col-md-4 midium-grey-bg left-photo-map">
+          <div class="col-md-4 medium-grey-bg left-photo-map">
           @if(isset($item->image))
               <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
           @endif 

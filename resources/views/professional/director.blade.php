@@ -1,4 +1,4 @@
-<div class="courses-director midium-grey-bg col-sm-12 {!! $class !!}">
+<div class="courses-director medium-grey-bg col-sm-12 {!! $class !!}">
     <div class="row">
        <div class="col-md-9 col-md-offset-1 xs-mb-15">
             <img src="../images/course/Nicolino_Ambrosino.jpg" class="img-circle">

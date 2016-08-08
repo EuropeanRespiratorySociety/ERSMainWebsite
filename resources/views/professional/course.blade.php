@@ -12,7 +12,7 @@
 @section('content')
 <div class="ers-content event-items-content">
   <div class="row">
-    <div class="col-md-3 midium-grey-bg left-photo-map">
+    <div class="col-md-3 medium-grey-bg left-photo-map">
       @if(isset($course->image))
       <p><img src="{{ $course->image }}" class="img-rounded img-responsive"></p>
       @endif
@@ -52,7 +52,7 @@
         </div>
         <div class="col-md-6 text-right">
           @if(isset($course->programmeFile))  
-            <a href="{{$course->programmeFile->fileUrl}}" target="_blank" type="button" class="btn btn-light-primary text-left">
+            <a href="{{$course->programmeFile->fileUrl}}" target="_blank" type="button" class="btn btn-light-primary text-left bt-course-programme">
               <span class="icon s7-map" style="font-size: 24px;"></span>
               Course Programme
             </a>
@@ -97,7 +97,7 @@
             <div class="ers-scroller nano scrollable" style="height:350px;">
                 <div class="nano-content">   
                 @if(isset($course->practicalInfoFile))  
-                  <a href="{{$course->practicalInfoFile->fileUrl}}" target="_blank" type="button" class="btn btn-light-primary text-left">
+                  <a href="{{$course->practicalInfoFile->fileUrl}}" target="_blank" type="button" class="btn btn-light-primary text-left bt-practicalInfo">
                     <span class="icon s7-info" style="font-size: 24px;"></span>
                     @if(isset($course->practicalInfoButton)){{$course->practicalInfoButton}}@else Practical Info @endif
                   </a>
@@ -115,7 +115,7 @@
                 </ul>
                 <hr>
                 <div class="list-group">
-                  <a href="#" class="list-group-item midium-grey-bg">
+                  <a href="#" class="list-group-item medium-grey-bg">
                     <span class="badge">
                       {{isset($course->feeList->junior) ? '&euro;' : ''}}
                       {{$course->feeList->junior or '-'}}
@@ -127,7 +127,7 @@
                       {{$course->feeList->ersMember or "-"}}
                     </span> ERS Members
                   </a>
-                  <a href="#" class="list-group-item midium-grey-bg">
+                  <a href="#" class="list-group-item medium-grey-bg">
                     <span class="badge">
                       {{isset($course->feeList->nonErsMember) ? '&euro;' : ''}}
                       {{$course->feeList->nonErsMember or "-"}}

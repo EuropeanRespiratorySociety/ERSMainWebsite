@@ -1,4 +1,4 @@
-<div class="leadership-menu midium-grey-bg col-sm-12 {!! $class !!}">
+<div class="leadership-menu medium-grey-bg col-sm-12 {!! $class !!}">
 
 
 

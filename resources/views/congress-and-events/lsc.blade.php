@@ -11,7 +11,7 @@
 @section('content')
 <div class="ers-content event-items-content">
   <div class="row">
-    <div class="col-md-3 midium-grey-bg left-photo-map">
+    <div class="col-md-3 medium-grey-bg left-photo-map">
     @if(isset($item->image))
     <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
     @endif
@@ -157,7 +157,7 @@
                 @endif
                 <!--
                 <div class="list-group">
-                  <a href="#" class="list-group-item midium-grey-bg">
+                  <a href="#" class="list-group-item medium-grey-bg">
                     <span class="badge">
                       {{isset($item->feeList->junior) ? '&euro;' : ''}}
                       {{$item->feeList->junior or '-'}}
@@ -169,7 +169,7 @@
                       {{$item->feeList->ersMember or "-"}}
                     </span> ERS Members
                   </a>
-                  <a href="#" class="list-group-item midium-grey-bg">
+                  <a href="#" class="list-group-item medium-grey-bg">
                     <span class="badge">
                       {{isset($item->feeList->nonErsMember) ? '&euro;' : ''}}
                       {{$item->feeList->nonErsMember or "-"}}
