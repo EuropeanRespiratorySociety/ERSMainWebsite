@@ -17,7 +17,7 @@
                     </div>
                     <div class="card-content text-left">
                         <p>
-                        The European Respiratory Journal (ERJ) - 2014 impact factor 7.636 - is the official journal of the European Respiratory Society (ERS). It publishes clinical and...   
+                        <i>The European Respiratory Journal</i> (ERJ) - 2014 impact factor 7.636 - is the official journal of the European Respiratory Society (ERS). It publishes clinical and...   
                         </p>
                     </div>
                     <div class="card-action"> 	
@@ -32,7 +32,7 @@
                     </div>
                     <div class="card-content text-left">
                         <p>
-                        ERJ Open Research is a new fully open access original research journal, published online by the European Respiratory Society. The journal aims...  
+                        <i>ERJ Open Research</i> is a new fully open access original research journal, published online by the European Respiratory Society. The journal aims...  
                         </p>
                     </div>
                     <div class="card-action"> 	
@@ -47,7 +47,7 @@
                     </div>
                     <div class="card-content text-left">
                         <p>
-                        The European Respiratory Review (ERR) is an open access journal published quarterly by the European Respiratory Society (ERS), providing an...
+                        <i>The European Respiratory Review</i> (ERR) is an open access journal published quarterly by the European Respiratory Society (ERS), providing an...
                         </p>
                     </div>
                     <div class="card-action"> 	
@@ -62,7 +62,7 @@
                     </div>
                     <div class="card-content text-left">
                         <p>
-                        The ERS Monograph is the quarterly book series from the European Respiratory Society. Each Monograph covers a specific area of respiratory...
+                        <i>The ERS Monograph</i> is the quarterly book series from the European Respiratory Society. Each Monograph covers a specific area of respiratory...
                         </p>
                     </div>
                     <div class="card-action"> 	
@@ -77,7 +77,7 @@
                     </div>
                     <div class="card-content text-left">
                         <p>
-                        Breathe is the clinical educational publication from the European Respiratory Society. It is published quarterly and is free to access for all in order to bring...
+                        <i>Breathe</i> is the clinical educational publication from the European Respiratory Society. It is published quarterly and is free to access for all in order to bring...
                         </p>
                     </div>
                     <div class="card-action"> 	
@@ -92,7 +92,7 @@
                     </div>
                     <div class="card-content text-left">
                         <p>
-                        The European Lung White Book draws on the latest data from the World Health Organization and European Centre for Disease Prevention and Control...
+                        <i>The European Lung White Book</i> draws on the latest data from the World Health Organization and European Centre for Disease Prevention and Control...
                         </p>
                     </div>
                     <div class="card-action"> 	
@@ -107,7 +107,7 @@
                     </div>
                     <div class="card-content text-left">
                         <p>
-                        The ERS Handbooks are compact guides to broad areas of the respiratory field. Launched in 2010, the series now covers adult, paediatric...
+                        <i>The ERS Handbooks</i> are compact guides to broad areas of the respiratory field. Launched in 2010, the series now covers adult, paediatric...
                         </p>
                     </div>
                     <div class="card-action"> 	
@@ -122,7 +122,7 @@
                     </div>
                     <div class="card-content text-left">
                         <p>
-                        The new Respiratory Equipment and Devices (RED) Congress Magazine supports the contribution that equipment and devices make to respiratory...
+                        <i>The new Respiratory Equipment and Devices</i> (RED) Congress Magazine supports the contribution that equipment and devices make to respiratory...
                         </p>
                     </div>
                     <div class="card-action"> 	
@@ -168,7 +168,7 @@
                     </div>
                     <div class="card-content text-left">
                         <p>
-                        The European Respiratory Roadmap seeks to serve as a basis for the respiratory community to communicate with key decision and policy ...
+                        <i>The European Respiratory Roadmap</i> seeks to serve as a basis for the respiratory community to communicate with key decision and policy ...
                         </p>
                     </div>
                     <div class="card-action"> 	

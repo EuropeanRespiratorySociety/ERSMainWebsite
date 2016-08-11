@@ -8,39 +8,47 @@
 
 
    <div class="row">
-    <div class="col-md-3">
-      <a target="_blank" href="http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/">
-        <div class="card card-padded card-home">
 
-          <img src="../images/elf/elf_1.jpg" alt=""/>
-          <div class="title-box"><h2>Healthy Lungs for Life</h2></div>
-        </div>
-      </a>
-    </div>
+    <!--Patient involvement-->
     <div class="col-md-3">
       <a href="{{url('advocacy/policy-areas')}}">
         <div class="card card-padded card-home">
 
-          <img src="../images/elf/elf_2.jpg" alt=""/>
-          <div class="title-box"><h2>Policy areas</h2></div>
+          <img src="../images/elf/elf_1.jpg" alt=""/>
+          <div class="title-box"><h2>Patient involvement</h2></div>
         </div>
       </a>
     </div>
+
+    <!--Patient resources-->
+    <div class="col-md-3">
+      <a href="{{url('advocacy/policy-areas')}}">
+        <div class="card card-padded card-home">
+
+          <img src="../images/elf/elf_5.jpg" alt=""/>
+          <div class="title-box"><h2>Patient resources</h2></div>
+        </div>
+      </a>
+    </div>
+
+    <!--Patient network-->
     <div class="col-md-3">
       <a href="{{url('advocacy/eu-projects')}}">
         <div class="card card-padded card-home">
 
           <img src="../images/elf/elf_3.jpg" alt=""/>
-          <div class="title-box"><h2>EU Projects</h2></div>
+          <div class="title-box"><h2>Patient network</h2></div>
         </div>
       </a>
     </div>
+
+    <!--Healthy Lungs for Life-->
     <div class="col-md-3">
-      <a href="{{url('advocacy/alliances')}}">
+      <a target="_blank" href="http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/">
         <div class="card card-padded card-home">
 
-          <img src="../images/elf/elf_4.jpg" alt=""/>
-          <div class="title-box"><h2>Alliances</h2></div>
+          <img src="../images/elf/hlfl.jpg" alt=""/>
+          <div class="title-box"><h2>Healthy Lungs for Life</h2></div>
         </div>
       </a>
     </div>

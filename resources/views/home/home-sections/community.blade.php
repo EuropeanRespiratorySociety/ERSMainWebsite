@@ -7,41 +7,40 @@
 
     <div class="row">
       <div class="col-md-3">
-        <a href="#">
+        <a href="the-society/membership">
           <div class="card card-padded card-home">
-
             <img src="../images/community/become_member.jpg" alt=""/>
-            <div class="title-box"><h2>Become a Member</h2></div>
+            <div class="title-box"><h2>ERS Membership</h2></div>
           </div>
         </a>
       </div>
 
       <div class="col-md-3">
-        <a href="#">
+        <a href="https://my.ersnet.org">
           <div class="card card-padded card-home">
-
+            <span class="label label-scientific">Your online membership portal</span>
             <img src="../images/community/my_ers.jpg" alt=""/>
-            <div class="title-box"><h2>Become a Member</h2></div>
+            <div class="title-box"><h2>My ERS</h2></div>
           </div>
         </a>
       </div>
 
       <div class="col-md-3">
-        <a href="#">
+        <a href="the-society/assemblies">
           <div class="card card-padded card-home">
-
-            <img src="../images/community/assemblies.jpg" alt=""/>
-            <div class="title-box"><h2>Become a Member</h2></div>
+            <span class="label label-scientific">Join your assembly today</span>
+            <img src="../images/community/assemblies_2.jpg" alt=""/>
+            <div class="title-box"><h2>ERS Assemblies</h2></div>
           </div>
         </a>
       </div>
 
       <div class="col-md-3">
-        <a href="#">
+        <a href="the-society/who-we-are/fellow-of-ers">
           <div class="card card-padded card-home">
 
-            <img src="../images/community/junior.jpg" alt=""/>
-            <div class="title-box"><h2>Become a Member</h2></div>
+            <img src="../images/community/fellow.jpg" alt=""/>
+            <div class="title-box"><h2>Fellow of ERS</h2></div>
           </div>
         </a>
       </div>
