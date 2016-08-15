@@ -7,7 +7,8 @@
     <div class="card card-event">
         <div class="card-image" 
         @if(isset($item['image'])) 
-            style="height:100px;" 
+            style="height:300px;background-repeat: no-repeat; background-image: url('{{ $item['image']}}'); background-position: center @if(isset($item['itemImageAlignment'])) {{$item['itemImageAlignment'] }} @else center @endif;"
+
         @elseif(isset($item['image']) && isset($item['flags'])) 
             style="height:50px;" 
         @else 
@@ -21,9 +22,6 @@
             @endif
             @if($item['fullyBooked'])
             <span class="label label-danger">Fully Booked</span>
-            @endif
-            @if(isset($item['image']))
-                <img class="img-responsive" src="{{ $item['image']}}">
             @endif
         </div>
 

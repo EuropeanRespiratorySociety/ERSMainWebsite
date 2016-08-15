@@ -3,7 +3,12 @@
         <div class="card card-event">          
             <div class="card-image" 
             @if(isset($item['image'])) 
-                style="height:200px;max-height:200px" 
+                style="max-height:300px;
+                    @if(isset($item['imageSize']))
+                        @if($item['imageSize'] == 'large') height:300px; @else height:150px; @endif
+                    @else height:150px; @endif
+                    background-repeat: no-repeat; background-image: url('{{ $item['image']}}'); background-position: center @if(isset($item['itemImageAlignment'])) {{$item['itemImageAlignment'] }} @else center @endif;"
+
             @elseif(isset($item['image']) && isset($item['flags'])) 
                 style="height:50px;" 
             @else 
@@ -15,16 +20,13 @@
                 @if(isset($item['flags']))
                 <span class="label {{ 'label-'.$item['flags']['color'] }}">{{ $item['flags']['text'] }}</span>
                 @endif
-                @if(isset($item['image']))
-                    <img class="" src="{{ $item['image']}}">
-                @endif
             </div>
             <div class="card-content">
                 <h3 class="title">
                     <a href="{{Request::path().'/'.$item['slug']}}">{{ $item['title'] }}</a>
                 </h3>
-                @if(isset($item['createdOn']))
-                    <h4 class="date">{{ $item['createdOn'] }}</h4>
+                @if(isset($item['createdOn']) && isset($item['type']))
+                    @if($item['type']== "News")<h4 class="date">{{ $item['createdOn'] }}</h4>@endif
                 @endif
                 @if(isset($item['eventDates']))
                     <p class="date">{{ $item['eventDates'] }}</p>

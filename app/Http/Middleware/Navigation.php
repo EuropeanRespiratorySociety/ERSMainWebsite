@@ -28,9 +28,9 @@ class Navigation
                         $menu->leadershipAndCommittees->add('Education Council', 'the-society/who-we-are/leadership/education-council' );
                         $menu->leadershipAndCommittees->add('Council', 'the-society/who-we-are/leadership/council' );
                         $menu->leadershipAndCommittees->add('Junior Members Committee', 'http://juniors.ersent.org' )->link->attr(array('target' => '_blank'));
-                        $menu->leadershipAndCommittees->add('Election 2016', 'the-society/who-we-are/leadership/elections-2016' );
+                        $menu->leadershipAndCommittees->add('ERS Election', 'the-society/who-we-are/leadership/ers-elections' );
                     $menu->whoWeAre->add('Executive office', 'the-society/who-we-are/executive-office' );
-                    $menu->whoWeAre->add('Satutes and Policies', 'the-society/who-we-are/statutes-policies-and-annual-report' );
+                    $menu->whoWeAre->add('Governance and Transparency', 'the-society/who-we-are/ers-governance-and-transparency' );
                     $menu->whoWeAre->add('Awards', 'the-society/who-we-are/awards' );
                     $menu->whoWeAre->add('Fellow of ERS', 'the-society/who-we-are/fellow-of-ers' );
                 $menu->theSociety->add('Membership', 'the-society/membership' );

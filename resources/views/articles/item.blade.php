@@ -36,10 +36,9 @@
         </h4>
         @endif
       </div>
-
       <div class="article text-left @if($item->articleTwoColumns) two-columns @endif">
-                      @if(isset($item->createdOn))
-                    <h4 class="date">{{ $item->createdOn }}</h4>
+                @if(isset($item->createdOn) && isset($item->type))
+                    @if($item->type == "News")<h4 class="date">{{ $item->createdOn }}</h4>@endif
                 @endif
         @if(isset($item->lead)){!!$item->lead!!}@endif
         {!!$item->body!!}

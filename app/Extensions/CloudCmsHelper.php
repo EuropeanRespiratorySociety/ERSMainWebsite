@@ -308,6 +308,8 @@ class CloudCmsHelper
                     }
 
                     if(isset($item->imageAlignment)){$parsed[$key]['imageAlignment'] = $item->imageAlignment;}
+                    if(isset($item->itemImageAlignment)){$parsed[$key]['itemImageAlignment'] = $item->itemImageAlignment;}
+                    if(isset($item->imageSize)){$parsed[$key]['imageSize'] = $item->imageSize;}
                     if(isset($item->imageDescription)){$parsed[$key]['imageDescription'] = $item->imageDescription;}
                     if(isset($item->url)){$parsed[$key]['url'] = $item->url;}
                     if(isset($item->uri)){$parsed[$key]['uri'] = $item->uri;}

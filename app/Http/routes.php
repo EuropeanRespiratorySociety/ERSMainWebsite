@@ -62,7 +62,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('the-society/who-we-are/leadership/education-council', function(){return view('society.leadership.education-council');});
     Route::get('the-society/who-we-are/leadership/assembly-secretaries', function(){return view('society.leadership.assembly-secretaries');});
     Route::get('the-society/who-we-are/leadership/council', function(){return view('society.leadership.council');});
-    Route::get('the-society/who-we-are/leadership/elections-2016', function(){return view('society.leadership.elections-2016');});
+    Route::get('the-society/who-we-are/leadership/{slug}', 'WhoWeAreController@show');
     Route::get('the-society/who-we-are/{slug}', 'WhoWeAreController@show');
 
     Route::get('the-society/news', 'NewsController@index');
