@@ -26,7 +26,7 @@
 		<div class="col-md-8 center-block lead">
 			<p>Find out more about tobacco in the <a target="_blank" href="http://www.erswhitebook.org/chapters/tobacco-smoking/ ">European Lung White Book</a></p><br>
 
-			<img src="images/advocacy/european-lung-white-book-logo.png" class="img-responsive" />
+			<img src="images/advocacy/european-lung-white-book-logo.png" class="img-responsive center-block" />
 		</div>
 
 
