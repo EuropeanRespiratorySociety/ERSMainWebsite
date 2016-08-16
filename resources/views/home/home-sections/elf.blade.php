@@ -1,4 +1,4 @@
-<div class="section home-elf-content fp-auto-height" id="">
+<div class="section home-elf-content fp-auto-height" >
   <div class="main-content">
     <div class="page-head"><img src="../images/elf/elf.png" alt=""/ width="300px;"></div>
     <div class="col-md-6 center-block lead">

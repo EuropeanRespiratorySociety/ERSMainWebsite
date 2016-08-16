@@ -27,7 +27,7 @@ The Assembly has developed an action plan for Thoracic Oncology in Europe fully 
 
           
 
-            <div class="row　row_assemblies_card">
+            <div class="row　row_assemblies_card clearfix">
               <div class="col-md-4 col-md-offset-2">
                  <div class="card card-padded">
                   <div class="card-image">

@@ -18,7 +18,7 @@
             			@endif
 						@if(isset($first->image))
 						<div class="card-image">
-              				<img class="img-responsive" src="{{url($first->image)}}" @if(isset($first->imageDescription))alt="{{$first->imageDescription}}" @endif />
+              				<img class="img-responsive" src="{{url($first->image)}}" @if(isset($first->imageDescription))alt="{{$first->imageDescription}}" @endif >
 						</div>
 						@endif
 						<div class="card-content white-bg">
@@ -45,7 +45,9 @@
 						@endif	
 						</div>
 					</div>
+				@if(isset($first->uri))	
 				</a>
+				@endif
 			</div>
 		</div>
 		<div class="space"></div>
@@ -61,7 +63,7 @@
             			@endif
 						@if(isset($item->image))
 						<div class="card-image">
-              				<img class="img-responsive" src="{{url($item->image)}}" @if(isset($item->imageDescription))alt="{{$item->imageDescription}}" @endif />
+              				<img class="img-responsive" src="{{url($item->image)}}" @if(isset($item->imageDescription))alt="{{$item->imageDescription}}" @endif >
 						</div>
 						@endif
 						<div class="card-content">
