@@ -24,26 +24,20 @@
 		</div>
 
 		<div class="col-md-8 center-block lead">
-			<p>Find out more about tobacco in the <a target="_blank" href="http://www.erswhitebook.org/chapters/tobacco-smoking/ ">European Lung White Book</a></p><br>
+			<p>Find out more about tobacco in the <a target="_blank" href="http://www.erswhitebook.org/chapters/tobacco-smoking/ ">European Lung White Book
+			<span class="icon s7-angle-right" style="font-size: 30px;position: relative; top: 8px;"></span>
+			</a></p><br>
 
 			<img src="images/advocacy/european-lung-white-book-logo.png" class="img-responsive center-block" />
 
 			<hr />
 
-			<p><a href="advocacy/policy-areas/environment-and-health-committee">Environment and Health Committee</a></p>
+			<h3><a style="font-size: 20px;" href="advocacy/policy-areas/environment-and-health-committee">Environment and Health Committee
+			<span class="icon s7-angle-right" style="font-size: 30px;position: relative; top: 8px;"></span></a></h3>
 
 		</div>
 
-	    <!--div class="row">
-		    <div class="col-md-8 col-md-offset-2">
-		    	<div class="col-md-6 col-md-offset-3">    	
-		    		<img src="images/advocacy/european-lung-white-book-logo.png" class="img-responsive" />
-		    		<p>Find out more about environmental factors of respiratory health in the<a target="_blank" href="http://www.erswhitebook.org">European Lung White Book</a></p>
-		    		<hr />
-		    		<p><a href="advocacy/policy-areas/environment-and-health-committee">Environment and Health Committee</a></p>
-		    	</div>
-		    </div>
-		</div-->
+	    
   </div>  
 </div>
 

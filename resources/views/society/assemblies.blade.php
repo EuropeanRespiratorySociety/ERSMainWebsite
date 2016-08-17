@@ -14,7 +14,7 @@
       <div class="section fp-auto-height">
         <div class="main-content">
           <div class="page-head">
-            <h2>The ERS Scientific Assemblies</h2>
+            <h2>The ERS Assemblies</h2>
           </div>
           
             <!--h3 class="pageTitle">The ERS Scientific Assemblies</h3-->

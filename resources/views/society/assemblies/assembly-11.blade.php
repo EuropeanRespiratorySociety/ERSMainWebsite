@@ -14,13 +14,11 @@
                 </div>
             </div>
             <div class="col-md-6 center-block lead">
-              Respiratory tumours represent a major part of the daily practice of many respiratory physicians. Our Assembly focuses on all aspects of these tumours. There is a close cooperation and network within and for the ERS.<br><br>
+              Respiratory tumours are a major part of daily practice for many respiratory physicians. Assembly 11 focuses on all aspects of lung cancer, mesothelioma, mediastinal tumours and lung metastases. The work of members includes epidemiology and prevention; biology and pathology; diagnosis and staging; multidisciplinary approaches in therapy; systemic treatment with chemotherapy and targeted agents; and follow-up and supportive care. There is a close cooperation with theImaging, Interventional Respiratory Medicine, Radiotherapy, Biology and Thoracic Surgery Groups, now formalised into the Thoracic Oncology Network of the ERS. 
+The Assembly aims to reinforce the role of respiratory physicians in this area practice by establishing practice guidelines, cooperating with other societies and organising dedicated school courses and symposia on contemporary clinical questions. 
+The Assembly has developed an action plan for Thoracic Oncology in Europe, fully supported by the ERS Executive Committee. The ongoing actions include the creation of a Task Force for quality management of lung cancer or the development of a multidisciplinary HERMES programme for training in thoracic oncology. <br>
+The Assembly is comprised of the following two groups:
 
-Our Assembly focuses on all aspects of these tumours (lung cancer, mesothelioma, mediastinal tumours and lung metastases) including: epidemiology and prevention; biology and pathology; diagnosis and staging; the multidisciplinary approach of therapy; the systemic treatment with chemotherapy and targeted agents; and follow-up and supportive care. There is a close cooperation with Imaging, Interventional Respiratory Medicine, Radiotherapy, Biology and Thoracic Surgery Groups, now formalised into the Thoracic Oncology Network of the ERS.<br><br>
-
-This Assembly tries to reinforce the position of the respiratory physician in this important domain of practice in different countries by the organisation of Symposia on contemporary clinical questions, by the organisation of dedicated school courses, by establishing practice guidelines, and by cooperation with other societies. A Main Award is yearly attributed during the annual congress.<br><br>
-
-The Assembly has developed an action plan for Thoracic Oncology in Europe fully supported by the ERS Executive Committee. Among the ongoing actions, there is, for example, the creation of task force for quality management of lung cancer or the development of a multidisciplinary HERMES programme for training in thoracic oncology.
 
             </div>
 

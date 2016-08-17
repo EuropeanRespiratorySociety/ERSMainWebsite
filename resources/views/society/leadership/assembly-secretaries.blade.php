@@ -4,7 +4,7 @@
 	<div class="col-md-10">
 		<div class="main-content">
 	        <div class="page-head">
-	        <h2 class="">Education Council</h2>
+	        <h2 class="">Assembly Secretaries</h2>
 	        </div>
 
 	        <div class="row leadership-people">

@@ -24,15 +24,19 @@
 		</div>
 
 		<div class="col-md-8 center-block lead">
-			<p>Find out more about tobacco in the <a target="_blank" href="http://www.erswhitebook.org/chapters/tobacco-smoking/ ">European Lung White Book</a></p><br>
+			<p>Find out more about tobacco in the <a target="_blank" href="http://www.erswhitebook.org/chapters/tobacco-smoking/ ">European Lung White Book<span class="icon s7-angle-right" style="font-size: 30px;position: relative; top: 8px;"></span></a></p><br>
 
 			<img src="images/advocacy/european-lung-white-book-logo.png" class="img-responsive center-block" />
 			<hr />
-			<p><a href="advocacy/policy-areas/the-ers-tobacco-control-committee">The ERS Tobacco Control Committee</a></p>
+			<p style="margin:40px 0;">
+			<a style="font-size: 20px;" href="advocacy/policy-areas/the-ers-tobacco-control-committee">
+			The ERS Tobacco Control Committee
+			<span class="icon s7-angle-right" style="font-size: 30px;position: relative; top: 8px;"></span>
+			</a></p>
 
 			<hr />
 
-			<p><a target="_blank" href="http://www.europeanlung.org/en/projects-and-research/projects/smokehaz/home">SmokeHaz</a> collects evidence on the health hazards of smoking and aims to provide scientific information on the negative consequences of active and passive smoking for public health. The project is independently funded by ERS and carried out with the <a target="_blank" href="http://www.ukctas.ac.uk/ukctas/index.aspx">UK Centre for Tobacco and Alcohol Studies (UKCTAS)</a> with the oversight of the ERS Tobacco Control Committee and in collaboration with the European Lung Foundation (ELF). The SmokeHaz website, developed by ELF, is aimed at policy makers who wish to access information on the respiratory health hazards associated with smoking.</p><br>
+			<p style="margin-top:50px;"><a target="_blank" href="http://www.europeanlung.org/en/projects-and-research/projects/smokehaz/home">SmokeHaz</a> collects evidence on the health hazards of smoking and aims to provide scientific information on the negative consequences of active and passive smoking for public health. The project is independently funded by ERS and carried out with the <a target="_blank" href="http://www.ukctas.ac.uk/ukctas/index.aspx">UK Centre for Tobacco and Alcohol Studies (UKCTAS)</a> with the oversight of the ERS Tobacco Control Committee and in collaboration with the European Lung Foundation (ELF). The SmokeHaz website, developed by ELF, is aimed at policy makers who wish to access information on the respiratory health hazards associated with smoking.</p><br>
 
 			<img src="images/advocacy/smokehaz_logo.jpg" class="img-responsive center-block" />
 

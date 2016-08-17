@@ -14,9 +14,9 @@
                 </div>
             </div>
             <div class="col-md-6 center-block lead">
-              Although this Assembly focuses mostly on asthma and increasingly on COPD, members also have an interest in other diseases with an allergic and immunological component.<br><br>
+              A substantial number of pharmacologists and basic scientists have joined the clinicians in Assembly 5. Although the Assembly focuses on asthma and, increasingly, on chronic obstructive pulmonary disease (COPD), members also have an interest in other diseases with allergic and immunological components. <br>
+The Assembly is comprised of the following three groups:
 
-A substantial number of pharmacologists and basic scientists have joined clinicians. As the treatment of asthma and COPD remains mainly a pharmacological approach, the Airway Pharmacology and Treatment Group is very active in this field. Many of the members are actively involved in trials of new medications or in the development of guidelines for the treatment of severe therapy-resistant asthma. The Monitoring Airway Diseases Group is into examining how inflammatory mechanisms in the airways lead to dysfunctional regulation and physiology using for instance noninvasive markers. The field of immunology is advancing rapidly, particularly in our understanding of cellular and molecular backgrounds of allergy, and activities within the Allergy and Immunology Group reflect this.
             </div>
 
 

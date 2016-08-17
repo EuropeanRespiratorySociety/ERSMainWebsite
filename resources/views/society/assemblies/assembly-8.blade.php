@@ -14,7 +14,9 @@
                 </div>
             </div>
             <div class="col-md-6 center-block lead">
-              This Assembly includes physicians and surgeons with an extraordinary knowledge of the state-of-the art in the field of Lung Transplantation and Thoracic Surgery. Its groups are strongly engaged in collaborative work with the other Scientific assemblies focussing on surgical options for the treatment of lung diseases among them lung transplantation.
+              Assembly 8 includes physicians and surgeons with an extraordinary knowledge of the state of the art in the field of Lung Transplantation and Thoracic Surgery. Its groups are strongly engaged collaborative work with the other Scientific Assemblies, focussing on surgical options for the treatment of lung diseases. <br>
+The Assembly is comprised of the following two groups:
+
             </div>
 
 

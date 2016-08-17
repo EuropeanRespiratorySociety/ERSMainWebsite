@@ -14,7 +14,9 @@
                 </div>
             </div>
             <div class="col-md-6 center-block lead">
-              The mission of the Paediatric Assembly is to promote knowledge and understanding of paediatric respiratory diseases and to advance the respiratory health of children in Europe and worldwide. To achieve these goals, the Paediatric Assembly aims at providing a platform for interaction between clinicians and researchers, and will make an effort to ensure that both educational and scientific needs are met during the annual conferences. The seven Scientific Groups of this Assembly represent the paediatric counterpart to the other groups and assemblies within the ERS.
+              The mission of the Paediatric Assembly is to promote knowledge and understanding of paediatric respiratory diseases and advance the respiratory health of children in Europe and around the world. To achieve these goals, the Paediatric Assembly provides a platform for interaction between clinicians and researchers and ensures that educational and scientific needs are met during the annual Congresses. The seven scientific Groups of this Assembly represent paediatric counterparts to the other Groups and Assemblies of ERS. <br>
+The Assembly is comprised of the following seven groups:
+
             </div>
 
 
