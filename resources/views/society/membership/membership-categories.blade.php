@@ -80,9 +80,10 @@
 
 					<tr>
 						<td>
-							Joint membership with National/Regional Society (*Affiliated societies only)</td>
-							<td class="number">20 EUR/year</td>
-						</tr>
+							Joint membership with National/Regional Society (*Affiliated societies only)
+						</td>
+						<td class="number">20 EUR/year</td>
+					</tr>
 
 
 					</tbody>
@@ -91,3 +92,4 @@
 
 
 		</div>
+</div>

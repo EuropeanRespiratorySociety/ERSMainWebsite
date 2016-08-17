@@ -20,7 +20,7 @@
 
           
 
-            <div class="row　row_assemblies_card">
+            <div class="row　row_assemblies_card clearfix">
               
               <div class="col-md-4">
                 <div class="card card-padded">

@@ -15,7 +15,7 @@
             <div class="col-md-6 center-block lead">
               Assembly 1 is a broad-based group for specialists based in hospitals and primary-care settings. Members are interested in addressing relevant clinical problems and in translating the latest research into daily practice.
             </div>   
-            <div class="row　row_assemblies_card">
+            <div class="row　row_assemblies_cardclearfix">
                 <div class="col-md-4 col-md-offset-2">
                    <div class="card card-padded">
                     <div class="card-image">

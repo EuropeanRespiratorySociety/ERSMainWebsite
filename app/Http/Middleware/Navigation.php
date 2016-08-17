@@ -120,7 +120,7 @@ class Navigation
                 $menu->professionalDevelopment->add('Accreditation','professional-development/accreditation');
 
 
-            $menu->add('Research','research');
+            $menu->add('Research','#research');
                 $menu->research->add('Task Forces', 'research/task-forces');
                 $menu->research->add('Published Guidelines', 'research/published-guidelines');
                 $menu->research->add('Clinical Research Collaborations', 'research/clinical-research-collaborations');

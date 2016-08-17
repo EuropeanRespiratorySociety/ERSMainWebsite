@@ -9,7 +9,7 @@
               )) 
 @stop()
 @section('content')
-<div class="ers-content event-items-content">
+<div class="ers-content event-items-content lsc-content">
   <div class="row">
     <div class="col-md-3 medium-grey-bg left-photo-map">
     @if(isset($item->image))
@@ -105,7 +105,7 @@
                 
                 @if(isset($item->practicalInfoFile))  
                   <a href="{{$item->practicalInfoFile->fileUrl}}" target="_blank" type="button" class="btn btn-light-primary text-left">
-                    <span class="icon s7-map" style="font-size: 24px;"></span>
+                    <span class="icon s7-map"></span>
                     Practical Info
                   </a>
                 @endif

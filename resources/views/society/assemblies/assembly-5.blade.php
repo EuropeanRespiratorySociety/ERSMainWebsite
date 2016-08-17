@@ -1,4 +1,4 @@
-      <div class="section fp-auto-height" style="min-height:1000px;">
+      <div class="section fp-auto-height" style="min-height:1100px;">
           <div class="main-content">
           <div class="page-head"><h2>ERS Assembly 5: Airway Diseases </h2></div>
 
@@ -22,7 +22,7 @@ A substantial number of pharmacologists and basic scientists have joined clinici
 
           
 
-            <div class="row　row_assemblies_card">
+            <div class="row　row_assemblies_card clearfix">
               <div class="col-md-4">
                 <div class="card card-padded">
                   <div class="card-image">
