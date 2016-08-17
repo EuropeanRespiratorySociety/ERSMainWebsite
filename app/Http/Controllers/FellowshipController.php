@@ -147,10 +147,12 @@ class FellowshipController extends Controller
             $payload = json_encode(['url' => $url, 'uri' => $uri]);
             $CC->setCanonical($results->rows[0]->_qname, $payload);
         }
-
-        $related = $CC->getRelatedArticle($item[0]['_qname']);
-        $relatedItems = $CC->parseItems($related->rows);
-        $params['relatedItems'] =  (object) $relatedItems;
+        
+        if($item[0]['hasRelatedArticles'] > 0){
+            $related = $CC->getRelatedArticle($item[0]['_qname']);
+            $relatedItems = $CC->parseItems($related->rows);
+            $params['relatedItems'] =  (object) $relatedItems;
+        }
         return view('professional.fellowship')->with($params); 
     }
 

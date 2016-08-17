@@ -82,9 +82,11 @@ class CourseController extends Controller
             $CC->setCanonical($results->rows[0]->_qname, $payload);
         }
 
-        $related = $CC->getRelatedArticle($course[0]['_qname']);
-        $relatedItems = $CC->parseItems($related->rows);
-        $params['relatedItems'] =  (object) $relatedItems;
+        if($course[0]['hasRelatedArticles'] > 0){
+            $related = $CC->getRelatedArticle($course[0]['_qname']);
+            $relatedItems = $CC->parseItems($related->rows);
+            $params['relatedItems'] =  (object) $relatedItems;
+        }
         if($params['course']->contentType == "event_course_ebus" ){
             return view('professional.ebus')->with($params);
         }

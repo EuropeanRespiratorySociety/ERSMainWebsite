@@ -160,9 +160,12 @@ class GeneralController extends Controller
             $CC->setCanonical($results->rows[0]->_qname, $payload);
         }
 
-        $related = $CC->getRelatedArticle($item[0]['_qname']);
-        $relatedItems = $CC->parseItems($related->rows);
-        $params['relatedItems'] =  (object) $relatedItems;
+        if($item[0]['hasRelatedArticles'] > 0){
+            $related = $CC->getRelatedArticle($item[0]['_qname']);
+            $relatedItems = $CC->parseItems($related->rows);
+            $params['relatedItems'] =  (object) $relatedItems;
+        }
+        
         return view('articles.item')->with($params); 
     }
 

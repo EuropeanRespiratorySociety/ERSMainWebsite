@@ -2,6 +2,7 @@
 
 namespace App\Extensions;
 
+use App;
 use Embed;
 use CC;
 use Carbon\Carbon;
@@ -38,7 +39,6 @@ class CloudCmsHelper
             ->addParams(['type' => 'ers:related-association']) 
             ->addParams(['full' => 'true'])
             ->get();
-
         return $results;    
     }
     public function getAuthor($node){
@@ -263,7 +263,7 @@ class CloudCmsHelper
 
 	public function parseItems($items, $lead = false){
         //dd($items);
-          if(empty($items) && env('APP_ENV') != 'local'){
+          if(empty($items) && App::environment() != 'local'){
                 abort(404);
             }
                 $parsed = [];
@@ -334,6 +334,7 @@ class CloudCmsHelper
                     $parsed[$key]['featuredFunding'] = false;
                     if(isset($item->featuredFunding)){$parsed[$key]['featuredFunding'] = $item->featuredFunding;}
                     if(isset($item->nonErsCalendarItem)){$parsed[$key]['nonErsCalendarItem'] = $item->nonErsCalendarItem;}
+                    if(isset($item->_statistics->{'ers:related-association'})){$parsed[$key]['hasRelatedArticles'] = $item->_statistics->{'ers:related-association'};}
 
                     if(!$lead){
 	                    if(isset($item->organisers)){ $parsed[$key]['organisers'] = $item->organisers;}

@@ -163,9 +163,11 @@ class NewsController extends Controller
             $CC->setCanonical($results->rows[0]->_qname, $payload);
         }
 
-        $related = $CC->getRelatedArticle($item[0]['_qname']);
-        $relatedItems = $CC->parseItems($related->rows);
-        $params['relatedItems'] =  (object) $relatedItems;
+        if($item[0]['hasRelatedArticles'] > 0){
+            $related = $CC->getRelatedArticle($item[0]['_qname']);
+            $relatedItems = $CC->parseItems($related->rows);
+            $params['relatedItems'] =  (object) $relatedItems;
+        }
 
         $author = $CC->getAuthor($item[0]['_qname']);
         $authorItem = $CC->parseItems($author->rows);

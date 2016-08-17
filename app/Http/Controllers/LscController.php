@@ -30,10 +30,13 @@ class LscController extends Controller
             $payload = json_encode(['url' => $url, 'uri' => $uri]);
             $CC->setCanonical($results->rows[0]->_qname, $payload);
         }
+
+        if($item[0]['hasRelatedArticles'] > 0){
+            $related = $CC->getRelatedArticle($item[0]['_qname']);
+            $relatedItems = $CC->parseItems($related->rows);
+            $params['relatedItems'] =  (object) $relatedItems;
+        }
         
-        $related = $CC->getRelatedArticle($item[0]['_qname']);
-        $relatedItems = $CC->parseItems($related->rows);
-        $params['relatedItems'] =  (object) $relatedItems;
         return view('congress-and-events.lsc')->with($params);    
 
     }
