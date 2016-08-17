@@ -334,7 +334,11 @@ class CloudCmsHelper
                     $parsed[$key]['featuredFunding'] = false;
                     if(isset($item->featuredFunding)){$parsed[$key]['featuredFunding'] = $item->featuredFunding;}
                     if(isset($item->nonErsCalendarItem)){$parsed[$key]['nonErsCalendarItem'] = $item->nonErsCalendarItem;}
-                    if(isset($item->_statistics->{'ers:related-association'})){$parsed[$key]['hasRelatedArticles'] = $item->_statistics->{'ers:related-association'};}
+                    if(isset($item->_statistics->{'ers:related-association'})){
+                        $parsed[$key]['hasRelatedArticles'] = $item->_statistics->{'ers:related-association'};
+                    } else {
+                        $parsed[$key]['hasRelatedArticles'] = 0;
+                    }
 
                     if(!$lead){
 	                    if(isset($item->organisers)){ $parsed[$key]['organisers'] = $item->organisers;}
