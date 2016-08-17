@@ -20,15 +20,16 @@ class CalendarController extends Controller
     public function index()
     {
         $CC = new CC();
-        $results = $CC->getCategorySorted($this->calendarCategory);
+        $results = $CC->getCategorySorted($this->calendarCategory, "eventDate", 1);
 
         $items = $CC->parseItems($results->rows, true);
 
         $array = array_values(array_sort($items, function ($value) {
             return $value['calendar']->timestamp;
         }));
-
-        $params['items'] =  (object) $items; 
+        $items = $CC->sortCalendar($items);
+        $params['items'] = (object) $items; 
+        dd($params);
         return view('congress-and-events.calendar')->with($params);    
 
     }

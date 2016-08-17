@@ -51,7 +51,7 @@ class CloudCmsHelper
         return $results;    
     }
 
-    public function getCategorySorted($catnode, $field="eventDate", $direction=1){
+    public function getCategorySorted($catnode, $field = "eventDate", $direction = 1){
         $results = CC::nodes()
             ->listRelatives($catnode)
             ->addParams(['type' => 'ers:category-association'])
@@ -173,6 +173,7 @@ class CloudCmsHelper
         $fundingCounter = 1;
         $elearningCounter = 1;
         $courseCounter = 1;
+        $nonERS = isset($item->nonErsCalendarItem) ? $item->nonErsCalendarItem : false;
         
         foreach ($items as $key => $item) {
 
@@ -193,7 +194,7 @@ class CloudCmsHelper
                 $fundingCounter++;
             }
 
-            if(isset($item->category2) && $calendarCounter <= 5){
+            if(isset($item->category2) && $calendarCounter <= 5 && !$nonERS){
                 if($this->isCalendar($item->category2)){
                     if(isset($sorted['firstEvent'])){
                       $sorted['calendar'][$key] = $item;  
@@ -218,6 +219,21 @@ class CloudCmsHelper
             }
         }
             return $sorted;
+    }
+    /**
+    * Sort the calendar to have all item in ascending order and of the current year and upcoming
+    *@param array $items
+    *@return array
+    */
+    public function sortCalendar($items){
+        $carbon = new Carbon();
+        foreach($items as $key => $value){ 
+            if($value['calendar']->year >= $carbon->year ){
+                $sorted[$value['calendar']->year][$value['calendar']->month][$key] = $value;
+            }
+        }
+        ksort($sorted);
+        return $sorted;
     }
 
     /**          
@@ -317,6 +333,7 @@ class CloudCmsHelper
                     if(isset($item->featuredCourse)){$parsed[$key]['featuredCourse'] = $item->featuredCourse;}
                     $parsed[$key]['featuredFunding'] = false;
                     if(isset($item->featuredFunding)){$parsed[$key]['featuredFunding'] = $item->featuredFunding;}
+                    if(isset($item->nonErsCalendarItem)){$parsed[$key]['nonErsCalendarItem'] = $item->nonErsCalendarItem;}
 
                     if(!$lead){
 	                    if(isset($item->organisers)){ $parsed[$key]['organisers'] = $item->organisers;}

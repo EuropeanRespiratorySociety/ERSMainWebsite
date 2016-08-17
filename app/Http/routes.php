@@ -67,9 +67,9 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::get('the-society/news', 'NewsController@index');
     Route::get('the-society/news/contact', function(){ return view('society.contact');});
-    Route::get('the-society/news/respiratory-world-wide', 'NewsController@indexRespiratoryWorldWide');
+    Route::get('the-society/news/respiratory-worldwide', 'NewsController@indexRespiratoryWorldWide');
     Route::get('the-society/news/respiratory-matters', 'NewsController@indexRespiratoryMatters');
-    Route::get('the-society/news/respiratory-world-wide/{slug}', 'NewsController@show');    
+    Route::get('the-society/news/respiratory-worldwide/{slug}', 'NewsController@show');    
     Route::get('the-society/news/respiratory-matters/{slug}', 'NewsController@show');    
     Route::get('the-society/news/{slug}', 'NewsController@show');
 
@@ -94,10 +94,10 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('congress-and-events/ers-presidential-summits/{slug}', 'ResearchController@showRS');
     Route::get('congress-and-events/the-lung-science-conference', 'LscController@index');
     Route::get('congress-and-events/the-lung-science-conference/{slug}', 'LscController@show');
-    //Route::get('congress-and-events/events-calendar', 'CalendarController@index');
-    Route::get('congress-and-events/events-calendar', function(){
+    Route::get('congress-and-events/events-calendar', 'CalendarController@index');
+    /*Route::get('congress-and-events/events-calendar', function(){
         return view('pages.coming-soon');
-    });
+    });*/
     Route::get('congress-and-events/{slug}', 'GeneralController@show');
 
     Route::get('professional-development/courses', 'CourseController@index');
@@ -113,7 +113,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('professional-development/{slug}', 'GeneralController@show'); //acreditation uses this route   
     Route::get('professional-development', 'CourseController@professionalDevelopment');
 
-    Route::get('research', 'ResearchController@index'); 
+    Route::get('research', 'GeneralController@research'); 
     Route::get('research/research-seminars', 'ResearchController@researchSeminars'); 
     Route::get('research/research-seminars/{slug}', 'ResearchController@showRS'); 
     Route::get('research/{slug}', 'ResearchController@show');   

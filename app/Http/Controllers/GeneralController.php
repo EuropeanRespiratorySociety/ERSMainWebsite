@@ -40,6 +40,16 @@ class GeneralController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function research()
+    { 
+        return redirect('/#research');
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function sciAndEduEvents()
     { 
         return redirect('/#scientific-and-educational-events');
