@@ -31,7 +31,12 @@ class NewsController extends Controller
         
         $category = $CC->getItem('news');
         $category = $CC->parseItems($category->rows);
-        $params['category'] = (object) $category[0];
+        
+        if(isset($category[0])){
+            $params['category'] =  (object) $category[0];   
+        } else{
+            abort(404);
+        }
 
         // == false set in purpose as CC sets the field to "false" wich is a string...
         if(!isset($item[0]->url) || !isset($item[0]->uri) || $item[0]->url == "false" || $item[0]->uri == "false"){
@@ -64,7 +69,12 @@ class NewsController extends Controller
 
         $category = $CC->getItem('the-ers-bloggers');
         $category = $CC->parseItems($category->rows);
-        $params['category'] = (object) $category[0];
+
+        if(isset($category[0])){
+            $params['category'] =  (object) $category[0];   
+        } else{
+            abort(404);
+        }
 
         // == false set in purpose as CC sets the field to "false" wich is a string...
         if(!isset($item[0]->url) || !isset($item[0]->uri) || $item[0]->url == "false" || $item[0]->uri == "false"){
@@ -93,7 +103,12 @@ class NewsController extends Controller
 
         $category = $CC->getItem('respiratory-worldwide');
         $category = $CC->parseItems($category->rows);
-        $params['category'] = (object) $category[0];
+
+        if(isset($category[0])){
+            $params['category'] =  (object) $category[0];   
+        } else{
+            abort(404);
+        }
 
         // == false set in purpose as CC sets the field to "false" wich is a string...
         if(!isset($item[0]->url) || !isset($item[0]->uri) || $item[0]->url == "false" || $item[0]->uri == "false"){
@@ -122,6 +137,12 @@ class NewsController extends Controller
         $category = $CC->getItem('respiratory-matters');
         $category = $CC->parseItems($category->rows);
         $params['category'] = (object) $category[0];
+
+        if(isset($category[0])){
+            $params['category'] =  (object) $category[0];   
+        } else{
+            abort(404);
+        }
 
         // == false set in purpose as CC sets the field to "false" wich is a string...
         if(!isset($item[0]->url) || !isset($item[0]->uri) || $item[0]->url == "false" || $item[0]->uri == "false"){
@@ -152,8 +173,13 @@ class NewsController extends Controller
         $CC = new CC();
         $results = $CC->getItem($slug);
         //Slug should be unique, so we should get only one item
-        $item = $CC->parseItems($results->rows);
-        $params['item'] =  (object) $item[0];
+        $item = $CC->parseItems($results->rows);       
+
+        if(isset($item[0])){
+            $params['item'] =  (object) $item[0];   
+        } else{
+            abort(404);
+        }
 
         // == false set in purpose as CC sets the field to "false" wich is a string...
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
@@ -187,8 +213,13 @@ class NewsController extends Controller
         $CC = new CC();
         $results = $CC->getItem($slug);
         //Slug should be unique, so we should get only one item
-        $item = $CC->parseItems($results->rows);
-        $params['item'] =  (object) $item[0];
+        $item = $CC->parseItems($results->rows);        
+
+        if(isset($item[0])){
+            $params['item'] =  (object) $item[0];   
+        } else{
+            abort(404);
+        }
 
         // == false set in purpose as CC sets the field to "false" wich is a string...
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){

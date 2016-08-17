@@ -20,10 +20,8 @@
         <div class="main-content">
           <div class="error-container">
             <div class="error-image"></div>
-            <div class="error-number">404</div>
-            <p class="error-description">Something went wrong or the page you are looking for might have been removed.</p>
-
-            <div class="btn btn-lg btn-alt-special"> <a class="error-goback-text" href="/">Would you like to go home ?</a></div>
+            <div class="error-number"><h2>Maintenance</h2></div>
+            <p class="error-description">The website is down for maintenance, please come back latter.</p>
           </div>
         </div>
       </div>

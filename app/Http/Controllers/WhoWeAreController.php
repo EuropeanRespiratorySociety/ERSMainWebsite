@@ -23,7 +23,12 @@ class WhoWeAreController extends Controller
         $results = $CC->getItem($slug);
         //Slug should be unique, so we should get only one item
         $item = $CC->parseItems($results->rows);
-        $params['item'] =  (object) $item[0]; 
+
+        if(isset($item[0])){
+            $params['item'] =  (object) $item[0];   
+        } else{
+            abort(404);
+        }
 
         // == false set in purpose as CC sets the field to "false" wich is a string...
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
@@ -49,7 +54,12 @@ class WhoWeAreController extends Controller
         $results = $CC->getItem($slug);
         //Slug should be unique, so we should get only one item
         $item = $CC->parseItems($results->rows);
-        $params['item'] =  (object) $item[0];
+
+        if(isset($item[0])){
+            $params['item'] =  (object) $item[0];   
+        } else{
+            abort(404);
+        }
 
         // == false set in purpose as CC sets the field to "false" wich is a string...
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){

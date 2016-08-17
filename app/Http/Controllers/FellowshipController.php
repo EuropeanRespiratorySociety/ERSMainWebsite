@@ -30,7 +30,12 @@ class FellowshipController extends Controller
         
         $category = $CC->getItem('fellowships');
         $category = $CC->parseItems($category->rows);
-        $params['category'] = (object) $category[0];
+
+        if(isset($category[0])){
+            $params['category'] =  (object) $category[0];   
+        } else{
+            abort(404);
+        }
 
         // == false set in purpose as CC sets the field to "false" wich is a string...
         if(!isset($item[0]->url) || !isset($item[0]->uri) || $item[0]->url == "false" || $item[0]->uri == "false"){
@@ -68,7 +73,12 @@ class FellowshipController extends Controller
         
         $category = $CC->getItem('short-term-research-training-fellowships');
         $category = $CC->parseItems($category->rows);
-        $params['category'] = (object) $category[0];
+
+        if(isset($category[0])){
+            $params['category'] =  (object) $category[0];   
+        } else{
+            abort(404);
+        }
 
         // == false set in purpose as CC sets the field to "false" wich is a string...
         if(!isset($category[0]['url']) || !isset($category[0]['uri']) || $category[0]['url'] == "false" || $category[0]['uri'] == "false"){
@@ -104,7 +114,12 @@ class FellowshipController extends Controller
         
         $category = $CC->getItem('long-term-research-fellowships');
         $category = $CC->parseItems($category->rows);
-        $params['category'] = (object) $category[0];
+
+        if(isset($category[0])){
+            $params['category'] =  (object) $category[0];   
+        } else{
+            abort(404);
+        }
 
         // == false set in purpose as CC sets the field to "false" wich is a string...
         if(!isset($category[0]['url']) || !isset($category[0]['uri']) || $category[0]['url'] == "false" || $category[0]['uri'] == "false"){
@@ -138,7 +153,12 @@ class FellowshipController extends Controller
         $results = $CC->getItem($slug);
         //Slug should be unique, so we should get only one item
         $item = $CC->parseItems($results->rows);
-        $params['item'] =  (object) $item[0];
+
+        if(isset($item[0])){
+            $params['item'] =  (object) $item[0];   
+        } else{
+            abort(404);
+        }
 
         // == false set in purpose as CC sets the field to "false" wich is a string...
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
