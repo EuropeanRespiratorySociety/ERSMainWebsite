@@ -22,12 +22,12 @@
                 <div class="row fellowships-links">
                     <div class="col-md-4 col-md-offset-2">
                         <a href="professional-development/fellowships/short-term-research-training-fellowships">
-                            <h3>Short-Term Research Training Fellowships <span class="icon s7-angle-right"></h3>
+                            <h3>Short-Term Research Training Fellowships <span class="icon s7-angle-right" style="font-size: 30px;position: relative; top: 10px;"></span></h3>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <a href="professional-development/fellowships/long-term-research-fellowships">
-                            <h3>Long-Term Research Training Fellowships <span class="icon s7-angle-right"></h3>
+                            <h3>Long-Term Research Training Fellowships <span class="icon s7-angle-right" style="font-size: 30px;position: relative; top: 10px;"></span></h3>
                         </a>
                     </div>
                 </div>

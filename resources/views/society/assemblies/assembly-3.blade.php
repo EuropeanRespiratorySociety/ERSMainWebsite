@@ -14,7 +14,9 @@
                 </div>
             </div>
             <div class="col-md-6 center-block lead">
-              This Assembly provides a platform for interaction between basic scientists and practicing clinicians interested in the cellular and molecular mechanisms involved within the healthy and diseased lung. It is also responsible for tracking scientific developments that easily translate into better diagnostic technologies and/or enhanced patient care.
+              Assembly 3 provides a platform for interaction between basic scientists and practicing clinicians interested in the cellular and molecular mechanisms involved in healthy and diseased lungs. The Assembly is also responsible for tracking scientific developments that easily translate into better diagnostic technologies or enhanced patient care
+The Assembly is comprised of the following three groups:
+
             </div>
 
 

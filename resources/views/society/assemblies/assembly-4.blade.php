@@ -14,13 +14,9 @@
                 </div>
             </div>
             <div class="col-md-6 center-block lead">
-              Clinical physiology is ideally positioned since the discipline is widely accepted as an important link between research and clinical medicine.<br><br>
+              Assembly 4 covers a range of topics that provide important links between research and clinical medicine. It has broad scope and includes integrative aspects of respiratory physiology, sleep apnoea and associated health problems and cellular and molecular physiology. <br>
+The Assembly is comprised of the following three groups:
 
-The Clinical respiratory physiology, exercise and functional imaging Group is particularly orientated towards the most integrative aspects of respiratory physiology, both in health and disease. In recent years, much attention has been paid to factors controlling oxygen transport, mechanisms of pulmonary hypertension and gas exchange in COPD.<br>
-
-The Sleep and Control of Breathing Group has played a major role in the recognition of sleep apnoea syndrome as an important public health problem, particularly through a Task Force.<br>
-
-The Pulmonary Circulation and Pulmonary Vascular Disease Group focuses on more basic physiology, from cellular and molecular to integrative physiology.
             </div>
 
 

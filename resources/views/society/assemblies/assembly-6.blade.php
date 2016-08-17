@@ -14,9 +14,10 @@
             </div>
           </div>
           <div class="col-md-6 center-block lead">
-            This is an interdisciplinary Assembly, which gathers not only pneumologists, but also epidemiologists, clinicians, statisticians, occupational doctors, air pollution scientists and health educators. Smoking and the environment are very important issues for respiratory diseases and this Assembly is involved in many activities to promote public awareness and scientific research in this field.<br><br>
+            This is an interdisciplinary Assembly, which includes not only pulmonologists, but also epidemiologists, clinicians, statisticians, occupational doctors, air pollution scientists and health educators. Smoking and the environment are important issues for respiratory disease and this Assembly is involved in many activities to promote public awareness and scientific research in the field. <br>
+Members of the Assembly welcome collaboration with other Assemblies to work on common programmes.
+The Assembly is comprised of the following four groups:
 
-            The Epidemiology Group has mainly focused on elucidating the natural history of COPD through epidemiological studies in Europe. More recently, the use of biomarkers and genetic epidemiological techniques has been foreseen. The Occupational and Environmental Health Group is interested in following the evolution of occupational diseases (asthma, asbestos, agriculture, new risks) and integrating occupational and environmental diseases in clinical practice. The smoking control and health education group is pushing hard to disseminate the culture of smoking cessation throughout the pulmonary units of European hospitals. The prevention of smoking and protection of the environment through educational and research activities is one of the major goals of our Assembly, and will increase the scientific strength of the ERS and its EU public image. Members of our Assembly are willing to strengthen collaboration with other Assemblies to work on common programmes.
           </div>
 
 

@@ -13,7 +13,8 @@
                 </div>
             </div>
             <div class="col-md-6 center-block lead">
-              Assembly 1 is a broad-based group for specialists based in hospitals and primary-care settings. Members are interested in addressing relevant clinical problems and in translating the latest research into daily practice.
+              Respiratory failure is the principal cause of intensive care admission. Although the field involves many specialties, there is a strong tradition of research and training among pulmonologists. <br>
+The Assembly is comprised of the following two groups:
             </div>   
             <div class="row　row_assemblies_cardclearfix">
                 <div class="col-md-4 col-md-offset-2">
