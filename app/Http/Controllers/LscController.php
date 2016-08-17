@@ -22,12 +22,7 @@ class LscController extends Controller
         $results = $CC->getItem('mechanistic-overlap-between-chronic-lung-injury-and-cancer');
         //Slug should be unique, so we should get only one item
         $item = $CC->parseItems($results->rows);
-
-        if(isset($item[0])){
-            $params['item'] =  (object) $item[0];   
-        } else{
-            abort(404);
-        }
+        $params['item'] =  (object) $item[0]; 
 
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
             $uri= request()->path();
@@ -56,13 +51,8 @@ class LscController extends Controller
         $CC = new CC();
         $results = $CC->getItem($slug);
         //Slug should be unique, so we should get only one item
-        $item = $CC->parseItems($results->rows);        
-
-        if(isset($item[0])){
-            $params['item'] =  (object) $item[0];   
-        } else{
-            abort(404);
-        }
+        $item = $CC->parseItems($results->rows);
+        $params['item'] =  (object) $item[0];
 
         // == false set in purpose as CC sets the field to "false" wich is a string...
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){

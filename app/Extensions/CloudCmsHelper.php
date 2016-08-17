@@ -263,9 +263,9 @@ class CloudCmsHelper
 
 	public function parseItems($items, $lead = false){
         //dd($items);
-          /*  if(empty($items)){
+          if(empty($items)){
                 abort(404);
-            }*/
+            }
                 $parsed = [];
 		        foreach ($items as $key => $item) {
                     if(isset($item->title)){$parsed[$key]['title'] = $item->title;}
