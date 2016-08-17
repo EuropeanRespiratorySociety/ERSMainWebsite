@@ -263,7 +263,7 @@ class CloudCmsHelper
 
 	public function parseItems($items, $lead = false){
         //dd($items);
-          if(empty($items)){
+          if(empty($items) && env('APP_ENV') != 'local'){
                 abort(404);
             }
                 $parsed = [];
