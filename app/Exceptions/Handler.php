@@ -45,6 +45,9 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $e)
     {
+        if($environment = App::environment() == "prod"){
+            return view('error.404');
+        }
         return parent::render($request, $e);
     }
 }
