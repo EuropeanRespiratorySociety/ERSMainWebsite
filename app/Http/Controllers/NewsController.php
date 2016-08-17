@@ -169,9 +169,9 @@ class NewsController extends Controller
             $params['relatedItems'] =  (object) $relatedItems;
         }
 
-        $author = $CC->getAuthor($item[0]['_qname']);
-        $authorItem = $CC->parseItems($author->rows);
-        if(isset($authorItem[0])){
+        if($item[0]['hasAuthor'] > 0){
+            $author = $CC->getAuthor($item[0]['_qname']);
+            $authorItem = $CC->parseItems($author->rows);
             $params['author'] = (object) $authorItem[0];
         }
 

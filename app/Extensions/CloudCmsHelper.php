@@ -339,6 +339,11 @@ class CloudCmsHelper
                     } else {
                         $parsed[$key]['hasRelatedArticles'] = 0;
                     }
+                    if(isset($item->_statistics->{'ers:author-association'})){
+                        $parsed[$key]['hasAuthor'] = $item->_statistics->{'ers:author-association'};
+                    } else {
+                        $parsed[$key]['hasAuthor'] = 0;
+                    }
 
                     if(!$lead){
 	                    if(isset($item->organisers)){ $parsed[$key]['organisers'] = $item->organisers;}
