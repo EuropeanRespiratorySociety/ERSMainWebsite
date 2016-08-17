@@ -91,7 +91,7 @@ class NewsController extends Controller
     {
         $CC = new CC();
 
-        $category = $CC->getItem('respiratory-world-wide');
+        $category = $CC->getItem('respiratory-worldwide');
         $category = $CC->parseItems($category->rows);
         $params['category'] = (object) $category[0];
 
