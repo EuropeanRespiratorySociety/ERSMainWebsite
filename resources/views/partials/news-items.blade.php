@@ -7,7 +7,7 @@
                     @if(isset($item['imageSize']))
                         @if($item['imageSize'] == 'large') height:300px; @else height:150px; @endif
                     @else height:150px; @endif
-                    background-repeat: no-repeat; background-image: url('{{ $item['image']}}'); background-position: center @if(isset($item['itemImageAlignment'])) {{$item['itemImageAlignment'] }} @else center @endif;"
+                    background-repeat: no-repeat;background-size:100%; background-image: url('{{ $item['image']}}'); background-position: center @if(isset($item['itemImageAlignment'])) {{$item['itemImageAlignment'] }} @else center @endif;"
 
             @elseif(isset($item['image']) && isset($item['flags'])) 
                 style="height:50px;" 

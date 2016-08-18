@@ -7,7 +7,7 @@
     <div class="card card-event">
         <div class="card-image" 
         @if(isset($item['image'])) 
-            style="height:300px;background-repeat: no-repeat; background-image: url('{{ $item['image']}}'); background-position: center @if(isset($item['itemImageAlignment'])) {{$item['itemImageAlignment'] }} @else center @endif;"
+            style="height:300px;background-size:100%;background-repeat: no-repeat; background-image: url('{{ $item['image']}}'); background-position: center @if(isset($item['itemImageAlignment'])) {{$item['itemImageAlignment'] }} @else center @endif;"
 
         @elseif(isset($item['image']) && isset($item['flags'])) 
             style="height:50px;" 
