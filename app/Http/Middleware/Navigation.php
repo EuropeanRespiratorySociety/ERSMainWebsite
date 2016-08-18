@@ -63,9 +63,9 @@ class Navigation
                 $menu->congressAndEvents->add('Events calendar','congress-and-events/events-calendar');
                 $menu->congressAndEvents->add('ERS International Congress','http://erscongress.org');
                 $menu->congressAndEvents->add('The Lung Science Conference','congress-and-events/the-lung-science-conference');
-                    $menu->theLungScienceConference->add('Estoril, your host city','congress-and-events/the-lung-science-conference/estoril-your-host-city');
+                    $menu->theLungScienceConference->add('Estoril, your host city','congress-and-events/the-lung-science-conference/estoril-your-host-city')->link->attr(array('style' => 'display:none'));
                     $menu->theLungScienceConference->add('Previous Conferences','http://old.ersnet.org/previous-conferences.html')
-                                            ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array('target' => '_blank','style' => 'display:none'));
                 $menu->congressAndEvents->add('Sleep and Breathing Conference','http://www.sleepandbreathing.org');
                 $menu->congressAndEvents->add('ERS Presidential Summits','congress-and-events/ers-presidential-summits');
                 $menu->congressAndEvents->add('ERS Research Seminars','congress-and-events/ers-research-seminars');
@@ -106,8 +106,8 @@ class Navigation
                                             ->link->attr(array('target' => '_blank'));                 
                 $menu->professionalDevelopment->add('HERMES exams','http://hermes.ersnet.org/exams.html')
                                             ->link->attr(array('target' => '_blank'));                 
-                    $menu->fellowships->add('Short-Term','professional-development/fellowships/short-term-research-training-fellowships');
-                    $menu->fellowships->add('Long-Term','professional-development/fellowships/long-term-research-fellowships');
+                    $menu->fellowships->add('Short-Term','professional-development/fellowships/short-term-research-training-fellowships')->link->attr(array('style' => 'display:none'));
+                    $menu->fellowships->add('Long-Term','professional-development/fellowships/long-term-research-fellowships')->link->attr(array('style' => 'display:none'));
                 //$menu->professionalDevelopment->add('Educational Activities','professional-development/educational-activities');
                 $menu->professionalDevelopment->add('ERS Courses','professional-development/courses');
                 $menu->professionalDevelopment->add('Grants and Sponsorships','professional-development/grants-and-sponsorships');
@@ -131,8 +131,8 @@ class Navigation
                 $menu->advocacy->add('EU-Affairs','advocacy/eu-affairs');
                 $menu->advocacy->add('EU-Projects','advocacy/eu-projects');
                 $menu->advocacy->add('Policy Areas','advocacy/policy-areas');
-                    $menu->policyAreas->add('The ERS Tobacco Control Committee','advocacy/policy-areas/the-ers-tobacco-control-committee');
-                    $menu->policyAreas->add('Environment and Health Committee','advocacy/policy-areas/environment-and-health-committee');
+                    $menu->policyAreas->add('The ERS Tobacco Control Committee','advocacy/policy-areas/the-ers-tobacco-control-committee')->link->attr(array('style' => 'display:none'));;
+                    $menu->policyAreas->add('Environment and Health Committee','advocacy/policy-areas/environment-and-health-committee')->link->attr(array('style' => 'display:none'));
                 $menu->advocacy->add('Alliances','advocacy/alliances');
                 $menu->advocacy->add('Healthy Lungs for Life','http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/')
                                             ->link->attr(array('target' => '_blank')); 
