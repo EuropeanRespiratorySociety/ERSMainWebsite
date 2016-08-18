@@ -3,9 +3,14 @@
 		<div class="row row_event">
 			<div class="col-md-6 top-left-col">
 				<div class="page-head"><h2>Scientific and educational meetings</h2></div>
-				<div class="col-md-12 lead">
+				<div class="col-md-12 lead text-left">
 					We organise a range of scientific and educational events including the ERS International Congress, the largest conference in the respiratory field. 
-					Other events include courses, research seminars and the Lung Science Conference and Sleep and Breathing Conference
+					Other events include courses, research seminars and the Lung Science Conference and Sleep and Breathing Conference.
+					<br><br>
+
+					<h3 style="font-size20px;"><a href="{{url('congress-and-events/events-calendar')}}"><span class="icon-calender" style="font-size: 25px;position: relative; top: 4px; margin-right: 10px;"></span>All Event Calendar<span class="s7-angle-right" style="font-size: 30px;position: relative; top: 8px;"></a></h3>
+					
+
 				</div>
 			</div>
 			<div class="col-md-6 pull-right top-right-col text-left">
@@ -54,6 +59,7 @@
 	</div>
 	<div class="light-grey-bg">
         <div class="main-content">
+
         	<div class="row row_event">
         	@foreach($items as $item)
 				<div class="col-md-3">
