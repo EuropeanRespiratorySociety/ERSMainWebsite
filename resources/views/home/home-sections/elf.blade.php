@@ -14,7 +14,7 @@
       <a href="{{url('advocacy/policy-areas')}}">
         <div class="card card-padded card-home">
 
-          <img src="../images/elf/elf_1.jpg" alt=""/>
+          <img src="../images/elf/elf_7.jpg" alt=""/>
           <div class="title-box"><h2>Patient involvement</h2></div>
         </div>
       </a>
@@ -36,7 +36,7 @@
       <a href="{{url('advocacy/eu-projects')}}">
         <div class="card card-padded card-home">
 
-          <img src="../images/elf/elf_3.jpg" alt=""/>
+          <img src="../images/elf/elf_6.jpg" alt=""/>
           <div class="title-box"><h2>Patient network</h2></div>
         </div>
       </a>

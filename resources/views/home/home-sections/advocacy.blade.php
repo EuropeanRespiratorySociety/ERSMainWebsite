@@ -2,8 +2,7 @@
   <div class="main-content">
     <div class="page-head"><h2>Raising the profile of respiratory health</h2></div>
     <div class="col-md-6 center-block lead">
-     We are committed to driving standards in respiratory health through education and professional development opportunities. 
-We offer a range of activities from e-learning, interactive teaching and activities to harmonise education standards, alongside funding opportunities for fellowships, awards and grants. 
+     We work to raise awareness of lung disease amongst the public and politicians. The ERS EU Affairs department works closely with the EU Institutions, global organisations such as the Global NCD Alliance, the Framework Convention Alliance and WHO to support science-based policy development in the respiratory field.
    </div>
 
   <div class="row">
