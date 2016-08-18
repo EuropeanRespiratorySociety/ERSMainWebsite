@@ -33,6 +33,10 @@ class Navigation
                     $menu->whoWeAre->add('Governance and Transparency', 'the-society/who-we-are/ers-governance-and-transparency' );
                     $menu->whoWeAre->add('Awards', 'the-society/who-we-are/awards' );
                     $menu->whoWeAre->add('Fellow of ERS', 'the-society/who-we-are/fellow-of-ers' );
+                    $menu->whoWeAre->add('Contact', 'the-society/who-we-are/contact')
+                                            ->prepend('<i class="s7-mail icon"></i><span>')
+                                            ->append('</span>')
+                                            ->link->attr(array('class' => 'contact'));
                 $menu->theSociety->add('Membership', 'the-society/membership' );
                     $menu->membership->add('Benefits', 'the-society/membership#benefits' );
                     $menu->membership->add('Categories', 'the-society/membership#categories' );
@@ -54,10 +58,6 @@ class Navigation
                     $menu->newsAndFeatures->add('Respiratory Matters', 'the-society/news/respiratory-matters' );
                     $menu->newsAndFeatures->add('ERS Vision', 'http://www.ersvision.org/')->link->attr(array('target' => '_blank'));
                     $menu->newsAndFeatures->add('Press Office', 'the-society/news/press-office');
-                    $menu->newsAndFeatures->add('Contact', 'the-society/news/contact')
-                                            ->prepend('<i class="s7-mail icon"></i><span>')
-                                            ->append('</span>')
-                                            ->link->attr(array('class' => 'contact'));
 
             $menu->add('Congress and events','#scientific-and-educational-events');
                 $menu->congressAndEvents->add('Events calendar','congress-and-events/events-calendar');

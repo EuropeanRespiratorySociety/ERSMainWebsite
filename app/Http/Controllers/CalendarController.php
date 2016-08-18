@@ -29,7 +29,6 @@ class CalendarController extends Controller
         }));
         $items = $CC->sortCalendar($items);
         $params['items'] = (object) $items; 
-        dd($params);
         return view('congress-and-events.calendar')->with($params);    
 
     }

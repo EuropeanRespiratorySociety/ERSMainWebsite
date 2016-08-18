@@ -295,7 +295,11 @@ class CloudCmsHelper
                     if(isset($item->_qname)){$parsed[$key]['_qname'] = $item->_qname;}
                     if(isset($item->_type)){$parsed[$key]['_type'] = $item->_type;}
                     if(isset($item->ebusDate)){$parsed[$key]['ebusDate'] = $item->ebusDate;}  
-                    if(isset($item->eventDate)){$parsed[$key]['eventDates'] = $this->ersDate($item->eventDate, $item->eventEndDate);}  
+                    if(isset($item->eventDate) && isset($item->eventEndDate)){
+                        $parsed[$key]['eventDates'] = $this->ersDate($item->eventDate, $item->eventEndDate);
+                    } elseif(isset($item->eventDate) && !isset($item->eventEndDate)){
+                        $parsed[$key]['eventDates'] = $this->ersDate($item->eventDate);
+                    }
                     if(isset($item->eventDate)){$parsed[$key]['calendar'] = $this->calendar($item->eventDate);}   
                     if(isset($item->earlybirdDeadline)){$parsed[$key]['earlybirdDeadline'] = $this->ersDate($item->earlybirdDeadline);}
                     if(isset($item->extendedDeadline)){ $parsed[$key]['extendedDeadline'] = $this->ersDate($item->extendedDeadline);}
