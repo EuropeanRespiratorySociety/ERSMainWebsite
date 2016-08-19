@@ -30,7 +30,7 @@
                                     <img class="img-responsive" src="../images/course/course_event.jpg">
                                 </div>
                                 <div class="card-content">
-                                    <p class="title">Your 'MyERS' has been updated and revamped
+                                    <p class="title">Your 'myERS' has been updated and revamped
                                     </p>
                                     <div class="lead-card"><p>ERS is pleased to announce that our online membership portal 'MyERS' has been updated and revamped in order to improve usability. The site changes are effective immediately and bring the following new features:</p></div>
                                 </div>

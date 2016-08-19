@@ -20,7 +20,7 @@
           <div class="card card-padded card-home">
             <span class="label label-scientific">Your online membership portal</span>
             <img src="../images/community/my_ers.jpg" alt="">
-            <div class="title-box"><h2>My ERS</h2></div>
+            <div class="title-box"><h2>myERS</h2></div>
           </div>
         </a>
       </div>
