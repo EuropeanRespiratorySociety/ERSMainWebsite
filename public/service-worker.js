@@ -325,17 +325,17 @@ toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/news\/respiratory-
 toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/news\/press-office/, toolbox.cacheFirst, {"cache":{"name":"ers-offline-pages-press"}});
 toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/news\/contact/, toolbox.cacheFirst, {"cache":{"name":"ers-offline-pages-contact"}});
 toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/news/, toolbox.networkFirst, {"cache":{"maxEntries":10,"name":"ers-offline-pages-news"}});
-toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/js\/all\.js/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
+toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/js\/all\.js/, toolbox.networkFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/js\/jquery\.min\.js/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/js\/fullpage\.js/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
-toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/js\/app-home\.js/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
+toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/js\/app-home\.js/, toolbox.networkFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/fonts\/DINpro\/DINWebPro\.woff/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/fonts\/icomoon\/fonts\/icomoon\.woff/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/fonts\/icomoon\/fonts\/icomoon\.ttf/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/fonts\/stroke-7\/fonts\/Stroke-7\.ttf/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/fonts\/stroke-7\/fonts\/Stroke-7\.woff/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
 toolbox.router.get(/^https:\/\/fonts\.googleapis\.com\/css\?family=Amiri:400,400italic,700,700italic/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
-toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/css\/all\.css/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
+toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/css\/all\.css/, toolbox.networkFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/images\/logo-full-retina\.png/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
 
 

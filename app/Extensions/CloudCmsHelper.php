@@ -318,7 +318,7 @@ class CloudCmsHelper
                     if(isset($item->image)){
                         $img_qname = $item->image->qname;
                         $img = CC::nodes()->getImage($img_qname);
-                        $parsed[$key]['image'] = $img->imageUrl."?name=image5000&size=500";
+                        $parsed[$key]['image'] = $img->imageUrl."?name=image500&size=500";
                     }
 
                     if(isset($item->highResImage)){

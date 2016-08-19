@@ -167,7 +167,7 @@ gulp.task('generate-service-worker', function(callback) {
 		},
 	    {
 	  		urlPattern: /^https:\/\/bootstrap\.ersnet\.org\/js\/all\.js/,
-	  		handler: 'cacheFirst',
+	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
 			      maxEntries: 10,
@@ -197,7 +197,7 @@ gulp.task('generate-service-worker', function(callback) {
 		},
 	    {
 	  		urlPattern: /^https:\/\/bootstrap\.ersnet\.org\/js\/app-home\.js/,
-	  		handler: 'cacheFirst',
+	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
 			      maxEntries: 10,
@@ -267,7 +267,7 @@ gulp.task('generate-service-worker', function(callback) {
 		},
 	    {
 	  		urlPattern: /^https:\/\/bootstrap\.ersnet\.org\/css\/all\.css/,
-	  		handler: 'cacheFirst',
+	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
 			      maxEntries: 10,
