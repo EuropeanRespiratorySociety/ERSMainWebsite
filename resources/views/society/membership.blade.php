@@ -61,9 +61,9 @@
           <p>When you become a member of ERS you will be asked to join three groups from the scientific assemblies. These groups are the foundations of the Society and set the scientific and educational agenda across all activities. They also serve as a forum to present and discuss new concepts and findings, particularly at the ERS International Congress. Find out more about the <a href="the-society/assemblies">scientific assemblies.</a></p>
           </div>
 
-          <h4><strong>MyERS</strong></h4>
+          <h4><strong>myERS</strong></h4>
           <div class="col-md-7 center-block lead">
-            <p>The <a href="https://my.ersnet.org">MyERS portal</a> is an online space where you can access your membership benefits including managing your publications, registering for ERS events and conferences and getting your CME and attendance credits. If you are a new member, you can also register here by completing the online application process.</p>
+            <p>The <a href="https://my.ersnet.org">myERS portal</a> is an online space where you can access your membership benefits including managing your publications, registering for ERS events and conferences and getting your CME and attendance credits. If you are a new member, you can also register here by completing the online application process.</p>
           </div>
 
 

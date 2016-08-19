@@ -8,7 +8,7 @@
 		</div>
 
 		<div class="col-md-7 center-block lead">
-			<strong>ERS membership in association with a national or regional society</strong> – if your national or regional respiratory society has a joint agreement with ERS, you will have the option to become a member of ERS. A unique ERS membership category applies for members who do not wish to be a part of the joint agreement with their national/regional societies. Please complete the online application process through your MyERS account.
+			<strong>ERS membership in association with a national or regional society</strong> – if your national or regional respiratory society has a joint agreement with ERS, you will have the option to become a member of ERS. A unique ERS membership category applies for members who do not wish to be a part of the joint agreement with their national/regional societies. Please complete the online application process through your myERS account.
 		</div>
 
 		<div class="col-md-7 center-block lead">
