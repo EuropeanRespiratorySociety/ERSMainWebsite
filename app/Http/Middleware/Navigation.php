@@ -127,16 +127,16 @@ class Navigation
                 $menu->research->add('Research Seminars', 'research/research-seminars');
                 $menu->research->add('Research Agency', 'research/research-agency');
 
-            $menu->add('Advocacy','#advocacy');
-                $menu->advocacy->add('EU-Affairs','advocacy/eu-affairs');
-                $menu->advocacy->add('EU-Projects','advocacy/eu-projects');
-                $menu->advocacy->add('Policy Areas','advocacy/policy-areas');
+            $menu->add('Advocacy and patient resources','#advocacy');
+                $menu->advocacyAndPatientResources->add('EU-Affairs','advocacy/eu-affairs');
+                $menu->advocacyAndPatientResources->add('EU-Projects','advocacy/eu-projects');
+                $menu->advocacyAndPatientResources->add('Policy Areas','advocacy/policy-areas');
                     $menu->policyAreas->add('The ERS Tobacco Control Committee','advocacy/policy-areas/the-ers-tobacco-control-committee')->link->attr(array('style' => 'display:none'));;
                     $menu->policyAreas->add('Environment and Health Committee','advocacy/policy-areas/environment-and-health-committee')->link->attr(array('style' => 'display:none'));
-                $menu->advocacy->add('Alliances','advocacy/alliances');
-                $menu->advocacy->add('Healthy Lungs for Life','http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/')
+                $menu->advocacyAndPatientResources->add('Alliances','advocacy/alliances');
+                $menu->advocacyAndPatientResources->add('Healthy Lungs for Life','http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/')
                                             ->link->attr(array('target' => '_blank')); 
-                $menu->advocacy->add('European Lung Foundation','http://www.europeanlung.org/en/')
+                $menu->advocacyAndPatientResources->add('European Lung Foundation','http://www.europeanlung.org/en/')
                                             ->link->attr(array('target' => '_blank'));                   
 
 
