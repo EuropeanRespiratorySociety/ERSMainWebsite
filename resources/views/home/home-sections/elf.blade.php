@@ -2,7 +2,7 @@
   <div class="main-content">
     <div class="page-head"><img src="../images/elf/elf.png" alt=""/ width="300px;"></div>
     <div class="col-md-6 center-block lead">
-     ELF was founded by ERS to with the aim of bringing together patients and the public with respiratory professionals to positively influence lung health. ELF communicates the work of the ERS to those outside the respiratory field and gives patients and the general public the opportunity to influence respiratory research and guidelines. 
+     ELF was founded by ERS with the aim of bringing together patients and the public with respiratory professionals to positively influence lung health. ELF communicates the work of  ERS to those outside the respiratory field and gives patients and the general public the opportunity to influence respiratory research and guidelines. 
    </div>
 
 

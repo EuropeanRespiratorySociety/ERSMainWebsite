@@ -2,7 +2,7 @@
   <div class="main-content">
     <div class="page-head"><h2>ERS community</h2></div>
     <div class="col-md-6 center-block lead">
-    Our community of respiratory professionals in growing each year. Becoming a member of ERS means you can join this expanding network and boost your career by sharing knowledge across borders and professional disciplines.
+    Our community of respiratory professionals is growing each year. Becoming a member of ERS means you can join this expanding network and boost your career by sharing knowledge across borders and professional disciplines.
     </div>
 
     <div class="row">

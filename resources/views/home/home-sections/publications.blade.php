@@ -151,7 +151,7 @@
                         </div>
                         <div class="card-content text-left">
                             <p>
-                                The Forum of International Respiratory Societies (FIRS) is composed of the world’s leading international respiratory societies. The purpose of this...
+                                This booklet contains information on the degree of air pollution in Europe, the nature of its effects and the measures that are being (and are recommended to be) ...
                             </p>
                         </div>
                         <div class="card-action"> 	
@@ -181,7 +181,7 @@
                         </div>
                         <div class="card-content text-left">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis...
+                                The COPD audit measures treatment standards of COPD management for patients hospitalised with exacerbations in Europe. The report provides information ...
                             </p>
                         </div>
                         <div class="card-action"> 	
