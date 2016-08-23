@@ -41,7 +41,7 @@
                     @if($item->type == "News")<h4 class="date">{{ $item->createdOn }}</h4>@endif
                 @endif
         @if(isset($item->lead)){!!$item->lead!!}@endif
-        {!!$item->body!!}
+        @if(isset($item->body)){!!$item->body!!}@endif
       </div>
     </div>
     <!-- Beginning Main Content Area -->

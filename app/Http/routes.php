@@ -109,6 +109,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('professional-development/fellowships', 'FellowshipController@index'); 
     Route::get('professional-development/fellowships/{slug}', 'FellowshipController@show');
     Route::get('professional-development/grants-and-sponsorships', 'GeneralController@grantsAndSponsorships');
+    Route::get('professional-development/grants-and-sponsorships/{slug}', 'GeneralController@show');
     Route::get('professional-development/educational-activities', 'CourseController@educationalActivities');
     Route::get('professional-development/{slug}', 'GeneralController@show'); //acreditation uses this route   
     Route::get('professional-development', 'CourseController@professionalDevelopment');
