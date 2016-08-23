@@ -18,19 +18,19 @@
 Some national societies might charge an equivalent incremental fee according to the provisions of their constitution and bylaws. </p>
 
 			<h4><strong>How will my current membership with my National Society change?</strong></h4>
-			<p>You will have access to ERS membership benefits in addition to unchanged access to your national society’s membership benefits. You will also have access to the new joint benefits that will be created by as part of the joint collaboration programme.</p>
+			<p>You will have access to ERS membership benefits in addition to unchanged access to your national society’s membership benefits. You will also have access to exclusive joint benefits.</p>
 
 			<h4><strong>I am not a member of my national society, can I still be a member of ERS?</strong></h4>
-			<p>You can become a member of the ERS by applying directly as before. However, if you are eligible, you will need to become a member of your national society to benefit from the reduced ERS membership fees. Please note that by choosing not to be a member of any of your national/regional societies, a unique ERS membership category applies. The annual fee will depend on your eligibility to join one of your national/regional societies. Please complete the online application process through your <a href="https://my.ersnet.org/">myERS account.</a></p>
+			<p>You can become a member of ERS by applying directly. However, if you are eligible, you will need to become a member of your national society to benefit from the reduced ERS membership fees. Please note that by choosing not to be a member of any of your national/regional societies, a unique ERS membership category applies. The annual fee will depend on your eligibility to join one of your national/regional societies. Please complete the online application process through your <a href="https://my.ersnet.org/">myERS account.</a></p>
 
 			<h4><strong>I am a member of a national society outside of Europe, will my society still be eligible?</strong></h4>
 			<p>Yes. All national societies worldwide will be eligible for the new ERS membership programme. In most cases national societies outside Europe will be incorporated with endorsement and in agreement with the corresponding regional society.</p>
 
 			<h4><strong>I am a member of my national society, but do not want to be a member of ERS. Can I opt out?</strong></h4>
-			<p>Yes, you can. An opt-out system will be included when you are informed about the new ERS membership programme from your national society.</p>
+			<p>Yes, you can. An opt-out system will be included when you are informed about the new ERS membership programme by your national society.</p>
 
-			<h4><strong>Who should I contact for more information about the new programme?</strong></h4>
-			<p>If your national society has already decided to be part of the scheme you can contact them directly for more information. If your country is not part of the scheme, you can contact ERS directly who will be able to let you know if your country is in discussions with ERS about the new programme: 
+			<h4><strong>Who should I contact for more information about the new Membership programme?</strong></h4>
+			<p>If your national society has already decided to be part of the scheme you can contact them directly for more information. If your society is not part of the scheme, you can contact ERS directly to find out if your country is in discussions with ERS about the new programme: 
 			<a href="mailto:members@ersnet.org">members@ersnet.org</a> <br><br>
 
 

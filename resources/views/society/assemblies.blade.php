@@ -14,13 +14,13 @@
       <div class="section fp-auto-height">
         <div class="main-content">
           <div class="page-head">
-            <h2>The ERS Assemblies</h2>
+            <h2>ERS Assemblies</h2>
           </div>
           
             <!--h3 class="pageTitle">The ERS Scientific Assemblies</h3-->
             <!--h4><strong>Exchange knowledge with the experts</strong></h4-->
 
-            <div class="col-md-8 center-block lead">The ERS Assemblies are the backbone of ERS. The Assemblies, and Groups within them, underpin all ERS scientific and educational activities and help drive ERS forward to achieving its mission. Each member has an intrinsic role within these groups to help set the agenda across all ERS activities. <br><br>
+            <div class="col-md-8 center-block lead">ERS Assemblies are the backbone of ERS. The Assemblies, and Groups within them, underpin all ERS scientific and educational activities and help drive ERS forward to achieving its mission. Each member has an intrinsic role within these groups to help set the agenda across all ERS activities. <br><br>
 Members can log in to ‘myERS’ and join one main group and up to two more groups to best suit your professional interest area. Members then become part of the nerve centre of ERS; voting for new leaders, shaping key activities such as the Congress programme and task forces, and being the first to hear about new opportunities and events in your professional interest area.<br><br></div>
             
            
