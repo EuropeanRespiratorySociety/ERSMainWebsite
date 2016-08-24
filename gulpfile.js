@@ -26,7 +26,10 @@ gulp.task('generate-service-worker', function(callback) {
 
   swPrecache.write(path.join(rootDir, 'service-worker.js'), {
     staticFileGlobs: [
-    	//rootDir + '/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'
+    	//rootDir + '*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}',
+    	//rootDir + '/{home,navigation,news,publications,research,}/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'
+    	//rootDir + '/stories/executive-office/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}',
+    	//rootDir + '/stories/people/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'
    	],
     runtimeCaching: [
 	    {

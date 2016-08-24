@@ -38,6 +38,11 @@ Route::get('cache-flush', function(){
     return "The cache has been flushed";
 });
 
+Route::get('token-flush', function(){
+    \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+    return "The token has been flushed";
+});
+
 
 
 
