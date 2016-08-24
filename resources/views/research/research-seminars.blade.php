@@ -57,8 +57,11 @@
           APPLICATION DEADLINE : <br>
           <span>15 October each year</span>
         </p>
+        </a>
     </div>
+    <h4 class="text-left" style="font-size:15px; margin-top:30px;">Organise an ERS seminar programme</h4>
     <p class="rules text-left">
+
       <a href="documents/scientific/Guidelines_ERS_Research_Seminar_May14.pdf">Research Seminars Guidelines</a> <br>
       <a href="documents/scientific/RS_Application_Form_May_2015_v2.doc">Application form</a>
     </p>
