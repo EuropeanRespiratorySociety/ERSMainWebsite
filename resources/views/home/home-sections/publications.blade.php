@@ -3,7 +3,7 @@
 		<div class="page-head"><h2>Publications</h2></div>
 		<div class="row">
 			<div class="col-md-6 center-block lead">
-				We produce a range of publications to promote knowledge and research in respiratory health, including our flagship publication, the European Respiratory Journal (ERJ), which aims to publish the highest quality scientific and clinical material from the field. 
+				We produce a range of publications to promote knowledge and research in respiratory health, including our flagship publication, the <i>European Respiratory Journal</i> (<i>ERJ</i>), which aims to publish the highest quality scientific and clinical material from the field. 
 			</div>
 			<div class="space"></div>
 		</div>
@@ -151,7 +151,7 @@
                         </div>
                         <div class="card-content text-left">
                             <p>
-                                This booklet contains information on the degree of air pollution in Europe, the nature of its effects and the measures that are being (and are recommended to be) ...
+                                ‘Air Quality and Health’ was published in September 2010 to coincide with the ERS Annual Congress in Barcelona. Part of the 2010 Year of the Lung initiative...
                             </p>
                         </div>
                         <div class="card-action"> 	
@@ -181,7 +181,7 @@
                         </div>
                         <div class="card-content text-left">
                             <p>
-                                The COPD audit measures treatment standards of COPD management for patients hospitalised with exacerbations in Europe. The report provides information ...
+                                 COPD audit text: The aim of the COPD Audit is to develop a core data set that can be used to audit COPD in acute hospital admissions across Europe.
                             </p>
                         </div>
                         <div class="card-action"> 	

@@ -56,9 +56,9 @@
             
           </div>
 
-          <h4><strong>ERS assemblies</strong></h4>
+          <h4><strong>ERS Assemblies</strong></h4>
           <div class="col-md-7 center-block lead">
-          <p>When you become a member of ERS you will be asked to join three groups from the scientific assemblies. These groups are the foundations of the Society and set the scientific and educational agenda across all activities. They also serve as a forum to present and discuss new concepts and findings, particularly at the ERS International Congress. Find out more about the <a href="the-society/assemblies">scientific assemblies.</a></p>
+          <p>When you become a member of ERS you will be asked to join three Groups from the Scientific Assemblies. These Groups are the foundations of the Society and set the scientific and educational agenda across all activities. They also serve as a forum to present and discuss new concepts and findings, particularly at the ERS International Congress. Find out more about the <a href="the-society/assemblies">Scientific Assemblies.</a></p>
           </div>
 
           <h4><strong>myERS</strong></h4>

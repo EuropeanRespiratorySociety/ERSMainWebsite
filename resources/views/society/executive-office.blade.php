@@ -700,7 +700,7 @@
       </div>
 
       <div class="col-md-8 center-block lead"><strong>Publication Office</strong><br><br>
-      European Respiratory Society : Sheffield S102PX United Kingdom<br><br>
+      European Respiratory Society : Sheffield S10 2PX United Kingdom<br><br>
         TEL +44 114 267 2860&nbsp;&nbsp;/&nbsp;&nbsp;FAX +44 114 266 5064&nbsp;&nbsp;/&nbsp;&nbsp;E-Mail <a href="mailto:info@ersj.org.uk">info@ersj.org.uk</a>
       </div>
 
@@ -753,24 +753,24 @@
             T +44 114 267 2869<br>
             </p>
         </div>
-        <div class="col-md-3 xs-mb-15">
+        <!--div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('fiona.marks@ersj.org.uk', 'Fiona Marks') !!}</strong>
             Technical Editor<br>
             T +44 114 267 2867<br>
             </p>
-        </div>
+        </div-->
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('catherine.pumphrey@ersj.org.uk', 'Catherine Pumphrey') !!}</strong>
             Technical Editor<br>
             T +44 114 267 2878<br>
             </p>
         </div>
-        <div class="col-md-3 xs-mb-15">
+        <!--div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('david.sadler@ersj.org.uk', 'David Sadler') !!}</strong>
             Technical Editor<br>
             T +44 114 267 2866<br>
             </p>
-        </div>
+        </div-->
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('Kay.Sharpe@ersj.org.uk', 'Kay Sharpe') !!}</strong>
             Administration Coordinator<br>

@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="col-md-6 center-block lead">
-              Respiratory failure is the principal cause of intensive care admission. Although the field involves many specialties, there is a strong tradition of research and training among pulmonologists. <br>
+              Respiratory failure is the principal cause of intensive care admission. Although the field involves many specialties, there is a strong tradition of research and training from pulmonologists. <br>
 The Assembly is comprised of the following two groups:
             </div>   
             <div class="row　row_assemblies_cardclearfix">

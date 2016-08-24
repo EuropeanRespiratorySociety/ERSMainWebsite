@@ -8,7 +8,11 @@
 					Other events include courses, research seminars and the Lung Science Conference and Sleep and Breathing Conference.
 					<br><br>
 
-					<h3 style="font-size20px;"><a href="{{url('congress-and-events/events-calendar')}}"><span class="icon-calender" style="font-size: 25px;position: relative; top: 4px; margin-right: 10px;"></span>All Event Calendar<span class="s7-angle-right" style="font-size: 30px;position: relative; top: 8px;"></a></h3>
+					<h3 style="font-size:20px;">
+						<a href="{{url('congress-and-events/events-calendar')}}"><span class="icon-calender" style="font-size: 25px;position: relative; top: 4px; margin-right: 10px;">
+							</span>All Event Calendar<span class="s7-angle-right" style="font-size: 30px;position: relative; top: 8px;">
+						</a>
+					</h3>
 					
 
 				</div>
