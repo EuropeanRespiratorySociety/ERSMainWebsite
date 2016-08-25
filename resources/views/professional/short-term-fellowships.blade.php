@@ -83,7 +83,7 @@
   </div>
 
   <p class="rules text-left">
-    <a href="pdf/scientific/Rules_and_Regulations_STRF.pdf">Rules & Regulations</a> <br>
+    <a href="documents/scientific/2016_ERS_STRTF_Rules_Regulations_October_round.pdf">Application Guidelines</a> <br>
     <a href="mailto:fellowships@ersnet.org">More information</a>
   </p>
 

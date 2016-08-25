@@ -85,7 +85,7 @@
   </div>
 
   <p class="rules text-left">
-    <a href="pdf/scientific/Rules_and_Regulations_LTRF.pdf">Rules & Regulations</a> <br>
+    <!--<a href="#">Application Guidelines</a> <br>-->
     <a href="mailto:fellowships@ersnet.org">More information</a>
   </p>
 

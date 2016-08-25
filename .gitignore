@@ -12,6 +12,8 @@
 /public/images/stories
 /public/images/doi
 /public/sponsorship
+/public/documents
+/public/pdf
 Homestead.yaml
 Homestead.json
 composer-setup.php
