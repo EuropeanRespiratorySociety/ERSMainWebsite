@@ -17,6 +17,11 @@
           @if(isset($item->image))
               <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
           @endif 
+          @if(isset($item->video))
+          <div class="videoWrapper">
+            {!!$item->video!!} 
+          </div>
+          @endif
           @if(isset($relatedItems))
             @include('partials.related-items', array('relatedItems' => $relatedItems)) 
           @endif       
@@ -36,9 +41,15 @@
        </div>
     </div>
     <!-- Beginning Right Side-bar -->
+
     <div class="col-md-3 white-bg event-items-right">
+        @if(isset($item->flags))
+          <div class="alert {{'alert-'.$item->flags['color'] }}">
+          <div class="message"> {{ $item->flags['text'] }}</div>
+          </div>
+    @endif
         @if(isset($item->deadlines->applicationDeadline) || isset($item->deadlines->applicationDeadline2))
-        <p class="deadline">APPLICATION now open. Deadline: {{$item->deadlines->applicationDeadline}}</p>
+        <p class="deadline">APPLICATION now open. Deadline: {{$item->deadlines->applicationDeadline2}}</p>
         @endif
         <div class="list-group text-left">
           @if(isset($item->deadlines->applicationDeadline) || isset($item->deadlines->applicationDeadline2))
@@ -75,9 +86,9 @@
   @endif  
     For more information, contact <a href="mailto:fellowships@ersnet.org">fellowships@ersnet.org</a>
   </p>
-@if(isset($item->registerButton['link']))
-  <a href="{{$item->registerButton['link']}}" target="_blank" class="btn btn-primary item-register-bt">{{$item->registerButton['text']}}</a>
-@endif  
+  @if(isset($item->registerButton['link']))
+    <a href="{{$item->registerButton['link']}}" target="_blank" class="btn btn-primary item-register-bt">{{$item->registerButton['text']}}</a>
+  @endif  
 </div>
 <!-- END Right Side-bar -->
 
