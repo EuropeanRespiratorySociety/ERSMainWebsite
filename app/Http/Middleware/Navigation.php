@@ -20,19 +20,19 @@ class Navigation
 
             $menu->add('The Society', array('url' => '#community', 'class' => 'horizontal'));
                 $menu->theSociety->add('Who we are', 'the-society/who-we-are' );
-                    $menu->whoWeAre->add('Leadership and committees', 'the-society/who-we-are/leadership' );
-                        $menu->leadershipAndCommittees->add('National Delegates', 'the-society/who-we-are/leadership/national-delegates' );
-                        $menu->leadershipAndCommittees->add('Science Council', 'the-society/who-we-are/leadership/science-council' );
-                        $menu->leadershipAndCommittees->add('Assembly Heads', 'the-society/who-we-are/leadership/assembly-heads' );
-                        $menu->leadershipAndCommittees->add('Assembly Secretaries', 'the-society/who-we-are/leadership/assembly-secretaries' );
-                        $menu->leadershipAndCommittees->add('Education Council', 'the-society/who-we-are/leadership/education-council' );
-                        $menu->leadershipAndCommittees->add('Council', 'the-society/who-we-are/leadership/council' );
-                        $menu->leadershipAndCommittees->add('Junior Members Committee', 'http://juniors.ersent.org' )->link->attr(array('target' => '_blank'));
-                        $menu->leadershipAndCommittees->add('ERS Election', 'the-society/who-we-are/leadership/ers-elections' );
-                    $menu->whoWeAre->add('Executive office', 'the-society/who-we-are/executive-office' );
-                    $menu->whoWeAre->add('Governance and Transparency', 'the-society/who-we-are/ers-governance-and-transparency' );
+                    $menu->whoWeAre->add('Leadership and committees', 'the-society/who-we-are/leadership');
+                        $menu->leadershipAndCommittees->add('National Delegates', 'the-society/who-we-are/leadership/national-delegates');
+                        $menu->leadershipAndCommittees->add('Science Council', 'the-society/who-we-are/leadership/science-council');
+                        $menu->leadershipAndCommittees->add('Assembly Heads', 'the-society/who-we-are/leadership/assembly-heads');
+                        $menu->leadershipAndCommittees->add('Assembly Secretaries', 'the-society/who-we-are/leadership/assembly-secretaries');
+                        $menu->leadershipAndCommittees->add('Education Council', 'the-society/who-we-are/leadership/education-council');
+                        $menu->leadershipAndCommittees->add('Council', 'the-society/who-we-are/leadership/council');
+                        $menu->leadershipAndCommittees->add('Junior Members Committee', 'http://juniors.ersent.org')->link->attr(array('target' => '_blank'));
+                        $menu->leadershipAndCommittees->add('ERS Election', 'the-society/who-we-are/leadership/ers-elections');
+                    $menu->whoWeAre->add('Executive office', 'the-society/who-we-are/executive-office');
+                    $menu->whoWeAre->add('Governance and Transparency', 'the-society/who-we-are/ers-governance-and-transparency');
                     $menu->whoWeAre->add('Awards', 'the-society/who-we-are/awards' );
-                    $menu->whoWeAre->add('Fellow of ERS', 'the-society/who-we-are/fellow-of-ers' );
+                    $menu->whoWeAre->add('Fellow of ERS', 'the-society/who-we-are/fellow-of-ers');
                     $menu->whoWeAre->add('Contact', 'the-society/who-we-are/contact')
                                             ->prepend('<i class="s7-mail icon"></i><span>')
                                             ->append('</span>')

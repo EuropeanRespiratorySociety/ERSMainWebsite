@@ -14,8 +14,17 @@
               <img src="{{url($item->image)}}" @if(isset($item->imageDescription))alt="{{$item->imageDescription}}" @endif >
             @endif
               <figcaption>
-              <h4>@if(isset($item->createdOn)){{$item->createdOn}}@endif</h4>
-              <h2>@if(isset($item->title)){{$item->title}}@endif</h2>
+              <h4
+              @if(isset($item->contrastOnHomepage)) 
+                @if($item->contrastOnHomepage) style="color:#333!important" @endif
+              @endif
+              >
+              @if(isset($item->createdOn)){{$item->createdOn}}@endif</h4>
+              <h2
+              @if(isset($item->contrastOnHomepage)) 
+                @if($item->contrastOnHomepage) style="color:#333!important" @endif
+              @endif
+              >@if(isset($item->title)){{$item->title}}@endif</h2>
               </figcaption>     
             </figure>
           </div>

@@ -284,6 +284,7 @@ class CloudCmsHelper
                     if(isset($item->fullyBooked)){$parsed[$key]['fullyBooked'] = $item->fullyBooked;}
                     if(isset($item->contentType)){$parsed[$key]['contentType'] = $item->contentType;}
                     if(isset($item->type)){$parsed[$key]['type'] = $item->type;}
+                    if(isset($item->contrastOnHomepage)){$parsed[$key]['contrastOnHomepage'] = $item->contrastOnHomepage;}
                     if(isset($item->type)){$parsed[$key]['typeColor'] = $this->setTypeColor($item->type);}
                     if(isset($item->category)){
                     	$parsed[$key]['category'] = $item->category->title;
