@@ -87,9 +87,9 @@
     <a href="mailto:fellowships@ersnet.org">More information</a>
   </p>
 
-
-
-  <a href="" class="btn btn-primary item-register-bt">Register</a>
+@if(isset($category->registerButton['link']))
+  <a href="{{$category->registerButton['link']}}" target="_blank" class="btn btn-primary item-register-bt">{{$category->registerButton['text']}}</a>
+@endif  
 </div>
 
 <!-- END Beginning Right Side-bar -->
