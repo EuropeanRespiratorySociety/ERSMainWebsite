@@ -872,8 +872,8 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('tonia.thomy@ersnet.org', 'Tonia Thomy') !!}</strong>
-            Methodologist<br>
+          <p class="photo_caption"><strong>{!! Html::mailto('thomy.tonia@ersnet.org', 'Thomy Tonia') !!}</strong>
+          Senior Methodologist<br>
             T +41 21 213 01 87<br>
             </p>
         </div>
