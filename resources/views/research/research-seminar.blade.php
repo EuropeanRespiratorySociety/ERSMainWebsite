@@ -32,7 +32,7 @@
         </div>
         <h2 class="text-left clearfix date-venue">
         <!--<a href=""><span class="icon s7-angle-left pull-left" style="font-size: 24px;"></span></a>-->
-        <label>@if(isset($item->eventDates)){{$item->eventDates}}@endif <a href="">@if(isset($item->eventLocation)){{$item->eventLocation}}</a>@endif</label>
+        <label>@if(isset($item->eventDates)){{$item->eventDates}}@endif @if(isset($item->eventLocation)){{$item->eventLocation}} @endif</label>
         <!--<a href=""><span class="icon s7-angle-right pull-right" style="font-size: 24px;"></span></a>-->
         </h2>
       </div>

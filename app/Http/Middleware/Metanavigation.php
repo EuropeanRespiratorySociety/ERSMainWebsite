@@ -27,7 +27,7 @@ class Metanavigation
             $menu->add('Vision', 'http://www.ersvision.org/')
                     ->link->attr(array('target' => '_blank'))
                     /*->prepend('<i class="s7-culture icon"></i><span>')->append('</span>')*/; 
-            $menu->add('Healthy Lung For Life', 'http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/')
+            $menu->add('Healthy Lungs For Life', 'http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/')
                     ->link->attr(array('target' => '_blank'))
                     /*->prepend('<i class="s7-culture icon"></i><span>')->append('</span>')*/; 
             $menu->add('European Lung Foundation', 'http://www.europeanlung.org/en/')
