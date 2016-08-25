@@ -4,11 +4,11 @@
 
           <div class="row">
             <div class="col-md-3 col-md-offset-3 xs-mb-15">
-              <img src="../images/stories/people/Dick_Heederik.jpg" class="img-circle">
+              <img src="../images/people/leadership/Dick_Heederik.jpg" class="img-circle">
               <p class="photo_caption">Head: <a href="mailto:d.heederik@uu.nl">Dick Heederik</a></p>
             </div>
             <div class="col-md-3 xs-mb-15">
-              <img src="../images/stories/people/Christer_Jansen.jpg" class="img-circle">
+              <img src="../images/people/leadership/Christer_Jansen.jpg" class="img-circle">
               <p class="photo_caption">Secretary: <a href="mailto:christer.janson@medsci.uu.se">Christer Jansen</a></p>
 
             </div>

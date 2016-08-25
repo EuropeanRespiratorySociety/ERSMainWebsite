@@ -4,11 +4,11 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/stories/people/Felix_JF_Herth.jpg" class="img-circle">
+                  <img src="../images/people/leadership/Felix_JF_Herth.jpg" class="img-circle">
                   <p class="photo_caption">Head: <a href="mailto:felix.herth@med.uni-heidelberg.de">Felix JF. Herth</a></p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/stories/people/Venerino_Poletti.jpg" class="img-circle">
+                  <img src="../images/people/leadership/Venerino_Poletti.jpg" class="img-circle">
                   <p class="photo_caption">Secretary: <a href="mailto:venerino.poletti@gmail.com">Venerino Poletti</a></p>
                  
                 </div>

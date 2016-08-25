@@ -4,11 +4,11 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/stories/people/Maria_R_Bonsignore.jpg" class="img-circle">
+                  <img src="../images/people/leadership/Maria_R_Bonsignore.jpg" class="img-circle">
                   <p class="photo_caption">Head: <a href="mailto:marisa@ibim.cnr.it">Maria R. Bonsignore</a></p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/stories/people/Andrea_Aliverti.jpg" class="img-circle">
+                  <img src="../images/people/leadership/Andrea_Aliverti.jpg" class="img-circle">
                   <p class="photo_caption">Secretary: <a href="mailto:andrea.aliverti@polimi.it">Andrea Aliverti</a></p>
                  
                 </div>

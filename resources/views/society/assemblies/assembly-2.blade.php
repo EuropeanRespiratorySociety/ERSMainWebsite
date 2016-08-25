@@ -3,11 +3,11 @@
             <div class="page-head"><h2>ERS Assembly 2: Respiratory Intensive Care</h2></div>
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/stories/people/Paolo_Navalesi.jpg" class="img-circle">
+                  <img src="../images/people/leadership/Paolo_Navalesi.jpg" class="img-circle">
                   <p class="photo_caption">Head: <a href="mailto:pnavalesi@gmail.com">Paolo Navalesi</a></p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/stories/people/Stylianos_Orfanos.jpg" class="img-circle">
+                  <img src="../images/people/leadership/Stylianos_Orfanos.jpg" class="img-circle">
                   <p class="photo_caption">Secretary: <a href="mailto:sorfanos@med.uoa.gr">Stylianos Orfanos</a></p>
                  
                 </div>

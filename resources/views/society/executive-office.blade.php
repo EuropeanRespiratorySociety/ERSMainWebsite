@@ -31,15 +31,15 @@
 
         <div class="row">
           <div class="col-md-3 col-md-offset-3 xs-mb-15">
-            <img src="../images/stories/executive-office/wbill.jpg" class="img-circle">
+            <img src="../images/people/executive-office/wbill.jpg" class="img-circle">
             <p class="photo_caption"><strong>{!! Html::mailto('werner.bill@ersnet.org', 'Werner Bill') !!}</strong>
-            Deputy Executive Director,<br>
+            Executive Director,<br>
             Director of Finance and Administration<br>
             T +41 21 213 01 20
             </p>
           </div>
           <div class="col-md-3 xs-mb-15">
-            <img src="../images/stories/executive-office/bsax.jpg" class="img-circle">
+            <img src="../images/people/executive-office/bsax.jpg" class="img-circle">
             <p class="photo_caption"><strong>{!! Html::mailto('betty.sax@ersnet.org', 'Betty Sax') !!}</strong>
             Head of Executive Office<br>
             T +41 21 213 01 11<br>
@@ -68,7 +68,7 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/who-we-are/executive-office#congress"><img class="img-responsive" src="../images/stories/executive-office/congress.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#congress"><img class="img-responsive" src="../images/people/executive-office/congress.jpg"></a>
                     </div>
                     <div class="card-title">
                         <a href="the-society/who-we-are/executive-office#congress">Congress and Events</a>
@@ -80,7 +80,7 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/who-we-are/executive-office#corporate"><img class="img-responsive" src="../images/stories/executive-office/corporate.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#corporate"><img class="img-responsive" src="../images/people/executive-office/corporate.jpg"></a>
                     </div>
                     <div class="card-title">
                         <a href="the-society/who-we-are/executive-office#corporate">Corporate Relations, Marketing</a>
@@ -92,7 +92,7 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/who-we-are/executive-office#educational"><img class="img-responsive" src="../images/stories/executive-office/educational.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#educational"><img class="img-responsive" src="../images/people/executive-office/educational.jpg"></a>
                     </div>
                     <div class="card-title">
                         <a href="the-society/who-we-are/executive-office#educational">Educational Activities</a>
@@ -104,7 +104,7 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/who-we-are/executive-office#eu"><img class="img-responsive" src="../images/stories/executive-office/eu.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#eu"><img class="img-responsive" src="../images/people/executive-office/eu.jpg"></a>
                     </div>
                     <div class="card-title">
                         <a href="the-society/who-we-are/executive-office#eu">EU Affairs</a>
@@ -116,7 +116,7 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/who-we-are/executive-office#elf"><img class="img-responsive" src="../images/stories/executive-office/elf.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#elf"><img class="img-responsive" src="../images/people/executive-office/elf.jpg"></a>
                     </div>
                     <div class="card-title">
                         <a href="the-society/who-we-are/executive-office#elf">European Lung Foundation</a>
@@ -128,7 +128,7 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/who-we-are/executive-office#finance"><img class="img-responsive" src="../images/stories/executive-office/finance.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#finance"><img class="img-responsive" src="../images/people/executive-office/finance.jpg"></a>
                     </div>
                     <div class="card-title">
                         <a href="the-society/who-we-are/executive-office#finance">Finance and Administration</a>
@@ -140,7 +140,7 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/who-we-are/executive-office#it"><img class="img-responsive" src="../images/stories/executive-office/it.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#it"><img class="img-responsive" src="../images/people/executive-office/it.jpg"></a>
                     </div>
                     <div class="card-title">
                         <a href="the-society/who-we-are/executive-office#it">IT Infrastructure</a>
@@ -152,7 +152,7 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/who-we-are/executive-office#membership_national"><img class="img-responsive" src="../images/stories/executive-office/membership.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#membership_national"><img class="img-responsive" src="../images/people/executive-office/membership.jpg"></a>
                     </div>
                     <div class="card-title">
                         <a href="the-society/who-we-are/executive-office#membership_national">Membership</a>
@@ -164,7 +164,7 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/who-we-are/executive-office#publications"><img class="img-responsive" src="../images/stories/executive-office/publications.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#publications"><img class="img-responsive" src="../images/people/executive-office/publications.jpg"></a>
                     </div>
                     <div class="card-title">
                         <a href="the-society/who-we-are/executive-office#publications">Publications</a>
@@ -176,7 +176,7 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/who-we-are/executive-office#scientific"><img class="img-responsive" src="../images/stories/executive-office/scientific.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#scientific"><img class="img-responsive" src="../images/people/executive-office/scientific.jpg"></a>
                     </div>
                     <div class="card-title">
                         <a href="the-society/who-we-are/executive-office#scientific">Scientific Activities</a>
@@ -203,7 +203,7 @@
       </div>
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
-            <img src="../images/stories/executive-office/pfoo.jpg" class="img-circle">
+            <img src="../images/people/executive-office/pfoo.jpg" class="img-circle">
             <p class="photo_caption"><strong>{!! Html::mailto('Patricia.Foo@ersnet.org', 'Patricia Foo') !!}</strong>
             Director of Congress &amp; Events<br>
             T +41 21 213 01 70<br>
@@ -255,7 +255,7 @@
       </div>
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
-            <img src="../images/stories/executive-office/ssealy.jpg" class="img-circle">
+            <img src="../images/people/executive-office/ssealy.jpg" class="img-circle">
             <p class="photo_caption"><strong>{!! Html::mailto('Steve.Sealy@ersnet.org', 'Steve Sealy') !!}</strong>
             Associate Director,<br>
             Director of Corporate Relations,<br>
@@ -321,7 +321,7 @@
       </div>
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
-            <img src="../images/stories/executive-office/cpannetier.jpg" class="img-circle">
+            <img src="../images/people/executive-office/cpannetier.jpg" class="img-circle">
             <p class="photo_caption"><strong>{!! Html::mailto('carine.pannetier@ersnet.org', 'Carine Pannetier') !!}</strong>
             Director of Science and Education<br>
             T +41 21 213 01 80<br>
@@ -440,7 +440,7 @@
 
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
-            <img src="../images/stories/executive-office/bward.jpg" class="img-circle">
+            <img src="../images/people/executive-office/bward.jpg" class="img-circle">
             <p class="photo_caption"><strong>{!! Html::mailto('brian.ward@ersnet.org', 'BRIAN WARD') !!}</strong>
             Director of European Affairs<br>
             T +32 2 238 53 66<br>
@@ -492,7 +492,7 @@
       </div>
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
-            <img src="../images/stories/executive-office/ppowell.jpg" class="img-circle">
+            <img src="../images/people/executive-office/ppowell.jpg" class="img-circle">
             <p class="photo_caption"><strong>{!! Html::mailto('pippa.powell@europeanlung.org', 'PIPPA POWELL') !!}</strong>
             Director of the European Lung Foundation<br>
             T +44 114 267 2874<br>
@@ -544,7 +544,7 @@
       </div>
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
-            <img src="../images/stories/executive-office/wbill.jpg" class="img-circle">
+            <img src="../images/people/executive-office/wbill.jpg" class="img-circle">
             <p class="photo_caption"><strong>{!! Html::mailto('werner.bill@ersnet.org', 'Werner Bill') !!}</strong>
             Deputy Executive Director,<br>
             Director of Finance and Administration<br>
@@ -623,7 +623,7 @@
       </div>
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
-            <img src="../images/stories/executive-office/sdupasquier.jpg" class="img-circle">
+            <img src="../images/people/executive-office/sdupasquier.jpg" class="img-circle">
             <p class="photo_caption"><strong>{!! Html::mailto('Stephane.Dupasquier@ersnet.org', 'Stéphane Dupasquier') !!}</strong>
             Head of IT Services and Infrastructure<br>
             T +41 21 213 01 30<br>
@@ -815,7 +815,7 @@
       </div>
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
-            <img src="../images/stories/executive-office/cpannetier.jpg" class="img-circle">
+            <img src="../images/people/executive-office/cpannetier.jpg" class="img-circle">
             <p class="photo_caption"><strong>{!! Html::mailto('carine.pannetier@ersnet.org', 'Carine Pannetier') !!}</strong>
             Director of Science and Education<br>
             T +41 21 213 01 80<br>

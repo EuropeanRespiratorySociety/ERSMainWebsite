@@ -4,11 +4,11 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/stories/people/Nicolas_Schonfeld.jpg" class="img-circle">
+                  <img src="../images/people/leadership/Nicolas_Schonfeld.jpg" class="img-circle">
                   <p class="photo_caption">Head: <a href="mailto:nicolas.schoenfeld@helios-kliniken.de">Nicolas Schönfeld</a></p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/stories/people/Bogdan_Dragos_Grigoriu.jpg" class="img-circle">
+                  <img src="../images/people/leadership/Bogdan_Dragos_Grigoriu.jpg" class="img-circle">
                   <p class="photo_caption">Secretary: <a href="mailto:b_grigoriu@hotmail.com">Bogdan Dragos Grigoriu</a></p>
                  
                 </div>
