@@ -9,6 +9,8 @@
 /resources/views/template.blade.php
 /node_modules
 /config/laravel-responsecache.php
+/public/images/stories
+/public/images/doi
 Homestead.yaml
 Homestead.json
 composer-setup.php
