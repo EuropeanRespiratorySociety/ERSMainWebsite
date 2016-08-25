@@ -15,7 +15,7 @@
         <h2><a href="">Funding opportunities</a></h2>
         <ul>
           <li><a href="{{url('professional-development/fellowships')}}">Fellowships</a></li>
-          <li><a href="http://taskforces.ersnet.org/" target="_blank">Task forces </a></li>
+          <li><a target="_blank" href="{{url('research/clinical-research-collaborations')}}">Clinical Research Collaborations</a></li>
           <li><a href="{{url('the-society/who-we-are/awards')}}">Awards and Medal</a></li>
         </ul>
         @if(isset($funding))    
@@ -63,7 +63,7 @@
         <ul>
           <li><a target="_blank" href="http://www.ers-education.org/guidelines.aspx">Published guidelines</a></li>
           <li><a target="_blank" href="https://taskforces.ersnet.org/">On-going projects</a></li>
-          <li><a target="_blank" href="{url('research/clinical-research-collaborations')}}">Clinical Research Collaborations</a></li>
+         
           <li><a target="_blank" href="https://taskforces.ersnet.org/about-task-forces/item/how-to-apply-for-ers-funding">Apply for funding</a></li>
         </ul>
       </div>
