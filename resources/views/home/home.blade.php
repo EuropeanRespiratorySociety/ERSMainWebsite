@@ -37,9 +37,9 @@
 
     <!-- Start Section 5 -->  
     @include('home.home-sections.professional', array(
-              'funding' => $items['featuredFunding'],
-              'eLearning' => $items['eLearning'],
-              'course' => $items['featuredCourse']
+              'funding' => isset($items['featuredFunding']) ? $items['featuredFunding'] : '',
+              'eLearning' => isset($items['eLearning']) ? $items['eLearning'] : '',
+              'course' => isset($items['featuredCourse']) ? $items['featuredCourse'] : ''
               ))
 
      <!-- Start Section 6 -->  
