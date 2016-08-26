@@ -287,8 +287,8 @@ class CloudCmsHelper
                     if(isset($item->contrastOnHomepage)){$parsed[$key]['contrastOnHomepage'] = $item->contrastOnHomepage;}
                     if(isset($item->type)){$parsed[$key]['typeColor'] = $this->setTypeColor($item->type);}
                     if(isset($item->category)){
-                    	$parsed[$key]['category'] = $item->category->title;
-                    	$parsed[$key]['categoryId'] = $item->category->qname;
+                        if(isset($item->category->title)){$parsed[$key]['category'] = $item->category->title;}
+                        if(isset($item->category->qname)){$parsed[$key]['categoryId'] = $item->category->qname;}
                     }
                     if(isset($item->category2)){
                         $parsed[$key]['category2'] = $item->category2;
