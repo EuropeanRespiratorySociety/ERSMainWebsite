@@ -11,8 +11,8 @@
                     @if(isset($item['imageSize']))
                         @if($item['imageSize'] == 'large') height:300px; @else height:150px; @endif
                     @else height:150px; @endif
-                    @if(isset($item['itemImabeBackgroundSize']))
-                        background-size: {{$item['itemImabeBackgroundSize']}};
+                    @if(isset($item['itemImageBackgroundSize']))
+                        background-size: {{$item['itemImageBackgroundSize']}};
                     @else
                         background-size:100%;
                     @endif
