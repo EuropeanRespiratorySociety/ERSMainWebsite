@@ -6,7 +6,15 @@
         <div class="col-md-4">
           <a href="@if(isset($item->uri)){{url($item->uri)}}@endif">
           <div class="card card-padded @if(!isset($item->image)) card-primary @endif">
-            <figure class="hover-gradation">
+            <figure 
+
+            @if(isset($item->contrastOnHomepage))
+              @if($item->contrastOnHomepage) class="hover-gradation-dark" @else class="hover-gradation" @endif
+            @else 
+              class="hover-gradation"
+            @endif  
+            >
+
             @if(isset($item->type))
               <span class="label @if(isset($item->typeColor)){{$item->typeColor}}@else label-default @endif">{{$item->type}}</span>
             @endif
@@ -14,7 +22,8 @@
               <img src="{{url($item->image)}}" @if(isset($item->imageDescription))alt="{{$item->imageDescription}}" @endif >
             @endif
               <figcaption>
-              <h4>@if(isset($item->createdOn)){{$item->createdOn}}@endif</h4>
+              <h4>
+              @if(isset($item->createdOn)){{$item->createdOn}}@endif</h4>
               <h2>@if(isset($item->title)){{$item->title}}@endif</h2>
               </figcaption>     
             </figure>

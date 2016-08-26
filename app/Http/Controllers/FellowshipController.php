@@ -14,7 +14,8 @@ class FellowshipController extends Controller
     protected $property = "contentType";
     protected $propertyValue = "event_fellowship";
     protected $shortTerm = "o:aa1d863fcbb1c83e06c3";
-    protected $longTerm = " o:35da974d3c05ca528f3f";
+    protected $longTerm = "o:35da974d3c05ca528f3f";
+    protected $industry = "o:12dec9f25c7624b468b8";
 
     /**
      * Display a listing of the resource.
@@ -50,7 +51,7 @@ class FellowshipController extends Controller
         shuffle($items);
         $params['items'] =  (object) $items;
 
-        return view('professional.fellowships')->with($params);
+        return view('professional.simple-fellowships')->with($params);
 
     }
  
@@ -123,6 +124,41 @@ class FellowshipController extends Controller
    
         $params['fellowships'] =  (object) $items; 
         return view('professional.long-term-fellowships')->with($params);    
+
+    }    
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function indexIndustry()
+    {
+        //$page = Input::get('page', false);
+        //$limit = Input::get('limit', 25);
+        
+        $CC = new CC();
+        
+        $category = $CC->getItem('ers-fellowships-in-industry');
+        $category = $CC->parseItems($category->rows);
+        $params['category'] = (object) $category[0];
+
+        // == false set in purpose as CC sets the field to "false" wich is a string...
+        if(!isset($category[0]['url']) || !isset($category[0]['uri']) || $category[0]['url'] == "false" || $category[0]['uri'] == "false"){
+            $uri= request()->path();
+            $url = "https://www.ersnet.org/".$uri;
+            $payload = json_encode(['url' => $url, 'uri' => $uri]);
+            $CC->setCanonical($category[0]['_qname'], $payload);
+        }
+
+        //$toPaginate = $CC->getContentByProperty($this->property, $this->propertyValue);
+        //$pagination = $CC->paginate($toPaginate, $page, $limit);
+        //$params['pagination'] = $pagination;
+
+        $results = $CC->getCategory($this->industry);
+        $items = $CC->parseItems($results->rows);
+   
+        $params['fellowships'] =  (object) $items; 
+        return view('professional.industry-fellowships')->with($params);    
 
     }    
 

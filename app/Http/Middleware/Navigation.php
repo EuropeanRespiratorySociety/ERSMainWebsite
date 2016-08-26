@@ -20,19 +20,19 @@ class Navigation
 
             $menu->add('The Society', array('url' => '#community', 'class' => 'horizontal'));
                 $menu->theSociety->add('Who we are', 'the-society/who-we-are' );
-                    $menu->whoWeAre->add('Leadership and committees', 'the-society/who-we-are/leadership' );
-                        $menu->leadershipAndCommittees->add('National Delegates', 'the-society/who-we-are/leadership/national-delegates' );
-                        $menu->leadershipAndCommittees->add('Science Council', 'the-society/who-we-are/leadership/science-council' );
-                        $menu->leadershipAndCommittees->add('Assembly Heads', 'the-society/who-we-are/leadership/assembly-heads' );
-                        $menu->leadershipAndCommittees->add('Assembly Secretaries', 'the-society/who-we-are/leadership/assembly-secretaries' );
-                        $menu->leadershipAndCommittees->add('Education Council', 'the-society/who-we-are/leadership/education-council' );
-                        $menu->leadershipAndCommittees->add('Council', 'the-society/who-we-are/leadership/council' );
-                        $menu->leadershipAndCommittees->add('Junior Members Committee', 'http://juniors.ersent.org' )->link->attr(array('target' => '_blank'));
-                        $menu->leadershipAndCommittees->add('ERS Election', 'the-society/who-we-are/leadership/ers-elections' );
-                    $menu->whoWeAre->add('Executive office', 'the-society/who-we-are/executive-office' );
-                    $menu->whoWeAre->add('Governance and Transparency', 'the-society/who-we-are/ers-governance-and-transparency' );
+                    $menu->whoWeAre->add('Leadership and committees', 'the-society/who-we-are/leadership');
+                        $menu->leadershipAndCommittees->add('National Delegates', 'the-society/who-we-are/leadership/national-delegates');
+                        $menu->leadershipAndCommittees->add('Science Council', 'the-society/who-we-are/leadership/science-council');
+                        $menu->leadershipAndCommittees->add('Assembly Heads', 'the-society/who-we-are/leadership/assembly-heads');
+                        $menu->leadershipAndCommittees->add('Assembly Secretaries', 'the-society/who-we-are/leadership/assembly-secretaries');
+                        $menu->leadershipAndCommittees->add('Education Council', 'the-society/who-we-are/leadership/education-council');
+                        $menu->leadershipAndCommittees->add('Council', 'the-society/who-we-are/leadership/council');
+                        $menu->leadershipAndCommittees->add('Junior Members Committee', 'http://juniors.ersent.org')->link->attr(array('target' => '_blank'));
+                        $menu->leadershipAndCommittees->add('ERS Election', 'the-society/who-we-are/leadership/ers-elections');
+                    $menu->whoWeAre->add('Executive office', 'the-society/who-we-are/executive-office');
+                    $menu->whoWeAre->add('Governance and Transparency', 'the-society/who-we-are/ers-governance-and-transparency');
                     $menu->whoWeAre->add('Awards', 'the-society/who-we-are/awards' );
-                    $menu->whoWeAre->add('Fellow of ERS', 'the-society/who-we-are/fellow-of-ers' );
+                    $menu->whoWeAre->add('Fellow of ERS', 'the-society/who-we-are/fellow-of-ers');
                     $menu->whoWeAre->add('Contact', 'the-society/who-we-are/contact')
                                             ->prepend('<i class="s7-mail icon"></i><span>')
                                             ->append('</span>')
@@ -108,6 +108,13 @@ class Navigation
                                             ->link->attr(array('target' => '_blank'));                 
                     $menu->fellowships->add('Short-Term','professional-development/fellowships/short-term-research-training-fellowships')->link->attr(array('style' => 'display:none'));
                     $menu->fellowships->add('Long-Term','professional-development/fellowships/long-term-research-fellowships')->link->attr(array('style' => 'display:none'));
+                    $menu->fellowships->add('Fellowships in industry','professional-development/fellowships/ers-fellowships-in-industry')->link->attr(array('style' => 'display:none'));
+                    $menu->fellowships->add('Clinical Training Fellowship','professional-development/fellowships/clinical-training-fellowship')->link->attr(array('style' => 'display:none'));
+                    $menu->fellowships->add('RESPIRE 3 - Host Application','professional-development/fellowships/respire-3-host-application-and-web-registry')->link->attr(array('style' => 'display:none'));
+                    $menu->fellowships->add('RESPIRE 3 - Marie Curie Post-doctoral Research Fellowships (MCF RESPIRE 3)','professional-development/fellowships/marie-curie-post-doctoral-research-fellowships-(respire-3)')->link->attr(array('style' => 'display:none'));
+                    $menu->fellowships->add('RESPIRE 2 - Marie Curie Post-doctoral Research Fellowships','professional-development/fellowships/marie-curie-post-doctoral-research-fellowships-respire-2')->link->attr(array('style' => 'display:none'));
+
+
                 //$menu->professionalDevelopment->add('Educational Activities','professional-development/educational-activities');
                 $menu->professionalDevelopment->add('ERS Courses','professional-development/courses');
                 $menu->professionalDevelopment->add('Grants and Sponsorships','professional-development/grants-and-sponsorships');
