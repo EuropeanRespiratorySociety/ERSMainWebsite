@@ -143,7 +143,7 @@
                         <a href="the-society/who-we-are/executive-office#it"><img class="img-responsive" src="../images/people/executive-office/it.jpg"></a>
                     </div>
                     <div class="card-title">
-                        <a href="the-society/who-we-are/executive-office#it">IT Infrastructure</a>
+                        <a href="the-society/who-we-are/executive-office#it">IT</a>
                     </div>
                 </div>
             </div>
@@ -546,7 +546,7 @@
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
             <img src="../images/people/executive-office/wbill.jpg" class="img-circle">
             <p class="photo_caption"><strong>{!! Html::mailto('werner.bill@ersnet.org', 'Werner Bill') !!}</strong>
-            Deputy Executive Director,<br>
+            Executive Director,<br>
             Director of Finance and Administration<br>
             T +41 21 213 01 20<br>
             </p>
@@ -619,7 +619,7 @@
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
-          <h2 class="">IT Infrastructure</h2>
+          <h2 class="">IT</h2>
       </div>
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
@@ -662,7 +662,7 @@
             </p>
         </div>
       </div>
-    </div>v
+    </div>
     </div>
     <!--Fin Section IT Infrastructure-->
 
