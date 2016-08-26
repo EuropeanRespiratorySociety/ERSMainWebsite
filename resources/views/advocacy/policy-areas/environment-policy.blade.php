@@ -24,7 +24,7 @@
 		</div>
 
 		<div class="col-md-8 center-block lead">
-			<p>Find out more about in the <a target="_blank" href="http://www.erswhitebook.org/chapters/outdoor-environment/">European Lung White Book
+			<p>Find out more about environment and health in the <a target="_blank" href="http://www.erswhitebook.org/chapters/outdoor-environment/">European Lung White Book
 			<span class="icon s7-angle-right" style="font-size: 30px;position: relative; top: 8px;"></span>
 			</a></p><br>
 
