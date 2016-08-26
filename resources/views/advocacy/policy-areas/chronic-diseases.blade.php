@@ -1,6 +1,6 @@
 <div class="section fp-auto-height">
   <div class="main-content">
-    <div class="page-head"><h3>Chronic diseases including COPD</h3></div>
+    <div class="page-head"><h3>Chronic diseases</h3></div>
 	    <div class="col-md-8 center-block lead">
 	    	<p>
 	    		ERS works with policy makers and organisations, such as the European Chronic Disease Alliance, to improve early recognition and early diagnosis of chronic diseases through cost-effective screening methods as well as promote innovative approaches to chronic care such as ehealth and mhealth. The Society also advocates for EU funding for long-term and industry-independent trials in patients with chronic disease. 
@@ -24,7 +24,7 @@
 		</div>
 
 		<div class="col-md-8 center-block lead">
-			<p>Find out more about tobacco in the <a target="_blank" href="http://www.erswhitebook.org/chapters/tobacco-smoking/ ">European Lung White Book
+			<p>Find out more about chronic diseases in the <a target="_blank" href="http://www.erswhitebook.org/">European Lung White Book
 			<span class="icon s7-angle-right" style="font-size: 30px;position: relative; top: 8px;"></span>
 			</a></p><br>
 
