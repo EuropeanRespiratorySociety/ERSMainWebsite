@@ -10,7 +10,7 @@
   				</div>
 
   				<div class="col-md-7 center-block lead">
-  					ERS advocates for tobacco control, tobacco control, air quality and advocacy for health research. The European Union (EU) institutions decide on policy and legislation in areas such as research, environment and public health for over 500 million people in 28 countries. EU polices may affect you even if you are an ERS member from a non-EU country. ERS therefore takes EU affairs very seriously and its dedicated office located in Brussels aims to raise awareness of respiratory diseases and raise the profile of the respiratory profession across Europe. <br>
+  					ERS advocates for tobacco control, air quality and advocacy for health research. The European Union (EU) institutions decide on policy and legislation in areas such as research, environment and public health for over 500 million people in 28 countries. EU polices may affect you even if you are an ERS member from a non-EU country. ERS therefore takes EU affairs very seriously and its dedicated office located in Brussels aims to raise awareness of respiratory diseases and raise the profile of the respiratory profession across Europe. <br>
   					ERS attempts to shape EU policies by engaging directly with policy makers; securing the allocation of vital resources that can deliver better lung health; and building coalitions on prevention, research, environment, tobacco control, public health, patients and specific disease areas.
   					Find out more about our work on the following topics:
 
