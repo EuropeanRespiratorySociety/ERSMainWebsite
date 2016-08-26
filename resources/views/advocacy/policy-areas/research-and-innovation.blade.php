@@ -10,15 +10,16 @@ ERS supports science-based policy and helps to strengthen science by sponsoring 
 		    <div class="col-md-8 col-md-offset-2">
 		    	<div class="col-md-4">
 		    		<div style="font-size:60px"><span id="data53" class="text-center">53</span></div>
-		    		<p>premature deaths every year are caused by outdoor air pollution in Europe.</p>
+		    		<p>fellowships were funded by ERS from October 2014 to June 2015.</p>
 		    	</div>
 		    	<div class="col-md-4">
 		    		<div style="font-size:60px"><span id="data194" class="text-center">194</span></div>
-		    		<p>of the world’s population are exposed to indoor air pollution from open fires and wood-burning cooking stoves and it causes up to 1.5 million premature deaths globally each year.</p>
+		    		<p>grants and sponsorships were awarded during the ERS International Congress 2015, Amsterdam.
+</p>
 		    	</div>
 		    	<div class="col-md-4">
 		    		<div style="font-size:60px"><span id="data14" class="text-center">14</span></div>
-		    		<p>of COPD cases are due to exposures to airborne pollutants in the workplace.</p>
+		    		<p>new task force applications were accepted in from April 2014 to March 2015.</p>
 		    	</div>
 		    </div>
 		</div>
