@@ -3,7 +3,7 @@
     <div class="navbar-header">
       <!-- Start Page title Visible on Mobile size screen -->
       <div class="page-title">
-        <span>European Respiratory Society</span>
+        <a href="/"><span style="color:#313131;">European Respiratory Society</span></a>
       </div>
       <!-- End Page title Visible on Mobile size screen -->
       <a href="#" class="ers-toggle-left-sidebar navbar-toggle collapsed">
