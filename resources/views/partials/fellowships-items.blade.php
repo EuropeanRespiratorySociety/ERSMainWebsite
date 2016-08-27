@@ -6,23 +6,27 @@
 @endif      
         <div class="card card-event">            
             <div class="card-image" 
-            @if(isset($item['image'])) 
-                style="height:100px;" 
-            @elseif(!isset($item['image']) && isset($item['flags'])) 
-                style="height:50px;" 
-            @else 
-                style="height:24px;" 
-            @endif >
-                @if(isset($item['type']))
-                <span class="label {{ $item['typeColor'] }}">{{ $item['type'] }}</span>
-                @endif
-                @if(isset($item['flags']))
-                <span class="label {{ 'label-'.$item['flags']['color'] }}">{{ $item['flags']['text'] }}</span>
-                @endif
-                @if(isset($item['image']))
-                    <img class="" src="{{ $item['image']}}">
-                @endif
-            </div>
+        @if(isset($item['image'])) 
+            style="height:300px;background-size:100%;background-repeat: no-repeat; background-image: url('{{ $item['image']}}'); background-position: center @if(isset($item['itemImageAlignment'])) {{$item['itemImageAlignment'] }} @else center @endif;"
+
+        @elseif(isset($item['image']) && isset($item['flags'])) 
+            style="height:50px;" 
+        @else 
+            style="height:24px;" 
+        @endif >
+            @if(isset($item['type']))
+            <span class="label {{ $item['typeColor'] }}">{{ $item['type'] }}</span>
+            @endif
+            @if(isset($item['flags']) && $item['flags']['color'] !== 'info')
+            <span class="label {{ 'label-'.$item['flags']['color'] }}">{{ $item['flags']['text'] }}</span>
+            @endif
+            @if($item['fullyBooked'])
+            <span class="label label-danger">Fully Booked</span>
+            @endif            
+            @if(isset($item['nonErsCalendarItem']))
+            @if($item['nonErsCalendarItem'])<span class="label label-danger" style="width:100%">Non-ERS Event</span>@endif
+            @endif
+        </div>
 
             <div class="card-content">
                 <p class="title">{{ $item['title'] }}
