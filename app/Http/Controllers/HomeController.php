@@ -28,6 +28,12 @@ class HomeController extends Controller
     {
         $CC = new CC();
         $results = $CC->getContentByProperty("availableOnHomepage", "true", -1, false);
+
+        if($results == "invalid_token"){
+            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            return redirect(request()->fullUrl());
+        }
+        
         $items = $CC->parseItems($results->rows);
         $items =  (object) $items;
 

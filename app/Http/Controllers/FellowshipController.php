@@ -30,6 +30,12 @@ class FellowshipController extends Controller
         $CC = new CC();
         
         $category = $CC->getItem('fellowships');
+
+        if($category == "invalid_token"){
+            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            return redirect(request()->fullUrl());
+        }
+
         $category = $CC->parseItems($category->rows);
         $params['category'] = (object) $category[0];
 
@@ -68,6 +74,12 @@ class FellowshipController extends Controller
         $CC = new CC();
         
         $category = $CC->getItem('short-term-research-training-fellowships');
+
+        if($category == "invalid_token"){
+            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            return redirect(request()->fullUrl());
+        }
+
         $category = $CC->parseItems($category->rows);
         $params['category'] = (object) $category[0];
 
@@ -104,6 +116,11 @@ class FellowshipController extends Controller
         $CC = new CC();
         
         $category = $CC->getItem('long-term-research-fellowships');
+
+        if($category == "invalid_token"){
+            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            return redirect(request()->fullUrl());
+        }
         $category = $CC->parseItems($category->rows);
         $params['category'] = (object) $category[0];
 
@@ -139,6 +156,12 @@ class FellowshipController extends Controller
         $CC = new CC();
         
         $category = $CC->getItem('ers-fellowships-in-industry');
+
+        if($category == "invalid_token"){
+            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            return redirect(request()->fullUrl());
+        }
+
         $category = $CC->parseItems($category->rows);
         $params['category'] = (object) $category[0];
 
@@ -172,6 +195,12 @@ class FellowshipController extends Controller
     {
         $CC = new CC();
         $results = $CC->getItem($slug);
+
+        if($results == "invalid_token"){
+            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            return redirect(request()->fullUrl());
+        }
+        
         //Slug should be unique, so we should get only one item
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0];

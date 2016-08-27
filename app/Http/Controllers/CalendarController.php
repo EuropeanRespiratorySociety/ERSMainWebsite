@@ -22,6 +22,11 @@ class CalendarController extends Controller
         $CC = new CC();
         $results = $CC->getCategorySorted($this->calendarCategory, "eventDate", 1);
 
+        if($results == "invalid_token"){
+            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            return redirect(request()->fullUrl());
+        }
+
         $items = $CC->parseItems($results->rows, true);
 
         $array = array_values(array_sort($items, function ($value) {
@@ -44,6 +49,12 @@ class CalendarController extends Controller
     {
         $CC = new CC();
         $results = $CC->getItem($slug);
+
+        if($results == "invalid_token"){
+            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            return redirect(request()->fullUrl());
+        }
+        
         //Slug should be unique, so we should get only one item
         $course = $CC->parseItems($results->rows);
         $params['course'] =  (object) $course[0]; 

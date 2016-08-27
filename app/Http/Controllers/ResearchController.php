@@ -21,6 +21,12 @@ class ResearchController extends Controller
     { 
         $CC = new CC();
         $results = $CC->getItem('research');
+
+        if($results == "invalid_token"){
+            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            return redirect(request()->fullUrl());
+        }
+
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0]; 
 
@@ -48,6 +54,12 @@ class ResearchController extends Controller
     { 
         $CC = new CC();
         $results = $CC->getItem('ers-presidential-summits');
+
+        if($results == "invalid_token"){
+            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            return redirect(request()->fullUrl());
+        }
+
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0]; 
 
@@ -76,6 +88,12 @@ class ResearchController extends Controller
         $CC = new CC();
         
         $category = $CC->getItem('research-seminars');
+
+        if($category == "invalid_token"){
+            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            return redirect(request()->fullUrl());
+        }
+
         $category = $CC->parseItems($category->rows);
         $params['category'] = (object) $category[0];
 
@@ -115,6 +133,12 @@ class ResearchController extends Controller
     {
         $CC = new CC();
         $results = $CC->getItem($slug);
+
+        if($results == "invalid_token"){
+            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            return redirect(request()->fullUrl());
+        }
+
         //Slug should be unique, so we should get only one item
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0]; 
@@ -145,6 +169,12 @@ class ResearchController extends Controller
     {
         $CC = new CC();
         $results = $CC->getItem($slug);
+
+        if($results == "invalid_token"){
+            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            return redirect(request()->fullUrl());
+        }
+        
         //Slug should be unique, so we should get only one item
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0]; 

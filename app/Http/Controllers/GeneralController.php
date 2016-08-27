@@ -77,6 +77,11 @@ class GeneralController extends Controller
         $CC = new CC();
         $results = $CC->getCategorySorted($this->euAffairs, $field, $direction);
 
+        if($results == "invalid_token"){
+            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            return redirect(request()->fullUrl());
+        }
+
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
@@ -98,6 +103,12 @@ class GeneralController extends Controller
     { 
         $CC = new CC();
         $results = $CC->getCategory($this->euProjects);
+
+        if($results == "invalid_token"){
+            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            return redirect(request()->fullUrl());
+        }
+
         $items = $CC->parseItems($results->rows);
         $params['items'] =  (object) $items; 
 
@@ -121,6 +132,12 @@ class GeneralController extends Controller
     { 
         $CC = new CC();
         $results = $CC->getItem('grants-and-sponsorships');
+
+        if($results == "invalid_token"){
+            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            return redirect(request()->fullUrl());
+        }
+
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0]; 
 
@@ -148,6 +165,12 @@ class GeneralController extends Controller
     {
         $CC = new CC();
         $results = $CC->getItem($slug);
+
+        if($results == "invalid_token"){
+            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            return redirect(request()->fullUrl());
+        }
+        
         //Slug should be unique, so we should get only one item
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0];

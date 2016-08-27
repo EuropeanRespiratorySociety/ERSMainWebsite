@@ -22,6 +22,12 @@ class CourseController extends Controller
     {
         $CC = new CC();
         $results = $CC->getItem('courses');
+
+        if($results == "invalid_token"){
+            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            return redirect(request()->fullUrl());
+        }
+
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0]; 
 
@@ -70,6 +76,12 @@ class CourseController extends Controller
     {
         $CC = new CC();
         $results = $CC->getItem($slug);
+
+        if($results == "invalid_token"){
+            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            return redirect(request()->fullUrl());
+        }
+        
         //Slug should be unique, so we should get only one item
         $course = $CC->parseItems($results->rows);
         $params['course'] =  (object) $course[0]; 
