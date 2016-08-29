@@ -30,9 +30,9 @@
           @endif
         </div>
         <h2 class="text-left clearfix date-venue">
-        <!--<a href=""><span class="icon s7-angle-left pull-left" style="font-size: 24px;"></span></a>-->
+        <!--<a href="javascript:void(0)"><span class="icon s7-angle-left pull-left" style="font-size: 24px;"></span></a>-->
         <label>{{$course->ebusDate}} @if(isset($course->eventLocation))<a>{{$course->eventLocation}}</a>@endif</label>
-        <!--<a href=""><span class="icon s7-angle-right pull-right" style="font-size: 24px;"></span></a>-->
+        <!--<a href="javascript:void(0)"><span class="icon s7-angle-right pull-right" style="font-size: 24px;"></span></a>-->
         </h2>
       </div>
 

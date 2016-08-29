@@ -32,7 +32,7 @@
       <div class="header">
         <div class="clearfix notification">
           @if(isset($course->flags))
-          <p class="pull-right alert {{'alert-'.$course->flags['color'] }}">{{ $course->flags['text'] }}</p>
+          <p style="padding: 0 10px;" class="pull-right alert {{'alert-'.$course->flags['color'] }}">{{ $course->flags['text'] }}</p>
           @endif
           @if($course->fullyBooked)
               <p class="pull-right text-danger">Fully Booked</p>
@@ -40,7 +40,7 @@
         </div>
         <h2 class="text-left clearfix date-venue">
         <!--<a href=""><span class="icon s7-angle-left pull-left" style="font-size: 24px;"></span></a>-->
-        <label>{{$course->eventDates}} @if(isset($course->eventLocation))<a href="">{{$course->eventLocation}}</a>@endif</label>
+        <label>{{$course->eventDates}} @if(isset($course->eventLocation))<a href="javascript:void(0)">{{$course->eventLocation}}</a>@endif</label>
         <!--<a href=""><span class="icon s7-angle-right pull-right" style="font-size: 24px;"></span></a>-->
         </h2>
       </div>
