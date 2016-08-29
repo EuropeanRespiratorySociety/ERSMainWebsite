@@ -38,10 +38,10 @@ Route::get('cache-flush', function(){
     return "The cache has been flushed";
 });
 
-Route::get('token-flush', function(){
+/*Route::get('token-flush', function(){
     \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
     return "The token has been flushed";
-});
+});*/
 
 
 
@@ -106,9 +106,6 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('congress-and-events/the-lung-science-conference', 'LscController@index');
     Route::get('congress-and-events/the-lung-science-conference/{slug}', 'LscController@show');
     Route::get('congress-and-events/events-calendar', 'CalendarController@index');
-    /*Route::get('congress-and-events/events-calendar', function(){
-        return view('pages.coming-soon');
-    });*/
     Route::get('congress-and-events/{slug}', 'GeneralController@show');
 
     Route::get('professional-development/courses', 'CourseController@index');

@@ -52,6 +52,9 @@
       @if(isset($item->image))
       <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
       @endif
+      @if(isset($item->location->lat)&&isset($item->location->long))
+          <div id="map"></div>
+      @endif
       @if(isset($item->video))
         <div class="videoWrapper">
           {!!$item->video!!} 
@@ -74,5 +77,30 @@
 @stop()  
 
 @section('scripts')
+  @if(isset($item->location->lat)&&isset($item->location->long))
+    <script>
+    function initMap() {
+      function initialize(){
+        var myLatLng ={ lat: {{$item->location->lat}}, lng: {{$item->location->long}} };
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: myLatLng,
+          disableDefaultUI: true,
+          fullscreenControl: true
+        });
+
+        var marker = new google.maps.Marker({
+        map: map,  
+        position: myLatLng
+        });
+      }
+      google.maps.event.addDomListener(window, "load", initialize);
+      }
+
+
+    </script> 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-tI78_Glb_dewK0yre49LLKgCyBZuj5c&callback=initMap" async defer></script>  
+    @endif
     
 @stop()

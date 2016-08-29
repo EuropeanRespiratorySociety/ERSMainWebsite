@@ -41,6 +41,7 @@ class CloudCmsHelper
             ->get();
         return $results;    
     }
+
     public function getAuthor($node){
         $results = CC::nodes()
             ->listRelatives($node)
@@ -61,7 +62,6 @@ class CloudCmsHelper
             //->addParams(['limit' => 2]) 
             ->addParams(['full' => 'true'])
             ->get();
-
         return $results;    
     }
 
@@ -147,6 +147,14 @@ class CloudCmsHelper
         return (object) $pagination;
     }
 
+    /**
+    * This function set the coordinates in CC the inject param let's you send only
+    * the data that needs to be added to the node. Without it we need to send the
+    * whole node to replace it.
+    * @param string $node 
+    * @param json object $payload
+    * @return void
+    */
     public function setCanonical($node, $payload){
         $result = CC::nodes()
             ->updateNode($node, $payload)
@@ -155,6 +163,15 @@ class CloudCmsHelper
         //add test if success or not
     }
 
+    /**
+    * This function set the coordinates in CC the inject param let's you send only
+    * the data that needs to be added to the node. Without it we need to send the
+    * whole node to replace it. The accuracy is a value returned by Google's API
+    * @param string $node
+    * @param string $lat
+    * @param string $long
+    * @param string $accuracy
+    */
     public function setCoordinates($node, $lat, $long, $accuracy){
         if($accuracy !== 'NOT_FOUND'){
         $payload = json_encode(['loc' => ['lat' => $lat, 'long' => $long]]);
@@ -167,6 +184,12 @@ class CloudCmsHelper
             ->get();
     }
 
+    /**
+    * Sort the all the elments that have been selected to appear on the homepage
+    * 
+    *@param Object $items
+    *@return Array $sorted
+    */
     public function sortHomepage($items){
         $articleCounter = 1;
         $calendarCounter = 1;
@@ -220,6 +243,8 @@ class CloudCmsHelper
         }
             return $sorted;
     }
+
+
     /**
     * Sort the calendar to have all item in ascending order and of the current year and upcoming
     *@param array $items
@@ -252,12 +277,12 @@ class CloudCmsHelper
         if(isset($address->postalCode)){$addressLine3 = $address->postalCode;}
         if(isset($address->city)){$addressLine4 = $address->city;}
         if(isset($address->country)){$addressLine5 = $address->country;}
-        $cordinates = Geocoder::getCoordinatesForQuery($addressLine1.', '.
+        $coordinates = Geocoder::getCoordinatesForQuery($addressLine1.', '.
                                                         $addressLine2.', '.
                                                         $addressLine3.' '.
                                                         $addressLine4.', '.
                                                         $addressLine5);
-        return $cordinates;
+        return $coosrdinates;
 
     }
 
