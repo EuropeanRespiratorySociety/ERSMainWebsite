@@ -282,7 +282,7 @@ class CloudCmsHelper
                                                         $addressLine3.' '.
                                                         $addressLine4.', '.
                                                         $addressLine5);
-        return $coosrdinates;
+        return $coordinates;
 
     }
 
@@ -478,7 +478,7 @@ class CloudCmsHelper
     }
 
     public function setTypeColor($type){
-        if($type == "ERS Course" || $type == "ERS Online Course" || $type == "e-learning" || $type == "Skill Workshop" || $type == "Skill Course"){
+        if($type == "ERS Course" || $type == "ERS Online course" || $type == "e-learning" || $type == "ERS Skill workshop" || $type == "ERS Skills course"|| $type == "ERS Endorsed activity" || $type == "Hands-on"){
             return "label-school";
         }
 
