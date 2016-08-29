@@ -51,7 +51,7 @@
           </div>
     @endif
     <div class="list-group text-left">
-      <a href="#" class="list-group-item clearfix">
+      <a href="#" class="list-group-item clearfix cursor_default">
         <span class="icon s7-alarm"></span>
         <p>
           APPLICATION DEADLINE : <br>
