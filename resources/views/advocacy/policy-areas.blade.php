@@ -22,13 +22,14 @@
   		@include('advocacy.policy-areas.tobacco-control')
 
   		<!-- Section 2 -->
-  		@include('advocacy.policy-areas.chronic-diseases')
+      @include('advocacy.policy-areas.environment-policy')
+  		
 
   		<!-- Section 3 -->
-  		@include('advocacy.policy-areas.environment-policy')
+  		@include('advocacy.policy-areas.research-and-innovation')
 
   		<!-- Section 4 -->
-  		@include('advocacy.policy-areas.research-and-innovation')
+      @include('advocacy.policy-areas.chronic-diseases')
 
   	</div>
   </div>
