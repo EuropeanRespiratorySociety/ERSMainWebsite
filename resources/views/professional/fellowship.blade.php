@@ -53,7 +53,7 @@
         @endif
         <div class="list-group text-left">
           @if(isset($item->deadlines->applicationDeadline) || isset($item->deadlines->applicationDeadline2))
-          <a href="#" class="list-group-item clearfix">
+          <a href="javascript:void(0)" class="list-group-item clearfix">
             <span class="icon s7-alarm"></span>
           <p>
             APPLICATION DEADLINE : <br>
@@ -62,7 +62,7 @@
           </a>
           @endif  
           @if(isset($item->deadlines->notification) || isset($item->deadlines->notification2))
-          <a href="#" class="list-group-item lighter-grey-bg clearfix">
+          <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix">
            <span class="icon s7-bell"></span>
            <p>
             NOTIFICATION : <br>
@@ -71,7 +71,7 @@
         </a>
         @endif
         @if(isset($item->deadlines->startDate) || isset($item->deadlines->startDate2))    
-        <a href="#" class="list-group-item clearfix">
+        <a href="javascript:void(0)" class="list-group-item clearfix">
           <span class="icon s7-date"></span>
           <p>
             START DATE : <br>

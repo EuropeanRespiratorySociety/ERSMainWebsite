@@ -109,25 +109,25 @@
                 </ul>
                 <hr>
                 <div class="list-group">
-                  <a href="#" class="list-group-item medium-grey-bg">
+                  <a href="javascript:void(0)" class="list-group-item medium-grey-bg">
                     <span class="badge">
                       {{isset($course->feeList->junior) ? '&euro;' : ''}}
                       {{$course->feeList->junior or '-'}}
                     </span> Junior ERS Members
                   </a>
-                  <a href="#" class="list-group-item">
+                  <a href="javascript:void(0)" class="list-group-item">
                     <span class="badge">
                       {{isset($course->feeList->ersMember) ? '&euro;' : ''}}
                       {{$course->feeList->ersMember or "-"}}
                     </span> ERS Members
                   </a>
-                  <a href="#" class="list-group-item medium-grey-bg">
+                  <a href="javascript:void(0)" class="list-group-item medium-grey-bg">
                     <span class="badge">
                       {{isset($course->feeList->nonErsMember) ? '&euro;' : ''}}
                       {{$course->feeList->nonErsMember or "-"}}
                     </span> Non-ERS Members
                   </a>
-                  <a href="#" class="list-group-item">
+                  <a href="javascript:void(0)" class="list-group-item">
                     <span class="badge">
                       {{isset($course->feeList->industry) ? '&euro;' : ''}}
                       {{$course->feeList->industry or "-"}}
@@ -154,7 +154,7 @@
             @endif
             @if($course->fullyBooked)
               <p>Please contact <a href="mailto:educaion@ersnet.org">education@ersnet.org</a> to be added to the waiting list.</p>
-              <a href="#" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
+              <a href="javascript:void(0)" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
             @endif
             </div>
 

@@ -49,12 +49,12 @@
 
     @if(isset($category->flags))
           <div class="alert {{'alert-'.$category->flags['color'] }}">
-          <div class="message"> {{ $category->flags['text'] }}</div>
+          <div class="message"> {!! $category->flags['text'] !!} </div>
           </div>
     @endif
 
     <div class="list-group text-left">
-      <a href="#" class="list-group-item clearfix">
+      <a href="javascript:void(0)" class="list-group-item clearfix">
         <span class="icon s7-alarm"></span>
         <p>
           APPLICATION DEADLINE : <br>
@@ -63,7 +63,7 @@
 
 
       </a>
-      <a href="#" class="list-group-item lighter-grey-bg clearfix">
+      <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix">
        <span class="icon s7-bell"></span>
        <p>
         NOTIFICATION : <br>
@@ -72,7 +72,7 @@
 
 
     </a>
-    <a href="#" class="list-group-item clearfix">
+    <a href="javascript:void(0)" class="list-group-item clearfix">
       <span class="icon s7-date"></span>
       <p>
         START DATE : <br>

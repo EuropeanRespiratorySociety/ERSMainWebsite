@@ -56,7 +56,7 @@
 
 
 <!--<div class="list-group text-left">
-      <a href="#" class="list-group-item clearfix">
+      <a href="javascript:void(0)" class="list-group-item clearfix">
         <span class="icon s7-alarm"></span>
         <p>
           APPLICATION DEADLINE : <br>
@@ -65,7 +65,7 @@
 
 
       </a>
-      <a href="#" class="list-group-item lighter-grey-bg clearfix">
+      <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix">
        <span class="icon s7-bell"></span>
        <p>
         NOTIFICATION : <br>
@@ -74,7 +74,7 @@
 
 
     </a>
-    <a href="#" class="list-group-item clearfix">
+    <a href="javascript:void(0)" class="list-group-item clearfix">
       <span class="icon s7-date"></span>
       <p>
         START DATE : <br>
@@ -85,7 +85,7 @@
   </div>-->
 
   <p class="rules text-left">
-    <!--<a href="#">Application Guidelines</a> <br>-->
+    <!--<a href="javascript:void(0)">Application Guidelines</a> <br>-->
     <!--<a href="mailto:fellowships@ersnet.org">More information</a>-->
   </p>
 
