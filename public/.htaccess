@@ -9,6 +9,10 @@
 
     RewriteEngine On
 
+    # temporary
+
+    Redirect 301 /education/courses/item/4624-interventional-bronchoscopy.html  http://old.ersnet.org/education/courses/item/4624-interventional-bronchoscopy.html  
+
     # -------------------
     # Migration redirects
     # -------------------
@@ -288,32 +292,32 @@
     Redirect 301 /calendar-of-events/icalrepeat_detail/997/-/ph-update-2016.html https://www.ersnet.org/congress-and-events/events-calendar
     Redirect 301 /calendar-of-events/icalrepeat_detail/998/-/innovative-and-interactive-course-in-lung-and-thoracic-ultrasonography.html https://www.ersnet.org/congress-and-events/events-calendar
     Redirect 301 /calendar-of-events/icalrepeat_detail/999/-/4th-international-symposium-on-lung-transplantation.html https://www.ersnet.org/congress-and-events/events-calendar
-    Redirect 301 /congresses.html https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/endorsement.html https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/lung-science-conference.html https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/milan-2017.html https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/research-seminars/item/4146-the-role-of-small-airways-in-obstructive-pulmonary-diseases.html https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/research-seminars/item/4147-novel-insights-in-pulmonary-fibrogenesis-from-bench-to-bedside-research-seminar-a-qthe-european-ipf-network-translational-approach-to-a-disastrous-diseaseq-meeting.html https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/research-seminars/item/4148-managing-the-lung-of-the-extremely-low-gestational-age-neonate-elgan-in-the-delivery-room.html  https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/research-seminars/item/4339-developmental-origins-of-chronic-lung-disease.html  https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/research-seminars/item/4495-sleep-a-breathing-conference-2013.html  https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/research-seminars/item/4513-research-seminars-2016-2017.html https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/research-seminars/item/4532-pulmonary-inflammation-in-paediatric-respiratory-disease.html   https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/research-seminars/item/4673-ers-eu-copd-audit-bts-joint-conference.html https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/research-seminars/item/4751-protein-quality-control-in-lung-disease.html https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/research-seminars/item/4762-the-many-faces-of-stem-cells-in-respiratory-diseases.html   https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/research-seminars/item/4811-ers-summit-2014.html https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/research-seminars/item/4824-challenges-resp-med.html https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/research-seminars/item/4825-dyspnoea-multidimensional-and-multidisciplinary.html https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/research-seminars/item/4853-human-translational-medicine-a-key-bridge-for-development-of-new-drugs-for-severe-asthma-copd-and-ild.html  https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/research-seminars/item/4883-targeted-therapy-for-lung-cancer.html   https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/research-seminars/item/4953-ers-summit-2015.html https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/research-seminars/item/5009-ipf-and-cancer-wounds-that-do-not-heal.html https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/research-seminars/item/5010-proteases-at-the-cutting-edge-friends-or-foes-in-chronic-lung-diseases.html https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/research-seminars/item/5031-genetics-epigenetics-and-exposomics-novel-methods-to-study-gene-by-environment-interactions.html https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/research-seminars/item/5262-rs-systems-biology.html https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/research-seminars/item/5273-researchseminaroncology2017.html https://www.ersnet.orghttp://erscongress.org/
-    Redirect 301 /congresses/research-seminars/item/5278-precision-medicine-in-airway-diseases.html  https://www.ersnet.orghttp://erscongress.org/
+    Redirect 301 /congresses.html https://www.ersnet.org/#scientic-and-educational-events
+    Redirect 301 /congresses/endorsement.html https://www.ersnet.org/#scientic-and-educational-events
+    Redirect 301 /congresses/lung-science-conference.html https://www.ersnet.org/congress-and-events/the-lung-science-conference
+    Redirect 301 /congresses/milan-2017.html https://www.ersnet.org/congress-and-events/milan-2017
+    Redirect 301 /congresses/research-seminars/item/4146-the-role-of-small-airways-in-obstructive-pulmonary-diseases.html https://www.ersnet.org/research/research-seminars
+    Redirect 301 /congresses/research-seminars/item/4147-novel-insights-in-pulmonary-fibrogenesis-from-bench-to-bedside-research-seminar-a-qthe-european-ipf-network-translational-approach-to-a-disastrous-diseaseq-meeting.html https://www.ersnet.org/research/research-seminars
+    Redirect 301 /congresses/research-seminars/item/4148-managing-the-lung-of-the-extremely-low-gestational-age-neonate-elgan-in-the-delivery-room.html https://www.ersnet.org/research/research-seminars
+    Redirect 301 /congresses/research-seminars/item/4339-developmental-origins-of-chronic-lung-disease.html  https://www.ersnet.org/research/research-seminars
+    Redirect 301 /congresses/research-seminars/item/4495-sleep-a-breathing-conference-2013.html  https://www.ersnet.org/#scientic-and-educational-events
+    Redirect 301 /congresses/research-seminars/item/4513-research-seminars-2016-2017.html https://www.ersnet.org/research/research-seminars
+    Redirect 301 /congresses/research-seminars/item/4532-pulmonary-inflammation-in-paediatric-respiratory-disease.html   https://www.ersnet.org/research/research-seminars
+    Redirect 301 /congresses/research-seminars/item/4673-ers-eu-copd-audit-bts-joint-conference.html https://www.ersnet.org/research/research-seminars
+    Redirect 301 /congresses/research-seminars/item/4751-protein-quality-control-in-lung-disease.html https://www.ersnet.org/research/research-seminars
+    Redirect 301 /congresses/research-seminars/item/4762-the-many-faces-of-stem-cells-in-respiratory-diseases.html   https://www.ersnet.org/research/research-seminars
+    Redirect 301 /congresses/research-seminars/item/4811-ers-summit-2014.html https://www.ersnet.org/congress-and-events/ers-presidential-summits
+    Redirect 301 /congresses/research-seminars/item/4824-challenges-resp-med.html https://www.ersnet.org/research/research-seminars
+    Redirect 301 /congresses/research-seminars/item/4825-dyspnoea-multidimensional-and-multidisciplinary.html https://www.ersnet.org/research/research-seminars
+    Redirect 301 /congresses/research-seminars/item/4853-human-translational-medicine-a-key-bridge-for-development-of-new-drugs-for-severe-asthma-copd-and-ild.html  https://www.ersnet.org/research/research-seminars
+    Redirect 301 /congresses/research-seminars/item/4883-targeted-therapy-for-lung-cancer.html   https://www.ersnet.org/research/research-seminars
+    Redirect 301 /congresses/research-seminars/item/4953-ers-summit-2015.html https://www.ersnet.org/congress-and-events/ers-presidential-summits
+    Redirect 301 /congresses/research-seminars/item/5009-ipf-and-cancer-wounds-that-do-not-heal.html https://www.ersnet.org/research/research-seminars
+    Redirect 301 /congresses/research-seminars/item/5010-proteases-at-the-cutting-edge-friends-or-foes-in-chronic-lung-diseases.html https://www.ersnet.org/research/research-seminars
+    Redirect 301 /congresses/research-seminars/item/5031-genetics-epigenetics-and-exposomics-novel-methods-to-study-gene-by-environment-interactions.html https://www.ersnet.org/research/research-seminars
+    Redirect 301 /congresses/research-seminars/item/5262-rs-systems-biology.html https://www.ersnet.org/research/research-seminars
+    Redirect 301 /congresses/research-seminars/item/5273-researchseminaroncology2017.html https://www.ersnet.org/research/research-seminars
+    Redirect 301 /congresses/research-seminars/item/5278-precision-medicine-in-airway-diseases.html  https://www.ersnet.org/research/research-seminars
     Redirect 301 /education.html https://www.ersnet.org/#professional-development
     Redirect 301 /education/courses.html https://www.ersnet.org/professional-development/courses
     Redirect 301 /education/courses/item/4569-paediatric-bronchoscopy.html   https://www.ersnet.org/professional-development/courses/thoracoscopy-and-pleural-techniques
@@ -321,7 +325,6 @@
     Redirect 301 /education/courses/item/4609-cystic-fibrosis.html   https://www.ersnet.org/professional-development/courses
     Redirect 301 /education/courses/item/4611-interstitial-lung-diseases.html https://www.ersnet.org/professional-development/courses
     Redirect 301 /education/courses/item/4621-ebus-training-programme.html   https://www.ersnet.org/professional-development/courses/ebus-training-programme-part-2
-    Redirect 301 /education/courses/item/4624-interventional-bronchoscopy.html   https://www.ersnet.org/professional-development/courses
     Redirect 301 /education/courses/item/4753-ph-a-pvd-2014.html https://www.ersnet.org/professional-development/courses
     Redirect 301 /education/courses/item/4760-online-course-on-respiratory-epidemiology.html https://www.ersnet.org/professional-development/courses
     Redirect 301 /education/courses/item/4837-clinical-exercise-testing.html https://www.ersnet.org/professional-development/courses/clinical-exercise-testing-basic-principles-and-practice
@@ -373,7 +376,7 @@
     Redirect 301 /ers-funding/fellowships/item/5095-ers-fellowship-in-industry.html  https://www.ersnet.org/professional-development/fellowships
     Redirect 301 /ers-funding/fellowships/item/5245-respire2-selected-fellows-3rd-round.html https://www.ersnet.org/professional-development/fellowships
     Redirect 301 /ers-funding/fellowships/item/5279-marie-curie-post-doctoral-research-fellowships-respire-3.html https://www.ersnet.org
-    Redirect 301 /ers-funding/fellowships/item/5282-respire-3-host-application-and-web-registry.html https://www.ersnet.org
+    Redirect 301 /ers-funding/fellowships/item/5282-respire-3-host-application-and-web-registry.html https://www.ersnet.org/professional-development/fellowships/respire-3-host-application-and-web-registry
     Redirect 301 /ers-funding/fellowships/long-term.html https://www.ersnet.org/professional-development/fellowships/long-term-research-fellowships
     Redirect 301 /ers-funding/fellowships/long-term/ers-child-lung-health-long-term-fellowship.html  https://www.ersnet.org/professional-development/fellowships/long-term-research-fellowships
     Redirect 301 /ers-funding/fellowships/long-term/ers-cts-joint.html   https://www.ersnet.org/professional-development/fellowships/long-term-research-fellowships
@@ -386,8 +389,8 @@
     Redirect 301 /ers-funding/fellowships/long-term/item/5129-ersalat-joint-long-term-fellowship.html https://www.ersnet.org/professional-development/fellowships/long-term-research-fellowships
     Redirect 301 /ers-funding/fellowships/long-term/item/5130-erssplf-joint-long-term-fellowship.html https://www.ersnet.org/professional-development/fellowships/long-term-research-fellowships
     Redirect 301 /ers-funding/fellowships/long-term/who-can-apply-lt.html https://www.ersnet.org/professional-development/fellowships/long-term-research-fellowships
-    Redirect 301 /ers-funding/fellowships/post-doc/eu-co-funded-respire-2.html   https://www.ersnet.org/professional-development/fellowships/long-term-research-fellowships
-    Redirect 301 /ers-funding/fellowships/post-doc/eu-co-funded-respire-3.html   https://www.ersnet.org/professional-development/fellowships/long-term-research-fellowships
+    Redirect 301 /ers-funding/fellowships/post-doc/eu-co-funded-respire-2.html   https://www.ersnet.org/professional-development/fellowships/marie-curie-post-doctoral-research-fellowships-respire-2
+    Redirect 301 /ers-funding/fellowships/post-doc/eu-co-funded-respire-3.html https://www.ersnet.org/professional-development/fellowships/marie-curie-post-doctoral-research-fellowships-(respire-3)
     Redirect 301 /ers-funding/fellowships/post-doc/who-can-apply-respire-2.html  https://www.ersnet.org/professional-development/fellowships/long-term-research-fellowships
     Redirect 301 /ers-funding/fellowships/short-term.html https://www.ersnet.org/professional-development/fellowships/short-term-research-training-fellowships
     Redirect 301 /ers-funding/fellowships/short-term/ers-fellowship-for-scientifically-developing-countries.html https://www.ersnet.org/professional-development/fellowships/short-term-research-training-fellowships
@@ -823,6 +826,7 @@
         Redirect 301 /calendar https://www.ersnet.org/congress-and-events/events-calendar
         Redirect 301 /clinicaltrainingfellowship https://www.ersnet.org/professional-development/fellowships/clinical-training-fellowship
         Redirect 301 /ctf https://www.ersnet.org/professional-development/fellowships/clinical-training-fellowship
+        Redirect 301 /congresses/research-seminars.html https://www.ersnet.org/research/research-seminars
         Redirect 301 /contact https://www.ersnet.org/the-society/who-we-are/contact
         Redirect 301 /courses https://www.ersnet.org/professional-development/courses
         # E
@@ -893,21 +897,19 @@
         Redirect 301 /spirometrycourses http://hermes.ersnet.org/activities/2012-03-15-09-52-59/upcoming-courses-spirometry.html
 
 
-
-
-
     # -------------------
     
-    #Rewrite to https (uncomment bellow when site is live)
-    #RewriteCond %{HTTPS} off
-    # First rewrite to HTTPS:
-    # Don't put www. here. If it is already there it will be included, if not
-    # the subsequent rule will catch it.
-    #RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    RewriteCond %{HTTP_HOST} !^old.ersnet.org$
+    RewriteRule (.*) https://www.ersnet.org/$1 [R=301,L]
     
-    # Now, rewrite any request to the wrong domain to use www.
-    #RewriteCond %{HTTP_HOST} !^www\.
-    #RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    # wrong domain to use www.
+    RewriteCond %{HTTP_HOST} ^ersnet.org$
+    RewriteRule (.*) https://www.ersnet.org/$1 [L,R=301]     
+    
+    # Now, rewrite to use www.
+    RewriteCond %{HTTP_HOST} ^new.ersnet.org$
+    RewriteRule (.*) https://www.ersnet.org/$1 [L,R=301]
 
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
