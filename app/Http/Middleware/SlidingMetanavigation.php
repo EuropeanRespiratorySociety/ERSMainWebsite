@@ -31,7 +31,7 @@ class SlidingMetanavigation
                     ->prepend('<i class="icon-vision icon"></i><span>')->append('</span>')
                     ->link->attr(array('target' => '_blank')); 
             $menu->add('Healthy Lungs For Life', 'http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/')
-                    ->prepend('<i class="icon-hlfl icon" style="font-size:35px; margin-bottom:10px"></i><span>')->append('</span>')
+                    ->prepend('<i class="icon-hlfl icon" style="font-size:39px; margin-bottom:10px"></i><span>')->append('</span>')
                     ->link->attr(array('target' => '_blank')); 
             $menu->add('European Lung Foundation', 'http://www.europeanlung.org/en/')
                     ->prepend('<i class="icon-elf icon" style="font-size:40px"></i><span>')->append('</span>')
