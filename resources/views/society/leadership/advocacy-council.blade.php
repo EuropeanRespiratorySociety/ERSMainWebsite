@@ -10,7 +10,7 @@
 
 			The main objectives are:
 			<br>
-			<ul class="list-unstyled">
+			<ul class="list-unstyled text-left">
 	        		<li>Increase ressources to manage patient and respiratory health problems, to research respiratory-related disorders, to promote education for healthcare professionals in respiratory health</li>
 	        		<li>Coordinate all matters pertinaing to advocacy of the Tobacco Control Committee and the Environment & Health Committee</li>
 	        		<li>Link with other organisations to promote awareness for respiratory disorders at national, EU and global level. </li>
@@ -22,61 +22,78 @@
 
 			<div class="row leadership-people" style="padding-top: 40px;">
 				<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/stephen_holgate.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('S.Holgate@soton.ac.uk', 'Stephen Holgate') !!}</strong>
-		            Science Council Chair <br>
-		            <a href="http://old.ersnet.org/about-us/leadership/science-council.raw?task=callelement&amp;item_id=454&amp;element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&amp;method=download" title="Download COI">Download COI</a>
+					<img src="images/people/leadership/christina_gratziou.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('chgratziou@yahoo.com', 'Christina Gratziou') !!}</strong>
+		            Chair of the ERS Advocacy Council <br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/guy_brusselle.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('guy.brusselle@ugent.be', 'GUY BRUSSELLE') !!}</strong>
-		            Science Council Chair-Elect<br>
-		            <a href="http://old.ersnet.org/about-us/leadership/science-council.raw?task=callelement&amp;item_id=1057&amp;element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&amp;method=download" title="Download COI">Download COI</a>
+					<img src="images/people/leadership/Joajen_Vestbo.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('jorgen.vestbo@manchester.ac.uk', 'Jørgen Vestbo') !!}</strong>
+		            ERS President<br>
 		            </p>
+	        	</div>
+	        	<div class="col-md-4 xs-mb-15">
+					<img src="images/people/leadership/Guy_Joos.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('guy.joos@ugent.be', 'Guy Joos') !!}</strong>
+		            ERS President-Elect<br>
+		            </p>
+	        	</div>
+	        	<div class="col-md-4 xs-mb-15">
+					<img src="images/people/leadership/mina_gaga.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('minagaga@yahoo.com', 'Mina Gaga') !!}</strong>
+		            ERS Vice-President<br>
+		            </p>
+	        	</div>
+	        	<div class="col-md-4 xs-mb-15">
+					<img src="images/people/leadership/Dan_Smyth.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('Dan.Smyth@europeanlung.org', 'Dan Smyth') !!}</strong>
+		            European Lung Foundation Chair<br>
+		            </p>
+	        	</div>
+	        	<div class="col-md-4 xs-mb-15">
+					<img src="images/people/leadership/Carlos_Jimenez_Ruiz.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('', 'Carlos Jimenez Ruiz') !!}</strong>
+		            Chair of the ERS Tobacco Control Committee<br>
+		            </p>
+	        	</div>
+	        	<div class="col-md-4 xs-mb-15">
+					<img src="images/people/leadership/Bert_Brunekreef.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('', 'Bert Brunekreef') !!}</strong>
+		            Chair of the ERS Environment and Health Committee<br>
+		            </p>
+	        	</div>
+	        	<div class="col-md-4 xs-mb-15">
+					<img src="images/people/leadership/Ben_Nemery.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('', 'Ben Nemery') !!}</strong>
+		            Director of Scientific Relations with the EU<br>
+		            </p>
+	        	</div>
+	        	<div class="col-md-4 xs-mb-15">
+					<img src="images/people/leadership/Peter_Calverley.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('', 'Peter Calverley') !!}</strong>
+		            Advocacy Council expert on COPD<br>
+		            </p>
+	        	</div>
+	        	<div class="col-md-4 xs-mb-15">
+					<img src="images/people/leadership/Ivan_Solovic.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('', 'Ivan Solovic') !!}</strong>
+		            Chair of the Ad hoc Working Group on TB Advocacy<br>
+		            </p>
+	        	</div>
 
-	        	</div>
-	        	<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/maria_belvisi.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('m.belvisi@imperial.ac.uk', 'MARIA BELVISI') !!}</strong>
-		            Research Director<br>
-	        	</div>
-	        	<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/rory_morty.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('rory.morty@innere.med.uni-giessen.de', 'RORY MORTY') !!}</strong>
-		            Research Director-Elect<br>
-	        	</div>
-	        	<div class="col-md-4 xs-mb-15">
-					<img src="../images/120x120.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('r.chambers@ucl.ac.uk', 'RACHEL CHAMBERS') !!}</strong>
-		            Research<br>
-		        </div>
-		        <div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/marc_miravitlles.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('mmiravitlles@vhebron.net', 'Marc Miravitlles') !!}</strong>
-		            Guidelines director<br>
-		        </div>
 
+	        	
+	        	
+	        	
+		   
 
 
 			</div>
 
-			<!--Departments Menu-->
-	        <div class="row row_depertment">
-	          <div class="col-md-5 col-md-offset-4">
-	                <div class="card">
-	                    <div class="card-image">
-	                        <a href="the-society/leadership#finance"><img class="img-responsive" src="../images/world.jpg"></a>
-	                    </div>
-	                    <div class="card-title">
-	                        <a href="the-society/leadership#finance">Assembly Heads</a>
-	                    </div>
-	                </div>
-	            </div>
-	           
+			<p class="text-left">ERS Executive Director is an observer</p>
 
-	        </div>
-        	<!--Fin Departments Menu-->
+			
 
 	    </div>
 	</div>

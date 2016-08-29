@@ -77,10 +77,10 @@
 	            <div class="col-md-5 col-md-offset-4">
 	                <div class="card">
 	                    <div class="card-image">
-	                        <a href="the-society/leadership#finance"><img class="img-responsive" src="../images/people/executive-office/educational.jpg"></a>
+	                        <a href="the-society/who-we-are/leadership/assembly-secretaries"><img class="img-responsive" src="../images/people/executive-office/educational.jpg"></a>
 	                    </div>
 	                    <div class="card-title">
-	                        <a href="the-society/leadership#finance">Assembly Secretaries</a>
+	                        <a href="the-society/who-we-are/leadership/assembly-secretaries">Assembly Secretaries</a>
 	                    </div>
 	                </div>
 	            </div>

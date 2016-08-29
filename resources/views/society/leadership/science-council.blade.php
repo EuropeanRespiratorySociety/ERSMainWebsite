@@ -60,10 +60,10 @@
 	          <div class="col-md-5 col-md-offset-4">
 	                <div class="card">
 	                    <div class="card-image">
-	                        <a href="the-society/leadership#finance"><img class="img-responsive" src="../images/world.jpg"></a>
+	                        <a href="the-society/who-we-are/leadership/assembly-heads"><img class="img-responsive" src="../images/world.jpg"></a>
 	                    </div>
 	                    <div class="card-title">
-	                        <a href="the-society/leadership#finance">Assembly Heads</a>
+	                        <a href="the-society/who-we-are/leadership/assembly-heads">Assembly Heads</a>
 	                    </div>
 	                </div>
 	            </div>
