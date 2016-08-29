@@ -45,12 +45,12 @@
         </h2>
       </div>
 
-      <div class="row">
-        <div class="col-md-6 text-left event-items-category">
+      <div class="row" style="margin-top:20px;">
+        <div class="col-md-6 col-xs-6 text-left event-items-category">
           <p><em>{{$course->type}}</em></p>
           View <a href="/professional-development/courses">all ERS courses</a>
         </div>
-        <div class="col-md-6 text-right">
+        <div class="col-md-6 col-xs-6 text-right">
           @if(isset($course->programmeFile))  
             <a href="{{$course->programmeFile->fileUrl}}" target="_blank" type="button" class="btn btn-light-primary text-left bt-course-programme">
               <span class="icon s7-map" style="font-size: 24px;"></span>
