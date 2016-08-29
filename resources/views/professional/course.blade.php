@@ -115,30 +115,38 @@
                 </ul>
                 <hr>
                 <div class="list-group">
+                @if(isset($course->feeList->junior))
                   <a href="javascript:void(0)" class="list-group-item medium-grey-bg">
                     <span class="badge">
                       {{isset($course->feeList->junior) ? '&euro;' : ''}}
                       {{$course->feeList->junior or '-'}}
                     </span> Junior ERS Members
                   </a>
+                @endif
+                @if(isset($course->feeList->ersMember))
                   <a href="javascript:void(0)" class="list-group-item">
                     <span class="badge">
                       {{isset($course->feeList->ersMember) ? '&euro;' : ''}}
                       {{$course->feeList->ersMember or "-"}}
                     </span> ERS Members
                   </a>
+                @endif 
+                @if(isset($course->feeList->nonErsMember)) 
                   <a href="javascript:void(0)" class="list-group-item medium-grey-bg">
                     <span class="badge">
                       {{isset($course->feeList->nonErsMember) ? '&euro;' : ''}}
                       {{$course->feeList->nonErsMember or "-"}}
                     </span> Non-ERS Members
                   </a>
+                @endif  
+                @if(isset($course->feeList->industry))
                   <a href="javascript:void(0)" class="list-group-item">
                     <span class="badge">
                       {{isset($course->feeList->industry) ? '&euro;' : ''}}
                       {{$course->feeList->industry or "-"}}
                     </span> Industry
                   </a>
+                @endif  
                 </div>
 
 
