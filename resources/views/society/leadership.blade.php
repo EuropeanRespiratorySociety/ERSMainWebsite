@@ -85,7 +85,7 @@
 	            </p>
         	</div>
         	<div class="col-md-4 xs-mb-15">
-	            <img src="images/people/leadership/dan-smyth.jpg" class="img-circle">
+	            <img src="images/people/leadership/Dan_Smyth.jpg" class="img-circle">
 	            <p class="photo_caption"><strong>{!! Html::mailto('Dan.Smyth@europeanlung.org', 'Dan Smyth') !!}</strong>
 	            ELF Chair <br>
 	            <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=595&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a>
