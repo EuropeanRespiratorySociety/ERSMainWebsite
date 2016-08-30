@@ -59,9 +59,9 @@
         <!-- End right Sidebar -->
       
     </div>
-    <script src="https://bootstrap.ersnet.org/js/jquery.min.js" type="text/javascript"></script>
+    <script async src="https://bootstrap.ersnet.org/js/jquery.min.js" type="text/javascript"></script>
     <!--<script src="http://erstemplate.app/js/jquery.min.js" type="text/javascript"></script>-->
-    <script src="https://bootstrap.ersnet.org/js/all.js" type="text/javascript"></script>
+    <script async src="https://bootstrap.ersnet.org/js/all.js" type="text/javascript"></script>
     <!--<script src="http://erstemplate.app/js/all.js" type="text/javascript"></script>-->
 
 
