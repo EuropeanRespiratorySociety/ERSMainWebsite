@@ -40,7 +40,7 @@
 
       # Force proxies to cache gzipped & 
       # non-gzipped css/js files separately.
-      Header append Vary Accept-Encoding
+      Header append Vary: Accept-Encoding
     </FilesMatch>
 </IfModule>
 
