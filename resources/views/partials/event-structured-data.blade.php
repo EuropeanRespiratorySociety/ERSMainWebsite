@@ -14,7 +14,11 @@
   "performer" : "{{$item['performer']}}",
   @endif
   @if(isset($item['offers']))
-  "offers" : "{!!$item['offers']!!}",
+  "offers" : {
+    '@type': "Offer",
+    'name': "{!!$item['offers']!!}",
+    'url': "https://my.ersnet.org/Courses/Main"
+  },
   @endif
   @if(isset($item['image']))
   "image" : "{{$item['image']}}",
