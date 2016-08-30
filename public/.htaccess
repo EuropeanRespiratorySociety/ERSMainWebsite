@@ -2,6 +2,8 @@
     Header set Access-Control-Allow-Origin "*"
 </FilesMatch>
 
+SetOutputFilter DEFLATE
+
 <IfModule mod_headers.c>
     # Serve gzip compressed CSS files if they exist 
     # and the client accepts gzip.
