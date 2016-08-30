@@ -1,5 +1,5 @@
 @extends('template')
-@section('meta')@section('meta')
+@section('meta')
         @include('partials.meta', array('meta' =>
               [
               'url' => isset($course->url) ? $course->url : null , 
@@ -8,7 +8,24 @@
               ['pagination' => isset($pagination) ? $pagination : null]
               )) 
 @stop()
+
+@section('structured-data')
+  @include('partials.event-structured-data', array('item' => 
+      [
+        'url' => isset($course->url) ? $course->url : null ,
+        'name' => $course->title,
+        'startDate' => isset($course->startDate) ? $course->startDate : null,
+        'eventDate' => isset($course->endDate) ? $course->endDate : null,
+        'venueName' => isset($course->venue->name) ? $course->venue->name : null,
+        'venueAddress' => isset($course->venue->streetAddress) ? $course->venue->streetAddress : null,
+        'venueAddress2' => isset($course->venue->streetAddress2) ? $course->venue->streetAddress2 : null,
+        'venuePostalCode' => isset($course->venue->postalCode) ? $course->venue->postalCode : null,
+        'venueCity' => isset($course->venue->city) ? $course->venue->city : null,
+        'venueCountry' => isset($course->venue->country) ? $course->venue->country : null
+      ]
+  ))
 @stop()
+
 @section('content')
 <div class="ers-content event-items-content">
   <div class="row">
@@ -227,9 +244,9 @@
             @if(isset($course->venue->streetAddress2))
             {{$course->venue->streetAddress2}}<br>
             @endif
-            @if(isset($course->venue->streetAddress)){{$course->venue->postalCode}}@endif
-            @if(isset($course->venue->streetAddress)){{$course->venue->city}}@endif<br>
-            @if(isset($course->venue->streetAddress)){{$course->venue->country}}@endif
+            @if(isset($course->venue->postalCode)){{$course->venue->postalCode}}@endif
+            @if(isset($course->venue->city)){{$course->venue->city}}@endif<br>
+            @if(isset($course->venue->country)){{$course->venue->country}}@endif
           </p>
         </div>
       </div>
