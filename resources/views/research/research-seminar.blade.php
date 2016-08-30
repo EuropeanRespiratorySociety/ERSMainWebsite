@@ -8,6 +8,25 @@
               ['pagination' => isset($pagination) ? $pagination : null]
               )) 
 @stop()
+@section('structured-data')
+  @include('partials.event-structured-data', array('item' => 
+      [
+        'url' => isset($item->url) ? $item->url : null ,
+        'name' => $item->title,
+        'startDate' => isset($item->startDate) ? $item->startDate : null,
+        'endDate' => isset($item->endDate) ? $item->endDate : null,
+        'performer' => isset($item->organisers) ? $item->organisers : null,
+        'image' => isset($item->image) ? $item->image : null,
+        'description' => isset($item->lead) ? $item->lead : null,
+        'venueName' => isset($item->venue->name) ? $item->venue->name : null,
+        'venueAddress' => isset($item->venue->streetAddress) ? $item->venue->streetAddress : null,
+        'venueAddress2' => isset($item->venue->streetAddress2) ? $item->venue->streetAddress2 : null,
+        'venuePostalCode' => isset($item->venue->postalCode) ? $item->venue->postalCode : null,
+        'venueCity' => isset($item->venue->city) ? $item->venue->city : null,
+        'venueCountry' => isset($item->venue->country) ? $item->venue->country : null
+      ]
+  ))
+@stop()
 @section('content')
 
 <div class="ers-content event-items-content">
