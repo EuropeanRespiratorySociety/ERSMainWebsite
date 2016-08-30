@@ -111,6 +111,7 @@ class Navigation
                     $menu->fellowships->add('Short-Term','professional-development/fellowships/short-term-research-training-fellowships')->link->attr(array('style' => 'display:none'));
                     $menu->fellowships->add('Long-Term','professional-development/fellowships/long-term-research-fellowships')->link->attr(array('style' => 'display:none'));
                     $menu->fellowships->add('Fellowships in industry','professional-development/fellowships/ers-fellowships-in-industry')->link->attr(array('style' => 'display:none'));
+                    $menu->fellowships->add('Fellowships Programme on Guideline Methodology','professional-development/fellowships/fellowship-programme-on-guideline-methodology')->link->attr(array('style' => 'display:none'));
                     $menu->fellowships->add('Clinical Training Fellowship','professional-development/fellowships/clinical-training-fellowship')->link->attr(array('style' => 'display:none'));
                     $menu->fellowships->add('RESPIRE 3 - Host Application','professional-development/fellowships/respire-3-host-application-and-web-registry')->link->attr(array('style' => 'display:none'));
                     $menu->fellowships->add('RESPIRE 3 - Marie Curie Post-doctoral Research Fellowships (MCF RESPIRE 3)','professional-development/fellowships/marie-curie-post-doctoral-research-fellowships-(respire-3)')->link->attr(array('style' => 'display:none'));

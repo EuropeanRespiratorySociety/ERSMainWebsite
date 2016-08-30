@@ -43,7 +43,7 @@
 	        	<div class="col-md-4 xs-mb-15">
 					<img src="../images/120x120.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('r.chambers@ucl.ac.uk', 'RACHEL CHAMBERS') !!}</strong>
-		            Research<br>
+		            Conferences and Research Seminars Director<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
 					<img src="images/people/leadership/marc_miravitlles.jpg" class="img-circle">
