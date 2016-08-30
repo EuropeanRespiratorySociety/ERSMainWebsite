@@ -2,6 +2,9 @@
     Header set Access-Control-Allow-Origin "*"
 </FilesMatch>
 
+SetOutputFilter DEFLATE
+AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml text/js
+
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews
