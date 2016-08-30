@@ -15,7 +15,7 @@
         'url' => isset($course->url) ? $course->url : null ,
         'name' => $course->title,
         'startDate' => isset($course->startDate) ? $course->startDate : null,
-        'eventDate' => isset($course->endDate) ? $course->endDate : null,
+        'endDate' => isset($course->endDate) ? $course->endDate : null,
         'venueName' => isset($course->venue->name) ? $course->venue->name : null,
         'venueAddress' => isset($course->venue->streetAddress) ? $course->venue->streetAddress : null,
         'venueAddress2' => isset($course->venue->streetAddress2) ? $course->venue->streetAddress2 : null,
