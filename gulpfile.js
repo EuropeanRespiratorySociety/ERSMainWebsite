@@ -27,9 +27,7 @@ gulp.task('generate-service-worker', function(callback) {
   swPrecache.write(path.join(rootDir, 'service-worker.js'), {
     staticFileGlobs: [
     	//rootDir + '*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}',
-    	//rootDir + '/{home,navigation,news,publications,research,}/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'
-    	//rootDir + '/stories/executive-office/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}',
-    	//rootDir + '/stories/people/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'
+    	rootDir + '/{home,navigation,news,people,publications,research,}/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'
    	],
     runtimeCaching: [
 	    {
@@ -52,7 +50,7 @@ gulp.task('generate-service-worker', function(callback) {
 		},
 	    {
 	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/who-we-are/,
-	  		handler: 'cacheFirst',
+	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
 			      name: 'ers-offline-pages-who-we-are'
@@ -61,7 +59,7 @@ gulp.task('generate-service-worker', function(callback) {
 		},
 	    {
 	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/leadership/,
-	  		handler: 'cacheFirst',
+	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
 			      name: 'ers-offline-pages-leadership'
@@ -70,7 +68,7 @@ gulp.task('generate-service-worker', function(callback) {
 		},
 	    {
 	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/executive-office/,
-	  		handler: 'cacheFirst',
+	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
 			      name: 'ers-offline-pages-executive-office'
@@ -79,7 +77,7 @@ gulp.task('generate-service-worker', function(callback) {
 		},
 	    {
 	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/statutes-policies-and-annual-report/,
-	  		handler: 'cacheFirst',
+	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
 			      name: 'ers-offline-pages-satutes-policies'
@@ -88,7 +86,7 @@ gulp.task('generate-service-worker', function(callback) {
 		},
 	    {
 	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/awards/,
-	  		handler: 'cacheFirst',
+	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
 			      name: 'ers-offline-pages-awards'
@@ -97,7 +95,7 @@ gulp.task('generate-service-worker', function(callback) {
 		},
 	    {
 	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/fellow-of-ers/,
-	  		handler: 'cacheFirst',
+	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
 			      name: 'ers-offline-pages-fellows'
@@ -106,7 +104,7 @@ gulp.task('generate-service-worker', function(callback) {
 		},
 	    {
 	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/membership/,
-	  		handler: 'cacheFirst',
+	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
 			      name: 'ers-offline-pages-membersip'
@@ -115,7 +113,7 @@ gulp.task('generate-service-worker', function(callback) {
 		},
 	    {
 	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/assemblies/,
-	  		handler: 'cacheFirst',
+	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
 			      name: 'ers-offline-pages-assemblies'
@@ -142,7 +140,7 @@ gulp.task('generate-service-worker', function(callback) {
 		},
 	    {
 	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/news\/press-office/,
-	  		handler: 'cacheFirst',
+	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
 			      name: 'ers-offline-pages-press'
@@ -151,7 +149,7 @@ gulp.task('generate-service-worker', function(callback) {
 		},
 	    {
 	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/news\/contact/,
-	  		handler: 'cacheFirst',
+	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
 			      name: 'ers-offline-pages-contact'
@@ -200,7 +198,7 @@ gulp.task('generate-service-worker', function(callback) {
 		},
 	    {
 	  		urlPattern: /^https:\/\/bootstrap\.ersnet\.org\/js\/app-home\.js/,
-	  		handler: 'networkFirst',
+	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
 			      maxEntries: 10,
