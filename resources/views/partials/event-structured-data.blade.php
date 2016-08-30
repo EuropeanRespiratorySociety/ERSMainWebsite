@@ -7,6 +7,18 @@
   @if(isset($item['endDate']))
   "endDate" : "{{$item['endDate']}}",
   @endif
+  @if(isset($item['description']))
+  "description" : "{!!$item['description']!!}",
+  @endif
+  @if(isset($item['performer']))
+  "performer" : "{{$item['performer']}}",
+  @endif
+  @if(isset($item['offers']))
+  "offers" : "{!!$item['offers']!!}",
+  @endif
+  @if(isset($item['image']))
+  "image" : "{{$item['image']}}",
+  @endif
 @if(isset($item['venueName']))
   "location" : {
     "@type" : "Place",
