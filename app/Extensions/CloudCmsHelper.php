@@ -323,8 +323,11 @@ class CloudCmsHelper
                     if(isset($item->ebusDate)){$parsed[$key]['ebusDate'] = $item->ebusDate;}  
                     if(isset($item->eventDate) && isset($item->eventEndDate)){
                         $parsed[$key]['eventDates'] = $this->ersDate($item->eventDate, $item->eventEndDate);
+                        $parsed[$key]['startDate'] = $item->eventDate;
+                        $parsed[$key]['endDate'] = $item->eventEndDate;
                     } elseif(isset($item->eventDate) && !isset($item->eventEndDate)){
                         $parsed[$key]['eventDates'] = $this->ersDate($item->eventDate);
+                        $parsed[$key]['startDate'] = $item->eventDate;
                     }
                     if(isset($item->eventDate)){$parsed[$key]['calendar'] = $this->calendar($item->eventDate);}   
                     if(isset($item->earlybirdDeadline)){$parsed[$key]['earlybirdDeadline'] = $this->ersDate($item->earlybirdDeadline);}
