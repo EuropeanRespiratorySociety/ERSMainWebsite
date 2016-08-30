@@ -11,7 +11,7 @@
 
     # temporary
 
-    Redirect 301 /education/courses/item/4624-interventional-bronchoscopy.html  http://old.ersnet.org/education/courses/item/4624-interventional-bronchoscopy.html  
+
 
     # -------------------
     # Migration redirects
@@ -114,7 +114,7 @@
     Redirect 301 /about-us/who-we-are/item/4015-the-history-of-ers.html  https://www.ersnet.org/the-society/who-we-are
     Redirect 301 /about-us/who-we-are/item/4847-an-ers-position-statement-on-interaction-with-commercial-partners-.html  https://www.ersnet.org/the-society/who-we-are/ers-governance-and-transparency
     Redirect 301 /about-us/who-we-are/item/4926-fellow-of-ers-fers.html  https://www.ersnet.org/the-society/who-we-are/fellow-of-ers
-    Redirect 301 /assemblies.html https://www.ersnet.orghttp://ersnet.app/the-society/assemblies
+
     Redirect 301 /assemblies/airway-diseases.html https://www.ersnet.orghttp://ersnet.app/the-society/assemblies
     Redirect 301 /assemblies/airway-diseases/item/129-airway-pharmacology-and-treatment-group-05-01.html https://www.ersnet.orghttp://ersnet.app/the-society/assemblies
     Redirect 301 /assemblies/airway-diseases/item/130-monitoring-airway-disease-group-05-02.html https://www.ersnet.orghttp://ersnet.app/the-society/assemblies
@@ -318,8 +318,7 @@
     Redirect 301 /congresses/research-seminars/item/5262-rs-systems-biology.html https://www.ersnet.org/research/research-seminars
     Redirect 301 /congresses/research-seminars/item/5273-researchseminaroncology2017.html https://www.ersnet.org/research/research-seminars
     Redirect 301 /congresses/research-seminars/item/5278-precision-medicine-in-airway-diseases.html  https://www.ersnet.org/research/research-seminars
-    Redirect 301 /education.html https://www.ersnet.org/#professional-development
-    Redirect 301 /education/courses.html https://www.ersnet.org/professional-development/courses
+
     Redirect 301 /education/courses/item/4569-paediatric-bronchoscopy.html   https://www.ersnet.org/professional-development/courses/thoracoscopy-and-pleural-techniques
     Redirect 301 /education/courses/item/4572-thoracoscopy-and-pleural-techniques.html   https://www.ersnet.org/professional-development/courses
     Redirect 301 /education/courses/item/4609-cystic-fibrosis.html   https://www.ersnet.org/professional-development/courses
@@ -363,7 +362,7 @@
     Redirect 301 /ers-funding/awards/item/5097-ild-gold-medal.html   https://www.ersnet.org/professional-development/grants-and-sponsorships
     Redirect 301 /ers-funding/awards/item/5098-asthma-gold-medal.html https://www.ersnet.org/professional-development/grants-and-sponsorships
     Redirect 301 /ers-funding/clinical-research-collaboration.html   https://www.ersnet.org/research/clinical-research-collaborations
-    Redirect 301 /ers-funding/fellowships.html   https://www.ersnet.org/professional-development/fellowships
+    
     Redirect 301 /ers-funding/fellowships/clinical-training-fellowship.html  https://www.ersnet.org/professional-development/fellowships/clinical-training-fellowship
     Redirect 301 /ers-funding/fellowships/ers-fellowships-in-industry.html   https://www.ersnet.org/professional-development/fellowships/ers-fellowships-in-industry
     Redirect 301 /ers-funding/fellowships/ers-fellowships-in-industry/item/5095-ers-fellowship-in-industry.html  https://www.ersnet.org/professional-development/fellowships/ers-fellowships-in-industry
@@ -539,7 +538,7 @@
     Redirect 301 /leadership/item/sterk.html https://www.ersnet.org/the-society/who-we-are/leadership
     Redirect 301 /news-temp/item/4761-new-membership-structure-approval-by-electronic-voting.html https://www.ersnet.org/the-society/news
     Redirect 301 /news-temp/item/4855-healthy-lungs-for-life-we-need-you-.html   https://www.ersnet.org/the-society/news
-    Redirect 301 /news.html  https://www.ersnet.org/the-society/news
+
     Redirect 301 /news/item/4078-pulmonary-hypertension-and-pulmonary-vascular-disease.html  https://www.ersnet.org/the-society/news
     Redirect 301 /news/item/4082-first-ever-ers-fellows-get-together-at-barcelona-congress.html  https://www.ersnet.org/the-society/news
     Redirect 301 /news/item/4083-paracetamol-ups-asthma-risk-in-children-a-adolescents.html  https://www.ersnet.org/the-society/news
@@ -609,6 +608,7 @@
     Redirect 301 /news/item/4600-feedback-on-pef-predictions-could-improve-adherence.html https://www.ersnet.org/the-society/news
     Redirect 301 /news/item/4620-thoracic-imaging-24-26-october-2013-barcelona-spain.html https://www.ersnet.org/the-society/news
     Redirect 301 /news/item/4623-new-tuberculosis-vaccine-not-effective-in-infants.html  https://www.ersnet.org/the-society/news
+    Redirect 301 /education/courses/item/4624-interventional-bronchoscopy.html  https://www.ersnet.org/professional-development/courses/interventional-bronchoscopy
     Redirect 301 /news/item/4632-living-close-to-a-tobacco-shop-decreases-chances-of-quitting.html   https://www.ersnet.org/the-society/news
     Redirect 301 /news/item/4643-who-report-reveals-health-inequalities-in-europe.html   https://www.ersnet.org/the-society/news
     Redirect 301 /news/item/4644-erj-editorial-highlights-ers-commitment-to-tb-control.html  https://www.ersnet.org/the-society/news
@@ -764,7 +764,7 @@
     Redirect 301 /news/item/5296-ers-joins-forum-of-international-respiratory-societies-to-observe-world-lung-cancer-day-2016.html   https://www.ersnet.org/the-society/news
     Redirect 301 /options-fees-entitlements.html https://www.ersnet.org/the-society/membership
     Redirect 301 /research-agency.html   https://www.ersnet.org/research/research-agency
-    Redirect 301 /research-seminars.html https://www.ersnet.org/research/research-seminars
+
     Redirect 301 /research-seminars.html?start=10 https://www.ersnet.org/research/research-seminars
     Redirect 301 /research-seminars.html?start=30 https://www.ersnet.org/research/research-seminars
     Redirect 301 /research-seminars/dublin2013.html  https://www.ersnet.org/research/research-seminars
@@ -818,6 +818,14 @@
     Redirect 301 /sponsorship/index.php/publications/breathe-2/item/419-breathe  https://www.ersnet.org/professional-development/grants-and-sponsorships
     Redirect 301 /sponsorship/index.php/publications/buyersguide/item/420-buyers-guide   https://www.ersnet.org/professional-development/grants-and-sponsorships
     Redirect 301 /sponsorship/index.php/publications/erj2/item/422-erj   https://www.ersnet.org/professional-development/grants-and-sponsorships
+
+    ### Main category redirects
+    Redirect 301 /assemblies.html https://www.ersnet.orghttp://ersnet.app/the-society/assemblies
+    Redirect 301 /education.html https://www.ersnet.org/#professional-development
+    Redirect 301 /education/courses.html https://www.ersnet.org/professional-development/courses
+    Redirect 301 /ers-funding/fellowships.html https://www.ersnet.org/professional-development/fellowships
+    Redirect 301 /news.html  https://www.ersnet.org/the-society/news
+    Redirect 301 /research-seminars.html https://www.ersnet.org/research/research-seminars
 
     ### Internal redirects
         # A

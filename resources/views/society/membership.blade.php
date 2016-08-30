@@ -2,8 +2,8 @@
   @section('meta')
         @include('partials.meta', array('meta' =>
               [
-              'url' => 'https://www.ersnet.org/the-society/who-we-are/leadership' , 
-              'title' => 'Leadership'
+              'url' => 'http://www.ersnet.org/the-society/membership' , 
+              'title' => 'Membership'
               ]
               )) 
 @stop()
