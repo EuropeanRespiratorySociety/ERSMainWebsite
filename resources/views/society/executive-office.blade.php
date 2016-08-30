@@ -152,10 +152,10 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/who-we-are/executive-office#membership_national"><img class="img-responsive" src="../images/people/executive-office/membership.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#membership"><img class="img-responsive" src="../images/people/executive-office/membership.jpg"></a>
                     </div>
                     <div class="card-title">
-                        <a href="the-society/who-we-are/executive-office#membership_national">Membership</a>
+                        <a href="the-society/who-we-are/executive-office#membership">Membership</a>
                     </div>
                 </div>
             </div>
