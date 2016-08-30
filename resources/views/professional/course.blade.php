@@ -57,7 +57,7 @@
         </div>
         <h2 class="text-left clearfix date-venue">
         <!--<a href=""><span class="icon s7-angle-left pull-left" style="font-size: 24px;"></span></a>-->
-        <label>{{$course->eventDates}} @if(isset($course->eventLocation))<a href="javascript:void(0)">{{$course->eventLocation}}</a>@endif</label>
+        <label>{{$course->eventDates}} @if(isset($course->eventLocation))<a href="javascript:void(0)" class="cursor_default">{{$course->eventLocation}}</a>@endif</label>
         <!--<a href=""><span class="icon s7-angle-right pull-right" style="font-size: 24px;"></span></a>-->
         </h2>
       </div>
@@ -124,10 +124,10 @@
                   <li class="list-group-item"><a data-toggle="modal" data-target="#md-technical-info" type="button" class=""><span class="s7-tools"></span>Technical Info</a></li>
                   @endif
                   @if(isset($course->venue))
-                  <li class="list-group-item"><a data-toggle="modal" data-target="#md-venue_accommodation" type="button" class="">Venue</a></li>
+                  <li class="list-group-item"><a data-toggle="modal" data-target="#md-venue_accommodation" type="button" class="cursor_pointer">Venue</a></li>
                   @endif
                   @if(isset($course->suggestedAccommodation))
-                  <li class="list-group-item"><a data-toggle="modal" data-target="#md-suggested_accommodation" type="button" class="">Suggested Accommodation</a></li>
+                  <li class="list-group-item"><a data-toggle="modal" data-target="#md-suggested_accommodation" type="button" class="cursor_pointer">Suggested Accommodation</a></li>
                   @endif
                 </ul>
                 <hr>
@@ -175,10 +175,10 @@
             <p class="deadline">EXTENDED registration deadline : {{$course->extendedDeadline}}</p>
             @endif
             @if(isset($course->cancellationPolicy))
-            <p><a data-toggle="modal" data-target="#md-cancellation" type="button" class="">Cancellation policy</a></p>
+            <p><a data-toggle="modal" data-target="#md-cancellation" type="button" class="cursor_pointer">Cancellation policy</a></p>
             @endif
             @if(isset($course->travelInfo))
-            <p><a data-toggle="modal" data-target="#md-travel_info" type="button" class="">Travel Info</a></p>
+            <p><a data-toggle="modal" data-target="#md-travel_info" type="button" class="cursor_pointer">Travel Info</a></p>
             @endif
             @if(isset($course->registerButton['link']) && !$course->fullyBooked)
               <a href="{{$course->registerButton['link']}}"" class="btn btn-primary tab-register-bt">Register</a>

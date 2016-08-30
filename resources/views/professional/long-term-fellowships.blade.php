@@ -56,7 +56,7 @@
 
 
     <div class="list-group text-left">
-      <a href="javascript:void(0)" class="list-group-item clearfix">
+      <a href="javascript:void(0)" class="list-group-item clearfix cursor_default">
         <span class="icon s7-alarm"></span>
         <p>
           APPLICATION DEADLINE : <br>
@@ -65,7 +65,7 @@
 
 
       </a>
-      <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix">
+      <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
        <span class="icon s7-bell"></span>
        <p>
         NOTIFICATION : <br>
@@ -74,7 +74,7 @@
 
 
     </a>
-    <a href="javascript:void(0)" class="list-group-item clearfix">
+    <a href="javascript:void(0)" class="list-group-item clearfix cursor_default">
       <span class="icon s7-date"></span>
       <p>
         START DATE : <br>
