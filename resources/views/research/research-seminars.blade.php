@@ -66,7 +66,7 @@
       <a href="documents/scientific/RS_Application_Form_May_2015_v2.doc">Application form</a>
     </p>
     <p class="rules text-left">
-      You are organising your own event and wish to have it endorsed by the ERS, <a href="congress-and-events/event-endorsement">consult the guidelines and the form</a> on the dedicated page.
+      You are organising your own event and wish to have it endorsed by the ERS, <a href="congress-and-events/external-events-endorsement">consult the guidelines and the form</a> on the dedicated page.
     </p>
   </div>
 <!-- END Right Side-bar -->
