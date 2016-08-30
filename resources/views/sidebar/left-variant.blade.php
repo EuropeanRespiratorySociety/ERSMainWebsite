@@ -1,6 +1,6 @@
 
     <div class="ers-left-sidebar">
-    <div class="navbar-header">
+    <div class="navbar-header" style="width:100%;">
             <a href="/" class="navbar-brand"></a>
     </div>
       <div class="content">
