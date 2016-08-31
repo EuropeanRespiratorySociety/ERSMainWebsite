@@ -257,7 +257,7 @@ gulp.task('generate-service-worker', function(callback) {
 			  }
 		},
 	    {
-	  		urlPattern: /^https:\/\/fonts\.googleapis\.com\/css\?family\=Amiri\:400\,400italic\,700\,700italic/,
+	  		urlPattern: /^https:\/\/fonts\.googleapis\.com\/css\?family=Amiri:400,400italic,700,700italic/,
 	  		handler: 'cacheFirst',
 	  		options: {
 			    cache: {
