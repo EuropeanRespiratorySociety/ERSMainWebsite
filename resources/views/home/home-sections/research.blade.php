@@ -18,42 +18,7 @@
           <li><a target="_blank" href="{{url('research/clinical-research-collaborations')}}">Clinical Research Collaborations</a></li>
           <li><a href="{{url('the-society/who-we-are/awards')}}">Awards and Medal</a></li>
         </ul>
-        @if(isset($funding))    
-          @if(isset($funding->uri))
-          <a href="{{url($funding->uri)}}">
-          @endif
-            <div class="card card-event card-event-large">
-              @if(isset($funding->type))
-              <span class="label @if(isset($funding->typeColor)){{$funding->typeColor}}@else label-default @endif">{{$funding->type}}</span>
-              @endif
-              @if(isset($funding->image))
-              <div class="card-image">
-                <img class="img-responsive" src="{{url($funding->image)}}" @if(isset($funding->imageDescription))alt="{{$funding->imageDescription}}" @endif />
-              </div>
-              @endif
-              <div class="card-content white-bg">
-                @if(isset($funding->title))
-                <p class="title">
-                  {{$funding->title}}
-                </p>
-                @endif
-                @if(isset($funding->eventDates))
-                <p class="date">
-                  {{$funding->eventDates}}
-                </p>
-                @endif  
-                @if(isset($funding->earlybirdDeadline))
-                <p class="btn-rounded early_bird">Early Bird deadline: {{$funding->earlybirdDeadline}}</p>
-                @endif  
-                @if(isset($funding->eventLocation))
-                <p class="place"><span class="icon s7-map-marker"></span>{{$funding->eventLocation}}</p>
-                @endif  
-              </div>
-            </div>
-          @if(isset($funding->uri))  
-          </a>
-          @endif  
-        @endif  
+        
       </div>
       <!--FIN Funding opportunities-->
 
@@ -94,6 +59,58 @@
 
 
     </div>
+
+    @if(isset($funding) && !empty($funding))
+    <hr style="margin:50px 0; border-top: 1px solid #ddd;">
+
+    <!--Cards for Events-->
+    <div class="row text-left row-research row-research-cards">
+      <div class="col-md-3">
+        @if(isset($funding))    
+          @if(isset($funding->uri))
+          <a href="{{url($funding->uri)}}">
+          @endif
+            <div class="card card-event card-event-large">
+              @if(isset($funding->type))
+              <span class="label @if(isset($funding->typeColor)){{$funding->typeColor}}@else label-default @endif">{{$funding->type}}</span>
+              @endif
+              @if(isset($funding->image))
+              <div class="card-image">
+                <img class="img-responsive" src="{{url($funding->image)}}" @if(isset($funding->imageDescription))alt="{{$funding->imageDescription}}" @endif />
+              </div>
+              @endif
+              <div class="card-content white-bg">
+                @if(isset($funding->title))
+                <p class="title">
+                  {{$funding->title}}
+                </p>
+                @endif
+                @if(isset($funding->eventDates))
+                <p class="date">
+                  {{$funding->eventDates}}
+                </p>
+                @endif  
+                @if(isset($funding->earlybirdDeadline))
+                <p class="btn-rounded early_bird">Early Bird deadline: {{$funding->earlybirdDeadline}}</p>
+                @endif  
+                @if(isset($funding->eventLocation))
+                <p class="place"><span class="icon s7-map-marker"></span>{{$funding->eventLocation}}</p>
+                @endif  
+              </div>
+            </div>
+          @if(isset($funding->uri))  
+          </a>
+          @endif  
+        @endif  
+
+      </div>
+
+      
+
+    </div>
+    <!--END Cards for Events-->
+    @endif
+
   </div>  
 </div>
 

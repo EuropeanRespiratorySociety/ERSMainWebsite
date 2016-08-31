@@ -17,7 +17,55 @@
 					<li><a href="http://www.ers-education.org/e-learning/case-reports.aspx" target="_blank">Case reports</a> and <a href="http://www.ers-education.org/e-learning/procedure-videos.aspx" target="_blank">Videos</a></li>
 					<li><a href="http://www.ers-education.org/cmeOnline" target="_blank">CME Online</a></li>
 				</ul>
-				@if(isset($eLearning))		
+				<!---->
+			</div>
+		    <!--FIN e-Learning-->
+
+		    <!--Programmes and courses-->
+		    <div class="col-md-3">
+		    	<h2><a href="{{url('professional-development/courses')}}">Programmes and courses</a></h2>
+		    	<ul>
+		    		<li>Skills courses</li>
+		    		<li>Online courses</li>
+		    		<!--li>Programmes</li-->
+		    		<!--li><a>&nbsp;</a></li-->
+		    	</ul>
+		    	
+		    </div>
+		    <!--FIN Programmes and courses-->
+
+			<!--Assessments-->
+			<div class="col-md-3">
+				<h2>Assessments</h2>
+				<ul>
+					<li><a target="_blank" href="http://hermes.ersnet.org/exams.html">HERMES exams</a></li>
+					<!--li>Programme assessments</li-->
+					<li><a target="_blank" href="{{url('professional-development/accreditation')}}">Accreditation</a></li>
+					<!--<li><a target="_blank" href="">Curricula</a></li>-->
+				</ul>
+			</div>
+			<!--FIN Assessments-->
+
+			<!--Harmonising education-->
+			<div class="col-md-3">
+				<h2>Harmonising education</h2>
+				<ul>
+					<li><a target="_blank" href="http://hermes.ersnet.org">Established curriculam</a></li>
+					<li><!--<a target="_blank" href="">Curricula</a>--></li>
+				</ul>
+			</div>
+			<!--FIN Harmonising education-->
+		</div>
+
+
+		
+		<!--Cards for Events-->
+		@if((isset($eLearning) && !empty($eLearning)) || isset($course) && !empty($course)))	
+		<hr style="margin:50px 0; border-top: 1px solid #ddd;">
+		<div class="row text-left row-professional row-professional-cards">
+	
+			@if(isset($eLearning) && !empty($eLearning))	
+			<div class="col-md-3">
 					@if(isset($eLearning->uri))
 					<a href="{{url($eLearning->uri)}}">
 					@endif
@@ -51,22 +99,14 @@
 						</div>
 					@if(isset($eLearning->uri))	
 					</a>
-					@endif	
-				@endif	
+					@endif						
 			</div>
-		    <!--FIN e-Learning-->
 
-		    <!--Programmes and courses-->
-		    <div class="col-md-3">
-		    	<h2><a href="{{url('professional-development/courses')}}">Programmes and courses</a></h2>
-		    	<ul>
-		    		<li>Skills courses</li>
-		    		<li>Online courses</li>
-		    		<!--li>Programmes</li-->
-		    		<!--li><a>&nbsp;</a></li-->
-		    	</ul>
-		    	@if(isset($course))		
-			    	@if(isset($course->uri))
+		@endif	
+
+		@if(isset($course) && !empty($course))		
+			<div class="col-md-3">
+					@if(isset($course->uri))
 			    	<a href="{{url($course->uri)}}">
 			    	@endif
 			    		<div class="card card-event card-event-large">
@@ -99,33 +139,16 @@
 			    		</div>
 			    	@if(isset($course->uri))	
 			    	</a>
-			    	@endif
-		    	@endif	
-		    </div>
-		    <!--FIN Programmes and courses-->
+		    		@endif
 
-			<!--Assessments-->
-			<div class="col-md-3">
-				<h2>Assessments</h2>
-				<ul>
-					<li><a target="_blank" href="http://hermes.ersnet.org/exams.html">HERMES exams</a></li>
-					<!--li>Programme assessments</li-->
-					<li><a target="_blank" href="{{url('professional-development/accreditation')}}">Accreditation</a></li>
-					<!--<li><a target="_blank" href="">Curricula</a></li>-->
-				</ul>
 			</div>
-			<!--FIN Assessments-->
+			@endif
 
-			<!--Harmonising education-->
-			<div class="col-md-3">
-				<h2>Harmonising education</h2>
-				<ul>
-					<li><a target="_blank" href="http://hermes.ersnet.org">Established curriculam</a></li>
-					<li><!--<a target="_blank" href="">Curricula</a>--></li>
-				</ul>
-			</div>
-			<!--FIN Harmonising education-->
-		</div>	
+		</div>
+		@endif
+		<!--END Cards for Events-->
+
+
 	</div>
 </div>
 
