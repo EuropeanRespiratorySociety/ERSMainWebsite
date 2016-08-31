@@ -1,7 +1,7 @@
 <FilesMatch ".(eot|ttf|otf|woff)">
     Header set Access-Control-Allow-Origin "*"
 </FilesMatch>
-    Header append Vary: Accept-Encoding
+Header set Vary *
 
 SetOutputFilter DEFLATE
     #The following line is enough for .js and .css
@@ -11,7 +11,8 @@ SetOutputFilter DEFLATE
     AddOutputFilterByType DEFLATE text/plain
     AddOutputFilterByType DEFLATE text/html
     AddOutputFilterByType DEFLATE text/xml
-    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/css 
+    AddOutputFilterByType DEFLATE text/javascript
     AddOutputFilterByType DEFLATE application/xml
     AddOutputFilterByType DEFLATE application/xhtml+xml
     AddOutputFilterByType DEFLATE application/rss+xml
@@ -36,9 +37,12 @@ SetOutputFilter DEFLATE
     RewriteRule "\.css\.gz$" "-" [T=text/css,E=no-gzip:1]
     RewriteRule "\.js\.gz$" "-" [T=text/javascript,E=no-gzip:1]
 
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 
-# Expiration
-<IfModule mod_expires.c>
+
+
     ExpiresActive On
     ExpiresDefault A0
     ExpiresByType image/jpg A2592000
@@ -54,7 +58,7 @@ SetOutputFilter DEFLATE
     ExpiresByType application/xhtml+xml A2592000
     ExpiresByType application/javascript A259200
     ExpiresByType application/x-javascript A2592000
-</IfModule>
+
 
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
