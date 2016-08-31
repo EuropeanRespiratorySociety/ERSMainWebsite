@@ -311,7 +311,7 @@ self.addEventListener('fetch', function(event) {
 // Runtime cache configuration, using the sw-toolbox library.
 
 toolbox.router.get(/^https:\/\/new\.ersnet\.org/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages"}});
-toolbox.router.get(/^https:\/\/new\.ersnet\.org\//, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages"}});
+toolbox.router.get(/^https:\/\/new\.ersnet\.org/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages"}});
 toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/who-we-are/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-who-we-are"}});
 toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/leadership/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-leadership"}});
 toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/executive-office/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-executive-office"}});
@@ -334,7 +334,7 @@ toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/fonts\/icomoon\/fonts\/ic
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/fonts\/icomoon\/fonts\/icomoon\.ttf/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/fonts\/stroke-7\/fonts\/Stroke-7\.ttf/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/fonts\/stroke-7\/fonts\/Stroke-7\.woff/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
-toolbox.router.get(/^https:\/\/fonts\.googleapis\.com\/css\?family=Amiri:400,400italic,700,700italic/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
+toolbox.router.get(/^https:\/\/fonts\.googleapis\.com\/css\?family\=Amiri\:400\,400italic\,700\,700italic/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/css\/all\.css/, toolbox.networkFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/images\/logo-full-retina\.png/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
 
