@@ -186,6 +186,11 @@
     ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
 
 </IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch ".(js|css|xml|gz|html)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>
 
 
 <IfModule mod_rewrite.c>
