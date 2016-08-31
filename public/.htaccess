@@ -14,7 +14,6 @@
 </ifModule>
 
 SetOutputFilter DEFLATE
-<IfModule mod_deflate.c>
     #The following line is enough for .js and .css
     AddOutputFilter DEFLATE js css
 
@@ -33,7 +32,7 @@ SetOutputFilter DEFLATE
     BrowserMatch ^Mozilla/4 gzip-only-text/html
     BrowserMatch ^Mozilla/4\.0[678] no-gzip
     BrowserMatch \bMSIE !no-gzip !gzip-only-text/html 
-</IfModule>
+
 
 <IfModule mod_headers.c>
     # Serve gzip compressed CSS files if they exist 
