@@ -251,6 +251,8 @@
             @if(isset($course->venue->postalCode)){{$course->venue->postalCode}}@endif
             @if(isset($course->venue->city)){{$course->venue->city}}@endif<br>
             @if(isset($course->venue->country)){{$course->venue->country}}@endif
+            <hr>
+            @if(isset($course->venue->info)){!!$course->venue->info!!}@endif
           </p>
         </div>
       </div>
@@ -275,12 +277,16 @@
               @if(isset($accommodation['url']))
                 <a target="_blank" href="{{$accommodation['url']}}">
               @endif 
+              @if(isset($accommodation['name']))
                 {{$accommodation['name']}} 
+              @endif  
               @if(isset($accommodation['url']))
                 </a>
               @endif
               <br/>
-              {{$accommodation['streetAddress']}}<br>
+              @if(isset($accommodation['streetAddress']))
+                {{$accommodation['streetAddress']}}<br>
+              @endif
               @if(isset($accommodation['streetAddress2']))
               {{$accommodation['streetAddress2']}}<br>
               @endif
