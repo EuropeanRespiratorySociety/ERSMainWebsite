@@ -61,6 +61,7 @@
       # non-gzipped css/js files separately.
       Header append Vary: Accept-Encoding
     </FilesMatch>
+    Header append Vary: Accept-Encoding
 </IfModule>
 
 # Expiration
