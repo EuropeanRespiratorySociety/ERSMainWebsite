@@ -310,21 +310,21 @@ self.addEventListener('fetch', function(event) {
 
 // Runtime cache configuration, using the sw-toolbox library.
 
-toolbox.router.get(/^https:\/\/new\.ersnet\.org/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages"}});
-toolbox.router.get(/^https:\/\/new\.ersnet\.org/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages"}});
-toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/who-we-are/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-who-we-are"}});
-toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/leadership/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-leadership"}});
-toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/executive-office/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-executive-office"}});
-toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/statutes-policies-and-annual-report/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-satutes-policies"}});
-toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/awards/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-awards"}});
-toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/fellow-of-ers/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-fellows"}});
-toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/membership/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-membersip"}});
-toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/assemblies/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-assemblies"}});
-toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/news\/respiratory-world-wide/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-rww"}});
-toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/news\/respiratory-matters/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-rm"}});
-toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/news\/press-office/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-press"}});
-toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/news\/contact/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-contact"}});
-toolbox.router.get(/^https:\/\/new\.ersnet\.org\/the-society\/news/, toolbox.networkFirst, {"cache":{"maxEntries":10,"name":"ers-offline-pages-news"}});
+toolbox.router.get(/^https:\/\/www\.ersnet\.org/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages"}});
+toolbox.router.get(/^https:\/\/www\.ersnet\.org/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages"}});
+toolbox.router.get(/^https:\/\/www\.ersnet\.org\/the-society\/who-we-are/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-who-we-are"}});
+toolbox.router.get(/^https:\/\/www\.ersnet\.org\/the-society\/who-we-are\/leadership/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-leadership"}});
+toolbox.router.get(/^https:\/\/www\.ersnet\.org\/the-society\/who-we-are\/executive-office/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-executive-office"}});
+toolbox.router.get(/^https:\/\/www\.ersnet\.org\/the-society\/who-we-are\/statutes-policies-and-annual-report/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-satutes-policies"}});
+toolbox.router.get(/^https:\/\/www\.ersnet\.org\/the-society\/who-we-are\/awards/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-awards"}});
+toolbox.router.get(/^https:\/\/www\.ersnet\.org\/the-society\/who-we-are\/fellow-of-ers/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-fellows"}});
+toolbox.router.get(/^https:\/\/www\.ersnet\.org\/the-society\/membership/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-membersip"}});
+toolbox.router.get(/^https:\/\/www\.ersnet\.org\/the-society\/assemblies/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-assemblies"}});
+toolbox.router.get(/^https:\/\/www\.ersnet\.org\/the-society\/news\/respiratory-world-wide/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-rww"}});
+toolbox.router.get(/^https:\/\/www\.ersnet\.org\/the-society\/news\/respiratory-matters/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-rm"}});
+toolbox.router.get(/^https:\/\/www\.ersnet\.org\/the-society\/news\/press-office/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-press"}});
+toolbox.router.get(/^https:\/\/www\.ersnet\.org\/the-society\/news\/contact/, toolbox.networkFirst, {"cache":{"name":"ers-offline-pages-contact"}});
+toolbox.router.get(/^https:\/\/www\.ersnet\.org\/the-society\/news/, toolbox.networkFirst, {"cache":{"maxEntries":10,"name":"ers-offline-pages-news"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/js\/all\.js/, toolbox.networkFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/js\/jquery\.min\.js/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/js\/fullpage\.js/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});

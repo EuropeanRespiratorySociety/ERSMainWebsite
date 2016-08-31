@@ -31,7 +31,7 @@ gulp.task('generate-service-worker', function(callback) {
    	],
     runtimeCaching: [
 	    {
-	  		urlPattern: /^https:\/\/new\.ersnet\.org/,
+	  		urlPattern: /^https:\/\/www\.ersnet\.org/,
 	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
@@ -40,7 +40,7 @@ gulp.task('generate-service-worker', function(callback) {
 			  }
 		},
 	    {
-	  		urlPattern: /^https:\/\/new\.ersnet\.org/,
+	  		urlPattern: /^https:\/\/www\.ersnet\.org/,
 	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
@@ -49,7 +49,7 @@ gulp.task('generate-service-worker', function(callback) {
 			  }
 		},
 	    {
-	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/who-we-are/,
+	  		urlPattern: /^https:\/\/www\.ersnet\.org\/the-society\/who-we-are/,
 	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
@@ -58,7 +58,7 @@ gulp.task('generate-service-worker', function(callback) {
 			  }
 		},
 	    {
-	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/leadership/,
+	  		urlPattern: /^https:\/\/www\.ersnet\.org\/the-society\/who-we-are\/leadership/,
 	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
@@ -67,7 +67,7 @@ gulp.task('generate-service-worker', function(callback) {
 			  }
 		},
 	    {
-	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/executive-office/,
+	  		urlPattern: /^https:\/\/www\.ersnet\.org\/the-society\/who-we-are\/executive-office/,
 	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
@@ -76,7 +76,7 @@ gulp.task('generate-service-worker', function(callback) {
 			  }
 		},
 	    {
-	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/statutes-policies-and-annual-report/,
+	  		urlPattern: /^https:\/\/www\.ersnet\.org\/the-society\/who-we-are\/statutes-policies-and-annual-report/,
 	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
@@ -85,7 +85,7 @@ gulp.task('generate-service-worker', function(callback) {
 			  }
 		},
 	    {
-	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/awards/,
+	  		urlPattern: /^https:\/\/www\.ersnet\.org\/the-society\/who-we-are\/awards/,
 	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
@@ -94,7 +94,7 @@ gulp.task('generate-service-worker', function(callback) {
 			  }
 		},
 	    {
-	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/who-we-are\/fellow-of-ers/,
+	  		urlPattern: /^https:\/\/www\.ersnet\.org\/the-society\/who-we-are\/fellow-of-ers/,
 	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
@@ -103,7 +103,7 @@ gulp.task('generate-service-worker', function(callback) {
 			  }
 		},
 	    {
-	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/membership/,
+	  		urlPattern: /^https:\/\/www\.ersnet\.org\/the-society\/membership/,
 	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
@@ -112,7 +112,7 @@ gulp.task('generate-service-worker', function(callback) {
 			  }
 		},
 	    {
-	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/assemblies/,
+	  		urlPattern: /^https:\/\/www\.ersnet\.org\/the-society\/assemblies/,
 	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
@@ -121,7 +121,7 @@ gulp.task('generate-service-worker', function(callback) {
 			  }
 		},
 	    {
-	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/news\/respiratory-world-wide/,
+	  		urlPattern: /^https:\/\/www\.ersnet\.org\/the-society\/news\/respiratory-world-wide/,
 	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
@@ -130,7 +130,7 @@ gulp.task('generate-service-worker', function(callback) {
 			  }
 		},
 	    {
-	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/news\/respiratory-matters/,
+	  		urlPattern: /^https:\/\/www\.ersnet\.org\/the-society\/news\/respiratory-matters/,
 	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
@@ -139,7 +139,7 @@ gulp.task('generate-service-worker', function(callback) {
 			  }
 		},
 	    {
-	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/news\/press-office/,
+	  		urlPattern: /^https:\/\/www\.ersnet\.org\/the-society\/news\/press-office/,
 	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
@@ -148,7 +148,7 @@ gulp.task('generate-service-worker', function(callback) {
 			  }
 		},
 	    {
-	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/news\/contact/,
+	  		urlPattern: /^https:\/\/www\.ersnet\.org\/the-society\/news\/contact/,
 	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
@@ -157,7 +157,7 @@ gulp.task('generate-service-worker', function(callback) {
 			  }
 		},
 	    {
-	  		urlPattern: /^https:\/\/new\.ersnet\.org\/the-society\/news/,
+	  		urlPattern: /^https:\/\/www\.ersnet\.org\/the-society\/news/,
 	  		handler: 'networkFirst',
 	  		options: {
 			    cache: {
