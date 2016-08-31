@@ -1,7 +1,7 @@
 <FilesMatch ".(eot|ttf|otf|woff)">
     Header set Access-Control-Allow-Origin "*"
 </FilesMatch>
-
+    Header append Vary: Accept-Encoding
 <ifModule mod_gzip.c>
     mod_gzip_on Yes
     mod_gzip_dechunk Yes
@@ -61,7 +61,6 @@
       # non-gzipped css/js files separately.
       Header append Vary: Accept-Encoding
     </FilesMatch>
-    Header append Vary: Accept-Encoding
 </IfModule>
 
 # Expiration
