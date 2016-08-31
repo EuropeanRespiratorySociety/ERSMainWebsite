@@ -334,7 +334,7 @@ toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/fonts\/icomoon\/fonts\/ic
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/fonts\/icomoon\/fonts\/icomoon\.ttf/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/fonts\/stroke-7\/fonts\/Stroke-7\.ttf/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/fonts\/stroke-7\/fonts\/Stroke-7\.woff/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
-toolbox.router.get(/^https:\/\/fonts\.googleapis\.com\/css\?family\=Amiri\:400\,400italic\,700\,700italic/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
+toolbox.router.get(/^https:\/\/fonts\.googleapis\.com\/css\?family=Amiri:400,400italic,700,700italic/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/css\/all\.css/, toolbox.networkFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
 toolbox.router.get(/^https:\/\/bootstrap\.ersnet\.org\/images\/logo-full-retina\.png/, toolbox.cacheFirst, {"cache":{"maxEntries":10,"name":"ers-assets"}});
 
