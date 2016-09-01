@@ -38,7 +38,6 @@ class HomeController extends Controller
         $items =  (object) $items;
 
         $params['items'] =  $CC->sortHomepage($items);
-
         return response()->view('home.home', $params)->setTtl(60 * 60 * 24 * 7); //caching a week
     }
 }

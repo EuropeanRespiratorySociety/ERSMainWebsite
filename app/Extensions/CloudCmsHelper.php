@@ -197,7 +197,6 @@ class CloudCmsHelper
         $elearningCounter = 1;
         $courseCounter = 1;
         $nonERS = isset($item->nonErsCalendarItem) ? $item->nonErsCalendarItem : false;
-        
         foreach ($items as $key => $item) {
 
             $item = (object) $item;
@@ -231,11 +230,11 @@ class CloudCmsHelper
             
             if($item->contentType == "article" && $articleCounter <= 4){
 
-                if(isset($sorted['mainNews'])){
+                if($item->mainNews != true){
                     $sorted['news'][$key] = $item;
                 }
 
-                if($articleCounter <= 1){
+                if($articleCounter <= 1 || $item->mainNews == true){
                     $sorted['mainNews'] = $item;
                 }
                 $articleCounter++;
@@ -309,7 +308,16 @@ class CloudCmsHelper
                     if(isset($item->fullyBooked)){$parsed[$key]['fullyBooked'] = $item->fullyBooked;}
                     if(isset($item->contentType)){$parsed[$key]['contentType'] = $item->contentType;}
                     if(isset($item->type)){$parsed[$key]['type'] = $item->type;}
-                    if(isset($item->contrastOnHomepage)){$parsed[$key]['contrastOnHomepage'] = $item->contrastOnHomepage;}
+                    if(isset($item->contrastOnHomepage)){
+                        $parsed[$key]['contrastOnHomepage'] = $item->contrastOnHomepage;
+                    } else {
+                        $parsed[$key]['contrastOnHomepage'] = false;
+                    }
+                    if(isset($item->mainNews)){
+                        $parsed[$key]['mainNews'] = $item->mainNews;
+                    }else{
+                        $parsed[$key]['mainNews'] = false;
+                    }
                     if(isset($item->type)){$parsed[$key]['typeColor'] = $this->setTypeColor($item->type);}
                     if(isset($item->category)){
                         if(isset($item->category->title)){$parsed[$key]['category'] = $item->category->title;}
