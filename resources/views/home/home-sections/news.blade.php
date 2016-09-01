@@ -9,7 +9,7 @@
             <figure 
 
             @if(isset($item->contrastOnHomepage))
-              @if($item->contrastOnHomepage) class="hover-gradation-dark" @else class="hover-gradation" @endif
+              @if($item->contrastOnHomepage ) class="hover-gradation-dark" @else class="hover-gradation" @endif
             @else 
               class="hover-gradation"
             @endif  

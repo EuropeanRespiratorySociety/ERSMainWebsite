@@ -315,7 +315,7 @@ class CloudCmsHelper
                     }
                     if(isset($item->mainNews)){
                         $parsed[$key]['mainNews'] = $item->mainNews;
-                    }else{
+                    } else {
                         $parsed[$key]['mainNews'] = false;
                     }
                     if(isset($item->type)){$parsed[$key]['typeColor'] = $this->setTypeColor($item->type);}
@@ -418,7 +418,7 @@ class CloudCmsHelper
                         if(isset($item->programmeButtonText)){ $parsed[$key]['programmeButtonText'] =$item->programmeButtonText;}
                         if(isset($item->programmeNotice)){ $parsed[$key]['programmeNotice'] =$item->programmeNotice;}
                         if(isset($item->rulesAndRegulations)){
-                            $path = "path/documents/rules_and_regulations/";
+                            $path = "path/documents/rules-and-regulations/";
                             $file_title = $item->rulesAndRegulations->title;
                             $file = CC::nodes()->getFile($file_title, $path);
                             $parsed[$key]['rulesAndRegulations'] = $file->fileUrl;
