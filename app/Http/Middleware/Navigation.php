@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App;
 use Closure;
 use Lavary\Menu\Menu;
 
@@ -150,7 +151,11 @@ class Navigation
                                             ->link->attr(array('target' => '_blank'));                   
 
 
-
+            if(App::environment() != 'local'){
+                 foreach ($menu->items as $item) {
+                     $item->link->secure();
+                 }
+            }
 
         });
 
