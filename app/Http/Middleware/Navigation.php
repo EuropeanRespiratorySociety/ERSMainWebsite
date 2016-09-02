@@ -151,7 +151,7 @@ class Navigation
                                             ->link->attr(array('target' => '_blank'));                   
 
 
-            if(App::environment() != 'local'){
+            if( env('APP_ENV') == 'production'){
                  foreach ($menu->items as $item) {
                      $item->link->secure();
                  }
