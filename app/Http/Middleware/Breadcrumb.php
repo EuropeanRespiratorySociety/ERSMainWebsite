@@ -20,7 +20,7 @@ class Breadcrumb
           $mainNav = \Menu::get('MainNav');
           foreach ($mainNav->items as $key => $item) {
               if($item->attr('class') == 'active'){
-                $menu->add($item->title, $item->link->path['url'])->secure();
+                $menu->add($item->title, $item->link->path['url']);
               }  
           }
   
