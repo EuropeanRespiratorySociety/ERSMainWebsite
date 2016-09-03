@@ -42,7 +42,8 @@ class CourseController extends Controller
         $results = $CC->getCategory($params['item']->_qname);
 
         $courses = $CC->parseItems($results->rows, true);
-        $params['courses'] =  (object) $courses; 
+        $sorted = $CC->sortItems($courses);
+        $params['courses'] =  $sorted; 
         return view('professional.courses')->with($params);    
 
     }

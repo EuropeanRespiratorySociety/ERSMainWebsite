@@ -260,6 +260,19 @@ class CloudCmsHelper
         return $sorted;
     }
 
+    /**
+    * Sort event items based on the start date timestamp
+    *@param array $items
+    *@return object
+    */
+    public function sortItems($items){
+        usort($items, function($a, $b){
+            return $a['startDateTimestamp'] <=> $b['startDateTimestamp'];
+        });
+        
+        return (object) $items;
+    }
+
     /**          
      *
      * @param  object $address
@@ -330,17 +343,18 @@ class CloudCmsHelper
                     }	
                     if(isset($item->_qname)){$parsed[$key]['_qname'] = $item->_qname;}
                     if(isset($item->_type)){$parsed[$key]['_type'] = $item->_type;}
-                    if(isset($item->ebusDate)){$parsed[$key]['ebusDate'] = $item->ebusDate;}  
-                    if(isset($item->eventDate) && isset($item->eventEndDate)){
+                    if(isset($item->ebusDate)){
+                        $parsed[$key]['ebusDate'] = $item->ebusDate;
+                    }  
+                    if(isset($item->eventDate) && isset($item->enventEndDate)){
                         $parsed[$key]['eventDates'] = $this->ersDate($item->eventDate, $item->eventEndDate);
-                        $parsed[$key]['startDate'] = $item->eventDate;
-                        $parsed[$key]['endDate'] = $item->eventEndDate;
-                    } elseif(isset($item->eventDate) && !isset($item->eventEndDate)){
+                        $parsed[$key]['startDateTimestamp'] = $this->toTimestamp($item->eventDate);
+                    } elseif(isset($item->eventDate) && !isset($item->enventEndDate)){
                         $parsed[$key]['eventDates'] = $this->ersDate($item->eventDate);
-                        $parsed[$key]['startDate'] = $item->eventDate;
+                        $parsed[$key]['startDateTimestamp'] = $this->toTimestamp($item->eventDate);
                     }
                     if(isset($item->eventDate)){$parsed[$key]['calendar'] = $this->calendar($item->eventDate);}   
-                    if(isset($item->earlybirdDeadline)){$parsed[$key]['earlybirdDeadline'] = $this->ersDate($item->earlybirdDeadline);}
+                    if(isset($item->earlybirdDeadline)){$parsed[$key]['earlybirdDeadline'] = $this->isAlreadyPassed($item->earlybirdDeadline);}
                     if(isset($item->extendedDeadline)){ $parsed[$key]['extendedDeadline'] = $this->ersDate($item->extendedDeadline);}
                     if(isset($item->_system->created_on->timestamp)){ $parsed[$key]['createdOn'] = $this->ersDate($item->_system->created_on->timestamp);}
                     if(isset($item->_system->created_on->ms)){ $parsed[$key]['ms'] = $item->_system->created_on->ms;}
@@ -488,6 +502,21 @@ class CloudCmsHelper
         }
 
         return $start->day.' '.$start->format('F').', '.$start->year;     
+    }
+
+    public function toTimestamp($date){
+        $date = new \DateTime($date);
+        return (Carbon::instance($date))->timestamp;
+    }
+
+    public function isAlreadyPassed($date){
+        $now = new Carbon();
+        $dateToTest = new \DateTime($date);
+        if($now < $dateToTest) {
+            return $this->ersDate($date);
+        }
+
+        return null;
     }
 
     public function setTypeColor($type){
