@@ -19,7 +19,7 @@
                 </div>         
 
                 <div class="row row_event rel">
-                    @include('partials.category-items',array('items' => $items, 'class' => 'col-md-3'))
+                    @include('partials.category-grants-sponsorships',array('items' => $items, 'class' => 'col-md-3'))
                 </div>
             </div>
 </div>
