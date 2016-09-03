@@ -41,7 +41,7 @@
 		            Research Director-Elect<br>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="../images/120x120.jpg" class="img-circle">
+					<img src="images/people/leadership/rachel-chambers.png" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('r.chambers@ucl.ac.uk', 'RACHEL CHAMBERS') !!}</strong>
 		            Conferences and Research Seminars Director<br>
 		        </div>
@@ -49,6 +49,11 @@
 					<img src="images/people/leadership/marc_miravitlles.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('mmiravitlles@vhebron.net', 'Marc Miravitlles') !!}</strong>
 		            Guidelines director<br>
+		        </div>
+		        <div class="col-md-4 xs-mb-15">
+					<img src="images/people/leadership/nicolas_kahn.png" class="img-circle">
+		            <p class="photo_caption"><strong>NICOLAS KAHN</strong>
+		            Early-career member Representative<br>
 		        </div>
 
 
