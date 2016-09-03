@@ -1090,6 +1090,8 @@
         Redirect 301 /handbook http://www.ers-education.org/pages/default.aspx?id=2295
         # M
         Redirect 301 /mobile http://www.erscongress.org/mobile
+        # O
+        Redirect 301 /ondemand http://ondemand.erscongress.org/
         # R
         Redirect 301 /roadmap http://www.ersroadmap.org/
         # S
