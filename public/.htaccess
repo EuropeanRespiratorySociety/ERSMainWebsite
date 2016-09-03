@@ -206,7 +206,7 @@
     # Temporary redirect
     # -------------------
 
-    Redirect 301 /the-society/news/enjoy-complete-and-interactive-coverage-of-ers-2016-with-new-digital-resources- http://ondemand.erscongress.org
+    Redirect 301 /the-society/news/enjoy-complete-and-interactive-coverage-of-ers-2016-with-new-digital-resources- http://live.erscongress.org
 
     # -------------------
     # Migration redirects
