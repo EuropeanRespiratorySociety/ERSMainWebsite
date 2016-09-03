@@ -292,7 +292,9 @@ class CloudCmsHelper
             }
                 $parsed = [];
 		        foreach ($items as $key => $item) {
-                    if(isset($item->title)){$parsed[$key]['title'] = $item->title;}
+                    if(isset($item->title)){
+                        $parsed[$key]['title'] = $this->formatTitle($item->title);
+                    }
                     if(isset($item->salutation)){$parsed[$key]['salutation']=$item->salutation;}
                     if(isset($item->firstName)){$parsed[$key]['firstName']=$item->firstName;}
                     if(isset($item->lastName)){$parsed[$key]['lastName']=$item->lastName;}
@@ -610,6 +612,11 @@ class CloudCmsHelper
 
     	return $string;
 
+    }
+
+    public function formatTitle($title){
+        $array = explode('|', $title);
+        return $array['0'];
     }
 
 
