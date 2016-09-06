@@ -13,6 +13,15 @@ use Spatie\Geocoder\GeocoderFacade as Geocoder;
 
 class CloudCmsHelper
 {
+    public function getSchema(){
+        $results = CC::branches()
+            ->getSchema('ers:article')
+            ->addParams(['full' => 'true'])
+            ->get();
+
+        return $results;    
+    }
+
     public function getCategory($catnode){
         $results = CC::nodes()
             ->listRelatives($catnode)
@@ -520,7 +529,14 @@ class CloudCmsHelper
     }
 
     public function setTypeColor($type){
-        if($type == "ERS Course" || $type == "ERS Online course" || $type == "e-learning" || $type == "ERS Skill workshop" || $type == "ERS Skills course"|| $type == "ERS Endorsed activity" || $type == "Hands-on"){
+        if( $type == "ERS Course" || 
+            $type == "ERS Online course" || 
+            $type == "e-learning" || 
+            $type == "ERS Skill workshop" || 
+            $type == "ERS Skills course"|| 
+            $type == "ERS Endorsed activity" || 
+            $type == "Hands-on"){
+            
             return "label-school";
         }
 

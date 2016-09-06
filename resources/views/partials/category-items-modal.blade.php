@@ -56,7 +56,7 @@
             @if(isset($item['registerButton']['link']))
             <a href="{{$item['registerButton']['link']}}" target="new_blank"  class="btn btn-register">register</a>
             @endif
-            @if(isset($item['body']))
+            @if(isset($item['lead']) || isset($item['body']))
             <a data-toggle="modal" data-target="#{{$item['slug']}}" class="btn btn-register">more</a>
             @endif
             </div>

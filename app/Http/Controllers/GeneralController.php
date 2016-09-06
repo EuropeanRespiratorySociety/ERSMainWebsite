@@ -192,4 +192,9 @@ class GeneralController extends Controller
         return view('articles.item')->with($params); 
     }
 
+    public function schema(){
+        $CC = new CC();
+        dd($CC->getSchema());
+    }
+
 }
