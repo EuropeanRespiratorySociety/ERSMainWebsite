@@ -355,10 +355,10 @@ class CloudCmsHelper
                     if(isset($item->ebusDate)){
                         $parsed[$key]['ebusDate'] = $item->ebusDate;
                     }  
-                    if(isset($item->eventDate) && isset($item->enventEndDate)){
+                    if(isset($item->eventDate) && isset($item->eventEndDate)){
                         $parsed[$key]['eventDates'] = $this->ersDate($item->eventDate, $item->eventEndDate);
                         $parsed[$key]['startDateTimestamp'] = $this->toTimestamp($item->eventDate);
-                    } elseif(isset($item->eventDate) && !isset($item->enventEndDate)){
+                    } elseif(isset($item->eventDate) && !isset($item->eventEndDate)){
                         $parsed[$key]['eventDates'] = $this->ersDate($item->eventDate);
                         $parsed[$key]['startDateTimestamp'] = $this->toTimestamp($item->eventDate);
                     }
@@ -474,7 +474,7 @@ class CloudCmsHelper
                         if(isset($item->video)){$parsed[$key]['video'] = $this->getVideo($item->video, 400);}                   
                 	}
                 }  
-            //dd($parsed);
+           //dd($parsed);
         return $parsed; 
 	}
 
