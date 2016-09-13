@@ -24,7 +24,7 @@
             <span class="label label-danger">Fully Booked</span>
             @endif            
             @if(isset($item['nonErsCalendarItem']))
-            @if($item['nonErsCalendarItem'])<span class="label label-danger" style="width:100%">Non-ERS Event</span>@endif
+                @if($item['nonErsCalendarItem'])<span class="label label-danger" style="width:100%">Non-ERS Event</span>@endif
             @endif
         </div>
 
