@@ -8,6 +8,26 @@
               ['pagination' => isset($pagination) ? $pagination : null]
               )) 
 @stop()
+@section('structured-data')
+  @include('partials.event-structured-data', array('item' => 
+      [
+        'url' => isset($item->url) ? $item->url : null ,
+        'name' => $item->title,
+        'startDate' => isset($item->startDate) ? $item->startDate : null,
+        'endDate' => isset($item->endDate) ? $item->endDate : null,
+        'performer' => isset($item->organisers) ? $item->organisers : null,
+        'offers' => isset($item->feeList->ersMember) ? 'ERS Members: €' . $item->feeList->ersMember  : null,
+        'image' => isset($item->image) ? $item->image : null,
+        'description' => isset($item->lead) ? $item->lead : null,
+        'venueName' => isset($item->venue->name) ? $item->venue->name : null,
+        'venueAddress' => isset($item->venue->streetAddress) ? $item->venue->streetAddress : null,
+        'venueAddress2' => isset($item->venue->streetAddress2) ? $item->venue->streetAddress2 : null,
+        'venuePostalCode' => isset($item->venue->postalCode) ? $item->venue->postalCode : null,
+        'venueCity' => isset($item->venue->city) ? $item->venue->city : null,
+        'venueCountry' => isset($item->venue->country) ? $item->venue->country : null
+      ]
+  ))
+@stop()
 @section('content')
 <div class="ers-content event-items-content lsc-content">
   <div class="row">
@@ -15,6 +35,9 @@
     @if(isset($item->image))
     <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
     @endif
+    @if(isset($item->location->lat)&&isset($item->location->long))
+          <div id="map"></div>
+      @endif
     @if(isset($relatedItems))
       @include('partials.related-items', array('relatedItems' => $relatedItems)) 
     @endif
@@ -31,7 +54,7 @@
         </div>
         <h2 class="text-left clearfix date-venue">
         <!--<a href=""><span class="icon s7-angle-left pull-left" style="font-size: 24px;"></span></a>-->
-        <label>{{$item->eventDates}} <a href="">{{$item->eventLocation}}</a></label>
+        <label>{{$item->eventDates}} <a href="javascript:void(0)">{{$item->eventLocation}}</a></label>
         <!--<a href=""><span class="icon s7-angle-right pull-right" style="font-size: 24px;"></span></a>-->
         </h2>
       </div>
@@ -62,7 +85,7 @@
       <h5><b>Organisers :</b> {{$item->organisers}}</h5>
       @endif
       @if(isset($item->faculty))
-      <h5><b>Faculty :</b> {{$item->faculty}}</h5>
+      <h5><b>Organising Committee :</b> {{$item->faculty}}</h5>
       @endif
 
       <div class="article text-left">
@@ -110,7 +133,7 @@
                   </a>
                 @endif
                 <ul class="list-group">
-                  @if(isset($item->mentorship))
+                  @if(isset($item->mentorship->text))
                     <li class="list-group-item">
                       <a href="#md-mentor" type="button" data-toggle="modal" data-target="#md-mentor">
                         <span class="icon s7-users"></span>Mentorship programme
@@ -236,7 +259,7 @@
 </div>
 
 <!-- Modal windows -->
-@if(isset($course->cancellationPolicy))
+@if(isset($item->cancellationPolicy))
 <!--Cancellation policy-->
 <div id="md-cancellation" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
   <div class="modal-dialog">
@@ -248,7 +271,7 @@
       <div class="modal-body">
         <div class="text-left">
           <p>
-            {!! $course->cancellationPolicy !!}
+            {!! $item->cancellationPolicy !!}
            
           </p>
         </div>
@@ -327,5 +350,29 @@
 @stop()  
 
 @section('scripts')
-    
+@if(isset($item->location->lat)&&isset($item->location->long))
+    <script>
+    function initMap() {
+      function initialize(){
+        var myLatLng ={ lat: {{$item->location->lat}}, lng: {{$item->location->long}} };
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: myLatLng,
+          disableDefaultUI: true,
+          fullscreenControl: true
+        });
+
+        var marker = new google.maps.Marker({
+        map: map,  
+        position: myLatLng
+        });
+      }
+      google.maps.event.addDomListener(window, "load", initialize);
+      }
+
+
+    </script> 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-tI78_Glb_dewK0yre49LLKgCyBZuj5c&callback=initMap" async defer></script>    
+  @endif
 @stop()
