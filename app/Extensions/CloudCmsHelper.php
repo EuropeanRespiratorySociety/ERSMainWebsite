@@ -373,6 +373,7 @@ class CloudCmsHelper
                         if(isset($item->earlybirdDeadline)){$parsed[$key]['earlybirdDeadline'] = $this->isAlreadyPassed($item->earlybirdDeadline);}
                         if(isset($item->extendedDeadline)){ $parsed[$key]['extendedDeadline'] = $this->ersDate($item->extendedDeadline);}
                         if(isset($item->_system->created_on->timestamp)){ $parsed[$key]['createdOn'] = $this->ersDate($item->_system->created_on->timestamp);}
+                        $parsed[$key]['doNotDisplayCreatedOn'] = $item->doNotDisplayCreatedOn ?? false ;
                         if(isset($item->_system->created_on->ms)){ $parsed[$key]['ms'] = $item->_system->created_on->ms;}
                         if(isset($item->openingDate)){ $parsed[$key]['openingDate'] = $this->ersDate($item->openingDate);}
                         if(isset($item->eventLocation)){$parsed[$key]['eventLocation'] = $item->eventLocation;}                

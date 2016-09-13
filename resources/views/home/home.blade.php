@@ -17,7 +17,9 @@
           <a href="{{url($items['mainNews']->uri)}}">
                <div class="text-center">
                <em>{{$items['mainNews']->title}}</em>
+               @if($items['mainNews']->doNotDisplayCreatedOn != true)
                <h4><em>{{$items['mainNews']->createdOn}}</em></h4>
+               @endif
                </div>
           </a>      
         </div>
