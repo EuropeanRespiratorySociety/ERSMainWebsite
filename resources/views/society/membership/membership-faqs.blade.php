@@ -13,9 +13,9 @@
 			<p>No. Your previous existing login details will remain the same.</p>
 
 			<h4><strong>Do I have to pay for the new membership?</strong></h4>
-			<p>In most of the cases you will not have to pay anything extra to your current national society’s membership fee. The reduced ERS membership fee of €20 will be included in the benefits package of the national society. <br>
+			<p>In most of the cases you will not have to pay anything extra to your current national society’s membership fee. The reduced ERS membership fee of €20 will be included in the benefits package of the national society.</p>
 
-Some national societies might charge an equivalent incremental fee according to the provisions of their constitution and bylaws. </p>
+			<p>Some national societies might charge an equivalent incremental fee according to the provisions of their constitution and bylaws. </p>
 
 			<h4><strong>How will my current membership with my National Society change?</strong></h4>
 			<p>You will have access to ERS membership benefits in addition to unchanged access to your national society’s membership benefits. You will also have access to exclusive joint benefits.</p>
