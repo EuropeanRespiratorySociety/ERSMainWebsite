@@ -54,13 +54,11 @@
                 Secretary General <br>
                 <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=1059&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a>
             </div>
-        	<div class="col-md-4 xs-mb-15">
-	            <img src="images/people/leadership/Mark_Elliott.jpg" class="img-circle">
-	            <p class="photo_caption"><strong>{!! Html::mailto('mwelliott@doctors.org.uk', 'Mark Elliott') !!}</strong>
-	            Treasurer<br>
-	            <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=457&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a>
-	            </p>
-        	</div>
+            <div class="col-md-4 xs-mb-15">
+                <img src="images/people/leadership/otto_chris_burghuber.jpg" class="img-circle">
+                <p class="photo_caption"><strong>Otto Chris Burghuber</strong>
+                Treasurer<br>
+            </div>
         	<div class="col-md-4 xs-mb-15">
 	            <img src="images/people/leadership/Gernot_Rohde.jpg" class="img-circle">
 	            <p class="photo_caption"><strong>{!! Html::mailto('g.rohde@mumc.nl', 'Gernot Rohde') !!}</strong>
@@ -102,11 +100,7 @@
 	            <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=1057&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a>
         	</div>
             -->
-        	<div class="col-md-4 xs-mb-15">
-	            <img src="images/people/leadership/otto_chris_burghuber.jpg" class="img-circle">
-	            <p class="photo_caption"><strong>Otto Chris Burghuber</strong>
-	            Treasurer-Elect <br>
-        	</div>
+
             <!--
         	<div class="col-md-4 xs-mb-15">
 	            <img src="images/people/leadership/Carlos_Robalo.jpg" class="img-circle">
