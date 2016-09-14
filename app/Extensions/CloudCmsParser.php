@@ -5,311 +5,17 @@ namespace App\Extensions;
 use App;
 use Embed;
 use CC;
+use App\Extensions\DateHelper;
 use Carbon\Carbon;
 use Lavary\Menu\Menu;
 use Intervention\Image\Facades\Image;
 use AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra as Markdown;
 use Spatie\Geocoder\GeocoderFacade as Geocoder;
 
-class CloudCmsHelper
+class CloudCmsParser
 {
-    public function getSchema(){
-        $results = CC::branches()
-            ->getSchema('ers:article')
-            ->addParams(['full' => 'true'])
-            ->get();
-
-        return $results;    
-    }
-
-    public function getCategory($catnode){
-        $results = CC::nodes()
-            ->listRelatives($catnode)
-            ->addParams(['type' => 'ers:category-association'])
-            ->addParams(['full' => 'true'])
-            ->get();
-
-        return $results;    
-    }
-
-    public function getAuthoredArticles($catnode){
-        $results = CC::nodes()
-            ->listRelatives($catnode)
-            ->addParams(['type' => 'ers:author-association'])
-            ->addParams(['full' => 'true'])
-            ->get();
-
-        return $results;    
-    }
-
-    public function getRelatedArticle($node){
-        $results = CC::nodes()
-            ->listRelatives($node)
-            ->addParams(['type' => 'ers:related-association']) 
-            ->addParams(['full' => 'true'])
-            ->get();
-        return $results;    
-    }
-
-    public function getAuthor($node){
-        $results = CC::nodes()
-            ->listRelatives($node)
-            ->addParams(['type' => 'ers:author-association']) 
-            ->addParams(['full' => 'true'])
-            ->get();
-
-        return $results;    
-    }
-
-    public function getCategorySorted($catnode, $field = "eventDate", $direction = 1){
-        $results = CC::nodes()
-            ->listRelatives($catnode)
-            ->addParams(['type' => 'ers:category-association'])
-            ->addParams(['sort' => '{"'.$field.'": '.$direction.'}']) 
-            ->addParams(['metadata' => 'true'])
-            //->addParams(['skip' => 2]) 
-            //->addParams(['limit' => 2]) 
-            ->addParams(['full' => 'true'])
-            ->get();
-        return $results;    
-    }
-
-	public function getItem($slug){
-		$query = '{"slug": "'.$slug.'"}';
-		$result = CC::nodes()
-                    ->query($query)
-                    ->addParams(['full' => 'true'])
-                    ->addParams(['metadata' => 'true'])   
-                    ->get();
-        return $result;            
-	}
-
-    /**
-    *   To use this method do not forget to set the skip value to false if you do not need pagination
-    *
-    */
-    public function getContentByProperty($property, $contentType, $sort = -1, $skip = null){
-        $query = '{"'.$property.'": "'.$contentType.'"}';
-
-        if($skip === null){
-            $results = CC::nodes()
-                        ->query($query)
-                        ->addParams(['metadata' => 'true'])
-                        ->get();
-            return $results; 
-        } 
-        if($skip === false){
-            $results = CC::nodes()
-                        ->query($query)  
-                        ->addParams(['full' => 'true']) 
-                        ->addParams(['metadata' => 'true'])
-                        ->addParams(['sort' => '{"_system.created_on.ms": '.$sort.'}']) 
-                        ->get();
-            return $results; 
-        } 
-        $results = CC::nodes()
-                        ->query($query)
-                        ->addParams(['full' => 'true']) 
-                        ->addParams(['metadata' => 'true'])
-                        ->addParams(['sort' => '{"_system.created_on.ms": '.$sort.'}']) 
-                        ->addParams(['skip' => $skip]) 
-                        ->get();
-        return $results; 
-
-    }
-
-    public function paginate($results, $page, $limit = 25){
-        $totalItems = $results->total_rows;
-
-        $maxNumberOfPages = 1;
-        if($limit){
-            $maxNumberOfPages = ceil($totalItems / $limit);
-
-            for ($i=0; $i < $maxNumberOfPages; $i++) { 
-                $params[$i + 1]['active'] = false;
-                if(!$page && $i == 0){
-                    $params[$i + 1]['page'] = null;                
-                    $params[$i + 1]['active'] = true;
-                } else {
-                    $params[$i + 1]['page'] = "?page=".($i + 1);
-                }
-
-                if($page == ($i + 1)){
-                    $params[$i + 1]['active'] = true;
-                }
-
-                $params[$i + 1]['pageNumber'] = $i + 1;
-            }
-        }
-
-        if($page > $maxNumberOfPages){
-            abort(404);
-        }
-
-        $skip = 0;
-        if($page > 1 && $limit !== 0){
-            $skip = ($page -1) * $limit;
-        }
-
-        $pagination = array('totalItems' => $totalItems, 'numberOfPages' => (int) $maxNumberOfPages, 'page' => $page, 'skip' => $skip, 'pages' => $params);
-
-        return (object) $pagination;
-    }
-
-    /**
-    * This function set the coordinates in CC the inject param let's you send only
-    * the data that needs to be added to the node. Without it we need to send the
-    * whole node to replace it.
-    * @param string $node 
-    * @param json object $payload
-    * @return void
-    */
-    public function setCanonical($node, $payload){
-        $result = CC::nodes()
-            ->updateNode($node, $payload)
-            ->addParams(['inject' => 'true'])
-            ->get();
-        //add test if success or not
-    }
-
-    /**
-    * This function set the coordinates in CC the inject param let's you send only
-    * the data that needs to be added to the node. Without it we need to send the
-    * whole node to replace it. The accuracy is a value returned by Google's API
-    * @param string $node
-    * @param string $lat
-    * @param string $long
-    * @param string $accuracy
-    */
-    public function setCoordinates($node, $lat, $long, $accuracy){
-        if($accuracy !== 'NOT_FOUND'){
-        $payload = json_encode(['loc' => ['lat' => $lat, 'long' => $long]]);
-        } else {
-            $payload = json_encode(['loc' => ['lat' => $accuracy, 'long' => $accuracy]]);
-        }
-        $result = CC::nodes()
-            ->updateNode($node, $payload)
-            ->addParams(['inject' => 'true'])
-            ->get();
-    }
-
-    /**
-    * Sort the all the elments that have been selected to appear on the homepage
-    * 
-    *@param Object $items
-    *@return Array $sorted
-    */
-    public function sortHomepage($items){
-        $articleCounter = 1;
-        $calendarCounter = 1;
-        $fundingCounter = 1;
-        $elearningCounter = 1;
-        $courseCounter = 1;
-        $nonERS = false;
-
-        foreach ($items as $key => $item) {
-
-            $item = (object) $item;
-
-            if($item->nonErsCalendarItem || $item->ersEndorsedEvent) {
-                $nonERS = true;
-            }
-
-            if(isset($item->type) && $item->type == "e-learning" && $elearningCounter <= 1){
-                $sorted['eLearning'] = $item;
-                $elearningCounter++;
-            }
-
-            if($item->contentType == "event_course" && $item->featuredCourse && $courseCounter <= 1){
-                $sorted['featuredCourse'] = $item;
-                $courseCounter++;
-            }
-
-            if(($item->contentType == "event_fellowship" || $item->contentType == "event_seminar") && $item->featuredFunding && $fundingCounter <= 1){
-                $sorted['featuredFunding'] = $item;
-                $fundingCounter++;
-            }
-
-            if(isset($item->category2) && $calendarCounter <= 5 && !$nonERS){
-                if($this->isCalendar($item->category2)){
-                    if(isset($sorted['firstEvent'])){
-                      $sorted['calendar'][$key] = $item;  
-                    }
-                    if($calendarCounter <= 1){
-                        $sorted['firstEvent'] = $item;
-                    }
-                    $calendarCounter++;
-                }
-            }
-            
-            if($item->contentType == "article" && $articleCounter <= 4){
-
-                if($item->mainNews != true){
-                    $sorted['news'][$key] = $item;
-                }
-
-                if($articleCounter <= 1 || $item->mainNews == true){
-                    $sorted['mainNews'] = $item;
-                }
-                $articleCounter++;
-            }
-        }
-            return $sorted;
-    }
-
-
-    /**
-    * Sort the calendar to have all item in ascending order and of the current year and upcoming
-    *@param array $items
-    *@return array
-    */
-    public function sortCalendar($items){
-        $carbon = new Carbon();
-        foreach($items as $key => $value){ 
-            if($value['calendar']->year >= $carbon->year){
-                    $sorted[$value['calendar']->year][$value['calendar']->month][$key] = $value; 
-            }
-        }
-        ksort($sorted);
-        return $sorted;
-    }
-
-    /**
-    * Sort event items based on the start date timestamp
-    *@param array $items
-    *@return object
-    */
-    public function sortItems($items){
-        usort($items, function($a, $b){
-            return $a['startDateTimestamp'] <=> $b['startDateTimestamp'];
-        });
-        
-        return (object) $items;
-    }
-
-    /**          
-     *
-     * @param  object $address
-     * @return array
-     */
-    public function getCoordinates($address){
-        $addressLine1 = "";
-        $addressLine2 = "";
-        $addressLine3 = "";
-        $addressLine4 = "";
-        $addressLine5 = "";
-        if(isset($address->streetAddress)){$addressLine1 = $address->streetAddress;}
-        if(isset($address->streetAddress2)){$addressLine2 = $address->streetAddress2;}
-        if(isset($address->postalCode)){$addressLine3 = $address->postalCode;}
-        if(isset($address->city)){$addressLine4 = $address->city;}
-        if(isset($address->country)){$addressLine5 = $address->country;}
-        $coordinates = Geocoder::getCoordinatesForQuery($addressLine1.', '.
-                                                        $addressLine2.', '.
-                                                        $addressLine3.' '.
-                                                        $addressLine4.', '.
-                                                        $addressLine5);
-        return $coordinates;
-
+    public function __construct() {
+        $this->date = new DateHelper; 
     }
 
 	public function parseItems($items, $lead = false){
@@ -365,19 +71,19 @@ class CloudCmsHelper
                             $parsed[$key]['ebusDate'] = $item->ebusDate;
                         }  
                         if(isset($item->eventDate) && isset($item->eventEndDate)){
-                            $parsed[$key]['eventDates'] = $this->ersDate($item->eventDate, $item->eventEndDate);
-                            $parsed[$key]['startDateTimestamp'] = $this->toTimestamp($item->eventDate);
+                            $parsed[$key]['eventDates'] = $this->date->ersDate($item->eventDate, $item->eventEndDate);
+                            $parsed[$key]['startDateTimestamp'] = $this->date->toTimestamp($item->eventDate);
                         } elseif(isset($item->eventDate) && !isset($item->eventEndDate)){
-                            $parsed[$key]['eventDates'] = $this->ersDate($item->eventDate);
-                            $parsed[$key]['startDateTimestamp'] = $this->toTimestamp($item->eventDate);
+                            $parsed[$key]['eventDates'] = $this->date->ersDate($item->eventDate);
+                            $parsed[$key]['startDateTimestamp'] = $this->date->toTimestamp($item->eventDate);
                         }
-                        if(isset($item->eventDate)){$parsed[$key]['calendar'] = $this->calendar($item->eventDate);}   
-                        if(isset($item->earlybirdDeadline)){$parsed[$key]['earlybirdDeadline'] = $this->isAlreadyPassed($item->earlybirdDeadline);}
-                        if(isset($item->extendedDeadline)){ $parsed[$key]['extendedDeadline'] = $this->ersDate($item->extendedDeadline);}
-                        if(isset($item->_system->created_on->timestamp)){ $parsed[$key]['createdOn'] = $this->ersDate($item->_system->created_on->timestamp);}
+                        if(isset($item->eventDate)){$parsed[$key]['calendar'] = $this->date->calendar($item->eventDate);}   
+                        if(isset($item->earlybirdDeadline)){$parsed[$key]['earlybirdDeadline'] = $this->date->isAlreadyPassed($item->earlybirdDeadline);}
+                        if(isset($item->extendedDeadline)){ $parsed[$key]['extendedDeadline'] = $this->date->ersDate($item->extendedDeadline);}
+                        if(isset($item->_system->created_on->timestamp)){ $parsed[$key]['createdOn'] = $this->date->ersDate($item->_system->created_on->timestamp);}
                         $parsed[$key]['doNotDisplayCreatedOn'] = $item->doNotDisplayCreatedOn ?? false ;
                         if(isset($item->_system->created_on->ms)){ $parsed[$key]['ms'] = $item->_system->created_on->ms;}
-                        if(isset($item->openingDate)){ $parsed[$key]['openingDate'] = $this->ersDate($item->openingDate);}
+                        if(isset($item->openingDate)){ $parsed[$key]['openingDate'] = $this->date->ersDate($item->openingDate);}
                         if(isset($item->eventLocation)){$parsed[$key]['eventLocation'] = $item->eventLocation;}                
                         
                         if(isset($item->leadParagraph)){
@@ -498,62 +204,6 @@ class CloudCmsHelper
         return $parsed; 
 	}
 
-    public function calendar($date){
-        $date = new \DateTime($date);
-        $calendar = Carbon::instance($date);
-
-        $cal['year'] = $calendar->year;
-        $cal['month'] = $calendar->format('F');
-        $cal['timestamp'] = $calendar->timestamp;
-
-        return (object) $cal;
-    }
-
-    public function isCalendar($array){
-        $cal = false;
-        foreach($array as $cat)
-            if(in_array("Events Calendar", (array) $cat)){
-               $cal = true;
-        }
-
-        return $cal;
-    } 
-
-	public function ersDate($start, $end = null)
-    {
-        $startDate = new \DateTime($start);
-        $start = Carbon::instance($startDate);
-
-        if($end !== null){
-        	$endDate = new \DateTime($end);   
-        	$end = Carbon::instance($endDate);
-
-            if($start->format('F') != $end->format('F')) {
-                return $start->day.' '.$start->format('F').' - '.$end->day.' '.$end->format('F').', '.$end->year;    
-            }
-            if($start->format('F') == $end->format('F')) {
-                return $start->day.'-'.$end->day.' '.$end->format('F').', '.$end->year; 
-            }
-        }
-
-        return $start->day.' '.$start->format('F').', '.$start->year;     
-    }
-
-    public function toTimestamp($date){
-        $date = new \DateTime($date);
-        return (Carbon::instance($date))->timestamp;
-    }
-
-    public function isAlreadyPassed($date){
-        $now = new Carbon();
-        $dateToTest = new \DateTime($date);
-        if($now < $dateToTest) {
-            return $this->ersDate($date);
-        }
-
-        return null;
-    }
-
     public function setTypeColor($type){
         if( $type == "ERS Course" || 
             $type == "ERS Online course" || 
@@ -645,8 +295,8 @@ class CloudCmsHelper
     public function getDeadlines($item){
         $parsed = [];
     
-            if(isset($item->applicationDeadline)){$parsed['applicationDeadline'] = $this->ersDate($item->applicationDeadline);}    
-            if(isset($item->applicationDeadline2)){$parsed['applicationDeadline2'] = $this->ersDate($item->applicationDeadline2);} 
+            if(isset($item->applicationDeadline)){$parsed['applicationDeadline'] = $this->date->ersDate($item->applicationDeadline);}    
+            if(isset($item->applicationDeadline2)){$parsed['applicationDeadline2'] = $this->date->ersDate($item->applicationDeadline2);} 
             if(isset($item->notification)){$parsed['notification'] = $item->notification;}
             if(isset($item->notification2)){$parsed['notification2'] = $item->notification2;}
             if(isset($item->startDate)){$parsed['startDate'] = $item->startDate;}
@@ -660,8 +310,8 @@ class CloudCmsHelper
     	   $parsed = [];
 
     	   if(isset($bursary->text)){$parsed['text'] = Markdown::parse($bursary->text);}
-    	   if(isset($bursary->deadline)){$parsed['deadline'] = $this->ersDate($bursary->deadline);}
-    	   if(isset($bursary->notificationOfResults)){$parsed['results'] = $this->ersDate($bursary->notificationOfResults);}
+    	   if(isset($bursary->deadline)){$parsed['deadline'] = $this->date->ersDate($bursary->deadline);}
+    	   if(isset($bursary->notificationOfResults)){$parsed['results'] = $this->date->ersDate($bursary->notificationOfResults);}
     	   if(isset($bursary->applyButtonUrl)){$parsed['url'] = $bursary->applyButtonUrl;}
 
            if(empty($parsed) || !isset($bursary->applyButtonUrl)){

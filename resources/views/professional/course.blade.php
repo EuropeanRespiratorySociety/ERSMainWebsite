@@ -42,7 +42,7 @@
           {!!$course->video!!} 
         </div>
       @endif
-      @if(isset($course->location->lat)&&isset($course->location->long))
+      @if(isset($course->location->lat) && isset($course->location->long) && $course->type != "ERS Online course")
           <div id="map"></div>
       @endif
       @if(isset($relatedItems))

@@ -15,7 +15,7 @@
   			<div class="main-content">
           <div class="page-head"><h2>Membership</h2></div>
           <div class="col-md-7 center-block lead">
-            ERS is a leading medical organisation in the world working to promote lung health and combat lung diseases.
+            ERS is a world leading medical organisation working to promote lung health and combat lung diseases.
           </div>
 
 
