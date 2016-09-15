@@ -1,6 +1,12 @@
-<div class="navbar-form navbar-right input-group input-group-sm xs-mb-15" style="position: absolute;right: -10px; top: 26px; width: 330px;">
-{!! Form::open(array('url' => 'search', 'class'=>'form navbar-form navbar-right searchform')) !!}
-    {!! Form::text('query', null, array('required','class' => 'form-control input-sm', 'placeholder' => 'Search for anything...')) !!}
-    {!! Form::submit('Search', array('class' => 'btn btn-default btn-xs', 'style' => 'margin-top:3px;')) !!}
+<div class="navbar-form navbar-right input-group input-group-sm xs-mb-15" style="position: absolute;right: 0px; top: 20px; width: 330px;">
+{!! Form::open(array('url' => 'search', 'class'=>'form-horizontal group-border-dashed')) !!}
+	<div class="input-group ">
+	    {!! Form::text('query', null, array('required','class' => 'form-control', 'placeholder' => 'Search for anything...')) !!}
+	    <span class="input-group-btn">
+	        <{!! Form::submit('Search', array('class' => 'btn btn-default')) !!}
+	    </span>
+	</div>
  {!! Form::close() !!}
  </div>
+
+
