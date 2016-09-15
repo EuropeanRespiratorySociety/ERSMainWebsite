@@ -143,7 +143,7 @@
                   @if(isset($item->abstracts))
                     <li class="list-group-item">
                       <a href="#md-abstracts" data-toggle="modal" data-target="#md-abstracts">
-                        <span class="icon s7-file"></span>Abstracts
+                        <span class="icon s7-file"></span>Abstracts and bursaries
                       </a>
                     </li>
                   @endif
@@ -320,7 +320,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
-        <h3 class="modal-title">Abstract Submission</h3>
+        <h3 class="modal-title">Abstract and Bursary</h3>
       </div>
       <div class="modal-body">
         <div class="text-left">

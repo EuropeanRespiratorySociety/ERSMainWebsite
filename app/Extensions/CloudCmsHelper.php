@@ -13,6 +13,36 @@ use Spatie\Geocoder\GeocoderFacade as Geocoder;
 
 class CloudCmsHelper
 {
+
+    public function search($query){
+    $payload = '
+    {
+        "search": {
+            "filtered": {    
+                    "filter": {
+                        "term": {
+                            "_type":  "ers_article"
+                        }
+                    },
+                    "query": {
+                        "query_string": {
+                            "query": "'.$query.'"
+                        }
+                        }         
+                    }
+                }
+            }
+        }         
+    }';
+
+    $results = CC::nodes()
+                    ->fullSearch($payload)
+                    ->addParams(['full' => 'true'])  
+                    ->get();
+
+    return $results;  
+    }
+
     public function getSchema(){
         $results = CC::branches()
             ->getSchema('ers:article')
@@ -320,9 +350,9 @@ class CloudCmsHelper
                 $parsed = [];
 		        foreach ($items as $key => $item) {
                     $unPublished = $item->unPublished ?? false ;
-                    $parsed[$key]['unpublished'] = $unPublished;
 
                     if($unPublished != true) {   
+                        $parsed[$key]['unpublished'] = $unPublished;
                         if(isset($item->title)){
                             $parsed[$key]['title'] = $this->formatTitle($item->title);
                         }

@@ -32,6 +32,8 @@ Route::get('cache', function(){
        return "The cache has been cleaned";
 
 });
+//////DANGER NEED TOKEN CSRF CHECK -> Cached value
+Route::post('search', 'SearchController@search');
 
 Route::get('cache-flush', function(){
     \File::cleanDirectory(app('http_cache.cache_dir'));
@@ -149,7 +151,7 @@ Route::group(['middleware' => ['web']], function () {
 
     //Route::get('cc', 'CloudCms@requestTest');
 
-    Route::get('search/{query}', 'CloudCms@search');
+
     Route::get('full-search', 'CloudCms@fullSearch');
 
 });

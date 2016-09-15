@@ -21,6 +21,7 @@
         @include('nav.breadcrumb-items', array('items' => $BreadCrumb->roots()))
       </ul>
       <!-- End Breadcrumb/title bar -->
+      @include('forms.simple-search')
     </div>
   </div>
 </nav> 

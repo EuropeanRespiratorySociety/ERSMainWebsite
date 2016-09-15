@@ -223,7 +223,8 @@ private $headers;
     $node = CC::nodes()
                     ->search()
                     ->addParams(['full' => 'true'])  
-                    ->addParams(['text' => $query]) 
+                    ->addParams(['text' => $query])
+                    ->addParams(['type' => 'ers:article']) 
                     ->get();
 
     dd($node);  
@@ -246,18 +247,13 @@ private $headers;
             "filtered": {    
                     "filter": {
                         "term": {
-                            "_type":  "catalog_product",
-                            "body":  "chocolate"
+                            "_type":  "ers_article"
                         }
                     },
                     "query": {
-                        "bool": {
-                            "must": { "match_all": {} }
-                        },
-                        "filter":{
-                            "range":{
-                                "price":{"gte": 3}
-                            }
+                        "query_string": {
+                            "query": "lung"
+                        }
                         }         
                     }
                 }
@@ -266,7 +262,7 @@ private $headers;
     }';
 
     $node = CC::nodes()
-                    ->fullSearch($payload)
+                    ->fullSearch($payload2)
                     ->addParams(['full' => 'true'])  
                     ->get();
 

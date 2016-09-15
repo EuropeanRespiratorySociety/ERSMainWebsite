@@ -30,7 +30,11 @@
             </div>
             <div class="card-content">
                 <h3 class="title">
-                    <a href="{{Request::path().'/'.$item['slug']}}">{{ $item['title'] }}</a>
+                    @if(isset($item['uri']))   
+                        <a href="{{url($item['uri'])}}">{{ $item['title'] }}</a>
+                    @elseif(isset($item['slug']))
+                        <a href="{{Request::path().'/'.$item['slug']}}">{{ $item['title'] }}</a>
+                    @endif    
                 </h3>
                 @if(isset($item['createdOn']) && isset($item['type']))
                     @if($item['type']== "News")<h4 class="date">{{ $item['createdOn'] }}</h4>@endif
@@ -52,7 +56,11 @@
             @if(isset($item['registerButton']['link']))
             <a href="{{$item['registerButton']['link']}}" target="new_blank"  class="btn btn-register">register</a>
             @endif
+           @if(isset($item['uri']))  
+                <a href="{{url($item['uri'])}}"  class="btn btn-register">more</a>
+            @elseif(isset($item['slug']))
             <a href="{{Request::path().'/'.$item['slug']}}"  class="btn btn-register">more</a>
+            @endif
             </div>
         </div>
     </div>
