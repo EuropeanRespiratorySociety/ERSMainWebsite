@@ -25,32 +25,32 @@
         </div>
       </div>
     </div>
-    <!-- Start Section 1 --> 
+    {{-- Start Section 1 --}}
     @include('home.home-sections.news', array('items' => $items['news']))
 
-    <!-- Start Section 2 -->  
+    {{-- Start Section 2 --}} 
     @include('home.home-sections.community')
 
-    <!-- Start Section 3 -->  
+    {{-- Start Section 3 --}}  
     @include('home.home-sections.scientific', array('items' => $items['calendar'], 'first' => $items['firstEvent']))
 
-    <!-- Start Section 4 -->  
+    {{-- Start Section 4 --}}  
     @include('home.home-sections.publications')
 
-    <!-- Start Section 5 -->  
+    {{-- Start Section 5 --}} 
     @include('home.home-sections.professional', array(
               'funding' => isset($items['featuredFunding']) ? $items['featuredFunding'] : '',
               'eLearning' => isset($items['eLearning']) ? $items['eLearning'] : '',
               'course' => isset($items['featuredCourse']) ? $items['featuredCourse'] : ''
               ))
 
-     <!-- Start Section 6 -->  
+     {{-- Start Section 6 --}} 
     @include('home.home-sections.research')
 
-     <!-- Start Section 7 -->  
+     {{-- Start Section 7 --}}  
     @include('home.home-sections.advocacy')
 
-    <!-- Start Section 8 -->  
+    {{-- Start Section 8 --}}  
     @include('home.home-sections.elf')
 
     

@@ -49,7 +49,7 @@
 
   </head>
   <body id="ersMainWebsite">
-<!-- Google Tag Manager -->
+{{-- Google Tag Manager --}}
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5Z6KP9"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -57,40 +57,40 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-5Z6KP9');</script>
-<!-- End Google Tag Manager -->
+{{-- End Google Tag Manager --}}
 
     <div class="ers-wrapper ers-fixed-sidebar ers-white-header">
 
-        <!-- Start Top Nav -->  
+        {{-- Start Top Nav --}}  
             @include('nav.top-nav')
-        <!-- End Top Nav -->  
+        {{-- End Top Nav --}}  
 
-        <!-- Start Main Navigation -->    
+        {{-- Start Main Navigation --}}    
             @include('nav.main-nav')
-        <!-- End Main Navigation -->  
+        {{-- End Main Navigation --}}  
 
-        <!-- Start Left Sidebar -->
+        {{-- Start Left Sidebar --}}
             @include('sidebar.left-variant')
-        <!-- End Left Sidebar -->
+        {{-- End Left Sidebar --}}
 
-        <!-- Start main content Area -->
+        {{-- Start main content Area --}}
             @yield('content')
-        <!-- End main content Area -->
+        {{-- End main content Area --}}
           
-        <!-- Start right Sidebar -->     
-        <!-- End right Sidebar -->
+        {{-- Start right Sidebar --}}     
+        {{-- End right Sidebar --}}
       
     </div>
 
     <script src="https://bootstrap.ersnet.org/js/jquery.min.js" type="text/javascript"></script>
-    <!--<script src="http://erstemplate.app/js/jquery.min.js" type="text/javascript"></script>-->
+    {{--<script src="http://erstemplate.app/js/jquery.min.js" type="text/javascript"></script>--}}
     <script src="https://bootstrap.ersnet.org/js/all.js" type="text/javascript"></script>
-    <!--<script src="http://erstemplate.app/js/all.js" type="text/javascript"></script>-->
+    {{--<script src="http://erstemplate.app/js/all.js" type="text/javascript"></script>--}}
 
 
     @yield('scripts')
 
-    <!--<script src="/js/sw-registration.js" type="text/javascript"></script>-->
+    {{--<script src="/js/sw-registration.js" type="text/javascript"></script>--}}
 
   </body>
 </html>
