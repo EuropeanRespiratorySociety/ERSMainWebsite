@@ -18,7 +18,6 @@ class SearchController extends Controller
         }
     
         $items = $CC->parseItems($results->rows);
-
         if(empty($items)){
         	$params['items'] = false;
 		 	return view('search.simple')->with($params); 

@@ -110,7 +110,8 @@ class CloudCmsHelper
                     ->query($query)
                     ->addParams(['full' => 'true'])
                     ->addParams(['metadata' => 'true'])   
-                    ->get();
+                    ->get();    
+
         return $result;            
 	}
 

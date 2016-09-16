@@ -150,12 +150,17 @@ class Navigation
                 $menu->advocacyAndPatientResources->add('European Lung Foundation','http://www.europeanlung.org/en/')
                                             ->link->attr(array('target' => '_blank'));                   
 
-            if(App::environment() != 'local'){
+            if(App::environment() == 'local'){
                  foreach ($menu->items as $item) {
-                     $item->link->secure();
+                    $item->link->secure();
+                    if(request()->path() == $item->link->path['url']) {
+                        $item->active();
+                        if( $item->parent ) {
+                            $item->activate( $menu->whereId( $item->parent )->first() );
+                        }
+                    }
                  }
             }
-
         });
 
         return $next($request);

@@ -202,8 +202,10 @@ class NewsController extends Controller
 
         if($item[0]['hasAuthor'] > 0){
             $author = $CC->getAuthor($item[0]['_qname']);
-            $authorItem = $CC->parseItems($author->rows);
-            $params['author'] = (object) $authorItem[0];
+            if(!empty($author->rows)){      
+                $authorItem = $CC->parseItems($author->rows);
+                $params['author'] = (object) $authorItem[0];
+            }
         }
 
         return view('articles.item')->with($params); 
