@@ -16,13 +16,13 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Stylianos_Orfanos.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('sorfanos@med.uoa.gr', 'Stylianos Orfanos') !!}</strong>
+		            <img src="../images/people/leadership/Leo_Heunks.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('L.Heunks@ic.umcn.nl', 'Leo Heunks') !!}</strong>
 		            Respiratory Intensive Care <br>
 		        </div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Philipp_A_Schnabel.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('philippaschnabel@aol.com', 'Philip Schnabel') !!}</strong>
+		            <img src="../images/people/leadership/Catherine_Green.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Catherine Greene</strong>
 		            Cell and Molecular Biology <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
@@ -46,8 +46,8 @@
 		            Paediatrics<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Geert_Verleden.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('geert.verleden@uzleuven.be', 'Geert Verleden') !!}</strong>
+		            <img src="../images/people/leadership/Elia_Stefano.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Elia Stefano</strong>
 		            Thoracic Surgery and Transplantation <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">

@@ -10,6 +10,7 @@
                 @if(!$items)
                 <div class="col-md-9 center-block lead" style="height:300px;">
                     <h3>Sorry, no result found</h3>
+                    <p>Note that the search engine is currently under developpment and that it will soon include people and other missing features</p>
                 </div>
                 @else
                 <div class="row row_event rel">

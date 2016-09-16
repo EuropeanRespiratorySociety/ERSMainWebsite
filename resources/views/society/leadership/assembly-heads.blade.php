@@ -16,14 +16,14 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Paolo_Navalesi.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('pnavalesi@gmail.com', 'Paolo Navalesi') !!}</strong>
+		            <img src="../images/people/leadership/Raffaele_Scala.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('raffaele_scala@hotmail.com', 'Raffaele Scala') !!}</strong>
 		            Respiratory Intensive Care<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Christian_M_Kaehler.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('c.m.kaehler@i-med.ac.at', 'Christian M. Kaehler') !!}</strong>
+		            <img src="../images/people/leadership/P_Hiemstra_2016.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Pieter Hiemstra</strong>
 		            Cell and Molecular Biology<br>
 		            </p>
 	        	</div>
@@ -52,8 +52,8 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Dragan_R_Subotic.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('profsubotic@gmail.com', 'Dragan R. Subotic') !!}</strong>
+		            <img src="../images/people/leadership/Geert_Verleden_square.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('geert.verleden@uzleuven.be', 'Geert Verleden') !!}</strong>
 		            Thoracic Surgery and Transplantation<br>
 		            </p>
 	        	</div>

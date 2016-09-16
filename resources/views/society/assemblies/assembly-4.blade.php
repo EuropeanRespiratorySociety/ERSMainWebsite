@@ -71,8 +71,8 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 04.03<br>
-                    Chair: <a href="mailto:a.vonk@vumc.nl">Anton Vonk Noordegraaf</a><br>
-                    Secretary: <a href="mailto:souza.rogerio@me.com">Rogerio Souza</a></p>
+                    Chair: <a href="mailto:souza.rogerio@me.com">Rogerio Souza</a><br>
+                    Secretary: Sitbon Olivier</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-pulmonary-circulation" type="button" class="btn btn-default pull-right">More</button>

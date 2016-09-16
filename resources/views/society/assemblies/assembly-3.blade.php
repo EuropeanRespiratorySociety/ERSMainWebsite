@@ -4,12 +4,12 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/people/leadership/Christian_M_Kaehler.jpg" class="img-circle">
-                  <p class="photo_caption">Head: <a href="mailto:c.m.kaehler@i-med.ac.at">Christian M. Kaehler</a></p>
+                  <img src="../images/people/leadership/P_Hiemstra_2016.jpg" class="img-circle">
+                  <p class="photo_caption">Head: Pieter Hiemstra</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/people/leadership/Philipp_A_Schnabel.jpg" class="img-circle">
-                  <p class="photo_caption">Secretary: <a href="mailto:philipp.schnabel@med.uni-heidelberg.de">Philipp A. Schnabel</a></p>
+                  <img src="../images/people/leadership/Catherine_Green.jpg" class="img-circle">
+                  <p class="photo_caption">Secretary: Catherine Greene</p>
                  
                 </div>
             </div>
@@ -71,8 +71,8 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 03.03<br>
-                    Chair: <a href="mailto:c.taggart@qub.ac.uk">Martin Kolb</a><br>
-                    Secretary: <a href="mailto:melanie.koenigshoff@helmholtz-muenchen.de">Melanie Koenigshoff</a></p>
+                    Chair: <a href="mailto:melanie.koenigshoff@helmholtz-muenchen.de">Melanie Koenigshoff</a><br>
+                    Secretary: Boots Agnes W.</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-mechanisms-of-lung" type="button" class="btn btn-default pull-right">More</button>

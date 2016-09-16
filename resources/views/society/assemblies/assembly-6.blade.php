@@ -34,7 +34,7 @@ The Assembly is comprised of the following four groups:
                 <div class="card-content text-left">
                   <p>Group 06.01<br>
                     Chair: <a href="mailto:anne.lindberg@algmed.se">Anne Lindberg</a><br>
-                    Secretary: n/a</p>
+                    Secretary: Quint Jennifer</p>
                     
                   </div>
                   <div class="card-action clearfix">
@@ -91,7 +91,7 @@ The Assembly is comprised of the following four groups:
                       <div class="card-content text-left">
                         <p>Group 06.04<br>
                           Chair: <a href="mailto:h.m.boezen@umcg.nl">Marike H. Boezen</a><br>
-                          Secretary: <a href="mailto:sigsgaard@dadlnet.dk">Torben Sigsgaard</a></p>
+                          Secretary: Melén Erik</p>
                         </div>
                         <div class="card-action clearfix">
                           <button data-toggle="modal" data-target="#md-genes-and-environment" type="button" class="btn btn-default pull-right">More</button>

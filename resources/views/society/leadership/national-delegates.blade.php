@@ -9,7 +9,7 @@
 	        <div class="row" style="padding-top: 30px;">
 	        	<div class="col-md-4 national_delegates ">
 		         	<strong>Albania</strong><br>
-		            {!! Html::mailto('mildananushi@hotmail.com', 'Milda Nanushi  ') !!}
+		            Xhemalaj Daniela
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Algeria </strong><br>
@@ -33,7 +33,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Bosnia and Herzegovina</strong><br>
-		            {!! Html::mailto('edin.jusufovic@bih.net.ba', 'Edin Jusufovic ') !!}
+		            Paralija Belma
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Brazil</strong><br>
@@ -96,11 +96,11 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>FYROM (Macedonia) </strong><br>
-		            {!! Html::mailto('bbkamelija@yahoo.com', 'Kamelija Busljetic') !!}
+		            Kaeva Biserka
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Georgia</strong><br>
-		            {!! Html::mailto('kandelakieka@yahoo.com', 'Eka Kandelaki ') !!}
+		            Siradze Nino
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Germany</strong><br>
@@ -156,7 +156,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Libya</strong><br>
-		            {!! Html::mailto('bashir81702@yahoo.com', 'Mabrouk Bashir') !!}
+		            Bashir Mabrouk
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Lithuania</strong><br>

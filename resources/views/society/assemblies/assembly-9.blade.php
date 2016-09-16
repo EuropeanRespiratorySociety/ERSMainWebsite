@@ -70,7 +70,7 @@ The Assembly is comprised of the following three groups:
                   <div class="card-content text-left">
                     <p>Group 09.03<br>
                     Chair: <a href="mailto:bkorn@stjames.ie">Bettina Korn</a><br>
-                    Secretary: <a href="mailto:gnarsavage@hsc.wvu.edu">Georgia Narsavage</a></p>
+                    Secretary: Russell Anne-Marie</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-nurses" type="button" class="btn btn-default pull-right">More</button>

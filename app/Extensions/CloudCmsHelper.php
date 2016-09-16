@@ -344,7 +344,7 @@ class CloudCmsHelper
 
 	public function parseItems($items, $lead = false){
         //dd($items);
-          if(empty($items) && App::environment() != 'local'){
+          if(empty($items) && App::environment() != 'local' && request()->path() != "search"){
                 abort(404);
             }
                 $parsed = [];

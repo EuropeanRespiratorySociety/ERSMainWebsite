@@ -4,12 +4,12 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/people/leadership/Dragan_R_Subotic.jpg" class="img-circle">
-                  <p class="photo_caption">Head: <a href="mailto:profsubotic@gmail.com">Dragan R. Subotic</a></p>
+                  <img src="../images/people/leadership/Geert_Verleden_square.jpg" class="img-circle">
+                  <p class="photo_caption">Head: <a href="mailto:geert.verleden@uzleuven.be">Geert Verleden</a></p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/people/leadership/Geert_Verleden.jpg" class="img-circle">
-                  <p class="photo_caption">Secretary: <a href="mailto:geert.verleden@uzleuven.be">Geert Verleden</a></p>
+                  <img src="../images/people/leadership/Elia_Stefano.jpg" class="img-circle">
+                  <p class="photo_caption">Secretary: Elia Stefano</p>
                  
                 </div>
             </div>
@@ -35,7 +35,7 @@ The Assembly is comprised of the following two groups:
                   <div class="card-content text-left">
                     <p>Group 08.01<br>
                     Chair: <a href="mailto:lmolins@clinic.ub.es">Laureano Molins</a><br>
-                    Secretary: <a href="mailto:aniriova@list.ru">Irina Orlova</a></p>
+                    Secretary: Bertolaccini Luca</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-thoracic-surgery" type="button" class="btn btn-default pull-right">More</button>
@@ -53,7 +53,7 @@ The Assembly is comprised of the following two groups:
                   <div class="card-content text-left">
                     <p>Group 08.02<br>
                     Chair: <a href="mailto:f.meloni@smatteo.pv.it">Federica Meloni</a><br>
-                    Secretary: <a href="mailto:martin@iversen-net.dk">Martin Iversen</a></p>
+                    Secretary: Vos Robin</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-transplantation" type="button" class="btn btn-default pull-right">More</button>

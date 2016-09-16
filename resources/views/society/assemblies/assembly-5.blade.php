@@ -53,8 +53,8 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 05.02<br>
-                    Chair: <a href="mailto:ssat@hol.gr">Stylianos Loukides</a><br>
-                    Secretary: <a href="mailto:lcampos@separ.es">Jose Luis Lopez-Campos</a></p>
+                    Chair: <a href="mailto:lcampos@separ.es">Jose Luis Lopez-Campos</a><br>
+                    Secretary: Schleich Florence</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-monitoring-airway" type="button" class="btn btn-default pull-right">More</button>
@@ -71,8 +71,8 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 05.03<br>
-                    Chair: <a href="mailto:hans.jurgen.hoffmann@ki.au.dk">Hans Jurgen Hoffmann</a><br>
-                    Secretary: <a href="mailto:apostolos.bossios@gu.se">Apostolos Bossios</a></p>
+                    Chair: <a href="mailto:apostolos.bossios@gu.se">Apostolos Bossios</a><br>
+                    Secretary: Idzko Marco</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-allergy-and-immunology" type="button" class="btn btn-default pull-right">More</button>
