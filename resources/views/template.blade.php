@@ -44,8 +44,14 @@
     <![endif]-->
 
     <link rel="stylesheet" href="https://bootstrap.ersnet.org/css/all.css" type="text/css"/>
-    <!--<link rel="stylesheet" href="http://erstemplate.app/css/all.css" type="text/css"/>-->
-
+    {{--<link rel="stylesheet" href="http://erstemplate.app/css/all.css" type="text/css"/>--}}
+    <!--[if IE]> 
+    <style>
+    .ers-white-header .ers-top-header .navbar-collapse .navbar-nav>li.open.horizontal>.dropdown-menu>li{
+        min-width:50%;
+    }
+    </style>
+    <![endif]-->
 
   </head>
   <body id="ersMainWebsite">
