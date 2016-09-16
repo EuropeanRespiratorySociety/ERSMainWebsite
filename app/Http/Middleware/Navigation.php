@@ -150,7 +150,7 @@ class Navigation
                 $menu->advocacyAndPatientResources->add('European Lung Foundation','http://www.europeanlung.org/en/')
                                             ->link->attr(array('target' => '_blank'));                   
 
-            if(App::environment() == 'local'){
+            if(App::environment() != 'local'){
                  foreach ($menu->items as $item) {
                     $item->link->secure();
                     if(request()->path() == $item->link->path['url']) {
