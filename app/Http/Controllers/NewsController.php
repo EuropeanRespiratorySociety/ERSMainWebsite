@@ -238,8 +238,10 @@ class NewsController extends Controller
         }
 
         $items = $CC->getAuthoredArticles($params['item']->_qname);
-        $authoredItems = $CC->parseItems($items->rows);
-        $params['items'] = (object) $authoredItems;
+        if(!empty($items->rows)){
+            $authoredItems = $CC->parseItems($items->rows);  
+            $params['items'] = (object) $authoredItems;
+        }
 
         return view('articles.author')->with($params); 
     }
