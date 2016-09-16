@@ -1,6 +1,6 @@
-<div class="navbar-form navbar-right input-group input-group-sm xs-mb-15" style="position: absolute;right: 0px; top: 20px; width: 330px;">
+<div class="navbar-form navbar-right" style="position: absolute;right: 0px; top: 20px; width: 330px;">
 {!! Form::open(array('url' => 'search', 'class'=>'form-horizontal group-border-dashed')) !!}
-	<div class="input-group ">
+	<div class="input-group input-group-sm">
 	    {!! Form::text('query', null, array('required','class' => 'form-control', 'placeholder' => 'Search for anything...')) !!}
 	    <span class="input-group-btn">
 	        <{!! Form::submit('Search', array('class' => 'btn btn-default')) !!}
