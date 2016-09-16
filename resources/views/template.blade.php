@@ -90,7 +90,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     @yield('scripts')
     <script type="text/javascript">
-        console.log(navigator.userAgent.indexOf("MSIE") != -1);
+        console.log(navigator.userAgent.indexOf("MSIE"));
         if($.browser.msie){
             $('.ers-white-header .ers-top-header .navbar-collapse .navbar-nav > li.open.horizontal > .dropdown-menu > li').css('min-width', '50%');
         }
