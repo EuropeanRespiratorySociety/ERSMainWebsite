@@ -92,11 +92,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script type="text/javascript">
     // Get IE or Edge browser version
     var version = detectIE();
-    console.log(version);
 
     if (version !== false) {
-      $('.ers-white-header .ers-top-header .navbar-collapse .navbar-nav > li.open.horizontal > .dropdown-menu > li').css('min-width', '50%');
+      $('.horizontal > .dropdown-menu > li').css('min-width', '50%');
     }
+    
     function detectIE() {
     var ua = window.navigator.userAgent;
     var msie = ua.indexOf('MSIE ');
