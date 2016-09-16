@@ -95,8 +95,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     if (version !== false) {
       $('.horizontal > .dropdown-menu > li').css('min-width', '50%');
+      $('.horizontal > .dropdown-menu > li:hover').css('min-width', '50%');
     }
-    
+
     function detectIE() {
     var ua = window.navigator.userAgent;
     var msie = ua.indexOf('MSIE ');
