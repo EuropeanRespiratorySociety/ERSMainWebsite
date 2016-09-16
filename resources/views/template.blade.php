@@ -45,13 +45,7 @@
 
     <link rel="stylesheet" href="https://bootstrap.ersnet.org/css/all.css" type="text/css"/>
     {{--<link rel="stylesheet" href="http://erstemplate.app/css/all.css" type="text/css"/>--}}
-    <!--[if IE]> 
-    <style>
-    .ers-white-header .ers-top-header .navbar-collapse .navbar-nav>li.open.horizontal>.dropdown-menu>li{
-        min-width:50%;
-    }
-    </style>
-    <![endif]-->
+
 
   </head>
   <body id="ersMainWebsite">
@@ -95,6 +89,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
     @yield('scripts')
+    <script type="text/javascript">
+        if($.browser.msie){
+            $('.ers-white-header .ers-top-header .navbar-collapse .navbar-nav > li.open.horizontal > .dropdown-menu > li').css('min-width', '50%');
+        }
+    </script>
 
     {{--<script src="/js/sw-registration.js" type="text/javascript"></script>--}}
 
