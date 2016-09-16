@@ -95,6 +95,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     if (version !== false) {
       $('.horizontal > .dropdown-menu > li').css('min-width', '50%');
+      $('.horizontal > .dropdown-menu > li').css('flex', '1 0 auto');
     }
 
     function detectIE() {
