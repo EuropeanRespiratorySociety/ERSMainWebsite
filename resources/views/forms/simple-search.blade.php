@@ -7,7 +7,7 @@
           </div>     
           <div class="modal-body">
               <div class="text-center"> 
-		          <div class="input-group input-group-xl col-md-12">
+		          <div class="input-group input-group-xl col-xs-12 col-sm-12 col-md-12">
 		            {!! Form::text('query', null, array('required','class' => 'form-control', 'placeholder' => 'Search...')) !!}
 		          </div>
               </div>

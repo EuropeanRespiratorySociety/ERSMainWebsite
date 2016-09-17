@@ -14,18 +14,19 @@
     <a data-toggle="collapse" data-target=".ers-navbar-collapse" class="ers-toggle-top-header-menu collapsed">
       <span class="icon s7-angle-down"></span>
     </a>         
-    <div id="" class="ers-navbar-collapse collapse navbar-collapse hidden-xs">
+    <div id="" class="ers-navbar-collapse collapse navbar-collapse" style="border-top:0;">
       {{-- Start Breadcrumb/title bar --}}
       <ul class="nav navbar-left breadcrumb hidden-xs">
         <li><a href="/"><h2>European Respiratory Society</h2></a></li>
         @include('nav.breadcrumb-items', array('items' => $BreadCrumb->roots()))
       </ul>
       
-      <ul class="nav navbar-nav navbar-right ers-icons-nav">
+      <ul class="nav navbar-nav navbar-right ers-icons-nav" style="background-color:#fff;border-color:#eee;">
               <li class="dropdown">
                 <a href="#" data-toggle="modal" data-target="#md-search" role="button" class="dropdown-toggle">
-                  <span class="icon s7-search"></span>
+                  <span style="color:#777" class="icon s7-search"></span>
                 </a>
+              </li>
     </div>
   </div>
 </nav> 
