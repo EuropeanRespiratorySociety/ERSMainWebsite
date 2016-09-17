@@ -20,7 +20,7 @@
         <li><a href="/"><h2>European Respiratory Society</h2></a></li>
         @include('nav.breadcrumb-items', array('items' => $BreadCrumb->roots()))
       </ul>
-      {{-- End Breadcrumb/title bar --}}
+      
       <ul class="nav navbar-nav navbar-right ers-icons-nav">
               <li class="dropdown">
                 <a href="#" data-toggle="modal" data-target="#md-search" role="button" class="dropdown-toggle">
