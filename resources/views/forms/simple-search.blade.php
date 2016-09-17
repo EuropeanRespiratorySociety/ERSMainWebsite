@@ -1,12 +1,22 @@
-<div class="navbar-form navbar-right" style="position: absolute;right: 0px; top: 20px; width: 330px;">
-{!! Form::open(array('url' => 'search', 'class'=>'form-horizontal group-border-dashed')) !!}
-	<div class="input-group input-group-sm">
-	    {!! Form::text('query', null, array('required','class' => 'form-control', 'placeholder' => 'Search...')) !!}
-	    <span class="input-group-btn">
-	        <{!! Form::submit('Search', array('class' => 'btn btn-default')) !!}
-	    </span>
-	</div>
- {!! Form::close() !!}
- </div>
-
-
+<div id="md-search" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        {!! Form::open(array('url' => 'search', 'class'=>'form-horizontal group-border-dashed')) !!}
+          <div class="modal-header">
+            <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+          </div>     
+          <div class="modal-body">
+              <div class="text-center"> 
+		          <div class="input-group input-group-xl col-md-12">
+		            {!! Form::text('query', null, array('required','class' => 'form-control', 'placeholder' => 'Search...')) !!}
+		          </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-default">Cancel</button>
+            {!! Form::submit('Search', array('class' => 'btn btn-primary')) !!}
+          </div>   
+        {!! Form::close() !!}
+        </div>
+    </div>
+</div>
