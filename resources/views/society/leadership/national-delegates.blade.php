@@ -25,7 +25,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Belarus</strong><br>
-		            {!! Html::mailto('irinalapteva@mail.ru', 'Irina Laptseva') !!}
+		            Kharevich Olga
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Belgium</strong><br>
@@ -120,7 +120,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Indonesia</strong><br>
-		            {!! Html::mailto('alexgint@gmail.com', 'Alexander K Ginting S') !!}
+		            Wiyono Heru
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Ireland</strong><br>

@@ -52,7 +52,7 @@ The Assembly is comprised of the following two groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 08.02<br>
-                    Chair: <a href="mailto:f.meloni@smatteo.pv.it">Federica Meloni</a><br>
+                    Chair: <a href="mailto:christian_benden@yahoo.de">Christian Benden</a><br>
                     Secretary: Vos Robin</p>
                   </div>
                   <div class="card-action clearfix">

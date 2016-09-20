@@ -26,7 +26,7 @@ The Assembly is comprised of the following two groups:
                     </div> 
                     <div class="card-content text-left">
                       <p>Group 02.01<br>
-                      Chair: <a href="mailto:c.gregoretti@gmail.com">Cesare Gregoretti</a><br>
+                      Chair: Schultz Marcus<br>
                       Secretary: <a href="mailto:L.Heunks@ic.umcn.nl">Leo Heunks</a></p>
                     </div>
                     <div class="card-action clearfix">
