@@ -4,7 +4,7 @@
     <div class="row center-block">
       @foreach($items as $item)
         <div class="col-md-4">
-          <a href="@if(isset($item->uri)){{url($item->uri)}}@endif">
+          <a href="@if(isset($item->slug)){{url('the-society/news/'.$item->slug)}}@endif">
           <div class="card card-padded @if(!isset($item->image)) card-primary @endif">
             <figure 
 

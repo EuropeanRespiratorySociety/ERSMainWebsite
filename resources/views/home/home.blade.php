@@ -14,7 +14,7 @@
     <div class="section fp-auto-height">
       <div class="top-box" @if(isset($items['mainNews']->highResImage))style="background-image: url('{{$items['mainNews']->highResImage}}');background-position: center {{$items['mainNews']->imageAlignment}}" @endif>
         <div class="subject">
-          <a href="{{url($items['mainNews']->uri)}}">
+          <a href="{{url('the-society/news/'.$items['mainNews']->slug)}}">
                <div class="text-center">
                <em>{{$items['mainNews']->title}}</em>
                @if($items['mainNews']->doNotDisplayCreatedOn != true)

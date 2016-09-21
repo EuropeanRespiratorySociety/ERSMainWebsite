@@ -32,8 +32,8 @@
                 <h3 class="title">
                     @if(isset($item['uri']))   
                         <a href="{{url($item['uri'])}}">{{ $item['title'] }}</a>
-                    @elseif(isset($item['slug']))
-                        <a href="{{Request::path().'/'.$item['slug']}}">{{ $item['title'] }}</a>
+                    @elseif(isset($item['url']))
+                        <a href="{{url($item['url'])}}">{{ $item['title'] }}</a>
                     @endif    
                 </h3>
                 @if(isset($item['createdOn']) && isset($item['type']))
