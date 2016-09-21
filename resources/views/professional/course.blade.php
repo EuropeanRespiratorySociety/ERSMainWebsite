@@ -188,7 +188,7 @@
               <a href="{{$course->registerButton['link']}}"" class="btn btn-primary tab-register-bt">Register</a>
             @endif
             @if($course->fullyBooked)
-              <p>Please contact <a href="mailto:educaion@ersnet.org">education@ersnet.org</a> to be added to the waiting list.</p>
+              <p>Please contact {!! Html::mailto('educaion@ersnet.org', 'education@ersnet.org') !!} to be added to the waiting list.</p>
               <a href="javascript:void(0)" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
             @endif
             </div>

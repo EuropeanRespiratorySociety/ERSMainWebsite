@@ -32,8 +32,8 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 03.01<br>
-                    Chair: <a href="mailto:philippe.bonniaud@chu-dijon.fr">Philippe Bonniaud</a><br>
-                    Secretary: <a href="mailto:a.fabre@svuh.ie">Aurélie Fabre</a></p>
+                    Chair: {!! Html::mailto('philippe.bonniaud@chu-dijon.fr', 'Philippe Bonniaud') !!}<br>
+                    Secretary: {!! Html::mailto('a.fabre@svuh.ie', 'Aurélie Fabre') !!}</p>
                     
                   </div>
                   <div class="card-action clearfix">
@@ -53,8 +53,8 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 03.02<br>
-                    Chair: <a href="mailto:c.taggart@qub.ac.uk">Clifford Taggart</a><br>
-                    Secretary: <a href="mailto:silke.meiners@helmholtz-muenchen.de">Silke Meiners</a></p>
+                    Chair: {!! Html::mailto('c.taggart@qub.ac.uk', 'Clifford Taggart') !!}<br>
+                    Secretary: {!! Html::mailto('silke.meiners@helmholtz-muenchen.de', 'Silke Meiners') !!}</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-airway-cell" type="button" class="btn btn-default pull-right">More</button>
@@ -71,7 +71,7 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 03.03<br>
-                    Chair: <a href="mailto:melanie.koenigshoff@helmholtz-muenchen.de">Melanie Koenigshoff</a><br>
+                    Chair: {!! Html::mailto('melanie.koenigshoff@helmholtz-muenchen.de', 'Melanie Koenigshoff') !!}<br>
                     Secretary: Boots Agnes W.</p>
                   </div>
                   <div class="card-action clearfix">

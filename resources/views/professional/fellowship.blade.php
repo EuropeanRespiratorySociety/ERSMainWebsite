@@ -84,7 +84,7 @@
   @if(isset($item->rulesAndRegulations))
     <a href="{{$item->rulesAndRegulations}}">Rules & Regulations</a> <br>
   @endif  
-    For more information, contact <a href="mailto:fellowships@ersnet.org">fellowships@ersnet.org</a>
+    For more information, contact {!! Html::mailto('fellowships@ersnet.org', 'fellowships@ersnet.org') !!}
   </p>
   @if(isset($item->registerButton['link']))
     <a href="{{$item->registerButton['link']}}" target="_blank" class="btn btn-primary item-register-bt">{{$item->registerButton['text']}}</a>

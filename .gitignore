@@ -8,7 +8,7 @@
 /Http/Extensions/SearchableTrail.php
 /resources/views/template.blade.php
 /node_modules
-/config/laravel-responsecache.php
+/config/httpcache.php
 /public/images/stories
 /public/images/doi
 /public/sponsorship

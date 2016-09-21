@@ -84,7 +84,7 @@
 
   <p class="rules text-left">
     <a href="documents/scientific/2016_ERS_STRTF_Rules_Regulations_October_round.pdf">Application Guidelines</a> <br>
-    <a href="mailto:fellowships@ersnet.org">More information</a>
+    {!! Html::mailto('fellowships@ersnet.org', 'More information') !!}
   </p>
 
 @if(isset($category->registerButton['link']))

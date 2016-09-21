@@ -5,11 +5,11 @@
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
                   <img src="../images/people/leadership/Maria_R_Bonsignore.jpg" class="img-circle">
-                  <p class="photo_caption">Head: <a href="mailto:marisa@ibim.cnr.it">Maria R. Bonsignore</a></p>
+                  <p class="photo_caption">Head: {!! Html::mailto('marisa@ibim.cnr.it', 'Maria R. Bonsignore') !!}</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
                   <img src="../images/people/leadership/Andrea_Aliverti.jpg" class="img-circle">
-                  <p class="photo_caption">Secretary: <a href="mailto:andrea.aliverti@polimi.it">Andrea Aliverti</a></p>
+                  <p class="photo_caption">Secretary: {!! Html::mailto('andrea.aliverti@polimi.it', 'Andrea Aliverti') !!}</p>
                  
                 </div>
             </div>
@@ -32,8 +32,8 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 04.01<br>
-                    Chair: <a href="mailto:pier_lav@yahoo.it">Pierantonio Laveneziana</a><br>
-                    Secretary: <a href="mailto:sverges@chu-grenoble.fr">Samuel Verges</a></p>
+                    Chair: {!! Html::mailto('pier_lav@yahoo.it', 'Pierantonio Laveneziana') !!}<br>
+                    Secretary: {!! Html::mailto('sverges@chu-grenoble.fr', 'Samuel Verges') !!}</p>
                     
                   </div>
                   <div class="card-action clearfix">
@@ -53,8 +53,8 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 04.02<br>
-                    Chair: <a href="mailto:randerath@klinik-bethanien.de">Winfried Randerath</a><br>
-                    Secretary: <a href="mailto:rfarre@ub.edu">Ramon Farré</a></p>
+                    Chair: {!! Html::mailto('randerath@klinik-bethanien.de', 'Winfried Randerath') !!}<br>
+                    Secretary: {!! Html::mailto('rfarre@ub.edu', 'Ramon Farré') !!}</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-sleep-and-control" type="button" class="btn btn-default pull-right">More</button>
@@ -71,7 +71,7 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 04.03<br>
-                    Chair: <a href="mailto:souza.rogerio@me.com">Rogerio Souza</a><br>
+                    Chair: {!! Html::mailto('souza.rogerio@me.com', 'Rogerio Souza') !!}<br>
                     Secretary: Sitbon Olivier</p>
                   </div>
                   <div class="card-action clearfix">

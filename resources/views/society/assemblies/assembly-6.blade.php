@@ -5,11 +5,11 @@
           <div class="row">
             <div class="col-md-3 col-md-offset-3 xs-mb-15">
               <img src="../images/people/leadership/Dick_Heederik.jpg" class="img-circle">
-              <p class="photo_caption">Head: <a href="mailto:d.heederik@uu.nl">Dick Heederik</a></p>
+              <p class="photo_caption">Head: {!! Html::mailto('d.heederik@uu.nl', 'Dick Heederik') !!}</p>
             </div>
             <div class="col-md-3 xs-mb-15">
               <img src="../images/people/leadership/Christer_Jansen.jpg" class="img-circle">
-              <p class="photo_caption">Secretary: <a href="mailto:christer.janson@medsci.uu.se">Christer Jansen</a></p>
+              <p class="photo_caption">Secretary: {!! Html::mailto('christer.janson@medsci.uu.se', 'Christer Jansen') !!}</p>
 
             </div>
           </div>
@@ -33,7 +33,7 @@ The Assembly is comprised of the following four groups:
                 </div> 
                 <div class="card-content text-left">
                   <p>Group 06.01<br>
-                    Chair: <a href="mailto:anne.lindberg@algmed.se">Anne Lindberg</a><br>
+                    Chair: {!! Html::mailto('anne.lindberg@algmed.se', 'Anne Lindberg') !!}<br>
                     Secretary: Quint Jennifer</p>
                     
                   </div>
@@ -54,8 +54,8 @@ The Assembly is comprised of the following four groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 06.02<br>
-                      Chair: <a href="mailto:paul.blanc@ucsf.edu">Paul Blanc</a><br>
-                      Secretary: <a href="mailto:p.cullinan@imperial.ac.uk">Paul Cullinan</a></p>
+                      Chair: {!! Html::mailto('paul.blanc@ucsf.edu', 'Paul Blanc') !!}<br>
+                      Secretary: {!! Html::mailto('p.cullinan@imperial.ac.uk', 'Paul Cullinan') !!}</p>
                     </div>
                     <div class="card-action clearfix">
                       <button data-toggle="modal" data-target="#md-occupational-and-environmental" type="button" class="btn btn-default pull-right">More</button>
@@ -72,8 +72,8 @@ The Assembly is comprised of the following four groups:
                     </div> 
                     <div class="card-content text-left">
                       <p>Group 06.03<br>
-                        Chair: <a href="mailto:vkatsaounou@yahoo.com">Paraskevi Katsaounou</a><br>
-                        Secretary: <a href="mailto:sbravara@fcsaude.ubi.pt">Sofia Belo Ravara</a></p>
+                        Chair: {!! Html::mailto('vkatsaounou@yahoo.com', 'Paraskevi Katsaounou') !!}<br>
+                        Secretary: {!! Html::mailto('sbravara@fcsaude.ubi.pt', 'Sofia Belo Ravara') !!}</p>
                       </div>
                       <div class="card-action clearfix">
                         <button data-toggle="modal" data-target="#md-tobacco-smoking-control" type="button" class="btn btn-default pull-right">More</button>
@@ -90,7 +90,7 @@ The Assembly is comprised of the following four groups:
                       </div> 
                       <div class="card-content text-left">
                         <p>Group 06.04<br>
-                          Chair: <a href="mailto:h.m.boezen@umcg.nl">Marike H. Boezen</a><br>
+                          Chair: {!! Html::mailto('h.m.boezen@umcg.nl', 'Marike H. Boezen') !!}<br>
                           Secretary: Melén Erik</p>
                         </div>
                         <div class="card-action clearfix">

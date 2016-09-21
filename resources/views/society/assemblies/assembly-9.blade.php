@@ -5,11 +5,11 @@
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
                   <img src="../images/people/leadership/Irene_Steenbruggen.jpg" class="img-circle">
-                  <p class="photo_caption">Head: <a href="mailto:i.steenbruggen@isala.nl">Irene Steenbruggen</a></p>
+                  <p class="photo_caption">Head: {!! Html::mailto('i.steenbruggen@isala.nl', 'Irene Steenbruggen') !!}</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
                   <img src="../images/people/leadership/Martijn_A_Spruit.jpg" class="img-circle">
-                  <p class="photo_caption">Secretary: <a href="mailto:martijnspruit@ciro-horn.nl">Martijn A. Spruit</a></p>
+                  <p class="photo_caption">Secretary: {!! Html::mailto('martijnspruit@ciro-horn.nl', 'Martijn A. Spruit') !!}</p>
                  
                 </div>
             </div>
@@ -33,8 +33,8 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 09.01<br>
-                    Chair: <a href="mailto:J.Makonga@meandermc.nl">Jellien Makonga Braaksma</a><br>
-                    Secretary: <a href="mailto:wtomalak@igrabka.edu.pl">Waldemar Tomalak</a></p>
+                    Chair: {!! Html::mailto('J.Makonga@meandermc.nl', 'Jellien Makonga Braaksma') !!}<br>
+                    Secretary: {!! Html::mailto('wtomalak@igrabka.edu.pl', 'Waldemar Tomalak') !!}</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-respiratory-function" type="button" class="btn btn-default pull-right">More</button>
@@ -51,8 +51,8 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 09.02<br>
-                    Chair: <a href="mailto:daniel.langer@faber.kuleuven.be">Daniel Langer</a><br>
-                    Secretary: <a href="mailto:c.burtin@fontys.nl">Chris Burtin</a></p>
+                    Chair: {!! Html::mailto('daniel.langer@faber.kuleuven.be', 'Daniel Langer') !!}<br>
+                    Secretary: {!! Html::mailto('c.burtin@fontys.nl', 'Chris Burtin') !!}</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-physiotherapists" type="button" class="btn btn-default pull-right">More</button>
@@ -69,7 +69,7 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 09.03<br>
-                    Chair: <a href="mailto:bkorn@stjames.ie">Bettina Korn</a><br>
+                    Chair: {!! Html::mailto('bkorn@stjames.ie', 'Bettina Korn') !!}<br>
                     Secretary: Russell Anne-Marie</p>
                   </div>
                   <div class="card-action clearfix">

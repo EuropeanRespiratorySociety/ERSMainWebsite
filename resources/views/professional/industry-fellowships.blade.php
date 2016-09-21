@@ -86,7 +86,7 @@
 
   <p class="rules text-left">
     <!--<a href="javascript:void(0)">Application Guidelines</a> <br>-->
-    <!--<a href="mailto:fellowships@ersnet.org">More information</a>-->
+    <!--{!! Html::mailto('fellowships@ersnet.org', 'More information') !!}-->
   </p>
 
   @if(isset($category->registerButton['link']))
