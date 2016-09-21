@@ -14,7 +14,7 @@
                 </div>
                 @else
                 <div class="row row_event rel">
-                    @include('partials.news-items',array('items' => $items, 'class' => 'col-md-4'))
+                    @include('partials.search-results',array('items' => $items, 'class' => 'col-md-4'))
                 </div>
                 @endif
             </div>
