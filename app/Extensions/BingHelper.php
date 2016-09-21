@@ -15,7 +15,9 @@ class BingHelper {
         $key = 0;
         foreach($results['webPages']['value'] as $value){
         	$url = $this->urlDecode($value['url']);
-        	if (strpos($value['displayUrl'], 'https://') !== false && strpos($url, '.html') == false) {
+        	if (strpos($value['displayUrl'], 'https://') !== false 
+        		&& strpos($url, '.html') == false 
+        		&& strpos($url, '.pdf') == false) {
 	        	$parsed[$key]['url'] = $url;
 	        	$title = explode('|', $value['name']);
 	        	$parsed[$key]['title'] = $title[0];
