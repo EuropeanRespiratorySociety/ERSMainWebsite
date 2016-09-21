@@ -5,11 +5,11 @@
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
                   <img src="../images/people/leadership/Nicolas_Schonfeld.jpg" class="img-circle">
-                  <p class="photo_caption">Head: <a href="mailto:nicolas.schoenfeld@helios-kliniken.de">Nicolas Schönfeld</a></p>
+                  <p class="photo_caption">Head: {!! Html::mailto('nicolas.schoenfeld@helios-kliniken.de', 'Nicolas Schönfeld') !!}</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
                   <img src="../images/people/leadership/Bogdan_Dragos_Grigoriu.jpg" class="img-circle">
-                  <p class="photo_caption">Secretary: <a href="mailto:b_grigoriu@hotmail.com">Bogdan Dragos Grigoriu</a></p>
+                  <p class="photo_caption">Secretary: {!! Html::mailto('b_grigoriu@hotmail.com', 'Bogdan Dragos Grigoriu') !!}</p>
                  
                 </div>
             </div>
@@ -35,8 +35,8 @@ The Assembly is comprised of the following two groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 11.01<br>
-                    Chair: <a href="mailto:torsten-gerriet.blum@helios-kliniken.de">Torsten Blum</a><br>
-                    Secretary: <a href="mailto:matthewevison@hotmail.co.uk">Matthew Evison</a></p>
+                    Chair: {!! Html::mailto('torsten-gerriet.blum@helios-kliniken.de', 'Torsten Blum') !!}<br>
+                    Secretary: {!! Html::mailto('matthewevison@hotmail.co.uk', 'Matthew Evison') !!}</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-lung-cancer" type="button" class="btn btn-default pull-right">More</button>
@@ -53,8 +53,8 @@ The Assembly is comprised of the following two groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 11.02<br>
-                    Chair: <a href="mailto:nickmaskell@doctors.org.uk">Nick Maskell</a><br>
-                    Secretary: <a href="mailto:szarogiannis@yahoo.com">Sotirios Zarogiannis</a></p>
+                    Chair: {!! Html::mailto('nickmaskell@doctors.org.uk', 'Nick Maskell') !!}<br>
+                    Secretary: {!! Html::mailto('szarogiannis@yahoo.com', 'Sotirios Zarogiannis') !!}</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-pleural-and-mediastinal" type="button" class="btn btn-default pull-right">More</button>

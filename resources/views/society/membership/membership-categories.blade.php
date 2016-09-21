@@ -38,7 +38,7 @@
 						<td class="number">170 EUR/year</td>
 					</tr>
 					<tr>
-						<td>Gold Dual *( dual membership with ATS/APSR/CTS/EAACI/ESTS/ISAM)</td>
+						<td>Gold Dual *( dual membership with ATS/APSR/EAACI/ESTS/ISAM)</td>
 						<td class="number">145 EUR/year</td>
 					</tr>
 					<tr>

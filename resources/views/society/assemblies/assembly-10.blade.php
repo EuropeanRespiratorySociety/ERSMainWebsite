@@ -5,11 +5,11 @@
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
                   <img src="../images/people/leadership/Stefano_Aliberti.jpg" class="img-circle">
-                  <p class="photo_caption">Head: <a href="mailto:alibertistefano@hotmail.com">Stefano Aliberti</a></p>
+                  <p class="photo_caption">Head: {!! Html::mailto('alibertistefano@hotmail.com', 'Stefano Aliberti') !!}</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
                   <img src="../images/people/leadership/Giovanni_Sotgiu.jpg" class="img-circle">
-                  <p class="photo_caption">Secretary: <a href="mailto:gsotgiu@uniss.it">Giovanni Sotgiu</a></p>
+                  <p class="photo_caption">Secretary: {!! Html::mailto('gsotgiu@uniss.it', 'Giovanni Sotgiu') !!}</p>
                  
                 </div>
             </div>
@@ -42,8 +42,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 10.01<br>
-                    Chair: <a href="mailto:epolveri@clinic.ub.es">Eva Polverino</a><br>
-                    Secretary: <a href="mailto:Ringshausen.Felix@mh-hannover.de">Felix C. Ringshausen</a></p>
+                    Chair: {!! Html::mailto('epolveri@clinic.ub.es', 'Eva Polverino') !!}<br>
+                    Secretary: {!! Html::mailto('Ringshausen.Felix@mh-hannover.de', 'Felix C. Ringshausen') !!}</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-respiratory-infections" type="button" class="btn btn-default pull-right">More</button>
@@ -60,8 +60,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 10.02<br>
-                    Chair: <a href="mailto:graham.bothamley@homerton.nhs.uk">Graham H. Bothamley</a><br>
-                    Secretary: <a href="mailto:j.heyckendorf@googlemail.com">Jan Heyckendorf</a></p>
+                    Chair: {!! Html::mailto('mailto:graham.bothamley@homerton.nhs.uk', 'Graham H. Bothamley') !!}<a href=""></a><br>
+                    Secretary: {!! Html::mailto('j.heyckendorf@googlemail.com', 'Jan Heyckendorf') !!}</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-tuberculosis" type="button" class="btn btn-default pull-right">More</button>

@@ -211,7 +211,7 @@
             </div>
             
             <div class="event-items-right-bt">
-            <p>Any questions? Please contact<a href="mailto:scientific@ersnet.org"> scientific@ersnet.org</a></p>
+            <p>Any questions? Please contact{!! Html::mailto('scientific@ersnet.org', 'scientific@ersnet.org') !!}</p>
             @if(isset($item->extendedDeadline))
             <p class="deadline">EXTENDED registration deadline : {{$item->extendedDeadline}}</p>
             @endif
@@ -222,7 +222,7 @@
               <a href="{{$item->registerButton['link']}}"" class="btn btn-primary tab-register-bt">Register</a>
             @endif
             @if($item->fullyBooked)
-              <p>Please contact <a href="mailto:educaion@ersnet.org">education@ersnet.org</a> to be added to the waiting list.</p>
+              <p>Please contact {!! Html::mailto('educaion@ersnet.org', 'education@ersnet.org') !!} to be added to the waiting list.</p>
               <a href="#" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
             @endif
             @if($item->openingDate)

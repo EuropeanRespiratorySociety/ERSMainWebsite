@@ -120,7 +120,7 @@
                     Practical Info
                   </a>
                 @endif
-                <p>Any questions? Please contact<a href="mailto:scientific@ersnet.org"> scientific@ersnet.org</a></p>
+                <p>Any questions? Please contact{!! Html::mailto('scientific@ersnet.org', 'scientific@ersnet.org') !!}</p>
 
               </div>
             </div>

@@ -345,7 +345,7 @@
           <p class="photo_caption"><strong>Julie-Lyn Noël</strong>
             Projects Leader<br>
             T +41 21 213 01 77<br>
-            <a href="mailto:Julie-Lyn.Noel@ersnet.org">Julie-Lyn.Noel@ersnet.org</a>
+            {!! Html::mailto('Julie-Lyn.Noel@ersnet.org', 'Julie-Lyn.Noel@ersnet.org') !!}
             </p>
         </div-->
         <div class="col-md-3 xs-mb-15">
@@ -435,7 +435,7 @@
 
       <div class="col-md-8 center-block lead"><strong>Brussels Office</strong><br><br>
       49-51 Rue de Trèves BE - 1040 Brussels Belgium<br><br>
-        TEL +32 2 238 53 60&nbsp;&nbsp;/&nbsp;&nbsp;FAX +32 2 238 53 61&nbsp;&nbsp;/&nbsp;&nbsp;E-Mail <a href="mailto:ersinfo.brussels@ersnet.org">ersinfo.brussels@ersnet.org</a>
+        TEL +32 2 238 53 60&nbsp;&nbsp;/&nbsp;&nbsp;FAX +32 2 238 53 61&nbsp;&nbsp;/&nbsp;&nbsp;E-Mail {!! Html::mailto('ersinfo.brussels@ersnet.org', 'ersinfo.brussels@ersnet.org') !!}
       </div>
 
       <div class="row">
@@ -464,7 +464,6 @@
           <p class="photo_caption"><strong>{!! Html::mailto('maeve.barry@ersnet.org', 'MAEVE BARRY') !!}</strong>
             Policy Officer<br>
             T +32 2 238 53 68<br>
-            <a href="mailto:maeve.barry@ersnet.org"></a>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
@@ -575,7 +574,7 @@
           <p class="photo_caption"><strong>Josué Carrascosa</strong>
             Central Admin Coordinator<br>
             T +41 21 213 01 25<br>
-            <a href="mailto:josue.carrascosa@ersnet.org">josue.carrascosa@ersnet.org</a>
+            {!! Html::mailto('josue.carrascosa@ersnet.org', 'josue.carrascosa@ersnet.org') !!}
             </p>
         </div-->
         <div class="col-md-3 xs-mb-15">
@@ -702,7 +701,7 @@
 
       <div class="col-md-8 center-block lead"><strong>Publication Office</strong><br><br>
       European Respiratory Society : Sheffield S10 2PX United Kingdom<br><br>
-        TEL +44 114 267 2860&nbsp;&nbsp;/&nbsp;&nbsp;FAX +44 114 266 5064&nbsp;&nbsp;/&nbsp;&nbsp;E-Mail <a href="mailto:info@ersj.org.uk">info@ersj.org.uk</a>
+        TEL +44 114 267 2860&nbsp;&nbsp;/&nbsp;&nbsp;FAX +44 114 266 5064&nbsp;&nbsp;/&nbsp;&nbsp;E-Mail {!! Html::mailto('info@ersj.org.uk', 'info@ersj.org.uk') !!}
       </div>
 
       <div class="row">

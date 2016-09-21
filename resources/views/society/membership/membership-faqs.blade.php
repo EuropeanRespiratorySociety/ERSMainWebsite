@@ -31,10 +31,10 @@
 
 			<h4><strong>Who should I contact for more information about the new Membership programme?</strong></h4>
 			<p>If your national society has already decided to be part of the scheme you can contact them directly for more information. If your society is not part of the scheme, you can contact ERS directly to find out if your country is in discussions with ERS about the new programme: 
-			<a href="mailto:members@ersnet.org">members@ersnet.org</a> <br><br>
+			{!! Html::mailto('members@ersnet.org', 'members@ersnet.org') !!}<br><br>
 
 
-			For further details regarding ERS membership, please contact us at <a href="mailto:members@ersnet.org">members@ersnet.org</a></p>
+			For further details regarding ERS membership, please contact us at {!! Html::mailto('members@ersnet.org', 'members@ersnet.org') !!}</p>
 
 
 		</div>

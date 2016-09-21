@@ -5,11 +5,11 @@
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
                   <img src="../images/people/leadership/Felix_JF_Herth.jpg" class="img-circle">
-                  <p class="photo_caption">Head: <a href="mailto:felix.herth@med.uni-heidelberg.de">Felix JF. Herth</a></p>
+                  <p class="photo_caption">Head: {!! Html::mailto('felix.herth@med.uni-heidelberg.de', 'Felix JF. Herth') !!}</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
                   <img src="../images/people/leadership/Venerino_Poletti.jpg" class="img-circle">
-                  <p class="photo_caption">Secretary: <a href="mailto:venerino.poletti@gmail.com">Venerino Poletti</a></p>
+                  <p class="photo_caption">Secretary: {!! Html::mailto('venerino.poletti@gmail.com', 'Venerino Poletti') !!}</p>
                  
                 </div>
             </div>
@@ -30,8 +30,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 01.01<br>
-                    Chair: <a href="mailto:mthekkinkattil@gmail.com">Thekkinkattil Mohan Kumar</a><br>
-                    Secretary: <a href="mailto:laurafregonese@gmail.com">Laura Fregonese</a></p>
+                    Chair: {!! Html::mailto('mthekkinkattil@gmail.com', 'Thekkinkattil Mohan Kumar') !!}<br>
+                    Secretary: {!! Html::mailto('laurafregonese@gmail.com', 'Laura Fregonese') !!}</p>
                     
                   </div>
                   <div class="card-action clearfix">
@@ -51,8 +51,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 01.02<br>
-                    Chair: <a href="mailto:gianvog@phed.uoa.gr">Ioannis Vogiatzis</a><br>
-                    Secretary: <a href="mailto:fritsfranssen@ciro-horn.nl">Frits Franssen</a></p>
+                    Chair: {!! Html::mailto('gianvog@phed.uoa.gr', 'Ioannis Vogiatzis') !!}<br>
+                    Secretary: {!! Html::mailto('fritsfranssen@ciro-horn.nl', 'Frits Franssen') !!}</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-rehabilitation" type="button" class="btn btn-default pull-right">More</button>
@@ -69,8 +69,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 01.03<br>
-                    Chair: <a href="mailto:aleksandar.grgic@gmx.de">Aleksandar Grgic</a><br>
-                    Secretary: <a href="mailto:johan.coolen@uzleuven.be">Johan Coolen</a></p>
+                    Chair: {!! Html::mailto('aleksandar.grgic@gmx.de', 'Aleksandar Grgic') !!}<br>
+                    Secretary: {!! Html::mailto('johan.coolen@uzleuven.be', 'Johan Coolen') !!}</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-imaging" type="button" class="btn btn-default pull-right">More</button>
@@ -87,8 +87,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 01.04<br>
-                    Chair: <a href="mailto:j.t.annema@amc.nl">Jouke T. Annema</a><br>
-                    Secretary: <a href="mailto:pchhajed@gmail.com">Prashant Nemichand Chhajed</a></p>
+                    Chair: {!! Html::mailto('j.t.annema@amc.nl', 'Jouke T. Annema') !!}<br>
+                    Secretary: {!! Html::mailto('pchhajed@gmail.com', 'Prashant Nemichand Chhajed') !!}</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-interventional" type="button" class="btn btn-default pull-right">More</button>
@@ -105,8 +105,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 01.05<br>
-                    Chair: <a href="mailto:katerinaantoniou@yahoo.gr">Katerina Antoniou</a><br>
-                    Secretary: <a href="mailto:francesco.bonella@ruhrlandklinik.uk-essen.de">Francesco Bonella</a></p>
+                    Chair: {!! Html::mailto('katerinaantoniou@yahoo.gr', 'Katerina Antoniou') !!}<br>
+                    Secretary: {!! Html::mailto('francesco.bonella@ruhrlandklinik.uk-essen.de', 'Francesco Bonella') !!}</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-diffuse" type="button" class="btn btn-default pull-right">More</button>
@@ -123,8 +123,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 01.06<br>
-                    Chair: <a href="mailto:hilary.pinnock@ed.ac.uk">Hilary Pinnock</a><br>
-                    Secretary: <a href="mailto:j.w.h.kocks@med.umcg.nl">Janwillem Kocks</a></p>
+                    Chair: {!! Html::mailto('hilary.pinnock@ed.ac.uk', 'Hilary Pinnock') !!}<br>
+                    Secretary: {!! Html::mailto('j.w.h.kocks@med.umcg.nl', 'Janwillem Kocks') !!}</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-general-practice" type="button" class="btn btn-default pull-right">More</button>
