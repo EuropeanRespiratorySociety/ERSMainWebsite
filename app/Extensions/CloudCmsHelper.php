@@ -398,9 +398,12 @@ class CloudCmsHelper
                         if(isset($item->eventDate) && isset($item->eventEndDate)){
                             $parsed[$key]['eventDates'] = $this->ersDate($item->eventDate, $item->eventEndDate);
                             $parsed[$key]['startDateTimestamp'] = $this->toTimestamp($item->eventDate);
+                            $parsed[$key]['startDate'] = $this->ersDate($item->eventDate);
+                            $parsed[$key]['endDate'] = $this->ersDate($item->eventEndDate);
                         } elseif(isset($item->eventDate) && !isset($item->eventEndDate)){
                             $parsed[$key]['eventDates'] = $this->ersDate($item->eventDate);
                             $parsed[$key]['startDateTimestamp'] = $this->toTimestamp($item->eventDate);
+                            $parsed[$key]['startDate'] = $this->ersDate($item->eventDate);
                         }
                         if(isset($item->eventDate)){$parsed[$key]['calendar'] = $this->calendar($item->eventDate);}   
                         if(isset($item->earlybirdDeadline)){$parsed[$key]['earlybirdDeadline'] = $this->isAlreadyPassed($item->earlybirdDeadline);}
