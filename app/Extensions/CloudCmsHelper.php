@@ -354,6 +354,7 @@ class CloudCmsHelper
 
                     if($unPublished != true) {   
                         $parsed[$key]['unpublished'] = $unPublished;
+                        $parsed[$key]['comments'] = $item->comments ?? false;
                         if(isset($item->title)){
                             $parsed[$key]['title'] = $this->formatTitle($item->title);
                         }

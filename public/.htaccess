@@ -1084,6 +1084,7 @@
         Redirect 301 /case-demo http://www.ersnet.org/learning_resources_player/cases/AJ10.htm
         Redirect 301 /certificates http://datacheck.ersnet.org/~ersnet/mycme_vie12/
         Redirect 301 /communication https://ers.basecamphq.com/
+        Redirect 301 /congress-and-events/milan-2017 http://erscongress.org
         # E
         Redirect 301 /elearning http://www.ers-education.org/pages/default.aspx
         Redirect 301 /erj-podcast http://www.erj.ersjournals.com/content/37/1/E1/suppl/DC1

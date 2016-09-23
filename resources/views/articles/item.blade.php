@@ -10,10 +10,9 @@
 @section('content')
 <div class="ers-content article-items">
   <div class="row">
-    <!--div class="col-md-3 medium-grey-bg left-photo-map">    
-    
-    </div-->
-    <!-- Beginning Main Content Area -->
+    {{-- 
+    <div class="col-md-3 medium-grey-bg left-photo-map"></div>  --}}
+    {{--  Beginning Main Content Area  --}}
     <div class="col-md-9 lighter-grey-bg article-text">
       <div class="header">
         <div class="clearfix notification">
@@ -43,9 +42,14 @@
         @if(isset($item->lead)){!!$item->lead!!}@endif
         @if(isset($item->body)){!!$item->body!!}@endif
       </div>
+      @if($item->comments == true)
+      <hr>
+      <div id="disqus_thread"></div>
+      @endif
+
     </div>
-    <!-- Beginning Main Content Area -->
-    <!-- Beginning Right Side-bar -->
+    {{--  Beginning Main Content Area  --}}
+    {{--  Beginning Right Side-bar  --}}
     <div class="col-md-3 white-bg right-photo">
       <div class="right-photo-inner">
 
@@ -67,12 +71,12 @@
       </div>
 
     </div>
-    <!-- End Right Sidebar -->
+    {{--  End Right Sidebar  --}}
   </div>
 </div>
 
-<!--Modal contents div-->
-<!--END Modal contents div-->
+{{-- Modal contents div --}}
+{{-- END Modal contents div --}}
 
 @stop()  
 

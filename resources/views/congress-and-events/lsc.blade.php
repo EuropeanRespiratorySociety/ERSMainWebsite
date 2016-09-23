@@ -110,7 +110,7 @@
         <ul class="nav nav-tabs">
         @if(isset($item->venue))
           <li class="active"><a href="#venue" data-toggle="tab">
-            <span class="icon icon-hotel"></span>Registration and<br>accomodation</a>
+            <span class="icon icon-hotel"></span>Registration and<br>accommodation</a>
           </li>
         @endif
         @if(isset($item->bursaryApplication) && !empty($item->bursaryApplication))
