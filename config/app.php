@@ -159,7 +159,7 @@ return [
         Spatie\Geocoder\GeocoderServiceProvider::class,
         Cohensive\Embed\EmbedServiceProvider::class,
         Barryvdh\HttpCache\ServiceProvider::class,
-        //Yajra\Disqus\DisqusServiceProvider::class,
+        Yajra\Disqus\DisqusServiceProvider::class,
 
     ],
 
