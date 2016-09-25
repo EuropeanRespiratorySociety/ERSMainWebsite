@@ -29,7 +29,15 @@
     "name" : "{{$item['venueName']}}",
     "address" : "{{$item['venueAddress'] }} @if($item['venueAddress2'] != null) {{$item['venueAddress2']}} @endif, {{$item['venueCity']}}, {{$item['venuePostalCode']}}, {{$item['venueCountry']}}"
   },
-@endif
+  @endif
+@if(isset($item['location']) && ! isset($item['venueName']))
+  "location" : {
+    "@type" : "Place",
+    "name" : "{{$item['location']}}",
+    "address" : "{{$item['location']}}"
+  },
+@endif  
+
   "url" : "{{$item['url']}}"
 }
 </script>

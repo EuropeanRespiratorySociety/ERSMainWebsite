@@ -12,14 +12,15 @@
 @section('structured-data')
   @include('partials.event-structured-data', array('item' => 
       [
-        'url' => isset($course->url) ? $course->url : null ,
+        'url' => $course->url ?? null ,
         'name' => $course->title,
         'startDate' => isset($course->startDate) ? $course->startDate : null,
         'endDate' => isset($course->endDate) ? $course->endDate : null,
-        'performer' => isset($course->organisers) ? $course->organisers : null,
+        'performer' => $course->organisers ?? null,
         'offers' => isset($course->feeList->ersMember) ? 'ERS Members: €' . $course->feeList->ersMember  : null,
         'image' => isset($course->image) ? $course->image : null,
-        'description' => isset($course->lead) ? $course->lead : null,
+        'description' => isset($course->shortLead) ? $course->lead : null,
+        'location' => $course->eventLocation ?? null,
         'venueName' => isset($course->venue->name) ? $course->venue->name : null,
         'venueAddress' => isset($course->venue->streetAddress) ? $course->venue->streetAddress : null,
         'venueAddress2' => isset($course->venue->streetAddress2) ? $course->venue->streetAddress2 : null,
