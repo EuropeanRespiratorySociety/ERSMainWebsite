@@ -472,6 +472,8 @@ class CloudCmsHelper
     	                    if(isset($item->organisers)){ $parsed[$key]['organisers'] = $item->organisers;}
     	                    if(isset($item->faculty)){ $parsed[$key]['faculty'] = $item->faculty;}
                             if(isset($item->body)){$parsed[$key]['body'] = Markdown::parse($item->body);}
+                            if(isset($item->popUp)){$parsed[$key]['popUp'] = Markdown::parse($item->popUp);}
+                            if(isset($item->popUpText)){$parsed[$key]['popUpText'] = $item->popUpText;}
                             $parsed[$key]['articleTwoColumns'] = false;
                             if(isset($item->articleTwoColumns)){$parsed[$key]['articleTwoColumns'] = $item->articleTwoColumns;}
     	                    if(isset($item->feeList)){$parsed[$key]['feeList'] = $item->feeList;}

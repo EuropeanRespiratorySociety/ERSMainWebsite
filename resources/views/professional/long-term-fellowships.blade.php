@@ -86,7 +86,10 @@
 
   <p class="rules text-left">
     <!--<a href="javascript:void(0)">Application Guidelines</a> <br>-->
-    {!! Html::mailto('fellowships@ersnet.org', 'More information') !!}
+    @if(isset($category->popUpText))
+      <a data-toggle="modal" data-target="#md-popUp" class="cursor_pointer">{{$category->popUpText}}</a><br>
+    @endif
+    <span style="font-size:16px;vertical-align: middle;" class="icon s7-mail"></span>{!! Html::mailto('fellowships@ersnet.org', ' Contact us') !!}
   </p>
 
   @if(isset($category->registerButton['link']))
@@ -105,6 +108,27 @@
 </div>
 
  @include('partials.modal-items', array('items' => $fellowships))
+
+<!--Modal contents div-->
+<!-- FREE PopUp -->
+@if(isset($category->popUp))
+<div id="md-popUp" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+        <h3 class="modal-title">{{$category->popUpText}}</h3>
+      </div>
+      <div class="modal-body">
+        <div class="text-left">
+          {!! $category->popUp !!}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+@endif
+<!-- end FREE PopUp -->
 
 @stop()  
 

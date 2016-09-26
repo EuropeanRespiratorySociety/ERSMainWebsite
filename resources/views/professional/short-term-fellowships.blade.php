@@ -83,9 +83,13 @@
   </div>
 
   <p class="rules text-left">
-    <a href="documents/scientific/2016_ERS_STRTF_Rules_Regulations_October_round.pdf">Application Guidelines</a> <br>
-    {!! Html::mailto('fellowships@ersnet.org', 'More information') !!}
+    <a href="documents/scientific/2016_ERS_STRTF_Rules_Regulations_October_round.pdf">Application Guidelines</a><br>
+    @if(isset($category->popUpText))
+      <a data-toggle="modal" data-target="#md-popUp" class="cursor_pointer">{{$category->popUpText}}</a><br>
+    @endif
+    <span style="font-size:16px;vertical-align: middle;" class="icon s7-mail"></span>{!! Html::mailto('fellowships@ersnet.org', ' Contact us') !!}
   </p>
+
 
 @if(isset($category->registerButton['link']))
   <a href="{{$category->registerButton['link']}}" target="_blank" class="btn btn-primary item-register-bt">{{$category->registerButton['text']}}</a>
@@ -96,13 +100,30 @@
 
 </div>
 
-
-
-
-
 </div>
 
  @include('partials.modal-items', array('items' => $fellowships))
+
+ <!--Modal contents div-->
+<!-- FREE PopUp -->
+@if(isset($category->popUp))
+<div id="md-popUp" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+        <h3 class="modal-title">{{$category->popUpText}}</h3>
+      </div>
+      <div class="modal-body">
+        <div class="text-left">
+          {!! $category->popUp !!}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+@endif
+<!-- end FREE PopUp -->
 
 @stop()  
 
