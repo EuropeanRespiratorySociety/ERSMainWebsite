@@ -96,9 +96,10 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('publications', 'GeneralController@publications');
     Route::get('publications/{slug}', 'GeneralController@show');
 
-    Route::get('the-society/membership', function(){
+    /*Route::get('the-society/membership', function(){
         return view('society.membership');
-    });
+    });*/
+    Route::get('the-society/membership', 'MembershipController@index');
 
     Route::get('the-society/membership/{slug}', "GeneralController@show");
 
