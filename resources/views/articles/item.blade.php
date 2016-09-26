@@ -17,7 +17,7 @@
       <div class="header">
         <div class="clearfix notification">
           @if(isset($item->flags))
-          <p class="pull-right {{$item->flags['color'] }}">{{ $item->flags['text'] }}</p>
+            <p style="margin-top:10px;padding: 0 10px;" class="pull-right alert {{'alert-'.$item->flags['color'] }}">{{ $item->flags['text'] }}</p>
           @endif 
         </div>
       </div>
@@ -55,6 +55,18 @@
 
       @if(isset($item->image))
       <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
+
+      @endif
+      @if(isset($item->sponsors))
+         @if(isset($item->image))
+          <hr>
+         @endif
+        @if(isset($item->sponsors['image']))
+          <p><img src="{{ $item->sponsors['image'] }}" class="img-rounded" style="width:200px;"></p>
+        @endif  
+        @if(isset($item->sponsors['text']))
+          <h4>{{$item->sponsors['text']}}</h4>
+        @endif
       @endif
       @if(isset($item->location->lat)&&isset($item->location->long))
           <div id="map"></div>

@@ -466,6 +466,8 @@ class CloudCmsHelper
                             $parsed[$key]['hasAuthor'] = 0;
                         }
 
+                        if(isset($item->sponsors) && !empty($item->sponsors)){$parsed[$key]['sponsors'] = $this->getSponsors($item->sponsors);}
+
                         if(!$lead){
     	                    if(isset($item->organisers)){ $parsed[$key]['organisers'] = $item->organisers;}
     	                    if(isset($item->faculty)){ $parsed[$key]['faculty'] = $item->faculty;}
@@ -476,7 +478,6 @@ class CloudCmsHelper
                             if(isset($item->cancellationPolicy)){$parsed[$key]['cancellationPolicy'] = Markdown::parse($item->cancellationPolicy);}
                             if(isset($item->travelInfo)){$parsed[$key]['travelInfo'] = Markdown::parse($item->travelInfo);}
                             if(isset($item->technicalInfo)){$parsed[$key]['technicalInfo'] = Markdown::parse($item->technicalInfo);}
-    	                    if(isset($item->sponsors)){$parsed[$key]['sponsors'] = $this->getSponsors($item->sponsors);}
                             if(isset($item->deadlines)){$parsed[$key]['deadlines'] = $this->getDeadlines($item->deadlines);}
     	                    if(isset($item->venue)){
                                 if(isset($item->venue)){$parsed[$key]['venue'] = $item->venue ;}
@@ -652,6 +653,7 @@ class CloudCmsHelper
                     }*/
         }
         if(isset($parsed)){
+            //For now we return only the first sponsor, to bad for the others ;)
             return $parsed[0];
         }
     }

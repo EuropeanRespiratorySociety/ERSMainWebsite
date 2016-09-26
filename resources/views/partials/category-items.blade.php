@@ -40,6 +40,9 @@
             <p class="title">{{ $item['title'] }}
                 <!--<span>Next upcomming item</span>-->
             </p>
+            @if(isset($item['sponsors']['text']))
+                <h4>{{$item['sponsors']['text']}}</h4>
+            @endif
             @if(isset($item['eventDates']))
             <p class="date">{{ $item['eventDates'] }}</p>
             @endif

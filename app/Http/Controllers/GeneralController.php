@@ -13,7 +13,6 @@ class GeneralController extends Controller
 
     protected $euProjects = "o:b1b2cbebec4c8076ecb8";
     protected $euAffairs = "o:ce780883918ebe8c7031";
-    protected $grantsAndSponsorships = "o:fed7466ad04defc729de";
 
     /**
      * Display a listing of the resource.
@@ -150,9 +149,41 @@ class GeneralController extends Controller
         }
 
         $results = $CC->getCategory($params['item']->_qname);
-        $courses = $CC->parseItems($results->rows, true);
-        $params['items'] =  (object) $courses;
+        $items = $CC->parseItems($results->rows, true);
+        $params['items'] =  (object) $items;
         return view('professional.grants-and-sponsorships')->with($params);
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function awards()
+    { 
+        $CC = new CC();
+        $results = $CC->getItem('awards');
+
+        if($results == "invalid_token"){
+            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            return redirect(request()->fullUrl());
+        }
+
+        $item = $CC->parseItems($results->rows);
+        $params['item'] =  (object) $item[0]; 
+
+        // == false set in purpose as CC sets the field to "false" wich is a string...
+        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
+            $uri= request()->path();
+            $url = "https://www.ersnet.org/".$uri;
+            $payload = json_encode(['url' => $url, 'uri' => $uri]);
+            $CC->setCanonical($results->rows[0]->_qname, $payload);
+        }
+
+        $results = $CC->getCategory($params['item']->_qname);
+        $items = $CC->parseItems($results->rows, true);
+        $params['items'] =  (object) $items;
+        return view('society.awards')->with($params);
     }
 
     /**
@@ -176,7 +207,7 @@ class GeneralController extends Controller
         $params['item'] =  (object) $item[0];
 
         // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
+        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
             $payload = json_encode(['url' => $url, 'uri' => $uri]);

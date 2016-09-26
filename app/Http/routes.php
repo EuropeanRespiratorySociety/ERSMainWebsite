@@ -70,6 +70,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('the-society/who-we-are', 'WhoWeAreController@index');
     Route::get('the-society/who-we-are/executive-office', function(){ return view('society.executive-office');});
     Route::get('the-society/who-we-are/leadership', function(){ return view('society.leadership');});
+    Route::get('the-society/who-we-are/awards', 'GeneralController@awards'); 
+    Route::get('the-society/who-we-are/awards/{slug}', 'GeneralController@show'); 
     Route::get('the-society/who-we-are/leadership/national-delegates', function(){return view('society.leadership.national-delegates');});
     Route::get('the-society/who-we-are/leadership/science-council', function(){return view('society.leadership.science-council');});
     Route::get('the-society/who-we-are/leadership/assembly-heads', function(){return view('society.leadership.assembly-heads');});
