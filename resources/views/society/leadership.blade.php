@@ -40,15 +40,14 @@
 	            <img src="images/people/leadership/mina_gaga.jpg" class="img-circle">
 	            <p class="photo_caption"><strong>{!! Html::mailto('minagaga@yahoo.com', 'Mina Gaga') !!}</strong>
 	            President Elect<br>
-	            </p>
-                <a title="Download COI" href="https://ers.box.com/s/pudmjw6dtxefzskpmeriszhqjjqyopk3">Download COI</a>
+                <a title="Download COI" href="https://ers.box.com/s/pudmjw6dtxefzskpmeriszhqjjqyopk3">Download COI</a></p>
         	</div>
             <div class="col-md-4 xs-mb-15">
                 <img src="images/people/leadership/Tobias_Welte.jpg" class="img-circle">
                 <p class="photo_caption"><strong>Tobias Welte</strong>
                 Vice President <br>
-                </p>
-                <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=1059&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a>
+                
+                <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=1059&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a></p>
             </div>
             <div class="col-md-4 xs-mb-15">
                 <img src="images/people/leadership/Carlos_Robalo.jpg" class="img-circle">
@@ -119,10 +118,10 @@
             <div class="col-md-4 xs-mb-15">
                 <img src="images/people/leadership/Andrew_Bush.jpg" class="img-circle">
                 <p class="photo_caption"><strong>Andrew Bush</strong>
-                Publications Committee Chair Elect
+                Publications Committee Chair Elect <br><a title="Download COI" href="https://ers.box.com/s/sti616ycbzall1nqe7ankrp0gvk7jq9h">Download COI</a>
                 </p>
 
-                <a title="Download COI" href="https://ers.box.com/s/sti616ycbzall1nqe7ankrp0gvk7jq9h">Download COI</a>
+                
             </div>
 
 
