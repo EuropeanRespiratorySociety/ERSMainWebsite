@@ -59,6 +59,8 @@
                 <img src="images/people/leadership/otto_chris_burghuber.jpg" class="img-circle">
                 <p class="photo_caption"><strong>Otto Chris Burghuber</strong>
                 Treasurer<br>
+                <a title="Download COI" href="https://ers.box.com/s/889jmegj458ndh73z08dtwg6vzibxk7x">Download COI</a>
+                </p>
             </div>
         	<div class="col-md-4 xs-mb-15">
 	            <img src="images/people/leadership/Gernot_Rohde.jpg" class="img-circle">
@@ -112,7 +114,8 @@
             <div class="col-md-4 xs-mb-15">
                 <img src="images/people/leadership/Daiana_Stolz.jpg" class="img-circle">
                 <p class="photo_caption"><strong>Daiana Stolz</strong>
-                Education Council Chair Elect
+                Education Council Chair Elect<br />
+                <a title="Download COI" href="https://ers.box.com/s/bcaonlkqkkus3ee7zwq9hi18f902g9wi">Download COI</a>
                 </p>
             </div>
             <div class="col-md-4 xs-mb-15">
