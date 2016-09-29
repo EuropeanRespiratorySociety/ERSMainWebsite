@@ -4,7 +4,7 @@ namespace App\Extensions;
 
 use Carbon\Carbon;
 
-public class DateHelper
+class DateHelper
 {
     /**
     * Generate a correctly formated date for the ERS Calendar
@@ -22,6 +22,14 @@ public class DateHelper
 
         return (object) $cal;
     }
+
+    /**
+    * This function check if one of the category is "Events Calendar" thus if the item has 
+    * been added to the European Respiratory Socitey Calendar.
+    *
+    *@param array $array
+    *@return boolean
+    */
 
     public function isCalendar($array){
         $cal = false;

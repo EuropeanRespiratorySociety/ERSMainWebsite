@@ -39,8 +39,7 @@ class FellowshipController extends Controller
         $category = $CC->parseItems($category->rows);
         $params['category'] = (object) $category[0];
 
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($item[0]->url) || !isset($item[0]->uri) || $item[0]->url == "false" || $item[0]->uri == "false"){
+        if(!isset($item[0]->url) || !isset($item[0]->uri)){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
             $payload = json_encode(['url' => $url, 'uri' => $uri]);
@@ -83,8 +82,7 @@ class FellowshipController extends Controller
         $category = $CC->parseItems($category->rows);
         $params['category'] = (object) $category[0];
 
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($category[0]['url']) || !isset($category[0]['uri']) || $category[0]['url'] == "false" || $category[0]['uri'] == "false"){
+        if(!isset($category[0]['url']) || !isset($category[0]['uri'])){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
             $payload = json_encode(['url' => $url, 'uri' => $uri]);
@@ -124,8 +122,7 @@ class FellowshipController extends Controller
         $category = $CC->parseItems($category->rows);
         $params['category'] = (object) $category[0];
 
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($category[0]['url']) || !isset($category[0]['uri']) || $category[0]['url'] == "false" || $category[0]['uri'] == "false"){
+        if(!isset($category[0]['url']) || !isset($category[0]['uri'])){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
             $payload = json_encode(['url' => $url, 'uri' => $uri]);
@@ -165,8 +162,7 @@ class FellowshipController extends Controller
         $category = $CC->parseItems($category->rows);
         $params['category'] = (object) $category[0];
 
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($category[0]['url']) || !isset($category[0]['uri']) || $category[0]['url'] == "false" || $category[0]['uri'] == "false"){
+        if(!isset($category[0]['url']) || !isset($category[0]['uri'])){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
             $payload = json_encode(['url' => $url, 'uri' => $uri]);
@@ -205,8 +201,7 @@ class FellowshipController extends Controller
         $item = $CC->parseItems($results->rows);
         $params['item'] =  (object) $item[0];
 
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
+        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
             $payload = json_encode(['url' => $url, 'uri' => $uri]);

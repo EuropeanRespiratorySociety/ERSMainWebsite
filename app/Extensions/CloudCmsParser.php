@@ -14,49 +14,44 @@ use Spatie\Geocoder\GeocoderFacade as Geocoder;
 
 class CloudCmsParser
 {
+    public $parsed;
+    
     public function __construct() {
         $this->date = new DateHelper; 
+        $this->parsed = [];
     }
 
-	public function parseItems($items, $lead = false){
-        //dd($items);
+	public function parse($items, $lead = false){
+           //dd($items);
           if(empty($items) && App::environment() != 'local' && request()->path() != "search"){
                 abort(404);
             }
                 $parsed = [];
-		        foreach ($items as $key => $item) {
+                foreach ($items as $key => $item) {
                     $unPublished = $item->unPublished ?? false ;
-                    $parsed[$key]['unpublished'] = $unPublished;
 
                     if($unPublished != true) {   
+                        $parsed[$key]['unpublished'] = $unPublished;
+                        $parsed[$key]['comments'] = $item->comments ?? false;
                         if(isset($item->title)){
                             $parsed[$key]['title'] = $this->formatTitle($item->title);
                         }
-                        if(isset($item->salutation)){$parsed[$key]['salutation']=$item->salutation;}
-                        if(isset($item->firstName)){$parsed[$key]['firstName']=$item->firstName;}
-                        if(isset($item->lastName)){$parsed[$key]['lastName']=$item->lastName;}
-                        if(isset($item->email)){$parsed[$key]['email']=$item->email;}
-                        if(isset($item->tagLine)){$parsed[$key]['tagLine']=$item->tagLine;}
+                        if(isset($item->salutation)){$parsed[$key]['salutation'] = $item->salutation;}
+                        if(isset($item->firstName)){$parsed[$key]['firstName'] = $item->firstName;}
+                        if(isset($item->lastName)){$parsed[$key]['lastName'] = $item->lastName;}
+                        if(isset($item->email)){$parsed[$key]['email'] = $item->email;}
+                        if(isset($item->tagLine)){$parsed[$key]['tagLine'] = $item->tagLine;}
                         if(isset($item->subTitle)){
-                        	$parsed[$key]['subtitle'] = $item->subTitle;
-                        }	
+                            $parsed[$key]['subtitle'] = $item->subTitle;
+                        }   
                         if(isset($item->slug)){$parsed[$key]['slug'] = $item->slug;}
                         if (isset($item->tags)){$parsed[$key]['tags'] = $item->tags;}
                         if(isset($item->flags)){$parsed[$key]['flags'] = $this->getFlags($item->flags);}
-                        $parsed[$key]['fullyBooked'] = false;
-                        if(isset($item->fullyBooked)){$parsed[$key]['fullyBooked'] = $item->fullyBooked;}
+                        $parsed[$key]['fullyBooked'] = $item->fullyBooked ?? false;
                         if(isset($item->contentType)){$parsed[$key]['contentType'] = $item->contentType;}
                         if(isset($item->type)){$parsed[$key]['type'] = $item->type;}
-                        if(isset($item->contrastOnHomepage)){
-                            $parsed[$key]['contrastOnHomepage'] = $item->contrastOnHomepage;
-                        } else {
-                            $parsed[$key]['contrastOnHomepage'] = false;
-                        }
-                        if(isset($item->mainNews)){
-                            $parsed[$key]['mainNews'] = $item->mainNews;
-                        } else {
-                            $parsed[$key]['mainNews'] = false;
-                        }
+                        $parsed[$key]['contrastOnHomepage'] = $item->contrastOnHomepage ?? false;
+                        $parsed[$key]['mainNews'] = $item->mainNews ?? false;
                         if(isset($item->type)){$parsed[$key]['typeColor'] = $this->setTypeColor($item->type);}
                         if(isset($item->category)){
                             if(isset($item->category->title)){$parsed[$key]['category'] = $item->category->title;}
@@ -64,7 +59,7 @@ class CloudCmsParser
                         }
                         if(isset($item->category2)){
                             $parsed[$key]['category2'] = $item->category2;
-                        }	
+                        }   
                         if(isset($item->_qname)){$parsed[$key]['_qname'] = $item->_qname;}
                         if(isset($item->_type)){$parsed[$key]['_type'] = $item->_type;}
                         if(isset($item->ebusDate)){
@@ -73,9 +68,12 @@ class CloudCmsParser
                         if(isset($item->eventDate) && isset($item->eventEndDate)){
                             $parsed[$key]['eventDates'] = $this->date->ersDate($item->eventDate, $item->eventEndDate);
                             $parsed[$key]['startDateTimestamp'] = $this->date->toTimestamp($item->eventDate);
+                            $parsed[$key]['startDate'] = $this->date->ersDate($item->eventDate);
+                            $parsed[$key]['endDate'] = $this->date->ersDate($item->eventEndDate);
                         } elseif(isset($item->eventDate) && !isset($item->eventEndDate)){
                             $parsed[$key]['eventDates'] = $this->date->ersDate($item->eventDate);
                             $parsed[$key]['startDateTimestamp'] = $this->date->toTimestamp($item->eventDate);
+                            $parsed[$key]['startDate'] = $this->date->ersDate($item->eventDate);
                         }
                         if(isset($item->eventDate)){$parsed[$key]['calendar'] = $this->date->calendar($item->eventDate);}   
                         if(isset($item->earlybirdDeadline)){$parsed[$key]['earlybirdDeadline'] = $this->date->isAlreadyPassed($item->earlybirdDeadline);}
@@ -87,8 +85,8 @@ class CloudCmsParser
                         if(isset($item->eventLocation)){$parsed[$key]['eventLocation'] = $item->eventLocation;}                
                         
                         if(isset($item->leadParagraph)){
-                        	$parsed[$key]['shortLead'] = $this->truncate(strip_tags(Markdown::parse($item->leadParagraph)));
-                        	$parsed[$key]['lead'] = Markdown::parse($item->leadParagraph);
+                            $parsed[$key]['shortLead'] = $this->truncate(strip_tags(Markdown::parse($item->leadParagraph)));
+                            $parsed[$key]['lead'] = Markdown::parse($item->leadParagraph);
                         }
 
                         if(isset($item->registerButton)){$parsed[$key]['registerButton'] = (array) $item->registerButton;}
@@ -112,44 +110,28 @@ class CloudCmsParser
                         if(isset($item->imageDescription)){$parsed[$key]['imageDescription'] = $item->imageDescription;}
                         if(isset($item->url)){$parsed[$key]['url'] = $item->url;}
                         if(isset($item->uri)){$parsed[$key]['uri'] = $item->uri;}
-                        $parsed[$key]['featuredCourse'] = false;
-                        if(isset($item->featuredCourse)){$parsed[$key]['featuredCourse'] = $item->featuredCourse;}
-                        $parsed[$key]['featuredFunding'] = false;
-                        if(isset($item->featuredFunding)){$parsed[$key]['featuredFunding'] = $item->featuredFunding;}
-                        if(isset($item->nonErsCalendarItem)){
-                            $parsed[$key]['nonErsCalendarItem'] = $item->nonErsCalendarItem;
-                        } else {
-                            $parsed[$key]['nonErsCalendarItem'] = false;
-                        }
-                        if(isset($item->ersEndorsedEvent)){
-                            $parsed[$key]['ersEndorsedEvent'] = $item->ersEndorsedEvent;
-                        } else {
-                            $parsed[$key]['ersEndorsedEvent'] = false;
-                        }
-                        if(isset($item->_statistics->{'ers:related-association'})){
-                            $parsed[$key]['hasRelatedArticles'] = $item->_statistics->{'ers:related-association'};
-                        } else {
-                            $parsed[$key]['hasRelatedArticles'] = 0;
-                        }
-                        if(isset($item->_statistics->{'ers:author-association'})){
-                            $parsed[$key]['hasAuthor'] = $item->_statistics->{'ers:author-association'};
-                        } else {
-                            $parsed[$key]['hasAuthor'] = 0;
-                        }
+                        $parsed[$key]['featuredCourse'] = $item->featuredCourse ?? false;
+                        $parsed[$key]['featuredFunding'] = $item->featuredFunding ?? false;
+                        $parsed[$key]['nonErsCalendarItem'] = $item->nonErsCalendarItem ?? false;
+                        $parsed[$key]['ersEndorsedEvent'] = $item->ersEndorsedEvent ?? false;
+                        $parsed[$key]['hasRelatedArticles'] = $item->_statistics->{'ers:related-association'} ?? 0;
+                        $parsed[$key]['hasAuthor'] = $item->_statistics->{'ers:author-association'} ?? 0;
+
+                        if(isset($item->sponsors) && !empty($item->sponsors)){$parsed[$key]['sponsors'] = $this->getSponsors($item->sponsors);}
 
                         if(!$lead){
-    	                    if(isset($item->organisers)){ $parsed[$key]['organisers'] = $item->organisers;}
-    	                    if(isset($item->faculty)){ $parsed[$key]['faculty'] = $item->faculty;}
+                            if(isset($item->organisers)){ $parsed[$key]['organisers'] = $item->organisers;}
+                            if(isset($item->faculty)){ $parsed[$key]['faculty'] = $item->faculty;}
                             if(isset($item->body)){$parsed[$key]['body'] = Markdown::parse($item->body);}
-                            $parsed[$key]['articleTwoColumns'] = false;
-                            if(isset($item->articleTwoColumns)){$parsed[$key]['articleTwoColumns'] = $item->articleTwoColumns;}
-    	                    if(isset($item->feeList)){$parsed[$key]['feeList'] = $item->feeList;}
+                            if(isset($item->popUp)){$parsed[$key]['popUp'] = Markdown::parse($item->popUp);}
+                            if(isset($item->popUpText)){$parsed[$key]['popUpText'] = $item->popUpText;}
+                            $parsed[$key]['articleTwoColumns'] = $item->articleTwoColumns ?? false;
+                            if(isset($item->feeList)){$parsed[$key]['feeList'] = $item->feeList;}
                             if(isset($item->cancellationPolicy)){$parsed[$key]['cancellationPolicy'] = Markdown::parse($item->cancellationPolicy);}
                             if(isset($item->travelInfo)){$parsed[$key]['travelInfo'] = Markdown::parse($item->travelInfo);}
                             if(isset($item->technicalInfo)){$parsed[$key]['technicalInfo'] = Markdown::parse($item->technicalInfo);}
-    	                    if(isset($item->sponsors)){$parsed[$key]['sponsors'] = $this->getSponsors($item->sponsors);}
                             if(isset($item->deadlines)){$parsed[$key]['deadlines'] = $this->getDeadlines($item->deadlines);}
-    	                    if(isset($item->venue)){
+                            if(isset($item->venue)){
                                 if(isset($item->venue)){$parsed[$key]['venue'] = $item->venue ;}
                                 if(isset($parsed[$key]['venue']->info)){$parsed[$key]['venue']->info = Markdown::parse($item->venue->info) ;}
                             }
@@ -158,7 +140,7 @@ class CloudCmsParser
                             if(isset($item->abstracts)){$parsed[$key]['abstracts'] = $this->getBursary($item->abstracts);}
                             if(isset($item->mentorship)){$parsed[$key]['mentorship'] = $this->getBursary($item->mentorship);}
                             if(isset($item->bursaryApplication)){$parsed[$key]['bursaryApplication'] = $this->getBursary($item->bursaryApplication);}
-    	            		if(isset($item->documents)){$parsed[$key]['documents'] = $this->getDocuments($item->documents);}
+                            if(isset($item->documents)){$parsed[$key]['documents'] = $this->getDocuments($item->documents);}
                             if(isset($item->programme)){
                                 $path = "path/documents/programme/";
                                 $file_title = $item->programme->title;
@@ -197,14 +179,14 @@ class CloudCmsParser
                                 }
                             }
                             if(isset($item->video)){$parsed[$key]['video'] = $this->getVideo($item->video, 400);}                   
-                    	}
+                        }
                     } 
                 }     
            //dd($parsed);
-        return $parsed; 
+        return $this->parsed = $parsed; 
 	}
 
-    public function setTypeColor($type){
+    protected function setTypeColor($type){
         if( $type == "ERS Course" || 
             $type == "ERS Online course" || 
             $type == "e-learning" || 
@@ -220,7 +202,7 @@ class CloudCmsParser
 
     }
 
-    public function getDocuments($documents){
+    protected function getDocuments($documents){
     	$files = [];
     	foreach($documents as $key => $document){
     		$files[$key]['url'] = CC::nodes()->deploymentUrl.'/static/path/documents/documents/'.$document->title;
@@ -229,7 +211,7 @@ class CloudCmsParser
     	return $files;
     }
 
-    public function getVideo($url, $width){
+    protected function getVideo($url, $width){
         $video = Embed::make($url)->parseUrl();
         if($video){
             $video->setAttribute(['width' => $width]);
@@ -239,7 +221,7 @@ class CloudCmsParser
         return $video; //should return false
     }
 
-    public function getFlags($flags){
+    protected function getFlags($flags){
         foreach ($flags as $key => $flag) {
             $parsed[$key]['text'] = $flag->text;
             $parsed[$key]['color'] = $flag->color;
@@ -249,7 +231,7 @@ class CloudCmsParser
         }
     }
 
-    public function getSponsors($sponsors){
+    protected function getSponsors($sponsors){
         unset($parsed);
         foreach ($sponsors as $key => $sponsor) {
             if(isset($sponsor->text)){$parsed[$key]['text'] = $sponsor->text;}
@@ -271,7 +253,7 @@ class CloudCmsParser
         }
     }
 
-    public function parseVenues($items){
+    protected function parseVenues($items){
         $parsed = [];
         foreach ($items as $key => $item) {
     
@@ -292,7 +274,7 @@ class CloudCmsParser
 
     }
 
-    public function getDeadlines($item){
+    protected function getDeadlines($item){
         $parsed = [];
     
             if(isset($item->applicationDeadline)){$parsed['applicationDeadline'] = $this->date->ersDate($item->applicationDeadline);}    
@@ -306,7 +288,7 @@ class CloudCmsParser
 
     }
 
-    public function getBursary($bursary){
+    protected function getBursary($bursary){
     	   $parsed = [];
 
     	   if(isset($bursary->text)){$parsed['text'] = Markdown::parse($bursary->text);}
