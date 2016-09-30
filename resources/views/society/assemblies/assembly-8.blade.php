@@ -34,7 +34,7 @@ The Assembly is comprised of the following two groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 08.01<br>
-                    Chair: {!! Html::mailto('lmolins@clinic.ub.es', 'Laureano Molins') !!}<br>
+                    Chair: Tezel Cagatay<br>
                     Secretary: Bertolaccini Luca</p>
                   </div>
                   <div class="card-action clearfix">
