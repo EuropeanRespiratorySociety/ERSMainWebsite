@@ -52,8 +52,12 @@ class FellowshipController extends Controller
 
         //$results = $CC->getContentByProperty($this->property, $this->propertyValue, -1, $pagination->skip);
         $results = $CC->getContentByProperty($this->property, $this->propertyValue, -1, false);
-        $items = $CC->parseItems($results->rows);
-        shuffle($items);
+        $items = '';
+        if(!empty($results->rows)){
+            $items = $CC->parseItems($results->rows);
+            shuffle($items);          
+        }
+
         $params['items'] =  (object) $items;
 
         return view('professional.simple-fellowships')->with($params);
@@ -94,7 +98,10 @@ class FellowshipController extends Controller
         //$params['pagination'] = $pagination;
 
         $results = $CC->getCategory($this->shortTerm);
-        $items = $CC->parseItems($results->rows);
+        $items = '';
+        if(!empty($results->rows)){
+            $items = $CC->parseItems($results->rows);           
+        }
    
         $params['fellowships'] =  (object) $items; 
         return view('professional.short-term-fellowships')->with($params);    
@@ -134,7 +141,10 @@ class FellowshipController extends Controller
         //$params['pagination'] = $pagination;
 
         $results = $CC->getCategory($this->longTerm);
-        $items = $CC->parseItems($results->rows);
+        $items = '';
+        if(!empty($results->rows)){
+            $items = $CC->parseItems($results->rows);           
+        }
    
         $params['fellowships'] =  (object) $items; 
         return view('professional.long-term-fellowships')->with($params);    
@@ -174,9 +184,13 @@ class FellowshipController extends Controller
         //$params['pagination'] = $pagination;
 
         $results = $CC->getCategory($this->industry);
-        $items = $CC->parseItems($results->rows);
-   
+        $items = '';
+        if(!empty($results->rows)){
+            $items = $CC->parseItems($results->rows);           
+        }
+
         $params['fellowships'] =  (object) $items; 
+   
         return view('professional.industry-fellowships')->with($params);    
 
     }    

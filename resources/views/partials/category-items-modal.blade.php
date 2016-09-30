@@ -28,17 +28,19 @@
             @if(isset($item['type']))
             <span class="label {{ $item['typeColor'] }}">{{ $item['type'] }}</span>
             @endif
-            @if(isset($item['flags']) && $item['flags']['color'] !== 'info')
-            <span class="label {{ 'label-'.$item['flags']['color'] }}">{{ $item['flags']['text'] }}</span>
+            @if(isset($item['flags']))
+                @if($item['flags']['color'] !== 'info')<span class="label {{ 'label-'.$item['flags']['color'] }}">{{ $item['flags']['text'] }}</span>@endif
             @endif
-            @if($item['fullyBooked'])
-            <span class="label label-danger">Fully Booked</span>
+            @if(isset($item['fullyBooked']))
+                @if($item['fullyBooked'])<span class="label label-danger">Fully Booked</span>@endif
             @endif
         </div>
             <div class="card-content">
+                @if(isset($item['title']))
                 <p class="title">{{ $item['title'] }}
                     <!--<span>Next upcomming item</span>-->
                 </p>
+                @endif
                 @if(isset($item['eventDates']))
                     <p class="date">{{ $item['eventDates'] }}</p>
                 @endif
@@ -57,7 +59,7 @@
             <a href="{{$item['registerButton']['link']}}" target="new_blank"  class="btn btn-register">register</a>
             @endif
             @if(isset($item['lead']) || isset($item['body']))
-            <a data-toggle="modal" data-target="#{{$item['slug']}}" class="btn btn-register">more</a>
+                <a data-toggle="modal" data-target="#{{$item['slug']}}" class="btn btn-register">more</a>
             @endif
             </div>
         </div>

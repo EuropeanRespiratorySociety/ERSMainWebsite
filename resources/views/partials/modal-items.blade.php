@@ -1,11 +1,13 @@
 @foreach ($items as $item)
 <!-- Start Modal -->
-    <div id="{{$item['slug']}}" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+    <div id="@if(isset($item['slug'])){{$item['slug']}}@endif" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+            @if(isset($item['title']))
             <h3 class="modal-title">{{$item['title']}}</h3>
+            @endif
             @if(isset($item['subtitle']))
             <h4 class="modal-title">
               {{$item['subtitle']}}
