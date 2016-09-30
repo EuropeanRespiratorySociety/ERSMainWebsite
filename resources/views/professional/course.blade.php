@@ -186,7 +186,9 @@
             <p><a data-toggle="modal" data-target="#md-travel_info" type="button" class="cursor_pointer">Travel Info</a></p>
             @endif
             @if(isset($course->registerButton['link']) && !$course->fullyBooked)
-              <a href="{{$course->registerButton['link']}}"" class="btn btn-primary tab-register-bt">Register</a>
+            <a href="{{$item['registerButton']['link']}}" target="new_blank"  class="pull-left btn btn-register">
+                @if(isset($item['registerButton']['text'])) {{ $item['registerButton']['text'] }} @else register @endif
+            </a>
             @endif
             @if($course->fullyBooked)
               <p>Please contact {!! Html::mailto('educaion@ersnet.org', 'education@ersnet.org') !!} to be added to the waiting list.</p>

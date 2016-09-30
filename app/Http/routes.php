@@ -122,7 +122,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('professional-development/fellowships/long-term-research-fellowships', 'FellowshipController@indexLongTerm');
     Route::get('professional-development/fellowships/long-term-research-fellowships/{slug?}', 'FellowshipController@indexLongTerm');
     Route::get('professional-development/fellowships/ers-fellowships-in-industry', 'FellowshipController@indexIndustry');
-    Route::get('professional-development/fellowships/ers-fellowships-in-industry/{slug?}', 'FellowshipController@indexIndustry');
+    Route::get('professional-development/fellowships/ers-fellowships-in-industry/{slug}', 'FellowshipController@show');
     Route::get('professional-development/fellowships', 'FellowshipController@index'); 
     Route::get('professional-development/fellowships/{slug}', 'FellowshipController@show');
     Route::get('professional-development/grants-and-sponsorships', 'GeneralController@grantsAndSponsorships');

@@ -59,7 +59,11 @@
             <a href="{{$item['registerButton']['link']}}" target="new_blank"  class="btn btn-register">register</a>
             @endif
             @if(isset($item['lead']) || isset($item['body']))
+                @if($item['contentType'] == "event_fellowship_special" && isset($item['slug']))
+                <a href="{{url('professional-development/fellowships/ers-fellowships-in-industry/'.$item['slug'])}}" target="new_blank"  class="btn btn-register">More</a>
+                @else
                 <a data-toggle="modal" data-target="#{{$item['slug']}}" class="btn btn-register">more</a>
+                @endif
             @endif
             </div>
         </div>
