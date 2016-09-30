@@ -60,7 +60,7 @@
             @endif
             @if(isset($item['lead']) || isset($item['body']))
                 @if($item['contentType'] == "event_fellowship_special" && isset($item['slug']))
-                <a href="{{url('professional-development/fellowships/ers-fellowships-in-industry/'.$item['slug'])}}" target="new_blank"  class="btn btn-register">More</a>
+                <a href="{{Request::path().'/'.$item['slug']}}" class="btn btn-register">More</a>
                 @else
                 <a data-toggle="modal" data-target="#{{$item['slug']}}" class="btn btn-register">more</a>
                 @endif
