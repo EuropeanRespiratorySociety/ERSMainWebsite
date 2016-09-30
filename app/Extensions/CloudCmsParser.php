@@ -277,12 +277,20 @@ class CloudCmsParser
     protected function getDeadlines($item){
         $parsed = [];
     
-            if(isset($item->applicationDeadline)){$parsed['applicationDeadline'] = $this->date->ersDate($item->applicationDeadline);}    
-            if(isset($item->applicationDeadline2)){$parsed['applicationDeadline2'] = $this->date->ersDate($item->applicationDeadline2);} 
-            if(isset($item->notification)){$parsed['notification'] = $item->notification;}
-            if(isset($item->notification2)){$parsed['notification2'] = $item->notification2;}
-            if(isset($item->startDate)){$parsed['startDate'] = $item->startDate;}
-            if(isset($item->startDate2)){$parsed['startDate2'] = $item->startDate2;}
+            if(isset($item->applicationDeadline)){
+                $parsed['applicationDeadline'] = $this->date->ersDate($item->applicationDeadline);
+            } else {
+                 $parsed['applicationDeadline'] = false;
+            }
+            if(isset($item->applicationDeadline2)){
+                $parsed['applicationDeadline2'] = $this->date->ersDate($item->applicationDeadline2);
+            } else {
+                $parsed['applicationDeadline2'] = false;
+            } 
+            $parsed['notification'] = $item->notification ?? false;
+            $parsed['notification2'] = $item->notification2 ?? false;
+            $parsed['startDate'] = $item->startDate ?? false;
+            $parsed['startDate2'] = $item->startDate2 ?? false;
 
             return (object) $parsed;
 

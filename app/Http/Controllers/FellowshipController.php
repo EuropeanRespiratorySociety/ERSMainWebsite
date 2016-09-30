@@ -227,6 +227,10 @@ class FellowshipController extends Controller
             $relatedItems = $CC->parseItems($related->rows);
             $params['relatedItems'] =  (object) $relatedItems;
         }
+
+        if($params['item']->category == "ERS Fellowships in Industry" ) {
+            return view('professional.industry')->with($params);
+        }
         return view('professional.fellowship')->with($params); 
     }
 
