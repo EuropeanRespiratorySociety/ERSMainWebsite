@@ -186,7 +186,7 @@
             <p><a data-toggle="modal" data-target="#md-travel_info" type="button" class="cursor_pointer">Travel Info</a></p>
             @endif
             @if(isset($course->registerButton['link']) && !$course->fullyBooked)
-            <a href="{{$course->registerButton['link']}}" target="new_blank"  class="pull-left btn btn-register">
+            <a href="{{$course->registerButton['link']}}" target="new_blank"  class="btn btn-primary tab-register-bt">
                 @if(isset($course->registerButton['text'])) {{ $course->registerButton['text'] }} @else register @endif
             </a>
             @endif
