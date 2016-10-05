@@ -13,8 +13,9 @@ class SearchController extends Controller
     public function search(Request $request){
         $CC = new CC();
         $results = $CC->search($request->input('query'));
+        
         if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
 

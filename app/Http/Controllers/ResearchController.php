@@ -23,7 +23,7 @@ class ResearchController extends Controller
         $results = $CC->getItem('research');
 
         if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
 
@@ -55,7 +55,7 @@ class ResearchController extends Controller
         $results = $CC->getItem('ers-presidential-summits');
 
         if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
 
@@ -88,7 +88,7 @@ class ResearchController extends Controller
         $category = $CC->getItem('research-seminars');
 
         if($category == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
 
@@ -132,7 +132,7 @@ class ResearchController extends Controller
         $results = $CC->getItem($slug);
 
         if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
 
@@ -167,7 +167,7 @@ class ResearchController extends Controller
         $results = $CC->getItem($slug);
 
         if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
         

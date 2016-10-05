@@ -23,7 +23,7 @@ class CalendarController extends Controller
         $results = $CC->getCategorySorted($this->calendarCategory, "eventDate", 1);
 
         if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
 
@@ -51,7 +51,7 @@ class CalendarController extends Controller
         $results = $CC->getItem($slug);
 
         if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
         

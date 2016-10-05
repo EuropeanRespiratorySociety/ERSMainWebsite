@@ -33,7 +33,7 @@ class NewsController extends Controller
 
 
         if($category == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
 
@@ -71,7 +71,7 @@ class NewsController extends Controller
         $category = $CC->getItem('the-ers-bloggers');
 
         if($category == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
 
@@ -105,7 +105,7 @@ class NewsController extends Controller
         $category = $CC->getItem('respiratory-worldwide');
 
         if($category == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
 
@@ -138,7 +138,7 @@ class NewsController extends Controller
         $category = $CC->getItem('respiratory-matters');
 
         if($category == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
 
@@ -174,7 +174,7 @@ class NewsController extends Controller
         $results = $CC->getItem($slug);
 
         if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
 
@@ -219,7 +219,7 @@ class NewsController extends Controller
         $results = $CC->getItem($slug);
 
         if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
         

@@ -23,7 +23,7 @@ class LscController extends Controller
 
 
         if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
 
@@ -62,7 +62,7 @@ class LscController extends Controller
         $results = $CC->getItem($slug);
 
         if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
 

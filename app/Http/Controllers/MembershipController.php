@@ -21,7 +21,7 @@ class MembershipController extends Controller
         $results = $CC->getItem('membership');
 
         if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
 

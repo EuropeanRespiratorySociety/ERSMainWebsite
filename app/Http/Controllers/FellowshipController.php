@@ -32,7 +32,7 @@ class FellowshipController extends Controller
         $category = $CC->getItem('fellowships');
 
         if($category == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
 
@@ -79,7 +79,7 @@ class FellowshipController extends Controller
         $category = $CC->getItem('short-term-research-training-fellowships');
 
         if($category == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
 
@@ -123,9 +123,10 @@ class FellowshipController extends Controller
         $category = $CC->getItem('long-term-research-fellowships');
 
         if($category == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
+
         $category = $CC->parseItems($category->rows);
         $params['category'] = (object) $category[0];
 
@@ -165,7 +166,7 @@ class FellowshipController extends Controller
         $category = $CC->getItem('ers-fellowships-in-industry');
 
         if($category == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
 
@@ -207,7 +208,7 @@ class FellowshipController extends Controller
         $results = $CC->getItem($slug);
 
         if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
         

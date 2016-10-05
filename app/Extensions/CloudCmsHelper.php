@@ -339,5 +339,10 @@ class CloudCmsHelper
         return $items->parsed; 
 	}
 
+    public function deleteToken(){
+        $CC = new CC;
+        $CC::unsetToken();
+    }
+
 
 }

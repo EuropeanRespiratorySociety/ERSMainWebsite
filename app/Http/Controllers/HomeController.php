@@ -30,7 +30,7 @@ class HomeController extends Controller
         $results = $CC->getContentByProperty("availableOnHomepage", "true", -1, false);
 
         if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
         
