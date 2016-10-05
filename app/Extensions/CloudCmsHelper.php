@@ -5,6 +5,7 @@ namespace App\Extensions;
 use CC;
 use Carbon\Carbon;
 use App\Extensions\DateHelper;
+use Spatie\Geocoder\GeocoderFacade as Geocoder;
 
 class CloudCmsHelper
 {
@@ -93,7 +94,7 @@ class CloudCmsHelper
             ->addParams(['sort' => '{"'.$field.'": '.$direction.'}']) 
             ->addParams(['metadata' => 'true'])
             //->addParams(['skip' => 2]) 
-            //->addParams(['limit' => 2]) 
+            ->addParams(['limit' => 100]) 
             ->addParams(['full' => 'true'])
             ->get();
         return $results;    
@@ -326,7 +327,7 @@ class CloudCmsHelper
         $address4 = $address->city ?? '';
         $address5 = $address->country ?? '';
 
-        $query = $address1 . ', ' . $addressLine2 . ', ' . $addressLine3 .' ' . $addressLine4 . ', ' . $addressLine5;
+        $query = $address1 . ', ' . $address2 . ', ' . $address3 .' ' . $address4 . ', ' . $address5;
 
         $coordinates = Geocoder::getCoordinatesForQuery($query);
         return $coordinates;

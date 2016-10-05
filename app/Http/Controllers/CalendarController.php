@@ -28,7 +28,6 @@ class CalendarController extends Controller
         }
 
         $items = $CC->parseItems($results->rows, true);
-
         $array = array_values(array_sort($items, function ($value) {
             return $value['calendar']->timestamp;
         }));

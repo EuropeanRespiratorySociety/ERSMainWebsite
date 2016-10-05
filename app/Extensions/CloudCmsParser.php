@@ -6,6 +6,7 @@ use App;
 use Embed;
 use CC;
 use App\Extensions\DateHelper;
+use App\Extensions\CloudCmsHelper;
 use Carbon\Carbon;
 use Lavary\Menu\Menu;
 use Intervention\Image\Facades\Image;
@@ -19,6 +20,7 @@ class CloudCmsParser
     public function __construct() {
         $this->date = new DateHelper; 
         $this->parsed = [];
+        $this->helper = new CloudCmsHelper;
     }
 
 	public function parse($items, $lead = false){
@@ -174,8 +176,8 @@ class CloudCmsParser
                                 $parsed[$key]['location'] = (object) $item->loc;
                             } else {
                                 if(isset($item->venue)){
-                                    $coordinates = $this->getCoordinates($item->venue);
-                                    $this->setCoordinates($item->_qname, $coordinates['lat'], $coordinates['lng'], $coordinates['accuracy']);
+                                    $coordinates = $this->helper->getCoordinates($item->venue);
+                                    $this->helper->setCoordinates($item->_qname, $coordinates['lat'], $coordinates['lng'], $coordinates['accuracy']);
                                 }
                             }
                             if(isset($item->video)){$parsed[$key]['video'] = $this->getVideo($item->video, 400);}                   
