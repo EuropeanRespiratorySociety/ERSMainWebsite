@@ -222,7 +222,7 @@ class GeneralController extends Controller
 
     public function schema(){
         $CC = new CC();
-        dd($CC->getSchema());
+        dd($CC->getSchema()->properties);
     }
 
 }

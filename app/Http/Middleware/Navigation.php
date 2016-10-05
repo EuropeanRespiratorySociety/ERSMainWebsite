@@ -63,8 +63,8 @@ class Navigation
 
             $menu->add('Congress and events','#scientific-and-educational-events');
                 $menu->congressAndEvents->add('Events calendar','congress-and-events/events-calendar');
-                $menu->congressAndEvents->add('ERS International Congress','http://erscongress.org')->link->attr(array('target' => '_blank'));
-                $menu->congressAndEvents->add('Milan 2017','congress-and-events/milan-2017');
+                $menu->congressAndEvents->add('ERS International Congress','https://erscongress.org')->link->attr(array('target' => '_blank'));
+                $menu->congressAndEvents->add('Milan 2017','https://erscongress.org')->link->attr(array('target' => '_blank'));
                 $menu->congressAndEvents->add('The Lung Science Conference','congress-and-events/the-lung-science-conference');
                     $menu->theLungScienceConference->add('Estoril, your host city','congress-and-events/the-lung-science-conference/estoril-your-host-city')->link->attr(array('style' => 'display:none'));
                     $menu->theLungScienceConference->add('Previous Conferences','http://old.ersnet.org/previous-conferences.html')

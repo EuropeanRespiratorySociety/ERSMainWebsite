@@ -48,11 +48,11 @@
           <div class="message"> {{ $item->flags['text'] }}</div>
           </div>
     @endif
-        @if(isset($item->deadlines->applicationDeadline) || isset($item->deadlines->applicationDeadline2))
+        @if($item->deadlines->applicationDeadline || $item->deadlines->applicationDeadline2)
         <p class="deadline">APPLICATION now open. Deadline: {{$item->deadlines->applicationDeadline2}}</p>
         @endif
         <div class="list-group text-left">
-          @if(isset($item->deadlines->applicationDeadline) || isset($item->deadlines->applicationDeadline2))
+          @if($item->deadlines->applicationDeadline || $item->deadlines->applicationDeadline2)
           <a href="javascript:void(0)" class="list-group-item clearfix">
             <span class="icon s7-alarm"></span>
           <p>
@@ -61,7 +61,7 @@
             </p>
           </a>
           @endif  
-          @if(isset($item->deadlines->notification) || isset($item->deadlines->notification2))
+          @if($item->deadlines->notification || $item->deadlines->notification2)
           <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix">
            <span class="icon s7-bell"></span>
            <p>
@@ -70,7 +70,7 @@
           </p>
         </a>
         @endif
-        @if(isset($item->deadlines->startDate) || isset($item->deadlines->startDate2))    
+        @if($item->deadlines->startDate || $item->deadlines->startDate2)    
         <a href="javascript:void(0)" class="list-group-item clearfix">
           <span class="icon s7-date"></span>
           <p>
