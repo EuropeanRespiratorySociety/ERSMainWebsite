@@ -31,10 +31,7 @@ class ResearchController extends Controller
         $params['item'] =  (object) $item[0]; 
 
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+            $CC->setCanonical($results->rows[0]->_qname);
         }
 
         $results = $CC->getCategory($params['item']->_qname);
@@ -63,10 +60,7 @@ class ResearchController extends Controller
         $params['item'] =  (object) $item[0]; 
 
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+            $CC->setCanonical($results->rows[0]->_qname);
         }
 
         $results = $CC->getCategory($params['item']->_qname);
@@ -96,10 +90,7 @@ class ResearchController extends Controller
         $params['category'] = (object) $category[0];
 
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($category[0]['_qname'], $payload);
+            $CC->setCanonical($category[0]['_qname']);
         }
 
         $results = $CC->getCategory($this->researchSeminars);
@@ -141,10 +132,7 @@ class ResearchController extends Controller
         $params['item'] =  (object) $item[0]; 
 
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+            $CC->setCanonical($results->rows[0]->_qname);
         }
 
         if($item[0]['hasRelatedArticles'] > 0){
@@ -176,10 +164,7 @@ class ResearchController extends Controller
         $params['item'] =  (object) $item[0]; 
 
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+            $CC->setCanonical($results->rows[0]->_qname);
         }
 
         if($item[0]['hasRelatedArticles'] > 0){

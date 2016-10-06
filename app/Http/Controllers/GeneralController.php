@@ -77,15 +77,12 @@ class GeneralController extends Controller
         $results = $CC->getCategorySorted($this->euAffairs, $field, $direction);
 
         if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
+            $CC->deleteToken();
             return redirect(request()->fullUrl());
         }
 
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+            $CC->setCanonical($results->rows[0]->_qname, 'advocacy/eu-affairs');
         }
 
         $items = $CC->parseItems($results->rows);
@@ -111,12 +108,8 @@ class GeneralController extends Controller
         $items = $CC->parseItems($results->rows);
         $params['items'] =  (object) $items; 
 
-        // == false set in purpose as CC sets the field to "false" wich is a string...
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+            $CC->setCanonical($results->rows[0]->_qname, 'advocacy/eu-projects');
         }
 
         return view('advocacy.eu-projects')->with($params);
@@ -141,10 +134,7 @@ class GeneralController extends Controller
         $params['item'] =  (object) $item[0]; 
 
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+            $CC->setCanonical($results->rows[0]->_qname, 'professional-development/grants-and-sponsorships');
         }
 
         $results = $CC->getCategory($params['item']->_qname);
@@ -172,10 +162,7 @@ class GeneralController extends Controller
         $params['item'] =  (object) $item[0]; 
 
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+            $CC->setCanonical($results->rows[0]->_qname, 'the-society/who-we-are/awards');
         }
 
         $results = $CC->getCategory($params['item']->_qname);
@@ -205,10 +192,7 @@ class GeneralController extends Controller
         $params['item'] =  (object) $item[0];
 
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+            $CC->setCanonical($results->rows[0]->_qname);
         }
 
         if($item[0]['hasRelatedArticles'] > 0){

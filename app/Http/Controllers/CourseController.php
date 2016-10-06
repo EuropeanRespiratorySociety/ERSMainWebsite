@@ -32,10 +32,7 @@ class CourseController extends Controller
         $params['item'] =  (object) $item[0]; 
 
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
-            $uri = request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+            $CC->setCanonical($results->rows[0]->_qname, 'professional-development/courses');
         }
 
         $results = $CC->getCategory($params['item']->_qname);
@@ -88,10 +85,7 @@ class CourseController extends Controller
         $params['course'] =  (object) $course[0]; 
         
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
-            $uri = request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+            $CC->setCanonical($results->rows[0]->_qname, 'professional-development/courses'.$slug);
         }
 
         if($course[0]['hasRelatedArticles'] > 0){

@@ -41,10 +41,7 @@ class NewsController extends Controller
         $params['category'] = (object) $category[0];
 
         if(!isset($item[0]->url) || !isset($item[0]->uri)){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($category[0]['_qname'], $payload);
+            $CC->setCanonical($category[0]['_qname'], 'the-society/news');
         }
 
         $toPaginate = $CC->getContentByProperty($this->property, $this->propertyValue);
@@ -79,10 +76,7 @@ class NewsController extends Controller
         $params['category'] = (object) $category[0];
 
         if(!isset($item[0]->url) || !isset($item[0]->uri)){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($category[0]['_qname'], $payload);
+            $CC->setCanonical($category[0]['_qname'], 'authors');
         }
 
         $results = $CC->getContentByProperty("_type", "ers:author", -1, false);
@@ -113,10 +107,7 @@ class NewsController extends Controller
         $params['category'] = (object) $category[0];
 
         if(!isset($item[0]->url) || !isset($item[0]->uri)){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($category[0]['_qname'], $payload);
+            $CC->setCanonical($category[0]['_qname'], 'the-society/news/respiratory-worldwide');
         }
 
         $results = $CC->getCategorySorted($this->respiratoryWorldWide, "_system.created_on", -1);
@@ -146,10 +137,7 @@ class NewsController extends Controller
         $params['category'] = (object) $category[0];
 
         if(!isset($item[0]->url) || !isset($item[0]->uri)){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($category[0]['_qname'], $payload);
+            $CC->setCanonical($category[0]['_qname'], 'the-society/news/respiratory-matters');
         }        
 
         $results = $CC->getCategorySorted($this->respiratoryMatters, "_system.created_on", -1);
@@ -184,10 +172,7 @@ class NewsController extends Controller
 
 
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+            $CC->setCanonical($results->rows[0]->_qname);
         }
 
         if($item[0]['hasRelatedArticles'] > 0){
@@ -228,10 +213,7 @@ class NewsController extends Controller
         $params['item'] =  (object) $item[0];
 
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+            $CC->setCanonical($results->rows[0]->_qname, 'authors'.$slug);
         }
 
         $items = $CC->getAuthoredArticles($params['item']->_qname);

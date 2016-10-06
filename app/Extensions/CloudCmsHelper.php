@@ -191,7 +191,14 @@ class CloudCmsHelper
     * @param json object $payload
     * @return void
     */
-    public function setCanonical($node, $payload){
+    public function setCanonical($node, $uri = null){
+        if($uri === null){
+            $uri = request()->path(); 
+        }
+        
+        $url = "https://www.ersnet.org/".$uri;
+        $payload = json_encode(['url' => $url, 'uri' => $uri]);
+        
         $result = CC::nodes()
             ->updateNode($node, $payload)
             ->addParams(['inject' => 'true'])

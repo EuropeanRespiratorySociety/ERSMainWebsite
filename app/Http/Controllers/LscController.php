@@ -32,10 +32,7 @@ class LscController extends Controller
         $params['item'] =  (object) $item[0]; 
 
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+            $CC->setCanonical($results->rows[0]->_qname);
         }
 
         if($item[0]['hasRelatedArticles'] > 0){
@@ -71,10 +68,7 @@ class LscController extends Controller
         $params['item'] =  (object) $item[0];
 
         if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+            $CC->setCanonical($results->rows[0]->_qname);
         }
 
         $related = $CC->getRelatedArticle($item[0]['_qname']);
