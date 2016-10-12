@@ -22,7 +22,7 @@
         </div>
 
         <div class="row row_event">
-            @include('partials.category-items', array('items' => $courses))
+            @include('partials.items', array('items' => $items))
         </div>
 
         

@@ -13,13 +13,7 @@ class SearchController extends Controller
     public function search(Request $request){
         $CC = new CC();
         $results = $CC->search($request->input('query'));
-        
-        if($results == "invalid_token"){
-            $CC->deleteToken();
-            return redirect(request()->fullUrl());
-        }
-
-        $items = $CC->parseItems($results->rows);
+        $items = $CC->parseItems($results['rows']);
 
         if(empty($items)){
             $params['items'] = false;
@@ -29,9 +23,18 @@ class SearchController extends Controller
         $bing = new Bing(); 
         $results =  $bing->search($request->input('query'));
 
+        //formatting the array for it to fit the model
+        foreach($results as $key => $result){
+            $results[$key]['leadParagraph'] = $result['lead'];
+            unset($results[$key]['lead']);
+        }
+
+        $bingItems = $CC->parseItems($results);
+
         $params['items'] = $items;
-        foreach($results as $result) {
-            if(!in_array($result['url'], $items)){
+        //Pushing to the items the Bing Results if they have a url
+        foreach($bingItems as $result) {
+            if(!in_array($result->url, $items)){
                 array_push($params['items'], $result);
             }
         }

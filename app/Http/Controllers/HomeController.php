@@ -17,6 +17,7 @@ class HomeController extends Controller
     public function __construct()
     {
         //$this->middleware('auth');
+        $this->CC = new CC();
     }
 
     /**
@@ -26,19 +27,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $CC = new CC();
-        $results = $CC->getContentByProperty("availableOnHomepage", "true", -1, false);
+        $results = $this->CC->getContentByProperty("availableOnHomepage", "true", -1, false);
+        $items = $this->CC->parseItems($results['rows']);
 
-        if($results == "invalid_token"){
-            $CC->deleteToken();
-            return redirect(request()->fullUrl());
-        }
-        
-        $items = $CC->parseItems($results->rows);
-        $items =  (object) $items;
-
-
-        $params['items'] =  $CC->sortHomepage($items);
+        $params['items'] =  $this->CC->sortHomepage($items);
         return response()->view('home.home', $params)->setTtl(60 * 60 * 24 * 7); //caching a week
     }
 }

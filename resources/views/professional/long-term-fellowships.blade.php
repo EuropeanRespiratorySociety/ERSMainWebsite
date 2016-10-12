@@ -2,7 +2,7 @@
 @section('meta')
         @include('partials.meta', array('meta' =>
               [
-              'url' => isset($category->url) ? $category->url : null , 
+              'url' => $category->url ? $category->url : null , 
               'title' => $category->title
               ],
               ['pagination' => isset($pagination) ? $pagination : null]
@@ -15,10 +15,10 @@
     <div class="col-md-9 light-grey-bg">
       <div class="row">
         <div class="col-md-4 medium-grey-bg left-photo-map">
-          @if(isset($category->image))
+          @if($category->image)
           <p><img src="{{ $category->image }}" class="img-rounded img-responsive"></p>
           @endif
-          @if(isset($category->video))
+          @if($category->video)
           <div class="videoWrapper">
             {!!$category->video!!} 
           </div>
@@ -29,7 +29,7 @@
 
           <div class="page-head"><h2 class="article-title">{{$category->title}}</h2></div>
 
-          @if(isset($category->body))
+          @if($category->body)
           <div class="article text-left">          
                     {!! $category->body !!}
          </div>
@@ -39,7 +39,7 @@
      </div>
     <div class="main-content">
      <div class="row fellowship-categories">
-        @include('partials.category-items-modal', array('items' => $fellowships))
+        @include('partials.category-items-modal', array('items' => $items))
      </div>
    </div>
      </div>
@@ -48,9 +48,9 @@
    <div class="col-md-3 white-bg event-items-right">
 
 
-    @if(isset($category->flags))
-          <div class="alert {{'alert-'.$category->flags['color'] }}">
-          <div class="message"> {!! $category->flags['text'] !!}</div>
+    @if($category->flags)
+          <div class="alert {{'alert-'.$category->flags->color }}">
+          <div class="message"> {!! $category->flags->text !!}</div>
           </div>
     @endif
 
@@ -86,14 +86,14 @@
 
   <p class="rules text-left">
     <!--<a href="javascript:void(0)">Application Guidelines</a> <br>-->
-    @if(isset($category->popUpText))
+    @if($category->popUpText)
       <a data-toggle="modal" data-target="#md-popUp" class="cursor_pointer">{{$category->popUpText}}</a><br>
     @endif
     <span style="font-size:16px;vertical-align: middle;" class="icon s7-mail"></span>{!! Html::mailto('fellowships@ersnet.org', ' Contact us') !!}
   </p>
 
-  @if(isset($category->registerButton['link']))
-    <a href="{{$category->registerButton['link']}}" target="_blank" class="btn btn-primary item-register-bt">{{$category->registerButton['text']}}</a>
+  @if($category->registerButton->link)
+    <a href="{{$category->registerButton->link}}" target="_blank" class="btn btn-primary item-register-bt">{{$category->registerButton->text}}</a>
   @endif  
 </div>
 
@@ -107,11 +107,11 @@
 
 </div>
 
- @include('partials.modal-items', array('items' => $fellowships))
+ @include('partials.modal-items', array('items' => $items))
 
 <!--Modal contents div-->
 <!-- FREE PopUp -->
-@if(isset($category->popUp))
+@if($category->popUp)
 <div id="md-popUp" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
   <div class="modal-dialog">
     <div class="modal-content">

@@ -12,6 +12,10 @@ class CalendarController extends Controller
 {
     protected $calendarCategory = "o:cc1c5be57719dade0371";
 
+    public function __construct() {
+        $this->CC = new CC();
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -19,19 +23,12 @@ class CalendarController extends Controller
      */
     public function index()
     {
-        $CC = new CC();
-        $results = $CC->getCategorySorted($this->calendarCategory, "eventDate", 1);
-
-        if($results == "invalid_token"){
-            $CC->deleteToken();
-            return redirect(request()->fullUrl());
-        }
-
-        $items = $CC->parseItems($results->rows, true);
+        $results = $this->CC->getCategorySorted($this->calendarCategory, "eventDate", 1);
+        $items = $this->CC->parseItems($results['rows'], true);
         $array = array_values(array_sort($items, function ($value) {
-            return $value['calendar']->timestamp;
+            return $value->calendar->timestamp;
         }));
-        $items = $CC->sortCalendar($items);
+        $items = $this->CC->sortCalendar($items);
         $params['items'] = (object) $items; 
         return view('congress-and-events.calendar')->with($params);    
 
@@ -46,17 +43,9 @@ class CalendarController extends Controller
      */
     public function show($slug)
     {
-        $CC = new CC();
-        $results = $CC->getItem($slug);
-
-        if($results == "invalid_token"){
-            $CC->deleteToken();
-            return redirect(request()->fullUrl());
-        }
-        
-        //Slug should be unique, so we should get only one item
-        $course = $CC->parseItems($results->rows);
-        $params['course'] =  (object) $course[0]; 
+        $results = $this->CC->getItem($slug);
+        $course = $CC->parseItems($results['rows']);
+        $params['item'] =  (object) $course[0]; 
         return view('professional.course')->with($params); 
     }
 

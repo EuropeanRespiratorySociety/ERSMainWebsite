@@ -16,6 +16,10 @@ class NewsController extends Controller
     protected $propertyValue = "News";
     protected $respiratoryWorldWide = "o:286ec13da09faf57b3ae";
     protected $respiratoryMatters = "o:d571c1fa5c4b8ed6d7ac";
+    
+    public function __construct() {
+        $this->CC = new CC();
+    }      
 
     /**
      * Display a listing of the resource.
@@ -27,30 +31,19 @@ class NewsController extends Controller
         $page = Input::get('page', false);
         $limit = Input::get('limit', 25);
 
-        $CC = new CC();
-        
-        $category = $CC->getItem('news');
+        $category = $this->CC->getItem('news');
+        $params['category'] = $this->CC->parseItems($category['rows'])[0];
 
-
-        if($category == "invalid_token"){
-            $CC->deleteToken();
-            return redirect(request()->fullUrl());
+        if(!$params['category']->url || !$params['category']->uri){
+            $this->CC->setCanonical($category[0]['_qname'], 'the-society/news');
         }
 
-        $category = $CC->parseItems($category->rows);
-        $params['category'] = (object) $category[0];
-
-        if(!isset($item[0]->url) || !isset($item[0]->uri)){
-            $CC->setCanonical($category[0]['_qname'], 'the-society/news');
-        }
-
-        $toPaginate = $CC->getContentByProperty($this->property, $this->propertyValue);
-        $pagination = $CC->paginate($toPaginate, $page, $limit);
+        $toPaginate = $this->CC->getContentByProperty($this->property, $this->propertyValue);
+        $pagination = $this->CC->paginate($toPaginate, $page, $limit);
         $params['pagination'] = $pagination;
 
-        $results = $CC->getContentByProperty($this->property, $this->propertyValue, -1, $pagination->skip);
-        $items = $CC->parseItems($results->rows);
-        $params['items'] =  (object) $items;
+        $results = $this->CC->getContentByProperty($this->property, $this->propertyValue, -1, $pagination->skip);
+        $params['items'] = $this->CC->parseItems($results['rows']);
 
         return response()->view('articles.news', $params)->setTtl(60 * 60 * 24 * 7); //caching a week
 
@@ -63,24 +56,16 @@ class NewsController extends Controller
      */
     public function authors()
     { 
-        $CC = new CC();
-
-        $category = $CC->getItem('the-ers-bloggers');
-
-        if($category == "invalid_token"){
-            $CC->deleteToken();
-            return redirect(request()->fullUrl());
-        }
-
-        $category = $CC->parseItems($category->rows);
+        $category = $this->CC->getItem('the-ers-bloggers');
+        $category = $this->CC->parseItems($category['rows']);
         $params['category'] = (object) $category[0];
 
-        if(!isset($item[0]->url) || !isset($item[0]->uri)){
-            $CC->setCanonical($category[0]['_qname'], 'authors');
+        if(!$category[0]->url || !$category[0]->uri){
+            $this->CC->setCanonical($category[0]->_qname, 'authors');
         }
 
-        $results = $CC->getContentByProperty("_type", "ers:author", -1, false);
-        $items = $CC->parseItems($results->rows);
+        $results = $this->CC->getContentByProperty("_type", "ers:author", -1, false);
+        $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  (object) $items;
 
         return view('articles.authors')->with($params);
@@ -94,24 +79,16 @@ class NewsController extends Controller
      */
     public function indexRespiratoryWorldWide()
     {
-        $CC = new CC();
-
-        $category = $CC->getItem('respiratory-worldwide');
-
-        if($category == "invalid_token"){
-            $CC->deleteToken();
-            return redirect(request()->fullUrl());
-        }
-
-        $category = $CC->parseItems($category->rows);
+        $category = $this->CC->getItem('respiratory-worldwide');
+        $category = $this->CC->parseItems($category['rows']);
         $params['category'] = (object) $category[0];
 
-        if(!isset($item[0]->url) || !isset($item[0]->uri)){
-            $CC->setCanonical($category[0]['_qname'], 'the-society/news/respiratory-worldwide');
+        if(!$category[0]->url || !$category[0]->uri){
+            $this->CC->setCanonical($category[0]->_qname, 'the-society/news/respiratory-worldwide');
         }
 
-        $results = $CC->getCategorySorted($this->respiratoryWorldWide, "_system.created_on", -1);
-        $items = $CC->parseItems($results->rows);
+        $results = $this->CC->getCategorySorted($this->respiratoryWorldWide, "_system.created_on", -1);
+        $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  (object) $items; 
    
         return view('articles.news')->with($params); 
@@ -125,23 +102,16 @@ class NewsController extends Controller
      */
     public function indexRespiratoryMatters()
     {
-        $CC = new CC();
-        $category = $CC->getItem('respiratory-matters');
-
-        if($category == "invalid_token"){
-            $CC->deleteToken();
-            return redirect(request()->fullUrl());
-        }
-
-        $category = $CC->parseItems($category->rows);
+        $category = $this->CC->getItem('respiratory-matters');
+        $category = $this->CC->parseItems($category['rows']);
         $params['category'] = (object) $category[0];
 
-        if(!isset($item[0]->url) || !isset($item[0]->uri)){
-            $CC->setCanonical($category[0]['_qname'], 'the-society/news/respiratory-matters');
+        if(!$category[0]->url || !$category[0]->uri){
+            $this->CC->setCanonical($category[0]->_qname, 'the-society/news/respiratory-matters');
         }        
 
-        $results = $CC->getCategorySorted($this->respiratoryMatters, "_system.created_on", -1);
-        $items = $CC->parseItems($results->rows);
+        $results = $this->CC->getCategorySorted($this->respiratoryMatters, "_system.created_on", -1);
+        $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  (object) $items; 
    
         return view('articles.news')->with($params); 
@@ -158,33 +128,26 @@ class NewsController extends Controller
      */
     public function show($slug)
     {
-        $CC = new CC();
-        $results = $CC->getItem($slug);
-
-        if($results == "invalid_token"){
-            $CC->deleteToken();
-            return redirect(request()->fullUrl());
-        }
-
-        //Slug should be unique, so we should get only one item
-        $item = $CC->parseItems($results->rows);
+        $results = $this->CC->getItem($slug);
+        $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0];
 
 
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
-            $CC->setCanonical($results->rows[0]->_qname);
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
         }
 
-        if($item[0]['hasRelatedArticles'] > 0){
-            $related = $CC->getRelatedArticle($item[0]['_qname']);
-            $relatedItems = $CC->parseItems($related->rows);
+        if($item[0]->hasRelatedArticles > 0){
+            $related = $this->CC->getRelatedArticle($item[0]->_qname);
+            $relatedItems = $this->CC->parseItems($related['rows']);
             $params['relatedItems'] =  (object) $relatedItems;
         }
 
-        if($item[0]['hasAuthor'] > 0){
-            $author = $CC->getAuthor($item[0]['_qname']);
-            if(!empty($author->rows)){      
-                $authorItem = $CC->parseItems($author->rows);
+        if($item[0]->hasAuthor > 0){
+            $author = $this->CC->getAuthor($item[0]->_qname);
+
+            if(!empty($author['rows'])){      
+                $authorItem = $this->CC->parseItems($author['rows']);
                 $params['author'] = (object) $authorItem[0];
             }
         }
@@ -200,25 +163,17 @@ class NewsController extends Controller
      */
     public function showAuthor($slug)
     {
-        $CC = new CC();
-        $results = $CC->getItem($slug);
-
-        if($results == "invalid_token"){
-            $CC->deleteToken();
-            return redirect(request()->fullUrl());
-        }
-        
-        //Slug should be unique, so we should get only one item
-        $item = $CC->parseItems($results->rows);
+        $results = $this->CC->getItem($slug);
+        $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0];
 
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
-            $CC->setCanonical($results->rows[0]->_qname, 'authors'.$slug);
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname, 'authors'.$slug);
         }
 
-        $items = $CC->getAuthoredArticles($params['item']->_qname);
-        if(!empty($items->rows)){
-            $authoredItems = $CC->parseItems($items->rows);  
+        $items = $this->CC->getAuthoredArticles($params['item']->_qname);
+        if(!empty($items['rows'])){
+            $authoredItems = $this->CC->parseItems($items['rows']);  
             $params['items'] = (object) $authoredItems;
         }
 

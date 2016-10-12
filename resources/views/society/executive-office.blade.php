@@ -34,7 +34,6 @@
             <img src="../images/people/executive-office/wbill.jpg" class="img-circle">
             <p class="photo_caption"><strong>{!! Html::mailto('werner.bill@ersnet.org', 'Werner Bill') !!}</strong>
             Executive Director,<br>
-            Director of Finance and Administration<br>
             T +41 21 213 01 20
             </p>
           </div>

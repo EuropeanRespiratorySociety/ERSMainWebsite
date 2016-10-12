@@ -14,19 +14,19 @@
 
 <div class="ers-content ers-courses light-grey-bg">
             <div class="main-content">
-                @if(isset($category->title))
+                @if($category->title)
                 <div class="page-head">
                     <h2 class="">{{$category->title}}</h2>
                 </div>
                 @endif
-                @if(isset($category->body))
+                @if($category->body)
                 <div class="col-md-9 center-block lead">
                     {!!$category->body!!}
                 </div>
                 @endif
            
                 <div class="row row_event rel">
-                    @include('partials.news-items',array('items' => $items, 'class' => 'col-md-4'))
+                    @include('partials.items',array('items' => $items, 'class' => 'col-md-4'))
                 </div>
                 @if(isset($pagination))
                 <div class="row">

@@ -25,7 +25,7 @@
                 </div>            
 
                 <div class="row row_event rel">
-                    @include('partials.fellowships-items',array('items' => $items, 'class' => 'col-md-3'))
+                    @include('partials.items',array('items' => $items, 'class' => 'col-md-3'))
                 </div>
             </div> 
 </div>

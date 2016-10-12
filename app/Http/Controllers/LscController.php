@@ -11,6 +11,10 @@ use App\Extensions\CloudCmsHelper as CC;
 class LscController extends Controller
 {
 
+    public function __construct() {
+        $this->CC = new CC();
+    }      
+
     /**
      * Display a listing of the resource.
      *
@@ -18,34 +22,23 @@ class LscController extends Controller
      */
     public function index()
     {
-        $CC = new CC();
-        $results = $CC->getItem('mechanistic-overlap-between-chronic-lung-injury-and-cancer');
+        $results = $this->CC->getItem('mechanistic-overlap-between-chronic-lung-injury-and-cancer');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] = $item[0]; 
 
-
-        if($results == "invalid_token"){
-            $CC->deleteToken();
-            return redirect(request()->fullUrl());
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
         }
 
-        //Slug should be unique, so we should get only one item
-        $item = $CC->parseItems($results->rows);
-        $params['item'] =  (object) $item[0]; 
-
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
-            $CC->setCanonical($results->rows[0]->_qname);
-        }
-
-        if($item[0]['hasRelatedArticles'] > 0){
-            $related = $CC->getRelatedArticle($item[0]['_qname']);
-            $relatedItems = $CC->parseItems($related->rows);
+        if($item[0]->hasRelatedArticles > 0){
+            $related = $this->CC->getRelatedArticle($item[0]->_qname);
+            $relatedItems = $this->CC->parseItems($related['rows']);
             $params['relatedItems'] =  (object) $relatedItems;
         }
         
         return view('congress-and-events.lsc')->with($params);    
 
     }
-
-
 
     /**
      * Display the specified resource.
@@ -55,25 +48,19 @@ class LscController extends Controller
      */
     public function show($slug)
     {
-        $CC = new CC();
-        $results = $CC->getItem($slug);
-
-        if($results == "invalid_token"){
-            $CC->deleteToken();
-            return redirect(request()->fullUrl());
-        }
-
-        //Slug should be unique, so we should get only one item
-        $item = $CC->parseItems($results->rows);
+        $results = $this->CC->getItem($slug);
+        $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0];
 
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
-            $CC->setCanonical($results->rows[0]->_qname);
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
         }
+        if($item[0]->hasRelatedArticles > 0){
+            $related = $this->CC->getRelatedArticle($item[0]->_qname);
+            $relatedItems = $this->CC->parseItems($related['rows']);
+            $params['relatedItems'] =  (object) $relatedItems; 
+        }    
 
-        $related = $CC->getRelatedArticle($item[0]['_qname']);
-        $relatedItems = $CC->parseItems($related->rows);
-        $params['relatedItems'] =  (object) $relatedItems; 
         return view('articles.item')->with($params); 
     }
 

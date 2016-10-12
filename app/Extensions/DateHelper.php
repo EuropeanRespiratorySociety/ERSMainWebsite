@@ -49,24 +49,28 @@ class DateHelper
     *@param string $end
     *@return string 
     */
-    public function ersDate($start, $end = null)
+    public function ersDate($start, $end = false)
     {
-        $startDate = new \DateTime($start);
-        $start = Carbon::instance($startDate);
+        if($start !== false){
+            $startDate = new \DateTime($start);
+            $start = Carbon::instance($startDate);            
 
-        if($end !== null){
-        	$endDate = new \DateTime($end);   
-        	$end = Carbon::instance($endDate);
+            if($end !== false){
+            	$endDate = new \DateTime($end);   
+            	$end = Carbon::instance($endDate);
 
-            if($start->format('F') != $end->format('F')) {
-                return $start->day.' '.$start->format('F').' - '.$end->day.' '.$end->format('F').', '.$end->year;    
+                if($start->format('F') != $end->format('F')) {
+                    return $start->day.' '.$start->format('F').' - '.$end->day.' '.$end->format('F').', '.$end->year;    
+                }
+                if($start->format('F') == $end->format('F')) {
+                    return $start->day.'-'.$end->day.' '.$end->format('F').', '.$end->year; 
+                }
             }
-            if($start->format('F') == $end->format('F')) {
-                return $start->day.'-'.$end->day.' '.$end->format('F').', '.$end->year; 
-            }
-        }
 
-        return $start->day.' '.$start->format('F').', '.$start->year;     
+            return $start->day.' '.$start->format('F').', '.$start->year;  
+        }  
+
+        return false; 
     }
 
     public function toTimestamp($date){

@@ -35,7 +35,7 @@ class CloudCmsHelper
                     ->fullSearch($payload)
                     ->addParams(['full' => 'true'])  
                     ->get();
-
+    $results = $this->validateResults($results);   
     return $results;  
     }
 
@@ -44,17 +44,38 @@ class CloudCmsHelper
             ->getSchema('ers:article')
             ->addParams(['full' => 'true'])
             ->get();
-
+        $results = $this->validateResults($results);   
         return $results;    
     }
 
-    public function getCategory($catnode){
+    /**
+    * Get the model from CloudCMS or the locally saved version
+    *
+    */ 
+    public function setModel(){
+        CC::setModel('ers:article');
+    }
+
+    /**
+    * Delete the model from CloudCMS stored locally
+    *
+    */ 
+    public function unsetModel(){
+        CC::unsetModel();
+    }
+
+    /**
+    * Get all items belonging to a category
+    * @param string $_qname
+    * @return array
+    */
+    public function getCategory($_qname){
         $results = CC::nodes()
-            ->listRelatives($catnode)
+            ->listRelatives($_qname)
             ->addParams(['type' => 'ers:category-association'])
             ->addParams(['full' => 'true'])
             ->get();
-
+        $results = $this->validateResults($results);      
         return $results;    
     }
 
@@ -64,7 +85,7 @@ class CloudCmsHelper
             ->addParams(['type' => 'ers:author-association'])
             ->addParams(['full' => 'true'])
             ->get();
-
+        $results = $this->validateResults($results);   
         return $results;    
     }
 
@@ -74,6 +95,7 @@ class CloudCmsHelper
             ->addParams(['type' => 'ers:related-association']) 
             ->addParams(['full' => 'true'])
             ->get();
+        $results = $this->validateResults($results);       
         return $results;    
     }
 
@@ -83,7 +105,7 @@ class CloudCmsHelper
             ->addParams(['type' => 'ers:author-association']) 
             ->addParams(['full' => 'true'])
             ->get();
-
+        $results = $this->validateResults($results);   
         return $results;    
     }
 
@@ -97,6 +119,7 @@ class CloudCmsHelper
             ->addParams(['limit' => 100]) 
             ->addParams(['full' => 'true'])
             ->get();
+        $results = $this->validateResults($results);       
         return $results;    
     }
 
@@ -106,8 +129,9 @@ class CloudCmsHelper
                     ->query($query)
                     ->addParams(['full' => 'true'])
                     ->addParams(['metadata' => 'true'])   
-                    ->get();    
+                    ->get(); 
 
+        $result = $this->validateResults($result);               
         return $result;            
 	}
 
@@ -123,6 +147,7 @@ class CloudCmsHelper
                         ->query($query)
                         ->addParams(['metadata' => 'true'])
                         ->get();
+            $results = $this->validateResults($results);               
             return $results; 
         } 
         if($skip === false){
@@ -132,6 +157,7 @@ class CloudCmsHelper
                         ->addParams(['metadata' => 'true'])
                         ->addParams(['sort' => '{"_system.created_on.ms": '.$sort.'}']) 
                         ->get();
+            $results = $this->validateResults($results);                          
             return $results; 
         } 
         $results = CC::nodes()
@@ -141,12 +167,13 @@ class CloudCmsHelper
                         ->addParams(['sort' => '{"_system.created_on.ms": '.$sort.'}']) 
                         ->addParams(['skip' => $skip]) 
                         ->get();
+        $results = $this->validateResults($results);                          
         return $results; 
 
     }
 
     public function paginate($results, $page, $limit = 25){
-        $totalItems = $results->total_rows;
+        $totalItems = $results['total_rows'];
 
         $maxNumberOfPages = 1;
         if($limit){
@@ -265,8 +292,8 @@ class CloudCmsHelper
                 $fundingCounter++;
             }
 
-            if(isset($item->category2) && $calendarCounter <= 5 && !$nonERS){
-                if($cal->isCalendar($item->category2) || $item->category == "Events Calendar"){
+            if($item->category2 && $calendarCounter <= 5 && !$nonERS){
+                if($cal->isCalendar($item->category2) || $item->category->title == "Events Calendar"){
                     if(isset($sorted['firstEvent'])){
                       $sorted['calendar'][$key] = $item;  
                     }
@@ -289,7 +316,7 @@ class CloudCmsHelper
                 $articleCounter++;
             }
         }
-            return $sorted;
+        return $sorted;
     }
 
 
@@ -301,8 +328,8 @@ class CloudCmsHelper
     public function sortCalendar($items){
         $carbon = new Carbon();
         foreach($items as $key => $value){ 
-            if($value['calendar']->year >= $carbon->year){
-                    $sorted[$value['calendar']->year][$value['calendar']->month][$key] = $value; 
+            if($value->calendar->year >= $carbon->year){
+                    $sorted[$value->calendar->year][$value->calendar->month][$key] = $value; 
             }
         }
         ksort($sorted);
@@ -311,14 +338,13 @@ class CloudCmsHelper
 
     /**
     * Sort event items based on the start date timestamp
-    *@param array $items
+    *@param object $items
     *@return object
     */
     public function sortItems($items){
         usort($items, function($a, $b){
-            return $a['startDateTimestamp'] <=> $b['startDateTimestamp'];
-        });
-        
+            return $a->startDateTimestamp <=> $b->startDateTimestamp;
+        }); 
         return (object) $items;
     }
 
@@ -330,11 +356,12 @@ class CloudCmsHelper
     public function getCoordinates($address){
         $address1 = $address->streetAddress ?? '';
         $address2 = $address->streetAddress2 ?? '';
-        $address3 = $address->postalCode ?? '';
-        $address4 = $address->city ?? '';
-        $address5 = $address->country ?? '';
+        $address3 = $address->streetAddress3 ?? '';
+        $address4 = $address->postalCode ?? '';
+        $address5 = $address->city ?? '';
+        $address6 = $address->country ?? '';
 
-        $query = $address1 . ', ' . $address2 . ', ' . $address3 .' ' . $address4 . ', ' . $address5;
+        $query = $address1 . ', ' . $address2 . ' ' . $address3 .' ' . $address4 . ', ' . $address5 . ', ' . $address6;
 
         $coordinates = Geocoder::getCoordinatesForQuery($query);
         return $coordinates;
@@ -346,6 +373,21 @@ class CloudCmsHelper
         $items->parse($data, $lead);
         return $items->parsed; 
 	}
+
+    /**
+    * Validates the results, if token is not valid, forces a refresh of the request
+    * @return mixed $results
+    */
+    public function validateResults($results){
+        if($results != "invalid_token"){
+            return $results;
+        }
+        $this->deleteToken();
+        //Using Php version of redirect as Laravel's does not work :(
+        //redirect(request()->fullUrl());
+        die(header("location: " . request()->fullUrl()));
+        
+    }
 
     public function deleteToken(){
         $CC = new CC;

@@ -37,7 +37,7 @@
                 </div>
             </div>
         </div>
-        @include('partials.category-items',array('items' => $items, 'class' => 'col-md-3'))
+        @include('partials.items',array('items' => $items, 'class' => 'col-md-3'))
     </div>
 </div>    
 </div>

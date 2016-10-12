@@ -1,12 +1,14 @@
 @extends('template')
 @section('meta')
-        @include('partials.meta', array('meta' => [
+        @include('partials.meta', array('meta' =>
+              [
               'url' => isset($item->url) ? $item->url : null , 
               'title' => $item->title
-              ]
-              , ['pagination' => isset($pagination) ? $pagination : null]
+              ],
+              ['pagination' => isset($pagination) ? $pagination : null]
               )) 
 @stop()
+
 @section('content')
 <div class="ers-content article-items">
   <div class="row">
@@ -16,31 +18,31 @@
     <div class="col-md-9 lighter-grey-bg article-text">
       <div class="header">
         <div class="clearfix notification">
-          @if(isset($item->flags))
-            <p style="margin-top:10px;padding: 0 10px;" class="pull-right alert {{'alert-'.$item->flags['color'] }}">{{ $item->flags['text'] }}</p>
+          @if($item->flags)
+            <p style="margin-top:10px;padding: 0 10px;" class="pull-right alert {{'alert-'.$item->flags->color }}">{{ $item->flags->text }}</p>
           @endif 
         </div>
       </div>
       <div class="page-head">
         <h2 class="">{{$item->title}}</h2>
-        <h4 class="">@if(isset($item->subtitle)){{$item->subtitle}}@endif</h4>
+        <h4 class="">@if($item->subTitle){{$item->subTitle}}@endif</h4>
         @if(isset($author))
         <h4 calss="author">
           <a href="authors/{{$author->slug}}">
-            @if(isset($author->image))
-              <img src="{{$author->image}}" alt="@if(isset($author->imageDescription)){{$author->imageDescription}}@endif" class="img-circle">
+            @if($author->image)
+              <img src="{{$author->image}}" alt="@if($author->imageDescription)){{$author->imageDescription}}@endif" class="img-circle">
             @endif
-            {{$author->title}}
+           {{$author->title}}
           </a>
         </h4>
         @endif
       </div>
       <div class="article text-left @if($item->articleTwoColumns) two-columns @endif">
-                @if(isset($item->createdOn) && isset($item->type))
+                @if($item->createdOn && $item->type)
                     @if($item->type == "News")<h4 class="date">{{ $item->createdOn }}</h4>@endif
                 @endif
-        @if(isset($item->lead)){!!$item->lead!!}@endif
-        @if(isset($item->body)){!!$item->body!!}@endif
+        @if($item->lead){!!$item->lead!!}@endif
+        @if($item->body){!!$item->body!!}@endif
       </div>
       @if($item->comments == true)
       <hr>
@@ -53,25 +55,25 @@
     <div class="col-md-3 white-bg right-photo">
       <div class="right-photo-inner">
 
-      @if(isset($item->image))
+      @if($item->image)
       <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
 
       @endif
-      @if(isset($item->sponsors))
-         @if(isset($item->image))
+      @if($item->sponsors)
+         @if($item->image)
           <hr>
          @endif
-        @if(isset($item->sponsors['image']))
-          <p><img src="{{ $item->sponsors['image'] }}" class="img-rounded" style="width:200px;"></p>
+        @if($item->sponsors->image)
+            <p><img src="{{ $item->sponsors->image }}" class="img-rounded" style="width:200px;"></p>
         @endif  
-        @if(isset($item->sponsors['text']))
-          <h4>{{$item->sponsors['text']}}</h4>
+        @if($item->sponsors->text)
+          <h4>{{$item->sponsors->text}}</h4>
         @endif
       @endif
-      @if(isset($item->location->lat)&&isset($item->location->long))
+      @if($item->loc->lat && $item->loc->long)
           <div id="map"></div>
       @endif
-      @if(isset($item->video))
+      @if($item->video))
         <div class="videoWrapper">
           {!!$item->video!!} 
         </div>
@@ -93,30 +95,5 @@
 @stop()  
 
 @section('scripts')
-  @if(isset($item->location->lat)&&isset($item->location->long))
-    <script>
-    function initMap() {
-      function initialize(){
-        var myLatLng ={ lat: {{$item->location->lat}}, lng: {{$item->location->long}} };
-
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 15,
-          center: myLatLng,
-          disableDefaultUI: true,
-          fullscreenControl: true
-        });
-
-        var marker = new google.maps.Marker({
-        map: map,  
-        position: myLatLng
-        });
-      }
-      google.maps.event.addDomListener(window, "load", initialize);
-      }
-
-
-    </script> 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-tI78_Glb_dewK0yre49LLKgCyBZuj5c&callback=initMap" async defer></script>  
-    @endif
-    
+  @include('elements.map.script', array('item' => $item))  
 @stop()

@@ -2,7 +2,7 @@
 @section('meta')
         @include('partials.meta', array('meta' =>
               [
-              'url' => isset($category->url) ? $category->url : null , 
+              'url' => $category->url ? $category->url : null , 
               'title' => $category->title
               ],
               ['pagination' => isset($pagination) ? $pagination : null]
@@ -15,10 +15,10 @@
     <div class="col-md-9 light-grey-bg">
       <div class="row">
         <div class="col-md-4 medium-grey-bg left-photo-map">
-          @if(isset($category->image))
+          @if($category->image)
           <p><img src="{{ $category->image }}" class="img-rounded img-responsive"></p>
           @endif
-          @if(isset($category->video))
+          @if($category->video)
           <div class="videoWrapper">
             {!!$category->video!!} 
           </div>
@@ -29,7 +29,7 @@
 
           <div class="page-head"><h2 class="article-title">{{$category->title}}</h2></div>
 
-          @if(isset($category->body))
+          @if($category->body)
           <div class="article text-left">          
                     {!! $category->body !!}
          </div>
@@ -39,15 +39,15 @@
      </div>
      <div class="main-content">
        <div class="row fellowship-categories">
-          @include('partials.category-items', array('items' => $items))
+          @include('partials.items', array('items' => $items))
        </div>
      </div>
    </div>
   <!-- Beginning Right Side-bar -->
    <div class="col-md-3 white-bg event-items-right">
-       @if(isset($category->flags))
-          <div class="alert {{'alert-'.$category->flags['color'] }}">
-          <div class="message"> {{ $category->flags['text'] }}</div>
+       @if($category->flags->text)
+          <div class="alert {{'alert-'.$category->flags->color }}">
+          <div class="message"> {{ $category->flags->text }}</div>
           </div>
     @endif
     <div class="list-group text-left">
