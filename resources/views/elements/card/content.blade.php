@@ -18,7 +18,7 @@
     <p class="place"><span class="icon s7-map-marker"></span> {{ $item->eventLocation }}</p>
     @endif
     @if($item->eventDates)
-        <p class="date"><b><span class="icon s7-date"></span> {{ $item->eventDates }}</b></p>
+        <p class="date"><span class="icon s7-date"></span> {{ $item->eventDates }}</p>
     @endif
     @if($item->lead)
     <div class="lead-card">{!! $item->lead !!}</div>
