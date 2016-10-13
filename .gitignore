@@ -1,5 +1,6 @@
 /vendor
 /storage/token
+/storage/cloudcms
 /storage/token-dev
 /storage/httpcache
 /Http/Contollers/Blog.php
