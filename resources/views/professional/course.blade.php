@@ -185,7 +185,7 @@
                     <span class="badge">
                       {{ $item->feeList->industry ? '&euro;' : ''}}
                       {{ $item->feeList->industry or "-"}}
-                    </span> Industry
+                    </span> Industry <br>(ERS Members & non-Members)
                   </a>
                 @endif  
                 </div>
