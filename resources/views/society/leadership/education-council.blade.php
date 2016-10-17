@@ -14,17 +14,23 @@
 		            Education Council Chair <br>
 		            <a href="/about-us/leadership/education-council.raw?task=callelement&amp;item_id=417&amp;element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&amp;method=download" title="Download COI">Download COI</a>
 		            </p>
+	        	</div>	
+	        	<div class="col-md-4 xs-mb-15">
+		            <img src="../images/people/leadership/ernst_eber.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('ernst.eber@medunigraz.at', 'Ernst Eber') !!}</strong>
+		            Curriculum Development Director<br>
+		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="../images/course/Nicolino_Ambrosino.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('nico.ambrosino@gmail.com ', 'Nicolino Ambrosino') !!}</strong>
-		            External Activities Director <br>
+		             Educational Programmes Director <br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/Gilbert_Massard.png" class="img-circle">
-		            <p class="photo_caption"><strong>Gilbert Massard</strong>
-		            External Activities Director Elect<br>
+		            <p class="photo_caption"><strong>{!! Html::mailto('gilbert.massard@chru-strasbourg.fr', 'Gilbert Massard') !!}</strong>
+		             Educational Programmes Director Elect<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
@@ -36,13 +42,13 @@
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/ernst_eber.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('ernst.eber@medunigraz.at', 'Ernst Eber') !!}</strong>
-		            HERMES Director<br>
+		            Curriculum Development Director<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/ildiko_horvath.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('kiss.horvath1@t-online.hu', 'Ildiko Horvath') !!}</strong>
-		            Assessments Director-Elect<br>
+		            Assessments Director<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
