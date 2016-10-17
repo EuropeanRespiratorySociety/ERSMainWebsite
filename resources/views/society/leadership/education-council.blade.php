@@ -16,27 +16,33 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://bootstrap.ersnet.org/images/avatar.png" class="img-circle">
-		            <p class="photo_caption"><strong>Gilbert Massard</strong>
-		            Educational Programmes Director <br>
+		            <img src="../images/course/Nicolino_Ambrosino.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('nico.ambrosino@gmail.com ', 'Nicolino Ambrosino') !!}</strong>
+		            External Activities Director <br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://bootstrap.ersnet.org/images/avatar.png" class="img-circle">
+		            <img src="../images/people/leadership/Gilbert_Massard.png" class="img-circle">
 		            <p class="photo_caption"><strong>Gilbert Massard</strong>
-		            e-Learning Director <br>
+		            External Activities Director Elect<br>
+		            </p>
+	        	</div>
+	        	<div class="col-md-4 xs-mb-15">
+		            <img src="../images/people/leadership/frans_de_jongh.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('f.h.dejongh@amc.uva.nl', 'Frans de Jongh') !!}</strong>
+		            Learning Resources Director <br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/ernst_eber.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('ernst.eber@medunigraz.at', 'Ernst Eber') !!}</strong>
-		            Curriculum Development Director<br>
+		            HERMES Director<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/ildiko_horvath.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('kiss.horvath1@t-online.hu', 'Ildiko Horvath') !!}</strong>
-		            Assessments Director<br>
+		            Assessments Director-Elect<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
