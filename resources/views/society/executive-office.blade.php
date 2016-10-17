@@ -505,7 +505,7 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('Sarah.Masefield@europeanlung.org', 'Sarah Masefield') !!}</strong>
+          <p class="photo_caption"><strong>{!! Html::mailto('courtney.coleman@europeanlung.org', 'Courtney Coleman') !!}</strong>
             Patient Involvement and Engagement<br>
             T +44 114 267 2875<br>
             </p>
