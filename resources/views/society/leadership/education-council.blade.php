@@ -72,7 +72,7 @@
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/Agnes_Boots.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('a.boots@maastrichtuniversity.nl', 'Agnes Boots') !!}</strong>
-		            Junior Member Representative <br>
+		            Early Career Representative <br>
 		            </p>
 	        	</div>
 
