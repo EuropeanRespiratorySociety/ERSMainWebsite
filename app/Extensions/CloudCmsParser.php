@@ -182,7 +182,7 @@ class CloudCmsParser
                     $item->typeColor = $item->type ? $this->setTypeColor($item->type) : false;
                     $item->createdOn = isset($item->_system->created_on->timestamp) ? $this->date->ersDate($item->_system->created_on->timestamp) : false;
                     $item->calendar = $item->eventDate ? $this->date->calendar($item->eventDate) : false;
-                    $item->ms = isset($item->_system->created_on->ms) ? $item->_system->created_on->ms : false;     
+                    $item->ms = $item->_system->created_on->ms ?? false;     
                     $item->shortLead = $item->leadParagraph ? $this->truncate(strip_tags(Markdown::parse($item->leadParagraph))) : false;
                     $item->hasRelatedArticles = $item->_statistics->{'ers:related-association'} ?? 0;
                     $item->hasAuthor = $item->_statistics->{'ers:author-association'} ?? 0;
@@ -278,7 +278,7 @@ class CloudCmsParser
 
     }
 
-    public function truncate($string, $length=80, $append="&hellip;"){
+    public function truncate($string, $length = 80, $append="&hellip;"){
     	$string = trim($string);
 
     	if(strlen($string) > $length) {

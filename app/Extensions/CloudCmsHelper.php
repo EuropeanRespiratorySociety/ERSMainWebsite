@@ -5,6 +5,7 @@ namespace App\Extensions;
 use CC;
 use Carbon\Carbon;
 use App\Extensions\DateHelper;
+use App\Extensions\CloudCmsParser;
 use Spatie\Geocoder\GeocoderFacade as Geocoder;
 
 class CloudCmsHelper

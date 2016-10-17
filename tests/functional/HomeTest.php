@@ -6,12 +6,8 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class HomeTest extends TestCase
 {
-    /**
-     * Test the latest news.
-     *
-     * @return void
-     */
-    public function testLatestNews()
+    /** @test */
+    public function displays_latest_news()
     {
         $this->visit('/')
              ->see('Latest News')
@@ -20,12 +16,8 @@ class HomeTest extends TestCase
              ->seePageIs('the-society/news');
     }
 
-    /**
-     * Test the Calendar.
-     *
-     * @return void
-     */
-    public function testCalendar()
+    /** @test */
+    public function displays_calendar_items()
     {
         $this->visit('/')
              ->see('Scientific and educational meetings')

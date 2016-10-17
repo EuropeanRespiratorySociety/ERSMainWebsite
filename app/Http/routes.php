@@ -16,9 +16,10 @@
 Route::get('cache', 'MaintenanceController@cache');
 
 //Get the model
-Route::get('schema', 'MaintenanceController@schema');
+Route::get('schema:set', 'MaintenanceController@schema');
+Route::get('view:clear', 'MaintenanceController@view');
 //Purge the model
-Route::get('unset-schema', 'MaintenanceController@unsetSchema');
+Route::get('schema:clear', 'MaintenanceController@unsetSchema');
 
 //////DANGER NEED TOKEN CSRF CHECK -> Cached value
 Route::post('search', 'SearchController@search');
