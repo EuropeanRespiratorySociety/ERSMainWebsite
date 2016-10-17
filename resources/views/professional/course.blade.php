@@ -159,32 +159,28 @@
                 @if($item->feeList->junior)
                   <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
                     <span class="badge">
-                      {{ $item->feeList->junior ? '&euro;' : ''}}
-                      {{ $item->feeList->junior or '-'}}
+                      &euro; {{ $item->feeList->junior }}
                     </span> Junior ERS Members
                   </a>
                 @endif
                 @if($item->feeList->ersMember)
                   <a href="javascript:void(0)" class="list-group-item cursor_default">
                     <span class="badge">
-                      {{ $item->feeList->ersMember ? '&euro;' : ''}}
-                      {{ $item->feeList->ersMember or "-"}}
+                      &euro; {{ $item->feeList->ersMember}}
                     </span> ERS Members
                   </a>
                 @endif 
                 @if($item->feeList->nonErsMember)
                   <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
                     <span class="badge">
-                      {{ $item->feeList->nonErsMember ? '&euro;' : ''}}
-                      {{ $item->feeList->nonErsMember or "-"}}
+                      &euro; {{ $item->feeList->nonErsMember }}
                     </span> Non-ERS Members
                   </a>
                 @endif  
                 @if($item->feeList->industry)
                   <a href="javascript:void(0)" class="list-group-item cursor_default">
                     <span class="badge">
-                      {{ $item->feeList->industry ? '&euro;' : ''}}
-                      {{ $item->feeList->industry or "-"}}
+                      &euro; {{ $item->feeList->industry }}
                     </span> Industry <br>(ERS Members & non-Members)
                   </a>
                 @endif  
