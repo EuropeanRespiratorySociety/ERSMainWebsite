@@ -17,45 +17,37 @@ class FellowshipController extends Controller
     protected $longTerm = "o:35da974d3c05ca528f3f";
     protected $industry = "o:12dec9f25c7624b468b8";
 
+    public function __construct() {
+        $this->CC = new CC();
+    }    
+
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        //$page = Input::get('page', false);
-        //$limit = Input::get('limit', 25);
+    {    
         
-        $CC = new CC();
-        
-        $category = $CC->getItem('fellowships');
-
-        if($category == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
-            return redirect(request()->fullUrl());
-        }
-
-        $category = $CC->parseItems($category->rows);
+        $category = $this->CC->getItem('fellowships');
+        $category = $this->CC->parseItems($category['rows']);            
         $params['category'] = (object) $category[0];
 
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($item[0]->url) || !isset($item[0]->uri) || $item[0]->url == "false" || $item[0]->uri == "false"){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($category[0]['_qname'], $payload);
+        if(!$params['category']->url || !$params['category']->uri){
+            $this->CC->setCanonical($params['category']->_qname, 'professional-development/fellowships');
         }
 
-        //$toPaginate = $CC->getContentByProperty($this->property, $this->propertyValue);
-        //$pagination = $CC->paginate($toPaginate, $page, $limit);
+        //$toPaginate = $this->CC->getContentByProperty($this->property, $this->propertyValue);
+        //$pagination = $this->CC->paginate($toPaginate, $page, $limit);
         //$params['pagination'] = $pagination;
-
-        //$results = $CC->getContentByProperty($this->property, $this->propertyValue, -1, $pagination->skip);
-        $results = $CC->getContentByProperty($this->property, $this->propertyValue, -1, false);
-        $items = $CC->parseItems($results->rows);
-        shuffle($items);
-        $params['items'] =  (object) $items;
+        //$results = $this->CC->getContentByProperty($this->property, $this->propertyValue, -1, $pagination->skip);
+        // $results = $this->CC->getContentByProperty($this->property, $this->propertyValue, -1, false);
+        // $items = '';
+        // if(!empty($results['rows'])){
+        //     $items = $this->CC->parseItems($results['rows']);
+        //     shuffle($items);          
+        // }
+        // $params['items'] =  (object) $items;
 
         return view('professional.simple-fellowships')->with($params);
 
@@ -70,35 +62,23 @@ class FellowshipController extends Controller
     { 
         //$page = Input::get('page', false);
         //$limit = Input::get('limit', 25);
-        
-        $CC = new CC();
-        
-        $category = $CC->getItem('short-term-research-training-fellowships');
 
-        if($category == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
-            return redirect(request()->fullUrl());
-        }
-
-        $category = $CC->parseItems($category->rows);
+        $category = $this->CC->getItem('short-term-research-training-fellowships');
+        $category = $this->CC->parseItems($category['rows']);
         $params['category'] = (object) $category[0];
 
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($category[0]['url']) || !isset($category[0]['uri']) || $category[0]['url'] == "false" || $category[0]['uri'] == "false"){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($category[0]['_qname'], $payload);
+        if(!$params['category']->url || !$params['category']->uri){
+             $this->CC->setCanonical($params['category']->_qname, 'professional-development/fellowships/short-term-research-training-fellowships');
         }
 
-        //$toPaginate = $CC->getContentByProperty($this->property, $this->propertyValue);
-        //$pagination = $CC->paginate($toPaginate, $page, $limit);
-        //$params['pagination'] = $pagination;
+        $results = $this->CC->getCategory($this->shortTerm);
+        
+        $items = '';
+        if(!empty($results['rows'])){
+            $items = $this->CC->parseItems($results['rows']);           
+        }
+        $params['items'] = $items; 
 
-        $results = $CC->getCategory($this->shortTerm);
-        $items = $CC->parseItems($results->rows);
-   
-        $params['fellowships'] =  (object) $items; 
         return view('professional.short-term-fellowships')->with($params);    
 
     }
@@ -109,78 +89,50 @@ class FellowshipController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function indexLongTerm()
-    {
-        //$page = Input::get('page', false);
-        //$limit = Input::get('limit', 25);
-        
-        $CC = new CC();
-        
-        $category = $CC->getItem('long-term-research-fellowships');
-
-        if($category == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
-            return redirect(request()->fullUrl());
-        }
-        $category = $CC->parseItems($category->rows);
+    {   
+        $category = $this->CC->getItem('long-term-research-fellowships');
+        $category = $this->CC->parseItems($category['rows']);
         $params['category'] = (object) $category[0];
 
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($category[0]['url']) || !isset($category[0]['uri']) || $category[0]['url'] == "false" || $category[0]['uri'] == "false"){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($category[0]['_qname'], $payload);
+        if(!$params['category']->url || !$params['category']->uri){
+             $this->CC->setCanonical($params['category']->_qname, 'professional-development/fellowships/long-term-research-fellowships');
         }
 
-        //$toPaginate = $CC->getContentByProperty($this->property, $this->propertyValue);
-        //$pagination = $CC->paginate($toPaginate, $page, $limit);
-        //$params['pagination'] = $pagination;
+        $results = $this->CC->getCategory($this->longTerm);
+        
+        $items = '';
+        if(!empty($results['rows'])){
+            $items = $this->CC->parseItems($results['rows']);           
+        }
+        $params['items'] =  $items; 
 
-        $results = $CC->getCategory($this->longTerm);
-        $items = $CC->parseItems($results->rows);
-   
-        $params['fellowships'] =  (object) $items; 
         return view('professional.long-term-fellowships')->with($params);    
 
-    }    
+    }
+
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function indexIndustry()
-    {
-        //$page = Input::get('page', false);
-        //$limit = Input::get('limit', 25);
-        
-        $CC = new CC();
-        
-        $category = $CC->getItem('ers-fellowships-in-industry');
+    {   
+        $category = $this->CC->getItem('ers-fellowships-in-industry');
+        $category = $this->CC->parseItems($category['rows']);
+        $params['category'] = $category[0];
 
-        if($category == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
-            return redirect(request()->fullUrl());
+        if(!$params['category']->url || !$params['category']->uri){
+            $this->CC->setCanonical($params['category']->_qname, 'professional-development/fellowships/ers-fellowships-in-industry');
         }
 
-        $category = $CC->parseItems($category->rows);
-        $params['category'] = (object) $category[0];
-
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($category[0]['url']) || !isset($category[0]['uri']) || $category[0]['url'] == "false" || $category[0]['uri'] == "false"){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($category[0]['_qname'], $payload);
-        }
-
-        //$toPaginate = $CC->getContentByProperty($this->property, $this->propertyValue);
-        //$pagination = $CC->paginate($toPaginate, $page, $limit);
-        //$params['pagination'] = $pagination;
-
-        $results = $CC->getCategory($this->industry);
-        $items = $CC->parseItems($results->rows);
+        $results = $this->CC->getCategory($this->industry);
+        
+        $items = '';
+        if(!empty($results['rows'])){
+            $items = $this->CC->parseItems($results['rows']);           
+        }    
+        $params['items'] = $items; 
    
-        $params['fellowships'] =  (object) $items; 
         return view('professional.industry-fellowships')->with($params);    
 
     }    
@@ -193,30 +145,25 @@ class FellowshipController extends Controller
      */
     public function show($slug)
     {
-        $CC = new CC();
-        $results = $CC->getItem($slug);
-
-        if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
-            return redirect(request()->fullUrl());
-        }
+        $results = $this->CC->getItem($slug);
         
         //Slug should be unique, so we should get only one item
-        $item = $CC->parseItems($results->rows);
+        $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0];
 
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+        if(!$params['item']->url || !$params['item']->uri){
+             $this->CC->setCanonical($params['item']->category->qname, 'the-society/news');
         }
         
-        if($item[0]['hasRelatedArticles'] > 0){
-            $related = $CC->getRelatedArticle($item[0]['_qname']);
-            $relatedItems = $CC->parseItems($related->rows);
+        if($item[0]->hasRelatedArticles > 0){
+            $related = $this->CC->getRelatedArticle($item[0]->_qname);
+            $relatedItems = $this->CC->parseItems($related['rows']);
             $params['relatedItems'] =  (object) $relatedItems;
+        }
+
+        $category = $params['item']->category->title ?? false;
+        if($category == "ERS Fellowships in Industry" ) {
+            return view('professional.industry')->with($params);
         }
         return view('professional.fellowship')->with($params); 
     }

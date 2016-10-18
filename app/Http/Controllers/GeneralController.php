@@ -14,110 +14,48 @@ class GeneralController extends Controller
     protected $euProjects = "o:b1b2cbebec4c8076ecb8";
     protected $euAffairs = "o:ce780883918ebe8c7031";
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function publications()
-    { 
-        return redirect('/#publications');
-    }
+    public function __construct() {
+        $this->CC = new CC();
+    }  
 
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
-     */
-    public function community()
-    { 
-        return redirect('/#community');
-    }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function research()
-    { 
-        return redirect('/#research');
-    }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function sciAndEduEvents()
-    { 
-        return redirect('/#scientific-and-educational-events');
-    }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function advocacy()
-    { 
-        return redirect('/#advocacy');
-    }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * @todo add category in CC 
      */
     public function euAffairs()
     { 
-        $field = "createdAt";
+        $field = "_system.created_on";
         $direction = 1;
-        $CC = new CC();
-        $results = $CC->getCategorySorted($this->euAffairs, $field, $direction);
+        // The content of the cat is not yet managed in CC
+        // if(!$params['category']->url || !$params['category']->uri)){
+        //     $this->CC->setCanonical($params['category']->_qname, 'advocacy/eu-affairs');
+        // }
 
-        if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
-            return redirect(request()->fullUrl());
-        }
+        $results = $this->CC->getCategorySorted($this->euAffairs, $field, $direction);
+        $items = $this->CC->parseItems($results['rows']);
+        $params['items'] = $items; 
 
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
-        }
-
-        $items = $CC->parseItems($results->rows);
-        $params['items'] =  (object) $items; 
         return view('advocacy.eu-affairs')->with($params);
     }
 
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    * Display a listing of the resource.
+    *
+    * @return \Illuminate\Http\Response
+    * @todo add category in CC 
+    */
     public function euProjects()
     { 
-        $CC = new CC();
-        $results = $CC->getCategory($this->euProjects);
+        // The content of the cat is not yet managed in CC
+        // if(!$params['category']->url || !$params['category']->uri)){
+        //     $this->CC->setCanonical($params['category']->_qname, 'advocacy/eu-affairs');
+        // }
 
-        if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
-            return redirect(request()->fullUrl());
-        }
-
-        $items = $CC->parseItems($results->rows);
-        $params['items'] =  (object) $items; 
-
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
-        }
+        $results = $this->CC->getCategory($this->euProjects);
+        $items = $this->CC->parseItems($results['rows']);
+        $params['items'] = $items; 
 
         return view('advocacy.eu-projects')->with($params);
     }
@@ -129,28 +67,13 @@ class GeneralController extends Controller
      */
     public function grantsAndSponsorships()
     { 
-        $CC = new CC();
-        $results = $CC->getItem('grants-and-sponsorships');
+        $results = $this->CC->getItem('grants-and-sponsorships');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] = $item[0]; 
 
-        if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
-            return redirect(request()->fullUrl());
-        }
-
-        $item = $CC->parseItems($results->rows);
-        $params['item'] =  (object) $item[0]; 
-
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
-        }
-
-        $results = $CC->getCategory($params['item']->_qname);
-        $items = $CC->parseItems($results->rows, true);
-        $params['items'] =  (object) $items;
+        $results = $this->CC->getCategory($params['item']->_qname);
+        $items = $this->CC->parseItems($results['rows']);
+        $params['items'] = $items;
         return view('professional.grants-and-sponsorships')->with($params);
     }
 
@@ -161,28 +84,18 @@ class GeneralController extends Controller
      */
     public function awards()
     { 
-        $CC = new CC();
-        $results = $CC->getItem('awards');
-
-        if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
-            return redirect(request()->fullUrl());
-        }
-
-        $item = $CC->parseItems($results->rows);
+        $results = $this->CC->getItem('awards');
+        $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0]; 
 
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
         }
 
-        $results = $CC->getCategory($params['item']->_qname);
-        $items = $CC->parseItems($results->rows, true);
-        $params['items'] =  (object) $items;
+        $results = $this->CC->getCategory($item[0]->_qname);
+        $items = $this->CC->parseItems($results['rows']);
+        $params['items'] =  $items;
+
         return view('society.awards')->with($params);
     }
 
@@ -194,38 +107,21 @@ class GeneralController extends Controller
      */
     public function show($slug)
     {
-        $CC = new CC();
-        $results = $CC->getItem($slug);
+        $results = $this->CC->getItem($slug);
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] = $item[0];
 
-        if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
-            return redirect(request()->fullUrl());
-        }
-        
-        //Slug should be unique, so we should get only one item
-        $item = $CC->parseItems($results->rows);
-        $params['item'] =  (object) $item[0];
-
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri)){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
         }
 
-        if($item[0]['hasRelatedArticles'] > 0){
-            $related = $CC->getRelatedArticle($item[0]['_qname']);
-            $relatedItems = $CC->parseItems($related->rows);
+        if($item[0]->hasRelatedArticles > 0){
+            $related = $this->CC->getRelatedArticle($item[0]->_qname);
+            $relatedItems = $this->CC->parseItems($related['rows']);
             $params['relatedItems'] =  (object) $relatedItems;
         }
-        
-        return view('articles.item')->with($params); 
-    }
 
-    public function schema(){
-        $CC = new CC();
-        dd($CC->getSchema());
+        return view('articles.item')->with($params); 
     }
 
 }

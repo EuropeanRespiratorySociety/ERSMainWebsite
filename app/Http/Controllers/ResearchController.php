@@ -12,6 +12,11 @@ class ResearchController extends Controller
 {
 
     protected $researchSeminars = "o:e4a6774fba1e72923263";
+
+    public function __construct() {
+        $this->CC = new CC();
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -19,28 +24,16 @@ class ResearchController extends Controller
      */
     public function index()
     { 
-        $CC = new CC();
-        $results = $CC->getItem('research');
-
-        if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
-            return redirect(request()->fullUrl());
-        }
-
-        $item = $CC->parseItems($results->rows);
+        $results = $this->CC->getItem('research');
+        $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0]; 
 
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
         }
 
-        $results = $CC->getCategory($params['item']->_qname);
-        $items = $CC->parseItems($results->rows);
-        $params['items'] =  (object) $items; 
+        $results = $this->CC->getCategory($item[0]->_qname);
+        $params['items'] = $this->CC->parseItems($results['rows']); 
 
         return view('research.research')->with($params);  
     }
@@ -52,28 +45,16 @@ class ResearchController extends Controller
      */
     public function summits()
     { 
-        $CC = new CC();
-        $results = $CC->getItem('ers-presidential-summits');
-
-        if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
-            return redirect(request()->fullUrl());
-        }
-
-        $item = $CC->parseItems($results->rows);
+        $results = $this->CC->getItem('ers-presidential-summits');
+        $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0]; 
 
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
         }
 
-        $results = $CC->getCategory($params['item']->_qname);
-        $items = $CC->parseItems($results->rows);
-        $params['items'] =  (object) $items; 
+        $results = $this->CC->getCategory($params['item']->_qname);
+        $params['items'] = $this->CC->parseItems($results['rows']);; 
 
         return view('research.summits')->with($params);  
     }
@@ -84,44 +65,20 @@ class ResearchController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function researchSeminars()
-    {   
-        $CC = new CC();
-        
-        $category = $CC->getItem('research-seminars');
+    {           
+        $item = $this->CC->getItem('research-seminars');
+        $item = $this->CC->parseItems($item['rows']);
+        $params['category'] = (object) $item[0];
 
-        if($category == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
-            return redirect(request()->fullUrl());
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
         }
 
-        $category = $CC->parseItems($category->rows);
-        $params['category'] = (object) $category[0];
-
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($category[0]['url']) || !isset($category[0]['uri']) || $category[0]['url'] == "false" || $category[0]['uri'] == "false"){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($category[0]['_qname'], $payload);
-        }
-
-        $results = $CC->getCategory($this->researchSeminars);
-        $items = $CC->parseItems($results->rows);
-        $params['items'] =  (object) $items; 
+        $results = $this->CC->getCategory($this->researchSeminars);
+        $params['items'] =  $this->CC->parseItems($results['rows']);
 
         return view('research.research-seminars')->with($params);  
     }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function researchSeminarsRedirect()
-    { 
-        return redirect('/research/research-seminars');  
-    }
-
 
     /**
      * Display the specified resource.
@@ -131,29 +88,17 @@ class ResearchController extends Controller
      */
     public function show($slug)
     {
-        $CC = new CC();
-        $results = $CC->getItem($slug);
-
-        if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
-            return redirect(request()->fullUrl());
-        }
-
-        //Slug should be unique, so we should get only one item
-        $item = $CC->parseItems($results->rows);
+        $results = $this->CC->getItem($slug);
+        $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0]; 
 
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
         }
 
-        if($item[0]['hasRelatedArticles'] > 0){
-            $related = $CC->getRelatedArticle($item[0]['_qname']);
-            $relatedItems = $CC->parseItems($related->rows);
+        if($item[0]->hasRelatedArticles > 0){
+            $related = $this->CC->getRelatedArticle($item[0]->_qname);
+            $relatedItems = $this->CC->parseItems($related['rows']);
             $params['relatedItems'] =  (object) $relatedItems;
         }
         return view('articles.item')->with($params); 
@@ -167,32 +112,19 @@ class ResearchController extends Controller
      */
     public function showRS($slug)
     {
-        $CC = new CC();
-        $results = $CC->getItem($slug);
-
-        if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
-            return redirect(request()->fullUrl());
-        }
-        
-        //Slug should be unique, so we should get only one item
-        $item = $CC->parseItems($results->rows);
+        $results = $this->CC->getItem($slug);
+        $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0]; 
 
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($item[0]->url) || !isset($item[0]->uri) || $item[0]->url == "false" || $item[0]->uri == "false"){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
         }
 
-        if($item[0]['hasRelatedArticles'] > 0){
-            $related = $CC->getRelatedArticle($item[0]['_qname']);
-            $relatedItems = $CC->parseItems($related->rows);
+        if($item[0]->hasRelatedArticles > 0){
+            $related = $this->CC->getRelatedArticle($item[0]->_qname);
+            $relatedItems = $this->CC->parseItems($related['rows']);
             $params['relatedItems'] =  (object) $relatedItems;
-        }
-        
+        } 
         return view('research.research-seminar')->with($params); 
     }
 

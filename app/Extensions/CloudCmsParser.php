@@ -6,6 +6,7 @@ use App;
 use Embed;
 use CC;
 use App\Extensions\DateHelper;
+use App\Extensions\CloudCmsHelper;
 use Carbon\Carbon;
 use Lavary\Menu\Menu;
 use Intervention\Image\Facades\Image;
@@ -14,197 +15,194 @@ use Spatie\Geocoder\GeocoderFacade as Geocoder;
 
 class CloudCmsParser
 {
+    public $parsed;
+    
     public function __construct() {
         $this->date = new DateHelper; 
+        $this->parsed = [];
+        $this->model = CC::setModel('ers:article');
+        $this->helper = new CloudCmsHelper;
     }
 
-	public function parseItems($items, $lead = false){
-        //dd($items);
+	public function parse($items, $lead = false){
           if(empty($items) && App::environment() != 'local' && request()->path() != "search"){
                 abort(404);
             }
-                $parsed = [];
-		        foreach ($items as $key => $item) {
-                    $unPublished = $item->unPublished ?? false ;
-                    $parsed[$key]['unpublished'] = $unPublished;
+            foreach ($items as $key => $i){
+                //$item += $this->model;
+                $item = array_replace_recursive($this->model, $i);
+                //here we match repeatable elements from CC with the model
+                foreach($item['suggestedAccommodation'] as $kk => $s){
+                 $item['suggestedAccommodation'][$kk] = array_replace_recursive($this->model['suggestedAccommodation'][0], $s);
+                }
+                foreach($item['ebusVenues'] as $kk => $s){
+                 $item['ebusVenues'][$kk] = array_replace_recursive($this->model['ebusVenues'][0], $s);
+                }
+                //here we have a Laravel collection
+                $item = collect($item);
+                //We could cache the request?
+                //We create an object to simplify manipulations
+                $item = json_decode($item->toJson());
+                //dd($item);
+                /** 
+                * Formating the properties
+                */
+                //we check if the article has been unpublished. If true we do not parse it
+                if(!$item->unPublished){
+                    $item->title = $this->formatTitle($item->title);
 
-                    if($unPublished != true) {   
-                        if(isset($item->title)){
-                            $parsed[$key]['title'] = $this->formatTitle($item->title);
-                        }
-                        if(isset($item->salutation)){$parsed[$key]['salutation']=$item->salutation;}
-                        if(isset($item->firstName)){$parsed[$key]['firstName']=$item->firstName;}
-                        if(isset($item->lastName)){$parsed[$key]['lastName']=$item->lastName;}
-                        if(isset($item->email)){$parsed[$key]['email']=$item->email;}
-                        if(isset($item->tagLine)){$parsed[$key]['tagLine']=$item->tagLine;}
-                        if(isset($item->subTitle)){
-                        	$parsed[$key]['subtitle'] = $item->subTitle;
-                        }	
-                        if(isset($item->slug)){$parsed[$key]['slug'] = $item->slug;}
-                        if (isset($item->tags)){$parsed[$key]['tags'] = $item->tags;}
-                        if(isset($item->flags)){$parsed[$key]['flags'] = $this->getFlags($item->flags);}
-                        $parsed[$key]['fullyBooked'] = false;
-                        if(isset($item->fullyBooked)){$parsed[$key]['fullyBooked'] = $item->fullyBooked;}
-                        if(isset($item->contentType)){$parsed[$key]['contentType'] = $item->contentType;}
-                        if(isset($item->type)){$parsed[$key]['type'] = $item->type;}
-                        if(isset($item->contrastOnHomepage)){
-                            $parsed[$key]['contrastOnHomepage'] = $item->contrastOnHomepage;
-                        } else {
-                            $parsed[$key]['contrastOnHomepage'] = false;
-                        }
-                        if(isset($item->mainNews)){
-                            $parsed[$key]['mainNews'] = $item->mainNews;
-                        } else {
-                            $parsed[$key]['mainNews'] = false;
-                        }
-                        if(isset($item->type)){$parsed[$key]['typeColor'] = $this->setTypeColor($item->type);}
-                        if(isset($item->category)){
-                            if(isset($item->category->title)){$parsed[$key]['category'] = $item->category->title;}
-                            if(isset($item->category->qname)){$parsed[$key]['categoryId'] = $item->category->qname;}
-                        }
-                        if(isset($item->category2)){
-                            $parsed[$key]['category2'] = $item->category2;
-                        }	
-                        if(isset($item->_qname)){$parsed[$key]['_qname'] = $item->_qname;}
-                        if(isset($item->_type)){$parsed[$key]['_type'] = $item->_type;}
-                        if(isset($item->ebusDate)){
-                            $parsed[$key]['ebusDate'] = $item->ebusDate;
-                        }  
-                        if(isset($item->eventDate) && isset($item->eventEndDate)){
-                            $parsed[$key]['eventDates'] = $this->date->ersDate($item->eventDate, $item->eventEndDate);
-                            $parsed[$key]['startDateTimestamp'] = $this->date->toTimestamp($item->eventDate);
-                        } elseif(isset($item->eventDate) && !isset($item->eventEndDate)){
-                            $parsed[$key]['eventDates'] = $this->date->ersDate($item->eventDate);
-                            $parsed[$key]['startDateTimestamp'] = $this->date->toTimestamp($item->eventDate);
-                        }
-                        if(isset($item->eventDate)){$parsed[$key]['calendar'] = $this->date->calendar($item->eventDate);}   
-                        if(isset($item->earlybirdDeadline)){$parsed[$key]['earlybirdDeadline'] = $this->date->isAlreadyPassed($item->earlybirdDeadline);}
-                        if(isset($item->extendedDeadline)){ $parsed[$key]['extendedDeadline'] = $this->date->ersDate($item->extendedDeadline);}
-                        if(isset($item->_system->created_on->timestamp)){ $parsed[$key]['createdOn'] = $this->date->ersDate($item->_system->created_on->timestamp);}
-                        $parsed[$key]['doNotDisplayCreatedOn'] = $item->doNotDisplayCreatedOn ?? false ;
-                        if(isset($item->_system->created_on->ms)){ $parsed[$key]['ms'] = $item->_system->created_on->ms;}
-                        if(isset($item->openingDate)){ $parsed[$key]['openingDate'] = $this->date->ersDate($item->openingDate);}
-                        if(isset($item->eventLocation)){$parsed[$key]['eventLocation'] = $item->eventLocation;}                
-                        
-                        if(isset($item->leadParagraph)){
-                        	$parsed[$key]['shortLead'] = $this->truncate(strip_tags(Markdown::parse($item->leadParagraph)));
-                        	$parsed[$key]['lead'] = Markdown::parse($item->leadParagraph);
-                        }
+                    // Markdown Fields
+                    $item->lead = Markdown::parse($item->leadParagraph);
+                    $item->body = Markdown::parse($item->body);
+                    
+                    if($item->popUp){
+                        $item->popUp = Markdown::parse($item->popUp);
+                    }
 
-                        if(isset($item->registerButton)){$parsed[$key]['registerButton'] = (array) $item->registerButton;}
+                    if($item->cancellationPolicy){
+                        $item->cancellationPolicy = Markdown::parse($item->cancellationPolicy);
+                    }
 
-                        if(isset($item->image)){
-                            $img_qname = $item->image->qname;
-                            $img = CC::nodes()->getImage($img_qname);
-                            $parsed[$key]['image'] = $img->imageUrl."?name=image500&size=500";
+                    if($item->travelInfo){
+                        $item->travelInfo = Markdown::parse($item->travelInfo);
+                    }
+
+                    if($item->technicalInfo){
+                        $item->technicalInfo = Markdown::parse($item->technicalInfo);
+                    }
+
+                    if($item->venue->info){
+                        $item->venue->info = Markdown::parse($item->venue->info);
+                    }
+
+                    if($item->suggestedAccommodation){
+                        $this->parseVenues($item->suggestedAccommodation);
+                    }
+
+                    if($item->ebusVenues){
+                        $this->parseVenues($item->ebusVenues);
+                    }
+
+                    if($item->abstracts){
+                        $this->getBursary($item->abstracts);
+                    }
+
+                    if($item->mentorship){
+                        $this->getBursary($item->mentorship);
+                    }
+
+                    if($item->bursaryApplication){
+                        $this->getBursary($item->bursaryApplication);
+                    }
+
+                    //Specific fields
+                    if($item->sponsors){
+                        $sponsor = $item->sponsors[0];
+                        $item->sponsors = new \stdClass;
+                        if($sponsor->image){
+                            $img = CC::nodes()->getImage($sponsor->image->qname);
+                            $item->sponsors->image = $img->imageUrl."?name=image500&size=500";  
+                        } else { $item->sponsors->image = false; }
+                        $sponsor->text ? $item->sponsors->text = $sponsor->text : $item->sponsors->text = false;
+                    }
+
+                    if($item->flags){
+                        $item->flags = $this->getFlags($item->flags);
+                    }
+
+                    if($item->deadlines){
+                        $item->deadlines = $this->getDeadlines($item->deadlines);
+                    }
+                    
+                    // Files/Images
+                    if($item->image){
+                        $img = CC::nodes()->getImage($item->image->qname);
+                        $item->image = $img->imageUrl."?name=image500&size=500";
+                    }
+
+                    if($item->highResImage){
+                        $img = CC::nodes()->getImage($item->highResImage->qname);
+                        $item->highResImage = $img->imageUrl."?name=image1800&size=1800";
+                    }  
+
+                    if($item->rulesAndRegulations){
+                        $file = CC::nodes()->getFile($item->rulesAndRegulations->title, "path/documents/rules-and-regulations/");
+                        $item->rulesAndRegulations = $file->fileUrl;
+                    }
+
+                    if($item->programme){
+                        $file = CC::nodes()->getFile($item->programme->title, "path/documents/programme/");
+                        $item->programme = $file->fileUrl;
+                    }
+
+                    if($item->practicalInfo){
+                        $file = CC::nodes()->getFile($item->practicalInfo->title, "path/documents/practical_info/");
+                        $item->practicalInfo = $file->fileUrl;
+                    }
+
+                    if($item->disclosure){
+                        $file = CC::nodes()->getFile($item->disclosure->title, "path/documents/disclosures/");
+                        $item->disclosure = $file->fileUrl;
+                    }
+
+                    // Video
+                    if($item->video){
+                     $item->video = $this->getVideo($item->video, 400);
+                    }
+          
+                    if($item->eventDate && $item->eventEndDate){
+                        $item->eventDates = $this->date->ersDate($item->eventDate, $item->eventEndDate);
+                        $item->startDateTimestamp = $this->date->toTimestamp($item->eventDate);
+                        $item->startDate = $this->date->ersDate($item->eventDate);
+                        $item->endDate = $this->date->ersDate($item->eventEndDate);
+                    } elseif($item->eventDate && !$item->eventEndDate){
+                        $item->eventDates = $this->date->ersDate($item->eventDate);
+                        $item->startDateTimestamp = $this->date->toTimestamp($item->eventDate);
+                        $item->startDate = $item->eventDates;
+                        $item->endDate = false;
+                    } else {
+                        $item->eventDates = false;
+                        $item->startDateTimestamp = false;
+                        $item->startDate = false;
+                        $item->endDate = false;    
+                    }
+                    if($item->earlybirdDeadline){
+                        $item->earlybirdDeadline = $this->date->isAlreadyPassed($item->earlybirdDeadline);
+                    }
+
+                    if($item->extendedDeadline){
+                        $item->extendedDeadline = $this->date->ersDate($item->extendedDeadline);
+                    }
+
+                    if($item->openingDate){
+                        $item->openingDate = $this->date->ersDate($item->openingDate);
+                    }
+
+                    // Added fields to the model
+                    $item->typeColor = $item->type ? $this->setTypeColor($item->type) : false;
+                    $item->createdOn = isset($item->_system->created_on->timestamp) ? $this->date->ersDate($item->_system->created_on->timestamp) : false;
+                    $item->calendar = $item->eventDate ? $this->date->calendar($item->eventDate) : false;
+                    $item->ms = $item->_system->created_on->ms ?? false;     
+                    $item->shortLead = $item->leadParagraph ? $this->truncate(strip_tags(Markdown::parse($item->leadParagraph))) : false;
+                    $item->hasRelatedArticles = $item->_statistics->{'ers:related-association'} ?? 0;
+                    $item->hasAuthor = $item->_statistics->{'ers:author-association'} ?? 0;
+                    $item->salutation = $item->salutation ?? false;
+                    $item->firstName = $item->firstName ?? false;
+                    $item->lastName = $item->lastName ?? false;
+
+                    //removing empty arrays
+                    foreach($item as $k => $v){
+                        if(empty($v)){
+                            $item->$k = false; 
                         }
+                    }
+                    $this->parsed[$key] = $item;               
+                }
+            }
+            return $this->parsed; 
+    }
 
-                        if(isset($item->highResImage)){
-                            $img_qname = $item->highResImage->qname;
-                            $img = CC::nodes()->getImage($img_qname);
-                            $parsed[$key]['highResImage'] = $img->imageUrl."?name=image1800&size=1800";
-                        }
-
-                        if(isset($item->imageAlignment)){$parsed[$key]['imageAlignment'] = $item->imageAlignment;}
-                        if(isset($item->itemImageAlignment)){$parsed[$key]['itemImageAlignment'] = $item->itemImageAlignment;}
-                        if(isset($item->itemImageBackgroundSize)){$parsed[$key]['itemImageBackgroundSize'] = $item->itemImageBackgroundSize;}
-                        if(isset($item->imageSize)){$parsed[$key]['imageSize'] = $item->imageSize;}
-                        if(isset($item->imageDescription)){$parsed[$key]['imageDescription'] = $item->imageDescription;}
-                        if(isset($item->url)){$parsed[$key]['url'] = $item->url;}
-                        if(isset($item->uri)){$parsed[$key]['uri'] = $item->uri;}
-                        $parsed[$key]['featuredCourse'] = false;
-                        if(isset($item->featuredCourse)){$parsed[$key]['featuredCourse'] = $item->featuredCourse;}
-                        $parsed[$key]['featuredFunding'] = false;
-                        if(isset($item->featuredFunding)){$parsed[$key]['featuredFunding'] = $item->featuredFunding;}
-                        if(isset($item->nonErsCalendarItem)){
-                            $parsed[$key]['nonErsCalendarItem'] = $item->nonErsCalendarItem;
-                        } else {
-                            $parsed[$key]['nonErsCalendarItem'] = false;
-                        }
-                        if(isset($item->ersEndorsedEvent)){
-                            $parsed[$key]['ersEndorsedEvent'] = $item->ersEndorsedEvent;
-                        } else {
-                            $parsed[$key]['ersEndorsedEvent'] = false;
-                        }
-                        if(isset($item->_statistics->{'ers:related-association'})){
-                            $parsed[$key]['hasRelatedArticles'] = $item->_statistics->{'ers:related-association'};
-                        } else {
-                            $parsed[$key]['hasRelatedArticles'] = 0;
-                        }
-                        if(isset($item->_statistics->{'ers:author-association'})){
-                            $parsed[$key]['hasAuthor'] = $item->_statistics->{'ers:author-association'};
-                        } else {
-                            $parsed[$key]['hasAuthor'] = 0;
-                        }
-
-                        if(!$lead){
-    	                    if(isset($item->organisers)){ $parsed[$key]['organisers'] = $item->organisers;}
-    	                    if(isset($item->faculty)){ $parsed[$key]['faculty'] = $item->faculty;}
-                            if(isset($item->body)){$parsed[$key]['body'] = Markdown::parse($item->body);}
-                            $parsed[$key]['articleTwoColumns'] = false;
-                            if(isset($item->articleTwoColumns)){$parsed[$key]['articleTwoColumns'] = $item->articleTwoColumns;}
-    	                    if(isset($item->feeList)){$parsed[$key]['feeList'] = $item->feeList;}
-                            if(isset($item->cancellationPolicy)){$parsed[$key]['cancellationPolicy'] = Markdown::parse($item->cancellationPolicy);}
-                            if(isset($item->travelInfo)){$parsed[$key]['travelInfo'] = Markdown::parse($item->travelInfo);}
-                            if(isset($item->technicalInfo)){$parsed[$key]['technicalInfo'] = Markdown::parse($item->technicalInfo);}
-    	                    if(isset($item->sponsors)){$parsed[$key]['sponsors'] = $this->getSponsors($item->sponsors);}
-                            if(isset($item->deadlines)){$parsed[$key]['deadlines'] = $this->getDeadlines($item->deadlines);}
-    	                    if(isset($item->venue)){
-                                if(isset($item->venue)){$parsed[$key]['venue'] = $item->venue ;}
-                                if(isset($parsed[$key]['venue']->info)){$parsed[$key]['venue']->info = Markdown::parse($item->venue->info) ;}
-                            }
-                            if(isset($item->suggestedAccommodation)){$parsed[$key]['suggestedAccommodation'] = $this->parseVenues($item->suggestedAccommodation);}
-                            if(isset($item->ebusVenues)){$parsed[$key]['ebusVenues'] = $this->parseVenues($item->ebusVenues);}
-                            if(isset($item->abstracts)){$parsed[$key]['abstracts'] = $this->getBursary($item->abstracts);}
-                            if(isset($item->mentorship)){$parsed[$key]['mentorship'] = $this->getBursary($item->mentorship);}
-                            if(isset($item->bursaryApplication)){$parsed[$key]['bursaryApplication'] = $this->getBursary($item->bursaryApplication);}
-    	            		if(isset($item->documents)){$parsed[$key]['documents'] = $this->getDocuments($item->documents);}
-                            if(isset($item->programme)){
-                                $path = "path/documents/programme/";
-                                $file_title = $item->programme->title;
-                                $file = CC::nodes()->getFile($file_title, $path);
-                                $parsed[$key]['programmeFile'] = $file;
-                            }
-                            if(isset($item->programmeButtonText)){ $parsed[$key]['programmeButtonText'] =$item->programmeButtonText;}
-                            if(isset($item->programmeNotice)){ $parsed[$key]['programmeNotice'] =$item->programmeNotice;}
-                            if(isset($item->rulesAndRegulations)){
-                                $path = "path/documents/rules-and-regulations/";
-                                $file_title = $item->rulesAndRegulations->title;
-                                $file = CC::nodes()->getFile($file_title, $path);
-                                $parsed[$key]['rulesAndRegulations'] = $file->fileUrl;
-                            }
-
-                            if(isset($item->practicalInfo)){
-                                $path = "path/documents/practical_info/";
-                                $file_title = $item->practicalInfo->title;
-                                $file = CC::nodes()->getFile($file_title, $path);
-                                $parsed[$key]['practicalInfoFile'] = $file;
-                            }
-
-                            if(isset($item->disclosure)){
-                                $path = "path/documents/disclosures/";
-                                $file_title = $item->disclosure->title;
-                                $file = CC::nodes()->getFile($file_title, $path);
-                                $parsed[$key]['disclosureFile'] = $file;
-                            }
-                            if(isset($item->practicalInfoButton)){$parsed[$key]['practicalInfoButton'] = $item->practicalInfoButton;}
-                            if(isset($item->loc->lat)&&isset($item->loc->long)){
-                                $parsed[$key]['location'] = (object) $item->loc;
-                            } else {
-                                if(isset($item->venue)){
-                                    $coordinates = $this->getCoordinates($item->venue);
-                                    $this->setCoordinates($item->_qname, $coordinates['lat'], $coordinates['lng'], $coordinates['accuracy']);
-                                }
-                            }
-                            if(isset($item->video)){$parsed[$key]['video'] = $this->getVideo($item->video, 400);}                   
-                    	}
-                    } 
-                }     
-           //dd($parsed);
-        return $parsed; 
-	}
-
-    public function setTypeColor($type){
+    protected function setTypeColor($type){
         if( $type == "ERS Course" || 
             $type == "ERS Online course" || 
             $type == "e-learning" || 
@@ -220,7 +218,7 @@ class CloudCmsParser
 
     }
 
-    public function getDocuments($documents){
+    protected function getDocuments($documents){
     	$files = [];
     	foreach($documents as $key => $document){
     		$files[$key]['url'] = CC::nodes()->deploymentUrl.'/static/path/documents/documents/'.$document->title;
@@ -229,7 +227,7 @@ class CloudCmsParser
     	return $files;
     }
 
-    public function getVideo($url, $width){
+    protected function getVideo($url, $width){
         $video = Embed::make($url)->parseUrl();
         if($video){
             $video->setAttribute(['width' => $width]);
@@ -239,90 +237,48 @@ class CloudCmsParser
         return $video; //should return false
     }
 
-    public function getFlags($flags){
+    protected function getFlags($flags){
         foreach ($flags as $key => $flag) {
-            $parsed[$key]['text'] = $flag->text;
-            $parsed[$key]['color'] = $flag->color;
+            $flag->text ?? false;
+            if($flag->text){
+                $flag->text = $this->truncate($flag->text, 25);
+            }
+            $flag->color ?? false;
         }
-        if(isset($parsed)){
-            return $parsed[0];
-        }
-    }
-
-    public function getSponsors($sponsors){
-        unset($parsed);
-        foreach ($sponsors as $key => $sponsor) {
-            if(isset($sponsor->text)){$parsed[$key]['text'] = $sponsor->text;}
-            if(isset($sponsor->image)){
-                        $img_qname = $sponsor->image->qname;
-                        $img = CC::nodes()->getImage($img_qname);
-                        $parsed[$key]['image'] = $img->imageUrl."?name=image200&size=200";
-                    }
-                    /*if(isset($img)){
-                        $parsed[$key]['image'] = Image::cache(function($image) use($img){
-                         return $image->make($img->imageUrl)->resize(null, 50, function ($constraint) {
-                                $constraint->aspectRatio();
-                            })->encode('data-url');
-                        });
-                    }*/
-        }
-        if(isset($parsed)){
-            return $parsed[0];
+        // return only one for now
+        if(isset($flag)){
+            return $flag;
         }
     }
 
-    public function parseVenues($items){
-        $parsed = [];
-        foreach ($items as $key => $item) {
-    
-            if(isset($item->info)){$parsed[$key]['info'] = Markdown::parse($item->info);}
-            if(isset($item->name)){$parsed[$key]['name'] = $item->name;}
-            if(isset($item->url)){$parsed[$key]['url'] = $item->url;}
-            if(isset($item->streetAddress)){$parsed[$key]['streetAddress'] = $item->streetAddress;}
-            if(isset($item->streetAddress2)){$parsed[$key]['streetAddress2'] = $item->streetAddress2;}
-            if(isset($item->streetAddress3)){$parsed[$key]['streetAddress3'] = $item->streetAddress3;}
-            if(isset($item->postalCode)){$parsed[$key]['zip'] = $item->postalCode;}
-            if(isset($item->city)){$parsed[$key]['city'] = $item->city;}
-            if(isset($item->country)){$parsed[$key]['country'] = $item->country;}
-            if(isset($item->phoneNumber)){$parsed[$key]['phone'] = $item->phoneNumber;}
+    protected function parseVenues($items){  
+        foreach ($items as $item) {
+            $item->info = $item->info ? Markdown::parse($item->info) : false;
+        } 
+    }
 
-        }
+    protected function getDeadlines($item){
+            $item->applicationDeadline = $this->date->ersDate($item->applicationDeadline);
+            $item->applicationDeadline2 = $this->date->ersDate($item->applicationDeadline2);
+            // $item->notification = $item->notification ?? false;
+            // $item->notification2 = $item->notification2 ?? false;
+            // $item->startDate = $item->startDate ?? false;
+            // $item->startDate2 = $item->startDate2 ?? false;
 
-            return (object) $parsed;
+            return $item;
 
     }
 
-    public function getDeadlines($item){
-        $parsed = [];
-    
-            if(isset($item->applicationDeadline)){$parsed['applicationDeadline'] = $this->date->ersDate($item->applicationDeadline);}    
-            if(isset($item->applicationDeadline2)){$parsed['applicationDeadline2'] = $this->date->ersDate($item->applicationDeadline2);} 
-            if(isset($item->notification)){$parsed['notification'] = $item->notification;}
-            if(isset($item->notification2)){$parsed['notification2'] = $item->notification2;}
-            if(isset($item->startDate)){$parsed['startDate'] = $item->startDate;}
-            if(isset($item->startDate2)){$parsed['startDate2'] = $item->startDate2;}
+    protected function getBursary($bursary){
 
-            return (object) $parsed;
+    	   $bursary->text = $bursary->text ? Markdown::parse($bursary->text) : false;
+    	   $bursary->deadline = $bursary->deadline ? $this->date->ersDate($bursary->deadline) : false;
+    	   $bursary->notificationOfResults = $bursary->notificationOfResults ? $this->date->ersDate($bursary->notificationOfResults) : false;
+    	   $bursary->applyButtonUrl = $bursary->applyButtonUrl ? $bursary->applyButtonUrl : false;
 
     }
 
-    public function getBursary($bursary){
-    	   $parsed = [];
-
-    	   if(isset($bursary->text)){$parsed['text'] = Markdown::parse($bursary->text);}
-    	   if(isset($bursary->deadline)){$parsed['deadline'] = $this->date->ersDate($bursary->deadline);}
-    	   if(isset($bursary->notificationOfResults)){$parsed['results'] = $this->date->ersDate($bursary->notificationOfResults);}
-    	   if(isset($bursary->applyButtonUrl)){$parsed['url'] = $bursary->applyButtonUrl;}
-
-           if(empty($parsed) || !isset($bursary->applyButtonUrl)){
-                return $parsed = false;
-           }
-
-    	   return (object) $parsed;
-
-    }
-
-    public function truncate($string, $length=80, $append="&hellip;"){
+    public function truncate($string, $length = 80, $append="&hellip;"){
     	$string = trim($string);
 
     	if(strlen($string) > $length) {
@@ -337,6 +293,7 @@ class CloudCmsParser
 
     public function formatTitle($title){
         $array = explode('|', $title);
+        if(empty($array['0'])) return false;
         return $array['0'];
     }
 

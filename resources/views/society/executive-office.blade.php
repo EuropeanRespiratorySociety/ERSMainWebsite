@@ -34,7 +34,6 @@
             <img src="../images/people/executive-office/wbill.jpg" class="img-circle">
             <p class="photo_caption"><strong>{!! Html::mailto('werner.bill@ersnet.org', 'Werner Bill') !!}</strong>
             Executive Director,<br>
-            Director of Finance and Administration<br>
             T +41 21 213 01 20
             </p>
           </div>
@@ -506,7 +505,7 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('Sarah.Masefield@europeanlung.org', 'Sarah Masefield') !!}</strong>
+          <p class="photo_caption"><strong>{!! Html::mailto('courtney.coleman@europeanlung.org', 'Courtney Coleman') !!}</strong>
             Patient Involvement and Engagement<br>
             T +44 114 267 2875<br>
             </p>

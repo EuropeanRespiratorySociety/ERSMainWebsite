@@ -1,6 +1,5 @@
 @extends('template')
 @section('content')
-
 <div class="ers-content ers-courses light-grey-bg">
             <div class="main-content">
                 <div class="page-head">

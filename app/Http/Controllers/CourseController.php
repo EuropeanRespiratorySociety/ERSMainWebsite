@@ -13,6 +13,10 @@ class CourseController extends Controller
     protected $courses = 'o:f913cff03624ac461283'; //courses category node
     protected $educationalActivities = "";
 
+    public function __construct() {
+        $this->CC = new CC();
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -20,52 +24,19 @@ class CourseController extends Controller
      */
     public function index()
     {
-        $CC = new CC();
-        $results = $CC->getItem('courses');
+        $results = $this->CC->getItem('courses');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] = $item[0]; 
 
-        if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
-            return redirect(request()->fullUrl());
+        if(!$item[0] || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname, 'professional-development/courses');
         }
 
-        $item = $CC->parseItems($results->rows);
-        $params['item'] =  (object) $item[0]; 
-
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
-            $uri = request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
-        }
-
-        $results = $CC->getCategory($params['item']->_qname);
-
-        $courses = $CC->parseItems($results->rows, true);
-        $sorted = $CC->sortItems($courses);
-        $params['courses'] =  $sorted; 
+        $results = $this->CC->getCategory($params['item']->_qname);
+        $items = $this->CC->parseItems($results['rows']);
+        $sorted = $this->CC->sortItems($items);
+        $params['items'] =  $sorted; 
         return view('professional.courses')->with($params);    
-
-    }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function professionalDevelopment()
-    {
-        return redirect('/#professional-development'); 
-    }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function educationalActivities()
-    {
-        return view('professional.educational-activities'); 
     }
 
     /**
@@ -76,32 +47,20 @@ class CourseController extends Controller
      */
     public function show($slug)
     {
-        $CC = new CC();
-        $results = $CC->getItem($slug);
-
-        if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
-            return redirect(request()->fullUrl());
-        }
+        $results = $this->CC->getItem($slug);
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] = $item[0]; 
         
-        //Slug should be unique, so we should get only one item
-        $course = $CC->parseItems($results->rows);
-        $params['course'] =  (object) $course[0]; 
-        
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
-            $uri = request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname, 'professional-development/courses'.$slug);
         }
 
-        if($course[0]['hasRelatedArticles'] > 0){
-            $related = $CC->getRelatedArticle($course[0]['_qname']);
-            $relatedItems = $CC->parseItems($related->rows);
-            $params['relatedItems'] =  (object) $relatedItems;
+        if($item[0]->hasRelatedArticles > 0){
+            $related = $this->CC->getRelatedArticle($item[0]->_qname);
+            $params['relatedItems'] = $this->CC->parseItems($related['rows']);
         }
-        if($params['course']->contentType == "event_course_ebus" ){
+
+        if($params['item']->contentType == "event_course_ebus" ){
             return view('professional.ebus')->with($params);
         }
         return view('professional.course')->with($params); 

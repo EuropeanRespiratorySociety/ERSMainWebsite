@@ -11,6 +11,10 @@ use App\Extensions\CloudCmsHelper as CC;
 class WhoWeAreController extends Controller
 {
 
+    public function __construct() {
+        $this->CC = new CC();
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -19,24 +23,12 @@ class WhoWeAreController extends Controller
     public function index()
     {
         $slug = "who-we-are";
-        $CC = new CC();
-        $results = $CC->getItem($slug);
-
-        if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
-            return redirect(request()->fullUrl());
-        }
-
-        //Slug should be unique, so we should get only one item
-        $item = $CC->parseItems($results->rows);
+        $results = $this->CC->getItem($slug);
+        $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0]; 
 
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+        if(!$item[0]->url || !$item[0]->uri){
+            $CC->setCanonical($item[0]->_qname);
         }
 
         return view('articles.item')->with($params); 
@@ -51,29 +43,20 @@ class WhoWeAreController extends Controller
      */
     public function show($slug)
     {
-        $CC = new CC();
-        $results = $CC->getItem($slug);
-
-        if($results == "invalid_token"){
-            \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
-            return redirect(request()->fullUrl());
-        }
-        
-        //Slug should be unique, so we should get only one item
-        $item = $CC->parseItems($results->rows);
+        $results = $this->CC->getItem($slug);
+        $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0];
 
-        // == false set in purpose as CC sets the field to "false" wich is a string...
-        if(!isset($results->rows[0]->url) || !isset($results->rows[0]->uri) || $results->rows[0]->url == "false" || $results->rows[0]->uri == "false"){
+        if(!$item[0]->url || !$item[0]->uri){
             $uri= request()->path();
             $url = "https://www.ersnet.org/".$uri;
             $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($results->rows[0]->_qname, $payload);
+            $CC->setCanonical($item[0]->_qname, $payload);
         }
         
-        if($item[0]['hasRelatedArticles'] > 0){
-            $related = $CC->getRelatedArticle($item[0]['_qname']);
-            $relatedItems = $CC->parseItems($related->rows);
+        if($item[0]->hasRelatedArticles > 0){
+            $related = $this->CC->getRelatedArticle($item[0]->_qname);
+            $relatedItems = $this->CC->parseItems($related['rows']);
             $params['relatedItems'] =  (object) $relatedItems;
         }
         return view('articles.item')->with($params); 

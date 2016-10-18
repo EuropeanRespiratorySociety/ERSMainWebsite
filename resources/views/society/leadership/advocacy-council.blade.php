@@ -27,25 +27,24 @@
 		            Chair of the ERS Advocacy Council <br>
 		            </p>
 	        	</div>
+	            <div class="col-md-4 xs-mb-15">
+	                <img src="images/people/leadership/Guy_Joos.jpg" class="img-circle">
+	                <p class="photo_caption"><strong>{!! Html::mailto('guy.joos@ugent.be', 'Guy Joos') !!}</strong>
+	                President<br>
+	                </p>
+	            </div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/Joajen_Vestbo.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('jorgen.vestbo@manchester.ac.uk', 'Jørgen Vestbo') !!}</strong>
-		            ERS President<br>
-		            </p>
-	        	</div>
-	        	<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/Guy_Joos.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('guy.joos@ugent.be', 'Guy Joos') !!}</strong>
-		            ERS President-Elect<br>
-		            </p>
-	        	</div>
-	        	<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/mina_gaga.jpg" class="img-circle">
+		            <img src="images/people/leadership/mina_gaga.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('minagaga@yahoo.com', 'Mina Gaga') !!}</strong>
-		            ERS Vice-President<br>
-		            </p>
+		            President Elect<br></p>
 	        	</div>
-	        	<div class="col-md-4 xs-mb-15">
+	            <div class="col-md-4 xs-mb-15">
+	                <img src="images/people/leadership/Tobias_Welte.jpg" class="img-circle">
+	                <p class="photo_caption"><strong>Tobias Welte</strong>
+	                Vice President <br>
+					</p>
+	            </div>
+            	<div class="col-md-4 xs-mb-15">
 					<img src="images/people/leadership/Dan_Smyth.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('Dan.Smyth@europeanlung.org', 'Dan Smyth') !!}</strong>
 		            European Lung Foundation Chair<br>

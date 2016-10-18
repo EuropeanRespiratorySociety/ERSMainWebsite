@@ -26,7 +26,7 @@
             <div class="tab-content">
                 <div id="eu_a_1" class="tab-pane active cont">
                     <div class="row row_news">
-						@include('partials.category-items', array('items' => $items))             			       
+						@include('partials.items', array('items' => $items))             			       
                     </div>
                 </div>
                 <div id="eu_a_2" class="tab-pane cont">

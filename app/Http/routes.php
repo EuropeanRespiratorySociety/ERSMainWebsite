@@ -13,40 +13,16 @@
 
 //this route will be use as a web hook
 //to purge we need the full url (http://...)
-Route::get('cache', function(){
-    //param: url=https://www.ersnet.org/the/url/to/clean
-    $url = Input::get('url', false);
-    //param: all=true
-    $all = Input::get('all', false);
-    
-    if($url){
-       $cleaned = App::make('http_cache.store')->purge($url);
-    }
-    if($all){
-        $cleaned = \File::cleanDirectory(app('http_cache.cache_dir'));
-    }
+Route::get('cache', 'MaintenanceController@cache');
 
-    if(!$cleaned){
-        return "The cache has not been cleaned";
-       }
-       return "The cache has been cleaned";
+//Get the model
+Route::get('schema:set', 'MaintenanceController@schema');
+Route::get('view:clear', 'MaintenanceController@view');
+//Purge the model
+Route::get('schema:clear', 'MaintenanceController@unsetSchema');
 
-});
 //////DANGER NEED TOKEN CSRF CHECK -> Cached value
 Route::post('search', 'SearchController@search');
-
-Route::get('cache-flush', function(){
-    \File::cleanDirectory(app('http_cache.cache_dir'));
-    return "The cache has been flushed";
-});
-
-Route::get('schema', 'GeneralController@schema');
-
-/*Route::get('token-flush', function(){
-    \File::cleanDirectory(env('CC_TOKEN_STORAGE_PATH'));
-    return "The token has been flushed";
-});*/
-
 
 
 
@@ -67,76 +43,84 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/', 'HomeController@index');
 
     //The order matters!!!
-    Route::get('the-society/who-we-are', 'WhoWeAreController@index');
-    Route::get('the-society/who-we-are/executive-office', function(){ return view('society.executive-office');});
-    Route::get('the-society/who-we-are/leadership', function(){ return view('society.leadership');});
-    Route::get('the-society/who-we-are/awards', 'GeneralController@awards'); 
-    Route::get('the-society/who-we-are/awards/{slug}', 'GeneralController@show'); 
-    Route::get('the-society/who-we-are/leadership/national-delegates', function(){return view('society.leadership.national-delegates');});
-    Route::get('the-society/who-we-are/leadership/science-council', function(){return view('society.leadership.science-council');});
-    Route::get('the-society/who-we-are/leadership/assembly-heads', function(){return view('society.leadership.assembly-heads');});
-    Route::get('the-society/who-we-are/leadership/education-council', function(){return view('society.leadership.education-council');});
-    Route::get('the-society/who-we-are/leadership/assembly-secretaries', function(){return view('society.leadership.assembly-secretaries');});
-    Route::get('the-society/who-we-are/leadership/council', function(){return view('society.leadership.council');});
-    Route::get('the-society/who-we-are/leadership/advocacy-council', function(){return view('society.leadership.advocacy-council');});
-    Route::get('the-society/who-we-are/leadership/{slug}', 'WhoWeAreController@show'); 
-    Route::get('the-society/who-we-are/contact', function(){ return view('society.contact');});
-    Route::get('the-society/who-we-are/{slug}', 'WhoWeAreController@show');
+Route::group(['prefix' => 'the-society/who-we-are'], function () { 
+    Route::get('/', 'WhoWeAreController@index');
+    Route::get('executive-office', function(){ return view('society.executive-office');});
+    Route::get('leadership', function(){ return view('society.leadership');});
+    Route::get('awards', 'GeneralController@awards'); 
+    Route::get('awards/{slug}', 'GeneralController@show'); 
+    Route::group(['prefix' => 'leadership'], function () { 
+        Route::get('national-delegates', function(){return view('society.leadership.national-delegates');});
+        Route::get('science-council', function(){return view('society.leadership.science-council');});
+        Route::get('assembly-heads', function(){return view('society.leadership.assembly-heads');});
+        Route::get('education-council', function(){return view('society.leadership.education-council');});
+        Route::get('assembly-secretaries', function(){return view('society.leadership.assembly-secretaries');});
+        Route::get('council', function(){return view('society.leadership.council');});
+        Route::get('advocacy-council', function(){return view('society.leadership.advocacy-council');});
+        Route::get('/{slug}', 'WhoWeAreController@show'); 
+    });
+    Route::get('contact', function(){ return view('society.contact');});
+    Route::get('/{slug}', 'WhoWeAreController@show');
+});    
 
-    Route::get('the-society/news', 'NewsController@index');
-    Route::get('the-society/news/respiratory-worldwide', 'NewsController@indexRespiratoryWorldWide');
-    Route::get('the-society/news/respiratory-matters', 'NewsController@indexRespiratoryMatters');
-    Route::get('the-society/news/respiratory-worldwide/{slug}', 'NewsController@show');    
-    Route::get('the-society/news/respiratory-matters/{slug}', 'NewsController@show');    
-    Route::get('the-society/news/{slug}', 'NewsController@show');
+Route::group(['prefix' => 'the-society/news'], function () {
+    Route::get('/', 'NewsController@index');
+    Route::get('respiratory-worldwide', 'NewsController@indexRespiratoryWorldWide');
+    Route::get('respiratory-matters', 'NewsController@indexRespiratoryMatters');
+    Route::get('respiratory-worldwide/{slug}', 'NewsController@show');    
+    Route::get('respiratory-matters/{slug}', 'NewsController@show');    
+    Route::get('/{slug}', 'NewsController@show');
+});
 
 //Few redirects to avoid user missbehaviours
-    Route::get('community', 'GeneralController@community');
-    Route::get('scientific-and-educational-events', 'GeneralController@sciAndEduEvents');
-    Route::get('publications', 'GeneralController@publications');
+    Route::get('community', 'RedirectController@community');
+    Route::get('scientific-and-educational-events', 'RedirectController@sciAndEduEvents');
+    Route::get('publications', 'RedirectController@publications');
+    Route::get('professional-development', 'RedirectController@professionalDevelopment');
+    Route::get('advocacy', 'RedirectController@advocacy');
+    
     Route::get('publications/{slug}', 'GeneralController@show');
 
-    /*Route::get('the-society/membership', function(){
-        return view('society.membership');
-    });*/
     Route::get('the-society/membership', 'MembershipController@index');
-
     Route::get('the-society/membership/{slug}', "GeneralController@show");
-
     Route::get('the-society/assemblies', function(){
         return view('society.assemblies');
     });
 
-    Route::get('congress-and-events/ers-research-seminars', 'ResearchController@researchSeminarsRedirect');
-    Route::get('congress-and-events/ers-presidential-summits', 'ResearchController@summits');
-    Route::get('congress-and-events/ers-presidential-summits/{slug}', 'ResearchController@showRS');
-    Route::get('congress-and-events/the-lung-science-conference', 'LscController@index');
-    Route::get('congress-and-events/the-lung-science-conference/{slug}', 'LscController@show');
-    Route::get('congress-and-events/events-calendar', 'CalendarController@index');
-    Route::get('congress-and-events/{slug}', 'GeneralController@show');
+Route::group(['prefix' => 'congress-and-events'], function () {
+    Route::get('ers-research-seminars', 'RedirectController@researchSeminars');
+    Route::get('ers-presidential-summits', 'ResearchController@summits');
+    Route::get('ers-presidential-summits/{slug}', 'ResearchController@showRS');
+    Route::get('the-lung-science-conference', 'LscController@index');
+    Route::get('the-lung-science-conference/{slug}', 'LscController@show');
+    Route::get('events-calendar', 'CalendarController@index');
+    Route::get('/{slug}', 'GeneralController@show');
+});
 
-    Route::get('professional-development/courses', 'CourseController@index');
-    Route::get('professional-development/courses/{slug}', 'CourseController@show');
-    Route::get('professional-development/fellowships/short-term-research-training-fellowships', 'FellowshipController@indexShortTerm');
-    Route::get('professional-development/fellowships/short-term-research-training-fellowships/{slug?}', 'FellowshipController@indexShortTerm');
-    Route::get('professional-development/fellowships/long-term-research-fellowships', 'FellowshipController@indexLongTerm');
-    Route::get('professional-development/fellowships/long-term-research-fellowships/{slug?}', 'FellowshipController@indexLongTerm');
-    Route::get('professional-development/fellowships/ers-fellowships-in-industry', 'FellowshipController@indexIndustry');
-    Route::get('professional-development/fellowships/ers-fellowships-in-industry/{slug?}', 'FellowshipController@indexIndustry');
-    Route::get('professional-development/fellowships', 'FellowshipController@index'); 
-    Route::get('professional-development/fellowships/{slug}', 'FellowshipController@show');
-    Route::get('professional-development/grants-and-sponsorships', 'GeneralController@grantsAndSponsorships');
-    Route::get('professional-development/grants-and-sponsorships/{slug}', 'GeneralController@show');
-    Route::get('professional-development/educational-activities', 'CourseController@educationalActivities');
-    Route::get('professional-development/{slug}', 'GeneralController@show'); //acreditation uses this route   
-    Route::get('professional-development', 'CourseController@professionalDevelopment');
+Route::group(['prefix' => 'professional-development'], function () {
+    Route::get('courses', 'CourseController@index');
+    Route::get('courses/{slug}', 'CourseController@show');
+    Route::group(['prefix' => 'fellowships'], function () {
+        Route::get('short-term-research-training-fellowships', 'FellowshipController@indexShortTerm');
+        Route::get('short-term-research-training-fellowships/{slug?}', 'FellowshipController@indexShortTerm');
+        Route::get('long-term-research-fellowships', 'FellowshipController@indexLongTerm');
+        Route::get('long-term-research-fellowships/{slug?}', 'FellowshipController@indexLongTerm');
+        Route::get('ers-fellowships-in-industry', 'FellowshipController@indexIndustry');
+        Route::get('ers-fellowships-in-industry/{slug}', 'FellowshipController@show');
+        Route::get('/', 'FellowshipController@index'); 
+        Route::get('/{slug}', 'FellowshipController@show');
+    });    
+    Route::get('grants-and-sponsorships', 'GeneralController@grantsAndSponsorships');
+    Route::get('grants-and-sponsorships/{slug}', 'GeneralController@show');
+    Route::get('/{slug}', 'GeneralController@show'); //acreditation uses this route   
+});
 
-    Route::get('research', 'GeneralController@research'); 
+    Route::get('research', 'RedirectController@research'); 
     Route::get('research/research-seminars', 'ResearchController@researchSeminars'); 
     Route::get('research/research-seminars/{slug}', 'ResearchController@showRS'); 
     Route::get('research/{slug}', 'ResearchController@show');   
     
-    Route::get('advocacy', 'GeneralController@advocacy');
+
     Route::get('advocacy/eu-affairs', 'GeneralController@euAffairs');
     Route::get('advocacy/eu-affairs/{slug}', 'GeneralController@show');
     Route::get('advocacy/eu-projects', 'GeneralController@euProjects');
@@ -150,11 +134,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('authors', 'NewsController@authors');
     Route::get('authors/{slug}', 'NewsController@showAuthor');
 
-
-
     //Route::get('cc', 'CloudCms@requestTest');
-
-
     Route::get('full-search', 'CloudCms@fullSearch');
 
 });

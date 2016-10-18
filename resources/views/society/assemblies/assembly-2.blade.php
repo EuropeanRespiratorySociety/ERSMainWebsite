@@ -26,8 +26,8 @@ The Assembly is comprised of the following two groups:
                     </div> 
                     <div class="card-content text-left">
                       <p>Group 02.01<br>
-                      Chair: Schultz Marcus<br>
-                      Secretary: {!! Html::mailto('L.Heunks@ic.umcn.nl', 'Leo Heunks') !!}</p>
+                      Chair: {!! Html::mailto('c.gregoretti@gmail.com', 'Cesare Gregoretti') !!}<br>
+                      Secretary: Schultz Marcus</p>
                     </div>
                     <div class="card-action clearfix">
                       <button data-toggle="modal" data-target="#md-acute-critical" type="button" class="btn btn-default pull-right">More</button>

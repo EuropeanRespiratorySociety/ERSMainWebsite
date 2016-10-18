@@ -4,7 +4,7 @@ namespace App\Extensions;
 
 use Carbon\Carbon;
 
-public class DateHelper
+class DateHelper
 {
     /**
     * Generate a correctly formated date for the ERS Calendar
@@ -22,6 +22,14 @@ public class DateHelper
 
         return (object) $cal;
     }
+
+    /**
+    * This function check if one of the category is "Events Calendar" thus if the item has 
+    * been added to the European Respiratory Socitey Calendar.
+    *
+    *@param array $array
+    *@return boolean
+    */
 
     public function isCalendar($array){
         $cal = false;
@@ -41,24 +49,28 @@ public class DateHelper
     *@param string $end
     *@return string 
     */
-    public function ersDate($start, $end = null)
+    public function ersDate($start, $end = false)
     {
-        $startDate = new \DateTime($start);
-        $start = Carbon::instance($startDate);
+        if($start !== false){
+            $startDate = new \DateTime($start);
+            $start = Carbon::instance($startDate);            
 
-        if($end !== null){
-        	$endDate = new \DateTime($end);   
-        	$end = Carbon::instance($endDate);
+            if($end !== false){
+            	$endDate = new \DateTime($end);   
+            	$end = Carbon::instance($endDate);
 
-            if($start->format('F') != $end->format('F')) {
-                return $start->day.' '.$start->format('F').' - '.$end->day.' '.$end->format('F').', '.$end->year;    
+                if($start->format('F') != $end->format('F')) {
+                    return $start->day.' '.$start->format('F').' - '.$end->day.' '.$end->format('F').', '.$end->year;    
+                }
+                if($start->format('F') == $end->format('F')) {
+                    return $start->day.'-'.$end->day.' '.$end->format('F').', '.$end->year; 
+                }
             }
-            if($start->format('F') == $end->format('F')) {
-                return $start->day.'-'.$end->day.' '.$end->format('F').', '.$end->year; 
-            }
-        }
 
-        return $start->day.' '.$start->format('F').', '.$start->year;     
+            return $start->day.' '.$start->format('F').', '.$start->year;  
+        }  
+
+        return false; 
     }
 
     public function toTimestamp($date){
