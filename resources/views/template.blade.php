@@ -43,8 +43,8 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" href="https://bootstrap.ersnet.org/css/all.css" type="text/css"/>
-    {{--<link rel="stylesheet" href="http://erstemplate.app/css/all.css" type="text/css"/>--}}
+     <link rel="stylesheet" href="https://bootstrap.ersnet.org/css/all.css" type="text/css"/>
+   {{--<link rel="stylesheet" href="http://erstemplate.app/css/all.css" type="text/css"/>--}}
 
 
   </head>

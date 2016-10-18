@@ -12,7 +12,9 @@
 @stop()
 @section('content')
 
-<div class="ers-content ers-courses light-grey-bg">
+
+<div class="ers-content"> 
+    <div class="col-md-9 light-grey-bg">
             <div class="main-content">
                 @if(isset($category->title))
                 <div class="page-head">
@@ -24,7 +26,74 @@
                     {!!$category->body!!}
                 </div>
                 @endif
-           
+
+                <div class="row" >
+                    <div class="col-md-4">
+                        <div class="card card-primary card-padded">
+                            <div class="card-image">
+                                <img class="img-responsive" src="../images/london2016.jpg">
+                            </div>
+                            
+                            <div class="card-title text-left">
+                                <h3>Respiratory Matters</h3>
+                            </div> 
+
+                            <div class="card-content  text-left">
+                                <p>Respiratory Matters is ERS’s experts’ blog, designed to give you insights from respiratory leaders across the world from the clinician, scientist and allied health professional perspectives. </p>
+                            </div>
+                            
+                            <div class="card-action" position="absolute; bottom:0;">
+                                <a href="https://forms.ersnet.org/respiratory-matters" target="_blank" class="btn btn-default pull-left">SUBSCRIBE</a>
+                                <a href="{{url('the-society/news/respiratory-matters')}}" target="new_blank" class="btn btn-dark-primary pull-right">More</a>
+                            </div>
+                        </div><!-- card card-primary card-padded -->
+                    </div><!-- col-md-4 -->
+
+                    <div class="col-md-4">
+                        <div class="card card-primary card-padded">
+                            <div class="card-image">
+                                <img class="img-responsive" src="../images/london2016.jpg">
+                            </div>
+                            
+                            <div class="card-title  text-left">
+                                <h3>Respiratory Worldwide</h3>
+                            </div> 
+
+                            <div class="card-content  text-left">
+                                <p>Respiratory worldwide is a monthly column for leaders from national and regional respiratory organisations to share their news and views. </p>
+                            </div>
+                            
+                            <div class="card-action">
+                                <a href="https://forms.ersnet.org/respiratory-world-wide" target="_blank" class="btn btn-default pull-left">SUBSCRIBE</a>
+                                <a href="{{url('the-society/news/respiratory-worldwide')}}" target="new_blank" class="btn btn-dark-primary pull-right">More</a>
+                            </div>
+                        </div><!-- card card-primary card-padded -->
+                    </div><!-- col-md-4 -->
+                    <div class="col-md-4">
+                        <div class="card card-vision card-padded">
+                            <div class="card-image">
+                                <img class="img-responsive" src="../images/hermes.jpg">
+                            </div>
+                            <div class="card-title  text-left">
+                                <h3>ERS Vision</h3>
+                            </div>                 
+                            <div class="card-content  text-left">
+                                <p>ERS Vision is ERS’s open access video documentary series which tackles the key topics in respiratory health with discussion from leaders in the field of respiratory medicine and healthcare.</p>
+                            </div>
+                            
+                            <div class="card-action">
+                                <!-- <a href="#" target="new_blank" class="btn btn-transparent pull-left">SUBSCRIBE</a> -->
+                                <a href="http://www.ersvision.org/home/" target="new_blank" class="btn btn-dark-vision pull-right">More</a>
+                            </div>
+                        </div>
+                    </div><!-- col-md-4 --> 
+                </div><!-- row for card -->
+            </div><!-- main-content news and feautures -->
+            <div class="main-content" style="overflow: hidden; ">
+                <div class="page-head">
+                    <h2 class="">Latest News</h2>
+                </div>
+
                 <div class="row row_event rel">
                     @include('partials.news-items',array('items' => $items, 'class' => 'col-md-4'))
                 </div>
@@ -33,9 +102,36 @@
                     @include('partials.pagination',array('category' => $category, isset($pagination) ? $pagination : null))
                 </div>
                 @endif
+            </div><!-- main-content latest news -->
+    </div><!-- col-md-9 -->
+        @include('articles.subscribe', array('class' => 'col-md-3'))
+</div><!-- ers-content -->
+@stop() 
+
+@section('modals')
+
+<div id="nft-custom" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+                <div class="list-group ">
+                        <h3><a href="http://eepurl.com/jL9of" target="_blank" class="list-group-item">ER Weekly</a></h3>
+                        <h3><a href="https://forms.ersnet.org/respiratory-matters" target="_blank" class="list-group-item">Respiratory Matters</a></h3>
+                        <h3><a href="https://forms.ersnet.org/respiratory-world-wide" target="_blank" class="list-group-item">Respiratory Worldwide</a></h3>
+                </div>
             </div>
-</div>
-@stop()  
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-primary">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+@stop
 
 @section('scripts')  
 <script type="text/javascript">
