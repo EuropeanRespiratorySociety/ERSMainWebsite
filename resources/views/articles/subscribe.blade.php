@@ -46,8 +46,8 @@
                             <div><p> <a data-toggle="modal" data-target="#nft-custom" type="button" class="btn btn-space btn-primary btn-rounded btn-lg"><i class="icon icon-ers"></i> SUBSCRIBE</a></p>
                                
                             </div>                            
-                            <div class="right-col-lead">
-                                <p>Stay up to date with the latest news from the European Respiratory Society, including current ERS affairs and highlights in industry leading research. </p>
+                            <div class="right-col-lead center-text">
+                                <p style="text-align: center;">Subscribe to ERS newsletters.</p>
                             </div>
 
 
