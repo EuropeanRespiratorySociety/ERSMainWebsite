@@ -1,6 +1,6 @@
 <div class="card-action clearfix">
     @if($item->registerButton->link)
-    <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-register">register</a>
+    <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-register">{{$item->registerButton->text or register}}</a>
     @endif
     @if($item->uri)
         <a href="{{url($item->uri)}}"  class="btn btn-register">more</a>

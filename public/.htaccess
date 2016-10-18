@@ -1080,6 +1080,8 @@
         Redirect 301 /about-us/healthy-lungs-for-life/item/5004-promoting-clean-air-in-kyrgyzstan-healthy-lungs-for-life.html    http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/
         Redirect 301 /about-us/healthy-lungs-for-life/item/5145-healthy-lungs-for-life-at-the-athens-marathon.html   http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/
         Redirect 301 /about-us/healthy-lungs-for-life/item/5157-healthy-lungs-for-life-in-the-european-parliament.html   http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/
+        # B
+        Redirect 301 /bylaws https://ers.app.box.com/s/th0u7ke4k9ue8y4dhcj7y8vi8l7x537f
         # C
         Redirect 301 /case-demo http://www.ersnet.org/learning_resources_player/cases/AJ10.htm
         Redirect 301 /certificates http://datacheck.ersnet.org/~ersnet/mycme_vie12/
