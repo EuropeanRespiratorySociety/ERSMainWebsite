@@ -6,7 +6,29 @@
 @endif      
         <div class="card card-event">            
             @include('elements.card.image', array('item' => $item))
-            @include('elements.card.content', array('item' => $item))
+
+            <div class="card-content">
+                @if($item->earlybirdDeadline)
+                    <p class="btn-rounded early_bird">Early Bird deadline {{ $item->earlybirdDeadline }}</p>
+                @endif
+                <h3 class="title">
+                        <a data-toggle="modal" data-target="#{{$item->slug}}">{{ $item->title }}</a>  
+                </h3>
+                @if($item->createdOn && $item->type)
+                    @if($item->type == "News")
+                        <h4 class="date">{{ $item->createdOn }}</h4>
+                    @endif
+                @endif
+                @if($item->eventLocation)
+                <p class="place"><span class="icon s7-map-marker"></span> {{ $item->eventLocation }}</p>
+                @endif
+                @if($item->eventDates)
+                    <p class="date"><span class="icon s7-date"></span> {{ $item->eventDates }}</p>
+                @endif
+                @if($item->lead)
+                <div class="lead-card">{!! $item->lead !!}</div>
+                @endif
+            </div>
 
             <div class="card-action clearfix">
             @if($item->registerButton->link)

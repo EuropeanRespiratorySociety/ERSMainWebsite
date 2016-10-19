@@ -52,7 +52,7 @@ class CloudCmsParser
                     $item->title = $this->formatTitle($item->title);
 
                     // Markdown Fields
-                    $item->lead = Markdown::parse($item->leadParagraph);
+                    $item->lead = strip_tags(Markdown::parse($item->leadParagraph));
                     $item->body = Markdown::parse($item->body);
                     
                     if($item->popUp){

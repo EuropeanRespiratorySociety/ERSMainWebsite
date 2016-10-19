@@ -9,6 +9,18 @@
             <a href="{{Request::path().'/'.$item->slug}}">{{ $item->title }}</a>
         @endif    
     </h3>
+    @if($item->sponsors && $item->contentType == "event_grant")
+        <div class="">
+            <p class=""><b>{{$item->sponsors->text}}</b>
+            </p>
+        </div>
+    @endif 
+    @if($item->sponsors && $item->contentType == "event_award")
+        <div class="">
+            <p class=""><b>{{$item->sponsors->text}}</b>
+            </p>
+        </div>
+    @endif 
     @if($item->createdOn && $item->type)
         @if($item->type == "News")
             <h4 class="date">{{ $item->createdOn }}</h4>
