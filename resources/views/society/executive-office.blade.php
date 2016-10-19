@@ -441,7 +441,7 @@
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
             <img src="../images/people/executive-office/bward.jpg" class="img-circle">
             <p class="photo_caption"><strong>{!! Html::mailto('brian.ward@ersnet.org', 'BRIAN WARD') !!}</strong>
-            Director of European Affairs<br>
+            Director of Advocacy and European Affairs<br>
             T +32 2 238 53 66<br>
             </p>
           </div>
