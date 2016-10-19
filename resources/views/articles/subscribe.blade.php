@@ -35,7 +35,7 @@
                                     <p>Press and media activities for the ERS press releases on the latest research in the ERJ, interviews with ERS experts, and managing press and media for the ERS International Congress and other ERS events.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="http://ersnet.app/the-society/news/press-office"  class="btn btn-dark-primary pull-right">MORE</a>
+                                    <a href="{{url('the-society/news/press-office')}}"  class="btn btn-dark-primary pull-right">MORE</a>
                                 </div>
                             </div><!-- card card-event -->
                         </li>
