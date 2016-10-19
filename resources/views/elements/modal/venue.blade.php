@@ -38,7 +38,7 @@
               {{$item->venue->streetAddress3}}<br>
             @endif
             @if($item->venue->postalCode){{$item->venue->postalCode}}@endif
-            @if($item->venue->city)){{$item->venue->city}}@endif<br>
+            @if($item->venue->city){{$item->venue->city}}@endif<br>
             @if($item->venue->country){{$item->venue->country}}@endif
             <hr>
             @if($item->venue->info){!!$item->venue->info!!}@endif

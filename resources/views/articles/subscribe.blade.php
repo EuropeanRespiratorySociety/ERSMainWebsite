@@ -32,7 +32,7 @@
                                     <h3>Press Office</h3>
                                 </div>                 
                                 <div class="card-content">
-                                    <p>Press and media activities for the ERS press releases on the latest research in the ERJ, interviews with ERS experts, and managing press and media for the ERS International Congress and other ERS events.</p>
+                                    <p>The ERS Press Office is responsible for handling media enquiries, facilitating interviews with ERS experts or patient representatives, and managing press and media activities for the ERS annual Congress.</p>
                                 </div>
                                 <div class="card-action">
                                     <a href="{{url('the-society/news/press-office')}}"  class="btn btn-dark-primary pull-right">MORE</a>
