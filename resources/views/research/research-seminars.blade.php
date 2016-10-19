@@ -69,7 +69,7 @@
       You are organising your own event and wish to have it endorsed by the ERS, <a href="congress-and-events/external-events-endorsement">consult the guidelines and the form</a> on the dedicated page.
     </p>
   </div>
-<!-- END Right Side-bar -->
+{{-- END Right Side-bar --}}
 </div>
 </div>
 

@@ -132,15 +132,17 @@
       </div>
 
     </div>
-    <!-- End Right Sidebar -->
+    {{-- End Right Sidebar --}}
   </div>
 </div>
 
-{{--Modal contents div--}}
-
-{{--END Modal contents div--}}
-
 @stop()  
+
+@section('modals')
+  {{--Modal contents div--}}
+
+  {{--END Modal contents div--}}
+@stop()
 
 @section('scripts')
     

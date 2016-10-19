@@ -29,8 +29,12 @@
                 </div>
             </div> 
 </div>
- @include('partials.modal-items', array('items' => $items))
+
 @stop()  
+
+@section('modals')
+    @include('partials.modal-items', array('items' => $items))
+@stop()
 
 @section('scripts')  
 <script type="text/javascript">

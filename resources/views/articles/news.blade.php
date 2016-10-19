@@ -11,9 +11,11 @@
         @endif      
 @stop()
 @section('content')
-
-
+@if($category->title == "News and Features")
+<div class="ers-content news"> 
+@else
 <div class="ers-content"> 
+@endif
     <div class="col-md-9 light-grey-bg">
             <div class="main-content">
                 @if($category->title)
@@ -26,7 +28,7 @@
                     {!!$category->body!!}
                 </div>
                 @endif
-
+                @if($category->title == "News and Features")
                 <div class="row" >
                     <div class="col-md-4">
                         <div class="card card-primary card-padded">
@@ -44,7 +46,7 @@
                             
                             <div class="card-action" position="absolute; bottom:0;">
                                 <a href="https://forms.ersnet.org/respiratory-matters" target="_blank" class="btn btn-default pull-left">SUBSCRIBE</a>
-                                <a href="{{url('the-society/news/respiratory-matters')}}" target="new_blank" class="btn btn-dark-primary pull-right">More</a>
+                                <a href="{{url('the-society/news/respiratory-matters')}}" class="btn btn-dark-primary pull-right">More</a>
                             </div>
                         </div><!-- card card-primary card-padded -->
                     </div><!-- col-md-4 -->
@@ -65,7 +67,7 @@
                             
                             <div class="card-action">
                                 <a href="https://forms.ersnet.org/respiratory-world-wide" target="_blank" class="btn btn-default pull-left">SUBSCRIBE</a>
-                                <a href="{{url('the-society/news/respiratory-worldwide')}}" target="new_blank" class="btn btn-dark-primary pull-right">More</a>
+                                <a href="{{url('the-society/news/respiratory-worldwide')}}" class="btn btn-dark-primary pull-right">More</a>
                             </div>
                         </div><!-- card card-primary card-padded -->
                     </div><!-- col-md-4 -->
@@ -83,17 +85,19 @@
                             
                             <div class="card-action">
                                 <!-- <a href="#" target="new_blank" class="btn btn-transparent pull-left">SUBSCRIBE</a> -->
-                                <a href="http://www.ersvision.org/home/" target="new_blank" class="btn btn-dark-vision pull-right">More</a>
+                                <a href="http://www.ersvision.org/home/" target="_blank" class="btn btn-dark-vision pull-right">More</a>
                             </div>
                         </div>
                     </div><!-- col-md-4 --> 
                 </div><!-- row for card -->
+                @endif
             </div><!-- main-content news and feautures -->
             <div class="main-content" style="overflow: hidden; ">
-                <div class="page-head">
-                    <h2 class="">Latest News</h2>
-                </div>
-
+                @if($category->title == "News and Features")
+                    <div class="page-head">
+                        <h2 class="">Latest News</h2>
+                    </div>
+                @endif
                 <div class="row row_event rel">
                     @include('partials.items',array('items' => $items, 'class' => 'col-md-4'))
                 </div>
@@ -109,8 +113,7 @@
 @stop() 
 
 @section('modals')
-
-<div id="nft-custom" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+    <div id="nft-custom" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -131,7 +134,7 @@
         </div>
       </div>
     </div>
-@stop
+@stop()
 
 @section('scripts')  
 <script type="text/javascript">

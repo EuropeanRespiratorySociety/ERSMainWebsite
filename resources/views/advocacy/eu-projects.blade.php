@@ -1,6 +1,7 @@
 @extends('template')
 @section('content')
 <div class="ers-content ers-courses">
+<div class="main-content">
 	<div class="page-head">
 	        <h2 class="">EU Projects</h2>
 	</div>
@@ -11,7 +12,7 @@
 	<div class="row row_event rel">
 		@include('partials.category-items-modal',array('items' => $items, 'class' => 'col-md-3'))
 	</div>
-
+</div>
 </div>
 @include('partials.modal-items', array('items' => $items))
 @stop()  

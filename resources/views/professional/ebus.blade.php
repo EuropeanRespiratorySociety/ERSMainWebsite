@@ -192,16 +192,17 @@
     <!-- End Right Sidebar -->
   </div>
 </div>
+@stop()
 
 {{--Modal contents div--}}
-@include('elements.modal.venue', array('item' => $item)) 
-@include('elements.modal.venues', array('item' => $item)) 
-@include('elements.modal.cancellation', array('item' => $item)) 
-@include('elements.modal.travel-info', array('item' => $item))  
-@include('elements.modal.technical-info', array('item' => $item))  
-{{--END Modal contents div--}}
-
+@section('modals')
+  @include('elements.modal.venue', array('item' => $item)) 
+  @include('elements.modal.venues', array('item' => $item)) 
+  @include('elements.modal.cancellation', array('item' => $item)) 
+  @include('elements.modal.travel-info', array('item' => $item))  
+  @include('elements.modal.technical-info', array('item' => $item))
 @stop()  
+{{--END Modal contents div--}}  
 
 @section('scripts')
     

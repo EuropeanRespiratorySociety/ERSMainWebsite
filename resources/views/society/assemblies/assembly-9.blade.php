@@ -34,7 +34,7 @@ The Assembly is comprised of the following three groups:
                   <div class="card-content text-left">
                     <p>Group 09.01<br>
                     Chair: {!! Html::mailto('J.Makonga@meandermc.nl', 'Jellien Makonga Braaksma') !!}<br>
-                    Secretary: {!! Html::mailto('wtomalak@igrabka.edu.pl', 'Waldemar Tomalak') !!}</p>
+                    Secretary: </p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-respiratory-function" type="button" class="btn btn-default pull-right">More</button>

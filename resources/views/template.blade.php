@@ -43,7 +43,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-     <link rel="stylesheet" href="https://bootstrap.ersnet.org/css/all.css" type="text/css"/>
+    <link rel="stylesheet" href="https://bootstrap.ersnet.org/css/all.css" type="text/css"/>
    {{--<link rel="stylesheet" href="http://erstemplate.app/css/all.css" type="text/css"/>--}}
 
 
@@ -93,6 +93,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {{--<script src="/js/sw-registration.js" type="text/javascript"></script>--}}
 
     {{-- Modal windows --}}
+    @yield('modals')
     @include('forms.simple-search') 
 
   </body>

@@ -15,7 +15,7 @@
                         </li>                
                     </ul>
                 </div><!-- dropdown-menu -->
-                <a type="button" class="btn btn-space btn-default" href="https://www.linkedin.com/grp/home?gid=4348517"><i class="fa fa-linkedin"></i></a>
+                <a type="button" class="btn btn-space btn-default" href="https://www.linkedin.com/company/european-respiratory-society"><i class="fa fa-linkedin"></i></a>
                 <a type="button" class="btn btn-space btn-default" href="https://www.youtube.com/user/EuropeanRespiratory"><i class="fa fa-youtube-play"></i></a>
             </div><!-- fixed-bottom --> 
                  
@@ -43,7 +43,7 @@
                         <li class="list-group-item panel " style="margin-bottom: 200px;">
                             <!-- <div class="right-col-title h2">Subscribe
                             </div> -->
-                            <div><p> <a data-toggle="modal" data-target="#nft-custom" type="button" class="btn btn-space btn-primary btn-rounded btn-lg"><i class="icon icon-ers"></i> SUBSCRIBE</a></p>
+                            <div><p> <a data-toggle="modal" href="javascript:void(0)" data-target="#nft-custom" type="button" class="btn btn-space btn-primary btn-rounded btn-lg"><i class="icon icon-ers"></i> SUBSCRIBE</a></p>
                                
                             </div>                            
                             <div class="right-col-lead center-text">
