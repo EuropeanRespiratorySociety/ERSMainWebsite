@@ -8,16 +8,16 @@
                     <h2 class="">{{$year}}</h2>
                 </div>
     @foreach ($months as $month => $items)          
-         	<h3>{{$month}}</h3>  
+         	<h3 class="month">{{$month}}</h3>  
                 <div class="row row_event rel">
                 @if(count($items) > 2)
-                    @include('partials.calendar-items',array('items' => $items, 'class' => 'col-md-4'))
+                    @include('partials.items',array('items' => $items, 'class' => 'col-md-4'))
                 @elseif(count($items) == 2) 
                     <div class="col-md-2">&nbsp;</div>   
-                    @include('partials.calendar-items',array('items' => $items, 'class' => 'col-md-4'))
+                    @include('partials.items',array('items' => $items, 'class' => 'col-md-4'))
                 @else
                     <div class="col-md-4">&nbsp;</div>   
-                    @include('partials.calendar-items',array('items' => $items, 'class' => 'col-md-4'))
+                    @include('partials.items',array('items' => $items, 'class' => 'col-md-4'))
                 @endif    
                     
                 </div>
