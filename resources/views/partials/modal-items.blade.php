@@ -1,5 +1,5 @@
 @foreach ($items as $item)
-<!-- Start Modal -->
+{{-- Start Modal --}}
     <div id="@if($item->slug){{$item->slug}}@endif" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -23,15 +23,16 @@
           <div class="modal-footer">
             @if($item->sponsors)
             <div class="">
-                <h3 class="">Sponsor: {{$item->sponsors->text}}</h3>
+                {{--<h3 class="">Sponsor: {{$item->sponsors->text}}</h3>--}}
                 @if($item->sponsors->image)
-                    <img class="display:inline;" style="height:60px;" src="{{ $item->sponsors->image}}" class="img-responsive">
+                    <img style="height:60px;" src="{{ $item->sponsors->image}}" class="pull-right img-responsive">
                 @endif    
+                <i class="pull-right icon-ers icon" style="font-size:60px; color:#d0043c;">&nbsp;</i>
             </div>
             @endif 
           </div>
         </div>
       </div>
     </div>
-<!-- End Modal -->
+{{-- End Modal --}}
 @endforeach

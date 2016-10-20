@@ -40,12 +40,6 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/ernst_eber.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('ernst.eber@medunigraz.at', 'Ernst Eber') !!}</strong>
-		            Curriculum Development Director<br>
-		            </p>
-	        	</div>
-	        	<div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/ildiko_horvath.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('kiss.horvath1@t-online.hu', 'Ildiko Horvath') !!}</strong>
 		            Assessments Director<br>
