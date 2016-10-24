@@ -13,6 +13,9 @@ class BingHelper {
         $response = $client->request('GET','https://api.cognitive.microsoft.com/bing/v5.0/search'.$params, ['headers' => ['Ocp-Apim-Subscription-Key' => env('BING_SEARCH')]]);
         $results = json_decode($response->getBody(), true);
         $key = 0;
+        if(!isset($results['webPages']) || !isset($results['webPages']['value'])){
+            return $parsed = array();
+        }
         foreach($results['webPages']['value'] as $value){
         	$url = $this->urlDecode($value['url']);
         	if (strpos($value['displayUrl'], 'https://') !== false 
