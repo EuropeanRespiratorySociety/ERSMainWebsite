@@ -17,11 +17,13 @@ class BingHelper {
         	$url = $this->urlDecode($value['url']);
         	if (strpos($value['displayUrl'], 'https://') !== false 
         		&& strpos($url, '.html') == false 
-        		&& strpos($url, '.pdf') == false) {
+        		&& strpos($url, '.pdf') == false
+        		&& strpos($url, 'index.php') == false
+        		&& strpos($url, '.doc') == false) {
 	        	$parsed[$key]['url'] = $url;
 	        	$title = explode('|', $value['name']);
 	        	$parsed[$key]['title'] = $title[0];
-	        	$parsed[$key]['lead'] = $value['snippet'];
+	        	$parsed[$key]['leadParagraph'] = $value['snippet'];
 	        	$key ++ ;
 	        }
 

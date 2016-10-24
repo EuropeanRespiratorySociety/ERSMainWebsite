@@ -48,7 +48,7 @@
 
 			<!--Harmonising education-->
 			<div class="col-md-3">
-				<h2>Harmonising education</h2>
+				<h2>Curriculum Development</h2>
 				<ul>
 					<li><a target="_blank" href="http://hermes.ersnet.org">Established curriculam</a></li>
 					<li><!--<a target="_blank" href="">Curricula</a>--></li>

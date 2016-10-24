@@ -15,19 +15,8 @@ class SearchController extends Controller
         $results = $CC->search($request->input('query'));
         $items = $CC->parseItems($results['rows']);
 
-        if(empty($items)){
-            $params['items'] = false;
-            return view('search.simple')->with($params); 
-        }
-
         $bing = new Bing(); 
         $results =  $bing->search($request->input('query'));
-
-        //formatting the array for it to fit the model
-        foreach($results as $key => $result){
-            $results[$key]['leadParagraph'] = $result['lead'];
-            unset($results[$key]['lead']);
-        }
 
         $bingItems = $CC->parseItems($results);
 
@@ -37,6 +26,11 @@ class SearchController extends Controller
             if(!in_array($result->url, $items)){
                 array_push($params['items'], $result);
             }
+        }
+
+        if(empty($params['items'])){
+            $params['items'] = false;
+            return view('search.simple')->with($params); 
         }
 
         return view('search.simple')->with($params); 
