@@ -87,7 +87,7 @@
                   float: left;
                   margin-left: 10px;">
             <li>
-            <a href="https://ers.box.com/shared/static/lb71kvnc2dr6am25k82xvphxdjcsm9eh.pdf">Application Guidelines</a>
+            <a href="https://ers.box.com/shared/static/lb71kvnc2dr6am25k82xvphxdjcsm9eh.pdf">LTRF 2017 Application Guidelines</a>
             </li>
             @if($category->popUpText)
             <li>
