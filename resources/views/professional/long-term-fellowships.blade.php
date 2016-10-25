@@ -26,7 +26,9 @@
         </div>
 
         <div class="col-md-8 event-items-fs-title">
-
+        <div class="alert alert-danger" style="margin: 20px 0 0 0;">
+          <div class="message"> Call open</div>
+        </div>
           <div class="page-head"><h2 class="article-title">{{$category->title}}</h2></div>
 
           @if($category->body)
@@ -60,10 +62,8 @@
         <span class="icon s7-alarm"></span>
         <p>
           APPLICATION DEADLINE : <br>
-          <span>31 January each year</span>
+          <span>End January each year</span>
         </p>
-
-
       </a>
       <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
        <span class="icon s7-bell"></span>
@@ -71,8 +71,6 @@
         NOTIFICATION : <br>
         <span>Mid-May each year</span>
       </p>
-
-
     </a>
     <a href="javascript:void(0)" class="list-group-item clearfix cursor_default">
       <span class="icon s7-date"></span>
@@ -81,14 +79,27 @@
         <span>From August onwards</span>
       </p>
     </a>
-
+    <span href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
+      <span class="icon s7-copy-file"></span>
+      <p>
+        DOCUMENTS : <br>
+        <ul style="display: table;
+                  float: left;
+                  margin-left: 10px;">
+            <li>
+            <a href="https://ers.box.com/shared/static/lb71kvnc2dr6am25k82xvphxdjcsm9eh.pdf">Application Guidelines</a>
+            </li>
+            @if($category->popUpText)
+            <li>
+              <a data-toggle="modal" data-target="#md-popUp" class="cursor_pointer">{{$category->popUpText}}</a>
+            </li>
+            @endif
+          </ul>
+      </p>
+    </span>
   </div>
-
   <p class="rules text-left">
-    <!--<a href="javascript:void(0)">Application Guidelines</a> <br>-->
-    @if($category->popUpText)
-      <a data-toggle="modal" data-target="#md-popUp" class="cursor_pointer">{{$category->popUpText}}</a><br>
-    @endif
+
     <span style="font-size:16px;vertical-align: middle;" class="icon s7-mail"></span>{!! Html::mailto('fellowships@ersnet.org', ' Contact us') !!}
   </p>
 
