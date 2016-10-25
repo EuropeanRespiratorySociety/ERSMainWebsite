@@ -32,7 +32,7 @@
     @if($item->eventDates)
         <p class="date"><span class="icon s7-date"></span> {{ $item->eventDates }}</p>
     @endif
-    @if($item->lead)
-    <div class="lead-card">{!! $item->lead !!}</div>
+    @if($item->shortLead)
+    <div class="lead-card">{!! $item->shortLead !!}</div>
     @endif
 </div>

@@ -52,7 +52,7 @@ class CloudCmsParser
                     $item->title = $this->formatTitle($item->title);
 
                     // Markdown Fields
-                    $item->lead = strip_tags(Markdown::parse($item->leadParagraph));
+                    $item->lead = Markdown::parse($item->leadParagraph);
                     $item->body = Markdown::parse($item->body);
                     
                     if($item->popUp){
@@ -180,10 +180,11 @@ class CloudCmsParser
 
                     // Added fields to the model
                     $item->typeColor = $item->type ? $this->setTypeColor($item->type) : false;
+                    $item->articleTwoColumns = $item->articleTwoColumns ? $item->articleTwoColumns : true;
                     $item->createdOn = isset($item->_system->created_on->timestamp) ? $this->date->ersDate($item->_system->created_on->timestamp) : false;
                     $item->calendar = $item->eventDate ? $this->date->calendar($item->eventDate) : false;
                     $item->ms = $item->_system->created_on->ms ?? false;     
-                    $item->shortLead = $item->leadParagraph ? $this->truncate(strip_tags(Markdown::parse($item->leadParagraph))) : false;
+                    $item->shortLead = $item->leadParagraph ? strip_tags(Markdown::parse($item->leadParagraph)) : false;
                     $item->hasRelatedArticles = $item->_statistics->{'ers:related-association'} ?? 0;
                     $item->hasAuthor = $item->_statistics->{'ers:author-association'} ?? 0;
                     $item->salutation = $item->salutation ?? false;
