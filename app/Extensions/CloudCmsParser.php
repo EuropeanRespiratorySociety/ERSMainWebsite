@@ -242,7 +242,7 @@ class CloudCmsParser
         foreach ($flags as $key => $flag) {
             $flag->text ?? false;
             if($flag->text){
-                $flag->text = $this->truncate($flag->text, 25);
+                $flag->text = $this->truncate($flag->text, 42);
             }
             $flag->color ?? false;
         }

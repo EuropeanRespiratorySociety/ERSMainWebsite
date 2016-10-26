@@ -26,9 +26,9 @@
         </div>
 
         <div class="col-md-8 event-items-fs-title">
-        <div class="alert alert-danger" style="margin: 20px 0 0 0;">
+        {{--<div class="alert alert-danger" style="margin: 20px 0 0 0;">
           <div class="message"> Call open</div>
-        </div>
+        </div>--}}
           <div class="page-head"><h2 class="article-title">{{$category->title}}</h2></div>
 
           @if($category->body)
@@ -104,7 +104,7 @@
   </p>
 
   @if($category->registerButton->link)
-    <a href="{{$category->registerButton->link}}" target="_blank" class="btn btn-primary item-register-bt">{{$category->registerButton->text}}</a>
+    <a href="{{$category->registerButton->link}}" target="_blank" class="btn btn-lg  btn-primary item-register-bt">{{$category->registerButton->text}}</a>
   @endif  
 </div>
 
