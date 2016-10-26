@@ -225,7 +225,7 @@
             </div>
             
             <div class="event-items-right-bt">
-            <p>Any questions? Please contact{!! Html::mailto('scientific@ersnet.org', 'scientific@ersnet.org') !!}</p>
+            <p>Any questions? Please contact {!! Html::mailto('scientific@ersnet.org', 'scientific@ersnet.org') !!}</p>
             @if($item->extendedDeadline)
             <p class="deadline">EXTENDED registration deadline : {{$item->extendedDeadline}}</p>
             @endif
@@ -233,13 +233,13 @@
             <p><a data-toggle="modal" data-target="#md-cancellation" type="button" class="">Cancellation policy</a></p>
             @endif
             @if($item->registerButton->link && !$item->fullyBooked)
-              <a href="{{$item->registerButton->link}}"" class="btn btn-primary tab-register-bt">Register</a>
+              <a href="{{$item->registerButton->link}}" class="btn btn-primary tab-register-bt">Register</a>
             @endif
             @if($item->fullyBooked)
               <p>Please contact {!! Html::mailto('educaion@ersnet.org', 'education@ersnet.org') !!} to be added to the waiting list.</p>
               <a href="#" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
             @endif
-            @if($item->openingDate)
+            @if($item->openingDate && !$item->registerButton->link)
               <p class="text-danger">The registration will open on {{$item->openingDate}}</p>
               <a href="#" class="btn btn-primary disabled tab-register-bt">Register</a>
             @endif
