@@ -42,7 +42,7 @@
     {{--  Beginning Right Side-bar --}}
     <div class="col-md-3 white-bg event-items-right">
 
-      @if($item->flags)
+      @if($item->flags->text)
         <div class="alert {{'alert-'.$item->flags->color }}">
           <div class="message"> {{ $item->flags->text }}</div>
         </div>
