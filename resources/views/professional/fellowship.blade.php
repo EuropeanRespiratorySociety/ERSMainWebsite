@@ -78,6 +78,7 @@
             </p>
           </a>
           @endif
+          @if($item->title == "Marie Curie Post-doctoral Research Fellowships (RESPIRE 3)")
               <span href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
       <span class="icon s7-copy-file"></span>
       <p>
@@ -99,6 +100,7 @@
           </ul>
       </p>
     </span>
+    @endif
         </div>
         <p class="rules text-left">
         @if($item->rulesAndRegulations)
