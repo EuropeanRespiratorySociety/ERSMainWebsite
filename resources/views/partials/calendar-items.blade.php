@@ -1,3 +1,4 @@
+{{dd($items)}}
 @foreach ($items as $item)
 @if(!isset($class))
     <div class="col-md-4 isotope">
