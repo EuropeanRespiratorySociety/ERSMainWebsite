@@ -263,7 +263,7 @@
                        @endif
                     </ul>
                      @if($item->bursaryApplication->applyButtonUrl)
-                        <a href="{{$item->bursaryApplication->applyButtonUrl}}"" class="btn btn-primary tab-register-bt">Apply</a>
+                        <a href="{{$item->bursaryApplication->applyButtonUrl}}" class="btn btn-primary tab-register-bt">Apply</a>
                      @endif
           </div>
           @endif

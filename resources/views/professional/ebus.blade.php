@@ -154,7 +154,7 @@
             <p><a data-toggle="modal" data-target="#md-travel_info" type="button" class="">Travel Info</a></p>
             @endif
             @if(isset($item->registerButton->link) && !$item->fullyBooked)
-              <a href="{{$item->registerButton->link}}"" class="btn btn-primary tab-register-bt">Register</a>
+              <a href="{{$item->registerButton->link}}" class="btn btn-primary tab-register-bt">Register</a>
             @endif
             @if($item->fullyBooked)
               <p>Please contact {!! Html::mailto('educaion@ersnet.org', 'education@ersnet.org') !!} to be added to the waiting list.</p>
@@ -180,7 +180,7 @@
                      @endif
                      </ul>
                      @if($item->bursaryApplication->applyButtonUrl)
-                      <a href="{{$item->bursaryApplication->applyButtonUrl}}"" class="btn btn-primary tab-register-bt">Apply</a>
+                      <a href="{{$item->bursaryApplication->applyButtonUrl}}" class="btn btn-primary tab-register-bt">Apply</a>
                      @endif
           </div>
           @endif

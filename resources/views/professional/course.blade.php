@@ -206,7 +206,7 @@
             </a>
             @endif
             @if($item->fullyBooked)
-              <p>Please contact {!! Html::mailto('educaion@ersnet.org', 'education@ersnet.org') !!} to be added to the waiting list.</p>
+              <p>Please contact {!! Html::mailto('education@ersnet.org', 'education@ersnet.org') !!} to be added to the waiting list.</p>
               <a href="javascript:void(0)" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
             @endif
             </div>
@@ -230,7 +230,7 @@
                      @endif
                      </ul>
                      @if($item->bursaryApplication->applyButtonUrl)
-                      <a href="{{$item->bursaryApplication->applyButtonUrl}}"" class="btn btn-primary tab-register-bt">Apply</a>
+                      <a href="{{$item->bursaryApplication->applyButtonUrl}}" class="btn btn-primary tab-register-bt">Apply</a>
                      @endif
           </div>
           @endif
