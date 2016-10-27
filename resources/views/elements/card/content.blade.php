@@ -9,10 +9,10 @@
             <a href="{{Request::path().'/'.$item->slug}}">{{ $item->title }}</a>
         @endif    
     </h3>
-    @if($item->sponsors && $item->contentType == "event_grant")
+    @if($item->sponsors->text && $item->contentType == "event_grant")
         <p class="sponsor"><span class="icon icon-building"></span> {{$item->sponsors->text}}</p>
     @endif 
-    @if($item->sponsors && $item->contentType == "event_award")
+    @if($item->sponsors->text && $item->contentType == "event_award")
         <p class="sponsor"><span class="icon icon-building"></span> {{$item->sponsors->text}}</p>
     @endif 
     @if($item->createdOn && $item->type)
