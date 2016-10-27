@@ -59,7 +59,7 @@
       <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
 
       @endif
-      @if($item->sponsors)
+      @if($item->sponsors->text)
          @if($item->image)
           <hr>
          @endif
