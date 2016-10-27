@@ -18,43 +18,43 @@
 				</div>
 			</div>
 			<div class="col-md-4 pull-right top-right-col text-left">
-				@if(isset($first->uri))
+				@if($first->uri)
 					<a href="{{url($first->uri)}}">
 				@endif
 					<div class="card card-event card-event-large">
-						@if(isset($first->type))
-              				<span class="label @if(isset($first->typeColor)){{$first->typeColor}}@else label-default @endif">{{$first->type}}</span>
+						@if($first->type)
+              				<span class="label @if($first->typeColor){{$first->typeColor}}@else label-default @endif">{{$first->type}}</span>
             			@endif
-						@if(isset($first->image))
+						@if($first->image)
 						<div class="card-image">
-              				<img class="img-responsive" src="{{url($first->image)}}" @if(isset($first->imageDescription))alt="{{$first->imageDescription}}" @endif >
+              				<img class="img-responsive" src="{{url($first->image)}}" @if($first->imageDescription)alt="{{$first->imageDescription}}" @endif >
 						</div>
 						@endif
 						<div class="card-content white-bg">
-						@if(isset($first->title))
+						@if($first->title)
 							<p class="title">
 								{{$first->title}}
 							</p>
 						@endif
-						@if(isset($first->eventDates))
+						@if($first->eventDates)
 						<p class="date">
 							{{$first->eventDates}}
 						</p>
 						@endif	
-						@if(isset($first->shortLead))
+						@if($first->shortLead)
 							<p>
 								{{$first->shortLead}}
 							</p>
 						@endif
-						@if(isset($first->earlybirdDeadline))
+						@if($first->earlybirdDeadline)
 							<p class="btn-rounded early_bird">Early Bird deadline: {{$first->earlybirdDeadline}}</p>
 						@endif	
-						@if(isset($first->eventLocation))
+						@if($first->eventLocation)
 							<p class="place"><span class="icon s7-map-marker"></span>{{$first->eventLocation}}</p>
 						@endif	
 						</div>
 					</div>
-				@if(isset($first->uri))	
+				@if($first->uri)	
 				</a>
 				@endif
 			</div>
@@ -68,45 +68,45 @@
         	@foreach($items as $item)
 				<div class="col-md-3">
 					<div class="card card-event">
-						@if(isset($item->type))
-              				<span class="label @if(isset($item->typeColor)){{$item->typeColor}}@else label-default @endif">{{$item->type}}</span>
+						@if($item->type)
+              				<span class="label @if($item->typeColor){{$item->typeColor}}@else label-default @endif">{{$item->type}}</span>
             			@endif
-						@if(isset($item->image))
+						@if($item->image)
 						<div class="card-image">
-              				<img class="img-responsive" src="{{url($item->image)}}" @if(isset($item->imageDescription))alt="{{$item->imageDescription}}" @endif >
+              				<img class="img-responsive" src="{{url($item->image)}}" @if($item->imageDescription)alt="{{$item->imageDescription}}" @endif >
 						</div>
 						@endif
 						<div class="card-content">
-						@if(isset($item->title))
+						@if($item->title)
 							<p class="title">
 								{{$item->title}}
 							</p>
 						@endif
-						@if(isset($item->eventDates))
+						@if($item->eventDates)
 						<p class="date">
 							{{$item->eventDates}}
 						</p>
 						@endif	
-						@if(isset($item->shortLead))
+						@if($item->shortLead)
 							<p>
 								{{$item->shortLead}}
 							</p>
 						@endif
-						@if(isset($item->earlybirdDeadline))
+						@if($item->earlybirdDeadline)
 							<p class="btn-rounded early_bird">Early Bird deadline: {{$item->earlybirdDeadline}}</p>
 						@endif	
-						@if(isset($item->eventLocation))
+						@if($item->eventLocation)
 							<p class="place"><span class="icon s7-map-marker"></span>{{$item->eventLocation}}</p>
 						@endif	
 						</div>
 						<div class="card-action clearfix">
-							@if(isset($item->category) && $item->category == "ERS Courses")
+							@if($item->category && $item->category == "ERS Courses")
 								<a href="#" target="new_blank" class="btn btn-default text-capitalize">All Courses</a>
 							@endif
-							@if(isset($item->category) && $item->category == "Research Seminars")
+							@if($item->category && $item->category == "Research Seminars")
 								<a href="#" target="new_blank" class="btn btn-default text-capitalize">All Seminars</a>
 							@endif
-							@if(isset($item->uri))
+							@if($item->uri)
 								<a href="{{url($item->uri)}}"  class="btn btn-default">more...</a>
 							@endif
 						</div>

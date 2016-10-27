@@ -31,7 +31,7 @@
     {{-- Start Section 2 --}} 
     @include('home.home-sections.community')
 
-    {{-- Start Section 3 --}}  
+    {{-- Start Section 3 --}} 
     @include('home.home-sections.scientific', array('items' => $items['calendar'], 'first' => $items['firstEvent']))
 
     {{-- Start Section 4 --}}  
