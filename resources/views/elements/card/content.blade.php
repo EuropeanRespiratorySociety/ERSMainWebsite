@@ -10,16 +10,10 @@
         @endif    
     </h3>
     @if($item->sponsors && $item->contentType == "event_grant")
-        <div class="">
-            <p class=""><b>{{$item->sponsors->text}}</b>
-            </p>
-        </div>
+        <p class="sponsor"><span class="icon icon-building"></span> {{$item->sponsors->text}}</p>
     @endif 
     @if($item->sponsors && $item->contentType == "event_award")
-        <div class="">
-            <p class=""><b>{{$item->sponsors->text}}</b>
-            </p>
-        </div>
+        <p class="sponsor"><span class="icon icon-building"></span> {{$item->sponsors->text}}</p>
     @endif 
     @if($item->createdOn && $item->type)
         @if($item->type == "News")
