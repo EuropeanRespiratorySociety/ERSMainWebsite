@@ -375,10 +375,10 @@ Major interests include the nature of disordered respiratory control in disease 
       <div class="modal-body">
         <div class="text-left">
           <h4>Airway Pharmacology and Treatment</h4>
-          <p>Most airway and lung diseases are not cured and treatment is often through pharmacological agents. This Group, being a part of the Clinical Allergy and Immunology Assembly, historically has focused on the pharmacology of drugs used in asthma therapy and the development of scientific rationales for new drug development.<br><br>
-
-Therefore, it covers all aspects of drug development from basic science through animal models to early phase 1/2 studies. This area has involved collaboration between clinicians, pharmacologists and more recently molecular biologists and biochemists. Our Group has also begun to see an increased interest in severe steroid-insensitive asthma and other lung diseases, specifically COPD, where current treatments are relatively ineffective. We are also concerned with innovative therapeutic approaches to disorders that have been somewhat ignored in the past, such as pulmonary fibrosis and pulmonary hypertension. Moreover, cooperation with experts in infectious diseases is desirable due to increasing use of antibiotics for lung disease. In particular, the investigation of the correlation between the pulmonary pharmacokinetics and pharmacodynamics of antibiotics is now essential.
-          </p>
+          <p>The airway pharmacology and treatment group consists of 466 members and has a truly translational research focus. Most airway and lung diseases are not cured and treatment is often through pharmacological agents. Historically, the airway pharmacology and treatment group has focused on the pharmacology of drugs used in asthma and COPD therapy and the development of scientific rationales for new drug development.
+Thus, it covers all aspects of drug development from basic science through animal models to phase 1-3 clinical trials. This area has involved collaboration between clinicians, pharmacologists and more recently molecular biologists and biochemists.
+ <br> <br>
+There is further interest in bronchodilator drugs, therapies targeting cough, anti-inflammatory therapies and therapies aimed at tissue remodelling in chronic lung disease. In all of these areas, the investigation of the correlation between the pulmonary pharmacokinetics and pharmacodynamics is essential, ensuring the group has a strong interest in studies on drug deposition and delivery through (innovative) delivery devices. Finally, cooperation with experts in infectious diseases exists due to increasing use of antibiotics for lung disease.</p>
         </div>
       </div>
     </div>
