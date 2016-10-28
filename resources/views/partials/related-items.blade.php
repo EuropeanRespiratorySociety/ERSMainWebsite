@@ -6,7 +6,7 @@
       <div class="card card-default card-events">
 
       <span class="label {{ $item->typeColor }}">@if($related->eventDates){{$related->eventDates}}@endif</span>
-      <div class="card-content col-md-8 pull-right">
+      <div class="card-content col-md-8 col-xs-8 pull-right">
           <h4>
             {{$related->title}}
           </h4>  
@@ -15,7 +15,7 @@
           </p>--}}
         </div>        
         @if($related->image)
-          <div class="card-image col-md-4 pull-left">
+          <div class="card-image col-md-4 col-xs-4 pull-left">
           <!--<span class="label label-danger">Few days left</span>-->
             <img class="img-responsive" src="{{ $related->image }}">
           </div> 
