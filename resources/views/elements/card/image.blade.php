@@ -1,11 +1,5 @@
-<?php  
-$external = false;
-if($item->nonErsCalendarItem || $item->ersEndorsedEvent){
-     $external = true;
-}
-?>
-<div class="card-image" 
-    @if($item->image && !$external)
+<div class="card-image"
+    @if($item->image && !$item->nonErsCalendarItem)
         style="max-height:300px;
             @if($item->imageSize)
                 @if($item->imageSize == 'large') height:300px; @else height:150px; @endif
