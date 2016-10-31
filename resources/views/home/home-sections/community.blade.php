@@ -39,7 +39,7 @@
         <a href="the-society/who-we-are/fellow-of-ers">
           <div class="card card-padded card-home">
 
-            <img src="../images/community/fellow.jpg" alt="">
+            <img src="../images/community/fers-fellow.jpg" alt="">
             <div class="title-box"><h2>Fellow of ERS</h2></div>
           </div>
         </a>
