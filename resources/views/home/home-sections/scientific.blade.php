@@ -18,102 +18,24 @@
 				</div>
 			</div>
 			<div class="col-md-4 pull-right top-right-col text-left">
-				@if($first->uri)
-					<a href="{{url($first->uri)}}">
-				@endif
-					<div class="card card-event card-event-large">
-						@if($first->type)
-              				<span class="label @if($first->typeColor){{$first->typeColor}}@else label-default @endif">{{$first->type}}</span>
-            			@endif
-						@if($first->image)
-						<div class="card-image">
-              				<img class="img-responsive" src="{{url($first->image)}}" @if($first->imageDescription)alt="{{$first->imageDescription}}" @endif >
-						</div>
-						@endif
-						<div class="card-content white-bg">
-						@if($first->title)
-							<p class="title">
-								{{$first->title}}
-							</p>
-						@endif
-						@if($first->eventDates)
-						<p class="date">
-							{{$first->eventDates}}
-						</p>
-						@endif	
-						@if($first->shortLead)
-							<p>
-								{{$first->shortLead}}
-							</p>
-						@endif
-						@if($first->earlybirdDeadline)
-							<p class="btn-rounded early_bird">Early Bird deadline: {{$first->earlybirdDeadline}}</p>
-						@endif	
-						@if($first->eventLocation)
-							<p class="place"><span class="icon s7-map-marker"></span>{{$first->eventLocation}}</p>
-						@endif	
-						</div>
-					</div>
-				@if($first->uri)	
-				</a>
-				@endif
+				<div class="card card-event"> 
+					@include('elements.card.image', array('item' => $first))       
+					@include('elements.card.content', array('item' => $first))
+					@include('elements.card.action', array('item' => $first))
+				</div>	
 			</div>
 		</div>
 		<div class="space"></div>
 	</div>
 	<div class="light-grey-bg">
         <div class="main-content">
-
-        	<div class="row row_event">
-        	@foreach($items as $item)
-				<div class="col-md-3">
-					<div class="card card-event">
-						@if($item->type)
-              				<span class="label @if($item->typeColor){{$item->typeColor}}@else label-default @endif">{{$item->type}}</span>
-            			@endif
-						@if($item->image)
-						<div class="card-image">
-              				<img class="img-responsive" src="{{url($item->image)}}" @if($item->imageDescription)alt="{{$item->imageDescription}}" @endif >
-						</div>
-						@endif
-						<div class="card-content">
-						@if($item->title)
-							<p class="title">
-								{{$item->title}}
-							</p>
-						@endif
-						@if($item->eventDates)
-						<p class="date">
-							{{$item->eventDates}}
-						</p>
-						@endif	
-						@if($item->shortLead)
-							<p>
-								{{$item->shortLead}}
-							</p>
-						@endif
-						@if($item->earlybirdDeadline)
-							<p class="btn-rounded early_bird">Early Bird deadline: {{$item->earlybirdDeadline}}</p>
-						@endif	
-						@if($item->eventLocation)
-							<p class="place"><span class="icon s7-map-marker"></span>{{$item->eventLocation}}</p>
-						@endif	
-						</div>
-						<div class="card-action clearfix">
-							@if($item->category && $item->category == "ERS Courses")
-								<a href="#" target="new_blank" class="btn btn-default text-capitalize">All Courses</a>
-							@endif
-							@if($item->category && $item->category == "Research Seminars")
-								<a href="#" target="new_blank" class="btn btn-default text-capitalize">All Seminars</a>
-							@endif
-							@if($item->uri)
-								<a href="{{url($item->uri)}}"  class="btn btn-default">more...</a>
-							@endif
-						</div>
-					</div>
+		{{-- START Cards --}}
+			@if($items)
+				<div class="row row_event">
+					@include('partials.items', array('items' => $items, 'class' => 'col-md-3'))
 				</div>
-			@endforeach	
-			</div>
+			@endif
+		{{-- END Cards --}}   
         </div>
     </div>		
 </div>

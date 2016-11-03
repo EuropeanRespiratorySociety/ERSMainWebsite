@@ -840,6 +840,26 @@ Among this Group, we would like to help the respiratory physician's practice by 
     </div>
   </div>
 </div>
+
+<!-- Lung and airway developmental biology-->
+<div id="md-lung-and-airway-developmental-biology" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="text-left">
+          <h4>Lung and airway developmental biology</h4>
+          <p>This new group within the Paediatrics Assembly focuses on lung and airway development, and the relationship between lung and airway development and respiratory heath during childhood and beyond. It is intended that we will drive cutting-edge, basic science research into lung and airway development, and bridge the gap between basic science and translational paediatric pulmonology. 
+ <br><br>
+As a Group we aim to be a platform that facilitates close cooperation between basic scientists working in the arena of lung developmental biology and clinicians actively engaged in the practice of paediatric and adult respiratory medicine. This Group also aims to address the early (paediatric) origins of adult lung disease, and the long-term sequelae of early lung disease. We encourage our members to submit abstracts from their groups on these and other aspects of lung development, and to give active input into the activities of the Group.
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!--Fin Modal contents div-->
 
 

@@ -266,7 +266,6 @@ class CloudCmsHelper
         $articleCounter = 1;
         $calendarCounter = 1;
         $fundingCounter = 1;
-        $elearningCounter = 1;
         $courseCounter = 1;
         $nonERS = false;
 
@@ -278,25 +277,20 @@ class CloudCmsHelper
                 $nonERS = true;
             }
 
-            if(isset($item->type) && $item->type == "e-learning" && $elearningCounter <= 1){
-                $sorted['eLearning'] = $item;
-                $elearningCounter++;
-            }
-
-            if($item->contentType == "event_course" && $item->featuredCourse && $courseCounter <= 1){
-                $sorted['featuredCourse'] = $item;
+            if($item->featuredCourse && $courseCounter <= 4){
+                $sorted['featuredCourses'][] = $item;
                 $courseCounter++;
             }
-
-            if(($item->contentType == "event_fellowship" || $item->contentType == "event_seminar") && $item->featuredFunding && $fundingCounter <= 1){
-                $sorted['featuredFunding'] = $item;
+            //Featured Funding == Research Section
+            if($item->featuredFunding && $fundingCounter <= 4){
+                $sorted['featuredResearchItems'][] = $item;
                 $fundingCounter++;
             }
 
             if($item->category2 && $calendarCounter <= 5 && !$nonERS){
                 if($cal->isCalendar($item->category2) || $item->category->title == "Events Calendar"){
                     if(isset($sorted['firstEvent'])){
-                      $sorted['calendar'][$key] = $item;  
+                      $sorted['calendar'][] = $item;  
                     }
                     if($calendarCounter <= 1){
                         $sorted['firstEvent'] = $item;
@@ -308,7 +302,7 @@ class CloudCmsHelper
             if($item->contentType == "article" && $articleCounter <= 4){
 
                 if($item->mainNews != true){
-                    $sorted['news'][$key] = $item;
+                    $sorted['news'][] = $item;
                 }
 
                 if($articleCounter <= 1 || $item->mainNews == true){

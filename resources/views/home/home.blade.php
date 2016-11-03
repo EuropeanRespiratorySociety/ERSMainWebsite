@@ -39,13 +39,12 @@
 
     {{-- Start Section 5 --}} 
     @include('home.home-sections.professional', array(
-              'funding' => isset($items['featuredFunding']) ? $items['featuredFunding'] : '',
-              'eLearning' => isset($items['eLearning']) ? $items['eLearning'] : '',
-              'course' => isset($items['featuredCourse']) ? $items['featuredCourse'] : ''
+              'items' => isset($items['featuredCourses']) ? $items['featuredCourses'] : false
               ))
 
      {{-- Start Section 6 --}} 
-    @include('home.home-sections.research')
+    @include('home.home-sections.research', array(
+              'items' => isset($items['featuredResearchItems']) ? $items['featuredResearchItems'] : false))
 
      {{-- Start Section 7 --}}  
     @include('home.home-sections.advocacy')

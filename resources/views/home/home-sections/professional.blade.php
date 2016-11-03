@@ -56,97 +56,14 @@
 			</div>
 			<!--FIN Harmonising education-->
 		</div>
-
-
-		
-		<!--Cards for Events-->
-		@if((isset($eLearning) && !empty($eLearning)) || isset($course) && !empty($course)))	
-		<hr style="margin:50px 0; border-top: 1px solid #ddd;">
-		<div class="row text-left row-professional row-professional-cards">
-	
-			@if(isset($eLearning) && !empty($eLearning))	
-			<div class="col-md-3">
-					@if(isset($eLearning->uri))
-					<a href="{{url($eLearning->uri)}}">
-					@endif
-						<div class="card card-event card-event-large">
-							@if(isset($eLearning->type))
-							<span class="label @if(isset($eLearning->typeColor)){{$eLearning->typeColor}}@else label-default @endif">{{$eLearning->type}}</span>
-							@endif
-							@if(isset($eLearning->image))
-							<div class="card-image">
-								<img class="img-responsive" src="{{url($eLearning->image)}}" @if(isset($eLearning->imageDescription))alt="{{$eLearning->imageDescription}}" @endif />
-							</div>
-							@endif
-							<div class="card-content white-bg">
-								@if(isset($eLearning->title))
-								<p class="title">
-									{{$eLearning->title}}
-								</p>
-								@endif
-								@if(isset($eLearning->eventDates))
-								<p class="date">
-									{{$eLearning->eventDates}}
-								</p>
-								@endif	
-								@if(isset($eLearning->earlybirdDeadline))
-								<p class="btn-rounded early_bird">Early Bird deadline: {{$eLearning->earlybirdDeadline}}</p>
-								@endif	
-								@if(isset($eLearning->eventLocation))
-								<p class="place"><span class="icon s7-map-marker"></span>{{$eLearning->eventLocation}}</p>
-								@endif	
-							</div>
-						</div>
-					@if(isset($eLearning->uri))	
-					</a>
-					@endif						
-			</div>
-
-		@endif	
-
-		@if(isset($course) && !empty($course))		
-			<div class="col-md-3">
-					@if(isset($course->uri))
-			    	<a href="{{url($course->uri)}}">
-			    	@endif
-			    		<div class="card card-event card-event-large">
-			    			@if(isset($course->type))
-			    			<span class="label @if(isset($course->typeColor)){{$course->typeColor}}@else label-default @endif">{{$course->type}}</span>
-			    			@endif
-			    			@if(isset($course->image))
-			    			<div class="card-image">
-			    				<img class="img-responsive" src="{{url($course->image)}}" @if(isset($course->imageDescription))alt="{{$course->imageDescription}}" @endif />
-			    			</div>
-			    			@endif
-			    			<div class="card-content white-bg">
-			    				@if(isset($course->title))
-			    				<p class="title">
-			    					{{$course->title}}
-			    				</p>
-			    				@endif
-			    				@if(isset($course->eventDates))
-			    				<p class="date">
-			    					{{$course->eventDates}}
-			    				</p>
-			    				@endif	
-			    				@if(isset($course->earlybirdDeadline))
-			    				<p class="btn-rounded early_bird">Early Bird deadline: {{$course->earlybirdDeadline}}</p>
-			    				@endif	
-			    				@if(isset($course->eventLocation))
-			    				<p class="place"><span class="icon s7-map-marker"></span>{{$course->eventLocation}}</p>
-			    				@endif	
-			    			</div>
-			    		</div>
-			    	@if(isset($course->uri))	
-			    	</a>
-		    		@endif
-
-			</div>
-			@endif
-
-		</div>
-		@endif
-		<!--END Cards for Events-->
+  {{-- START Cards --}}
+    @if($items)
+        <hr style="margin:50px 0; border-top: 1px solid #ddd;">
+        <div class="row row_event">
+            @include('partials.items', array('items' => $items, 'class' => 'col-md-3'))
+        </div>
+    @endif
+  {{-- END Cards --}}
 
 
 	</div>

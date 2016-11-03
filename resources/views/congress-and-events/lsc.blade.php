@@ -150,76 +150,57 @@
                       </a>
                     </li>
                   @endif
+                  @if($item->venue->name ||
+                      $item->venue->url ||
+                      $item->venue->phoneNumber ||
+                      $item->venue->streetAddress ||
+                      $item->venue->streetAddress2 ||
+                      $item->venue->streetAddress3 ||
+                      $item->venue->postalCode ||
+                      $item->venue->city ||
+                      $item->venue->info )
+                  <li class="list-group-item"><a data-toggle="modal" data-target="#md-venue_accommodation" type="button" class="cursor_pointer"><span class="icon icon-hotel"></span>Conference Venue</a></li>
+                  @endif
                 </ul>
 
-                @if($item->venue->name ||
-                    $item->venue->url ||
-                    $item->venue->phoneNumber ||
-                    $item->venue->streetAddress ||
-                    $item->venue->streetAddress2 ||
-                    $item->venue->streetAddress3 ||
-                    $item->venue->postalCode ||
-                    $item->venue->city ||
-                    $item->venue->info )
-                        <h4 class="modal-title">Conference Venue</h4>
-                        <div class="text-left">
-                          <p>
-                            @if($item->venue->url)
-                              <a target="_blank" href="{{$item->venue->url}}">
-                            @endif 
-                            @if($item->venue->name)
-                              {{$item->venue->name}} 
-                            @endif  
-                            @if($item->venue->url)
-                              </a>
-                            @endif
-                            <br/>
-                            @if($item->venue->streetAddress)
-                            {{$item->venue->streetAddress}}<br>
-                            @endif
-                            @if($item->venue->streetAddress2)
-                            {{$item->venue->streetAddress2}}<br>
-                            @endif
-                            @if($item->venue->streetAddress3)
-                            {{$item->venue->streetAddress3}}<br>
-                            @endif
-                            @if($item->venue->postalCode)
-                            {{$item->venue->postalCode}}@endif @if($item->venue->city){{$item->venue->city}}@endif<br>
-                            @if($item->venue->country){{$item->venue->country}}@endif
-                            @if($item->venue->info)
-                              {!!$item->venue->info!!}
-                            @endif
-                          </p>
-                        </div>
-                @endif
-                {{-- 
+                <hr>
                 <div class="list-group">
-                  <a href="#" class="list-group-item medium-grey-bg">
+                @if($item->feeList->junior)
+                  <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
                     <span class="badge">
-                      {{isset($item->feeList->junior) ? '&euro;' : ''}}
-                      {{$item->feeList->junior or '-'}}
+                      &euro; {{ $item->feeList->junior }}
                     </span> Junior ERS Members
                   </a>
-                  <a href="#" class="list-group-item">
+                @endif
+                @if($item->feeList->ersMember)
+                  <a href="javascript:void(0)" class="list-group-item cursor_default">
                     <span class="badge">
-                      {{isset($item->feeList->ersMember) ? '&euro;' : ''}}
-                      {{$item->feeList->ersMember or "-"}}
+                      &euro; {{ $item->feeList->ersMember}}
                     </span> ERS Members
                   </a>
-                  <a href="#" class="list-group-item medium-grey-bg">
+                @endif 
+                @if($item->feeList->nonErsMember)
+                  <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
                     <span class="badge">
-                      {{isset($item->feeList->nonErsMember) ? '&euro;' : ''}}
-                      {{$item->feeList->nonErsMember or "-"}}
+                      &euro; {{ $item->feeList->nonErsMember }}
                     </span> Non-ERS Members
                   </a>
-                  <a href="#" class="list-group-item">
+                @endif  
+                @if($item->feeList->industry)
+                  <a href="javascript:void(0)" class="list-group-item cursor_default">
                     <span class="badge">
-                      {{isset($item->feeList->industry) ? '&euro;' : ''}}
-                      {{$item->feeList->industry or "-"}}
-                    </span> Industry
+                      &euro; {{ $item->feeList->industry }}
+                    </span> Industry <br>(ERS Members & non-Members)
                   </a>
+                @endif  
+  
+                  <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
+                    <span class="badge">
+                      &euro; 180
+                    </span> Accompanying Person
+                  </a>
+          
                 </div>
-                --}}
 
               </div>
             </div>
@@ -301,7 +282,7 @@
                        @endif
                      </ul>
                      @if($item->mentorship->applyButtonUrl)
-                      <a href="{{$item->mentorship->applyButtonUrl}}"" class="btn btn-primary tab-register-bt">Apply</a>
+                      <a href="{{$item->mentorship->applyButtonUrl}}" class="btn btn-primary tab-register-bt">Apply</a>
                      @endif
         </div>
       </div>
@@ -333,7 +314,7 @@
                        @endif
                      </ul>
                      @if($item->abstracts->applyButtonUrl)
-                      <a href="{{$item->abstracts->applyButtonUrl}}"" class="btn btn-primary tab-register-bt">Apply</a>
+                      <a href="{{$item->abstracts->applyButtonUrl}}" class="btn btn-primary tab-register-bt">Apply</a>
                      @endif
         </div>
       </div>
@@ -345,6 +326,11 @@
 {{--END Modal contents div--}}
 
 @stop()  
+
+{{--Modal contents div--}}
+@section('modals')
+  @include('elements.modal.conference-venue', array('item' => $item)) 
+@stop  
 
 @section('scripts')
 @section('scripts')

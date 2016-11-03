@@ -150,6 +150,24 @@ The Assembly is comprised of the following seven groups:
                 </div>
               </div>
 
+              <div class="col-md-4">
+                <div class="card card-padded">
+                  <div class="card-image">
+                  </div>
+                  <div class="card-title text-left">
+                    <h3>Lung and airway developmental biology</h3>
+                  </div> 
+                  <div class="card-content text-left">
+                    <p>Group 07.08<br>
+                      <a href="https://www.ersnet.org/the-society/who-we-are/leadership/ers-elections">Elections are currently open</a> for the roles of Group Chair and Secretary. 
+                    </p>
+                  </div>
+                  <div class="card-action clearfix">
+                    <button data-toggle="modal" data-target="#md-lung-and-airway-developmental-biology" type="button" class="btn btn-default pull-right">More</button>
+                  </div>
+                </div>
+              </div>
+
  
 
             </div>

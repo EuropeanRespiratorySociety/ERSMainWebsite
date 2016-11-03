@@ -45,7 +45,7 @@
       </div>
       <!--FIN Research Seminars-->
 
-      <!--Research Agency-->
+      {{-- START Research Agency --}}
       <div class="col-md-3">
         <h2><a href="{{url('research/research-agency')}}">Research Agency </a></h2>
         <ul>
@@ -55,61 +55,18 @@
           
         </ul>
       </div>
-      <!--FIN Research Agency-->
+      {{-- END Research Agency --}}
 
 
     </div>
-
-    @if(isset($funding) && !empty($funding))
-    <hr style="margin:50px 0; border-top: 1px solid #ddd;">
-
-    <!--Cards for Events-->
-    <div class="row text-left row-research row-research-cards">
-      <div class="col-md-3">
-        @if(isset($funding))    
-          @if(isset($funding->uri))
-          <a href="{{url($funding->uri)}}">
-          @endif
-            <div class="card card-event card-event-large">
-              @if(isset($funding->type))
-              <span class="label @if(isset($funding->typeColor)){{$funding->typeColor}}@else label-default @endif">{{$funding->type}}</span>
-              @endif
-              @if(isset($funding->image))
-              <div class="card-image">
-                <img class="img-responsive" src="{{url($funding->image)}}" @if(isset($funding->imageDescription))alt="{{$funding->imageDescription}}" @endif />
-              </div>
-              @endif
-              <div class="card-content white-bg">
-                @if(isset($funding->title))
-                <p class="title">
-                  {{$funding->title}}
-                </p>
-                @endif
-                @if(isset($funding->eventDates))
-                <p class="date">
-                  {{$funding->eventDates}}
-                </p>
-                @endif  
-                @if(isset($funding->earlybirdDeadline))
-                <p class="btn-rounded early_bird">Early Bird deadline: {{$funding->earlybirdDeadline}}</p>
-                @endif  
-                @if(isset($funding->eventLocation))
-                <p class="place"><span class="icon s7-map-marker"></span>{{$funding->eventLocation}}</p>
-                @endif  
-              </div>
-            </div>
-          @if(isset($funding->uri))  
-          </a>
-          @endif  
-        @endif  
-
-      </div>
-
-      
-
-    </div>
-    <!--END Cards for Events-->
+  {{-- START Cards --}}
+    @if($items)
+        <hr style="margin:50px 0; border-top: 1px solid #ddd;">
+        <div class="row row_event">
+            @include('partials.items', array('items' => $items, 'class' => 'col-md-3'))
+        </div>
     @endif
+  {{-- END Cards --}}    
 
   </div>  
 </div>
