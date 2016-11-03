@@ -144,7 +144,7 @@
                     </li>
                   @endif
                   @if($item->abstracts)
-                    <li class="list-group-item">
+                    <li class="list-group-item" style="padding: 2px 15px">
                       <a href="#md-abstracts" data-toggle="modal" data-target="#md-abstracts">
                         <span class="icon s7-file"></span>Abstracts and bursaries
                       </a>
@@ -159,7 +159,7 @@
                       $item->venue->postalCode ||
                       $item->venue->city ||
                       $item->venue->info )
-                  <li class="list-group-item"><a data-toggle="modal" data-target="#md-venue_accommodation" type="button" class="cursor_pointer"><span class="icon icon-hotel"></span>Conference Venue</a></li>
+                  <li class="list-group-item" style="padding: 2px 15px"><a data-toggle="modal" data-target="#md-venue_accommodation" type="button" class="cursor_pointer"><span class="icon icon-hotel"></span>Conference Venue</a></li>
                   @endif
                 </ul>
 
