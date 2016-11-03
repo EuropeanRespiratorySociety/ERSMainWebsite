@@ -8,7 +8,7 @@
                 </div>
                 <div class="col-md-3 xs-mb-15">
                   <img src="../images/people/leadership/Leo_Heunks.jpg" class="img-circle">
-                  <p class="photo_caption">Secretary: {!! Html::mailto('L.Heunks@ic.umcn.nl', 'Leo Heunks') !!}</p>
+                  <p class="photo_caption">Secretary: {!! Html::mailto('L.Heunks@vumc.nl', 'Leo Heunks') !!}</p>
                  
                 </div>
             </div>
@@ -27,7 +27,7 @@ The Assembly is comprised of the following two groups:
                     <div class="card-content text-left">
                       <p>Group 02.01<br>
                       Chair: {!! Html::mailto('c.gregoretti@gmail.com', 'Cesare Gregoretti') !!}<br>
-                      Secretary: Schultz Marcus</p>
+                      Secretary: Marcus Schultz</p>
                     </div>
                     <div class="card-action clearfix">
                       <button data-toggle="modal" data-target="#md-acute-critical" type="button" class="btn btn-default pull-right">More</button>
