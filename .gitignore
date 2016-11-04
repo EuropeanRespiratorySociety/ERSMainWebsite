@@ -1,4 +1,5 @@
 /vendor
+/server/node_modules
 /storage/token
 /storage/cloudcms
 /storage/token-dev

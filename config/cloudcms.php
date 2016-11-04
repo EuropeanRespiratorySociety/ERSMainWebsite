@@ -36,7 +36,7 @@ return array(
     |
     */    
     'redirectUri'   => 'http://www.ersnet.org/',
-    'deploymentUrl' => 'https://53ed64a9-671f-4e65-9f57-5e736e3d5d62-hosted.cloudcms.net',
+    'deploymentUrl' => env('CC_DEPLOYMENT_URL', 'http://localhost:2999'),
     'repositoryId'  => '607e97e4474d46e40345',
     'branch'        => 'master',
 
