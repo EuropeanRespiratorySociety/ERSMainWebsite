@@ -28,7 +28,7 @@ class CalendarController extends Controller
         $array = array_values(array_sort($items, function ($value) {
             return $value->calendar->timestamp;
         }));
-        $items = $this->CC->sortCalendar($items);
+        $items = $this->CC->prepareCalendar($items);
         $params['items'] = (object) $items; 
         return view('congress-and-events.calendar')->with($params);    
 

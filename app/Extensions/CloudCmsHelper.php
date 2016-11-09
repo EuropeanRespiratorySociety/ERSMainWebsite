@@ -206,7 +206,13 @@ class CloudCmsHelper
             $skip = ($page -1) * $limit;
         }
 
-        $pagination = array('totalItems' => $totalItems, 'numberOfPages' => (int) $maxNumberOfPages, 'page' => $page, 'skip' => $skip, 'pages' => $params);
+        $pagination = array(
+            'totalItems' => $totalItems, 
+            'numberOfPages' => (int) $maxNumberOfPages, 
+            'page' => $page, 
+            'skip' => $skip, 
+            'pages' => $params
+            );
 
         return (object) $pagination;
     }
@@ -316,14 +322,15 @@ class CloudCmsHelper
 
 
     /**
-    * Sort the calendar to have all item in ascending order and of the current year and upcoming
+    * Prepare the calendar for display to have all item in ascending order and of the current year and upcoming
     *@param array $items
+    *@param string $type (optional)
     *@return array
     */
-    public function sortCalendar($items){
+    public function prepareCalendar($items, $type = 'all'){
         $carbon = new Carbon();
-        foreach($items as $key => $value){ 
-            if($value->calendar->year >= $carbon->year){
+        foreach($items as $key => $value){
+            if($value->startDateTimestamp >= $carbon->timestamp){
                     $sorted[$value->calendar->year][$value->calendar->month][$key] = $value; 
             }
         }
