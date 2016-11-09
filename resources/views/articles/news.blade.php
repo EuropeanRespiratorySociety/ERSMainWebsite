@@ -84,7 +84,7 @@
                             </div>
                             
                             <div class="card-action">
-                                <!-- <a href="#" target="new_blank" class="btn btn-transparent pull-left">SUBSCRIBE</a> -->
+                                 <a href="http://www.ersvision.org/video-alert-subscription" target="new_blank" class="btn btn-transparent pull-left">SUBSCRIBE</a>
                                 <a href="http://www.ersvision.org/home/" target="_blank" class="btn btn-dark-vision pull-right">More</a>
                             </div>
                         </div>
@@ -125,6 +125,7 @@
                         <h3><a href="http://eepurl.com/jL9of" target="_blank" class="list-group-item">ER Weekly</a></h3>
                         <h3><a href="https://forms.ersnet.org/respiratory-matters" target="_blank" class="list-group-item">Respiratory Matters</a></h3>
                         <h3><a href="https://forms.ersnet.org/respiratory-world-wide" target="_blank" class="list-group-item">Respiratory Worldwide</a></h3>
+                        <h3><a href="http://www.ersvision.org/video-alert-subscription" target="_blank" class="list-group-item">ERS Vision</a></h3>
                 </div>
             </div>
           </div>

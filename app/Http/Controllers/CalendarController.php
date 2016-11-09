@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use Iluminate\Http\Request;
 use App\Http\Requests;
 
+use Input;
 use App\Extensions\CloudCmsHelper as CC;
 
 class CalendarController extends Controller
@@ -23,13 +24,17 @@ class CalendarController extends Controller
      */
     public function index()
     {
+        //get the type of events to display
+        $type = Input::get('type', 'all');
+
         $results = $this->CC->getCategorySorted($this->calendarCategory, "eventDate", 1);
         $items = $this->CC->parseItems($results['rows'], true);
         $array = array_values(array_sort($items, function ($value) {
             return $value->calendar->timestamp;
         }));
-        $items = $this->CC->prepareCalendar($items);
+        $items = $this->CC->prepareCalendar($items, $type);
         $params['items'] = (object) $items; 
+        $params['type'] = $type;
         return view('congress-and-events.calendar')->with($params);    
 
     }

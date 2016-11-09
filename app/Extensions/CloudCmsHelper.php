@@ -323,6 +323,8 @@ class CloudCmsHelper
 
     /**
     * Prepare the calendar for display to have all item in ascending order and of the current year and upcoming
+    *   +"nonErsCalendarItem": false
+    *    "ersEndorsedEvent": true
     *@param array $items
     *@param string $type (optional)
     *@return array
@@ -330,8 +332,23 @@ class CloudCmsHelper
     public function prepareCalendar($items, $type = 'all'){
         $carbon = new Carbon();
         foreach($items as $key => $value){
-            if($value->startDateTimestamp >= $carbon->timestamp){
+            if($value->startDateTimestamp >= $carbon->timestamp && $type == 'all'){
                     $sorted[$value->calendar->year][$value->calendar->month][$key] = $value; 
+            }
+            if($value->startDateTimestamp >= $carbon->timestamp && $type == 'ers'){
+                if(!$value->nonErsCalendarItem && !$value->ersEndorsedEvent) {
+                    $sorted[$value->calendar->year][$value->calendar->month][$key] = $value; 
+                }            
+            }
+            if($value->startDateTimestamp >= $carbon->timestamp && $type == 'non-ers'){
+                if($value->nonErsCalendarItem) {
+                    $sorted[$value->calendar->year][$value->calendar->month][$key] = $value; 
+                } 
+            }
+            if($value->startDateTimestamp >= $carbon->timestamp && $type == 'endorsed'){
+                if($value->ersEndorsedEvent) {
+                    $sorted[$value->calendar->year][$value->calendar->month][$key] = $value; 
+                } 
             }
         }
         ksort($sorted);

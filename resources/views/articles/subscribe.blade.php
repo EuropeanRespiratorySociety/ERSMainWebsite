@@ -47,7 +47,7 @@
                                
                             </div>                            
                             <div class="right-col-lead center-text">
-                                <p style="text-align: center;">Subscribe to ERS newsletters.</p>
+                                <p style="text-align: center;">Subscribe to ERS news</p>
                             </div>
 
 
