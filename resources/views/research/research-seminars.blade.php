@@ -59,6 +59,9 @@
         </p>
         </a>
     </div>
+    <hr>
+      <a class="btn btn-primary" href="http://www.ers-education.org/events/research-seminars.aspx">Past Research Seminars</a>
+    <hr>
     <h4 class="text-left" style="font-size:15px; margin-top:30px;">Organise an ERS seminar programme</h4>
     <p class="rules text-left">
 
