@@ -44,7 +44,7 @@ class NewsController extends Controller
 
         $results = $this->CC->getContentByProperty($this->property, $this->propertyValue, -1, $pagination->skip);
         $params['items'] = $this->CC->parseItems($results['rows']);
-
+        
         return response()->view('articles.news', $params)->setTtl(60 * 60 * 24 * 7); //caching a week
 
     }

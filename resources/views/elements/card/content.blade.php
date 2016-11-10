@@ -15,11 +15,11 @@
             <a href="{{Request::path().'/'.$item->slug}}">{{ $item->title }}</a>
         @endif 
     @endif 
-    @if(!$item->uri && !$item->registerButton->link)
+    @if(!$item->uri && !$item->registerButton->link && )
         {{ $item->title }}
     @endif  
     </h3>
-    @if($item->sponsors->text && $item->contentType == "event_grant")
+    @if($item->sponsors->text && $item->contentType == "event_grant" $item->contentType == "event_calendar")
         <p class="sponsor"><span class="icon icon-building"></span> {{$item->sponsors->text}}</p>
     @endif 
     @if($item->sponsors->text && $item->contentType == "event_award")
