@@ -3,11 +3,18 @@
         <p class="btn-rounded early_bird">Early Bird deadline {{ $item->earlybirdDeadline }}</p>
     @endif
     <h3 class="title">
+    @if($item->registerButton->link && ($item->ersEndorsedEvent || $item->nonErsCalendarItem || $item->slug == "sleep-and-breathing-2017"))
+        <a href="{{$item->registerButton->link}}" target="_blank">{{ $item->title }}</a>
+    @endif
+    @if($item->contentType != "event_calendar")
         @if($item->uri) 
             <a href="{{url($item->uri)}}">{{ $item->title }}</a>
+        @elseif($item->url)
+            <a href="{{url($item->url)}}">{{ $item->title }}</a>
         @elseif($item->slug)
             <a href="{{Request::path().'/'.$item->slug}}">{{ $item->title }}</a>
-        @endif    
+        @endif 
+    @endif   
     </h3>
     @if($item->sponsors->text && $item->contentType == "event_grant")
         <p class="sponsor"><span class="icon icon-building"></span> {{$item->sponsors->text}}</p>

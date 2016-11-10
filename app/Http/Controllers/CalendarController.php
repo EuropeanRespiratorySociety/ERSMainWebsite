@@ -35,7 +35,7 @@ class CalendarController extends Controller
         $items = $this->CC->prepareCalendar($items, $type);
         $params['items'] = (object) $items; 
         $params['type'] = $type;
-        return view('congress-and-events.calendar')->with($params);    
+        return view('congress-and-events.timeline')->with($params);    
 
     }
 

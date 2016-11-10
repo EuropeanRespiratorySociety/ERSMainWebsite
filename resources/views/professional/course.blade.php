@@ -26,7 +26,7 @@
         'venueAddress2' => isset($item->venue->streetAddress2) ? $item->venue->streetAddress2 : null,
         'venuePostalCode' => isset($item->venue->postalCode) ? $item->venue->postalCode : null,
         'venueCity' => isset($item->venue->city) ? $item->venue->city : null,
-        'venueCountry' => isset($item->venue->country) ? $item->venue->country : null
+        'venueCountry' => isset($item->venue->country) ? $item->venue->country : null,
       ]
   ))
 @stop()

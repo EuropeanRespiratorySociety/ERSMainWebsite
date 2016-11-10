@@ -15,7 +15,7 @@
     @endif    
     @if($type == 'non-ers')
         <div class="page-head">
-            <h2 class="">Non ERS Events Calendar</h2>
+            <h2 class="">Non-ERS Events Calendar</h2>
         </div>
     @endif    
     @if($type == 'endorsed')
@@ -29,7 +29,7 @@
                 <a href="{{url('congress-and-events/events-calendar')}}" class="btn btn-xs"style="padding-left:0;">all</a>
                 <a href="{{url('congress-and-events/events-calendar?type=ers')}}" class="btn btn-xs " style="padding-left:0;">ERS</a>
                 <a href="{{url('congress-and-events/events-calendar?type=endorsed')}}" class="btn btn-xs" style="padding-left: 0;padding-right:0;">Endorsed</a>
-                <a href="{{url('congress-and-events/events-calendar?type=non-ers')}}" class="btn btn-xs">Non ERS</a>
+                <a href="{{url('congress-and-events/events-calendar?type=non-ers')}}" class="btn btn-xs">Non-ERS</a>
             </div>
         </div>
     </div>  

@@ -36,8 +36,7 @@
     "name" : "{{$item['location']}}",
     "address" : "{{$item['location']}}"
   },
-@endif  
-
+@endif
   "url" : "{{$item['url']}}"
 }
 </script>
