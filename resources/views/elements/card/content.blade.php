@@ -14,7 +14,10 @@
         @elseif($item->slug)
             <a href="{{Request::path().'/'.$item->slug}}">{{ $item->title }}</a>
         @endif 
-    @endif   
+    @endif 
+    @if(!$item->uri && !$item->registerButton->link)
+        {{ $item->title }}
+    @endif  
     </h3>
     @if($item->sponsors->text && $item->contentType == "event_grant")
         <p class="sponsor"><span class="icon icon-building"></span> {{$item->sponsors->text}}</p>
