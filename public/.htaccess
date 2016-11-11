@@ -1111,7 +1111,7 @@
 
     # -------------------
     #Proxying requests to node.js server
-    RewriteRule ^/cloud-test/(.*) http://localhost:4040/$1 [P]
+    RewriteRule ^/cloud-test$ http://localhost:4040/$1 [P]
 
     RewriteCond %{HTTP:X-Forwarded-Proto} !https
     RewriteCond %{HTTP_HOST} !^old.ersnet.org$
