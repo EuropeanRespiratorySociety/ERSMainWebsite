@@ -1108,10 +1108,12 @@
 # ----------------------------------------------------------------------
 # | Image and file server redirection to node.js server                |
 # ----------------------------------------------------------------------
-RewriteRule ^(.*)assets(.*)$ http://localhost:4040/$1 [L,P]
 
     # -------------------
-    
+    #Proxying requests to node.js server
+    RewriteCond %{HTTP_HOST} ^www.ersnet.org/assets$
+    RewriteRule ^(.*)$ http://localhost:4040/$1 [L,P]
+
     RewriteCond %{HTTP:X-Forwarded-Proto} !https
     RewriteCond %{HTTP_HOST} !^old.ersnet.org$
     RewriteRule (.*) https://www.ersnet.org/$1 [R=301,L]
