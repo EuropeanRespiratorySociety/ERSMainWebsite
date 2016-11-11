@@ -1108,7 +1108,7 @@
 # ----------------------------------------------------------------------
 # | Image and file server redirection to node.js server                |
 # ----------------------------------------------------------------------
-RewriteRule ^(.*)assets(.*)$ http://localhost:2999/$1 [L,P]
+RewriteRule ^(.*)assets(.*)$ http://localhost:4040/$1 [L,P]
 
     # -------------------
     

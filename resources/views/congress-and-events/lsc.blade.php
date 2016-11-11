@@ -217,7 +217,7 @@
               <a href="{{$item->registerButton->link}}" class="btn btn-primary tab-register-bt">Register</a>
             @endif
             @if($item->fullyBooked)
-              <p>Please contact {!! Html::mailto('educaion@ersnet.org', 'education@ersnet.org') !!} to be added to the waiting list.</p>
+              <p>Contact {!! Html::mailto('educaion@ersnet.org', 'education@ersnet.org') !!} to be added to the waiting list.</p>
               <a href="#" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
             @endif
             @if($item->openingDate && !$item->registerButton->link)

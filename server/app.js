@@ -5,6 +5,10 @@ server.after(function(app, callback) {
     callback();
 });
 
+process.env.PORT = 4040;
+process.env.CLOUDCMS_APPSERVER_MODE="production";
+
+
 // report
 server.report(function(callback) {
 
