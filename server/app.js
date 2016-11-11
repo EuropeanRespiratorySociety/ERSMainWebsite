@@ -49,8 +49,11 @@ var config = {
         "enabled": false
     },
     "wcm": {
-        "enabled": true,
+        "enabled": false,
         "cache": false
+    },
+    "cache": {
+        "enabled": true
     }
 };
 
