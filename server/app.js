@@ -56,7 +56,17 @@ var config = {
     },
     "cache": {
         "enabled": true
-    }
+    },
+    "notifications": {
+        "enabled": true,
+        "type": "sqs",
+        "configuration": {
+            "queueUrl": "https://sqs.us-west-2.amazonaws.com/159797139354/CloudCMS-cache",
+            "accessKey": "AKIAIW6VFJIGZ5BDQREA",
+            "secretKey": "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",
+            "region": "us-west-2"
+        }
+
 };
 
 server.start(config);
