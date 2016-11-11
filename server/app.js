@@ -6,7 +6,9 @@ server.after(function(app, callback) {
 });
 
 process.env.PORT = 4040;
+process.env.NODE_ENV="production";
 process.env.CLOUDCMS_APPSERVER_MODE="production";
+process.env.CLOUDCMS_CACHE_TYPE="memory";
 
 
 // report
