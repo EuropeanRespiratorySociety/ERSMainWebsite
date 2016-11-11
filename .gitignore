@@ -1,6 +1,7 @@
 /vendor
 /server/node_modules
 /server/gitana.json
+/server/.env
 /storage/token
 /storage/cloudcms
 /storage/token-dev

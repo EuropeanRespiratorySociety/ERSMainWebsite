@@ -1,4 +1,7 @@
 var server = require("cloudcms-server/server");
+var dotenv = require('dotenv');
+
+dotenv.load();
 
 // after
 server.after(function(app, callback) {
@@ -62,8 +65,8 @@ var config = {
         "type": "sqs",
         "configuration": {
             "queueUrl": "https://sqs.us-west-2.amazonaws.com/159797139354/CloudCMS-cache",
-            "accessKey": "AKIAIW6VFJIGZ5BDQREA",
-            "secretKey": "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",
+            "accessKey": process.env.SQS_ACCESS_KEY,
+            "secretKey": process.env.SQS_SECRET_KEY,
             "region": "us-west-2"
         }
 
