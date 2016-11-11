@@ -1111,7 +1111,7 @@
 
     # -------------------
     #Proxying requests to node.js server
-    RewriteCond %{HTTP_HOST} ^www.ersnet.org/assets$
+    RewriteCond %{HTTP_HOST} ^www.ersnet.org/cloud$
     RewriteRule ^(.*)$ http://localhost:4040/$1 [L,P]
 
     RewriteCond %{HTTP:X-Forwarded-Proto} !https
