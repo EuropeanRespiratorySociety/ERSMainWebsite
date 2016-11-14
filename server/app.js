@@ -39,6 +39,10 @@ server.report(function(callback) {
     console.log("Temp Directory: " + process.env.CLOUDCMS_TEMPDIR_PATH);
     console.log("LaunchPad Mode: " + process.env.CLOUDCMS_LAUNCHPAD_SETUP);
 
+    console.log("AWS Key: " + process.env.SQS_ACCESS_KEY);
+    console.log("AWS Secret: " + process.env.SQS_SECRET_KEY);
+    console.log("Node environment: " + process.env.NODE_ENV);
+
     console.log("");
     console.log("Web Server: http://localhost:" + process.env.PORT);
     console.log("");
@@ -69,6 +73,16 @@ var config = {
             "secretKey": process.env.SQS_SECRET_KEY,
             "region": "us-west-2"
         }
+    },
+        "perf": {
+        "enabled": true,
+        "paths": [{
+            "regex": "/static/.*",
+            "cache": {
+                "seconds": 300
+            }
+        }]
+    }    
 
 };
 
