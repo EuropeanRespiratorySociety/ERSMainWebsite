@@ -73,7 +73,16 @@ class CloudCmsParser
 
                     if($item->venue->info){
                         $item->venue->info = Markdown::parse($item->venue->info);
+
                     }
+
+                    if($item->venue->streetAddress && $item->venue->city && $item->venue->postalCode){
+                        if(!$item->loc->lat || !$item->loc->long){
+                            $coordinates = $this->helper->getCoordinates($item->venue);
+                            $this->helper->setCoordinates($item->_qname, $coordinates['lat'], $coordinates['lng'], $coordinates['accuracy']);
+                        }
+                    }
+
 
                     if($item->suggestedAccommodation){
                         $this->parseVenues($item->suggestedAccommodation);

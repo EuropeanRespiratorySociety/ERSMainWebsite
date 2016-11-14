@@ -218,7 +218,7 @@ class CloudCmsHelper
     }
 
     /**
-    * This function set the coordinates in CC the inject param let's you send only
+    * This function set the canonical url in CC the inject param let's you send only
     * the data that needs to be added to the node. Without it we need to send the
     * whole node to replace it.
     * @param string $node 
