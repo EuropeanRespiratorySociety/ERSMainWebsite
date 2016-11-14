@@ -38,6 +38,31 @@ class LscController extends Controller
         
         return view('congress-and-events.lsc')->with($params);    
 
+    }    
+    
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function paris()
+    {
+        $results = $this->CC->getItem('ers-2018');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] = $item[0]; 
+
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
+        }
+
+        if($item[0]->hasRelatedArticles > 0){
+            $related = $this->CC->getRelatedArticle($item[0]->_qname);
+            $relatedItems = $this->CC->parseItems($related['rows']);
+            $params['relatedItems'] =  (object) $relatedItems;
+        }
+        
+        return view('congress-and-events.congress')->with($params);    
+
     }
 
     /**
