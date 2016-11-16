@@ -189,7 +189,7 @@ class CloudCmsParser
 
                     // Added fields to the model
                     $item->typeColor = $item->type ? $this->setTypeColor($item->type) : false;
-                    $item->articleTwoColumns = $item->articleTwoColumns ? $item->articleTwoColumns : true;
+                    $item->articleOneColumn = $item->articleOneColumn ?? false;
                     $item->createdOn = isset($item->_system->created_on->timestamp) ? $this->date->ersDate($item->_system->created_on->timestamp) : false;
                     $item->calendar = $item->eventDate ? $this->date->calendar($item->eventDate) : false;
                     $item->ms = $item->_system->created_on->ms ?? false;     

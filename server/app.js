@@ -72,9 +72,9 @@ var config = {
             "accessKey": process.env.SQS_ACCESS_KEY,
             "secretKey": process.env.SQS_SECRET_KEY,
             "region": "us-west-2"
-        }
+        }  
     },
-        "perf": {
+    "perf": {
         "enabled": true,
         "paths": [{
             "regex": "/static/.*",
