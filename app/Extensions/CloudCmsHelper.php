@@ -90,13 +90,14 @@ class CloudCmsHelper
         return $results;    
     }
 
-    public function getRelatedArticle($node){
+    public function getRelatedArticle($node, $field = "_system.created_on.ms", $direction = 1){
         $results = CC::nodes()
             ->listRelatives($node)
             ->addParams(['type' => 'ers:related-association']) 
+            ->addParams(['sort' => '{"'.$field.'": '.$direction.'}']) 
             ->addParams(['full' => 'true'])
             ->get();
-        $results = $this->validateResults($results);       
+        $results = $this->validateResults($results);      
         return $results;    
     }
 
