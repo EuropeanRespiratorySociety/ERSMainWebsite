@@ -7,6 +7,11 @@
 # | Compression                                                        |
 # ----------------------------------------------------------------------
 
+### Infomaniak suggestion
+
+SetOutputFilter DEFLATE
+AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml text/javascript
+
 <IfModule mod_deflate.c>
 
     # Force compression for mangled `Accept-Encoding` request headers
