@@ -35,6 +35,9 @@ class Metanavigation
                     /*->prepend('<i class="s7-culture icon"></i><span>')->append('</span>')*/; 
             $menu->add('TB Consilium', 'https://www.tbconsilium.org/')
                     ->link->attr(array('target' => '_blank'))
+                    /*->prepend('<i class="s7-culture icon"></i><span>')->append('</span>')*/;      
+            $menu->add('FIRS', 'https://www.firsnet.org/')
+                    ->link->attr(array('target' => '_blank'))
                     /*->prepend('<i class="s7-culture icon"></i><span>')->append('</span>')*/;                         
 
         });

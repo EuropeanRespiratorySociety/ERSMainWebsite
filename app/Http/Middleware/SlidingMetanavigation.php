@@ -39,6 +39,9 @@ class SlidingMetanavigation
             $menu->add('TB Consilium', 'https://www.tbconsilium.org/')
                     ->prepend('<div class="tb_consilium_nav clearfix" style="margin-top:10px;"><i class="icon-ers icon pull-left"></i><i class="icon-who icon pull-right who-icon"></i></div><span>')->append('</span>')
                     ->link->attr(array('target' => '_blank')); 
+            $menu->add('FIRS', 'https://www.firsnet.org/')
+                    ->prepend('<div class="firs_nav clearfix" style="margin-top:10px;"></div><span>')->append('<div style="font-size:12px"><i>United for Lung Health</i></div></span>')
+                    ->link->attr(array('target' => '_blank')); 
               
 
         });
