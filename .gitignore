@@ -23,4 +23,5 @@ Homestead.json
 composer-setup.php
 composer.phar
 .env
+.user.ini
 
