@@ -1109,6 +1109,8 @@ AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml text/javasc
         Redirect 301 /roadmap http://www.ersroadmap.org/
         # S
         Redirect 301 /spirometrycourses http://hermes.ersnet.org/activities/2012-03-15-09-52-59/upcoming-courses-spirometry.html
+        # T 
+        Redirect 301 /terms-and-conditions https://ers.box.com/v/terms-and-conditions
 
 # ----------------------------------------------------------------------
 # | Image and file server redirection to node.js server                |
