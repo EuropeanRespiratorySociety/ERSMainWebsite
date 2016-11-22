@@ -25,7 +25,7 @@
         @endif 
         <div class="row" style="margin:30px 0 50px;">
             <div class="col-md-8 col-md-offset-2">
-                <p class="small text-muted">
+                <p class="text-muted">
                     Our interactive calendar provides an overview of upcoming events in the respiratory calendar that may be of interest to respiratory professionals. The calendar includes events organised by ERS, events endorsed by ERS, and independent, non-endorsed events that are organised by third-party organisations.
                 </p>
             </div>
