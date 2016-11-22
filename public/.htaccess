@@ -1038,6 +1038,8 @@ AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml text/javasc
         Redirect 301 /congresses/research-seminars.html https://www.ersnet.org/research/research-seminars
         Redirect 301 /contact https://www.ersnet.org/the-society/who-we-are/contact
         Redirect 301 /courses https://www.ersnet.org/professional-development/courses
+        Redirect 301 /congress-and-events/past-international-congresses https://www.ersnet.org/congress-and-events/ers-international-congress
+        Redirect 301 /congress-and-events/ers-2018 https://www.ersnet.org/congress-and-events/ers-international-congress
         # E
         Redirect 301 /ebus https://www.ersnet.org/professional-development/courses/ebus-training-programme-part-2
         Redirect 301 /educationgrant https://www.ersnet.org/professional-development/grants-and-sponsorships/medical-education-grant
