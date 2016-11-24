@@ -62,7 +62,7 @@
                             </div> 
 
                             <div class="card-content  text-left">
-                                <p>Respiratory worldwide is a monthly column where industry leaders from national and regional respiratory organisations to share their news and views.</p>
+                                <p>Respiratory Worldwide is a monthly column where industry leaders from national and regional respiratory organisations share their news and views.</p>
                             </div>
                             
                             <div class="card-action">
