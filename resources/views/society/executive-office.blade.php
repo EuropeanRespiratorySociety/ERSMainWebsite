@@ -724,7 +724,7 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('eddy.baker@ersj.org.uk', 'Eddy Baker') !!}</strong>
-            Editorial Assistant<br>
+            Editorial and library services coordinator<br>
             T +44 114 267 2865<br>
             </p>
         </div>

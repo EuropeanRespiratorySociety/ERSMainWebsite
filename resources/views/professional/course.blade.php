@@ -201,7 +201,7 @@
             <p><a data-toggle="modal" data-target="#md-travel_info" type="button" class="cursor_pointer">Travel Info</a></p>
             @endif
             @if($item->registerButton->link && !$item->fullyBooked)
-            <!--<p>Contact {!! Html::mailto('education@ersnet.org', 'Felix Yip') !!} if you are from a travel agency or third party who whishes to register for a participant</p>-->
+            <p>Registering for someone else ? Contact {!! Html::mailto('education@ersnet.org', 'Felix Yip') !!}</p>
             <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
                 {{ $item->registerButton->text or Register}}
             </a>
