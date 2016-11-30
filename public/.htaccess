@@ -557,12 +557,12 @@ AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml text/javasc
     Redirect 301 /ers-funding/awards/item/4571-2012-ers-awardees.html https://www.ersnet.org/professional-development/grants-and-sponsorships
     Redirect 301 /ers-funding/awards/item/4779-2013-ers-awardees.html https://www.ersnet.org/professional-development/grants-and-sponsorships
     Redirect 301 /ers-funding/awards/item/4905-2014-ers-awardees-gallery.html https://www.ersnet.org/professional-development/grants-and-sponsorships
-    Redirect 301 /ers-funding/awards/item/4918-copd-gold-medal.html  https://www.ersnet.org/professional-development/grants-and-sponsorships
-    Redirect 301 /ers-funding/awards/item/4940-ph-research-award.html https://www.ersnet.org/professional-development/grants-and-sponsorships
-    Redirect 301 /ers-funding/awards/item/4961-research-award-ntm.html   https://www.ersnet.org/professional-development/grants-and-sponsorships
-    Redirect 301 /ers-funding/awards/item/5097-ild-gold-medal.html   https://www.ersnet.org/professional-development/grants-and-sponsorships
-    Redirect 301 /ers-funding/awards/item/5098-asthma-gold-medal.html https://www.ersnet.org/professional-development/grants-and-sponsorships
-    Redirect 301 /ers-funding/clinical-research-collaboration.html   https://www.ersnet.org/research/clinical-research-collaborations
+    Redirect 301 /ers-funding/awards/item/4918-copd-gold-medal.html  https://www.ersnet.org/the-society/who-we-are/awards
+    Redirect 301 /ers-funding/awards/item/4940-ph-research-award.html https://www.ersnet.org/the-society/who-we-are/awards
+    Redirect 301 /ers-funding/awards/item/4961-research-award-ntm.html https://www.ersnet.org/the-society/who-we-are/awards
+    Redirect 301 /ers-funding/awards/item/5097-ild-gold-medal.html https://www.ersnet.org/the-society/who-we-are/awards
+    Redirect 301 /ers-funding/awards/item/5098-asthma-gold-medal.html https://www.ersnet.org/the-society/who-we-are/awards
+    Redirect 301 /ers-funding/clinical-research-collaboration.html https://www.ersnet.org/the-society/who-we-are/awards
     
     Redirect 301 /ers-funding/fellowships/clinical-training-fellowship.html https://www.ersnet.org/professional-development/fellowships/clinical-training-fellowship
     Redirect 301 /ers-funding/fellowships/ers-fellowships-in-industry.html https://www.ersnet.org/professional-development/fellowships/ers-fellowships-in-industry
@@ -1048,6 +1048,8 @@ AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml text/javasc
         Redirect 301 /fellowships http://www.ersnet.org/professional-development/fellowships
         Redirect 301 /funding http://www.ersnet.org/professional-development/grants-and-sponsorships
         Redirect 301 /fundings http://www.ersnet.org/professional-development/grants-and-sponsorships
+        # G 
+        Redirect 301 /goldmedals https://www.ersnet.org/the-society/who-we-are/awards
         # J
         Redirect 301 /join-ers https://my.ersnet.org
         # L
