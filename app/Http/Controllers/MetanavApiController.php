@@ -14,8 +14,11 @@ class MetanavApiController extends Controller
         $params['items'] = $menu->items;
 
         return response()->json([
-            'menu' => view('sidebar.left-variant-api')->with($params)->render()
-    ]);
+            'menu' => view('sidebar.left-variant-api')
+                ->with($params)->render()
+    ])
+        ->header('Access-Control-Allow-Origin', '*')
+        ->header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
 
     }
 }
