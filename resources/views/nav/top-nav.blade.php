@@ -6,7 +6,7 @@
         <a href="/"><span style="color:#313131;">European Respiratory Society</span></a>
       </div>
       {{-- End Page title Visible on Mobile size screen --}}
-      <a href="#" class="ers-toggle-left-sidebar navbar-toggle collapsed">
+      <a href="javascript:void(0)" class="ers-toggle-left-sidebar navbar-toggle collapsed">
         <span class="icon-bar"><span></span><span></span><span></span></span>
       </a>
     </div>
