@@ -24,6 +24,8 @@ Route::get('schema:clear', 'MaintenanceController@unsetSchema');
 //////DANGER NEED TOKEN CSRF CHECK -> Cached value
 Route::post('search', 'SearchController@search');
 
+Route::get('api/metanav', 'MetanavApiController@index');
+
 
 
 /*
