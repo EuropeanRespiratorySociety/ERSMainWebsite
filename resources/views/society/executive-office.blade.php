@@ -306,6 +306,12 @@
             T +41 21 213 01 63<br>
             </p>
         </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('beth.maguire@europeanlung.org', 'Beth Maguire') !!}</strong>
+            Press and Communications Assistant<br>
+            T +44 114 267 2866<br>
+            </p>
+        </div>
 
       </div>
     </div>
@@ -655,7 +661,7 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('rika.tanabe-hirsig@ersnet.org', 'Rika Tanabe Hirsig') !!}</strong>
+          <p class="photo_caption"><strong>{!! Html::mailto('tamaki.asano@ersnet.org', 'Tamaki Asano') !!}</strong>
             UI/UX Web Designer<br>
             T +41 21 213 01 47<br>
             </p>

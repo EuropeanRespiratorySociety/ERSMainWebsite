@@ -69,7 +69,7 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 09.03<br>
-                    Chair: {!! Html::mailto('bkorn@stjames.ie', 'Bettina Korn') !!}<br>
+                    Chair: {!! Html::mailto('Janelle.Yorke@manchester.ac.uk', 'Janelle Yorke') !!}<br>
                     Secretary: Russell Anne-Marie</p>
                   </div>
                   <div class="card-action clearfix">
