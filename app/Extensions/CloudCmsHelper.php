@@ -173,9 +173,18 @@ class CloudCmsHelper
         return $results; 
 
     }
-
+    /**
+    * Paginate the results 
+    *@todo limit the amount of visible pages
+    *@param array $results
+    *@param int $page
+    *@param int $limit (optional)
+    */
     public function paginate($results, $page, $limit = 25){
         $totalItems = $results['total_rows'];
+        $prev = '';
+        $next = '';
+        $active = '';
 
         $maxNumberOfPages = 1;
         if($limit){
@@ -207,14 +216,50 @@ class CloudCmsHelper
             $skip = ($page -1) * $limit;
         }
 
+        foreach($params as $key => $param){
+            foreach($param as $k => $p){
+                if($k == "active" && $p){
+                    $active = $key;
+                    if($key == 2){
+                        $prev = false;
+                    } else {
+                        $prev = $key - 2;
+                    }
+
+                    if($key == $maxNumberOfPages -1){
+                        $next = false;
+                    } else{
+                        $next = $key + 2;
+                    }
+                }
+            }
+        }
+
+        if($active == 1){
+            $pages = array_only($params, [1, 2, 3]);
+            $prev = false;
+            $next = $active + 3;
+        }
+
+        if($active > 1 && $active < $maxNumberOfPages){
+            $pages = array_only($params, [$active - 1, $active, $active + 1]);
+        }
+        
+        if($active == $maxNumberOfPages){
+            $pages = array_only($params, [$active - 2, $active - 1, $active]);
+            $prev = $active - 3;
+            $next = false;
+        }
+
         $pagination = array(
             'totalItems' => $totalItems, 
             'numberOfPages' => (int) $maxNumberOfPages, 
             'page' => $page, 
             'skip' => $skip, 
-            'pages' => $params
+            'pages' => $pages,
+            'previous' => $prev,
+            'next' => $next
             );
-
         return (object) $pagination;
     }
 
