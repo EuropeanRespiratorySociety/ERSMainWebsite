@@ -47,7 +47,7 @@
                 <p class="photo_caption"><strong>Tobias Welte</strong>
                 Vice President <br>
                 
-                <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=1059&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a></p>
+                <a title="Download COI" href="https://ers.box.com/s/4l0crbxgfdtxq2r3l5y7m0hibt51h040">Download COI</a></p>
             </div>
             <div class="col-md-4 xs-mb-15">
                 <img src="images/people/leadership/Carlos_Robalo.jpg" class="img-circle">
