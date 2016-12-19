@@ -51,6 +51,7 @@ class MaintenanceController extends Controller
         if($all){
             $cleaned = \File::cleanDirectory(app('http_cache.cache_dir'));
             Artisan::call('cache:clear');
+            //Artisan::call('view:clear');
             return $cleaned ? "The cache has been emptied" : "The cache has not been emptied";
 
         }

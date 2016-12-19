@@ -10,7 +10,7 @@
 			
 			Download the brochure - <a target="_blank" href="http://www.ersnet.org/images/stories/scientific/Brochure_scientific_activities_2014-15.pdf">Scientific Activities 2015<br></a>
 			
-			Consul the <a href="http://old.ersnet.org/others/item/4601-science-council-portal.html">Science Council Portal</a>
+			Consult the <a href="{{url('the-society/who-we-are/science-portal')}}">Science Council Portal</a>
 
 			</div>
 

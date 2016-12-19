@@ -48,10 +48,7 @@ class WhoWeAreController extends Controller
         $params['item'] =  (object) $item[0];
 
         if(!$item[0]->url || !$item[0]->uri){
-            $uri= request()->path();
-            $url = "https://www.ersnet.org/".$uri;
-            $payload = json_encode(['url' => $url, 'uri' => $uri]);
-            $CC->setCanonical($item[0]->_qname, $payload);
+            $this->CC->setCanonical($item[0]->_qname);
         }
         
         if($item[0]->hasRelatedArticles > 0){
