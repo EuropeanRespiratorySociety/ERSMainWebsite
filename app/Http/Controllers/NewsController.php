@@ -87,7 +87,7 @@ class NewsController extends Controller
             $this->CC->setCanonical($category[0]->_qname, 'the-society/news/respiratory-worldwide');
         }
 
-        $results = $this->CC->getCategorySorted($this->respiratoryWorldWide, "_system.created_on.ms", 1);
+        $results = $this->CC->getCategorySorted($this->respiratoryWorldWide, "_system.created_on.ms", -1);
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  (object) $items; 
    
