@@ -1,4 +1,4 @@
-<div class="ers-left-sidebar" style="position:fixed;">
+<div class="ers-left-sidebar" style="position:fixed;z-index:1032;">
     <div class="navbar-header" style="width:100%;">
         <a href="https://www.ersnet.org" class="navbar-brand">
             <i class="icon-ers icon" style="font-size:50px; color:#d0043c;"></i>
