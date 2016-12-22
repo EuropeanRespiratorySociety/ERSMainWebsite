@@ -70,7 +70,7 @@
 	    </div>
 	</div>
   
-@include('society.leadership-menu', array('class' => 'col-md-2'))
+@include('nav.leadership-menu', array('class' => 'col-md-2'))
 </div>
 
 

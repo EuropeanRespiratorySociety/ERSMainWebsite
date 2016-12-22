@@ -65,17 +65,10 @@
 		            <p class="photo_caption"><strong>{!! Html::mailto('b_grigoriu@hotmail.com', 'Bogdan Dragos Grigoriu') !!}</strong>
 		            Thoracic Oncology <br>
 		        </div>
-		        
-
-	        	
-	        	
-
-
-
 	        </div>
 
-	        <!--Departments Menu-->
-	        <!--div class="row row_depertment">
+	        {{--Departments Menu--}}
+	        {{--div class="row row_depertment"--}}
 	          
 	            <div class="col-md-5 col-md-offset-4">
 	                <div class="card">
@@ -89,12 +82,12 @@
 	            </div>
 
 	        </div-->
-	        <!--Fin Departments Menu-->
+	        {{--Fin Departments Menu--}}
 	       
 	    </div>
 	</div>
   
-@include('society.leadership-menu', array('class' => 'col-md-2'))
+@include('nav.leadership-menu', array('class' => 'col-md-2'))
 </div>
 
 
