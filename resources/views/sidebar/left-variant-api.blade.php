@@ -13,12 +13,13 @@
             style="
                 text-align: center;
                 height: 80px;
-                width: 80px;
+                width: 100px;
                 line-height: 100px;
                 padding-bottom: 0;
                 padding: 15px;
                 float: left;
                 font-size: 17px;
+                box-sizing: border-box;
         ">
             <i class="icon-ers icon" style="font-size:50px; color:#d0043c;"></i>
         </a>
