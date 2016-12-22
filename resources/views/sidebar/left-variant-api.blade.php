@@ -9,7 +9,17 @@
         left: 0;
     ">
     <div class="navbar-header" style="width:100%;">
-        <a href="https://www.ersnet.org" class="navbar-brand">
+        <a href="https://www.ersnet.org" class="navbar-brand" 
+            style="
+                text-align: center;
+                height: 80px;
+                width: 80px;
+                line-height: 100px;
+                padding-bottom: 0;
+                padding: 15px;
+                float: left;
+                font-size: 17px;
+        ">
             <i class="icon-ers icon" style="font-size:50px; color:#d0043c;"></i>
         </a>
     </div>
