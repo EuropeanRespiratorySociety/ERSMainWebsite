@@ -1,3 +1,10 @@
+<style>
+        @media (max-width: 991px){
+            .ers-left-sidebar{
+                transform: translate3d(-100%,0,0);
+            }
+        }
+</style>
 <div class="ers-left-sidebar" 
     style="
         position:fixed;
