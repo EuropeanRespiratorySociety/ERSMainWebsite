@@ -2,6 +2,7 @@
         @media (max-width: 991px){
             .ers-left-sidebar{
                 transform: translate3d(-100%,0,0);
+                width: 85%!important;
             }
         }
 </style>
