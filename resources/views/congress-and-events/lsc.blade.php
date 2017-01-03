@@ -104,7 +104,7 @@
       </div>
       @endif
     </div>
-    <!-- Beginning Right Side-bar -->
+  {{-- Beginning Right Side-bar --}}
     <div class="col-md-3 white-bg event-items-tab">
       <div class="tab-container">
         <ul class="nav nav-tabs">
