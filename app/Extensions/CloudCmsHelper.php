@@ -396,6 +396,15 @@ class CloudCmsHelper
                     $sorted[$value->calendar->year][$value->calendar->month][$key] = $value; 
                 } 
             }
+            if($value->startDateTimestamp >= $carbon->timestamp && $type == 'deadline'){
+                if($value->ersDeadline) {
+                    $sorted[$value->calendar->year][$value->calendar->month][$key] = $value; 
+                } 
+            }
+        }
+
+        if(!isset($sorted)){
+            return false;
         }
         ksort($sorted);
         return $sorted;
