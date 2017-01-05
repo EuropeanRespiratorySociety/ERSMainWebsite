@@ -5,6 +5,7 @@ namespace App\Extensions;
 use CC;
 use Carbon\Carbon;
 use App\Extensions\DateHelper;
+use App\Extensions\PaginationHelper;
 use App\Extensions\CloudCmsParser;
 use Spatie\Geocoder\GeocoderFacade as Geocoder;
 
@@ -80,6 +81,10 @@ class CloudCmsHelper
         return $results;    
     }
 
+    /**
+    * Get all articles that have a specific author
+    * @param string $catnode (QName of the author)
+    */
     public function getAuthoredArticles($catnode){
         $results = CC::nodes()
             ->listRelatives($catnode)
@@ -90,6 +95,12 @@ class CloudCmsHelper
         return $results;    
     }
 
+    /**
+    * Get all articles that are related to the current one
+    * @param string $node (QName of the current article)
+    * @param string $field (Optional - the field to sort on)
+    * @param int $direction (the sorting direction 1 or -1)
+    */
     public function getRelatedArticle($node, $field = "_system.created_on.ms", $direction = 1){
         $results = CC::nodes()
             ->listRelatives($node)
@@ -100,7 +111,10 @@ class CloudCmsHelper
         $results = $this->validateResults($results);      
         return $results;    
     }
-
+    /**
+    * Get the author of an article
+    * @param string $node (QName of the article)
+    */
     public function getAuthor($node){
         $results = CC::nodes()
             ->listRelatives($node)
@@ -111,6 +125,12 @@ class CloudCmsHelper
         return $results;    
     }
 
+    /**
+    * Get all articles in a category and sort them
+    * @param string $catnode (QName of the category)
+    * @param string $field (Optional - the field to sort on)
+    * @param int $direction (the sorting direction 1 or -1)
+    */
     public function getCategorySorted($catnode, $field = "eventDate", $direction = 1){
         $results = CC::nodes()
             ->listRelatives($catnode)
@@ -125,6 +145,10 @@ class CloudCmsHelper
         return $results;    
     }
 
+    /**
+    * Get a single article
+    * @param string $slug (slug-of-the-artice)
+    */
 	public function getItem($slug){
 		$query = '{"slug": "'.$slug.'"}';
 		$result = CC::nodes()
@@ -175,92 +199,13 @@ class CloudCmsHelper
     }
     /**
     * Paginate the results 
-    *@todo limit the amount of visible pages
-    *@param array $results
-    *@param int $page
-    *@param int $limit (optional)
+    * @param array $results
+    * @param int $page
+    * @param int $limit (optional)
     */
     public function paginate($results, $page, $limit = 25){
-        $totalItems = $results['total_rows'];
-        $prev = '';
-        $next = '';
-        $active = '';
-
-        $maxNumberOfPages = 1;
-        if($limit){
-            $maxNumberOfPages = ceil($totalItems / $limit);
-
-            for ($i=0; $i < $maxNumberOfPages; $i++) { 
-                $params[$i + 1]['active'] = false;
-                if(!$page && $i == 0){
-                    $params[$i + 1]['page'] = null;                
-                    $params[$i + 1]['active'] = true;
-                } else {
-                    $params[$i + 1]['page'] = "?page=".($i + 1);
-                }
-
-                if($page == ($i + 1)){
-                    $params[$i + 1]['active'] = true;
-                }
-
-                $params[$i + 1]['pageNumber'] = $i + 1;
-            }
-        }
-
-        if($page > $maxNumberOfPages){
-            abort(404);
-        }
-
-        $skip = 0;
-        if($page > 1 && $limit !== 0){
-            $skip = ($page -1) * $limit;
-        }
-
-        foreach($params as $key => $param){
-            foreach($param as $k => $p){
-                if($k == "active" && $p){
-                    $active = $key;
-                    if($key == 2){
-                        $prev = false;
-                    } else {
-                        $prev = $key - 2;
-                    }
-
-                    if($key == $maxNumberOfPages -1){
-                        $next = false;
-                    } else{
-                        $next = $key + 2;
-                    }
-                }
-            }
-        }
-
-        if($active == 1){
-            $pages = array_only($params, [1, 2, 3]);
-            $prev = false;
-            $next = $active + 3;
-        }
-
-        if($active > 1 && $active < $maxNumberOfPages){
-            $pages = array_only($params, [$active - 1, $active, $active + 1]);
-        }
-        
-        if($active == $maxNumberOfPages){
-            $pages = array_only($params, [$active - 2, $active - 1, $active]);
-            $prev = $active - 3;
-            $next = false;
-        }
-
-        $pagination = array(
-            'totalItems' => $totalItems, 
-            'numberOfPages' => (int) $maxNumberOfPages, 
-            'page' => $page, 
-            'skip' => $skip, 
-            'pages' => $pages,
-            'previous' => $prev,
-            'next' => $next
-            );
-        return (object) $pagination;
+        $paginator = new PaginationHelper($results['total_rows'], $page, $limit);
+        return (object) $paginator->pagination;
     }
 
     /**
@@ -371,9 +316,9 @@ class CloudCmsHelper
     * Prepare the calendar for display to have all item in ascending order and of the current year and upcoming
     *   +"nonErsCalendarItem": false
     *    "ersEndorsedEvent": true
-    *@param array $items
-    *@param string $type (optional)
-    *@return array
+    * @param array $items
+    * @param string $type (optional)
+    * @return array
     */
     public function prepareCalendar($items, $type = 'all'){
         $carbon = new Carbon();
@@ -412,8 +357,8 @@ class CloudCmsHelper
 
     /**
     * Sort event items based on the start date timestamp
-    *@param object $items
-    *@return object
+    * @param object $items
+    * @return object
     */
     public function sortItems($items){
         usort($items, function($a, $b){
@@ -423,7 +368,7 @@ class CloudCmsHelper
     }
 
     /**          
-     *
+     * Get the coordinates of an address
      * @param  object $address
      * @return array
      */
@@ -463,6 +408,9 @@ class CloudCmsHelper
         
     }
 
+    /**
+    * Delete the token where ever it is saved (mostlikely file as no other implementation of the interface exists yet ;) ) 
+    */
     public function deleteToken(){
         $CC = new CC;
         $CC::unsetToken();
