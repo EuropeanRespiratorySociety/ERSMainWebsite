@@ -38,7 +38,7 @@
                 <div class="">
                     <a href="{{url('congress-and-events/events-calendar')}}" class="btn btn-xs {{$type == 'all' ? 'disabled' : ''}}">all</a>
                     <a href="{{url('congress-and-events/events-calendar?type=ers')}}" class="btn btn-xs {{$type == 'ers' ? 'disabled' : ''}}">ERS</a>
-                    <a href="{{url('congress-and-events/events-calendar?type=deadline')}}" class="btn btn-xs {{$type == 'deadline' ? 'disabled' : ''}}">ERS Deadlines</a>
+                    {{--<a href="{{url('congress-and-events/events-calendar?type=deadline')}}" class="btn btn-xs {{$type == 'deadline' ? 'disabled' : ''}}">ERS Deadlines</a>--}}
                     <a href="{{url('congress-and-events/events-calendar?type=endorsed')}}" class="btn btn-xs {{$type == 'endorsed' ? 'disabled' : ''}}">Endorsed</a>
                     <a href="{{url('congress-and-events/events-calendar?type=non-ers')}}" class="btn btn-xs {{$type == 'non-ers' ? 'disabled' : ''}}">Non-ERS</a>
                 </div>
