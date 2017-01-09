@@ -1,5 +1,5 @@
 <div class="card-action clearfix">
-    @if($item->registerButton->link)
+    @if($item->registerButton->link && !$item->fullyBooked)
     <a 
         @if(strpos($item->registerButton->link, '@')) 
             href="{{'mailto:'.$item->registerButton->link}}" 
