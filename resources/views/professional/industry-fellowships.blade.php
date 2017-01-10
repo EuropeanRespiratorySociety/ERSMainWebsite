@@ -44,7 +44,7 @@
    </div>
      </div>
 
-   <!-- Beginning Right Side-bar -->
+   {{-- Beginning Right Side-bar --}}
    <div class="col-md-3 white-bg event-items-right">
 
 
@@ -55,15 +55,13 @@
     @endif
 
 
-<!--<div class="list-group text-left">
-      <a href="javascript:void(0)" class="list-group-item clearfix">
+<div class="list-group text-left">
+      {{-- <a href="javascript:void(0)" class="list-group-item clearfix">
         <span class="icon s7-alarm"></span>
         <p>
           APPLICATION DEADLINE : <br>
           <span>31 January each year</span>
         </p>
-
-
       </a>
       <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix">
        <span class="icon s7-bell"></span>
@@ -71,8 +69,6 @@
         NOTIFICATION : <br>
         <span>Mid-May each year</span>
       </p>
-
-
     </a>
     <a href="javascript:void(0)" class="list-group-item clearfix">
       <span class="icon s7-date"></span>
@@ -80,12 +76,30 @@
         START DATE : <br>
         <span>From August onwards</span>
       </p>
-    </a>
-
-  </div>-->
+    </a> --}}
+    @if($category->popUpText)
+    <span href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
+      <span class="icon s7-copy-file"></span>
+      <p>
+        DOCUMENTS : <br>
+        <ul style="display: table;
+                  float: left;
+                  margin-left: 10px;">
+            {{-- <li>
+            <a href="https://ers.box.com/shared/static/lb71kvnc2dr6am25k82xvphxdjcsm9eh.pdf">LTRF 2017 Application Guidelines</a>
+            </li> --}}
+            
+            <li>
+              <a data-toggle="modal" data-target="#md-popUp" class="cursor_pointer">{{$category->popUpText}}</a>
+            </li>
+          </ul>
+      </p>
+    </span>
+    @endif
+  </div>
 
   <p class="rules text-left">
-    <!--<a href="javascript:void(0)">Application Guidelines</a> <br>-->
+    {{-- <a href="javascript:void(0)">Application Guidelines</a> <br> --}}
     For more information, {!! Html::mailto('fellowships@ersnet.org', 'contact us') !!}
   </p>
    @if($category->registerButton->link)
@@ -93,15 +107,33 @@
   @endif  
 </div>
 
-<!-- END Beginning Right Side-bar -->
+{{-- END Beginning Right Side-bar --}}
 
 </div>
-
 </div>
 @stop()
-  
+
 @section('modals')
   @include('partials.modal-items', array('items' => $items))
+  {{-- FREE PopUp --}}
+  @if($category->popUp)
+  <div id="md-popUp" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+          <h3 class="modal-title">{{ $category->popUpText }}</h3>
+        </div>
+        <div class="modal-body">
+          <div class="text-left">
+            {!! $category->popUp !!}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @endif
+  {{-- end FREE PopUp --}}  
 @stop()
 
 @section('scripts')
