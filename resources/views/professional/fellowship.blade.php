@@ -120,7 +120,7 @@
             @endif
             @if($item->registerButton->link && !$item->fullyBooked)
               <p>For more information, contact {!! Html::mailto('fellowships@ersnet.org', 'fellowships@ersnet.org') !!}</p>
-              <p>Registering for someone else ? Contact {!! Html::mailto('education@ersnet.org', 'Felix Yip') !!}</p>
+              {{--<p>Registering for someone else ? Contact {!! Html::mailto('education@ersnet.org', 'Felix Yip') !!}</p>--}}
               <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
                 {{ $item->registerButton->text or Register}}
             </a>

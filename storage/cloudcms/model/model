@@ -12,7 +12,7 @@ model:
     eventLocation: false
     leadParagraph: false
     body: false
-    articleTwoColumns: false
+    articleOneColumn: false
     comments: false
     image: false
     imageDescription: false
@@ -64,6 +64,7 @@ model:
     featuredCalendarItem: false
     nonErsCalendarItem: false
     ersEndorsedEvent: false
+    ersDeadline: false
     fullyBooked: false
     displayOrder: false
     loc: { lat: false, long: false }

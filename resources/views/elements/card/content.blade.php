@@ -3,9 +3,13 @@
         <p class="btn-rounded early_bird">Early Bird deadline {{ $item->earlybirdDeadline }}</p>
     @endif
     <h3 class="title">
-    @if($item->registerButton->link && ($item->ersEndorsedEvent || $item->nonErsCalendarItem || $item->slug == "sleep-and-breathing-2017"))
+    @if(strpos($item->registerButton->link, '@'))
+        <a href="{{'mailto:'.$item->registerButton->link}}">{{ $item->title }}</a>
+    @elseif($item->registerButton->link 
+        && ($item->ersEndorsedEvent || $item->nonErsCalendarItem || $item->slug == "sleep-and-breathing-2017"))
         <a href="{{$item->registerButton->link}}" target="_blank">{{ $item->title }}</a>
     @endif
+
     @if($item->contentType != "event_calendar")
         @if($item->uri) 
             <a href="{{url($item->uri)}}">{{ $item->title }}</a>

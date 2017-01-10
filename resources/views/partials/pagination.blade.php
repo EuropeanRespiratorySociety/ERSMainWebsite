@@ -2,7 +2,7 @@
 <div class="spacer center-block">
   <nav>
     <ul class="pagination pagination-lg">
-      @if(request()->input('page', false))
+      @if(request()->input('page', false) && request()->input('page') > 2)
         <li><a href="{{url($category->uri) }}" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
       @endif
       @if($pagination->previous)
@@ -18,7 +18,7 @@
       @if($pagination->next)
         <li><a href="{{url($category->uri).'?page='.$pagination->next }}" aria-label="Next Item"><span aria-hidden="true">...</span></a></li>
       @endif
-      @if($pagination->numberOfPages != request()->input('page'))
+      @if($pagination->numberOfPages -1 > request()->input('page'))
         <li><a href="{{url($category->uri).'?page='. $pagination->numberOfPages }}" aria-label="Next"><span aria-hidden="true">»</span></a></li>
       @endif
     </ul>

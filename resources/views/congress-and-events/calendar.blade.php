@@ -22,17 +22,24 @@
         <div class="page-head">
             <h2 class="">Endorsed Events Calendar</h2>
         </div>
+    @endif   
+    @if($type == 'deadline')
+        <div class="page-head">
+            <h2 class="">ERS Deadlines</h2>
+        </div>
     @endif 
     <div class="row" style="margin:30px 0 50px;">
         <div class="col-md-4 col-md-offset-4">
             <div class="btn-group btn-group-justified">
                 <a href="{{url('congress-and-events/events-calendar')}}" class="btn btn-xs"style="padding-left:0;">all</a>
                 <a href="{{url('congress-and-events/events-calendar?type=ers')}}" class="btn btn-xs " style="padding-left:0;">ERS</a>
+                <a href="{{url('congress-and-events/events-calendar?type=deadline')}}" class="btn btn-xs " style="padding-left:0;">ERS Deadlines</a>
                 <a href="{{url('congress-and-events/events-calendar?type=endorsed')}}" class="btn btn-xs" style="padding-left: 0;padding-right:0;">Endorsed</a>
                 <a href="{{url('congress-and-events/events-calendar?type=non-ers')}}" class="btn btn-xs">Non-ERS</a>
             </div>
         </div>
-    </div>  
+    </div>
+    @if(isset($params['items']->scalar))  
     @foreach($items as $year => $months)
         <div class="">
             <h2 class="">{{$year}}</h2>
@@ -53,6 +60,11 @@
             </div>
         @endforeach         
     @endforeach 
+    @else
+        <div class="">
+            <h2 class="">No item to display</h2>
+        </div>
+    @endif
     </div>           
 </div>
 @stop()  

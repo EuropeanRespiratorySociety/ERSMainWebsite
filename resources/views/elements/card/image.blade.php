@@ -33,4 +33,7 @@
     @if($item->ersEndorsedEvent)    
         <span class="label label-success" style="width:100%">ERS Endorsed Event</span>
     @endif
+    @if($item->ersDeadline)    
+        <span class="label label-primary" style="width:100%">ERS Deadline</span>
+    @endif
 </div>
