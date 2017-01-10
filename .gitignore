@@ -24,5 +24,6 @@ composer-setup.php
 composer.phar
 .env
 .user.ini
+.vscode
 .DS_Store
 **/.DS_Store
