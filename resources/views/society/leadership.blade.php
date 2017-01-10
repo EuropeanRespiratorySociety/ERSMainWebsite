@@ -26,14 +26,14 @@
                 <img src="images/people/leadership/Guy_Joos.jpg" class="img-circle">
                 <p class="photo_caption"><strong>{!! Html::mailto('guy.joos@ugent.be', 'Guy Joos') !!}</strong>
                 President<br>
-                <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=451&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a>
+                <a title="Download COI" href="https://ers.box.com/s/4jvas4pnktbpks61qmvu99wyklrwaotq">Download COI</a>
                 </p>
             </div>
             <div class="col-md-4 xs-mb-15">
                 <img src="images/people/leadership/Joajen_Vestbo.jpg" class="img-circle">
                 <p class="photo_caption"><strong>{!! Html::mailto('jorgen.vestbo@manchester.ac.uk', 'Jørgen Vestbo') !!}</strong>
                 Past President <br>
-                <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=511&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a>
+                <a title="Download COI" href="https://ers.box.com/s/2qhpz81uhhx1h9y2fd0tg578eql82khu">Download COI</a>
                 </p>
             </div>
         	<div class="col-md-4 xs-mb-15">
