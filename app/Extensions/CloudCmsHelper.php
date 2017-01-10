@@ -120,7 +120,7 @@ class CloudCmsHelper
             //->addParams(['skip' => 2]) 
             ->addParams(['limit' => 100]) 
             ->addParams(['full' => 'true'])
-            ->get();
+            ->get();    
         $results = $this->validateResults($results);       
         return $results;    
     }

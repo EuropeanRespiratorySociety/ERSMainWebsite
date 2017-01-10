@@ -32,7 +32,7 @@
         <div class="row">
           <div class="col-md-3 col-md-offset-3 xs-mb-15">
             <img src="../images/people/executive-office/wbill.jpg" class="img-circle">
-            <p class="photo_caption"><strong>{!! Html::mailto('werner.bill@ersnet.org', 'Werner Bill') !!}</strong>
+            <p class="photo_caption"><strong><span style="color: #4680E4">Werner Bill<!-- {!! Html::mailto('werner.bill@ersnet.org', 'Werner Bill') !!} --></span></strong>
             Executive Director,<br>
             T +41 21 213 01 20
             </p>
@@ -548,21 +548,14 @@
       </div>
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
-            <img src="../images/people/executive-office/wbill.jpg" class="img-circle">
-            <p class="photo_caption"><strong>{!! Html::mailto('werner.bill@ersnet.org', 'Werner Bill') !!}</strong>
-            Executive Director,<br>
-            Director of Finance and Administration<br>
-            T +41 21 213 01 20<br>
+            <img src="../images/120x120.jpg" class="img-circle">
+            <p class="photo_caption"><strong>{!! Html::mailto('valerie.zecca@ersnet.org', 'Valérie Zecca') !!}</strong>
+            Head of Finance<br>
+            T +41 21 213 01 22<br>
             </p>
           </div>
       </div>
       <div class="row">
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('valerie.zecca@ersnet.org', 'Valérie Zecca') !!}</strong>
-            Finance &amp; Payroll Manager<br>
-            T +41 21 213 01 22<br>
-            </p>
-        </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('Micah.Clayton@ersj.org.uk', 'Micah Clayton') !!}</strong>
             Specialist in Finance and Accounting<br>
