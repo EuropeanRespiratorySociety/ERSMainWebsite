@@ -32,7 +32,7 @@
         <div class="row">
           <div class="col-md-3 col-md-offset-3 xs-mb-15">
             <img src="../images/people/executive-office/wbill.jpg" class="img-circle">
-            <p class="photo_caption"><strong><span style="color: #4680E4">Werner Bill<!-- {!! Html::mailto('werner.bill@ersnet.org', 'Werner Bill') !!} --></span></strong>
+            <p class="photo_caption"><strong>Werner Bill<!-- {!! Html::mailto('werner.bill@ersnet.org', 'Werner Bill') !!} --></strong>
             Executive Director,<br>
             T +41 21 213 01 20
             </p>
