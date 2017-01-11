@@ -50,7 +50,6 @@ class CloudCmsParser
                 //we check if the article has been unpublished. If true we do not parse it
                 if(!$item->unPublished){
                     $item->title = $this->formatTitle($item->title);
-
                     // Markdown Fields
                     $item->lead = Markdown::parse($item->leadParagraph);
                     $item->body = Markdown::parse($item->body);
@@ -199,7 +198,6 @@ class CloudCmsParser
                     $item->salutation = $item->salutation ?? false;
                     $item->firstName = $item->firstName ?? false;
                     $item->lastName = $item->lastName ?? false;
-
                     //removing empty arrays
                     foreach($item as $k => $v){
                         if(empty($v)){

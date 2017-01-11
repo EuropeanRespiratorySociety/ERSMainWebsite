@@ -38,11 +38,14 @@
         @endif
       </div>
       <div class="article text-left @if(!$item->articleOneColumn) two-columns @endif">
-                @if($item->createdOn && $item->type)
-                    @if($item->type == "News" && !$item->doNotDisplayCreatedOn)<h4 class="date">{{ $item->createdOn }}</h4>@endif
-                @endif
-        @if($item->lead){!!$item->lead!!}@endif
-        @if($item->body){!!$item->body!!}@endif
+        @if($item->createdOn && $item->type)
+          @if($item->type == "News" && !$item->doNotDisplayCreatedOn)<h4 class="date">{{ $item->createdOn }}</h4>@endif
+        @endif
+        @if($item->lead){!! $item->lead !!}@endif
+        @if($item->body){!! $item->body !!}@endif
+        @if($item->category->title == "Respiratory Worldwide" )
+          <p><i>Respiratory Worldwide aims to stimulate communication and interaction between national and regional respiratory societies and ERS. These manuscripts have not been (peer) reviewed, and are not official ERS content.</i></p>
+        @endif
       </div>
       @if($item->comments == true)
       <hr>
