@@ -84,6 +84,11 @@
       @if(isset($relatedItems))
         @include('partials.related-items', array('relatedItems' => $relatedItems)) 
       @endif
+      @if($item->category->title == "Respiratory Worldwide" )
+        <div role="alert" class="alert alert-info alert-dismissible" style="text-align: left ;font-size:15px ; ">
+          <i>This article is part of Respiratory Worldwide; a platform for leaders of respiratory societies to share their latest news about activities and events across the world.</i>
+       </div>
+      @endif
 
       </div>
 
