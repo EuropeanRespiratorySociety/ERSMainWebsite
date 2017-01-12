@@ -6,7 +6,7 @@
     @if(strpos($item->registerButton->link, '@'))
         <a href="{{'mailto:'.$item->registerButton->link}}">{{ $item->title }}</a>
     @elseif($item->registerButton->link 
-        && ($item->ersEndorsedEvent || $item->nonErsCalendarItem || $item->slug == "sleep-and-breathing-2017"))
+        && ($item->ersEndorsedEvent || $item->nonErsCalendarItem || $item->ersDeadline || $item->category->title == "Events Calendar"))
         <a href="{{$item->registerButton->link}}" target="_blank">{{ $item->title }}</a>
     @endif
 
