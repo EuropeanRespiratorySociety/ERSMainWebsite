@@ -57,37 +57,35 @@
     {{--  Beginning Right Side-bar  --}}
     <div class="col-md-3 white-bg right-photo">
       <div class="right-photo-inner">
-
-      @if($item->image)
-      <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
-
-      @endif
-      @if($item->sponsors->text)
-         @if($item->image)
-          <hr>
-         @endif
-        @if($item->sponsors->image)
-            <p><img src="{{ $item->sponsors->image }}" class="img-rounded" style="width:200px;"></p>
-        @endif  
-        @if($item->sponsors->text)
-          <h4>{{$item->sponsors->text}}</h4>
+        @if($item->image)
+          <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
         @endif
-      @endif
-      @if($item->loc->lat && $item->loc->long)
-          <div id="map"></div>
-      @endif
-      @if($item->video))
-        <div class="videoWrapper">
-          {!!$item->video!!} 
+        @if($item->sponsors->text)
+          @if($item->image)
+            <hr>
+          @endif
+          @if($item->sponsors->image)
+              <p><img src="{{ $item->sponsors->image }}" class="img-rounded" style="width:200px;"></p>
+          @endif  
+          @if($item->sponsors->text)
+            <h4>{{$item->sponsors->text}}</h4>
+          @endif
+        @endif
+        @if($item->loc->lat && $item->loc->long)
+            <div id="map"></div>
+        @endif
+        @if($item->video)
+          <div class="videoWrapper" style="min-height:300px">
+            {!!$item->video!!} 
+          </div>
+        @endif
+        @if(isset($relatedItems))
+          @include('partials.related-items', array('relatedItems' => $relatedItems)) 
+        @endif
+        @if($item->category->title == "Respiratory Worldwide" )
+          <div role="alert" class="alert alert-info alert-dismissible" style="text-align: left ;font-size:15px ; ">
+            <i>This article is part of Respiratory Worldwide; a platform for leaders of respiratory societies to share their latest news about activities and events across the world.</i>
         </div>
-      @endif
-      @if(isset($relatedItems))
-        @include('partials.related-items', array('relatedItems' => $relatedItems)) 
-      @endif
-      @if($item->category->title == "Respiratory Worldwide" )
-        <div role="alert" class="alert alert-info alert-dismissible" style="text-align: left ;font-size:15px ; ">
-          <i>This article is part of Respiratory Worldwide; a platform for leaders of respiratory societies to share their latest news about activities and events across the world.</i>
-       </div>
       @endif
 
       </div>

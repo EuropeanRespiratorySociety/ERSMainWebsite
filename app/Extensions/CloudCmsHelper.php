@@ -156,7 +156,6 @@ class CloudCmsHelper
                     ->addParams(['full' => 'true'])
                     ->addParams(['metadata' => 'true'])   
                     ->get(); 
-
         $result = $this->validateResults($result);               
         return $result;            
 	}
