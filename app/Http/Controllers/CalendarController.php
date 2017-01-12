@@ -33,7 +33,6 @@ class CalendarController extends Controller
             return $value->calendar->timestamp;
         }));
         $items = $this->CC->prepareCalendar($items, $type);
-        //dd($items[2017]['January']);
         $params['items'] = (object) $items; 
         $params['type'] = $type;
         return view('congress-and-events.timeline')->with($params);    
