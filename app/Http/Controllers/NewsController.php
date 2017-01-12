@@ -11,6 +11,7 @@ use App\Extensions\CloudCmsHelper as CC;
 
 class NewsController extends Controller
 {
+
     protected $news = "o:c827cc6bf4de31ce385b";
     protected $property = "type";
     protected $propertyValue = "News";
@@ -20,7 +21,6 @@ class NewsController extends Controller
     public function __construct() {
         $this->CC = new CC();
     }      
-
     /**
      * Display a listing of the resource.
      *
@@ -30,7 +30,6 @@ class NewsController extends Controller
     {
         $page = Input::get('page', false);
         $limit = Input::get('limit', 25);
-
         $category = $this->CC->getItem('news');
         $params['category'] = $this->CC->parseItems($category['rows'])[0];
 

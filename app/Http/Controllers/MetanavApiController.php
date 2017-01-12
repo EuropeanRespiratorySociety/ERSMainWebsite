@@ -22,3 +22,4 @@ class MetanavApiController extends Controller
 
     }
 }
+
