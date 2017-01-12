@@ -13,6 +13,8 @@ model:
     leadParagraph: false
     body: false
     articleOneColumn: false
+    doNotDisplayCreatedOn: false
+    doNotDisplayCreatedOnOnHomepage: false
     comments: false
     image: false
     imageDescription: false
@@ -58,7 +60,6 @@ model:
     abstracts: { text: false, deadline: false, notificationOfResults: false, applyButtonUrl: false }
     availableOnHomepage: false
     mainNews: false
-    doNotDisplayCreatedOn: false
     featuredCourse: false
     featuredFunding: false
     featuredCalendarItem: false
