@@ -23,9 +23,9 @@
             @endif
               <figcaption>
               @if($item->doNotDisplayCreatedOnOnHomepage == false)
-                <h4>
+                <span class="label-right label-news" >
                   @if(isset($item->createdOn)){{$item->createdOn}}@endif
-                </h4>
+                </span>
               @endif
               <h2>@if(isset($item->title)){{$item->title}}@endif</h2>
               </figcaption>     
