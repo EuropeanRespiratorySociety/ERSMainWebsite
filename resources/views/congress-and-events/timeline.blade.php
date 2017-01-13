@@ -1,4 +1,12 @@
 @extends('template')
+@section('meta')
+        @include('partials.meta', array('meta' =>
+            [
+            'url' => 'https://www.ersnet.org/congress-and-events/events-calendar' , 
+            'title' => 'Events Calendar'
+            ]
+            )) 
+@stop()
 
 @section('content')
 <div class="ers-content ers-courses light-grey-bg calendar-content">

@@ -1,10 +1,3 @@
-<?php 
-if(!$item->category2){
-    $item->category2 = [0];
-    $item->category2[0] = new stdClass;
-    $item->category2[0]->title = false;
-}
-?>
 <div class="card-content">
     @if($item->earlybirdDeadline)
         <p class="btn-rounded early_bird">Early Bird deadline {{ $item->earlybirdDeadline }}</p>
