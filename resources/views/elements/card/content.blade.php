@@ -1,3 +1,10 @@
+<?php 
+if(!$item->category2){
+    $item->category2 = [0];
+    $item->category2[0] = new stdClass;
+    $item->category2[0]->title = false;
+}
+?>
 <div class="card-content">
     @if($item->earlybirdDeadline)
         <p class="btn-rounded early_bird">Early Bird deadline {{ $item->earlybirdDeadline }}</p>
@@ -6,7 +13,12 @@
     @if(strpos($item->registerButton->link, '@'))
         <a href="{{'mailto:'.$item->registerButton->link}}">{{ $item->title }}</a>
     @elseif($item->registerButton->link 
-        && ($item->ersEndorsedEvent || $item->nonErsCalendarItem || $item->ersDeadline || $item->category->title == "Events Calendar"))
+            && ($item->ersEndorsedEvent 
+                || $item->nonErsCalendarItem 
+                || $item->ersDeadline 
+                || $item->category->title == "Events Calendar"
+                || $item->contentType == "event_calendar")
+            )
         <a href="{{$item->registerButton->link}}" target="_blank">{{ $item->title }}</a>
     @endif
 

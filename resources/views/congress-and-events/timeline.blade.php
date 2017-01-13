@@ -44,7 +44,6 @@
                 </div>
             </div>
         </div>
-
         @if(!isset($items->scalar)) 
             @foreach($items as $year => $months)
             <div class="">
