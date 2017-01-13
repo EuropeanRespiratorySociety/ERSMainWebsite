@@ -17,9 +17,9 @@
           <a href="{{url('the-society/news/'.$items['mainNews']->slug)}}">
                <div class="text-center">
                <em>{{$items['mainNews']->title}}</em>
-               @if($items['mainNews']->doNotDisplayCreatedOn != true)
+                @if($items['mainNews']->doNotDisplayCreatedOnOnHomepage != true)
                <h4><em>{{$items['mainNews']->createdOn}}</em></h4>
-               @endif
+                @endif
                </div>
           </a>      
         </div>

@@ -22,7 +22,7 @@
               <img src="{{url($item->image)}}" @if(isset($item->imageDescription))alt="{{$item->imageDescription}}" @endif >
             @endif
               <figcaption>
-              @if($item->doNotDisplayCreatedOn != true)
+              @if($item->doNotDisplayCreatedOnOnHomepage == false)
                 <h4>
                   @if(isset($item->createdOn)){{$item->createdOn}}@endif
                 </h4>
