@@ -28,7 +28,7 @@ class WhoWeAreController extends Controller
         $params['item'] =  (object) $item[0]; 
 
         if(!$item[0]->url || !$item[0]->uri){
-            $CC->setCanonical($item[0]->_qname);
+            $this->CC->setCanonical($item[0]->_qname);
         }
 
         return view('articles.item')->with($params); 

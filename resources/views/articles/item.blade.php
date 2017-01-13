@@ -43,8 +43,10 @@
         @endif
         @if($item->lead){!! $item->lead !!}@endif
         @if($item->body){!! $item->body !!}@endif
-        @if($item->category->title == "Respiratory Worldwide" )
-          <p><i>Respiratory Worldwide aims to stimulate communication and interaction between national and regional respiratory societies and ERS. These manuscripts have not been (peer) reviewed, and are not official ERS content.</i></p>
+        @if($item->category)
+          @if($item->category->title == "Respiratory Worldwide" )
+            <p><i>Respiratory Worldwide aims to stimulate communication and interaction between national and regional respiratory societies and ERS. These manuscripts have not been (peer) reviewed, and are not official ERS content.</i></p>
+          @endif
         @endif
       </div>
       @if($item->comments == true)
@@ -82,11 +84,13 @@
         @if(isset($relatedItems))
           @include('partials.related-items', array('relatedItems' => $relatedItems)) 
         @endif
-        @if($item->category->title == "Respiratory Worldwide" )
-          <div role="alert" class="alert alert-info alert-dismissible" style="text-align: left ;font-size:15px ; ">
-            <i>This article is part of Respiratory Worldwide; a platform for leaders of respiratory societies to share their latest news about activities and events across the world.</i>
-        </div>
-      @endif
+        @if($item->category)
+          @if($item->category->title == "Respiratory Worldwide" )
+            <div role="alert" class="alert alert-info alert-dismissible" style="text-align: left ;font-size:15px ; ">
+              <i>This article is part of Respiratory Worldwide; a platform for leaders of respiratory societies to share their latest news about activities and events across the world.</i>
+          </div>
+          @endif
+        @endif
 
       </div>
 
