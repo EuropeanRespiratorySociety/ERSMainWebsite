@@ -45,7 +45,7 @@
         @if($item->body){!! $item->body !!}@endif
         @if($item->category)
           @if($item->category->title == "Respiratory Worldwide" )
-            <p><i>Respiratory Worldwide aims to stimulate communication and interaction between national and regional respiratory societies and ERS. These manuscripts have not been (peer) reviewed, and are not official ERS content.</i></p>
+            <p><i>Respiratory Worldwide aims to stimulate communication and interaction between national and regional respiratory societies and ERS. These articles have not been (peer) reviewed and are not official ERS content.</i></p>
           @endif
         @endif
       </div>
