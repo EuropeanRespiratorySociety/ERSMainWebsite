@@ -4,11 +4,6 @@ use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 
-use Iluminate\Http\Request;
-use App\Http\Requests;
-
-use App\Extensions\CloudCmsHelper as CC;
-
 
 class CourseControllerTest extends TestCase
 {

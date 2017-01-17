@@ -24,7 +24,7 @@
 
       <!--Task forces-->
       <div class="col-md-3">
-        <h2><a href="{url('research/task-forces')}}">Task forces</a></h2>
+        <h2><a href="{{url('research/task-forces')}}">Task forces</a></h2>
         <ul>
           <li><a target="_blank" href="http://www.ers-education.org/guidelines.aspx">Published guidelines</a></li>
           <li><a target="_blank" href="https://taskforces.ersnet.org/">On-going projects</a></li>

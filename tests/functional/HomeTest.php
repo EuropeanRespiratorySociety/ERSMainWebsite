@@ -10,10 +10,13 @@ class HomeTest extends TestCase
     public function displays_latest_news()
     {
         $this->visit('/')
-             ->see('Latest News')
-             ->click('All News')
-             ->see('News')
-             ->seePageIs('the-society/news');
+            ->see('https://bootstrap.ersnet.org/css/all.css')
+            ->see('https://bootstrap.ersnet.org/js/jquery.min.js')
+            ->see('https://bootstrap.ersnet.org/js/all.js')    
+            ->see('Latest News')
+            ->click('All News')
+            ->see('News')
+            ->seePageIs('the-society/news');
     }
 
     /** @test */
