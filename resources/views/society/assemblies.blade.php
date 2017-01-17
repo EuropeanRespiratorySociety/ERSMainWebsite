@@ -15,7 +15,7 @@
       type="button" 
       class="btn btn-space btn-primary btn-rounded btn-lg"
       style="position:fixed;top:120px;right:3px;z-index:1;">
-      <i style="font-size:30px;" class="icon s7-add-user"></i> Become a member
+      <i style="font-size:30px;" class="icon s7-add-user"></i> Join Assembly
     </a>  
     <div id="fullpage">
       <div class="section fp-auto-height">
