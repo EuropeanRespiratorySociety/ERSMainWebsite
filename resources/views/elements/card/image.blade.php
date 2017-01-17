@@ -36,4 +36,10 @@
     @if($item->ersDeadline)    
         <span class="label label-primary" style="width:100%">ERS Deadline</span>
     @endif
+    @if($item->category)
+        @if($item->category->title == "Respiratory Worldwide" )
+            <span class="label" ><img src="../images/news/flag-rww.jpg" alt=""></span>
+        @endif
+    @endif
+
 </div>
