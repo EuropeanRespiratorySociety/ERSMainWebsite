@@ -10,6 +10,13 @@
   @section('content')
 
   <div class="ers-content assemblies-content">
+      <a 
+      href="https://my.ersnet.org" 
+      type="button" 
+      class="btn btn-space btn-primary btn-rounded btn-lg"
+      style="position:fixed;top:120px;right:3px;z-index:1;">
+      <i style="font-size:30px;" class="icon s7-add-user"></i> Become a member
+    </a>  
     <div id="fullpage">
       <div class="section fp-auto-height">
         <div class="main-content">
@@ -21,7 +28,7 @@
             <!--h4><strong>Exchange knowledge with the experts</strong></h4-->
 
             <div class="col-md-8 center-block lead">ERS Assemblies are the backbone of ERS. The Assemblies, and Groups within them, underpin all ERS scientific and educational activities and help drive ERS forward to achieving its mission. Each member has an intrinsic role within these groups to help set the agenda across all ERS activities. <br><br>
-Members can log in to ‘myERS’ and join one main group and up to two more groups to best suit your professional interest area. Members then become part of the nerve centre of ERS; voting for new leaders, shaping key activities such as the Congress programme and task forces, and being the first to hear about new opportunities and events in your professional interest area.<br><br></div>
+Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join one main group and up to two more groups to best suit your professional interest area. Members then become part of the nerve centre of ERS; voting for new leaders, shaping key activities such as the Congress programme and task forces, and being the first to hear about new opportunities and events in your professional interest area.<br><br></div>
             
            
 
