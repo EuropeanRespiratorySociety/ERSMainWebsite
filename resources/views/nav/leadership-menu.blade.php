@@ -16,7 +16,7 @@
         <li class="list-group-item"><a href="the-society/who-we-are/leadership/council">Council</a></li>
         <li class="list-group-item"><a href="the-society/who-we-are/leadership/advocacy-council">Advocacy Council</a></li>
         <li class="list-group-item"><a href="http://juniors.ersnet.org" target="_blank">Junior Members Committee</a></li>
-    	<li class="list-group-item"><a href="the-society/who-we-are/leadership/ers-elections">Elections 2016</a></li>
+    	<li class="list-group-item"><a href="the-society/who-we-are/leadership/ers-elections">Elections</a></li>
     </ul>
 
     
