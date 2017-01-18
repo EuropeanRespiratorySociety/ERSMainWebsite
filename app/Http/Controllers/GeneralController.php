@@ -100,6 +100,73 @@ class GeneralController extends Controller
     }
 
     /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function goldMedals()
+    { 
+        $results = $this->CC->getItem('goldMedals');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] =  (object) $item[0]; 
+
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
+        }
+
+        $results = $this->CC->getCategory($item[0]->_qname);
+        $items = $this->CC->parseItems($results['rows']);
+        $params['items'] =  $items;
+
+        return view('society.gold-medals')->with($params);
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function specialHonours()
+    { 
+        $results = $this->CC->getItem('specialHonours');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] =  (object) $item[0]; 
+
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
+        }
+
+        $results = $this->CC->getCategory($item[0]->_qname);
+        $items = $this->CC->parseItems($results['rows']);
+        $params['items'] =  $items;
+
+        return view('society.special-honours')->with($params);
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function researchExcellence()
+    { 
+        $results = $this->CC->getItem('researchExcellence');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] =  (object) $item[0]; 
+
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
+        }
+
+        $results = $this->CC->getCategory($item[0]->_qname);
+        $items = $this->CC->parseItems($results['rows']);
+        $params['items'] =  $items;
+
+        return view('society.research-excellence')->with($params);
+    }
+
+
+    /**
      * Display the specified resource.
      *
      * @param  int  $id
