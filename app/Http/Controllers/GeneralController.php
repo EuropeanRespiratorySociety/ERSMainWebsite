@@ -118,7 +118,7 @@ class GeneralController extends Controller
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  $items;
 
-        return view('society.gold-medals')->with($params);
+        return view('society.awards')->with($params);
     }
 
     /**
@@ -140,7 +140,7 @@ class GeneralController extends Controller
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  $items;
 
-        return view('society.special-honours')->with($params);
+        return view('society.awards')->with($params);
     }
 
     /**
@@ -162,7 +162,7 @@ class GeneralController extends Controller
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  $items;
 
-        return view('society.research-excellence')->with($params);
+        return view('society.awards')->with($params);
     }
 
 

@@ -16,7 +16,7 @@
                 </div>
                 <div class="col-md-9 center-block lead">
                     @if(isset($item->body)){!!$item->body!!}@endif
-                </div>         
+                </div>
                 <div class="row" style="margin-bottom:50px;">
                     <div class="col-md-4">
                         <div class="card card-primary card-padded">
