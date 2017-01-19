@@ -25,7 +25,7 @@
                             </div>
                             
                             <div class="card-title text-left">
-                                <h3>RGOLD MEDALS</h3>
+                                <h3>GOLD MEDALS</h3>
                             </div> 
 
                             <div class="card-content  text-left">
