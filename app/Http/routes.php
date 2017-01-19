@@ -56,7 +56,8 @@ Route::group(['prefix' => 'the-society/who-we-are'], function () {
     Route::get('awards/special-honours', 'GeneralController@specialHonours'); 
     Route::get('awards/special-honours/{slug}', 'GeneralController@specialHonours'); 
     Route::get('awards/research-excellence', 'GeneralController@researchExcellence'); 
-    Route::get('awards/research-excellence/{slug}', 'GeneralController@researchExcellence');     
+    Route::get('awards/research-excellence/{slug}', 'GeneralController@researchExcellence'); 
+    Route::get('awards/{slug}', 'GeneralController@show'); 
     Route::group(['prefix' => 'leadership'], function () { 
         Route::get('national-delegates', function(){return view('society.leadership.national-delegates');});
         Route::get('science-council', function(){return view('society.leadership.science-council');});
