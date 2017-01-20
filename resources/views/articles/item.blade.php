@@ -64,7 +64,7 @@
         @endif
         @if($item->category)
           @if($item->category->title == "Respiratory Worldwide" )
-            <p><img src="../images/news/respiratory-logo.jpg" class="img-rounded" style="width:350px;"></p>
+            <p><img src="../images/news/respiratory-logo.jpg" class="img-rounded img-responsive" style="width:350px;"></p>
            @endif
         @endif        
         @if($item->sponsors->text)
