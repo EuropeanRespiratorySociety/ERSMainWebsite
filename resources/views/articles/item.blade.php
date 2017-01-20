@@ -62,13 +62,18 @@
         @if($item->image)
           <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
         @endif
+        @if($item->category)
+          @if($item->category->title == "Respiratory Worldwide" )
+            <p><img src="../images/news/respiratory-logo.jpg" class="img-rounded" style="width:350px;"></p>
+           @endif
+        @endif        
         @if($item->sponsors->text)
           @if($item->image)
             <hr>
           @endif
           @if($item->sponsors->image)
               <p><img src="{{ $item->sponsors->image }}" class="img-rounded" style="width:200px;"></p>
-          @endif  
+          @endif
           @if($item->sponsors->text)
             <h4>{{$item->sponsors->text}}</h4>
           @endif
