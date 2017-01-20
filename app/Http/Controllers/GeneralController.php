@@ -87,7 +87,6 @@ class GeneralController extends Controller
         $results = $this->CC->getItem('awards');
         $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0]; 
-
         if(!$item[0]->url || !$item[0]->uri){
             $this->CC->setCanonical($item[0]->_qname);
         }
@@ -106,7 +105,7 @@ class GeneralController extends Controller
      */
     public function goldMedals()
     { 
-        $results = $this->CC->getItem('goldMedals');
+        $results = $this->CC->getItem('gold-medals');
         $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0]; 
 

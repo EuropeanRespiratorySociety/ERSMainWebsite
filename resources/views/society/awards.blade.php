@@ -17,13 +17,13 @@
                 <div class="col-md-9 center-block lead">
                     @if(isset($item->body)){!!$item->body!!}@endif
                 </div>
+                @if($item->slug == "awards") 
                 <div class="row" style="margin-bottom:50px;">
                     <div class="col-md-4">
                         <div class="card card-primary card-padded">
                             <div class="card-image">
                                 <img class="img-responsive" src="../images/london2016.jpg">
                             </div>
-                            
                             <div class="card-title text-left">
                                 <h3>GOLD MEDALS</h3>
                             </div> 
@@ -75,6 +75,7 @@
                         </div>
                     </div><!-- col-md-4 --> 
                 </div><!-- row for card -->
+                @endif
                 <div class="row row_event rel">
                     @include('partials.items',array('items' => $items, 'class' => 'col-md-3'))
                 </div>
