@@ -127,7 +127,7 @@ class GeneralController extends Controller
      */
     public function specialHonours()
     { 
-        $results = $this->CC->getItem('specialHonours');
+        $results = $this->CC->getItem('special-honours');
         $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0]; 
 
@@ -149,7 +149,7 @@ class GeneralController extends Controller
      */
     public function researchExcellence()
     { 
-        $results = $this->CC->getItem('researchExcellence');
+        $results = $this->CC->getItem('research-excellence');
         $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0]; 
 
