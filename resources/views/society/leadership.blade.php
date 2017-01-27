@@ -66,34 +66,34 @@
 	            <img src="images/people/leadership/Gernot_Rohde.jpg" class="img-circle">
 	            <p class="photo_caption"><strong>{!! Html::mailto('g.rohde@mumc.nl', 'Gernot Rohde') !!}</strong>
 	            Education Council Chair <br>
-	            <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=417&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a>
+	            <a title="Download COI" href="https://ers.box.com/s/yu374xwbklv7jphp6uktoi8ysnub57nz">Download COI</a>
 	            </p>
         	</div>
             <div class="col-md-4 xs-mb-15">
                 <img src="images/people/leadership/guy_brusselle.jpg" class="img-circle">
                 <p class="photo_caption"><strong>{!! Html::mailto('guy.brusselle@ugent.be', 'Guy Brusselle') !!}</strong>
                 Science Council Chair <br>
-                <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=1057&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a>
+                <a title="Download COI" href="https://ers.box.com/s/o9lpqpdhfghoy10f87rnnjedch7ren6f">Download COI</a>
             </div>
         	<div class="col-md-4 xs-mb-15">
 	            <img src="images/people/leadership/christina_gratziou.jpg" class="img-circle">
 	            <p class="photo_caption"><strong>{!! Html::mailto('chgratziou@yahoo.com', 'Christina Gratziou') !!}</strong>
 	            Advocacy Council Chair <br>
-	            <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=597&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a>
+	            <a title="Download COI" href="https://ers.box.com/s/4481crfosil8ci6mrop76fz408y4bzas">Download COI</a>
 	            </p>
         	</div>
         	<div class="col-md-4 xs-mb-15">
 	            <img src="images/people/leadership/Dan_Smyth.jpg" class="img-circle">
 	            <p class="photo_caption"><strong>{!! Html::mailto('Dan.Smyth@europeanlung.org', 'Dan Smyth') !!}</strong>
 	            ELF Chair <br>
-	            <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=595&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a>
+	            <a title="Download COI" href="https://ers.box.com/s/ifl1cjyp5kxpdi6oas0vs971i1r3yx9s">Download COI</a>
 	            </p>
         	</div>
         	<div class="col-md-4 xs-mb-15">
 	            <img src="images/people/leadership/john_gibson.jpg" class="img-circle">
 	            <p class="photo_caption"><strong>{!! Html::mailto('John.Gibson@newcastle.ac.uk', 'John Gibson') !!}</strong>
 	            Publications Chair <br>
-	            <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=596&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a>
+	            <a title="Download COI" href="https://ers.box.com/s/uunmkvz82w0sthitwaxmrv4shts9uyx7">Download COI</a>
         	</div>
             <!--
         	<div class="col-md-4 xs-mb-15">
