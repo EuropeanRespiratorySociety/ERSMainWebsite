@@ -9,23 +9,23 @@
 	        <div class="row" style="padding-top: 30px;">
 	        	<div class="col-md-4 national_delegates ">
 		         	<strong>Albania</strong><br>
-		            Xhemalaj Daniela
+		            {!! Html::mailto('danielaxhemalaj@gmail.com', 'Daniela Xhemalaj') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Algeria </strong><br>
-		            {!! Html::mailto('Abdelmajid Snouber', 'Abdelmajid Snouber') !!}
+		            {!! Html::mailto('asnouber@yahoo.fr', 'Abdelmajid Snouber') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Argentina </strong><br>
-		            {!! Html::mailto('aechaza@ciudad.com.ar', 'Andres Echazarreta') !!}
+		         	<strong>Australia</strong><br>
+		            {!! Html::mailto('peter.middleton@sydney.edu.au', 'Peter Middleton') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Australia </strong><br>
-		            {!! Html::mailto('stephen.stick@health.wa.gov.au', 'Stephen M. Stick') !!}
+		         	<strong>Austria</strong><br>
+		            {!! Html::mailto('gabor.kovacs@klinikum-graz.at', 'Gabor Kovacs') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Belarus</strong><br>
-		            Kharevich Olga
+		            {!! Html::mailto('Olkash1@yandex.ru', 'Olga Kharevich') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Belgium</strong><br>
@@ -33,34 +33,38 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Bosnia and Herzegovina</strong><br>
-		            Paralija Belma
+		            {!! Html::mailto('pbesim@bih.net.ba', 'Besim Prnjavorac') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Brazil</strong><br>
-		            {!! Html::mailto('tmauad@usp.br', 'Thais Mauad') !!}
+		            {!! Html::mailto('﻿renatomaciel@task.com.br', 'Renato Maciel') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Bulgaria</strong><br>
-		            {!! Html::mailto('ssn@multicom.bg', 'Daniela S. Petrova') !!}
+		            {!! Html::mailto('﻿dipetkova@hotmail.com', 'Diana Petkova') !!}
 	         	</div>
 
 	         	<div class="col-md-4 national_delegates ">
 	         		<strong>Canada</strong><br>
-	         		{!! Html::mailto('odonnell@queensu.ca', 'Denis O Donnell') !!}
+	         		{!! Html::mailto('george.fox@med.mun.ca', 'George A. Fox') !!}
 		         	
 	         	</div>
 
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Chile</strong><br>
-		            {!! Html::mailto('pdiaz@med.uchile.cl', 'Patricia Díaz') !!}
+		            {!! Html::mailto('pdiaz@med.uchile.cl', 'Patricia Diaz Amor') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>China</strong><br>
-		            {!! Html::mailto('bai.chunxue@zs-hospital.sh.cn', 'Chunxue Bai') !!}
+		            {!! Html::mailto('jiangtao_L@263.net', 'Jiang Tao Lin') !!}
+	         	</div>
+	         	<div class="col-md-4 national_delegates ">
+		         	<strong>China</strong><br>
+		            {!! Html::mailto('tanghao_0921@126.com', 'Hao Tang') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Colombia</strong><br>
-		            {!! Html::mailto('cacelis.neumo@gmail.com', 'Carlos Celis') !!}
+		            {!! Html::mailto('cacelis.neumo@gmail.com', 'Carlos Andrés Celis Preciado') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Croatia</strong><br>
@@ -68,43 +72,35 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Cyprus</strong><br>
-		            {!! Html::mailto('evbagdades@msn.com', 'Evis Bagdades') !!}
+		            {!! Html::mailto('kassinos@ucy.ac.cy', 'Stavros Kassinos') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Czech Republic </strong><br>
-		            {!! Html::mailto('salajka@fnhk.cz', 'Frantisek Salajka') !!}
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Denmark</strong><br>
-		            {!! Html::mailto('aloekke@gmail.com', 'Anders Loekke') !!}
+		            {!! Html::mailto('miloslav.marel@fnmotol.cz', 'Miloslav Marel') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Egypt</strong><br>
-		            {!! Html::mailto('mshazly6682@gmail.com', 'Mostafa Elshazly') !!}
+		            {!! Html::mailto('sashamawi@yahoo.com', 'Samiha Ashmawy') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Estonia</strong><br>
-		            {!! Html::mailto('jana.kivastik@ut.ee', 'Jana Kivastik') !!}
+		            {!! Html::mailto('ottkiens@gmail.com', 'Ott Kiens') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Finland</strong><br>
-		            {!! Html::mailto('paula.kauppi@hus.fi', 'Paula Kauppi') !!}
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
-		         	<strong>France</strong><br>
-		            {!! Html::mailto('xavier.blanc@chu-nantes.fr', 'François-Xavier Blanc') !!}
+		            {!! Html::mailto('hille.suojalehto@ttl.fi', 'Hille Suojalehto') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>FYROM (Macedonia) </strong><br>
-		            Kaeva Biserka
+		            {!! Html::mailto('bkaeva@hotmail.com', 'Biserka Jovkovska Kaeva') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Georgia</strong><br>
-		            Siradze Nino
+		            {!! Html::mailto('siradzenino@yahoo.com', 'Nino Siradze') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Germany</strong><br>
-		            {!! Html::mailto('andrea.koch@bergmannsheil.de', 'Andrea Koch') !!}
+		         	<strong>Greece</strong><br>
+		            {!! Html::mailto('stavrostryfon@yahoo.gr', 'Stavros Tryfon') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Greece</strong><br>
@@ -112,59 +108,39 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Hungary</strong><br>
-		            {!! Html::mailto('mszilasi@dote.hu', 'Maria Szilasi') !!}
+		            {!! Html::mailto('bogosa@freemail.hu', 'Krisztina Bogos') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>India</strong><br>
-		            {!! Html::mailto('prmohapatra@hotmail.com', 'Prasanta Mohapatra') !!}
+		            {!! Html::mailto('skrajan@hotmail.com', 'Sujeet Rajan') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Indonesia</strong><br>
-		            Wiyono Heru
+		            {!! Html::mailto('wiyono_heru@yahoo.com', 'Heru Wiyono') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Ireland</strong><br>
 		            {!! Html::mailto('robert.rutherford@hse.ie', 'Robert Rutherford') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Islamic Republic of Iran</strong><br>
-		            {!! Html::mailto('ashkanmoslehi@gmail.com', 'Mohammad Ashkan Moslehi') !!}
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Israel</strong><br>
 		            {!! Html::mailto('fireman@tasmc.health.gov.il', 'Elizabeth Fireman') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Italy</strong><br>
-		            {!! Html::mailto('antonio.foresi@icp.mi.it', 'Antonio Foresi') !!}
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Japan</strong><br>
-		            {!! Html::mailto('tatsumi@faculty.chiba-u.jp', 'Koichiro Tatsumi') !!}
+		            {!! Html::mailto('hashimoto.shu@nihon-u.ac.jp', 'Shu Hashimoto') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Kyrgyzstan</strong><br>
-		            {!! Html::mailto('aldashev@krena.kg', 'Almaz Aldashev') !!}
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Latvia</strong><br>
-		            {!! Html::mailto('abekere@inbox.lv', 'Antra Bekere') !!}
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Lebanon</strong><br>
-		            {!! Html::mailto('gkhayat1960@gmail.com', 'Georges Khayat') !!}
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Libya</strong><br>
-		            Bashir Mabrouk
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Lithuania</strong><br>
-		            {!! Html::mailto('laimavaidel@icloud.com', 'Laima Vaideliene') !!}
-	         	</div>
+		            {!! Html::mailto('alinatarielovna@mail.ru', 'Alina Altymysheva') !!}
+	         	</div>	         	
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Luxembourg</strong><br>
-		            {!! Html::mailto('thierrywagner@gmail.com', 'Thierry Wagner') !!}
+		            {!! Html::mailto('gilwirtz@hotmail.com', 'Gil Wirtz') !!}
+	         	</div>
+	         	<div class="col-md-4 national_delegates ">
+		         	<strong>Lybia</strong><br>
+		            {!! Html::mailto('bashir81702@yahoo.com', 'Mabrouk Bashir') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Malaysia</strong><br>
@@ -172,31 +148,15 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Malta</strong><br>
-		            {!! Html::mailto('becm@go.net.mt', 'Brendan Caruana Montaldo') !!}
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Mexico</strong><br>
-		            {!! Html::mailto('e.respira@gmail.com', 'Joel Oswaldo Ortega Estrada') !!}
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Netherlands</strong><br>
-		            {!! Html::mailto('r.rottier@erasmusmc.nl', 'Robbert Rottier') !!}
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
-		         	<strong>New Zealand</strong><br>
-		            {!! Html::mailto('Lutz.Beckert@cdhb.govt.nz', 'Lutz Beckert') !!}
+		            {!! Html::mailto('martix@maltanet.net', 'Martin Balzan') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Norway</strong><br>
-		            {!! Html::mailto('espencarlsen@yahoo.no', 'Espen Carlsen') !!}
+		            {!! Html::mailto('aina.akero@gmail.com', 'Aina Akerø') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Pakistan</strong><br>
-		            {!! Html::mailto('naghman@gmail.com', 'Naghman Bashir') !!}
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Peru</strong><br>
-		            {!! Html::mailto('rafaelreano@yahoo.es', 'Rafael Reano') !!}
+		            {!! Html::mailto('hasnain_javed@hotmail.com', 'Hasnain Javed') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Philippines</strong><br>
@@ -204,19 +164,15 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Poland</strong><br>
-		            {!! Html::mailto('anna.doboszynska@wp.pl', 'Anna Doboszynska ') !!}
+		            {!! Html::mailto('simon.mds@poczta.fm', 'Szymon Skoczyński') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Portugal</strong><br>
-		            {!! Html::mailto('antonio.bugalho@gmail.com', 'Antonio Bugalho') !!}
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Republic of Korea </strong><br>
-		            {!! Html::mailto('wichoi@dsmc.or.kr', 'Won-Il Choi') !!}
+		            {!! Html::mailto('paulagpinto@gmail.com', 'Paula Maria Gonçalves Pinto') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Republic of Serbia</strong><br>
-		            {!! Html::mailto('mikivukcevic@hotmail.com', 'Miodrag Vukcevic') !!}
+		            {!! Html::mailto('ristic60lidija@gmail.com', 'Lidija M Ristić') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Romania</strong><br>
@@ -225,14 +181,6 @@
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Russian Federation </strong><br>
 		            {!! Html::mailto('nevzorova@inbox.ru', 'Vera Nevzorova') !!}
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Saudi Arabia</strong><br>
-		            {!! Html::mailto('jryed@yahoo.com', 'Sami Al-Jerayed') !!}
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Senegal</strong><br>
-		            {!! Html::mailto('dhane@orange.sn', 'Abdoul Almamy Hane') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Slovakia</strong><br>
@@ -247,32 +195,32 @@
 		            {!! Html::mailto('eirusen@sun.ac.za', 'Elvis Irusen') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
+		         	<strong>South Africa</strong><br>
+		            {!! Html::mailto('umeshlalloo@gmail.com', 'Umesh Gangaram Lalloo') !!}
+	         	</div>
+	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Spain</strong><br>
-		            {!! Html::mailto('lpuente@separ.es', 'Luis Puente Maestu') !!}
+		            {!! Html::mailto('jmmarint@unizar.es', 'Jose M. Marin Trigo') !!}
+	         	</div>
+	         	<div class="col-md-4 national_delegates ">
+		         	<strong>Sri Lanka</strong><br>
+		            {!! Html::mailto('eshanthp@yahoo.co.uk', 'Eshanth Perera') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Sweden</strong><br>
-		            {!! Html::mailto('sven-erik.dahlen@ki.se', 'Sven-Erik Dahlén') !!}
+		            {!! Html::mailto('smindus@libero.it', 'Stephanie Mindus') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Switzerland</strong><br>
-		            {!! Html::mailto('stolzd@uhbs.ch', 'Daiana Stolz') !!}
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Syrian Arab Republic </strong><br>
-		            {!! Html::mailto('dr-khoury@smoking-clinic.com', 'Abdalla Khoury') !!}
+		            {!! Html::mailto('Christophe.vonGarnier@insel.ch', 'Christophe von Garnier') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Taiwan</strong><br>
-		            {!! Html::mailto('lungwen.hang@gmail.com', 'Liang-Wen Hang') !!}
+		            {!! Html::mailto('watcha_b@kku.ac.th', 'Liang-Wen Hang') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Thailand</strong><br>
-		            {!! Html::mailto('watcha_b@kku.ac.th', 'Watchara Boonsawat') !!}
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Tunisia</strong><br>
-		            {!! Html::mailto('helmi.bensaad@rns.tn', 'Helmi Ben Saad') !!}
+		            {!! Html::mailto('lungwen.hang@gmail.com', 'Watchara Boonsawat') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Turkey</strong><br>
@@ -283,40 +231,23 @@
 		            {!! Html::mailto('doktor777@ukr.net', 'Ivan Vishnivetsky ') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
-		         	<strong>United Arab Emirates</strong><br>
-		            {!! Html::mailto('gulf_doctor@yahoo.com', 'Mohammed Al-Houqani') !!}
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
 		         	<strong>United Kingdom </strong><br>
-		            {!! Html::mailto('s.w.turner@abdn.ac.uk', 'Stephen Turner') !!}
+		            {!! Html::mailto('martin.allen@uhns.nhs.uk', 'Martin Allen') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>United States of America </strong><br>
-		            {!! Html::mailto('afgelb1@gmail.com', 'Arthur F Gelb') !!}
+		            {!! Html::mailto('lazma@ucsf.edu', 'Stephen Lazarus') !!}
 	         	</div>
-
-
-
-	         	
-
-
-
-
+	         	<div class="col-md-4 national_delegates ">
+		         	<strong>Vietnam</strong><br>
+		            {!! Html::mailto('sduongquy.jfvp@gmail.com', 'Sy Duong-Quy') !!}
+	         	</div>
 	        </div>
-
-       
-        
-
-
-        
-       
-
-       
-
-
-
     	</div>
 	</div>
+  
+
+
   
 @include('nav.leadership-menu', array('class' => 'col-md-2'))
 </div>
