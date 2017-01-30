@@ -9,16 +9,19 @@
               )) 
 @stop()
 @section('content')
-<div class="ers-content ers-courses light-grey-bg fellowships-content">
-            <div class="main-content">
+<div class="ers-content ers-courses fellowships-content" style="background-color: rgb(241, 241, 241);">
+            <div class="main-content" >
                 <div class="page-head">
                     <h2 class="">@if(isset($item->title)){{$item->title}}@endif</h2>
                 </div>
-                <div class="col-md-9 center-block lead">
+                <div class="col-md-9 center-block lead" style="margin-bottom:50px;">
                     @if(isset($item->body)){!!$item->body!!}@endif
                 </div>
+            </div><!-- main-content descripution -->
+                
+            <div class="main-content" style="padding-top:0; background-color: rgb(241, 241, 241);margin-bottom:40px;">
                 @if($item->slug == "awards") 
-                <div class="row" style="margin-bottom:50px;">
+                <div class="row" >
                     <div class="col-md-4">
                         <div class="card card-primary card-padded">
                             <div class="card-image">
@@ -72,14 +75,24 @@
                             <div class="card-action">
                                 <a href="{{url('the-society/who-we-are/awards/research-excellence')}}" class="btn btn-dark-primary pull-right">More</a>
                             </div>
-                        </div>
+                        </div><!-- card card-primary card-padded -->
                     </div><!-- col-md-4 --> 
+
                 </div><!-- row for card -->
                 @endif
-                <div class="row row_event rel">
-                    @include('partials.items',array('items' => $items, 'class' => 'col-md-3'))
+            </div><!-- main-content card blue -->    
+ 
+            <div class="main-content" style="background-color: rgb(249, 249, 249);">
+                <div>
+                    <div class="row row_event rel">
+                        @include('partials.items',array('items' => $items, 'class' => 'col-md-3'))
+                    </div>
                 </div>
-            </div><!-- main-content Awards -->
+            </div><!-- main-content cards -->
+
+
+
+
 </div>
 @stop()  
 
