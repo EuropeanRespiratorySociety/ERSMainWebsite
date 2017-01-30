@@ -137,7 +137,8 @@ class GeneralController extends Controller
 
         //$results = $this->CC->getCategory($item[0]->_qname);
         //$items = $this->CC->parseItems($results['rows']);
-        //$params['items'] =  $items;
+        //temporary fix
+        $params['items'] =  [];
 
         return view('society.awards')->with($params);
     }
