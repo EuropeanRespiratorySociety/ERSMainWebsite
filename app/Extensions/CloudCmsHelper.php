@@ -145,7 +145,7 @@ class CloudCmsHelper
     }
 
     /**
-    * Get a single article
+    * Get a single article (or category) by slug
     * @param string $slug (slug-of-the-artice)
     */
 	public function getItem($slug){

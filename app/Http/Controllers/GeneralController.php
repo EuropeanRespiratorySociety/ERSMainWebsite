@@ -87,6 +87,27 @@ class GeneralController extends Controller
         $results = $this->CC->getItem('awards');
         $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0]; 
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
+        }
+
+        $results = $this->CC->getCategory($item[0]->_qname);
+        $items = $this->CC->parseItems($results['rows']);
+        $params['items'] =  $items;
+
+        return view('society.awards')->with($params);
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function goldMedals()
+    { 
+        $results = $this->CC->getItem('gold-medals');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] =  (object) $item[0]; 
 
         if(!$item[0]->url || !$item[0]->uri){
             $this->CC->setCanonical($item[0]->_qname);
@@ -98,6 +119,51 @@ class GeneralController extends Controller
 
         return view('society.awards')->with($params);
     }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function specialHonours()
+    { 
+        $results = $this->CC->getItem('special-honours');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] =  (object) $item[0]; 
+
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
+        }
+
+        $results = $this->CC->getCategory($item[0]->_qname);
+        $items = $this->CC->parseItems($results['rows']);
+        $params['items'] =  $items;
+
+        return view('society.awards')->with($params);
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function researchExcellence()
+    { 
+        $results = $this->CC->getItem('research-excellence');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] =  (object) $item[0]; 
+
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
+        }
+
+        $results = $this->CC->getCategory($item[0]->_qname);
+        $items = $this->CC->parseItems($results['rows']);
+        $params['items'] =  $items;
+
+        return view('society.awards')->with($params);
+    }
+
 
     /**
      * Display the specified resource.

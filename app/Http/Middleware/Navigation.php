@@ -34,6 +34,10 @@ class Navigation
                     $menu->whoWeAre->add('Executive office', 'the-society/who-we-are/executive-office');
                     $menu->whoWeAre->add('Governance and Transparency', 'the-society/who-we-are/ers-governance-and-transparency');
                     $menu->whoWeAre->add('Awards', 'the-society/who-we-are/awards' );
+                        $menu->awards->add('Gold Medals', 'the-society/who-we-are/awards/gold-medals')->link->attr(array('style' => 'display:none'));
+                        $menu->awards->add('Special Honours', 'the-society/who-we-are/awards/special-honours')->link->attr(array('style' => 'display:none'));
+                        $menu->awards->add('Research Excellence', 'the-society/who-we-are/awards/research-excellence')->link->attr(array('style' => 'display:none'));
+
                     $menu->whoWeAre->add('Fellow of ERS', 'the-society/who-we-are/fellow-of-ers');
                     $menu->whoWeAre->add('Contact', 'the-society/who-we-are/contact')
                                             ->prepend('<i class="s7-mail icon"></i><span>')
