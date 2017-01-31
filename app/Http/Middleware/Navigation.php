@@ -134,6 +134,7 @@ class Navigation
                 $menu->professionalDevelopment->add('Respipedia','http://respipedia.ers-education.org/home.aspx')
                                             ->link->attr(array('target' => '_blank'));               
                 $menu->professionalDevelopment->add('Accreditation','professional-development/accreditation');
+                $menu->professionalDevelopment->add('Training Programmes','professional-development/ers-certified-training-programmes');
 
 
             $menu->add('Research','#research');
