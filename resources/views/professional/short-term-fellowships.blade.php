@@ -83,7 +83,7 @@
   </div>
 
   <p class="rules text-left">
-    <a href="documents/scientific/2016_ERS_STRTF_Rules_Regulations_October_round.pdf">Application Guidelines</a><br>
+    <a href="https://ers.box.com/s/axxz9qr771ixfsn9et17qksemks6mndl">Application Guidelines</a><br>
     @if($category->popUpText)
       <a data-toggle="modal" data-target="#md-popUp" class="cursor_pointer">{{$category->popUpText}}</a><br>
     @endif
