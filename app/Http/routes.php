@@ -66,6 +66,7 @@ Route::group(['prefix' => 'the-society/who-we-are'], function () {
         Route::get('council', function(){return view('society.leadership.council');});
         Route::get('advocacy-council', function(){return view('society.leadership.advocacy-council');});
         Route::get('early-career-members-committee', function(){return view('society.leadership.early-career-members-committee');});
+        Route::get('early-career-members-committee', function(){return view('society.leadership.early-career-members-committee');});
         Route::get('/{slug}', 'WhoWeAreController@show'); 
     });
     Route::get('contact', function(){ return view('society.contact');});
