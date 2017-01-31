@@ -11,6 +11,80 @@
 			</div>
 
 
+			<div class="row leadership-people" style="padding-top: 40px;">
+	        	<div class="col-md-4 xs-mb-15">
+					<img src="images/people/leadership/Nicolas_Kahn2.png" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('nicolas.kahn@web.de', 'NICOLAS KAHN') !!}</strong>
+		            Assembly 1<br>
+		            </p>
+	        	</div>
+	        	<div class="col-md-4 xs-mb-15">
+					<img src="images/people/leadership/Lieuwe Bos.png" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('l.d.bos@amc.uva.nl', 'LIEUWE BOS') !!}</strong>
+		            Assembly 2<br>
+		            </p>
+	        	</div>
+	        	<div class="col-md-4 xs-mb-15">
+					<img src="images/people/leadership/Sabine Bartel.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('sbartel@fz-borstel.de', 'SABINE BARTEL') !!}</strong>
+		            Assembly 3<br>
+		            </p>
+	        	</div>
+	        	<div class="col-md-4 xs-mb-15">
+					<img src="images/people/leadership/Isaac Almendros.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('isaac.almendros@ub.edu', 'ISAAC ALMENDROS') !!}</strong>
+		            Assembly 4<br>
+		            </p>
+	        	</div>
+	        	<div class="col-md-4 xs-mb-15">
+					<img src="images/people/leadership/Alexander Mathioudakis.JPG" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('mathioudakisag@gmail.com', 'ALEXANDER MATHIOUDAKIS') !!}</strong>
+		            Assembly 5<br>
+		            </p>
+	        	</div>
+	        	<div class="col-md-4 xs-mb-15">
+					<img src="images/people/leadership/Ane_Aamli.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('aneaamli@hotmail.com', 'ANE AAMLI') !!}</strong>
+		            Assembly 6<br>
+		            </p>
+	        	</div>
+	        	<div class="col-md-4 xs-mb-15">
+					<img src="images/people/leadership/Raffaella Nenna.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('raffaella.nenna@uniroma1.it', 'RAFFAELLA NENNA') !!}</strong>
+		            Assembly 7<br>
+		            </p>
+	        	</div>
+	        	<div class="col-md-4 xs-mb-15">
+					<img src="images/people/leadership/Elodie Lhuillier.png" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('lhuillier.elodie@gmail.com', 'ELODIE LHUILLIER') !!}</strong>
+		            Assembly 8<br>
+		            </p>
+	        	</div>
+	        	<div class="col-md-4 xs-mb-15">
+					<img src="images/people/leadership/Emma_Flood.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('Emma.Flood@hse.ie', 'EMMA FLOOD') !!}</strong>
+		            Assembly 9<br>
+		            </p>
+	        	</div>
+	        	<div class="col-md-4 xs-mb-15">
+					<img src="images/people/leadership/Aran_Photo.JPG" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('aransinga@gmail.com', 'ARAN SINGANAYAGAM') !!}</strong>
+		            Assembly 10<br>
+		            </p>
+	        	</div>
+	        	<div class="col-md-4 xs-mb-15">
+					<img src="images/people/leadership/KLIMENTINI BOSTANTZOGLOU.PNG" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('clementinebost@hotmail.com', 'KLIMENTINI BOSTANTZOGLOU') !!}</strong>
+		            Assembly 11<br>
+		            </p>
+	        	</div>
+
+
+			</div>
+
+
+
+
 
 	    </div>
 	</div>
