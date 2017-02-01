@@ -6,7 +6,7 @@
 	        <div class="page-head">
 	        <h2 class="">Early Career Members Committee</h2>
 	        </div>
-	        <div class="col-md-8 center-block lead">The Early Career Members Committee (ECMC) represents all ERS members under 40. The committee ensures that early career members are supported in their career and professional development and that their interests are represented across the Society. It also promotes the highest standards of evidence-based respiratory education in Europe.<br><br>
+	        <div class="col-md-8 center-block lead">The Early Career Members Committee (ECMC) represents all ERS members under 40. The committee ensures that early career members are supported in their career and professional development, and that their interests are represented across the Society. It also promotes the highest standards of evidence-based respiratory education in Europe.<br><br>
 	        Early career members are welcome to join meetings held at the Lung Science Conference and the ERS International Congress to help shape the work of the Society and find out more about activities they can get involved with.
 			</div>
 
@@ -21,7 +21,7 @@
 	        	<div class="col-md-4 xs-mb-15">
 					<img src="images/people/leadership/Lieuwe Bos.png" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('l.d.bos@amc.uva.nl', 'LIEUWE BOS') !!}</strong>
-		            Assembly 2<br>
+		            Chair of the ECM Committee<br>Assembly 2
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
