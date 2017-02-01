@@ -648,6 +648,12 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('olivier.bordes@ersnet.org', 'Olivier Bordes') !!}</strong>
+            Web Application Developer<br>
+            T +41 21 213 01 37<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('ian.pomian@ersnet.org', 'Ian Pomian') !!}</strong>
             Data Analyst<br>
             T +41 21 213 01 35<br>
