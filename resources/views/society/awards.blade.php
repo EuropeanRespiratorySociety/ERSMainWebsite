@@ -21,7 +21,7 @@
                 
             <div class="main-content" style="padding-top:0; background-color: rgb(241, 241, 241);margin-bottom:40px;">
                 @if($item->slug == "awards") 
-                <div class="row" >
+                <div class="row awards" >
                     <div class="col-md-4">
                         <div class="card card-primary card-padded">
                             <div class="card-image">
