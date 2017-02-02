@@ -211,7 +211,7 @@
       </div>
       <div class="row">
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('martin.jung@ersnet.org', 'Martin Jung') !!}</strong>
+          <p class="photo_caption"><strong>{!! Html::mailto('nutcha.prakkamakul@ersnet.org', 'Nutcha Prakkamakul') !!}</strong>
             Congress &amp; Events Manager Operations<br>
             T +41 21 213 01 78 <br>
             </p>
