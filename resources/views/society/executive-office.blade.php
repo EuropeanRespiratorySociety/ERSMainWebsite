@@ -237,7 +237,7 @@
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('nutcha.prakkamakul@ersnet.org', 'Nutcha Prakkamakul') !!}</strong>
             Assistant<br>
-            T +41 21 213 01  <br>
+            T +41 21 213 01 69<br>
             </p>
         </div>
       </div>
