@@ -103,7 +103,11 @@
     @endif
         </div>
         <p class="rules text-left">
-        @if($item->rulesAndRegulations)
+        @if($item->rulesAndRegulations && $item->title == "Clinical Training Fellowship")
+          <a href="{{$item->rulesAndRegulations}}">Application Guidelines</a> <br>
+        @endif 
+
+        @if($item->rulesAndRegulations && $item->title != "Clinical Training Fellowship")
           <a href="{{$item->rulesAndRegulations}}">Rules & Regulations</a> <br>
         @endif 
         </p> 
