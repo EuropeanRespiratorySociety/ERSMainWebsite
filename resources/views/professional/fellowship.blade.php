@@ -103,13 +103,10 @@
     @endif
         </div>
         <p class="rules text-left">
-        @if($item->rulesAndRegulations && $item->title == "Clinical Training Fellowship")
-          <a href="{{$item->rulesAndRegulations}}">Application Guidelines</a> <br>
-        @endif 
-
-        @if($item->rulesAndRegulations && $item->title != "Clinical Training Fellowship")
-          <a href="{{$item->rulesAndRegulations}}">Rules & Regulations</a> <br>
-        @endif 
+          <a href="{{$item->rulesAndRegulations}}">
+          {{-- TODO if more requests add field in CMS --}}
+          {{ $item->rulesAndRegulations && $item->title == "Clinical Training Fellowship" ? "Application guidelines" : "Rules & Regulations"}}
+          </a> <br>
         </p> 
 
           <div class="event-items-right-bt">
