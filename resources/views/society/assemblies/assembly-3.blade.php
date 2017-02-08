@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="col-md-6 center-block">
-              <p >Assembly Early Career representative: {!! Html::mailto('sbartel@fz-borstel.de', 'SABINE BARTEL') !!}</p>
+              <p >Assembly Early Career representative: {!! Html::mailto('sbartel@fz-borstel.de', 'Sabine Bartel') !!}</p>
             </div>
             <div class="col-md-6 center-block lead">
               Assembly 3 provides a platform for interaction between basic scientists and practicing clinicians interested in the cellular and molecular mechanisms involved in healthy and diseased lungs. The Assembly is also responsible for tracking scientific developments that easily translate into better diagnostic technologies or enhanced patient care

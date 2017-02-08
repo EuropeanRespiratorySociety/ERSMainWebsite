@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="col-md-6 center-block">
-              <p >Assembly Early Career representative: {!! Html::mailto('isaac.almendros@ub.edu', 'ISAAC ALMENDROS') !!}</p>
+              <p >Assembly Early Career representative: {!! Html::mailto('isaac.almendros@ub.edu', 'Isaac Almendros') !!}</p>
             </div>
             <div class="col-md-6 center-block lead">
               Assembly 4 covers a range of topics that provide important links between research and clinical medicine. It has broad scope and includes integrative aspects of respiratory physiology, sleep apnoea and associated health problems and cellular and molecular physiology. <br>

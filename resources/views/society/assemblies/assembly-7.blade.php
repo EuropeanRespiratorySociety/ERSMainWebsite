@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="col-md-6 center-block">
-              <p >Assembly Early Career representative: {!! Html::mailto('raffaella.nenna@uniroma1.it', 'RAFFAELLA NENNA') !!}</p>
+              <p >Assembly Early Career representative: {!! Html::mailto('raffaella.nenna@uniroma1.it', 'Raffaella Nenna') !!}</p>
             </div>            
             <div class="col-md-6 center-block lead">
               The mission of the Paediatric Assembly is to promote knowledge and understanding of paediatric respiratory diseases and advance the respiratory health of children in Europe and around the world. To achieve these goals, the Paediatric Assembly provides a platform for interaction between clinicians and researchers and ensures that educational and scientific needs are met during the annual Congresses. The seven scientific Groups of this Assembly represent paediatric counterparts to the other Groups and Assemblies of ERS. <br>
