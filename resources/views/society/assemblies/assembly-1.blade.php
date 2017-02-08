@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="col-md-6 center-block">
-              <p >Assembly Early Career representative: {!! Html::mailto('nicolas.kahn@web.de', 'NICOLAS KAHN') !!}</p>
+              <p >Assembly Early Career representative: {!! Html::mailto('nicolas.kahn@web.de', 'Nicolas Kahn') !!}</p>
             </div>
             <div class="col-md-6 center-block lead">
               Assembly 1 is a broad-based group for specialists based in hospitals and primary-care settings. Members are interested in addressing relevant clinical problems and in translating the latest research into daily practice.

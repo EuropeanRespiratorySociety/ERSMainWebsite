@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="col-md-6 center-block">
-              <p >Assembly Early Career representative: {!! Html::mailto('l.d.bos@amc.uva.nl', 'LIEUWE BOS') !!}</p>
+              <p >Assembly Early Career representative: {!! Html::mailto('l.d.bos@amc.uva.nl', 'Lieuwe Bos') !!}</p>
             </div>
             <div class="col-md-6 center-block lead">
               Respiratory failure is the principal cause of intensive care admission. Although the field involves many specialties, there is a strong tradition of research and training from pulmonologists. <br>
