@@ -13,6 +13,9 @@
 
             </div>
           </div>
+          <div class="col-md-6 center-block">
+            <p >Assembly Early Career representative: {!! Html::mailto('aneaamli@hotmail.com', 'Ane Aamli Gagnat') !!}</p>
+          </div>
           <div class="col-md-6 center-block lead">
             This is an interdisciplinary Assembly, which includes not only pulmonologists, but also epidemiologists, clinicians, statisticians, occupational doctors, air pollution scientists and health educators. Smoking and the environment are important issues for respiratory disease and this Assembly is involved in many activities to promote public awareness and scientific research in the field. <br>
 Members of the Assembly welcome collaboration with other Assemblies to work on common programmes.
