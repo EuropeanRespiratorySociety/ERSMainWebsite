@@ -19,7 +19,7 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/Lieuwe Bos.png" class="img-circle">
+					<img src="images/people/leadership/Lieuwe-Bos.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('l.d.bos@amc.uva.nl', 'LIEUWE BOS') !!}</strong>
 		            Chair of the ECM Committee<br>Assembly 2
 		            </p>
