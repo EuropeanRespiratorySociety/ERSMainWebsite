@@ -52,7 +52,7 @@ class CourseController extends Controller
         $params['item'] = $item[0]; 
         
         if(!$item[0]->url || !$item[0]->uri){
-            $this->CC->setCanonical($item[0]->_qname, 'professional-development/courses'.$slug);
+            $this->CC->setCanonical($item[0]->_qname, 'professional-development/courses/'.$slug);
         }
 
         if($item[0]->hasRelatedArticles > 0){
