@@ -135,9 +135,11 @@ class GeneralController extends Controller
             $this->CC->setCanonical($item[0]->_qname);
         }
 
-        //$results = $this->CC->getCategory($item[0]->_qname);
-        //$items = $this->CC->parseItems($results['rows']);
         //temporary fix
+        //$results = $this->CC->getCategory($item[0]->_qname);
+        //Maybe pass a param to identify that it is a category
+        //$items = $this->CC->parseItems($results['rows'], true);
+        //$params['items'] =  $items;
         $params['items'] =  [];
 
         return view('society.awards')->with($params);

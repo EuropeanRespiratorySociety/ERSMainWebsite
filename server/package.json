@@ -6,7 +6,7 @@
     "start": "node app"
   },
   "dependencies": {
-    "cloudcms-server": "0.8.341",
+    "cloudcms-server": "0.8.371",
     "dotenv": "^2.0.0",
     "express": "^4.14.0"
   },
