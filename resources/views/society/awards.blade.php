@@ -21,7 +21,7 @@
                 
             <div class="main-content" style="padding-top:0; background-color: rgb(241, 241, 241);margin-bottom:40px;">
                 @if($item->slug == "awards") 
-                <div class="row" >
+                <div class="row awards" >
                     <div class="col-md-4">
                         <div class="card card-primary card-padded">
                             <div class="card-image">
@@ -32,7 +32,7 @@
                             </div> 
 
                             <div class="card-content  text-left">
-                                <p>ERS presents Gold Medal Awards with grants of € 50,000 to researchers who have made outstanding contributions in the fields of COPD, asthma and IPF.</p>
+                                <p>ERS presents Gold Medal Awards with grants of €50,000 to researchers who have made outstanding contributions in the fields of COPD, asthma and IPF.</p>
                             </div>
                             
                             <div class="card-action" position="absolute; bottom:0;">
@@ -82,13 +82,41 @@
                 @endif
             </div><!-- main-content card blue -->    
  
-            <div class="main-content" style="background-color: rgb(249, 249, 249);">
+            <div class="main-content" style="background-color: rgb(249, 249, 249);padding-bottom:20px;">
                 <div>
                     <div class="row row_event rel">
                         @include('partials.items',array('items' => $items, 'class' => 'col-md-3'))
                     </div>
                 </div>
             </div><!-- main-content cards -->
+
+            @if($item->slug == "gold-medals") 
+            <div class="main-content" style="background-color: rgb(241, 241, 241);padding-bottom:20px;">
+
+                <div class="col-md-7 center-block lead" >
+                    <p style="padding-bottom:10px;">Applications and nominations for the 2017 ERS Gold Medal Awards are now being accepted.<br />The deadline for applications is 28 February, 2017.<br /><br /><a href="https://erscongress.org/funding-and-awards-2017/awards.html">Apply or nominate now</a>
+                    <br /><br />View the list of previous Award winners:
+                    </p>
+                    <ul class="list-unstyled  center-block text-left" style="width:10%;" >
+                        <li><a href="https://erscongress.org/about-ers/98-about-ers/421-ers-award-winners-2016.html">2016</a></li>
+                        <li><a href="https://erscongress.org/component/content/article/72-categories-2015/332-awards.html">2015</a></li>
+                    </ul>
+                </div>
+            </div><!-- main-content text for Apply or nominate on Gold medals page-->
+           @endif
+
+
+            @if($item->slug == "research-excellence") 
+            <div class="main-content" style="background-color: rgb(241, 241, 241);padding-bottom:20px;">
+                <div class="col-md-7 center-block lead" >
+                    <p style="padding-bottom:10px;">Learn more about past winners of ERS awards for research excellence:</p>
+                    <ul class="list-unstyled  center-block text-left" style="width:10%;" >
+                        <li><a href="https://erscongress.org/about-ers/98-about-ers/421-ers-award-winners-2016.html">2016</a></li>
+                        <li><a href="https://erscongress.org/component/content/article/72-categories-2015/332-awards.html">2015</a></li>
+                    </ul>
+                </div>
+            </div><!-- main-content text for Apply or nominate on Research excellence page-->
+            @endif
 
 
 

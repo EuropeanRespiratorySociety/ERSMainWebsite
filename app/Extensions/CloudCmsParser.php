@@ -191,7 +191,7 @@ class CloudCmsParser
                     $item->articleOneColumn = $item->articleOneColumn ?? false;
                     $item->createdOn = isset($item->_system->created_on->timestamp) ? $this->date->ersDate($item->_system->created_on->timestamp) : false;
                     $item->calendar = $item->eventDate ? $this->date->calendar($item->eventDate) : false;
-                    $item->ms = $item->_system->created_on->ms ?? false;     
+                    $item->ms = $item->_system->created_on->ms ?? false;   
                     $item->shortLead = $item->leadParagraph ? $this->truncate(strip_tags(Markdown::parse($item->leadParagraph)), 145) : false;
                     $item->hasRelatedArticles = $item->_statistics->{'ers:related-association'} ?? 0;
                     $item->hasAuthor = $item->_statistics->{'ers:author-association'} ?? 0;

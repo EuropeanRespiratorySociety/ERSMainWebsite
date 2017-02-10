@@ -211,12 +211,6 @@
       </div>
       <div class="row">
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('martin.jung@ersnet.org', 'Martin Jung') !!}</strong>
-            Congress &amp; Events Manager Operations<br>
-            T +41 21 213 01 78 <br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('Lorraine.Monnot@ersnet.org', 'Lorraine Monnot') !!} </strong>
             Senior Coordinator<br>
             T +41 21 213 01 71 <br>
@@ -240,7 +234,12 @@
             T +41 21 213 01 97<br>
             </p>
         </div>
-
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('nutcha.prakkamakul@ersnet.org', 'Nutcha Prakkamakul') !!}</strong>
+            Assistant<br>
+            T +41 21 213 01 69<br>
+            </p>
+        </div>
       </div>
     </div>
     </div>
@@ -645,6 +644,12 @@
           <p class="photo_caption"><strong>{!! Html::mailto('xavier.monnet@ersnet.org', 'Xavier Monnet') !!}</strong>
             Web Application Developer<br>
             T +41 21 213 01 32<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('olivier.bordes@ersnet.org', 'Olivier Bordes') !!}</strong>
+            Web Application Developer<br>
+            T +41 21 213 01 37<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">

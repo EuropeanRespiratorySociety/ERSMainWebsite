@@ -13,6 +13,9 @@
                  
                 </div>
             </div>
+            <div class="col-md-6 center-block">
+              <p >Assembly Early Career representative: {!! Html::mailto('mathioudakisag@gmail.com', 'Alexander Mathioudakis') !!}</p>
+            </div>
             <div class="col-md-6 center-block lead">
               A substantial number of pharmacologists and basic scientists have joined the clinicians in Assembly 5. Although the Assembly focuses on asthma and, increasingly, on chronic obstructive pulmonary disease (COPD), members also have an interest in other diseases with allergic and immunological components. <br>
 The Assembly is comprised of the following three groups:

@@ -13,6 +13,9 @@
                  
                 </div>
             </div>
+            <div class="col-md-6 center-block">
+              <p >Assembly Early Career representative: {!! Html::mailto('lhuillier.elodie@gmail.com', 'Elodie Lhuillier') !!}</p>
+            </div>
             <div class="col-md-6 center-block lead">
               Assembly 8 includes physicians and surgeons with an extraordinary knowledge of the state of the art in the field of Lung Transplantation and Thoracic Surgery. Its groups are strongly engaged collaborative work with the other Scientific Assemblies, focussing on surgical options for the treatment of lung diseases. <br>
 The Assembly is comprised of the following two groups:

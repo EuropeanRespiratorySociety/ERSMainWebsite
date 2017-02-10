@@ -29,7 +29,7 @@ class Navigation
                         $menu->leadershipAndCommittees->add('Education Council', 'the-society/who-we-are/leadership/education-council');
                         $menu->leadershipAndCommittees->add('Council', 'the-society/who-we-are/leadership/council');
                         $menu->leadershipAndCommittees->add('Advocacy Council', 'the-society/who-we-are/leadership/advocacy-council');
-                        $menu->leadershipAndCommittees->add('Junior Members Committee', 'http://juniors.ersent.org')->link->attr(array('target' => '_blank'));
+                        $menu->leadershipAndCommittees->add('Early Career Members Committee', 'the-society/who-we-are/leadership/early-career-members-committee');
                         $menu->leadershipAndCommittees->add('ERS Election', 'the-society/who-we-are/leadership/ers-elections');
                     $menu->whoWeAre->add('Executive office', 'the-society/who-we-are/executive-office');
                     $menu->whoWeAre->add('Governance and Transparency', 'the-society/who-we-are/ers-governance-and-transparency');
@@ -134,6 +134,7 @@ class Navigation
                 $menu->professionalDevelopment->add('Respipedia','http://respipedia.ers-education.org/home.aspx')
                                             ->link->attr(array('target' => '_blank'));               
                 $menu->professionalDevelopment->add('Accreditation','professional-development/accreditation');
+                $menu->professionalDevelopment->add('Training Programmes','professional-development/ers-certified-training-programmes');
 
 
             $menu->add('Research','#research');

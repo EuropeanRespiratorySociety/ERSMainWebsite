@@ -13,6 +13,9 @@
                  
                 </div>
             </div>
+            <div class="col-md-6 center-block">
+              <p >Assembly Early Career representative: {!! Html::mailto('aransinga@gmail.com', 'Aran Singanayagam') !!}</p>
+            </div>
             <div class="col-md-6 center-block lead">
               The Infectious Diseases Assembly covers all issues of pulmonary and respiratory infections with a strong focus on pneumonia and antibiotic resistance, bronchiectasis, tuberculosis and non-tuberculous mycobacteria. This Assembly is one of the largest scientific assemblies of the ERS. Airway and pulmonary infections play an important role for outpatient, clinical and intensive care medicine in children and adults and the topics covered by the Assembly include bacterial, viral, fungal and parasitic infections. Prevention of infections and the emergence of antibiotic resistance play an important role in its scientific and educational activities and in interactions with the other Scientific Assemblies in the ERS. Members of the Assembly, especially the juniors, are engaged in educational activities through the ERS school and in large collaborative research networks including: 
               <br><br>
