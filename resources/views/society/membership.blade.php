@@ -59,11 +59,10 @@
 
 <script src="https://bootstrap.ersnet.org/js/fullpage.js" type="text/javascript"></script>
 <script src="https://bootstrap.ersnet.org/js/app-membership.js" type="text/javascript"></script>
-
-      <script type="text/javascript">
-        $(document).ready(function(){
-      	//initialize the javascript
-        App.membership();             
-      });
-    </script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+  	//initialize the javascript
+    App.membership();             
+  });
+</script>
     @stop()
