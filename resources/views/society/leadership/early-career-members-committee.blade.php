@@ -13,7 +13,7 @@
 
 			<div class="row leadership-people" style="padding-top: 40px;">
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/Nicolas_Kahn2.png" class="img-circle">
+					<img src="images/people/leadership/Nicolas-Kahn.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('nicolas.kahn@web.de', 'NICOLAS KAHN') !!}</strong>
 		            Assembly 1<br>
 		            </p>

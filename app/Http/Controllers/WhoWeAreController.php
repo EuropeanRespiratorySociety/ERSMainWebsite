@@ -15,6 +15,8 @@ class WhoWeAreController extends Controller
         $this->CC = new CC();
     }
 
+
+    /*
     /**
      * Display a listing of the resource.
      *
@@ -31,9 +33,27 @@ class WhoWeAreController extends Controller
             $this->CC->setCanonical($item[0]->_qname);
         }
 
-        return view('articles.item')->with($params); 
+        $slug = "our-history";
+        $results = $this->CC->getItem($slug);
+        $item = $this->CC->parseItems($results['rows']);
+        $params['history'] =  (object) $item[0]; 
+
+
+        $slug = "our-past-presidents";
+        $results = $this->CC->getItem($slug);
+        $item = $this->CC->parseItems($results['rows']);
+        $params['presidents'] =  (object) $item[0]; 
+
+
+        return view('society.who-we-are')->with($params); 
 
     }
+
+
+
+
+
+
 
     /**
      * Display the specified resource.

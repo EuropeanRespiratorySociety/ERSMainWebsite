@@ -44,7 +44,7 @@
 		            Guidelines director<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/nicolas_kahn.png" class="img-circle">
+					<img src="images/people/leadership/Nicolas-Kahn.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>NICOLAS KAHN</strong>
 		            Early-career member Representative<br>
 		        </div>
