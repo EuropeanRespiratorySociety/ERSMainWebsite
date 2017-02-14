@@ -34,21 +34,41 @@
 @section('content')
 <div class="ers-content event-items-content">
   <div class="row">
-    <div class="col-md-3 medium-grey-bg left-photo-map">
-      @if($item->image)
-      <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
-      @endif
-      @if($item->video)
-        <div class="videoWrapper">
-          {!!$item->video!!} 
-        </div>
-      @endif
-      @if($item->loc->lat && $item->loc->long && $item->type != "ERS Online course")
-          <div id="map"></div>
-      @endif
-      @if(isset($relatedItems))
-          @include('partials.related-items', array('relatedItems' => $relatedItems)) 
-      @endif
+    <div class="col-md-3 left-photo-map">
+      <div class="medium-grey-bg">
+        @if($item->image)
+        <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
+        @endif
+        @if($item->video)
+          <div class="videoWrapper">
+            {!!$item->video!!} 
+          </div>
+        @endif
+        @if($item->loc->lat && $item->loc->long && $item->type != "ERS Online course")
+            <div id="map"></div>
+        @endif
+        @if(isset($relatedItems))
+            @include('partials.related-items', array('relatedItems' => $relatedItems)) 
+        @endif
+      </div>
+      <div class="row" style="background-color: #fff; padding:20px 0; ">
+        @if($item->sponsors->text)
+          <!-- @if($item->image)
+            <hr>
+          @endif -->
+          @if($item->sponsors->image)
+          <div class="col-md-4 col-xs-4 pull-left" style="padding-left: 30px;">
+              <p><img src="{{ $item->sponsors->image }}" class="img-rounded" style="width:120px;"></p>
+          </div>
+          @endif
+
+          @if($item->sponsors->text)
+          <div class="col-md-8 col-xs-8 pull-right" style="padding: 0 10px;">
+            <h4 class="text-left" style="display: flex; align-items: center;height: 100%;">{{$item->sponsors->text}}</h4>
+          </div>
+          @endif
+        @endif
+      </div>
     </div>
     <div class="col-md-6 lighter-grey-bg ers-course-info">
       <div class="header">
