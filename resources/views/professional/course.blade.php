@@ -51,20 +51,20 @@
             @include('partials.related-items', array('relatedItems' => $relatedItems)) 
         @endif
       </div>
-      <div class="row" style="background-color: #fff; padding:20px 0; ">
+      <div class="row course-sponsor">
         @if($item->sponsors->text)
           <!-- @if($item->image)
             <hr>
           @endif -->
           @if($item->sponsors->image)
-          <div class="col-md-4 col-xs-4 pull-left" style="padding-left: 30px;">
-              <p><img src="{{ $item->sponsors->image }}" class="img-rounded" style="width:120px;"></p>
+          <div class="col-md-5 col-xs-5 left-course-sponsor">
+              <img class="img-responsive align-middle" src="{{ $item->sponsors->image }}" class="img-rounded">
           </div>
           @endif
 
           @if($item->sponsors->text)
-          <div class="col-md-8 col-xs-8 pull-right" style="padding: 0 10px;">
-            <h4 class="text-left" style="display: flex; align-items: center;height: 100%;">{{$item->sponsors->text}}</h4>
+          <div class="col-md-7 col-xs-7 right-course-sponsor" >
+            <h4 class="text-left">{{$item->sponsors->text}}</h4>
           </div>
           @endif
         @endif
