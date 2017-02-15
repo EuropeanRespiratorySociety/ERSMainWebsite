@@ -1,3 +1,4 @@
+                     </ul>
 @extends('template')
 @section('meta')
         @include('partials.meta', array('meta' =>
@@ -51,24 +52,20 @@
             @include('partials.related-items', array('relatedItems' => $relatedItems)) 
         @endif
       </div>
-      <div class="row course-sponsor">
+      <div style="background-color: #fff; padding:20px 0; ">
         @if($item->sponsors->text)
           <!-- @if($item->image)
             <hr>
           @endif -->
           @if($item->sponsors->image)
-          <div class="col-md-5 col-xs-5 left-course-sponsor">
-             <p class="text-right"><img class="img-responsive align-middle" src="{{ $item->sponsors->image }}" class="img-rounded"></p>
-          </div>
+              <p><img src="{{ $item->sponsors->image }}" class="img-rounded" style="width:150px;"></p>
           @endif
-
           @if($item->sponsors->text)
-          <div class="col-md-7 col-xs-7 right-course-sponsor" >
-            <h4 class="text-left">{{$item->sponsors->text}}</h4>
-          </div>
+            <h4 style="padding-left: 25px; ">{{$item->sponsors->text}}</h4>
           @endif
         @endif
       </div>
+
     </div>
     <div class="col-md-6 lighter-grey-bg ers-course-info">
       <div class="header">
@@ -249,7 +246,6 @@
                      @if($item->bursaryApplication->notificationOfResults)
                      <li>Notification of selection results:<b>{{$item->bursaryApplication->notificationOfResults}}</b></li>
                      @endif
-                     </ul>
                      @if($item->bursaryApplication->applyButtonUrl)
                       <a href="{{$item->bursaryApplication->applyButtonUrl}}" class="btn btn-primary tab-register-bt">Apply</a>
                      @endif
