@@ -58,7 +58,7 @@
           @endif -->
           @if($item->sponsors->image)
           <div class="col-md-5 col-xs-5 left-course-sponsor">
-              <img class="img-responsive align-middle" src="{{ $item->sponsors->image }}" class="img-rounded">
+             <p class="text-right"><img class="img-responsive align-middle" src="{{ $item->sponsors->image }}" class="img-rounded"></p>
           </div>
           @endif
 
