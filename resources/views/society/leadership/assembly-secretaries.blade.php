@@ -46,7 +46,7 @@
 		            Paediatrics<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Elia_Stefano.jpg" class="img-circle">
+		            <img src="../images/people/leadership/Stefano_Elia.JPG" class="img-circle">
 		            <p class="photo_caption"><strong>Elia Stefano</strong>
 		            Thoracic Surgery and Transplantation <br>
 		        </div>
