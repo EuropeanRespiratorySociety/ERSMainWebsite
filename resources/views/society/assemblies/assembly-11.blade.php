@@ -3,11 +3,14 @@
           <div class="page-head"><h2>ERS Assembly 11: Thoracic Oncology</h2></div>
 
             <div class="row">
-                <div class="col-md-3 col-md-offset-3 xs-mb-15">
+             
+                <!--<div class="col-md-3 col-md-offset-3 xs-mb-15">
                   <img src="../images/people/leadership/Nicolas_Schonfeld.jpg" class="img-circle">
                   <p class="photo_caption">Head: {!! Html::mailto('nicolas.schoenfeld@helios-kliniken.de', 'Nicolas Schönfeld') !!}</p>
-                </div>
-                <div class="col-md-3 xs-mb-15">
+                </div>-->
+
+                <!-- Replace col-md-12 to col-md-3 when two pepple in line again-->
+                <div class="col-md-12 xs-mb-15">
                   <img src="../images/people/leadership/Bogdan_Dragos_Grigoriu.jpg" class="img-circle">
                   <p class="photo_caption">Secretary: {!! Html::mailto('b_grigoriu@hotmail.com', 'Bogdan Dragos Grigoriu') !!}</p>
                  

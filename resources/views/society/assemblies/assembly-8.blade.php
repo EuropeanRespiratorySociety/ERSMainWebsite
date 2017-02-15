@@ -8,7 +8,7 @@
                   <p class="photo_caption">Head: {!! Html::mailto('geert.verleden@uzleuven.be', 'Geert Verleden') !!}</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/people/leadership/Elia_Stefano.jpg" class="img-circle">
+                  <img src="../images/people/leadership/Stefano_Elia.JPG" class="img-circle">
                   <p class="photo_caption">Secretary: Elia Stefano</p>
                  
                 </div>
