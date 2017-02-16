@@ -207,7 +207,7 @@
             
             <div class="event-items-right-bt">
             @if($item->title == "Mechanistic overlap between chronic lung injury and cancer")
-            <p style="margin-bottom: 8px;" class="article-title"><a href="https://ers.app.box.com/s/mjji0rrc2rjwxn98qrdgzn77fse35bgk">Industry registration</a></p>
+            <p style="margin-bottom: 8px;" class="article-title"><a href="https://ers.app.box.com/s/mjji0rrc2rjwxn98qrdgzn77fse35bgk">Industry Group Reservation</a></p>
             @endif
             <p>Any questions? Please contact {!! Html::mailto('scientific@ersnet.org', 'scientific@ersnet.org') !!}</p>
             @if($item->extendedDeadline)
