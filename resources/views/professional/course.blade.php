@@ -57,7 +57,7 @@
           <div class="course-sponsor-wrapper">
             @if($item->sponsors->image)
               <div class="course-sponsor-image col-md-4 col-xs-4 pull-left">
-                <p style="background-image: url('{{ $item->sponsors->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: center center; background-size: contain;"></p>
+                <p style="background-image: url('{{ $item->sponsors->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: right center; background-size: contain;"></p>
              </div> 
             @endif
             @if($item->sponsors->text)
