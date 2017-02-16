@@ -63,7 +63,7 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/constantine-vardavas.jpg" class="img-circle">
+					<img src="images/people/leadership/Constantine_Vardavas.JPG" class="img-circle">
 		            <p class="photo_caption"><strong>Constantine Vardavas</strong>
 		            Director of Scientific Relations with the EU<br>
 		            </p>

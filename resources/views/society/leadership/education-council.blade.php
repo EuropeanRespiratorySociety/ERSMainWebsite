@@ -14,7 +14,14 @@
 		            Education Council Chair <br>
 		            <a href="/about-us/leadership/education-council.raw?task=callelement&amp;item_id=417&amp;element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&amp;method=download" title="Download COI">Download COI</a>
 		            </p>
-	        	</div>	
+	        	</div>
+		        <div class="col-md-4 xs-mb-15">
+		            <img src="images/people/leadership/Daiana-Stolz2.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Daiana Stolz</strong>
+		            Education Council Chair Elect<br />
+		            <a title="Download COI" href="https://ers.box.com/s/bcaonlkqkkus3ee7zwq9hi18f902g9wi">Download COI</a>
+		            </p>
+		        </div>
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/ernst_eber.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('ernst.eber@medunigraz.at', 'Ernst Eber') !!}</strong>

@@ -112,7 +112,7 @@
 	            <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=1059&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a>
         	</div>-->
             <div class="col-md-4 xs-mb-15">
-                <img src="images/people/leadership/Daiana_Stolz.jpg" class="img-circle">
+                <img src="images/people/leadership/Daiana-Stolz2.jpg" class="img-circle">
                 <p class="photo_caption"><strong>Daiana Stolz</strong>
                 Education Council Chair Elect<br />
                 <a title="Download COI" href="https://ers.box.com/s/bcaonlkqkkus3ee7zwq9hi18f902g9wi">Download COI</a>
