@@ -311,6 +311,12 @@
             T +44 114 267 2866<br>
             </p>
         </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('gergana.yaneva@ersnet.org', ' Gergana Yaneva') !!}</strong>
+            Administrative Assistant<br>
+            T +41 21 213 01 62<br>
+            </p>
+        </div>
 
       </div>
     </div>
@@ -362,12 +368,6 @@
           <p class="photo_caption"><strong>{!! Html::mailto('Ali.Merzouk@ersnet.org', 'Ali Merzouk') !!}</strong>
             E-Learning Coordinator<br>
             T +41 21 213 01 91<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('alexandra.niculescu@ersnet.org', 'Alexandra Niculescu') !!}</strong>
-            Educational Projects Coordinator<br>
-            T +41 21 213 01 94<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
@@ -575,12 +575,6 @@
             </p>
         </div-->
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('laurence.mwakesi-vauthey@ersnet.org', 'Laurence Mwakesi-Vauthey') !!}</strong>
-            Finance Assistant<br>
-            T +41 21 213 01 25<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('Valerie.Ottet@ersnet.org', 'Valérie Ottet') !!}</strong>
             Senior Accountant<br>
             T +41 21 213 01 21<br>
@@ -598,11 +592,22 @@
             T +41 21 213 01 24<br>
             </p>
         </div>
-
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('david.okasa@ersnet.org', 'DAVID OKASA') !!}</strong>
           Finance Assistant<br>
             T +41 21 213 01 28<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('sam.zuma@ersnet.org', 'Sam Zuma') !!}</strong>
+          Finance Assistant<br>
+            T +41 21 213 01 29<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('jerome.amstutz@ersnet.org', 'Jérôme Amstutz') !!}</strong>
+          Finance Assistant and Administration Coordinator<br>
+            T +41 21 213 01 25<br>
             </p>
         </div>
 
