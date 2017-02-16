@@ -1032,6 +1032,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /spirometrycourses http://hermes.ersnet.org/activities/2012-03-15-09-52-59/upcoming-courses-spirometry.html
         # T 
         Redirect 301 /terms-and-conditions https://ers.box.com/v/terms-and-conditions
+        Redirect 301 /terms-and-conditions-hermes https://ers.box.com/v/hermes-terms-and-conditions
 
 # ----------------------------------------------------------------------
 # | Image and file server redirection to node.js server                |
