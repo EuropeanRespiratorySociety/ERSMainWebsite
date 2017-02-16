@@ -1,4 +1,3 @@
-                     </ul>
 @extends('template')
 @section('meta')
         @include('partials.meta', array('meta' =>
@@ -52,21 +51,27 @@
             @include('partials.related-items', array('relatedItems' => $relatedItems)) 
         @endif
       </div>
-      <div style="background-color: #fff; padding:20px 0; ">
+
+      <div class="course-sponsor text-left">
         @if($item->sponsors->text)
-          <!-- @if($item->image)
-            <hr>
-          @endif -->
-          @if($item->sponsors->image)
-              <p><img src="{{ $item->sponsors->image }}" class="img-rounded" style="width:150px;"></p>
-          @endif
-          @if($item->sponsors->text)
-            <h4 style="padding-left: 25px; ">{{$item->sponsors->text}}</h4>
-          @endif
+          <div class="course-sponsor-wrapper">
+            @if($item->sponsors->image)
+              <div class="course-sponsor-image col-md-4 col-xs-4 pull-left">
+                <p style="background-image: url('{{ $item->sponsors->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: center center; background-size: contain;"></p>
+             </div> 
+            @endif
+            @if($item->sponsors->text)
+              <div class="course-sponsor-right  col-md-8 col-xs-8 pull-right">
+                <h4 class="text-left">{{$item->sponsors->text}}</h4>
+              </div>
+            @endif
+          </div>
         @endif
       </div>
 
     </div>
+
+
     <div class="col-md-6 lighter-grey-bg ers-course-info">
       <div class="header">
         <div class="clearfix notification">
@@ -246,6 +251,7 @@
                      @if($item->bursaryApplication->notificationOfResults)
                      <li>Notification of selection results:<b>{{$item->bursaryApplication->notificationOfResults}}</b></li>
                      @endif
+                     </ul>
                      @if($item->bursaryApplication->applyButtonUrl)
                       <a href="{{$item->bursaryApplication->applyButtonUrl}}" class="btn btn-primary tab-register-bt">Apply</a>
                      @endif
