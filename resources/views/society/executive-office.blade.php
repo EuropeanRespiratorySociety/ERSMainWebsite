@@ -218,19 +218,19 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('Laura.montangero@ersnet.org', 'Laura Montangero') !!}</strong>
-            Coordinator<br>
+            Senior Coordinator<br>
             T +41 21 213 01 75<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('soraya.barazin@ersnet.org', 'Soraya Barazin') !!}</strong>
-            Coordinator<br>
+            Senior Coordinator<br>
             T +41 21 213 01 72<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('felix.yip@ersnet.org', 'Felix Yip') !!}</strong>
-            Assistant<br>
+            Coordinator<br>
             T +41 21 213 01 97<br>
             </p>
         </div>
@@ -390,7 +390,7 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('melanie.jessner@ersnet.org', 'Melanie Jessner') !!}</strong>
-            Educational Activities Assistant<br>
+            Educational Programmes Coordinator<br>
             T +41 21 213 01 85<br>
             </p>
         </div>
@@ -408,7 +408,7 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('zuzana.tumova@ersnet.org', 'Zuzana Tumova') !!}</strong>
-            Educational Projects Assistant with the HERMES Team<br>
+            Educational Projects Coordinator<br>
             T +41 21 213 01 92<br>
             </p>
         </div>
@@ -557,7 +557,7 @@
       <div class="row">
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('Micah.Clayton@ersj.org.uk', 'Micah Clayton') !!}</strong>
-            Specialist in Finance and Accounting<br>
+            Finance and Sheffield Office Manager<br>
             T +44 114 267 2863<br>
             </p>
         </div>
@@ -594,13 +594,13 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('david.okasa@ersnet.org', 'DAVID OKASA') !!}</strong>
-          Finance Assistant<br>
+            Accountant<br>
             T +41 21 213 01 28<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('sam.zuma@ersnet.org', 'Sam Zuma') !!}</strong>
-          Finance Assistant<br>
+          Junior Accountant<br>
             T +41 21 213 01 29<br>
             </p>
         </div>
@@ -627,7 +627,7 @@
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
             <img src="../images/people/executive-office/sdupasquier.jpg" class="img-circle">
             <p class="photo_caption"><strong>{!! Html::mailto('Stephane.Dupasquier@ersnet.org', 'Stéphane Dupasquier') !!}</strong>
-            Head of IT Services and Infrastructure<br>
+            Director of IT and Infrastructure<br>
             T +41 21 213 01 30<br>
             </p>
           </div>
@@ -715,7 +715,7 @@
       <div class="row">
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('Elin.Reeves@ersj.org.uk', 'Elin Reeves') !!}</strong>
-            Head of Publications<br>
+            Director of Publications<br>
             T +44 114 267 2873<br>
             </p>
         </div>
@@ -863,7 +863,7 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('nathalie.ritter@ersnet.org', 'Nathalie Ritter') !!}</strong>
-            Funding Programmes Coordinator<br>
+            Funding Programmes Senior Coordinator<br>
             T +41 21 213 01 83<br>
             </p>
         </div>
@@ -887,7 +887,7 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('nikoleta.luludi@ersnet.org', 'Nikoleta Luludi') !!}</strong>
-            Scientific Activities Assistant<br>
+            Funding Programmes Coordinator<br>
             T +41 21 213 01 66<br>
             </p>
         </div>
