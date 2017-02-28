@@ -34,22 +34,44 @@
 @section('content')
 <div class="ers-content event-items-content">
   <div class="row">
-    <div class="col-md-3 medium-grey-bg left-photo-map">
-      @if($item->image)
-      <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
-      @endif
-      @if($item->video)
-        <div class="videoWrapper">
-          {!!$item->video!!} 
-        </div>
-      @endif
-      @if($item->loc->lat && $item->loc->long && $item->type != "ERS Online course")
-          <div id="map"></div>
-      @endif
-      @if(isset($relatedItems))
-          @include('partials.related-items', array('relatedItems' => $relatedItems)) 
-      @endif
+    <div class="col-md-3 left-photo-map">
+      <div class="medium-grey-bg">
+        @if($item->image)
+        <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
+        @endif
+        @if($item->video)
+          <div class="videoWrapper">
+            {!!$item->video!!} 
+          </div>
+        @endif
+        @if($item->loc->lat && $item->loc->long && $item->type != "ERS Online course")
+            <div id="map"></div>
+        @endif
+        @if(isset($relatedItems))
+            @include('partials.related-items', array('relatedItems' => $relatedItems)) 
+        @endif
+      </div>
+
+      <div class="course-sponsor text-left">
+        @if($item->sponsors->text)
+          <div class="course-sponsor-wrapper">
+            @if($item->sponsors->image)
+              <div class="course-sponsor-image col-md-4 col-xs-4 pull-left">
+                <p style="background-image: url('{{ $item->sponsors->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: right center; background-size: contain;"></p>
+             </div> 
+            @endif
+            @if($item->sponsors->text)
+              <div class="course-sponsor-right  col-md-8 col-xs-8 pull-right">
+                <h4 class="text-left">{{$item->sponsors->text}}</h4>
+              </div>
+            @endif
+          </div>
+        @endif
+      </div>
+
     </div>
+
+
     <div class="col-md-6 lighter-grey-bg ers-course-info">
       <div class="header">
         <div class="clearfix notification">

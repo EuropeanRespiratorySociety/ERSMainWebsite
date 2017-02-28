@@ -94,7 +94,7 @@
             <div class="main-content" style="background-color: rgb(241, 241, 241);padding-bottom:20px;">
 
                 <div class="col-md-7 center-block lead" >
-                    <p style="padding-bottom:10px;">Applications and nominations for the 2017 ERS Gold Medal Awards are now being accepted.<br />The deadline for applications is 28 February, 2017.<br /><br /><a href="https://erscongress.org/funding-and-awards-2017/awards.html">Apply or nominate now</a>
+                    <p style="padding-bottom:10px;">Applications and nominations for the 2017 ERS Gold Medal Awards are now closed. The winners will be announced at this year’s ERS International Congress.
                     <br /><br />View the list of previous Award winners:
                     </p>
                     <ul class="list-unstyled  center-block text-left" style="width:10%;" >
