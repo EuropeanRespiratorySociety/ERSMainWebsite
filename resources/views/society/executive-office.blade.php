@@ -413,6 +413,12 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('nathalie.tabin@ersnet.org', 'Nathalie Tabin') !!}</strong>
+            Educational Projects Coordinator<br>
+            T +41 21 213 01 77<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('bouchra.chajai@ersnet.org', 'Bouchra Chajaï') !!}</strong>
             Educational Activities Assistant<br>
             T +41 21 213 01 95<br>
