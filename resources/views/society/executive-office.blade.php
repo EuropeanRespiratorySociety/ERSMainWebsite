@@ -424,12 +424,6 @@
             T +41 21 213 01 95<br>
             </p>
         </div>
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('aniko.sipos@ersnet.org', 'Aniko Sipos') !!}</strong>
-            Educational Activities Assistant<br>
-            T +41 21 213 01 68<br>
-            </p>
-        </div>
        
       </div>
     </div>
