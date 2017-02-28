@@ -97,11 +97,15 @@
           <p><img src="{{ $item->sponsors->image }}" class="img-rounded" style="width:200px;"></p>
         @endif  
       @endif
+
+      @if($item->registerButton->link)
+        <a href="{{$item->registerButton->link}}" target="_blank" class="btn btn-primary item-register-bt">{{$item->registerButton->text}}</a>
+      @endif  
     </div>
 
-  @if($item->registerButton->link)
-    <a href="{{$item->registerButton->link}}" target="_blank" class="btn btn-primary item-register-bt">{{$item->registerButton->text}}</a>
-  @endif  
+
+
+
 </div>
 <!-- END Right Side-bar -->
 
