@@ -32,7 +32,7 @@ class ResearchController extends Controller
             $this->CC->setCanonical($item[0]->_qname);
         }
 
-        $results = $this->CC->getCategory($item[0]->_qname);
+        $results = $this->CC->getAssociation($item[0]->_qname);
         $params['items'] = $this->CC->parseItems($results['rows']); 
 
         return view('research.research')->with($params);  
@@ -53,7 +53,7 @@ class ResearchController extends Controller
             $this->CC->setCanonical($item[0]->_qname);
         }
 
-        $results = $this->CC->getCategory($params['item']->_qname);
+        $results = $this->CC->getAssociation($params['item']->_qname);
         $params['items'] = $this->CC->parseItems($results['rows']);; 
 
         return view('research.summits')->with($params);  
@@ -74,7 +74,7 @@ class ResearchController extends Controller
             $this->CC->setCanonical($item[0]->_qname);
         }
 
-        $results = $this->CC->getCategory($this->researchSeminars);
+        $results = $this->CC->getAssociation($this->researchSeminars);
         $params['items'] =  $this->CC->parseItems($results['rows']);
 
         return view('research.research-seminars')->with($params);  
@@ -97,7 +97,7 @@ class ResearchController extends Controller
         }
 
         if($item[0]->hasRelatedArticles > 0){
-            $related = $this->CC->getRelatedArticle($item[0]->_qname);
+            $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
             $relatedItems = $this->CC->parseItems($related['rows']);
             $params['relatedItems'] =  (object) $relatedItems;
         }
@@ -121,7 +121,7 @@ class ResearchController extends Controller
         }
 
         if($item[0]->hasRelatedArticles > 0){
-            $related = $this->CC->getRelatedArticle($item[0]->_qname);
+            $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
             $relatedItems = $this->CC->parseItems($related['rows']);
             $params['relatedItems'] =  (object) $relatedItems;
         } 

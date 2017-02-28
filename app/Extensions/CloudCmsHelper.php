@@ -16,26 +16,49 @@ class CloudCmsHelper
     {
         "search": {
             "filtered": {    
-                    "filter": {
-                        "term": {
+                "filter": {
+                    "term": {
                             "_type":  "ers_article"
                         }
-                    },
-                    "query": {
-                        "query_string": {
+                },
+                "query": {
+                    "query_string": {
                             "query": "'.$query.'"
-                        }
-                        }         
                     }
                 }
             }
         }         
     }';
 
+    $payload2 = '
+    {
+        "search": {
+            "filtered": {
+                "filter": {
+                    "term": {
+                        "_type": "ers_article"
+                    }
+                },
+                "query": {
+                    "bool": {
+                        "should": [
+                            {"match": {"_all": "'. $query .'"}}
+                        ],
+                        "must_not": [
+                            {"match": {"unPublished": true }}  
+                        ]
+                    }
+                }
+            }
+        }    
+    }';
+
     $results = CC::nodes()
-                    ->fullSearch($payload)
+                    ->fullSearch($payload2)
                     ->addParams(['full' => 'true'])  
+                    //->addParams(['limit' => 5]) 
                     ->get();
+                   // dd($results);
     $results = $this->validateResults($results);   
     return $results;  
     }
@@ -66,14 +89,18 @@ class CloudCmsHelper
     }
 
     /**
-    * Get all items belonging to a category
+    * Get all associated items that have a specific association,
+    * by default the association is set to the category one.
     * @param string $_qname
+    * @param string $type (Optional - type of association e.g. ers:category-association)
     * @return array
     */
-    public function getCategory($_qname){
+    public function getAssociation($_qname, $type = 'ers:category-association' ){
+        $query = '{ "unPublished": { "$ne": true}}';
+
         $results = CC::nodes()
-            ->listRelatives($_qname)
-            ->addParams(['type' => 'ers:category-association'])
+            ->queryRelatives($_qname, $query)
+            ->addParams(['type' => $type])
             ->addParams(['full' => 'true'])
             ->get();
         $results = $this->validateResults($results);      
@@ -81,62 +108,20 @@ class CloudCmsHelper
     }
 
     /**
-    * Get all articles that have a specific author
-    * @param string $catnode (QName of the author)
-    */
-    public function getAuthoredArticles($catnode){
-        $results = CC::nodes()
-            ->listRelatives($catnode)
-            ->addParams(['type' => 'ers:author-association'])
-            ->addParams(['full' => 'true'])
-            ->get();
-        $results = $this->validateResults($results);   
-        return $results;    
-    }
-
-    /**
-    * Get all articles that are related to the current one
-    * @param string $node (QName of the current article)
+    * Get all associated items that have a specific relation and sort them by a field
+    * @param string $startNode (QName of the starting node)
+    * @param string $type (Optional - type of association e.g. ers:category-association)
     * @param string $field (Optional - the field to sort on)
     * @param int $direction (the sorting direction 1 or -1)
     */
-    public function getRelatedArticle($node, $field = "_system.created_on.ms", $direction = 1){
-        $results = CC::nodes()
-            ->listRelatives($node)
-            ->addParams(['type' => 'ers:related-association']) 
-            ->addParams(['sort' => '{"'.$field.'": '.$direction.'}']) 
-            ->addParams(['full' => 'true'])
-            ->get();
-        $results = $this->validateResults($results);      
-        return $results;    
-    }
-    /**
-    * Get the author of an article
-    * @param string $node (QName of the article)
-    */
-    public function getAuthor($node){
-        $results = CC::nodes()
-            ->listRelatives($node)
-            ->addParams(['type' => 'ers:author-association']) 
-            ->addParams(['full' => 'true'])
-            ->get();
-        $results = $this->validateResults($results);   
-        return $results;    
-    }
+    public function getAssociationSorted($startNode, $type = 'ers:category-association', $field = "_system.created_on.ms", $direction = 1){
+        $query = '{ "unPublished": { "$ne": true} }';
 
-    /**
-    * Get all articles in a category and sort them
-    * @param string $catnode (QName of the category)
-    * @param string $field (Optional - the field to sort on)
-    * @param int $direction (the sorting direction 1 or -1)
-    */
-    public function getCategorySorted($catnode, $field = "eventDate", $direction = 1){
         $results = CC::nodes()
-            ->listRelatives($catnode)
-            ->addParams(['type' => 'ers:category-association'])
+            ->queryRelatives($startNode, $query)
+            ->addParams(['type' => $type])
             ->addParams(['sort' => '{"'.$field.'": '.$direction.'}']) 
             ->addParams(['metadata' => 'true'])
-            //->addParams(['skip' => 2]) 
             ->addParams(['limit' => 100]) 
             ->addParams(['full' => 'true'])
             ->get();    
@@ -160,11 +145,17 @@ class CloudCmsHelper
 	}
 
     /**
-    *   To use this method do not forget to set the skip value to false if you do not need pagination
-    *
+    * To use this method do not forget to set the skip value to false if you do not need pagination
+    * @param string $property ("type")
+    * @param string $propertyValue ("News")
+    * @param int $sort (Optional - Direction)
+    * @param int $skip (Optional - Used for pagination)
     */
-    public function getContentByProperty($property, $contentType, $sort = -1, $skip = null){
-        $query = '{"'.$property.'": "'.$contentType.'"}';
+    public function getContentByProperty($property, $propertyValue, $sort = -1, $skip = null){
+        $query = '{
+            "'.$property.'": "'.$propertyValue.'",
+            "unPublished": { "$ne": true }
+            }';
 
         if($skip === null){
             $results = CC::nodes()
@@ -237,6 +228,7 @@ class CloudCmsHelper
     * @param string $lat
     * @param string $long
     * @param string $accuracy
+    * @return void
     */
     public function setCoordinates($node, $lat, $long, $accuracy){
         if($accuracy !== 'NOT_FOUND'){

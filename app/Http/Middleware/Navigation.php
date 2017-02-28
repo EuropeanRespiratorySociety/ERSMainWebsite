@@ -129,8 +129,8 @@ class Navigation
                 $menu->professionalDevelopment->add('Grants and Sponsorships','professional-development/grants-and-sponsorships');
                 $menu->professionalDevelopment->add('E-learning','http://www.ers-education.org/home.aspx')
                                             ->link->attr(array('target' => '_blank'));                 
-                $menu->professionalDevelopment->add('Junior Members','http://juniors.ersnet.org')
-                                            ->link->attr(array('target' => '_blank')); 
+                //$menu->professionalDevelopment->add('Junior Members','http://juniors.ersnet.org')
+                                            //->link->attr(array('target' => '_blank')); 
                 $menu->professionalDevelopment->add('Respipedia','http://respipedia.ers-education.org/home.aspx')
                                             ->link->attr(array('target' => '_blank'));               
                 $menu->professionalDevelopment->add('Accreditation','professional-development/accreditation');
