@@ -310,7 +310,7 @@ class CloudCmsHelper
     * @param string $type (optional)
     * @return array
     */
-    public function prepareCalendar($items, $type = 'all'){
+    public function prepareCalendar($items, $type = 'ers'){
         $carbon = new Carbon();
         foreach($items as $key => $value){
             if($value->startDateTimestamp >= $carbon->timestamp && $type == 'all'){
@@ -333,6 +333,16 @@ class CloudCmsHelper
             }
             if($value->startDateTimestamp >= $carbon->timestamp && $type == 'deadline'){
                 if($value->ersDeadline) {
+                    $sorted[$value->calendar->year][$value->calendar->month][$key] = $value; 
+                } 
+            }
+            if($value->startDateTimestamp >= $carbon->timestamp && $type == 'national'){
+                if($value->nationalSocietyEvent) {
+                    $sorted[$value->calendar->year][$value->calendar->month][$key] = $value; 
+                } 
+            }
+            if($value->startDateTimestamp >= $carbon->timestamp && $type == 'regional'){
+                if($value->regionalSocietyEvent) {
                     $sorted[$value->calendar->year][$value->calendar->month][$key] = $value; 
                 } 
             }
