@@ -94,9 +94,9 @@
             <div class="main-content" style="background-color: rgb(241, 241, 241);padding-bottom:20px;">
 
                 <div class="col-md-7 center-block lead" >
-                    <p style="padding-bottom:10px;">Applications and nominations for the 2017 ERS Gold Medal Awards are now closed. The winners will be announced at this year’s ERS International Congress.
-                    <br /><br />View the list of previous Award winners:
-                    </p>
+                   {{-- <p style="padding-bottom:10px;">Applications and nominations for the 2017 ERS Gold Medal Awards are now closed. The winners will be announced at this year’s ERS International Congress.
+                    <br /><br />--}} <h3>Previous Award winners:
+                    </h3> 
                     <ul class="list-unstyled  center-block text-left" style="width:10%;" >
                         <li><a href="https://erscongress.org/about-ers/98-about-ers/421-ers-award-winners-2016.html">2016</a></li>
                         <li><a href="https://erscongress.org/component/content/article/72-categories-2015/332-awards.html">2015</a></li>
