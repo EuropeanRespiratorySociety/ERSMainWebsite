@@ -12,8 +12,9 @@
 */
 
 //this route will be use as a web hook
-//to purge we need the full url (http://...)
+//to purge we need the full url (https://...)
 Route::get('cache', 'MaintenanceController@cache');
+Route::post('cache', 'MaintenanceController@cache');
 
 //Get the model
 Route::get('schema:set', 'MaintenanceController@schema');

@@ -49,7 +49,7 @@
 
     @if($category->flags)
           <div class="alert {{'alert-'.$category->flags->color }}">
-          <div class="message"> {!! $category->flags->text !!} </div>
+            <div class="message"> {!! $category->flags->text !!} </div>
           </div>
     @endif
 

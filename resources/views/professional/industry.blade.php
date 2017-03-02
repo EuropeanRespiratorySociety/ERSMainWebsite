@@ -45,45 +45,65 @@
     <div class="col-md-3 white-bg event-items-right">
         @if($item->flags)
           <div class="alert {{'alert-'.$item->flags->color }}">
-          <div class="message"> {{ $item->flags->text }}</div>
+            <div class="message"> {{ $item->flags->text }}</div>
           </div>
-    @endif
-       {{-- @if($item->deadlines->applicationDeadline || $item->deadlines->applicationDeadline2)
-          <p class="deadline">APPLICATION now open. Deadline: {{$item->deadlines->applicationDeadline2}}</p>
         @endif
+       {{--@if($item->deadlines->applicationDeadline || $item->deadlines->applicationDeadline2)
+          <p class="deadline">APPLICATION now open. Deadline: {{$item->deadlines->applicationDeadline || $item->deadlines->applicationDeadline2}}</p>
+        @endif --}}
         <div class="list-group text-left">
           @if($item->deadlines->applicationDeadline || $item->deadlines->applicationDeadline2)
           <a href="javascript:void(0)" class="list-group-item clearfix">
             <span class="icon s7-alarm"></span>
             <p>
               APPLICATION DEADLINE : <br>
-              <span>{{$item->deadlines->applicationDeadline}} / {{$item->deadlines->applicationDeadline2}}</span>
-            </p>
-          </a>
-          @endif  
-          @if($item->deadlines->notification || $item->deadlines->notification2)
-          <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix">
-            <span class="icon s7-bell"></span>
-            <p>
-              NOTIFICATION : <br>
-              <span>{{$item->deadlines->notification}} / {{$item->deadlines->notification2}}</span>
+              <span>{{$item->deadlines->applicationDeadline}} @if($item->deadlines->applicationDeadline2)/ {{$item->deadlines->applicationDeadline2}}@endif </span>
             </p>
           </a>
           @endif
-          @if($item->deadlines->startDate || $item->deadlines->startDate2)    
+         @if($item->deadlines->notification || $item->deadlines->notification2)
+         <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix">
+            <span class="icon s7-bell"></span>
+            <p>
+              NOTIFICATION : <br>
+              <span>{{$item->deadlines->notification}} @if($item->deadlines->notification2)/ {{$item->deadlines->notification2}}@endif</span>
+            </p>
+          </a>
+          @endif
+          @if($item->deadlines->startDate || $item->deadlines->startDate2)
           <a href="javascript:void(0)" class="list-group-item clearfix">
             <span class="icon s7-date"></span>
             <p>
               START DATE : <br>
-              <span>{{$item->deadlines->startDate}} / {{$item->deadlines->startDate2}}</span>
+              <span>{{$item->deadlines->startDate}} @if($item->deadlines->startDate2)/ {{ $item->deadlines->startDate2 }} @endif </span>
             </p>
           </a>
           @endif
-        </div> --}}
+          <span href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
+            <span class="icon s7-copy-file"></span>
+            <p>
+              DOCUMENTS : <br>
+              <ul style="display: table;
+                        float: left;
+                        margin-left: 10px;">
+                  {{-- <li>
+                  <a href="https://ers.box.com/shared/static/lb71kvnc2dr6am25k82xvphxdjcsm9eh.pdf">LTRF 2017 Application Guidelines</a>
+                  </li> --}}
+                @if($item->rulesAndRegulations)
+                  <li>
+                    <a href="{{$item->rulesAndRegulations}}">Rules & Regulations</a>
+                  </li>  
+                @endif  
+                  @if($item->popUpText)
+                  <li>
+                    <a data-toggle="modal" data-target="#md-popUp" class="cursor_pointer">{{$item->popUpText}}</a>
+                  </li>
+                  @endif
+                </ul>
+            </p>
+          </span>
+        </div>
         <p class="rules text-left">
-        @if($item->rulesAndRegulations)
-          <a href="{{$item->rulesAndRegulations}}">Rules & Regulations</a> <br>
-        @endif  
         For more information, contact {!! Html::mailto('fellowships@ersnet.org', 'fellowships@ersnet.org') !!}
       </p>
         @if($item->sponsors)
