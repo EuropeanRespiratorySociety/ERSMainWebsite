@@ -25,7 +25,7 @@ class CalendarController extends Controller
     public function index()
     {
         //get the type of events to display
-        $type = Input::get('type', 'all');
+        $type = Input::get('type', 'ers');
 
         $results = $this->CC->getAssociationSorted($this->calendarCategory, 'ers:category-association', 'eventDate', 1);
         $items = $this->CC->parseItems($results['rows'], true);

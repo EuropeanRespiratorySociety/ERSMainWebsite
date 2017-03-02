@@ -66,6 +66,8 @@ model:
     nonErsCalendarItem: false
     ersEndorsedEvent: false
     ersDeadline: false
+    nationalSocietyEvent: false
+    regionalSocietyEvent: false
     fullyBooked: false
     displayOrder: false
     loc: { lat: false, long: false }
