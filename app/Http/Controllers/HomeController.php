@@ -30,6 +30,8 @@ class HomeController extends Controller
         $results = $this->CC->getContentByProperty("availableOnHomepage", "true", -1, false);
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  $this->CC->sortHomepage($items);
-        return response()->view('home.home', $params)->setTtl(60 * 60 * 24 * 7); //caching a week
-    }
+        //dd($params['items']['news'][0]);
+        //return response()->view('home.home', $params)->setTtl(60 * 60 * 24 * 7); //caching a week
+        return response()->view('home.home', $params);
+    }    
 }
