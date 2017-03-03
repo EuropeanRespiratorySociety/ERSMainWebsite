@@ -7,6 +7,7 @@ use App;
 use Artisan;
 use Iluminate\Http\Request;
 use App\Http\Requests;
+use Illuminate\Support\Facades\Log;
 
 use App\Extensions\CloudCmsHelper as CC;
 
@@ -52,6 +53,7 @@ class MaintenanceController extends Controller
             $cleaned = \File::cleanDirectory(app('http_cache.cache_dir'));
             Artisan::call('cache:clear');
             //Artisan::call('view:clear');
+            Log::info('The cache url has been called');
             return $cleaned ? "The cache has been emptied" : "The cache has not been emptied";
 
         }
