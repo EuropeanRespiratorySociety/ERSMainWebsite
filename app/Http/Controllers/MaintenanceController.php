@@ -7,7 +7,7 @@ use App;
 use Artisan;
 use Iluminate\Http\Request;
 use App\Http\Requests;
-use Illuminate\Support\Facades\Log;
+use Log;
 
 use App\Extensions\CloudCmsHelper as CC;
 
