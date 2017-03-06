@@ -158,7 +158,7 @@ class CloudCmsParser
                     // $item->video = $this->getVideo($item->video, 400);
                     //}
                     if(!$item->video && $item->title == "Apply now for an ERS Fellowship in Industry"){
-                     $item->video = $this->getVideo('https://youtu.be/xpt35OyRRi0', 400);
+                     $item->video = $this->getVideo('https://youtu.be/jRGhEC6ILQM', 400);
                     }
           
                     if($item->eventDate && $item->eventEndDate){

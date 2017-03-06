@@ -33,7 +33,17 @@
           </div>
           </a>
         </div>
-      @endforeach  
+      @endforeach
+
+              <div class="row row_event rel">
+                    @include('partials.items',array('items' => $items, 'class' => 'col-md-4'))
+                </div>
+
+
+
+
+
+        
     </div> 
     <h3 style="font-size:20px; margin-top:40px;">
       <a href="{{url('the-society/news')}}">

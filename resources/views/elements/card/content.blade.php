@@ -45,7 +45,7 @@
     @if($item->eventDates)
         <p class="date"><span class="icon s7-date"></span> {{ $item->eventDates }}</p>
     @endif
-    @if($item->shortLead)
+    @if($item->shortLead == !$item->video)
     <div class="lead-card">{!! $item->shortLead !!}</div>
     @endif
 </div>
