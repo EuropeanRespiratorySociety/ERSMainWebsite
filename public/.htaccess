@@ -1044,6 +1044,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
 
     RewriteCond %{HTTP:X-Forwarded-Proto} !https
     RewriteCond %{HTTP_HOST} !^old.ersnet.org$
+    RewriteCond %{HTTP_HOST} !^staging.ersnet.org$
     RewriteRule (.*) https://www.ersnet.org/$1 [R=301,L]
     
     # wrong domain to use www.
