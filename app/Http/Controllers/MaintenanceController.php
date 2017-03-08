@@ -46,7 +46,11 @@ class MaintenanceController extends Controller
         $cleaned = false;
 
         if($url){
-           $cleaned = App::make('http_cache.store')->purge($url);
+            //$cleaned = App::make('http_cache.store')->purge($url);
+            //temporary fix
+            $dir = App::make('http_cache.cache_dir');
+            $httpcache = new \Symfony\Component\HttpKernel\HttpCache\Store($dir);
+            $cleaned = $httpcache->purge($url);
         }
 
         if($all){
