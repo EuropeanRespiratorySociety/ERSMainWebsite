@@ -38,7 +38,7 @@
     @include('home.home-sections.publications')
 
     {{-- Start Section 5 --}} 
-    @include('home.home-sections.professional', array(
+    @include('home.home-sections.career', array(
               'items' => isset($items['featuredCourses']) ? $items['featuredCourses'] : false
               ))
 

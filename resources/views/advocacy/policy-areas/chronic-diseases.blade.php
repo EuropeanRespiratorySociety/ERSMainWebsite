@@ -3,7 +3,11 @@
     <div class="page-head"><h3>Chronic diseases</h3></div>
 	    <div class="col-md-8 center-block lead">
 	    	<p>
-	    		ERS works with policy makers and organisations, such as the European Chronic Disease Alliance, to improve early recognition and early diagnosis of chronic diseases through cost-effective screening methods as well as promote innovative approaches to chronic care such as ehealth and mhealth. The Society also advocates for EU funding for long-term and industry-independent trials in patients with chronic disease. 
+	    		Although chronic diseases have been on the rise in recent years, most chronic diseases are caused by common risk factors and underlying determinants that could be addressed by policy interventions. In the respiratory field, the impact of Chronic Obstructive Pulmonary Disease (COPD) is expected to rise, partly due to continued exposure to risk factors for COPD and partly due to an ageing world population. 
+	    	</p>
+
+	    	<p>
+	    		We actively advocate for better recognition of chronic respiratory diseases through the presence of a COPD expert in the Advocacy Council. We also highlight the need for a health policy which focusses on prevention, more research, and pulmonary rehabilitation of those already suffering from chronic diseases, by participating in alliances and organising awareness-raising events.
 	    	</p>
 	    </div>
 	    <div class="row">
@@ -18,7 +22,7 @@
 		    	</div>
 		    	<div class="col-md-4">
 		    		<div style="font-size:60px"><span id="data42" class="text-center">42</span><span>%</span></div>
-		    		<p>of cystic fibrosis patients are over 18 years old and this proportion is growing. </p>
+		    		<p>of cystic fibrosis patients are over 18 years old and this proportion is growing.</p>
 		    	</div>
 		    </div>
 		</div>

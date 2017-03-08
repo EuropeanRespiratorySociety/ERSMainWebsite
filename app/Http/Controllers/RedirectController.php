@@ -13,9 +13,9 @@ class RedirectController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function professionalDevelopment()
+    public function careerDevelopment()
     {
-        return redirect('/#professional-development'); 
+        return redirect('/#career-development'); 
     }
 
     /**

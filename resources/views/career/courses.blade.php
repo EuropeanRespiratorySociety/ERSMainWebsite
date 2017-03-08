@@ -33,10 +33,10 @@
 </div>
 
 
-@include('professional.director', array('class' => 'col-md-3'))
+@include('career.director', array('class' => 'col-md-3'))
 </div>
 
-@include('professional.course-footer', array('class' => 'col-md-12'))
+@include('career.course-footer', array('class' => 'col-md-12'))
 
 </div>
 @stop()  

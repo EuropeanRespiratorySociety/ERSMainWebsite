@@ -29,14 +29,14 @@ class CourseController extends Controller
         $params['item'] = $item[0]; 
 
         if(!$item[0] || !$item[0]->uri){
-            $this->CC->setCanonical($item[0]->_qname, 'professional-development/courses');
+            $this->CC->setCanonical($item[0]->_qname, 'career-development/courses');
         }
 
         $results = $this->CC->getCategory($params['item']->_qname);
         $items = $this->CC->parseItems($results['rows']);
         $sorted = $this->CC->sortItems($items);
         $params['items'] =  $sorted; 
-        return view('professional.courses')->with($params);    
+        return view('career.courses')->with($params);    
     }
 
     /**
@@ -51,8 +51,9 @@ class CourseController extends Controller
         $item = $this->CC->parseItems($results['rows']);
         $params['item'] = $item[0]; 
         
-        if(!$item[0]->url || !$item[0]->uri){
-            $this->CC->setCanonical($item[0]->_qname, 'professional-development/courses/'.$slug);
+        //if(!$item[0]->url || !$item[0]->uri || explode('/',$item[0]->uri)[0] == "career-development"){
+        if(!$item[0]->url || !$item[0]->uri ){
+            $this->CC->setCanonical($item[0]->_qname, 'career-development/courses/'.$slug);
         }
 
         if($item[0]->hasRelatedArticles > 0){
@@ -63,7 +64,7 @@ class CourseController extends Controller
         if($params['item']->contentType == "event_course_ebus" ){
             return view('professional.ebus')->with($params);
         }
-        return view('professional.course')->with($params); 
+        return view('career.course')->with($params); 
     }
 
 }

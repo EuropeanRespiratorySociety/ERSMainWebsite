@@ -26,9 +26,12 @@
   		
 
   		<!-- Section 3 -->
-  		@include('advocacy.policy-areas.research-and-innovation')
+  		@include('advocacy.policy-areas.science-and-healthcare')
 
-  		<!-- Section 4 -->
+      <!-- Section 4 -->
+      @include('advocacy.policy-areas.tuberculosis-blade')
+
+  		<!-- Section 5 -->
       @include('advocacy.policy-areas.chronic-diseases')
 
   	</div>
@@ -65,7 +68,7 @@
       };
       var data94 = new CountUp("data94", 0, 94, 0, 2.5, options);
       var data33 = new CountUp("data33", 0, 33, 0, 5, options);
-      var data1 = new CountUp("data1", 0, 1, 1, 4, options);
+      var data15 = new CountUp("data15", 0, 15, 0, 3, options);
 
       var data50 = new CountUp("data50", 0, 50, 0, 7, options);
       var data10 = new CountUp("data10", 0, 10, 0, 9, options);
@@ -81,8 +84,8 @@
       var data14 = new CountUp("data14", 0, 14, 0, 11, options);
 
       data94.start();
-      data1.start();
       data33.start();
+      data15.start();
 
       data50.start();
       data10.start();

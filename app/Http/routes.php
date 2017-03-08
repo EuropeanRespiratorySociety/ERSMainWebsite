@@ -85,7 +85,7 @@ Route::group(['prefix' => 'the-society/news'], function () {
     Route::get('community', 'RedirectController@community');
     Route::get('scientific-and-educational-events', 'RedirectController@sciAndEduEvents');
     Route::get('publications', 'RedirectController@publications');
-    Route::get('professional-development', 'RedirectController@professionalDevelopment');
+    Route::get('career-development', 'RedirectController@careerDevelopment');
     Route::get('advocacy', 'RedirectController@advocacy');
     
     Route::get('publications/{slug}', 'GeneralController@show');
@@ -107,7 +107,7 @@ Route::group(['prefix' => 'congress-and-events'], function () {
     Route::get('/{slug}', 'GeneralController@show');
 });
 
-Route::group(['prefix' => 'professional-development'], function () {
+Route::group(['prefix' => 'career-development'], function () {
     Route::get('courses', 'CourseController@index');
     Route::get('courses/{slug}', 'CourseController@show');
     Route::group(['prefix' => 'fellowships'], function () {

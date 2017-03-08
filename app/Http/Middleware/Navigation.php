@@ -91,7 +91,7 @@ class Navigation
                                             ->link->attr(array('target' => '_blank'));
                 $menu->publications->add('Breathe', 'http://breathe.ersjournals.com/')
                                             ->link->attr(array('target' => '_blank'));
-                $menu->publications->add('Guidelines', 'http://www.ers-education.org/pages/default.aspx?id=2005')
+                $menu->publications->add('Guidelines and statements', 'http://www.ers-education.org/pages/default.aspx?id=2005')
                                             ->link->attr(array('target' => '_blank'));
                 $menu->publications->add('White Books', 'http://www.erswhitebook.org/')
                                             ->link->attr(array('target' => '_blank'));
@@ -108,33 +108,33 @@ class Navigation
                                             ->link->attr(array('target' => '_blank'));
 
 
-            $menu->add('Professional development','#professional-development');
-                $menu->professionalDevelopment->add('Fellowships','professional-development/fellowships');
-                $menu->professionalDevelopment->add('HERMES projects','http://hermes.ersnet.org/projects.html')
+            $menu->add('Career development','#career-development');
+                $menu->careerDevelopment->add('Fellowships','career-development/fellowships');
+                $menu->careerDevelopment->add('HERMES projects','http://hermes.ersnet.org/projects.html')
                                             ->link->attr(array('target' => '_blank'));                 
-                $menu->professionalDevelopment->add('HERMES exams','http://hermes.ersnet.org/exams.html')
+                $menu->careerDevelopment->add('HERMES exams','http://hermes.ersnet.org/exams.html')
                                             ->link->attr(array('target' => '_blank'));                 
-                    $menu->fellowships->add('Short-Term','professional-development/fellowships/short-term-research-training-fellowships')->link->attr(array('style' => 'display:none'));
-                    $menu->fellowships->add('Long-Term','professional-development/fellowships/long-term-research-fellowships')->link->attr(array('style' => 'display:none'));
-                    $menu->fellowships->add('Fellowships in industry','professional-development/fellowships/ers-fellowships-in-industry')->link->attr(array('style' => 'display:none'));
-                    $menu->fellowships->add('Fellowships Programme on Guideline Methodology','professional-development/fellowships/fellowship-programme-on-guideline-methodology')->link->attr(array('style' => 'display:none'));
-                    $menu->fellowships->add('Clinical Training Fellowship','professional-development/fellowships/clinical-training-fellowship')->link->attr(array('style' => 'display:none'));
-                    $menu->fellowships->add('RESPIRE 3 - Host Application','professional-development/fellowships/respire-3-host-application-and-web-registry')->link->attr(array('style' => 'display:none'));
-                    $menu->fellowships->add('RESPIRE 3 - Marie Curie Post-doctoral Research Fellowships (MCF RESPIRE 3)','professional-development/fellowships/marie-curie-post-doctoral-research-fellowships-(respire-3)')->link->attr(array('style' => 'display:none'));
-                    $menu->fellowships->add('RESPIRE 2 - Marie Curie Post-doctoral Research Fellowships','professional-development/fellowships/marie-curie-post-doctoral-research-fellowships-respire-2')->link->attr(array('style' => 'display:none'));
+                    $menu->fellowships->add('Short-Term','career-development/fellowships/short-term-research-training-fellowships')->link->attr(array('style' => 'display:none'));
+                    $menu->fellowships->add('Long-Term','career-development/fellowships/long-term-research-fellowships')->link->attr(array('style' => 'display:none'));
+                    $menu->fellowships->add('Fellowships in industry','career-development/fellowships/ers-fellowships-in-industry')->link->attr(array('style' => 'display:none'));
+                    $menu->fellowships->add('Fellowships Programme on Guideline Methodology','career-development/fellowships/fellowship-programme-on-guideline-methodology')->link->attr(array('style' => 'display:none'));
+                    $menu->fellowships->add('Clinical Training Fellowship','career-development/fellowships/clinical-training-fellowship')->link->attr(array('style' => 'display:none'));
+                    $menu->fellowships->add('RESPIRE 3 - Host Application','career-development/fellowships/respire-3-host-application-and-web-registry')->link->attr(array('style' => 'display:none'));
+                    $menu->fellowships->add('RESPIRE 3 - Marie Curie Post-doctoral Research Fellowships (MCF RESPIRE 3)','career-development/fellowships/marie-curie-post-doctoral-research-fellowships-(respire-3)')->link->attr(array('style' => 'display:none'));
+                    $menu->fellowships->add('RESPIRE 2 - Marie Curie Post-doctoral Research Fellowships','career-development/fellowships/marie-curie-post-doctoral-research-fellowships-respire-2')->link->attr(array('style' => 'display:none'));
 
 
-                //$menu->professionalDevelopment->add('Educational Activities','professional-development/educational-activities');
-                $menu->professionalDevelopment->add('ERS Courses','professional-development/courses');
-                $menu->professionalDevelopment->add('Grants and Sponsorships','professional-development/grants-and-sponsorships');
-                $menu->professionalDevelopment->add('E-learning','http://www.ers-education.org/home.aspx')
+                //$menu->careerDevelopment->add('Educational Activities','career-development/educational-activities');
+                $menu->careerDevelopment->add('ERS Courses','career-development/courses');
+                $menu->careerDevelopment->add('Grants and Sponsorships','career-development/grants-and-sponsorships');
+                $menu->careerDevelopment->add('E-learning','http://www.ers-education.org/home.aspx')
                                             ->link->attr(array('target' => '_blank'));                 
-                $menu->professionalDevelopment->add('Junior Members','http://juniors.ersnet.org')
+                $menu->careerDevelopment->add('Junior Members','http://juniors.ersnet.org')
                                             ->link->attr(array('target' => '_blank')); 
-                $menu->professionalDevelopment->add('Respipedia','http://respipedia.ers-education.org/home.aspx')
+                $menu->careerDevelopment->add('Respipedia','http://respipedia.ers-education.org/home.aspx')
                                             ->link->attr(array('target' => '_blank'));               
-                $menu->professionalDevelopment->add('Accreditation','professional-development/accreditation');
-                $menu->professionalDevelopment->add('Training Programmes','professional-development/ers-certified-training-programmes');
+                $menu->careerDevelopment->add('Accreditation','career-development/accreditation');
+                $menu->careerDevelopment->add('Training Programmes','career-development/ers-certified-training-programmes');
 
 
             $menu->add('Research','#research');

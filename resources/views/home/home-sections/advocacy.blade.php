@@ -2,7 +2,7 @@
   <div class="main-content">
     <div class="page-head"><h2>Raising the profile of respiratory health</h2></div>
     <div class="col-md-6 center-block lead">
-     We work to raise awareness of lung disease amongst the public and politicians. The ERS EU Affairs department works closely with the EU Institutions, global organisations such as the Global NCD Alliance, the Framework Convention Alliance and WHO to support science-based policy development in the respiratory field.
+    Through our Advocacy and European Affairs department based in Brussels, ERS raises public and political awareness on the importance of lung health.  We monitor legislative and policy developments, build alliances with key partners at the global, European and national levels and promote science-based advocacy.
    </div>
 
   <div class="row">

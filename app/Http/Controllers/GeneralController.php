@@ -74,7 +74,7 @@ class GeneralController extends Controller
         $results = $this->CC->getCategory($params['item']->_qname);
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] = $items;
-        return view('professional.grants-and-sponsorships')->with($params);
+        return view('carrer.grants-and-sponsorships')->with($params);
     }
 
     /**
