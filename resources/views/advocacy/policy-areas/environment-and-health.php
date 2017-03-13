@@ -1,6 +1,6 @@
 <div class="section fp-auto-height">
   <div class="main-content">
-    <div class="page-head"><h3>Environment Policy</h3></div>
+    <div class="page-head"><h3>Environment and health</h3></div>
 	    <div class="col-md-8 center-block lead">
 	    	<p>
 	    		Environment policy is a core policy area for the EU and our ERS Environment and Health Committee is an active partner in forming European strategies and legislation.  Looking at issues from pollutant emissions, indoor air quality, and climate change, ERS environment and health policy actions bring together leading scientific experts to ensure lung health is included in environmental policy considerations. The Environment and Health Committee provides evidence-based recommendations to policymakers and the public, and provides information on managing environment-related respiratory disease to healthcare professionals and researchers.   
@@ -24,11 +24,15 @@
 		</div>
 
 		<div class="col-md-8 center-block lead">
-			<h3><a style="font-size: 20px;" href="advocacy/policy-areas/environment-and-health-committee">Environment and Health Committee
+			<hr />
+			<h3><a style="font-size: 20px;" href="advocacy/policy-areas/environment-and-health-committee">Environment and health Committee
 			<span class="icon s7-angle-right" style="font-size: 30px;position: relative; top: 8px;"></span></a></h3>
-
 		</div>
-
+		<div class="col-md-8 center-block lead">
+			<hr />
+			<h3><a style="font-size: 20px;" href="advocacy/policy-areas/environment-and-health">Environment and health activities
+			<span class="icon s7-angle-right" style="font-size: 30px;position: relative; top: 8px;"></span></a></h3>
+		</div>
 	    
   </div>  
 </div>

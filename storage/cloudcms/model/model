@@ -47,6 +47,7 @@ model:
     organisers: false
     faculty: false
     sponsors: [{ text: false, image: false }]
+    sponsorsAlliances: [{ text: false, image: false }]
     documents: false
     disclosure: false
     rulesAndRegulations: false

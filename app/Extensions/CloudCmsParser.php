@@ -114,6 +114,17 @@ class CloudCmsParser
                         $sponsor->text ? $item->sponsors->text = $sponsor->text : $item->sponsors->text = false;
                     }
 
+                    //Specific fields
+                    if($item->sponsorsAlliances){
+                        $sponsorsAlliances = $item->sponsorsAlliances[0];
+                        $item->sponsorsAlliances = new \stdClass;
+                        if($sponsorsAlliances->image){
+                            $img = CC::nodes()->getImage($sponsorsAlliances->image->qname);
+                            $item->sponsorsAlliances->image = $img->imageUrl."?name=image500&size=500";  
+                        } else { $item->sponsorsAlliances->image = false; }
+                        $sponsorsAlliances->text ? $item->sponsorsAlliances->text = Markdown::parse($sponsorsAlliances->text) : $item->sponsorsAlliances->text = false;
+                    }
+
                     if($item->flags){
                         $item->flags = $this->getFlags($item->flags);
                     }

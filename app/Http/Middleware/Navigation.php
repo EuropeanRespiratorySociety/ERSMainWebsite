@@ -79,6 +79,7 @@ class Navigation
                 $menu->congressAndEvents->add('ERS Research Seminars','congress-and-events/ers-research-seminars');
                 $menu->congressAndEvents->add('Past International Congresses','congress-and-events/past-international-congresses');
                 $menu->congressAndEvents->add('Event endorsement','congress-and-events/external-events-endorsement');
+                $menu->congressAndEvents->add('ERS Courses','congress-and-events/courses');
 
             $menu->add('Publications','#publications');
                 $menu->publications->add('European Respiratory Journal', 'http://erj.ersjournals.com/')
@@ -144,17 +145,19 @@ class Navigation
                 $menu->research->add('Research Seminars', 'research/research-seminars');
                 $menu->research->add('Research Agency', 'research/research-agency');
 
-            $menu->add('Advocacy and patient resources','#advocacy');
-                $menu->advocacyAndPatientResources->add('EU-Affairs','advocacy/eu-affairs');
-                $menu->advocacyAndPatientResources->add('EU-Projects','advocacy/eu-projects');
-                $menu->advocacyAndPatientResources->add('Policy Areas','advocacy/policy-areas');
+            $menu->add('Advocacy and EU Affairs','#advocacy');
+                $menu->advocacyAndEUAffairs->add('EU-Affairs','advocacy/eu-affairs');
+                $menu->advocacyAndEUAffairs->add('EU-Projects','advocacy/eu-projects');
+                $menu->advocacyAndEUAffairs->add('Policy Areas','advocacy/policy-areas');
                     $menu->policyAreas->add('The ERS Tobacco Control Committee','advocacy/policy-areas/the-ers-tobacco-control-committee')->link->attr(array('style' => 'display:none'));;
                     $menu->policyAreas->add('Environment and Health Committee','advocacy/policy-areas/environment-and-health-committee')->link->attr(array('style' => 'display:none'));
-                $menu->advocacyAndPatientResources->add('Alliances','advocacy/alliances');
-                $menu->advocacyAndPatientResources->add('Healthy Lungs for Life','http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/')
-                                            ->link->attr(array('target' => '_blank')); 
-                $menu->advocacyAndPatientResources->add('European Lung Foundation','http://www.europeanlung.org/en/')
-                                            ->link->attr(array('target' => '_blank'));                   
+                    $menu->policyAreas->add('Tobacco control', 'advocacy/policy-areas/tobacco-control')->link->attr(array('style' => 'display:none'));
+                    $menu->policyAreas->add('Environment and health', 'advocacy/policy-areas/environment-and-health')->link->attr(array('style' => 'display:none'));
+                    $menu->policyAreas->add('Science and healthcare', 'advocacy/policy-areas/science-and-healthcare')->link->attr(array('style' => 'display:none'));
+                    $menu->policyAreas->add('Tuberculosis', 'advocacy/policy-areas/tuberculosis')->link->attr(array('style' => 'display:none'));
+                    $menu->policyAreas->add('Chronic diseases', 'advocacy/policy-areas/chronic-diseases')->link->attr(array('style' => 'display:none'));
+
+                 
 
             if(App::environment() != 'local'){
                  foreach ($menu->items as $item) {

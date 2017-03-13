@@ -13,7 +13,7 @@
         <div class="card card-padded card-home">
 
           <img src="../images/advocacy/advocacy_2.jpg" alt="">
-          <div class="title-box"><h2>EU activities</h2></div>
+          <div class="title-box"><h2>Advocacy and EU Affairs</h2></div>
         </div>
       </a>
     </div>
@@ -31,22 +31,22 @@
 
     <!--EU Projects-->
     <div class="col-md-3">
-      <a href="{{url('advocacy/eu-projects')}}">
+      <a href="{{url('advocacy/advocacy-materials')}}">
         <div class="card card-padded card-home">
 
           <img src="../images/advocacy/advocacy_3.jpg" alt=""/>
-          <div class="title-box"><h2>EU Projects</h2></div>
+          <div class="title-box"><h2>Advocacy materials</h2></div>
         </div>
       </a>
     </div>
 
     <!--Alliances-->
     <div class="col-md-3">
-      <a href="{{url('advocacy/alliances')}}">
+      <a href="{{url('advocacy/eu-projects')}}">
         <div class="card card-padded card-home">
 
           <img src="../images/advocacy/advocacy_4.jpg" alt=""/>
-          <div class="title-box"><h2>Alliances</h2></div>
+          <div class="title-box"><h2>EU Projects</h2></div>
         </div>
       </a>
     </div>

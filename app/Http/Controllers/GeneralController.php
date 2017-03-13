@@ -28,10 +28,13 @@ class GeneralController extends Controller
     { 
         $field = "_system.created_on";
         $direction = 1;
-        // The content of the cat is not yet managed in CC
-        // if(!$params['category']->url || !$params['category']->uri)){
-        //     $this->CC->setCanonical($params['category']->_qname, 'advocacy/eu-affairs');
-        // }
+
+        $category = $this->CC->getItem('eu-affairs');
+        $params['category'] = $this->CC->parseItems($category['rows'])[0];
+
+        if(!$params['category']->url || !$params['category']->uri) {
+            $this->CC->setCanonical($params['category']->_qname, 'advocacy/eu-affairs');
+         }
 
         $results = $this->CC->getCategorySorted($this->euAffairs, $field, $direction);
         $items = $this->CC->parseItems($results['rows']);
@@ -59,6 +62,120 @@ class GeneralController extends Controller
 
         return view('advocacy.eu-projects')->with($params);
     }
+
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function tobaccoControl()
+    { 
+        $results = $this->CC->getItem('tobacco-control');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['category'] =  (object) $item[0]; 
+
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
+        }
+
+        $results = $this->CC->getCategory($item[0]->_qname);
+        $items = $this->CC->parseItems($results['rows']);
+        $params['items'] =  $items;
+
+        return view('advocacy.advocacy-news')->with($params);
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function environmentAndHealth()
+    { 
+        $results = $this->CC->getItem('environment-and-health');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['category'] =  (object) $item[0]; 
+
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
+        }
+
+        $results = $this->CC->getCategory($item[0]->_qname);
+        $items = $this->CC->parseItems($results['rows']);
+        $params['items'] =  $items;
+
+        return view('advocacy.advocacy-news')->with($params);
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function scienceAndHealthcare()
+    { 
+        $results = $this->CC->getItem('science-and-healthcare');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['category'] =  (object) $item[0]; 
+
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
+        }
+
+        $results = $this->CC->getCategory($item[0]->_qname);
+        $items = $this->CC->parseItems($results['rows']);
+        $params['items'] =  $items;
+
+        return view('advocacy.advocacy-news')->with($params);
+    }
+
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function tuberculosis()
+    { 
+        $results = $this->CC->getItem('tuberculosis');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['category'] =  (object) $item[0]; 
+
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
+        }
+
+        $results = $this->CC->getCategory($item[0]->_qname);
+        $items = $this->CC->parseItems($results['rows']);
+        $params['items'] =  $items;
+
+        return view('advocacy.advocacy-news')->with($params);
+    }
+
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function chronicDiseases()
+    { 
+        $results = $this->CC->getItem('chronic-diseases');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['category'] =  (object) $item[0]; 
+
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
+        }
+
+        $results = $this->CC->getCategory($item[0]->_qname);
+        $items = $this->CC->parseItems($results['rows']);
+        $params['items'] =  $items;
+
+        return view('advocacy.advocacy-news')->with($params);
+    }
+
 
     /**
      * Display a listing of the resource.

@@ -24,19 +24,18 @@
 		</div>
 
 		<div class="col-md-8 center-block lead">
-
+			<hr />
 			<p style="margin:40px 0;">
 			<a style="font-size: 20px;" href="advocacy/policy-areas/the-ers-tobacco-control-committee">
 			The ERS Tobacco Control Committee
 			<span class="icon s7-angle-right" style="font-size: 30px;position: relative; top: 8px;"></span>
 			</a></p>
-
-			<hr />
-
-
-
-
 	    </div>
+		<div class="col-md-8 center-block lead">
+			<hr />
+			<h3><a style="font-size: 20px;" href="advocacy/policy-areas/tobacco-control">Tobacco Control activities
+			<span class="icon s7-angle-right" style="font-size: 30px;position: relative; top: 8px;"></span></a></h3>
+		</div>
 
 
 	    

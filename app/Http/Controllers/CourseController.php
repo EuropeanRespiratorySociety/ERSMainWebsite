@@ -39,6 +39,7 @@ class CourseController extends Controller
         return view('career.courses')->with($params);    
     }
 
+
     /**
      * Display the specified resource.
      *
@@ -66,5 +67,6 @@ class CourseController extends Controller
         }
         return view('career.course')->with($params); 
     }
+ 
 
 }

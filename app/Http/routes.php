@@ -19,7 +19,7 @@ Route::get('cache', 'MaintenanceController@cache');
 Route::get('schema:set', 'MaintenanceController@schema');
 Route::get('view:clear', 'MaintenanceController@view');
 //Purge the model
-Route::get('schema:clear', 'MaintenanceController@unsetSchema');
+//Route::get('schema:clear', 'MaintenanceController@unsetSchema');
 
 //////DANGER NEED TOKEN CSRF CHECK -> Cached value
 Route::post('search', 'SearchController@search');
@@ -97,6 +97,7 @@ Route::group(['prefix' => 'the-society/news'], function () {
     });
 
 Route::group(['prefix' => 'congress-and-events'], function () {
+    Route::get('courses', 'CourseController@index');
     Route::get('ers-research-seminars', 'RedirectController@researchSeminars');
     Route::get('ers-presidential-summits', 'ResearchController@summits');
     Route::get('ers-presidential-summits/{slug}', 'ResearchController@showRS');
@@ -134,9 +135,20 @@ Route::group(['prefix' => 'career-development'], function () {
     Route::get('advocacy/eu-affairs', 'GeneralController@euAffairs');
     Route::get('advocacy/eu-affairs/{slug}', 'GeneralController@show');
     Route::get('advocacy/eu-projects', 'GeneralController@euProjects');
+    
     Route::get('advocacy/policy-areas', function(){
         return view('advocacy.policy-areas');
     });
+    Route::get('advocacy/policy-areas/tobacco-control', 'GeneralController@tobaccoControl');
+    Route::get('advocacy/policy-areas/tobacco-control/{slug}', 'GeneralController@show');
+    Route::get('advocacy/policy-areas/environment-and-health', 'GeneralController@environmentAndHealth');  
+    Route::get('advocacy/policy-areas/environment-and-health/{slug}', 'GeneralController@show');
+    Route::get('advocacy/policy-areas/science-and-healthcare', 'GeneralController@scienceAndHealthcare');
+    Route::get('advocacy/policy-areas/science-and-healthcare/{slug}', 'GeneralController@show');              
+    Route::get('advocacy/policy-areas/tuberculosis', 'GeneralController@tuberculosis');  
+    Route::get('advocacy/policy-areas/tuberculosis/{slug}', 'GeneralController@show');
+    Route::get('advocacy/policy-areas/chronic-diseases', 'GeneralController@chronicDiseases');  
+    Route::get('advocacy/policy-areas/chronic-diseases/{slug}', 'GeneralController@show');
     Route::get('advocacy/policy-areas/{slug}', 'GeneralController@show');
     Route::get('advocacy/{slug}', 'GeneralController@show');
     Route::get('related/{slug}', 'GeneralController@show');

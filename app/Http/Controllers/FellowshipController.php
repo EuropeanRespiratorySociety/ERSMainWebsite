@@ -34,7 +34,7 @@ class FellowshipController extends Controller
         $params['category'] = (object) $category[0];
 
         if(!$params['category']->url || !$params['category']->uri){
-            $this->CC->setCanonical($params['category']->_qname, 'professional-development/fellowships');
+            $this->CC->setCanonical($params['category']->_qname, 'career-development/fellowships');
         }
 
         //$toPaginate = $this->CC->getContentByProperty($this->property, $this->propertyValue);
@@ -49,7 +49,7 @@ class FellowshipController extends Controller
         // }
         // $params['items'] =  (object) $items;
 
-        return view('professional.simple-fellowships')->with($params);
+        return view('career.simple-fellowships')->with($params);
 
     }
  
@@ -68,7 +68,7 @@ class FellowshipController extends Controller
         $params['category'] = (object) $category[0];
 
         if(!$params['category']->url || !$params['category']->uri){
-             $this->CC->setCanonical($params['category']->_qname, 'professional-development/fellowships/short-term-research-training-fellowships');
+             $this->CC->setCanonical($params['category']->_qname, 'career-development/fellowships/short-term-research-training-fellowships');
         }
 
         $results = $this->CC->getCategory($this->shortTerm);
@@ -79,7 +79,7 @@ class FellowshipController extends Controller
         }
         $params['items'] = $items; 
 
-        return view('professional.short-term-fellowships')->with($params);    
+        return view('career.short-term-fellowships')->with($params);    
 
     }
 
@@ -95,7 +95,7 @@ class FellowshipController extends Controller
         $params['category'] = (object) $category[0];
 
         if(!$params['category']->url || !$params['category']->uri){
-             $this->CC->setCanonical($params['category']->_qname, 'professional-development/fellowships/long-term-research-fellowships');
+             $this->CC->setCanonical($params['category']->_qname, 'career-development/fellowships/long-term-research-fellowships');
         }
 
         $results = $this->CC->getCategory($this->longTerm);
@@ -106,7 +106,7 @@ class FellowshipController extends Controller
         }
         $params['items'] =  $items; 
 
-        return view('professional.long-term-fellowships')->with($params);    
+        return view('career.long-term-fellowships')->with($params);    
 
     }
 
@@ -122,7 +122,7 @@ class FellowshipController extends Controller
         $params['category'] = $category[0];
 
         if(!$params['category']->url || !$params['category']->uri){
-            $this->CC->setCanonical($params['category']->_qname, 'professional-development/fellowships/ers-fellowships-in-industry');
+            $this->CC->setCanonical($params['category']->_qname, 'career-development/fellowships/ers-fellowships-in-industry');
         }
 
         $results = $this->CC->getCategory($this->industry);
@@ -133,7 +133,7 @@ class FellowshipController extends Controller
         }    
         $params['items'] = $items; 
    
-        return view('professional.industry-fellowships')->with($params);    
+        return view('career.industry-fellowships')->with($params);    
 
     }    
 
@@ -163,9 +163,9 @@ class FellowshipController extends Controller
 
         $category = $params['item']->category->title ?? false;
         if($category == "ERS Fellowships in Industry" ) {
-            return view('professional.industry')->with($params);
+            return view('career.industry')->with($params);
         }
-        return view('professional.fellowship')->with($params); 
+        return view('career.fellowship')->with($params); 
     }
 
 }

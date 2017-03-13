@@ -9,10 +9,9 @@
 
 
 		<div class="col-md-8 center-block lead">
-			<h3><a style="font-size: 20px;" href="advocacy/policy-areas/environment-and-health-committee">Environment and Health Committee
-			<span class="icon s7-angle-right" style="font-size: 30px;position: relative; top: 8px;"></span></a></h3>
 			<hr />
-
+			<h3><a style="font-size: 20px;" href="advocacy/policy-areas/science-and-healthcare">Science and healthcare activities
+			<span class="icon s7-angle-right" style="font-size: 30px;position: relative; top: 8px;"></span></a></h3>
 		</div>
 
 	    
