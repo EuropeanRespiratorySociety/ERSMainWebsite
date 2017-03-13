@@ -63,7 +63,7 @@ class MaintenanceController extends Controller
 
         }
 
-        Log::info('The cache url has been called by: '. $request->ip() . ' The method use is: ' . $request->method() . ' Message: '. $message);
+        Log::info('The cache url has been called by: '. $request->ip() . ' - The method used is: ' . $request->method() . ' - Message: '. $message);
         return $message;
     }
 
