@@ -294,7 +294,7 @@ class CloudCmsParser
     		$string = explode("\n", $string, 2);
     		$string = $string[0]. $append;
     	}
-
+        
     	return $string;
 
     }

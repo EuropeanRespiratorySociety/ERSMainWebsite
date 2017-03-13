@@ -121,9 +121,9 @@ class CloudCmsHelper
             ->queryRelatives($startNode, $query)
             ->addParams(['type' => $type])
             ->addParams(['sort' => '{"'.$field.'": '.$direction.'}']) 
-            ->addParams(['metadata' => 'true'])
+            ->addParams(['metadata' => true])
             ->addParams(['limit' => 100]) 
-            ->addParams(['full' => 'true'])
+            ->addParams(['full' => true])
             ->get();    
         $results = $this->validateResults($results);       
         return $results;    
