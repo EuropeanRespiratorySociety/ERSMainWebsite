@@ -1,4 +1,4 @@
-<div class=" medium-grey-bg col-sm-12 {!! $class !!}">
+<div class=" medium-grey-bg col-sm-12 {!! $class !!}" style="height:100%; right:0; position: fixed;">
 
     <div class="row article-items">
         <div class="col-md-12 right-photo">
@@ -8,7 +8,7 @@
                 @endif
             </div>
             @if($alliances->text)
-            <div class="col-md-9 center-block lead">
+            <div class="col-md-9 center-block ">
                {!!$alliances->text!!}
             </div>
             @endif
@@ -17,8 +17,8 @@
 
 
     <div class="row">
-        <div class="col-md-12">
-            <div class="card card-primary card-padded">
+        <div class="col-md-12" >
+            <div class="card card-primary card-padded" style="margin-top:20px;">
                 <div class="card-image">
                     <img class="img-responsive" src="../images/london2016.jpg">
                 </div>
@@ -26,12 +26,6 @@
                 <div class="card-title text-left">
                     <h3>Presidential summit</h3>
                  </div> 
-<!--
-                <div class="card-content text-left">
-                    <p>Cards for display in portfolio style material design by Google.</p>
-                    <p>Cards for display in portfolio style material design by Google.</p>
-                </div>
--->                        
                         
                 <div class="card-action">
                     <a href="{{url('/congress-and-events/ers-presidential-summits')}}" target="new_blank" class="btn btn-default pull-right">Link</a>

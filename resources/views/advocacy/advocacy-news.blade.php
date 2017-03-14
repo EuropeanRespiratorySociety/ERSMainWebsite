@@ -35,7 +35,8 @@
                 @endif
             </div><!-- main-content latest news -->
     </div><!-- col-md-9 -->
-        @include('advocacy.president-summit', array('class' => 'col-md-3', 'item' => $category))
+        @include('advocacy.president-summit', array('alliances' => $category->sponsorsAlliances, 'class' => 'col-md-3'))
+
 </div><!-- ers-content -->
 @stop() 
 
