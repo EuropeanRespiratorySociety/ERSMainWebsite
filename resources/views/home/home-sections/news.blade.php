@@ -35,16 +35,14 @@
         </div>
       @endforeach
 
-              <div class="row row_event rel">
-                    @include('partials.items',array('items' => $items, 'class' => 'col-md-4'))
-                </div>
-
-
-
-
-
-        
     </div> 
+
+
+    <div class="row center-block">
+          @include('partials.items',array('items' => $items, 'class' => 'col-md-4'))
+      </div>
+
+
     <h3 style="font-size:20px; margin-top:40px;">
       <a href="{{url('the-society/news')}}">
         </span>All News<span class="s7-angle-right" style="font-size: 30px;position: relative; top: 8px;">
