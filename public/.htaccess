@@ -1064,16 +1064,17 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
 
     RewriteCond %{HTTP:X-Forwarded-Proto} !https
     RewriteCond %{REQUEST_URI} !^/cache.$
-    RewriteCond %{HTTP_HOST} !^(old|staging).ersnet.org$
-    RewriteRule (.*) https://www.ersnet.org/$1 [R=301,L]
+    RewriteCond %{HTTP_HOST} !^.+\/\/(old|staging|new)\.ersnet\.org$
+    RewriteCond %{HTTP_HOST} ^.+\/\/new\.ersnet\.org$
+    RewriteRule ^.*$   https://www.ersnet.org/$1 [R,L]
     
     # wrong domain to use www.
     RewriteCond %{HTTP_HOST} ^ersnet.org$
     RewriteRule (.*) https://www.ersnet.org/$1 [L,R=301]     
     
     # Now, rewrite to use www.
-    RewriteCond %{HTTP_HOST} ^new.ersnet.org$
-    RewriteRule (.*) https://www.ersnet.org/$1 [L,R=301]
+    # RewriteCond %{HTTP_HOST} ^new.ersnet.org$
+    # RewriteRule (.*) https://www.ersnet.org/$1 [L,R=301]
 
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
