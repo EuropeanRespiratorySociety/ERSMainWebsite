@@ -39,7 +39,7 @@
 
 
     <div class="row center-block">
-          @include('partials.items',array('items' => $items, 'class' => 'col-md-4'))
+          @include('partials.items',array('items' => $items, 'home' => true))
       </div>
 
 

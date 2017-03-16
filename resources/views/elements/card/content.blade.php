@@ -1,3 +1,6 @@
+<?php 
+    $home = $home ?? false;
+?>
 <div class="card-content">
     @if($item->earlybirdDeadline)
         <p class="btn-rounded early_bird">Early Bird deadline {{ $item->earlybirdDeadline }}</p>
@@ -35,17 +38,17 @@
         <p class="sponsor"><span class="icon icon-building"></span> {{$item->sponsors->text}}</p>
     @endif 
     @if($item->createdOn && $item->type)
-        @if($item->type == "News")
+        @if(($item->type == "News" && !$home) || ($home && !$item->doNotDisplayCreatedOnOnHomepage && $item->type == "News"))
             <h4 class="date">{{ $item->createdOn }}</h4>
         @endif
     @endif
     @if($item->eventLocation)
-    <p class="place"><span class="icon s7-map-marker"></span> {{ $item->eventLocation }}</p>
+        <p class="place"><span class="icon s7-map-marker"></span> {{ $item->eventLocation }}</p>
     @endif
     @if($item->eventDates)
         <p class="date"><span class="icon s7-date"></span> {{ $item->eventDates }}</p>
     @endif
-    @if($item->shortLead == !$item->video)
-    <div class="lead-card">{!! $item->shortLead !!}</div>
+    @if(!$home)
+        <div class="lead-card">{!! $item->shortLead !!}</div>
     @endif
 </div>

@@ -86,6 +86,6 @@
         },            
         percentPosition: true
         });    */        
-      });
+      }); 
     </script>
   @stop()
