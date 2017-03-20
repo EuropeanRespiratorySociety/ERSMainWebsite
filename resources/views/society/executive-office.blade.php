@@ -211,12 +211,6 @@
       </div>
       <div class="row">
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('Lorraine.Monnot@ersnet.org', 'Lorraine Monnot') !!} </strong>
-            Senior Coordinator<br>
-            T +41 21 213 01 71 <br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('Laura.montangero@ersnet.org', 'Laura Montangero') !!}</strong>
             Senior Coordinator<br>
             T +41 21 213 01 75<br>
@@ -238,6 +232,12 @@
           <p class="photo_caption"><strong>{!! Html::mailto('nutcha.prakkamakul@ersnet.org', 'Nutcha Prakkamakul') !!}</strong>
             Assistant<br>
             T +41 21 213 01 69<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('david.baechler@ersnet.org', 'David Baechler') !!}</strong>
+            Congress and Events Assistant<br>
+            T +41 21 213 01 71<br>
             </p>
         </div>
       </div>
