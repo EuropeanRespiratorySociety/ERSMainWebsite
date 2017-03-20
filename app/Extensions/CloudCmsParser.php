@@ -154,11 +154,8 @@ class CloudCmsParser
                     }
 
                     // Video
-                    //if($item->video){
-                    // $item->video = $this->getVideo($item->video, 400);
-                    //}
-                    if(!$item->video && $item->title == "The management of sleep disorders is never black and white"){
-                     $item->video = $this->getVideo('https://youtu.be/jRGhEC6ILQM', 400);
+                    if($item->video){
+                     $item->video = $this->getVideo($item->video, 400);
                     }
           
                     if($item->eventDate && $item->eventEndDate){

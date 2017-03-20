@@ -1,42 +1,6 @@
 <div class="section home-news-content fp-auto-height" id="">
   <div class="main-content">
     <div class="page-head"><h2>Latest News</h2></div>
-    <div class="row center-block">
-      @foreach($items as $item)
-        <div class="col-md-4">
-          <a href="@if(isset($item->slug)){{url('the-society/news/'.$item->slug)}}@endif">
-          <div class="card card-padded @if(!isset($item->image)) card-primary @endif">
-            <figure 
-
-            @if(isset($item->contrastOnHomepage))
-              @if($item->contrastOnHomepage ) class="hover-gradation-dark" @else class="hover-gradation" @endif
-            @else 
-              class="hover-gradation"
-            @endif  
-            >
-
-            @if(isset($item->type))
-              <span class="label @if(isset($item->typeColor)){{$item->typeColor}}@else label-default @endif">{{$item->type}}</span>
-            @endif
-            @if(isset($item->image))
-              <img src="{{url($item->image)}}" @if(isset($item->imageDescription))alt="{{$item->imageDescription}}" @endif >
-            @endif
-              <figcaption>
-              @if($item->doNotDisplayCreatedOnOnHomepage == false)
-                <span class="label-right label-news" >
-                  @if(isset($item->createdOn)){{$item->createdOn}}@endif
-                </span>
-              @endif
-              <h2>@if(isset($item->title)){{$item->title}}@endif</h2>
-              </figcaption>     
-            </figure>
-          </div>
-          </a>
-        </div>
-      @endforeach
-
-    </div> 
-
 
     <div class="row center-block">
           @include('partials.items',array('items' => $items, 'home' => true))

@@ -82,10 +82,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       
     </div>
 
-    {{--<script src="https://bootstrap.ersnet.org/js/jquery.min.js" type="text/javascript"></script>--}}
-    <script src="http://erstemplate.app/js/jquery.min.js" type="text/javascript"></script>
-    {{--<script src="https://bootstrap.ersnet.org/js/all.js" type="text/javascript"></script>--}}
-    <script src="http://erstemplate.app/js/all.js" type="text/javascript"></script>
+    <script src="https://bootstrap.ersnet.org/js/jquery.min.js" type="text/javascript"></script>
+    {{--<script src="http://erstemplate.app/js/jquery.min.js" type="text/javascript"></script>--}}
+    <script src="https://bootstrap.ersnet.org/js/all.js" type="text/javascript"></script>
+    {{--<script src="http://erstemplate.app/js/all.js" type="text/javascript"></script>--}}
 
 
     @yield('scripts')
