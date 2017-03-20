@@ -70,7 +70,7 @@
     @section('scripts')
     <script src="https://bootstrap.ersnet.org/js/fullpage.js" type="text/javascript"></script>
     <script src="https://bootstrap.ersnet.org/js/app-home.js" type="text/javascript"></script>
-    <!--script src="http://erstemplate.app//js/app-home.js" type="text/javascript"></script-->
+    <!--<script src="http://erstemplate.app//js/app-home.js" type="text/javascript"></script>-->
 
     <script type="text/javascript">
       $(document).ready(function(){
@@ -86,6 +86,6 @@
         },            
         percentPosition: true
         });    */        
-      });
+      }); 
     </script>
   @stop()
