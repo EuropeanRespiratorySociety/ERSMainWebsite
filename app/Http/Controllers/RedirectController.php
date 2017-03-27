@@ -78,6 +78,14 @@ class RedirectController extends Controller
         return redirect('/research/research-seminars');  
     }        
 
-
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function courses()
+    { 
+        return redirect('/career-development/courses');  
+    }        
 
 }

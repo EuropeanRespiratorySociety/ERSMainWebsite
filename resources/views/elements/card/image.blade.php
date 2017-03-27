@@ -18,9 +18,12 @@
     @else 
         style="height:24px;" 
     @endif >
-    @if($item->type)
+    @if($item->type && $item->category->title != "EU Affairs")
     <span class="label {{ $item->typeColor }}">{{ $item->type }}</span>
     @endif
+    @if($item->category->title == "EU Affairs") 
+       <span class="label label-scientific">Advocacy News</span>
+    @endif    
     @if($item->flags->text)
     <span class="label {{ 'label-'.$item->flags->color }}">{{ $item->flags->text }}</span>
     @endif

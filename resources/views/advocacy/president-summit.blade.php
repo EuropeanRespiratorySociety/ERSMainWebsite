@@ -20,16 +20,11 @@
         <div class="col-md-12" >
             <div class="card card-primary card-padded" style="margin-top:20px;">
                 <div class="card-image">
-                    <img class="img-responsive" src="../images/london2016.jpg">
-                </div>
-                        
-                <div class="card-title text-left">
-                    <h3>Presidential summit</h3>
+                </div>                       
+                <div class="card-title text-center">
+                    <h3><a href="{{url('/congress-and-events/ers-presidential-summits')}}" style="color: #fff;" >Presidential summit</a></h3>
                  </div> 
                         
-                <div class="card-action">
-                    <a href="{{url('/congress-and-events/ers-presidential-summits')}}" target="new_blank" class="btn btn-default pull-right">Link</a>
-                </div>
             </div>
         </div>
     </div>

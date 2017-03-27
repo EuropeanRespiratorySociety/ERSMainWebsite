@@ -935,6 +935,16 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
     Redirect 301 /sponsorship/index.php/publications/buyersguide/item/420-buyers-guide   https://www.ersnet.org/professional-development/grants-and-sponsorships
     Redirect 301 /sponsorship/index.php/publications/erj2/item/422-erj   https://www.ersnet.org/professional-development/grants-and-sponsorships
 
+    ### Career dev 
+    Redirect 301 /advocacy/alliances https://www.ersnet.org/#advocacy
+    Redirect 301 /professional-development/fellowships https://www.ersnet.org/career-development/fellowships
+    Redirect 301 /professional-development/courses https://www.ersnet.org/career-development/courses
+    Redirect 301 /professional-development/grants-and-sponsorships https://www.ersnet.org/career-development/grants-and-sponsorships
+    Redirect 301 /professional-development/accreditation https://www.ersnet.org/career-development/accreditation
+    Redirect 301 /professional-development/ers-certified-training-programmes https://www.ersnet.org/career-development/ers-certified-training-programmes
+
+
+
     ### Main category redirects
     Redirect 301 /assemblies.html https://www.ersnet.orghttp://ersnet.app/the-society/assemblies
     Redirect 301 /education.html https://www.ersnet.org/#professional-development

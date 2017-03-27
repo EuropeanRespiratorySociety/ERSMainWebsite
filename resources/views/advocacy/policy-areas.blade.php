@@ -42,7 +42,7 @@
                                   <a href="advocacy/policy-areas#tuberculosis">Tuberculosis</a>
                               </li>
                               <li data-menuanchor="chronic-diseases">
-                                  <a href="advocacy/policy-areas#chronic-diseases">Chronic-diseases</a>
+                                  <a href="advocacy/policy-areas#chronic-diseases">Chronic diseases</a>
                               </li>
 
                           </ul>
@@ -87,7 +87,7 @@
   <!--script src="../js/app-assemblies.js" type="text/javascript"></script-->
 
   <!--script src="http://erstemplate.app/js/fullpage.js" type="text/javascript"></script-->
-  <!--script src="http://erstemplate.app/js/app-policy-areas.js" type="text/javascript"></script-->
+  <!-- script src="http://erstemplate.app/js/app-policy-areas.js" type="text/javascript"></script -->
 
 
   <script src="https://bootstrap.ersnet.org/js/fullpage.js" type="text/javascript"></script>
@@ -97,7 +97,7 @@
     		$(document).ready(function(){
       	//initialize the javascript
       	new WOW({offset: 110, mobile: false }).init();
-      	App.assemblies();             
+      	App.policyAreas();             
       });
   </script>
   <script type="text/javascript">

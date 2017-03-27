@@ -25,7 +25,7 @@
 
             </div><!-- main-content news and feautures -->
             <div class="main-content" style="overflow: hidden; ">
-                <div class="row row_event rel">
+                <div class="row row_news rel">
                     @include('partials.items',array('items' => $items, 'class' => 'col-md-4'))
                 </div>
                 @if(isset($pagination))
@@ -40,3 +40,16 @@
 </div><!-- ers-content -->
 @stop() 
 
+
+@section('scripts')
+<script type="text/javascript">
+    $('.row_news').isotope({
+        layoutMode: 'packery',
+        packery: {
+            columnWidth: '.col-md-4',
+        },            
+        percentPosition: true
+        
+    });
+</script> 
+@stop()

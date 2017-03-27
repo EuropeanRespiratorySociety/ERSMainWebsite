@@ -97,7 +97,7 @@ Route::group(['prefix' => 'the-society/news'], function () {
     });
 
 Route::group(['prefix' => 'congress-and-events'], function () {
-    Route::get('courses', 'CourseController@index');
+    Route::get('courses', 'RedirectController@courses');
     Route::get('ers-research-seminars', 'RedirectController@researchSeminars');
     Route::get('ers-presidential-summits', 'ResearchController@summits');
     Route::get('ers-presidential-summits/{slug}', 'ResearchController@showRS');

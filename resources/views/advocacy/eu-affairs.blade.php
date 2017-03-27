@@ -15,6 +15,23 @@
                 </div>
                 @endif
             </div>
+
+            <div class="main-content" style="overflow: hidden; ">
+                @if($category->title == "News and Features")
+                    <div class="page-head">
+                        <h2 class="">Latest News</h2>
+                    </div>
+                @endif
+                    <div class="row row_news rel">
+                        @include('partials.items',array('items' => $items, 'class' => 'col-md-4'))
+                    </div>
+                @if(isset($pagination))
+                    <div class="row">
+                        @include('partials.pagination',array('category' => $category, isset($pagination) ? $pagination : null))
+                    </div>
+                @endif
+            </div>
+
         </div>
 @include('advocacy.president-summit', array('alliances' => $category->sponsorsAlliances, 'class' => 'col-md-3'))
     </div>
