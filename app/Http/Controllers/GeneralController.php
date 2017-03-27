@@ -80,7 +80,7 @@ class GeneralController extends Controller
             $this->CC->setCanonical($item[0]->_qname);
         }
 
-        $results = $this->CC->getCategory($item[0]->_qname);
+        $results = $this->CC->getAssociation($item[0]->_qname);
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  $items;
 
@@ -102,7 +102,7 @@ class GeneralController extends Controller
             $this->CC->setCanonical($item[0]->_qname);
         }
 
-        $results = $this->CC->getCategory($item[0]->_qname);
+        $results = $this->CC->getAssociation($item[0]->_qname);
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  $items;
 
@@ -124,7 +124,7 @@ class GeneralController extends Controller
             $this->CC->setCanonical($item[0]->_qname);
         }
 
-        $results = $this->CC->getCategory($item[0]->_qname);
+        $results = $this->CC->getAssociation($item[0]->_qname);
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  $items;
 
@@ -147,7 +147,7 @@ class GeneralController extends Controller
             $this->CC->setCanonical($item[0]->_qname);
         }
 
-        $results = $this->CC->getCategory($item[0]->_qname);
+        $results = $this->CC->getAssociation($item[0]->_qname);
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  $items;
 
@@ -170,7 +170,7 @@ class GeneralController extends Controller
             $this->CC->setCanonical($item[0]->_qname);
         }
 
-        $results = $this->CC->getCategory($item[0]->_qname);
+        $results = $this->CC->getAssociation($item[0]->_qname);
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  $items;
 
