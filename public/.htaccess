@@ -1,3 +1,23 @@
+# ----------------------------------------------------------------------
+# | Folder protection                                                  |
+# ----------------------------------------------------------------------
+
+# This is only needed for the staging server
+
+# Order deny,allow
+# Deny from all
+# Allow from installatron.infomaniak.com
+# AuthType Digest
+# AuthName "Only authorized users"
+# AuthUserFile "/home/clients/74d8b4b64a924ae990bc3821c8a5961d/staging/public/.htdigest"
+# Require valid-user
+# Satisfy Any
+# checksum=afd3b487757b415d278e05b1478d5379
+
+# ----------------------------------------------------------------------
+# | Cross domain                                                       |
+# ----------------------------------------------------------------------
+
 <FilesMatch ".(eot|ttf|otf|woff)">
     Header set Access-Control-Allow-Origin "*"
 </FilesMatch>
@@ -983,7 +1003,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         # M
         Redirect 301 /membership https://www.ersnet.org/the-society/membership
         # P
-        Redirect 301 /plainpackaging https://www.ersnet.org/advocacy/eu-affairs/join-us-support-plain-packaging-in-your-country 
+        Redirect 301 /plainpackaging https://www.ersnet.org/advocacy/eu-affairs/plain-packaging-protects-our-youth-support-the-campaign 
         # N
         Redirect 301 /ntmaward https://www.ersnet.org/professional-development/grants-and-sponsorships/medical-education-grant
         # R
@@ -1054,6 +1074,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
 
     RewriteCond %{HTTP:X-Forwarded-Proto} !https
     RewriteCond %{HTTP_HOST} !^old.ersnet.org$
+    RewriteCond %{HTTP_HOST} !^staging.ersnet.org$
     RewriteRule (.*) https://www.ersnet.org/$1 [R=301,L]
     
     # wrong domain to use www.

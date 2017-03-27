@@ -33,6 +33,12 @@
     @if($item->nonErsCalendarItem)
         <span class="label label-danger" style="width:100%">Non-ERS Event</span>
     @endif
+    @if($item->nationalSocietyEvent)
+        <span class="label label-danger" style="width:100%">National Society Event</span>
+    @endif
+    @if($item->regionalSocietyEvent)
+        <span class="label label-danger" style="width:100%">Regional Society Event</span>
+    @endif
     @if($item->ersEndorsedEvent)    
         <span class="label label-success" style="width:100%">ERS Endorsed Event</span>
     @endif

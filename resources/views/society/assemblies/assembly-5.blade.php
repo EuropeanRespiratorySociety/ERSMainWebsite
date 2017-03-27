@@ -17,8 +17,11 @@
               <p >Assembly Early Career representative: {!! Html::mailto('mathioudakisag@gmail.com', 'Alexander Mathioudakis') !!}</p>
             </div>
             <div class="col-md-6 center-block lead">
-              A substantial number of pharmacologists and basic scientists have joined the clinicians in Assembly 5. Although the Assembly focuses on asthma and, increasingly, on chronic obstructive pulmonary disease (COPD), members also have an interest in other diseases with allergic and immunological components. <br>
-The Assembly is comprised of the following three groups:
+              A substantial number of pharmacologists and basic scientists have joined the clinicians in Assembly 5.  The major disease focus of the Assembly is translational research in asthma, COPD and cough with additional interests in non-CF bronchiectasis, bronchiolitis and upper airways.
+              <br><br>
+              The groups within the Assembly examine the immunology and pathobiology of these diseases; monitoring of disease and devices for drug delivery; the pharmacology of drugs in disease and in models of disease; and the use of big data and systems analysis of chronic airways diseases. The Assembly collaborates with other Assemblies in areas of joint interest including cell and molecular biology, paediatrics, infection and occupation and epidemiology.
+              <br><br>
+              The Assembly is comprised of the following three groups:
 
             </div>
 

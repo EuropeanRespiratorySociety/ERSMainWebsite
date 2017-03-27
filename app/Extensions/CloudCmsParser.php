@@ -25,9 +25,9 @@ class CloudCmsParser
     }
 
 	public function parse($items, $lead = false){
-          if(empty($items) && App::environment() != 'local' && request()->path() != "search"){
-                abort(404);
-            }
+        //   if(empty($items) && App::environment() != 'local' && request()->path() != "search"){
+        //         abort(404);
+        //     }
             foreach ($items as $key => $i){
                 //$item += $this->model;
                 $item = array_replace_recursive($this->model, $i);
@@ -305,7 +305,7 @@ class CloudCmsParser
     		$string = explode("\n", $string, 2);
     		$string = $string[0]. $append;
     	}
-
+        
     	return $string;
 
     }

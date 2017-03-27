@@ -26,6 +26,7 @@ class GeneralController extends Controller
      */
     public function euAffairs()
     { 
+        $type = 'ers:category-association';
         $field = "_system.created_on";
         $direction = 1;
 
@@ -36,7 +37,7 @@ class GeneralController extends Controller
             $this->CC->setCanonical($params['category']->_qname, 'advocacy/eu-affairs');
          }
 
-        $results = $this->CC->getCategorySorted($this->euAffairs, $field, $direction);
+        $results = $this->CC->getAssociationSorted($this->euAffairs, $type, $field, $direction);
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] = $items; 
 
@@ -56,7 +57,7 @@ class GeneralController extends Controller
         //     $this->CC->setCanonical($params['category']->_qname, 'advocacy/eu-affairs');
         // }
 
-        $results = $this->CC->getCategory($this->euProjects);
+        $results = $this->CC->getAssociation($this->euProjects);
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] = $items; 
 
@@ -188,7 +189,7 @@ class GeneralController extends Controller
         $item = $this->CC->parseItems($results['rows']);
         $params['item'] = $item[0]; 
 
-        $results = $this->CC->getCategory($params['item']->_qname);
+        $results = $this->CC->getAssociation($params['item']->_qname);
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] = $items;
         return view('carrer.grants-and-sponsorships')->with($params);
@@ -208,7 +209,7 @@ class GeneralController extends Controller
             $this->CC->setCanonical($item[0]->_qname);
         }
 
-        //$results = $this->CC->getCategory($item[0]->_qname);
+        //$results = $this->CC->getAssociation($item[0]->_qname);
         //$items = $this->CC->parseItems($results['rows']);
         //temporary fix
         $params['items'] =  [];
@@ -231,7 +232,7 @@ class GeneralController extends Controller
             $this->CC->setCanonical($item[0]->_qname);
         }
 
-        $results = $this->CC->getCategory($item[0]->_qname);
+        $results = $this->CC->getAssociation($item[0]->_qname);
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  $items;
 
@@ -254,7 +255,7 @@ class GeneralController extends Controller
         }
 
         //temporary fix
-        //$results = $this->CC->getCategory($item[0]->_qname);
+        //$results = $this->CC->getAssociation($item[0]->_qname);
         //Maybe pass a param to identify that it is a category
         //$items = $this->CC->parseItems($results['rows'], true);
         //$params['items'] =  $items;
@@ -278,7 +279,7 @@ class GeneralController extends Controller
             $this->CC->setCanonical($item[0]->_qname);
         }
 
-        $results = $this->CC->getCategory($item[0]->_qname);
+        $results = $this->CC->getAssociation($item[0]->_qname);
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  $items;
 
@@ -303,7 +304,7 @@ class GeneralController extends Controller
         }
 
         if($item[0]->hasRelatedArticles > 0){
-            $related = $this->CC->getRelatedArticle($item[0]->_qname);
+            $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
             $relatedItems = $this->CC->parseItems($related['rows']);
             $params['relatedItems'] =  (object) $relatedItems;
         }

@@ -71,7 +71,7 @@ class FellowshipController extends Controller
              $this->CC->setCanonical($params['category']->_qname, 'career-development/fellowships/short-term-research-training-fellowships');
         }
 
-        $results = $this->CC->getCategory($this->shortTerm);
+        $results = $this->CC->getAssociation($this->shortTerm);
         
         $items = '';
         if(!empty($results['rows'])){
@@ -98,7 +98,7 @@ class FellowshipController extends Controller
              $this->CC->setCanonical($params['category']->_qname, 'career-development/fellowships/long-term-research-fellowships');
         }
 
-        $results = $this->CC->getCategory($this->longTerm);
+        $results = $this->CC->getAssociation($this->longTerm);
         
         $items = '';
         if(!empty($results['rows'])){
@@ -125,7 +125,7 @@ class FellowshipController extends Controller
             $this->CC->setCanonical($params['category']->_qname, 'career-development/fellowships/ers-fellowships-in-industry');
         }
 
-        $results = $this->CC->getCategory($this->industry);
+        $results = $this->CC->getAssociation($this->industry);
         
         $items = '';
         if(!empty($results['rows'])){
@@ -156,7 +156,7 @@ class FellowshipController extends Controller
         }
         
         if($item[0]->hasRelatedArticles > 0){
-            $related = $this->CC->getRelatedArticle($item[0]->_qname);
+            $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
             $relatedItems = $this->CC->parseItems($related['rows']);
             $params['relatedItems'] =  (object) $relatedItems;
         }

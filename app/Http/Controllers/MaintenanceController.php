@@ -5,8 +5,9 @@ namespace App\Http\Controllers;
 //Laravel Defaults
 use App;
 use Artisan;
-use Iluminate\Http\Request;
+use Illuminate\Http\Request;
 use App\Http\Requests;
+use Log;
 
 use App\Extensions\CloudCmsHelper as CC;
 
@@ -37,29 +38,33 @@ class MaintenanceController extends Controller
     * as well as the Htpp cache, but not the views.
     *
     */
-    public function cache(){
+    public function cache(Request $request){
         //param: url=https://www.ersnet.org/the/url/to/clean
-        $url = \Input::get('url', false);
+        $url = $request->input('url', false);
         //param: all=true
-        $all = \Input::get('all', false);
+        $all = $request->input('all', false);
         $cleaned = false;
+        $message = '';
 
         if($url){
-           $cleaned = App::make('http_cache.store')->purge($url);
+            //$cleaned = App::make('http_cache.store')->purge($url);
+            //temporary fix
+            $dir = App::make('http_cache.cache_dir');
+            $httpcache = new \Symfony\Component\HttpKernel\HttpCache\Store($dir);
+            $cleaned = $httpcache->purge($url);
+            $cleaned ? $message = "The cache has been cleaned" : $message = "The cache has not been cleaned";
         }
 
         if($all){
             $cleaned = \File::cleanDirectory(app('http_cache.cache_dir'));
             Artisan::call('cache:clear');
             //Artisan::call('view:clear');
-            return $cleaned ? "The cache has been emptied" : "The cache has not been emptied";
+            $cleaned ? $message = "The cache has been emptied" : $message = "The cache has not been emptied";
 
         }
 
-        if(!$cleaned){
-            return "The cache has not been cleaned";
-           }
-       return "The cache has been cleaned";
+        Log::info('The cache url has been called by: '. $request->ip() . ' - The method used is: ' . $request->method() . ' - Message: '. $message);
+        return $message;
     }
 
     /**

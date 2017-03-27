@@ -86,7 +86,7 @@ class NewsController extends Controller
             $this->CC->setCanonical($category[0]->_qname, 'the-society/news/respiratory-worldwide');
         }
 
-        $results = $this->CC->getCategorySorted($this->respiratoryWorldWide, "_system.created_on.ms", -1);
+        $results = $this->CC->getAssociationSorted($this->respiratoryWorldWide, 'ers:category-association', '_system.created_on.ms', -1);
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  (object) $items; 
    
@@ -109,7 +109,7 @@ class NewsController extends Controller
             $this->CC->setCanonical($category[0]->_qname, 'the-society/news/respiratory-matters');
         }        
 
-        $results = $this->CC->getCategorySorted($this->respiratoryMatters, "_system.created_on.ms", -1);
+        $results = $this->CC->getAssociationSorted($this->respiratoryMatters,'ers:category-association', '_system.created_on.ms', -1);
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  (object) $items; 
    
@@ -137,13 +137,13 @@ class NewsController extends Controller
         }
 
         if($item[0]->hasRelatedArticles > 0){
-            $related = $this->CC->getRelatedArticle($item[0]->_qname);
+            $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
             $relatedItems = $this->CC->parseItems($related['rows']);
             $params['relatedItems'] =  (object) $relatedItems;
         }
 
         if($item[0]->hasAuthor > 0){
-            $author = $this->CC->getAuthor($item[0]->_qname);
+            $author = $this->CC->getAssociation($item[0]->_qname, 'ers:author-association');
 
             if(!empty($author['rows'])){      
                 $authorItem = $this->CC->parseItems($author['rows']);
@@ -170,7 +170,7 @@ class NewsController extends Controller
             $this->CC->setCanonical($item[0]->_qname, 'authors'.$slug);
         }
 
-        $items = $this->CC->getAuthoredArticles($params['item']->_qname);
+        $items = $this->CC->getAssociation($params['item']->_qname, 'ers:author-association');
         if(!empty($items['rows'])){
             $authoredItems = $this->CC->parseItems($items['rows']);  
             $params['items'] = (object) $authoredItems;

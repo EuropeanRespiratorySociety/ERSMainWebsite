@@ -31,7 +31,7 @@ class LscController extends Controller
         }
 
         if($item[0]->hasRelatedArticles > 0){
-            $related = $this->CC->getRelatedArticle($item[0]->_qname);
+            $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
             $relatedItems = $this->CC->parseItems($related['rows']);
             $params['relatedItems'] =  (object) $relatedItems;
         }
@@ -56,7 +56,7 @@ class LscController extends Controller
         }
 
         if($item[0]->hasRelatedArticles > 0){
-            $related = $this->CC->getRelatedArticle($item[0]->_qname);
+            $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
             $relatedItems = $this->CC->parseItems($related['rows']);
             $params['relatedItems'] =  (object) $relatedItems;
         }
@@ -81,7 +81,7 @@ class LscController extends Controller
             $this->CC->setCanonical($item[0]->_qname);
         }
         if($item[0]->hasRelatedArticles > 0){
-            $related = $this->CC->getRelatedArticle($item[0]->_qname);
+            $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
             $relatedItems = $this->CC->parseItems($related['rows']);
             $params['relatedItems'] =  (object) $relatedItems; 
         }    

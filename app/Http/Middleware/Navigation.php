@@ -51,7 +51,7 @@ class Navigation
                     $menu->assemblies->add('1. Clinical', 'the-society/assemblies#clinical' );
                     $menu->assemblies->add('2. Respiratory Intensive Care', 'the-society/assemblies#respiratory-intensive-care' );
                     $menu->assemblies->add('3. Cell and Molecular Biology', 'the-society/assemblies#cell-and-molecular-biology' );
-                    $menu->assemblies->add('4. Clinical Physiology, Sleep and Pulomonary Circulation', 'the-society/assemblies#clinical-physiology' );
+                    $menu->assemblies->add('4. Clinical Physiology, Sleep and Pulmonary Circulation', 'the-society/assemblies#clinical-physiology' );
                     $menu->assemblies->add('5. Airway Diseases', 'the-society/assemblies#airway-diseases' );
                     $menu->assemblies->add('6. Occupation and Epidemiology', 'the-society/assemblies#occupation-and-epidemiology' );
                     $menu->assemblies->add('7. Paediatrics', 'the-society/assemblies#paediatrics' );
@@ -130,8 +130,6 @@ class Navigation
                 $menu->careerDevelopment->add('Grants and Sponsorships','career-development/grants-and-sponsorships');
                 $menu->careerDevelopment->add('E-learning','http://www.ers-education.org/home.aspx')
                                             ->link->attr(array('target' => '_blank'));                 
-                $menu->careerDevelopment->add('Junior Members','http://juniors.ersnet.org')
-                                            ->link->attr(array('target' => '_blank')); 
                 $menu->careerDevelopment->add('Respipedia','http://respipedia.ers-education.org/home.aspx')
                                             ->link->attr(array('target' => '_blank'));               
                 $menu->careerDevelopment->add('Accreditation','career-development/accreditation');
