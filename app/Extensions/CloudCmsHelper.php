@@ -95,16 +95,16 @@ class CloudCmsHelper
     * @param string $type (Optional - type of association e.g. ers:category-association)
     * @return array
     */
-    public function getAssociation($_qname, $type = 'ers:category-association' ){
+    public function getAssociation($_qname, $type = 'ers:category-association', $skip = 0 ){
         $query = '{ "unPublished": { "$ne": true}}';
 
         $results = CC::nodes()
             ->queryRelatives($_qname, $query)
             ->addParams(['type' => $type])
             ->addParams(['full' => 'true'])
+            ->addParams(['skip' => $skip])
             ->get();
-        $results = $this->validateResults($results);      
-        return $results;    
+        return $this->validateResults($results);    
     }
 
     /**
@@ -125,8 +125,7 @@ class CloudCmsHelper
             ->addParams(['limit' => 100]) 
             ->addParams(['full' => 'true'])
             ->get();    
-        $results = $this->validateResults($results);       
-        return $results;    
+        return $this->validateResults($results);        
     }
 
     /**
@@ -140,8 +139,7 @@ class CloudCmsHelper
                     ->addParams(['full' => 'true'])
                     ->addParams(['metadata' => 'true'])   
                     ->get(); 
-        $result = $this->validateResults($result);               
-        return $result;            
+        return $this->validateResults($result);            
 	}
 
     /**
@@ -162,8 +160,7 @@ class CloudCmsHelper
                         ->query($query)
                         ->addParams(['metadata' => 'true'])
                         ->get();
-            $results = $this->validateResults($results);               
-            return $results; 
+            return $this->validateResults($results); 
         } 
         if($skip === false){
             $results = CC::nodes()
@@ -172,8 +169,7 @@ class CloudCmsHelper
                         ->addParams(['metadata' => 'true'])
                         ->addParams(['sort' => '{"_system.created_on.ms": '.$sort.'}']) 
                         ->get();
-            $results = $this->validateResults($results);                          
-            return $results; 
+            return $this->validateResults($results); 
         } 
         $results = CC::nodes()
                         ->query($query)
@@ -182,8 +178,7 @@ class CloudCmsHelper
                         ->addParams(['sort' => '{"_system.created_on.ms": '.$sort.'}']) 
                         ->addParams(['skip' => $skip]) 
                         ->get();
-        $results = $this->validateResults($results);                          
-        return $results; 
+        return $this->validateResults($results); 
 
     }
     /**

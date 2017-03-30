@@ -140,15 +140,15 @@ Route::group(['prefix' => 'career-development'], function () {
     Route::get('advocacy/policy-areas', function(){
         return view('advocacy.policy-areas');
     });
-    Route::get('advocacy/policy-areas/tobacco-control', 'GeneralController@tobaccoControl');
+    Route::get('advocacy/policy-areas/tobacco-control', 'GeneralController@advocacyActivities');
     Route::get('advocacy/policy-areas/tobacco-control/{slug}', 'GeneralController@show');
-    Route::get('advocacy/policy-areas/environment-and-health', 'GeneralController@environmentAndHealth');  
+    Route::get('advocacy/policy-areas/environment-and-health', 'GeneralController@advocacyActivities');  
     Route::get('advocacy/policy-areas/environment-and-health/{slug}', 'GeneralController@show');
-    Route::get('advocacy/policy-areas/science-and-healthcare', 'GeneralController@scienceAndHealthcare');
-    Route::get('advocacy/policy-areas/science-and-healthcare/{slug}', 'GeneralController@show');              
-    Route::get('advocacy/policy-areas/tuberculosis', 'GeneralController@tuberculosis');  
+    Route::get('advocacy/policy-areas/science-and-healthcare', 'GeneralController@advocacyActivities');
+    Route::get('advocacy/policy-areas/science-and-healthcare/{slug}', 'GeneralController@show');             
+    Route::get('advocacy/policy-areas/tuberculosis', 'GeneralController@advocacyActivities');  
     Route::get('advocacy/policy-areas/tuberculosis/{slug}', 'GeneralController@show');
-    Route::get('advocacy/policy-areas/chronic-diseases', 'GeneralController@chronicDiseases');  
+    Route::get('advocacy/policy-areas/chronic-diseases', 'GeneralController@advocacyActivities');  
     Route::get('advocacy/policy-areas/chronic-diseases/{slug}', 'GeneralController@show');
     Route::get('advocacy/policy-areas/{slug}', 'GeneralController@show');
     Route::get('advocacy/{slug}', 'GeneralController@show');

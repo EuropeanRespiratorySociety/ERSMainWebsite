@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use Iluminate\Http\Request;
 use App\Http\Requests;
 
+use Input;
 use App\Extensions\CloudCmsHelper as CC;
 
 class GeneralController extends Controller
@@ -65,71 +66,6 @@ class GeneralController extends Controller
     }
 
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function tobaccoControl()
-    { 
-        $results = $this->CC->getItem('tobacco-control');
-        $item = $this->CC->parseItems($results['rows']);
-        $params['category'] =  (object) $item[0]; 
-
-        if(!$item[0]->url || !$item[0]->uri){
-            $this->CC->setCanonical($item[0]->_qname);
-        }
-
-        $results = $this->CC->getAssociation($item[0]->_qname);
-        $items = $this->CC->parseItems($results['rows']);
-        $params['items'] =  $items;
-
-        return view('advocacy.advocacy-news')->with($params);
-    }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function environmentAndHealth()
-    { 
-        $results = $this->CC->getItem('environment-and-health');
-        $item = $this->CC->parseItems($results['rows']);
-        $params['category'] =  (object) $item[0]; 
-
-        if(!$item[0]->url || !$item[0]->uri){
-            $this->CC->setCanonical($item[0]->_qname);
-        }
-
-        $results = $this->CC->getAssociation($item[0]->_qname);
-        $items = $this->CC->parseItems($results['rows']);
-        $params['items'] =  $items;
-
-        return view('advocacy.advocacy-news')->with($params);
-    }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function scienceAndHealthcare()
-    { 
-        $results = $this->CC->getItem('science-and-healthcare');
-        $item = $this->CC->parseItems($results['rows']);
-        $params['category'] =  (object) $item[0]; 
-
-        if(!$item[0]->url || !$item[0]->uri){
-            $this->CC->setCanonical($item[0]->_qname);
-        }
-
-        $results = $this->CC->getAssociation($item[0]->_qname);
-        $items = $this->CC->parseItems($results['rows']);
-        $params['items'] =  $items;
-
-        return view('advocacy.advocacy-news')->with($params);
-    }
 
 
     /**
@@ -137,9 +73,12 @@ class GeneralController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function tuberculosis()
+    public function advocacyActivities()
     { 
-        $results = $this->CC->getItem('tuberculosis');
+        $page = Input::get('page', false);
+        $limit = Input::get('limit', 25);
+
+        $results = $this->CC->getItem(explode('/',request()->path())[2]);
         $item = $this->CC->parseItems($results['rows']);
         $params['category'] =  (object) $item[0]; 
 
@@ -147,7 +86,11 @@ class GeneralController extends Controller
             $this->CC->setCanonical($item[0]->_qname);
         }
 
-        $results = $this->CC->getAssociation($item[0]->_qname);
+        $toPaginate = $this->CC->getAssociation($item[0]->_qname);
+        $pagination = $this->CC->paginate($toPaginate, $page, $limit);
+        $params['pagination'] = $pagination;
+
+        $results = $this->CC->getAssociation($item[0]->_qname, 'ers:category-association', $pagination->skip);
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  $items;
 
@@ -155,27 +98,7 @@ class GeneralController extends Controller
     }
 
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function chronicDiseases()
-    { 
-        $results = $this->CC->getItem('chronic-diseases');
-        $item = $this->CC->parseItems($results['rows']);
-        $params['category'] =  (object) $item[0]; 
 
-        if(!$item[0]->url || !$item[0]->uri){
-            $this->CC->setCanonical($item[0]->_qname);
-        }
-
-        $results = $this->CC->getAssociation($item[0]->_qname);
-        $items = $this->CC->parseItems($results['rows']);
-        $params['items'] =  $items;
-
-        return view('advocacy.advocacy-news')->with($params);
-    }
 
 
     /**

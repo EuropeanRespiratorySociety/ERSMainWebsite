@@ -44,7 +44,9 @@
                               <li data-menuanchor="chronic-diseases">
                                   <a href="advocacy/policy-areas#chronic-diseases">Chronic diseases</a>
                               </li>
-
+                              <li data-menuanchor="ers-presidential-summits">
+                                  <a href="advocacy/policy-areas#ers-presidential-summits">Presidential Summits</a>
+                              </li>
                           </ul>
                       </div>
                   </div>
@@ -72,6 +74,9 @@
   		<!-- Section 5 -->
       @include('advocacy.policy-areas.chronic-diseases')
 
+      <!-- Section 6 -->
+      @include('advocacy.policy-areas.presidential-summits-slide')
+
   	</div>
   </div>
 
@@ -86,12 +91,12 @@
   <!--script src="../js/fullpage.js" type="text/javascript"></script-->
   <!--script src="../js/app-assemblies.js" type="text/javascript"></script-->
 
-  <!--script src="http://erstemplate.app/js/fullpage.js" type="text/javascript"></script-->
-  <!-- script src="http://erstemplate.app/js/app-policy-areas.js" type="text/javascript"></script -->
+  <script src="http://erstemplate.app/js/fullpage.js" type="text/javascript"></script>
+  <script src="http://erstemplate.app/js/app-policy-areas.js" type="text/javascript"></script>
 
 
-  <script src="https://bootstrap.ersnet.org/js/fullpage.js" type="text/javascript"></script>
-  <script src="https://bootstrap.ersnet.org/js/app-policy-areas.js" type="text/javascript"></script>
+  <!-- script src="https://bootstrap.ersnet.org/js/fullpage.js" type="text/javascript"></script -->
+  <!-- script src="https://bootstrap.ersnet.org/js/app-policy-areas.js" type="text/javascript"></script -->
 
   <script type="text/javascript">
     		$(document).ready(function(){

@@ -14,8 +14,8 @@
             @endif
         </div>
     </div>
-
-
+    
+    @if($category->title != "EU Affairs" )
     <div class="row">
         <div class="col-md-12" >
             <div class="card card-primary card-padded" style="margin-top:20px;">
@@ -28,6 +28,7 @@
             </div>
         </div>
     </div>
+    @endif
 
 
 

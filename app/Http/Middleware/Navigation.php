@@ -145,7 +145,6 @@ class Navigation
 
             $menu->add('Advocacy and EU Affairs','#advocacy');
                 $menu->advocacyAndEUAffairs->add('EU-Affairs','advocacy/eu-affairs');
-                $menu->advocacyAndEUAffairs->add('EU-Projects','advocacy/eu-projects');
                 $menu->advocacyAndEUAffairs->add('Policy Areas','advocacy/policy-areas');
                     $menu->policyAreas->add('The ERS Tobacco Control Committee','advocacy/policy-areas/the-ers-tobacco-control-committee')->link->attr(array('style' => 'display:none'));;
                     $menu->policyAreas->add('Environment and Health Committee','advocacy/policy-areas/environment-and-health-committee')->link->attr(array('style' => 'display:none'));
@@ -154,6 +153,8 @@ class Navigation
                     $menu->policyAreas->add('Science and healthcare', 'advocacy/policy-areas/science-and-healthcare')->link->attr(array('style' => 'display:none'));
                     $menu->policyAreas->add('Tuberculosis', 'advocacy/policy-areas/tuberculosis')->link->attr(array('style' => 'display:none'));
                     $menu->policyAreas->add('Chronic diseases', 'advocacy/policy-areas/chronic-diseases')->link->attr(array('style' => 'display:none'));
+                $menu->advocacyAndEUAffairs->add('Advocacy Materials','advocacy/advocacy-materials');                
+                $menu->advocacyAndEUAffairs->add('EU-Projects','advocacy/eu-projects');
 
                  
 
