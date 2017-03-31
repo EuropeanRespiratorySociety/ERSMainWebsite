@@ -31,11 +31,11 @@
         {{ $item->title }}
     @endif  
     </h3>
-    @if($item->sponsors->text && $item->contentType == "event_grant")
-        <p class="sponsor"><span class="icon icon-building"></span> {{$item->sponsors->text}}</p>
+    @if($item->sponsors[0]->text && $item->contentType == "event_grant")
+        <p class="sponsor"><span class="icon icon-building"></span> {{$item->sponsors[0]->text}}</p>
     @endif 
-    @if($item->sponsors->text && $item->contentType == "event_award")
-        <p class="sponsor"><span class="icon icon-building"></span> {{$item->sponsors->text}}</p>
+    @if($item->sponsors[0]->text && $item->contentType == "event_award")
+        <p class="sponsor"><span class="icon icon-building"></span> {{$item->sponsors[0]->text}}</p>
     @endif 
     @if($item->createdOn && $item->type)
         @if(($item->type == "News" && !$home) || ($home && !$item->doNotDisplayCreatedOnOnHomepage && $item->type == "News"))

@@ -23,9 +23,9 @@
           <div class="modal-footer">
             @if($item->sponsors)
             <div class="">
-                {{--<h3 class="">Sponsor: {{$item->sponsors->text}}</h3>--}}
-                @if($item->sponsors->image)
-                    <img style="height:60px;" src="{{ $item->sponsors->image}}" class="pull-right img-responsive">
+                {{--<h3 class="">Sponsor: {{$item->sponsors[0]->text}}</h3>--}}
+                @if($item->sponsors[0]->image)
+                    <img style="height:60px;" src="{{ $item->sponsors[0]->image}}" class="pull-right img-responsive">
                 @endif    
                 <i class="pull-right icon-ers icon" style="font-size:60px; color:#d0043c;">&nbsp;</i>
             </div>

@@ -105,13 +105,15 @@ class CloudCmsParser
 
                     //Specific fields
                     if($item->sponsors){
-                        $sponsor = $item->sponsors[0];
-                        $item->sponsors = new \stdClass;
-                        if($sponsor->image){
-                            $img = CC::nodes()->getImage($sponsor->image->qname);
-                            $item->sponsors->image = $img->imageUrl."?name=image500&size=500";  
-                        } else { $item->sponsors->image = false; }
-                        $sponsor->text ? $item->sponsors->text = $sponsor->text : $item->sponsors->text = false;
+                        foreach($item->sponsors as $sponsor){
+                            if($sponsor->image){
+                                $img = CC::nodes()->getImage($sponsor->image->qname);
+                                $sponsor->image = $img->imageUrl."?name=image500&size=500";  
+                            } else { 
+                                $sponsor->image = false; 
+                            }
+                            $sponsor->text ?? false;
+                        }  
                     }
 
                     if($item->flags){
