@@ -114,14 +114,14 @@
                 <p>Any questions? Please contact{!! Html::mailto('scientific@ersnet.org', 'scientific@ersnet.org') !!}</p>
               </div>
             </div>
-            @if($item->sponsors->text || $item->sponsors->image)
+            @if($item->sponsors[0]->text || $item->sponsors[0]->image)
               <div class="sponsor">
               <hr>
-                @if($item->sponsors->image)
-                 <p><img src="{{ $item->sponsors->image }}" class="img-rounded img-responsive" style="width:200px;"></p>
+                @if($item->sponsors[0]->image)
+                 <p><img src="{{ $item->sponsors[0]->image }}" class="img-rounded img-responsive" style="width:200px;"></p>
                 @endif
-                @if($item->sponsors->text)
-                  <p>{{$item->sponsors->text}}</p>
+                @if($item->sponsors[0]->text)
+                  <p>{{$item->sponsors[0]->text}}</p>
                 @endif  
               </div>
           @endif

@@ -110,11 +110,11 @@
          @if($item->image)
           <hr>
          @endif
-        @if($item->sponsors->text)
-          <h4>{{$item->sponsors->text}}</h4>
+        @if($item->sponsors[0]->text)
+          <h4>{{$item->sponsors[0]->text}}</h4>
         @endif
-        @if($item->sponsors->image)
-          <p><img src="{{ $item->sponsors->image }}" class="img-rounded" style="width:200px;"></p>
+        @if($item->sponsors[0]->image)
+          <p><img src="{{ $item->sponsors[0]->image }}" class="img-rounded" style="width:200px;"></p>
         @endif  
       @endif
 

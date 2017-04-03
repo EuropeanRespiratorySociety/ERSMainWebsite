@@ -67,15 +67,15 @@
             <p><img src="../images/news/respiratory-logo.jpg" class="img-rounded img-responsive" style="width:350px;"></p>
            @endif
         @endif        
-        @if($item->sponsors->text)
+        @if($item->sponsors[0]->text)
           @if($item->image)
             <hr>
           @endif
-          @if($item->sponsors->image)
-              <p><img src="{{ $item->sponsors->image }}" class="img-rounded" style="width:200px;"></p>
+          @if($item->sponsors[0]->image)
+              <p><img src="{{ $item->sponsors[0]->image }}" class="img-rounded" style="width:200px;"></p>
           @endif
-          @if($item->sponsors->text)
-            <h4>{{$item->sponsors->text}}</h4>
+          @if($item->sponsors[0]->text)
+            <h4>{{$item->sponsors[0]->text}}</h4>
           @endif
         @endif
         @if($item->loc->lat && $item->loc->long)
