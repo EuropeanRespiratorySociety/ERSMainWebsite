@@ -1,4 +1,5 @@
 /vendor
+/server
 /server/node_modules
 /server/gitana.json
 /server/.env
