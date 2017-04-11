@@ -109,6 +109,7 @@ class Navigation
 
 
             $menu->add('Professional development','#professional-development');
+                $menu->professionalDevelopment->add('Webinar','professional-development/ers-webinar-discussion-of-severe-asthma-with-ers-experts');
                 $menu->professionalDevelopment->add('Fellowships','professional-development/fellowships');
                 $menu->professionalDevelopment->add('HERMES projects','http://hermes.ersnet.org/projects.html')
                                             ->link->attr(array('target' => '_blank'));                 

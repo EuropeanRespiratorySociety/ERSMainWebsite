@@ -12,6 +12,7 @@
 			<div class="col-md-3">
 				<h2><a href="http://www.ers-education.org/home.aspx">e-Learning</a></h2>
 				<ul>
+					<li><a href="/professional-development/ers-webinar-discussion-of-severe-asthma-with-ers-experts" target="_blank">Webinar on severe asthma</a></li>
 					<li><a href="http://respipedia.ers-education.org/home.aspx" target="_blank">Respipedia</a></li>
 					<li><a href="http://www.ers-education.org/events.aspx" target="_blank">Slides and webcasts</a></li>
 					<li><a href="http://www.ers-education.org/e-learning/case-reports.aspx" target="_blank">Case reports</a> and <a href="http://www.ers-education.org/e-learning/procedure-videos.aspx" target="_blank">Videos</a></li>
