@@ -24,8 +24,14 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        @yield('meta')
-        @yield('structured-data')
+    @yield('meta')
+
+    <script> 
+    window['adrum-start-time']= new Date().getTime(); 
+    </script> 
+    <script src="/js/adrum.js"></script>    
+
+    @yield('structured-data')
     <script type="application/ld+json">
     {
       "@context": "http://schema.org",
