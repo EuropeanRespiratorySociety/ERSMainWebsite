@@ -2,7 +2,7 @@
 	<div class="main-content scientific-top">
 		<div class="row row_event">
 			<div class="col-md-8 top-left-col">
-				<div class="page-head"><h2>Scientific and educational meetings</h2></div>
+				<div class="page-head"><h2>Scientific and educational events</h2></div>
 				<div class="col-md-12 lead text-left">
 					We organise a range of scientific and educational events including the ERS International Congress, the largest conference in the respiratory field. 
 					Other events include courses, research seminars, the Lung Science Conference and, Sleep and Breathing conference.
