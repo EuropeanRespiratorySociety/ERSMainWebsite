@@ -124,7 +124,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Israel</strong><br>
-		            {!! Html::mailto('fireman@tasmc.health.gov.il', 'Elizabeth Fireman') !!}
+		            {!! Html::mailto('amirb@bmc.gov.il', 'Amir Bar Shai') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Japan</strong><br>
