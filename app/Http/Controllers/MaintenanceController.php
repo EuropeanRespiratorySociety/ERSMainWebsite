@@ -43,6 +43,7 @@ class MaintenanceController extends Controller
         $url = $request->input('url', false);
         //param: all=true
         $all = $request->input('all', false);
+        $all = $all === 'true'? true : false;
         $cleaned = false;
         $message = '';
 
@@ -62,8 +63,10 @@ class MaintenanceController extends Controller
             $cleaned ? $message = "The cache has been emptied" : $message = "The cache has not been emptied";
 
         }
-
-        Log::info('The cache url has been called by: '. $request->ip() . ' - The method used is: ' . $request->method() . ' - Message: '. $message);
+        if($cleaned){
+            Log::info('The cache url has been called by: '. $request->ip() . ' - The method used is: ' . $request->method() . ' - Message: '. $message);
+        }
+        
         return $message;
     }
 
