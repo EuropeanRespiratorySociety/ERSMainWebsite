@@ -63,10 +63,12 @@ class MaintenanceController extends Controller
             $cleaned ? $message = "The cache has been emptied" : $message = "The cache has not been emptied";
 
         }
-        if($cleaned){
-            Log::info('The cache url has been called by: '. $request->ip() . ' - The method used is: ' . $request->method() . ' - Message: '. $message);
+
+        if(!$cleaned){
+            $message = "Cache endpoint was called but nothing happened :(";
         }
         
+        Log::info('The cache url has been called by: '. $request->ip() . ' - The method used is: ' . $request->method() . ' - Message: '. $message);
         return $message;
     }
 
