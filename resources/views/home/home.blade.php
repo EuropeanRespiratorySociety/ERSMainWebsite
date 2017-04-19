@@ -32,7 +32,9 @@
     @include('home.home-sections.community')
 
     {{-- Start Section 3 --}} 
-    @include('home.home-sections.scientific', array('items' => $items['calendar'], 'first' => $items['firstEvent']))
+    @include('home.home-sections.scientific', array(
+        'items' => isset($items['calendar']) ? $items['calendar'] : false, 
+        'first' => isset($items['firstEvent']) ? $items['firstEvent'] : false ))
 
     {{-- Start Section 4 --}}  
     @include('home.home-sections.publications')
