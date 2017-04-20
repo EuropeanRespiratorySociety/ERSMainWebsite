@@ -32,7 +32,6 @@ class NewsController extends Controller
         $limit = Input::get('limit', 25);
         $category = $this->CC->getItem('news');
         $params['category'] = $this->CC->parseItems($category['rows'])[0];
-
         if(!$params['category']->url || !$params['category']->uri){
             $this->CC->setCanonical($category[0]['_qname'], 'the-society/news');
         }
@@ -130,7 +129,6 @@ class NewsController extends Controller
         $results = $this->CC->getItem($slug);
         $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0];
-
 
         if(!$item[0]->url || !$item[0]->uri){
             $this->CC->setCanonical($item[0]->_qname);
