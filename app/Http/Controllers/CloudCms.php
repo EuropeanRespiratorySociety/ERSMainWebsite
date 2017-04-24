@@ -33,7 +33,7 @@ private $headers;
                 ->listChildren($catnode)
                 ->addParams(['full' => 'true'])
                 ->addParams(['metadata' => 'true'])
-                ->addParams(['sort' => '{"_system.created_on.ms": -1}'])
+                ->addParams(['sort' => '{"_system.modified_on.ms": -1}'])
                 ->get();           
               //  dd($nodes);
         foreach ($nodes['rows'] as $key => $post) {

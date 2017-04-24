@@ -37,9 +37,9 @@
     @if($item->sponsors[0]->text && $item->contentType == "event_award")
         <p class="sponsor"><span class="icon icon-building"></span> {{$item->sponsors[0]->text}}</p>
     @endif 
-    @if($item->createdOn && $item->type)
+    @if($item->modifiedOn && $item->type)
         @if(($item->type == "News" && !$home) || ($home && !$item->doNotDisplayCreatedOnOnHomepage && $item->type == "News"))
-            <h4 class="date">{{ $item->createdOn }}</h4>
+            <h4 class="date">{{ $item->modifiedOn }}</h4>
         @endif
     @endif
     @if($item->eventLocation)
