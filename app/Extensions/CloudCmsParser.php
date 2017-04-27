@@ -192,7 +192,7 @@ class CloudCmsParser
                     $item->typeColor = $item->type ? $this->setTypeColor($item->type) : false;
                     $item->articleOneColumn = $item->articleOneColumn ?? false;
                     $item->createdOn = isset($item->_system->created_on->timestamp) ? $this->date->ersDate($item->_system->created_on->timestamp) : false;
-                    $item->modifiedOn = isset($item->_system->modified_on->timestamp) ? $this->date->ersDate($item->_system->created_on->timestamp) : false;
+                    $item->modifiedOn = isset($item->_system->modified_on->timestamp) ? $this->date->ersDate($item->_system->modified_on->timestamp) : false;
                     $item->calendar = $item->eventDate ? $this->date->calendar($item->eventDate) : false;
                     $item->ms = $item->_system->modified_on->ms ?? false;   
                     $item->shortLead = $item->leadParagraph ? $this->truncate(strip_tags(Markdown::parse($item->leadParagraph)), 145) : false;
