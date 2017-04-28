@@ -13,6 +13,7 @@ model:
     leadParagraph: false
     body: false
     articleOneColumn: false
+    displayModifiedOnDate: false
     doNotDisplayCreatedOn: false
     doNotDisplayCreatedOnOnHomepage: false
     comments: false

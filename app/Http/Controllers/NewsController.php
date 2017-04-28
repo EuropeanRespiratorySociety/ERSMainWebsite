@@ -86,7 +86,7 @@ class NewsController extends Controller
             $this->CC->setCanonical($category[0]->_qname, 'the-society/news/respiratory-worldwide');
         }
 
-        $results = $this->CC->getAssociationSorted($this->respiratoryWorldWide, 'ers:category-association', '_system.modified_on.ms', -1);
+        $results = $this->CC->getAssociationSorted($this->respiratoryWorldWide, 'ers:category-association', '_system.created_on.ms', -1);
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  (object) $items; 
    
@@ -109,7 +109,7 @@ class NewsController extends Controller
             $this->CC->setCanonical($category[0]->_qname, 'the-society/news/respiratory-matters');
         }        
 
-        $results = $this->CC->getAssociationSorted($this->respiratoryMatters,'ers:category-association', '_system.modified_on.ms', -1);
+        $results = $this->CC->getAssociationSorted($this->respiratoryMatters,'ers:category-association', '_system.created_on.ms', -1);
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  (object) $items; 
    

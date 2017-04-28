@@ -114,7 +114,7 @@ class CloudCmsHelper
     * @param string $field (Optional - the field to sort on)
     * @param int $direction (the sorting direction 1 or -1)
     */
-    public function getAssociationSorted($startNode, $type = 'ers:category-association', $field = "_system.modified_on.ms", $direction = 1){
+    public function getAssociationSorted($startNode, $type = 'ers:category-association', $field = "_system.created_on.ms", $direction = 1){
         $query = '{ "unPublished": { "$ne": true} }';
 
         $results = CC::nodes()
@@ -170,7 +170,7 @@ class CloudCmsHelper
                         ->query($query)  
                         ->addParams(['full' => 'true']) 
                         ->addParams(['metadata' => 'true'])
-                        ->addParams(['sort' => '{"_system.modified_on.ms": '.$sort.'}']) 
+                        ->addParams(['sort' => '{"_system.created_on.ms": '.$sort.'}']) 
                         ->get();
             $results = $this->validateResults($results);                          
             return $results; 
@@ -179,7 +179,7 @@ class CloudCmsHelper
                         ->query($query)
                         ->addParams(['full' => 'true']) 
                         ->addParams(['metadata' => 'true'])
-                        ->addParams(['sort' => '{"_system.modified_on.ms": '.$sort.'}']) 
+                        ->addParams(['sort' => '{"_system.created_on.ms": '.$sort.'}']) 
                         ->addParams(['skip' => $skip]) 
                         ->get();
         $results = $this->validateResults($results);                          
