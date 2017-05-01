@@ -61,8 +61,8 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/Emma_Flood.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('Emma.Flood@hse.ie', 'EMMA FLOOD') !!}</strong>
+					<img src="images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Jana de Brandt</strong>
 		            Assembly 9<br>
 		            </p>
 	        	</div>
