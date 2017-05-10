@@ -122,7 +122,7 @@ class CloudCmsHelper
             ->addParams(['type' => $type])
             ->addParams(['sort' => '{"'.$field.'": '.$direction.'}']) 
             ->addParams(['metadata' => 'true'])
-            ->addParams(['limit' => 100]) 
+            ->addParams(['limit' => 200]) 
             ->addParams(['full' => 'true'])
             ->get();    
         $results = $this->validateResults($results);       
