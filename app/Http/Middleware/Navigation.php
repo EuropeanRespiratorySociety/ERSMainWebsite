@@ -60,7 +60,7 @@ class Navigation
                     $menu->assemblies->add('10. Respiratory Infections', 'the-society/assemblies#respiratory-infections' );
                     $menu->assemblies->add('11. Thoracic Oncology', 'the-society/assemblies#thoracic-oncology' );
                 $menu->theSociety->add('News And Features', 'the-society/news' );
-                    $menu->newsAndFeatures->add('Respiratory Worldwide', 'the-society/news/respiratory-worldwide' );
+                    //$menu->newsAndFeatures->add('Respiratory Worldwide', 'the-society/news/respiratory-worldwide' );
                     $menu->newsAndFeatures->add('Respiratory Matters', 'the-society/news/respiratory-matters' );
                     $menu->newsAndFeatures->add('ERS Vision', 'http://www.ersvision.org/')->link->attr(array('target' => '_blank'));
                     $menu->newsAndFeatures->add('Press Office', 'the-society/news/press-office');

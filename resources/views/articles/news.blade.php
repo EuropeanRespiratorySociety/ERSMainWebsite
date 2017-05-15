@@ -30,7 +30,7 @@
                 @endif
                 @if($category->title == "News and Features")
                 <div class="row" >
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="card card-primary card-padded">
                             <div class="card-image">
                                 <img class="img-responsive" src="../images/london2016.jpg">
@@ -51,7 +51,7 @@
                         </div><!-- card card-primary card-padded -->
                     </div><!-- col-md-4 -->
 
-                    <div class="col-md-4">
+                    {{--<div class="col-md-4">
                         <div class="card card-primary card-padded">
                             <div class="card-image">
                                 <img class="img-responsive" src="../images/london2016.jpg">
@@ -70,8 +70,8 @@
                                 <a href="{{url('the-society/news/respiratory-worldwide')}}" class="btn btn-dark-primary pull-right">More</a>
                             </div>
                         </div><!-- card card-primary card-padded -->
-                    </div><!-- col-md-4 -->
-                    <div class="col-md-4">
+                    </div><!-- col-md-4 --> --}}
+                    <div class="col-md-6">
                         <div class="card card-vision card-padded">
                             <div class="card-image">
                                 <img class="img-responsive" src="../images/hermes.jpg">
@@ -122,9 +122,9 @@
           <div class="modal-body">
             <div class="text-center">
                 <div class="list-group ">
-                        <h3><a href="http://eepurl.com/jL9of" target="_blank" class="list-group-item">ER Weekly</a></h3>
+                        <h3><a href="http://eepurl.com/jL9of" target="_blank" class="list-group-item">ERS Newsletter</a></h3>
                         <h3><a href="https://forms.ersnet.org/respiratory-matters" target="_blank" class="list-group-item">Respiratory Matters</a></h3>
-                        <h3><a href="https://forms.ersnet.org/respiratory-world-wide" target="_blank" class="list-group-item">Respiratory Worldwide</a></h3>
+                        {{--<h3><a href="https://forms.ersnet.org/respiratory-world-wide" target="_blank" class="list-group-item">Respiratory Worldwide</a></h3>--}}
                         <h3><a href="http://www.ersvision.org/video-alert-subscription" target="_blank" class="list-group-item">ERS Vision</a></h3>
                 </div>
             </div>

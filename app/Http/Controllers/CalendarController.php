@@ -30,7 +30,9 @@ class CalendarController extends Controller
         $results = $this->CC->getAssociationSorted($this->calendarCategory, 'ers:category-association', 'eventDate', 1);
         $items = $this->CC->parseItems($results['rows'], true);
         $array = array_values(array_sort($items, function ($value) {
-            return $value->calendar->timestamp;
+            if($value->calendar) {
+                return $value->calendar->timestamp;
+            }
         }));
         $items = $this->CC->prepareCalendar($items, $type);
         $params['items'] = (object) $items; 
