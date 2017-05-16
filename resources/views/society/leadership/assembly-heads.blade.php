@@ -69,14 +69,12 @@
 		            Respiratory Infections <br>
 		            </p>
 	        	</div>
-	        	<!-- post for Thoracic Oncology 
-	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Nicolas_Schonfeld.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('nicolas.schoenfeld@helios-kliniken.de', 'Nicolas Schönfeld') !!}</strong>
-		            Thoracic Oncology<br>
-		            </p>
-	        	</div>
-	        	-->
+				<div class="col-md-4 xs-mb-15">
+					<img src="../images/people/leadership/Nir_Peled.jpg" class="img-circle">
+					<p class="photo_caption"><strong>{!! Html::mailto('nirp@post.tau.ac.il', 'Nir Peled') !!}</strong> 
+					Thoracic Oncology<br>
+					</p>
+                </div>
 
 
 
