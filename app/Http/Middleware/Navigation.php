@@ -31,6 +31,7 @@ class Navigation
                         $menu->leadershipAndCommittees->add('Advocacy Council', 'the-society/who-we-are/leadership/advocacy-council');
                         $menu->leadershipAndCommittees->add('Early Career Members Committee', 'the-society/who-we-are/leadership/early-career-members-committee');
                         $menu->leadershipAndCommittees->add('ERS Election', 'the-society/who-we-are/leadership/ers-elections');
+                        $menu->leadershipAndCommittees->add('Open Positions', 'the-society/who-we-are/leadership/open-positions');
                     $menu->whoWeAre->add('Executive office', 'the-society/who-we-are/executive-office');
                     $menu->whoWeAre->add('Governance and Transparency', 'the-society/who-we-are/ers-governance-and-transparency');
                     $menu->whoWeAre->add('Awards', 'the-society/who-we-are/awards' );

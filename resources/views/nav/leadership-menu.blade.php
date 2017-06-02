@@ -17,6 +17,7 @@
         <li class="list-group-item"><a href="the-society/who-we-are/leadership/advocacy-council">Advocacy Council</a></li>
         <li class="list-group-item"><a href="the-society/who-we-are/leadership/early-career-members-committee">Early Career Members Committee</a></li>
     	<li class="list-group-item"><a href="the-society/who-we-are/leadership/ers-elections">Elections</a></li>
+        <li class="list-group-item"><a href="the-society/who-we-are/leadership/open-positions">Open Positions</a></li>        
     </ul>
 
     
