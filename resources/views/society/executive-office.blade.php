@@ -47,12 +47,20 @@
         </div>
 
         <div class="row">
-          <div class="col-md-3 col-md-offset-3 xs-mb-15">
-            <p class="photo_caption"><strong>{!! Html::mailto('Alexandra.Alexandropoulou@ersnet.org', 'Alexandra Alexandropoulou') !!}</strong>
+         <div class="col-md-3 col-md-offset-3 xs-mb-15">
+            <p class="photo_caption"><strong><a href="mailto:Alexandra.Alexandropoulou@ersnet.org">Alexandra Alexandropoulou</a></strong>
+            Executive Office Manager<br>
+            T +41 21 213 01 12<br>
+            </p>
+         </div>
+         <!--
+         <div class="col-md-3 col-md-offset-3 xs-mb-15">
+            <p class="photo_caption"><strong>{!! Html::mailto('olivia.menegale@ersnet.org', 'Olivia Menegale') !!}</strong>
             Executive Office Manager<br>
             T +41 21 213 01 12<br>
             </p>
           </div>
+        -->
           <div class="col-md-3 xs-mb-15">
             <p class="photo_caption"><strong>{!! Html::mailto('karina.saakyan@ersnet.org', ' Karina Saakyan') !!}</strong>
             Administrative Assistant<br>
@@ -453,12 +461,6 @@
       </div>
       <div class="row">
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('Nadia.Kamel@ersnet.org', 'NADIA KAMEL') !!}</strong>
-            Scientific Officer<br>
-            T +32 2 238 53 64<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('nejla.delikus@ersnet.org', 'NEJLA DELIKUS') !!}</strong>
             Office Coordinator<br>
             T +32 2 238 53 60<br>
@@ -471,14 +473,9 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('vitor.teixeira@ersnet.org', 'Vitor Teixeira') !!}</strong>
-            Policy Officer<br>
-            T +32 2 238 53 65<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('marine.faure@ersnet.org', 'Marine Faure') !!}</strong>
             Policy Officer<br>
+            T +32 2 238 53 62<br>
             </p>
         </div>
         
