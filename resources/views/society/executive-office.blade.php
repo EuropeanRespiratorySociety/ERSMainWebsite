@@ -48,19 +48,11 @@
 
         <div class="row">
          <div class="col-md-3 col-md-offset-3 xs-mb-15">
-            <p class="photo_caption"><strong><a href="mailto:Alexandra.Alexandropoulou@ersnet.org">Alexandra Alexandropoulou</a></strong>
-            Executive Office Manager<br>
-            T +41 21 213 01 12<br>
-            </p>
-         </div>
-         <!--
-         <div class="col-md-3 col-md-offset-3 xs-mb-15">
             <p class="photo_caption"><strong>{!! Html::mailto('olivia.menegale@ersnet.org', 'Olivia Menegale') !!}</strong>
-            Executive Office Manager<br>
+            Executive Senior Coordinator<br>
             T +41 21 213 01 12<br>
             </p>
           </div>
-        -->
           <div class="col-md-3 xs-mb-15">
             <p class="photo_caption"><strong>{!! Html::mailto('karina.saakyan@ersnet.org', ' Karina Saakyan') !!}</strong>
             Administrative Assistant<br>
@@ -838,12 +830,6 @@
           <p class="photo_caption"><strong>{!! Html::mailto('celine.genton@ersnet.org', 'Celine Genton') !!}</strong>
             Scientific Activities Manager<br>
             T +41 21 213 01 59<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('Olivia.Menegale@ersnet.org', 'Olivia Menegale') !!}</strong>
-            Scientific Programme Senior Coordinator<br>
-            T +41 21 213 01 88<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
