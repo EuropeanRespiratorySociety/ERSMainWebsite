@@ -170,7 +170,7 @@ class CloudCmsHelper
                         ->query($query)  
                         ->addParams(['full' => 'true']) 
                         ->addParams(['metadata' => 'true'])
-                        ->addParams(['sort' => '{"_system.created_on.ms": '.$sort.'}']) 
+                        ->addParams(['sort' => '{"_system.modified_on.ms": '.$sort.'}']) 
                         ->get();
             $results = $this->validateResults($results);                          
             return $results; 
@@ -179,7 +179,7 @@ class CloudCmsHelper
                         ->query($query)
                         ->addParams(['full' => 'true']) 
                         ->addParams(['metadata' => 'true'])
-                        ->addParams(['sort' => '{"_system.created_on.ms": '.$sort.'}']) 
+                        ->addParams(['sort' => '{"_system.modified_on.ms": '.$sort.'}']) 
                         ->addParams(['skip' => $skip]) 
                         ->get();
         $results = $this->validateResults($results);                          
@@ -277,7 +277,7 @@ class CloudCmsHelper
             if($item->category2 && $calendarCounter <= 5 && !$nonERS){
                 if($cal->isCalendar($item->category2) || $item->category->title == "Events Calendar"){
                     if(isset($sorted['firstEvent'])){
-                      $sorted['calendar'][] = $item;  
+                        $sorted['calendar'][] = $item;  
                     }
                     if($calendarCounter <= 1){
                         $sorted['firstEvent'] = $item;

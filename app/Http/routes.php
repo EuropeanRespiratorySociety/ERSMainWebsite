@@ -105,6 +105,7 @@ Route::group(['prefix' => 'congress-and-events'], function () {
     Route::get('the-lung-science-conference/{slug}', 'LscController@show');
     Route::get('events-calendar', 'CalendarController@index');
     Route::get('ers-2018', 'LscController@paris');
+    Route::get('ers-respiratory-updates', 'LscController@respiratoryUpdate');
     Route::get('/{slug}', 'GeneralController@show');
 });
 
