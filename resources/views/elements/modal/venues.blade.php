@@ -15,7 +15,7 @@
         @endif
         @if($item->ebusVenues[0]->name 
             || $item->ebusVenues[0]->streetAddress)  
-        <h3 class="modal-title">Course Venue and Dates</h3>
+        <h3 class="modal-title">Event Venues and Dates</h3>
         @endif
       </div>
       <div class="modal-body">
