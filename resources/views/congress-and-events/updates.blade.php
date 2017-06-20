@@ -60,7 +60,7 @@
         </div>
         <h2 class="text-left clearfix date-venue cursor_default">
         <!--<a href="javascript:void(0)"><span class="icon s7-angle-left pull-left" style="font-size: 24px;"></span></a>-->
-        <label>{{$item->ebusDate}} @if(isset($item->eventLocation))<a>{{$item->eventLocation}}</a>@endif</label>
+        <label>{!!$item->ebusDate!!} @if(isset($item->eventLocation))<a>{{$item->eventLocation}}</a>@endif</label>
         <!--<a href="javascript:void(0)"><span class="icon s7-angle-right pull-right" style="font-size: 24px;"></span></a>-->
         </h2>
       </div>
@@ -147,7 +147,7 @@
                 style="float: left;
                     margin-top: 5px;
                     padding: 0;"> 
-                VENUES AND DATES<br>
+                VENUES<br>
                 <span></span></span>
                 </p>
             </a>
