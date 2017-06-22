@@ -990,6 +990,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         # L
         Redirect 301 /leadersblog https://www.ersnet.org/the-society/news/respiratory-matters
         Redirect 301 /lsc https://www.ersnet.org/congress-and-events/the-lung-science-conference
+        Redirect 301 /congress-and-events/the-lung-science-conference https://www.ersnet.org/congress-and-events/cell-matrix-interactions-in-lung-disease-and-regeneration
         # M
         Redirect 301 /membership https://www.ersnet.org/the-society/membership
         # P

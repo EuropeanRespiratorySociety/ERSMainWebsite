@@ -22,7 +22,7 @@ class LscController extends Controller
      */
     public function index()
     {
-        $results = $this->CC->getItem('mechanistic-overlap-between-chronic-lung-injury-and-cancer');
+        $results = $this->CC->getItem('cell-matrix-interactions-in-lung-disease-and-regeneration');
         $item = $this->CC->parseItems($results['rows']);
         $params['item'] = $item[0]; 
 
