@@ -130,7 +130,6 @@ class NewsController extends Controller
         $results = $this->CC->getItem($slug);
         $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0];
-
         if(!$item[0]->url || !$item[0]->uri){
             $this->CC->setCanonical($item[0]->_qname);
         }

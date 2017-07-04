@@ -78,7 +78,7 @@ class Navigation
                 $menu->congressAndEvents->add('Sleep and Breathing Conference','http://www.sleepandbreathing.org');
                 $menu->congressAndEvents->add('ERS Presidential Summits','congress-and-events/ers-presidential-summits');
                 $menu->congressAndEvents->add('ERS Research Seminars','congress-and-events/ers-research-seminars');
-                $menu->congressAndEvents->add('Past International Congresses','congress-and-events/past-international-congresses');
+                // $menu->congressAndEvents->add('Past International Congresses','congress-and-events/past-international-congresses');
                 $menu->congressAndEvents->add('Event endorsement','congress-and-events/external-events-endorsement');
 
             $menu->add('Publications','#publications');
