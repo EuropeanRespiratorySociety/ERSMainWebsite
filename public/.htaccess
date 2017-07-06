@@ -1042,6 +1042,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /erj-press http://erj.ersjournals.com/site/misc/presspack.xhtml
         Redirect 301 /ersdocs http://ersdocs.ersnet.org/ersdocs
         Redirect 301 /erspublicationsapp http://tinyurl.com/ERSpublicationsapp
+        Redirect 301 /ersliveplus https://live.erscongress.org
         # F
         Redirect 301 /fellowship-methodology https://www.ersnet.org/professional-development/fellowships/fellowships-on-guideline-methodology
         # H
