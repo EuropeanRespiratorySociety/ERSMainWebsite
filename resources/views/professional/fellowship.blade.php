@@ -80,28 +80,46 @@
           @endif
           @if($item->title == "Marie Curie Post-doctoral Research Fellowships (RESPIRE 3)")
               <span href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
-      <span class="icon s7-copy-file"></span>
-      <p>
-        DOCUMENTS : <br>
-        <ul style="display: table;
-                  float: left;
-                  margin-left: 10px;">
-            <li>
-            <a href="https://ers.box.com/shared/static/6o4rkpa86n63rv0aavp7hfiuol2bjr39.pdf">Application Guidelines</a>
-            </li>
-            <li>
-            <a href="https://ers.box.com/shared/static/h4johsv2crcz1xnghmi1hwzs786i8ith.pdf">Frequently Asked Questions (FAQs)</a>
-            </li>
-            @if($item->popUpText)
-            <li>
-              <a data-toggle="modal" data-target="#md-popUp" class="cursor_pointer">{{$item->popUpText}}</a>
-            </li>
+              <span class="icon s7-copy-file"></span>
+              <p>
+                DOCUMENTS : <br>
+                <ul style="display: table;
+                          float: left;
+                          margin-left: 10px;">
+                    <li>
+                    <a href="https://ers.box.com/shared/static/6o4rkpa86n63rv0aavp7hfiuol2bjr39.pdf">Application Guidelines</a>
+                    </li>
+                    <li>
+                    <a href="https://ers.box.com/shared/static/h4johsv2crcz1xnghmi1hwzs786i8ith.pdf">Frequently Asked Questions (FAQs)</a>
+                    </li>
+                    @if($item->popUpText)
+                    <li>
+                      <a data-toggle="modal" data-target="#md-popUp" class="cursor_pointer">{{$item->popUpText}}</a>
+                    </li>
+                    @endif
+                  </ul>
+              </p>
+            </span>
             @endif
-          </ul>
-      </p>
-    </span>
-    @endif
-        </div>
+            @if($item->slug == "clinical-training-fellowship")
+            <span href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
+              <span class="icon s7-copy-file"></span>
+              <p>
+                DOCUMENTS : <br>
+                <ul style="display: table;
+                          float: left;
+                          margin-left: 10px;">
+                    <li>
+                    <a href="https://ers.box.com/shared/static/vvzxghtnbjh01r6sibuvy6qet5k4szj1.doc">End of training report - Host supervisor</a>
+                    </li>
+                    <li>
+                    <a href="https://ers.box.com/shared/static/rv3nvtz5dxvqcuganbx2c4ezgxnjoqry.doc">End of training report - Fellowship recipient</a>
+                    </li>
+                  </ul>
+              </p>
+            </span>
+            @endif
+  </div>
         <p class="rules text-left"> 
          @if($item->rulesAndRegulations)
          <a href="{{$item->rulesAndRegulations}}">
