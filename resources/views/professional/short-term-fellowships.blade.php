@@ -69,8 +69,6 @@
         NOTIFICATION : <br>
         <span>Mid-July each year / Mid-February each year</span>
       </p>
-
-
     </a>
     <a href="javascript:void(0)" class="list-group-item clearfix cursor_default">
       <span class="icon s7-date"></span>
@@ -79,14 +77,29 @@
         <span>From August onwards / From March onwards</span>
       </p>
     </a>
+    <span href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
+      <span class="icon s7-copy-file"></span>
+      <p>
+        DOCUMENTS : <br>
+        <ul style="display: table;
+                  float: left;
+                  margin-left: 10px;">
+            <li>
+            <a href="https://ers.box.com/shared/static/axxz9qr771ixfsn9et17qksemks6mndl.pdf">Application Guidelines</a>
+            </li>
+            @if($category->popUpText)
+              <li>
+                  <a data-toggle="modal" data-target="#md-popUp" class="cursor_pointer">{{$category->popUpText}}</a><br>
+             </li>
+            @endif 
+      </span>
+          </ul>
+      </p>
+    </a>
 
   </div>
 
   <p class="rules text-left">
-    <a href="https://ers.box.com/shared/static/axxz9qr771ixfsn9et17qksemks6mndl.pdf">Application Guidelines</a><br>
-    @if($category->popUpText)
-      <a data-toggle="modal" data-target="#md-popUp" class="cursor_pointer">{{$category->popUpText}}</a><br>
-    @endif
     <span style="font-size:16px;vertical-align: middle;" class="icon s7-mail"></span>{!! Html::mailto('fellowships@ersnet.org', ' Contact us') !!}
   </p>
 

@@ -101,7 +101,7 @@
               </p>
             </span>
             @endif
-            @if($item->slug == "clinical-training-fellowship")
+            @if($item->slug == "clinical-training-fellowship" || $item->rulesAndRegulations)
             <span href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
               <span class="icon s7-copy-file"></span>
               <p>
@@ -109,26 +109,26 @@
                 <ul style="display: table;
                           float: left;
                           margin-left: 10px;">
+                    @if($item->slug == "clinical-training-fellowship")
+                      <li>
+                        <a href="https://ers.box.com/shared/static/vvzxghtnbjh01r6sibuvy6qet5k4szj1.doc">End of training report - Host supervisor</a>
+                      </li>
+                      <li>
+                        <a href="https://ers.box.com/shared/static/rv3nvtz5dxvqcuganbx2c4ezgxnjoqry.doc">End of training report - Fellowship recipient</a>
+                      </li>
+                    @endif
+                    @if($item->rulesAndRegulations)
                     <li>
-                    <a href="https://ers.box.com/shared/static/vvzxghtnbjh01r6sibuvy6qet5k4szj1.doc">End of training report - Host supervisor</a>
+                      <a href="{{$item->rulesAndRegulations}}">
+                         {{ $item->title == "Clinical Training Fellowship" ? "Application guidelines" : "Rules & Regulations"}}
+                      </a>
                     </li>
-                    <li>
-                    <a href="https://ers.box.com/shared/static/rv3nvtz5dxvqcuganbx2c4ezgxnjoqry.doc">End of training report - Fellowship recipient</a>
-                    </li>
+                    @endif
                   </ul>
               </p>
             </span>
             @endif
   </div>
-        <p class="rules text-left"> 
-         @if($item->rulesAndRegulations)
-         <a href="{{$item->rulesAndRegulations}}">
-         {{-- TODO if more requests add field in CMS --}}
-         {{ $item->title == "Clinical Training Fellowship" ? "Application guidelines" : "Rules & Regulations"}}
-        </a> <br>
-        @endif
-        </p> 
-
           <div class="event-items-right-bt">
             @if($item->extendedDeadline)
             <p class="deadline">EXTENDED registration deadline : {{$item->extendedDeadline}}</p>
