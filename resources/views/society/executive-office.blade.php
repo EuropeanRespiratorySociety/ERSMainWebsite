@@ -54,7 +54,7 @@
             </p>
           </div>
           <div class="col-md-3 xs-mb-15">
-            <p class="photo_caption"><strong>{!! Html::mailto('karina.saakyan@ersnet.org', ' Karina Saakyan') !!}</strong>
+            <p class="photo_caption"><strong>{!! Html::mailto('Anastasia.nesterova@ersnet.org', 'Anastasia Nesterova') !!}</strong>
             Administrative Assistant<br>
             T +41 21 213 01 13<br>
             </p>
