@@ -56,9 +56,9 @@
               @endif
               @if($accommodation->postalCode){{$accommodation->postalCode}} {{$accommodation->city}}<br>@endif
               @if($accommodation->country){{$accommodation->country}}@endif
-              <hr>
               @if($accommodation->info){!!$accommodation->info!!}@endif
             </p>
+            <hr>
           </div>
           </div>
         @endforeach
