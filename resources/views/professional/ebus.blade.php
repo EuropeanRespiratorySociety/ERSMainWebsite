@@ -78,7 +78,10 @@
             <span class="icon icon-hotel"></span>Venues and Dates</a>
           </li>
         @endif
-        @if($item->bursaryApplication && !empty($item->bursaryApplication))
+        @if($item->bursaryApplication->text
+            || $item->bursaryApplication->deadline
+            || $item->bursaryApplication->notificationOfResults
+            || $item->bursaryApplication->applyButtonUrl)
           <li><a href="#bursary" data-toggle="tab">
             <span class="icon s7-piggy"></span>Bursary<br>application</a>
           </li>
