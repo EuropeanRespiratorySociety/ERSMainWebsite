@@ -995,18 +995,18 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /membership https://www.ersnet.org/the-society/membership
         # P
         Redirect 301 /plainpackaging https://www.ersnet.org/advocacy/eu-affairs/plain-packaging-protects-our-youth-support-the-campaign
-        Redirect 301 /professional-development/spirometry-training-programme https://www.ersnet.org/spiro
-        Redirect 301 /professional-development/respiratory-sleep-certified-training-programme https://www.ersnet.org/sleep
         # N
         Redirect 301 /ntmaward https://www.ersnet.org/professional-development/grants-and-sponsorships/medical-education-grant
         # R
         Redirect 301 /research-seminar https://www.ersnet.org/research/research-seminars
-        Redirect 301 /resp-update https://www.ersnet.org/congress-and-events/ers-respiratory-updates
+        Redirect 301 /resp-update https://www.ersnet.org/congress-and-events/ers-resppiratory-updates
         # S
         Redirect 301 /schoolcourses https://www.ersnet.org/professional-development/courses
         Redirect 301 /SCHOOLCOURSES https://www.ersnet.org/professional-development/courses
         Redirect 301 /SCHOOL https://www.ersnet.org/professional-development/courses
         Redirect 301 /school https://www.ersnet.org/professional-development/courses
+        Redirect 301 /spiro https://www.ersnet.org/professional-development/spirometry-training-programme
+        Redirect 301 /sleep https://www.ersnet.org/professional-development/respiratory-sleep-certified-training-programme
 
 
 
