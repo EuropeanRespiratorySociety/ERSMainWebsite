@@ -994,7 +994,9 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         # M
         Redirect 301 /membership https://www.ersnet.org/the-society/membership
         # P
-        Redirect 301 /plainpackaging https://www.ersnet.org/advocacy/eu-affairs/plain-packaging-protects-our-youth-support-the-campaign 
+        Redirect 301 /plainpackaging https://www.ersnet.org/advocacy/eu-affairs/plain-packaging-protects-our-youth-support-the-campaign
+        Redirect 301 /professional-development/spirometry-training-programme https://www.ersnet.org/spiro
+        Redirect 301 /professional-development/respiratory-sleep-certified-training-programme https://www.ersnet.org/sleep
         # N
         Redirect 301 /ntmaward https://www.ersnet.org/professional-development/grants-and-sponsorships/medical-education-grant
         # R
