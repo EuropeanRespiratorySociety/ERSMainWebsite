@@ -845,12 +845,6 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('nathalie.ritter@ersnet.org', 'Nathalie Ritter') !!}</strong>
-            Funding Programmes Senior Coordinator<br>
-            T +41 21 213 01 83<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('valerie.vaccaro@ersnet.org', 'Valérie Vaccaro') !!}</strong>
             Scientific Activities Senior Coordinator<br>
             T +41 21 213 01 89<br>
@@ -878,6 +872,18 @@
           <p class="photo_caption"><strong>{!! Html::mailto('hanna.michalek@ersnet.org', 'Hanna Michalek') !!}</strong>
             Scientific Activities Assistant<br>
             T +41 21 213 01 76<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('valentine.degert@ersnet.org', 'Valentine Degert') !!}</strong>
+            Scientific Program Coordinator<br>
+            T +41 21 213 01 88<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('maeve.tsu@ersnet.org', 'Maeve Tsu') !!}</strong>
+            Scientific Administrative Assistant<br>
+            T +41 21 213 01 83<br>
             </p>
         </div>
 
