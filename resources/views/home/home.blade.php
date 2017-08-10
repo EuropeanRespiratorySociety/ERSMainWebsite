@@ -8,7 +8,6 @@
               )) 
 @stop()
 @section('content')
-
 <div class="ers-content home-content">
   <div id="fullpage">
     <div class="section fp-auto-height">

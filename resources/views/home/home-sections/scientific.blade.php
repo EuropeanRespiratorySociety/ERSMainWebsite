@@ -19,9 +19,9 @@
 			</div>
 			<div class="col-md-4 pull-right top-right-col text-left">
 				<div class="card card-event"> 
-					@include('elements.card.image', array('item' => $first))       
+					{{-- @include('elements.card.image', array('item' => $first))       
 					@include('elements.card.content', array('item' => $first))
-					@include('elements.card.action', array('item' => $first))
+					@include('elements.card.action', array('item' => $first)) --}}
 				</div>	
 			</div>
 		</div>

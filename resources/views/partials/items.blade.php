@@ -5,7 +5,7 @@
         <div class="col-md-4 isotope">
     @else
         <div class="{{$class}} isotope">  
-    @endif 
+    @endif
             <div class="card card-event {{$home ? 'home-news' : ''}}">
                 @if($item->video)
                 @include('elements.card.video', array('item' => $item))       
