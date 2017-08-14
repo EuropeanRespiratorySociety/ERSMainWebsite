@@ -182,7 +182,7 @@
                   <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
                     <span class="badge">
                       &euro; {{ $item->feeList->junior }}
-                    </span> Junior ERS Members
+                    </span> Early Career <br>ERS Members
                   </a>
                 @endif
                 @if($item->feeList->ersMember)
