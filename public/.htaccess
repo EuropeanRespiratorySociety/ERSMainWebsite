@@ -1017,6 +1017,10 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         RewriteRule ^$ http://www.ers-education.org/lungfunction [R=301,L]
         RewriteCond %{HTTP_HOST} ^lungfunction.org/?$ [NC]
         RewriteRule ^$ http://www.ers-education.org/lungfunction [R=301,L]
+        RewriteCond %{HTTP_HOST} ^www.spirxpert.com/?$ [NC]
+        RewriteRule ^$ http://spirxpert.ers-education.org [R=301,L]
+        RewriteCond %{HTTP_HOST} ^spirxpert.com/?$ [NC]
+        RewriteRule ^$ http://spirxpert.ers-education.org [R=301,L]
         # A
         Redirect 301 /about-us/healthy-lungs-for-life.html   http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/
         Redirect 301 /about-us/healthy-lungs-for-life/item/4097-first-world-spirometry-day-announced.html    http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/
