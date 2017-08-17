@@ -1,5 +1,5 @@
 <style>
-        @media (max-width: 991px){
+        @media (max-width: 1080px){
             .ers-left-sidebar{
                 transform: translate3d(-100%,0,0);
                 width: 85%!important;
