@@ -99,6 +99,10 @@
 		            {!! Html::mailto('siradzenino@yahoo.com', 'Nino Siradze') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
+		         	<strong>Germany</strong><br>
+		            {!! Html::mailto('b.waschki@lungenclinic.de', 'Benjamin Waschki') !!}
+	         	</div>
+	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Greece</strong><br>
 		            {!! Html::mailto('stavrostryfon@yahoo.gr', 'Stavros Tryfon') !!}
 	         	</div>
