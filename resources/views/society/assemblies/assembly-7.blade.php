@@ -8,7 +8,7 @@
                   <p class="photo_caption">Head: {!! Html::mailto('midulla@uniroma1.it', 'Fabio Midulla') !!}</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/people/leadership/Jonathan_Grigg.jpg" class="img-circle">
+                  <img src="../images/people/leadership/Jonathan_Grigg-2017.png" class="img-circle">
                   <p class="photo_caption">Secretary: {!! Html::mailto('j.grigg@qmul.ac.uk', 'Jonathan Grigg') !!}</p>
                  
                 </div>
