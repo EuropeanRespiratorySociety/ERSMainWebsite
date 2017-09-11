@@ -4,12 +4,12 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/people/leadership/Stefano_Aliberti.jpg" class="img-circle">
-                  <p class="photo_caption">Head: {!! Html::mailto('alibertistefano@hotmail.com', 'Stefano Aliberti') !!}</p>
+                 <img src="images/120x120.jpg" class="img-circle">
+                  <p class="photo_caption">Head: Graham Bothamley</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/people/leadership/Giovanni_Sotgiu.jpg" class="img-circle">
-                  <p class="photo_caption">Secretary: {!! Html::mailto('gsotgiu@uniss.it', 'Giovanni Sotgiu') !!}</p>
+                 <img src="images/120x120.jpg" class="img-circle">
+                  <p class="photo_caption">Secretary: Eva Polverino</p>
                  
                 </div>
             </div>

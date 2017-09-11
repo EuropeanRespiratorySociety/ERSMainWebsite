@@ -4,13 +4,13 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/people/leadership/Ian_M_Adcock.jpg" class="img-circle">
-                  <p class="photo_caption">Head: {!! Html::mailto('ian.adcock@imperial.ac.uk', 'Ian M. Adcock') !!}</p>
+                  <img src="../images/people/leadership/Antonio_Spanevello.jpg" class="img-circle">
+                  <p class="photo_caption">Head: {!! Html::mailto('aspanevello@fsm.it', 'Antonio Spanevello') !!}</p>
+                 
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/people/leadership/Antonio_Spanevello.jpg" class="img-circle">
-                  <p class="photo_caption">Secretary: {!! Html::mailto('aspanevello@fsm.it', 'Antonio Spanevello') !!}</p>
-                 
+                 <img src="images/120x120.jpg" class="img-circle">
+                  <p class="photo_caption">Secretary: Omar Usmani </p>
                 </div>
             </div>
             <div class="col-md-6 center-block">

@@ -4,13 +4,13 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/people/leadership/Fabio_Midulla.jpg" class="img-circle">
-                  <p class="photo_caption">Head: {!! Html::mailto('midulla@uniroma1.it', 'Fabio Midulla') !!}</p>
+                  <img src="../images/people/leadership/Jonathan_Grigg-2017.png" class="img-circle">
+                  <p class="photo_caption">Head: {!! Html::mailto('j.grigg@qmul.ac.uk', 'Jonathan Grigg') !!}</p>
+                 
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/people/leadership/Jonathan_Grigg-2017.png" class="img-circle">
-                  <p class="photo_caption">Secretary: {!! Html::mailto('j.grigg@qmul.ac.uk', 'Jonathan Grigg') !!}</p>
-                 
+               <img src="images/120x120.jpg" class="img-circle">
+                  <p class="photo_caption">Secretary: Marielle Pijnenburg</p>
                 </div>
             </div>
             <div class="col-md-6 center-block">

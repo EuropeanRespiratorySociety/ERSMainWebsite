@@ -4,13 +4,13 @@
 
           <div class="row">
             <div class="col-md-3 col-md-offset-3 xs-mb-15">
-              <img src="../images/people/leadership/Dick_Heederik.jpg" class="img-circle">
-              <p class="photo_caption">Head: {!! Html::mailto('d.heederik@uu.nl', 'Dick Heederik') !!}</p>
+              <img src="../images/people/leadership/Christer_Jansen.jpg" class="img-circle">
+              <p class="photo_caption">Head: {!! Html::mailto('christer.janson@medsci.uu.se', 'Christer Jansen') !!}</p>
+
             </div>
             <div class="col-md-3 xs-mb-15">
-              <img src="../images/people/leadership/Christer_Jansen.jpg" class="img-circle">
-              <p class="photo_caption">Secretary: {!! Html::mailto('christer.janson@medsci.uu.se', 'Christer Jansen') !!}</p>
-
+               <img src="images/120x120.jpg" class="img-circle">
+              <p class="photo_caption">Secretary: Charlotte Suppli-Ulrik</p>
             </div>
           </div>
           <div class="col-md-6 center-block">

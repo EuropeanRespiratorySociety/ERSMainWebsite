@@ -23,31 +23,32 @@
 
         <div class="row leadership-people">
             <div class="col-md-4 xs-mb-15">
+                <img src="images/people/leadership/mina_gaga.jpg" class="img-circle">
+                <p class="photo_caption"><strong>{!! Html::mailto('minagaga@yahoo.com', 'Mina Gaga') !!}</strong>
+                President<br>
+                <a title="Download COI" href="https://ers.box.com/s/pudmjw6dtxefzskpmeriszhqjjqyopk3">Download COI</a></p>
+            </div>
+            <div class="col-md-4 xs-mb-15">
                 <img src="images/people/leadership/Guy_Joos.jpg" class="img-circle">
                 <p class="photo_caption"><strong>{!! Html::mailto('guy.joos@ugent.be', 'Guy Joos') !!}</strong>
-                President<br>
+                Past President<br>
                 <a title="Download COI" href="https://ers.box.com/s/4jvas4pnktbpks61qmvu99wyklrwaotq">Download COI</a>
                 </p>
             </div>
             <div class="col-md-4 xs-mb-15">
-                <img src="images/people/leadership/Joajen_Vestbo.jpg" class="img-circle">
-                <p class="photo_caption"><strong>{!! Html::mailto('jorgen.vestbo@manchester.ac.uk', 'Jørgen Vestbo') !!}</strong>
-                Past President <br>
-                <a title="Download COI" href="https://ers.box.com/s/2qhpz81uhhx1h9y2fd0tg578eql82khu">Download COI</a>
-                </p>
-            </div>
-        	<div class="col-md-4 xs-mb-15">
-	            <img src="images/people/leadership/mina_gaga.jpg" class="img-circle">
-	            <p class="photo_caption"><strong>{!! Html::mailto('minagaga@yahoo.com', 'Mina Gaga') !!}</strong>
-	            President Elect<br>
-                <a title="Download COI" href="https://ers.box.com/s/pudmjw6dtxefzskpmeriszhqjjqyopk3">Download COI</a></p>
-        	</div>
-            <div class="col-md-4 xs-mb-15">
                 <img src="images/people/leadership/Tobias_Welte.jpg" class="img-circle">
                 <p class="photo_caption"><strong>Tobias Welte</strong>
-                Vice President <br>
-                
+                President Elect<br>
                 <a title="Download COI" href="https://ers.box.com/s/4l0crbxgfdtxq2r3l5y7m0hibt51h040">Download COI</a></p>
+            </div>
+            <div class="col-md-4 xs-mb-15">
+                <img src="images/120x120.jpg" class="img-circle">
+                <p class="photo_caption"><strong>PENDING</strong>
+                Vice President<br>
+                <!--
+                <a title="Download COI" href="">Download COI</a>
+                -->
+                </p>
             </div>
             <div class="col-md-4 xs-mb-15">
                 <img src="images/people/leadership/Carlos_Robalo.jpg" class="img-circle">
@@ -62,38 +63,42 @@
                 <a title="Download COI" href="https://ers.box.com/s/889jmegj458ndh73z08dtwg6vzibxk7x">Download COI</a>
                 </p>
             </div>
-        	<div class="col-md-4 xs-mb-15">
-	            <img src="images/people/leadership/Gernot_Rohde.jpg" class="img-circle">
-	            <p class="photo_caption"><strong>{!! Html::mailto('g.rohde@mumc.nl', 'Gernot Rohde') !!}</strong>
-	            Education Council Chair <br>
-	            <a title="Download COI" href="https://ers.box.com/s/yu374xwbklv7jphp6uktoi8ysnub57nz">Download COI</a>
-	            </p>
-        	</div>
+            <div class="col-md-4 xs-mb-15">
+                <img src="images/people/leadership/Daiana-Stolz2.jpg" class="img-circle">
+                <p class="photo_caption"><strong>Daiana Stolz</strong>
+                Education Council Chair<br />
+                <a title="Download COI" href="https://ers.box.com/s/bcaonlkqkkus3ee7zwq9hi18f902g9wi">Download COI</a>
+                </p>
+            </div>
             <div class="col-md-4 xs-mb-15">
                 <img src="images/people/leadership/guy_brusselle.jpg" class="img-circle">
                 <p class="photo_caption"><strong>{!! Html::mailto('guy.brusselle@ugent.be', 'Guy Brusselle') !!}</strong>
-                Science Council Chair <br>
+                Science Council Chair<br>
                 <a title="Download COI" href="https://ers.box.com/s/o9lpqpdhfghoy10f87rnnjedch7ren6f">Download COI</a>
             </div>
         	<div class="col-md-4 xs-mb-15">
-	            <img src="images/people/leadership/christina_gratziou.jpg" class="img-circle">
-	            <p class="photo_caption"><strong>{!! Html::mailto('chgratziou@yahoo.com', 'Christina Gratziou') !!}</strong>
+                <img src="images/120x120.jpg" class="img-circle">
+	            <p class="photo_caption"><strong>Ildiko Horvath</strong>
 	            Advocacy Council Chair <br>
-	            <a title="Download COI" href="https://ers.box.com/s/4481crfosil8ci6mrop76fz408y4bzas">Download COI</a>
+                <!--
+	            <a title="Download COI" href="">Download COI</a>
+                -->
 	            </p>
         	</div>
         	<div class="col-md-4 xs-mb-15">
-	            <img src="images/people/leadership/Dan_Smyth.jpg" class="img-circle">
-	            <p class="photo_caption"><strong>{!! Html::mailto('Dan.Smyth@europeanlung.org', 'Dan Smyth') !!}</strong>
+	            <img src="images/120x120.jpg" class="img-circle">
+	            <p class="photo_caption"><strong>Isabel Saraiva</strong>
 	            ELF Chair <br>
-	            <a title="Download COI" href="https://ers.box.com/s/ifl1cjyp5kxpdi6oas0vs971i1r3yx9s">Download COI</a>
+                <!--
+                <a title="Download COI" href="">Download COI</a>
+                -->
 	            </p>
         	</div>
         	<div class="col-md-4 xs-mb-15">
-	            <img src="images/people/leadership/john_gibson.jpg" class="img-circle">
-	            <p class="photo_caption"><strong>{!! Html::mailto('John.Gibson@newcastle.ac.uk', 'John Gibson') !!}</strong>
+                <img src="images/people/leadership/Andrew_Bush.jpg" class="img-circle">
+                <p class="photo_caption"><strong>Andrew Bush</strong>
 	            Publications Chair <br>
-	            <a title="Download COI" href="https://ers.box.com/s/uunmkvz82w0sthitwaxmrv4shts9uyx7">Download COI</a>
+                <a title="Download COI" href="https://ers.box.com/s/sti616ycbzall1nqe7ankrp0gvk7jq9h">Download COI</a>
         	</div>
             <!--
         	<div class="col-md-4 xs-mb-15">
@@ -111,23 +116,6 @@
 	            Secretary General-Elect <br>
 	            <a title="Download COI" href="http://old.ersnet.org/about-us/leadership.raw?task=callelement&item_id=1059&element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&method=download">Download COI</a>
         	</div>-->
-            <div class="col-md-4 xs-mb-15">
-                <img src="images/people/leadership/Daiana-Stolz2.jpg" class="img-circle">
-                <p class="photo_caption"><strong>Daiana Stolz</strong>
-                Education Council Chair Elect<br />
-                <a title="Download COI" href="https://ers.box.com/s/bcaonlkqkkus3ee7zwq9hi18f902g9wi">Download COI</a>
-                </p>
-            </div>
-            <div class="col-md-4 xs-mb-15">
-                <img src="images/people/leadership/Andrew_Bush.jpg" class="img-circle">
-                <p class="photo_caption"><strong>Andrew Bush</strong>
-                Publications Committee Chair Elect <br><a title="Download COI" href="https://ers.box.com/s/sti616ycbzall1nqe7ankrp0gvk7jq9h">Download COI</a>
-                </p>
-
-                
-            </div>
-
-
         </div>
        
 

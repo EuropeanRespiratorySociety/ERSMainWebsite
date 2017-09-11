@@ -4,12 +4,12 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/people/leadership/Maria_R_Bonsignore.jpg" class="img-circle">
-                  <p class="photo_caption">Head: {!! Html::mailto('marisa@ibim.cnr.it', 'Maria R. Bonsignore') !!}</p>
+                  <img src="../images/people/leadership/Andrea_Aliverti.jpg" class="img-circle">
+                  <p class="photo_caption">Head:  {!! Html::mailto('andrea.aliverti@polimi.it', 'Andrea Aliverti') !!}</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/people/leadership/Andrea_Aliverti.jpg" class="img-circle">
-                  <p class="photo_caption">Secretary: {!! Html::mailto('andrea.aliverti@polimi.it', 'Andrea Aliverti') !!}</p>
+                 <img src="images/120x120.jpg" class="img-circle">
+                  <p class="photo_caption">Secretary: Pierantonio Laveneziana</p>
                  
                 </div>
             </div>
