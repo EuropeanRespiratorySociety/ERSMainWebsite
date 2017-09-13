@@ -54,7 +54,9 @@
                 <img src="images/people/leadership/Carlos_Robalo.jpg" class="img-circle">
                 <p class="photo_caption"><strong>Carlos Robalo Cordeiro</strong>
                 Secretary General <br>
-                <a title="Download COI" href="https://ers.box.com/s/4l0crbxgfdtxq2r3l5y7m0hibt51h040">Download COI</a>
+                <!--
+                <a title="Download COI" href="">Download COI</a>
+                -->
             </div>
             <div class="col-md-4 xs-mb-15">
                 <img src="images/people/leadership/otto_chris_burghuber.jpg" class="img-circle">
