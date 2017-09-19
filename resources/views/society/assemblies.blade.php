@@ -52,7 +52,12 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
                     <li data-menuanchor="airway-diseases">
                       <a href="the-society/assemblies#airway-diseases">5 Airway Diseases</a>
                     </li>
-
+                    <li data-menuanchor="occupation-and-epidemiology">
+                      <a href="the-society/assemblies#occupation-and-epidemiology">6 Occupation and Epidemiology</a>
+                    </li>
+                    <li data-menuanchor="paediatrics">
+                      <a href="the-society/assemblies#paediatrics">7 Paediatrics</a>
+                    </li>
                   </ul>
                 </div>
                </div>
@@ -61,18 +66,14 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
                   <div class="bs-grid-block">
                         <div class="content">
                           <ul class="text-left">
-                            <li data-menuanchor="occupation-and-epidemiology">
-                              <a href="the-society/assemblies#occupation-and-epidemiology">6 Occupation and Epidemiology</a>
-                            </li>
-                            <li data-menuanchor="paediatrics">
-                              <a href="the-society/assemblies#paediatrics">7 Paediatrics</a>
-                            </li>
                             <li data-menuanchor="thoracic-surgery">
                               <a href="the-society/assemblies#thoracic-surgery">8 Thoracic Surgery and Transplantation</a>
                             </li>
                             <li data-menuanchor="allied-respiratory"><a href="the-society/assemblies#allied-respiratory">9 Allied Respiratory Professionals</a></li>
                             <li data-menuanchor="respiratory-infections"><a href="the-society/assemblies#respiratory-infections">10 Respiratory Infections</a></li>
                             <li data-menuanchor="thoracic-oncology"><a href="the-society/assemblies#thoracic-oncology">11 Thoracic Oncology</a></li>
+                            <li data-menuanchor="interstitial-lung-diseases"><a href="the-society/assemblies#interstitial-lung-diseases">12 Interstitial Lung Diseases (ILD) or Diffuse Parenchymal Lung Diseases (DPLD)
+</a></li>
                           </ul>
                         </div>
                       </div>
