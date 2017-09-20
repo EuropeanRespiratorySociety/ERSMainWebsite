@@ -103,28 +103,10 @@
                   <div class="card-image">
                   </div>
                   <div class="card-title text-left">
-                    <h3>Diffuse Parenchymal Lung Disease</h3>
-                  </div> 
-                  <div class="card-content text-left">
-                    <p>Group 01.05<br>
-                    Chair: {!! Html::mailto('katerinaantoniou@yahoo.gr', 'Katerina Antoniou') !!}<br>
-                    Secretary: {!! Html::mailto('francesco.bonella@ruhrlandklinik.uk-essen.de', 'Francesco Bonella') !!}</p>
-                  </div>
-                  <div class="card-action clearfix">
-                    <button data-toggle="modal" data-target="#md-diffuse" type="button" class="btn btn-default pull-right">More</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card card-padded">
-                  <div class="card-image">
-                  </div>
-                  <div class="card-title text-left">
                     <h3>General Practice and Primary Care</h3>
                   </div> 
                   <div class="card-content text-left">
-                    <p>Group 01.06<br>
+                    <p>Group 01.05<br>
                     Chair: {!! Html::mailto('hilary.pinnock@ed.ac.uk', 'Hilary Pinnock') !!}<br>
                     Secretary: {!! Html::mailto('j.w.h.kocks@med.umcg.nl', 'Janwillem Kocks') !!}</p>
                   </div>

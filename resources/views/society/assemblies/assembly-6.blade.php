@@ -1,6 +1,6 @@
       <div class="section fp-auto-height" style="min-height:1500px;">
         <div class="main-content">
-          <div class="page-head"><h2>ERS Assembly 6: Occupation and Epidemiology </h2></div>
+          <div class="page-head"><h2>ERS Assembly 6: Epidemiology and Environment</h2></div>
 
           <div class="row">
             <div class="col-md-3 col-md-offset-3 xs-mb-15">

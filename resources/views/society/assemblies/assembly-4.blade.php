@@ -65,24 +65,6 @@ The Assembly is comprised of the following three groups:
                 </div>
               </div>
 
-              <div class="col-md-4">
-                <div class="card card-padded">
-                  <div class="card-image">
-                  </div>
-                  <div class="card-title text-left">
-                    <h3>Pulmonary Circulation and Pulmonary Vascular Disease</h3>
-                  </div> 
-                  <div class="card-content text-left">
-                    <p>Group 04.03<br>
-                    Chair: {!! Html::mailto('souza.rogerio@me.com', 'Rogerio Souza') !!}<br>
-                    Secretary: Sitbon Olivier</p>
-                  </div>
-                  <div class="card-action clearfix">
-                    <button data-toggle="modal" data-target="#md-pulmonary-circulation" type="button" class="btn btn-default pull-right">More</button>
-                  </div>
-                </div>
-              </div>
-
  
 
             </div>

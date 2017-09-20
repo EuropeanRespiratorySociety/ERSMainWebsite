@@ -1,6 +1,6 @@
       <div class="section fp-auto-height" style="min-height:800px;">
           <div class="main-content">
-          <div class="page-head"><h2>ERS Assembly 3: Cell and Molecular Biology</h2></div>
+          <div class="page-head"><h2>ERS Assembly 3: Basic and translational sciences</h2></div>
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">

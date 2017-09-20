@@ -72,8 +72,8 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
                             <li data-menuanchor="allied-respiratory"><a href="the-society/assemblies#allied-respiratory">9 Allied Respiratory Professionals</a></li>
                             <li data-menuanchor="respiratory-infections"><a href="the-society/assemblies#respiratory-infections">10 Respiratory Infections</a></li>
                             <li data-menuanchor="thoracic-oncology"><a href="the-society/assemblies#thoracic-oncology">11 Thoracic Oncology</a></li>
-                            <li data-menuanchor="interstitial-lung-diseases"><a href="the-society/assemblies#interstitial-lung-diseases">12 Interstitial Lung Diseases (ILD) or Diffuse Parenchymal Lung Diseases (DPLD)
-</a></li>
+                            <li data-menuanchor="interstitial-lung-diseases"><a href="the-society/assemblies#interstitial-lung-diseases">12 Interstitial Lung Diseases(ILD) or Diffuse Parenchymal Lung Diseases(DPLD)</a></li>
+                            <li data-menuanchor="pulmonary-vascular-diseases"><a href="the-society/assemblies#pulmonary-vascular-diseases">13 Pulmonary Vascular Diseases(PVD)</a></li>
                           </ul>
                         </div>
                       </div>
@@ -133,6 +133,13 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
             @include('society.assemblies.assembly-11')
         <!-- End Assembly 11 -->
 
+        <!-- Start Asesembly 12 -->  
+            @include('society.assemblies.assembly-12')
+        <!-- End Assembly 12 -->
+
+        <!-- Start Asesembly 13 -->  
+            @include('society.assemblies.assembly-13')
+        <!-- End Assembly 13 -->
     </div>
   </div>
 
@@ -204,23 +211,6 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
           <h4>Interventional Pulmonology</h4>
           <p>This Group covers the following procedures. Bronchoscopy (flexible and rigid instruments): diagnostic procedures range from simple bronchial wash to transbronchial needle aspiration (TBNA), transbronchial lung biopsy (TBLB), autofluorescence (AF) and endobronchial ultrasound (EBUS); therapeutic procedures include foreign body removal, airway dilatation, laser, electrocautery, argon beamer, cryotherapy, brachytherapy, photodynamic therapy and stenting. Pleural biopsy/transthoracic needle aspiration of lung: cytology, histology and culture.<br><br>
           Thoracoscopy: investigation of pleural disease and peripheral pulmonary lesions, drainage of pleural effusions including empyema, pleurodesis with sealants, such as talc for pneumothorax and malignant effusions. Tracheostomy: classic and percutaneous, mini-tracheostomy, and tracheal oxygen catheters. Our Group is very active in establishing guidelines, performing surveys and developing cutting-edge technology for the detection of early lung cancer.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!--Diffuse Parenchymal Lung Disease-->
-<div id="md-diffuse" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
-      </div>
-      <div class="modal-body">
-        <div class="text-left">
-          <h4>Diffuse Parenchymal Lung Disease</h4>
-          <p>This Group offers the opportunity to exchange views and present data in the diverse field of lung biological investigations. Created as the bronchoalveolar lavage (BAL) group and thus initially limited to this methodological approach, our Group recently broadened its field of interest to include all the methodologies and approaches used to determine lung biology in health and disease.<br><br>
-          Most of our members are clinicians employed in everyday practice and employ methodologies such as BAL, sputum, breathe condensate, serum markers of disease, etc.</p>
         </div>
       </div>
     </div>
@@ -875,11 +865,11 @@ As a Group we aim to be a platform that facilitates close cooperation between ba
   @stop()  
 
     @section('scripts')
-    <!--script src="../js/fullpage.js" type="text/javascript"></script-->
-    <!--script src="../js/app-assemblies.js" type="text/javascript"></script-->
+    {{--<script src="../js/fullpage.js" type="text/javascript"></script>--}}
+    {{--<script src="../js/app-assemblies.js" type="text/javascript"></script>--}}
 
-    <!--script src="http://erstemplate.app/js/fullpage.js" type="text/javascript"></script-->
-    <!--script src="http://erstemplate.app/js/app-assemblies.js" type="text/javascript"></script-->
+    {{--<script src="http://erstemplate.app/js/fullpage.js" type="text/javascript"></script>--}}
+    {{--<script src="http://erstemplate.app/js/app-assemblies.js" type="text/javascript"></script>--}}
 
     <script src="https://bootstrap.ersnet.org/js/fullpage.js" type="text/javascript"></script>
     <script src="https://bootstrap.ersnet.org/js/app-assemblies.js" type="text/javascript"></script>
