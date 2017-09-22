@@ -55,7 +55,7 @@ The Assembly is comprised of the following seven groups:
                   <div class="card-content text-left">
                     <p>Group 07.02<br>
                     Chair: {!! Html::mailto('b.l.rottier@umcg.nl', 'Bart Rottier') !!}<br>
-                    Secretary: {!! Html::mailto('alexander.moeller@kispi.uzh.ch', 'Alexander Möller') !!}</p>
+                    Secretary: {!! Html::mailto('zacharasiewicz@hotmail.com', 'Angela Zacharasiewicz') !!}</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-paediatric-asthma" type="button" class="btn btn-default pull-right">More</button>
@@ -72,8 +72,8 @@ The Assembly is comprised of the following seven groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 07.03<br>
-                    Chair: {!! Html::mailto('i.balfourlynn@ic.ac.uk', 'Ian Balfour-Lynn') !!}<br>
-                    Secretary: {!! Html::mailto('juerg.barben@kispisg.ch', 'Juerg Barben') !!}</p>
+                    Chair: {!! Html::mailto('juerg.barben@kispisg.ch', 'Jürg Barben') !!}<br>
+                    Secretary: {!! Html::mailto('alex.horsley@nhs.net', 'Alex Horsley') !!}</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-cystic-fibrosis" type="button" class="btn btn-default pull-right">More</button>
@@ -90,8 +90,8 @@ The Assembly is comprised of the following seven groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 07.04<br>
-                    Chair: {!! Html::mailto('meverard@sch.nhs.uk', 'Mark Everard') !!}<br>
-                    Secretary: {!! Html::mailto('valgar@doctors.net.uk', 'Vanessa Craven') !!}</p>
+                    Chair: {!! Html::mailto('fernandescunharicardo@gmail.com', 'Fernandes Ricardo Miguel Ribeiro Marques Cunha') !!}<br>
+                    Secretary: {!! Html::mailto('marijke.proesmans@uzleuven.be', 'Marijke Proesmans') !!}</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-paediatric-respiratory-infection" type="button" class="btn btn-default pull-right">More</button>
@@ -144,8 +144,8 @@ The Assembly is comprised of the following seven groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 07.07<br>
-                    Chair: {!! Html::mailto('kpriftis@otenet.gr', 'Kostas Priftis') !!}<br>
-                    Secretary: {!! Html::mailto('olanda76@gmail.com', 'Deborah Snijders') !!}</p>
+                    Chair: {!! Html::mailto('olanda76@gmail.com', 'Deborah Snijders') !!}<br>
+                    Secretary: {!! Html::mailto('dirk.schramm@med.uni-duesseldorf.de', 'Dirk Schramm') !!}</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-paediatric-bronchology" type="button" class="btn btn-default pull-right">More</button>
@@ -162,7 +162,8 @@ The Assembly is comprised of the following seven groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 07.08<br>
-                      <a href="https://www.ersnet.org/the-society/who-we-are/leadership/ers-elections">Elections are currently open</a> for the roles of Group Chair and Secretary. 
+                      Chair: {!! Html::mailto('r.rottier@erasmusmc.nl', 'Robbert Rottier') !!}<br>
+                      Secretary: {!! Html::mailto('silvia.carraro@unipd.it', 'Silvia Carraro') !!}
                     </p>
                   </div>
                   <div class="card-action clearfix">

@@ -140,7 +140,7 @@
 	         	</div>	         	
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Luxembourg</strong><br>
-		            {!! Html::mailto('gilwirtz@hotmail.com', 'Gil Wirtz') !!}
+		            {!! Html::mailto('thierrywagner@gmail.com', 'Thierry Wagner') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Lybia</strong><br>
@@ -148,7 +148,10 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Malaysia</strong><br>
-		            {!! Html::mailto('tengkusaifudin71@gmail.com', 'Tengku Saifudin Tengku Ismail') !!}
+		            {!! Html::mailto('ating@doctors.org.uk', 'Ahmad Izuanuddin Ismail') !!}
+	         	</div>	         	<div class="col-md-4 national_delegates ">
+		         	<strong>Malaysia</strong><br>
+		            {!! Html::mailto('ating@doctors.org.uk', 'Alison Ting') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Malta</strong><br>
@@ -164,7 +167,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Philippines</strong><br>
-		            {!! Html::mailto('maecampo1991@yahoo.com', 'Celeste Mae Campomanes') !!}
+		            {!! Html::mailto('morality317@yahoo.com', 'Patrick Gerard Moral') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Poland</strong><br>
@@ -189,6 +192,10 @@
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Slovakia</strong><br>
 		            {!! Html::mailto('tomi.otvos@gmail.com', 'Tamás Ötvös') !!}
+	         	</div>
+	         	<div class="col-md-4 national_delegates ">
+		         	<strong>Senegal</strong><br>
+		            {!! Html::mailto('niang.abdou@gmail.com', 'Abdourakhmane Niang') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Slovenia</strong><br>

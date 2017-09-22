@@ -56,8 +56,8 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 03.02<br>
-                    Chair: {!! Html::mailto('c.taggart@qub.ac.uk', 'Clifford Taggart') !!}<br>
-                    Secretary: {!! Html::mailto('silke.meiners@helmholtz-muenchen.de', 'Silke Meiners') !!}</p>
+                    Chair: {!! Html::mailto('silke.meiners@helmholtz-muenchen.de', 'Silke Meiners') !!}<br>
+                    Secretary: {!! Html::mailto('H.I.Heijink@umcg.nl', 'Irene Heijink') !!}</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-airway-cell" type="button" class="btn btn-default pull-right">More</button>

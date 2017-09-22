@@ -35,8 +35,8 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 04.01<br>
-                    Chair: {!! Html::mailto('pier_lav@yahoo.it', 'Pierantonio Laveneziana') !!}<br>
-                    Secretary: {!! Html::mailto('sverges@chu-grenoble.fr', 'Samuel Verges') !!}</p>
+                    Chair: {!! Html::mailto('sverges@chu-grenoble.fr', 'Samuel Verges') !!}<br>
+                    Secretary: {!! Html::mailto('sbayat@chu-grenoble.fr', 'Sam Bayat') !!}</p>
                     
                   </div>
                   <div class="card-action clearfix">

@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="col-md-6 center-block">
-              <p >Assembly Early Career representative: {!! Html::mailto('clementinebost@hotmail.com', 'Klimentini Bostantzoglou') !!}</p>
+              <p >Assembly Early Career representative: {!! Html::mailto('clementinebost@hotmail.com', 'Nina Bostantzoglou') !!}</p>
             </div>
             <div class="col-md-6 center-block lead">
               Respiratory tumours are a major part of daily practice for many respiratory physicians. Assembly 11 focuses on all aspects of lung cancer, mesothelioma, mediastinal tumours and lung metastases. The work of members includes epidemiology and prevention; biology and pathology; diagnosis and staging; multidisciplinary approaches in therapy; systemic treatment with chemotherapy and targeted agents; and follow-up and supportive care. There is a close cooperation with theImaging, Interventional Respiratory Medicine, Radiotherapy, Biology and Thoracic Surgery Groups, now formalised into the Thoracic Oncology Network of the ERS. 

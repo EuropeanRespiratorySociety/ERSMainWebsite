@@ -1,6 +1,6 @@
       <div class="section fp-auto-height" style="min-height:1120px;">
           <div class="main-content">
-          <div class="page-head"><h2>ERS Assembly 13: Pulmonary Vascular Diseases(PVD)</h2></div>
+          <div class="page-head"><h2>ERS Assembly 13: Right ventricle</h2></div>
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">

@@ -14,7 +14,7 @@
             </div>
           </div>
           <div class="col-md-6 center-block">
-            <p >Assembly Early Career representative: {!! Html::mailto('aneaamli@hotmail.com', 'Ane Aamli Gagnat') !!}</p>
+            <p >Assembly Early Career representative: {!! Html::mailto('a.amaral@imperial.ac.uk', 'Andre Amaral') !!}</p>
           </div>
           <div class="col-md-6 center-block lead">
             This is an interdisciplinary Assembly, which includes not only pulmonologists, but also epidemiologists, clinicians, statisticians, occupational doctors, air pollution scientists and health educators. Smoking and the environment are important issues for respiratory disease and this Assembly is involved in many activities to promote public awareness and scientific research in the field. <br>
@@ -57,8 +57,8 @@ The Assembly is comprised of the following four groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 06.02<br>
-                      Chair: {!! Html::mailto('paul.blanc@ucsf.edu', 'Paul Blanc') !!}<br>
-                      Secretary: {!! Html::mailto('p.cullinan@imperial.ac.uk', 'Paul Cullinan') !!}</p>
+                      Chair: {!! Html::mailto('d.fishwick@sheffield.ac.uk', 'David Fishwick') !!}<br>
+                      Secretary: {!! Html::mailto('rafael.delahoz@mssm.edu', 'Rafael De La Hoz') !!}</p>
                     </div>
                     <div class="card-action clearfix">
                       <button data-toggle="modal" data-target="#md-occupational-and-environmental" type="button" class="btn btn-default pull-right">More</button>
@@ -75,8 +75,8 @@ The Assembly is comprised of the following four groups:
                     </div> 
                     <div class="card-content text-left">
                       <p>Group 06.03<br>
-                        Chair: {!! Html::mailto('vkatsaounou@yahoo.com', 'Paraskevi Katsaounou') !!}<br>
-                        Secretary: {!! Html::mailto('sbravara@fcsaude.ubi.pt', 'Sofia Belo Ravara') !!}</p>
+                        Chair: {!! Html::mailto('sbravara@fcsaude.ubi.pt', 'Sofia Ravara') !!}<br>
+                        Secretary: {!! Html::mailto('elifzdagli@gmail.com', 'Elif Dagli') !!}</p>
                       </div>
                       <div class="card-action clearfix">
                         <button data-toggle="modal" data-target="#md-tobacco-smoking-control" type="button" class="btn btn-default pull-right">More</button>
@@ -93,7 +93,7 @@ The Assembly is comprised of the following four groups:
                       </div> 
                       <div class="card-content text-left">
                         <p>Group 06.04<br>
-                          Chair: {!! Html::mailto('h.m.boezen@umcg.nl', 'Marike H. Boezen') !!}<br>
+                          Chair: {!! Html::mailto('s.shaheen@qmul.ac.uk', 'Seif Shaheen') !!}<br>
                           Secretary: Melén Erik</p>
                         </div>
                         <div class="card-action clearfix">

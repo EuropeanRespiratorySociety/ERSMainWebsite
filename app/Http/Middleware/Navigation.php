@@ -60,8 +60,8 @@ class Navigation
                     $menu->assemblies->add('9. Allied Respiratory Professionals', 'the-society/assemblies#allied-respiratory' );
                     $menu->assemblies->add('10. Respiratory Infections', 'the-society/assemblies#respiratory-infections' );
                     $menu->assemblies->add('11. Thoracic Oncology', 'the-society/assemblies#thoracic-oncology' );
-                    $menu->assemblies->add('12. Interstitial Lung Diseases(ILD) or Diffuse Parenchymal Lung Diseases (DPLD)', 'the-society/assemblies#interstitial-lung-diseases' );
-                    $menu->assemblies->add('13. Pulmonary Vascular Diseases(PVD)', 'the-society/assemblies#pulmonary-vascular-diseases' );
+                    $menu->assemblies->add('12. Interstitial Lung Diseases', 'the-society/assemblies#interstitial-lung-diseases' );
+                    $menu->assemblies->add('13. Pulmonary Vascular Diseases', 'the-society/assemblies#pulmonary-vascular-diseases' );
                 $menu->theSociety->add('News And Features', 'the-society/news' );
                     //$menu->newsAndFeatures->add('Respiratory Worldwide', 'the-society/news/respiratory-worldwide' );
                     $menu->newsAndFeatures->add('Respiratory Matters', 'the-society/news/respiratory-matters' );

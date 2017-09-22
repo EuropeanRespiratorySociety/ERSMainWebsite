@@ -45,8 +45,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 10.01<br>
-                    Chair: {!! Html::mailto('epolveri@clinic.ub.es', 'Eva Polverino') !!}<br>
-                    Secretary: {!! Html::mailto('Ringshausen.Felix@mh-hannover.de', 'Felix C. Ringshausen') !!}</p>
+                    Chair: {!! Html::mailto('jchalmers@dundee.ac.uk', 'James Chalmers') !!}<br>
+                    Secretary: {!! Html::mailto('m.loebinger@rbht.nhs.uk', 'Michael Loebinger') !!}</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-respiratory-infections" type="button" class="btn btn-default pull-right">More</button>
@@ -63,7 +63,7 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 10.02<br>
-                    Chair: {!! Html::mailto('mailto:graham.bothamley@homerton.nhs.uk', 'Graham H. Bothamley') !!}<a href=""></a><br>
+                    Chair: {!! Html::mailto('mailto:raquelafduarte@gmail.com', 'Raquel Almeida Ferreira Duarte Bessa Melo') !!}<a href=""></a><br>
                     Secretary: {!! Html::mailto('j.heyckendorf@googlemail.com', 'Jan Heyckendorf') !!}</p>
                   </div>
                   <div class="card-action clearfix">

@@ -29,8 +29,8 @@ The Assembly is comprised of the following two groups:
                     </div> 
                     <div class="card-content text-left">
                       <p>Group 02.01<br>
-                      Chair: {!! Html::mailto('c.gregoretti@gmail.com', 'Cesare Gregoretti') !!}<br>
-                      Secretary: Marcus Schultz</p>
+                      Chair: {!! Html::mailto('marcus.j.schultz@gmail.com', 'Marcus Schultz') !!}<br>
+                      Secretary: {!! Html::mailto('alves1029@hotmail.com', 'Lígia Pires') !!}</p>
                     </div>
                     <div class="card-action clearfix">
                       <button data-toggle="modal" data-target="#md-acute-critical" type="button" class="btn btn-default pull-right">More</button>

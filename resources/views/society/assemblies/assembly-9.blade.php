@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="col-md-6 center-block">
-              <p >Assembly Early Career representative: {!! Html::mailto('Emma.Flood@hse.ie', 'Emma Flood') !!}</p>
+              <p >Assembly Early Career representative: {!! Html::mailto('jana.debrandt@uhasselt.be', 'Jana De Brandt') !!}</p>
             </div>
             <div class="col-md-6 center-block lead">
               It is increasingly recognised that allied healthcare professionals play an important role in the diagnosis, treatment and care of patients with pulmonary diseases. This Assembly is an opportunity to learn from each other's disciplines and achieve better patient outcomes. <br>
@@ -36,8 +36,8 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 09.01<br>
-                    Chair: {!! Html::mailto('J.Makonga@meandermc.nl', 'Jellien Makonga Braaksma') !!}<br>
-                    Secretary: </p>
+                    Chair: {!! Html::mailto('aisnmcg@yahoo.ie', 'Aisling Mcgowan') !!}<br>
+                    Secretary: {!! Html::mailto('karl.sylvester@addenbrookes.nhs.uk', 'Karl Sylvester') !!}</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-respiratory-function" type="button" class="btn btn-default pull-right">More</button>
@@ -55,7 +55,7 @@ The Assembly is comprised of the following three groups:
                   <div class="card-content text-left">
                     <p>Group 09.02<br>
                     Chair: {!! Html::mailto('daniel.langer@faber.kuleuven.be', 'Daniel Langer') !!}<br>
-                    Secretary: {!! Html::mailto('c.burtin@fontys.nl', 'Chris Burtin') !!}</p>
+                    Secretary: {!! Html::mailto('dinalince@yahoo.com', 'Deniz Inal-Ince') !!}</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-physiotherapists" type="button" class="btn btn-default pull-right">More</button>

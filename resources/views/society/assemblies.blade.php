@@ -72,8 +72,8 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
                             <li data-menuanchor="allied-respiratory"><a href="the-society/assemblies#allied-respiratory">9 Allied Respiratory Professionals</a></li>
                             <li data-menuanchor="respiratory-infections"><a href="the-society/assemblies#respiratory-infections">10 Respiratory Infections</a></li>
                             <li data-menuanchor="thoracic-oncology"><a href="the-society/assemblies#thoracic-oncology">11 Thoracic Oncology</a></li>
-                            <li data-menuanchor="interstitial-lung-diseases"><a href="the-society/assemblies#interstitial-lung-diseases">12 Interstitial Lung Diseases(ILD) or Diffuse Parenchymal Lung Diseases(DPLD)</a></li>
-                            <li data-menuanchor="pulmonary-vascular-diseases"><a href="the-society/assemblies#pulmonary-vascular-diseases">13 Pulmonary Vascular Diseases(PVD)</a></li>
+                            <li data-menuanchor="interstitial-lung-diseases"><a href="the-society/assemblies#interstitial-lung-diseases">12 Interstitial Lung Diseases</a></li>
+                            <li data-menuanchor="pulmonary-vascular-diseases"><a href="the-society/assemblies#pulmonary-vascular-diseases">13 Pulmonary Vascular Diseases</a></li>
                           </ul>
                         </div>
                       </div>
