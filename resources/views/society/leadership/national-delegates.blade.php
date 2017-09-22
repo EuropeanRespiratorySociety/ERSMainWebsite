@@ -148,9 +148,6 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Malaysia</strong><br>
-		            {!! Html::mailto('ating@doctors.org.uk', 'Ahmad Izuanuddin Ismail') !!}
-	         	</div>	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Malaysia</strong><br>
 		            {!! Html::mailto('ating@doctors.org.uk', 'Alison Ting') !!}
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
