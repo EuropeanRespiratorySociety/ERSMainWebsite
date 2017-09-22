@@ -1,6 +1,6 @@
       <div class="section fp-auto-height" style="min-height:1120px;">
           <div class="main-content">
-          <div class="page-head"><h2>ERS Assembly 13: Right ventricle</h2></div>
+          <div class="page-head"><h2>ERS Assembly 13: Pulmonary Vascular Diseases</h2></div>
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
@@ -64,7 +64,7 @@
                   <div class="card-image">
                   </div>
                   <div class="card-title text-left">
-                    <h3>Heart Lung interactions</h3>
+                    <h3>Right ventricle</h3>
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 13.03<br>
