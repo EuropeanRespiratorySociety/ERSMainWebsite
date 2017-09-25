@@ -47,7 +47,7 @@ The Assembly is comprised of the following two groups:
                     <div class="card-content text-left">
                       <p>Group 02.02<br>
                       Chair: {!! Html::mailto('mdreher@ukaachen.de', 'Michael Dreher') !!}<br>
-                      Secretary: Winck Joao Carlos</p>
+                      Secretary: {!! Html::mailto('jcwinck@mail.telepac.pt', 'Winck Joao Carlos') !!}</p>
                     </div>
                     <div class="card-action clearfix">
                       <button data-toggle="modal" data-target="#md-noninvasive-ventilatory" type="button" class="btn btn-default pull-right">More</button>
