@@ -23,26 +23,26 @@
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/Catherine_Green.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>Catherine Greene</strong>
-		            Cell and Molecular Biology <br>
+		            Basic and translational sciences<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Andrea_Aliverti.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('andrea.aliverti@polimi.it', 'Andrea Aliverti') !!}</strong>
+		            <img src="../images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Pierantonio Laveneziana</strong>
 		            Clinical physiology, sleep and pulmonary circulation <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Antonio_Spanevello.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('aspanevello@fsm.it', 'Antonio Spanevello') !!}</strong>
+		            <img src="../images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Omar Usmani</strong>
 		            Airway Diseases <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Christer_Jansen.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('christer.janson@medsci.uu.se', 'Christer Janson') !!}</strong>
-		            Occupation and Epidemiology <br>
+		            <img src="../images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Charlotte Suppli-Ulrik</strong>
+		            Epidemiology and Environment<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Jonathan_Grigg.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('j.grigg@qmul.ac.uk', 'Jonathan Grigg') !!}</strong>
+		            <img src="../images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Marielle Pijnenburg</strong>
 		            Paediatrics<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
@@ -56,8 +56,8 @@
 		            Allied Respiratory Professionals <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Giovanni_Sotgiu.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('gsotgiu@uniss.it', 'Giovanni Sotgiu') !!}</strong>
+		            <img src="../images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Eva Polverino</strong>
 		            Respiratory Infections <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
@@ -65,6 +65,17 @@
 		            <p class="photo_caption"><strong>{!! Html::mailto('b_grigoriu@hotmail.com', 'Bogdan Dragos Grigoriu') !!}</strong>
 		            Thoracic Oncology <br>
 		        </div>
+		        <div class="col-md-4 xs-mb-15">
+		            <img src="../images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>To be announced</strong>
+		            Interstitial Lung Diseases<br>
+		        </div>
+		        <div class="col-md-4 xs-mb-15">
+		            <img src="../images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>To be announced</strong>
+		            Pulmonary Vascular Diseases<br>
+		        </div>
+
 	        </div>
 
 	        {{--Departments Menu--}}

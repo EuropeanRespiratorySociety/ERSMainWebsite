@@ -24,30 +24,30 @@
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/P_Hiemstra_2016.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>Pieter Hiemstra</strong>
-		            Cell and Molecular Biology<br>
+		            Basic and translational sciences<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Maria_R_Bonsignore.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('marisa@ibim.cnr.it', 'Maria R. Bonsignore') !!}</strong>
+		            <img src="../images/people/leadership/Andrea_Aliverti.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('andrea.aliverti@polimi.it', 'Andrea Aliverti') !!}</strong>
 		            Clinical physiology, sleep and pulmonary circulation<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/Ian_M_Adcock.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('ian.adcock@imperial.ac.uk', 'Ian M. Adcock') !!}</strong>
+		            <p class="photo_caption"><strong>{!! Html::mailto('aspanevello@fsm.it', 'Antonio Spanevello') !!}</strong>
 		            Airway Diseases<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Dick_Heederik.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('d.heederik@uu.nl', 'Dick Heederik') !!}</strong>
-		            Occupation and Epidemiology<br>
+		            <img src="../images/people/leadership/Christer_Jansen.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('christer.janson@medsci.uu.se', 'Christer Jansen') !!}</strong>
+		            Epidemiology and Environment<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Fabio_Midulla.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('midulla@uniroma1.it', 'Fabio Midulla') !!}</strong>
+		            <img src="../images/people/leadership/Jonathan_Grigg-2017.png" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('j.grigg@qmul.ac.uk', 'Jonathan Grigg') !!}</strong>
 		            Paediatrics <br>
 		            </p>
 	        	</div>
@@ -64,15 +64,27 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Stefano_Aliberti.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('stefano.aliberti@unimib.it', 'Stefano Aliberti ') !!}</strong>
+					<img src="../images/people/leadership/Graham-Bothamley.jpg" class="img-circle">
+					<p class="photo_caption"><strong>Graham Bothamley</strong> 
 		            Respiratory Infections <br>
 		            </p>
 	        	</div>
 				<div class="col-md-4 xs-mb-15">
-					<img src="../images/people/leadership/Nir_Peled.jpg" class="img-circle">
-					<p class="photo_caption"><strong>{!! Html::mailto('nirp@post.tau.ac.il', 'Nir Peled') !!}</strong> 
+		            <img src="../images/people/leadership/Nir_Peled.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('nirp@post.tau.ac.il', 'Nir Peled') !!}</strong>
 					Thoracic Oncology<br>
+					</p>
+                </div>
+				<div class="col-md-4 xs-mb-15">
+					<img src="../images/120x120.jpg" class="img-circle">
+					<p class="photo_caption"><strong>To be announced</strong> 
+					Interstitial Lung Diseases<br>
+					</p>
+                </div>
+				<div class="col-md-4 xs-mb-15">
+					<img src="../images/120x120.jpg" class="img-circle">
+					<p class="photo_caption"><strong>To be announced</strong> 
+					Pulmonary Vascular Diseases<br>
 					</p>
                 </div>
 
