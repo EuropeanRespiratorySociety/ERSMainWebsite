@@ -5,7 +5,7 @@
           <div class="row">
             <div class="col-md-3 col-md-offset-3 xs-mb-15">
               <img src="../images/people/leadership/Christer_Jansen.jpg" class="img-circle">
-              <p class="photo_caption">Head: {!! Html::mailto('christer.janson@medsci.uu.se', 'Christer Jansen') !!}</p>
+              <p class="photo_caption">Head: {!! Html::mailto('christer.janson@medsci.uu.se', 'Christer Janson') !!}</p>
 
             </div>
             <div class="col-md-3 xs-mb-15">

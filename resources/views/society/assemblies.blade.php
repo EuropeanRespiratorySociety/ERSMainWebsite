@@ -43,8 +43,8 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
                     <li data-menuanchor="respiratory-intensive-care">
                       <a href="the-society/assemblies#respiratory-intensive-care">2 Respiratory Intensive Care</a>
                     </li>
-                    <li data-menuanchor="cell-and-molecular-biology">
-                      <a href="the-society/assemblies#cell-and-molecular-biology">3 Basic and translational sciences</a>
+                    <li data-menuanchor="basic-and-translational-sciences">
+                      <a href="the-society/assemblies#basic-and-translational-sciences">3 Basic and translational sciences</a>
                     </li>
                     <li data-menuanchor="clinical-physiology">
                       <a href="the-society/assemblies#clinical-physiology">4 Clinical physiology and sleep</a>
@@ -52,8 +52,8 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
                     <li data-menuanchor="airway-diseases">
                       <a href="the-society/assemblies#airway-diseases">5 Airway Diseases</a>
                     </li>
-                    <li data-menuanchor="occupation-and-epidemiology">
-                      <a href="the-society/assemblies#occupation-and-epidemiology">6 Epidemiology and Environmenty</a>
+                    <li data-menuanchor="epidemiology-and-environment">
+                      <a href="the-society/assemblies#epidemiology-and-environment">6 Epidemiology and Environmenty</a>
                     </li>
                     <li data-menuanchor="paediatrics">
                       <a href="the-society/assemblies#paediatrics">7 Paediatrics</a>
