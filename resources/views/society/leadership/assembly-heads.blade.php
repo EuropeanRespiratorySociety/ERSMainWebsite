@@ -34,7 +34,7 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Ian_M_Adcock.jpg" class="img-circle">
+		            <img src="../images/people/leadership/Antonio_Spanevello.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('aspanevello@fsm.it', 'Antonio Spanevello') !!}</strong>
 		            Airway Diseases<br>
 		            </p>

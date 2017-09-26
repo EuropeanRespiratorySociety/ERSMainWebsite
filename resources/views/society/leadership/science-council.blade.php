@@ -39,8 +39,8 @@
 		            CRC Director<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/marc_miravitlles.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('mmiravitlles@vhebron.net', 'Marc Miravitlles') !!}</strong>
+					<img src="images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('nicolas.roche@aphp.fr', 'Nicolas Roche') !!}</strong>
 		            Guidelines director<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
