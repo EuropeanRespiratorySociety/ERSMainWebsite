@@ -41,7 +41,7 @@
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/Christer_Jansen.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('christer.janson@medsci.uu.se', 'Christer Jansen') !!}</strong>
+		            <p class="photo_caption"><strong>{!! Html::mailto('christer.janson@medsci.uu.se', 'Christer Janson') !!}</strong>
 		            Epidemiology and Environment<br>
 		            </p>
 	        	</div>
