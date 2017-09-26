@@ -564,12 +564,6 @@
             </p>
         </div-->
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('Valerie.Ottet@ersnet.org', 'Valérie Ottet') !!}</strong>
-            Senior Accountant<br>
-            T +41 21 213 01 21<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('maria.tronnolone@ersnet.org', 'Maria Tronnolone Valencia') !!}</strong>
             Senior Accountant &amp; Payroll Assistant<br>
             T +41 21 213 01 26<br>
@@ -591,6 +585,12 @@
           <p class="photo_caption"><strong>{!! Html::mailto('sam.zuma@ersnet.org', 'Sam Zuma') !!}</strong>
           Junior Accountant<br>
             T +41 21 213 01 29<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('francoise.thonnard@ersnet.org', 'Françoise Thonnard') !!}</strong>
+          Junior Accountant<br>
+            T +41 21 213 01 21<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
