@@ -51,10 +51,10 @@ class Navigation
                 $menu->theSociety->add('Assemblies', 'the-society/assemblies' );
                     $menu->assemblies->add('1. Clinical', 'the-society/assemblies#clinical' );
                     $menu->assemblies->add('2. Respiratory Intensive Care', 'the-society/assemblies#respiratory-intensive-care' );
-                    $menu->assemblies->add('3. Cell and Molecular Biology', 'the-society/assemblies#cell-and-molecular-biology' );
-                    $menu->assemblies->add('4. Clinical Physiology, Sleep and Pulmonary Circulation', 'the-society/assemblies#clinical-physiology' );
+                    $menu->assemblies->add('3. Basic and translational sciences', 'the-society/assemblies#basic-and-translational-sciences' );
+                    $menu->assemblies->add('4. Clinical physiology and sleep', 'the-society/assemblies#clinical-physiology' );
                     $menu->assemblies->add('5. Airway Diseases', 'the-society/assemblies#airway-diseases' );
-                    $menu->assemblies->add('6. Occupation and Epidemiology', 'the-society/assemblies#occupation-and-epidemiology' );
+                    $menu->assemblies->add('6. Epidemiology and Environment', 'the-society/assemblies#epidemiology-and-environment' );
                     $menu->assemblies->add('7. Paediatrics', 'the-society/assemblies#paediatrics' );
                     $menu->assemblies->add('8. Thoracic Surgery and Transplantation', 'the-society/assemblies#thoracic-surgery' );
                     $menu->assemblies->add('9. Allied Respiratory Professionals', 'the-society/assemblies#allied-respiratory' );
