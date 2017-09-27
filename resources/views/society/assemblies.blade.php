@@ -53,7 +53,7 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
                       <a href="the-society/assemblies#airway-diseases">5 Airway Diseases</a>
                     </li>
                     <li data-menuanchor="epidemiology-and-environment">
-                      <a href="the-society/assemblies#epidemiology-and-environment">6 Epidemiology and Environmenty</a>
+                      <a href="the-society/assemblies#epidemiology-and-environment">6 Epidemiology and Environment</a>
                     </li>
                     <li data-menuanchor="paediatrics">
                       <a href="the-society/assemblies#paediatrics">7 Paediatrics</a>

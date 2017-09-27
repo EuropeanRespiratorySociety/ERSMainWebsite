@@ -28,37 +28,43 @@
 		            </p>
 	        	</div>
 	            <div class="col-md-4 xs-mb-15">
-	                <img src="images/people/leadership/Guy_Joos.jpg" class="img-circle">
-	                <p class="photo_caption"><strong>{!! Html::mailto('guy.joos@ugent.be', 'Guy Joos') !!}</strong>
-	                President<br>
+	                <img src="images/120x120.jpg" class="img-circle">
+	                <p class="photo_caption"><strong>Ildiko Horvath</strong>
+	               Chair-Elect of the ERS Advocacy Council<br>
 	                </p>
 	            </div>
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="images/people/leadership/mina_gaga.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('minagaga@yahoo.com', 'Mina Gaga') !!}</strong>
-		            President Elect<br></p>
+		            President<br></p>
 	        	</div>
 	            <div class="col-md-4 xs-mb-15">
 	                <img src="images/people/leadership/Tobias_Welte.jpg" class="img-circle">
 	                <p class="photo_caption"><strong>Tobias Welte</strong>
-	                Vice President <br>
+	                President-Elect<br>
+					</p>
+	            </div>
+	            <div class="col-md-4 xs-mb-15">
+	                <img src="images/120x120.jpg" class="img-circle">
+	                <p class="photo_caption"><strong>To be announced</strong>
+	                 Vice-President<br>
 					</p>
 	            </div>
             	<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/Dan_Smyth.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('Dan.Smyth@europeanlung.org', 'Dan Smyth') !!}</strong>
+					<img src="images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('isabel.saraiva@europeanlung.org', 'Isabel Saraiva') !!}</strong>
 		            European Lung Foundation Chair<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/Carlos_Jimenez_Ruiz.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('', 'Carlos Jimenez Ruiz') !!}</strong>
+					<img src="images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('charlotta.pisinger@regionh.dk', 'Charlotta Pisinger') !!}</strong>
 		            Chair of the ERS Tobacco Control Committee<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/Bert_Brunekreef.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('', 'Bert Brunekreef') !!}</strong>
+					<img src="images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('b.hoffmann@uni-duesseldorf.de', 'Barbara Hoffmann') !!}</strong>
 		            Chair of the ERS Environment and Health Committee<br>
 		            </p>
 	        	</div>
