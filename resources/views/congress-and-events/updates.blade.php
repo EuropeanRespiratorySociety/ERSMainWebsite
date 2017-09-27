@@ -129,7 +129,7 @@
                             width: 75%;
                             margin: 0;">
                 EARLYBIRD DEADLINE : <br>
-                <span>25 September, 2017</span>
+                <span>18 October, 2017</span>
                 </p>
             </a>
             @if($item->ebusVenues[0])
