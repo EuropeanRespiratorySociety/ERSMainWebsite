@@ -81,7 +81,7 @@
             <div class="col-md-4 xs-mb-15">
                 <img src="images/people/leadership/christina_gratziou.jpg" class="img-circle">
                 <p class="photo_caption"><strong>{!! Html::mailto('chgratziou@yahoo.com', 'Christina Gratziou') !!}</strong>
-                Advocacy Council Chair<br>
+                Chair of the Advocacy Council<br>
                 <!--
                 <a title="Download COI" href="">Download COI</a>
                 -->
