@@ -16,7 +16,7 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/120x120.jpg" class="img-circle">
+		            <img src="images/people/leadership/Stefano_Aliberti.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('stefano.aliberti@unimi.it', 'Stefano Aliberti') !!}</strong>
 		            Curriculum Development Director<br>
 		            </p>
