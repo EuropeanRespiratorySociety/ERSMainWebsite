@@ -9,53 +9,40 @@
 
 	        <div class="row leadership-people">
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Gernot_Rohde.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('g.rohde@mumc.nl', 'Gernot Rohde') !!}</strong>
-		            Education Council Chair <br>
-		            <a href="/about-us/leadership/education-council.raw?task=callelement&amp;item_id=417&amp;element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&amp;method=download" title="Download COI">Download COI</a>
-		            </p>
-	        	</div>
-		        <div class="col-md-4 xs-mb-15">
 		            <img src="images/people/leadership/Daiana-Stolz2.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Daiana Stolz</strong>
-		            Education Council Chair Elect<br />
+		            <p class="photo_caption"><strong>{!! Html::mailto('Daiana.Stolz@usb.ch', 'Daiana Stolz') !!}</strong>
+		            Education Council Chair <br>
 		            <a title="Download COI" href="https://ers.box.com/s/bcaonlkqkkus3ee7zwq9hi18f902g9wi">Download COI</a>
 		            </p>
-		        </div>
-	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/ernst_eber.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('ernst.eber@medunigraz.at', 'Ernst Eber') !!}</strong>
-		            Curriculum Development Director<br>
-		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/course/Nicolino_Ambrosino.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('nico.ambrosino@gmail.com ', 'Nicolino Ambrosino') !!}</strong>
-		             Educational Programmes Director <br>
+		            <img src="../images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('stefano.aliberti@unimi.it', 'Stefano Aliberti') !!}</strong>
+		            Curriculum Development Director<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/Gilbert_Massard.png" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('gilbert.massard@chru-strasbourg.fr', 'Gilbert Massard') !!}</strong>
-		             Educational Programmes Director Elect<br>
+		             External Activities Director<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/frans_de_jongh.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('f.h.dejongh@amc.uva.nl', 'Frans de Jongh') !!}</strong>
-		            Learning Resources Director <br>
+		            <img src="../images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('ssat@hol.gr', 'Stylianos Loukides') !!}</strong>
+		            e-Learning Director<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/ildiko_horvath.jpg" class="img-circle">
+		            <img src="../images/people/leadership/Ildiko-Horvath.png" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('kiss.horvath1@t-online.hu', 'Ildiko Horvath') !!}</strong>
 		            Assessments Director<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/erik-driessen.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('e.driessen@maastrichtuniversity.nl', 'Erik Driessen') !!}</strong>
-		            Medical Education Advisor <br>
+		            <img src="../images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('rob.primhak@gmail.com', 'Robert Primhak') !!}</strong>
+		            Assessments Director-elect<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
