@@ -23,7 +23,7 @@
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/P_Hiemstra_2016.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Pieter Hiemstra</strong>
+		            <p class="photo_caption"><strong>{!! Html::mailto('p.s.hiemstra@lumc.nl', 'Pieter Hiemstra') !!}</strong>
 		            Basic and translational sciences<br>
 		            </p>
 	        	</div>
@@ -65,7 +65,7 @@
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 					<img src="../images/people/leadership/Graham-Bothamley.jpg" class="img-circle">
-					<p class="photo_caption"><strong>Graham Bothamley</strong> 
+					<p class="photo_caption"><strong>{!! Html::mailto('graham.bothamley@homerton.nhs.uk', 'Graham Bothamley') !!}</strong> 
 		            Respiratory Infections <br>
 		            </p>
 	        	</div>

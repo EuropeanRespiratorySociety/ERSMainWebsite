@@ -35,7 +35,7 @@
 		        </div>
 	        	<div class="col-md-4 xs-mb-15">
 					<img src="images/people/leadership/christopher_e_brightling.png" class="img-circle">
-		            <p class="photo_caption"><strong>Christopher E. Brightling</strong>
+		            <p class="photo_caption"><strong>{!! Html::mailto('ceb17@le.ac.uk', 'Christopher E. Brightling') !!}</strong>
 		            CRC Director<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
@@ -45,7 +45,7 @@
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
 					<img src="images/people/leadership/Nicolas-Kahn.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>NICOLAS KAHN</strong>
+		            <p class="photo_caption"><strong>{!! Html::mailto('Nicolas.kahn@med.uni-Heidelberg.de', 'NICOLAS KAHN') !!}</strong>
 		            Early-career member Representative<br>
 		        </div>
 
