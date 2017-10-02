@@ -8,8 +8,8 @@
                   <p class="photo_caption">Head:  {!! Html::mailto('andrea.aliverti@polimi.it', 'Andrea Aliverti') !!}</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                 <img src="images/120x120.jpg" class="img-circle">
-                  <p class="photo_caption">Secretary: Pierantonio Laveneziana</p>
+                  <img src="../images/people/leadership/Pierantonio-Laveneziana.png" class="img-circle">
+                  <p class="photo_caption">Secretary: {!! Html::mailto('pierantonio.laveneziana@aphp.fr', 'Pierantonio Laveneziana') !!}</p>
                  
                 </div>
             </div>

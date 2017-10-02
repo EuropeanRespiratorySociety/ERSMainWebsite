@@ -57,13 +57,13 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="images/120x120.jpg" class="img-circle">
+					<img src="images/people/leadership/Charlotta-Pisinger.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('charlotta.pisinger@regionh.dk', 'Charlotta Pisinger') !!}</strong>
 		            Chair of the ERS Tobacco Control Committee<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="images/120x120.jpg" class="img-circle">
+					<img src="images/people/leadership/Barbara-Hoffmann.png" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('b.hoffmann@uni-duesseldorf.de', 'Barbara Hoffmann') !!}</strong>
 		            Chair of the ERS Environment and Health Committee<br>
 		            </p>

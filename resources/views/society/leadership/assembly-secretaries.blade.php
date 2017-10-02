@@ -26,8 +26,8 @@
 		            Basic and translational sciences<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="../images/120x120.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Pierantonio Laveneziana</strong>
+		            <img src="../images/people/leadership/Pierantonio-Laveneziana.png" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('pierantonio.laveneziana@aphp.fr', 'Pierantonio Laveneziana') !!}</strong>
 		            Clinical physiology, sleep and pulmonary circulation <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
