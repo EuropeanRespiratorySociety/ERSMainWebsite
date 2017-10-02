@@ -28,9 +28,15 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
+		            <img src="../images/people/leadership/frans_de_jongh.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('f.h.dejongh@amc.uva.nl', 'Frans De Jongh') !!}</strong>
+		             e-Learning Director<br>
+		            </p>
+	        	</div>
+	        	<div class="col-md-4 xs-mb-15">
 		            <img src="../images/120x120.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('ssat@hol.gr', 'Stylianos Loukides') !!}</strong>
-		            e-Learning Director<br>
+		            e-Learning Director-elect<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
