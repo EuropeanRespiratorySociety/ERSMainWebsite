@@ -37,7 +37,7 @@
             </div>
             <div class="col-md-4 xs-mb-15">
                 <img src="images/people/leadership/Tobias_Welte.jpg" class="img-circle">
-                <p class="photo_caption"><strong>Tobias Welte</strong>
+                <p class="photo_caption"><strong>{!! Html::mailto('Welte.Tobias@mh-hannover.de', 'Tobias Welte') !!}</strong>
                 President Elect<br>
                 <a title="Download COI" href="https://ers.box.com/s/4l0crbxgfdtxq2r3l5y7m0hibt51h040">Download COI</a></p>
             </div>
