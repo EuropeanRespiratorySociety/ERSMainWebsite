@@ -31,18 +31,18 @@
 		            Clinical physiology, sleep and pulmonary circulation <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="../images/120x120.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Omar Usmani</strong>
+		            <img src="../images/people/leadership/Omar-Usmani.png" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('o.usmani@imperial.ac.uk', 'Omar Usmani') !!}</strong>
 		            Airway Diseases <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="../images/120x120.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Charlotte Suppli-Ulrik</strong>
+		            <p class="photo_caption"><strong>{!! Html::mailto('csulrik@dadlnet.dk', 'Charlotte Suppli-Ulrik') !!}</strong>
 		            Epidemiology and Environment<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="../images/120x120.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Marielle Pijnenburg</strong>
+		            <p class="photo_caption"><strong>{!! Html::mailto('m.pijnenburg@erasmusmc.nl', 'Marielle Pijnenburg') !!}</strong>
 		            Paediatrics<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
@@ -57,7 +57,7 @@
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="../images/120x120.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Eva Polverino</strong>
+		            <p class="photo_caption"><strong>{!! Html::mailto('evapo74@gmail.com', 'Eva Polverino') !!}</strong>
 		            Respiratory Infections <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">

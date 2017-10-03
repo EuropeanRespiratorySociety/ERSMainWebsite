@@ -9,8 +9,8 @@
                  
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                 <img src="images/120x120.jpg" class="img-circle">
-                  <p class="photo_caption">Secretary: Omar Usmani </p>
+                  <img src="../images/people/leadership/Omar-Usmani.png" class="img-circle">
+                  <p class="photo_caption">Secretary: {!! Html::mailto('o.usmani@imperial.ac.uk', 'Omar Usmani') !!} </p>
                 </div>
             </div>
             <div class="col-md-6 center-block">

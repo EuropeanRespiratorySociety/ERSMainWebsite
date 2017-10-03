@@ -1,4 +1,4 @@
-      <div class="section fp-auto-height" style="min-height:840px;">
+      <div class="section fp-auto-height" style="min-height:1120px;">
         <div class="main-content">
           <div class="page-head"><h2>ERS Assembly 6: Epidemiology and Environment</h2></div>
 
@@ -10,7 +10,7 @@
             </div>
             <div class="col-md-3 xs-mb-15">
                <img src="images/120x120.jpg" class="img-circle">
-              <p class="photo_caption">Secretary: Charlotte Suppli-Ulrik</p>
+              <p class="photo_caption">Secretary: {!! Html::mailto('csulrik@dadlnet.dk', 'Charlotte Suppli-Ulrik') !!}</p>
             </div>
           </div>
           <div class="col-md-6 center-block">
