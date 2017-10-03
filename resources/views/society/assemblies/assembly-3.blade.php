@@ -9,7 +9,7 @@
                 </div>
                 <div class="col-md-3 xs-mb-15">
                   <img src="../images/people/leadership/Catherine_Green.jpg" class="img-circle">
-                  <p class="photo_caption">Secretary: Catherine Greene</p>
+                  <p class="photo_caption">Secretary: {!! Html::mailto('CMGreene@rcsi.ie', 'Catherine Greene') !!}</p>
                  
                 </div>
             </div>

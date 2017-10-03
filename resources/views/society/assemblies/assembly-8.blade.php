@@ -9,7 +9,7 @@
                 </div>
                 <div class="col-md-3 xs-mb-15">
                   <img src="../images/people/leadership/Stefano_Elia.JPG" class="img-circle">
-                  <p class="photo_caption">Secretary: Elia Stefano</p>
+                  <p class="photo_caption">Secretary: {!! Html::mailto('elia@med.uniroma2.it', 'Elia Stefano') !!}</p>
                  
                 </div>
             </div>

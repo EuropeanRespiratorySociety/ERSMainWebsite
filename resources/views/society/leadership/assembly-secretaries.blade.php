@@ -22,7 +22,7 @@
 		        </div>
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/Catherine_Green.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Catherine Greene</strong>
+		            <p class="photo_caption"><strong>{!! Html::mailto('CMGreene@rcsi.ie', 'Catherine Greene') !!}</strong>
 		            Basic and translational sciences<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
@@ -47,7 +47,7 @@
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/Stefano_Elia.JPG" class="img-circle">
-		            <p class="photo_caption"><strong>Elia Stefano</strong>
+		            <p class="photo_caption"><strong>{!! Html::mailto('elia@med.uniroma2.it', 'Elia Stefano') !!}</strong>
 		            Thoracic Surgery and Transplantation <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
