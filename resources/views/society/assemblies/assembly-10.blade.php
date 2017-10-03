@@ -5,11 +5,11 @@
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
                   <img src="../images/people/leadership/Graham-Bothamley.jpg" class="img-circle">
-                  <p class="photo_caption">Head: Graham Bothamley</p>
+                  <p class="photo_caption">Head: {!! Html::mailto('graham.bothamley@homerton.nhs.uk', 'Graham Bothamley') !!}</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
                  <img src="images/120x120.jpg" class="img-circle">
-                  <p class="photo_caption">Secretary: Eva Polverino</p>
+                  <p class="photo_caption">Secretary: {!! Html::mailto('evapo74@gmail.com', 'Eva Polverino') !!}</p>
                  
                 </div>
             </div>

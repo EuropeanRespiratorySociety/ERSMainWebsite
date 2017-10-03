@@ -44,7 +44,7 @@
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 	      	        <img src="images/120x120.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Andre Amaral</strong>
+		            <p class="photo_caption"><strong>{!! Html::mailto('a.amaral@imperial.ac.uk', 'Andre Amaral') !!}</strong>
 		            Assembly 6<br>
 		            </p>
 	        	</div>

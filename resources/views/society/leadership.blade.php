@@ -52,7 +52,7 @@
             </div>
             <div class="col-md-4 xs-mb-15">
                 <img src="images/people/leadership/Carlos_Robalo.jpg" class="img-circle">
-                <p class="photo_caption"><strong>Carlos Robalo Cordeiro</strong>
+                <p class="photo_caption"><strong>{!! Html::mailto('carlos.crobalo@gmail.com', 'Carlos Robalo Cordeiro') !!}</strong>
                 Secretary General <br>
                 <!--
                 <a title="Download COI" href="">Download COI</a>
@@ -67,7 +67,7 @@
             </div>
             <div class="col-md-4 xs-mb-15">
                 <img src="images/people/leadership/Daiana-Stolz2.jpg" class="img-circle">
-                <p class="photo_caption"><strong>Daiana Stolz</strong>
+                <p class="photo_caption"><strong>{!! Html::mailto('daiana.stolz@usb.ch', 'Daiana Stolz') !!}</strong>
                 Education Council Chair<br />
                 <a title="Download COI" href="https://ers.box.com/s/bcaonlkqkkus3ee7zwq9hi18f902g9wi">Download COI</a>
                 </p>
@@ -98,7 +98,7 @@
         	</div>
         	<div class="col-md-4 xs-mb-15">
 	            <img src="images/120x120.jpg" class="img-circle">
-	            <p class="photo_caption"><strong>Isabel Saraiva</strong>
+	            <p class="photo_caption"><strong>{!! Html::mailto('isabel.saraiva@europeanlung.org', 'Isabel Saraiva') !!}</strong>
 	            ELF Chair <br>
                 <!--
                 <a title="Download COI" href="">Download COI</a>
