@@ -60,7 +60,7 @@
             </div>
             <div class="col-md-4 xs-mb-15">
                 <img src="images/people/leadership/otto_chris_burghuber.jpg" class="img-circle">
-                <p class="photo_caption"><strong>Otto Chris Burghuber</strong>
+                <p class="photo_caption"><strong>{!! Html::mailto('burghuber@me.com', 'Otto Chris Burghuber') !!}</strong>
                 Treasurer<br>
                 <a title="Download COI" href="https://ers.box.com/s/889jmegj458ndh73z08dtwg6vzibxk7x">Download COI</a>
                 </p>
