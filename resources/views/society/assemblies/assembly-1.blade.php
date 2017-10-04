@@ -107,8 +107,10 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 01.05<br>
-                    Chair: {!! Html::mailto('Francesco.Bonella@ruhrlandklinik.uk-essen.de', 'Francesco Bonella') !!}<br>
-                    Secretary: {!! Html::mailto('m.wijsenbeek-lourens@erasmusmc.nl', 'Marlies Wijsenbeek') !!}</p>
+                    Chair: {!! Html::mailto('hilary.pinnock@ed.ac.uk', 'Hilary
+ Pinnock') !!}<br>
+                    Secretary: {!! Html::mailto('j.w.h.kocks@umcg.nl', 'Janwillem W. H.
+ Kocks') !!}</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-general-practice" type="button" class="btn btn-default pull-right">More</button>
