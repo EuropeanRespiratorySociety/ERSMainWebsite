@@ -1,3 +1,4 @@
+
 @extends('template')
 @section('content')
 <div class="ers-content leadership-content">
@@ -43,6 +44,11 @@
 		            <p class="photo_caption"><strong>{!! Html::mailto('mmiravitlles@vhebron.net', 'Marc Miravitlles') !!}</strong>
 		            Guidelines director<br>
 		        </div>
+		        <div class="col-md-4 xs-mb-15">
+					<img src="images/people/leadership/Nicolas-Roche.png" class="img-circle">
+		            <p class="photo_caption"><strong>{!! Html::mailto('nicolas.roche@aphp.fr', 'Nicolas Roche') !!}</strong>
+		            Guidelines director-elect<br>
+		        </div>		        
 		        <div class="col-md-4 xs-mb-15">
 					<img src="images/people/leadership/Nicolas-Kahn.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>{!! Html::mailto('Nicolas.kahn@med.uni-Heidelberg.de', 'NICOLAS KAHN') !!}</strong>
