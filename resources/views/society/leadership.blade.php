@@ -97,7 +97,7 @@
 	            </p>
         	</div>
         	<div class="col-md-4 xs-mb-15">
-	            <img src="images/120x120.jpg" class="img-circle">
+                <img src="images/people/leadership/Isabel-Saraiva.png" class="img-circle">
 	            <p class="photo_caption"><strong>{!! Html::mailto('isabel.saraiva@europeanlung.org', 'Isabel Saraiva') !!}</strong>
 	            ELF Chair <br>
                 <!--
