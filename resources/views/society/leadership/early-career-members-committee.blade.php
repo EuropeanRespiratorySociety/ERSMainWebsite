@@ -14,67 +14,67 @@
 			<div class="row leadership-people" style="padding-top: 40px;">
 	        	<div class="col-md-4 xs-mb-15">
 					<img src="images/people/leadership/Nicolas-Kahn.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('nicolas.kahn@web.de', 'NICOLAS KAHN') !!}</strong>
+		            <p class="photo_caption"><strong>NICOLAS KAHN</strong>
 		            Assembly 1<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 					<img src="images/people/leadership/Lieuwe-Bos.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('l.d.bos@amc.uva.nl', 'LIEUWE BOS') !!}</strong>
+		            <p class="photo_caption"><strong>LIEUWE BOS</strong>
 		            Chair of the ECM Committee<br>Assembly 2
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 					<img src="images/people/leadership/Sabine Bartel.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('sbartel@fz-borstel.de', 'SABINE BARTEL') !!}</strong>
+		            <p class="photo_caption"><strong>SABINE BARTEL</strong>
 		            Assembly 3<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 					<img src="images/people/leadership/Isaac Almendros.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('isaac.almendros@ub.edu', 'ISAAC ALMENDROS') !!}</strong>
+		            <p class="photo_caption"><strong>ISAAC ALMENDROS</strong>
 		            Assembly 4<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 					<img src="images/people/leadership/Alexander Mathioudakis.JPG" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('mathioudakisag@gmail.com', 'ALEXANDER MATHIOUDAKIS') !!}</strong>
+		            <p class="photo_caption"><strong>ALEXANDER MATHIOUDAKIS</strong>
 		            Assembly 5<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 	      	        <img src="images/120x120.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('a.amaral@imperial.ac.uk', 'Andre Amaral') !!}</strong>
+		            <p class="photo_caption"><strong>Andre Amaral</strong>
 		            Assembly 6<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 					<img src="images/people/leadership/Raffaella Nenna.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('raffaella.nenna@uniroma1.it', 'RAFFAELLA NENNA') !!}</strong>
+		            <p class="photo_caption"><strong>RAFFAELLA NENNA</strong>
 		            Assembly 7<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 					<img src="images/people/leadership/Elodie Lhuillier.png" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('lhuillier.elodie@gmail.com', 'ELODIE LHUILLIER') !!}</strong>
+		            <p class="photo_caption"><strong>ELODIE LHUILLIER</strong>
 		            Assembly 8<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 					<img src="images/people/Jana_De_Brandt.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('jana.debrandt@uhasselt.be', 'Jana de Brandt') !!}</strong>
+		            <p class="photo_caption"><strong>Jana de Brandt</strong>
 		            Assembly 9<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 					<img src="images/people/leadership/Aran_Photo.JPG" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('aransinga@gmail.com', 'ARAN SINGANAYAGAM') !!}</strong>
+		            <p class="photo_caption"><strong>ARAN SINGANAYAGAM</strong>
 		            Assembly 10<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 					<img src="images/people/leadership/KLIMENTINI BOSTANTZOGLOU.PNG" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('clementinebost@hotmail.com', 'NINA BOSTANTZOGLOU') !!}</strong>
+		            <p class="photo_caption"><strong>NINA BOSTANTZOGLOU</strong>
 		            Assembly 11<br>
 		            </p>
 	        	</div>

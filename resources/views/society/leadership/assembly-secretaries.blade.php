@@ -10,59 +10,59 @@
 	        <div class="row leadership-people">
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/Venerino_Poletti.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('venerino.poletti@gmail.com', 'Venerino Poletti') !!}</strong>
+		            <p class="photo_caption"><strong>Venerino Poletti</strong>
 		            Clinical<br>
 		            <a href="/about-us/leadership/education-council/assembly-secretaries.raw?task=callelement&amp;item_id=1065&amp;element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&amp;method=download" title="Download COI">Download COI</a>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/Leo_Heunks.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('L.Heunks@ic.umcn.nl', 'Leo Heunks') !!}</strong>
+		            <p class="photo_caption"><strong>Leo Heunks</strong>
 		            Respiratory Intensive Care <br>
 		        </div>
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/Catherine_Green.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('CMGreene@rcsi.ie', 'Catherine Greene') !!}</strong>
+		            <p class="photo_caption"><strong>Catherine Greene</strong>
 		            Basic and translational sciences<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/Pierantonio-Laveneziana.png" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('pierantonio.laveneziana@aphp.fr', 'Pierantonio Laveneziana') !!}</strong>
+		            <p class="photo_caption"><strong>Pierantonio Laveneziana</strong>
 		            Clinical physiology, sleep and pulmonary circulation <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/Omar-Usmani.png" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('o.usmani@imperial.ac.uk', 'Omar Usmani') !!}</strong>
+		            <p class="photo_caption"><strong>Omar Usmani</strong>
 		            Airway Diseases <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="../images/120x120.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('csulrik@dadlnet.dk', 'Charlotte Suppli-Ulrik') !!}</strong>
+		            <p class="photo_caption"><strong>Charlotte Suppli-Ulrik</strong>
 		            Epidemiology and Environment<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="../images/120x120.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('m.pijnenburg@erasmusmc.nl', 'Marielle Pijnenburg') !!}</strong>
+		            <p class="photo_caption"><strong>Marielle Pijnenburg</strong>
 		            Paediatrics<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/Stefano_Elia.JPG" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('elia@med.uniroma2.it', 'Elia Stefano') !!}</strong>
+		            <p class="photo_caption"><strong>Elia Stefano</strong>
 		            Thoracic Surgery and Transplantation <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/Martijn_A_Spruit.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('martijnspruit@ciro-horn.nl', 'Martijn A. Spruit') !!}</strong>
+		            <p class="photo_caption"><strong>Martijn A. Spruit</strong>
 		            Allied Respiratory Professionals <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="../images/120x120.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('evapo74@gmail.com', 'Eva Polverino') !!}</strong>
+		            <p class="photo_caption"><strong>Eva Polverino</strong>
 		            Respiratory Infections <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/Bogdan_Dragos_Grigoriu.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>{!! Html::mailto('b_grigoriu@hotmail.com', 'Bogdan Dragos Grigoriu') !!}</strong>
+		            <p class="photo_caption"><strong>Bogdan Dragos Grigoriu</strong>
 		            Thoracic Oncology <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
