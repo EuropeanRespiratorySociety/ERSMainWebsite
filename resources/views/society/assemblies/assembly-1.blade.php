@@ -5,15 +5,15 @@
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
                   <img src="../images/people/leadership/Felix_JF_Herth.jpg" class="img-circle">
-                  <p class="photo_caption">Head: {!! Html::mailto('felix.herth@med.uni-heidelberg.de', 'Felix JF. Herth') !!}</p>
+                  <p class="photo_caption">Head: Felix JF. Herth</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
                   <img src="../images/people/leadership/Venerino_Poletti.jpg" class="img-circle">
-                  <p class="photo_caption">Secretary: {!! Html::mailto('venerino.poletti@gmail.com', 'Venerino Poletti') !!}</p>
+                  <p class="photo_caption">Secretary: Venerino Poletti</p>
                 </div>
             </div>
             <div class="col-md-6 center-block">
-              <p >Assembly Early Career representative: {!! Html::mailto('nicolas.kahn@web.de', 'Nicolas Kahn') !!}</p>
+              <p >Assembly Early Career representative: Nicolas Kahn</p>
             </div>
             <div class="col-md-6 center-block lead">
               Assembly 1 is a broad-based group for specialists based in hospitals and primary-care settings. Members are interested in addressing relevant clinical problems and in translating the latest research into daily practice.
@@ -32,8 +32,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 01.01<br>
-                    Chair: {!! Html::mailto('mthekkinkattil@gmail.com', 'Thekkinkattil Mohan Kumar') !!}<br>
-                    Secretary: {!! Html::mailto('laurafregonese@gmail.com', 'Laura Fregonese') !!}</p>
+                    Chair: Thekkinkattil Mohan Kumar<br>
+                    Secretary: Laura Fregonese</p>
                     
                   </div>
                   <div class="card-action clearfix">
@@ -53,8 +53,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 01.02<br>
-                    Chair: {!! Html::mailto('fritsfranssen@ciro-horn.nl', 'Frits Franssen') !!}<br>
-                    Secretary: {!! Html::mailto('guidovagheggini@libero.it', 'Guido Vagheggini') !!}</p>
+                    Chair: Frits Franssen<br>
+                    Secretary: Guido Vagheggini</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-rehabilitation" type="button" class="btn btn-default pull-right">More</button>
@@ -71,8 +71,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 01.03<br>
-                    Chair: {!! Html::mailto('aleksandar.grgic@gmx.de', 'Aleksandar Grgic') !!}<br>
-                    Secretary: {!! Html::mailto('johan.coolen@uzleuven.be', 'Johan Coolen') !!}</p>
+                    Chair: Aleksandar Grgic<br>
+                    Secretary: Johan Coolen</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-imaging" type="button" class="btn btn-default pull-right">More</button>
@@ -89,8 +89,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 01.04<br>
-                    Chair: {!! Html::mailto('j.t.annema@amc.nl', 'Jouke T. Annema') !!}<br>
-                    Secretary: {!! Html::mailto('pchhajed@gmail.com', 'Prashant Nemichand Chhajed') !!}</p>
+                    Chair: Jouke T. Annema<br>
+                    Secretary: Prashant Nemichand Chhajed</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-interventional" type="button" class="btn btn-default pull-right">More</button>
@@ -107,8 +107,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 01.05<br>
-                    Chair: {!! Html::mailto('Francesco.Bonella@ruhrlandklinik.uk-essen.de', 'Francesco Bonella') !!}<br>
-                    Secretary: {!! Html::mailto('m.wijsenbeek-lourens@erasmusmc.nl', 'Marlies Wijsenbeek') !!}</p>
+                    Chair: Hilary Pinnock<br>
+                    Secretary: Janwillem W. H. Kocks</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-general-practice" type="button" class="btn btn-default pull-right">More</button>

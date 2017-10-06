@@ -5,16 +5,16 @@
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
                   <img src="../images/people/leadership/Andrea_Aliverti.jpg" class="img-circle">
-                  <p class="photo_caption">Head:  {!! Html::mailto('andrea.aliverti@polimi.it', 'Andrea Aliverti') !!}</p>
+                  <p class="photo_caption">Head: Andrea Aliverti</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
                   <img src="../images/people/leadership/Pierantonio-Laveneziana.png" class="img-circle">
-                  <p class="photo_caption">Secretary: {!! Html::mailto('pierantonio.laveneziana@aphp.fr', 'Pierantonio Laveneziana') !!}</p>
+                  <p class="photo_caption">Secretary: Pierantonio Laveneziana</p>
                  
                 </div>
             </div>
             <div class="col-md-6 center-block">
-              <p >Assembly Early Career representative: {!! Html::mailto('isaac.almendros@ub.edu', 'Isaac Almendros') !!}</p>
+              <p >Assembly Early Career representative: Isaac Almendros</p>
             </div>
             <div class="col-md-6 center-block lead">
               Assembly 4 covers a range of topics that provide important links between research and clinical medicine. It has broad scope and includes integrative aspects of respiratory physiology, sleep apnoea and associated health problems and cellular and molecular physiology. <br>
@@ -35,8 +35,8 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 04.01<br>
-                    Chair: {!! Html::mailto('sverges@chu-grenoble.fr', 'Samuel Verges') !!}<br>
-                    Secretary: {!! Html::mailto('sbayat@chu-grenoble.fr', 'Sam Bayat') !!}</p>
+                    Chair: Samuel Verges<br>
+                    Secretary: Sam Bayat</p>
                     
                   </div>
                   <div class="card-action clearfix">
@@ -56,8 +56,8 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 04.02<br>
-                    Chair: {!! Html::mailto('randerath@klinik-bethanien.de', 'Winfried Randerath') !!}<br>
-                    Secretary: {!! Html::mailto('rfarre@ub.edu', 'Ramon Farré') !!}</p>
+                    Chair: Winfried Randerath<br>
+                    Secretary: Ramon Farré</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-sleep-and-control" type="button" class="btn btn-default pull-right">More</button>
