@@ -7,9 +7,9 @@
               ]
               )) 
 @stop()
-	@section('content')
+    @section('content')
 
-	<div class="ers-content executive-content">
+    <div class="ers-content executive-content">
     <div id="fullpage">
       <div class="section fp-auto-height">
       <div class="main-content">
@@ -30,18 +30,11 @@
 
 
         <div class="row">
-          <div class="col-md-3 col-md-offset-3 xs-mb-15">
+          <div class="col-md-4 col-md-offset-4 xs-mb-15">
             <img src="../images/people/executive-office/wbill.jpg" class="img-circle">
             <p class="photo_caption"><strong>Werner Bill<!-- {!! Html::mailto('werner.bill@ersnet.org', 'Werner Bill') !!} --></strong>
             Executive Director,<br>
             T +41 21 213 01 20
-            </p>
-          </div>
-          <div class="col-md-3 xs-mb-15">
-            <img src="../images/people/executive-office/bsax.jpg" class="img-circle">
-            <p class="photo_caption"><strong>{!! Html::mailto('betty.sax@ersnet.org', 'Betty Sax') !!}</strong>
-            Head of Executive Office<br>
-            T +41 21 213 01 11<br>
             </p>
           </div>
         </div>
@@ -536,7 +529,7 @@
       </div>
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
-            <img src="../images/120x120.jpg" class="img-circle">
+            <img src="../images/people/executive-office/Valérie-Zecca.png" class="img-circle">
             <p class="photo_caption"><strong>{!! Html::mailto('valerie.zecca@ersnet.org', 'Valérie Zecca') !!}</strong>
             Head of Finance<br>
             T +41 21 213 01 22<br>
@@ -702,12 +695,16 @@
       </div>
 
       <div class="row">
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('Elin.Reeves@ersj.org.uk', 'Elin Reeves') !!}</strong>
+          <div class="col-md-4 col-md-offset-4 xs-mb-15">
+            <img src="../images/120x120.jpg" class="img-circle">
+            <p class="photo_caption"><strong>{!! Html::mailto('Elin.Reeves@ersj.org.uk', 'Elin Reeves') !!}</strong>
             Director of Publications<br>
             T +44 114 267 2873<br>
             </p>
-        </div>
+          </div>
+      </div>
+
+      <div class="row">
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('matt.broadhead@ersj.org.uk', 'Matt Broadhead') !!}</strong>
             Assistant Manager<br>
@@ -911,7 +908,7 @@
 
 
 
-	@stop()  
+    @stop()  
 
     @section('scripts')
     <!--script src="../js/fullpage.js" type="text/javascript"></script-->
@@ -925,7 +922,7 @@
 
     <script type="text/javascript">
       $(document).ready(function(){
-      	//initialize the javascript
+        //initialize the javascript
         App.executiveOffice();             
       });
     </script>
