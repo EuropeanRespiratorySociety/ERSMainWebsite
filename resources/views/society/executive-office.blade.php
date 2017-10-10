@@ -75,10 +75,24 @@
                         <a href="the-society/who-we-are/executive-office#corporate"><img class="img-responsive" src="../images/people/executive-office/corporate.jpg"></a>
                     </div>
                     <div class="card-title">
-                        <a href="the-society/who-we-are/executive-office#corporate">Corporate Relations, Marketing</a>
+                        <a href="the-society/who-we-are/executive-office#corporate">Marketing and Corporate Relations</a>
                     </div>
                 </div>
             </div>
+
+
+            <!--Press and Communications-->
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="the-society/who-we-are/executive-office#press"><img class="img-responsive" src="../images/people/executive-office/gray-department.jpg"></a>
+                    </div>
+                    <div class="card-title">
+                        <a href="the-society/who-we-are/executive-office#press">Press and Communications</a>
+                    </div>
+                </div>
+            </div>
+
 
             <!--Educational-->
             <div class="col-md-3">
@@ -135,7 +149,7 @@
                         <a href="the-society/who-we-are/executive-office#it"><img class="img-responsive" src="../images/people/executive-office/it.jpg"></a>
                     </div>
                     <div class="card-title">
-                        <a href="the-society/who-we-are/executive-office#it">IT</a>
+                        <a href="the-society/who-we-are/executive-office#it">IT Infrastructure and Service</a>
                     </div>
                 </div>
             </div>
@@ -164,18 +178,30 @@
                 </div>
             </div>
 
-            <!--Scientific-->
+            <!--Scientific activities-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/who-we-are/executive-office#scientific"><img class="img-responsive" src="../images/people/executive-office/scientific.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#scientific-activities"><img class="img-responsive" src="../images/people/executive-office/scientific.jpg"></a>
                     </div>
                     <div class="card-title">
-                        <a href="the-society/who-we-are/executive-office#scientific">Scientific Activities</a>
+                        <a href="the-society/who-we-are/executive-office#scientific-activities">Scientific Activities</a>
                     </div>
                 </div>
             </div>
             
+            <!--Scientific Events-->
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="the-society/who-we-are/executive-office#scientific-events"><img class="img-responsive" src="../images/people/executive-office/gray-department.jpg"></a>
+                    </div>
+                    <div class="card-title">
+                        <a href="the-society/who-we-are/executive-office#scientific-events">Scientific Events</a>
+                    </div>
+                </div>
+            </div>
+
             
             
             
@@ -242,7 +268,7 @@
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
-          <h2 class="">Corporate Relations, Marketing and Communications</h2>
+          <h2 class="">Marketing and Corporate Relations</h2>
       </div>
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
@@ -257,12 +283,6 @@
       </div>
       <div class="row">
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('Lauren.Anderson@europeanlung.org', 'Lauren Anderson') !!}</strong>
-            Press and Communications Manager<br>
-            T +44 114 267 2876<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('alexandre.delage@ersnet.org', 'Alexandre Delage') !!}</strong>
             Corporate Funding Manager<br>
             T +41 21 213 01 23<br>
@@ -272,12 +292,6 @@
           <p class="photo_caption"><strong>{!! Html::mailto('Kristof.kemp@ersnet.org', 'Kristof Kemp') !!}</strong>
             Congress Industry Relations Manager<br>
             T +41 21 213 01 64<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('dould@europeanlung.org', 'Dawn Ould') !!}</strong>
-            Communications Coordinator<br>
-            T +44 114 267 2876<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
@@ -299,12 +313,6 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('beth.maguire@europeanlung.org', 'Beth Maguire') !!}</strong>
-            Press and Communications Assistant<br>
-            T +44 114 267 2866<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('gergana.yaneva@ersnet.org', ' Gergana Yaneva') !!}</strong>
             Administrative Assistant<br>
             T +41 21 213 01 62<br>
@@ -315,6 +323,50 @@
     </div>
     </div>
     <!--Fin Section Corporate Relations-->
+
+    <!--Section Press and Communications-->
+    <div class="section fp-auto-height">
+    <div class="main-content">
+      <div class="page-head">
+          <h2 class="">Press and Communications</h2>
+      </div>
+      <div class="row">
+          <div class="col-md-4 col-md-offset-4 xs-mb-15">
+            <img src="../images/people/executive-office/ssealy.jpg" class="img-circle">
+            <p class="photo_caption"><strong>{!! Html::mailto('Steve.Sealy@ersnet.org', 'Steve Sealy') !!}</strong>
+            Associate Director,<br>
+            Director of Corporate Relations,<br>
+            Marketing and Commnications<br>
+            T +41 21 213 01 61<br>
+            </p>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('Lauren.Anderson@europeanlung.org', 'Lauren Anderson') !!}</strong>
+            Press and Communications Manager<br>
+            T +44 114 267 2876<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('dould@europeanlung.org', 'Dawn Ould') !!}</strong>
+            Communications Coordinator<br>
+            T +44 114 267 2876<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('beth.maguire@europeanlung.org', 'Beth Maguire') !!}</strong>
+            Press and Communications Assistant<br>
+            T +44 114 267 2866<br>
+            </p>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    <!--Fin Press and Communications-->
+
+
 
     <!--Section Educational-->
     <div class="section fp-auto-height">
@@ -364,18 +416,6 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('agnieszka.radecka@ersnet.org', 'Agnieszka Radecka') !!}</strong>
-            Congress Programme Assistant<br>
-            T +41 21 213 01 73<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('sandy.sutter@ersnet.org', 'Sandy Sutter') !!}</strong>
-            EBAP &amp; CME Senior Coordinator<br>
-            T +41 21 213 01 86<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('sarah.dowsland@ersnet.org', 'Sarah Dowsland') !!}</strong>
             Educational Activities Senior Coordinator<br>
             T +41 21 213 01 95<br>
@@ -411,12 +451,6 @@
             T +41 21 213 01 77<br>
             </p>
         </div>
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('bouchra.chajai@ersnet.org', 'Bouchra Chajaï') !!}</strong>
-            Educational Activities Assistant<br>
-            T +41 21 213 01 95<br>
-            </p>
-        </div>
        
       </div>
     </div>
@@ -427,7 +461,7 @@
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
-          <h2 class="">EU Affairs</h2>
+          <h2 class="">Advocacy and EU Affairs</h2>
       </div>
 
       <div class="col-md-8 center-block lead"><strong>Brussels Office</strong><br><br>
@@ -445,12 +479,6 @@
           </div>
       </div>
       <div class="row">
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('nejla.delikus@ersnet.org', 'NEJLA DELIKUS') !!}</strong>
-            Office Coordinator<br>
-            T +32 2 238 53 60<br>
-            </p>
-        </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('maeve.barry@ersnet.org', 'MAEVE BARRY') !!}</strong>
             Policy Officer<br>
@@ -485,12 +513,6 @@
           </div>
       </div>
       <div class="row">
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('kerstin.morrison@europeanlung.org', 'Kerstin Morrison') !!}</strong>
-            Training and Events<br>
-            T +44 114 267 2875<br>
-            </p>
-        </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('courtney.coleman@europeanlung.org', 'Courtney Coleman') !!}</strong>
             Patient Involvement and Engagement<br>
@@ -544,19 +566,6 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('Joanne.Abdy@ersj.org.uk', 'Joanne Abdy') !!}</strong>
-            Accountant Coordinator<br>
-            T +44 114 267 2862<br>
-            </p>
-        </div>
-        <!--div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Josué Carrascosa</strong>
-            Central Admin Coordinator<br>
-            T +41 21 213 01 25<br>
-            {!! Html::mailto('josue.carrascosa@ersnet.org', 'josue.carrascosa@ersnet.org') !!}
-            </p>
-        </div-->
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('maria.tronnolone@ersnet.org', 'Maria Tronnolone Valencia') !!}</strong>
             Senior Accountant &amp; Payroll Assistant<br>
             T +41 21 213 01 26<br>
@@ -599,11 +608,11 @@
     </div>
     <!--Fin Section Finance-->
 
-    <!--Section IT Infrastructure-->
+    <!--Section IT Infrastructure and Service-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
-          <h2 class="">IT</h2>
+          <h2 class="">IT Infrastructure and Service</h2>
       </div>
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
@@ -654,13 +663,13 @@
       </div>
     </div>
     </div>
-    <!--Fin Section IT Infrastructure-->
+    <!--Fin IT Infrastructure and Service-->
 
     <!--Section Membership-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
-          <h2 class="">Membership and National Societies Relations</h2>
+          <h2 class="">Membership</h2>
       </div>
 
       <div class="row">
@@ -801,7 +810,7 @@
     </div>
     <!--Fin Section Publications-->
 
-    <!--Section Scientific-->
+    <!--Section Scientific activities-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -809,36 +818,18 @@
       </div>
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
-            <img src="../images/people/executive-office/cpannetier.jpg" class="img-circle">
-            <p class="photo_caption"><strong>{!! Html::mailto('carine.pannetier@ersnet.org', 'Carine Pannetier') !!}</strong>
-            Director of Science and Education<br>
-            T +41 21 213 01 80<br>
+            <img src="../images/120x120.jpg" class="img-circle">
+            <p class="photo_caption"><strong>{!! Html::mailto('celine.genton@ersnet.org', 'Celine Genton') !!}</strong>
+            Scientific Activities Manager<br>
+            T +41 21 213 01 59<br>
             </p>
           </div>
       </div>
       <div class="row">
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('alexandra.bonazza@ersnet.org', 'Alexandra Bonazza') !!}</strong>
-            Scientific Programme Manager<br>
-            T +41 21 213 01 81<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('celine.genton@ersnet.org', 'Celine Genton') !!}</strong>
-            Scientific Activities Manager<br>
-            T +41 21 213 01 59<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('kathryn.forrest@ersnet.org', 'Kathryn Forrest') !!}</strong>
             Fellowship Programme Coordinator<br>
             T +41 21 213 01 99<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('agnieszka.radecka@ersnet.org', 'Agnieszka Radecka') !!}</strong>
-            Congress Programme Assistant<br>
-            T +41 21 213 01 73<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
@@ -860,24 +851,6 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('nikoleta.luludi@ersnet.org', 'Nikoleta Luludi') !!}</strong>
-            Funding Programmes Coordinator<br>
-            T +41 21 213 01 66<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('hanna.michalek@ersnet.org', 'Hanna Michalek') !!}</strong>
-            Scientific Activities Assistant<br>
-            T +41 21 213 01 76<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('valentine.degert@ersnet.org', 'Valentine Degert') !!}</strong>
-            Scientific Program Coordinator<br>
-            T +41 21 213 01 88<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('maeve.tsu@ersnet.org', 'Maeve Tsu') !!}</strong>
             Scientific Administrative Assistant<br>
             T +41 21 213 01 83<br>
@@ -887,9 +860,56 @@
       </div>
     </div>
     </div>
-    <!--Fin Section Scientific-->
+    <!--Fin Scientific activities-->
 
     
+    <!--Section Scientific Events-->
+    <div class="section fp-auto-height">
+    <div class="main-content">
+      <div class="page-head">
+          <h2 class="">Scientific Events</h2>
+      </div>
+      <div class="row">
+          <div class="col-md-4 col-md-offset-4 xs-mb-15">
+            <img src="../images/people/executive-office/cpannetier.jpg" class="img-circle">
+            <p class="photo_caption"><strong>{!! Html::mailto('carine.pannetier@ersnet.org', 'Carine Pannetier') !!}</strong>
+            Director of Science and Education<br>
+            T +41 21 213 01 80<br>
+            </p>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('agnieszka.radecka@ersnet.org', 'Agnieszka Radecka') !!}</strong>
+            Congress Programme Assistant<br>
+            T +41 21 213 01 73<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('hanna.michalek@ersnet.org', 'Hanna Michalek') !!}</strong>
+            Scientific Activities Assistant<br>
+            T +41 21 213 01 76<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('valerie.vaccaro@ersnet.org', 'Valérie Vaccaro') !!}</strong>
+            Scientific Activities Senior Coordinator<br>
+            T +41 21 213 01 89<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('valentine.degert@ersnet.org', 'Valentine Degert') !!}</strong>
+            Scientific Program Coordinator<br>
+            T +41 21 213 01 88<br>
+            </p>
+        </div>
+
+
+
+      </div>
+    </div>
+    </div>
+    <!--Fin Section Scientific Events-->
 
     
 
