@@ -818,7 +818,7 @@
       </div>
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
-            <img src="../images/120x120.jpg" class="img-circle">
+            <img src="../images/people/executive-office/Céline-Genton.png" class="img-circle">
             <p class="photo_caption"><strong>{!! Html::mailto('celine.genton@ersnet.org', 'Celine Genton') !!}</strong>
             Scientific Activities Manager<br>
             T +41 21 213 01 59<br>
