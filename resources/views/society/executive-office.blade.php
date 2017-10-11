@@ -94,26 +94,26 @@
             </div>
 
 
-            <!--Educational-->
+            <!--Education-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/who-we-are/executive-office#educational"><img class="img-responsive" src="../images/people/executive-office/educational.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#education"><img class="img-responsive" src="../images/people/executive-office/educational.jpg"></a>
                     </div>
                     <div class="card-title">
-                        <a href="the-society/who-we-are/executive-office#educational">Educational Activities</a>
+                        <a href="the-society/who-we-are/executive-office#education">Education</a>
                     </div>
                 </div>
             </div>
 
-            <!--EU Affairs-->
+            <!--Advocacy and EU Affairs-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
                         <a href="the-society/who-we-are/executive-office#eu"><img class="img-responsive" src="../images/people/executive-office/eu.jpg"></a>
                     </div>
                     <div class="card-title">
-                        <a href="the-society/who-we-are/executive-office#eu">EU Affairs</a>
+                        <a href="the-society/who-we-are/executive-office#eu">Advocacy and EU Affairs</a>
                     </div>
                 </div>
             </div>
@@ -368,11 +368,11 @@
 
 
 
-    <!--Section Educational-->
+    <!--Section Education-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
-          <h2 class="">Educational Activities</h2>
+          <h2 class="">Education</h2>
       </div>
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
@@ -455,7 +455,7 @@
       </div>
     </div>
     </div>
-    <!--Fin Section Educational-->
+    <!--Fin Section Education-->
 
     <!--Section EU Affairs-->
     <div class="section fp-auto-height">
@@ -934,8 +934,8 @@
     <!--script src="../js/fullpage.js" type="text/javascript"></script-->
     <!--script src="../js/app-assemblies.js" type="text/javascript"></script-->
 
-    <!--script src="http://erstemplate.app/js/fullpage.js" type="text/javascript"></script-->
-    <!--script src="http://erstemplate.app/js/app-executive-office.js" type="text/javascript"></script-->
+    <!--<script src="http://erstemplate.app/js/fullpage.js" type="text/javascript"></script>-->
+    <!--<script src="http://erstemplate.app/js/app-executive-office.js" type="text/javascript"></script>-->
 
     <script src="https://bootstrap.ersnet.org/js/fullpage.js" type="text/javascript"></script>
     <script src="https://bootstrap.ersnet.org/js/app-executive-office.js" type="text/javascript"></script>
