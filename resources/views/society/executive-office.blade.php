@@ -551,7 +551,7 @@
       </div>
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
-            <img src="../images/people/executive-office/Valérie-Zecca.png" class="img-circle">
+            <img src="../images/people/executive-office/Valerie-Zecca.png" class="img-circle">
             <p class="photo_caption"><strong>{!! Html::mailto('valerie.zecca@ersnet.org', 'Valérie Zecca') !!}</strong>
             Head of Finance<br>
             T +41 21 213 01 22<br>
@@ -818,7 +818,7 @@
       </div>
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
-            <img src="../images/people/executive-office/Céline-Genton.png" class="img-circle">
+            <img src="../images/people/executive-office/Celine-Genton.png" class="img-circle">
             <p class="photo_caption"><strong>{!! Html::mailto('celine.genton@ersnet.org', 'Celine Genton') !!}</strong>
             Scientific Activities Manager<br>
             T +41 21 213 01 59<br>
