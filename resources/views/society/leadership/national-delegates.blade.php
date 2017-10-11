@@ -148,7 +148,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Malaysia</strong><br>
-		            Alison Ting
+		            Ahmad Izuanuddin Ismail
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Malta</strong><br>
@@ -180,7 +180,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Romania</strong><br>
-		            Irina Strambu
+		            Ovidiu Fira-Mladinescu
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Russian Federation </strong><br>
@@ -197,10 +197,6 @@
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Slovenia</strong><br>
 		            Lea Leonardis
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
-		         	<strong>South Africa</strong><br>
-		           Elvis Irusen
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>South Africa</strong><br>
@@ -232,7 +228,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Turkey</strong><br>
-		            Bilun Gemicioglu
+		            Metin Akgun
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Ukraine</strong><br>
