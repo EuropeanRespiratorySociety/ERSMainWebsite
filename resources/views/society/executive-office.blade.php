@@ -85,7 +85,7 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/who-we-are/executive-office#press"><img class="img-responsive" src="../images/people/executive-office/gray-department.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#press"><img class="img-responsive" src="../images/people/executive-office/press.png"></a>
                     </div>
                     <div class="card-title">
                         <a href="the-society/who-we-are/executive-office#press">Press and Communications</a>
@@ -182,7 +182,7 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/who-we-are/executive-office#scientific-activities"><img class="img-responsive" src="../images/people/executive-office/scientific.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#scientific-activities"><img class="img-responsive" src="../images/people/executive-office/scientific-activities.png"></a>
                     </div>
                     <div class="card-title">
                         <a href="the-society/who-we-are/executive-office#scientific-activities">Scientific Activities</a>
@@ -194,7 +194,7 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/who-we-are/executive-office#scientific-events"><img class="img-responsive" src="../images/people/executive-office/gray-department.jpg"></a>
+                        <a href="the-society/who-we-are/executive-office#scientific-events"><img class="img-responsive" src="../images/people/executive-office/scientific-event.jpg"></a>
                     </div>
                     <div class="card-title">
                         <a href="the-society/who-we-are/executive-office#scientific-events">Scientific Events</a>
