@@ -378,7 +378,7 @@
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
             <img src="../images/people/executive-office/cpannetier.jpg" class="img-circle">
             <p class="photo_caption"><strong>{!! Html::mailto('carine.pannetier@ersnet.org', 'Carine Pannetier') !!}</strong>
-            Director of Science and Education<br>
+            Director of Education, Events, Programmes and Accreditation<br>
             T +41 21 213 01 80<br>
             </p>
           </div>
@@ -599,6 +599,17 @@
           <p class="photo_caption"><strong>{!! Html::mailto('jerome.amstutz@ersnet.org', 'Jérôme Amstutz') !!}</strong>
           Finance Assistant and Administration Coordinator<br>
             T +41 21 213 01 25<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('romain.charton@ersnet.org', 'Romain Charton') !!}</strong>
+          Accountant<br>
+            T +41 21 213 01 24<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('valeria.finelli@ersnet.org', 'Valeria Finelli') !!}</strong>
+          Finance Assistant<br>
             </p>
         </div>
 
@@ -856,6 +867,13 @@
             T +41 21 213 01 83<br>
             </p>
         </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('nikoleta.luludi@ersnet.org', 'Nikoleta Luludi') !!}</strong>
+            Funding Programmes Coordinator<br>
+            T +41 21 213 01 66<br>
+            </p>
+        </div>
+
 
       </div>
     </div>
@@ -873,7 +891,7 @@
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
             <img src="../images/people/executive-office/cpannetier.jpg" class="img-circle">
             <p class="photo_caption"><strong>{!! Html::mailto('carine.pannetier@ersnet.org', 'Carine Pannetier') !!}</strong>
-            Director of Science and Education<br>
+            Director of Education, Events, Programmes and Accreditation<br>
             T +41 21 213 01 80<br>
             </p>
           </div>
