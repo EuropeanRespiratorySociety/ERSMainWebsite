@@ -8,7 +8,7 @@
                   <p class="photo_caption">Head: Graham Bothamley</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                 <img src="images/120x120.jpg" class="img-circle">
+                 <img src="../images/people/leadership/Eva-Polverino.png" class="img-circle">
                   <p class="photo_caption">Secretary: Eva Polverino</p>
                  
                 </div>

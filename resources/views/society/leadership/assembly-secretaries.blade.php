@@ -48,7 +48,7 @@
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/Stefano_Elia.JPG" class="img-circle">
 		            <p class="photo_caption"><strong>Elia Stefano</strong>
-		            Thoracic Surgery and Transplantation <br>
+		            Thoracic Surgery and Transplantation<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="../images/people/leadership/Martijn_A_Spruit.jpg" class="img-circle">
@@ -56,7 +56,7 @@
 		            Allied Respiratory Professionals <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="../images/120x120.jpg" class="img-circle">
+		            <img src="../images/people/leadership/Eva-Polverino.png" class="img-circle">
 		            <p class="photo_caption"><strong>Eva Polverino</strong>
 		            Respiratory Infections <br>
 		        </div>
