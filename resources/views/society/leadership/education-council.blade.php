@@ -1,3 +1,4 @@
+
 @extends('template')
 @section('content')
 <div class="ers-content leadership-content">
@@ -34,7 +35,7 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/120x120.jpg" class="img-circle">
+		            <img src="../images/people/leadership/Stylianos-Loukides.png" class="img-circle">
 		            <p class="photo_caption"><strong>Stylianos Loukides</strong>
 		            e-Learning Director-elect<br>
 		            </p>
