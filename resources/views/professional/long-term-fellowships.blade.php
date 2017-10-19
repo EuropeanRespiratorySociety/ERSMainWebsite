@@ -62,7 +62,7 @@
         <span class="icon s7-alarm"></span>
         <p>
           APPLICATION DEADLINE : <br>
-          <span>End January each year</span>
+          <span>14 January 2018</span>
         </p>
       </a>
       <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
@@ -87,7 +87,7 @@
                   float: left;
                   margin-left: 10px;">
             <li>
-            <a href="https://ers.box.com/shared/static/lb71kvnc2dr6am25k82xvphxdjcsm9eh.pdf">LTRF 2017 Application Guidelines</a>
+            <a href="https://ers.box.com/s/ktk52dqmvn89kvqi7eqcu9t6q0d0gmjv">LTRF 2018 Application Guidelines</a>
             </li>
             @if($category->popUpText)
             <li>
