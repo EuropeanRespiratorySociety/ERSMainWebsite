@@ -39,7 +39,9 @@
      </div>
     <div class="main-content">
      <div class="row fellowship-categories">
-        @include('partials.category-items-modal', array('items' => $items))
+       @if(!empty($items))
+          @include('partials.category-items-modal', array('items' => $items))
+       @endif
      </div>
    </div>
      </div>
@@ -114,6 +116,7 @@
 @stop()
 
 @section('modals')
+@if(!empty($items))
   @include('partials.modal-items', array('items' => $items))
   {{-- FREE PopUp --}}
   @if($category->popUp)
@@ -133,7 +136,8 @@
     </div>
   </div>
   @endif
-  {{-- end FREE PopUp --}}  
+  {{-- end FREE PopUp --}}
+@endif  
 @stop()
 
 @section('scripts')
