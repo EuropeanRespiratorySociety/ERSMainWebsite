@@ -13,9 +13,10 @@
             || $item->suggestedAccommodation[0]->streetAddress)  
         <h3 class="modal-title">Suggested Accomodation</h3>
         @endif
-        @if($item->ebusVenues[0]->name 
-            || $item->ebusVenues[0]->streetAddress)  
-        <h3 class="modal-title">Event Venues and Dates</h3>
+        @if(count($item->ebusVenues) === 1)
+          <h3 class="modal-title">Event Venue and Date</h3>
+        @elseif(count($item->ebusVenues) > 1)
+          <h3 class="modal-title">Events Venue and Dates</h3>
         @endif
       </div>
       <div class="modal-body">

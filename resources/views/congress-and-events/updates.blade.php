@@ -147,7 +147,7 @@
                 style="float: left;
                     margin-top: 5px;
                     padding: 0;"> 
-                VENUES<br>
+                {{ count($item->ebusVenues) === 1 ? 'VENUE' : 'VENUES' }}<br>
                 <span></span></span>
                 </p>
             </a>
