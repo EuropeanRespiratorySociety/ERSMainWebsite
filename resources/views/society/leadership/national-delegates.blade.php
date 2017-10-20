@@ -184,7 +184,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Russian Federation </strong><br>
-		            Vera Nevzorova
+		            Natalia Shaporova
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Slovakia</strong><br>
