@@ -206,6 +206,9 @@
                     </span> Industry <br>(ERS Members & non-Members)
                   </a>
                 @endif  
+                @if($item->earlybirdDeadline)
+                <p>Register before the early bird deadline <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from a €50 discount.</p>
+                @endif
                 </div>
 
 
