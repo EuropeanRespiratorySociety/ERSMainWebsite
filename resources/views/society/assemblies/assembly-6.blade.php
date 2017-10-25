@@ -9,7 +9,7 @@
 
             </div>
             <div class="col-md-3 xs-mb-15">
-               <img src="images/120x120.jpg" class="img-circle">
+               <img src="../images/people/leadership/Suppli-Ulrik.png" class="img-circle">
               <p class="photo_caption">Secretary: Charlotte Suppli-Ulrik</p>
             </div>
           </div>

@@ -36,7 +36,7 @@
 		            Airway Diseases <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="../images/120x120.jpg" class="img-circle">
+		            <img src="../images/people/leadership/Suppli-Ulrik.png" class="img-circle">
 		            <p class="photo_caption"><strong>Charlotte Suppli-Ulrik</strong>
 		            Epidemiology and Environment<br>
 		        </div>

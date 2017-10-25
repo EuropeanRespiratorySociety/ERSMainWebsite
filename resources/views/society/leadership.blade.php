@@ -42,8 +42,8 @@
                 <a title="Download COI" href="https://ers.box.com/s/4l0crbxgfdtxq2r3l5y7m0hibt51h040">Download COI</a></p>
             </div>
             <div class="col-md-4 xs-mb-15">
-                <img src="images/120x120.jpg" class="img-circle">
-                <p class="photo_caption"><strong>PENDING</strong>
+                <img src="images/people/leadership/Thierry-Troosters.png" class="img-circle">
+                <p class="photo_caption"><strong>Thierry Troosters</strong>
                 Vice President<br>
                 <!--
                 <a title="Download COI" href="">Download COI</a>
