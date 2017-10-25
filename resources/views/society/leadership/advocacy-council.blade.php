@@ -45,9 +45,9 @@
 					</p>
 	            </div>
 	            <div class="col-md-4 xs-mb-15">
-	                <img src="images/120x120.jpg" class="img-circle">
-	                <p class="photo_caption"><strong>To be announced</strong>
-	                 Vice-President<br>
+               		<img src="images/people/leadership/Thierry-Troosters.png" class="img-circle">
+	                <p class="photo_caption"><strong>Thierry Troosters</strong>
+	                Vice President<br>
 					</p>
 	            </div>
             	<div class="col-md-4 xs-mb-15">
