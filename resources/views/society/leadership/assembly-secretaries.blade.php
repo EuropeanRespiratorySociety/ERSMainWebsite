@@ -41,7 +41,7 @@
 		            Epidemiology and Environment<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="../images/120x120.jpg" class="img-circle">
+		            <img src="../images/people/leadership/Marielle-Pijnenburg.png" class="img-circle">
 		            <p class="photo_caption"><strong>Marielle Pijnenburg</strong>
 		            Paediatrics<br>
 		        </div>
