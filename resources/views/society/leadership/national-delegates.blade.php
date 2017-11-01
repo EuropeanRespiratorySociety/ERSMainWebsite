@@ -236,7 +236,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>United Kingdom </strong><br>
-		            Martin Allen
+		            Lisa Davies
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>United States of America </strong><br>
