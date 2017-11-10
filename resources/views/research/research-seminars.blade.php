@@ -65,7 +65,7 @@
     <h4 class="text-left" style="font-size:15px; margin-top:30px;">Organise an ERS seminar programme</h4>
     <p class="rules text-left">
 
-      <a href="https://ers.box.com/s/av0q7z33r142tjstp2yxzgh3wu3ozcmu">Research Seminars Guidelines</a> <br>
+      <a href="https://ers.box.com/s/htjzt2dm98gbbonu3imoeouecv9kzewa">Research Seminars Guidelines</a> <br>
       <a href="https://ers.box.com/s/hrusmkjmbpps6mszo4l26z6s4hpgz0xu">Application form</a>
     </p>
     <p class="rules text-left">
