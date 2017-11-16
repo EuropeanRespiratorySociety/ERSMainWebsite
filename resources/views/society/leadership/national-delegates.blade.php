@@ -21,7 +21,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Austria</strong><br>
-		            Gabor Kovacs
+		            Natascha Tröster
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Belarus</strong><br>
@@ -68,7 +68,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Croatia</strong><br>
-		            Mihovil Roglic
+		            Nevenka Piskac Zivkovic
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Cyprus</strong><br>
