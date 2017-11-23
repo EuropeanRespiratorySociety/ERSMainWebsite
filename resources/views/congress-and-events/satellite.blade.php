@@ -115,21 +115,25 @@
         </ul> --}}
 
         <div class="tab-content text-left">
-          <div style="padding-left: 20px; max-width: 200px;">
-            <div >
-              <img src="../images/events/DGP.png" class="img-responsive" style="padding-top: 20px;"/>
-            </div>
-            <div>
-              <img src="../images/events/SANI.png" class="img-responsive" style="padding-top: 40px;"/>
-            </div>
-            <div>
-              <img src="../images/events/SIP-IRS.png" class="img-responsive" style="padding-top: 40px;"/>
-            </div>
-            <div>
-              <img src="../images/events/SPLF.png" class="img-responsive" style="padding-top: 40px; padding-bottom: 50px;"/>
+          <div class="ers-scroller nano scrollable" style="height: 450px;">
+            <div class="nano-content">
+              <div style="padding-left: 50px; max-width: 180px;">
+                  <div>
+                    <img src="../images/events/DGP.png" class="img-responsive" style="padding-top: 20px;"/>
+                  </div>
+                  <div>
+                    <img src="../images/events/SANI.png" class="img-responsive" style="padding-top: 30px;"/>
+                  </div>
+                  <div>
+                    <img src="../images/events/SIP-IRS.png" class="img-responsive" style="padding-top: 30px;"/>
+                  </div>
+                  <div>
+                    <img src="../images/events/SPLF.png" class="img-responsive" style="padding-top: 30px;"/>
+                  </div>
+                </div>
             </div>
           </div>
-        {{--
+          <div class="nano-pane" style="display: block;"><div class="nano-slider" style="height: 50px; transform: translate(0px, 0px);"></div></div></div>        {{--
           <div id="venue" class="tab-pane active cont">
 
         <div class="list-group text-left">
