@@ -115,6 +115,20 @@
         </ul> --}}
 
         <div class="tab-content text-left">
+          <div style="padding-left: 20px; max-width: 200px;">
+            <div >
+              <img src="../images/events/DGP.png" class="img-responsive" style="padding-top: 20px;"/>
+            </div>
+            <div>
+              <img src="../images/events/SANI.png" class="img-responsive" style="padding-top: 40px;"/>
+            </div>
+            <div>
+              <img src="../images/events/SIP-IRS.png" class="img-responsive" style="padding-top: 40px;"/>
+            </div>
+            <div>
+              <img src="../images/events/SPLF.png" class="img-responsive" style="padding-top: 40px; padding-bottom: 50px;"/>
+            </div>
+          </div>
         {{--
           <div id="venue" class="tab-pane active cont">
 
