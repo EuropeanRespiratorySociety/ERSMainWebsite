@@ -115,7 +115,7 @@
         </ul> --}}
 
         <div class="tab-content text-left">
-          <div class="ers-scroller nano scrollable" style="height: 600px;">
+          <div class="ers-scroller nano scrollable" style="height: 650px;">
             <div class="nano-content">
               <div style="padding-left: 50px; max-width: 180px;">
                   <div>
@@ -132,6 +132,9 @@
                   </div>
                   <div>
                     <img src="../images/events/SEPAR.png" class="img-responsive" style="padding-top: 30px;"/>
+                  </div>
+                  <div>
+                    <img src="../images/events/BTS.jpg" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
                 </div>
             </div>
