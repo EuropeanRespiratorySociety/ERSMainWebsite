@@ -136,7 +136,13 @@
                   <div>
                     <img src="../images/events/BTS.jpg" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
-                </div>
+                  <div>
+                    <img src="../images/events/BVP-SBP.jpg" class="img-responsive" style="padding-top: 30px;"/>
+                  </div>
+                  <div>
+                    <img src="../images/events/AIPO-RGB.jpg" class="img-responsive" style="padding-top: 30px;"/>
+                  </div>
+              </div>
             </div>
           </div>
           <div class="nano-pane" style="display: block;"><div class="nano-slider" style="height: 50px; transform: translate(0px, 0px);"></div></div></div>        {{--
