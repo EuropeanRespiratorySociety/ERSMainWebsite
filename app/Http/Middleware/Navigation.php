@@ -72,7 +72,7 @@ class Navigation
                 $menu->congressAndEvents->add('Events calendar','congress-and-events/events-calendar');
                // $menu->congressAndEvents->add('ERS International Congress','https://erscongress.org')->link->attr(array('target' => '_blank'));
                 $menu->congressAndEvents->add('ERS International Congress','congress-and-events/ers-international-congress');
-                // $menu->congressAndEvents->add('ERS Respiratory Updates','congress-and-events/ers-respiratory-updates');
+                $menu->congressAndEvents->add('ERS Respiratory Updates','congress-and-events/ers-respiratory-updates');
                 $menu->congressAndEvents->add('ERS Satellites','congress-and-events/ers-satellite');
                 //$menu->congressAndEvents->add('Paris 2018','congress-and-events/ers-2018');
                 $menu->congressAndEvents->add('The Lung Science Conference','congress-and-events/cell-matrix-interactions-in-lung-disease-and-regeneration');
