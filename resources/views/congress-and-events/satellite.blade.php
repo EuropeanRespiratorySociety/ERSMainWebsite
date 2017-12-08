@@ -117,7 +117,7 @@
         <div class="tab-content text-left">
           <div class="ers-scroller nano scrollable" style="height: 650px;">
             <div class="nano-content">
-              <div style="padding-left: 50px; max-width: 180px;">
+              <div style="padding-left: 10px; max-width: 230px;">
                   <div>
                     <img src="../images/events/DGP.png" class="img-responsive" style="padding-top: 20px;"/>
                   </div>
