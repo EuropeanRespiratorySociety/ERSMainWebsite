@@ -119,28 +119,28 @@
             <div class="nano-content">
               <div style="padding-left: 10px; max-width: 230px;">
                   <div>
-                    <img src="../images/events/DGP.png" class="img-responsive" style="padding-top: 20px;"/>
+                    <img src="../images/events/DGP-01.png" class="img-responsive" style="padding-top: 20px;"/>
                   </div>
                   <div>
-                    <img src="../images/events/SANI.png" class="img-responsive" style="padding-top: 30px;"/>
+                    <img src="../images/events/SANI-01.png" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
                   <div>
-                    <img src="../images/events/SIP-IRS.png" class="img-responsive" style="padding-top: 30px;"/>
+                    <img src="../images/events/SIP-IRS-01.png" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
                   <div>
-                    <img src="../images/events/SPLF.png" class="img-responsive" style="padding-top: 30px;"/>
+                    <img src="../images/events/SPLF-01.png" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
                   <div>
-                    <img src="../images/events/SEPAR.png" class="img-responsive" style="padding-top: 30px;"/>
+                    <img src="../images/events/SEPAR-01.png" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
                   <div>
-                    <img src="../images/events/BTS.jpg" class="img-responsive" style="padding-top: 30px;"/>
+                    <img src="../images/events/BTS-01.jpg" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
                   <div>
-                    <img src="../images/events/BVP-SBP.jpg" class="img-responsive" style="padding-top: 30px;"/>
+                    <img src="../images/events/BVP-SBP-01.jpg" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
                   <div>
-                    <img src="../images/events/AIPO-RGB.jpg" class="img-responsive" style="padding-top: 30px;"/>
+                    <img src="../images/events/AIPO-RGB-01.jpg" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
               </div>
             </div>
