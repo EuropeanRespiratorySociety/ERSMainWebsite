@@ -142,9 +142,6 @@
                   <div>
                     <img src="../images/events/AIPO-RGB-01.jpg" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
-                  <div>
-                    <img src="../images/events/Registro.jpg" class="img-responsive" style="padding-top: 30px;"/>
-                  </div>
               </div>
             </div>
           </div>
