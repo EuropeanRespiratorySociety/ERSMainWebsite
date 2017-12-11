@@ -111,7 +111,7 @@
       <h5 class="ers-course-organisers"><b>Faculty :</b> {{$item->faculty}}</h5>
       @endif
       @if($item->disclosure)
-      <h5><a href="{{$item->disclosure}}" >Faculty disclosure</a></b></h5>
+      <h5><a href="{{$item->disclosure}}" target="_blank">Faculty disclosure</a></b></h5>
       @endif
 
       <div class="article text-left">
