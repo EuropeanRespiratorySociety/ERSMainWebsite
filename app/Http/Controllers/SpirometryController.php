@@ -23,30 +23,21 @@ class SpirometryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    { 
-        $category = $this->CC->getItem('spirometry-training-programme');
-        $category = $this->CC->parseItems($category['rows']);
-        $params['category'] = (object) $category[0];
+  public function index()
+  { 
+      $results = $this->CC->getItem('spirometry-training-programme');
+      $item = $this->CC->parseItems($results['rows']);
+      $params['item'] =  (object) $item[0]; 
 
-        if(!$item[0] || !$item[0]->uri){
-          $this->CC->setCanonical($item[0]->_qname, 'professional-development/spirometry-training-programme');
+      if(!$item[0]->url || !$item[0]->uri){
+          $this->CC->setCanonical($item[0]->_qname);
       }
 
-        $results = $this->CC->getAssociation($this->spirometryProgramme);
-        
-        $items = '';
-        if(!empty($results['rows'])){
-            $items = $this->CC->parseItems($results['rows']);           
-        }
-        $params['items'] = $items; 
+      $results = $this->CC->getAssociation($item[0]->_qname);
+      $params['items'] = $this->CC->parseItems($results['rows']); 
 
-        return view('professional.spirometry-training-programme')->with($params);    
-
-    }
-
-
-
+      return view('professional.spirometry-training-programme')->with($params);  
+  }
 
 
     /**
