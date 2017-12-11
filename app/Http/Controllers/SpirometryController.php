@@ -8,7 +8,7 @@ use Iluminate\Http\Request;
 
 use App\Extensions\CloudCmsHelper as CC;
 
-class Spirometry extends Controller
+class SpirometryController extends Controller
 {
 
     protected $spirometryProgramme = "o:4cfe4d088f2dda3db7ad";
@@ -17,6 +17,7 @@ class Spirometry extends Controller
         $this->CC = new CC();
     }
 
+
     /**
      * Display a listing of the resource.
      *
@@ -24,19 +25,29 @@ class Spirometry extends Controller
      */
     public function index()
     { 
-        $results = $this->CC->getItem('spirometry-training-programme');
-        $item = $this->CC->parseItems($results['rows']);
-        $params['item'] =  (object) $item[0]; 
+        $category = $this->CC->getItem('spirometry-training-programme');
+        $category = $this->CC->parseItems($category['rows']);
+        $params['category'] = (object) $category[0];
 
-        if(!$item[0]->url || !$item[0]->uri){
-            $this->CC->setCanonical($item[0]->_qname);
+        if(!$item[0] || !$item[0]->uri){
+          $this->CC->setCanonical($item[0]->_qname, 'professional-development/spirometry-training-programme');
+      }
+
+        $results = $this->CC->getAssociation($this->spirometryProgramme);
+        
+        $items = '';
+        if(!empty($results['rows'])){
+            $items = $this->CC->parseItems($results['rows']);           
         }
+        $params['items'] = $items; 
 
-        $results = $this->CC->getAssociation($item[0]->_qname);
-        $params['items'] = $this->CC->parseItems($results['rows']); 
+        return view('professional.spirometry-training-programme')->with($params);    
 
-        return view('professional.spirometry-programmes')->with($params);  
     }
+
+
+
+
 
     /**
      * Display the specified resource.
@@ -44,7 +55,7 @@ class Spirometry extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function showRS($slug)
+    public function show($slug)
     {
         $results = $this->CC->getItem($slug);
         $item = $this->CC->parseItems($results['rows']);
@@ -58,8 +69,7 @@ class Spirometry extends Controller
             $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
             $relatedItems = $this->CC->parseItems($related['rows']);
             $params['relatedItems'] =  (object) $relatedItems;
-        } 
-        return view('research.spirometry-programme')->with($params); 
+        }
+        return view('articles.item')->with($params); 
     }
-
 }
