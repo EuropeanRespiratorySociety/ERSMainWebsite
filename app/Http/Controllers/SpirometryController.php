@@ -11,7 +11,7 @@ use App\Extensions\CloudCmsHelper as CC;
 class SpirometryController extends Controller
 {
 
-    protected $spirometryProgramme = "o:4cfe4d088f2dda3db7ad";
+    protected $spirometryProgrammes = "o:4cfe4d088f2dda3db7ad";
 
     public function __construct() {
         $this->CC = new CC();
@@ -25,20 +25,20 @@ class SpirometryController extends Controller
      */
   public function index()
   { 
-      $results = $this->CC->getItem('spirometry-training-programme');
-      $item = $this->CC->parseItems($results['rows']);
-      $params['item'] =  (object) $item[0]; 
+    $item = $this->CC->getItem('spirometry-training-programmes');
+    $item = $this->CC->parseItems($item['rows']);
+    $params['category'] = (object) $item[0];
 
-      if(!$item[0]->url || !$item[0]->uri){
-          $this->CC->setCanonical($item[0]->_qname);
-      }
+    if(!$item[0]->url || !$item[0]->uri){
+        $this->CC->setCanonical($item[0]->_qname);
+    }
 
-      $results = $this->CC->getAssociation($item[0]->_qname);
-      $params['items'] = $this->CC->parseItems($results['rows']); 
+    $results = $this->CC->getAssociation($this->spirometryProgrammes);
+    $params['items'] =  $this->CC->parseItems($results['rows']);
 
-      return view('professional.spirometry-training-programme')->with($params);  
+    return view('professional.spirometry-training-programmes')->with($params);  
+
   }
-
 
     /**
      * Display the specified resource.

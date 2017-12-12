@@ -23,6 +23,9 @@
             {!!$category->video!!} 
           </div>
           @endif
+          @if(isset($relatedItems))
+            @include('partials.related-items', array('relatedItems' => $relatedItems)) 
+          @endif
         </div>
 
         <div class="col-md-8 event-items-fs-title">
@@ -36,12 +39,13 @@
           @endif 
        </div>
 
-     </div>
-     <div class="main-content">
-       <div class="row fellowship-categories">
-          @include('partials.items', array('items' => $items))
-       </div>
-     </div>
+      </div>
+      <div class="main-content">
+        <div class="row row_event fellowship-categories"> 
+          @include('partials.category-items-modal', array('items' => $items, 'class' => 'col-md-4'))
+        </div>
+      </div>
+
    </div>
   <!-- Beginning Right Side-bar -->
    <div class="col-md-3 white-bg event-items-right">
@@ -62,11 +66,11 @@
     <hr>
       <a class="btn btn-primary" href="http://www.ers-education.org/events/research-seminars.aspx">Past Research Seminars</a>
     <hr>
-    <h4 class="text-left" style="font-size:15px; margin-top:30px;">Organise an ERS seminar programme</h4>
+    <h4 class="text-left" style="font-size:15px; margin-top:30px;">Diplomates and accredited trainers</h4>
     <p class="rules text-left">
 
-      <a href="https://ers.box.com/s/htjzt2dm98gbbonu3imoeouecv9kzewa">Research Seminars Guidelines</a> <br>
-      <a href="https://ers.box.com/s/hrusmkjmbpps6mszo4l26z6s4hpgz0xu">Application form</a>
+      <a href="https://ers.box.com/s/3zqly65aie0csbz9ahrmtoywkz82gic3">Trainees</a> <br>
+      <a href="https://ers.box.com/s/2be3jatzztvg3jfea660gmu4v46fv78v">Trainees</a>
     </p>
     <p class="rules text-left">
       You are organising your own event and wish to have it endorsed by the ERS, <a href="congress-and-events/external-events-endorsement">consult the guidelines and the form</a> on the dedicated page.
