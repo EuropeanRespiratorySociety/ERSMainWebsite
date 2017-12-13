@@ -276,7 +276,7 @@
             <p class="photo_caption"><strong>{!! Html::mailto('Steve.Sealy@ersnet.org', 'Steve Sealy') !!}</strong>
             Associate Director,<br>
             Director of Corporate Relations,<br>
-            Marketing and Commnications<br>
+            Marketing and Communications<br>
             T +41 21 213 01 61<br>
             </p>
           </div>
@@ -336,7 +336,7 @@
             <p class="photo_caption"><strong>{!! Html::mailto('Steve.Sealy@ersnet.org', 'Steve Sealy') !!}</strong>
             Associate Director,<br>
             Director of Corporate Relations,<br>
-            Marketing and Commnications<br>
+            Marketing and Communications<br>
             T +41 21 213 01 61<br>
             </p>
           </div>
