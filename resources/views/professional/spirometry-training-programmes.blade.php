@@ -49,32 +49,35 @@
    </div>
   <!-- Beginning Right Side-bar -->
    <div class="col-md-3 white-bg event-items-right">
-       @if($category->flags->text)
-          <div class="alert {{'alert-'.$category->flags->color }}">
-          <div class="message"> {{ $category->flags->text }}</div>
-          </div>
-    @endif
+      @if($category->flags->text)
+            <div class="alert {{'alert-'.$category->flags->color }}">
+            <div class="message"> {{ $category->flags->text }}</div>
+            </div>
+      @endif
     <div class="list-group text-left">
-      <a href="#" class="list-group-item clearfix cursor_default">
-        <span class="icon s7-alarm"></span>
-        <p>
-          APPLICATION DEADLINE : <br>
-          <span>15 October each year</span>
-        </p>
-        </a>
+      <span href="javascript:void(0)" class="list-group-item clearfix cursor_default">
+      <span class="icon s7-copy-file"></span>
+      <p>
+        Diplomates and accredited trainers : <br>
+        <ul style="display: table;
+                  float: left;
+                  padding-left: 10px;
+                  padding-top: 10px;">
+            <li>
+              <a href="https://ers.box.com/s/3zqly65aie0csbz9ahrmtoywkz82gic3">Trainees</a>
+            </li>
+            <li>
+              <a href="https://ers.box.com/s/2be3jatzztvg3jfea660gmu4v46fv78v">Trainees</a>
+            </li>
+            @if($category->popUpText)
+            <li>
+              <a data-toggle="modal" data-target="#md-popUp" class="cursor_pointer">{{$category->popUpText}}</a>
+            </li>
+            @endif
+          </ul>
+      </p>
+    </span>
     </div>
-    <hr>
-      <a class="btn btn-primary" href="http://www.ers-education.org/events/research-seminars.aspx">Past Research Seminars</a>
-    <hr>
-    <h4 class="text-left" style="font-size:15px; margin-top:30px;">Diplomates and accredited trainers</h4>
-    <p class="rules text-left">
-
-      <a href="https://ers.box.com/s/3zqly65aie0csbz9ahrmtoywkz82gic3">Trainees</a> <br>
-      <a href="https://ers.box.com/s/2be3jatzztvg3jfea660gmu4v46fv78v">Trainees</a>
-    </p>
-    <p class="rules text-left">
-      You are organising your own event and wish to have it endorsed by the ERS, <a href="congress-and-events/external-events-endorsement">consult the guidelines and the form</a> on the dedicated page.
-    </p>
   </div>
 {{-- END Right Side-bar --}}
 </div>
@@ -82,6 +85,30 @@
 
 
 @stop()  
+
+
+@section('modals')
+  @include('partials.modal-items', array('items' => $items))
+  {{-- FREE PopUp --}}
+  @if($category->popUp)
+  <div id="md-popUp" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+          <h3 class="modal-title">{{$category->popUpText}}</h3>
+        </div>
+        <div class="modal-body">
+          <div class="text-left">
+            {!! $category->popUp !!}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @endif
+  {{-- end FREE PopUp --}}
+@stop()
 
 @section('scripts')
 <script type="text/javascript">
