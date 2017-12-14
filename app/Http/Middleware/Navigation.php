@@ -157,10 +157,12 @@ class Navigation
                     $menu->policyAreas->add('The ERS Tobacco Control Committee','advocacy/policy-areas/the-ers-tobacco-control-committee')->link->attr(array('style' => 'display:none'));;
                     $menu->policyAreas->add('Environment and Health Committee','advocacy/policy-areas/environment-and-health-committee')->link->attr(array('style' => 'display:none'));
                 $menu->advocacyAndPatientResources->add('Alliances','advocacy/alliances');
+                $menu->advocacyAndPatientResources->add('PATIENT RESOURCES','http://www.europeanlung.org/en/lung-disease-and-information/factsheets')
+                                            ->link->attr(array('target' => '_blank'));
                 $menu->advocacyAndPatientResources->add('Healthy Lungs for Life','http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/')
                                             ->link->attr(array('target' => '_blank')); 
                 $menu->advocacyAndPatientResources->add('European Lung Foundation','http://www.europeanlung.org/en/')
-                                            ->link->attr(array('target' => '_blank'));                   
+                                            ->link->attr(array('target' => '_blank'));
 
             if(App::environment() != 'local'){
                  foreach ($menu->items as $item) {
