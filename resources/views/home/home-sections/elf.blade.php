@@ -11,7 +11,7 @@
 
     <!--Patient involvement-->
     <div class="col-md-3">
-      <a href="{{url('advocacy/policy-areas')}}">
+      <a target="_blank" href="http://www.europeanlung.org/en/get-involved/patient-input/">
         <div class="card card-padded card-home">
 
           <img src="../images/elf/elf_7.jpg" alt=""/>
@@ -22,7 +22,7 @@
 
     <!--Patient resources-->
     <div class="col-md-3">
-      <a href="{{url('advocacy/policy-areas')}}">
+      <a target="_blank" href="http://www.europeanlung.org/en/lung-disease-and-information/factsheets">
         <div class="card card-padded card-home">
 
           <img src="../images/elf/elf_5.jpg" alt=""/>
@@ -33,7 +33,7 @@
 
     <!--Patient network-->
     <div class="col-md-3">
-      <a href="{{url('advocacy/eu-projects')}}">
+      <a target="_blank" href="http://www.europeanlung.org/en/get-involved/european-patient-organisation-network/">
         <div class="card card-padded card-home">
 
           <img src="../images/elf/elf_6.jpg" alt=""/>
