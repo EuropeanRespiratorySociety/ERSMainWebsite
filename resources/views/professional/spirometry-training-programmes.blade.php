@@ -23,8 +23,8 @@
             {!!$category->video!!} 
           </div>
           @endif
-          @if(isset($relatedItems))
-            @include('partials.related-items', array('relatedItems' => $relatedItems)) 
+          @if(isset($items))
+            @include('partials.related-items', array('relatedItems' => $items)) 
           @endif
         </div>
 
