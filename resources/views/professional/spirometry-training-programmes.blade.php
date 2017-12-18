@@ -41,7 +41,7 @@
 
       </div>
       <div class="main-content">
-        <div class="row row_event" id="spirometry-programme"> 
+        <div class="row row_event " id="spirometry-programme"> 
         </div>
       </div>
 
@@ -122,7 +122,6 @@
 
       client.add('calendar');
       client.calendar.read({type:'spirometry'}).done(function (data){
-                  console.log(data)
           var events = data.data;
           for( var i = 0; i < events.length ; i++){
               if(events[i].image) {
