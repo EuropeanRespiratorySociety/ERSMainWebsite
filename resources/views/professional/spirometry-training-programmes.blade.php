@@ -41,8 +41,7 @@
 
       </div>
       <div class="main-content">
-        <div class="row row_event fellowship-categories"> 
-          @include('partials.category-items-modal', array('items' => $items, 'class' => 'col-md-4'))
+        <div class="row row_event" id="spirometry-programme"> 
         </div>
       </div>
 
@@ -111,15 +110,46 @@
 @stop()
 
 @section('scripts')
+<script src="http://jpillora.com/jquery.rest/dist/1/jquery.rest.min.js"></script>
+
 <script type="text/javascript">
-    $('.fellowship-categories').isotope({
-        layoutMode: 'packery',
-        packery: {
-            columnWidth: '.isotope',
-            gutter:0
-        },            
-        percentPosition: true
-        
-    });
+  $(document).ready(function(){
+      var client = new $.RestClient('https://api.ersnet.org/', {
+          cache: 60, //This will cache requests for 60 seconds
+          cachableMethods: ["GET"] //This defines what method types can be cached (this is already set by default)
+      });
+      // var client = new $.RestClient('http://localhost:3030/');
+
+      client.add('calendar');
+      client.calendar.read({type:'spirometry'}).done(function (data){
+                  console.log(data)
+          var events = data.data;
+          for( var i = 0; i < events.length ; i++){
+              if(events[i].image) {
+                  var image = 
+                      '<div class="card-image"' 
+                      +'style="background-size:cover;background-repeat: no-repeat;height:150px;' 
+                      +'background-image: url(\'' + events[i].image + '\');' 
+                      +'background-position: center center;"></div>';
+              } else {
+                  var image = '';
+              }
+              $(
+              '<li class="list-group-item panel panel-full-default">'
+                  +'<div class="card card-default card-dashboard">'
+                      +image
+                      +'<div class="card-title">'
+                          +'<h2 style="font-size:20px;">' + events[i].title + '</h2>'
+                      +'</div>'                 
+                      +'<div class="card-content">'
+                          + events[i].leadParagraph
+                      +'</div>'	                
+      +'</div>'
+              +'</li>'
+              ).appendTo($('#spirometry-programme'));
+              
+          }
+      });
+  });    
 </script>
 @stop()
