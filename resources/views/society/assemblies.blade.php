@@ -82,8 +82,6 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
       </div>
     </div>
 
-
-
     <!--div id="fullpage"-->
 
       
