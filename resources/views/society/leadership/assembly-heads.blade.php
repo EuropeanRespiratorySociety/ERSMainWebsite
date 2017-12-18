@@ -5,7 +5,7 @@
       href="https://forms.ersnet.org/contact-assembly-heads" 
       type="button" 
       class="btn btn-space btn-primary btn-rounded btn-lg"
-      style="position:fixed;top:120px;right:3px;z-index:1;">
+      style="position:fixed;top:120px;left:108px;z-index:1;">
       <i style="font-size:30px;" class="icon s7-add-user"></i> Contact Assembly Heads
     </a>  
 	<div class="col-md-10">
