@@ -148,6 +148,9 @@
                   <div>
                     <img src="../images/events/SLMF.jpg" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
+                  <div>
+                    <img src="../images/events/NVLA.png" class="img-responsive" style="padding-top: 30px;"/>
+                  </div>
               </div>
             </div>
           </div>
