@@ -151,6 +151,9 @@
                   <div>
                     <img src="../images/events/NVLA.png" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
+                  <div>
+                    <img src="../images/events/NRS.png" class="img-responsive" style="padding-top: 30px;"/>
+                  </div>
               </div>
             </div>
           </div>
