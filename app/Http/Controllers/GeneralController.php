@@ -193,7 +193,7 @@ class GeneralController extends Controller
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  $items;
 
-        return view('professional.course')->with($params);
+        return view('professional.hermes-examination')->with($params);
     }
 
     /**
