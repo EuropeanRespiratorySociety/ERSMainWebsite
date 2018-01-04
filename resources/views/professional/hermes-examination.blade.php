@@ -124,7 +124,7 @@
    <div class="col-md-3 white-bg event-items-right">
 
     <div class="alert alert-success">
-    <div class="message">Registration now open.<br>Deadline: 00 January, 2018.</div>
+    <div class="message">Registration now open.<br>Deadline:{{ $item->deadline}}.</div>
     </div>
 
     <div class="list-group text-left">
@@ -132,7 +132,7 @@
         <span class="icon s7-alarm"></span>
         <p>
           REGISTRATION DEADLINE : <br>
-          <span>00 January 2018</span>
+          <span>{{ $item->deadline}}</span>
         </p>
       </a>
       <!-- <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
