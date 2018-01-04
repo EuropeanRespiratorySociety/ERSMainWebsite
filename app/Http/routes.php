@@ -125,6 +125,7 @@ Route::group(['prefix' => 'professional-development'], function () {
         Route::get('/{slug}', 'FellowshipController@show');
     });
     Route::get('ers-hermes-examination-in-adult-respiratory-medicine', 'GeneralController@ErsHermesExam');
+    Route::get('examination-committee', function(){ return view('professional.examination-committee');});
     Route::get('grants-and-sponsorships', 'GeneralController@grantsAndSponsorships');
     Route::get('grants-and-sponsorships/{slug}', 'GeneralController@show');
     Route::get('/{slug}', 'GeneralController@show'); //acreditation uses this route   
