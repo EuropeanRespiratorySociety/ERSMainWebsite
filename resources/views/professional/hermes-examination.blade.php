@@ -122,17 +122,17 @@
 
    <!-- Beginning Right Side-bar -->
    <div class="col-md-3 white-bg event-items-right">
-
+    <!--
     <div class="alert alert-success">
     <div class="message">Registration now open.<br>Deadline:{{ $item->deadline}}.</div>
     </div>
-
+    -->
     <div class="list-group text-left">
       <a href="javascript:void(0)" class="list-group-item clearfix cursor_default">
         <span class="icon s7-alarm"></span>
         <p>
           REGISTRATION DEADLINE : <br>
-          <span>{{ $item->deadline}}</span>
+          <span>00 January 2018</span>
         </p>
       </a>
       <!-- <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
@@ -177,7 +177,6 @@
   <p><a data-toggle="modal" data-target="#md-travel_info" type="button" class="cursor_pointer">Travel Info</a></p>
   @endif
   @if($item->registerButton->link && !$item->fullyBooked)
-  <p>Registering for someone else ? Contact {!! Html::mailto('felix.yip@ersnet.org', 'Felix Yip') !!}</p>
   <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
       {{ $item->registerButton->text or Register}}
   </a>
