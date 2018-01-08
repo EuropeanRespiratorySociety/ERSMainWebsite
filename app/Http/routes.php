@@ -124,7 +124,8 @@ Route::group(['prefix' => 'professional-development'], function () {
         Route::get('/', 'FellowshipController@index'); 
         Route::get('/{slug}', 'FellowshipController@show');
     });
-    Route::get('ers-hermes-examination-in-adult-respiratory-medicine', 'GeneralController@ErsHermesExam');
+    Route::get('ers-hermes-examination-in-adult-respiratory-medicine', 'GeneralController@ErsHermesExamAdult');
+    Route::get('ers-hermes-examination-in-paediatric-respiratory-medicine', 'GeneralController@ErsHermesExamPaediatric');
     Route::get('examination-committee', 'GeneralController@ExamCommittee');
     Route::get('grants-and-sponsorships', 'GeneralController@grantsAndSponsorships');
     Route::get('grants-and-sponsorships/{slug}', 'GeneralController@show');
