@@ -41,7 +41,7 @@
                             </div> 
 
                             <div class="card-content  text-left">
-                                <p>Respiratory Matters is ERS’s experts’ blog, designed to give you insights from respiratory leaders across the world from the clinician, scientist and allied health professional perspectives. </p>
+                                <p>Respiratory Matters is a monthly ERS blog offering insight into the experiences of respiratory-focused professionals worldwide. It is written by ERS officers and members across all specialties, offering clinical, scientific and allied healthcare professional perspectives.</p>
                             </div>
                             
                             <div class="card-action" position="absolute; bottom:0;">
