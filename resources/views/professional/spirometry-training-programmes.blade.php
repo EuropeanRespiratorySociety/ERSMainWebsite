@@ -9,7 +9,7 @@
               )) 
 @stop()
 @section('content')
-<div class="ers-content event-items-content">
+<div class="ers-content event-items-content article-items">
   <div class="row">
 
     <div class="col-md-9 light-grey-bg">
@@ -41,7 +41,8 @@
 
       </div>
       <div class="main-content">
-        <div class="row row_event " id="spirometry-programme"> 
+        <h3></a>Past and Upcoming programmes 2017/2018</h3>
+        <div class="row row_event " id="spirometry-programme">
         </div>
       </div>
 
@@ -134,13 +135,13 @@
                   var image = '';
               }
               $(
-              '<li class="list-group-item panel panel-full-default">'
+              '<li class="list-group-item panel panel-full-default light-grey-bg" style="margin-bottom:0px;">'
                   +'<div class="card card-default card-dashboard">'
                       +image
                       +'<div class="card-title">'
                           +'<h2 style="font-size:20px;">' + events[i].title + '</h2>'
                       +'</div>'                 
-                      +'<div class="card-content">'
+                      +'<div class="card-content text-left">'
                           + events[i].leadParagraph
                       +'</div>'	                
       +'</div>'
