@@ -38,11 +38,11 @@
          </div>
           @endif
         </div>
-        <h3 class="text-left article" style="font-size:24px;">Past and Upcoming programmes 2017/2018</h3>
 
       </div>
       <div class="main-content">
-        <div class="row row_event " id="spirometry-programme" style="position: relative; height: 2872px;">
+          <h3 class="text-left" style="font-size:24px;font-family:'Amiri', 'serif';">Past and Upcoming programmes 2017/2018</h3>
+          <div class="row row_event " id="spirometry-programme" style="position: relative; height: 800px;">
         </div>
       </div>
 
@@ -141,8 +141,9 @@
                       +image
                       +'<div class="card-content text-left">'
                           +'<h3 class="title">' + events[i].title + '</h3>'
+                          +'<p class="date"><span class="icon s7-date"></span>' + events[i].eventDates + '</p>'
                           + events[i].leadParagraph
-                      +'</div>'
+                      +'</div>'                      
                       +'</div>'
                       +'</div>'
               ).appendTo($('#spirometry-programme'));
