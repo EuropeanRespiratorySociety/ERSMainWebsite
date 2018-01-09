@@ -36,13 +36,13 @@
           <div class="article text-left">          
                     {!! $category->body !!}
          </div>
-          @endif 
-       </div>
+          @endif
+        </div>
+        <h3 class="text-left article" style="font-size:24px;">Past and Upcoming programmes 2017/2018</h3>
 
       </div>
       <div class="main-content">
-        <h3></a>Past and Upcoming programmes 2017/2018</h3>
-        <div class="row row_event " id="spirometry-programme">
+        <div class="row row_event " id="spirometry-programme" style="position: relative; height: 2872px;">
         </div>
       </div>
 
@@ -135,17 +135,16 @@
                   var image = '';
               }
               $(
-              '<li class="list-group-item panel panel-full-default light-grey-bg" style="margin-bottom:0px;">'
-                  +'<div class="card card-default card-dashboard col-md-6">'
+                  '<div class="col-md-4 isotope">'
+                      +'<div class="card card-event">'
+
                       +image
-                      +'<div class="card-title">'
-                          +'<h2 style="font-size:20px;">' + events[i].title + '</h2>'
-                      +'</div>'                 
                       +'<div class="card-content text-left">'
+                          +'<h3 class="title">' + events[i].title + '</h3>'
                           + events[i].leadParagraph
-                      +'</div>'	                
-      +'</div>'
-              +'</li>'
+                      +'</div>'
+                      +'</div>'
+                      +'</div>'
               ).appendTo($('#spirometry-programme'));
               
           }
