@@ -136,7 +136,7 @@
               }
               $(
               '<li class="list-group-item panel panel-full-default light-grey-bg" style="margin-bottom:0px;">'
-                  +'<div class="card card-default card-dashboard">'
+                  +'<div class="card card-default card-dashboard col-md-6">'
                       +image
                       +'<div class="card-title">'
                           +'<h2 style="font-size:20px;">' + events[i].title + '</h2>'
