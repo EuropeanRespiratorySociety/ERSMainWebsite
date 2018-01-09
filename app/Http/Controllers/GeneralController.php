@@ -174,7 +174,7 @@ class GeneralController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function ErsHermesExam()
+    public function ErsHermesExamAdult()
     { 
         $results = $this->CC->getItem('ers-hermes-examination-in-adult-respiratory-medicine');
         $item = $this->CC->parseItems($results['rows']);
@@ -193,9 +193,35 @@ class GeneralController extends Controller
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  $items;
 
-        return view('professional.hermes-examination')->with($params);
+        return view('professional.hermes-examination-adult')->with($params);
     }
 
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function ErsHermesExamPaediatric()
+    { 
+        $results = $this->CC->getItem('ers-hermes-examination-in-paediatric-respiratory-medicine');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] =  (object) $item[0]; 
+
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
+        }
+
+        if($item[0]->hasRelatedArticles > 0){
+          $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
+          $params['relatedItems'] = $this->CC->parseItems($related['rows']);
+      }
+
+      $results = $this->CC->getAssociation($item[0]->_qname);
+        $items = $this->CC->parseItems($results['rows']);
+        $params['items'] =  $items;
+
+        return view('professional.hermes-examination-paediatric')->with($params);
+    }
 
     /**
      * Display a listing of the resource.

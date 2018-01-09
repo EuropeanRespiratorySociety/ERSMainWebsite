@@ -16,7 +16,7 @@
                         </div>
                         <div class="card-content text-left">
                             <p>
-                                <i>The European Respiratory Journal</i> (ERJ) - 2014 impact factor 7.636 - is the official journal of the European Respiratory Society (ERS). It publishes clinical and...   
+                                <i>The European Respiratory Journal</i> (ERJ) - 2017 impact factor 10.569 - is the official journal of the European Respiratory Society (ERS). It publishes clinical and...   
                             </p>
                         </div>
                         <div class="card-action"> 	

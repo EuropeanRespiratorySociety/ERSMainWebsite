@@ -132,7 +132,7 @@
         <span class="icon s7-alarm"></span>
         <p>
           REGISTRATION DEADLINE : <br>
-          <span>00 January 2018</span>
+          <span>1 July 2018</span>
         </p>
       </a>
       <!-- <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
@@ -157,14 +157,14 @@
                   float: left;
                   margin-left: 10px;">
             <li>
-            <a href="https://ers.box.com/s/ktk52dqmvn89kvqi7eqcu9t6q0d0gmjv">LTRF 2018 Application Guidelines</a>
+            <!-- <a href="https://ers.box.com/s/ktk52dqmvn89kvqi7eqcu9t6q0d0gmjv">LTRF 2018 Application Guidelines</a> -->
             </li>
           </ul>
       </p>
     </span>
   </div>
     <p class="rules text-left">
-    <span style="font-size:16px;vertical-align: middle;" class="icon s7-mail"></span>{!! Html::mailto('fellowships@ersnet.org', ' Contact us') !!}
+    <span style="font-size:16px;vertical-align: middle;" class="icon s7-mail"></span><!-- {!! Html::mailto('fellowships@ersnet.org', ' Contact us') !!} -->
   </p>
   <div class="event-items-right-bt">
   @if($item->extendedDeadline)
