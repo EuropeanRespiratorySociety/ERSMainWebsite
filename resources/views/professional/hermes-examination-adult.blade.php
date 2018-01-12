@@ -132,7 +132,7 @@
         <span class="icon s7-alarm"></span>
         <p>
           REGISTRATION DEADLINE : <br>
-          <span>1 July 2018</span>
+          <span>{{$item->deadline}}</span>
         </p>
       </a>
       <!-- <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">

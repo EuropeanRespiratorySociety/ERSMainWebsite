@@ -180,6 +180,10 @@ class CloudCmsParser
                         $item->earlybirdDeadline = $this->date->isAlreadyPassed($item->earlybirdDeadline);
                     }
 
+                    if($item->deadline){
+                      $item->deadline = $this->date->ersDate($item->deadline);
+                    }
+
                     if($item->extendedDeadline){
                         $item->extendedDeadline = $this->date->ersDate($item->extendedDeadline);
                     }
