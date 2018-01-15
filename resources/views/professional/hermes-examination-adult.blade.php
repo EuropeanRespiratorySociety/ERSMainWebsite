@@ -139,14 +139,45 @@
         <span>Mid-May each year</span>
       </p>
     </a>--}}
-    <a href="javascript:void(0)" class="list-group-item clearfix cursor_default">
+    <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
       <span class="icon s7-date"></span>
       <p>
-        START DATE : <br>
+        EXAM DATE : <br>
         <span>{{ $item->eventDates }}</span>
       </p>
-    </a> 
-    <span href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
+    </a>
+    <a href="javascript:void(0)" class="list-group-item clearfix cursor_default">
+        <span class="icon s7-culture"></span>
+        <p>
+          EXAM LOCATION : <br>
+            @if($item->venue->url)
+              <a target="_blank" href="{{$item->venue->url}}">
+            @endif 
+              @if($item->venue->name){{$item->venue->name}}@endif
+            @if($item->venue->url)
+              </a>
+            @endif
+            <br/>
+            @if($item->venue->phoneNumber)
+              Phone: {{$item->venue->phoneNumber}}<br>
+            @endif
+            @if($item->venue->streetAddress)
+              {{$item->venue->streetAddress}}<br>
+            @endif
+            @if($item->venue->streetAddress2)
+              {{$item->venue->streetAddress2}}<br>
+            @endif
+            @if($item->venue->streetAddress3)
+              {{$item->venue->streetAddress3}}<br>
+            @endif
+            @if($item->venue->postalCode){{$item->venue->postalCode}}@endif
+            @if($item->venue->city){{$item->venue->city}}@endif<br>
+            @if($item->venue->country){{$item->venue->country}}@endif
+            <hr>
+            @if($item->venue->info){!!$item->venue->info!!}@endif
+          </p>
+      </a> 
+      <span href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
       <span class="icon s7-copy-file"></span>
       <p>
         DOCUMENTS : <br>
