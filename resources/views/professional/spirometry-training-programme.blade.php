@@ -111,7 +111,7 @@
 @stop()
 
 @section('scripts')
-<script src="http://jpillora.com/jquery.rest/dist/1/jquery.rest.min.js"></script>
+<script src="https://jpillora.com/jquery.rest/dist/1/jquery.rest.min.js"></script>
 
 <script type="text/javascript">
   $(document).ready(function(){
