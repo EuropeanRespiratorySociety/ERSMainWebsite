@@ -23,9 +23,22 @@
             {!!$category->video!!} 
           </div>
           @endif
-          @if(isset($items))
+
+          <a href="https://www.ersnet.org/professional-development/deliver-a-training-programme-in-your-country">
+              <div class="related-items text-left">
+                <div class="card card-default card-events">
+                <div class="card-content col-md-12 col-xs-12"> 
+                    <h4>
+                      Deliver a training programme in your country
+                    </h4>  
+                  </div>
+                </div>
+              </div>
+          </a>
+                    
+          {{-- @if(isset($items))
             @include('partials.related-items', array('relatedItems' => $items)) 
-          @endif
+          @endif --}}
         </div>
 
         <div class="col-md-8 event-items-fs-title">
