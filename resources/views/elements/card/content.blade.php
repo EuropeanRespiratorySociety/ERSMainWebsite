@@ -6,16 +6,18 @@
         <p class="btn-rounded early_bird">Early Bird deadline {{ $item->earlybirdDeadline }}</p>
     @endif
     <h3 class="title">
-    @if(strpos($item->registerButton->link, '@'))
-        <a href="{{'mailto:'.$item->registerButton->link}}">{{ $item->title }}</a>
-    @elseif($item->registerButton->link 
-            && ($item->ersEndorsedEvent 
-                || $item->nonErsCalendarItem 
-                || $item->ersDeadline 
-                || $item->category->title == "Events Calendar"
-                || $item->contentType == "event_calendar")
-            )
-        <a href="{{$item->registerButton->link}}" target="_blank">{{ $item->title }}</a>
+    @if(Request::path() !== '/') 
+      @if(strpos($item->registerButton->link, '@'))
+          <a href="{{'mailto:'.$item->registerButton->link}}">{{ $item->title }}</a>
+      @elseif($item->registerButton->link 
+              && ($item->ersEndorsedEvent 
+                  || $item->nonErsCalendarItem 
+                  || $item->ersDeadline 
+                  || $item->category->title == "Events Calendar"
+                  || $item->contentType == "event_calendar")
+              )
+          <a href="{{$item->registerButton->link}}" target="_blank">{{ $item->title }}</a>
+      @endif
     @endif
 
     @if($item->contentType != "event_calendar")

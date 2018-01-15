@@ -21,112 +21,109 @@
         'image' => isset($item->image) ? $item->image : null,
         'description' => isset($item->shortLead) ? $item->lead : null,
         'location' => $item->eventLocation ?? null,
-        'venueName' => isset($item->venue->name) ? $item->venue->name : null,
-        'venueAddress' => isset($item->venue->streetAddress) ? $item->venue->streetAddress : null,
-        'venueAddress2' => isset($item->venue->streetAddress2) ? $item->venue->streetAddress2 : null,
-        'venuePostalCode' => isset($item->venue->postalCode) ? $item->venue->postalCode : null,
-        'venueCity' => isset($item->venue->city) ? $item->venue->city : null,
-        'venueCountry' => isset($item->venue->country) ? $item->venue->country : null,
       ]
   ))
 @stop()
 
 @section('content')
-<div class="ers-content event-items-content">
+<div class="ers-content event-items-content  article-items">
   <div class="row">
-    <div class="col-md-3 left-photo-map">
-      <div class="medium-grey-bg">
-        @if($item->image)
-        <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
-        @endif
-        @if($item->video)
-          <div class="videoWrapper">
-            {!!$item->video!!} 
-          </div>
-        @endif
-        @if($item->loc->lat && $item->loc->long && $item->type != "ERS Online course")
-            <div id="map"></div>
-        @endif
-        @if(isset($relatedItems))
-            @include('partials.related-items', array('relatedItems' => $relatedItems)) 
-        @endif
-      </div>
-
-      @foreach ($item->sponsors as $sponsor)
-      <div class="course-sponsor text-left">
-        @if($sponsor->text)
-          <div class="course-sponsor-wrapper">
-            @if($sponsor->image)
-              <div class="course-sponsor-image col-md-4 col-xs-4 pull-left">
-                <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: right center; background-size: contain;"></p>
-             </div> 
+    <div class="col-md-9">
+      <div class="row">
+        <div class="col-md-4 left-photo-map medium-grey-bg">
+            @if($item->image)
+            <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
             @endif
+            @if($item->video)
+              <div class="videoWrapper">
+                {!!$item->video!!} 
+              </div>
+            @endif
+            {{-- @if($item->loc->lat && $item->loc->long && $item->type != "ERS Online course")
+                <div id="map"></div>
+            @endif --}}
+            @if(isset($relatedItems))
+                @include('partials.related-items', array('relatedItems' => $relatedItems)) 
+            @endif
+
+          @foreach ($item->sponsors as $sponsor)
+          <div class="course-sponsor text-left">
             @if($sponsor->text)
-              <div class="course-sponsor-right  col-md-8 col-xs-8 pull-right">
-                <h4 class="text-left">{{$sponsor->text}}</h4>
+              <div class="course-sponsor-wrapper">
+                @if($sponsor->image)
+                  <div class="course-sponsor-image col-md-4 col-xs-4 pull-left">
+                    <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: right center; background-size: contain;"></p>
+                </div> 
+                @endif
+                @if($sponsor->text)
+                  <div class="course-sponsor-right  col-md-8 col-xs-8 pull-right">
+                    <h4 class="text-left">{{$sponsor->text}}</h4>
+                  </div>
+                @endif
               </div>
             @endif
           </div>
-        @endif
-      </div>
-    @endforeach
-    </div>
-
-    <div class="col-md-6 lighter-grey-bg ers-course-info">
-      <div class="header">
-        <div class="clearfix notification">
-          <!-- @if($item->flags->text)
-          <p style="padding: 0 10px;" class="pull-right alert {{'alert-'.$item->flags->color }}">{{ $item->flags->text }}</p>
-          @endif -->
-          @if($item->fullyBooked)
-              <p class="pull-right text-danger">Fully Booked</p>
-          @endif
+        @endforeach
         </div>
-        <h2 class="text-left clearfix date-venue">
-        <!--<a href=""><span class="icon s7-angle-left pull-left" style="font-size: 24px;"></span></a>-->
-        <label>{{$item->eventDates}} @if(isset($item->eventLocation))<a href="javascript:void(0)" class="cursor_default">{{$item->eventLocation}}</a>@endif</label>
-        <!--<a href=""><span class="icon s7-angle-right pull-right" style="font-size: 24px;"></span></a>-->
-        </h2>
-      </div>
 
-      <div class="row" style="margin-top:20px;">
-        <!-- <div class="col-md-6 col-xs-6 text-left event-items-category">
-          <p><em>{{$item->type}}</em></p>
-          View <a href="/professional-development/courses">all ERS courses</a>
-        </div> -->
-        <div class="col-md-6 col-xs-6 text-right">
-          @if($item->programme)  
-            <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary text-left bt-course-programme">
-              <span class="icon s7-map" style="font-size: 24px;"></span>
-                {{$item->programmeButtonText ? $item->programmeButtonText : 'Course Programme' }}
-            </a>
+        <div class="col-md-8 lighter-grey-bg ers-course-info">
+          {{--<div class="header">
+            <div class="clearfix notification">
+              @if($item->flags->text)
+              <p style="padding: 0 10px;" class="pull-right alert {{'alert-'.$item->flags->color }}">{{ $item->flags->text }}</p>
+              @endif 
+              @if($item->fullyBooked)
+                  <p class="pull-right text-danger">Fully Booked</p>
+              @endif
+            </div>
+            <h2 class="text-left clearfix date-venue">
+              <a href=""><span class="icon s7-angle-left pull-left" style="font-size: 24px;"></span></a>
+            <label>{{$item->eventDates}} @if(isset($item->eventLocation))<a href="javascript:void(0)" class="cursor_default">{{$item->eventLocation}}</a>@endif</label>
+              <a href=""><span class="icon s7-angle-right pull-right" style="font-size: 24px;"></span></a> 
+            </h2> 
+          </div>--}}
+
+          <div class="row" style="margin-top:20px;">
+              {{-- <div class="col-md-6 col-xs-6 text-left event-items-category">
+              <p><em>{{$item->type}}</em></p>
+              View <a href="/professional-development/courses">all ERS courses</a>
+            </div> --}}
+            <div class="col-md-6 col-xs-6 text-right">
+              @if($item->programme)  
+                <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary text-left bt-course-programme">
+                  <span class="icon s7-map" style="font-size: 24px;"></span>
+                    {{$item->programmeButtonText ? $item->programmeButtonText : 'Course Programme' }}
+                </a>
+              @endif
+            </div>
+          </div>
+          <div class="page-head">
+            <h2 class="article-title">{{$item->title}}</h2>
+          </div>
+          @if($item->organisers)
+          <h5 class="ers-course-organisers"><b>Organisers :</b> {{$item->organisers}}</h5>
           @endif
+          @if($item->faculty)
+          <h5 class="ers-course-organisers"><b>Faculty :</b> {{$item->faculty}}</h5>
+          @endif
+          @if($item->disclosure)
+          <h5><a href="{{$item->disclosure}}" target="_blank">Faculty disclosure</a></b></h5>
+          @endif
+
+          <div class="article text-left">
+            @if($item->body){!!$item->lead!!}@endif
+            @if($item->body){!!$item->body!!}@endif
+          </div>
         </div>
       </div>
-      <h2 class="article-title">{{$item->title}}</h2>
-      @if($item->organisers)
-      <h5 class="ers-course-organisers"><b>Organisers :</b> {{$item->organisers}}</h5>
-      @endif
-      @if($item->faculty)
-      <h5 class="ers-course-organisers"><b>Faculty :</b> {{$item->faculty}}</h5>
-      @endif
-      @if($item->disclosure)
-      <h5><a href="{{$item->disclosure}}" target="_blank">Faculty disclosure</a></b></h5>
-      @endif
-
-      <div class="article text-left">
-        @if($item->body){!!$item->lead!!}@endif
-        @if($item->body){!!$item->body!!}@endif
-      </div>
     </div>
-
    <!-- Beginning Right Side-bar -->
    <div class="col-md-3 white-bg event-items-right">
-    <!--
+    {{--
     <div class="alert alert-success">
     <div class="message">Registration now open.<br>Deadline:{{ $item->deadline}}.</div>
     </div>
-    -->
+    --}}
     <div class="list-group text-left">
       <a href="javascript:void(0)" class="list-group-item clearfix cursor_default">
         <span class="icon s7-alarm"></span>
@@ -135,21 +132,52 @@
           <span>{{$item->deadline}}</span>
         </p>
       </a>
-      <!-- <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
+        {{-- <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
        <span class="icon s7-bell"></span>
        <p>
         NOTIFICATION : <br>
         <span>Mid-May each year</span>
       </p>
-    </a>
-    <a href="javascript:void(0)" class="list-group-item clearfix cursor_default">
+    </a>--}}
+    <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
       <span class="icon s7-date"></span>
       <p>
-        START DATE : <br>
-        <span>From August onwards</span>
+        EXAM DATE : <br>
+        <span>{{ $item->eventDates }}</span>
       </p>
-    </a> -->
-    <span href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
+    </a>
+    <a href="javascript:void(0)" class="list-group-item clearfix cursor_default">
+        <span class="icon s7-culture"></span>
+        <p>
+          EXAM LOCATION : <br>
+            @if($item->venue->url)
+              <a target="_blank" href="{{$item->venue->url}}">
+            @endif 
+              @if($item->venue->name){{$item->venue->name}}@endif
+            @if($item->venue->url)
+              </a>
+            @endif
+            <br/>
+            @if($item->venue->phoneNumber)
+              Phone: {{$item->venue->phoneNumber}}<br>
+            @endif
+            @if($item->venue->streetAddress)
+              {{$item->venue->streetAddress}}<br>
+            @endif
+            @if($item->venue->streetAddress2)
+              {{$item->venue->streetAddress2}}<br>
+            @endif
+            @if($item->venue->streetAddress3)
+              {{$item->venue->streetAddress3}}<br>
+            @endif
+            @if($item->venue->postalCode){{$item->venue->postalCode}}@endif
+            @if($item->venue->city){{$item->venue->city}}@endif<br>
+            @if($item->venue->country){{$item->venue->country}}@endif
+            <hr>
+            @if($item->venue->info){!!$item->venue->info!!}@endif
+          </p>
+      </a> 
+      <span href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
       <span class="icon s7-copy-file"></span>
       <p>
         DOCUMENTS : <br>
@@ -164,7 +192,7 @@
     </span>
   </div>
     <p class="rules text-left">
-    <span style="font-size:16px;vertical-align: middle;" class="icon s7-mail"></span><!-- {!! Html::mailto('fellowships@ersnet.org', ' Contact us') !!} -->
+    <span style="font-size:16px;vertical-align: middle;" class="icon s7-mail"></span> {!! Html::mailto('hermes@ersnet.org', ' Contact us') !!}
   </p>
   <div class="event-items-right-bt">
   @if($item->extendedDeadline)
@@ -182,7 +210,7 @@
   </a>
   @endif
   @if($item->fullyBooked)
-    <p>Contact {!! Html::mailto('education@ersnet.org', 'education@ersnet.org') !!} to be added to the waiting list.</p>
+    <p>Contact {!! Html::mailto('hermes@ersnet.org', 'hermes@ersnet.org') !!} to be added to the waiting list.</p>
     <a href="javascript:void(0)" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
   @endif
   </div>
