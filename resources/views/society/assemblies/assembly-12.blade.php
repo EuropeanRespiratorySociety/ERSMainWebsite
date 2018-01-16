@@ -36,7 +36,7 @@
                   <div class="card-content text-left">
                     <p>Group 12.01<br>
                     Chair: To be announced<br>
-                    Secretary: To be announced</p>
+                    Secretary: Wijsenbeek Marlies S.</p>
                   </div>
                   <div class="card-action clearfix">
                     <!-- <button data-toggle="modal" data-target="#md-respiratory-infections" type="button" class="btn btn-default pull-right">More</button> -->
@@ -54,7 +54,7 @@
                   <div class="card-content text-left">
                     <p>Group 12.02<br>
                     Chair: To be announced<br>
-                    Secretary: To be announced</p>
+                    Secretary: Baragli Elena</p>
                   </div>
                   <div class="card-action clearfix">
                     <!-- <button data-toggle="modal" data-target="#md-tuberculosis" type="button" class="btn btn-default pull-right">More</button> -->
@@ -73,7 +73,7 @@
                   <div class="card-content text-left">
                     <p>Group 12.03<br>
                     Chair: To be announced<br>
-                    Secretary: To be announced</p>
+                    Secretary: Spagnolo Paolo</p>
                   </div>
                   <div class="card-action clearfix">
                     <!-- <button data-toggle="modal" data-target="#md-tuberculosis" type="button" class="btn btn-default pull-right">More</button> -->
@@ -91,7 +91,7 @@
                   <div class="card-content text-left">
                     <p>Group 12.04<br>
                     Chair: To be announced<br>
-                    Secretary: To be announced</p>
+                    Secretary: Molina Molina Maria</p>
                   </div>
                   <div class="card-action clearfix">
                     <!-- <button data-toggle="modal" data-target="#md-tuberculosis" type="button" class="btn btn-default pull-right">More</button> -->

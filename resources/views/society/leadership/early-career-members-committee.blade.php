@@ -13,8 +13,8 @@
 
 			<div class="row leadership-people" style="padding-top: 40px;">
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/Nicolas-Kahn.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>NICOLAS KAHN</strong>
+					<img src="images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Vanfleteren Lowie</strong>
 		            Assembly 1<br>
 		            </p>
 	        	</div>
@@ -67,8 +67,8 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/Aran_Photo.JPG" class="img-circle">
-		            <p class="photo_caption"><strong>ARAN SINGANAYAGAM</strong>
+					<img src="images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Calarasu Cristina</strong>
 		            Assembly 10<br>
 		            </p>
 	        	</div>
