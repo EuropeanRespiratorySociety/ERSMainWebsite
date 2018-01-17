@@ -9,7 +9,7 @@
                 </div>
                 <div class="col-md-3 xs-mb-15">
                  <img src="images/120x120.jpg" class="img-circle">
-                  <p class="photo_caption">Secretary: Vonk Noordegraaf Anton</p>
+                  <p class="photo_caption">Secretary: Anton Vonk Noordegraaf</p>
                 </div>
             </div>
             <div class="col-md-6 center-block">

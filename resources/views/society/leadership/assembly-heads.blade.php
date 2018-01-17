@@ -83,8 +83,8 @@
 					</p>
                 </div>
 				<div class="col-md-4 xs-mb-15">
-					<img src="../images/120x120.jpg" class="img-circle">
-					<p class="photo_caption"><strong>Poletti Venerino</strong> 
+					<img src="../images/people/leadership/Venerino_Poletti.jpg" class="img-circle">
+					<p class="photo_caption"><strong>Venerino Poletti</strong> 
 					Interstitial Lung Diseases<br>
 					</p>
                 </div>

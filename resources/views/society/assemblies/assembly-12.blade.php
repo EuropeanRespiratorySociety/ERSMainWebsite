@@ -4,12 +4,12 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                 <img src="images/120x120.jpg" class="img-circle">
-                  <p class="photo_caption">Head: Poletti Venerino</p>
+                 <img src="../images/people/leadership/Venerino_Poletti.jpg" class="img-circle">
+                  <p class="photo_caption">Head: Venerino Poletti</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
                  <img src="images/120x120.jpg" class="img-circle">
-                  <p class="photo_caption">Secretary: Antoniou Katerina</p>                 
+                  <p class="photo_caption">Secretary: Katerina Antoniou</p>
                 </div>
             </div>
             <div class="col-md-6 center-block">

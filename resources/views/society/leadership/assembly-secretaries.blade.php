@@ -67,12 +67,12 @@
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="../images/120x120.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Antoniou Katerina</strong>
+		            <p class="photo_caption"><strong>Katerina Antoniou</strong>
 		            Interstitial Lung Diseases<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="../images/120x120.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Vonk Noordegraaf Anton</strong>
+		            <p class="photo_caption"><strong>Anton Vonk Noordegraaf</strong>
 		            Pulmonary Vascular Diseases<br>
 		        </div>
 
