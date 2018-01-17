@@ -62,7 +62,7 @@
         <span class="icon s7-alarm"></span>
         <p>
           APPLICATION DEADLINE : <br>
-          <span>14 January 2018</span>
+          <span>January each year</span>
         </p>
       </a>
       <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
