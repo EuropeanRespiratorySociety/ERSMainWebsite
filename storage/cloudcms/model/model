@@ -72,6 +72,9 @@ model:
     fullyBooked: false
     displayOrder: false
     loc: { lat: false, long: false }
+    diseases: false
+    limits: { min: false, max: false }
+    methods: false
     url: false
     uri: false
     unPublished: false

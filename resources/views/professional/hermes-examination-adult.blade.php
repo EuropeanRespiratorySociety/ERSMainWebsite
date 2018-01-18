@@ -119,19 +119,19 @@
     </div>
    <!-- Beginning Right Side-bar -->
    <div class="col-md-3 white-bg event-items-right">
-    {{--
-    <div class="alert alert-success">
-    <div class="message">Registration now open.<br>Deadline:{{ $item->deadline}}.</div>
+    
+    <div class="alert alert-info">
+    <div class="message">REGISTRATION DEADLINE<br> {{ $item->deadline}}.</div>
     </div>
-    --}}
+    
     <div class="list-group text-left">
-      <a href="javascript:void(0)" class="list-group-item clearfix cursor_default">
+      {{-- <a href="javascript:void(0)" class="list-group-item clearfix cursor_default">
         <span class="icon s7-alarm"></span>
         <p>
           REGISTRATION DEADLINE : <br>
           <span>{{$item->deadline}}</span>
         </p>
-      </a>
+      </a> --}}
         {{-- <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
        <span class="icon s7-bell"></span>
        <p>
@@ -139,14 +139,14 @@
         <span>Mid-May each year</span>
       </p>
     </a>--}}
-    <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
+    <a href="javascript:void(0)" class="list-group-item clearfix cursor_default">
       <span class="icon s7-date"></span>
       <p>
         EXAM DATE : <br>
         <span>{{ $item->eventDates }}</span>
       </p>
     </a>
-    <a href="javascript:void(0)" class="list-group-item clearfix cursor_default">
+    <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
         <span class="icon s7-culture"></span>
         <p>
           EXAM LOCATION : <br>
@@ -177,7 +177,7 @@
             @if($item->venue->info){!!$item->venue->info!!}@endif
           </p>
       </a> 
-      <span href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
+      <span href="javascript:void(0)" class="list-group-item clearfix cursor_default">
       <span class="icon s7-copy-file"></span>
       <p>
         DOCUMENTS : <br>
@@ -185,9 +185,12 @@
                   float: left;
                   margin-left: 10px;">
             <li>
-            <!-- <a href="https://ers.box.com/s/ktk52dqmvn89kvqi7eqcu9t6q0d0gmjv">LTRF 2018 Application Guidelines</a> -->
+              <a href="https://ers.box.com/shared/static/k3d7nsadfotmmo8cx2be98d38kd2ktvh.pdf">Preparation Guidebook</a>
             </li>
-          </ul>
+            <li>
+              <a href="https://ers.box.com/shared/static/ocpzzhwco2eed4sbd3qp0g482l54j2vn.pdf">Terms and Conditions</a>
+            </li>
+        </ul>
       </p>
     </span>
   </div>
