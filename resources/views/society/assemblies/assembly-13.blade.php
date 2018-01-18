@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
                  <img src="images/120x120.jpg" class="img-circle">
-                  <p class="photo_caption">Head: Delcroix Marion</p>
+                  <p class="photo_caption">Head: Marion Delcroix</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
                  <img src="images/120x120.jpg" class="img-circle">
@@ -32,8 +32,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 13.01<br>
-                    Chair: To be announced<br>
-                    Secretary: Howard Luke</p>
+                    Chair: Olivier Sitbon<br>
+                    Secretary: Luke Howard</p>
                   </div>
                   <div class="card-action clearfix">
                     <!-- <button data-toggle="modal" data-target="#md-respiratory-infections" type="button" class="btn btn-default pull-right">More</button> -->
@@ -50,8 +50,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 13.02<br>
-                    Chair: To be announced<br>
-                    Secretary: Sanchez Olivier</p>
+                    Chair: David Jiménez Castro<br>
+                    Secretary: Olivier Sanchez</p>
                   </div>
                   <div class="card-action clearfix">
                     <!-- <button data-toggle="modal" data-target="#md-respiratory-infections" type="button" class="btn btn-default pull-right">More</button> -->
@@ -68,8 +68,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 13.03<br>
-                    Chair: To be announced<br>
-                    Secretary: De Man Frances S.</p>
+                    Chair: Harm Jan Bogaard<br>
+                    Secretary: Frances S. De Man</p>
                   </div>
                   <div class="card-action clearfix">
                     <!-- <button data-toggle="modal" data-target="#md-respiratory-infections" type="button" class="btn btn-default pull-right">More</button> -->

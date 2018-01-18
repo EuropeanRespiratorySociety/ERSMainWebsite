@@ -35,8 +35,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 12.01<br>
-                    Chair: To be announced<br>
-                    Secretary: Wijsenbeek Marlies S.</p>
+                    Chair: Michael Kreuter<br>
+                    Secretary: Marlies S. Wijsenbeek</p>
                   </div>
                   <div class="card-action clearfix">
                     <!-- <button data-toggle="modal" data-target="#md-respiratory-infections" type="button" class="btn btn-default pull-right">More</button> -->
@@ -53,8 +53,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 12.02<br>
-                    Chair: To be announced<br>
-                    Secretary: Baragli Elena</p>
+                    Chair: Elisabetta Renzoni<br>
+                    Secretary: Elena Bargagli</p>
                   </div>
                   <div class="card-action clearfix">
                     <!-- <button data-toggle="modal" data-target="#md-tuberculosis" type="button" class="btn btn-default pull-right">More</button> -->
@@ -72,8 +72,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 12.03<br>
-                    Chair: To be announced<br>
-                    Secretary: Spagnolo Paolo</p>
+                    Chair: Hilario Nunes<br>
+                    Secretary: Paolo Spagnolo</p>
                   </div>
                   <div class="card-action clearfix">
                     <!-- <button data-toggle="modal" data-target="#md-tuberculosis" type="button" class="btn btn-default pull-right">More</button> -->
@@ -90,8 +90,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 12.04<br>
-                    Chair: To be announced<br>
-                    Secretary: Molina Molina Maria</p>
+                    Chair: Francesco Bonella<br>
+                    Secretary: Maria Molina Molina</p>
                   </div>
                   <div class="card-action clearfix">
                     <!-- <button data-toggle="modal" data-target="#md-tuberculosis" type="button" class="btn btn-default pull-right">More</button> -->
