@@ -20,11 +20,17 @@
               <div class="page-head">
                 <h2 class="">Examination Committee</h2>
               </div>
-              <div class="col-md-8 center-block lead">ERS HERMES examination in adult respiratory medicine<br>
-                The committee members for the ERS HERMES examination in adult respiratory medicine:
+              <div class="col-md-8 center-block lead">
+                @if($item->leadParagraph)
+                  {!!$item->leadParagraph!!}
+                @endif
               </div>
-    
-    
+              <div class="col-md-8 center-block lead">
+                @if($item->body)
+                  {!!$item->body!!}
+                @endif
+              </div>
+      
           <div class="row leadership-people" style="padding-top: 40px;">
                 <div class="col-md-6 xs-mb-15">
                     <h4 style="margin-bottom:30px;"><strong>Examination Committee Chair</strong></h4>
@@ -100,6 +106,19 @@
                       <p>- Eindhoven, Netherlands</p>
                     </div>
                 </div>
+                <div class="col-md-6 xs-mb-15">
+                    <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
+                    <img src="images/people/examination-committee/Yvonne-Nussbaumer.png" class="img-circle">
+                    <p class="photo_caption"><strong>DR YVONNE NUSSBAUMER</strong></p>
+                    <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
+                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                        - Clinic of Pulmonary and Internal Medicine</p>
+                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                        - Kantonsspital Schaffhausen</p>
+                      <p>- Schaffhausen, Switzerland</p>
+                    </div>
+                </div>
+                
           </div>
         </div>
     </div>
