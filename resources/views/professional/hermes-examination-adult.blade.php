@@ -192,10 +192,10 @@
             </li>
         </ul>
       </p>
-    </span>
+    </span> 
   </div>
     <p class="rules text-left">
-    <span style="font-size:16px;vertical-align: middle;" class="icon s7-mail"></span> {!! Html::mailto('hermes@ersnet.org', ' Contact us') !!}
+    <span style="font-size:16px;vertical-align: middle;" class="icon s7-mail"></span> For more information, contact {!! Html::mailto('hermes@ersnet.org', ' hermes@ersnet.org') !!}
   </p>
   <div class="event-items-right-bt">
   @if($item->extendedDeadline)
