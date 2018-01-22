@@ -114,6 +114,8 @@ Route::group(['prefix' => 'congress-and-events'], function () {
 Route::group(['prefix' => 'professional-development'], function () {
     Route::get('courses', 'CourseController@index');
     Route::get('courses/{slug}', 'CourseController@show');
+    Route::get('national-test', 'HermesExamController@index');
+    Route::get('national-test/{slug}', 'HermesExamController@show');
     Route::get('spirometry-training-programme-test', 'SpirometryController@index');
     Route::get('spirometry-training-programme-test/{slug}', 'SpirometryController@show');
     Route::group(['prefix' => 'fellowships'], function () {
