@@ -46,6 +46,10 @@
           @endif
         @endif
         @if($item->lead){!! $item->lead !!}@endif
+        
+        <div class="main-content">
+          <div class="row row_event " id="national" style="position: relative; height: 800px;"></div>
+      </div>
 
 
         @if($item->body){!! $item->body !!}@endif
@@ -129,7 +133,7 @@
         // var client = new $.RestClient('http://localhost:3030/');
   
         client.add('calendar');
-        client.calendar.read({type:'spirometry'}).done(function (data){
+        client.calendar.read({type:'hermes'}).done(function (data){
             var events = data.data;
             for( var i = 0; i < events.length ; i++){
                 if(events[i].image) {
@@ -147,13 +151,17 @@
   
                         +image
                         +'<div class="card-content text-left">'
-                            +'<h3 class="title">' + events[i].title + '</h3>'
+                          if(event.uri){
+                            var eventLink = +'<h3 class="title">' + '<a href="url'+ events[i].uri + '>' + events[i].title + '</a>' + '</h3>'
+                          } else {
+                            var eventLink = +'<h3 class="title">' + events[i].title + '</h3>'
+                          }
                             +'<p class="date"><span class="icon s7-date"></span>' + events[i].eventDates + '</p>'
                             + events[i].leadParagraph
                         +'</div>'                      
                         +'</div>'
                         +'</div>'
-                ).appendTo($('#spirometry-programme'));
+                ).appendTo($('#national'));
                 
             }
         });
