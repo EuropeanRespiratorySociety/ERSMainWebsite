@@ -58,12 +58,12 @@
 			<!--FIN Harmonising education-->
 		</div>
   {{-- START Cards --}}
-    {{-- @if($items)
+    @if($items)
         <hr style="margin:50px 0; border-top: 1px solid #ddd;">
         <div class="row row_event">
             @include('partials.items', array('items' => $items, 'class' => 'col-md-3'))
         </div>
-    @endif --}}
+    @endif
   {{-- END Cards --}}
 
 
