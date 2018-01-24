@@ -185,7 +185,13 @@
                   float: left;
                   margin-left: 10px;">
             <li>
-              <a href="https://ers.box.com/shared/static/k3d7nsadfotmmo8cx2be98d38kd2ktvh.pdf">Preparation Guidebook</a>
+              @if($item->title == "ERS HERMES examination in adult respiratory medicine" )
+                <a href="https://ers.box.com/shared/static/k3d7nsadfotmmo8cx2be98d38kd2ktvh.pdf">Preparation Guidebook</a>
+              @endif
+
+              @if($item->title == "ERS HERMES examination in paediatric respiratory medicine" )
+                <a href="https://ers.box.com/shared/static/2oflb7o1qsdghiqzhmgq8ef2lrx9n9an.pdf">Preparation Guidebook</a>
+              @endif
             </li>
             <li>
               <a href="https://ers.box.com/shared/static/ocpzzhwco2eed4sbd3qp0g482l54j2vn.pdf">Terms and Conditions</a>
