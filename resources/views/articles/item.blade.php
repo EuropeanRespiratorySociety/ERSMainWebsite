@@ -40,7 +40,7 @@
       <div class="article text-left @if(!$item->articleOneColumn) two-columns @endif">
         @if($item->createdOn && $item->type)
           @if($item->type == "News" && !$item->doNotDisplayCreatedOn)
-            @if($item->displayModifiedOnDate)<h4 class="date">{{ $item->modifiedOn }}</h4>
+            @if($item->displayModifiedOnDate)<h4 class="date mod">{{ $item->modifiedOn }}</h4>
             @else <h4 class="date">{{ $item->createdOn }}</h4>
             @endif
           @endif

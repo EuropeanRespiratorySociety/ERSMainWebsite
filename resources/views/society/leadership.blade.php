@@ -17,7 +17,7 @@
         <h2 class="">Leadership</h2>
         </div>
 
-        <h4 style="margin-bottom:50px;"><strong>Executive committee</strong></h4>
+        <h4 style="margin-bottom:50px;"><strong>Executive Committee</strong></h4>
         <div id="spin" class="icon"><span class="fa fa-spinner fa-pulse fa-3x"></span></div>
         <div id="leadership" class="row leadership-people">
         </div>
@@ -66,22 +66,23 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
-    // var client = new $.RestClient('https://api.ersnet.org/', {
-    //     cache: 60, //This will cache requests for 60 seconds
-    //     cachableMethods: ["GET"] //This defines what method types can be cached (this is already set by default)
-    // });
-    var client = new $.RestClient('http://localhost:3030/');
+    var client = new $.RestClient('https://api.ersnet.org/', {
+        cache: 180, //This will cache requests for 60 seconds
+        // cachableMethods: ["GET"] //This defines what method types can be cached (this is already set by default)
+    });
+    // var client = new $.RestClient('http://localhost:3030/');
 
     client.add('leadership');
     client.leadership.read().done(function (data){
         const l = data.data;
         const leadership = l.map(i => {
+            const linkDoi = `<a data-toggle="modal" data-target="#md-${i.Contact.FirstName.split(' ').join('') + i.Contact.LastName.split(' ').join('')}"type="button" class="">Declaration of Interests</a>`
             const person = `
                 <div class="col-md-4 xs-mb-15">
                     <img src="${i.Contact.PhotoUrl || 'images/120x120.jpg' }" class="img-circle">
                     <p class="photo_caption"><strong>${i.Contact.FirstName} ${i.Contact.LastName}</strong>
                     ${i.role} <br>
-                    <a data-toggle="modal" data-target="#md-${i.Contact.FirstName.split(' ').join('') + i.Contact.LastName.split(' ').join('')}" type="button" class="">Declaration of Interests</a>
+                    ${i.Declaration ? linkDoi : ''}
                 </div>`
             
             $(person).appendTo('#leadership');
@@ -91,6 +92,7 @@ $(document).ready(function(){
                         <div class="modal-header">
                             <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
                             <h3 class="modal-title">Declaration of Interests of ${i.Contact.FirstName} ${i.Contact.LastName}</h3>
+                            <h4>${i.Declaration ? i.Declaration.Campaign.Title : ''}</h4>
                         </div>
             `;
 

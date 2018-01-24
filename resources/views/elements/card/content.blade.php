@@ -41,8 +41,8 @@
     @endif 
     @if($item->modifiedOn && $item->type)
         @if(($item->type == "News" && !$home) || ($home && !$item->doNotDisplayCreatedOnOnHomepage && $item->type == "News"))
-            @if($item->displayModifiedOnDate)<h4 class="date">{{ $item->modifiedOn }}</h4>
-            @else <h4 class="date">{{ $item->createdOn }}</h4>
+            @if($item->displayModifiedOnDate)<h4 class="date mod">{{ $item->createdOn }}</h4>
+            @else <h4 class="date crea">{{ $item->createdOn }}</h4>
             @endif
         @endif
     @endif
