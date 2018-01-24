@@ -639,6 +639,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
     Redirect 301 /eu-affairs/item/5259-the-european-respiratory-society-and-the-european-lung-foundation-recommend-that-uk-members-and-citizens-vote-to-remain-in-the-european-union.html https://www.ersnet.org/advocacy/eu-affairs
     Redirect 301 /eu-affairs/item/5264-eu-tobacco-products-directive-enters-into-force-today.html https://www.ersnet.org/advocacy/eu-affairs
     Redirect 301 /eu-affairs/item/5268-member-states-encouraged-to-adopt-plain-packaging-to-tackle-smoking-epidemic-.html https://www.ersnet.org/advocacy/eu-affairs
+    Redirect 301 /images/stories/pdf/Bylaws_adopted_in_BCN_2013.pdf https://www.ersnet.org/the-society/who-we-are/ers-governance-and-transparency
     Redirect 301 /eu-affairs/item/5271-meps-urged-to-give-their-consent-in-the-european-parliament-vote-on-the-protocol-to-eliminate-illicit-trade-in-tobacco-products-to-the-who-fctc.html  https://www.ersnet.org/advocacy/eu-affairs
     Redirect 301 /eu-affairs/item/5274-ers-and-ensp-repeat-their-call-to-the-eu-not-to-renew-the-pmi-agreement.html  https://www.ersnet.org/advocacy/eu-affairs
     Redirect 301 /eu-affairs/item/5286-counting-the-health-cost-of-europes-dark-cloud.html   https://www.ersnet.org/advocacy/eu-affairs
@@ -1075,9 +1076,13 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
     #Proxying requests to node.js server 
     RewriteRule ^assets/(.*)$ http://localhost:4040/$1 [P]
 
+    RewriteRule ^images/stories/(.*)$ https://www.ersnet.org [R=301,L]
+    RewriteRule ^pdf/the-society/(.*)$ https://www.ersnet.org/the-society/who-we-are/ers-governance-and-transparency
+
     RewriteCond %{HTTP:X-Forwarded-Proto} !https
     RewriteCond %{HTTP_HOST} !^old.ersnet.org$
     RewriteCond %{HTTP_HOST} !^staging.ersnet.org$
+    RewriteCond %{HTTP_HOST} !^ersnet.app$
     RewriteRule (.*) https://www.ersnet.org/$1 [R=301,L]
     
     # wrong domain to use www.

@@ -17,100 +17,9 @@
         <h2 class="">Leadership</h2>
         </div>
 
-        <h4 style="margin-bottom:50px;"><strong>Executive committee</strong></h4>
-        
-
-
-        <div class="row leadership-people">
-            <div class="col-md-4 xs-mb-15">
-                <img src="images/people/leadership/mina_gaga.jpg" class="img-circle">
-                <p class="photo_caption"><strong>Mina Gaga</strong>
-                President<br>
-                <a title="Download COI" href="https://ers.box.com/s/pudmjw6dtxefzskpmeriszhqjjqyopk3">Download COI</a></p>
-            </div>
-            <div class="col-md-4 xs-mb-15">
-                <img src="images/people/leadership/Guy_Joos.jpg" class="img-circle">
-                <p class="photo_caption"><strong>Guy Joos</strong>
-                Past President<br>
-                <a title="Download COI" href="https://ers.box.com/s/4jvas4pnktbpks61qmvu99wyklrwaotq">Download COI</a>
-                </p>
-            </div>
-            <div class="col-md-4 xs-mb-15">
-                <img src="images/people/leadership/Tobias_Welte.jpg" class="img-circle">
-                <p class="photo_caption"><strong>Tobias Welte</strong>
-                President Elect<br>
-                <a title="Download COI" href="https://ers.box.com/s/4l0crbxgfdtxq2r3l5y7m0hibt51h040">Download COI</a></p>
-            </div>
-            <div class="col-md-4 xs-mb-15">
-                <img src="images/people/leadership/Thierry-Troosters.png" class="img-circle">
-                <p class="photo_caption"><strong>Thierry Troosters</strong>
-                Vice President<br>
-                <!--
-                <a title="Download COI" href="">Download COI</a>
-                -->
-                </p>
-            </div>
-            <div class="col-md-4 xs-mb-15">
-                <img src="images/people/leadership/Carlos_Robalo.jpg" class="img-circle">
-                <p class="photo_caption"><strong>Carlos Robalo Cordeiro</strong>
-                Secretary General <br>
-                <!--
-                <a title="Download COI" href="">Download COI</a>
-                -->
-            </div>
-            <div class="col-md-4 xs-mb-15">
-                <img src="images/people/leadership/otto_chris_burghuber.jpg" class="img-circle">
-                <p class="photo_caption"><strong>Otto Chris Burghuber</strong>
-                Treasurer<br>
-                <a title="Download COI" href="https://ers.box.com/s/889jmegj458ndh73z08dtwg6vzibxk7x">Download COI</a>
-                </p>
-            </div>
-            <div class="col-md-4 xs-mb-15">
-                <img src="images/people/leadership/Daiana-Stolz2.jpg" class="img-circle">
-                <p class="photo_caption"><strong>Daiana Stolz</strong>
-                Education Council Chair<br />
-                <a title="Download COI" href="https://ers.box.com/s/bcaonlkqkkus3ee7zwq9hi18f902g9wi">Download COI</a>
-                </p>
-            </div>
-            <div class="col-md-4 xs-mb-15">
-                <img src="images/people/leadership/guy_brusselle.jpg" class="img-circle">
-                <p class="photo_caption"><strong>Guy Brusselle</strong>
-                Science Council Chair<br>
-                <a title="Download COI" href="https://ers.box.com/s/o9lpqpdhfghoy10f87rnnjedch7ren6f">Download COI</a>
-            </div>
-            <div class="col-md-4 xs-mb-15">
-                <img src="images/people/leadership/christina_gratziou.jpg" class="img-circle">
-                <p class="photo_caption"><strong>Christina Gratziou</strong>
-                Chair of the Advocacy Council<br>
-                <!--
-                <a title="Download COI" href="">Download COI</a>
-                -->
-                </p>
-            </div>
-        	<div class="col-md-4 xs-mb-15">
-                <img src="images/people/leadership/Ildiko-Horvath.png" class="img-circle">
-	            <p class="photo_caption"><strong>Ildiko Horvath</strong>
-	            Chair-Elect of the Advocacy Council<br>
-                <!--
-	            <a title="Download COI" href="">Download COI</a>
-                -->
-	            </p>
-        	</div>
-        	<div class="col-md-4 xs-mb-15">
-	            <img src="images/people/leadership/Isabel-Saraiva.png" class="img-circle">
-	            <p class="photo_caption"><strong>Isabel Saraiva</strong>
-	            ELF Chair <br>
-                <!--
-                <a title="Download COI" href="">Download COI</a>
-                -->
-	            </p>
-        	</div>
-        	<div class="col-md-4 xs-mb-15">
-                <img src="images/people/leadership/Andrew_Bush.jpg" class="img-circle">
-                <p class="photo_caption"><strong>Andrew Bush</strong>
-	            Publications Chair <br>
-                <a title="Download COI" href="https://ers.box.com/s/sti616ycbzall1nqe7ankrp0gvk7jq9h">Download COI</a>
-        	</div>
+        <h4 style="margin-bottom:50px;"><strong>Executive Committee</strong></h4>
+        <div id="spin" class="icon"><span class="fa fa-spinner fa-pulse fa-3x"></span></div>
+        <div id="leadership" class="row leadership-people">
         </div>
        
 
@@ -152,6 +61,238 @@
 
 @stop()  
 
-    @section('scripts')
-    
-    @stop()
+@section('scripts')
+<script src="https://jpillora.com/jquery.rest/dist/1/jquery.rest.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    var client = new $.RestClient('https://api.ersnet.org/', {
+        cache: 180, //This will cache requests for 60 seconds
+        // cachableMethods: ["GET"] //This defines what method types can be cached (this is already set by default)
+    });
+    // var client = new $.RestClient('http://localhost:3030/');
+
+    client.add('leadership');
+    client.leadership.read().done(function (data){
+        const l = data.data;
+        const leadership = l.map(i => {
+            const linkDoi = `<a data-toggle="modal" data-target="#md-${i.Contact.FirstName.split(' ').join('') + i.Contact.LastName.split(' ').join('')}"type="button" class="">Declaration of Interests</a>`
+            const person = `
+                <div class="col-md-4 xs-mb-15">
+                    <img src="${i.Contact.PhotoUrl || 'images/120x120.jpg' }" class="img-circle">
+                    <p class="photo_caption"><strong>${i.Contact.FirstName} ${i.Contact.LastName}</strong>
+                    ${i.role} <br>
+                    ${i.Declaration ? linkDoi : ''}
+                </div>`
+            
+            $(person).appendTo('#leadership');
+            
+            // modal windows        
+            const header = `
+                        <div class="modal-header">
+                            <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+                            <h3 class="modal-title">Declaration of Interests of ${i.Contact.FirstName} ${i.Contact.LastName}</h3>
+                            <h4>${i.Declaration ? i.Declaration.Campaign.Title : ''}</h4>
+                        </div>
+            `;
+
+            let legend = `
+                <hr />
+                <h5>*Funds Code Legend</h5>
+                <table style="margin-top:0;" class="table table-condensed table-hover table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th class="text-center">A</th>
+                            <th class="text-center">B</th>
+                            <th class="text-center">C</th>
+                            <th class="text-center">D</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center">less than € 1'000</td>
+                            <td class="text-center">€ 1001 - € 5'000</td>
+                            <td class="text-center">€ 5'001 - € 20'000</td>
+                            <td class="text-center">more than € 20'000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            `;
+
+            function buildTable(data) {
+                let tb = [];
+                let th = '';
+
+                if (data.length > 0) {
+                    data.map(d => {
+                        if(d.SectionCode === 'CON') {
+                            tb.push(`
+                                <tr>
+                                    <td class="text-left">${d.CompanyName}</td>
+                                    <td class="text-left">${d.Area}</td>
+                                    <td class="text-left">${d.Purpose}</td>
+                                    <td class="text-left">${d.FundsCode}</td>
+                                </tr>
+                            `);
+
+                            th = `
+                                <tr>
+                                    <th class="text-left">Company</th>
+                                    <th class="text-left">Area</th>
+                                    <th class="text-left">Product</th>
+                                    <th class="text-left">Amount of funds received*</th>
+                                </tr>
+                            `;
+                        }
+
+                        if(d.SectionCode === 'BEN') {
+                            tb.push(`
+                                <tr>
+                                    <td class="text-left">${d.CompanyName}</td>
+                                    <td class="text-left">${d.Purpose}</td>
+                                    <td class="text-left">${d.FundsCode}</td>
+                                </tr>
+                            `);
+
+                            th = `
+                                <tr>
+                                    <th class="text-left">Company</th>
+                                    <th class="text-left">Purpose of Payment</th>
+                                    <th class="text-left">Amount of funds received*</th>
+                                </tr>
+                            `;
+                        }
+
+                        if(d.SectionCode === 'TRA') {
+                            tb.push(`
+                                <tr>
+                                    <td class="text-left">${d.CompanyName}</td>
+                                    <td class="text-left">${d.Purpose}</td>
+                                    <td class="text-left">${d.FundsCode}</td>
+                                </tr>
+                            `);
+
+                            th = `
+                                <tr>
+                                    <th class="text-left">Company</th>
+                                    <th class="text-left">Purpose and Nature of Benefit</th>
+                                    <th class="text-left">Amount of funds received*</th>
+                                </tr>
+                            `;
+                        }
+
+                        if(d.SectionCode === 'SHA') {
+                            tb.push(`
+                                <tr>
+                                    <td class="text-left">${d.CompanyName}</td>
+                                    <td class="text-left">${d.FundsCode}</td>
+                                </tr>
+                            `);
+
+                            th = `
+                                <tr>
+                                    <th class="text-left">Company</th>
+                                    <th class="text-left">Approximate value*</th>
+                                </tr>
+                            `;
+                        }
+
+                        if(d.SectionCode === 'NOP') {
+                            tb.push(`
+                                <tr>
+                                    <td class="text-left">${d.CompanyName}</td>
+                                    <td class="text-left">${d.Purpose}</td>
+                                    <td class="text-left">${d.FundsCode}</td>
+                                </tr>
+                            `);
+
+                            th = `
+                                <tr>
+                                    <th class="text-left">Company</th>
+                                    <th class="text-left">Nature of Support</th>
+                                    <th class="text-left">Amount of funds received*</th>
+                                </tr>
+                            `;
+                        }
+
+                        if(d.SectionCode === 'OTH') {
+                            tb.push(`
+                                <tr>
+                                    <td class="text-left">${d.CompanyName}</td>
+                                    <td class="text-left">${d.Purpose}</td>
+                                </tr>
+                            `);
+
+                            th = `
+                                <tr>
+                                    <th class="text-left">Company or organisation</th>
+                                    <th class="text-left">Nature/Purpose of Support</th>
+                                </tr>
+                            `;
+                        }
+
+                    });
+                } else {
+                    tb.push('None');
+                }
+                
+                return `
+                    <table style="margin-top:0;" class="table table-condensed table-hover table-bordered table-striped">
+                        <thead>
+                            ${th}
+                        </thead>
+                        <tbody>
+                            ${tb.join('')}
+                        </tbody>
+                    </table>
+                `;
+            }
+
+            function checkData(data){
+                return data ? buildTable(data) : 'None';
+            }
+            
+            const body = `          
+                <div class="modal-body">
+                    <h4>${i.sorted.pInterests.title}</h4>
+                    <h5><b>Regular Paid Consultancy Work</b></h5>
+                        ${checkData(i.sorted.pInterests.data['CON'])}
+                    <h5><b>Personal Benefits</b></h5>
+                        ${checkData(i.sorted.pInterests.data['BEN'])}
+                    <h5><b>Personal Travel Grants or expenses for conferences etc.</b></h5>
+                        ${checkData(i.sorted.pInterests.data['TRA'])}
+                    <h5><b>Shares in any Relevant Companies (excluding mutual funds)</b></h5>
+                        ${checkData(i.sorted.pInterests.data['SHA'])}
+                        
+                    <h4>${i.sorted.npInterests.title}</h4>
+                        ${buildTable(i.sorted.npInterests.data)}
+                    <h4>${i.sorted.oInterests.title}</h4>
+                        ${buildTable(i.sorted.oInterests.data)}
+                    <h4>${i.sorted.tobacco.title}</h4>
+                    <div class="text-left">
+                        <p>
+                            ${i.sorted.tobacco.data.length > 0 ? i.sorted.tobacco.data : 'None'}                       
+                        </p>
+                    </div>
+                    ${legend}
+                </div>        
+                `;
+
+            const modal = `
+                <div id="md-${i.Contact.FirstName.split(' ').join('') + i.Contact.LastName.split(' ').join('')}" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        ${header}
+                        ${body}
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            $(modal).appendTo('#ersMainWebsite');
+        });
+        $('#spin').hide();
+    });
+});    
+</script>
+@stop()
