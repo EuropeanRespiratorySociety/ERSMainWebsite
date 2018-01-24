@@ -1077,8 +1077,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
     RewriteRule ^assets/(.*)$ http://localhost:4040/$1 [P]
 
     RewriteRule ^images/stories/(.*)$ https://www.ersnet.org [R=301,L]
-    RewriteRule pdf/the-society/Bylaws(.*) https://www.ersnet.org/the-society/who-we-are/ers-governance-and-transparency
-    RewriteRule pdf/the-society/Declaration_of_Interest(.*) https://www.ersnet.org/the-society/who-we-are/leadership
+    RewriteRule ^pdf/the-society/(.*)$ https://www.ersnet.org/the-society/who-we-are/ers-governance-and-transparency
 
     RewriteCond %{HTTP:X-Forwarded-Proto} !https
     RewriteCond %{HTTP_HOST} !^old.ersnet.org$
