@@ -47,7 +47,7 @@
         @endif
         @if($item->lead){!! $item->lead !!}@endif
         
-        <div class="main-content">
+        <div class="main-content" style="padding-top:0px;">
           <div class="row row_event " id="national" style="position: relative; height: 800px;"></div>
       </div>
 
@@ -131,42 +131,43 @@
             cachableMethods: ["GET"] //This defines what method types can be cached (this is already set by default)
         });
         // var client = new $.RestClient('http://localhost:3030/');
-  
+ 
         client.add('calendar');
         client.calendar.read({type:'hermes'}).done(function (data){
-            var events = data.data;
-            for( var i = 0; i < events.length ; i++){
-                if(events[i].image) {
-                    var image = 
-                        '<div class="card-image"' 
-                        +'style="background-size:cover;background-repeat: no-repeat;height:150px;' 
-                        +'background-image: url(\'' + events[i].image + '\');' 
-                        +'background-position: center center;"></div>';
-                } else {
-                    var image = '';
-                }
-                $(
-                    '<div class="col-md-4 isotope">'
-                        +'<div class="card card-event">'
-  
-                        +image
-                        +'<div class="card-content text-left">'
-                          if(event.uri){
-                            var eventLink = +'<h3 class="title">' + '<a href="url'+ events[i].uri + '>' + events[i].title + '</a>' + '</h3>'
-                          } else {
-                            var eventLink = +'<h3 class="title">' + events[i].title + '</h3>'
-                          }
-                            +'<p class="date"><span class="icon s7-date"></span>' + events[i].eventDates + '</p>'
-                            + events[i].leadParagraph
-                        +'</div>'                      
-                        +'</div>'
-                        +'</div>'
-                ).appendTo($('#national'));
-                
+            const events = data.data;
+            let image;
+            let title;
+            let uri;
+            let leadParagraph;
+            for( let i = 0; i < events.length ; i++){
+              image = events[i].image ? '<div class="card-image"'
+                        +'style="background-size:cover;background-repeat: no-repeat;height:150px;'
+                        +'background-image: url(\'' + events[i].image + '\');'
+                        +'background-position: center center;"></div>'
+                        : '';
+ 
+              title = events[i].title;
+              uri = events[i].uri;
+              leadParagraph = events[i].shortLead;
+              const anchor = `<a href="${uri}">${title}</a>`
+              const action = `<a href="${uri}" class="btn btn-register">more</a>`
+
+              $(`<div class="col-md-4 isotope">
+                  <div class="card card-event">
+                      ${image}
+                      <div class="card-content text-left">
+                        <h3 class="title"> ${uri ?  anchor : title }</h3>
+                        <p class="date"><span class="icon s7-date"></span> ${events[i].eventDates}</p>
+                        ${leadParagraph}
+                      </div>
+                      <div class="card-action clearfix">
+                          ${uri ?  action : '' }
+                      </div>
+                  </div>
+                </div>`).appendTo($('#national'));
             }
         });
-    });    
+    });
   </script>
-
 
 @stop()
