@@ -132,12 +132,12 @@
         <span class="icon s7-alarm"></span>
         <p>
           REGISTRATION DEADLINE : <br>
-          <span>{{$item->deadline}}</span>
+          <span>1 July 2018</span>
         </p>
       </a>
       <!-- <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
        <span class="icon s7-bell"></span>
-       <p>
+       <p></p>
         NOTIFICATION : <br>
         <span>Mid-May each year</span>
       </p>
@@ -167,7 +167,7 @@
     <span style="font-size:16px;vertical-align: middle;" class="icon s7-mail"></span><!-- {!! Html::mailto('fellowships@ersnet.org', ' Contact us') !!} -->
   </p>
   <div class="event-items-right-bt">
-  @if($item->extendedDeadline)
+    @if($item->extendedDeadline)
   <p class="deadline">EXTENDED registration deadline : {{$item->extendedDeadline}}</p>
   @endif
   @if($item->cancellationPolicy)
