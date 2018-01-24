@@ -47,8 +47,8 @@
         @endif
         @if($item->lead){!! $item->lead !!}@endif
         
-        <div class="main-content" style="padding-top:0px;">
-          <div class="row row_event " id="national" style="position: relative; height: 800px;"></div>
+      <div class="main-content" style="padding-top: 0px;">
+        <div class="row row_event " id="national" style="position: relative; "></div>
       </div>
 
 
