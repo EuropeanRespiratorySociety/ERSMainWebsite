@@ -84,7 +84,7 @@
                 </div>
                 <div class="col-md-6 xs-mb-15">
                     <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                    <img src="images/people/examination-committee/Antonio-Martínez-Gimeno.png" class="img-circle">
+                    <img src="images/people/examination-committee/Antonio-Martinez-Gimeno.png" class="img-circle">
                     <p class="photo_caption"><strong>Dr Antonio Martínez-Gimeno</strong></p>
                     <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
                       <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
