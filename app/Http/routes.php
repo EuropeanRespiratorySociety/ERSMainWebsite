@@ -126,10 +126,13 @@ Route::group(['prefix' => 'professional-development'], function () {
         Route::get('/', 'FellowshipController@index'); 
         Route::get('/{slug}', 'FellowshipController@show');
     });
-    Route::get('ers-hermes-examination-in-adult-respiratory-medicine', 'GeneralController@ErsHermesExamAdult');
-    Route::get('ers-hermes-examination-in-paediatric-respiratory-medicine', 'GeneralController@ErsHermesExamPaediatric');
+    Route::group(['prefix' => 'hermes'], function () {
+        Route::get('/', 'HermesController@index');
+        Route::get('national-and-regional-society-cooperation', 'HermesController@National');
+        Route::get('/{slug}', 'HermesController@show');
+    });
+    
     Route::get('examination-committee', 'GeneralController@ExamCommittee');
-    Route::get('national-test', 'GeneralController@National');
     Route::get('grants-and-sponsorships', 'GeneralController@grantsAndSponsorships');
     Route::get('grants-and-sponsorships/{slug}', 'GeneralController@show');
     Route::get('/{slug}', 'GeneralController@show'); //acreditation uses this route   
