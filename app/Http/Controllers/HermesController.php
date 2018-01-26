@@ -8,7 +8,7 @@ use App\Http\Requests;
 
 use App\Extensions\CloudCmsHelper as CC;
 
-class GeneralController extends Controller
+class HermesController extends Controller
 {
 
     public function __construct() {
@@ -39,7 +39,7 @@ class GeneralController extends Controller
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  $items;
 
-        return view('professional.hermes-examinations')->with($params);
+        return view('articles.item')->with($params);
     }
 
     /**
