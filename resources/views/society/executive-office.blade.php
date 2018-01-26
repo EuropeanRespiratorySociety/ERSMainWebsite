@@ -253,12 +253,6 @@
             T +41 21 213 01 69<br>
             </p>
         </div>
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('david.baechler@ersnet.org', 'David Baechler') !!}</strong>
-            Congress and Events Assistant<br>
-            T +41 21 213 01 71<br>
-            </p>
-        </div>
       </div>
     </div>
     </div>
@@ -388,12 +382,6 @@
           <p class="photo_caption"><strong>{!! Html::mailto('amy.farr@ersnet.org', 'Amy Farr') !!}</strong>
             Educational Programme Manager<br>
             T +41 21 213 01 74<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('Sharon.Mitchell@ersnet.org', 'Sharon Mitchell') !!}</strong>
-            Educational Standards Manager<br>
-            T +41 21 213 01 82<br>
             </p>
         </div>
         <!--div class="col-md-3 xs-mb-15">
@@ -575,12 +563,6 @@
           <p class="photo_caption"><strong>{!! Html::mailto('melanie.bienvenu@ersnet.org', 'Mélanie Yosefi Bienvenu') !!}</strong>
             Accountant<br>
             T +41 21 213 01 24<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('david.okasa@ersnet.org', 'DAVID OKASA') !!}</strong>
-            Accountant<br>
-            T +41 21 213 01 28<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
