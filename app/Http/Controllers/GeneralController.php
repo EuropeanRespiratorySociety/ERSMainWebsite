@@ -174,34 +174,7 @@ class GeneralController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function ErsHermesExamAdult($slug)
-    { 
-        $results = $this->CC->getItem($slug);
-        $item = $this->CC->parseItems($results['rows']);
-        $params['item'] =  (object) $item[0]; 
-
-        if(!$item[0]->url || !$item[0]->uri){
-            $this->CC->setCanonical($item[0]->_qname);
-        }
-
-        if($item[0]->hasRelatedArticles > 0){
-          $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
-          $params['relatedItems'] = $this->CC->parseItems($related['rows']);
-      }
-
-      $results = $this->CC->getAssociation($item[0]->_qname);
-        $items = $this->CC->parseItems($results['rows']);
-        $params['items'] =  $items;
-
-        return view('professional.hermes-examinations')->with($params);
-    }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function HermesExamCommitteeAdult()
+    public function ExamCommittee()
     { 
         $results = $this->CC->getItem('examination-committee');
         $item = $this->CC->parseItems($results['rows']);
@@ -220,64 +193,9 @@ class GeneralController extends Controller
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  $items;
 
-        return view('professional.hermes-examination-committee-adult')->with($params);
+        return view('professional.examination-committee')->with($params);
     }
 
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function HermesExamCommitteePaediatric()
-    { 
-        $results = $this->CC->getItem('examination-committee-paediatric');
-        $item = $this->CC->parseItems($results['rows']);
-        $params['item'] =  (object) $item[0]; 
-
-        if(!$item[0]->url || !$item[0]->uri){
-            $this->CC->setCanonical($item[0]->_qname);
-        }
-
-        if($item[0]->hasRelatedArticles > 0){
-          $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
-          $params['relatedItems'] = $this->CC->parseItems($related['rows']);
-      }
-
-      $results = $this->CC->getAssociation($item[0]->_qname);
-        $items = $this->CC->parseItems($results['rows']);
-        $params['items'] =  $items;
-
-        return view('professional.hermes-examination-committee-paediatric')->with($params);
-    }
-
-    
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function National()
-    { 
-        $results = $this->CC->getItem('national');
-        $item = $this->CC->parseItems($results['rows']);
-        $params['item'] =  (object) $item[0]; 
-
-        if(!$item[0]->url || !$item[0]->uri){
-            $this->CC->setCanonical($item[0]->_qname);
-        }
-
-        if($item[0]->hasRelatedArticles > 0){
-          $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
-          $params['relatedItems'] = $this->CC->parseItems($related['rows']);
-      }
-
-      $results = $this->CC->getAssociation($item[0]->_qname);
-        $items = $this->CC->parseItems($results['rows']);
-        $params['items'] =  $items;
-
-        return view('professional.national')->with($params);
-    }
 
 
 
