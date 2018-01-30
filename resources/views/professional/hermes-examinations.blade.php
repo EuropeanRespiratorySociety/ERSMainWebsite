@@ -197,7 +197,7 @@
               <a href="https://ers.box.com/s/ocpzzhwco2eed4sbd3qp0g482l54j2vn" target="blank">Terms and Conditions</a>
             @endif
             @if($item->title == "ERS HERMES examination in paediatric respiratory medicine" )
-              <a href="https://ers.box.com/s/2oflb7o1qsdghiqzhmgq8ef2lrx9n9an" target="blank">Terms and Conditions</a>
+              <a href="https://ers.box.com/s/fl48d0hltn4qd7aen28k926g3lwjlrky" target="blank">Terms and Conditions</a>
             @endif
           </li>
         </ul>
