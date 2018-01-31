@@ -119,7 +119,8 @@
     </div>
    <!-- Beginning Right Side-bar -->
    <div class="col-md-3 white-bg event-items-right">
-    
+    @if($item->title == "ERS HERMES examination in adult respiratory medicine" 
+      || $item->title == "ERS HERMES examination in paediatric respiratory medicine")  
     <div class="alert alert-info">
     <div class="message">REGISTRATION DEADLINE<br> {{ $item->deadline}}.</div>
     </div>
@@ -177,6 +178,9 @@
             @if($item->venue->info){!!$item->venue->info!!}@endif
           </p>
       </a> 
+      @if($item->title == "ERS HERMES examination in adult respiratory medicine" 
+        || $item->title == "ERS HERMES examination in paediatric respiratory medicine" 
+      )
       <span href="javascript:void(0)" class="list-group-item clearfix cursor_default">
       <span class="icon s7-copy-file"></span>
       <p>
@@ -185,12 +189,13 @@
                   float: left;
                   margin-left: 10px;">
           <li>
-            @if($item->title == "ERS HERMES examination in adult respiratory medicine" )
-              <a href="https://ers.box.com/s/k3d7nsadfotmmo8cx2be98d38kd2ktvh" target="blank">Preparation Guidebook</a>
-            @endif
-            @if($item->title == "ERS HERMES examination in paediatric respiratory medicine" )
-              <a href="https://ers.box.com/s/2oflb7o1qsdghiqzhmgq8ef2lrx9n9an" target="blank">Preparation Guidebook</a>
-            @endif
+              <a href="{{ 
+                $item->title == 'ERS HERMES examination in adult respiratory medicine' 
+                ? 'https://ers.box.com/s/k3d7nsadfotmmo8cx2be98d38kd2ktvh' 
+                : 'https://ers.box.com/s/2oflb7o1qsdghiqzhmgq8ef2lrx9n9an' 
+              }}" target="blank">
+                Preparation Guidebook
+              </a>
           </li>
           <li>
             @if($item->title == "ERS HERMES examination in adult respiratory medicine" )
@@ -203,6 +208,7 @@
         </ul>
       </p>
     </span> 
+    @endif
   </div>
     <p class="rules text-left">
     <span style="font-size:16px;vertical-align: middle;" class="icon s7-mail"></span> For more information, contact {!! Html::mailto('hermes@ersnet.org', ' hermes@ersnet.org') !!}
@@ -227,7 +233,7 @@
     <a href="javascript:void(0)" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
   @endif
   </div>
-
+  @endif
 </div>
 
 {{-- END Right Side-bar --}}
