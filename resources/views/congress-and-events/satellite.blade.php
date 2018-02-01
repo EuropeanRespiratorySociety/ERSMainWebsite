@@ -33,15 +33,15 @@
         @if($sponsor->text)
         <div class="course-sponsor-wrapper">
             @if($sponsor->image)
-            <div class="course-sponsor-image col-md-7 col-xs-7 pull-left">
-                <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: right center; background-size: contain;"></p>
+            <div class="course-sponsor-image col-md-12 col-xs-12 center-block">
+                <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: center center; background-size: contain;"></p>
             </div> 
             @endif
-            @if($sponsor->text)
+            {{--@if($sponsor->text)
             <div class="course-sponsor-right  col-md-5 col-xs-5 pull-right">
                 <h4 class="text-left">{{$sponsor->text}}</h4>
             </div>
-            @endif
+            @endif  --}}
         </div>
         @endif
     </div>
