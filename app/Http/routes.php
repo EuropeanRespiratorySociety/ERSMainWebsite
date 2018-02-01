@@ -128,9 +128,6 @@ Route::group(['prefix' => 'professional-development'], function () {
     });
     Route::group(['prefix' => 'hermes'], function () {
         Route::get('/', 'HermesController@index');
-        // Route::get('national-and-regional-society-cooperation', 'HermesController@National');
-        // Route::get('examination-committee-adult', 'HermesController@ExamCommitteeAdult');
-        // Route::get('examination-committee-paediatric', 'HermesController@ExamCommitteePaediatric');
         Route::group(['prefix' => 'adult'], function () {
           Route::get('/', 'HermesController@show');
           Route::get('/examination-committee', 'HermesController@ExamCommitteeAdult');
@@ -145,6 +142,7 @@ Route::group(['prefix' => 'professional-development'], function () {
           Route::get('/', 'HermesController@National');
           Route::get('/{slug}', 'HermesController@show');
         });
+        Route::get('/{slug}', 'HermesController@show');
     });
     
     Route::get('examination-committee', 'GeneralController@ExamCommittee');
