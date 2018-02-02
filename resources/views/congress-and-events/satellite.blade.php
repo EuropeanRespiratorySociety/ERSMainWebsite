@@ -10,8 +10,8 @@
 @stop()
 @section('content')
 <div class="ers-content event-items-content">
-  <div class="row">
-    <div class="col-md-3 medium-grey-bg left-photo-map">
+  <div class="row" style="display: flex;flex-wrap: wrap;">
+    <div class="col-md-3 col-xs-12 medium-grey-bg left-photo-map">
         @if($item->image)
         <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
         @endif
@@ -100,7 +100,7 @@
     </div>
     <!-- Beginning Right Side-bar -->
   <div class="col-md-3 white-bg event-items-tab">
-      <div class="tab-container">
+      <div>
         {{-- <ul class="nav nav-tabs">
         @if($item->ebusVenues)
           <li class="active"><a href="#venue" data-toggle="tab">
@@ -115,8 +115,8 @@
         </ul> --}}
 
         <div class="tab-content text-left">
-          <div class="ers-scroller nano scrollable" style="height: 650px;">
-            <div class="nano-content">
+          <div class="row">
+            <div class=" col-md-12 col-xs-6">
               <div style="padding-left: 10px; max-width: 230px;">
                   <div>
                     <img src="../images/events/DGP-01.png" class="img-responsive" style="padding-top: 20px;"/>
@@ -136,6 +136,10 @@
                   <div>
                     <img src="../images/events/BTS-01.jpg" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-xs-6">
+                <div style="padding-left: 10px; max-width: 230px;">
                   <div>
                     <img src="../images/events/BVP-SBP-01.jpg" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
