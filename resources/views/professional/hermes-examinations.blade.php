@@ -119,7 +119,9 @@
     </div>
    <!-- Beginning Right Side-bar -->
    <div class="col-md-3 white-bg event-items-right">
-    
+    @if($item->title == "ERS HERMES examination in adult respiratory medicine" 
+      || $item->title == "ERS HERMES examination in paediatric respiratory medicine"
+      || strpos($item->title, "1-hour"))
     <div class="alert alert-info">
     <div class="message">REGISTRATION DEADLINE<br> {{ $item->deadline}}.</div>
     </div>
@@ -177,6 +179,9 @@
             @if($item->venue->info){!!$item->venue->info!!}@endif
           </p>
       </a> 
+      @if($item->title == "ERS HERMES examination in adult respiratory medicine" 
+        || $item->title == "ERS HERMES examination in paediatric respiratory medicine" 
+      )
       <span href="javascript:void(0)" class="list-group-item clearfix cursor_default">
       <span class="icon s7-copy-file"></span>
       <p>
@@ -184,21 +189,27 @@
         <ul style="display: table;
                   float: left;
                   margin-left: 10px;">
-            <li>
-              @if($item->title == "ERS HERMES examination in adult respiratory medicine" )
-                <a href="https://ers.box.com/shared/static/k3d7nsadfotmmo8cx2be98d38kd2ktvh.pdf">Preparation Guidebook</a>
-              @endif
-
-              @if($item->title == "ERS HERMES examination in paediatric respiratory medicine" )
-                <a href="https://ers.box.com/shared/static/2oflb7o1qsdghiqzhmgq8ef2lrx9n9an.pdf">Preparation Guidebook</a>
-              @endif
-            </li>
-            <li>
-              <a href="https://ers.box.com/shared/static/ocpzzhwco2eed4sbd3qp0g482l54j2vn.pdf">Terms and Conditions</a>
-            </li>
+          <li>
+              <a href="{{ 
+                $item->title == 'ERS HERMES examination in adult respiratory medicine' 
+                ? 'https://ers.box.com/s/k3d7nsadfotmmo8cx2be98d38kd2ktvh' 
+                : 'https://ers.box.com/s/2oflb7o1qsdghiqzhmgq8ef2lrx9n9an' 
+              }}" target="blank">
+                Preparation Guidebook
+              </a>
+          </li>
+          <li>
+            @if($item->title == "ERS HERMES examination in adult respiratory medicine" )
+              <a href="https://ers.box.com/s/ocpzzhwco2eed4sbd3qp0g482l54j2vn" target="blank">Terms and Conditions</a>
+            @endif
+            @if($item->title == "ERS HERMES examination in paediatric respiratory medicine" )
+              <a href="https://ers.box.com/s/fl48d0hltn4qd7aen28k926g3lwjlrky" target="blank">Terms and Conditions</a>
+            @endif
+          </li>
         </ul>
       </p>
     </span> 
+    @endif
   </div>
     <p class="rules text-left">
     <span style="font-size:16px;vertical-align: middle;" class="icon s7-mail"></span> For more information, contact {!! Html::mailto('hermes@ersnet.org', ' hermes@ersnet.org') !!}
@@ -223,7 +234,7 @@
     <a href="javascript:void(0)" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
   @endif
   </div>
-
+  @endif
 </div>
 
 {{-- END Right Side-bar --}}

@@ -157,6 +157,7 @@
                       ${image}
                       <div class="card-content text-left">
                         <h3 class="title"> ${uri ?  anchor : title }</h3>
+                        <p class="date"><span class="icon s7-map-marker"></span> ${events[i].eventLocation}</p>
                         <p class="date"><span class="icon s7-date"></span> ${events[i].eventDates}</p>
                         ${leadParagraph}
                       </div>
