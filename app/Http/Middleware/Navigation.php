@@ -84,33 +84,60 @@ class Navigation
                 $menu->congressAndEvents->add('ERS Research Seminars','congress-and-events/ers-research-seminars');
                 // $menu->congressAndEvents->add('Past International Congresses','congress-and-events/past-international-congresses');
                 $menu->congressAndEvents->add('Event endorsement','congress-and-events/external-events-endorsement');
-
-            $menu->add('Publications','#publications');
+            $menu->add('Publications','#publications')
+                                            ->link->attr(array(
+                                                'onclick' => "'_gaq.push(['_trackEvent', 'Publications', 'Main Navigation', 'Top menu #'])'"));
                 $menu->publications->add('European Respiratory Journal', 'http://erj.ersjournals.com/')
-                                            ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array(
+                                                'target' => '_blank', 
+                                                'onclick' => "'_gaq.push(['_trackEvent', 'Publications', 'Main Navigation', 'ERJ'])'"));
                 $menu->publications->add('ERJ Open Research', 'http://openres.ersjournals.com/')
-                                            ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array(
+                                                'target' => '_blank', 
+                                                'onclick' => "'_gaq.push(['_trackEvent', 'Publications', 'Main Navigation', 'ERJ Open Research'])'"));
                 $menu->publications->add('European Respiratory Review', 'http://err.ersjournals.com/')
-                                            ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array(
+                                                'target' => '_blank', 
+                                                'onclick' => "'_gaq.push(['_trackEvent', 'Publications', 'Main Navigation', 'ERR'])'"));
                 $menu->publications->add('Monograph', 'http://erm.ersjournals.com/')
-                                            ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array(
+                                                'target' => '_blank', 
+                                                'onclick' => "'_gaq.push(['_trackEvent', 'Publications', 'Main Navigation', 'Monograph'])'"));
                 $menu->publications->add('Breathe', 'http://breathe.ersjournals.com/')
-                                            ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array(
+                                                'target' => '_blank', 
+                                                'onclick' => "'_gaq.push(['_trackEvent', 'Publications', 'Main Navigation', 'Breathe'])'"));
                 $menu->publications->add('Guidelines', 'http://www.ers-education.org/pages/default.aspx?id=2005')
-                                            ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array(
+                                                'target' => '_blank', 
+                                                'onclick' => "'_gaq.push(['_trackEvent', 'Publications', 'Main Navigation', 'Guidelines'])'"));
                 $menu->publications->add('White Books', 'http://www.erswhitebook.org/')
-                                            ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array(
+                                                'target' => '_blank', 
+                                                'onclick' => "'_gaq.push(['_trackEvent', 'Publications', 'Main Navigation', 'White Books'])'"));
                 $menu->publications->add('ERS Handbooks', 'http://www.ers-education.org/publications/handbook-series.aspx')
-                                            ->link->attr(array('target' => '_blank'));                
+                                            ->link->attr(array(
+                                                'target' => '_blank', 
+                                                'onclick' => "'_gaq.push(['_trackEvent', 'Publications', 'Main Navigation', 'ERS Handbooks'])'"));
                 $menu->publications->add('FIRS World Report', 'pdf/publications/firs-world-report.pdf')
-                                            ->link->attr(array('target' => '_blank'));
-                $menu->publications->add('Air Quality and Health','publications/air-quality-and-health');
+                                            ->link->attr(array(
+                                                'target' => '_blank', 
+                                                'onclick' => "'_gaq.push(['_trackEvent', 'Publications', 'Main Navigation', 'FIRS World Report'])'"));
+                $menu->publications->add('Air Quality and Health','publications/air-quality-and-health')
+                                            ->link->attr(array(
+                                                'onclick' => "'_gaq.push(['_trackEvent', 'Publications', 'Main Navigation', 'Air Quality'])'"));
                 $menu->publications->add('ERS Road Map', 'http://www.ersroadmap.org/')
-                                            ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array(
+                                                'target' => '_blank', 
+                                                'onclick' => "'_gaq.push(['_trackEvent', 'Publications', 'Main Navigation', 'ERS Road Map'])'"));
                 $menu->publications->add('RED Congress Magazine', 'http://www.ersbuyersguide.org/')
-                                            ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array(
+                                                'target' => '_blank', 
+                                                'onclick' => "'_gaq.push(['_trackEvent', 'Publications', 'Main Navigation', 'RED'])'"));
                 $menu->publications->add('COPD Audit', 'pdf/publications/copd_audit_web_version.pdf')
-                                            ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array(
+                                                'target' => '_blank', 
+                                                'onclick' => "'_gaq.push(['_trackEvent', 'Publications', 'Main Navigation', 'COPD Audit'])'"));
 
 
             $menu->add('Professional development','#professional-development');

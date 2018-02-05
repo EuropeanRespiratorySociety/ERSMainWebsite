@@ -20,7 +20,10 @@
                             </p>
                         </div>
                         <div class="card-action"> 	
-                            <a href="http://erj.ersjournals.com" target="new_blank" class="btn btn-default pull-right">Read online</a>
+                            <a href="http://erj.ersjournals.com" 
+                            target="new_blank" 
+                            onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'ERJ'])"
+                            class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
                 </div>
@@ -35,7 +38,10 @@
                             </p>
                         </div>
                         <div class="card-action"> 	
-                            <a href="http://openres.ersjournals.com" target="new_blank" class="btn btn-default pull-right">Read online</a>
+                            <a href="http://openres.ersjournals.com" 
+                                target="new_blank"
+                                onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'ERJ Open Research'])"
+                                class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
                 </div>
@@ -50,7 +56,10 @@
                             </p>
                         </div>
                         <div class="card-action"> 	
-                            <a href="http://err.ersjournals.com" target="new_blank" class="btn btn-default pull-right">Read online</a>
+                            <a href="http://err.ersjournals.com" 
+                                target="new_blank" 
+                                onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'ERR'])"
+                                class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
                 </div>
@@ -65,7 +74,10 @@
                             </p>
                         </div>
                         <div class="card-action"> 	
-                            <a href="http://erspublications.com/titles" target="new_blank" class="btn btn-default pull-right">Read online</a>
+                            <a href="http://erspublications.com/titles" 
+                                target="new_blank" 
+                                onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'ERM'])"
+                                class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
                 </div>
@@ -80,7 +92,10 @@
                             </p>
                         </div>
                         <div class="card-action"> 	
-                            <a href="http://breathe.ersjournals.com/" target="new_blank" class="btn btn-default pull-right">Read online</a>
+                            <a href="http://breathe.ersjournals.com/" 
+                                target="new_blank" 
+                                onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'Breathe'])"
+                                class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
                 </div> 
@@ -95,7 +110,10 @@
                             </p>
                         </div>
                         <div class="card-action"> 	
-                            <a href="http://www.erswhitebook.org" target="new_blank" class="btn btn-default pull-right">Read online</a>
+                            <a href="http://www.erswhitebook.org" 
+                                target="new_blank" 
+                                onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'Whitebook'])"
+                                class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
                 </div>
@@ -110,7 +128,10 @@
                             </p>
                         </div>
                         <div class="card-action"> 	
-                            <a href="http://www.ers-education.org/publications/handbook-series.aspx" target="new_blank" class="btn btn-default pull-right">Read online</a>
+                            <a href="http://www.ers-education.org/publications/handbook-series.aspx" 
+                                target="new_blank" 
+                                onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'Handbooks'])"
+                                class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
                 </div>
@@ -125,7 +146,10 @@
                             </p>
                         </div>
                         <div class="card-action"> 	
-                            <a href="http://www.ersbuyersguide.org/" target="new_blank" class="btn btn-default pull-right">Read online</a>
+                            <a href="http://www.ersbuyersguide.org/" 
+                                target="new_blank"
+                                onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'RED'])" 
+                                 class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
                 </div>
@@ -140,7 +164,10 @@
                             </p>
                         </div>
                         <div class="card-action"> 	
-                            <a href="pdf/publications/firs-world-report.pdf" target="new_blank" class="btn btn-default pull-right">Read online</a>
+                            <a href="pdf/publications/firs-world-report.pdf" 
+                                target="new_blank"
+                                onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'FIRS world report'])" 
+                                class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
                 </div>
@@ -155,7 +182,9 @@
                             </p>
                         </div>
                         <div class="card-action"> 	
-                            <a href="publications/air-quality-and-health" class="btn btn-default pull-right">Read online</a>
+                            <a href="publications/air-quality-and-health"
+                                onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'Air Quality and Health'])"
+                                class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
                 </div>
@@ -170,7 +199,10 @@
                             </p>
                         </div>
                         <div class="card-action"> 	
-                            <a href="http://www.ersroadmap.org" target="new_blank" class="btn btn-default pull-right">Read online</a>
+                            <a href="http://www.ersroadmap.org" 
+                                target="new_blank" 
+                                onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'Roadmap'])"
+                                class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
                 </div>
@@ -185,7 +217,10 @@
                             </p>
                         </div>
                         <div class="card-action"> 	
-                            <a href="pdf/publications/copd_audit_web_version.pdf" target="new_blank" class="btn btn-default pull-right">Read online</a>
+                            <a href="pdf/publications/copd_audit_web_version.pdf"   
+                                target="new_blank" 
+                                onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'COPD Audit'])"
+                                class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
                 </div>
