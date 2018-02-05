@@ -22,7 +22,7 @@
                         <div class="card-action"> 	
                             <a href="http://erj.ersjournals.com" 
                             target="new_blank" 
-                            onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'ERJ'])"
+                            onclick ="ga('send', 'event', 'Publications', 'Homepage', 'ERJ')"
                             class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                         <div class="card-action"> 	
                             <a href="http://openres.ersjournals.com" 
                                 target="new_blank"
-                                onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'ERJ Open Research'])"
+                                onclick ="ga('send', 'event', 'Publications', 'Homepage', 'ERJ Open Research')"
                                 class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
@@ -58,7 +58,7 @@
                         <div class="card-action"> 	
                             <a href="http://err.ersjournals.com" 
                                 target="new_blank" 
-                                onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'ERR'])"
+                                onclick ="ga('send', 'event', 'Publications', 'Homepage', 'ERR')"
                                 class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                         <div class="card-action"> 	
                             <a href="http://erspublications.com/titles" 
                                 target="new_blank" 
-                                onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'ERM'])"
+                                onclick ="ga('send', 'event', 'Publications', 'Homepage', 'ERM')"
                                 class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
@@ -94,7 +94,7 @@
                         <div class="card-action"> 	
                             <a href="http://breathe.ersjournals.com/" 
                                 target="new_blank" 
-                                onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'Breathe'])"
+                                onclick ="ga('send', 'event', 'Publications', 'Homepage', 'Breathe')"
                                 class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
@@ -112,7 +112,7 @@
                         <div class="card-action"> 	
                             <a href="http://www.erswhitebook.org" 
                                 target="new_blank" 
-                                onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'Whitebook'])"
+                                onclick ="ga('send', 'event','_trackEvent', 'Publications', 'Homepage', 'Whitebook')"
                                 class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
@@ -130,7 +130,7 @@
                         <div class="card-action"> 	
                             <a href="http://www.ers-education.org/publications/handbook-series.aspx" 
                                 target="new_blank" 
-                                onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'Handbooks'])"
+                                onclick ="ga('send', 'event', 'Publications', 'Homepage', 'Handbooks')"
                                 class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
@@ -148,7 +148,7 @@
                         <div class="card-action"> 	
                             <a href="http://www.ersbuyersguide.org/" 
                                 target="new_blank"
-                                onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'RED'])" 
+                                onclick ="ga('send', 'event', 'Publications', 'Homepage', 'RED')" 
                                  class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
@@ -166,7 +166,7 @@
                         <div class="card-action"> 	
                             <a href="pdf/publications/firs-world-report.pdf" 
                                 target="new_blank"
-                                onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'FIRS world report'])" 
+                                onclick ="ga('send', 'event', 'Publications', 'Homepage', 'FIRS world report')" 
                                 class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
@@ -183,7 +183,7 @@
                         </div>
                         <div class="card-action"> 	
                             <a href="publications/air-quality-and-health"
-                                onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'Air Quality and Health'])"
+                                onclick ="ga('send', 'event', 'Publications', 'Homepage', 'Air Quality and Health')"
                                 class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
@@ -201,7 +201,7 @@
                         <div class="card-action"> 	
                             <a href="http://www.ersroadmap.org" 
                                 target="new_blank" 
-                                onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'Roadmap'])"
+                                onclick ="ga('send', 'event', 'Publications', 'Homepage', 'Roadmap')"
                                 class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
@@ -219,7 +219,7 @@
                         <div class="card-action"> 	
                             <a href="pdf/publications/copd_audit_web_version.pdf"   
                                 target="new_blank" 
-                                onclick ="_gaq.push(['_trackEvent', 'Publications', 'Homepage', 'COPD Audit'])"
+                                onclick ="ga('send', 'event', 'Publications', 'Homepage', 'COPD Audit')"
                                 class="btn btn-default pull-right">Read online</a>
                         </div>
                     </div>
