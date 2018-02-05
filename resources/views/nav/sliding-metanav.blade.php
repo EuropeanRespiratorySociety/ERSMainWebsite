@@ -34,7 +34,7 @@
  	<ul data-menu="{!!$key!!}" class="menu__level">
  		@foreach($items as $subkey => $item)
  	 	<li class="menu__item">
-		 	<a @lm-attrs($item) class="menu__link" @lm-endattrs href="{!! $item->url() !!}">
+		 	<a @lm-attrs($item) class="menu__link ga-metanav" @lm-endattrs href="{!! $item->url() !!}">
 		 		{!! $item->title !!}
 		 	</a>
 	 	</li>
