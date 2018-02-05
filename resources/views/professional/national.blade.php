@@ -135,34 +135,32 @@
         client.add('calendar');
         client.calendar.read({type:'hermes'}).done(function (data){
             const events = data.data;
-            let image;
-            let title;
-            let uri;
-            let leadParagraph;
             for( let i = 0; i < events.length ; i++){
-              image = events[i].image ? '<div class="card-image"'
+              const image = events[i].image ? '<div class="card-image"'
                         +'style="background-size:cover;background-repeat: no-repeat;height:150px;'
                         +'background-image: url(\'' + events[i].image + '\');'
                         +'background-position: center center;"></div>'
                         : '';
  
-              title = events[i].title;
-              uri = events[i].uri;
-              leadParagraph = events[i].shortLead;
-              const anchor = `<a href="${uri}">${title}</a>`
-              const action = `<a href="${uri}" class="btn btn-register">more</a>`
+              const title = events[i].title;
+              const uri = events[i].uri;
+              const leadParagraph = events[i].shortLead;
+              const path = uri 
+                            ? uri 
+                            : `${window.location.pathname}/${events[i].slug}`
+              const anchor = `<a href="${path}">${title}</a>`
 
               $(`<div class="col-md-4 isotope">
                   <div class="card card-event">
                       ${image}
                       <div class="card-content text-left">
-                        <h3 class="title"> ${uri ?  anchor : title }</h3>
-                        <p class="date"><span class="icon s7-map-marker"></span> ${events[i].eventLocation}</p>
+                        <h3 class="title"> ${anchor}</h3>
+                        <p class="date" style="padding-bottom: 3px;"><span class="icon s7-map-marker"></span> ${events[i].eventLocation}</p>
                         <p class="date"><span class="icon s7-date"></span> ${events[i].eventDates}</p>
                         ${leadParagraph}
                       </div>
                       <div class="card-action clearfix">
-                          ${uri ?  action : '' }
+                          <a href="${path}" class="btn btn-register">more</a>
                       </div>
                   </div>
                 </div>`).appendTo($('#national'));

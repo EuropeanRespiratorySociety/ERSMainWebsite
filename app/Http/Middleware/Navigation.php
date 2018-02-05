@@ -116,10 +116,6 @@ class Navigation
             $menu->add('Professional development','#professional-development');
                 // $menu->professionalDevelopment->add('Webinar','professional-development/ers-webinar-discussion-of-severe-asthma-with-ers-experts');
                 $menu->professionalDevelopment->add('Fellowships','professional-development/fellowships');
-                $menu->professionalDevelopment->add('HERMES projects','http://hermes.ersnet.org/projects.html')
-                                            ->link->attr(array('target' => '_blank'));                 
-                $menu->professionalDevelopment->add('HERMES exams','http://hermes.ersnet.org/exams.html')
-                                            ->link->attr(array('target' => '_blank'));                 
                     $menu->fellowships->add('Short-Term','professional-development/fellowships/short-term-research-training-fellowships')->link->attr(array('style' => 'display:none'));
                     $menu->fellowships->add('Long-Term','professional-development/fellowships/long-term-research-fellowships')->link->attr(array('style' => 'display:none'));
                     $menu->fellowships->add('Fellowships in industry','professional-development/fellowships/ers-fellowships-in-industry')->link->attr(array('style' => 'display:none'));
@@ -127,7 +123,25 @@ class Navigation
                     $menu->fellowships->add('Clinical Training Fellowship','professional-development/fellowships/clinical-training-fellowship')->link->attr(array('style' => 'display:none'));
                     $menu->fellowships->add('RESPIRE 3 - Host Application','professional-development/fellowships/respire-3-host-application-and-web-registry')->link->attr(array('style' => 'display:none'));
                     $menu->fellowships->add('RESPIRE 3 - Marie Curie Post-doctoral Research Fellowships (MCF RESPIRE 3)','professional-development/fellowships/marie-curie-post-doctoral-research-fellowships-(respire-3)')->link->attr(array('style' => 'display:none'));
-                    $menu->fellowships->add('RESPIRE 2 - Marie Curie Post-doctoral Research Fellowships','professional-development/fellowships/marie-curie-post-doctoral-research-fellowships-respire-2')->link->attr(array('style' => 'display:none'));
+            
+                $menu->professionalDevelopment->add('HERMES projects','http://hermes.ersnet.org/projects.html')
+                                            ->link->attr(array('target' => '_blank'));
+                $menu->professionalDevelopment->add('ERS Hermes exams','professional-development/hermes');
+                    $menu->eRSHermesExams->add('ERS HERMES examination in adult respiratory medicine','professional-development/hermes/adult/ers-hermes-examination-in-adult-respiratory-medicine')->link->attr(array('style' => 'display:none'));
+                    $menu->eRSHermesExams->add('Preparation: adult exam','professional-development/hermes/adult/preparation')->link->attr(array('style' => 'display:none'));
+                    $menu->eRSHermesExams->add('Eligibility, registration and fees: adult exam','professional-development/hermes/adult/eligibility-registration-and-fees')->link->attr(array('style' => 'display:none'));
+                    $menu->eRSHermesExams->add('Examination Committee: adult exam','professional-development/hermes/adult/examination-committee')->link->attr(array('style' => 'display:none'));
+                    $menu->eRSHermesExams->add('Diplomates: adult exam','professional-development/hermes/adult/diplomates-registry-adult')->link->attr(array('style' => 'display:none'));
+                    $menu->eRSHermesExams->add('ERS HERMES examination in paediatric respiratory medicine','professional-development/hermes/paediatric/ers-hermes-examination-in-paediatric-respiratory-medicine')->link->attr(array('style' => 'display:none'));
+                    $menu->eRSHermesExams->add('Preparation: paediatric exam','professional-development/hermes/paediatric/preparation-paediatric-exam')->link->attr(array('style' => 'display:none'));
+                    $menu->eRSHermesExams->add('Eligibility, registration and fees: paediatric exam','professional-development/hermes/paediatric/eligibility-registration-and-fees-paediatric-exam')->link->attr(array('style' => 'display:none'));
+                    $menu->eRSHermesExams->add('Examination Committee: adult exam','professional-development/hermes/paediatric/examination-committee')->link->attr(array('style' => 'display:none'));
+                    $menu->eRSHermesExams->add('Diplomates: paediatric exam','professional-development/hermes/diplomates-paediatric-exam')->link->attr(array('style' => 'display:none'));
+                    // $menu->professionalDevelopment->add('HERMES exams','http://hermes.ersnet.org/exams.html')
+                                            // ->link->attr(array('target' => '_blank'));
+
+
+
 
 
                 //$menu->professionalDevelopment->add('Educational Activities','professional-development/educational-activities');

@@ -148,7 +148,7 @@
         <span>{{ $item->eventDates }}</span>
       </p>
     </a>
-    <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
+    <span href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
         <span class="icon s7-culture"></span>
         <p>
           EXAM LOCATION : <br>
@@ -178,7 +178,7 @@
             <hr>
             @if($item->venue->info){!!$item->venue->info!!}@endif
           </p>
-      </a> 
+        </span> 
       @if($item->title == "ERS HERMES examination in adult respiratory medicine" 
         || $item->title == "ERS HERMES examination in paediatric respiratory medicine" 
       )

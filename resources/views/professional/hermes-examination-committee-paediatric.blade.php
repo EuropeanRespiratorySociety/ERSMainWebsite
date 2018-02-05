@@ -79,7 +79,7 @@
                         - Deputy Head of the Division of Respiratory and Critical Care Medicine</p>
                       <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
                         - University Children's Hospital Basel</p>
-                      <p>- Basel, Switzerland</p>
+                      <p style="margin-bottom:50px;">- Basel, Switzerland</p>
                     </div>
                 </div>
                 <div class="col-md-6 xs-mb-15">
@@ -87,11 +87,11 @@
                     <img src="images/people/examination-committee/Antonio-Martinez-Gimeno.png" class="img-circle">
                     <p class="photo_caption"><strong>Dr Antonio Martínez-Gimeno</strong></p>
                     <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
-                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                        - Hospital Virgen de la Salud</p>
-                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                        - Toledo, Spain
-                      </p>
+                        <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                          - Hospital Virgen de la Salud</p>
+                        <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                          - Toledo, Spain
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-6 xs-mb-15">
