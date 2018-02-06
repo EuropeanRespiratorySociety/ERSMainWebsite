@@ -23,6 +23,23 @@
             {!!$category->video!!} 
           </div>
           @endif
+          @if($category->title == "ERS Fellowships in Industry")
+          <a href="professional-development/fellowships/ers-fellowships-in-industry/ers-fellowship-opportunity-for-mds-at-novartis">
+            <div class="related-items text-left">
+              <div class="card card-default card-events">
+                  <div class="card-content col-md-8 col-xs-8 pull-right">
+                      <h4>
+                        ERS fellowship opportunity for life sciences at Novartis
+                      </h4>  
+                  </div> 
+                  <div class="card-image col-md-4 col-xs-4 pull-left">
+                    <img class="img-responsive" src="https://www.ersnet.org/assets/preview/node/o:b04adedcbf75153dd119?name=image500&size=500">
+                  </div> 
+              </div>
+            </div>
+          </a>
+          @endif
+
         </div>
 
         <div class="col-md-8 event-items-fs-title">
