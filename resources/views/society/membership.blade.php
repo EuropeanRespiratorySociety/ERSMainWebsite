@@ -42,7 +42,8 @@
 
     {{-- Start Section 2 --}} 
     @include('society.membership.membership-faqs', array('item' => $items->faqs))
-
+      {{-- Footer --}}
+      @include('footer')
 
   </div>
 </div>

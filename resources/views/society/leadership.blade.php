@@ -48,10 +48,9 @@
             <p>
         </div>
         <!--Fin Departments Menu-->
-
-
-
     </div>
+          {{-- Footer --}}
+      @include('footer')
 </div>
   
 @include('nav.leadership-menu', array('class' => 'col-md-2'))

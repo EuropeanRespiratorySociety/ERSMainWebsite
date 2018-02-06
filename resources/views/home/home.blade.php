@@ -53,6 +53,9 @@
     {{-- Start Section 8 --}}  
     @include('home.home-sections.elf')
 
+    {{-- Footer --}}
+    @include('footer')
+
     
 
 

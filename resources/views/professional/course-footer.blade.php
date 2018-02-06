@@ -1,5 +1,5 @@
 <div class="row"> 
-	<div class="col-md-9 courses-footer">   
+	<div class="col-md-12 courses-footer" style="background-color:#fff;margin-bottom:0;">   
 		<h3>Are you interested in organising an event endorsed by the ERS?</h3>
 		
 		<div class="col-md-8 center-block">
@@ -14,20 +14,17 @@
 		</p>
 
 		<div class="space"></div>
-
-		<div class="col-md-6 center-block">
-		<p><strong>CME Accredited Activities</strong></p>
-	<ul>
-		<li><a href="{{url('professional-development/courses')}}">Courses</a></li>
-		<li><a target="_blank" href="http://www.ers-education.org/cmeOnline/">CME Online</a></li>
-		<li><a target="_blank" href="http://www.ers-education.org/e-learning/cme-tests/cme-accredited-case-reports.aspx">Case Reports - CME Test</a></li>
-		<li><a target="_blank" href="http://www.ers-education.org/e-learning/cme-tests/cme-accredited-guidelines.aspx">Guidelines - CME Test</a></li>
-		<li><a target="_blank" href="http://www.ers-education.org/e-learning/cme-tests/cme-accredited-breathe-articles.aspx">Breathe - CME Test</a></li>
-		<li><a target="_blank" href="http://www.ers-education.org/pages/default.aspx?id=2299">ERS Handbook of Respiratory Medicine - CME Test</a></li>
-	</ul>
+		<div class="col-md-6 center-block" style="padding-bottom:0;">
+			<p><strong>CME Accredited Activities</strong></p>
+			<ul>
+				<li><a href="{{url('professional-development/courses')}}">Courses</a></li>
+				<li><a target="_blank" href="http://www.ers-education.org/cmeOnline/">CME Online</a></li>
+				<li><a target="_blank" href="http://www.ers-education.org/e-learning/cme-tests/cme-accredited-case-reports.aspx">Case Reports - CME Test</a></li>
+				<li><a target="_blank" href="http://www.ers-education.org/e-learning/cme-tests/cme-accredited-guidelines.aspx">Guidelines - CME Test</a></li>
+				<li><a target="_blank" href="http://www.ers-education.org/e-learning/cme-tests/cme-accredited-breathe-articles.aspx">Breathe - CME Test</a></li>
+				<li><a target="_blank" href="http://www.ers-education.org/pages/default.aspx?id=2299">ERS Handbook of Respiratory Medicine - CME Test</a></li>
+			</ul>
+		</div>
 	</div>
-	</div>
-
-	<div class="col-md-3"></div>
 </div>
 

@@ -80,7 +80,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
         {{-- Start right Sidebar --}}     
         {{-- End right Sidebar --}}
-      
     </div>
 
     <script src="https://bootstrap.ersnet.org/js/jquery.min.js" type="text/javascript"></script>

@@ -913,7 +913,8 @@
 
     
 
-    
+          {{-- Footer --}}
+      @include('footer')
 
 
 
