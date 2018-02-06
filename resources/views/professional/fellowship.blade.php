@@ -24,8 +24,28 @@
           @endif
           @if(isset($relatedItems))
             @include('partials.related-items', array('relatedItems' => $relatedItems)) 
-          @endif       
-          </div>     
+          @endif
+          
+          @foreach ($item->sponsors as $sponsor)
+          <div class="course-sponsor text-left">
+            @if($sponsor->text)
+              <div class="course-sponsor-wrapper">
+                @if($sponsor->image)
+                  <div class="course-sponsor-image col-md-7 col-xs-7 pull-right">
+                    <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: right center; background-size: contain;"></p>
+                 </div> 
+                @endif
+                @if($sponsor->text)
+                  <div class="course-sponsor-right  col-md-5 col-xs-5 pull-left">
+                    <h4 class="text-left">{{$sponsor->text}}</h4>
+                  </div>
+                @endif
+              </div>
+            @endif
+          </div>
+        @endforeach
+    
+          </div>
           <div class="col-md-8 lighter-grey-bg event-items-fs-title article-text">
             <div class="page-head"><h2 class="article-title">{{$item->title}}</h2></div>
             <div class="article text-left">
@@ -128,7 +148,32 @@
               </p>
             </span>
             @endif
+
+            @if($item->slug == "ers-fellowship-opportunity-for-mds-at-novartis" || $item->rulesAndRegulations)
+            <span href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
+              <span class="icon s7-copy-file"></span>
+              <p>
+                DOCUMENTS : <br>
+                <ul style="display: table;
+                          float: left;
+                          margin-left: 10px;">
+                    <li>
+                      <a href="https://ers.box.com/shared/static/ff7c0en971ns5ufi9dd4mm21ubhnp7rf.pdf">Role description</a>
+                    </li>
+                    <li>
+                      <a href="https://ers.box.com/shared/static/posyd1eskjxjcmj0xrsk65u2lwbc3371.pdf">Application Guidelines</a>
+                    </li>
+                    <li>
+                      <a href="https://ers.box.com/s/wlct129m16r7hhaob7j7lbgkog5ir3qo">Mid-term &amp; End of project reports</a>
+                    </li>
+                </ul>
+              </p>
+            </span>
+            @endif
+
   </div>
+
+
           <div class="event-items-right-bt">
             @if($item->extendedDeadline)
             <p class="deadline">EXTENDED registration deadline : {{$item->extendedDeadline}}</p>
