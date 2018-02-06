@@ -57,7 +57,8 @@
       <hr>
       <div id="disqus_thread"></div>
       @endif
-
+      {{-- Footer --}}
+      @include('footer')
     </div>
     {{--  Beginning Main Content Area  --}}
     {{--  Beginning Right Side-bar  --}}

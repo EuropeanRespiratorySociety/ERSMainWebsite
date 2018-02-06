@@ -14,7 +14,7 @@
       href="https://my.ersnet.org" 
       type="button" 
       class="btn btn-space btn-primary btn-rounded btn-lg"
-      style="position:fixed;top:120px;right:3px;z-index:1;">
+      style="position:fixed;top:120px;right:3px;z-index:10;">
       <i style="font-size:30px;" class="icon s7-add-user"></i> Join Assembly
     </a>  
     <div id="fullpage">
@@ -138,6 +138,8 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
         <!-- Start Asesembly 13 -->  
             @include('society.assemblies.assembly-13')
         <!-- End Assembly 13 -->
+      {{-- Footer --}}
+      @include('footer')
     </div>
   </div>
 

@@ -918,7 +918,8 @@
 
     
 
-    
+          {{-- Footer --}}
+      @include('footer')
 
 
 

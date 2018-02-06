@@ -120,7 +120,8 @@
             </div><!-- main-content text for Apply or nominate on Research excellence page-->
             @endif
 
-
+      {{-- Footer --}}
+      @include('footer')
 
 
 </div>

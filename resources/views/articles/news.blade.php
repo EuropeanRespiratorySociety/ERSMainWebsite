@@ -107,6 +107,8 @@
                 </div>
                 @endif
             </div><!-- main-content latest news -->
+            {{-- Footer --}}
+    @include('footer')    
     </div><!-- col-md-9 -->
         @include('articles.subscribe', array('class' => 'col-md-3'))
 </div><!-- ers-content -->
