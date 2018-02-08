@@ -111,7 +111,7 @@ class Navigation
                                             ->link->attr(array(
                                                 'target' => '_blank',
                                                 'class' => "ga-navigation"));
-                $menu->publications->add('White Books', 'http://www.erswhitebook.org/')
+                $menu->publications->add('White Books', 'https://www.erswhitebook.org/')
                                             ->link->attr(array(
                                                 'target' => '_blank'));
                 $menu->publications->add('ERS Handbooks', 'http://www.ers-education.org/publications/handbook-series.aspx')
@@ -129,7 +129,7 @@ class Navigation
                                             ->link->attr(array(
                                                 'target' => '_blank', 
                                                 'class' => "ga-navigation"));
-                $menu->publications->add('RED Congress Magazine', 'http://www.ersbuyersguide.org/')
+                $menu->publications->add('RED Congress Magazine', 'https://ersguide.org/')
                                             ->link->attr(array(
                                                 'target' => '_blank',
                                                 'class' => "ga-navigation"));
