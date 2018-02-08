@@ -41,7 +41,7 @@
 
       </div>
       <div class="main-content" style="padding-top:0px;">
-          <h3 class="text-left" style="font-size:24px;font-family:'Amiri', 'serif';">Past and Upcoming programmes 2017/2018</h3>
+          <h3 class="text-left" style="font-size:24px;font-family:'Amiri', 'serif';">Upcoming programmes 2018/2019</h3>
           <div class="row row_event " id="spirometry-programme" style="position: relative; height: 800px;">
         </div>
       </div>
@@ -141,6 +141,7 @@
                       +image
                       +'<div class="card-content text-left">'
                           +'<h3 class="title">' + events[i].title + '</h3>'
+                          +'<p class="date"><span class="icon s7-map-marker"></span>' + events[i].eventLocation + '</p>'
                           +'<p class="date"><span class="icon s7-date"></span>' + events[i].eventDates + '</p>'
                           + events[i].leadParagraph
                       +'</div>'                      
