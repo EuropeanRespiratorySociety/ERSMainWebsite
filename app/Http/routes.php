@@ -124,7 +124,7 @@ Route::group(['prefix' => 'professional-development'], function () {
         Route::get('ers-fellowships-in-industry', 'FellowshipController@indexIndustry');
         Route::get('ers-fellowships-in-industry/{slug}', 'FellowshipController@show');
         Route::get('/', 'FellowshipController@index'); 
-        Route::get('/{sl  q  ug}', 'FellowshipController@show');
+        Route::get('/{slug}', 'FellowshipController@show');
     });
     Route::group(['prefix' => 'hermes'], function () {
         Route::get('/', 'HermesController@index');
