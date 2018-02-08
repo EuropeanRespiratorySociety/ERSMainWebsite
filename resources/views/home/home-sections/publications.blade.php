@@ -105,7 +105,7 @@
                             </p>
                         </div>
                         <div class="card-action"> 	
-                            <a href="http://www.erswhitebook.org" 
+                            <a href="https://www.erswhitebook.org" 
                                 target="new_blank"
                                 class="ga-home btn btn-default pull-right">Read online</a>
                         </div>
