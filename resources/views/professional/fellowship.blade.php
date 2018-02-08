@@ -149,7 +149,7 @@
             </span>
             @endif
 
-            @if($item->slug == "ers-fellowship-opportunity-for-mds-at-novartis" || $item->rulesAndRegulations)
+            @if($item->slug == "ers-fellowship-opportunity-for-mds-at-novartis")
             <span href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
               <span class="icon s7-copy-file"></span>
               <p>

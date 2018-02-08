@@ -120,8 +120,8 @@
    <!-- Beginning Right Side-bar -->
    <div class="col-md-3 white-bg event-items-right">
     @if($item->title == "ERS HERMES examination in adult respiratory medicine" 
-      || $item->title == "ERS HERMES examination in paediatric respiratory medicine"
-      || strpos($item->title, "1-hour"))
+    || $item->title == "ERS HERMES examination: self-assessment course (SGP Congress 2018)"
+    || strpos($item->title, "self-assessment"))
     <div class="alert alert-info">
     <div class="message">REGISTRATION DEADLINE<br> {{ $item->deadline}}.</div>
     </div>
