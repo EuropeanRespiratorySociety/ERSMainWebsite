@@ -903,8 +903,13 @@
             T +41 21 213 01 88<br>
             </p>
         </div>
-
-
+        <div class="col-md-3 xs-mb-15">
+            <p class="photo_caption"><strong>{!! Html::mailto('celina.marques-grunho@ersnet.org', 'Célina Marques Grunho') !!}</strong>
+              Scientific Programme Assistant<br>
+              T +41 21 213 01 71<br>
+              </p>
+        </div>
+  
 
       </div>
     </div>
