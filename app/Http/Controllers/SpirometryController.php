@@ -11,8 +11,6 @@ use App\Extensions\CloudCmsHelper as CC;
 class SpirometryController extends Controller
 {
 
-    protected $spirometryProgramme = "o:ae6e4a3b10be4a80c22d";
-
     public function __construct() {
         $this->CC = new CC();
     }
@@ -25,15 +23,21 @@ class SpirometryController extends Controller
      */
   public function index()
   { 
-    $item = $this->CC->getItem('spirometry-training-programme-test');
+    $item = $this->CC->getItem('spirometry-training-programme');
     $item = $this->CC->parseItems($item['rows']);
-    $params['category'] = (object) $item[0];
+    $params['item'] = (object) $item[0];
 
     if(!$item[0]->url || !$item[0]->uri){
         $this->CC->setCanonical($item[0]->_qname);
     }
 
-    $results = $this->CC->getAssociation($this->spirometryProgramme);
+    if($item[0]->hasRelatedArticles > 0){
+      $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
+      $relatedItems = $this->CC->parseItems($related['rows']);
+      $params['relatedItems'] =  (object) $relatedItems;
+  }
+
+    $results = $this->CC->getAssociation($item[0]->_qname);
     $params['items'] =  $this->CC->parseItems($results['rows']);
 
     return view('professional.spirometry-training-programme')->with($params);  

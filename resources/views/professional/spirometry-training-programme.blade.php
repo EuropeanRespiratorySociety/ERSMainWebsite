@@ -2,8 +2,8 @@
 @section('meta')
         @include('partials.meta', array('meta' =>
               [
-              'url' => $category->url ? $category->url : null , 
-              'title' => $category->title
+              'url' => isset($item->url) ? $item->url : null , 
+              'title' => $item->title
               ],
               ['pagination' => isset($pagination) ? $pagination : null]
               )) 
@@ -15,45 +15,32 @@
     <div class="col-md-9 light-grey-bg">
       <div class="row">
         <div class="col-md-4 medium-grey-bg left-photo-map">
-          @if($category->image)
-          <p><img src="{{ $category->image }}" class="img-rounded img-responsive"></p>
+          @if($item->image)
+          <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
           @endif
-          @if($category->video)
+          @if($item->video)
           <div class="videoWrapper">
-            {!!$category->video!!} 
+            {!!$item->video!!} 
           </div>
           @endif
-
-          <a href="https://www.ersnet.org/professional-development/deliver-a-training-programme-in-your-country">
-              <div class="related-items text-left">
-                <div class="card card-default card-events">
-                <div class="card-content col-md-12 col-xs-12"> 
-                    <h4>
-                      Deliver a training programme in your country
-                    </h4>  
-                  </div>
-                </div>
-              </div>
-          </a>
-                    
-          {{-- @if(isset($items))
-            @include('partials.related-items', array('relatedItems' => $items)) 
-          @endif --}}
-        </div>
+          @if(isset($relatedItems))
+            @include('partials.related-items', array('relatedItems' => $relatedItems)) 
+          @endif
+      </div>
 
         <div class="col-md-8 event-items-fs-title">
 
-          <div class="page-head"><h2 class="article-title">{{$category->title}}</h2></div>
+          <div class="page-head"><h2 class="article-title">{{$item->title}}</h2></div>
 
-          @if($category->body)
+          @if($item->body)
           <div class="article text-left">          
-                    {!! $category->body !!}
+                    {!! $item->body !!}
          </div>
           @endif
         </div>
 
       </div>
-      <div class="main-content">
+      <div class="main-content" style="padding-top:0px;">
           <h3 class="text-left" style="font-size:24px;font-family:'Amiri', 'serif';">Past and Upcoming programmes 2017/2018</h3>
           <div class="row row_event " id="spirometry-programme" style="position: relative; height: 800px;">
         </div>
@@ -62,9 +49,9 @@
    </div>
   <!-- Beginning Right Side-bar -->
    <div class="col-md-3 white-bg event-items-right">
-      @if($category->flags->text)
-            <div class="alert {{'alert-'.$category->flags->color }}">
-            <div class="message"> {{ $category->flags->text }}</div>
+      @if($item->flags->text)
+            <div class="alert {{'alert-'.$item->flags->color }}">
+            <div class="message"> {{ $item->flags->text }}</div>
             </div>
       @endif
     <div class="list-group text-left">
@@ -77,14 +64,14 @@
                   padding-left: 10px;
                   padding-top: 10px;">
             <li>
-              <a href="https://ers.box.com/s/3zqly65aie0csbz9ahrmtoywkz82gic3">Trainees</a>
+              <a href="https://ers.box.com/shared/static/3grhxkhxx7ejoq20g5z2f0fbw27kq10h.pdf">Trainees</a>
             </li>
             <li>
-              <a href="https://ers.box.com/s/2be3jatzztvg3jfea660gmu4v46fv78v">Trainees</a>
+              <a href="https://ers.box.com/shared/static/ckanbmwiikdi44hwvyz69ewiy0cn3ofs.pdf">Trainees</a>
             </li>
-            @if($category->popUpText)
+            @if($item->popUpText)
             <li>
-              <a data-toggle="modal" data-target="#md-popUp" class="cursor_pointer">{{$category->popUpText}}</a>
+              <a data-toggle="modal" data-target="#md-popUp" class="cursor_pointer">{{$item->popUpText}}</a>
             </li>
             @endif
           </ul>
@@ -103,17 +90,17 @@
 @section('modals')
   @include('partials.modal-items', array('items' => $items))
   {{-- FREE PopUp --}}
-  @if($category->popUp)
+  @if($item->popUp)
   <div id="md-popUp" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
-          <h3 class="modal-title">{{$category->popUpText}}</h3>
+          <h3 class="modal-title">{{$item->popUpText}}</h3>
         </div>
         <div class="modal-body">
           <div class="text-left">
-            {!! $category->popUp !!}
+            {!! $item->popUp !!}
           </div>
         </div>
       </div>
