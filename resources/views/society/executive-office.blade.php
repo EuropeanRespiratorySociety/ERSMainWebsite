@@ -855,7 +855,12 @@
             T +41 21 213 01 66<br>
             </p>
         </div>
-
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('elise.heuvelin@ersnet.org', 'Elise Heuvelin') !!}</strong>
+            Clinical Project Manager<br>
+            T +41 21 213 01 81<br>
+            </p>
+        </div>
 
       </div>
     </div>
