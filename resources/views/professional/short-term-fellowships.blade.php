@@ -85,7 +85,7 @@
                   float: left;
                   margin-left: 10px;">
             <li>
-            <a href="https://ers.box.com/shared/static/rth0iddudkixz1q2dcuyh0ldhubc5r4c.pdf">Application Guidelines</a>
+            <a href="https://ers.box.com/shared/static/tcwxn8cna9c14b4rxsfhvftechs4npoo.pdf">Application Guidelines</a>
             </li>
             @if($category->popUpText)
               <li>
