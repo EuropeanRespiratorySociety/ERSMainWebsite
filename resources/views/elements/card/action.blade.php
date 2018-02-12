@@ -14,5 +14,7 @@
             <a href="{{url($item->url)}}"  class="btn btn-register">more</a>
         @elseif($item->slug && $item->contentType != "event_calendar")
             <a href="{{Request::path().'/'.$item->slug}}"  class="btn btn-register">more</a>
+        @elseif($item->slug && $item->type = "Spirometry Programme")
+            <a href="/professional-development/spirometry-training-programme#spirometry-courses"  class="btn btn-register">more</a>
         @endif
 </div>
