@@ -137,10 +137,10 @@
               }
               $(
                   '<div class="col-md-4 isotope">'
-                      +'<div class="card card-event">'
+                      +'<div class="card card-event" style="min-height: 220px;">'
 
                       +image
-                      +'<div class="card-content text-left">'
+                      +'<div class="card-content text-left" style="padding: 20px 20px 0 20px;">'
                           +'<h3 class="title">' + events[i].title + '</h3>'
                           +'<p class="date"><span class="icon s7-map-marker"></span>' + events[i].eventLocation + '</p>'
                           +'<p class="date"><span class="icon s7-date"></span>' + events[i].eventDates + '</p>'
