@@ -8,17 +8,15 @@
     <h3 class="title">
     @if(Request::path() !== '/') 
       @if(strpos($item->registerButton->link, '@'))
-          @if($item->type = "Spirometry Programme")
+          @if($item->registerButton->link && $item->type = "Spirometry Programme")
             <a href="/professional-development/spirometry-training-programme">{{ $item->title }}</a>
           @else
             <a href="{{'mailto:'.$item->registerButton->link}}">{{ $item->title }}</a>
           @endif
-      @elseif($item->registerButton->link && $item->type = "Spirometry Programme")
-         <a href="/professional-development/spirometry-training-programme">{{ $item->title }}</a>
       @elseif($item->registerButton->link 
               && ($item->ersEndorsedEvent
                   || $item->nonErsCalendarItem 
-                  || $item->ersDeadline 
+                  || $item->ersDeadline
                   || $item->category->title == "Events Calendar"
                   || $item->contentType == "event_calendar")
               )
