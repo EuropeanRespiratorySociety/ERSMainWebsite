@@ -43,7 +43,7 @@
       <a name="spirometry-courses"></a>
       <div class="main-content" style="padding-top:0px;">
           <h3 class="text-left" style="font-size:24px;font-family:'Amiri', 'serif';">Upcoming programmes 2018/2019</h3>
-          <div class="row row_event " id="spirometry-programme" style="position: relative; height: 800px;">
+          <div class="row row_event " id="spirometry-programme" style="display: flex; flex-wrap: wrap;">
           </div>
       </div>
 
@@ -137,10 +137,10 @@
               }
               $(
                   '<div class="col-md-4 isotope">'
-                      +'<div class="card card-event" style="min-height: 220px;">'
+                      +'<div class="card card-event" >'
 
                       +image
-                      +'<div class="card-content text-left" style="padding: 20px 20px 0 20px;">'
+                      +'<div class="card-content text-left" style="padding: 20px;">'
                           +'<h3 class="title">' + events[i].title + '</h3>'
                           +'<p class="date"><span class="icon s7-map-marker"></span>' + events[i].eventLocation + '</p>'
                           +'<p class="date"><span class="icon s7-date"></span>' + events[i].eventDates + '</p>'
