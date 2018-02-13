@@ -62,9 +62,9 @@
                     <p class="photo_caption"><strong>Prof. Ernst Eber</strong></p>
                     <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
                       <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                        - Respiratory and Allergic Disease Division</p>
+                        - Division of Paediatric Pulmonology and Allergology</p>
                       <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                        - Paediatric Department</p>
+                        - Department of Paediatrics and Adolescent Medicine</p>
                       <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
                         - Medical University of Graz</p>
                       <p>- Graz, Austria</p>
@@ -79,7 +79,7 @@
                         - Deputy Head of the Division of Respiratory and Critical Care Medicine</p>
                       <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
                         - University Children's Hospital Basel</p>
-                      <p style="margin-bottom:50px;">- Basel, Switzerland</p>
+                      <p style="margin-bottom:70px;">- Basel, Switzerland</p>
                     </div>
                 </div>
                 <div class="col-md-6 xs-mb-15">
