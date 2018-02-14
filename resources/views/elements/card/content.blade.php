@@ -8,7 +8,7 @@
     <h3 class="title">
     @if(Request::path() !== '/') 
       @if(strpos($item->registerButton->link, '@'))
-          @if($item->registerButton->link && $item->type = "Spirometry Programme")
+          @if($item->type == "Spirometry Programme")
             <a href="/professional-development/spirometry-training-programme">{{ $item->title }}</a>
           @else
             <a href="{{'mailto:'.$item->registerButton->link}}">{{ $item->title }}</a>
