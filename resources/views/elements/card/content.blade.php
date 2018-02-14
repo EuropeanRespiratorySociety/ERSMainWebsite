@@ -13,6 +13,8 @@
           @else
             <a href="{{'mailto:'.$item->registerButton->link}}">{{ $item->title }}</a>
           @endif
+      @elseif($item->type == "Spirometry Programme")
+        <a href="/professional-development/spirometry-training-programme">{{ $item->title }}</a>
       @elseif($item->registerButton->link 
               && ($item->ersEndorsedEvent
                   || $item->nonErsCalendarItem 
@@ -33,7 +35,7 @@
             <a href="{{Request::path().'/'.$item->slug}}">{{ $item->title }}</a>
         @endif 
     @endif 
-    @if(!$item->uri && !$item->registerButton->link && $item->contentType == "event_calendar" )
+    @if(!$item->uri && !$item->registerButton->link && $item->contentType == "event_calendar" && $item->type != "Spirometry Programme")
         {{ $item->title }}
     @endif  
     </h3>
