@@ -8,7 +8,7 @@
         class="btn btn-register">{{$item->registerButton->text ? $item->registerButton->text : "register"}}
     </a>
     @endif
-        @if($item->type = "Spirometry Programme")
+        @if($item->type == "Spirometry Programme")
             <a href="/professional-development/spirometry-training-programme"  class="btn btn-register">more</a>
         @elseif($item->uri !="false" && $item->uri && $item->type != "Spirometry Programme")
             <a href="{{url($item->uri)}}"  class="btn btn-register">more</a>
