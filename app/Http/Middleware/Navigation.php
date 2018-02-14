@@ -19,71 +19,119 @@ class Navigation
     {
         \Menu::make('MainNav', function($menu){
 
-            $menu->add('The Society', array('url' => '#community', 'class' => 'horizontal'));
-                $menu->theSociety->add('Who we are', 'the-society/who-we-are' );
-                    $menu->whoWeAre->add('Leadership and committees', 'the-society/who-we-are/leadership');
-                        $menu->leadershipAndCommittees->add('National Delegates', 'the-society/who-we-are/leadership/national-delegates');
-                        $menu->leadershipAndCommittees->add('Science Council', 'the-society/who-we-are/leadership/science-council');
-                        $menu->leadershipAndCommittees->add('Assembly Heads', 'the-society/who-we-are/leadership/assembly-heads');
-                        $menu->leadershipAndCommittees->add('Assembly Secretaries', 'the-society/who-we-are/leadership/assembly-secretaries');
-                        $menu->leadershipAndCommittees->add('Education Council', 'the-society/who-we-are/leadership/education-council');
-                        $menu->leadershipAndCommittees->add('Council', 'the-society/who-we-are/leadership/council');
-                        $menu->leadershipAndCommittees->add('Advocacy Council', 'the-society/who-we-are/leadership/advocacy-council');
-                        $menu->leadershipAndCommittees->add('Early Career Members Committee', 'the-society/who-we-are/leadership/early-career-members-committee');
-                        $menu->leadershipAndCommittees->add('ERS Election', 'the-society/who-we-are/leadership/ers-elections');
-                        $menu->leadershipAndCommittees->add('Open Positions', 'the-society/who-we-are/leadership/open-positions');
-                    $menu->whoWeAre->add('Executive office', 'the-society/who-we-are/executive-office');
-                    $menu->whoWeAre->add('Governance and Transparency', 'the-society/who-we-are/ers-governance-and-transparency');
-                    $menu->whoWeAre->add('Awards', 'the-society/who-we-are/awards' );
+            $menu->add('The Society', array('url' => '#community', 'class' => 'horizontal ga-nav-society'));
+                $menu->theSociety->add('Who we are', 'the-society/who-we-are' )
+                    ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->whoWeAre->add('Leadership and committees', 'the-society/who-we-are/leadership')
+                        ->link->attr(array('class' => 'ga-nav-society'));
+                        $menu->leadershipAndCommittees->add('National Delegates', 'the-society/who-we-are/leadership/national-delegates')
+                        ->link->attr(array('class' => 'ga-nav-society'));
+                        $menu->leadershipAndCommittees->add('Science Council', 'the-society/who-we-are/leadership/science-council')
+                        ->link->attr(array('class' => 'ga-nav-society'));
+                        $menu->leadershipAndCommittees->add('Assembly Heads', 'the-society/who-we-are/leadership/assembly-heads')
+                        ->link->attr(array('class' => 'ga-nav-society'));
+                        $menu->leadershipAndCommittees->add('Assembly Secretaries', 'the-society/who-we-are/leadership/assembly-secretaries')
+                        ->link->attr(array('class' => 'ga-nav-society'));
+                        $menu->leadershipAndCommittees->add('Education Council', 'the-society/who-we-are/leadership/education-council')
+                        ->link->attr(array('class' => 'ga-nav-society'));
+                        $menu->leadershipAndCommittees->add('Council', 'the-society/who-we-are/leadership/council')
+                        ->link->attr(array('class' => 'ga-nav-society'));
+                        $menu->leadershipAndCommittees->add('Advocacy Council', 'the-society/who-we-are/leadership/advocacy-council')
+                        ->link->attr(array('class' => 'ga-nav-society'));
+                        $menu->leadershipAndCommittees->add('Early Career Members Committee', 'the-society/who-we-are/leadership/early-career-members-committee')
+                        ->link->attr(array('class' => 'ga-nav-society'));
+                        $menu->leadershipAndCommittees->add('ERS Election', 'the-society/who-we-are/leadership/ers-elections')
+                        ->link->attr(array('class' => 'ga-nav-society'));
+                        $menu->leadershipAndCommittees->add('Open Positions', 'the-society/who-we-are/leadership/open-positions')
+                        ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->whoWeAre->add('Executive office', 'the-society/who-we-are/executive-office')
+                    ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->whoWeAre->add('Governance and Transparency', 'the-society/who-we-are/ers-governance-and-transparency')
+                    ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->whoWeAre->add('Awards', 'the-society/who-we-are/awards' )
+                    ->link->attr(array('class' => 'ga-nav-society'));
                         $menu->awards->add('Gold Medals', 'the-society/who-we-are/awards/gold-medals')->link->attr(array('style' => 'display:none'));
                         $menu->awards->add('Special Honours', 'the-society/who-we-are/awards/special-honours')->link->attr(array('style' => 'display:none'));
                         $menu->awards->add('Research Excellence', 'the-society/who-we-are/awards/research-excellence')->link->attr(array('style' => 'display:none'));
 
-                    $menu->whoWeAre->add('Fellow of ERS', 'the-society/who-we-are/fellow-of-ers');
+                    $menu->whoWeAre->add('Fellow of ERS', 'the-society/who-we-are/fellow-of-ers')
+                    ->link->attr(array('class' => 'ga-nav-society'));
                     $menu->whoWeAre->add('Contact', 'the-society/who-we-are/contact')
                                             ->prepend('<i class="s7-mail icon"></i><span>')
                                             ->append('</span>')
                                             ->link->attr(array('class' => 'contact'));
-                $menu->theSociety->add('Membership', 'the-society/membership' );
-                    $menu->membership->add('Benefits', 'the-society/membership#benefits' );
-                    $menu->membership->add('Categories', 'the-society/membership#categories' );
-                    $menu->membership->add('FAQs', 'the-society/membership#faqs' );
-                $menu->theSociety->add('Assemblies', 'the-society/assemblies' );
-                    $menu->assemblies->add('1. Clinical', 'the-society/assemblies#clinical' );
-                    $menu->assemblies->add('2. Respiratory Intensive Care', 'the-society/assemblies#respiratory-intensive-care' );
-                    $menu->assemblies->add('3. Basic and translational sciences', 'the-society/assemblies#basic-and-translational-sciences' );
-                    $menu->assemblies->add('4. Clinical physiology and sleep', 'the-society/assemblies#clinical-physiology' );
-                    $menu->assemblies->add('5. Airway Diseases', 'the-society/assemblies#airway-diseases' );
-                    $menu->assemblies->add('6. Epidemiology and Environment', 'the-society/assemblies#epidemiology-and-environment' );
-                    $menu->assemblies->add('7. Paediatrics', 'the-society/assemblies#paediatrics' );
-                    $menu->assemblies->add('8. Thoracic Surgery and Transplantation', 'the-society/assemblies#thoracic-surgery' );
-                    $menu->assemblies->add('9. Allied Respiratory Professionals', 'the-society/assemblies#allied-respiratory' );
-                    $menu->assemblies->add('10. Respiratory Infections', 'the-society/assemblies#respiratory-infections' );
-                    $menu->assemblies->add('11. Thoracic Oncology', 'the-society/assemblies#thoracic-oncology' );
-                    $menu->assemblies->add('12. Interstitial Lung Diseases', 'the-society/assemblies#interstitial-lung-diseases' );
-                    $menu->assemblies->add('13. Pulmonary Vascular Diseases', 'the-society/assemblies#pulmonary-vascular-diseases' );
-                $menu->theSociety->add('News And Features', 'the-society/news' );
+                $menu->theSociety->add('Membership', 'the-society/membership' )
+                ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->membership->add('Benefits', 'the-society/membership#benefits' )
+                    ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->membership->add('Categories', 'the-society/membership#categories' )
+                    ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->membership->add('FAQs', 'the-society/membership#faqs' )
+                    ->link->attr(array('class' => 'ga-nav-society'));
+                $menu->theSociety->add('Assemblies', 'the-society/assemblies' )
+                ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->assemblies->add('1. Clinical', 'the-society/assemblies#clinical' )
+                    ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->assemblies->add('2. Respiratory Intensive Care', 'the-society/assemblies#respiratory-intensive-care' )
+                    ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->assemblies->add('3. Basic and translational sciences', 'the-society/assemblies#basic-and-translational-sciences' )
+                    ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->assemblies->add('4. Clinical physiology and sleep', 'the-society/assemblies#clinical-physiology' )
+                    ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->assemblies->add('5. Airway Diseases', 'the-society/assemblies#airway-diseases' )
+                    ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->assemblies->add('6. Epidemiology and Environment', 'the-society/assemblies#epidemiology-and-environment' )
+                    ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->assemblies->add('7. Paediatrics', 'the-society/assemblies#paediatrics' )
+                    ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->assemblies->add('8. Thoracic Surgery and Transplantation', 'the-society/assemblies#thoracic-surgery' )
+                    ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->assemblies->add('9. Allied Respiratory Professionals', 'the-society/assemblies#allied-respiratory' )
+                    ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->assemblies->add('10. Respiratory Infections', 'the-society/assemblies#respiratory-infections' )
+                    ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->assemblies->add('11. Thoracic Oncology', 'the-society/assemblies#thoracic-oncology' )
+                    ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->assemblies->add('12. Interstitial Lung Diseases', 'the-society/assemblies#interstitial-lung-diseases' )
+                    ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->assemblies->add('13. Pulmonary Vascular Diseases', 'the-society/assemblies#pulmonary-vascular-diseases' )
+                    ->link->attr(array('class' => 'ga-nav-society'));
+                $menu->theSociety->add('News And Features', 'the-society/news' )
+                ->link->attr(array('class' => 'ga-nav-society'));
                     //$menu->newsAndFeatures->add('Respiratory Worldwide', 'the-society/news/respiratory-worldwide' );
-                    $menu->newsAndFeatures->add('Respiratory Matters', 'the-society/news/respiratory-matters' );
-                    $menu->newsAndFeatures->add('ERS Vision', 'http://www.ersvision.org/')->link->attr(array('target' => '_blank'));
-                    $menu->newsAndFeatures->add('Press Office', 'the-society/news/press-office');
+                    $menu->newsAndFeatures->add('Respiratory Matters', 'the-society/news/respiratory-matters' )
+                    ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->newsAndFeatures->add('ERS Vision', 'https://www.ersvision.org/')
+                    ->link->attr(array('target' => '_blank', 'class' => 'ga-nav-society'));
+                    $menu->newsAndFeatures->add('Press Office', 'the-society/news/press-office')
+                    ->link->attr(array('class' => 'ga-nav-society'));
 
-            $menu->add('Congress and events','#scientific-and-educational-events');
-                $menu->congressAndEvents->add('Events calendar','congress-and-events/events-calendar');
+            $menu->add('Congress and events','#scientific-and-educational-events')
+            ->link->attr(array('class' => 'ga-nav-congress-and-events'));
+                $menu->congressAndEvents->add('Events calendar','congress-and-events/events-calendar')
+                ->link->attr(array('class' => 'ga-nav-congress-and-events'));
                // $menu->congressAndEvents->add('ERS International Congress','https://erscongress.org')->link->attr(array('target' => '_blank'));
-                $menu->congressAndEvents->add('ERS International Congress','congress-and-events/ers-international-congress');
-                $menu->congressAndEvents->add('ERS Respiratory Updates','congress-and-events/ers-respiratory-updates');
-                $menu->congressAndEvents->add('ERS Satellites','congress-and-events/ers-satellite');
+                $menu->congressAndEvents->add('ERS International Congress','congress-and-events/ers-international-congress')
+                ->link->attr(array('class' => 'ga-nav-congress-and-events'));
+                $menu->congressAndEvents->add('ERS Respiratory Updates','congress-and-events/ers-respiratory-updates')
+                ->link->attr(array('class' => 'ga-nav-congress-and-events'));
+                $menu->congressAndEvents->add('ERS Satellites','congress-and-events/ers-satellite')
+                ->link->attr(array('class' => 'ga-nav-congress-and-events'));
                 //$menu->congressAndEvents->add('Paris 2018','congress-and-events/ers-2018');
-                $menu->congressAndEvents->add('The Lung Science Conference','congress-and-events/cell-matrix-interactions-in-lung-disease-and-regeneration');
+                $menu->congressAndEvents->add('The Lung Science Conference','congress-and-events/cell-matrix-interactions-in-lung-disease-and-regeneration')
+                ->link->attr(array('class' => 'ga-nav-congress-and-events'));
                     $menu->theLungScienceConference->add('Estoril, your host city','congress-and-events/the-lung-science-conference/estoril-your-host-city')->link->attr(array('style' => 'display:none'));
                     $menu->theLungScienceConference->add('Previous Conferences','http://old.ersnet.org/previous-conferences.html')
                                             ->link->attr(array('target' => '_blank','style' => 'display:none'));
-                $menu->congressAndEvents->add('Sleep and Breathing Conference','https://sleepandbreathing.org');
-                $menu->congressAndEvents->add('ERS Presidential Summits','congress-and-events/ers-presidential-summits');
-                $menu->congressAndEvents->add('ERS Research Seminars','congress-and-events/ers-research-seminars');
+                $menu->congressAndEvents->add('Sleep and Breathing Conference','https://sleepandbreathing.org')
+                ->link->attr(array('class' => 'ga-nav-congress-and-events'));
+                $menu->congressAndEvents->add('ERS Presidential Summits','congress-and-events/ers-presidential-summits')
+                ->link->attr(array('class' => 'ga-nav-congress-and-events'));
+                $menu->congressAndEvents->add('ERS Research Seminars','congress-and-events/ers-research-seminars')
+                ->link->attr(array('class' => 'ga-nav-congress-and-events'));
                 // $menu->congressAndEvents->add('Past International Congresses','congress-and-events/past-international-congresses');
-                $menu->congressAndEvents->add('Event endorsement','congress-and-events/external-events-endorsement');
+                $menu->congressAndEvents->add('Event endorsement','congress-and-events/external-events-endorsement')
+                ->link->attr(array('class' => 'ga-nav-congress-and-events'));
             $menu->add('Publications','#publications')
                                             ->link->attr(array(
                                                 'class' => "ga-navigation"));
@@ -205,26 +253,37 @@ class Navigation
                   ->link->attr(array('target' => '_blank'));  
 
 
-            $menu->add('Research','#research');
-                $menu->research->add('Task Forces', 'research/task-forces');
-                $menu->research->add('Published Guidelines', 'research/published-guidelines');
-                $menu->research->add('Clinical Research Collaborations', 'research/clinical-research-collaborations');
-                $menu->research->add('Research Seminars', 'research/research-seminars');
-                $menu->research->add('Research Agency', 'research/research-agency');
+            $menu->add('Research','#research')
+            ->link->attr(array('class' => 'ga-nav-research'));
+                $menu->research->add('Task Forces', 'research/task-forces')
+                ->link->attr(array('class' => 'ga-nav-research'));
+                $menu->research->add('Published Guidelines', 'research/published-guidelines')
+                ->link->attr(array('class' => 'ga-nav-research'));
+                $menu->research->add('Clinical Research Collaborations', 'research/clinical-research-collaborations')
+                ->link->attr(array('class' => 'ga-nav-research'));
+                $menu->research->add('Research Seminars', 'research/research-seminars')
+                ->link->attr(array('class' => 'ga-nav-research'));
+                $menu->research->add('Research Agency', 'research/research-agency')
+                ->link->attr(array('class' => 'ga-nav-research'));
 
-            $menu->add('Advocacy and patient resources','#advocacy');
-                $menu->advocacyAndPatientResources->add('EU-Affairs','advocacy/eu-affairs');
-                $menu->advocacyAndPatientResources->add('EU-Projects','advocacy/eu-projects');
-                $menu->advocacyAndPatientResources->add('Policy Areas','advocacy/policy-areas');
+            $menu->add('Advocacy and patient resources','#advocacy')
+            ->link->attr(array('class' => 'ga-nav-advocacy'));
+                $menu->advocacyAndPatientResources->add('EU-Affairs','advocacy/eu-affairs')
+                ->link->attr(array('class' => 'ga-nav-advocacy'));
+                $menu->advocacyAndPatientResources->add('EU-Projects','advocacy/eu-projects')
+                ->link->attr(array('class' => 'ga-nav-advocacy'));
+                $menu->advocacyAndPatientResources->add('Policy Areas','advocacy/policy-areas')
+                ->link->attr(array('class' => 'ga-nav-advocacy'));
                     $menu->policyAreas->add('The ERS Tobacco Control Committee','advocacy/policy-areas/the-ers-tobacco-control-committee')->link->attr(array('style' => 'display:none'));;
                     $menu->policyAreas->add('Environment and Health Committee','advocacy/policy-areas/environment-and-health-committee')->link->attr(array('style' => 'display:none'));
-                $menu->advocacyAndPatientResources->add('Alliances','advocacy/alliances');
+                $menu->advocacyAndPatientResources->add('Alliances','advocacy/alliances')
+                ->link->attr(array('class' => 'ga-nav-advocacy'));
                 $menu->advocacyAndPatientResources->add('PATIENT RESOURCES','http://www.europeanlung.org/en/lung-disease-and-information/factsheets')
-                                            ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array('target' => '_blank', 'class' => 'ga-nav-advocacy'));
                 $menu->advocacyAndPatientResources->add('Healthy Lungs for Life','http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/')
-                                            ->link->attr(array('target' => '_blank')); 
+                                            ->link->attr(array('target' => '_blank', 'class' => 'ga-nav-advocacy')); 
                 $menu->advocacyAndPatientResources->add('European Lung Foundation','http://www.europeanlung.org/en/')
-                                            ->link->attr(array('target' => '_blank'));
+                                            ->link->attr(array('target' => '_blank', 'class' => 'ga-nav-advocacy'));
 
             if(App::environment() != 'local'){
                  foreach ($menu->items as $item) {
