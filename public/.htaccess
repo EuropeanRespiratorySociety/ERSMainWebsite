@@ -252,6 +252,8 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
     RewriteCond %{HTTPS} off
     RewriteCond %{HTTP_HOST} !^old.ersnet.org$
     RewriteCond %{HTTP_HOST} !^staging.ersnet.org$
+    RewriteCond %{HTTP_HOST} !^k4.ersnet.org$
+    RewriteCond %{HTTP_HOST} !^abstract.ersnet.org$
     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
     
     # wrong domain to use www.
