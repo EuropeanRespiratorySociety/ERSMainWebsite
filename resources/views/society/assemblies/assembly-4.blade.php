@@ -4,7 +4,7 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/people/leadership/Andrea_Aliverti.jpg" class="img-circle">
+                  <img src="../images/people/leadership/Andrea-Aliverti.png" class="img-circle">
                   <p class="photo_caption">Head: Andrea Aliverti</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">

@@ -10,7 +10,7 @@
                 </div>
 
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/people/leadership/Bogdan_Dragos_Grigoriu.jpg" class="img-circle">
+                  <img src="../images/people/leadership/Bogdan-Grigoriu.png" class="img-circle">
                   <p class="photo_caption">Secretary: Bogdan Dragos Grigoriu</p>
                  
                 </div>

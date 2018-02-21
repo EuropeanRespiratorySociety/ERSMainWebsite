@@ -35,13 +35,13 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Andrea_Aliverti.jpg" class="img-circle">
+		            <img src="../images/people/leadership/Andrea-Aliverti.png" class="img-circle">
 		            <p class="photo_caption"><strong>Andrea Aliverti</strong>
 		            Clinical physiology, sleep and pulmonary circulation<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Antonio_Spanevello.jpg" class="img-circle">
+		            <img src="../images/people/leadership/Antonio-Spanevello.png" class="img-circle">
 		            <p class="photo_caption"><strong>Antonio Spanevello</strong>
 		            Airway Diseases<br>
 		            </p>
@@ -53,7 +53,7 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Jonathan_Grigg-2017.png" class="img-circle">
+		            <img src="../images/people/leadership/Jonathan-Grigg.png" class="img-circle">
 		            <p class="photo_caption"><strong>Jonathan Grigg</strong>
 		            Paediatrics <br>
 		            </p>
@@ -89,7 +89,7 @@
 					</p>
                 </div>
 				<div class="col-md-4 xs-mb-15">
-					<img src="../images/120x120.jpg" class="img-circle">
+					<img src="../images/people/leadership/Marion-Delcroix.png" class="img-circle">
 					<p class="photo_caption"><strong>Marion Delcroix</strong> 
 					Pulmonary Vascular Diseases<br>
 					</p>

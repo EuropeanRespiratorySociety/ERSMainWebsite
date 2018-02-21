@@ -45,7 +45,7 @@
 		            Guidelines director<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/Nicolas-Roche.png" class="img-circle">
+					<img src="images/people/leadership/Nicolas-Roche-2.png" class="img-circle">
 		            <p class="photo_caption"><strong>Nicolas Roche</strong>
 		            Guidelines director-elect<br>
 		        </div>		        

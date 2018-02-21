@@ -4,7 +4,7 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/people/leadership/Antonio_Spanevello.jpg" class="img-circle">
+                  <img src="../images/people/leadership/Antonio-Spanevello.png" class="img-circle">
                   <p class="photo_caption">Head: Antonio Spanevello</p>
                  
                 </div>
