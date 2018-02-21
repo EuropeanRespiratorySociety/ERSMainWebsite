@@ -31,7 +31,7 @@
 		            Clinical physiology, sleep and pulmonary circulation <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="../images/people/leadership/Omar-Usmani.png" class="img-circle">
+		            <img src="../images/people/leadership/Omar-Usmani-2.png" class="img-circle">
 		            <p class="photo_caption"><strong>Omar Usmani</strong>
 		            Airway Diseases <br>
 		        </div>
