@@ -219,6 +219,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /case-demo http://www.ersnet.org/learning_resources_player/cases/AJ10.htm
         Redirect 301 /certificates http://datacheck.ersnet.org/~ersnet/mycme_vie12/
         Redirect 301 /communication https://ers.basecamphq.com/
+        Redirect 301 /congress-and-events/ers-international-congress https://erscongress.org/
         Redirect 301 /congress-and-events/milan-2017 http://erscongress.org
         # E
         Redirect 301 /elearning http://www.ers-education.org/pages/default.aspx
@@ -227,7 +228,6 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /ersdocs http://ersdocs.ersnet.org/ersdocs
         Redirect 301 /erspublicationsapp http://tinyurl.com/ERSpublicationsapp
         Redirect 301 /ersliveplus http://live.erscongress.org
-        Redirect 301 /congress-and-events/ers-international-congress https://erscongress.org/
         # F
         Redirect 301 /fellowship-methodology https://www.ersnet.org/professional-development/fellowships/fellowships-on-guideline-methodology
         # H
