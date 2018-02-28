@@ -110,9 +110,9 @@ class Navigation
             ->link->attr(array('class' => 'ga-nav-congress-and-events'));
                 $menu->congressAndEvents->add('Events calendar','congress-and-events/events-calendar')
                 ->link->attr(array('class' => 'ga-nav-congress-and-events'));
-               // $menu->congressAndEvents->add('ERS International Congress','https://erscongress.org')->link->attr(array('target' => '_blank'));
-                $menu->congressAndEvents->add('ERS International Congress','congress-and-events/ers-international-congress')
-                ->link->attr(array('class' => 'ga-nav-congress-and-events'));
+                $menu->congressAndEvents->add('ERS International Congress','https://erscongress.org')->link->attr(array('target' => '_blank'));
+               //  $menu->congressAndEvents->add('ERS International Congress','congress-and-events/ers-international-congress')
+               // ->link->attr(array('class' => 'ga-nav-congress-and-events'));
                 $menu->congressAndEvents->add('ERS Respiratory Updates','congress-and-events/ers-respiratory-updates')
                 ->link->attr(array('class' => 'ga-nav-congress-and-events'));
                 $menu->congressAndEvents->add('ERS Satellites','congress-and-events/ers-satellite')
