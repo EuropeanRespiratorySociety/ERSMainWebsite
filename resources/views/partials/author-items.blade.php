@@ -21,8 +21,12 @@
             </div>
             <div class="card-content">
                 <h3 class="title">
+                  @if($item->slug)
+                    <a href="the-society/news/respiratory-matters/{{$item->slug}}">{{ $item->title }}</a>
+                  @else
                     <a href="{{Request::path().'/'.$item->slug}}">{{ $item->title }}</a>
-                </h3>
+                  @endif
+                  </h3>
                 @if($item->eventDates)
                     <p class="date">{{ $item->eventDates }}</p>
                 @endif
