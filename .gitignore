@@ -14,11 +14,13 @@
 /resources/views/template.blade.php
 /node_modules
 /config/httpcache.php
+/public/images/footer/
 /public/images/stories
 /public/images/doi
 /public/sponsorship
 /public/documents
 /public/pdf
+public/test.php
 Homestead.yaml
 Homestead.json
 composer-setup.php
