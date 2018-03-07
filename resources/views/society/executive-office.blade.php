@@ -792,7 +792,7 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('Rachel.White@ersj.org.uk', 'Rachel White') !!}</strong>
+          <p class="photo_caption"><strong>{!! Html::mailto('rachel.gozzard@ersj.org.uk', 'Rachel Gozzard') !!}</strong>
             Technical Editor<br>
             T +44 114 267 2870<br>
             </p>
