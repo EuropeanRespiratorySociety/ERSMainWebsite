@@ -107,7 +107,7 @@
                           float: left;
                           margin-left: 10px;">
                     <li>
-                    <a href="https://ers.box.com/shared/static/6o4rkpa86n63rv0aavp7hfiuol2bjr39.pdf">Application Guidelines</a>
+                    <a href="https://ers.box.com/shared/static/9pyrc941p92a1i2ltmggyykrrk1n8ju5.pdf">Application Guidelines</a>
                     </li>
                     <li>
                     <a href="https://ers.box.com/shared/static/h4johsv2crcz1xnghmi1hwzs786i8ith.pdf">Frequently Asked Questions (FAQs)</a>
