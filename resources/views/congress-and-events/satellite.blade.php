@@ -79,7 +79,10 @@
           <p class="text-danger">This programme has been created by the European Respiratory Society and there has been no external influence on the content or choice of speakers.</p>
         </div>
       </div>
-      <h2 class="article-title">{{$item->title}}</h2>
+      <div>
+        
+        <h2 class="article-title"><i class="icon-ers icon" style="font-size:42px; color:#d0043c; position:relative; top:6px; right:12px;"></i>{{$item->title}}</h2>
+      </div>
       @if($item->organisers)
       <h5><b>Organisers :</b> {{$item->organisers}}</h5>
       @endif
