@@ -50,7 +50,7 @@
 			<div class="col-md-3">
 				<h2>Curriculum Development</h2>
 				<ul>
-					<li><a target="_blank" href="http://hermes.ersnet.org">Established curriculam</a></li>
+					<li><a target="_blank" href="{{url('professional-development/ers-curriculum-design-a-summary-of-projects')}}">Established curriculum</a></li>
 					<li><!--<a target="_blank" href="">Curricula</a>--></li>
 				</ul>
 			</div>

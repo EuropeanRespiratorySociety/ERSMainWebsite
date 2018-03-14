@@ -249,8 +249,11 @@ class Navigation
                 $menu->professionalDevelopment->add('Training Programmes','professional-development/ers-certified-training-programmes')
                   ->link->attr(array(
                   'class' => "ga-prof-dev"));
-                $menu->professionalDevelopment->add('HERMES projects','http://hermes.ersnet.org/projects.html')
-                  ->link->attr(array('target' => '_blank'));  
+                $menu->professionalDevelopment->add('CURRICULUM DESIGN PROJECTS','professional-development/ers-curriculum-design-a-summary-of-projects')
+                ->link->attr(array(
+                  'class' => "ga-prof-dev")); 
+                //$menu->professionalDevelopment->add('HERMES projects','http://hermes.ersnet.org/projects.html')
+                  //->link->attr(array('target' => '_blank'));  
 
 
             $menu->add('Research','#research')
