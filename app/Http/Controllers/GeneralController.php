@@ -13,6 +13,8 @@ class GeneralController extends Controller
 
     protected $euProjects = "o:b1b2cbebec4c8076ecb8";
     protected $euAffairs = "o:ce780883918ebe8c7031";
+    protected $curriculmDesign = "o:b9ac32d7faeff62b1bd4";
+
 
     public function __construct() {
         $this->CC = new CC();
@@ -77,6 +79,32 @@ class GeneralController extends Controller
         $params['items'] = $items;
         return view('professional.grants-and-sponsorships')->with($params);
     }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function curriculmDesign()
+    { 
+      $results = $this->CC->getItem('ers-curriculum-design-a-summary-of-projects');
+      $item = $this->CC->parseItems($results['rows']);
+      $params['item'] =  (object) $item[0]; 
+
+      if(!$item[0]->url || !$item[0]->uri){
+          $this->CC->setCanonical($item[0]->_qname);
+      }
+
+      if($item[0]->hasRelatedArticles > 0){
+          $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
+          $relatedItems = $this->CC->parseItems($related['rows']);
+          $params['relatedItems'] =  (object) $relatedItems;
+      }
+
+        return view('professional.curriculm-design-projects')->with($params);
+    }
+
+
 
     /**
      * Display a listing of the resource.

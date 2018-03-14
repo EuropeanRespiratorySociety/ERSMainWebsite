@@ -144,6 +144,7 @@ Route::group(['prefix' => 'professional-development'], function () {
         });
         Route::get('/{slug}', 'HermesController@show');
     });
+    Route::get('ers-curriculum-design-a-summary-of-projects', 'GeneralController@curriculmDesign');
     
     Route::get('examination-committee', 'GeneralController@ExamCommittee');
     Route::get('grants-and-sponsorships', 'GeneralController@grantsAndSponsorships');
