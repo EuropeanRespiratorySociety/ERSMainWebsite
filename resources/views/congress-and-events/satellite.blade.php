@@ -27,13 +27,13 @@
             @include('partials.related-items', array('relatedItems' => $relatedItems)) 
         @endif
     
-
+    <h4 class="hidden-xs hidden-sm" style="margin: 500px 0 0 25px;text-align:left;">With the financial support of:</h4>
     @foreach ($item->sponsors as $sponsor)
-    <div class="course-sponsor text-left">
+    <div class="hidden-xs hidden-sm course-sponsor text-left" style="background:transparent;padding: 0 10px 0 26px;">
         @if($sponsor->text)
         <div class="course-sponsor-wrapper">
             @if($sponsor->image)
-            <div class="course-sponsor-image col-md-12 col-xs-12 center-block">
+            <div class="course-sponsor-image col-md-12 col-xs-12 center-block" style="background:#fff;">
                 <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: center center; background-size: contain;"></p>
             </div> 
             @endif
@@ -67,19 +67,16 @@
 
       <div class="row">
         <div class="col-md-6 text-left event-items-category">
-          <p><em>@if($item->type){{$item->type}}@endif</em></p>
-          {{-- View <a href="/professional-development/courses">all ERS courses</a> --}}
+          <p><em>ERS Satellites</em></p>
+           View <a href="/congress-and-events/events-calendar">all events</a>
         </div>
         <div class="col-md-6 text-right">
-          @if($item->programme)  
-            <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary text-left">
+          
+            <a href="https://ers.box.com/shared/static/u9m4tlsio4mqzzurx0gi5lalj4cfse5b.pdf" target="_blank" type="button" class="btn btn-light-primary text-left">
               <span class="icon s7-map" style="font-size: 24px;"></span>
                {{$item->programmeButtonText ? $item->programmeButtonText : 'Programme' }}
             </a>
-          @endif
-          @if($item->programmeNotice)
-          <p class="text-danger">{{$item->programmeNotice}}</p>
-          @endif
+          <p class="text-danger">This programme has been created by the European Respiratory Society and there has been no external influence on the content or choice of speakers.</p>
         </div>
       </div>
       <h2 class="article-title">{{$item->title}}</h2>
@@ -118,6 +115,7 @@
           <div class="row">
             <div class=" col-md-12 col-xs-6">
               <div style="padding-left: 10px; max-width: 230px;">
+                  <h4>With the endorsement of:</h4>
                   <div>
                     <img src="../images/events/DGP-01.png" class="img-responsive" style="padding-top: 20px;"/>
                   </div>
@@ -161,6 +159,26 @@
               </div>
             </div>
           </div>
+          <hr class="visible-xs visible-sm">
+          <h4 class="visible-xs visible-sm" style="margin: 50px 0 0 25px;text-align:left;">With the financial support of:</h4>
+          @foreach ($item->sponsors as $sponsor)
+          <div class="visible-xs visible-sm course-sponsor text-left" style="background:transparent;padding: 0 10px 0 10px;">
+              @if($sponsor->text)
+              <div class="course-sponsor-wrapper">
+                  @if($sponsor->image)
+                  <div class="course-sponsor-image col-md-12 col-xs-12 center-block" style="background:#fff;">
+                      <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: center center; background-size: contain;"></p>
+                  </div> 
+                  @endif
+                  {{--@if($sponsor->text)
+                  <div class="course-sponsor-right  col-md-5 col-xs-5 pull-right">
+                      <h4 class="text-left">{{$sponsor->text}}</h4>
+                  </div>
+                  @endif  --}}
+              </div>
+              @endif
+          </div>
+          @endforeach
           <div class="nano-pane" style="display: block;"><div class="nano-slider" style="height: 50px; transform: translate(0px, 0px);"></div></div></div>        {{--
           <div id="venue" class="tab-pane active cont">
 
@@ -275,7 +293,7 @@
               <a data-toggle="modal" data-target="#md-register" class="btn btn-primary tab-register-bt">Register</a>
             @endif
             @if($item->fullyBooked)
-              <p>Please contact {!! Html::mailto('educaion@ersnet.org', 'education@ersnet.org') !!} to be added to the waiting list.</p>
+              <p>Please contact {!! Html::mailto('education@ersnet.org', 'education@ersnet.org') !!} to be added to the waiting list.</p>
               <a href="javascript:void(0)" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
             @endif
             </div>
