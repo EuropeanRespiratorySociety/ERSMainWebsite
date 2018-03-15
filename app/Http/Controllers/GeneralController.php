@@ -97,9 +97,12 @@ class GeneralController extends Controller
 
       if($item[0]->hasRelatedArticles > 0){
           $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
-          $relatedItems = $this->CC->parseItems($related['rows']);
           $params['relatedItems'] =  (object) $relatedItems;
       }
+
+      $results = $this->CC->getAssociation($item[0]->_qname);
+        $items = $this->CC->parseItems($results['rows']);
+        $params['items'] =  $items;
 
         return view('professional.curriculm-design-projects')->with($params);
     }
