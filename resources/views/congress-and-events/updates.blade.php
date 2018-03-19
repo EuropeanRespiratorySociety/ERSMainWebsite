@@ -118,7 +118,7 @@
           <div id="venue" class="tab-pane active cont">
 
         <div class="list-group text-left">
-            <a href="javascript:void(0)" class="list-group-item clearfix cursor_default">
+            {{--  <a href="javascript:void(0)" class="list-group-item clearfix cursor_default">
                 <span class="icon s7-alarm" style="display: block;
                                                     font-size: 30px;
                                                     float: left;
@@ -131,7 +131,7 @@
                 EARLYBIRD DEADLINE : <br>
                 <span>18 October, 2017</span>
                 </p>
-            </a>
+            </a>  --}}
             @if($item->ebusVenues[0])
             <span href="javascript:void(0)" class="list-group-item clearfix cursor_default">
                 <span class="icon icon-hotel" style="display: block;
@@ -154,7 +154,7 @@
             @endif
         </div>
 
-            <div class="ers-scroller nano scrollable" style="height:450px;">
+            {{--  <div class="ers-scroller nano scrollable" style="height:450px;">
                 <div class="nano-content">   
                 @if($item->practicalInfo)  
                   <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary text-left">
@@ -208,7 +208,7 @@
 
 
               </div>
-            </div>
+            </div>  --}}
             
             <div class="event-items-right-bt">
             @if($item->extendedDeadline)
