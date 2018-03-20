@@ -52,24 +52,15 @@
         @endif
       </div>
 
-      @foreach ($item->sponsors as $sponsor)
+      @if ($item->sponsors[0]->text || $item->sponsors[0]->image)
       <div class="course-sponsor text-left">
-        @if($sponsor->text)
           <div class="course-sponsor-wrapper">
-            @if($sponsor->image)
-              <div class="course-sponsor-image col-md-4 col-xs-4 pull-left">
-                <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: right center; background-size: contain;"></p>
-             </div> 
-            @endif
-            @if($sponsor->text)
-              <div class="course-sponsor-right  col-md-8 col-xs-8 pull-right">
-                <h4 class="text-left">{{$sponsor->text}}</h4>
+              <div class="col-md-12 col-xs-12" style="position: relative; top: 30%;">
+                <h4 class="text-center" style="font-size: 20px;"><a data-toggle="modal" data-target="#sponsors-info" type="button" class="cursor_pointer">Event sponsors</a></h4>
               </div>
-            @endif
           </div>
-        @endif
       </div>
-    @endforeach
+     @endif
     </div>
 
     <div class="col-md-6 lighter-grey-bg ers-course-info">
@@ -236,7 +227,6 @@
               <a href="javascript:void(0)" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
             @endif
             </div>
-
           </div>
 
           @if($item->bursaryApplication->text
@@ -276,7 +266,8 @@
   @include('elements.modal.venues', array('item' => $item)) 
   @include('elements.modal.cancellation', array('item' => $item)) 
   @include('elements.modal.travel-info', array('item' => $item))  
-  @include('elements.modal.technical-info', array('item' => $item))  
+  @include('elements.modal.technical-info', array('item' => $item))
+  @include('elements.modal.sponsors', array('item' => $item))   
 @stop()
 {{--END Modal contents div--}} 
 
