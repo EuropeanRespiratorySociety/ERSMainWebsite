@@ -30,6 +30,11 @@
         <div class="col-md-8 event-items-fs-title">
 
           <div class="page-head"><h2 class="article-title">{{$item->title}}</h2></div>
+          @if($item->lead)
+          <div class="article text-left">          
+                    {!! $item->lead !!}
+         </div>
+          @endif 
 
           @if($item->body)
           <div class="article text-left">          
