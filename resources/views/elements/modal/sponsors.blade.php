@@ -9,8 +9,13 @@
       <div class="modal-header">
         <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
       </div>
-      <div class="modal-body ">
-        @foreach ($item->sponsors as $sponsor)
+      <div class="modal-body">
+        @if($item->category->title == "ERS Courses")
+          <h3 style="padding: 0 40px;">
+              The following companies are giving sponsorship to support this event:
+          </h3>
+        @endif
+          @foreach ($item->sponsors as $sponsor)
         {{--  start row  --}}
           <div class="row">
           <div class="col-md-offset-1 col-md-10">
