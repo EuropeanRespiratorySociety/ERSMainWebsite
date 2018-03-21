@@ -243,15 +243,15 @@ class Navigation
                                             //->link->attr(array('target' => '_blank')); 
                 $menu->professionalDevelopment->add('Respipedia','http://respipedia.ers-education.org/home.aspx')
                                             ->link->attr(array('target' => '_blank', 'class' => "ga-prof-dev"));               
-                $menu->professionalDevelopment->add('Accreditation','professional-development/accreditation')
-                  ->link->attr(array(
-                  'class' => "ga-prof-dev"));
                 $menu->professionalDevelopment->add('Training Programmes','professional-development/ers-certified-training-programmes')
                   ->link->attr(array(
                   'class' => "ga-prof-dev"));
-                $menu->professionalDevelopment->add('CURRICULUM DESIGN PROJECTS','professional-development/ers-curriculum-design-a-summary-of-projects')
+                $menu->professionalDevelopment->add('CURRICULUM','professional-development/ers-curriculum-design-a-summary-of-projects')
                 ->link->attr(array(
-                  'class' => "ga-prof-dev")); 
+                  'class' => "ga-prof-dev"));
+                $menu->professionalDevelopment->add('Accreditation','professional-development/accreditation')
+                ->link->attr(array(
+                'class' => "ga-prof-dev"));
                 //$menu->professionalDevelopment->add('HERMES projects','http://hermes.ersnet.org/projects.html')
                   //->link->attr(array('target' => '_blank'));  
 
