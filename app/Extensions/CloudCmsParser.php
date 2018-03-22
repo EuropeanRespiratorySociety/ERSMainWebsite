@@ -106,7 +106,7 @@ class CloudCmsParser
                     //Specific fields
                     if($item->sponsors){
                         foreach($item->sponsors as $sponsor){
-                            if($sponsor->image){
+                            if(isset($sponsor->image) && $sponsor->image){
                                 $img = CC::nodes()->getImage($sponsor->image->qname);
                                 $sponsor->image = $img->imageUrl."?name=image500&size=500";  
                             } else { 
