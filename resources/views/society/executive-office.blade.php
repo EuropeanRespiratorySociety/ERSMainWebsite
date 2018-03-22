@@ -891,7 +891,7 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('hanna.michalek@ersnet.org', 'Hanna Michalek') !!}</strong>
+          <p class="photo_caption"><strong>{!! Html::mailto('hanna.gaisne@ersnet.org', 'Hanna GAISNE') !!}</strong>
             Scientific Activities Assistant<br>
             T +41 21 213 01 76<br>
             </p>
