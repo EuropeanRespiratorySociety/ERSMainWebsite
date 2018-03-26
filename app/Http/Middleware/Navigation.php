@@ -118,7 +118,7 @@ class Navigation
                 $menu->congressAndEvents->add('ERS Satellites','congress-and-events/ers-satellite')
                 ->link->attr(array('class' => 'ga-nav-congress-and-events'));
                 //$menu->congressAndEvents->add('Paris 2018','congress-and-events/ers-2018');
-                $menu->congressAndEvents->add('The Lung Science Conference','congress-and-events/cell-matrix-interactions-in-lung-disease-and-regeneration')
+                $menu->congressAndEvents->add('The Lung Science Conference','congress-and-events/mechanisms-of-acute-exacerbation-of-respiratory-disease')
                 ->link->attr(array('class' => 'ga-nav-congress-and-events'));
                     $menu->theLungScienceConference->add('Estoril, your host city','congress-and-events/the-lung-science-conference/estoril-your-host-city')->link->attr(array('style' => 'display:none'));
                     $menu->theLungScienceConference->add('Previous Conferences','http://old.ersnet.org/previous-conferences.html')

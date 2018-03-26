@@ -22,14 +22,12 @@ class LscController extends Controller
      */
     public function index()
     {
-        $results = $this->CC->getItem('cell-matrix-interactions-in-lung-disease-and-regeneration');
+        $results = $this->CC->getItem('mechanisms-of-acute-exacerbation-of-respiratory-disease');
         $item = $this->CC->parseItems($results['rows']);
-        $params['item'] = $item[0]; 
-
+        $params['item'] =  (object) $item[0]; 
         if(!$item[0]->url || !$item[0]->uri){
             $this->CC->setCanonical($item[0]->_qname);
         }
-
         if($item[0]->hasRelatedArticles > 0){
             $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
             $relatedItems = $this->CC->parseItems($related['rows']);

@@ -185,7 +185,11 @@
             <p><a data-toggle="modal" data-target="#md-travel_info" type="button" class="cursor_pointer">Travel Info</a></p>
             @endif
             @if($item->registerButton->link && !$item->fullyBooked)
+              @if($item->slug == "fellowships-on-guideline-methodology")
+              <p>For more information, contact {!! Html::mailto('guidelines_statements@ersnet.org', 'guidelines_statements@ersnet.org') !!}</p>
+              @else
               <p>For more information, contact {!! Html::mailto('fellowships@ersnet.org', 'fellowships@ersnet.org') !!}</p>
+              @endif
               {{--<p>Registering for someone else ? Contact {!! Html::mailto('education@ersnet.org', 'Felix Yip') !!}</p>--}}
               <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
                 {{ $item->registerButton->text or Register}}

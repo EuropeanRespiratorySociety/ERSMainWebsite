@@ -101,8 +101,8 @@ Route::group(['prefix' => 'congress-and-events'], function () {
     Route::get('ers-research-seminars', 'RedirectController@researchSeminars');
     Route::get('ers-presidential-summits', 'ResearchController@summits');
     Route::get('ers-presidential-summits/{slug}', 'ResearchController@showRS');
-    Route::get('cell-matrix-interactions-in-lung-disease-and-regeneration', 'LscController@index');
-    Route::get('cell-matrix-interactions-in-lung-disease-and-regeneration/{slug}', 'LscController@show');
+    Route::get('mechanisms-of-acute-exacerbation-of-respiratory-disease', 'LscController@index');
+    Route::get('mechanisms-of-acute-exacerbation-of-respiratory-disease/{slug}', 'LscController@show');
     Route::get('the-lung-science-conference/{slug}', 'LscController@show');
     Route::get('events-calendar', 'CalendarController@index');
     Route::get('ers-2018', 'LscController@paris');
