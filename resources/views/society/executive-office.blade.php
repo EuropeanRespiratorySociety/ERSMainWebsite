@@ -592,6 +592,19 @@
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('valeria.finelli@ersnet.org', 'Valeria Finelli') !!}</strong>
           Finance Assistant<br>
+          <br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('joanne.abdy@ersj.org.uk', 'Joanne Abdy') !!}</strong>
+          Account Coordinator<br>
+          T +44 114 267 2869<br>
+          </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('becky.frith@ersj.org.uk', 'Becky Frith') !!}</strong>
+            Senior Accountant & HR Coordinator<br>
+            T +44 114 267 2862<br>
             </p>
         </div>
 
@@ -714,15 +727,15 @@
             </p>
         </div>
          <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('gill.archer@ersj.org.uk', 'Gill Archer') !!}</strong>
-            Manuscript Submissions Coordinator<br>
+          <p class="photo_caption"><strong>{!! Html::mailto('sarah.cleveland@ersj.org.uk', 'Sarah Cleveland') !!}</strong>
+            Peer Review Coordinator<br>
             T +44 114 267 2864<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('eddy.baker@ersj.org.uk', 'Eddy Baker') !!}</strong>
-            Editorial and library services coordinator<br>
-            T +44 114 267 2865<br>
+          <p class="photo_caption"><strong>{!! Html::mailto('caroline.ashford-bentley@ersj.org.uk', 'Caroline Ashford-Bentley') !!}</strong>
+            Editorial and Library Services Coordinator<br>
+            T +44 114 267 2868<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
@@ -740,13 +753,13 @@
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('alyson.cann@ersj.org.uk', 'Alyson Cann') !!}</strong>
             Technical Editor<br>
-            T +44 114 267 2868<br>
+            T +44 114 267 2870<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('jonathan.hansen@ersj.org.uk', 'Jonathan Hansen') !!}</strong>
             Technical Editor<br>
-            T +44 114 267 2869<br>
+            T +44 114 267 2879<br>
             </p>
         </div>
         <!--div class="col-md-3 xs-mb-15">
@@ -780,7 +793,7 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('Claire.Turner@ersj.org.uk', 'Claire Turner') !!}</strong>
+          <p class="photo_caption"><strong>{!! Html::mailto('claire.marchant@ersj.org.uk', 'Claire Marchant') !!}</strong>
             Senior Production Editor<br>
             T +44 114 267 2871<br>
             </p>
