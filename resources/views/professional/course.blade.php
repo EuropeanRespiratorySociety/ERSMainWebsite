@@ -56,7 +56,7 @@
       <div class="course-sponsor text-left">
           <div class="course-sponsor-wrapper">
               <div class="col-md-12 col-xs-12" style="position: relative; top: 30%;">
-                <h4 class="text-center" style="font-size: 20px;"><a data-toggle="modal" data-target="#sponsors-info" type="button" class="cursor_pointer">Event sponsors</a></h4>
+                <h4 class="text-center" style="font-size: 20px;"><a data-toggle="modal" data-target="#sponsors-info" type="button" class="cursor_pointer">Event support</a></h4>
               </div>
           </div>
       </div>
