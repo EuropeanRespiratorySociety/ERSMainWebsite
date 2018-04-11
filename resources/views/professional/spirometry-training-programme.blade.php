@@ -68,7 +68,7 @@
               <a href="https://ers.box.com/shared/static/3grhxkhxx7ejoq20g5z2f0fbw27kq10h.pdf">Trainees</a>
             </li>
             <li>
-              <a href="https://ers.box.com/shared/static/ckanbmwiikdi44hwvyz69ewiy0cn3ofs.pdf">Trainees</a>
+              <a href="https://ers.box.com/shared/static/ckanbmwiikdi44hwvyz69ewiy0cn3ofs.pdf">Trainers</a>
             </li>
             @if($item->popUpText)
             <li>
