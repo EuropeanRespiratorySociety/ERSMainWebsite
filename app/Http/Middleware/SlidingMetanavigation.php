@@ -47,6 +47,8 @@ class SlidingMetanavigation
                 $menu->add('Contact ERS', 'https://www.ersnet.org/the-society/who-we-are/contact')
                         ->prepend('<i class="s7-mail icon"></i><span>')->append('</span>')
                         ->link->attr(array('class' => 'ga-metanav'));
+                $menu->add('Privacy Policy', 'https://www.ersnet.org/privacy')
+                        ->link->attr(array('class' => 'ga-metanav'));
 
 
 
