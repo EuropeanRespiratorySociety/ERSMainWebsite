@@ -44,7 +44,6 @@ Route::group(['middleware' => ['web']], function () {
 	Route::Auth();
     
     Route::get('/', 'HomeController@index');
-    Route::get('/privacy-test', 'NewsController@show');
 
     //The order matters!!!
 Route::group(['prefix' => 'the-society/who-we-are'], function () { 
@@ -174,5 +173,7 @@ Route::group(['prefix' => 'professional-development'], function () {
 
     //Route::get('cc', 'CloudCms@requestTest');
     Route::get('full-search', 'CloudCms@fullSearch');
+
+    Route::get('/{slug}', 'NewsController@show');
 
 });
