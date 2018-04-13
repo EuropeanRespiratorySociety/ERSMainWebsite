@@ -44,6 +44,7 @@ Route::group(['middleware' => ['web']], function () {
 	Route::Auth();
     
     Route::get('/', 'HomeController@index');
+    Route::get('/privacy-test', 'NewsController@show');
 
     //The order matters!!!
 Route::group(['prefix' => 'the-society/who-we-are'], function () { 
