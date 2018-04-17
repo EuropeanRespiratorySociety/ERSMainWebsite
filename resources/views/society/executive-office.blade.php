@@ -253,6 +253,12 @@
             T +41 21 213 01 69<br>
             </p>
         </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('sandy.borlat@ersnet.org', 'Sandy Borlat') !!}</strong>
+            Assistant<br>
+            T +41 21 213 01 86<br>
+            </p>
+        </div>        
       </div>
     </div>
     </div>
