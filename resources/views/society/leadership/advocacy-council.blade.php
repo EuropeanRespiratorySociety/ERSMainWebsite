@@ -22,66 +22,66 @@
 
 			<div class="row leadership-people" style="padding-top: 40px;">
 				<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/christina_gratziou.jpg" class="img-circle">
+					<img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/christina_gratziou.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>Christina Gratziou</strong>
 		            Chair of the Advocacy Council <br>
 		            </p>
 	        	</div>
 	            <div class="col-md-4 xs-mb-15">
-                <img src="images/people/leadership/Ildiko-Horvath.png" class="img-circle">
+                <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Ildiko-Horvath.png" class="img-circle">
 	                <p class="photo_caption"><strong>Ildiko Horvath</strong>
 	               Chair-Elect of the Advocacy Council<br>
 	                </p>
 	            </div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="images/people/leadership/mina_gaga.jpg" class="img-circle">
+		            <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/mina_gaga.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>Mina Gaga</strong>
 		            President<br></p>
 	        	</div>
 	            <div class="col-md-4 xs-mb-15">
-	                <img src="images/people/leadership/Tobias_Welte.jpg" class="img-circle">
+	                <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Tobias_Welte.jpg" class="img-circle">
 	                <p class="photo_caption"><strong>Tobias Welte</strong>
 	                President-Elect<br>
 					</p>
 	            </div>
 	            <div class="col-md-4 xs-mb-15">
-               		<img src="images/people/leadership/Thierry-Troosters.png" class="img-circle">
+               		<img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Thierry-Troosters.png" class="img-circle">
 	                <p class="photo_caption"><strong>Thierry Troosters</strong>
 	                Vice President<br>
 					</p>
 	            </div>
             	<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/Isabel-Saraiva.png" class="img-circle">
+					<img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Isabel-Saraiva.png" class="img-circle">
 		            <p class="photo_caption"><strong>Isabel Saraiva</strong>
 		            European Lung Foundation Chair<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/Charlotta-Pisinger.png" class="img-circle">
+					<img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Charlotta-Pisinger.png" class="img-circle">
 		            <p class="photo_caption"><strong>Charlotta Pisinger</strong>
 		            Chair of the ERS Tobacco Control Committee<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/Barbara-Hoffmann.png" class="img-circle">
+					<img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Barbara-Hoffmann.png" class="img-circle">
 		            <p class="photo_caption"><strong>Barbara Hoffmann</strong>
 		            Chair of the ERS Environment and Health Committee<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/Constantine_Vardavas.JPG" class="img-circle">
+					<img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Constantine_Vardavas.JPG" class="img-circle">
 		            <p class="photo_caption"><strong>Constantine Vardavas</strong>
 		            Director of Scientific Relations with the EU<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/Peter_Calverley.jpg" class="img-circle">
+					<img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Peter_Calverley.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>Peter Calverley</strong>
 		            Advocacy Council expert on COPD<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="images/people/leadership/Ivan_Solovic.jpg" class="img-circle">
+					<img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Ivan_Solovic.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>Ivan Solovic</strong>
 		            Chair of the Ad hoc Working Group on TB Advocacy<br>
 		            </p>

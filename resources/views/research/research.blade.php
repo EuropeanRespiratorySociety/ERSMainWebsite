@@ -24,7 +24,7 @@
 
             <div class="card card-event">
                 <div class="card-image" style="height:100px;">
-                    <img class="img-responsive" src="images/research/research_4.jpg">
+                    <img class="img-responsive" src="https://d3egf9svnop2xg.cloudfront.net/images/research/research_4.jpg">
                 </div>
 
                 <div class="card-content">

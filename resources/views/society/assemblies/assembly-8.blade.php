@@ -4,11 +4,11 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/people/leadership/Geert_Verleden_square.jpg" class="img-circle">
+                  <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Geert_Verleden_square.jpg" class="img-circle">
                   <p class="photo_caption">Head: Geert Verleden</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/people/leadership/Stefano_Elia.JPG" class="img-circle">
+                  <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Stefano_Elia.JPG" class="img-circle">
                   <p class="photo_caption">Secretary: Elia Stefano</p>
                  
                 </div>

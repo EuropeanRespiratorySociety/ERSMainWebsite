@@ -4,12 +4,12 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/people/leadership/Jonathan-Grigg.png" class="img-circle">
+                  <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Jonathan-Grigg.png" class="img-circle">
                   <p class="photo_caption">Head: Jonathan Grigg</p>
                  
                 </div>
                 <div class="col-md-3 xs-mb-15">
-               <img src="../images/people/leadership/Marielle-Pijnenburg-2.png" class="img-circle">
+               <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Marielle-Pijnenburg-2.png" class="img-circle">
                   <p class="photo_caption">Secretary: Marielle Pijnenburg</p>
                 </div>
             </div>

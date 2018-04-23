@@ -4,12 +4,12 @@
 
           <div class="row">
             <div class="col-md-3 col-md-offset-3 xs-mb-15">
-              <img src="../images/people/leadership/Christer_Jansen.jpg" class="img-circle">
+              <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Christer_Jansen.jpg" class="img-circle">
               <p class="photo_caption">Head: Christer Janson</p>
 
             </div>
             <div class="col-md-3 xs-mb-15">
-               <img src="../images/people/leadership/Suppli-Ulrik.png" class="img-circle">
+               <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Suppli-Ulrik.png" class="img-circle">
               <p class="photo_caption">Secretary: Charlotte Suppli-Ulrik</p>
             </div>
           </div>

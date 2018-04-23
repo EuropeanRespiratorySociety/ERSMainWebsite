@@ -33,7 +33,7 @@
                     <div class="col-md-6">
                         <div class="card card-primary card-padded">
                             <div class="card-image">
-                                <img class="img-responsive" src="../images/london2016.jpg">
+                                <img class="img-responsive" src="https://d3egf9svnop2xg.cloudfront.net/images/london2016.jpg">
                             </div>
                             
                             <div class="card-title text-left">
@@ -54,7 +54,7 @@
                     {{--<div class="col-md-4">
                         <div class="card card-primary card-padded">
                             <div class="card-image">
-                                <img class="img-responsive" src="../images/london2016.jpg">
+                                <img class="img-responsive" src="https://d3egf9svnop2xg.cloudfront.net/images/london2016.jpg">
                             </div>
                             
                             <div class="card-title  text-left">
@@ -74,7 +74,7 @@
                     <div class="col-md-6">
                         <div class="card card-vision card-padded">
                             <div class="card-image">
-                                <img class="img-responsive" src="../images/hermes.jpg">
+                                <img class="img-responsive" src="https://d3egf9svnop2xg.cloudfront.net/images/hermes.jpg">
                             </div>
                             <div class="card-title  text-left">
                                 <h3>ERS Vision</h3>

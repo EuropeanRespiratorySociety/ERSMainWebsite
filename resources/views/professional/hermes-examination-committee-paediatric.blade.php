@@ -34,7 +34,7 @@
           <div class="row leadership-people" style="padding-top: 40px;">
                 <div class="col-md-6 xs-mb-15">
                     <h4 style="margin-bottom:30px;"><strong>Examination Committee Chair</strong></h4>
-                    <img src="images/people/examination-committee/Robert-Primhak.png" class="img-circle">
+                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/examination-committee/Robert-Primhak.png" class="img-circle">
                     <p class="photo_caption"><strong>Dr Robert Primhak</strong></p>
                     <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
                         <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
@@ -46,7 +46,7 @@
                 </div>
                 <div class="col-md-6 xs-mb-15">
                     <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                    <img src="images/people/examination-committee/Nicole-Beydon.png" class="img-circle">
+                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/examination-committee/Nicole-Beydon.png" class="img-circle">
                     <p class="photo_caption"><strong>Dr Nicole Beydon</strong></p>
                     <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
                       <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
@@ -58,7 +58,7 @@
                 </div>
                 <div class="col-md-6 xs-mb-15">
                     <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                    <img src="images/people/examination-committee/Ernst-Eber.png" class="img-circle">
+                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/examination-committee/Ernst-Eber.png" class="img-circle">
                     <p class="photo_caption"><strong>Prof. Ernst Eber</strong></p>
                     <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
                       <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
@@ -72,7 +72,7 @@
                 </div>
                 <div class="col-md-6 xs-mb-15">
                     <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                    <img src="images/people/examination-committee/Jurg-Hammer.png" class="img-circle">
+                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/examination-committee/Jurg-Hammer.png" class="img-circle">
                     <p class="photo_caption"><strong>Prof. Jürg Hammer</strong></p>
                     <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
                       <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
@@ -84,7 +84,7 @@
                 </div>
                 <div class="col-md-6 xs-mb-15">
                     <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                    <img src="images/people/examination-committee/Antonio-Martinez-Gimeno.png" class="img-circle">
+                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/examination-committee/Antonio-Martinez-Gimeno.png" class="img-circle">
                     <p class="photo_caption"><strong>Dr Antonio Martínez-Gimeno</strong></p>
                     <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
                         <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
@@ -96,7 +96,7 @@
                 </div>
                 <div class="col-md-6 xs-mb-15">
                     <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                    <img src="images/people/examination-committee/Fabio-Midulla.png" class="img-circle">
+                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/examination-committee/Fabio-Midulla.png" class="img-circle">
                     <p class="photo_caption"><strong>Prof. Fabio Midulla</strong></p>
                     <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
                       <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
@@ -110,7 +110,7 @@
                 </div>
                 <div class="col-md-6 xs-mb-15">
                     <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                    <img src="images/people/examination-committee/Jimmy-Paton.png" class="img-circle">
+                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/examination-committee/Jimmy-Paton.png" class="img-circle">
                     <p class="photo_caption"><strong>Dr Jimmy Paton</strong></p>
                     <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
                       <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
@@ -125,7 +125,7 @@
 
                 <div class="col-md-6 xs-mb-15">
                     <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                    <img src="images/people/examination-committee/Robert-Ross-Russell.png" class="img-circle">
+                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/examination-committee/Robert-Ross-Russell.png" class="img-circle">
                     <p class="photo_caption"><strong>Dr Robert Ross-Russell</strong></p>
                     <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
                       <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
@@ -151,7 +151,7 @@
         @endif
         @if($item->category)
           @if($item->category->title == "Respiratory Worldwide" )
-            <p><img src="../images/news/respiratory-logo.jpg" class="img-rounded img-responsive" style="width:350px;"></p>
+            <p><img src="https://d3egf9svnop2xg.cloudfront.net/images/news/respiratory-logo.jpg" class="img-rounded img-responsive" style="width:350px;"></p>
            @endif
         @endif        
         @if($item->sponsors[0]->text)

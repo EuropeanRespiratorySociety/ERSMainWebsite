@@ -1,6 +1,6 @@
 <div class="section home-elf-content fp-auto-height" >
   <div class="main-content">
-    <div class="page-head"><img src="../images/elf/elf.png" alt=""/ width="300px;"></div>
+    <div class="page-head"><img src="https://d3egf9svnop2xg.cloudfront.net/images/elf/elf.png" alt=""/ width="300px;"></div>
     <div class="col-md-6 center-block lead">
      ELF was founded by ERS with the aim of bringing together patients and the public with respiratory professionals to positively influence lung health. ELF communicates the work of  ERS to those outside the respiratory field and gives patients and the general public the opportunity to influence respiratory research and guidelines. 
    </div>
@@ -14,7 +14,7 @@
       <a target="_blank" class="ga-home-elf" href="http://www.europeanlung.org/en/get-involved/patient-input/">
         <div class="card card-padded card-home">
 
-          <img src="../images/elf/elf_7.jpg" alt=""/>
+          <img src="https://d3egf9svnop2xg.cloudfront.net/images/elf/elf_7.jpg" alt=""/>
           <div class="title-box"><h2>Patient involvement</h2></div>
         </div>
       </a>
@@ -25,7 +25,7 @@
       <a target="_blank" class="ga-home-elf" href="http://www.europeanlung.org/en/lung-disease-and-information/factsheets">
         <div class="card card-padded card-home">
 
-          <img src="../images/elf/elf_5.jpg" alt=""/>
+          <img src="https://d3egf9svnop2xg.cloudfront.net/images/elf/elf_5.jpg" alt=""/>
           <div class="title-box"><h2>Patient resources</h2></div>
         </div>
       </a>
@@ -36,7 +36,7 @@
       <a target="_blank" class="ga-home-elf" href="http://www.europeanlung.org/en/get-involved/european-patient-organisation-network/">
         <div class="card card-padded card-home">
 
-          <img src="../images/elf/elf_6.jpg" alt=""/>
+          <img src="https://d3egf9svnop2xg.cloudfront.net/images/elf/elf_6.jpg" alt=""/>
           <div class="title-box"><h2>Patient network</h2></div>
         </div>
       </a>
@@ -47,7 +47,7 @@
       <a target="_blank" class="ga-home-elf" href="http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/">
         <div class="card card-padded card-home">
 
-          <img src="../images/elf/hlfl.jpg" alt=""/>
+          <img src="https://d3egf9svnop2xg.cloudfront.net/images/elf/hlfl.jpg" alt=""/>
           <div class="title-box"><h2>Healthy Lungs for Life</h2></div>
         </div>
       </a>

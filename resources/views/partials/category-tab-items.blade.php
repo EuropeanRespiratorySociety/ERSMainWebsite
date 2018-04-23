@@ -27,7 +27,7 @@
                         <div class="col-md-4">
                             <div class="card card-event card-white">
                                 <div class="card-image">
-                                    <img class="img-responsive" src="../images/course/course_event.jpg">
+                                    <img class="img-responsive" src="https://d3egf9svnop2xg.cloudfront.net/images/course/course_event.jpg">
                                 </div>
                                 <div class="card-content">
                                     <p class="title">Your 'myERS' has been updated and revamped
@@ -45,13 +45,13 @@
                     <div class="row text-center">
                         <div class="col-md-3 col-md-offset-3">
                             <a href="http://www.ersroadmap.org/index.php?option=com_zoo&view=category&layout=category&Itemid=102">
-                                <img class="img-responsive" src="../images/publications/roadmap.jpg">
+                                <img class="img-responsive" src="https://d3egf9svnop2xg.cloudfront.net/images/publications/roadmap.jpg">
                                 <p>HEALTH POLICY MAKERS<br>VERSION</p>
                             </a>
                         </div>
                         <div class="col-md-3">
                         <a href="http://www.ersroadmap.org/index.php?option=com_zoo&view=category&layout=category&Itemid=137">
-                            <img class="img-responsive" src="../images/publications/roadmap_2.png">
+                            <img class="img-responsive" src="https://d3egf9svnop2xg.cloudfront.net/images/publications/roadmap_2.png">
                             <p>HEALTHCARE PROFESSIONALS<br>VERSION</p>
                         </a>
                         </div>

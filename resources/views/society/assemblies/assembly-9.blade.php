@@ -4,11 +4,11 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="../images/people/leadership/Irene_Steenbruggen.jpg" class="img-circle">
+                  <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Irene_Steenbruggen.jpg" class="img-circle">
                   <p class="photo_caption">Head: Irene Steenbruggen</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="../images/people/leadership/Martijn_A_Spruit.jpg" class="img-circle">
+                  <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Martijn_A_Spruit.jpg" class="img-circle">
                   <p class="photo_caption">Secretary: Martijn A. Spruit</p>
                  
                 </div>
