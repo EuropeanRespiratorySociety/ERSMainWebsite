@@ -871,8 +871,12 @@ As a Group we aim to be a platform that facilitates close cooperation between ba
     {{--<script src="http://erstemplate.app/js/fullpage.js" type="text/javascript"></script>--}}
     {{--<script src="http://erstemplate.app/js/app-assemblies.js" type="text/javascript"></script>--}}
 
-    <script src="https://bootstrap.ersnet.org/js/fullpage.js" type="text/javascript"></script>
-    <script src="https://bootstrap.ersnet.org/js/app-assemblies.js" type="text/javascript"></script>
+    {{-- <script src="https://bootstrap.ersnet.org/js/fullpage.js" type="text/javascript"></script>
+    <script src="https://bootstrap.ersnet.org/js/app-assemblies.js" type="text/javascript"></script> --}}
+
+    {{-- Cloud Front is the ERS CDN --}}
+    <script src="https://d3egf9svnop2xg.cloudfront.net/js/fullpage.js" type="text/javascript"></script>
+    <script src="https://d3egf9svnop2xg.cloudfront.net/js/app-assemblies.js" type="text/javascript"></script>
 
     <script type="text/javascript">
       $(document).ready(function(){

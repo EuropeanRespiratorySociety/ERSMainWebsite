@@ -72,9 +72,13 @@
   @stop()  
 
     @section('scripts')
-    <script src="https://bootstrap.ersnet.org/js/fullpage.js" type="text/javascript"></script>
+    {{-- <script src="https://bootstrap.ersnet.org/js/fullpage.js" type="text/javascript"></script>
     <script src="https://bootstrap.ersnet.org/js/app-home.js" type="text/javascript"></script>
-    <!--<script src="http://erstemplate.app//js/app-home.js" type="text/javascript"></script>-->
+    <script src="http://erstemplate.app//js/app-home.js" type="text/javascript"></script> --}}
+
+    {{-- Cloud Front is the ERS CDN --}}
+    <script src="https://d3egf9svnop2xg.cloudfront.net/js/fullpage.js" type="text/javascript"></script>
+    <script src="https://d3egf9svnop2xg.cloudfront.net/js/app-home.js" type="text/javascript"></script>
 
     <script type="text/javascript">
       $(document).ready(function(){

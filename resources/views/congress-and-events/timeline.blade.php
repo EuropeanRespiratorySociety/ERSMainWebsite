@@ -97,8 +97,10 @@
 </div>
 @stop()  
 
-@section('scripts')  
-    <script src="https://bootstrap.ersnet.org/js/app-timeline.js" type="text/javascript"></script>
+@section('scripts')
+    {{-- Cloud Front is the ERS CDN --}}
+    {{-- <script src="https://bootstrap.ersnet.org/js/app-timeline.js" type="text/javascript"></script>--}}
+    <script src="https://d3egf9svnop2xg.cloudfront.net/js/app-timeline.js" type="text/javascript"></script>
 
     <script type="text/javascript">
       $(document).ready(function(){

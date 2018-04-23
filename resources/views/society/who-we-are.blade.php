@@ -59,15 +59,20 @@
 @stop()  
 
 @section('scripts')
-<!--script src="../js/fullpage.js" type="text/javascript"></script-->
-<!--script src="../js/app-membership.js" type="text/javascript"></script-->
+  {{-- <script src="../js/fullpage.js" type="text/javascript"></script> --}}
+  {{-- <script src="../js/app-membership.js" type="text/javascript"></script> --}}
 
-<!--script src="http://erstemplate.app/js/fullpage.js" type="text/javascript"></script>
-<script src="http://erstemplate.app/js/app-membership.js" type="text/javascript"></script-->
+  {{-- <script src="http://erstemplate.app/js/fullpage.js" type="text/javascript"></script>
+  <script src="http://erstemplate.app/js/app-membership.js" type="text/javascript"></script> --}}
 
 
-<script src="https://bootstrap.ersnet.org/js/fullpage.js" type="text/javascript"></script>
-<script src="https://bootstrap.ersnet.org/js/app-who-we-are.js" type="text/javascript"></script>
+  {{-- <script src="https://bootstrap.ersnet.org/js/fullpage.js" type="text/javascript"></script>
+  <script src="https://bootstrap.ersnet.org/js/app-who-we-are.js" type="text/javascript"></script> --}}
+
+  {{-- Cloud Front is the ERS CDN --}}
+  <script src="https://d3egf9svnop2xg.cloudfront.net/js/fullpage.js" type="text/javascript"></script>
+  <script src="https://d3egf9svnop2xg.cloudfront.net/js/app-who-we-are.js" type="text/javascript"></script>
+  
   <script type="text/javascript">
     $(document).ready(function(){
   	//initialize the javascript
