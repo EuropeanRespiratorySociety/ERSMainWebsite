@@ -44,7 +44,7 @@
     @endif
     @if($item->category)
         @if($item->category->title == "Respiratory Worldwide" )
-            <span class="label"><img class="label-image" src="https://d3egf9svnop2xg.cloudfront.net/images/news/flag-rww.jpg" alt=""></span>
+            <span class="label"><img class="label-image" src="https://cdn.ersnet.org/images/news/flag-rww.jpg" alt=""></span>
         @endif
     @endif
 

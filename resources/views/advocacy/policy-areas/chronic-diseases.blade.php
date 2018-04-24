@@ -28,7 +28,7 @@
 			<span class="icon s7-angle-right" style="font-size: 30px;position: relative; top: 8px;"></span>
 			</a></p><br>
 
-			<img src="https://d3egf9svnop2xg.cloudfront.net/images/advocacy/european-lung-white-book-logo.png" class="img-responsive center-block" />
+			<img src="https://cdn.ersnet.org/images/advocacy/european-lung-white-book-logo.png" class="img-responsive center-block" />
 		</div>
 
 

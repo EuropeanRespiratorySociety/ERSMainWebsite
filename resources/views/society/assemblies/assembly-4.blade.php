@@ -4,11 +4,11 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Andrea-Aliverti.png" class="img-circle">
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Andrea-Aliverti.png" class="img-circle">
                   <p class="photo_caption">Head: Andrea Aliverti</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Pierantonio-Laveneziana.png" class="img-circle">
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Pierantonio-Laveneziana.png" class="img-circle">
                   <p class="photo_caption">Secretary: Pierantonio Laveneziana</p>
                  
                 </div>

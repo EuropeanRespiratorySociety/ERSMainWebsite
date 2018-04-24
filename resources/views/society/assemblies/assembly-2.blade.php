@@ -3,11 +3,11 @@
             <div class="page-head"><h2>ERS Assembly 2: Respiratory Intensive Care</h2></div>
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Raffaele_Scala.jpg" class="img-circle">
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Raffaele_Scala.jpg" class="img-circle">
                   <p class="photo_caption">Head: Raffaele Scala</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Leo_Heunks.jpg" class="img-circle">
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Leo_Heunks.jpg" class="img-circle">
                   <p class="photo_caption">Secretary: Leo Heunks</p>
                  
                 </div>

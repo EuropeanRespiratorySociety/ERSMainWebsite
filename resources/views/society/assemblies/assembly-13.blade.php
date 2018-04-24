@@ -4,11 +4,11 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                 <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Marion-Delcroix.png" class="img-circle">
+                 <img src="https://cdn.ersnet.org/images/people/leadership/Marion-Delcroix.png" class="img-circle">
                   <p class="photo_caption">Head: Marion Delcroix</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                 <img src="https://d3egf9svnop2xg.cloudfront.net/images/120x120.jpg" class="img-circle">
+                 <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
                   <p class="photo_caption">Secretary: Anton Vonk Noordegraaf</p>
                 </div>
             </div>

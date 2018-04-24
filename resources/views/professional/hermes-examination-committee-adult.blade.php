@@ -34,7 +34,7 @@
           <div class="row leadership-people" style="padding-top: 40px;">
                 <div class="col-md-6 xs-mb-15">
                     <h4 style="margin-bottom:30px;"><strong>Examination Committee Chair</strong></h4>
-                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/examination-committee/Silvia-Ulrich-Somaini.png" class="img-circle">
+                    <img src="https://cdn.ersnet.org/images/people/examination-committee/Silvia-Ulrich-Somaini.png" class="img-circle">
                     <p class="photo_caption"><strong>Prof. Silvia Ulrich Somaini</strong></p>
                     <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
                         <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
@@ -45,7 +45,7 @@
                 </div>
                 <div class="col-md-6 xs-mb-15">
                     <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/examination-committee/Thomas-Brack.png" class="img-circle">
+                    <img src="https://cdn.ersnet.org/images/people/examination-committee/Thomas-Brack.png" class="img-circle">
                     <p class="photo_caption"><strong>Prof. Thomas Brack</strong></p>
                     <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
                       <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
@@ -56,7 +56,7 @@
                 </div>
                 <div class="col-md-6 xs-mb-15">
                     <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/examination-committee/Dragos-Bumbacea.png" class="img-circle">
+                    <img src="https://cdn.ersnet.org/images/people/examination-committee/Dragos-Bumbacea.png" class="img-circle">
                     <p class="photo_caption"><strong>Prof. Dragos Bumbacea</strong></p>
                     <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
                       <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
@@ -68,7 +68,7 @@
                 </div>
                 <div class="col-md-6 xs-mb-15">
                     <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/examination-committee/Gabor-Kovacs.png" class="img-circle">
+                    <img src="https://cdn.ersnet.org/images/people/examination-committee/Gabor-Kovacs.png" class="img-circle">
                     <p class="photo_caption"><strong>Dr Gabor Kovacs</strong></p>
                     <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
                       <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
@@ -80,7 +80,7 @@
                 </div>
                 <div class="col-md-6 xs-mb-15">
                     <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/examination-committee/Tobias-Lange.png" class="img-circle">
+                    <img src="https://cdn.ersnet.org/images/people/examination-committee/Tobias-Lange.png" class="img-circle">
                     <p class="photo_caption"><strong>Dr Tobias J. Lange</strong></p>
                     <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
                       <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
@@ -94,7 +94,7 @@
                 </div>
                 <div class="col-md-6 xs-mb-15">
                     <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/examination-committee/Frank-Smeenk.png" class="img-circle">
+                    <img src="https://cdn.ersnet.org/images/people/examination-committee/Frank-Smeenk.png" class="img-circle">
                     <p class="photo_caption"><strong>Prof. Frank Smeenk</strong></p>
                     <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
                       <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
@@ -108,7 +108,7 @@
                 </div>
                 <div class="col-md-6 xs-mb-15">
                     <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/examination-committee/Yvonne-Nussbaumer.png" class="img-circle">
+                    <img src="https://cdn.ersnet.org/images/people/examination-committee/Yvonne-Nussbaumer.png" class="img-circle">
                     <p class="photo_caption"><strong>DR YVONNE NUSSBAUMER</strong></p>
                     <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
                       <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
@@ -132,7 +132,7 @@
         @endif
         @if($item->category)
           @if($item->category->title == "Respiratory Worldwide" )
-            <p><img src="https://d3egf9svnop2xg.cloudfront.net/images/news/respiratory-logo.jpg" class="img-rounded img-responsive" style="width:350px;"></p>
+            <p><img src="https://cdn.ersnet.org/images/news/respiratory-logo.jpg" class="img-rounded img-responsive" style="width:350px;"></p>
            @endif
         @endif        
         @if($item->sponsors[0]->text)

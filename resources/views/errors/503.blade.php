@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="https://d3egf9svnop2xg.cloudfront.net/images/favicon.png">
+    <link rel="shortcut icon" href="https://cdn.ersnet.org/images/favicon.png">
     <title>European Respiratory Society</title>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

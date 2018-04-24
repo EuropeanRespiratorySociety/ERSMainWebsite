@@ -26,7 +26,7 @@
 		<div class="col-md-8 center-block lead">
 			<p>Find out more about tobacco in the <a target="_blank" href="https://www.erswhitebook.org/chapters/tobacco-smoking/ ">European Lung White Book<span class="icon s7-angle-right" style="font-size: 30px;position: relative; top: 8px;"></span></a></p><br>
 
-			<img src="https://d3egf9svnop2xg.cloudfront.net/images/advocacy/european-lung-white-book-logo.png" class="img-responsive center-block" />
+			<img src="https://cdn.ersnet.org/images/advocacy/european-lung-white-book-logo.png" class="img-responsive center-block" />
 			<hr />
 			<p style="margin:40px 0;">
 			<a style="font-size: 20px;" href="advocacy/policy-areas/the-ers-tobacco-control-committee">
@@ -38,7 +38,7 @@
 
 			<p style="margin-top:50px;"><a target="_blank" href="http://www.europeanlung.org/en/projects-and-research/projects/smokehaz/home">SmokeHaz</a> collects evidence on the health hazards of smoking and aims to provide scientific information on the negative consequences of active and passive smoking for public health. The project is independently funded by ERS and carried out with the <a target="_blank" href="http://www.ukctas.ac.uk/ukctas/index.aspx">UK Centre for Tobacco and Alcohol Studies (UKCTAS)</a> with the oversight of the ERS Tobacco Control Committee and in collaboration with the European Lung Foundation (ELF). The SmokeHaz website, developed by ELF, is aimed at policy makers who wish to access information on the respiratory health hazards associated with smoking.</p><br>
 
-			<img src="https://d3egf9svnop2xg.cloudfront.net/images/advocacy/smokehaz_logo.jpg" class="img-responsive center-block" />
+			<img src="https://cdn.ersnet.org/images/advocacy/smokehaz_logo.jpg" class="img-responsive center-block" />
 
 
 

@@ -12,7 +12,7 @@
                 <div class="col-md-3 col-sm-2 isotope">
                     <div class="card card-default card-events">
                         <div class="card-image">
-                            <img class="img-responsive" src="https://d3egf9svnop2xg.cloudfront.net/images/publications/erj.jpg">
+                            <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/erj.jpg">
                         </div>
                         <div class="card-content text-left">
                             <p>
@@ -29,7 +29,7 @@
                 <div class="col-md-3 col-sm-2 isotope">
                     <div class="card card-default card-events">
                         <div class="card-image">
-                            <img class="img-responsive" src="https://d3egf9svnop2xg.cloudfront.net/images/publications/erj_op.jpg">
+                            <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/erj_op.jpg">
                         </div>
                         <div class="card-content text-left">
                             <p>
@@ -46,7 +46,7 @@
                 <div class="col-md-3 col-sm-2 isotope">
                     <div class="card card-default card-events">
                         <div class="card-image">
-                            <img class="img-responsive" src="https://d3egf9svnop2xg.cloudfront.net/images/publications/err.jpg">
+                            <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/err.jpg">
                         </div>
                         <div class="card-content text-left">
                             <p>
@@ -63,7 +63,7 @@
                 <div class="col-md-3 col-sm-2 isotope">
                     <div class="card card-default card-events">
                         <div class="card-image">
-                            <img class="img-responsive" src="https://d3egf9svnop2xg.cloudfront.net/images/publications/monograph.jpg">
+                            <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/monograph.jpg">
                         </div>
                         <div class="card-content text-left">
                             <p>
@@ -80,7 +80,7 @@
                 <div class="col-md-3 col-sm-2 isotope">
                     <div class="card card-default card-events">
                         <div class="card-image">
-                            <img class="img-responsive" src="https://d3egf9svnop2xg.cloudfront.net/images/publications/breathe.jpg">
+                            <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/breathe.jpg">
                         </div>
                         <div class="card-content text-left">
                             <p>
@@ -97,7 +97,7 @@
                 <div class="col-md-3 col-sm-2 isotope">
                     <div class="card card-default card-events">
                         <div class="card-image">
-                            <img class="img-responsive" src="https://d3egf9svnop2xg.cloudfront.net/images/publications/european_lung_white_book.jpg">
+                            <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/european_lung_white_book.jpg">
                         </div>
                         <div class="card-content text-left">
                             <p>
@@ -114,7 +114,7 @@
                 <div class="col-md-3 col-sm-2 isotope">
                     <div class="card card-default card-events">
                         <div class="card-image">
-                            <img class="img-responsive" src="https://d3egf9svnop2xg.cloudfront.net/images/publications/hand_book.jpg">
+                            <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/hand_book.jpg">
                         </div>
                         <div class="card-content text-left">
                             <p>
@@ -131,7 +131,7 @@
                 <div class="col-md-3 col-sm-2 isotope">
                     <div class="card card-default card-events">
                         <div class="card-image">
-                            <img class="img-responsive" src="https://d3egf9svnop2xg.cloudfront.net/images/publications/red_book.jpg">
+                            <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/red_book.jpg">
                         </div>
                         <div class="card-content text-left">
                             <p>
@@ -148,7 +148,7 @@
                 <div class="col-md-3 col-sm-2 isotope">
                     <div class="card card-default card-events">
                         <div class="card-image">
-                            <img class="img-responsive" src="https://d3egf9svnop2xg.cloudfront.net/images/publications/firs_world_report.jpg">
+                            <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/firs_world_report.jpg">
                         </div>
                         <div class="card-content text-left">
                             <p>
@@ -165,7 +165,7 @@
                 <div class="col-md-3 col-sm-2 isotope">
                     <div class="card card-default card-events">
                         <div class="card-image">
-                            <img class="img-responsive" src="https://d3egf9svnop2xg.cloudfront.net/images/publications/air_quality_and_health.jpg">
+                            <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/air_quality_and_health.jpg">
                         </div>
                         <div class="card-content text-left">
                             <p>
@@ -181,7 +181,7 @@
                 <div class="col-md-3 col-sm-2 isotope">
                     <div class="card card-default card-events">
                         <div class="card-image">
-                            <img class="img-responsive" src="https://d3egf9svnop2xg.cloudfront.net/images/publications/roadmap.jpg">
+                            <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/roadmap.jpg">
                         </div>
                         <div class="card-content text-left">
                             <p>
@@ -198,7 +198,7 @@
                 <div class="col-md-3 col-sm-2 isotope">
                     <div class="card card-default card-events">
                         <div class="card-image">
-                            <img class="img-responsive" src="https://d3egf9svnop2xg.cloudfront.net/images/publications/copd.jpg">
+                            <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/copd.jpg">
                         </div>
                         <div class="card-content text-left">
                             <p>

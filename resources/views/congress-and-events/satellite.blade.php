@@ -120,44 +120,44 @@
               <div style="padding-left: 10px; max-width: 230px;">
                   <h4>With the endorsement of:</h4>
                   <div>
-                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/events/DGP-01.png" class="img-responsive" style="padding-top: 20px;"/>
+                    <img src="https://cdn.ersnet.org/images/events/DGP-01.png" class="img-responsive" style="padding-top: 20px;"/>
                   </div>
                   <div>
-                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/events/SANI-01.png" class="img-responsive" style="padding-top: 30px;"/>
+                    <img src="https://cdn.ersnet.org/images/events/SANI-01.png" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
                   <div>
-                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/events/SIP-IRS-01.png" class="img-responsive" style="padding-top: 30px;"/>
+                    <img src="https://cdn.ersnet.org/images/events/SIP-IRS-01.png" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
                   <div>
-                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/events/SPLF-01.png" class="img-responsive" style="padding-top: 30px;"/>
+                    <img src="https://cdn.ersnet.org/images/events/SPLF-01.png" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
                   <div>
-                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/events/SEPAR-01.png" class="img-responsive" style="padding-top: 30px;"/>
+                    <img src="https://cdn.ersnet.org/images/events/SEPAR-01.png" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
                   <div>
-                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/events/BTS-01.jpg" class="img-responsive" style="padding-top: 30px;"/>
+                    <img src="https://cdn.ersnet.org/images/events/BTS-01.jpg" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
                 </div>
               </div>
               <div class="col-md-12 col-xs-6">
                 <div style="padding-left: 10px; max-width: 230px;">
                   <div>
-                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/events/BVP-SBP-01.jpg" class="img-responsive" style="padding-top: 30px;"/>
+                    <img src="https://cdn.ersnet.org/images/events/BVP-SBP-01.jpg" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
                   <div>
-                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/events/AIPO-RGB-01.jpg" class="img-responsive" style="padding-top: 30px;"/>
+                    <img src="https://cdn.ersnet.org/images/events/AIPO-RGB-01.jpg" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
                   <div>
-                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/events/Registro.jpg" class="img-responsive" style="padding-top: 30px;"/>
+                    <img src="https://cdn.ersnet.org/images/events/Registro.jpg" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
                   <div>
-                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/events/SLMF.jpg" class="img-responsive" style="padding-top: 30px;"/>
+                    <img src="https://cdn.ersnet.org/images/events/SLMF.jpg" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
                   <div>
-                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/events/NVLA.png" class="img-responsive" style="padding-top: 30px;"/>
+                    <img src="https://cdn.ersnet.org/images/events/NVLA.png" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
                   <div>
-                    <img src="https://d3egf9svnop2xg.cloudfront.net/images/events/NRS.png" class="img-responsive" style="padding-top: 30px;"/>
+                    <img src="https://cdn.ersnet.org/images/events/NRS.png" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
               </div>
             </div>

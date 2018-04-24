@@ -28,7 +28,7 @@
           <div class="col-md-5 col-md-offset-1">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/who-we-are/leadership/assembly-heads"><img class="img-responsive" src="https://d3egf9svnop2xg.cloudfront.net/images/world.jpg"></a>
+                        <a href="the-society/who-we-are/leadership/assembly-heads"><img class="img-responsive" src="https://cdn.ersnet.org/images/world.jpg"></a>
                     </div>
                     <div class="card-title">
                         <a href="the-society/who-we-are/leadership/assembly-heads">Assembly Heads</a>
@@ -38,7 +38,7 @@
             <div class="col-md-5">
                 <div class="card">
                     <div class="card-image">
-                        <a href="the-society/who-we-are/leadership/assembly-secretaries"><img class="img-responsive" src="https://d3egf9svnop2xg.cloudfront.net/images/people/executive-office/educational.jpg"></a>
+                        <a href="the-society/who-we-are/leadership/assembly-secretaries"><img class="img-responsive" src="https://cdn.ersnet.org/images/people/executive-office/educational.jpg"></a>
                     </div>
                     <div class="card-title">
                         <a href="the-society/who-we-are/leadership/assembly-secretaries">Assembly Secretaries</a>

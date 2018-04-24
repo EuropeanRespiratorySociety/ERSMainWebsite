@@ -56,7 +56,7 @@
 
       <div class="row">
           <div class="col-md-9 col-md-offset-1 xs-mb-15">
-               <img src="https://d3egf9svnop2xg.cloudfront.net/images/people/leadership/Stefano_Aliberti.jpg" class="img-circle" style="margin-top:20px;">
+               <img src="https://cdn.ersnet.org/images/people/leadership/Stefano_Aliberti.jpg" class="img-circle" style="margin-top:20px;">
                <p class="photo_caption"><strong>Stefano Aliberti</strong>Curriculum Development Director<br></p>
            </div>
        </div>
