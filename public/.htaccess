@@ -256,10 +256,6 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
     # Proxying requests to node.js server 
     RewriteRule ^assets/(.*)$ http://localhost:4040/$1 [P]
 
-    # Proxing requests to conditions
-    RewriteCond %{HTTP_HOST} ^cdn.ersnet.org$
-    RewriteRule ^(.*)$ https://d3egf9svnop2xg.cloudfront.net/$1 [L,P]
-
     # Rewriting all server footer images to new one
     RewriteCond %{REQUEST_URI} ^/images/footer_(.*)$
     RewriteRule ^(.*)images/footer_(.*)$ https://www.ersnet.org/images/footer/footer_$2 [L,R=301]
