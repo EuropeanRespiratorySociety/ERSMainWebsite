@@ -108,7 +108,7 @@ class CloudCmsParser
                         foreach($item->sponsors as $sponsor){
                             if(isset($sponsor->image) && $sponsor->image){
                                 $img = CC::nodes()->getImage($sponsor->image->qname);
-                                $sponsor->image = $img->imageUrl."?name=image500&size=500";  
+                                $sponsor->image = $img->imageUrl."?name=image500&size=500"."&v=".$item->_system->changeset;  
                             } else { 
                                 $sponsor->image = false; 
                             }
@@ -127,32 +127,32 @@ class CloudCmsParser
                     // Files/Images
                     if($item->image){
                         $img = CC::nodes()->getImage($item->image->qname);
-                        $item->image = $img->imageUrl."?name=image500&size=500";
+                        $item->image = $img->imageUrl."?name=image500&size=500"."&v=".$item->_system->changeset;
                     }
 
                     if($item->highResImage){
                         $img = CC::nodes()->getImage($item->highResImage->qname);
-                        $item->highResImage = $img->imageUrl."?name=image1800&size=1800";
+                        $item->highResImage = $img->imageUrl."?name=image1800&size=1800"."&v=".$item->_system->changeset;
                     }  
 
                     if($item->rulesAndRegulations){
                         $file = CC::nodes()->getFile($item->rulesAndRegulations->title, "path/documents/rules-and-regulations/");
-                        $item->rulesAndRegulations = $file->fileUrl;
+                        $item->rulesAndRegulations = $file->fileUrl.'?v='.$item->_system->changeset;
                     }
 
                     if($item->programme){
                         $file = CC::nodes()->getFile($item->programme->title, "path/documents/programme/");
-                        $item->programme = $file->fileUrl;
+                        $item->programme = $file->fileUrl.'?v='.$item->_system->changeset;
                     }
 
                     if($item->practicalInfo){
                         $file = CC::nodes()->getFile($item->practicalInfo->title, "path/documents/practical_info/");
-                        $item->practicalInfo = $file->fileUrl;
+                        $item->practicalInfo = $file->fileUrl.'?v='.$item->_system->changeset;
                     }
 
                     if($item->disclosure){
                         $file = CC::nodes()->getFile($item->disclosure->title, "path/documents/disclosures/");
-                        $item->disclosure = $file->fileUrl;
+                        $item->disclosure = $file->fileUrl.'?v='.$item->_system->changeset;
                     }
 
                     // Video
