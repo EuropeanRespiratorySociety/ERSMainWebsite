@@ -101,6 +101,7 @@ class CloudCmsHelper
         $results = CC::nodes()
             ->queryRelatives($_qname, $query)
             ->addParams(['type' => $type])
+            ->addParams(['metadata' => 'true'])
             ->addParams(['full' => 'true'])
             ->get();
         $results = $this->validateResults($results);      
