@@ -864,7 +864,7 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('maeve.tsu@ersnet.org', 'Maeve Tsu') !!}</strong>
-            Scientific Administrative Assistant<br>
+            Funding Programme Assistant<br>
             T +41 21 213 01 83<br>
             </p>
         </div>
