@@ -8,53 +8,71 @@
 			</div>
 		</div>
 		<div class="row text-left row-professional">
-			<!--e-Learning-->
-			<div class="col-md-3">
-				<h2><a href="http://www.ers-education.org/home.aspx">e-Learning</a></h2>
-				<ul>
-					<li><a href="http://respipedia.ers-education.org/home.aspx" target="_blank">Respipedia</a></li>
-					<li><a href="http://www.ers-education.org/events.aspx" target="_blank">Slides and webcasts</a></li>
-					<li><a href="http://www.ers-education.org/e-learning/case-reports.aspx" target="_blank">Case reports</a> and <a href="http://www.ers-education.org/e-learning/procedure-videos.aspx" target="_blank">Videos</a></li>
-					<li><a href="http://www.ers-education.org/cmeOnline" target="_blank">CME Online</a></li>
-				</ul>
-				<!---->
-			</div>
-		    <!--FIN e-Learning-->
-
-		    <!--Programmes and courses-->
+			{{--Programmes and courses--}}
 		    <div class="col-md-3">
-		    	<h2><a href="{{url('professional-development/courses')}}">Programmes and courses</a></h2>
+		    	<h2>Educational activities</h2>
 		    	<ul>
-		    		<li>Skills courses</li>
-		    		<li>Online courses</li>
-		    		<!--li>Programmes</li-->
-		    		<!--li><a>&nbsp;</a></li-->
+		    		<li>
+						<a class="ga-home-edu" href="{{url('professional-development/courses')}}">
+							Courses
+						</a>
+					</li>
+					<li>
+						<a class="ga-home-edu" href="{{url('professional-development/courses')}}">
+						Skills courses
+						</a>
+					</li>
+		    		<li>
+						<a class="ga-home-edu" href="{{url('professional-development/courses')}}">
+						Online courses
+						</a>
+					</li>
+		    		<li>
+						<a class="ga-home-edu" href="{{url('professional-development/ers-certified-training-programmes')}}">
+						Training programmes
+						</a>
+					</li>
+		    		<li>
+						<a class="ga-home-edu" href="{{url('professional-development/hermes')}}">
+						HERMES examinations
+						</a>
+					</li>
 		    	</ul>
 		    	
 		    </div>
-		    <!--FIN Programmes and courses-->
+		    {{-- END Programmes and courses--}}
 
-			<!--Assessments-->
+			{{-- e-Learning --}}
 			<div class="col-md-3">
-				<h2>Assessments</h2>
+				<h2>e-Learning</h2>
 				<ul>
-					<li><a target="_blank" href="http://hermes.ersnet.org/exams.html">HERMES exams</a></li>
-					<!--li>Programme assessments</li-->
-					<li><a target="_blank" href="{{url('professional-development/accreditation')}}">Accreditation</a></li>
-					<!--<li><a target="_blank" href="">Curricula</a></li>-->
+					<li><a class="ga-home-edu" href="http://respipedia.ers-education.org/home.aspx" target="_blank">Respipedia</a></li>
+					<li><a class="ga-home-edu" href="http://www.ers-education.org/events.aspx" target="_blank">Slides and webcasts</a></li>
+					<li><a class="ga-home-edu" href="http://www.ers-education.org/e-learning/case-reports.aspx" target="_blank">Case reports</a> and <a class="ga-home-edu" href="http://www.ers-education.org/e-learning/procedure-videos.aspx" target="_blank">Videos</a></li>
+					<li><a class="ga-home-edu" href="http://www.ers-education.org/cmeOnline" target="_blank">CME Online</a></li>
 				</ul>
 			</div>
-			<!--FIN Assessments-->
+		    {{-- END e-Learning--}}
 
-			<!--Harmonising education-->
+			{{--Harmonising education--}}
 			<div class="col-md-3">
-				<h2>Curriculum Development</h2>
+				<h2>Curriculum</h2>
 				<ul>
-					<li><a target="_blank" href="{{url('professional-development/ers-curriculum-design-a-summary-of-projects')}}">Established curriculum</a></li>
-					<li><!--<a target="_blank" href="">Curricula</a>--></li>
+					<li><a class="ga-home-edu" href="{{url('professional-development/ers-curriculum-design-a-summary-of-projects')}}">Projects</a></li>
+					<li><a class="ga-home-edu" href="{{url('professional-development/ers-certified-training-programmes')}}">Training programmes</a></li>
 				</ul>
 			</div>
-			<!--FIN Harmonising education-->
+			{{-- END Harmonising education--}}
+
+			{{--Funding opportunities--}}
+			<div class="col-md-3">
+				<h2>Funding opportunities</h2>
+				<ul>
+					<li><a class="ga-home-edu" href="{{url('professional-development/fellowships')}}">Fellowships</a></li>
+					<li><a class="ga-home-edu" href="{{url('professional-development/grants-and-sponsorships')}}">Grants and sponsorships</a></li>
+				</ul>
+			</div>
+			{{-- END Funding opportunities-}}
 		</div>
   {{-- START Cards --}}
     {{-- @if($items)
