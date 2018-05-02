@@ -33,7 +33,7 @@
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="https://cdn.ersnet.org/images/people/leadership/Omar-Usmani-2.png" class="img-circle">
 		            <p class="photo_caption"><strong>Omar Usmani</strong>
-		            Airway Diseases <br>
+		            Airway diseases, asthma and COPD <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="https://cdn.ersnet.org/images/people/leadership/Suppli-Ulrik.png" class="img-circle">

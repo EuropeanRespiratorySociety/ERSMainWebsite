@@ -50,7 +50,7 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
                       <a href="the-society/assemblies#clinical-physiology">4 Clinical physiology and sleep</a>
                     </li>
                     <li data-menuanchor="airway-diseases">
-                      <a href="the-society/assemblies#airway-diseases">5 Airway Diseases</a>
+                      <a href="the-society/assemblies#airway-diseases">5 Airway diseases, asthma and COPD</a>
                     </li>
                     <li data-menuanchor="epidemiology-and-environment">
                       <a href="the-society/assemblies#epidemiology-and-environment">6 Epidemiology and Environment</a>

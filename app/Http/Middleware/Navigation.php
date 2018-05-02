@@ -78,7 +78,7 @@ class Navigation
                     ->link->attr(array('class' => 'ga-nav-society'));
                     $menu->assemblies->add('4. Clinical physiology and sleep', 'the-society/assemblies#clinical-physiology' )
                     ->link->attr(array('class' => 'ga-nav-society'));
-                    $menu->assemblies->add('5. Airway Diseases', 'the-society/assemblies#airway-diseases' )
+                    $menu->assemblies->add('5. Airway diseases, asthma and COPD', 'the-society/assemblies#airway-diseases' )
                     ->link->attr(array('class' => 'ga-nav-society'));
                     $menu->assemblies->add('6. Epidemiology and Environment', 'the-society/assemblies#epidemiology-and-environment' )
                     ->link->attr(array('class' => 'ga-nav-society'));

@@ -43,7 +43,7 @@
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="https://cdn.ersnet.org/images/people/leadership/Antonio-Spanevello.png" class="img-circle">
 		            <p class="photo_caption"><strong>Antonio Spanevello</strong>
-		            Airway Diseases<br>
+		            Airway diseases, asthma and COPD<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
