@@ -55,6 +55,12 @@
     @if($item->eventLocation)
         <p class="place"><span class="icon s7-map-marker"></span> {{ $item->eventLocation }}</p>
     @endif
+    @if($item->feeListStreaming->nonErsMember 
+            || $item->feeListStreaming->ersMember
+            || $item->feeListStreaming->junior
+            || $item->feeListStreaming->industry)
+        <p class="place" style="color:#d0043c"><span class="icon s7-video" style="color:#d0043c;font-weight:bold;"></span> Live streaming</p>    
+    @endif        
     @if($item->eventDates)
         <p class="date"><span class="icon s7-date"></span> {{ $item->eventDates }}</p>
     @endif

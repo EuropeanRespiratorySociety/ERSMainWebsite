@@ -4,6 +4,7 @@ model:
     slug: false
     tags: false
     contentType: false
+    k4EventId: false
     type: false
     flags: [{ text: false, color: false }]
     ebusDate: false
@@ -12,6 +13,7 @@ model:
     eventLocation: false
     leadParagraph: false
     body: false
+    references: false
     articleOneColumn: false
     displayModifiedOnDate: false
     doNotDisplayCreatedOn: false
@@ -43,6 +45,7 @@ model:
     popUp: false
     popUpText: false
     feeList: { junior: false, ersMember: false, nonErsMember: false, industry: false }
+    feeListStreaming: { junior: false, ersMember: false, nonErsMember: false, industry: false }
     cancellationPolicy: false
     travelInfo: false
     organisers: false
@@ -56,6 +59,7 @@ model:
     ebusVenues: [{ name: false, url: false, streetAddress: false, streetAddress2: false, streetAddress3: false, city: false, postalCode: false, country: false, phoneNumber: false, info: false }]
     suggestedAccommodation: [{ name: false, url: false, streetAddress: false, streetAddress2: false, streetAddress3: false, city: false, postalCode: false, country: false, phoneNumber: false, info: false }]
     registerButton: { link: false, text: false }
+    externalLink: { link: false, text: false }
     bursaryApplication: { text: false, deadline: false, notificationOfResults: false, applyButtonUrl: false }
     mentorship: { text: false, deadline: false, notificationOfResults: false, applyButtonUrl: false }
     abstracts: { text: false, deadline: false, notificationOfResults: false, applyButtonUrl: false }
@@ -75,6 +79,7 @@ model:
     diseases: false
     limits: { min: false, max: false }
     methods: false
+    membersOnly: false
     url: false
     uri: false
     unPublished: false

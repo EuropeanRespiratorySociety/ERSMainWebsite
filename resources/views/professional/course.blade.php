@@ -66,6 +66,15 @@
     <div class="col-md-6 lighter-grey-bg ers-course-info">
       <div class="header">
         <div class="clearfix notification">
+          @if($item->feeListStreaming->nonErsMember 
+            || $item->feeListStreaming->ersMember
+            || $item->feeListStreaming->junior
+            || $item->feeListStreaming->industry)
+            <p style="text-align:left;color:#d0043c;">
+              <i style="font-size:26px;font-weight:bold;position:relative;top:5px;" class="s7-video"></i>
+              <span>This couse is live streamed</span>
+            </p>
+          @endif
           @if($item->flags->text)
           <p style="padding: 0 10px;" class="pull-right alert {{'alert-'.$item->flags->color }}">{{ $item->flags->text }}</p>
           @endif
@@ -140,8 +149,8 @@
         <div class="tab-content text-left">
           <div id="venue" class="tab-pane active cont">
 
-            <div class="ers-scroller nano scrollable" style="height:350px;">
-                <div class="nano-content">
+            <div class="ers-scroller nano scrollable" style="height:500px;">
+                <div class="nano-content" style="padding-bottom:200px:">
                 @if($item->practicalInfo)  
                   <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary text-left bt-practicalInfo">
                     <span class="icon s7-info" style="font-size: 24px;"></span>
@@ -168,12 +177,19 @@
                   @endif
                 </ul>
                 <hr>
-                <div class="list-group">
+                <div class="list-group" style="padding-bottom:400px">
                 @if($item->feeList->junior)
                   <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
                     <span class="badge">
                       &euro; {{ $item->feeList->junior }}
                     </span> Early Career <br>ERS Members
+                    @if($item->feeListStreaming->junior)
+                    <hr style="margin-top:3px;margin-bottom:3px;">
+                    <span style="color:#888" class="badge">&euro; {{ $item->feeListStreaming->junior }}</span>
+                    <span style="color:#888">
+                      Live streaming
+                    </span>
+                    @endif
                   </a>
                 @endif
                 @if($item->feeList->ersMember)
@@ -181,6 +197,13 @@
                     <span class="badge">
                       &euro; {{ $item->feeList->ersMember}}
                     </span> ERS Members
+                    @if($item->feeListStreaming->ersMember)
+                    <hr style="margin-top:3px;margin-bottom:3px;">
+                    <span style="color:#888" class="badge">&euro; {{ $item->feeListStreaming->ersMember}}</span>
+                    <span style="color:#888">
+                      Live streaming
+                    </span>
+                    @endif
                   </a>
                 @endif 
                 @if($item->feeList->nonErsMember)
@@ -188,13 +211,28 @@
                     <span class="badge">
                       &euro; {{ $item->feeList->nonErsMember }}
                     </span> Non-ERS Members
+                    @if($item->feeListStreaming->nonErsMember)
+                    <hr style="margin-top:3px;margin-bottom:3px;">
+                    <span style="color:#888" class="badge">&euro; {{ $item->feeListStreaming->nonErsMember }}</span>
+                    <span style="color:#888">
+                      Live streaming
+                    </span>
+                    @endif
                   </a>
                 @endif  
                 @if($item->feeList->industry)
                   <a href="javascript:void(0)" class="list-group-item cursor_default">
                     <span class="badge">
                       &euro; {{ $item->feeList->industry }}
-                    </span> Industry <br>(ERS Members & non-Members)
+                    </span> Industry
+                    @if($item->feeListStreaming->industry)
+                    <hr style="margin-top:3px;margin-bottom:3px;">
+                    <span style="color:#888" class="badge">&euro; {{ $item->feeListStreaming->industry }}</span>
+                    <span style="color:#888">
+                      Live streaming
+                    </span>
+                    @endif
+                    <br>(ERS Members & non-Members)
                   </a>
                 @endif  
                 @if($item->earlybirdDeadline)
