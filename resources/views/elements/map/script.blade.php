@@ -19,5 +19,5 @@
       google.maps.event.addDomListener(window, "load", initialize);
       }
     </script> 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-tI78_Glb_dewK0yre49LLKgCyBZuj5c&callback=initMap" async defer></script>    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2wilEMZuEtyKs8uSrBQae4_OHSVgxdlk&callback=initMap" async defer></script>    
   @endif
