@@ -173,7 +173,7 @@ class Navigation
                 $menu->publications->add('Air Quality and Health','publications/air-quality-and-health')
                                             ->link->attr(array(
                                                 'class' => "ga-navigation"));
-                $menu->publications->add('ERS Road Map', 'http://www.ersroadmap.org/')
+                $menu->publications->add('ERS Road Map', 'publications/european-respiratory-roadmap')
                                             ->link->attr(array(
                                                 'target' => '_blank', 
                                                 'class' => "ga-navigation"));

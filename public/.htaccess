@@ -178,6 +178,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         # R
         Redirect 301 /research-seminar https://www.ersnet.org/research/research-seminars
         Redirect 301 /resp-update https://www.ersnet.org/congress-and-events/ers-resppiratory-updates
+        Redirect 301 /roadmap https://www.ersnet.org/publications/european-respiratory-roadmap
         # S
         Redirect 301 /satellites https://www.ersnet.org/congress-and-events/ers-satellite
         Redirect 301 /schoolcourses https://www.ersnet.org/professional-development/courses
@@ -239,8 +240,6 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /mobile http://www.erscongress.org/mobile
         # O
         Redirect 301 /ondemand http://ondemand.erscongress.org/
-        # R
-        Redirect 301 /roadmap http://www.ersroadmap.org/
         # S
         Redirect 301 /spirometrycourses http://hermes.ersnet.org/activities/2012-03-15-09-52-59/upcoming-courses-spirometry.html
         # T 
@@ -266,6 +265,10 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
     RewriteCond %{HTTP_HOST} !^k4.ersnet.org$
     RewriteCond %{HTTP_HOST} !^abstract.ersnet.org$
     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    RewriteCond %{HTTP_HOST} ^ersroadmap.org$
+    RewriteCond %{HTTP_HOST} ^www.ersroadmap.org$
+    RewriteRule ^(.*)$ https://www.ersnet.org/publications/european-respiratory-roadmap [L,R=301]
     
     # wrong domain to use www.
     RewriteCond %{HTTP_HOST} ^ersnet.org$
