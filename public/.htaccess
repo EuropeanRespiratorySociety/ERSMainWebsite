@@ -140,6 +140,8 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
     ### Internal redirects
 
         RewriteCond %{HTTP_HOST} ^ersroadmap.org$
+        RewriteRule ^(.*)$ https://www.ersnet.org/publications/european-respiratory-roadmap [L,R=301]
+
         RewriteCond %{HTTP_HOST} ^www.ersroadmap.org$
         RewriteRule ^(.*)$ https://www.ersnet.org/publications/european-respiratory-roadmap [L,R=301]
 
