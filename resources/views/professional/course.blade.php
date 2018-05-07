@@ -184,7 +184,7 @@
                       &euro; {{ $item->feeList->junior }}
                     </span> Early Career <br>ERS Members
                     @if($item->feeListStreaming->junior)
-                    <hr style="margin-top:3px;margin-bottom:3px;">
+                    <p style="margin:0;padding:0;"></p>
                     <span style="color:#888" class="badge">&euro; {{ $item->feeListStreaming->junior }}</span>
                     <span style="color:#888"> 
                       <i style="font-size: 15px; position: relative; top: 3px;" class="s7-video"></i>
@@ -199,7 +199,7 @@
                       &euro; {{ $item->feeList->ersMember}}
                     </span> ERS Members
                     @if($item->feeListStreaming->ersMember)
-                    <hr style="margin-top:3px;margin-bottom:3px;">
+                    <p style="margin:0;padding:0;"></p>
                     <span style="color:#888" class="badge">&euro; {{ $item->feeListStreaming->ersMember}}</span>
                     <span style="color:#888">
                       <i style="font-size: 15px; position: relative; top: 3px;" class="s7-video"></i>
@@ -214,7 +214,7 @@
                       &euro; {{ $item->feeList->nonErsMember }}
                     </span> Non-ERS Members
                     @if($item->feeListStreaming->nonErsMember)
-                    <hr style="margin-top:3px;margin-bottom:3px;">
+                    <p style="margin:0;padding:0;"></p>
                     <span style="color:#888" class="badge">&euro; {{ $item->feeListStreaming->nonErsMember }}</span>
                     <span style="color:#888">
                       <i style="font-size: 15px; position: relative; top: 3px;" class="s7-video"></i>
@@ -229,7 +229,7 @@
                       &euro; {{ $item->feeList->industry }}
                     </span> Industry<br>(ERS Members & non-Members)
                     @if($item->feeListStreaming->industry)
-                    <hr style="margin-top:3px;margin-bottom:3px;">
+                    <p style="margin:0;padding:0;"></p>
                     <span style="color:#888" class="badge">&euro; {{ $item->feeListStreaming->industry }}</span>
                     <span style="color:#888">
                       <i style="font-size: 15px; position: relative; top: 3px;" class="s7-video"></i>
