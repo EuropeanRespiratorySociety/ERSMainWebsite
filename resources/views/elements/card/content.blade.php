@@ -59,7 +59,7 @@
             || $item->feeListStreaming->ersMember
             || $item->feeListStreaming->junior
             || $item->feeListStreaming->industry)
-        <p class="place" style="color:#d0043c"><span class="icon s7-video" style="color:#d0043c;font-weight:bold;"></span> Live streaming</p>    
+        <p class="place" style="color:#d0043c"><span class="icon s7-video" style="color:#d0043c;"></span> Live streaming available</p>    
     @endif        
     @if($item->eventDates)
         <p class="date"><span class="icon s7-date"></span> {{ $item->eventDates }}</p>
