@@ -227,7 +227,7 @@
                   <a href="javascript:void(0)" class="list-group-item cursor_default">
                     <span class="badge">
                       &euro; {{ $item->feeList->industry }}
-                    </span> Industry
+                    </span> Industry<br>(ERS Members & non-Members)
                     @if($item->feeListStreaming->industry)
                     <hr style="margin-top:3px;margin-bottom:3px;">
                     <span style="color:#888" class="badge">&euro; {{ $item->feeListStreaming->industry }}</span>
@@ -236,7 +236,6 @@
                       Live stream
                     </span>
                     @endif
-                    <br>(ERS Members & non-Members)
                   </a>
                 @endif  
                 @if($item->earlybirdDeadline)
