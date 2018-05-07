@@ -186,7 +186,8 @@
                     @if($item->feeListStreaming->junior)
                     <hr style="margin-top:3px;margin-bottom:3px;">
                     <span style="color:#888" class="badge">&euro; {{ $item->feeListStreaming->junior }}</span>
-                    <span style="color:#888">
+                    <span style="color:#888"> 
+                      <i style="font-size: 15px; position: relative; top: 3px;" class="s7-video"></i>
                       Live stream
                     </span>
                     @endif
@@ -201,6 +202,7 @@
                     <hr style="margin-top:3px;margin-bottom:3px;">
                     <span style="color:#888" class="badge">&euro; {{ $item->feeListStreaming->ersMember}}</span>
                     <span style="color:#888">
+                      <i style="font-size: 15px; position: relative; top: 3px;" class="s7-video"></i>
                       Live stream
                     </span>
                     @endif
@@ -215,6 +217,7 @@
                     <hr style="margin-top:3px;margin-bottom:3px;">
                     <span style="color:#888" class="badge">&euro; {{ $item->feeListStreaming->nonErsMember }}</span>
                     <span style="color:#888">
+                      <i style="font-size: 15px; position: relative; top: 3px;" class="s7-video"></i>
                       Live stream
                     </span>
                     @endif
@@ -229,6 +232,7 @@
                     <hr style="margin-top:3px;margin-bottom:3px;">
                     <span style="color:#888" class="badge">&euro; {{ $item->feeListStreaming->industry }}</span>
                     <span style="color:#888">
+                      <i style="font-size: 15px; position: relative; top: 3px;" class="s7-video"></i>
                       Live stream
                     </span>
                     @endif
