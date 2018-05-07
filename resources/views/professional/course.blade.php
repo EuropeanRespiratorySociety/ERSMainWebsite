@@ -72,7 +72,7 @@
             || $item->feeListStreaming->industry)
             <p style="text-align:left;color:#d0043c;">
               <i style="font-size:26px;font-weight:bold;position:relative;top:5px;" class="s7-video"></i>
-              <span>This couse is live streamed</span>
+              <span>Live streaming will be available</span>
             </p>
           @endif
           @if($item->flags->text)
