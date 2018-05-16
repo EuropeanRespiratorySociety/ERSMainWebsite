@@ -1,10 +1,18 @@
 # ERS Main Website
 
 ## Docker
+From the cloned repository:
 
-Simply run `docker-compse up` or `docker-compose up -d` (detached mode)
-Stop the containers with `crtl c/cmd c` or `docker-compose stop` (when in detached mode)
+* Simply run `docker-compse up` or `docker-compose up -d` (detached mode)
+* Stop the containers with `ctrl/cmd c` or `docker-compose stop` (when in detached mode)
 
+The webiste will be available on port `8888` can be modified in `docker-compose.yml`
+
+Change code as usual from the cloned repository, it will be synced in the container. You might need to clean the cache:
+
+* `php artisan httpcache:clear`
+* `php artisan cache:clear`
+* `php artisan view:clear`
 
 **Version 1.0.1**
 
