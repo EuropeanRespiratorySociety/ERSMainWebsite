@@ -3,6 +3,7 @@
 ## Docker
 
 Simply run `docker-compse up` or `docker-compose up -d` (detached mode)
+Stop the containers with `crtl c/cmd c` or `docker-compose stop` (when in detached mode)
 
 
 **Version 1.0.1**
