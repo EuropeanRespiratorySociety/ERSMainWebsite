@@ -1,5 +1,10 @@
 # ERS Main Website
 
+## Docker
+
+Simply run `docker-compse up` or `docker-compose up -d` (detached mode)
+
+
 **Version 1.0.1**
 
 ## How to install
