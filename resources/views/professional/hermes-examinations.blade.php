@@ -67,10 +67,10 @@
         </div>
 
         <div class="col-md-8 lighter-grey-bg ers-course-info">
-          {{--<div class="header">
+          <div class="header">
             <div class="clearfix notification">
               @if($item->flags->text)
-              <p style="padding: 0 10px;" class="pull-right alert {{'alert-'.$item->flags->color }}">{{ $item->flags->text }}</p>
+              <p style="padding: 0 10px;margin-right:30px;" class="pull-right alert {{'alert-'.$item->flags->color }}">{{ $item->flags->text }}</p>
               @endif 
               @if($item->fullyBooked)
                   <p class="pull-right text-danger">Fully Booked</p>
@@ -81,7 +81,7 @@
             <label>{{$item->eventDates}} @if(isset($item->eventLocation))<a href="javascript:void(0)" class="cursor_default">{{$item->eventLocation}}</a>@endif</label>
               <a href=""><span class="icon s7-angle-right pull-right" style="font-size: 24px;"></span></a> 
             </h2> 
-          </div>--}}
+          </div>
 
           <div class="row" style="margin-top:20px;">
               {{-- <div class="col-md-6 col-xs-6 text-left event-items-category">
