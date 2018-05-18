@@ -644,7 +644,7 @@
       <div class="row">
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('samuel.pouyt@ersnet.org', 'Samuel Pouyt') !!}</strong>
-            Web Specialist<br>
+            Web Architect<br>
             T +41 21 213 01 46<br>
             </p>
         </div>
