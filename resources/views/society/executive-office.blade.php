@@ -410,12 +410,6 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('sarah.dowsland@ersnet.org', 'Sarah Dowsland') !!}</strong>
-            Educational Activities Senior Coordinator<br>
-            T +41 21 213 01 95<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('melanie.jessner@ersnet.org', 'Melanie Jessner') !!}</strong>
             Educational Programmes Coordinator<br>
             T +41 21 213 01 85<br>
@@ -443,6 +437,18 @@
           <p class="photo_caption"><strong>{!! Html::mailto('nathalie.tabin@ersnet.org', 'Nathalie Tabin') !!}</strong>
             Educational Projects Coordinator<br>
             T +41 21 213 01 77<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('fanny-anh.lehoang@ersnet.org', 'Fanny-Anh Le Hoang') !!}</strong>
+            Educational Programmes Assistant<br>
+            T +41 21 213 01 82<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto(' anca-elena.matei@ersnet.org', 'Anca Matei') !!}</strong>
+            Educational Programmes Assistant<br>
+            T +41 21 213 01 94<br>
             </p>
         </div>
        
