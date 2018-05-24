@@ -222,7 +222,7 @@
             <p><a data-toggle="modal" data-target="#md-travel_info" type="button" class="">Travel Info</a></p>
             @endif
             @if($item->registerButton->link && !$item->fullyBooked)
-              <p>Registering for someone else ? Contact {!! Html::mailto('felix.yip@ersnet.org', 'Felix Yip') !!}</p>
+              <p>Registering for someone else ? Contact {!! Html::mailto('sandy.borlat@ersnet.org', 'Sandy Borlat') !!}</p>
               <a href="{{$item->registerButton->link}}" class="btn btn-primary tab-register-bt">Register</a>
             @endif
             @if($item->fullyBooked)

@@ -292,7 +292,7 @@
             @endif
             --}}
             {{-- @if(!$item->fullyBooked) --}}
-              {{--<p>Registering for someone else ? Contact {!! Html::mailto('felix.yip@ersnet.org', 'Felix Yip') !!}</p>--}}
+              {{--<p>Registering for someone else ? Contact {!! Html::mailto('sandy.borlat@ersnet.org', 'Sandy Borlat') !!}</p>--}}
               {{-- <a data-toggle="modal" data-target="#md-register" class="btn btn-primary tab-register-bt">Register</a>
             @endif
             @if($item->fullyBooked)
