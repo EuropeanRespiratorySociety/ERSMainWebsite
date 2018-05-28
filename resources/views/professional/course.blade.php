@@ -66,10 +66,7 @@
     <div class="col-md-6 lighter-grey-bg ers-course-info">
       <div class="header">
         <div class="clearfix notification">
-          @if($item->feeListStreaming->nonErsMember 
-            || $item->feeListStreaming->ersMember
-            || $item->feeListStreaming->junior
-            || $item->feeListStreaming->industry)
+          @if($item->feeList->liveStreaming)
             <p style="text-align:left;color:#d0043c;">
               <i style="font-size:26px;font-weight:bold;position:relative;top:5px;" class="s7-video"></i>
               <span>Live streaming will be available</span>
@@ -183,14 +180,6 @@
                     <span class="badge">
                       &euro; {{ $item->feeList->junior }}
                     </span> Early Career <br>ERS Members
-                    @if($item->feeListStreaming->junior)
-                    <p style="margin:0;padding:0;"></p>
-                    <span style="color:#888;" class="badge">&euro; {{ $item->feeListStreaming->junior }}</span>
-                    <span style="color:#888"> 
-                      <i style="font-size: 15px; position: relative; top: 3px;" class="s7-video"></i>
-                      Live stream
-                    </span>
-                    @endif
                   </a>
                 @endif
                 @if($item->feeList->ersMember)
@@ -198,14 +187,6 @@
                     <span class="badge">
                       &euro; {{ $item->feeList->ersMember}}
                     </span> ERS Members
-                    @if($item->feeListStreaming->ersMember)
-                    <p style="margin:0;padding:0;"></p>
-                    <span style="color:#888;text-align: right;width: 100%;" class="badge">&euro; {{ $item->feeListStreaming->ersMember}}</span>
-                    <span style="color:#888">
-                      <i style="font-size: 15px; position: relative; top: 3px;" class="s7-video"></i>
-                      Live stream
-                    </span>
-                    @endif
                   </a>
                 @endif 
                 @if($item->feeList->nonErsMember)
@@ -213,14 +194,6 @@
                     <span class="badge">
                       &euro; {{ $item->feeList->nonErsMember }}
                     </span> Non-ERS Members
-                    @if($item->feeListStreaming->nonErsMember)
-                    <p style="margin:0;padding:0;"></p>
-                    <span style="color:#888;text-align: right;width: 100%;" class="badge">&euro; {{ $item->feeListStreaming->nonErsMember }}</span>
-                    <span style="color:#888">
-                      <i style="font-size: 15px; position: relative; top: 3px;" class="s7-video"></i>
-                      Live stream
-                    </span>
-                    @endif
                   </a>
                 @endif  
                 @if($item->feeList->industry)
@@ -228,16 +201,17 @@
                     <span class="badge">
                       &euro; {{ $item->feeList->industry }}
                     </span> Industry<br>(ERS Members & non-Members)
-                    @if($item->feeListStreaming->industry)
-                    <p style="margin:0;padding:0;"></p>
-                    <span style="color:#888;" class="badge">&euro; {{ $item->feeListStreaming->industry }}</span>
-                    <span style="color:#888">
+                  </a>
+                @endif
+                @if($item->feeList->liveStreaming)
+                  <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
+                    <span class="badge">&euro; {{ $item->feeList->liveStreaming}}</span>
+                    <span>
                       <i style="font-size: 15px; position: relative; top: 3px;" class="s7-video"></i>
                       Live stream
                     </span>
-                    @endif
                   </a>
-                @endif  
+                @endif
                 @if($item->earlybirdDeadline)
                 <p>Register before the early bird deadline <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from a €50 discount.</p>
                 @endif

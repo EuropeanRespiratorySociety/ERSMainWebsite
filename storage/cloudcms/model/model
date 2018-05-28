@@ -44,8 +44,7 @@ model:
     technicalInfo: false
     popUp: false
     popUpText: false
-    feeList: { junior: false, ersMember: false, nonErsMember: false, industry: false }
-    feeListStreaming: { junior: false, ersMember: false, nonErsMember: false, industry: false }
+    feeList: { junior: false, ersMember: false, nonErsMember: false, industry: false, liveStreaming: false }
     cancellationPolicy: false
     travelInfo: false
     organisers: false
