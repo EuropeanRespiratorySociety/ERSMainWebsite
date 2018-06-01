@@ -846,7 +846,7 @@
       <div class="row">
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('kathryn.forrest@ersnet.org', 'Kathryn Forrest') !!}</strong>
-            Fellowship Programme Coordinator<br>
+            Fellowship Programme Senior Coordinator<br>
             T +41 21 213 01 99<br>
             </p>
         </div>
@@ -875,18 +875,18 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('nikoleta.luludi@ersnet.org', 'Nikoleta Luludi') !!}</strong>
-            Funding Programmes Coordinator<br>
-            T +41 21 213 01 66<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('elise.heuvelin@ersnet.org', 'Elise Heuvelin') !!}</strong>
             Clinical Project Manager<br>
             T +41 21 213 01 81<br>
             </p>
         </div>
-
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('elise.heuvelin@ersnet.org', 'Alessandra Marguerat') !!}</strong>
+            Scientific Administrative Assistant<br>
+            T +41 21 213 01 81<br>
+            </p>
+        </div>
+        
       </div>
     </div>
     </div>
@@ -923,7 +923,7 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('valerie.vaccaro@ersnet.org', 'Valérie Vaccaro') !!}</strong>
-            Scientific Activities Senior Coordinator<br>
+            Scientitifc Activities Project Lead<br>
             T +41 21 213 01 89<br>
             </p>
         </div>
