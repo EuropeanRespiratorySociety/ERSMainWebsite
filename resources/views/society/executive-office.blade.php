@@ -881,9 +881,9 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('elise.heuvelin@ersnet.org', 'Alessandra Marguerat') !!}</strong>
+          <p class="photo_caption"><strong>{!! Html::mailto('alessandra.marguerat@ersnet.org', 'Alessandra Marguerat') !!}</strong>
             Scientific Administrative Assistant<br>
-            T +41 21 213 01 81<br>
+            T +41 21 213 01 66<br>
             </p>
         </div>
         
