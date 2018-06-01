@@ -852,7 +852,7 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('valerie.vaccaro@ersnet.org', 'Valérie Vaccaro') !!}</strong>
-            Scientific Activities Senior Coordinator<br>
+            Scientitifc Activities Project Lead<br>
             T +41 21 213 01 89<br>
             </p>
         </div>
