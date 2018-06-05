@@ -343,12 +343,6 @@
       </div>
       <div class="row">
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('Lauren.Anderson@europeanlung.org', 'Lauren Anderson') !!}</strong>
-            Press and Communications Manager<br>
-            T +44 114 267 2876<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('dould@europeanlung.org', 'Dawn Ould') !!}</strong>
             Communications Coordinator<br>
             T +44 114 267 2876<br>
@@ -929,7 +923,7 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('valentine.degert@ersnet.org', 'Valentine Degert') !!}</strong>
-            Scientific Program Coordinator<br>
+            Scientific Programme Coordinator<br>
             T +41 21 213 01 88<br>
             </p>
         </div>
@@ -939,7 +933,12 @@
               T +41 21 213 01 71<br>
               </p>
         </div>
-  
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>{!! Html::mailto('bouchra.chajai@ersnet.org', 'BOUCHRA CHAJAÏ') !!}</strong>
+            Congress Programme Coordinator<br>
+            T +41 21 213 01 49<br>
+            </p>
+        </div>
 
       </div>
     </div>
