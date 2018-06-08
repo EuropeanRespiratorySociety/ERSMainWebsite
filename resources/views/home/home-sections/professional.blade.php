@@ -72,7 +72,7 @@
 					<li><a class="ga-home-edu" href="{{url('professional-development/grants-and-sponsorships')}}">Grants and sponsorships</a></li>
 				</ul>
 			</div>
-			{{-- END Funding opportunities-}}
+			{{-- END Funding opportunities --}}
 		</div>
   {{-- START Cards --}}
     {{-- @if($items)
