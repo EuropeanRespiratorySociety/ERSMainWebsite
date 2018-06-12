@@ -54,13 +54,7 @@
     @include('home.home-sections.elf')
 
     {{-- Footer --}}
-    @include('footer')
-
-    
-
-
-
-        
+    @include('footer')  
 
   </div>
 </div>

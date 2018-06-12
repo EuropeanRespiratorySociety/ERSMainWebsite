@@ -180,6 +180,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         # Redirect 301 /privacy https://ers.box.com/v/privacy-policy
         Redirect 301 /plainpackaging https://www.ersnet.org/advocacy/eu-affairs/plain-packaging-protects-our-youth-support-the-campaign
         Redirect 301 /presidentialsummits https://www.ersnet.org/congress-and-events/ers-presidential-summits/a-public-health-approach-to-respiratory-health
+        Redirect 301 /pd https://www.ersnet.org/#professional-development
         # N
         Redirect 301 /ntmaward https://www.ersnet.org/professional-development/grants-and-sponsorships/medical-education-grant
         # R
