@@ -905,7 +905,7 @@
       <div class="row">
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>{!! Html::mailto('agnieszka.radecka@ersnet.org', 'Agnieszka Radecka') !!}</strong>
-            Congress Programme Assistant<br>
+            Congress Programme Coordinator<br>
             T +41 21 213 01 73<br>
             </p>
         </div>
