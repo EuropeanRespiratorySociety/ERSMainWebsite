@@ -1,6 +1,6 @@
       <div class="section fp-auto-height" style="min-height:1100px;">
           <div class="main-content">
-          <div class="page-head"><h2>ERS Assembly 5: Airway Diseases </h2></div>
+          <div class="page-head"><h2>ERS Assembly 5: Airway Diseases, Asthma and COPD</h2></div>
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
