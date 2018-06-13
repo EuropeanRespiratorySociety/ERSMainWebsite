@@ -80,13 +80,13 @@
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
                 <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
-                      <p class="photo_caption"><strong>Alfaro Tiago</strong>
+                      <p class="photo_caption"><strong>Tiago Alfaro</strong>
                       Assembly 12<br>
                       </p>
             </div>
 	        	<div class="col-md-4 xs-mb-15">
                 <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
-                      <p class="photo_caption"><strong>Ramjug Sheila</strong>
+                      <p class="photo_caption"><strong>Sheila Ramjug</strong>
                       Assembly 13<br>
                       </p>
             </div>
