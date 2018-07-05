@@ -116,7 +116,10 @@ class CloudCmsHelper
     * @param int $direction (the sorting direction 1 or -1)
     */
     public function getAssociationSorted($startNode, $type = 'ers:category-association', $field = "_system.created_on.ms", $direction = 1){
-        $query = '{ "unPublished": { "$ne": true} }';
+        $query = '{ 
+            "unPublished": { "$ne": true},
+            "_type": { "$ne": "ers:notifications"}
+        }';
 
         $results = CC::nodes()
             ->queryRelatives($startNode, $query)
