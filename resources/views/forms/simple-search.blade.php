@@ -2,7 +2,11 @@
 <script type="text/javascript">
   $('#md-search').on('shown.bs.modal', function () {
     $('#search').focus();
-})
+    $('#search').addEventListener("keypress", function onEvent(event) {
+      console.log('hello');
+    });
+  });
+
 </script>
     <div class="modal-dialog">
         <div class="modal-content">

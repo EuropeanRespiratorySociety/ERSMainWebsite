@@ -23,10 +23,11 @@
       
       <ul class="nav navbar-nav navbar-right ers-icons-nav" style="background-color:#fff;border-color:#eee;">
               <li class="dropdown">
-                <a href="#" data-toggle="modal" data-target="#md-search" role="button" class="dropdown-toggle">
+                <a href="https://new.ersnet.org/search"  role="button" class="dropdown-toggle">
                   <span style="color:#777" class="icon s7-search"></span>
                 </a>
               </li>
+      </u>
     </div>
   </div>
 </nav> 
