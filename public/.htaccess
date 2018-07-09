@@ -245,6 +245,8 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /fellowship-methodology https://www.ersnet.org/professional-development/fellowships/fellowships-on-guideline-methodology
         # H
         Redirect 301 /handbook http://www.ers-education.org/pages/default.aspx?id=2295
+        # I
+        Redirect 301 /images/03_ERS_Banner_Vote_Now.gif https://www.ersnet.org/images/stories/weekly/03_ERS_Banner_Vote_Now.gif
         # M
         Redirect 301 /mobile http://www.erscongress.org/mobile
         # O
