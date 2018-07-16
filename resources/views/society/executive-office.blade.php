@@ -525,13 +525,6 @@
             T +44 114 267 2872<br>
             </p>
         </div>
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('irene.ferrario@europeanlung.org', 'Irene Ferrario') !!}</strong>
-            EU Projects<br>
-            T +44 114 264 2875<br>
-            </p>
-        </div>
-        
       </div>
     </div>
     </div>
