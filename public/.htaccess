@@ -227,7 +227,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /about-us/healthy-lungs-for-life/item/5145-healthy-lungs-for-life-at-the-athens-marathon.html   http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/
         Redirect 301 /about-us/healthy-lungs-for-life/item/5157-healthy-lungs-for-life-in-the-european-parliament.html   http://www.europeanlung.org/en/projects-and-research/projects/healthy-lungs-for-life/home/
         # B
-        Redirect 301 /bylaws https://ers.app.box.com/s/th0u7ke4k9ue8y4dhcj7y8vi8l7x537f
+        Redirect 301 /bylaws https://ers.app.box.com/s/pw91v38pt7vp0w141gkqg4tpv3r4calp
         # C
         Redirect 301 /case-demo http://www.ersnet.org/learning_resources_player/cases/AJ10.htm
         Redirect 301 /certificates http://datacheck.ersnet.org/~ersnet/mycme_vie12/
