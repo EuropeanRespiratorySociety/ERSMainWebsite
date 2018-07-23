@@ -110,6 +110,30 @@ class ResearchController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    public function CRC()
+    {
+        $results = $this->CC->getItem('clinical-research-collaborations');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] =  (object) $item[0]; 
+
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
+        }
+
+        if($item[0]->hasRelatedArticles > 0){
+            $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
+            $relatedItems = $this->CC->parseItems($related['rows']);
+            $params['relatedItems'] =  (object) $relatedItems;
+        }
+        return view('research.crc')->with($params); 
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
     public function showRS($slug)
     {
         $results = $this->CC->getItem($slug);
