@@ -124,13 +124,13 @@
                           float: left;
                           margin-left: 10px;">
                     <li>
-                      <a href="https://app.box.com/s/w5uyeu1120x8pad4z5ewqv38u1dg5e2r">CRC Guidelines</a>
+                      <a target="_blank" href="https://ers.box.com/s/iidtgu860hjr2hs3uwjq6lvlu1ijotue">CRC Guidelines</a>
                     </li>
                     <li>
-                      <a href="https://app.box.com/s/p125tdjl8qacuh6pitiy2fhxj5rkodhg">CRC Application Form</a>
+                      <a target="_blank" href="https://ers.box.com/s/cxj6m8s9ocud4mxepdkmt1zwntg2zvj8">CRC Application Form</a>
                     </li>
                     <li>
-                      <a href="https://app.box.com/s/titgjiw0kjtpzwldx20qvclv1xhj3jr3">ERS Conflict of Interest Declaration Form</a>
+                      <a target="_blank" href="https://ers.box.com/s/5dn5lwy2ddgczek0abwtqipnnf8j2i8o">ERS Conflict of Interest Declaration Form</a>
                     </li>
                 </ul>
               </p>
