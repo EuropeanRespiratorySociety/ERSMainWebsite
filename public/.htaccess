@@ -200,6 +200,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         # T
         Redirect 301 /the-society/news/ers-clinical-research-collaboration-‘tbnet’-wins-2018-memento-award-for-neglected-diseases https://www.ersnet.org/the-society/news/ers-clinical-research-collaboration-tbnet-wins-2018-memento-award-for-neglected-diseases
         Redirect 301 /the-society/news/apply-for-the-erj%E2%80%99s-early-career-editorial-team-mentoring-programme https://www.ersnet.org/the-society/news/apply-for-the-erj-early-career-editorial-team-mentoring-programme
+        Redirect 301 /the-society/news/apply-for-the-erj’s-early-career-editorial-team-mentoring-programme https://www.ersnet.org/the-society/news/apply-for-the-erj-early-career-editorial-team-mentoring-programme
 
 
 
