@@ -199,6 +199,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /sleep https://www.ersnet.org/professional-development/respiratory-sleep-certified-training-programme
         # T
         Redirect 301 /the-society/news/ers-clinical-research-collaboration-‘tbnet’-wins-2018-memento-award-for-neglected-diseases https://www.ersnet.org/the-society/news/ers-clinical-research-collaboration-tbnet-wins-2018-memento-award-for-neglected-diseases
+        Redirect 301 /the-society/news/apply-for-the-erj%E2%80%99s-early-career-editorial-team-mentoring-programme https://www.ersnet.org/the-society/news/apply-for-the-erj-early-career-editorial-team-mentoring-programme
 
 
 
