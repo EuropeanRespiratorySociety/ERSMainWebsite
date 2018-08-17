@@ -247,7 +247,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         # F
         Redirect 301 /fellowship-methodology https://www.ersnet.org/professional-development/fellowships/fellowships-on-guideline-methodology
         # H
-        Redirect 301 /handbook http://www.ers-education.org/pages/default.aspx?id=2295
+        Redirect 301 /handbook http://books.ersjournals.com/about#handbooks
         # I
         Redirect 301 /images/03_ERS_Banner_Vote_Now.gif https://www.ersnet.org/images/stories/weekly/03_ERS_Banner_Vote_Now.gif
         # M
@@ -256,6 +256,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /ondemand http://ondemand.erscongress.org/
         # S
         Redirect 301 /spirometrycourses http://hermes.ersnet.org/activities/2012-03-15-09-52-59/upcoming-courses-spirometry.html
+        Redirect 301 /sleephandbook http://books.ersjournals.com/about#handbooks 
         # T 
         Redirect 301 /terms-and-conditions https://ers.box.com/v/terms-and-conditions
         # Redirect 301 /terms-and-conditions-hermes https://ers.box.com/v/hermes-terms-and-conditions
