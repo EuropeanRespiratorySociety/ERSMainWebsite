@@ -11,18 +11,24 @@
 <div class="ers-content home-content">
   <div id="fullpage">
     <div class="section fp-auto-height">
+    @if(isset($items['mainNews']))
+    <a href="{{url('the-society/news/'.$items['mainNews']->slug)}}">
+    @endif
       <div class="top-box" @if(isset($items['mainNews']->highResImage))style="background-image: url('{{$items['mainNews']->highResImage}}');background-position: center {{$items['mainNews']->imageAlignment}}" @endif>
-        <div class="subject">
-          <a href="{{url('the-society/news/'.$items['mainNews']->slug)}}">
-               <div class="text-center">
-               <em>{{$items['mainNews']->title}}</em>
-                @if($items['mainNews']->doNotDisplayCreatedOnOnHomepage != true)
-               <h4><em>{{$items['mainNews']->createdOn}}</em></h4>
-                @endif
-               </div>
-          </a>      
-        </div>
+        @if($items['mainNews']->slug !== "early-bird-registration-is-open-for-the-ers-international-congress-2018-")
+          <div class="subject">
+            <div class="text-center">
+              <em>{{$items['mainNews']->title}}</em>
+              @if($items['mainNews']->doNotDisplayCreatedOnOnHomepage != true)
+                <h4><em>{{$items['mainNews']->createdOn}}</em></h4>
+              @endif
+            </div> 
+          </div>
+        @endif
       </div>
+          @if(isset($items['mainNews']))
+    </a>
+    @endif
     </div>
     {{-- Start Section 1 --}}
     @include('home.home-sections.news', array('items' => $items['news']))
