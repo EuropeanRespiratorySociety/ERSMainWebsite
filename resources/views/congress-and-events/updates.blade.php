@@ -223,7 +223,7 @@
             @endif
             @if($item->registerButton->link && !$item->fullyBooked)
               <p>Registering for someone else ? Contact {!! Html::mailto('sandy.borlat@ersnet.org', 'Sandy Borlat') !!}</p>
-              <a href="{{$item->registerButton->link}}" class="btn btn-primary tab-register-bt">Register</a>
+              <a data-toggle="modal" data-target="#md-register" class="btn btn-primary tab-register-bt">Register</a>
             @endif
             @if($item->fullyBooked)
               <p>Please contact {!! Html::mailto('educaion@ersnet.org', 'education@ersnet.org') !!} to be added to the waiting list.</p>
@@ -270,6 +270,28 @@
   @include('elements.modal.cancellation', array('item' => $item)) 
   @include('elements.modal.travel-info', array('item' => $item))  
   @include('elements.modal.technical-info', array('item' => $item))
+
+  <div id="md-register" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content" style = "padding-bottom: 30px;">
+      <div class="modal-header">
+        <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+        <h2 class="modal-title">For which event do you want to register?</h2>
+      </div>
+      <div class="modal-body">
+        <div class="text-left">
+        <div class="col-md-6">
+          <a href="{{$item->registerButton->link}}" class="btn btn-primary tab-register-bt" target="_blank">Register to join us in London</a>
+        </div>
+        <div class="col-md-6">
+          <a href="https://ers.conference2web.com/updates/" class="btn btn-primary tab-register-bt" target="_blank">Register to join us online</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 @stop()  
 {{--END Modal contents div--}}  
 
