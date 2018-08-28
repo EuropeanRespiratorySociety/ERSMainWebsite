@@ -8,8 +8,17 @@
               ['pagination' => isset($pagination) ? $pagination : null]
               )) 
 @stop()
-
 @section('content')
+<style>
+    #ersMainWebsite .article-items .article-text .article img[alt="img700"] {
+      width: 700px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px 0;
+    }
+</style>
+
 <div class="ers-content article-items">
   <div class="row">
     {{-- 
