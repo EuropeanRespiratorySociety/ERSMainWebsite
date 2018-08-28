@@ -158,6 +158,40 @@ class NewsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    public function mobile()
+    {
+        $results = $this->CC->getItem('mobile');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] =  (object) $item[0];
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
+        }
+
+        if($item[0]->hasRelatedArticles > 0){
+            $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
+            $relatedItems = $this->CC->parseItems($related['rows']);
+            $params['relatedItems'] =  (object) $relatedItems;
+        }
+
+        if($item[0]->hasAuthor > 0){
+            $author = $this->CC->getAssociation($item[0]->_qname, 'ers:author-association');
+
+            if(!empty($author['rows'])){      
+                $authorItem = $this->CC->parseItems($author['rows']);
+                $params['author'] = (object) $authorItem[0];
+            }
+        }
+
+    // can change the view here    
+    return view('articles.item')->with($params); 
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
     public function showAuthor($slug)
     {
         $results = $this->CC->getItem($slug);
