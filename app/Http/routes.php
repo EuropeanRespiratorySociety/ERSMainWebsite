@@ -175,7 +175,7 @@ Route::group(['prefix' => 'professional-development'], function () {
     //Route::get('cc', 'CloudCms@requestTest');
     Route::get('full-search', 'CloudCms@fullSearch');
 
-    // Route::get('mobile', 'NewsController@mobile');
+    Route::get('mobile', 'NewsController@mobile');
     Route::get('/{slug}', 'NewsController@show');
 
 });
