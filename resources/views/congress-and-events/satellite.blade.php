@@ -119,7 +119,7 @@
             <div class=" col-md-12 col-xs-6">
               <div style="padding-left: 10px; max-width: 230px;">
                   <h4>With the endorsement of:</h4>
-                  <div>
+                  {{-- <div>
                     <img src="https://cdn.ersnet.org/images/events/DGP-01.png" class="img-responsive" style="padding-top: 20px;"/>
                   </div>
                   <div>
@@ -138,8 +138,8 @@
                     <img src="https://cdn.ersnet.org/images/events/BTS-01.jpg" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-12 col-xs-6">
+              </div> --}}
+              {{-- <div class="col-md-12 col-xs-6">
                 <div style="padding-left: 10px; max-width: 230px;">
                   <div>
                     <img src="https://cdn.ersnet.org/images/events/BVP-SBP-01.jpg" class="img-responsive" style="padding-top: 30px;"/>
@@ -160,7 +160,7 @@
                     <img src="https://cdn.ersnet.org/images/events/NRS.png" class="img-responsive" style="padding-top: 30px;"/>
                   </div>
               </div>
-            </div>
+            </div> --}}
           </div>
           <hr class="visible-xs visible-sm">
           <h4 class="visible-xs visible-sm" style="margin: 50px 0 0 25px;text-align:left;">With the financial support of:</h4>
