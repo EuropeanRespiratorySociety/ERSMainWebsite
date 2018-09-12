@@ -10,6 +10,9 @@
 @stop()
 @section('content')
 <style>
+    #footer-contact {
+      display: none!important;
+    }
     #ersMainWebsite .article-items .article-text .article img[alt="img700"] {
       width: 700px;
       display: block;

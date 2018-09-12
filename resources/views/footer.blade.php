@@ -1,4 +1,5 @@
 <div 
+    id="footer-contact"
     style="
         background: #F1F1F1;
         padding: 30px;"> 

@@ -121,7 +121,7 @@
               </p>
             </span>
             @endif
-            @if($item->slug == "clinical-training-fellowship" || $item->rulesAndRegulations)
+            @if($item->slug == "clinical-training-fellowship" || $item->slug == "ERS-union-public-health-fellowship" ||$item->rulesAndRegulations )
             <span href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
               <span class="icon s7-copy-file"></span>
               <p>
@@ -129,6 +129,14 @@
                 <ul style="display: table;
                           float: left;
                           margin-left: 10px;">
+                    @if($item->slug == "ERS-union-public-health-fellowship")
+                      <li>
+                        <a href="https://ers.box.com/shared/static/t3bojbsa0an9ertq66b8zfjcs4e2sqa6.pdf">Application Guidelines</a>
+                      </li>
+                      <li>
+                        <a href="https://ers.box.com/shared/static/w0lz1m4qsqusqdz2xhe7o5fz633ttair.pdf">Role Profile</a>
+                      </li>
+                    @endif
                     @if($item->slug == "clinical-training-fellowship")
                       <li>
                         <a href="https://ers.box.com/shared/static/vvzxghtnbjh01r6sibuvy6qet5k4szj1.doc">End of training report - Host supervisor</a>
