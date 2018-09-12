@@ -53,14 +53,27 @@
       </div>
 
       @if ($item->sponsors[0]->text || $item->sponsors[0]->image)
-      <div class="course-sponsor text-left">
-          <div class="course-sponsor-wrapper">
-              <div class="col-md-12 col-xs-12" style="position: relative; top: 30%;">
-                <h4 class="text-center" style="font-size: 20px;"><a data-toggle="modal" data-target="#sponsors-info" type="button" class="cursor_pointer">Event support</a></h4>
-              </div>
+          @if($item->slug === "potentially-operable-lung-cancer")
+            <div class="course-sponsor text-left">
+              <div class="course-sponsor-wrapper">
+                <div class="course-sponsor-image col-md-7 col-xs-7 pull-right">
+                  <p style="background-image: url('{{ $item->sponsors[0]->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: right center; background-size: contain;"></p>
+                </div> 
+                <div class="course-sponsor-right  col-md-5 col-xs-5 pull-left">
+                  <h4 class="text-left">{{$item->sponsors[0]->text}}</h4>
+                </div>
+            </div>
           </div>
-      </div>
-     @endif
+          @else
+            <div class="course-sponsor text-left">
+                <div class="course-sponsor-wrapper">
+                    <div class="col-md-12 col-xs-12" style="position: relative; top: 30%;">
+                      <h4 class="text-center" style="font-size: 20px;"><a data-toggle="modal" data-target="#sponsors-info" type="button" class="cursor_pointer">Event support</a></h4>
+                    </div>
+                </div>
+            </div>
+          @endif
+      @endif
     </div>
 
     <div class="col-md-6 lighter-grey-bg ers-course-info">
@@ -186,7 +199,12 @@
                   <a href="javascript:void(0)" class="list-group-item cursor_default">
                     <span class="badge">
                       &euro; {{ $item->feeList->ersMember}}
-                    </span> ERS Members
+                    </span> 
+                    @if($item->slug == "potentially-operable-lung-cancer")
+                      ERS/ESTS members
+                    @else 
+                      ERS members
+                    @endif
                   </a>
                 @endif 
                 @if($item->feeList->nonErsMember)
@@ -212,12 +230,13 @@
                     </span>
                   </a>
                 @endif
+                @if($item->slug == "potentially-operable-lung-cancer")
+                <p style="margin: 15px 0;">The Member fee is applicable to active ERS and ESTS members at the time of registration.  The fee includes two nights’ accommodation.</p>
+                @endif
                 @if($item->earlybirdDeadline)
                 <p>Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from a €50 discount on registration fees{{$item->feeList->liveStreaming ? ' (excluding live streaming)': '' }}.</p>
                 @endif
                 </div>
-
-
               </div>
             </div>
             
