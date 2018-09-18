@@ -16,8 +16,8 @@
 
 	        <div class="row leadership-people">
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Felix_JF_Herth.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Felix JF. Herth</strong>
+		            <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Jouke T. Annema</strong>
 		            Clinical<br>
 		            <a href="http://www.ersnet.org/about-us/leadership/science-council/assembly-heads.raw?task=callelement&amp;item_id=422&amp;element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&amp;method=download" title="Download COI">Download COI</a>
 		            </p>
@@ -65,8 +65,8 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Irene_Steenbruggen.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Irene Steenbruggen</strong>
+              <img src="https://cdn.ersnet.org/images/people/leadership/Martijn_A_Spruit.jpg" class="img-circle">
+              <p class="photo_caption"><strong>Martijn A. Spruit</strong>
 		            Allied Respiratory Professionals <br>
 		            </p>
 	        	</div>
@@ -77,8 +77,8 @@
 		            </p>
 	        	</div>
 				<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Nir_Peled.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Nir Peled</strong>
+		            <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Jan Van Meerbeeck</strong>
 					Thoracic Oncology<br>
 					</p>
                 </div>

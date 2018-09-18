@@ -36,8 +36,8 @@ The Assembly is comprised of the following eight groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 07.01<br>
-                    Chair: Graham L. Hall<br>
-                    Secretary: Refika Hamutcu Ersu</p>
+                    Chair: Refika Hamutcu Ersu<br>
+                    Secretary: Nicole Beydon</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-paediatric-respiratory" type="button" class="btn btn-default pull-right">More</button>
@@ -54,7 +54,7 @@ The Assembly is comprised of the following eight groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 07.02<br>
-                    Chair: Bart Rottier<br>
+                    Chair: Sejal Saglani<br>
                     Secretary: Angela Zacharasiewicz</p>
                   </div>
                   <div class="card-action clearfix">
@@ -109,7 +109,7 @@ The Assembly is comprised of the following eight groups:
                   <div class="card-content text-left">
                     <p>Group 07.05<br>
                     Chair: Theodore Dassios<br>
-                    Secretary: Suzanne Terheggen-Lagro</p>
+                    Secretary: Anna Lavizzari</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-neonatology-and-paediatric" type="button" class="btn btn-default pull-right">More</button>
@@ -126,8 +126,8 @@ The Assembly is comprised of the following eight groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 07.06<br>
-                    Chair: Bulent Taner Karadag<br>
-                    Secretary: Liesbeth Duijts</p>
+                    Chair: Liesbeth Duijts<br>
+                    Secretary: Myrofora Goutaki</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-paediatric-respiratory-epidemiology" type="button" class="btn btn-default pull-right">More</button>

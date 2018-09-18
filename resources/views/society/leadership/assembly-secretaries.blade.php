@@ -51,8 +51,8 @@
 		            Thoracic Surgery and Transplantation<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Martijn_A_Spruit.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Martijn A. Spruit</strong>
+		            <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Daniel Langer</strong>
 		            Allied Respiratory Professionals <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
@@ -61,8 +61,8 @@
 		            Respiratory Infections <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Bogdan-Grigoriu.png" class="img-circle">
-		            <p class="photo_caption"><strong>Bogdan Dragos Grigoriu</strong>
+		            <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Torsten Gerriet Blum</strong>
 		            Thoracic Oncology <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">

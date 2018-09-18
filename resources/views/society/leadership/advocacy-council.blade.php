@@ -34,19 +34,19 @@
 	                </p>
 	            </div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/mina_gaga.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Mina Gaga</strong>
+                <img src="https://cdn.ersnet.org/images/people/leadership/Tobias_Welte.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Tobias Welte</strong>
 		            President<br></p>
 	        	</div>
 	            <div class="col-md-4 xs-mb-15">
-	                <img src="https://cdn.ersnet.org/images/people/leadership/Tobias_Welte.jpg" class="img-circle">
-	                <p class="photo_caption"><strong>Tobias Welte</strong>
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Thierry-Troosters.png" class="img-circle">
+	                <p class="photo_caption"><strong>Thierry Troosters</strong>
 	                President-Elect<br>
 					</p>
 	            </div>
 	            <div class="col-md-4 xs-mb-15">
-               		<img src="https://cdn.ersnet.org/images/people/leadership/Thierry-Troosters.png" class="img-circle">
-	                <p class="photo_caption"><strong>Thierry Troosters</strong>
+               		<img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+	                <p class="photo_caption"><strong>Anita Simonds</strong>
 	                Vice President<br>
 					</p>
 	            </div>
@@ -86,13 +86,6 @@
 		            Chair of the Ad hoc Working Group on TB Advocacy<br>
 		            </p>
 	        	</div>
-
-
-	        	
-	        	
-	        	
-		   
-
 
 			</div>
 
