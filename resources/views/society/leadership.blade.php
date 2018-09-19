@@ -20,7 +20,6 @@
         <h4 style="margin-bottom:50px;"><strong>Executive Committee</strong></h4>
         <div id="spin" class="icon"><span class="fa fa-spinner fa-pulse fa-3x"></span></div>
         <div id="leadership" class="row leadership-people">
-          <h3 style="margin: 0px 0 40px 0;">page being updated.</h3>
         </div>
        
 
@@ -85,7 +84,7 @@ $(document).ready(function(){
                     ${i.Declaration ? linkDoi : ''}
                 </div>`
             
-            // $(person).appendTo('#leadership');
+            $(person).appendTo('#leadership');
             
             // modal windows        
             const header = `
