@@ -72,7 +72,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Cyprus</strong><br>
-		            Stavros Kassinos
+               Stylianos Kakoullis
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Czech Republic </strong><br>
@@ -116,7 +116,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>India</strong><br>
-		            Sujeet Rajan
+               Raja Dhar
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Indonesia</strong><br>
@@ -132,11 +132,11 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Japan</strong><br>
-		            Shu Hashimoto
+                Yasuhiko Nishioka
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Kyrgyzstan</strong><br>
-		            Alina Altymysheva
+               Batyr Osmonov
 	         	</div>	         	
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Luxembourg</strong><br>
@@ -152,15 +152,15 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Malta</strong><br>
-		            Martin Balzan
+                Martin Balzan
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Norway</strong><br>
-		            Aina Akerø
+               Rune Nielsen
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Pakistan</strong><br>
-		            Hasnain Javed
+               Irfan Muhammad
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Philippines</strong><br>
@@ -220,7 +220,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Taiwan</strong><br>
-		            Liang-Wen Hang
+                Chun-Hua Wang
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Thailand</strong><br>
@@ -240,7 +240,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>United States of America </strong><br>
-		            Stephen Lazarus
+               Jeffrey Drazen
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Vietnam</strong><br>

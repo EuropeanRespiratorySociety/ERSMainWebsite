@@ -33,10 +33,15 @@
 					<img src="https://cdn.ersnet.org/images/people/leadership/rachel-chambers.png" class="img-circle">
 		            <p class="photo_caption"><strong>RACHEL CHAMBERS</strong>
 		            Conferences and Research Seminars Director<br>
-		        </div>
+            </div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/christopher_e_brightling.png" class="img-circle">
-		            <p class="photo_caption"><strong>Christopher E. Brightling</strong>
+              <img src="https://cdn.ersnet.org/images/people/leadership/christopher_e_brightling.png" class="img-circle">
+                    <p class="photo_caption"><strong>Christopher E. Brightling</strong>
+                      Science Council Chair Elect<br>
+            </div>
+              <div class="col-md-4 xs-mb-15">
+					<img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>To be announced</strong>
 		            CRC Director<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">

@@ -38,8 +38,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 05.01<br>
-                    Chair: Reinoud Gosens<br>
-                    Secretary: Paul Kirkham</p>
+                    Chair: Dave Singh<br>
+                    Secretary: Lena Uller</p>
                     
                   </div>
                   <div class="card-action clearfix">

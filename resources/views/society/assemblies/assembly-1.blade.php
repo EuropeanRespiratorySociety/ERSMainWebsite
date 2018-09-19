@@ -4,16 +4,16 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/people/leadership/Felix_JF_Herth.jpg" class="img-circle">
-                  <p class="photo_caption">Head: Felix JF. Herth</p>
+                  <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+                  <p class="photo_caption">Head: Jouke T. Annema</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/people/leadership/Venerino_Poletti.jpg" class="img-circle">
-                  <p class="photo_caption">Secretary: Venerino Poletti</p>
+                  <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+                  <p class="photo_caption">Secretary: Ioannis Vogiatzis</p>
                 </div>
             </div>
             <div class="col-md-6 center-block">
-              <p >Assembly Early Career representative: Nicolas Kahn</p>
+              <p >Assembly Early Career representative: Lowie Vanfleteren</p>
             </div>
             <div class="col-md-6 center-block lead">
               Assembly 1 is a broad-based group for specialists based in hospitals and primary-care settings. Members are interested in addressing relevant clinical problems and in translating the latest research into daily practice.
@@ -32,8 +32,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 01.01<br>
-                    Chair: Thekkinkattil Mohan Kumar<br>
-                    Secretary: Laura Fregonese</p>
+                    Chair: Laura Fregonese<br>
+                    Secretary: Nicolas Kahn</p>
                     
                   </div>
                   <div class="card-action clearfix">
@@ -71,8 +71,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 01.03<br>
-                    Chair: Aleksandar Grgic<br>
-                    Secretary: Johan Coolen</p>
+                    Chair: Simon Walsh<br>
+                    Secretary: Ádám Domonkos Tárnoki</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-imaging" type="button" class="btn btn-default pull-right">More</button>
@@ -89,8 +89,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 01.04<br>
-                    Chair: Jouke T. Annema<br>
-                    Secretary: Prashant Nemichand Chhajed</p>
+                    Chair: Prashant Nemichand Chhajed<br>
+                    Secretary: Pratibha Singhal</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-interventional" type="button" class="btn btn-default pull-right">More</button>
@@ -107,8 +107,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 01.05<br>
-                    Chair: Hilary Pinnock<br>
-                    Secretary: Janwillem W. H. Kocks</p>
+                    Chair: Janwillem W. H. Kocks<br>
+                    Secretary: Miguel Román Rodriguez</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-general-practice" type="button" class="btn btn-default pull-right">More</button>
