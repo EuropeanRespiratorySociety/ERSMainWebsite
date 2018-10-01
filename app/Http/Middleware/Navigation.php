@@ -70,13 +70,13 @@ class Navigation
                     ->link->attr(array('class' => 'ga-nav-society'));
                 $menu->theSociety->add('Assemblies', 'the-society/assemblies' )
                 ->link->attr(array('class' => 'ga-nav-society'));
-                    $menu->assemblies->add('1. Clinical', 'the-society/assemblies#clinical' )
+                    $menu->assemblies->add('1. General Pneumology', 'the-society/assemblies#general-pneumology' )
                     ->link->attr(array('class' => 'ga-nav-society'));
                     $menu->assemblies->add('2. Respiratory Intensive Care', 'the-society/assemblies#respiratory-intensive-care' )
                     ->link->attr(array('class' => 'ga-nav-society'));
                     $menu->assemblies->add('3. Basic and translational sciences', 'the-society/assemblies#basic-and-translational-sciences' )
                     ->link->attr(array('class' => 'ga-nav-society'));
-                    $menu->assemblies->add('4. Clinical physiology and sleep', 'the-society/assemblies#clinical-physiology' )
+                    $menu->assemblies->add('4. Sleep and Breathing disorders; and clinical physiology', 'the-society/assemblies#sleep-and-breathing-disorders' )
                     ->link->attr(array('class' => 'ga-nav-society'));
                     $menu->assemblies->add('5. Airway diseases, asthma and COPD', 'the-society/assemblies#airway-diseases' )
                     ->link->attr(array('class' => 'ga-nav-society'));
@@ -96,6 +96,8 @@ class Navigation
                     ->link->attr(array('class' => 'ga-nav-society'));
                     $menu->assemblies->add('13. Pulmonary Vascular Diseases', 'the-society/assemblies#pulmonary-vascular-diseases' )
                     ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->assemblies->add('14. Clinical Techniques, Imaging and Endoscopy', 'the-society/assemblies#clinical-techniques' )
+                    ->link->attr(array('class' => 'ga-nav-society'));                    
                 $menu->theSociety->add('News And Features', 'the-society/news' )
                 ->link->attr(array('class' => 'ga-nav-society'));
                     //$menu->newsAndFeatures->add('Respiratory Worldwide', 'the-society/news/respiratory-worldwide' );

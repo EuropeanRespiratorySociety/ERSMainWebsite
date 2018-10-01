@@ -11,7 +11,7 @@
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="https://cdn.ersnet.org/images/people/leadership/Venerino_Poletti.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>Venerino Poletti</strong>
-		            Clinical<br>
+                  General Pneumology<br>
 		            <a href="/about-us/leadership/education-council/assembly-secretaries.raw?task=callelement&amp;item_id=1065&amp;element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&amp;method=download" title="Download COI">Download COI</a>
 		            </p>
 	        	</div>
@@ -28,7 +28,7 @@
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="https://cdn.ersnet.org/images/people/leadership/Pierantonio-Laveneziana.png" class="img-circle">
 		            <p class="photo_caption"><strong>Pierantonio Laveneziana</strong>
-		            Clinical physiology, sleep and pulmonary circulation <br>
+                  Sleep and Breathing disorders; and clinical physiology<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="https://cdn.ersnet.org/images/people/leadership/Omar-Usmani-2.png" class="img-circle">
@@ -75,6 +75,11 @@
 		            <p class="photo_caption"><strong>Anton Vonk Noordegraaf</strong>
 		            Pulmonary Vascular Diseases<br>
 		        </div>
+		        <div class="col-md-4 xs-mb-15">
+              <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+              <p class="photo_caption"><strong>To be announced</strong>
+                Clinical Techniques, Imaging and Endoscopy<br>
+          </div>
 
 	        </div>
 

@@ -1,11 +1,11 @@
       <div class="section fp-auto-height" id="">
           <div class="main-content">
-          <div class="page-head"><h2>ERS Assembly 1: Clinical</h2></div>
+          <div class="page-head"><h2>ERS Assembly 1: General Pneumology</h2></div>
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
                   <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
-                  <p class="photo_caption">Head: Jouke T. Annema</p>
+                  <p class="photo_caption">Head: To be announced</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
                   <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
@@ -67,51 +67,33 @@
                   <div class="card-image">
                   </div>
                   <div class="card-title text-left">
-                    <h3>Imaging</h3>
-                  </div> 
-                  <div class="card-content text-left">
-                    <p>Group 01.03<br>
-                    Chair: Simon Walsh<br>
-                    Secretary: Ádám Domonkos Tárnoki</p>
-                  </div>
-                  <div class="card-action clearfix">
-                    <button data-toggle="modal" data-target="#md-imaging" type="button" class="btn btn-default pull-right">More</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card card-padded">
-                  <div class="card-image">
-                  </div>
-                  <div class="card-title text-left">
-                    <h3>Interventional Pulmonology</h3>
-                  </div> 
-                  <div class="card-content text-left">
-                    <p>Group 01.04<br>
-                    Chair: Prashant Nemichand Chhajed<br>
-                    Secretary: Pratibha Singhal</p>
-                  </div>
-                  <div class="card-action clearfix">
-                    <button data-toggle="modal" data-target="#md-interventional" type="button" class="btn btn-default pull-right">More</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="card card-padded">
-                  <div class="card-image">
-                  </div>
-                  <div class="card-title text-left">
                     <h3>General Practice and Primary Care</h3>
                   </div> 
                   <div class="card-content text-left">
-                    <p>Group 01.05<br>
+                    <p>Group 01.03<br>
                     Chair: Janwillem W. H. Kocks<br>
                     Secretary: Miguel Román Rodriguez</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-general-practice" type="button" class="btn btn-default pull-right">More</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card card-padded">
+                  <div class="card-image">
+                  </div>
+                  <div class="card-title text-left">
+                    <h3>M-Health/e-health</h3>
+                  </div> 
+                  <div class="card-content text-left">
+                    <p>Group 01.04<br>
+                    Chair: To be announced<br>
+                    Secretary: To be announced</p>
+                  </div>
+                  <div class="card-action clearfix">
+                    {{-- <button data-toggle="modal" data-target="#md-m-e-health" type="button" class="btn btn-default pull-right">More</button> --}}
                   </div>
                 </div>
               </div>
