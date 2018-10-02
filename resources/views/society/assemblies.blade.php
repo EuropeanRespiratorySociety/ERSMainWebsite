@@ -892,7 +892,7 @@ As a Group we aim to be a platform that facilitates close cooperation between ba
 
     {{-- Cloud Front is the ERS CDN --}}
      <script src="https://cdn.ersnet.org/js/fullpage.js" type="text/javascript"></script>
-    {{-- <script src="https://cdn.ersnet.org/js/app-assemblies.js" type="text/javascript"></script> --}}
+    <script src="https://cdn.ersnet.org/js/app-assemblies.js" type="text/javascript"></script>
 
     {{-- Dev Server --}}
     {{-- <script src="http://localhost:8889/js/app-assemblies.js" type="text/javascript"></script> --}}
