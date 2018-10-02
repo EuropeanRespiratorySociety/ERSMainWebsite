@@ -886,17 +886,16 @@ As a Group we aim to be a platform that facilitates close cooperation between ba
 
     @section('scripts')
     {{-- <script src="../js/fullpage.js" type="text/javascript"></script> --}}
-    <script src="http://localhost:8889/js/app-assemblies.js" type="text/javascript"></script>
-
-    {{--<script src="http://erstemplate.app/js/fullpage.js" type="text/javascript"></script>--}}
-    {{--<script src="http://erstemplate.app/js/app-assemblies.js" type="text/javascript"></script>--}}
 
     {{-- <script src="https://bootstrap.ersnet.org/js/fullpage.js" type="text/javascript"></script>
     <script src="https://bootstrap.ersnet.org/js/app-assemblies.js" type="text/javascript"></script> --}}
 
     {{-- Cloud Front is the ERS CDN --}}
-    {{-- <script src="https://cdn.ersnet.org/js/fullpage.js" type="text/javascript"></script> --}}
+     <script src="https://cdn.ersnet.org/js/fullpage.js" type="text/javascript"></script>
     {{-- <script src="https://cdn.ersnet.org/js/app-assemblies.js" type="text/javascript"></script> --}}
+
+    {{-- Dev Server --}}
+    <script src="http://localhost:8889/js/app-assemblies.js" type="text/javascript"></script>
 
     <script type="text/javascript">
       $(document).ready(function(){
