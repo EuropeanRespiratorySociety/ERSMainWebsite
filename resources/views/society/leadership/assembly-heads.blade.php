@@ -59,8 +59,8 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Geert_Verleden_square.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Geert Verleden</strong>
+              <img src="https://cdn.ersnet.org/images/people/leadership/Stefano_Elia.JPG" class="img-circle">
+		            <p class="photo_caption"><strong>Stefano Elia</strong>
 		            Thoracic Surgery and Transplantation<br>
 		            </p>
 	        	</div>

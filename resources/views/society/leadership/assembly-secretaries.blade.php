@@ -9,10 +9,10 @@
 
 	        <div class="row leadership-people">
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Venerino_Poletti.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Venerino Poletti</strong>
+              <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Ioannis Vogiatzis</strong>
                   General Pneumology<br>
-		            <a href="/about-us/leadership/education-council/assembly-secretaries.raw?task=callelement&amp;item_id=1065&amp;element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&amp;method=download" title="Download COI">Download COI</a>
+		            {{-- <a href="/about-us/leadership/education-council/assembly-secretaries.raw?task=callelement&amp;item_id=1065&amp;element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&amp;method=download" title="Download COI">Download COI</a> --}}
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
@@ -46,8 +46,8 @@
 		            Paediatrics<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Stefano_Elia.JPG" class="img-circle">
-		            <p class="photo_caption"><strong>Elia Stefano</strong>
+              <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Federica Meloni</strong>
 		            Thoracic Surgery and Transplantation<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
