@@ -25,8 +25,8 @@
 
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/rory_morty.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>RORY MORTY</strong>
+              <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Louis Donnelly</strong>
 		            Fellowships and Awards Director<br>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
@@ -35,28 +35,33 @@
 		            Conferences and Research Seminars Director<br>
             </div>
 	        	<div class="col-md-4 xs-mb-15">
+              <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+                    <p class="photo_caption"><strong>Reinoud Gossens</strong>
+                      Conference and Research Seminars elect<br>
+            </div>
+                <div class="col-md-4 xs-mb-15">
               <img src="https://cdn.ersnet.org/images/people/leadership/christopher_e_brightling.png" class="img-circle">
                     <p class="photo_caption"><strong>Christopher E. Brightling</strong>
                       Science Council Chair Elect<br>
             </div>
               <div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>To be announced</strong>
+                <img src="https://cdn.ersnet.org/images/people/leadership/christopher_e_brightling.png" class="img-circle">
+		            <p class="photo_caption"><strong>Christopher E. Brightling</strong>
 		            CRC Director<br>
-		        </div>
-		        <div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/marc_miravitlles.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Marc Miravitlles</strong>
-		            Guidelines director<br>
-		        </div>
+            </div>
+            <div class="col-md-4 xs-mb-15">
+              <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+              <p class="photo_caption"><strong>Maarten van den Bergen</strong>
+                CRC chair elect<br>
+          </div>
 		        <div class="col-md-4 xs-mb-15">
 					<img src="https://cdn.ersnet.org/images/people/leadership/Nicolas-Roche-2.png" class="img-circle">
 		            <p class="photo_caption"><strong>Nicolas Roche</strong>
-		            Guidelines director-elect<br>
+		            Guidelines director<br>
 		        </div>		        
 		        <div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/Nicolas-Kahn.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>NICOLAS KAHN</strong>
+              <img src="https://cdn.ersnet.org/images/people/leadership/Sabine Bartel.jpg" class="img-circle">
+              <p class="photo_caption"><strong>Sabine Bartel</strong>
 		            Early-career member Representative<br>
 		        </div>
 
