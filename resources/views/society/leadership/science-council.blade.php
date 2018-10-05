@@ -57,17 +57,17 @@
             <div class="col-md-4 xs-mb-15">
               <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
               <p class="photo_caption"><strong>Maarten van den Berge</strong>
-                CRC chair Elect<br>
+                CRC Chair Elect<br>
           </div>
 		        <div class="col-md-4 xs-mb-15">
 					<img src="https://cdn.ersnet.org/images/people/leadership/Nicolas-Roche-2.png" class="img-circle">
 		            <p class="photo_caption"><strong>Nicolas Roche</strong>
-		            Guidelines director<br>
+		            Guidelines Director<br>
 		        </div>		        
 		        <div class="col-md-4 xs-mb-15">
               <img src="https://cdn.ersnet.org/images/people/leadership/Sabine Bartel.jpg" class="img-circle">
               <p class="photo_caption"><strong>Sabine Bartel</strong>
-		            Early-career member Representative<br>
+		            Early-Career Member Representative<br>
 		        </div>
 
 
