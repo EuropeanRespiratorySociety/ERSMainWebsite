@@ -7,9 +7,9 @@
 	        <div class="page-head">
 	        <h2 class="">Science Council</h2>
 	        </div>
-	        <div class="col-md-8 center-block lead">This committee comprises of the members listed below and the <a href="http://old.ersnet.org/about-us/leadership/scientific-committee/category/assembly-heads-2.html">Heads of Scientific Assemblies</a><br>
+	        <div class="col-md-8 center-block lead"><!-- This committee comprises of the members listed below and the <a href="http://old.ersnet.org/about-us/leadership/scientific-committee/category/assembly-heads-2.html">Heads of Scientific Assemblies</a><br>
 			
-			Download the brochure - <a target="_blank" href="https://ers.app.box.com/s/7s16sz4py6f08wsdvis9ct4rlw0d1gki">Scientific Activities</a><br>
+			Download the brochure - <a target="_blank" href="https://ers.app.box.com/s/7s16sz4py6f08wsdvis9ct4rlw0d1gki">Scientific Activities</a><br> -->
 			
 			Consult the <a href="{{url('the-society/who-we-are/science-portal')}}">Science Council Portal</a>
 
@@ -41,7 +41,7 @@
             </div>
 	        	<div class="col-md-4 xs-mb-15">
               <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
-                    <p class="photo_caption"><strong>Reinoud Gossens</strong>
+                    <p class="photo_caption"><strong>Reinoud Gosens</strong>
                       Conference and Research Seminars Elect<br>
             </div>
                 <div class="col-md-4 xs-mb-15">
