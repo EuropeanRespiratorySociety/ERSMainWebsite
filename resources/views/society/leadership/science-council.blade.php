@@ -23,11 +23,16 @@
 		            <a href="http://old.ersnet.org/about-us/leadership/science-council.raw?task=callelement&amp;item_id=1057&amp;element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&amp;method=download" title="Download COI">Download COI</a>
 		            </p>
 
+            </div>
+	        	<div class="col-md-4 xs-mb-15">
+              <img src="https://cdn.ersnet.org/images/people/leadership/rory_morty.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>RORY MORTY</strong>
+		            Fellowships and Awards Director<br>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
               <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>Louis Donnelly</strong>
-		            Fellowships and Awards Director<br>
+		            Fellowships and Awards Director Elect<br>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 					<img src="https://cdn.ersnet.org/images/people/leadership/rachel-chambers.png" class="img-circle">
@@ -37,7 +42,7 @@
 	        	<div class="col-md-4 xs-mb-15">
               <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
                     <p class="photo_caption"><strong>Reinoud Gossens</strong>
-                      Conference and Research Seminars elect<br>
+                      Conference and Research Seminars Elect<br>
             </div>
                 <div class="col-md-4 xs-mb-15">
               <img src="https://cdn.ersnet.org/images/people/leadership/christopher_e_brightling.png" class="img-circle">
@@ -51,8 +56,8 @@
             </div>
             <div class="col-md-4 xs-mb-15">
               <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
-              <p class="photo_caption"><strong>Maarten van den Bergen</strong>
-                CRC chair elect<br>
+              <p class="photo_caption"><strong>Maarten van den Berge</strong>
+                CRC chair Elect<br>
           </div>
 		        <div class="col-md-4 xs-mb-15">
 					<img src="https://cdn.ersnet.org/images/people/leadership/Nicolas-Roche-2.png" class="img-circle">
