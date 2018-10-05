@@ -31,7 +31,7 @@
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
               <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Louis Donnelly</strong>
+		            <p class="photo_caption"><strong>Louise E. Donnelly</strong>
 		            Fellowships and Awards Director Elect<br>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
