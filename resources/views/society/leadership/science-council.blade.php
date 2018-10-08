@@ -42,7 +42,7 @@
 	        	<div class="col-md-4 xs-mb-15">
               <img src="https://cdn.ersnet.org/images/people/leadership/Reinoud-Gosens.png" class="img-circle">
               <p class="photo_caption"><strong>Reinoud Gosens</strong>
-                      Conference and Research Seminars Elect<br>
+                      Conference and Research Seminars Director Elect<br>
             </div>
                 <div class="col-md-4 xs-mb-15">
               <img src="https://cdn.ersnet.org/images/people/leadership/christopher_e_brightling.png" class="img-circle">
@@ -55,9 +55,9 @@
 		            CRC Director<br>
             </div>
             <div class="col-md-4 xs-mb-15">
-              <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+              <img src="https://cdn.ersnet.org/images/people/leadership/Maarten-van-den-Berge.png" class="img-circle">
               <p class="photo_caption"><strong>Maarten van den Berge</strong>
-                CRC Chair Elect<br>
+                CRC Director Elect<br>
           </div>
 		        <div class="col-md-4 xs-mb-15">
 					<img src="https://cdn.ersnet.org/images/people/leadership/Nicolas-Roche-2.png" class="img-circle">
