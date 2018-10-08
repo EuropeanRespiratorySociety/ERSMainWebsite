@@ -30,7 +30,7 @@
 		            Fellowships and Awards Director<br>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-              <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+              <img src="https://cdn.ersnet.org/images/people/leadership/LOUISE-E-DONNELLY.png" class="img-circle">
 		            <p class="photo_caption"><strong>Louise E. Donnelly</strong>
 		            Fellowships and Awards Director Elect<br>
 	        	</div>
@@ -40,8 +40,8 @@
 		            Conferences and Research Seminars Director<br>
             </div>
 	        	<div class="col-md-4 xs-mb-15">
-              <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
-                    <p class="photo_caption"><strong>Reinoud Gosens</strong>
+              <img src="https://cdn.ersnet.org/images/people/leadership/Reinoud-Gosens.png" class="img-circle">
+              <p class="photo_caption"><strong>Reinoud Gosens</strong>
                       Conference and Research Seminars Elect<br>
             </div>
                 <div class="col-md-4 xs-mb-15">
