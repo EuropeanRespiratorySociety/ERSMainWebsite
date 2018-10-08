@@ -11,10 +11,9 @@
             <div class="text-left">
                <p>
                 Our vision statement can be summarised by: “In seed time learn, in harvest teach, in winter enjoy" [William Blake]. We envision that ECMs will be nourished as seeds through educational activities and scientific support.
-                Some will flourish and should be taught how to contribute to the society.<br />
-                In time, the ERS will enjoy the benefits of a well-trained generation of researchers and clinicians who can lead the society. This vision can be translated as: “ECMs are the audience of today and the leaders of tomorrow".
+                Some will flourish and should be taught how to contribute to the society. In time, the ERS will enjoy the benefits of a well-trained generation of researchers and clinicians who can lead the society. This vision can be translated as: “ECMs are the audience of today and the leaders of tomorrow".
               </p>
-              <p>
+              <p style="margin-top: 15px;">
                 Our <strong>mission</strong> is to improve the training of all ECMs and to ensure the continued support for ECMs who flourish within the society. The mission translates to the following objectives, per role that ECMs can take:
               </p>
               <h4 style="margin-top: 40px;"><i>“In seed time learn” – ECM as audience</i></h4>
