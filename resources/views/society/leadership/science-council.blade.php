@@ -10,7 +10,7 @@
 	        <div class="col-md-8 center-block lead"><!-- This committee comprises of the members listed below and the <a href="http://old.ersnet.org/about-us/leadership/scientific-committee/category/assembly-heads-2.html">Heads of Scientific Assemblies</a><br>
 			
 			Download the brochure - <a target="_blank" href="https://ers.app.box.com/s/7s16sz4py6f08wsdvis9ct4rlw0d1gki">Scientific Activities</a><br> -->
-			
+      Consult the <a href="{{url('the-society/who-we-are/leadership/assembly-heads')}}">Assembly Heads page</a><br>
 			Consult the <a href="{{url('the-society/who-we-are/science-portal')}}">Science Council Portal</a>
 
 			</div>
