@@ -131,7 +131,6 @@ Route::group(['prefix' => 'professional-development'], function () {
         Route::group(['prefix' => 'adult'], function () {
           Route::get('/', 'HermesController@show');
           Route::get('/examination-committee', 'HermesController@ExamCommitteeAdult');
-          Route::get('/ers-hermes-examination-in-adult-respiratory-medicine-self-assessment', 'HermesController@SelfAssessmentAdult');
           Route::get('/{slug}', 'HermesController@show');
         });
         Route::group(['prefix' => 'paediatric'], function () {
