@@ -6,7 +6,7 @@
 	        <div class="page-head">
 	        <h2>Early Career Members Committee</h2>
 	        </div>
-	        <div class="col-md-8 center-block lead">The Early Career Member Council (ECMC) is a group of ERS members below 40 years of age representing the interests of their fellow Early Career Members (EMCs) from the assemblies.
+	        <div class="col-md-8 center-block lead">The Early Career Member Council (ECMC) is a group of ERS members below 40 years of age representing the interests of their fellow Early Career Members (ECMs) from the assemblies.
             <h3 class="text-left" style="margin-top: 40px;">ECMC mission and vision statement</h3>
             <div class="text-left">
                <p>
