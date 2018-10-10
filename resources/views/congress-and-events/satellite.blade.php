@@ -27,7 +27,7 @@
             @include('partials.related-items', array('relatedItems' => $relatedItems)) 
         @endif
     
-    <h4 class="hidden-xs hidden-sm" style="margin: 500px 0 0 25px;text-align:left;">With the financial support of:</h4>
+    <h4 class="hidden-xs hidden-sm" style="margin: 20px 0 0 25px;text-align:left;">With the financial support of:</h4>
     @foreach ($item->sponsors as $sponsor)
     <div class="hidden-xs hidden-sm course-sponsor text-left" style="background:transparent;padding: 0 10px 0 26px;">
         @if($sponsor->text)
