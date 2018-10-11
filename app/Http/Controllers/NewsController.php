@@ -183,7 +183,7 @@ class NewsController extends Controller
         }
 
     // can change the view here    
-    return view('articles.item')->with($params); 
+    return view('articles.mobile')->with($params); 
     }
 
     /**

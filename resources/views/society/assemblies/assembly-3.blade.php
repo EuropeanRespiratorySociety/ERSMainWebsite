@@ -35,8 +35,8 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 03.01<br>
-                    Chair: Philippe Bonniaud<br>
-                    Secretary: Aurélie Fabre</p>
+                    Chair: Aurelie Fabre<br>
+                    Secretary: Arnaud Mailleux</p>
                     
                   </div>
                   <div class="card-action clearfix">

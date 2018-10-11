@@ -39,7 +39,7 @@ class HermesController extends Controller
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  $items;
 
-        return view('articles.item')->with($params);
+        return view('professional.hermeses')->with($params);
     }
 
     /**
@@ -124,7 +124,6 @@ class HermesController extends Controller
 
         return view('professional.hermes-examination-committee-paediatric')->with($params);
     }
-
 
     /**
      * Display a listing of the resource.

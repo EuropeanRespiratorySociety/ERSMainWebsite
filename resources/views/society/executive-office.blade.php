@@ -9,7 +9,16 @@
 @stop()
     @section('content')
 
-    <div class="ers-content executive-content">
+    <div class="ers-content executive-content" style="margin-left:0;">
+        <div class="ers-content membership-content">
+            <a 
+            href="https://www.ersnet.org/the-society/who-we-are/contact"
+            type="button" 
+            class="btn btn-space btn-primary btn-rounded btn-lg"
+            style="position:fixed;top:120px;right:3px;z-index:10;">
+            <i style="font-size:30px;" class="s7-mail icon"></i> Contact us
+          </a>
+      
     <div id="fullpage">
       <div class="section fp-auto-height">
       <div class="main-content">
@@ -32,7 +41,7 @@
         <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
             <img src="https://cdn.ersnet.org/images/people/executive-office/wbill.jpg" class="img-circle">
-            <p class="photo_caption"><strong>Werner Bill<!-- {!! Html::mailto('werner.bill@ersnet.org', 'Werner Bill') !!} --></strong>
+            <p class="photo_caption"><strong>Werner Bill</strong>
             Executive Director,<br>
             T +41 21 213 01 20
             </p>
@@ -41,13 +50,13 @@
 
         <div class="row">
          <div class="col-md-3 col-md-offset-3 xs-mb-15">
-            <p class="photo_caption"><strong>{!! Html::mailto('olivia.menegale@ersnet.org', 'Olivia Menegale') !!}</strong>
+            <p class="photo_caption"><strong>Olivia Menegale</strong>
             Executive Senior Coordinator<br>
             T +41 21 213 01 12<br>
             </p>
           </div>
           <div class="col-md-3 xs-mb-15">
-            <p class="photo_caption"><strong>{!! Html::mailto('Anastasia.nesterova@ersnet.org', 'Anastasia Nesterova') !!}</strong>
+            <p class="photo_caption"><strong>Anastasia Nesterova</strong>
             Administrative Coordinator<br>
             T +41 21 213 01 13<br>
             </p>
@@ -222,7 +231,7 @@
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
             <img src="https://cdn.ersnet.org/images/people/executive-office/pfoo.jpg" class="img-circle">
-            <p class="photo_caption"><strong>{!! Html::mailto('Patricia.Foo@ersnet.org', 'Patricia Foo') !!}</strong>
+            <p class="photo_caption"><strong>Patricia Foo</strong>
             Director of Congress &amp; Events<br>
             T +41 21 213 01 70<br>
             </p>
@@ -230,31 +239,31 @@
       </div>
       <div class="row">
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('Laura.montangero@ersnet.org', 'Laura Montangero') !!}</strong>
+          <p class="photo_caption"><strong>Laura Montangero</strong>
             Senior Coordinator<br>
             T +41 21 213 01 75<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('soraya.barazin@ersnet.org', 'Soraya Barazin') !!}</strong>
+          <p class="photo_caption"><strong>Soraya Barazin</strong>
             Senior Coordinator<br>
             T +41 21 213 01 72<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('felix.yip@ersnet.org', 'Felix Yip') !!}</strong>
+          <p class="photo_caption"><strong>Felix Yip</strong>
             Coordinator<br>
             T +41 21 213 01 97<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('nutcha.prakkamakul@ersnet.org', 'Nutcha Prakkamakul') !!}</strong>
+          <p class="photo_caption"><strong>Nutcha Prakkamakul</strong>
             Assistant<br>
             T +41 21 213 01 69<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('sandy.borlat@ersnet.org', 'Sandy Borlat') !!}</strong>
+          <p class="photo_caption"><strong>Sandy Borlat</strong>
             Assistant<br>
             T +41 21 213 01 86<br>
             </p>
@@ -273,7 +282,7 @@
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
             <img src="https://cdn.ersnet.org/images/people/executive-office/ssealy.jpg" class="img-circle">
-            <p class="photo_caption"><strong>{!! Html::mailto('Steve.Sealy@ersnet.org', 'Steve Sealy') !!}</strong>
+            <p class="photo_caption"><strong>Steve Sealy</strong>
             Associate Director,<br>
             Director of Corporate Relations,<br>
             Marketing and Communications<br>
@@ -283,37 +292,37 @@
       </div>
       <div class="row">
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('alexandre.delage@ersnet.org', 'Alexandre Delage') !!}</strong>
+          <p class="photo_caption"><strong>Alexandre Delage</strong>
             Corporate Funding Manager<br>
             T +41 21 213 01 23<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('Kristof.kemp@ersnet.org', 'Kristof Kemp') !!}</strong>
+          <p class="photo_caption"><strong>Kristof Kemp</strong>
             Congress Industry Relations Manager<br>
             T +41 21 213 01 64<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('Claudia.Cichon@ersnet.org', 'Claudia Cichon') !!}</strong>
+          <p class="photo_caption"><strong>Claudia Cichon</strong>
             Promotional Projects<br>
             T +41 21 213 01 53 <br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('leslye.lacroix@ersnet.org', 'Leslye Lacroix') !!}</strong>
+          <p class="photo_caption"><strong>Leslye Lacroix</strong>
             Marketing &amp; Corporate Relations Coordinator<br>
             T +41 21 213 01 63<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('nicolas.luginbuhl@ersnet.org', 'Nicolas Luginbuhl') !!}</strong>
+          <p class="photo_caption"><strong>Nicolas Luginbuhl</strong>
             Marketing &amp; Corporate Relations Coordinator<br>
             T +41 21 213 01 63<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('gergana.yaneva@ersnet.org', ' Gergana Yaneva') !!}</strong>
+          <p class="photo_caption"><strong>Gergana Yaneva</strong>
             Administrative Assistant<br>
             T +41 21 213 01 62<br>
             </p>
@@ -333,7 +342,7 @@
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
             <img src="https://cdn.ersnet.org/images/people/executive-office/ssealy.jpg" class="img-circle">
-            <p class="photo_caption"><strong>{!! Html::mailto('Steve.Sealy@ersnet.org', 'Steve Sealy') !!}</strong>
+            <p class="photo_caption"><strong>Steve Sealy</strong>
             Associate Director,<br>
             Director of Corporate Relations,<br>
             Marketing and Communications<br>
@@ -343,13 +352,13 @@
       </div>
       <div class="row">
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('dould@europeanlung.org', 'Dawn Ould') !!}</strong>
+          <p class="photo_caption"><strong>Dawn Ould</strong>
             Communications Coordinator<br>
             T +44 114 267 2876<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('beth.maguire@europeanlung.org', 'Beth Maguire') !!}</strong>
+          <p class="photo_caption"><strong>Beth Maguire</strong>
             Press and Communications Assistant<br>
             T +44 114 267 2866<br>
             </p>
@@ -371,7 +380,7 @@
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
             <img src="https://cdn.ersnet.org/images/people/executive-office/cpannetier.jpg" class="img-circle">
-            <p class="photo_caption"><strong>{!! Html::mailto('carine.pannetier@ersnet.org', 'Carine Pannetier') !!}</strong>
+            <p class="photo_caption"><strong>Carine Pannetier</strong>
             Director of Education, Events, Programmes and Accreditation<br>
             T +41 21 213 01 80<br>
             </p>
@@ -379,7 +388,7 @@
       </div>
       <div class="row">
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('amy.farr@ersnet.org', 'Amy Farr') !!}</strong>
+          <p class="photo_caption"><strong>Amy Farr</strong>
             Educational Programme Manager<br>
             T +41 21 213 01 74<br>
             </p>
@@ -388,59 +397,59 @@
           <p class="photo_caption"><strong>Julie-Lyn Noël</strong>
             Projects Leader<br>
             T +41 21 213 01 77<br>
-            {!! Html::mailto('Julie-Lyn.Noel@ersnet.org', 'Julie-Lyn.Noel@ersnet.org') !!}
+            Julie-Lyn.Noel@ersnet.org
             </p>
         </div-->
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('pascal.kurosinski@ersnet.org', 'Pascal Kurosinski') !!}</strong>
+          <p class="photo_caption"><strong>Pascal Kurosinski</strong>
             E-learning Senior Coordinator<br>
             T +41 21 213 01 84<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('Ali.Merzouk@ersnet.org', 'Ali Merzouk') !!}</strong>
+          <p class="photo_caption"><strong>Ali Merzouk</strong>
             E-Learning Coordinator<br>
             T +41 21 213 01 91<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('melanie.jessner@ersnet.org', 'Melanie Jessner') !!}</strong>
+          <p class="photo_caption"><strong>Melanie Jessner</strong>
             Educational Programmes Coordinator<br>
             T +41 21 213 01 85<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('albert.jimenez@ersnet.org', 'Albert Jimenez') !!}</strong>
+          <p class="photo_caption"><strong>Albert Jimenez</strong>
             Educational Activities Coordinator<br>
             T +41 21 213 01 96<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('marek.slavicky@ersnet.org', 'Marek Slavicky') !!}</strong>
+          <p class="photo_caption"><strong>Marek Slavicky</strong>
             Educational Activities Coordinator<br>
             T +41 21 213 01 93<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('zuzana.tumova@ersnet.org', 'Zuzana Tumova') !!}</strong>
+          <p class="photo_caption"><strong>Zuzana Tumova</strong>
             Educational Projects Coordinator<br>
             T +41 21 213 01 92<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('nathalie.tabin@ersnet.org', 'Nathalie Tabin') !!}</strong>
+          <p class="photo_caption"><strong>Nathalie Tabin</strong>
             Educational Projects Coordinator<br>
             T +41 21 213 01 77<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('fanny-anh.lehoang@ersnet.org', 'Fanny-Anh Le Hoang') !!}</strong>
+          <p class="photo_caption"><strong>Fanny-Anh Le Hoang</strong>
             Educational Programmes Assistant<br>
             T +41 21 213 01 82<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto(' anca-elena.matei@ersnet.org', 'Anca Matei') !!}</strong>
+          <p class="photo_caption"><strong>Anca Matei</strong>
             Educational Programmes Assistant<br>
             T +41 21 213 01 94<br>
             </p>
@@ -460,13 +469,13 @@
 
       <div class="col-md-8 center-block lead"><strong>Brussels Office</strong><br><br>
       49-51 Rue de Trèves BE - 1040 Brussels Belgium<br><br>
-        TEL +32 2 238 53 60&nbsp;&nbsp;/&nbsp;&nbsp;FAX +32 2 238 53 61&nbsp;&nbsp;/&nbsp;&nbsp;E-Mail {!! Html::mailto('ersinfo.brussels@ersnet.org', 'ersinfo.brussels@ersnet.org') !!}
-      </div>
+      TEL +32 2 238 53 60&nbsp;&nbsp;/&nbsp;&nbsp;FAX +32 2 238 53 61&nbsp;&nbsp;/&nbsp;&nbsp;E-Mail {!! Html::mailto('ersinfo.brussels@ersnet.org', 'ersinfo.brussels@ersnet.org') !!}
+    </div>
 
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
             <img src="https://cdn.ersnet.org/images/people/executive-office/bward.jpg" class="img-circle">
-            <p class="photo_caption"><strong>{!! Html::mailto('brian.ward@ersnet.org', 'BRIAN WARD') !!}</strong>
+            <p class="photo_caption"><strong>BRIAN WARD</strong>
             Director of Advocacy and European Affairs<br>
             T +32 2 238 53 66<br>
             </p>
@@ -474,13 +483,13 @@
       </div>
       <div class="row">
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('maeve.barry@ersnet.org', 'MAEVE BARRY') !!}</strong>
+          <p class="photo_caption"><strong>MAEVE BARRY</strong>
             Policy Officer<br>
             T +32 2 238 53 68<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('marine.faure@ersnet.org', 'Marine Faure') !!}</strong>
+          <p class="photo_caption"><strong>Marine Faure</strong>
             Policy Officer<br>
             T +32 2 238 53 62<br>
             </p>
@@ -500,7 +509,7 @@
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
             <img src="https://cdn.ersnet.org/images/people/executive-office/ppowell.jpg" class="img-circle">
-            <p class="photo_caption"><strong>{!! Html::mailto('pippa.powell@europeanlung.org', 'PIPPA POWELL') !!}</strong>
+            <p class="photo_caption"><strong>PIPPA POWELL</strong>
             Director of the European Lung Foundation<br>
             T +44 114 267 2874<br>
             </p>
@@ -508,19 +517,19 @@
       </div>
       <div class="row">
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('courtney.coleman@europeanlung.org', 'Courtney Coleman') !!}</strong>
+          <p class="photo_caption"><strong>Courtney Coleman</strong>
             Patient Involvement and Engagement<br>
             T +44 114 267 2875<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('emma.thompson@europeanlung.org', 'Emma Thompson') !!}</strong>
+          <p class="photo_caption"><strong>Emma Thompson</strong>
             Information and Education<br>
             T +44 114 267 2872<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('Jeanette.Boyd@europeanlung.org', 'Jeanette Boyd') !!}</strong>
+          <p class="photo_caption"><strong>Jeanette Boyd</strong>
             Patients Projects<br>
             T +44 114 267 2872<br>
             </p>
@@ -539,7 +548,7 @@
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
             <img src="https://cdn.ersnet.org/images/people/executive-office/Valerie-Zecca.png" class="img-circle">
-            <p class="photo_caption"><strong>{!! Html::mailto('valerie.zecca@ersnet.org', 'Valérie Zecca') !!}</strong>
+            <p class="photo_caption"><strong>Valérie Zecca</strong>
             Head of Finance<br>
             T +41 21 213 01 22<br>
             </p>
@@ -547,61 +556,61 @@
       </div>
       <div class="row">
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('Micah.Clayton@ersj.org.uk', 'Micah Clayton') !!}</strong>
+          <p class="photo_caption"><strong>Micah Clayton</strong>
             Finance and Sheffield Office Manager<br>
             T +44 114 267 2863<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('maria.tronnolone@ersnet.org', 'Maria Tronnolone Valencia') !!}</strong>
+          <p class="photo_caption"><strong>Maria Tronnolone Valencia</strong>
             Senior Accountant &amp; Payroll Assistant<br>
             T +41 21 213 01 26<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('melanie.bienvenu@ersnet.org', 'Mélanie Yosefi Bienvenu') !!}</strong>
+          <p class="photo_caption"><strong>Mélanie Yosefi Bienvenu</strong>
             Accountant<br>
             T +41 21 213 01 24<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('sam.zuma@ersnet.org', 'Sam Zuma') !!}</strong>
+          <p class="photo_caption"><strong>Sam Zuma</strong>
           Junior Accountant<br>
             T +41 21 213 01 29<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('francoise.thonnard@ersnet.org', 'Françoise Thonnard') !!}</strong>
+          <p class="photo_caption"><strong>Françoise Thonnard</strong>
           Junior Accountant<br>
             T +41 21 213 01 21<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('jerome.amstutz@ersnet.org', 'Jérôme Amstutz') !!}</strong>
+          <p class="photo_caption"><strong>Jérôme Amstutz</strong>
           Finance Assistant and Administration Coordinator<br>
             T +41 21 213 01 25<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('romain.charton@ersnet.org', 'Romain Charton') !!}</strong>
+          <p class="photo_caption"><strong>Romain Charton</strong>
           Accountant<br>
             T +41 21 213 01 24<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('valeria.finelli@ersnet.org', 'Valeria Finelli') !!}</strong>
+          <p class="photo_caption"><strong>Valeria Finelli</strong>
           Finance Assistant<br>
           <br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('joanne.abdy@ersj.org.uk', 'Joanne Abdy') !!}</strong>
+          <p class="photo_caption"><strong>Joanne Abdy</strong>
           Account Coordinator<br>
           T +44 114 267 2869<br>
           </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('becky.frith@ersj.org.uk', 'Becky Frith') !!}</strong>
+          <p class="photo_caption"><strong>Becky Frith</strong>
             Senior Accountant & HR Coordinator<br>
             T +44 114 267 2862<br>
             </p>
@@ -622,7 +631,7 @@
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
             <img src="https://cdn.ersnet.org/images/people/executive-office/sdupasquier.jpg" class="img-circle">
-            <p class="photo_caption"><strong>{!! Html::mailto('Stephane.Dupasquier@ersnet.org', 'Stéphane Dupasquier') !!}</strong>
+            <p class="photo_caption"><strong>Stéphane Dupasquier</strong>
             Director of IT and Infrastructure<br>
             T +41 21 213 01 30<br>
             </p>
@@ -630,37 +639,37 @@
       </div>
       <div class="row">
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('samuel.pouyt@ersnet.org', 'Samuel Pouyt') !!}</strong>
+          <p class="photo_caption"><strong>Samuel Pouyt</strong>
             Web Architect<br>
             T +41 21 213 01 46<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('dominique.fetre@ersnet.org', 'Dominique Fétré') !!}</strong>
+          <p class="photo_caption"><strong>Dominique Fétré</strong>
             Application Analyst &amp; Developer<br>
             T +41 21 213 01 34<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('xavier.monnet@ersnet.org', 'Xavier Monnet') !!}</strong>
+          <p class="photo_caption"><strong>Xavier Monnet</strong>
             Web Application Developer<br>
             T +41 21 213 01 32<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('olivier.bordes@ersnet.org', 'Olivier Bordes') !!}</strong>
+          <p class="photo_caption"><strong>Olivier Bordes</strong>
             Web Application Developer<br>
             T +41 21 213 01 37<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('ian.pomian@ersnet.org', 'Ian Pomian') !!}</strong>
+          <p class="photo_caption"><strong>Ian Pomian</strong>
             Data Analyst<br>
             T +41 21 213 01 35<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('tamaki.asano@ersnet.org', 'Tamaki Asano') !!}</strong>
+          <p class="photo_caption"><strong>Tamaki Asano</strong>
             UI/UX Web Designer<br>
             T +41 21 213 01 47<br>
             </p>
@@ -679,13 +688,13 @@
 
       <div class="row">
         <div class="col-md-3 col-md-offset-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('anastasia.mlotek-soulie@ersnet.org', 'Anastasia Mlotek-Soulié') !!}</strong>
+          <p class="photo_caption"><strong>Anastasia Mlotek-Soulié</strong>
             National Societies Relations Manager<br>
             T +41 21 213 01 43<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('joanne.stevenson@ersnet.org', 'Joanne Stevenson') !!}</strong>
+          <p class="photo_caption"><strong>Joanne Stevenson</strong>
             Membership Assistant<br>
             T +41 21 213 01 42<br>
             </p>
@@ -705,13 +714,13 @@
 
       <div class="col-md-8 center-block lead"><strong>Publication Office</strong><br><br>
       European Respiratory Society : Sheffield S10 2PX United Kingdom<br><br>
-        TEL +44 114 267 2860&nbsp;&nbsp;/&nbsp;&nbsp;FAX +44 114 266 5064&nbsp;&nbsp;/&nbsp;&nbsp;E-Mail {!! Html::mailto('info@ersj.org.uk', 'info@ersj.org.uk') !!}
+      TEL +44 114 267 2860&nbsp;&nbsp;/&nbsp;&nbsp;FAX +44 114 266 5064&nbsp;&nbsp;/&nbsp;&nbsp;E-Mail {!! Html::mailto('info@ersj.org.uk', 'info@ersj.org.uk') !!}
       </div>
 
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
             <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
-            <p class="photo_caption"><strong>{!! Html::mailto('Elin.Reeves@ersj.org.uk', 'Elin Reeves') !!}</strong>
+            <p class="photo_caption"><strong>Elin Reeves</strong>
             Director of Publications<br>
             T +44 114 267 2873<br>
             </p>
@@ -720,91 +729,91 @@
 
       <div class="row">
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('matt.broadhead@ersj.org.uk', 'Matt Broadhead') !!}</strong>
+          <p class="photo_caption"><strong>Matt Broadhead</strong>
             Assistant Manager<br>
             T +44 114 267 2877<br>
             </p>
         </div>
          <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('sarah.cleveland@ersj.org.uk', 'Sarah Cleveland') !!}</strong>
+          <p class="photo_caption"><strong>Sarah Cleveland</strong>
             Peer Review Coordinator<br>
             T +44 114 267 2864<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('caroline.ashford-bentley@ersj.org.uk', 'Caroline Ashford-Bentley') !!}</strong>
+          <p class="photo_caption"><strong>Caroline Ashford-Bentley</strong>
             Editorial and Library Services Coordinator<br>
             T +44 114 267 2868<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('alice.bartlett@ersj.org.uk', 'Alice Bartlett') !!}</strong>
+          <p class="photo_caption"><strong>Alice Bartlett</strong>
             Technical Editor<br>
             T +44 114 267 2878<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('Neil.Bullen@ersj.org.uk', 'Neil Bullen') !!}</strong>
+          <p class="photo_caption"><strong>Neil Bullen</strong>
             Senior Technical Editor<br>
             T +44 114 267 2879<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('alyson.cann@ersj.org.uk', 'Alyson Cann') !!}</strong>
+          <p class="photo_caption"><strong>Alyson Cann</strong>
             Technical Editor<br>
             T +44 114 267 2870<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('jonathan.hansen@ersj.org.uk', 'Jonathan Hansen') !!}</strong>
+          <p class="photo_caption"><strong>Jonathan Hansen</strong>
             Technical Editor<br>
             T +44 114 267 2879<br>
             </p>
         </div>
         <!--div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('fiona.marks@ersj.org.uk', 'Fiona Marks') !!}</strong>
+          <p class="photo_caption"><strong>Fiona Marks</strong>
             Technical Editor<br>
             T +44 114 267 2867<br>
             </p>
         </div-->
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('catherine.pumphrey@ersj.org.uk', 'Catherine Pumphrey') !!}</strong>
+          <p class="photo_caption"><strong>Catherine Pumphrey</strong>
             Technical Editor<br>
             T +44 114 267 2878<br>
             </p>
         </div>
         <!--div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('david.sadler@ersj.org.uk', 'David Sadler') !!}</strong>
+          <p class="photo_caption"><strong>David Sadler</strong>
             Technical Editor<br>
             T +44 114 267 2866<br>
             </p>
         </div-->
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('Kay.Sharpe@ersj.org.uk', 'Kay Sharpe') !!}</strong>
+          <p class="photo_caption"><strong>Kay Sharpe</strong>
             Administration Coordinator<br>
             T +44 114 267 2861<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('Kathleen.skinner@ersj.org.uk', 'Kathleen Skinner') !!}</strong>
+          <p class="photo_caption"><strong>Kathleen Skinner</strong>
             Administrative Assistant<br>
             T +44 114 267 2865<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('claire.marchant@ersj.org.uk', 'Claire Marchant') !!}</strong>
+          <p class="photo_caption"><strong>Claire Marchant</strong>
             Senior Production Editor<br>
             T +44 114 267 2871<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('ben.watson@ersj.org.uk', 'Ben Watson') !!}</strong>
+          <p class="photo_caption"><strong>Ben Watson</strong>
             Artworker<br>
             T +44 114 267 2871<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('rachel.gozzard@ersj.org.uk', 'Rachel Gozzard') !!}</strong>
+          <p class="photo_caption"><strong>Rachel Gozzard</strong>
             Technical Editor<br>
             T +44 114 267 2870<br>
             </p>
@@ -824,7 +833,7 @@
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
             <img src="https://cdn.ersnet.org/images/people/executive-office/Celine-Genton.png" class="img-circle">
-            <p class="photo_caption"><strong>{!! Html::mailto('celine.genton@ersnet.org', 'Celine Genton') !!}</strong>
+            <p class="photo_caption"><strong>Celine Genton</strong>
             Head of Scientific Activities<br>
             T +41 21 213 01 59<br>
             </p>
@@ -832,43 +841,43 @@
       </div>
       <div class="row">
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('kathryn.forrest@ersnet.org', 'Kathryn Forrest') !!}</strong>
+          <p class="photo_caption"><strong>Kathryn Forrest</strong>
             Fellowship Programme Senior Coordinator<br>
             T +41 21 213 01 99<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('valerie.vaccaro@ersnet.org', 'Valérie Vaccaro') !!}</strong>
+          <p class="photo_caption"><strong>Valérie Vaccaro</strong>
             Scientitifc Activities Project Lead<br>
             T +41 21 213 01 89<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('david.rigau@ersnet.org', 'David Rigau') !!}</strong>
+          <p class="photo_caption"><strong>David Rigau</strong>
             Methodologist<br>
             T +41 21 213 01 87<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('thomy.tonia@ersnet.org', 'Thomy Tonia') !!}</strong>
+          <p class="photo_caption"><strong>Thomy Tonia</strong>
           Senior Methodologist<br>
             T +41 21 213 01 87<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('maeve.tsu@ersnet.org', 'Maeve Tsu') !!}</strong>
+          <p class="photo_caption"><strong>Maeve Tsu</strong>
             Funding Programme Assistant<br>
             T +41 21 213 01 83<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('elise.heuvelin@ersnet.org', 'Elise Heuvelin') !!}</strong>
+          <p class="photo_caption"><strong>Elise Heuvelin</strong>
             Clinical Project Manager<br>
             T +41 21 213 01 81<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('alessandra.marguerat@ersnet.org', 'Alessandra Marguerat') !!}</strong>
+          <p class="photo_caption"><strong>Alessandra Marguerat</strong>
             Scientific Administrative Assistant<br>
             T +41 21 213 01 66<br>
             </p>
@@ -889,7 +898,7 @@
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
             <img src="https://cdn.ersnet.org/images/people/executive-office/cpannetier.jpg" class="img-circle">
-            <p class="photo_caption"><strong>{!! Html::mailto('carine.pannetier@ersnet.org', 'Carine Pannetier') !!}</strong>
+            <p class="photo_caption"><strong>Carine Pannetier</strong>
             Director of Education, Events, Programmes and Accreditation<br>
             T +41 21 213 01 80<br>
             </p>
@@ -897,37 +906,37 @@
       </div>
       <div class="row">
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('agnieszka.radecka@ersnet.org', 'Agnieszka Radecka') !!}</strong>
+          <p class="photo_caption"><strong>Agnieszka Radecka</strong>
             Congress Programme Coordinator<br>
             T +41 21 213 01 73<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('hanna.gaisne@ersnet.org', 'Hanna GAISNE') !!}</strong>
+          <p class="photo_caption"><strong>Hanna GAISNE</strong>
             Scientific Programme Coordinator<br>
             T +41 21 213 01 76<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('valerie.vaccaro@ersnet.org', 'Valérie Vaccaro') !!}</strong>
+          <p class="photo_caption"><strong>Valérie Vaccaro</strong>
             Scientitifc Activities Project Lead<br>
             T +41 21 213 01 89<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('valentine.degert@ersnet.org', 'Valentine Degert') !!}</strong>
+          <p class="photo_caption"><strong>Valentine Degert</strong>
             Scientific Programme Coordinator<br>
             T +41 21 213 01 88<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-            <p class="photo_caption"><strong>{!! Html::mailto('celina.marques-grunho@ersnet.org', 'Célina Marques Grunho') !!}</strong>
+            <p class="photo_caption"><strong>Célina Marques Grunho</strong>
               Scientific Programme Assistant<br>
               T +41 21 213 01 71<br>
               </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>{!! Html::mailto('bouchra.chajai@ersnet.org', 'BOUCHRA CHAJAÏ') !!}</strong>
+          <p class="photo_caption"><strong>BOUCHRA CHAJAÏ</strong>
             Congress Programme Coordinator<br>
             T +41 21 213 01 49<br>
             </p>
