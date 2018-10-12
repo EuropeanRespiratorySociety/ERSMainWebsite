@@ -7,7 +7,7 @@
     @endif
     <h3 class="title">
     @if(Request::path() !== '/') 
-      @if(strpos($item->registerButton->link, '@'))
+      @if(strpos($item->registerButton->link, '@') && $item->typeColor != "label-school")
           @if($item->type == "Spirometry Programme")
             <a href="/professional-development/spirometry-training-programme">{{ $item->title }}</a>
           @else
