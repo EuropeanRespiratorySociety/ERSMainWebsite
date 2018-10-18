@@ -494,7 +494,12 @@
             T +32 2 238 53 62<br>
             </p>
         </div>
-        
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>NEJLA DELIKUS</strong>
+            Office Coordinator<br>
+            T +32 2 238 53 60<br>
+            </p>
+        </div>
       </div>
     </div>
     </div>
