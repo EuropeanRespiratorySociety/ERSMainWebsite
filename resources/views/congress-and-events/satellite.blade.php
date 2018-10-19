@@ -278,28 +278,39 @@
               </div>
             </div> --}}
             
-            {{-- <div class="event-items-right-bt"> --}}
-            {{--
+            <div class="event-items-right-bt">
+            
             @if($item->extendedDeadline)
             <p class="deadline">EXTENDED registration deadline : {{$item->extendedDeadline}}</p>
             @endif
             
-            @if($item->cancellationPolicy)
+           {{-- @if($item->cancellationPolicy)
             <p><a data-toggle="modal" data-target="#md-cancellation" type="button" class="">Cancellation policy</a></p>
             @endif
             @if($item->travelInfo)
             <p><a data-toggle="modal" data-target="#md-travel_info" type="button" class="">Travel Info</a></p>
-            @endif
-            --}}
-            {{-- @if(!$item->fullyBooked) --}}
-              {{--<p>Registering for someone else ? Contact {!! Html::mailto('sandy.borlat@ersnet.org', 'Sandy Borlat') !!}</p>--}}
-              {{-- <a data-toggle="modal" data-target="#md-register" class="btn btn-primary tab-register-bt">Register</a>
-            @endif
+            @endif --}}
+            {{-- @if(!$item->fullyBooked)
+              <p>Registering for someone else ? Contact {!! Html::mailto('sandy.borlat@ersnet.org', 'Sandy Borlat') !!}</p>
+              <a data-toggle="modal" data-target="#md-register" class="btn btn-primary tab-register-bt">Register</a>
+            @endif --}}
+            @if($item->registerButton->link && !$item->fullyBooked)
+            <p>Registering for someone else ? Contact {!! Html::mailto('sandy.borlat@ersnet.org', 'Sandy Borlat') !!}</p>
+              @if(strpos($item->registerButton->link, '@'))
+                  <a href="{{'mailto:'.$item->registerButton->link}}" class="btn btn-primary tab-register-bt">
+                    {{ $item->registerButton->text or Register}}
+                  </a>
+              @else
+                  <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
+                  {{ $item->registerButton->text or Register}}
+              </a>
+              @endif
+            @endif  
             @if($item->fullyBooked)
               <p>Please contact {!! Html::mailto('education@ersnet.org', 'education@ersnet.org') !!} to be added to the waiting list.</p>
               <a href="javascript:void(0)" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
             @endif
-            </div> --}}
+            </div>
 
           </div>
            {{-- @if($item->bursaryApplication->text
