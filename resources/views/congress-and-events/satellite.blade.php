@@ -365,11 +365,11 @@
               {{-- <p>Registering for someone else ? Contact {!! Html::mailto('sandy.borlat@ersnet.org', 'Sandy Borlat') !!}</p> --}}
               @if(strpos($item->registerButton->link, '@'))
                 <a href="{{'mailto:'.$item->registerButton->link}}" target="_blank" class="btn btn-primary tab-register-bt">
-                  {{ $item->registerButton->text or "In person"}}
+                  In person
                 </a>
               @else
                 <a href="{{$item->registerButton->link}}" target="_blank"  class="btn btn-primary tab-register-bt">
-                  {{ $item->registerButton->text or "In person"}}
+                  In person
                 </a>
               @endif
             @endif
