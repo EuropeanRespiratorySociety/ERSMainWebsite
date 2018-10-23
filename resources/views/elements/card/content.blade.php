@@ -19,10 +19,12 @@
               && ($item->ersEndorsedEvent
                   || $item->nonErsCalendarItem 
                   || $item->ersDeadline
-                  || $item->category->title == "Events Calendar"
+                  || (isset($item->category->title) && $item->category->title == "Events Calendar")
                   || $item->contentType == "event_calendar")
               )
-          <a href="{{$item->registerButton->link}}" target="_blank">{{ $item->title }}</a>
+            @if($item->registerButton->link)
+                <a href="{{$item->registerButton->link}}" target="_blank">{{ $item->title }}</a>
+            @endif
       @endif
     @endif
 
