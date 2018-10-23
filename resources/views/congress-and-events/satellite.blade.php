@@ -290,11 +290,11 @@
             @if($item->travelInfo)
             <p><a data-toggle="modal" data-target="#md-travel_info" type="button" class="">Travel Info</a></p>
             @endif --}}
-            {{-- @if(!$item->fullyBooked)
+            @if(!$item->fullyBooked)
               <p>Registering for someone else ? Contact {!! Html::mailto('sandy.borlat@ersnet.org', 'Sandy Borlat') !!}</p>
               <a data-toggle="modal" data-target="#md-register" class="btn btn-primary tab-register-bt">Register</a>
-            @endif --}}
-            @if($item->registerButton->link && !$item->fullyBooked)
+            @endif
+            {{-- @if($item->registerButton->link && !$item->fullyBooked)
             <p>Registering for someone else ? Contact {!! Html::mailto('sandy.borlat@ersnet.org', 'Sandy Borlat') !!}</p>
               @if(strpos($item->registerButton->link, '@'))
                   <a href="{{'mailto:'.$item->registerButton->link}}" class="btn btn-primary tab-register-bt">
@@ -305,11 +305,11 @@
                   {{ $item->registerButton->text or Register}}
               </a>
               @endif
-            @endif  
-            @if($item->fullyBooked)
+            @endif --}} 
+            {{-- @if($item->fullyBooked)
               <p>Please contact {!! Html::mailto('education@ersnet.org', 'education@ersnet.org') !!} to be added to the waiting list.</p>
               <a href="javascript:void(0)" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
-            @endif
+            @endif --}}
             </div>
 
           </div>
@@ -352,35 +352,36 @@
   @include('elements.modal.travel-info', array('item' => $item))  
   @include('elements.modal.technical-info', array('item' => $item)) --}}
   <div id="md-register" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
-        <h2 class="modal-title">For which event do you want to register?</h2>
-      </div>
-      <div class="modal-body">
-        <div class="text-left">
-        <div class="col-md-6">
-            <ul class="list-group">
-                <li class="list-group-item"><h4><a href="https://forms.ersnet.org/ers-satellite-amsterdam" rel="nofollow noreferrer" target="_blank"><strong>Amsterdam</strong></a></h4></li>
-                <li class="list-group-item"><h4><a href="https://forms.ersnet.org/ers-satellite-berlin" rel="nofollow noreferrer" target="_blank"><strong>Berlin</strong></a></h4></li>
-                <li class="list-group-item"><h4><a href="https://forms.ersnet.org/ers-satellite-brussels" rel="nofollow noreferrer" target="_blank"><strong>Brussels</strong></a></h4></li>
-                <li class="list-group-item"><h4><a href="https://forms.ersnet.org/ers-satellite-london" rel="nofollow noreferrer" target="_blank"><strong>London</strong></a></h4></li>
-            </ul>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+          <h2 class="modal-title">How do you want to attend?</h2>
         </div>
-        <div class="col-md-6">
-            <ul class="list-group">
-                <li class="list-group-item"><h4><a href="https://forms.ersnet.org/ers-satellite-madrid" rel="nofollow noreferrer" target="_blank"><strong>Madrid</strong></a></h4></li>
-                <li class="list-group-item"><h4><a href="https://forms.ersnet.org/ers-satellite-paris" rel="nofollow noreferrer" target="_blank"><strong>Paris</strong></a></h4></li>
-                <li class="list-group-item"><h4><a href="https://forms.ersnet.org/ers-satellite-rome" rel="nofollow noreferrer" target="_blank"><strong>Rome</strong></a></h4></li>
-                <li class="list-group-item"><h4><a href="https://forms.ersnet.org/ers-satellite-stockholm-karolinska" rel="nofollow noreferrer" target="_blank"><strong>Stockholm</strong></a></h4></li>
-            </ul>
-        </div>
+        <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            @if($item->registerButton->link && !$item->fullyBooked)
+              {{-- <p>Registering for someone else ? Contact {!! Html::mailto('sandy.borlat@ersnet.org', 'Sandy Borlat') !!}</p> --}}
+              @if(strpos($item->registerButton->link, '@'))
+                <a href="{{'mailto:'.$item->registerButton->link}}" target="_blank" class="btn btn-primary tab-register-bt">
+                  {{ $item->registerButton->text or "In person"}}
+                </a>
+              @else
+                <a href="{{$item->registerButton->link}}" target="_blank"  class="btn btn-primary tab-register-bt">
+                  {{ $item->registerButton->text or "In person"}}
+                </a>
+              @endif
+            @endif
+          </div>
+          <div class="col-md-6">
+            <a href="https://www.ers-satellites.org/" class="btn btn-primary tab-register-bt" target="_blank">Online</a>
+          </div>
+        </div>  
         </div>
       </div>
     </div>
   </div>
-</div>
 @stop()  
 {{--END Modal contents div--}}  
 
