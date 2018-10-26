@@ -46,7 +46,7 @@
 
     {{-- Cloud Front is the ERS CDN --}}
     <link rel="stylesheet" href="https://cdn.ersnet.org/css/all.css" type="text/css"/>
-    {{-- <link rel="stylesheet" href="http://localhost:8889/css/all.css" type="text/css"/> --}}
+     {{--<link rel="stylesheet" href="http://localhost:8889/css/all.css" type="text/css"/>--}} 
 
     {{-- <link rel="stylesheet" href="https://bootstrap.ersnet.org/css/all.css" type="text/css"/> --}}
     {{--<link rel="stylesheet" href="http://erstemplate.app/css/all.css" type="text/css"/>--}}

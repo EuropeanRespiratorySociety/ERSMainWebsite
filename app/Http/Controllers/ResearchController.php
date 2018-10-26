@@ -128,6 +128,29 @@ class ResearchController extends Controller
         return view('research.crc')->with($params); 
     }
 
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function pragmaticTrials()
+    {
+        $results = $this->CC->getItem('pragmatic-trial-endorsement');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] =  (object) $item[0]; 
+
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
+        }
+
+        if($item[0]->hasRelatedArticles > 0){
+            $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
+            $relatedItems = $this->CC->parseItems($related['rows']);
+            $params['relatedItems'] =  (object) $relatedItems;
+        }
+        return view('research.pragmatic-trials')->with($params); 
+    }
 
     /**
      * Display the specified resource.

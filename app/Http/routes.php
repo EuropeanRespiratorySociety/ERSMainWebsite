@@ -156,7 +156,8 @@ Route::group(['prefix' => 'professional-development'], function () {
     Route::get('research/research-seminars', 'ResearchController@researchSeminars'); 
     Route::get('research/research-seminars/{slug}', 'ResearchController@showRS'); 
     Route::get('research/clinical-research-collaborations', 'ResearchController@CRC');
-    Route::get('research/task-forces', 'ResearchController@taskForces'); 
+    Route::get('research/task-forces', 'ResearchController@taskForces');
+    Route::get('research/pragmatic-trial-endorsement', 'ResearchController@pragmaticTrials'); 
     Route::get('research/{slug}', 'ResearchController@show');   
     
 
