@@ -270,8 +270,10 @@ class Navigation
                 ->link->attr(array('class' => 'ga-nav-research'));
                 $menu->research->add('Research Agency', 'research/research-agency')
                 ->link->attr(array('class' => 'ga-nav-research'));
+                $menu->research->add('Pragmatic Trials Endorsement', 'research/pragmatic-trial-endorsement')
+                ->link->attr(array('class' => 'ga-nav-research'));
 
-            $menu->add('Advocacy and patient resources','#advocacy')
+                $menu->add('Advocacy and patient resources','#advocacy')
             ->link->attr(array('class' => 'ga-nav-advocacy'));
                 $menu->advocacyAndPatientResources->add('EU-Affairs','advocacy/eu-affairs')
                 ->link->attr(array('class' => 'ga-nav-advocacy'));
