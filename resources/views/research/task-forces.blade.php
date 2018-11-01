@@ -78,7 +78,7 @@
               APPLICATION DEADLINE : <br>
             </p>
             <div style="clear:left;">
-              <p style="margin-top: 8px;">ERS/ATS joint Task Forces: <br /><strong>01 February 2019</strong></p>
+              <p style="margin-top: 8px;">ERS/ATS joint Task Forces: <br /><strong>July 2019</strong></p>
               <p>ERS Task Forces: <br /><strong>01 February 2019 and 01 June 2019</strong></p>
             </div>
           </a>
@@ -139,7 +139,16 @@
                 </ul>
               </p>
             </span>
+
             <span href="javascript:void(0)" class="list-group-item clearfix cursor_default">
+              <span class="icon s7-copy-file"></span>
+              <p>
+                Access the Publish Guidelines : <a target="_blank" href="https://www.ers-education.org/guidelines.aspx">ERS E-learning website</a><br>
+              </p>
+            </span>
+
+
+            <span href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
               <span class="icon s7-mail"></span>
               <p>
                 CONTACT : <br>
