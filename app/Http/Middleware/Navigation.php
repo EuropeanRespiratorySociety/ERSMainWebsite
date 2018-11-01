@@ -260,10 +260,10 @@ class Navigation
 
             $menu->add('Research','#research')
             ->link->attr(array('class' => 'ga-nav-research'));
-                $menu->research->add('Task Forces', 'research/task-forces')
+                $menu->research->add('Task Forces and Guidelines', 'research/task-forces')
                 ->link->attr(array('class' => 'ga-nav-research'));
-                $menu->research->add('Published Guidelines', 'research/published-guidelines')
-                ->link->attr(array('class' => 'ga-nav-research'));
+                // $menu->research->add('Published Guidelines', 'research/published-guidelines')
+                // ->link->attr(array('class' => 'ga-nav-research'));
                 $menu->research->add('Clinical Research Collaborations', 'research/clinical-research-collaborations')
                 ->link->attr(array('class' => 'ga-nav-research'));
                 $menu->research->add('Research Seminars', 'research/research-seminars')
