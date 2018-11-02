@@ -45,6 +45,39 @@
                 </div>
                 <div class="col-md-6 xs-mb-15">
                     <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
+                    <img src="https://cdn.ersnet.org/images/people/examination-committee/Christine-Rüegg.png" class="img-circle">
+                    <p class="photo_caption"><strong>Dr Christine Rüegg</strong></p>
+                    <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
+                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                        - Clinic of Pulmonary Medicine and Internal Medicine</p>
+                      <p style="margin-bottom:0px;">- Hospital Uster</p>
+                      <p>- Uster, Switzerland</p>
+                    </div>
+                </div>
+                <div class="col-md-6 xs-mb-15">
+                  <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
+                  <img src="https://cdn.ersnet.org/images/people/examination-committee/Jayesh-M-Bhatt.png" class="img-circle">
+                  <p class="photo_caption"><strong>Dr Jayesh M Bhatt</strong></p>
+                  <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
+                    <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                      - Consultant Respiratory Paediatrician</p>
+                    <p style="margin-bottom:0px;">- Nottingham University Hospitals NHS Trust</p>
+                    <p>- Nottingham, United Kingdom</p>
+                  </div>
+              </div>
+              {{-- <div class="col-md-6 xs-mb-15">
+                <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
+                <img src="https://cdn.ersnet.org/images/people/examination-committee/Raffaella-Nenna.png" class="img-circle">
+                <p class="photo_caption"><strong>Raffaella Nenna</strong></p>
+                <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
+                  <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                    - Researcher "Sapienza" University of Rome-Rome, Italy.</p>
+                  <p style="margin-bottom:0px;">- Postdoctoral Researcher Asthma and Airway Disease Research Center</p>
+                  <p>- Arizona, United States of America</p>
+                </div>
+            </div> --}}
+            {{-- <div class="col-md-6 xs-mb-15">
+                    <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
                     <img src="https://cdn.ersnet.org/images/people/examination-committee/Thomas-Brack.png" class="img-circle">
                     <p class="photo_caption"><strong>Prof. Thomas Brack</strong></p>
                     <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
@@ -53,7 +86,7 @@
                       <p style="margin-bottom:0px;">- Kantonsspital Glarus </p>
                       <p>- Glarus, Switzerland</p>
                     </div>
-                </div>
+                </div> --}}
                 <div class="col-md-6 xs-mb-15">
                     <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
                     <img src="https://cdn.ersnet.org/images/people/examination-committee/Dragos-Bumbacea.png" class="img-circle">
@@ -92,7 +125,7 @@
                       <p>- Regensburg, Germany</p>
                     </div>
                 </div>
-                <div class="col-md-6 xs-mb-15">
+                {{-- <div class="col-md-6 xs-mb-15">
                     <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
                     <img src="https://cdn.ersnet.org/images/people/examination-committee/Frank-Smeenk.png" class="img-circle">
                     <p class="photo_caption"><strong>Prof. Frank Smeenk</strong></p>
@@ -105,7 +138,7 @@
                         - Catharina Hospital Eindhoven</p>
                       <p>- Eindhoven, Netherlands</p>
                     </div>
-                </div>
+                </div> --}}
                 <div class="col-md-6 xs-mb-15">
                     <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
                     <img src="https://cdn.ersnet.org/images/people/examination-committee/Yvonne-Nussbaumer.png" class="img-circle">
