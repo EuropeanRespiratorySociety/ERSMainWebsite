@@ -146,7 +146,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         RewriteRule ^(.*)$ https://www.ersnet.org/publications/european-respiratory-roadmap [L,R=301]
 
         # A
-        Redirect 301 /airquality https://www..ersnet.org/publications/air-quality-and-health
+        Redirect 301 /airquality https://www.ersnet.org/publications/air-quality-and-health
         # C
         Redirect 301 /calendar https://www.ersnet.org/congress-and-events/events-calendar
         Redirect 301 /clinicaltrainingfellowship https://www.ersnet.org/professional-development/fellowships/clinical-training-fellowship
