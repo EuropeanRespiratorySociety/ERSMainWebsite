@@ -423,9 +423,9 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Marek Slavicky</strong>
+          <p class="photo_caption"><strong>Sara-Jayne Cawley</strong>
             Educational Activities Coordinator<br>
-            T +41 21 213 01 93<br>
+            T +41 21 213 01 98<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
