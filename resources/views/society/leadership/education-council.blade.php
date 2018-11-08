@@ -25,7 +25,7 @@
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="https://cdn.ersnet.org/images/people/leadership/Gilbert_Massard.png" class="img-circle">
 		            <p class="photo_caption"><strong>Gilbert Massard</strong>
-		             External Activities Director<br>
+                  Programmes Director<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
