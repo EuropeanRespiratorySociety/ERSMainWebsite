@@ -9,7 +9,7 @@ From the cloned repository:
 The webiste will be available on port `8888` can be modified in `docker-compose.yml`
 
 ## Connect to running container
-* docker exec -ti ersmainwebsite_app_1 /bin/bash
+* `docker exec -ti ersmainwebsite_app_1 /bin/bash`
 This will give you a termina (`i`: interactive, `t`: keep stdin open)
 Inside the runing container you can use something like `php artisan httpcache:clear`
 
