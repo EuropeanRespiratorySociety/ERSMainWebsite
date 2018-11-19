@@ -8,7 +8,7 @@
                   <p class="photo_caption">Head: To be announced</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="http://localhost:8888/images/people/leadership/Ioannis-Vogiatzis.png" class="img-circle">
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Ioannis-Vogiatzis.png" class="img-circle">
                   <p class="photo_caption">Secretary: Ioannis Vogiatzis</p>
                 </div>
             </div>

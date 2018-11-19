@@ -32,10 +32,7 @@ class Metanavigation
                     /*->prepend('<i class="s7-culture icon"></i><span>')->append('</span>')*/; 
             $menu->add('European Lung Foundation', 'http://www.europeanlung.org/en/')
                     ->link->attr(array('target' => '_blank', 'class' => 'ga-metanav'))
-                    /*->prepend('<i class="s7-culture icon"></i><span>')->append('</span>')*/; 
-            $menu->add('TB Consilium', 'https://www.tbconsilium.org/')
-                    ->link->attr(array('target' => '_blank', 'class' => 'ga-metanav'))
-                    /*->prepend('<i class="s7-culture icon"></i><span>')->append('</span>')*/;      
+                    /*->prepend('<i class="s7-culture icon"></i><span>')->append('</span>')*/;       
             $menu->add('FIRS', 'https://www.firsnet.org/')
                     ->link->attr(array('target' => '_blank', 'class' => 'ga-metanav'))
                     /*->prepend('<i class="s7-culture icon"></i><span>')->append('</span>')*/;                         

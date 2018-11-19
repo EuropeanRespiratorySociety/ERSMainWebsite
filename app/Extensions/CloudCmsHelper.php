@@ -227,11 +227,11 @@ class CloudCmsHelper
     /**
     * This function set the coordinates in CC the inject param let's you send only
     * the data that needs to be added to the node. Without it we need to send the
-    * whole node to replace it. The accuracy is a value returned by Google's API
+    * whole node to replace it.
     * @param string $node
     * @param string $lat
     * @param string $long
-    * @param string $accuracy
+    * @param string $accuracy - A value returned by Google's API
     * @return void
     */
     public function setCoordinates($node, $lat, $long, $accuracy){

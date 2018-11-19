@@ -260,18 +260,20 @@ class Navigation
 
             $menu->add('Research','#research')
             ->link->attr(array('class' => 'ga-nav-research'));
-                $menu->research->add('Task Forces', 'research/task-forces')
+                $menu->research->add('Task Forces and Guidelines', 'research/task-forces')
                 ->link->attr(array('class' => 'ga-nav-research'));
-                $menu->research->add('Published Guidelines', 'research/published-guidelines')
-                ->link->attr(array('class' => 'ga-nav-research'));
+                // $menu->research->add('Published Guidelines', 'research/published-guidelines')
+                // ->link->attr(array('class' => 'ga-nav-research'));
                 $menu->research->add('Clinical Research Collaborations', 'research/clinical-research-collaborations')
                 ->link->attr(array('class' => 'ga-nav-research'));
                 $menu->research->add('Research Seminars', 'research/research-seminars')
                 ->link->attr(array('class' => 'ga-nav-research'));
                 $menu->research->add('Research Agency', 'research/research-agency')
                 ->link->attr(array('class' => 'ga-nav-research'));
+                $menu->research->add('Pragmatic Trials Endorsement', 'research/pragmatic-trial-endorsement')
+                ->link->attr(array('class' => 'ga-nav-research'));
 
-            $menu->add('Advocacy and patient resources','#advocacy')
+                $menu->add('Advocacy and patient resources','#advocacy')
             ->link->attr(array('class' => 'ga-nav-advocacy'));
                 $menu->advocacyAndPatientResources->add('EU-Affairs','advocacy/eu-affairs')
                 ->link->attr(array('class' => 'ga-nav-advocacy'));

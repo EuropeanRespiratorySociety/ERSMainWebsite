@@ -46,12 +46,12 @@
 		            Paediatrics<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-              <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+              <img src="https://cdn.ersnet.org/images/people/leadership/FEDERICA-MELONI.png" class="img-circle">
 		            <p class="photo_caption"><strong>Federica Meloni</strong>
 		            Thoracic Surgery and Transplantation<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Daniel-LANGER.png" class="img-circle">
 		            <p class="photo_caption"><strong>Daniel Langer</strong>
 		            Allied Respiratory Professionals <br>
 		        </div>
@@ -61,7 +61,7 @@
 		            Respiratory Infections <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Thorsten-BLUM.png" class="img-circle">
 		            <p class="photo_caption"><strong>Torsten Gerriet Blum</strong>
 		            Thoracic Oncology <br>
 		        </div>
@@ -71,7 +71,7 @@
 		            Interstitial Lung Diseases<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+		            <img src="https://cdn.ersnet.org/images/people/leadership/ANTON-VONK-NOORDEGRAAF.png" class="img-circle">
 		            <p class="photo_caption"><strong>Anton Vonk Noordegraaf</strong>
 		            Pulmonary Vascular Diseases<br>
 		        </div>

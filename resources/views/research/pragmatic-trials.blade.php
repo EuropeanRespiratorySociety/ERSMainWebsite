@@ -71,7 +71,7 @@
           <p class="deadline">APPLICATION now open. Deadline: {{$item->deadlines->applicationDeadline2}}</p>
         @endif --}}
         <div class="list-group text-left">
-          <a href="javascript:void(0)" class="list-group-item clearfix">
+          {{--<a href="javascript:void(0)" class="list-group-item clearfix">
             <span class="icon s7-alarm"></span>
             <p>
               APPLICATION DEADLINE : <br>
@@ -96,6 +96,7 @@
             </p>
           </a>
           @endif
+          --}}
             {{-- @if($item->rulesAndRegulations)
             <span href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
               <span class="icon s7-copy-file"></span>
@@ -116,7 +117,7 @@
               </p>
             </span>
             @endif --}}
-            <span href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
+            <span href="javascript:void(0)" class="list-group-item clearfix cursor_default">
               <span class="icon s7-copy-file"></span>
               <p>
                 DOCUMENTS : <br>
@@ -124,18 +125,15 @@
                           float: left;
                           margin-left: 10px;">
                     <li>
-                      <a target="_blank" href="https://ers.box.com/s/iidtgu860hjr2hs3uwjq6lvlu1ijotue">CRC Guidelines</a>
-                    </li>
-                    {{-- <li>
-                      <a target="_blank" href="https://ers.box.com/s/cxj6m8s9ocud4mxepdkmt1zwntg2zvj8">CRC Application Form</a>
+                      <a target="_blank" href="https://ers.box.com/shared/static/6kkrhx3pk65ned9pf9uhzawd5sq51waq.docx">Pragmatic Trials Endorsement Application form</a>
                     </li>
                     <li>
-                      <a target="_blank" href="https://ers.box.com/s/5dn5lwy2ddgczek0abwtqipnnf8j2i8o">ERS Conflict of Interest Declaration Form</a>
-                    </li> --}}
+                      <a target="_blank" href="https://ers.box.com/shared/static/wbdu9ic1gswwptdrel8dq21acjueppp2.docx">Pragmatic Trials Endorsement Guideline</a>
+                    </li>
                 </ul>
               </p>
             </span>
-            <span href="javascript:void(0)" class="list-group-item clearfix cursor_default">
+            <span href="javascript:void(0)" class="lighter-grey-bg list-group-item clearfix cursor_default">
               <span class="icon s7-mail"></span>
               <p>
                 CONTACT : <br>
@@ -143,7 +141,7 @@
               </p>
             </span>
 
-  </div>
+        </div>
 
 
           <div class="event-items-right-bt">

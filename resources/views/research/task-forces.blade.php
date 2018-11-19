@@ -1,3 +1,4 @@
+
 @extends('template')
 @section('meta')
         @include('partials.meta', array('meta' =>
@@ -75,8 +76,11 @@
             <span class="icon s7-alarm"></span>
             <p>
               APPLICATION DEADLINE : <br>
-              <span>15 October each year</span>
             </p>
+            <div style="clear:left;">
+              <p style="margin-top: 8px;">ERS/ATS joint Task Forces: <br /><strong>July 2019</strong></p>
+              <p>ERS Task Forces: <br /><strong>01 February 2019 and 01 June 2019</strong></p>
+            </div>
           </a>
           @if($item->deadlines->notification || $item->deadlines->notification2)
           <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix">
@@ -124,22 +128,31 @@
                           float: left;
                           margin-left: 10px;">
                     <li>
-                      <a target="_blank" href="https://ers.box.com/s/iidtgu860hjr2hs3uwjq6lvlu1ijotue">CRC Guidelines</a>
-                    </li>
-                    {{-- <li>
-                      <a target="_blank" href="https://ers.box.com/s/cxj6m8s9ocud4mxepdkmt1zwntg2zvj8">CRC Application Form</a>
+                      <a target="_blank" href="https://ers.box.com/shared/static/qj9d0ykhj87dxxn8vplnmsiv8rl083m8.doc">ERS Task Force Guideline and Application Form</a>
                     </li>
                     <li>
-                      <a target="_blank" href="https://ers.box.com/s/5dn5lwy2ddgczek0abwtqipnnf8j2i8o">ERS Conflict of Interest Declaration Form</a>
-                    </li> --}}
+                      <a target="_blank" href="https://ers.box.com/shared/static/k3eueaqf4rylbowrj55eqt2nn3nav28p.doc">ERS Conflict of Interest and Confidentiality Form</a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://taskforces.ersnet.org/images/TF_application_guidelines_faq_22.02.2017.pdf">FAQ of ERS document development</a>
+                    </li>
                 </ul>
               </p>
             </span>
+
             <span href="javascript:void(0)" class="list-group-item clearfix cursor_default">
+              <span class="icon s7-copy-file"></span>
+              <p>
+                Access the Publish Guidelines : <a target="_blank" href="https://www.ers-education.org/guidelines.aspx">ERS E-learning website</a><br>
+              </p>
+            </span>
+
+
+            <span href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
               <span class="icon s7-mail"></span>
               <p>
                 CONTACT : <br>
-                {!! Html::mailto('scientific@ersnet.org', 'scientific@ersnet.org') !!}
+                {!! Html::mailto('guidelines_statements@ersnet.org', 'Guidelines Statements') !!}
               </p>
             </span>
 

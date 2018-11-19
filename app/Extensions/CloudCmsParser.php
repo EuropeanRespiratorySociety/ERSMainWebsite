@@ -11,7 +11,6 @@ use Carbon\Carbon;
 use Lavary\Menu\Menu;
 use Intervention\Image\Facades\Image;
 use AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra as Markdown;
-use Spatie\Geocoder\GeocoderFacade as Geocoder;
 
 class CloudCmsParser
 {

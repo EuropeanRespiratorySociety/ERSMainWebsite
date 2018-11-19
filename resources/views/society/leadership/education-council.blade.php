@@ -25,42 +25,42 @@
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="https://cdn.ersnet.org/images/people/leadership/Gilbert_Massard.png" class="img-circle">
 		            <p class="photo_caption"><strong>Gilbert Massard</strong>
-		             External Activities Director<br>
+                  Programmes Director<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/frans_de_jongh.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Frans De Jongh</strong>
+              <img src="https://cdn.ersnet.org/images/people/leadership/Stylianos-Loukides-2.png" class="img-circle">
+              <p class="photo_caption"><strong>Stylianos Loukides</strong>
 		             e-Learning Director<br>
 		            </p>
 	        	</div>
-	        	<div class="col-md-4 xs-mb-15">
+	        	{{-- <div class="col-md-4 xs-mb-15">
 		            <img src="https://cdn.ersnet.org/images/people/leadership/Stylianos-Loukides-2.png" class="img-circle">
 		            <p class="photo_caption"><strong>Stylianos Loukides</strong>
 		            e-Learning Director-elect<br>
 		            </p>
-	        	</div>
+	        	</div> --}}
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Ildiko-Horvath.png" class="img-circle">
-		            <p class="photo_caption"><strong>Ildiko Horvath</strong>
+              <img src="https://cdn.ersnet.org/images/people/leadership/Robert-Primhak.png" class="img-circle">
+              <p class="photo_caption"><strong>Robert Primhak</strong>
 		            Assessments Director<br>
 		            </p>
 	        	</div>
-	        	<div class="col-md-4 xs-mb-15">
+	        	{{-- <div class="col-md-4 xs-mb-15">
 		            <img src="https://cdn.ersnet.org/images/people/leadership/Robert-Primhak.png" class="img-circle">
 		            <p class="photo_caption"><strong>Robert Primhak</strong>
 		            Assessments Director-elect<br>
 		            </p>
-	        	</div>
+	        	</div> --}}
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Renata_Riha.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Renata Riha</strong>
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Claudia-Dobler.png" class="img-circle">
+		            <p class="photo_caption"><strong>Claudia Dobler</strong>
 		            Breathe Chief Editor <br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/robert-bals.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>ROBERT BALS</strong>
+                <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>John Hurst</strong>
 		            ERS Monograph Chief Editor <br>
 		            </p>
 	        	</div>
