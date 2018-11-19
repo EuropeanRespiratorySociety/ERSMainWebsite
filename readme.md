@@ -3,8 +3,9 @@
 ## Docker
 From the cloned repository:
 
-* Simply run `docker-compse up` or `docker-compose up -d` (detached mode)
+* Simply run `docker-compose up` or `docker-compose up -d` (detached mode)
 * Stop the containers with `ctrl/cmd c` or `docker-compose stop` (when in detached mode)
+* Rebuild images `docker-compose up -d --build` this command recreates the containers from scratch.
 
 The webiste will be available on port `8888` can be modified in `docker-compose.yml`
 
