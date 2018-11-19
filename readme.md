@@ -8,6 +8,11 @@ From the cloned repository:
 
 The webiste will be available on port `8888` can be modified in `docker-compose.yml`
 
+## Connect to running container
+* docker exec -ti ersmainwebsite_app_1 /bin/bash
+This will give you a termina (`i`: interactive, `t`: keep stdin open)
+Inside the runing container you can use something like `php artisan httpcache:clear`
+
 Change code as usual from the cloned repository, it will be synced in the container. You might need to clean the cache:
 
 * `php artisan httpcache:clear`
@@ -16,7 +21,7 @@ Change code as usual from the cloned repository, it will be synced in the contai
 
 **Version 1.0.1**
 
-## How to install
+## How to install (without docker)
 * clone the project locally `git clone https://github.com/EuropeanRespiratorySociety/ERSMainWebsite FOLDERNAME`
 * `cd FOLDERNAME`
 * Run `composer install` and/or `composer update`
@@ -25,12 +30,13 @@ Change code as usual from the cloned repository, it will be synced in the contai
 * create a `.env` file (add Cloud CMS credentials, ...)
 * you should now be able to navigate to the website.
 
+-------------------
+
 ## How to add a page
 * add a route
 * add a controller
 * add the views you need
 
--------------------
 -------------------
 ## Change log
 
