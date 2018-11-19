@@ -11,9 +11,14 @@ The webiste will be available on port `8888` can be modified in `docker-compose.
 ## Connect to running container
 * `docker exec -ti ersmainwebsite_app_1 /bin/bash`
 This will give you a termina (`i`: interactive, `t`: keep stdin open)
-Inside the runing container you can use something like `php artisan httpcache:clear`
 
-Change code as usual from the cloned repository, it will be synced in the container. You might need to clean the cache:
+## Only once after cloning the repository
+* install dependecies by running `composer install` inside the container.
+
+## Clean the cache
+
+
+Change code as usual from the cloned repository, it will be synced in the container. You might need to clean the cache __from inside the container__ if php is not installed on your machine:
 
 * `php artisan httpcache:clear`
 * `php artisan cache:clear`
@@ -36,6 +41,7 @@ Change code as usual from the cloned repository, it will be synced in the contai
 * add a route
 * add a controller
 * add the views you need
+* (optionally add a navigation menu item in the middleware)
 
 -------------------
 ## Change log
