@@ -128,6 +128,7 @@ Route::group(['prefix' => 'professional-development'], function () {
     });
     Route::group(['prefix' => 'hermes'], function () {
         Route::get('/', 'HermesController@index');
+        Route::get('/examination-committee', 'HermesController@ExamCommitteeAdult');
         Route::group(['prefix' => 'adult'], function () {
           Route::get('/', 'HermesController@show');
           Route::get('/examination-committee', 'HermesController@ExamCommitteeAdult');
@@ -142,7 +143,13 @@ Route::group(['prefix' => 'professional-development'], function () {
           Route::get('/', 'HermesController@National');
           Route::get('/{slug}', 'HermesController@show');
         });
+        Route::group(['prefix' => 'host-an-ers-hermes-self-assessment-course-in-your-city-or-country'], function () {
+          Route::get('/', 'HermesController@selfAsessmentCourse');
+          Route::get('/{slug}', 'HermesController@show');
+        });
         Route::get('/{slug}', 'HermesController@show');
+
+        
     });
     Route::get('ers-curriculum-design-a-summary-of-projects', 'GeneralController@curriculmDesign');
     
