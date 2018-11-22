@@ -70,4 +70,7 @@
     App.membership();             
   });
   </script>
+  
+  @include('partials.survey-monkey')  
+
 @stop()

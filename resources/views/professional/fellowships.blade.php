@@ -48,4 +48,6 @@
         
     });
 </script>
+  @include('partials.survey-monkey')  
+
 @stop()

@@ -107,5 +107,6 @@
         App.timeline();        
       });
     </script>
+  @include('partials.survey-monkey')  
 
 @stop()

@@ -180,6 +180,7 @@ Route::group(['prefix' => 'professional-development'], function () {
 
     Route::get('authors', 'NewsController@authors');
     Route::get('authors/{slug}', 'NewsController@showAuthor');
+    // Route::get('/website-survey', 'GeneralController@show');
 
     //Route::get('cc', 'CloudCms@requestTest');
     Route::get('full-search', 'CloudCms@fullSearch');
