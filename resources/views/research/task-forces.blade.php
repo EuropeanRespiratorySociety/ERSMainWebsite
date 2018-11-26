@@ -134,7 +134,7 @@
                       <a target="_blank" href="https://ers.box.com/shared/static/k3eueaqf4rylbowrj55eqt2nn3nav28p.doc">ERS Conflict of Interest and Confidentiality Form</a>
                     </li>
                     <li>
-                      <a target="_blank" href="https://taskforces.ersnet.org/images/TF_application_guidelines_faq_22.02.2017.pdf">FAQ of ERS document development</a>
+                      <a target="_blank" href="https://ers.box.com/shared/static/0fqrkdbl3in50lwfl9kzy2sz1bonkk29.pdf">FAQ of ERS document development</a>
                     </li>
                 </ul>
               </p>
