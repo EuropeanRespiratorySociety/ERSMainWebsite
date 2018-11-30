@@ -98,6 +98,7 @@
                     <br /><br />--}} <h3>Previous Award winners:
                     </h3> 
                     <ul class="list-unstyled  center-block text-left" style="width:10%;" >
+                        <li><a href="https://erscongress.org/about-ers-2018/awards-grants-and-fellowships-2018/142-awards-grants-and-fellowships/574-ers-award-winners-2018.html">2018</a></li>
                         <li><a href="https://erscongress.org/about-ers-2017/119-about-ers/500-award-winners-2017.html">2017</a></li>
                         <li><a href="https://erscongress.org/about-ers/98-about-ers/421-ers-award-winners-2016.html">2016</a></li>
                         <li><a href="https://erscongress.org/component/content/article/72-categories-2015/332-awards.html">2015</a></li>
@@ -112,9 +113,10 @@
                 <div class="col-md-7 center-block lead" >
                     <p style="padding-bottom:10px;">Learn more about past winners of ERS awards for research excellence:</p>
                     <ul class="list-unstyled  center-block text-left" style="width:10%;" >
-                        <li><a href="https://erscongress.org/about-ers-2017/119-about-ers/500-award-winners-2017.html">2017</a></li>
-                        <li><a href="https://erscongress.org/about-ers/98-about-ers/421-ers-award-winners-2016.html">2016</a></li>
-                        <li><a href="https://erscongress.org/component/content/article/72-categories-2015/332-awards.html">2015</a></li>
+                      <li><a href="https://erscongress.org/about-ers-2018/awards-grants-and-fellowships-2018/142-awards-grants-and-fellowships/574-ers-award-winners-2018.html">2018</a></li>
+                      <li><a href="https://erscongress.org/about-ers-2017/119-about-ers/500-award-winners-2017.html">2017</a></li>
+                      <li><a href="https://erscongress.org/about-ers/98-about-ers/421-ers-award-winners-2016.html">2016</a></li>
+                      <li><a href="https://erscongress.org/component/content/article/72-categories-2015/332-awards.html">2015</a></li>
                     </ul>
                 </div>
             </div><!-- main-content text for Apply or nominate on Research excellence page-->
