@@ -114,6 +114,31 @@ class LscController extends Controller
     }
 
     /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function InternationalCongress()
+    {
+        $results = $this->CC->getItem('test-for-congress-page');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] = $item[0]; 
+
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
+        }
+
+        if($item[0]->hasRelatedArticles > 0){
+            $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
+            $relatedItems = $this->CC->parseItems($related['rows']);
+            $params['relatedItems'] =  (object) $relatedItems;
+        }
+        
+        return view('congress-and-events.international-congress')->with($params);    
+
+    }
+
+    /**
      * Display the specified resource.
      *
      * @param  int  $id
