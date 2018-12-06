@@ -29,7 +29,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Belgium</strong><br>
-		            Wim Janssens
+                Didier Cataldo
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Bosnia and Herzegovina</strong><br>
@@ -37,26 +37,25 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Brazil</strong><br>
-		            Renato Maciel
+                Jose Miguel Chatkin
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Bulgaria</strong><br>
-		            Diana Petkova
+               Delegate to be assigned
 	         	</div>
 
 	         	<div class="col-md-4 national_delegates ">
 	         		<strong>Canada</strong><br>
-	         		George A. Fox
-		         	
+	         		Diane Lougheed
 	         	</div>
 
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Chile</strong><br>
-		            Patricia Diaz Amor
+               Delegate to be assigned
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>China</strong><br>
-		            Jiang Tao Lin
+               Jiang Tao Lin
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>China</strong><br>
@@ -76,7 +75,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Czech Republic </strong><br>
-		            Miloslav Marel
+                Libor Fila
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Egypt</strong><br>
@@ -108,7 +107,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Greece</strong><br>
-		            Petros Bakakos
+                Delegate to be assigned
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Hungary</strong><br>
@@ -124,21 +123,29 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Ireland</strong><br>
-		            Robert Rutherford
+               Delegate to be assigned
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Israel</strong><br>
 		            Amir Bar Shai
-	         	</div>
+             </div>
 	         	<div class="col-md-4 national_delegates ">
+                <strong>Italy</strong><br>
+                Stefano Nardini
+              </div>
+              <div class="col-md-4 national_delegates ">
 		         	<strong>Japan</strong><br>
                 Yasuhiko Nishioka
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Kyrgyzstan</strong><br>
                Batyr Osmonov
-	         	</div>	         	
+             </div>
 	         	<div class="col-md-4 national_delegates ">
+                <strong>Lithuania</strong><br>
+              Kestutis Malakauskas
+              </div>
+             <div class="col-md-4 national_delegates ">
 		         	<strong>Luxembourg</strong><br>
 		            Thierry Wagner
 	         	</div>
@@ -188,7 +195,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Slovakia</strong><br>
-		            Tamás Ötvös
+               Delegate to be assigned
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Senegal</strong><br>
@@ -196,7 +203,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Slovenia</strong><br>
-		            Lea Leonardis
+               Delegate to be assigned
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>South Africa</strong><br>
@@ -204,11 +211,11 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Spain</strong><br>
-		            Jose M. Marin Trigo
+               Delegate to be assigned
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Sri Lanka</strong><br>
-		            Eshanth Perera
+               Manil Peiris
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Sweden</strong><br>
@@ -225,14 +232,18 @@
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Thailand</strong><br>
 		            Watchara Boonsawat
-	         	</div>
+             </div>
+	         	<div class="col-md-4 national_delegates ">
+                <strong>Tunisia</strong><br>
+                Agnès Hamzaoui
+              </div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Turkey</strong><br>
 		            Metin Akgun
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Ukraine</strong><br>
-		            Ivan Vishnivetsky 
+               Delegate to be assigned 
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>United Kingdom </strong><br>
@@ -244,7 +255,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Vietnam</strong><br>
-		            Sy Duong-Quy
+		           Delegate to be assigned
 	         	</div>
 	        </div>
     	</div>
