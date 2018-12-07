@@ -13,11 +13,11 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Algeria </strong><br>
-		            Abdelmajid Snouber
+               Delegate to be assigned
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Australia</strong><br>
-		            Peter Middleton
+               Delegate to be assigned
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Austria</strong><br>
@@ -58,12 +58,8 @@
                Jiang Tao Lin
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
-		         	<strong>China</strong><br>
-		            Hao Tang
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Colombia</strong><br>
-		            Carlos Andrés Celis Preciado
+               Delegate to be assigned
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Croatia</strong><br>
@@ -104,10 +100,6 @@
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Greece</strong><br>
 		            Stavros Tryfon
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Greece</strong><br>
-                Delegate to be assigned
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Hungary</strong><br>
