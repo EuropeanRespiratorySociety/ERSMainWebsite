@@ -32,13 +32,13 @@
                 <div id="eu_a_2" class="tab-pane cont">
                     <div class="row text-center">
                         <div class="col-md-3 col-md-offset-3">
-                            <a href="http://www.ersroadmap.org/index.php?option=com_zoo&view=category&layout=category&Itemid=102">
+                            <a href="/publications/european-respiratory-roadmap">
                                 <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/roadmap.jpg">
                                 <p>HEALTH POLICY MAKERS<br>VERSION</p>
                             </a>
                         </div>
                         <div class="col-md-3">
-	                        <a href="http://www.ersroadmap.org/index.php?option=com_zoo&view=category&layout=category&Itemid=137">
+	                        <a href="/publications/european-respiratory-roadmap">
 	                            <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/roadmap_2.png">
 	                            <p>HEALTHCARE PROFESSIONALS<br>VERSION</p>
 	                        </a>

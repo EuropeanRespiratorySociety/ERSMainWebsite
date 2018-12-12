@@ -188,8 +188,8 @@
                                 <i>The European Respiratory Roadmap</i> seeks to serve as a basis for the respiratory community to communicate with key decision and policy ...
                             </p>
                         </div>
-                        <div class="card-action"> 	
-                            <a href="http://www.ersroadmap.org" 
+                        <div class="card-action">
+                            <a href="/publications/european-respiratory-roadmap" 
                                 target="new_blank"
                                 class="ga-home btn btn-default pull-right">Read online</a>
                         </div>
