@@ -23,16 +23,16 @@
                 @if($item->slug == "awards") 
                 <div class="row awards" >
                     <div class="col-md-4">
-                        <div class="card card-primary card-padded">
-                            <div class="card-image">
-                                <img class="img-responsive" src="https://cdn.ersnet.org/images/london2016.jpg">
+                        <div class="card card-primary card-event" style="background-color: #015291;">
+                            <div class="card-image" style="height:24px;">
+                              <span class="label label-danger">Apply Now</span>
                             </div>
                             <div class="card-title text-left">
                                 <h3>GOLD MEDALS</h3>
                             </div> 
 
-                            <div class="card-content  text-left">
-                                <p>ERS presents Gold Medal Awards with grants of €50,000 to researchers who have made outstanding contributions in the fields of Asthma, COPD and ILD.</p>
+                            <div class="card-content  text-left" style="min-height: 165px;">
+                                <p style="line-height: 150%;">ERS presents Gold Medal Awards with grants of €50,000 to researchers who have made outstanding contributions in the fields of Asthma, COPD, IPF and Lung Cancer.</p>
                             </div>
                             
                             <div class="card-action" position="absolute; bottom:0;">
@@ -42,17 +42,16 @@
                     </div><!-- col-md-4 -->
 
                     <div class="col-md-4">
-                        <div class="card card-primary card-padded">
-                            <div class="card-image">
-                                <img class="img-responsive" src="https://cdn.ersnet.org/images/london2016.jpg">
+                        <div class="card card-primary card-event" style="background-color: #015291;">
+                            <div class="card-image" style="height:24px;">
+                                <span class="label label-danger">Apply Now</span>
                             </div>
-                            
                             <div class="card-title  text-left">
                                 <h3>SPECIAL HONOURS</h3>
                             </div> 
 
                             <div class="card-content  text-left">
-                                <p>Each year at Congress, ERS bestows a number of prestigious honours upon selected individuals based on their achievements in the field of respiratory medicine.</p>
+                                <p style="line-height: 150%;">Each year at Congress, ERS bestows a number of prestigious honours upon selected individuals based on their achievements in the field of respiratory medicine.</p>
                             </div>
                             
                             <div class="card-action">
@@ -61,15 +60,15 @@
                         </div><!-- card card-primary card-padded -->
                     </div><!-- col-md-4 -->
                     <div class="col-md-4">
-                        <div class="card card-primary card-padded">
-                            <div class="card-image">
-                                <img class="img-responsive" src="https://cdn.ersnet.org/images/hermes.jpg">
+                        <div class="card card-primary card-event" style="background-color: #015291;">
+                            <div class="card-image" style="height:24px;">
+                                <span class="label label-danger">Apply Now</span>
                             </div>
                             <div class="card-title  text-left">
                                 <h3>RESEARCH EXCELLENCE</h3>
                             </div>                 
-                            <div class="card-content  text-left">
-                                <p>A variety of sponsored awards are presented to individuals who have excelled in research in respiratory science and medicine. </p>
+                            <div class="card-content  text-left" style="min-height: 165px;">
+                                <p style="line-height: 150%;">A variety of sponsored awards are presented to individuals who have excelled in research in respiratory science and medicine. </p>
                             </div>
                             
                             <div class="card-action">
