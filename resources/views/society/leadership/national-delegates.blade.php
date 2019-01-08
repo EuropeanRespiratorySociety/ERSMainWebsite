@@ -17,7 +17,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Australia</strong><br>
-               Delegate to be assigned
+               Bruce Thompson
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Austria</strong><br>
@@ -41,7 +41,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Bulgaria</strong><br>
-               Delegate to be assigned
+               Blagoi Marinov
 	         	</div>
 
 	         	<div class="col-md-4 national_delegates ">
@@ -182,10 +182,14 @@
 		            Ovidiu Fira-Mladinescu
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Russian Federation </strong><br>
+		         	<strong>Russian Federation</strong><br>
 		            Natalia Shaporova
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
+            </div>
+            <div class="col-md-4 national_delegates ">
+              <strong>Saudi Arabia</strong><br>
+                Omar Shahball
+            </div>
+            <div class="col-md-4 national_delegates ">
 		         	<strong>Slovakia</strong><br>
                Delegate to be assigned
 	         	</div>
@@ -203,7 +207,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Spain</strong><br>
-               Delegate to be assigned
+               Luis Miguel Seijo Maceiras
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Sri Lanka</strong><br>
