@@ -638,7 +638,7 @@ However, ALL topics that would involve intensive care are welcomed. The group is
       </div>
       <div class="modal-body">
         <div class="text-left">
-          <h4>Paediatric Respiratory Physiology and Sleep</h4>
+          <h4>Paediatric Respiratory Epidemiology</h4>
           <p>
           This Group consists of epidemiologists, paediatricians and other health professionals and health scientists with interests in the early origins and environmental/genetic contributions to paediatric respiratory disease.<br><br>
 
