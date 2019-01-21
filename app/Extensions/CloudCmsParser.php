@@ -74,12 +74,12 @@ class CloudCmsParser
 
                     }
 
-                    if($item->venue->streetAddress && $item->venue->city && $item->venue->postalCode){
-                        if(!$item->loc->lat || !$item->loc->long){
-                            $coordinates = $this->helper->getCoordinates($item->venue);
-                            $this->helper->setCoordinates($item->_qname, $coordinates['lat'], $coordinates['lng'], $coordinates['accuracy']);
-                        }
-                    }
+                    // if($item->venue->streetAddress && $item->venue->city && $item->venue->postalCode){
+                    //     if(!$item->loc->lat || !$item->loc->long){
+                    //         $coordinates = $this->helper->getCoordinates($item->venue);
+                    //         $this->helper->setCoordinates($item->_qname, $coordinates['lat'], $coordinates['lng'], $coordinates['accuracy']);
+                    //     }
+                    // }
 
 
                     if($item->suggestedAccommodation){
