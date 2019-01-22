@@ -30,13 +30,13 @@ class GeneralController extends Controller
     { 
         $type = 'ers:category-association';
         $field = "_system.created_on";
-        $direction = 1;
+        $direction = -1;
         // The content of the cat is not yet managed in CC
         // if(!$params['category']->url || !$params['category']->uri)){
         //     $this->CC->setCanonical($params['category']->_qname, 'advocacy/eu-affairs');
         // }
 
-        $results = $this->CC->getAssociationSorted($this->euAffairs, $type, $field, $direction);
+        $results = $this->CC->getAssociationSortedCreatedBy($this->euAffairs, $type, $field, $direction);
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] = $items; 
 

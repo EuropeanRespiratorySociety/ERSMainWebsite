@@ -108,6 +108,34 @@ class CloudCmsHelper
         return $results;    
     }
 
+
+    /**
+    * Get all associated items that have a specific relation and sort them by a field
+    * @param string $startNode (QName of the starting node)
+    * @param string $type (Optional - type of association e.g. ers:category-association)
+    * @param string $field (Optional - the field to sort on)
+    * @param int $direction (the sorting direction 1 or -1)
+    */
+    public function getAssociationSortedCreatedBy($startNode, $type = 'ers:category-association', $field = "_system.created_on.ms", $direction = 1){
+      $query = '{ 
+          "unPublished": { "$ne": true},
+          "_type": { "$ne": "ers:notifications"}
+      }';
+
+      $results = CC::nodes()
+          ->queryRelatives($startNode, $query)
+          ->addParams(['type' => $type])
+          ->addParams(['sort' => '{"_system.created_on.ms": '.$direction.'}']) 
+          ->addParams(['metadata' => 'true'])
+          ->addParams(['limit' => 400]) 
+          ->addParams(['full' => 'true'])
+          ->get();    
+      $results = $this->validateResults($results);       
+      return $results;    
+  }
+
+
+
     /**
     * Get all associated items that have a specific relation and sort them by a field
     * @param string $startNode (QName of the starting node)
@@ -124,7 +152,8 @@ class CloudCmsHelper
         $results = CC::nodes()
             ->queryRelatives($startNode, $query)
             ->addParams(['type' => $type])
-            ->addParams(['sort' => '{"'.$field.'": '.$direction.'}']) 
+            ->addParams(['sort' => '{"_system.created_on.ms": '.$direction.'}']) 
+            // ->addParams(['sort' => '{"'.$field.'": '.$direction.'}']) 
             ->addParams(['metadata' => 'true'])
             ->addParams(['limit' => 400]) 
             ->addParams(['full' => 'true'])
