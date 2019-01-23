@@ -498,6 +498,12 @@
             T +32 2 238 53 60<br>
             </p>
         </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>Roberta Sadauskaite</strong>
+            Policy Officer<br>
+            T +32 2 238 53 64<br>
+            </p>
+        </div>
       </div>
     </div>
     </div>

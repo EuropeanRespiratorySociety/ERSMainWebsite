@@ -69,17 +69,30 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/Peter_Calverley.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Peter Calverley</strong>
-		            Advocacy Council expert on COPD<br>
-		            </p>
-	        	</div>
-	        	<div class="col-md-4 xs-mb-15">
 					<img src="https://cdn.ersnet.org/images/people/leadership/Ivan_Solovic.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>Ivan Solovic</strong>
-		            Chair of the Ad hoc Working Group on TB Advocacy<br>
+                  Advocacy Council expert on TB<br>
 		            </p>
-	        	</div>
+            </div>
+	        	<div class="col-md-4 xs-mb-15">
+              <img src="https://cdn.ersnet.org/images/people/leadership/Guy_Joos.jpg" class="img-circle">
+              <p class="photo_caption"><strong>Guy Joos</strong>
+                Advocacy Council expert on NCDs<br>
+              </p>
+            </div>
+	        	<div class="col-md-4 xs-mb-15">
+              <img src="https://cdn.ersnet.org/images/people/leadership/Carlos_Robalo.jpg" class="img-circle">
+              <p class="photo_caption"><strong>Carlos Robalo</strong>
+                Secretary General<br>
+              </p>
+            </div>
+	        	<div class="col-md-4 xs-mb-15">
+              <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+              <p class="photo_caption"><strong>Joanna Chorostowska-Wynimko</strong>
+                Secretary General elect<br>
+              </p>
+            </div>
+
 
 			</div>
 
