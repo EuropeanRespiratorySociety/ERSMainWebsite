@@ -17,7 +17,7 @@
 	        <div class="row leadership-people">
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>To be announced</strong>
+		            <p class="photo_caption"><strong>Hilary Pinnock</strong>
                   General Pneumology<br>
 		            {{-- <a href="http://www.ersnet.org/about-us/leadership/science-council/assembly-heads.raw?task=callelement&amp;item_id=422&amp;element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&amp;method=download" title="Download COI">Download COI</a> --}}
 		            </p>
@@ -96,7 +96,7 @@
         </div>
         <div class="col-md-4 xs-mb-15">
           <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
-          <p class="photo_caption"><strong>To be announced</strong> 
+          <p class="photo_caption"><strong>Jouke T. Annema</strong> 
             Clinical Techniques, Imaging and Endoscopy<br>
           </p>
         </div>
