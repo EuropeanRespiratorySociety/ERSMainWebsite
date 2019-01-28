@@ -29,14 +29,14 @@ class GeneralController extends Controller
     public function euAffairs()
     { 
         $type = 'ers:category-association';
-        $field = "_system.created_on";
+        $field = "_system.created_on.ms";
         $direction = -1;
         // The content of the cat is not yet managed in CC
         // if(!$params['category']->url || !$params['category']->uri)){
         //     $this->CC->setCanonical($params['category']->_qname, 'advocacy/eu-affairs');
         // }
 
-        $results = $this->CC->getAssociationSortedCreatedBy($this->euAffairs, $type, $field, $direction);
+        $results = $this->CC->getAssociationSorted($this->euAffairs, $type, $field, $direction);
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] = $items; 
 
