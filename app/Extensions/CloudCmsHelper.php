@@ -129,7 +129,7 @@ class CloudCmsHelper
             // ->addParams(['sort' => '{"_system.created_on.ms": '.$direction.'}']) 
             ->addParams(['sort' => '{"'.$field.'": '.$direction.'}']) 
             ->addParams(['metadata' => 'true'])
-            ->addParams(['limit' => 400]) 
+            ->addParams(['limit' => 400])
             ->addParams(['full' => 'true'])
             ->get();    
         $results = $this->validateResults($results);       

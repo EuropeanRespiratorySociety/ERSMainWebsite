@@ -252,6 +252,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /handbook http://books.ersjournals.com/about#handbooks
         # I
         Redirect 301 /images/03_ERS_Banner_Vote_Now.gif https://www.ersnet.org/images/stories/weekly/03_ERS_Banner_Vote_Now.gif
+        Redirect 301 /isee-ers https://ers.box.com/s/lab57dxgqqzmbbzjhempf5oiob8s795b
         # O
         Redirect 301 /ondemand http://ondemand.erscongress.org/
         # S
