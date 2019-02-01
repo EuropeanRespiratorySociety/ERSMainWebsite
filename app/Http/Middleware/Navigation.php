@@ -68,6 +68,8 @@ class Navigation
                     ->link->attr(array('class' => 'ga-nav-society'));
                     $menu->membership->add('FAQs', 'the-society/membership#faqs' )
                     ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->membership->add('CERS', 'the-society/membership/cers' )
+                    ->link->attr(array('class' => 'ga-nav-society'));
                 $menu->theSociety->add('Assemblies', 'the-society/assemblies' )
                 ->link->attr(array('class' => 'ga-nav-society'));
                     $menu->assemblies->add('1. General Pneumology', 'the-society/assemblies#general-pneumology' )
