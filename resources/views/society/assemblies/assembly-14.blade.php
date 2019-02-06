@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="col-md-6 center-block">
-              <p >Assembly Early Career representative: To be announced</p>
+              <p >Assembly Early Career representative: Daniela Gompelmann</p>
             </div>
             <div class="col-md-6 center-block lead">
               There are three groups within Assembly 14:
