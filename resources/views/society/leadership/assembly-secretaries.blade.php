@@ -9,7 +9,7 @@
 
 	        <div class="row leadership-people">
 		        <div class="col-md-4 xs-mb-15">
-              <img src="https://cdn.ersnet.org/images/people/leadership/Ioannis-Vogiatzis.png" class="img-circle">
+              <img src="https://cdn.ersnet.org/images/people/leadership/Ioannis-Vogiatzis-02.png" class="img-circle">
               <p class="photo_caption"><strong>Ioannis Vogiatzis</strong>
                   General Pneumology<br>
 		            {{-- <a href="/about-us/leadership/education-council/assembly-secretaries.raw?task=callelement&amp;item_id=1065&amp;element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&amp;method=download" title="Download COI">Download COI</a> --}}
@@ -46,7 +46,7 @@
 		            Paediatrics<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-              <img src="https://cdn.ersnet.org/images/people/leadership/FEDERICA-MELONI.png" class="img-circle">
+              <img src="https://cdn.ersnet.org/images/people/leadership/Federica-Meloni-01.png" class="img-circle">
 		            <p class="photo_caption"><strong>Federica Meloni</strong>
 		            Thoracic Surgery and Transplantation<br>
 		        </div>

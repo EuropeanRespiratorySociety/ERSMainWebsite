@@ -22,8 +22,8 @@
 
 			<div class="row leadership-people" style="padding-top: 40px;">
 	            <div class="col-md-4 xs-mb-15">
-                <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
-                <p class="photo_caption"><strong>To be announced</strong>
+                <img src="https://cdn.ersnet.org/images/people/leadership/Joajen_Vestbo.jpg" class="img-circle">
+                <p class="photo_caption"><strong>Jørgen Vestbo</strong>
                     Advocacy Council Chair<br>
 	                </p>
 	            </div>
@@ -87,7 +87,7 @@
               </p>
             </div>
 	        	<div class="col-md-4 xs-mb-15">
-              <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+              <img src="https://cdn.ersnet.org/images/people/leadership/Joanna-Chorostowska.png" class="img-circle">
               <p class="photo_caption"><strong>Joanna Chorostowska-Wynimko</strong>
                 Secretary General elect<br>
               </p>

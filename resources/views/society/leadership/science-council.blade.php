@@ -60,7 +60,7 @@
                 CRC Director Elect<br>
           </div>
 		        <div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/Nicolas-Roche-2.png" class="img-circle">
+					<img src="https://cdn.ersnet.org/images/people/leadership/Nicolas-Roche.png" class="img-circle">
 		            <p class="photo_caption"><strong>Nicolas Roche</strong>
 		            Guidelines Director<br>
 		        </div>		        

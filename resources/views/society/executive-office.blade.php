@@ -56,8 +56,8 @@
             </p>
           </div>
           <div class="col-md-3 xs-mb-15">
-            <p class="photo_caption"><strong>Anastasia Nesterova</strong>
-            Administrative Coordinator<br>
+            <p class="photo_caption"><strong>Anush Meliksetyan</strong>
+              Executive Office Assistant<br>
             T +41 21 213 01 13<br>
             </p>
           </div>
@@ -349,10 +349,16 @@
           </div>
       </div>
       <div class="row">
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Dawn Ould</strong>
-            Communications Coordinator<br>
-            T +44 114 267 2876<br>
+          <div class="col-md-3 xs-mb-15">
+            <p class="photo_caption"><strong>Tim Steele</strong>
+              Communications Coordinator<br>
+              T +44 114 267 2876<br>
+            </p>
+          </div>
+          <div class="col-md-3 xs-mb-15">
+            <p class="photo_caption"><strong>Dawn Ould</strong>
+              Communications Coordinator<br>
+              T +44 114 267 2876<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
@@ -532,7 +538,7 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Emma Thompson</strong>
+          <p class="photo_caption"><strong>Rachel Orritt</strong>
             Information and Education<br>
             T +44 114 267 2872<br>
             </p>
@@ -601,8 +607,8 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Romain Charton</strong>
-          Accountant<br>
+          <p class="photo_caption"><strong>Marzena Pilch</strong>
+            Junior Accountant<br>
             T +41 21 213 01 24<br>
             </p>
         </div>
@@ -704,7 +710,7 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Joanne Stevenson</strong>
-            Membership Assistant<br>
+            Membership Coordinator<br>
             T +41 21 213 01 42<br>
             </p>
         </div>

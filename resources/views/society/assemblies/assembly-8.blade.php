@@ -4,11 +4,11 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/people/leadership/Stefano_Elia.JPG" class="img-circle">
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Stefano-Elia.png" class="img-circle">
                   <p class="photo_caption">Head: Stefano Elia</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Federica-Meloni-01.png" class="img-circle">
                   <p class="photo_caption">Secretary: Federica Meloni</p>
                  
                 </div>

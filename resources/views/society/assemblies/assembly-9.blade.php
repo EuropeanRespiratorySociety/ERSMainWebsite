@@ -8,7 +8,7 @@
                   <p class="photo_caption">Head: Martijn A. Spruit</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Daniel-Langer-02.png" class="img-circle">
                   <p class="photo_caption">Secretary: Daniel Langer</p>
                  
                 </div>
