@@ -122,6 +122,12 @@
                       Assembly 13<br>
                       </p>
             </div>
+	        	<div class="col-md-4 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/leadership/Daniela-Gompelmann.png" class="img-circle">
+                      <p class="photo_caption"><strong>Daniela Gompelmann</strong>
+                      Assembly 14<br>
+                      </p>
+            </div>
 			</div>
 
 

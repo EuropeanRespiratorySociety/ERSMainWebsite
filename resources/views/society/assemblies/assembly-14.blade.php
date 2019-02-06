@@ -4,8 +4,8 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                 <img src="https://cdn.ersnet.org/images/people/leadership/Daniela-Gompelmann.png" class="img-circle" width="120" height="120">
-                  <p class="photo_caption">Head: Daniela Gompelmann</p>
+                 <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle" width="120" height="120">
+                  <p class="photo_caption">Head: Jouke T. Annema</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
                  <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
