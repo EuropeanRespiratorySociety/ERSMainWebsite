@@ -59,7 +59,7 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-              <img src="https://cdn.ersnet.org/images/people/leadership/Stefano_Elia.JPG" class="img-circle">
+              <img src="https://cdn.ersnet.org/images/people/leadership/Stefano-Elia.png" class="img-circle">
 		            <p class="photo_caption"><strong>Stefano Elia</strong>
 		            Thoracic Surgery and Transplantation<br>
 		            </p>
@@ -71,7 +71,7 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/Graham-Bothamley.jpg" class="img-circle">
+					<img src="https://cdn.ersnet.org/images/people/leadership/Graham-Bothamley.png" class="img-circle">
 					<p class="photo_caption"><strong>Graham Bothamley</strong> 
 		            Respiratory Infections <br>
 		            </p>

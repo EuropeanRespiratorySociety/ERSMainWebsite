@@ -16,7 +16,7 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Leo_Heunks.jpg" class="img-circle">
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Leo-Heunks.png" class="img-circle">
 		            <p class="photo_caption"><strong>Leo Heunks</strong>
 		            Respiratory Intensive Care <br>
 		        </div>
@@ -51,7 +51,7 @@
 		            Thoracic Surgery and Transplantation<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Daniel-LANGER.png" class="img-circle">
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Daniel-Langer-02.png" class="img-circle">
 		            <p class="photo_caption"><strong>Daniel Langer</strong>
 		            Allied Respiratory Professionals <br>
 		        </div>
