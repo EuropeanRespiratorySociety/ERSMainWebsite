@@ -77,7 +77,7 @@
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
               <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
-              <p class="photo_caption"><strong>To be announced</strong>
+              <p class="photo_caption"><strong>Walter De Wever</strong>
                 Clinical Techniques, Imaging and Endoscopy<br>
           </div>
 
