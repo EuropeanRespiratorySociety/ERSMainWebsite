@@ -7,7 +7,7 @@
                   <p class="photo_caption">Head: Raffaele Scala</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/people/leadership/Leo-Heunks.png" class="img-circle">
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Leo-Heunks.png" class="img-circle" width="120" height="120">
                   <p class="photo_caption">Secretary: Leo Heunks</p>
                  
                 </div>

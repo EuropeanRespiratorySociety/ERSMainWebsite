@@ -8,7 +8,7 @@
                   <p class="photo_caption">Head: Hilary Pinnock</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/people/leadership/Ioannis-Vogiatzis-02.png" class="img-circle">
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Ioannis-Vogiatzis-02.png" class="img-circle" width="120" height="120">
                   <p class="photo_caption">Secretary: Ioannis Vogiatzis</p>
                 </div>
             </div>
