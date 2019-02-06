@@ -69,7 +69,7 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 14.03<br>
-                    Chair: To be announced<br>
+                    Chair: Christian B.Laursen<br>
                     Secretary: To be announced</p>
                   </div>
                   <div class="card-action clearfix">
