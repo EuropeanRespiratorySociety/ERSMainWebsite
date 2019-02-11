@@ -130,10 +130,17 @@
               <div class="">
                 
                 @if($item->practicalInfo)
-                  <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary text-left">
-                    <span class="icon s7-map"></span>
-                    Practical Info
+                  @if($item->slug == "mechanisms-of-acute-exacerbation-of-respiratory-disease")
+                    <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary text-left">
+                      <span class="icon s7-map"></span>
+                      Practical Info
+                    </a>
+                  @elseif($item->slug == "acute-respiratory-failure-and-mechanical-ventilation-conference")
+                    <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary text-left">
+                      <span class="icon s7-map"></span>
+                      {{$item->practicalInfoButton}}
                   </a>
+                  @endif
                 @endif
                 <ul class="list-group">
                   @if($item->mentorship->text)
@@ -193,13 +200,14 @@
                     </span> Industry <br>(ERS Members & non-Members)
                   </a>
                 @endif  
-  
+                @if($item->slug == "mechanisms-of-acute-exacerbation-of-respiratory-disease")
                   <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
                     <span class="badge">
                       &euro; 180
                     </span> Accompanying Person
                   </a>
-          
+                @endif
+
                 </div>
 
               </div>
