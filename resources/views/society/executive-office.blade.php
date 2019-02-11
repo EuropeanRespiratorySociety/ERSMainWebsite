@@ -350,23 +350,23 @@
       </div>
       <div class="row">
           <div class="col-md-3 xs-mb-15">
+              <p class="photo_caption"><strong>Dawn Ould</strong>
+                Senior Communications Coordinator<br>
+                T +44 114 267 2876<br>
+              </p>
+          </div>
+          <div class="col-md-3 xs-mb-15">
             <p class="photo_caption"><strong>Tim Steele</strong>
               Communications Coordinator<br>
               T +44 114 267 2876<br>
             </p>
           </div>
           <div class="col-md-3 xs-mb-15">
-            <p class="photo_caption"><strong>Dawn Ould</strong>
+            <p class="photo_caption"><strong>Beth Maguire</strong>
               Communications Coordinator<br>
-              T +44 114 267 2876<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Beth Maguire</strong>
-            Press and Communications Assistant<br>
-            T +44 114 267 2866<br>
-            </p>
-        </div>
+              T +44 114 267 2866<br>
+              </p>
+         </div>
 
       </div>
     </div>
@@ -654,8 +654,8 @@
       </div>
       <div class="row">
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Samuel Pouyt</strong>
-            Web Architect<br>
+          <p class="photo_caption"><strong>Florence Blocklet</strong>
+            Web Developper<br>
             T +41 21 213 01 46<br>
             </p>
         </div>
