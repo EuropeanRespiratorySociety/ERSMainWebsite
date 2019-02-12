@@ -149,7 +149,7 @@ class HermesController extends Controller
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  $items;
 
-        return view('professional.hermeses')->with($params);
+        return view('professional.self-assessment')->with($params);
     }
 
     /**
