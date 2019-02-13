@@ -135,7 +135,7 @@
                       <span class="icon s7-map"></span>
                       Practical Info
                     </a>
-                  @elseif($item->slug == "acute-respiratory-failure-and-mechanical-ventilation-conference")
+                  @elseif($item->slug == "respiratory-failure-and-mechanical-ventilation-conference")
                     <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary text-left">
                       <span class="icon s7-map"></span>
                       {{$item->practicalInfoButton}}
