@@ -31,7 +31,7 @@
         </div>
         <h2 class="text-left clearfix date-venue">
         <!--<a href="javascript:void(0)"><span class="icon s7-angle-left pull-left" style="font-size: 24px;"></span></a>-->
-        <label>{{$item->ebusDate}} @if(isset($item->eventLocation))<a>{{$item->eventLocation}}</a>@endif</label>
+        <label>{{$item->eventDates}} @if(isset($item->eventLocation))<a>{{$item->eventLocation}}</a>@endif</label>
         <!--<a href="javascript:void(0)"><span class="icon s7-angle-right pull-right" style="font-size: 24px;"></span></a>-->
         </h2>
       </div>
@@ -139,8 +139,11 @@
                       &euro; {{ $item->feeList->industry }}
                     </span> Industry <br>(ERS Members & non-Members)
                   </a>
-                @endif  
-                </div>
+                @endif
+                @if($item->earlybirdDeadline)
+                <p>Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from a €50 discount on registration fees{{$item->feeList->liveStreaming ? ' (excluding live streaming)': '' }}.</p>
+                @endif
+              </div>
 
 
               </div>
