@@ -90,7 +90,7 @@
                   <div class="card-content text-left">
                     <p>Group 01.04<br>
                     Chair: To be announced<br>
-                    Secretary: To be announced</p>
+                    Secretary: Vitaly Mishlanov</p>
                   </div>
                   <div class="card-action clearfix">
                     {{-- <button data-toggle="modal" data-target="#md-m-e-health" type="button" class="btn btn-default pull-right">More</button> --}}

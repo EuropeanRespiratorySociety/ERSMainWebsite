@@ -70,7 +70,7 @@
                   <div class="card-content text-left">
                     <p>Group 14.03<br>
                     Chair: Christian B.Laursen<br>
-                    Secretary: To be announced</p>
+                    Secretary: Michiel J. Thomeer</p>
                   </div>
                   <div class="card-action clearfix">
                     <!-- <button data-toggle="modal" data-target="#md-respiratory-infections" type="button" class="btn btn-default pull-right">More</button> -->

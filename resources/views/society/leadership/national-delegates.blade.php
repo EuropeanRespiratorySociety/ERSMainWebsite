@@ -12,9 +12,13 @@
 		            Daniela Xhemalaj
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Algeria </strong><br>
-               Delegate to be assigned
-	         	</div>
+		         	<strong>Armenia</strong><br>
+               Irina Khachatryan
+             </div>
+	         	<div class="col-md-4 national_delegates ">
+              <strong>Australia</strong><br>
+              Bruce Thompson
+            </div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Australia</strong><br>
                Bruce Thompson
@@ -128,7 +132,11 @@
               <div class="col-md-4 national_delegates ">
 		         	<strong>Japan</strong><br>
                 Yasuhiko Nishioka
-	         	</div>
+             </div>
+	         	<div class="col-md-4 national_delegates ">
+              <strong>Kazakhstan</strong><br>
+              Denis Vinnikov
+            </div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Kyrgyzstan</strong><br>
                Batyr Osmonov
@@ -172,7 +180,11 @@
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Portugal</strong><br>
 		            Paula Maria Gonçalves Pinto
-	         	</div>
+             </div>
+             <div class="col-md-4 national_delegates ">
+              <strong>Republic of Moldova</strong><br>
+                Oxana Munteanu
+            </div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Republic of Serbia</strong><br>
 		            Lidija M Ristić
@@ -190,12 +202,12 @@
                 Omar Shahball
             </div>
             <div class="col-md-4 national_delegates ">
+              <strong>Senegal</strong><br>
+               Abdourakhmane Niang
+            </div>
+            <div class="col-md-4 national_delegates ">
 		         	<strong>Slovakia</strong><br>
-               Delegate to be assigned
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Senegal</strong><br>
-		            Abdourakhmane Niang
+               Jan Plutinsky
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Slovenia</strong><br>
@@ -239,11 +251,11 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Ukraine</strong><br>
-               Delegate to be assigned 
+               Dmytro Butov 
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>United Kingdom </strong><br>
-		            Lisa Davies
+               Jonathan Bennett
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>United States of America </strong><br>

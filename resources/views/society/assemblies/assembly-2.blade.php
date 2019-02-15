@@ -29,8 +29,8 @@ The Assembly is comprised of the following two groups:
                     </div> 
                     <div class="card-content text-left">
                       <p>Group 02.01<br>
-                      Chair: Marcus Schultz<br>
-                      Secretary: Lígia Pires</p>
+                      Chair: Christian Karagiannidis<br>
+                      Secretary: Ignacio Martin-Loeches</p>
                     </div>
                     <div class="card-action clearfix">
                       <button data-toggle="modal" data-target="#md-acute-critical" type="button" class="btn btn-default pull-right">More</button>

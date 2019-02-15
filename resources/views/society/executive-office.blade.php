@@ -645,7 +645,7 @@
       </div>
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
-            <img src="https://cdn.ersnet.org/images/people/executive-office/sdupasquier.jpg" class="img-circle">
+            <img src="https://cdn.ersnet.org/images/people/executive-office/Stephan-Dupasquier.png" class="img-circle">
             <p class="photo_caption"><strong>Stéphane Dupasquier</strong>
             Director of IT and Infrastructure<br>
             T +41 21 213 01 30<br>
