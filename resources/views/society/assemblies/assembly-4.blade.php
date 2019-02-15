@@ -56,8 +56,8 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 04.02<br>
-                    Chair: To be announced<br>
-                    Secretary: Sophia E. Schiza</p>
+                    Chair: Sophia. E. Schiza<br>
+                    Secretary: Dries Testelmans</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-sleep-and-control" type="button" class="btn btn-default pull-right">More</button>
