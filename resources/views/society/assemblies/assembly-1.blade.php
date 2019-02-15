@@ -89,7 +89,7 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 01.04<br>
-                    Chair: To be announced<br>
+                    Chair: Vitalii Poberezhets<br>
                     Secretary: Vitaly Mishlanov</p>
                   </div>
                   <div class="card-action clearfix">

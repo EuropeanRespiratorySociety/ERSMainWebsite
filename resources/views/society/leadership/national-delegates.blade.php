@@ -10,7 +10,11 @@
 	        	<div class="col-md-4 national_delegates ">
 		         	<strong>Albania</strong><br>
 		            Daniela Xhemalaj
-	         	</div>
+             </div>
+             <div class="col-md-4 national_delegates ">
+              <strong>Algeria</strong><br>
+                Kada Bentata
+            </div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Armenia</strong><br>
                Irina Khachatryan

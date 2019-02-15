@@ -933,12 +933,6 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Valérie Vaccaro</strong>
-            Scientitifc Activities Project Lead<br>
-            T +41 21 213 01 89<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Valentine Degert</strong>
             Scientific Programme Coordinator<br>
             T +41 21 213 01 88<br>
