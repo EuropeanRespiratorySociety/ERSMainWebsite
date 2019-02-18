@@ -217,7 +217,11 @@
             @if($item->title == "Mechanistic overlap between chronic lung injury and cancer")
             <p style="margin-bottom: 8px;" class="article-title"><a href="https://ers.app.box.com/s/mjji0rrc2rjwxn98qrdgzn77fse35bgk">Industry Group Reservation</a></p>
             @endif
+            @if($item->title == "Mechanistic overlap between chronic lung injury and cancer")
             <p>Any questions? Please contact {!! Html::mailto('scientific@ersnet.org', 'scientific@ersnet.org') !!}</p>
+            @elseif($item->slug == "respiratory-failure-and-mechanical-ventilation-conference")
+            <p>Any questions? Please contact {!! Html::mailto('education@ersnet.org', 'education@ersnet.org') !!}</p>
+            @endif
             @if($item->extendedDeadline)
             <p class="deadline">EXTENDED registration deadline : {{$item->extendedDeadline}}</p>
             @endif
