@@ -21,6 +21,13 @@
   			<div class="main-content">
           <div class="page-head"><h2>{{$item->title}}</h2></div>
           <div class="col-md-7 center-block lead">
+            <div style="width: 90%; margin: 0 auto;padding-bottom:15px;">
+                @if($item->video)
+                  <div class="videoWrapper">
+                    {!!$item->video!!} 
+                  </div>
+                @endif
+              </div>
             {!! $item->body !!}
           </div>
 
