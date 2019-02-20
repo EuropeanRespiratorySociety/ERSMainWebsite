@@ -129,7 +129,6 @@ Route::group(['prefix' => 'professional-development'], function () {
     });
     Route::group(['prefix' => 'hermes'], function () {
         Route::get('/', 'HermesController@index');
-        Route::get('/examination-committee', 'HermesController@ExamCommitteeAdult');
         Route::group(['prefix' => 'adult'], function () {
           Route::get('/', 'HermesController@show');
           Route::get('/examination-committee', 'HermesController@ExamCommitteeAdult');
