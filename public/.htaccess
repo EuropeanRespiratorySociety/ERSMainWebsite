@@ -204,7 +204,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /the-society/news/apply-for-the-erj%E2%80%99s-early-career-editorial-team-mentoring-programme https://www.ersnet.org/the-society/news/apply-for-the-erj-early-career-editorial-team-mentoring-programme
         Redirect 301 /the-society/news/apply-for-the-erj’s-early-career-editorial-team-mentoring-programme https://www.ersnet.org/the-society/news/apply-for-the-erj-early-career-editorial-team-mentoring-programme
         Redirect 301 /the-society/news/ers-satellites-home https://www.ersnet.org/congress-and-events/ers-satellite
-
+        Redirect 301 /the-society/news/mechanisms-of-acute-exacerbation-of-respiratory-disease-home https://www.ersnet.org/congress-and-events/mechanisms-of-acute-exacerbation-of-respiratory-disease
 
     ### External redirects
         RewriteCond %{HTTP_HOST} ^whitebook.ersnet.org$ [NC]
