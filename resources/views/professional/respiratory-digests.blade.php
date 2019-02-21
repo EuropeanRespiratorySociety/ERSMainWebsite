@@ -40,10 +40,10 @@
         </div>
 
       </div>
-      <a name="spirometry-courses"></a>
+      <a name="respiratory-digests"></a>
       <div class="main-content" style="padding-top:0px;">
           <h3 class="text-left" style="font-size:24px;font-family:'Amiri', 'serif';">Upcoming programmes 2018/2019</h3>
-          <div class="row row_event " id="spirometry-programme" style="display: flex; flex-wrap: wrap;">
+          <div class="row row_event " id="respiratory-digest" style="display: flex; flex-wrap: wrap;">
           </div>
       </div>
 
@@ -120,36 +120,38 @@
           cache: 60, //This will cache requests for 60 seconds
           cachableMethods: ["GET"] //This defines what method types can be cached (this is already set by default)
       });
-      // var client = new $.RestClient('http://localhost:3030/');
+      //var client = new $.RestClient('http://localhost:3030/');
 
-      client.add('calendar');
-      client.calendar.read({type:'spirometry'}).done(function (data){
+      client.add('respiratory-digest');
+      client['respiratory-digest'].read().done(function (data){
           var events = data.data;
           for( var i = 0; i < events.length ; i++){
-              if(events[i].image) {
-                  var image = 
-                      '<div class="card-image"' 
-                      +'style="background-size:cover;background-repeat: no-repeat;height:150px;' 
-                      +'background-image: url(\'' + events[i].image + '\');' 
-                      +'background-position: center center;"></div>';
-              } else {
-                  var image = '';
-              }
-              $(
-                  '<div class="col-md-4 isotope">'
-                      +'<div class="card card-event" >'
-
-                      +image
-                      +'<div class="card-content text-left" style="padding: 20px;">'
-                          +'<h3 class="title">' + events[i].title + '</h3>'
-                          +'<p class="date"><span class="icon s7-map-marker"></span>' + events[i].eventLocation + '</p>'
-                          +'<p class="date"><span class="icon s7-date"></span>' + events[i].eventDates + '</p>'
-                          + events[i].leadParagraph
-                      +'</div>'                      
-                      +'</div>'
-                      +'</div>'
-              ).appendTo($('#spirometry-programme'));
-              
+              const title = events[i].title;
+              const digestType = events[i].digestType;
+              const digestAuthors = events[i].digestAuthor;
+              const journal = events[i].journal
+              const author = events[i].author
+              const leadParagraph = events[i].shortLead;
+              const uri = events[i].uri;
+              const path = uri 
+                            ? uri 
+                            : `${window.location.pathname}/${events[i].slug}`
+              const anchor = `<a href="${path}">${title}</a>`
+              $(`<div class="col-md-4 isotope">
+                  <div class="card card-event">
+                      <div class="card-content text-left">
+                        <p>${digestType}</p>
+                        <p>Digest Author(s): ${digestAuthors}</p>
+                        <h3 class="title"> ${anchor}</h3>
+                        <p>Author(s): ${author}</p>
+                        <p>${journal}</p>
+                        ${leadParagraph}
+                      </div>
+                      <div class="card-action clearfix">
+                          <a href="${path}" class="btn btn-register">more</a>
+                      </div>
+                  </div>
+                </div>`).appendTo($('#respiratory-digest'));
           }
       });
   });    
