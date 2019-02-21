@@ -116,8 +116,8 @@ Route::group(['prefix' => 'professional-development'], function () {
     Route::get('courses', 'CourseController@index');
     Route::get('spirometry-training-programme', 'SpirometryController@index');    Route::get('spirometry-training-programme', 'SpirometryController@index');
     Route::get('spirometry-training-programme/{slug}', 'SpirometryController@show');
-    Route::get('respiratory-digest', 'RespiratoryDigestController@index');
-    Route::get('respiratory-digest/{slug}', 'RespiratoryDigestController@show');
+    Route::get('respiratory-digests', 'RespiratoryDigestController@index');
+    Route::get('respiratory-digests/{slug}', 'RespiratoryDigestController@show');
     Route::group(['prefix' => 'fellowships'], function () {
         Route::get('short-term-research-training-fellowships', 'FellowshipController@indexShortTerm');
         Route::get('short-term-research-training-fellowships/{slug?}', 'FellowshipController@indexShortTerm');
