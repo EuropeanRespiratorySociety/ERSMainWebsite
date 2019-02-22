@@ -46,18 +46,19 @@
           @endif
         @endif
         @if($item->lead){!! $item->lead !!}@endif
-        
-      <div class="main-content" style="padding-top: 0px;">
-        <div class="row row_event " id="national" style="position: relative; "></div>
-      </div>
+        <div id="self-assessment-adult-title"></div>
+        <div class="main-content" style="padding-top: 0px;">
+          <div class="row row_event " id="self-assessment-adult" style="position: relative; "></div>
+        </div>
+
+        <div id="self-assessment-paediatric-title"></div>
+        <div class="main-content" style="padding-top: 0px;">
+          <div class="row row_event " id="self-assessment-paediatric" style="position: relative; "></div>
+        </div>
 
 
-        @if($item->body){!! $item->body !!}@endif
-        @if($item->category)
-          @if($item->category->title == "Respiratory Worldwide" )
-            <p><i>Respiratory Worldwide aims to stimulate communication and interaction between national and regional respiratory societies and ERS. These articles have not been (peer) reviewed and are not official ERS content.</i></p>
-          @endif
-        @endif
+      @if($item->body){!! $item->body !!}@endif
+
       </div>
       @if($item->comments == true)
       <hr>
@@ -72,11 +73,6 @@
         @if($item->image)
           <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
         @endif
-        @if($item->category)
-          @if($item->category->title == "Respiratory Worldwide" )
-            <p><img src="https://cdn.ersnet.org/images/news/respiratory-logo.jpg" class="img-rounded img-responsive" style="width:350px;"></p>
-           @endif
-        @endif        
         @if($item->sponsors[0]->text)
           @if($item->image)
             <hr>
@@ -99,13 +95,7 @@
         @if(isset($relatedItems))
           @include('partials.related-items', array('relatedItems' => $relatedItems)) 
         @endif
-        @if($item->category)
-          @if($item->category->title == "Respiratory Worldwide" )
-            <div role="alert" class="alert alert-info alert-dismissible" style="text-align: left ;font-size:15px ; ">
-              <i>This article is part of Respiratory Worldwide; a platform for leaders of respiratory societies to share their latest news about activities and events across the world.</i>
-          </div>
-          @endif
-        @endif
+
 
       </div>
 
@@ -126,44 +116,46 @@
   
   <script type="text/javascript">
     $(document).ready(function(){
-        var client = new $.RestClient('https://api.ersnet.org/', {
-            cache: 60, //This will cache requests for 60 seconds
-            cachableMethods: ["GET"] //This defines what method types can be cached (this is already set by default)
-        });
-        // var client = new $.RestClient('http://localhost:3030/');
+        // var client = new $.RestClient('https://api.ersnet.org/', {
+        //     cache: 60, //This will cache requests for 60 seconds
+        //     cachableMethods: ["GET"] //This defines what method types can be cached (this is already set by default)
+        // });
+        var client = new $.RestClient('https://api.ersnet.org/');
  
         client.add('calendar');
-        client.calendar.read({type:'hermes'}).done(function (data){
+        client.calendar.read({type:'selfAssessment'}).done(function (data){
             const events = data.data;
-            for( let i = 0; i < events.length ; i++){
-              const image = events[i].image ? '<div class="card-image"'
-                        +'style="background-size:cover;background-repeat: no-repeat;height:150px;'
-                        +'background-image: url(\'' + events[i].image + '\');'
-                        +'background-position: center center;"></div>'
-                        : '';
- 
-              const title = events[i].title;
-              const uri = events[i].uri;
-              const leadParagraph = events[i].shortLead;
-              const path = uri 
-                            ? uri 
-                            : `${window.location.pathname}/${events[i].slug}`
-              const anchor = `<a href="${path}">${title}</a>`
+            let showAdultTitle = true;
+            let showPaediatricTitle = true;
 
-              $(`<div class="col-md-4 isotope">
-                  <div class="card card-event">
-                      ${image}
-                      <div class="card-content text-left">
-                        <h3 class="title"> ${anchor}</h3>
-                        <p class="date" style="padding-bottom: 3px;"><span class="icon s7-map-marker"></span> ${events[i].eventLocation}</p>
-                        <p class="date"><span class="icon s7-date"></span> ${events[i].eventDates}</p>
-                        ${leadParagraph}
-                      </div>
-                      <div class="card-action clearfix">
-                          <a href="${path}" class="btn btn-register">more</a>
-                      </div>
-                  </div>
-                </div>`).appendTo($('#national'));
+            for( let i = 0; i < events.length ; i++){ 
+              const cardInfo = '<div class="col-md-4 isotope">'
+                      +'<div class="card card-event" >'
+                      +'<div class="card-content text-left" style="padding: 20px;">'
+                          // +'<h3 class="title">' + events[i].title + '</h3>'
+                          +'<p class="date"><span class="icon s7-map-marker"></span>' + events[i].eventLocation + '</p>'
+                          +'<p class="date"><span class="icon s7-date"></span>' + events[i].eventDates + '</p>'
+                          + events[i].leadParagraph
+                      +'</div>'
+                      +'</div>'
+                      +'</div>';
+
+              if(events[i].selfAssessmentType == "Adult"){
+                $(cardInfo).appendTo($('#self-assessment-adult'));
+                if(showAdultTitle){
+                    $(`<h3>Upcoming ERS HERMES self-assessment courses in adult respiratory medicine</h3>
+                  }`).appendTo($('#self-assessment-adult-title'));
+                  showAdultTitle= false;
+               }
+              }
+              else if(events[i].selfAssessmentType == "Paediatric"){
+                $(cardInfo).appendTo($('#self-assessment-paediatric'));
+                if(showPaediatricTitle){
+                    $(`<h3>Upcoming ERS HERMES self-assessment courses in pediatric respiratory medicine</h3>
+                  }`).appendTo($('#self-assessment-paediatric-title'));
+                  showPaediatricTitle = false;
+               }
+              }
             }
         });
     });

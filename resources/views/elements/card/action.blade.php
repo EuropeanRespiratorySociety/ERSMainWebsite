@@ -10,11 +10,13 @@
     @endif
         @if($item->type == "Spirometry Programme")
             <a href="/professional-development/spirometry-training-programme"  class="btn btn-register">more</a>
-        @elseif($item->uri !="false" && $item->uri && $item->type != "Spirometry Programme")
+        @elseif($item->type == "Self-assessment course")
+        <a href="/professional-development/hermes/host-an-ers-hermes-self-assessment-course-in-your-city-or-country"  class="btn btn-register">more</a>
+        @elseif($item->uri !="false" && $item->uri)
             <a href="{{url($item->uri)}}"  class="btn btn-register">more</a>
-        @elseif($item->url !="false" && $item->url && $item->type != "Spirometry Programme")
+        @elseif($item->url !="false" && $item->url)
             <a href="{{url($item->url)}}"  class="btn btn-register">more</a>
-        @elseif($item->slug && $item->contentType != "event_calendar" && $item->type != "Spirometry Programme")
+        @elseif($item->slug && $item->contentType != "event_calendar")
             <a href="{{Request::path().'/'.$item->slug}}"  class="btn btn-register">more</a>
         @endif
 </div>
