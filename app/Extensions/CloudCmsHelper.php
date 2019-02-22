@@ -400,6 +400,12 @@ class CloudCmsHelper
         return $items->parsed; 
 	}
 
+    public function parseDigestItems($data, $lead = false){
+        $items = new CloudCmsParser;
+        $items->parseDigest($data, $lead);
+        return $items->parsed; 
+    }
+    
     /**
     * Validates the results, if token is not valid, forces a refresh of the request
     * @return mixed $results

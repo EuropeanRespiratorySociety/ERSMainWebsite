@@ -53,18 +53,13 @@ class RespiratoryDigestController extends Controller
     public function show($slug)
     {
         $results = $this->CC->getItem($slug);
-        $item = $this->CC->parseItems($results['rows']);
+        $item = $this->CC->parseDigestItems($results['rows']);
         $params['item'] =  (object) $item[0]; 
-
+        
         if(!$item[0]->url || !$item[0]->uri){
             $this->CC->setCanonical($item[0]->_qname);
         }
-
-        if($item[0]->hasRelatedArticles > 0){
-            $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
-            $relatedItems = $this->CC->parseItems($related['rows']);
-            $params['relatedItems'] =  (object) $relatedItems;
-        }
+        
         return view('professional.respiratory-digest')->with($params); 
     }
 }

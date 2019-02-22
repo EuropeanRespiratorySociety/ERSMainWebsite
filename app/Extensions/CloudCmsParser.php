@@ -20,6 +20,25 @@ class CloudCmsParser
         $this->date = new DateHelper; 
         $this->parsed = [];
         $this->model = CC::setModel('ers:article');
+        //Have to set Manually 
+        $this->digestModel = [
+            'title' => false,
+            'slug' => false,
+            'author' => false,
+            'journal' => false,
+            'journalLink' => false,
+            'leadParagraph' => false,
+            'shortLead' => false,
+            'digestType' => false,
+            'digestAuthor' => false,
+            'comments' => false,
+            'url' => false,
+            'uri' => false,
+            'unPublished' => false,
+            '_system' => false,
+            '_qname' => false,
+            '_statistics' => false
+        ];
         $this->helper = new CloudCmsHelper;
     }
 
@@ -214,6 +233,43 @@ class CloudCmsParser
                 }
             }
             return $this->parsed; 
+    }
+
+    public function parseDigest($items, $lead = false){
+        foreach ($items as $key => $i){
+            $item = array_replace_recursive($this->digestModel, $i);
+            //here we have a Laravel collection
+            $item = collect($item);
+            //We could cache the request?
+            //We create an object to simplify manipulations
+            $item = json_decode($item->toJson());
+            /** 
+            * Formating the properties
+            */
+            //we check if the article has been unpublished. If true we do not parse it
+            if(!$item->unPublished){
+                $item->title = $this->formatTitle($item->title);
+                // Markdown Fields
+                $item->lead = Markdown::parse($item->leadParagraph);
+
+                // Added fields to the model
+                $item->createdOn = isset($item->_system->created_on->timestamp) ? $this->date->ersDate($item->_system->created_on->timestamp) : false;
+                $item->modifiedOn = isset($item->_system->modified_on->timestamp) ? $this->date->ersDate($item->_system->modified_on->timestamp) : false;
+                $item->ms = $item->_system->modified_on->ms ?? false;   
+                $item->shortLead = $item->leadParagraph ? $this->truncate(strip_tags(Markdown::parse($item->leadParagraph)), 145) : false;
+                $item->hasRelatedArticles = $item->_statistics->{'ers:related-association'} ?? 0;
+                $item->hasAuthor = $item->_statistics->{'ers:author-association'} ?? 0;
+               
+                //removing empty arrays
+                foreach($item as $k => $v){
+                    if(empty($v)){
+                        $item->$k = false; 
+                    }
+                }
+                $this->parsed[$key] = $item;            
+            }
+        }
+        return $this->parsed; 
     }
 
     protected function setTypeColor($type){
