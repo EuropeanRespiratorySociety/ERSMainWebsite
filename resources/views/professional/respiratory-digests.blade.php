@@ -115,6 +115,11 @@
 <script src="https://jpillora.com/jquery.rest/dist/1/jquery.rest.min.js"></script>
 
 <script type="text/javascript">
+  String.prototype.trunc = String.prototype.trunc ||
+      function(n){
+          return (this.length > n) ? this.substr(0, n-1) + '&hellip;' : this;
+      };
+
   $(document).ready(function(){
       var client = new $.RestClient('https://api.ersnet.org/', {
           cache: 60, //This will cache requests for 60 seconds
@@ -126,11 +131,11 @@
       client['respiratory-digest'].read().done(function (data){
           var events = data.data;
           for( var i = 0; i < events.length ; i++){
-              const title = events[i].title;
-              const digestType = events[i].digestType;
-              const digestAuthors = events[i].digestAuthor;
-              const journal = events[i].journal
-              const author = events[i].author
+              const title = events[i].title.trunc(100);
+              const digestType = events[i].digestType.trunc(30);
+              const digestAuthors = events[i].digestAuthor.trunc(40);
+              const journal = events[i].journal.trunc(60)
+              const author = events[i].author.trunc(50)
               const leadParagraph = events[i].shortLead;
               const uri = events[i].uri;
               const path = uri 
