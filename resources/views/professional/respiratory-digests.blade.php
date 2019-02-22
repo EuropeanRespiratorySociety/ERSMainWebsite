@@ -9,80 +9,38 @@
               )) 
 @stop()
 @section('content')
-<div class="ers-content event-items-content article-items">
-  <div class="row">
 
-    <div class="col-md-9 light-grey-bg">
-      <div class="row">
-        <div class="col-md-4 medium-grey-bg left-photo-map">
-          @if($item->image)
-          <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
-          @endif
-          @if($item->video)
-          <div class="videoWrapper">
-            {!!$item->video!!} 
-          </div>
-          @endif
-          @if(isset($relatedItems))
-            @include('partials.related-items', array('relatedItems' => $relatedItems)) 
-          @endif
-      </div>
+<div class="ers-content">
+  	<div id="fullpage">
+        <div class="section fp-auto-height">
+            @if($item->highResImage)
+            <div class="top-box" style="height: 400px; background-image: url('{{$item->highResImage}}'); background-position: center {{$item->imageAlignment}}">
+            </div>
+            @endif
 
-        <div class="col-md-8 event-items-fs-title">
-
-          <div class="page-head"><h2 class="article-title">{{$item->title}}</h2></div>
-
-          @if($item->body)
-          <div class="article text-left">          
-                    {!! $item->body !!}
-         </div>
-          @endif
+            <div class="main-content">
+              <div class="page-head"><h2>{{$item->title}}</h2></div>
+              <div class="col-md-7 center-block lead text-left">
+                  {!! $item->lead !!}
+                </div>
+                <div class="col-md-7 center-block lead text-left">
+                  {!! $item->body !!}
+                </div>
+            </div>
         </div>
 
-      </div>
-      <a name="respiratory-digests"></a>
-      <div class="main-content" style="padding-top:0px;">
-          <h3 class="text-left" style="font-size:24px;font-family:'Amiri', 'serif';">Upcoming programmes 2018/2019</h3>
-          <div class="row row_event " id="respiratory-digest" style="display: flex; flex-wrap: wrap;">
-          </div>
-      </div>
-
-   </div>
-  <!-- Beginning Right Side-bar -->
-   <div class="col-md-3 white-bg event-items-right">
-      @if($item->flags->text)
-            <div class="alert {{'alert-'.$item->flags->color }}">
-            <div class="message"> {{ $item->flags->text }}</div>
+        <div class="section fp-autoa-height faqs-content ">
+            <div class="main-content light-grey-bg">
+                <div class="col-md-10 center-block row row_event " id="respiratory-digest" style="display: flex; flex-wrap: wrap;">
+                </div>
             </div>
-      @endif
-    <div class="list-group text-left">
-      <span href="javascript:void(0)" class="list-group-item clearfix cursor_default">
-      <span class="icon s7-copy-file"></span>
-      <p>
-        Diplomates and accredited trainers : <br>
-        <ul style="display: table;
-                  float: left;
-                  padding-left: 10px;
-                  padding-top: 10px;">
-            <li>
-              <a href="https://ers.box.com/shared/static/3grhxkhxx7ejoq20g5z2f0fbw27kq10h.pdf">Trainees</a>
-            </li>
-            <li>
-              <a href="https://ers.box.com/shared/static/ckanbmwiikdi44hwvyz69ewiy0cn3ofs.pdf">Trainers</a>
-            </li>
-            @if($item->popUpText)
-            <li>
-              <a data-toggle="modal" data-target="#md-popUp" class="cursor_pointer">{{$item->popUpText}}</a>
-            </li>
-            @endif
-          </ul>
-      </p>
-    </span>
+        </div>
+
     </div>
-  </div>
-{{-- END Right Side-bar --}}
 </div>
-</div>
+
+
+
 
 
 @stop()  
@@ -121,7 +79,7 @@
       };
 
   $(document).ready(function(){
-      var client = new $.RestClient('https://api.ersnet.org/', {
+      var client = new $.RestClient('http://localhost:3030/', {
           cache: 60, //This will cache requests for 60 seconds
           cachableMethods: ["GET"] //This defines what method types can be cached (this is already set by default)
       });
@@ -135,6 +93,7 @@
               const digestType = events[i].digestType.trunc(30);
               const digestAuthors = events[i].digestAuthor.trunc(40);
               const journal = events[i].journal.trunc(60)
+              const journalLink = events[i].journalLink;
               const author = events[i].author.trunc(50)
               const leadParagraph = events[i].shortLead;
               const uri = events[i].uri;
@@ -145,11 +104,11 @@
               $(`<div class="col-md-4 isotope">
                   <div class="card card-event">
                       <div class="card-content text-left">
-                        <p>${digestType}</p>
-                        <p>Digest Author(s): ${digestAuthors}</p>
+                        <p class="btn-rounded early_bird" >${digestType}</p>
+                        <p style="color:#015291;"><strong></strong>Digest Author(s): ${digestAuthors}</strong></p>
                         <h3 class="title"> ${anchor}</h3>
                         <p>Author(s): ${author}</p>
-                        <p>${journal}</p>
+                        <p><a href="${journalLink}">${journal}</a></p>
                         ${leadParagraph}
                       </div>
                       <div class="card-action clearfix">
@@ -159,6 +118,9 @@
                 </div>`).appendTo($('#respiratory-digest'));
           }
       });
-  });    
+  });
+
+
 </script>
+  {{-- Cloud Front is the ERS CDN --}}
 @stop()
