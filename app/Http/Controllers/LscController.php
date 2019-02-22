@@ -45,7 +45,7 @@ class LscController extends Controller
      */
     public function acuteRespiratoryFailure()
     {
-        $results = $this->CC->getItem('acute-respiratory-failure-and-mechanical-ventilation-conference');
+        $results = $this->CC->getItem('respiratory-failure-and-mechanical-ventilation-conference');
         $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0]; 
         if(!$item[0]->url || !$item[0]->uri){

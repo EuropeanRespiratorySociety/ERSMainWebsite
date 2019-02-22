@@ -104,7 +104,7 @@ Route::group(['prefix' => 'congress-and-events'], function () {
     Route::get('mechanisms-of-acute-exacerbation-of-respiratory-disease', 'LscController@index');
     Route::get('mechanisms-of-acute-exacerbation-of-respiratory-disease/{slug}', 'LscController@show');
     Route::get('the-lung-science-conference/{slug}', 'LscController@show');
-    Route::get('acute-respiratory-failure-and-mechanical-ventilation-conference', 'LscController@acuteRespiratoryFailure');
+    Route::get('respiratory-failure-and-mechanical-ventilation-conference', 'LscController@acuteRespiratoryFailure');
     Route::get('events-calendar', 'CalendarController@index');
     Route::get('ers-2018', 'LscController@paris');
     Route::get('ers-respiratory-updates', 'LscController@respiratoryUpdate');
@@ -129,7 +129,6 @@ Route::group(['prefix' => 'professional-development'], function () {
     });
     Route::group(['prefix' => 'hermes'], function () {
         Route::get('/', 'HermesController@index');
-        Route::get('/examination-committee', 'HermesController@ExamCommitteeAdult');
         Route::group(['prefix' => 'adult'], function () {
           Route::get('/', 'HermesController@show');
           Route::get('/examination-committee', 'HermesController@ExamCommitteeAdult');

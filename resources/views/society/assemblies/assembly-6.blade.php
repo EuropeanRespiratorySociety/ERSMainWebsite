@@ -37,7 +37,7 @@ The Assembly is comprised of the following four groups:
                 <div class="card-content text-left">
                   <p>Group 06.01<br>
                     Chair: Joan B Soriano<br>
-                    Secretary: Om Prakash Kurmi</p>
+                    Secretary: Kurmi Om Prakash</p>
                     
                   </div>
                   <div class="card-action clearfix">

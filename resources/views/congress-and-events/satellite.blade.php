@@ -95,7 +95,10 @@
 
       <div class="article text-left">
         {!!$item->lead!!}
-        {!!$item->body!!}
+        <div class="videoWrapper" style="margin-top: 15px;">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/DIFq5Yl-f-k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+          {!!$item->body!!}
       </div>
     </div>
     <!-- Beginning Right Side-bar -->
