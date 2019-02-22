@@ -105,7 +105,7 @@
                   <div class="card card-event">
                       <div class="card-content text-left">
                         <p class="btn-rounded early_bird" >${digestType}</p>
-                        <p style="color:#015291;"><strong></strong>Digest Author(s): ${digestAuthors}</strong></p>
+                        <p style="color:#015291;"><strong>Digest Author(s): ${digestAuthors}</strong></p>
                         <h3 class="title"> ${anchor}</h3>
                         <p>Author(s): ${author}</p>
                         <p><a href="${journalLink}">${journal}</a></p>
