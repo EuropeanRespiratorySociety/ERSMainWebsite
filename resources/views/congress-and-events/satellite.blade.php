@@ -293,10 +293,16 @@
             @if($item->travelInfo)
             <p><a data-toggle="modal" data-target="#md-travel_info" type="button" class="">Travel Info</a></p>
             @endif --}}
-            @if(!$item->fullyBooked)
+
+{{-- Register button Uncomment it by the request --}}
+            {{-- @if(!$item->fullyBooked)
               <p>Registering for someone else ? Contact {!! Html::mailto('sandy.borlat@ersnet.org', 'Sandy Borlat') !!}</p>
               <a data-toggle="modal" data-target="#md-register" class="btn btn-primary tab-register-bt">Register</a>
-            @endif
+            @endif --}}
+{{-- Register button --}}
+
+
+
             {{-- @if($item->registerButton->link && !$item->fullyBooked)
             <p>Registering for someone else ? Contact {!! Html::mailto('sandy.borlat@ersnet.org', 'Sandy Borlat') !!}</p>
               @if(strpos($item->registerButton->link, '@'))
