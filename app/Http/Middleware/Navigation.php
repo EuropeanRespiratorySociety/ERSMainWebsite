@@ -207,7 +207,11 @@ class Navigation
                     $menu->fellowships->add('Clinical Training Fellowship','professional-development/fellowships/clinical-training-fellowship')->link->attr(array('style' => 'display:none'));
                     $menu->fellowships->add('RESPIRE 3 - Host Application','professional-development/fellowships/respire-3-host-application-and-web-registry')->link->attr(array('style' => 'display:none'));
                     $menu->fellowships->add('RESPIRE 3 - Marie Curie Post-doctoral Research Fellowships (MCF RESPIRE 3)','professional-development/fellowships/marie-curie-post-doctoral-research-fellowships-(respire-3)')->link->attr(array('style' => 'display:none'));
-            
+
+                $menu->professionalDevelopment->add('Respiratory Digests','professional-development/respiratory-digests')
+                ->link->attr(array(
+                  'class' => "ga-prof-dev"));
+
                 $menu->professionalDevelopment->add('Hermes examinations','professional-development/hermes')
                   ->link->attr(array(
                     'class' => "ga-prof-dev"));
