@@ -149,7 +149,6 @@
                             ? uri 
                             : `${window.location.pathname}/${events[i].slug}`
               const anchor = `<a href="${path}">${title}</a>`
-
               $(`<div class="col-md-4 isotope">
                   <div class="card card-event">
                       ${image}
