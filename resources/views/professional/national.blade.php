@@ -145,25 +145,25 @@
               const title = events[i].title;
               const uri = events[i].uri;
               const leadParagraph = events[i].shortLead;
+              const eventPathName = window.location.pathname;
+              const eventSlug = events[i].slug;
+              const cardInfoHermes = '<div class="col-md-4 isotope"><div class="card card-event">' +
+                      image + '<div class="card-content text-left">' + anchor + '</h3><p class="date" style="padding-bottom: 3px;"><span class="icon s7-map-marker"></span>' + events[i].eventLocation + 
+                        '</p><p class="date"><span class="icon s7-date"></span>' + events[i].eventDates + '</p>' +
+                         leadParagraph + '</div><div class="card-action clearfix"><a href="' + path + '"class="btn btn-register">more</a></div></div></div>';
+                        console.log(cardInfoHermes);
               const path = uri 
                             ? uri 
-                            : `${window.location.pathname}/${events[i].slug}`
-              const anchor = `<a href="${path}">${title}</a>`
+                            : eventPathName + '/' + eventSlug ;
+              
+              // const path = uri 
+              //               ? uri 
+              //               : `${window.location.pathname}/${events[i].slug}`
 
-              $(`<div class="col-md-4 isotope">
-                  <div class="card card-event">
-                      ${image}
-                      <div class="card-content text-left">
-                        <h3 class="title"> ${anchor}</h3>
-                        <p class="date" style="padding-bottom: 3px;"><span class="icon s7-map-marker"></span> ${events[i].eventLocation}</p>
-                        <p class="date"><span class="icon s7-date"></span> ${events[i].eventDates}</p>
-                        ${leadParagraph}
-                      </div>
-                      <div class="card-action clearfix">
-                          <a href="${path}" class="btn btn-register">more</a>
-                      </div>
-                  </div>
-                </div>`).appendTo($('#national'));
+              const anchor = `<a href="${path}">${title}</a>`
+              // const anchor = `<a href="${path}">${title}</a>`
+
+              $(cardInfoHermes).appendTo($('#national'));
             }
         });
     });

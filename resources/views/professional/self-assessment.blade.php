@@ -140,19 +140,22 @@
                       +'</div>'
                       +'</div>';
 
+                const courseTitleAdult = '<h3>' + 'Upcoming ERS HERMES self-assessment courses in adult respiratory medicine' + '</h3>';
+                const courseTitlePaediatric = '<h3>' + 'Upcoming ERS HERMES self-assessment courses in pediatric respiratory medicine' + '</h3>';
+
+
+
               if(events[i].selfAssessmentType == "Adult"){
                 $(cardInfo).appendTo($('#self-assessment-adult'));
                 if(showAdultTitle){
-                    $(`<h3>Upcoming ERS HERMES self-assessment courses in adult respiratory medicine</h3>
-                  }`).appendTo($('#self-assessment-adult-title'));
+                    $(courseTitleAdult).appendTo($('#self-assessment-adult-title'));
                   showAdultTitle= false;
                }
               }
               else if(events[i].selfAssessmentType == "Paediatric"){
                 $(cardInfo).appendTo($('#self-assessment-paediatric'));
                 if(showPaediatricTitle){
-                    $(`<h3>Upcoming ERS HERMES self-assessment courses in pediatric respiratory medicine</h3>
-                  }`).appendTo($('#self-assessment-paediatric-title'));
+                    $(courseTitlePaediatric).appendTo($('#self-assessment-paediatric-title'));
                   showPaediatricTitle = false;
                }
               }
