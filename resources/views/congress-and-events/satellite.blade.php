@@ -66,7 +66,7 @@
       </div>
       <div class="row">
         <div class="col-md-9 center-block" style="margin-top: -40px; margin-bottom: 60px; padding: 0 20px;">
-          <p class="text-danger" style="font-size:17px;"><strong>The recordings of the ERS Satellite sessions on Advances in Precision Medicine in COPD and ILs  are now available.</strong></p>
+          <p class="text-danger" style="font-size:17px;line-height: 1.5em;">The recordings of the ERS Satellite sessions on <em>Advances in Precision Medicine in COPD and ILs</em> are now available.</p>
           <a href="https://www.ers-satellites.org/auth/"  target="_blank"class="btn btn-primary tab-register-bt">Watch now</a>
         </div>
       </div>
