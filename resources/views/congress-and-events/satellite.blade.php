@@ -64,6 +64,12 @@
         <!--<a href="javascript:void(0)"><span class="icon s7-angle-right pull-right" style="font-size: 24px;"></span></a>-->
         </h2>
       </div>
+      <div class="row">
+        <div class="col-md-9 center-block" style="margin-top: -40px; margin-bottom: 60px; padding: 0 20px;">
+          <p class="text-danger" style="font-size:17px;"><strong>The recordings of the ERS Satellite sessions on Advances in Precision Medicine in COPD and ILs  are now available.</strong></p>
+          <a href="https://www.ers-satellites.org/auth/"  target="_blank"class="btn btn-primary tab-register-bt">Watch now</a>
+        </div>
+      </div>
 
       <div class="row">
         <div class="col-md-6 text-left event-items-category">
@@ -76,7 +82,7 @@
               <span class="icon s7-map" style="font-size: 24px;"></span>
                {{$item->programmeButtonText ? $item->programmeButtonText : 'Programme' }}
             </a>
-          <p class="text-danger">This programme has been created by the European Respiratory Society and there has been no external influence on the content or choice of speakers.</p>
+          <p>This programme has been created by the European Respiratory Society and there has been no external influence on the content or choice of speakers.</p>
         </div>
       </div>
       <div>

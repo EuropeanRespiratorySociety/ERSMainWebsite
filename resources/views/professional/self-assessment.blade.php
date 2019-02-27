@@ -140,8 +140,8 @@
                       +'</div>'
                       +'</div>';
 
-                const courseTitleAdult = '<h3>' + 'Upcoming ERS HERMES self-assessment courses in adult respiratory medicine' + '</h3>';
-                const courseTitlePaediatric = '<h3>' + 'Upcoming ERS HERMES self-assessment courses in pediatric respiratory medicine' + '</h3>';
+                const courseTitleAdult = '<h3>Upcoming ERS HERMES self-assessment courses in adult respiratory medicine</h3>';
+                const courseTitlePaediatric = '<h3>Upcoming ERS HERMES self-assessment courses in pediatric respiratory medicine</h3>';
 
 
 
