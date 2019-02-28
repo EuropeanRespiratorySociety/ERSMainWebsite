@@ -129,16 +129,15 @@
             let showPaediatricTitle = true;
 
             for( let i = 0; i < events.length ; i++){ 
-              const cardInfo = '<div class="col-md-4 isotope">'
-                      +'<div class="card card-event" >'
-                      +'<div class="card-content text-left" style="padding: 20px;">'
+              const cardInfo = '<div class="col-md-4 isotope"><div class="card card-event" ><div class="card-content text-left" style="padding: 20px;">'
                           // +'<h3 class="title">' + events[i].title + '</h3>'
-                          +'<p class="date"><span class="icon s7-map-marker"></span>' + events[i].eventLocation + '</p>'
-                          +'<p class="date"><span class="icon s7-date"></span>' + events[i].eventDates + '</p>'
-                          + events[i].leadParagraph
-                      +'</div>'
-                      +'</div>'
-                      +'</div>';
+                      +'<p class="date"><span class="icon s7-map-marker"></span>'
+                      + events[i].eventLocation
+                      + '</p><p class="date"><span class="icon s7-date"></span>'
+                      + events[i].eventDates
+                      + '</p>'
+                      + events[i].leadParagraph
+                      +'</div></div></div>';
 
                 const courseTitleAdult = '<h3>Upcoming ERS HERMES self-assessment courses in adult respiratory medicine</h3>';
                 const courseTitlePaediatric = '<h3>Upcoming ERS HERMES self-assessment courses in pediatric respiratory medicine</h3>';
