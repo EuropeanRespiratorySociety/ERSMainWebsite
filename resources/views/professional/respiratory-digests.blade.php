@@ -10,6 +10,7 @@
 @stop()
 @section('content')
 
+
 <div class="ers-content">
   	<div id="fullpage">
         <div class="section fp-auto-height">
@@ -106,7 +107,7 @@
                       <div class="card-content text-left">
                         <p class="btn-rounded early_bird" >${digestType}</p>
                         <p style="color:#015291;"><strong>Digest Author(s): ${digestAuthors}</strong></p>
-                        <h3 class="title"> ${anchor}</h3>
+                        <h3 class="title" style="text-transform: none;">${anchor}</h3>
                         <p>Author(s): ${author}</p>
                         <p><a href="${journalLink}">${journal}</a></p>
                         ${leadParagraph}

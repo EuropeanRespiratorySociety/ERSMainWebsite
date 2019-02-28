@@ -48,7 +48,6 @@
             </div>
         </div>
           <h2 class="article-title" style="margin-top:50px;">{{$item->title}}</h2>
-          <p>{{$item->createdOn}}</p>
           <div style="margin: 30px 0 8px;">
             <h4 style="font-family: Amiri, serif;"><strong>Author(s):</strong> {{$item->author}}</h4>
             <p><a href="{{$item->journalLink}}" target="_blank">{{$item->journal}}</a></p>
@@ -68,7 +67,7 @@
             </div>
           @endif
           <div style="margin-top:60px;">
-            <p class="text-right" style="color:#015291;font-family: Amiri, serif;"><strong>Digest Author(s):</strong> {{$item->digestAuthor}}</p>
+            <p ><span style="color:#015291;font-family: Amiri, serif;"><strong>Digest Author(s):</strong> {{$item->digestAuthor}}</span>&nbsp;/&nbsp;{{$item->createdOn}}</p>
             @if($item->lead)
               <div class="lead center-block" style="font-family: Amiri, serif;">{!! $item->lead !!}</div>
             @endif

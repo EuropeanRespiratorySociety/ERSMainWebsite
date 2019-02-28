@@ -1,11 +1,13 @@
 <?php 
     $home = $home ?? false;
 ?>
+
+
 <div class="card-content">
     @if($item->earlybirdDeadline)
         <p class="btn-rounded early_bird">Early Bird deadline {{ $item->earlybirdDeadline }}</p>
     @endif
-    <h3 class="title">
+        <h3 class="title">
     @if(Request::path() !== '/') 
       @if(strpos($item->registerButton->link, '@') && $item->typeColor != "label-school")
           @if($item->type == "Spirometry Programme")
