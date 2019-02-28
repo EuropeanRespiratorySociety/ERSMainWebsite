@@ -98,25 +98,32 @@
               const author = events[i].author.trunc(50)
               const leadParagraph = events[i].shortLead;
               const uri = events[i].uri;
+
+              const createdPath =  window.location.pathname + '/' + events[i].slug;
               const path = uri 
                             ? uri 
-                            : `${window.location.pathname}/${events[i].slug}`
-              const anchor = `<a href="${path}">${title}</a>`
-              $(`<div class="col-md-4 isotope">
-                  <div class="card card-event">
-                      <div class="card-content text-left">
-                        <p class="btn-rounded early_bird" >${digestType}</p>
-                        <p style="color:#015291;"><strong>Digest Author(s): ${digestAuthors}</strong></p>
-                        <h3 class="title" style="text-transform: none;">${anchor}</h3>
-                        <p>Author(s): ${author}</p>
-                        <p><a href="${journalLink}">${journal}</a></p>
-                        ${leadParagraph}
-                      </div>
-                      <div class="card-action clearfix">
-                          <a href="${path}" class="btn btn-register">more</a>
-                      </div>
-                  </div>
-                </div>`).appendTo($('#respiratory-digest'));
+                            : createdPath
+              const anchor = '<a href=\"' + path + '\">' + title + '</a>';
+              const cardDigests = '<div class="col-md-4 isotope">'
+                  + '<div class="card card-event">'
+                      + '<div class="card-content text-left">'
+                        + '<p class="btn-rounded early_bird" >' + digestType + '</p>'
+                        + '<p style="color:#015291;"><strong>Digest Author(s): ' + digestAuthors + '</strong></p>'
+                        + '<h3 class="title" style="text-transform: none;">' + anchor + '</h3>'
+                        + '<p>Author(s): ' + author + '</p>'
+                        + '<p><a href="' + journalLink + '">' + journal + '</a></p>'
+                        + leadParagraph
+                      + '</div>'
+                      + '<div class="card-action clearfix">'
+                          + '<a href="' + path +'" class="btn btn-register">more</a>'
+                      + '</div>'
+                  + '</div>'
+                + '</div>'
+
+
+
+
+              $(cardDigests).appendTo($('#respiratory-digest'));
           }
       });
   });
