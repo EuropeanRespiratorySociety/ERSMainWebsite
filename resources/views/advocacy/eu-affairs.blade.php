@@ -1,5 +1,14 @@
 @extends('template')
 @section('content')
+<style>
+#eu_a_2 .col-md-3 img {
+  height: 200px;
+  width: auto;
+}
+
+</style>
+
+
 <div class="ers-content category-tab-items">
     <div class="main-content">
         <div class="page-head"><h2 class="">EU Affairs</h2></div>
@@ -18,7 +27,7 @@
         <div class="tab-container">
             <ul class="nav nav-tabs">
               <li class="active"><a href="#eu_a_1" data-toggle="tab">NEWS</a></li>
-              <li><a href="#eu_a_2" data-toggle="tab">ERS ROADMAP</a></li>
+              <li><a href="#eu_a_2" data-toggle="tab">Publications</a></li>
               <li><a href="http://erj.ersjournals.com/content/42/6/1433.extract" target="_blank">EUROPEAN LUNG CORNER</a></li>
 
               <!--li><a href="#eu_a_3" data-toggle="tab">EUROPEAN LUNG CORNER</a></li-->
@@ -29,22 +38,42 @@
 						@include('partials.items', array('items' => $items))             			       
                     </div>
                 </div>
-                <div id="eu_a_2" class="tab-pane cont">
+                <div id="eu_a_2" class="tab-pane cont euaffair-publication">
                     <div class="row text-center">
-                        <div class="col-md-3 col-md-offset-3">
+                      <div class="col-md-9  col-xs-12 center-block">
+                        <div class="col-md-3">
                             <a href="/publications/european-respiratory-roadmap">
                                 <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/roadmap.jpg">
                                 <p>HEALTH POLICY MAKERS<br>VERSION</p>
                             </a>
                         </div>
                         <div class="col-md-3">
-	                        <a href="/publications/european-respiratory-roadmap">
-	                            <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/roadmap_2.png">
-	                            <p>HEALTHCARE PROFESSIONALS<br>VERSION</p>
-	                        </a>
+                          <a href="/publications/european-respiratory-roadmap">
+                              <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/roadmap_2.png">
+                              <p>HEALTHCARE PROFESSIONALS<br>VERSION</p>
+                          </a>
                         </div>
-                    </div>
-				</div>
+                        <div class="col-md-3">
+                            <a href="/publications/european-respiratory-roadmap">
+                                <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/roadmap_2.png">
+                                <p>HEALTHCARE PROFESSIONALS<br>VERSION</p>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="/publications/european-respiratory-roadmap">
+                                <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/roadmap_2.png">
+                                <p>HEALTHCARE PROFESSIONALS<br>VERSION</p>
+                            </a>
+                        </div>
+
+                      </div>
+
+
+
+
+                      </div>
+                   </div>
+				        </div>
                 <div id="eu_a_3" class="tab-pane">   
                 </div>
             </div>
