@@ -17,7 +17,7 @@
           <div class="col-md-7 center-block lead text-left">
             <div style="width: 90%; margin: 0 auto;">
               @if($item->video)
-                <div class="videoWrapper">
+                <div class="videoWrapper" style="margin-bottom: 40px;">
                   {!!$item->video!!} 
                 </div>
               @endif
