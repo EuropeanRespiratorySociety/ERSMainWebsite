@@ -10,6 +10,8 @@
       @if(strpos($item->registerButton->link, '@') && $item->typeColor != "label-school")
           @if($item->type == "Spirometry Programme")
             <a href="/professional-development/spirometry-training-programme">{{ $item->title }}</a>
+          @elseif($item->type == "Self-assessment course")
+          <a href="/professional-development/hermes/host-an-ers-hermes-self-assessment-course-in-your-city-or-country">{{ $item->title }}</a>
           @else
             <a href="{{'mailto:'.$item->registerButton->link}}">{{ $item->title }}</a>
           @endif
@@ -33,7 +35,7 @@
             <a href="{{url($item->uri)}}">{{ $item->title }}</a>
         @elseif($item->url)
             <a href="{{url($item->url)}}">{{ $item->title }}</a>
-        @elseif($item->slug)
+        @elseif($item->slug&& $item->type != "Self-assessment course")
             <a href="{{Request::path().'/'.$item->slug}}">{{ $item->title }}</a>
         @endif 
     @endif 

@@ -135,23 +135,19 @@ class CloudCmsParser
                     }  
 
                     if($item->rulesAndRegulations){
-                        $file = CC::nodes()->getFile($item->rulesAndRegulations->title, "path/documents/rules-and-regulations/");
-                        $item->rulesAndRegulations = $file->fileUrl.'?v='.$item->_system->changeset;
+                        $item->rulesAndRegulations = $this->getFile($item->rulesAndRegulations->id, $item->_system->changeset);
                     }
 
                     if($item->programme){
-                        $file = CC::nodes()->getFile($item->programme->title, "path/documents/programme/");
-                        $item->programme = $file->fileUrl.'?v='.$item->_system->changeset;
+                        $item->programme = $this->getFile($item->programme->id, $item->_system->changeset);
                     }
 
                     if($item->practicalInfo){
-                        $file = CC::nodes()->getFile($item->practicalInfo->title, "path/documents/practical_info/");
-                        $item->practicalInfo = $file->fileUrl.'?v='.$item->_system->changeset;
+                        $item->practicalInfo = $this->getFile($item->practicalInfo->id, $item->_system->changeset);
                     }
 
                     if($item->disclosure){
-                        $file = CC::nodes()->getFile($item->disclosure->title, "path/documents/disclosures/");
-                        $item->disclosure = $file->fileUrl.'?v='.$item->_system->changeset;
+                        $item->disclosure = $this->getFile($item->disclosure->id, $item->_system->changeset);
                     }
 
                     // Video
@@ -230,6 +226,11 @@ class CloudCmsParser
 
         return "label-scientific";
 
+    }
+
+    protected function getFile($nodeId, $changeset){
+        $fileUrl = CC::nodes()->deploymentUrl.'/static?node='.$nodeId.'&v='.$changeset;
+        return $fileUrl;
     }
 
     protected function getDocuments($documents){

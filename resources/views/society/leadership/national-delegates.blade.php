@@ -24,10 +24,6 @@
               Bruce Thompson
             </div>
 	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Australia</strong><br>
-               Bruce Thompson
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Austria</strong><br>
 		            Natascha Tröster
 	         	</div>

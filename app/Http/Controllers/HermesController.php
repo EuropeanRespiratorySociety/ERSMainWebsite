@@ -77,7 +77,7 @@ class HermesController extends Controller
      */
     public function ExamCommitteeAdult()
     { 
-        $results = $this->CC->getItem('examination-committee-adult');
+        $results = $this->CC->getItem('examination-committee');
         $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0]; 
 
@@ -149,7 +149,7 @@ class HermesController extends Controller
         $items = $this->CC->parseItems($results['rows']);
         $params['items'] =  $items;
 
-        return view('professional.hermeses')->with($params);
+        return view('professional.self-assessment')->with($params);
     }
 
     /**

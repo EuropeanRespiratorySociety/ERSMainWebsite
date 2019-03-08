@@ -56,8 +56,8 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 03.02<br>
-                    Chair: Silke Meiners<br>
-                    Secretary: Irene Heijink</p>
+                    Chair: Irene Heijink<br>
+                    Secretary: Sabine Bartel</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-airway-cell" type="button" class="btn btn-default pull-right">More</button>

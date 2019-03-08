@@ -92,7 +92,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 xs-mb-15">
-                    <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
+                    <h4><strong>Committee Member</strong></h4>
                     <img src="https://cdn.ersnet.org/images/people/examination-committee/Tobias-Lange.png" class="img-circle">
                     <p class="photo_caption"><strong>Dr Tobias J. Lange</strong></p>
                     <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
@@ -120,7 +120,7 @@
                     </div>
                 </div> --}}
                 <div class="col-md-6 xs-mb-15">
-                    <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
+                    <h4 style="margin-bottom:35px;"><strong>Committee Member</strong></h4>
                     <img src="https://cdn.ersnet.org/images/people/examination-committee/Yvonne-Nussbaumer.png" class="img-circle">
                     <p class="photo_caption"><strong>DR YVONNE NUSSBAUMER</strong></p>
                     <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
@@ -131,6 +131,34 @@
                       <p>- Schaffhausen, Switzerland</p>
                     </div>
                 </div>
+                <div class="col-md-6 xs-mb-15">
+                  <h4><strong>Committee Member</strong></h4>
+                  <img src="https://cdn.ersnet.org/images/people/examination-committee/Guillermo-Suarez-Cuartin.png" class="img-circle">
+                  <p class="photo_caption"><strong>DR Guillermo Suárez Cuartín</strong></p>
+                    <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
+                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                        - Pneumology Department</p>
+                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                        - Bellvitge University Hospital / Bellvitge Biomedical Research Institute (IDIBELL)</p>
+                      <p>- Barcelona, Spain</p>
+                    </div>
+                </div>
+                <div class="col-md-6 xs-mb-15">
+                  <h4><strong>Committee Member</strong></h4>
+                  <img src="https://cdn.ersnet.org/images/people/examination-committee/Winfried-Randerath.png" class="img-circle">
+                  <p class="photo_caption"><strong>Prof. MD. Winfried Randerath</strong></p>
+                    <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
+                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                        - Professor and Medical Director</p>
+                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                        - Bethanien Hospital</p>
+                      <p>- Solingen, Germany</p>
+                    </div>
+                </div>
+
+
+
+
                 
           </div>
         </div>
@@ -143,11 +171,6 @@
         @if($item->image)
           <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
         @endif
-        @if($item->category)
-          @if($item->category->title == "Respiratory Worldwide" )
-            <p><img src="https://cdn.ersnet.org/images/news/respiratory-logo.jpg" class="img-rounded img-responsive" style="width:350px;"></p>
-           @endif
-        @endif        
         @if($item->sponsors[0]->text)
           @if($item->image)
             <hr>
@@ -170,13 +193,7 @@
         @if(isset($relatedItems))
           @include('partials.related-items', array('relatedItems' => $relatedItems)) 
         @endif
-        @if($item->category)
-          @if($item->category->title == "Respiratory Worldwide" )
-            <div role="alert" class="alert alert-info alert-dismissible" style="text-align: left ;font-size:15px ; ">
-              <i>This article is part of Respiratory Worldwide; a platform for leaders of respiratory societies to share their latest news about activities and events across the world.</i>
-          </div>
-          @endif
-        @endif
+
 
       </div>
 

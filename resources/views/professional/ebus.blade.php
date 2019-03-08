@@ -144,8 +144,6 @@
                 <p>Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from a €50 discount on registration fees.</p>
                 @endif
               </div>
-
-
               </div>
             </div>
             
