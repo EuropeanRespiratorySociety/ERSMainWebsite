@@ -61,26 +61,25 @@
                               </a>
                           </div>
                           <div class="col-md-3 col-xs-6">
-                            <a href="/publications/european-respiratory-roadmap" target="_blank">
+                            <a href="https://ers.box.com/s/6nzucj9rpoos0hatob0n79x8qji3bkxe" target="_blank">
                                 <img class="img-responsive" src="http://localhost:8888/images/publications/euaffair/Ambitions_for_Europe.png">
                                 <p style="margin-bottom: 35px;">Ambitions for Europe</p>
                             </a>
                           </div>
                           <div class="col-md-3 col-xs-6">
-                              <a href="/publications/european-respiratory-roadmap" target="_blank">
+                              <a href="https://ers.box.com/s/8r5zal6e9xb4i4pz2na2c8buzlzhbjkr" target="_blank">
                                   <img class="img-responsive" src="http://localhost:8888/images/publications/euaffair/LATAM REPORT_First_EN_DEF.png">
-                                  <p>Tobacco control in Latin-American and Iberian countries - Volume 1 <br />
-                                    <a href="/publications/european-respiratory-roadmap"><span>Spanish</span></a><br />
-                                    <a href="/publications/european-respiratory-roadmap"><span>Portuguese</span></a>
+                                  <p>Tobacco control in Latin-American and Iberian countries - Volume 1 - ENGLISH<br />
+                                    <a href="https://ers.box.com/s/ilq8xgtuou31447kv70f8u2jg8qdp6kk"><span>Spanish</span></a><br />
+                                    <a href="https://ers.box.com/s/9s4e1dzrxuz4cx0shugdkeo3vg1lii5z"><span>Portuguese</span></a>
                                   </p>
                               </a>
                           </div>
                           <div class="col-md-3 col-xs-6">
-                              <a href="/publications/european-respiratory-roadmap" target="_blank">
+                              <a href="https://ers.box.com/s/d6htk1qf8wgb93b861u4p2wdguxyr9md" target="_blank">
                                   <img class="img-responsive" src="http://localhost:8888/images/publications/euaffair/LATAM REPORT_Second_EN_DEF.png">
-                                  <p>Tobacco control in Latin-American and Iberian countries – Volume 2<br />
-                                    <a href="/publications/european-respiratory-roadmap" target="_blank"><span>Spanish</span></a><br />
-                                    <a href="/publications/european-respiratory-roadmap" target="_blank"><span>Portuguese</span></a>
+                                  <p>Tobacco control in Latin-American and Iberian countries – Volume 2 - ENGLISH<br />
+                                    <a href="https://ers.box.com/s/5ztvljyh24a3oq51jbcsiujkmjs3hwbq" target="_blank"><span>Spanish</span></a>
                                   </p>
                               </a>
                           </div>
@@ -90,7 +89,7 @@
                           <div class="col-md-3 col-xs-6">
                             <a href="https://ers.app.box.com/s/druntvdpyex1akxos8ps4upheomqodi9" target="_blank">
                                 <img class="img-responsive" src="http://localhost:8888/images/publications/euaffair/ERS_TB_RECOM_EN_V1.png">
-                                <p>Tobacco control recommendations for Latin and Iberian countries
+                                <p>Tobacco control recommendations for Latin and Iberian countries - ENGLISH
                             </a>
                                   <br />
                                   <a href="https://ers.app.box.com/s/n9k5v4zqimkveh83614x5as1udm9cwb7"><span>Spanish</span></a><br />
@@ -109,7 +108,7 @@
                             </a>
                           </div>
                          <div class="col-md-3 col-xs-6">
-                            <a href="/publications/european-respiratory-roadmap"target="_blank">
+                            <a href="https://ers.box.com/s/gwyieuuurl9rl41gn1sd39e5zqbw5wdv"target="_blank">
                                 <img class="img-responsive" src="http://localhost:8888/images/publications/euaffair/2016.02.22-2nd-ERS-TB-leaflet-(official)_HD-no-crop.png">
                                 <p>The tuberculosis threat – Working together to combat TB</p>
                             </a>
@@ -118,7 +117,7 @@
 
                         <div class="row publish-row">
                           <div class="col-md-3 col-xs-6">
-                            <a href="/publications/european-respiratory-roadmap" target="_blank">
+                            <a href="https://ers.box.com/s/j0eeswrbcci2l3lekiuyu4yh24i0yvxn" target="_blank">
                                 <img class="img-responsive" src="http://localhost:8888/images/publications/euaffair/2016_HLFL_COPD-in-Europe-brochure_v2.png">
                                 <p>COPD in Europe</p>
                             </a>
