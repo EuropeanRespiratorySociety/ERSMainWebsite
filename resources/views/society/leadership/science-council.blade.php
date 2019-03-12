@@ -33,16 +33,11 @@
               <img src="https://cdn.ersnet.org/images/people/leadership/LOUISE-E-DONNELLY.png" class="img-circle">
 		            <p class="photo_caption"><strong>Louise E. Donnelly</strong>
 		            Fellowships and Awards Director Elect<br>
-	        	</div>
-	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/rachel-chambers.png" class="img-circle">
-		            <p class="photo_caption"><strong>RACHEL CHAMBERS</strong>
-		            Conferences and Research Seminars Director<br>
             </div>
 	        	<div class="col-md-4 xs-mb-15">
               <img src="https://cdn.ersnet.org/images/people/leadership/Reinoud-Gosens.png" class="img-circle">
               <p class="photo_caption"><strong>Reinoud Gosens</strong>
-                      Conference and Research Seminars Director Elect<br>
+                      Conference and Research Seminars Director<br>
             </div>
                 <div class="col-md-4 xs-mb-15">
               <img src="https://cdn.ersnet.org/images/people/leadership/christopher_e_brightling.png" class="img-circle">
