@@ -64,27 +64,9 @@
           <p><em>@if($item->type){{$item->type}}@endif</em></p>
         </div>
         <div class="col-md-6 text-right">
-            @if($item->slug == "mechanisms-of-acute-exacerbation-of-respiratory-disease")
-              <a href="https://ers.box.com/s/sgvtxlw9s0kpza3fxzf4s4r9e8ualq3j" target="_blank" type="button" class="btn btn-light-primary text-left">
-                <span class="icon s7-map" style="font-size: 24px;"></span>
-                @if($item->programmeButtonText)
-                  {{$item->programmeButtonText}} 
-                @else
-                  Conference Programme 
-                @endif
-              </a>
-            @elseif($item->programme && $item->slug != "mechanisms-of-acute-exacerbation-of-respiratory-disease")
-                <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary text-left">
-                  <span class="icon s7-map" style="font-size: 24px;"></span>
-                  @if($item->programmeButtonText)
-                    {{$item->programmeButtonText}} 
-                  @else
-                    Conference Programme 
-                  @endif
-                </a>
-            @endif
+
 {{-- Put back this code if we solve the CDN issue--}}
-          {{-- @if($item->programme)  
+          @if($item->programme)  
             <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary text-left">
               <span class="icon s7-map" style="font-size: 24px;"></span>
               @if($item->programmeButtonText)
@@ -93,7 +75,7 @@
                 Conference Programme 
               @endif
             </a>
-          @endif --}}
+          @endif
 
 
           @if($item->programmeNotice)
