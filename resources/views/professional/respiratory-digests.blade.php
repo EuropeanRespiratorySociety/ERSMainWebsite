@@ -111,7 +111,7 @@
                         + '<p style="color:#015291;"><strong>Digest Author(s): ' + digestAuthors + '</strong></p>'
                         + '<h3 class="title" style="text-transform: none;">' + anchor + '</h3>'
                         + '<p>Author(s): ' + author + '</p>'
-                        + '<p><a href="' + journalLink + '">' + journal + '</a></p>'
+                        + '<p><a href="' + journalLink + '"target="_blank">' + journal + '</a></p>'
                         + leadParagraph
                       + '</div>'
                       + '<div class="card-action clearfix">'
