@@ -258,7 +258,7 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Nutcha Prakkamakul</strong>
-            Assistant<br>
+            Coordinator<br>
             T +41 21 213 01 69<br>
             </p>
         </div>

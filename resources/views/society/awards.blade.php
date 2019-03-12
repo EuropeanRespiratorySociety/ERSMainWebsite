@@ -25,7 +25,7 @@
                     <div class="col-md-4">
                         <div class="card card-primary card-event" style="background-color: #015291;">
                             <div class="card-image" style="height:24px;">
-                              <span class="label label-danger">Apply Now</span>
+                              <span class="label label-danger">Call Closed</span>
                             </div>
                             <div class="card-title text-left">
                                 <h3>GOLD MEDALS</h3>
@@ -44,7 +44,7 @@
                     <div class="col-md-4">
                         <div class="card card-primary card-event" style="background-color: #015291;">
                             <div class="card-image" style="height:24px;">
-                                <span class="label label-danger">Apply Now</span>
+                                <span class="label label-danger">Call Closed</span>
                             </div>
                             <div class="card-title  text-left">
                                 <h3>SPECIAL HONOURS</h3>
@@ -62,7 +62,7 @@
                     <div class="col-md-4">
                         <div class="card card-primary card-event" style="background-color: #015291;">
                             <div class="card-image" style="height:24px;">
-                                <span class="label label-danger">Apply Now</span>
+                                <span class="label label-danger">Call Closed</span>
                             </div>
                             <div class="card-title  text-left">
                                 <h3>RESEARCH EXCELLENCE</h3>
