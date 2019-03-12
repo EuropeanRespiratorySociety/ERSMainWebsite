@@ -233,7 +233,10 @@
                 @if($item->slug == "potentially-operable-lung-cancer")
                 <p style="margin: 15px 0;">The Member fee is applicable to active ERS and ESTS members at the time of registration.  The fee includes two nights’ accommodation.</p>
                 @endif
-                <p>Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from a €50 discount on registration fees{{$item->feeList->liveStreaming ? ' (excluding live streaming)': '' }}.</p>
+                @if($item->earlybirdDeadline)
+                  <p>Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from a €50 discount on registration fees{{$item->feeList->liveStreaming ? ' (excluding live streaming)': '' }}.</p>
+                @endif
+
                 </div>
               </div>
             </div>
