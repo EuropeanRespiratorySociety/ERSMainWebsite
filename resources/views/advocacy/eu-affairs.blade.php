@@ -56,28 +56,28 @@
                         <div class="row publish-row">
                           <div class="col-md-3 col-xs-6" style="margin-top: 30px;">
                               <a href="https://ers.app.box.com/s/zj0x90cz9cwutldzlxbnoglzonmmnrbk" target="_blank">
-                                  <img class="img-responsive horizonal-doc" src="http://localhost:8888/images/publications/euaffair/ERS-10principles-v8.png">
+                                  <img class="img-responsive horizonal-doc" src="https://cdn.ersnet.org/images/publications/euaffair/ERS-10principles-v8.png">
                                   <p>ERS 10 principles for lung health</p>
                               </a>
                           </div>
                           <div class="col-md-3 col-xs-6">
                             <a href="https://ers.box.com/s/6nzucj9rpoos0hatob0n79x8qji3bkxe" target="_blank">
-                                <img class="img-responsive" src="http://localhost:8888/images/publications/euaffair/Ambitions_for_Europe.png">
+                                <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/Ambitions_for_Europe.png">
                                 <p style="margin-bottom: 35px;">Ambitions for Europe</p>
                             </a>
                           </div>
                           <div class="col-md-3 col-xs-6">
                               <a href="https://ers.box.com/s/8r5zal6e9xb4i4pz2na2c8buzlzhbjkr" target="_blank">
-                                  <img class="img-responsive" src="http://localhost:8888/images/publications/euaffair/LATAM REPORT_First_EN_DEF.png">
+                                  <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/LATAM REPORT_First_EN_DEF.png">
                                   <p>Tobacco control in Latin-American and Iberian countries - Volume 1 - ENGLISH<br />
-                                    <a href="https://ers.box.com/s/ilq8xgtuou31447kv70f8u2jg8qdp6kk"><span>Spanish</span></a><br />
-                                    <a href="https://ers.box.com/s/9s4e1dzrxuz4cx0shugdkeo3vg1lii5z"><span>Portuguese</span></a>
+                                    <a href="https://ers.box.com/s/ilq8xgtuou31447kv70f8u2jg8qdp6kk" target="_blank"><span>Spanish</span></a><br />
+                                    <a href="https://ers.box.com/s/9s4e1dzrxuz4cx0shugdkeo3vg1lii5z" target="_blank"><span>Portuguese</span></a>
                                   </p>
                               </a>
                           </div>
                           <div class="col-md-3 col-xs-6">
                               <a href="https://ers.box.com/s/d6htk1qf8wgb93b861u4p2wdguxyr9md" target="_blank">
-                                  <img class="img-responsive" src="http://localhost:8888/images/publications/euaffair/LATAM REPORT_Second_EN_DEF.png">
+                                  <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/LATAM REPORT_Second_EN_DEF.png">
                                   <p>Tobacco control in Latin-American and Iberian countries – Volume 2 - ENGLISH<br />
                                     <a href="https://ers.box.com/s/5ztvljyh24a3oq51jbcsiujkmjs3hwbq" target="_blank"><span>Spanish</span></a>
                                   </p>
@@ -88,28 +88,28 @@
                         <div class="row publish-row">
                           <div class="col-md-3 col-xs-6">
                             <a href="https://ers.app.box.com/s/druntvdpyex1akxos8ps4upheomqodi9" target="_blank">
-                                <img class="img-responsive" src="http://localhost:8888/images/publications/euaffair/ERS_TB_RECOM_EN_V1.png">
+                                <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/ERS_TB_RECOM_EN_V1.png">
                                 <p>Tobacco control recommendations for Latin and Iberian countries - ENGLISH
                             </a>
                                   <br />
-                                  <a href="https://ers.app.box.com/s/n9k5v4zqimkveh83614x5as1udm9cwb7"><span>Spanish</span></a><br />
+                                  <a href="https://ers.app.box.com/s/n9k5v4zqimkveh83614x5as1udm9cwb7" target="_blank"><span>Spanish</span></a><br />
                                 </p>
                           </div>
                           <div class="col-md-3 col-xs-6">
                             <a href="https://ers.app.box.com/s/aknlfme32buzbwn01z7u3ltvjk3hcrxu" target="_blank">
-                                <img class="img-responsive" src="http://localhost:8888/images/publications/euaffair/Link-1.-ERS-ENSP-Leaflet-on-plain-packaging.png">
+                                <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/Link-1.-ERS-ENSP-Leaflet-on-plain-packaging.png">
                                 <p style="margin-bottom: 55px;">Plain and simple facts on plain packaging</p>
                             </a>
                           </div>
                           <div class="col-md-3 col-xs-6">
                             <a href="https://www.ersnet.org/pdf/advocacy/ERS_ELF_EU_Research_Project_WEB.pdf" target="_blank">
-                                <img class="img-responsive" src="http://localhost:8888/images/publications/euaffair/ERS_ELF_EU_Research_Project_WEB.png">
+                                <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/ERS_ELF_EU_Research_Project_WEB.png">
                                 <p>A selection of EU-funded respiratory research projects</p>
                             </a>
                           </div>
                          <div class="col-md-3 col-xs-6">
                             <a href="https://ers.box.com/s/gwyieuuurl9rl41gn1sd39e5zqbw5wdv"target="_blank">
-                                <img class="img-responsive" src="http://localhost:8888/images/publications/euaffair/2016.02.22-2nd-ERS-TB-leaflet-(official)_HD-no-crop.png">
+                                <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/2016.02.22-2nd-ERS-TB-leaflet-(official)_HD-no-crop.png">
                                 <p>The tuberculosis threat – Working together to combat TB</p>
                             </a>
                           </div>
@@ -118,25 +118,25 @@
                         <div class="row publish-row">
                           <div class="col-md-3 col-xs-6">
                             <a href="https://ers.box.com/s/j0eeswrbcci2l3lekiuyu4yh24i0yvxn" target="_blank">
-                                <img class="img-responsive" src="http://localhost:8888/images/publications/euaffair/2016_HLFL_COPD-in-Europe-brochure_v2.png">
+                                <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/2016_HLFL_COPD-in-Europe-brochure_v2.png">
                                 <p>COPD in Europe</p>
                             </a>
                           </div>
                           <div class="col-md-3 col-xs-6">
-                            <a href="/publications/european-respiratory-roadmap" target="_blank">
-                                <img class="img-responsive" src="http://localhost:8888/images/publications/euaffair/Lung-Cancer-Leaflet.png">
+                            <a href="https://ers.box.com/s/6fgf7c7k7rjvj2l4gwjo6cje5m9hgorw" target="_blank">
+                                <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/Lung-Cancer-Leaflet.png">
                                 <p>Lung cancer in Europe – Tackling the biggest cancer killer</p>
                             </a>
                           </div>
                           <div class="col-md-3 col-xs-6" >
                             <a href="https://www.ersnet.org/pdf/advocacy/ers_spotlight_on_clean_air_and_health.pdf" target="_blank">
-                                <img class="img-responsive" src="http://localhost:8888/images/publications/euaffair/ers_spotlight_on_clean_air_and_health.png">
+                                <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/ers_spotlight_on_clean_air_and_health.png">
                                 <p>Spotlight on clean air and health</p>
                             </a>
                           </div>
                           <div class="col-md-3 col-xs-6">
                             <a href="https://www.ersnet.org/pdf/publications/air-quality-ENG.pdf" target="_blank">
-                                <img class="img-responsive" src="http://localhost:8888/images/publications/euaffair/air-quality-ENG.png">
+                                <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/air-quality-ENG.png">
                                 <p>Air quality and health</p>
                             </a>
                           </div>
@@ -145,13 +145,13 @@
                         <div class="row publish-row">
                           <div class="col-md-3 col-xs-6">
                             <a href="/publications/european-respiratory-roadmap">
-                                <img class="img-responsive" src="http://localhost:8888/images/publications/euaffair/roadmap-euaffair.png">
+                                <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/roadmap-euaffair.png">
                                 <p>European Respiratory roadmap – health policy makers version</p>
                             </a>
                           </div>
                           <div class="col-md-3 col-xs-6">
                             <a href="/publications/european-respiratory-roadmap">
-                                <img class="img-responsive" src="http://localhost:8888/images/publications/euaffair/roadmap-euaffair02.png">
+                                <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/roadmap-euaffair02.png">
                                 <p>European respiratory roadmap – healthcare professionals version</p>
                             </a>
                           </div>
