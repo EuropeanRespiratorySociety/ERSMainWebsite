@@ -114,6 +114,7 @@ Route::group(['prefix' => 'congress-and-events'], function () {
 
 Route::group(['prefix' => 'professional-development'], function () {
     Route::get('courses', 'CourseController@index');
+    Route::get('courses/{slug}', 'CourseController@show');
     Route::get('spirometry-training-programme', 'SpirometryController@index');    Route::get('spirometry-training-programme', 'SpirometryController@index');
     Route::get('spirometry-training-programme/{slug}', 'SpirometryController@show');
     Route::get('respiratory-digests', 'RespiratoryDigestController@index');
