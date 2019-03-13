@@ -115,7 +115,7 @@ Route::group(['prefix' => 'congress-and-events'], function () {
 Route::group(['prefix' => 'professional-development'], function () {
     Route::get('courses', 'CourseController@index');
     Route::get('courses/{slug}', 'CourseController@show');
-    Route::get('spirometry-training-programme', 'SpirometryController@index');    Route::get('spirometry-training-programme', 'SpirometryController@index');
+    Route::get('spirometry-training-programme', 'SpirometryController@index');
     Route::get('spirometry-training-programme/{slug}', 'SpirometryController@show');
     Route::get('respiratory-digests', 'RespiratoryDigestController@index');
     Route::get('respiratory-digests/{slug}', 'RespiratoryDigestController@show');
@@ -150,9 +150,14 @@ Route::group(['prefix' => 'professional-development'], function () {
           Route::get('/{slug}', 'HermesController@show');
         });
         Route::get('/{slug}', 'HermesController@show');
-
-        
     });
+
+    Route::group(['prefix' => 'cpd'], function () {
+      Route::get('/', 'CpdController@index');
+      Route::get('/phd-overview', 'CpdController@phd');
+      Route::get('/{slug}', 'CpdController@show');
+  });
+
     Route::get('ers-curriculum-design-a-summary-of-projects', 'GeneralController@curriculmDesign');
     
     Route::get('examination-committee', 'GeneralController@ExamCommittee');
