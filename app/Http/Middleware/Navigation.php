@@ -250,8 +250,8 @@ class Navigation
                                             ->link->attr(array('target' => '_blank', 'class' => "ga-prof-dev"));                 
                 //$menu->professionalDevelopment->add('Junior Members','http://juniors.ersnet.org')
                                             //->link->attr(array('target' => '_blank')); 
-                $menu->professionalDevelopment->add('Respipedia','http://respipedia.ers-education.org/home.aspx')
-                                            ->link->attr(array('target' => '_blank', 'class' => "ga-prof-dev"));               
+                // $menu->professionalDevelopment->add('Respipedia','http://respipedia.ers-education.org/home.aspx')
+                //                             ->link->attr(array('target' => '_blank', 'class' => "ga-prof-dev"));
                 $menu->professionalDevelopment->add('Training Programmes','professional-development/ers-certified-training-programmes')
                   ->link->attr(array(
                   'class' => "ga-prof-dev"));

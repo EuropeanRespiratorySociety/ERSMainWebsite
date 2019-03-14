@@ -46,7 +46,7 @@
 			<div class="col-md-3">
 				<h2>e-Learning</h2>
 				<ul>
-					<li><a class="ga-home-edu" href="http://respipedia.ers-education.org/home.aspx" target="_blank">Respipedia</a></li>
+					{{-- <li><a class="ga-home-edu" href="http://respipedia.ers-education.org/home.aspx" target="_blank">Respipedia</a></li> --}}
 					<li><a class="ga-home-edu" href="http://www.ers-education.org/events.aspx" target="_blank">Slides and webcasts</a></li>
 					<li><a class="ga-home-edu" href="http://www.ers-education.org/e-learning/case-reports.aspx" target="_blank">Case reports</a> and <a class="ga-home-edu" href="http://www.ers-education.org/e-learning/procedure-videos.aspx" target="_blank">Videos</a></li>
 					<li><a class="ga-home-edu" href="http://www.ers-education.org/cmeOnline" target="_blank">CME Online</a></li>
