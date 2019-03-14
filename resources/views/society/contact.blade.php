@@ -94,5 +94,5 @@
   @stop()  
 
   @section('scripts')
-  @include('partials.survey-monkey')  
+  {{-- @include('partials.survey-monkey')   --}}
   @stop()

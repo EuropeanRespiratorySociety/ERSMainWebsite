@@ -309,7 +309,7 @@
   @include('elements.modal.travel-info', array('item' => $item))  
   @include('elements.modal.technical-info', array('item' => $item))
   @include('elements.modal.sponsors', array('item' => $item))
-  @include('partials.survey-monkey')
+  {{-- @include('partials.survey-monkey') --}}
 @stop()
 {{--END Modal contents div--}} 
 
