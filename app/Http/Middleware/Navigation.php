@@ -239,9 +239,10 @@ class Navigation
                     // $menu->professionalDevelopment->add('HERMES exams','http://hermes.ersnet.org/exams.html')
                                             // ->link->attr(array('target' => '_blank'));
 
-
-
-
+                $menu->professionalDevelopment->add('CPD','professional-development/cpd')
+                ->link->attr(array('style' => 'display:none'));
+                $menu->professionalDevelopment->add('PhD Overview','professional-development/phd-overview')
+                ->link->attr(array('style' => 'display:none'));
 
                 //$menu->professionalDevelopment->add('Educational Activities','professional-development/educational-activities');
                 $menu->professionalDevelopment->add('Grants and Sponsorships','professional-development/grants-and-sponsorships')->link->attr(array(

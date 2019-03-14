@@ -153,10 +153,13 @@ Route::group(['prefix' => 'professional-development'], function () {
     });
 
     Route::group(['prefix' => 'cpd'], function () {
-      Route::get('/', 'CpdController@index');
-      Route::get('/phd-overview', 'CpdController@phd');
       Route::get('/{slug}', 'CpdController@show');
-  });
+    });
+
+    Route::group(['prefix' => 'phd-overview'], function () {
+      Route::get('/', 'CpdController@phd');
+      Route::get('/{slug}', 'CpdController@show');
+    });
 
     Route::get('ers-curriculum-design-a-summary-of-projects', 'GeneralController@curriculmDesign');
     

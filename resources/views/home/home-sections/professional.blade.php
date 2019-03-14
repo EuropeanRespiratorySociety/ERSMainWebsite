@@ -6,7 +6,8 @@
 				Continuing professional development (CPD) encompasses all the teaching and learning activities that a respiratory professional may follow to ensure that they are up-to-date and in touch with today’s clinical practice. CPD is essential for all professionals to ensure better patient care and outcomes. ERS funded a PhD to understand how re-validation is organised on an international level and how it supports medical specialists in remaining competent professional.
         <div class="space"></div>
         <p><a class="ga-home-edu" href="{{url('professional-development/cpd')}}">- More on the CPD project</a></p>
-        <p><a class="ga-home-edu" href="{{url('professional-development/cpd/phd-overview')}}">- More on the PhD project</a></p>
+        <p><a class="ga-home-edu" href="{{url('professional-development/phd-overview')}}">- More on the PhD project</a></p>
+        <div class="space"></div>
         <div class="space"></div>
 			</div>
 		</div>
