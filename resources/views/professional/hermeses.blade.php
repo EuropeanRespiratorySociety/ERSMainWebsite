@@ -108,7 +108,4 @@
 
 @section('scripts')
   @include('elements.map.script', array('item' => $item))
-  @if($item->title == "ERS HERMES examinations")
-    @include('partials.survey-monkey')  
-  @endif
 @stop()
