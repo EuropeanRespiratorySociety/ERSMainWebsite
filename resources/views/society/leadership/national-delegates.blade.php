@@ -55,7 +55,7 @@
 
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Chile</strong><br>
-               Delegate to be assigned
+               Laura Mendoza
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>China</strong><br>
