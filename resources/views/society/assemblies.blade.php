@@ -248,9 +248,9 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
       <div class="modal-body">
         <div class="text-left">
           <h4>M-Health/e-health</h4>
-          <p>This new group unites scientists and clinicians who are interest in m-Health and e-health tools in respiratory medicine. It is growing up issue that is becoming prominent component of healthcare all over the world.<br />
+          <p>This new group unites scientists and clinicians who are interest in m-Health and e-health tools in respiratory medicine. It is growing up issue that is becoming prominent component of healthcare all over the world.<br /><br />
             Topics that are of particular interest include tele-monitoring, tele-rehabilitation, tele-consultation, telematics, electronic registers formation, early respiratory symptoms diagnosis, educational programmes for medical staff and patients.<br /><br />
-            Our aims are to be a platform that facilitates cooperation between specialists worldwide and to promote co-operation with other ERS Groups and societies.<br />
+            Our aims are to be a platform that facilitates cooperation between specialists worldwide and to promote co-operation with other ERS Groups and societies.<br /><br />
             Our Group is very young, but we are going to organise many activities within the ERS: Postgraduate Courses, Symposia, Meet-the-professor-sessions, establish guidelines etc.<br />
             M-Health/e-health Group is open to any proposals for group activities such as Symposia, Task Forces and Research Seminars not only during the Congress, but also outside of the Congress activities.</p>
         </div>
