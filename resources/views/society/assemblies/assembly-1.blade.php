@@ -93,7 +93,7 @@
                     Secretary: Vitaly Mishlanov</p>
                   </div>
                   <div class="card-action clearfix">
-                    {{-- <button data-toggle="modal" data-target="#md-m-e-health" type="button" class="btn btn-default pull-right">More</button> --}}
+                    <button data-toggle="modal" data-target="#md-m-e-health" type="button" class="btn btn-default pull-right">More</button>
                   </div>
                 </div>
               </div>
