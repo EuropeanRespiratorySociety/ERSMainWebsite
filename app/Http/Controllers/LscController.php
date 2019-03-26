@@ -22,7 +22,7 @@ class LscController extends Controller
      */
     public function index()
     {
-        $results = $this->CC->getItem('mechanisms-of-acute-exacerbation-of-respiratory-disease');
+        $results = $this->CC->getItem('metabolic-alterations-in-lung-ageing-and-disease');
         $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0]; 
         if(!$item[0]->url || !$item[0]->uri){
