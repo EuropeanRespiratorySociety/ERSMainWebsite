@@ -120,11 +120,8 @@
                 @endif
                 <p>Any questions? Please contact{!! Html::mailto('scientific@ersnet.org', 'scientific@ersnet.org') !!}</p>
 
-
                 @if($item->registerButton->link)
-                  <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
-                  {{ $item->registerButton->text or Register}}
-                 </a>
+                <a href="{{$item->registerButton->link}}" target="_blank" class="btn btn-primary item-register-bt">{{$item->registerButton->text}}</a>
                 @endif
               </div>
             </div>
