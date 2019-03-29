@@ -95,6 +95,7 @@
 
     </div>
 
+
     <!-- Beginning Right Side-bar -->
     <div class="col-md-3 white-bg event-items-tab">
       <div class="tab-container">
@@ -118,6 +119,13 @@
                   </a>
                 @endif
                 <p>Any questions? Please contact{!! Html::mailto('scientific@ersnet.org', 'scientific@ersnet.org') !!}</p>
+
+
+                @if($item->registerButton->link)
+                  <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
+                  {{ $item->registerButton->text or Register}}
+                 </a>
+                @endif
               </div>
             </div>
             @if($item->sponsors[0]->text || $item->sponsors[0]->image)
