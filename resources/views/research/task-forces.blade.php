@@ -79,7 +79,7 @@
             </p>
             <div style="clear:left;">
               <p style="margin-top: 8px;">ERS Guidelines, Statement and Technical Standard: <br /><strong>01 February 2019 and 01 June 2019</strong></p>
-              <p style="margin-top: 8px;">ERS Short Guideline and Short Statement: <br /><strong>Year-Round</strong></p>
+              <p style="margin-top: 8px;">ERS Short Guideline and Short Statement: <br /><strong>Year-round</strong></p>
               <p style="margin-top: 8px;">ERS/ATS joint Task Forces: <br /><strong>July 2019</strong></p>
             </div>
           </a>
