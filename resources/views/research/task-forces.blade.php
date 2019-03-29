@@ -79,7 +79,7 @@
             </p>
             <div style="clear:left;">
               <p style="margin-top: 8px;">ERS Guidelines, Statement and Technical Standard: <br /><strong>01 February 2019 and 01 June 2019</strong></p>
-              <p style="margin-top: 8px;">ERS Short Guideline and Short Statement: <br /><strong>All year</strong></p>
+              <p style="margin-top: 8px;">ERS Short Guideline and Short Statement: <br /><strong>Year-Round</strong></p>
               <p style="margin-top: 8px;">ERS/ATS joint Task Forces: <br /><strong>July 2019</strong></p>
             </div>
           </a>
@@ -130,6 +130,9 @@
                           margin-left: 10px;">
                     <li>
                       <a target="_blank" href="https://ers.box.com/shared/static/qj9d0ykhj87dxxn8vplnmsiv8rl083m8.doc">ERS Task Force Guideline and Application Form</a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://ers.box.com/s/zgy9kimhu6knj459ax0zupjl5v36x92t">ERS Short Guideline and Short Statement Guideline and Application Form</a>
                     </li>
                     <li>
                       <a target="_blank" href="https://ers.box.com/shared/static/k3eueaqf4rylbowrj55eqt2nn3nav28p.doc">ERS Conflict of Interest and Confidentiality Form</a>
