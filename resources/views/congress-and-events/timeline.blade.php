@@ -107,6 +107,6 @@
         App.timeline();        
       });
     </script>
-  @include('partials.survey-monkey')  
+  {{-- @include('partials.survey-monkey')   --}}
 
 @stop()

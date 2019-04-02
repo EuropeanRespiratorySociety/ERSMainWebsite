@@ -67,11 +67,28 @@
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="https://cdn.ersnet.org/images/people/leadership/Lieuwe-Bos.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>LIEUWE BOS</strong>
-		            Early Career Representative <br>
+		            Early Career Representative<br>
 		            </p>
 	        	</div>
-
-	        	
+	        	<div class="col-md-4 xs-mb-15">
+              <img src="https://cdn.ersnet.org/images/people/leadership/Soren-Huwendiek.png" class="img-circle">
+              <p class="photo_caption"><strong>Sören Huwendiek</strong>
+                Education Advisor<br>
+              </p>
+          </div>
+          <div class="col-md-4 xs-mb-15">
+            <img src="https://cdn.ersnet.org/images/people/leadership/Janet-Grant.png" class="img-circle">
+            <p class="photo_caption"><strong>Janet Grant</strong>
+              Education Advisor<br>
+            </p>
+        </div>
+        <div class="col-md-4 xs-mb-15">
+          <img src="https://cdn.ersnet.org/images/people/leadership/Lars-Konge.png" class="img-circle">
+          <p class="photo_caption"><strong>Lars Konge</strong>
+            Education Advisor<br>
+          </p>
+       </div>
+      
 	        	
 
 

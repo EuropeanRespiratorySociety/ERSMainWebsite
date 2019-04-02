@@ -155,6 +155,13 @@
                                 <p>European respiratory roadmap – healthcare professionals version</p>
                             </a>
                           </div>
+                          <div class="col-md-3 col-xs-6">
+                            <a href="https://ers.box.com/s/m0oqeszvh60wc0szclb7udekemgl4zuu" target="_blank">
+                                <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/HZ_Positionspapier_ENG.png">
+                                <p>The Health Impact of Air Pollution</p>
+                            </a>
+                          </div>
+
                         </div><!-- 4th row close-->
 
 

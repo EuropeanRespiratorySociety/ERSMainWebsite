@@ -134,7 +134,7 @@
               <div class="">
                 
                 @if($item->practicalInfo)
-                  @if($item->slug == "mechanisms-of-acute-exacerbation-of-respiratory-disease")
+                  @if($item->slug == "metabolic-alterations-in-lung-ageing-and-disease")
                     <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary text-left">
                       <span class="icon s7-map"></span>
                       Practical Info
@@ -204,7 +204,7 @@
                     </span> Industry <br>(ERS Members & non-Members)
                   </a>
                 @endif  
-                @if($item->slug == "mechanisms-of-acute-exacerbation-of-respiratory-disease")
+                @if($item->slug == "metabolic-alterations-in-lung-ageing-and-disease")
                   <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
                     <span class="badge">
                       &euro; 180

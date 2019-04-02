@@ -131,8 +131,8 @@
 
 @section('scripts')
   @include('elements.map.script', array('item' => $item))
-  @if($item->title == "ERS welcomes the positive results of NELSON trial")
+  {{-- @if($item->title == "ERS welcomes the positive results of NELSON trial")
     @include('partials.survey-monkey')  
-  @endif
+  @endif --}}
 
 @stop()
