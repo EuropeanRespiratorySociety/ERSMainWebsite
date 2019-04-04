@@ -232,7 +232,7 @@ class Navigation
                       ->link->attr(array('style' => 'display:none'));
                     $menu->hermesActivities->add('Eligibility, registration and fees: paediatric exam','professional-development/hermes/paediatric/eligibility-registration-and-fees-paediatric-exam')
                       ->link->attr(array('style' => 'display:none'));
-                    $menu->hermesActivities->add('Examination Committee: adult exam','professional-development/hermes/paediatric/examination-committee')
+                    $menu->hermesActivities->add('Examination Committee: paediatric exam','professional-development/hermes/paediatric/examination-committee')
                       ->link->attr(array('style' => 'display:none'));
                     $menu->hermesActivities->add('Diplomates: paediatric exam','professional-development/hermes/diplomates-paediatric-exam')
                       ->link->attr(array('style' => 'display:none'));
