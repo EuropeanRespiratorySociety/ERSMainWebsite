@@ -158,8 +158,10 @@
                           <div class="col-md-3 col-xs-6">
                             <a href="https://ers.box.com/s/m0oqeszvh60wc0szclb7udekemgl4zuu" target="_blank">
                                 <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/HZ_Positionspapier_ENG.png">
-                                <p>The Health Impact of Air Pollution</p>
+                                <p>The Health Impact of Air Pollution - ENGLISH<br />
                             </a>
+                            <a href="https://ers.app.box.com/file/434450380547" target="_blank"><span>German</span></a>
+                              </p>
                           </div>
 
                         </div><!-- 4th row close-->
