@@ -22,6 +22,9 @@ class SlidingMetanavigation
                 //the maximum depth is 4
 
                 $menu->add('MyERS', 'https://my.ersnet.org')->prepend('<i class="icon-my-ers icon"></i><span>')->append('</span>')->link->attr(array('class' => 'ga-metanav')); 
+                $menu->add('Membership', 'https://www.ersnet.org/the-society/membership')
+                        ->prepend('<i class="icon-business-card icon"></i><span>')->append('</span>')
+                        ->link->attr(array('class' => 'ga-metanav'));
                 $menu->add('Publications', url("#publications"))
                         ->prepend('<i class="icon-publications icon"></i><span>')
                         ->append('</span>')
