@@ -196,12 +196,13 @@ class Navigation
                 'class' => "ga-prof-dev"));
                 $menu->professionalDevelopment->add('Courses','professional-development/courses')->link->attr(array(
                   'class' => "ga-prof-dev"));
-
+                $menu->professionalDevelopment->add('Webinars','professional-development/ers-webinars')
+                ->link->attr(array(
+                  'class' => "ga-prof-dev"));
                 $menu->professionalDevelopment->add('Respiratory Digests','professional-development/respiratory-digests')
                 ->link->attr(array(
                   'class' => "ga-prof-dev"));
-
-                    // $menu->professionalDevelopment->add('Webinar','professional-development/ers-webinar-discussion-of-severe-asthma-with-ers-experts');
+                  // $menu->professionalDevelopment->add('Webinar','professional-development/ers-webinar-discussion-of-severe-asthma-with-ers-experts');
                 $menu->professionalDevelopment->add('Fellowships','professional-development/fellowships')
                   ->link->attr(array(
                     'class' => "ga-prof-dev"));
