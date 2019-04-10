@@ -241,6 +241,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /communication https://ers.basecamphq.com/
         Redirect 301 /congress-and-events/ers-international-congress https://erscongress.org/
         Redirect 301 /congress-and-events/milan-2017 http://erscongress.org
+        Redirect 301 /the-society/news/ers-international-congress-2019-for-an-early-bird-registration-home http://erscongress.org
         # E
         Redirect 301 /elearning http://www.ers-education.org/pages/default.aspx
         Redirect 301 /erj-podcast http://www.erj.ersjournals.com/content/37/1/E1/suppl/DC1
