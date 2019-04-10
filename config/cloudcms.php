@@ -38,7 +38,7 @@ return array(
     'redirectUri'   => 'http://www.ersnet.org/',
     'deploymentUrl' => env('CC_DEPLOYMENT_URL'),
     'repositoryId'  => '607e97e4474d46e40345',
-    'branch'        => 'master',
+    'branch'        => env('CC_BRANCH'),
 
     /*
     |--------------------------------------------------------------------------
