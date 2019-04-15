@@ -341,7 +341,7 @@
       </div>
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
-            <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+            <img src="https://cdn.ersnet.org/images/people/executive-office/Dan-Graham.png" class="img-circle">
             <p class="photo_caption"><strong>Daniel Graham</strong>
               Head of Communications<br>
             T +41 21 213 01 01<br>
