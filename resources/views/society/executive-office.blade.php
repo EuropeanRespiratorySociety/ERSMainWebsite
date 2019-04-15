@@ -337,7 +337,7 @@
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
-          <h2 class="">Press and Communications</h2>
+          <h2 class="">Communications</h2>
       </div>
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
@@ -703,8 +703,8 @@
 
       <div class="row">
         <div class="col-md-3 col-md-offset-3 xs-mb-15">
-          <p class="photo_caption"><strong>Anastasia Mlotek-Soulié</strong>
-            National Societies Relations Manager<br>
+          <p class="photo_caption"><strong>Alexandra Harabosky</strong>
+            Membership and National Societies Relations Coordinator<br>
             T +41 21 213 01 43<br>
             </p>
         </div>
