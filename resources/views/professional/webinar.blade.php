@@ -145,9 +145,6 @@
       @if($item->faculty)
       <h5 class="ers-course-organisers">{{$item->faculty}}</h5>
       @endif
-      @if($item->disclosure)
-      <h5><a href="{{$item->disclosure}}" target="_blank">Faculty disclosure</a></b></h5>
-      @endif
 
       <div class="article text-left">
         @if($item->body){!!$item->lead!!}@endif
