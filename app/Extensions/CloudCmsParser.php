@@ -180,9 +180,14 @@ class CloudCmsParser
                         $item->startDate = $this->date->ersDate($item->eventDate);
                         $item->endDate = $this->date->ersDate($item->eventEndDate);
                     } elseif($item->eventDate && !$item->eventEndDate){
-                        $item->eventDates = $this->date->ersDate($item->eventDate);
+                        $ersDateResult = $this->date->ersDate($item->eventDate);
+                        if($item->eventTime){
+                            $item->eventDates = $ersDateResult.' - '.$item->eventTime;
+                        }else{
+                            $item->eventDates = $ersDateResult;
+                        }
                         $item->startDateTimestamp = $this->date->toTimestamp($item->eventDate);
-                        $item->startDate = $item->eventDates;
+                        $item->startDate = $ersDateResult;
                         $item->endDate = false;
                     } else {
                         $item->eventDates = false;

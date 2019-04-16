@@ -9,6 +9,7 @@ model:
     flags: [{ text: false, color: false }]
     ebusDate: false
     eventDate: false
+    eventTime: false
     eventEndDate: false
     eventLocation: false
     leadParagraph: false
@@ -78,6 +79,7 @@ model:
     diseases: false
     limits: { min: false, max: false }
     methods: false
+    targetAudiance: false
     membersOnly: false
     url: false
     uri: false

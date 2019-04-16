@@ -10,7 +10,6 @@ use App\Extensions\CloudCmsHelper as CC;
 
 class WebinarController extends Controller
 {
-
     public function __construct() {
         $this->CC = new CC();
     }
@@ -23,23 +22,17 @@ class WebinarController extends Controller
      */
   public function index()
   { 
-    $item = $this->CC->getItem('ers-webinars');
+    $item = $this->CC->getItem('ers-webinar');
     $item = $this->CC->parseItems($item['rows']);
     $params['item'] = (object) $item[0];
 
     if(!$item[0]->url || !$item[0]->uri){
-        $this->CC->setCanonical($item[0]->_qname);
+        $this->CC->setCanonical($item[0]->_qname, 'professional-development/ers-webinars');
     }
-
-    if($item[0]->hasRelatedArticles > 0){
-      $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
-      $relatedItems = $this->CC->parseItems($related['rows']);
-      $params['relatedItems'] =  (object) $relatedItems;
-  }
-
-    $results = $this->CC->getAssociation($item[0]->_qname);
-    $params['items'] =  $this->CC->parseItems($results['rows']);
-
+    $results = $this->CC->getAssociation($params['item']->_qname);
+    $items = $this->CC->parseItems($results['rows']);
+    $sorted = $this->CC->sortItems($items);
+    $params['items'] =  $sorted; 
     return view('professional.webinars')->with($params);  
 
   }
@@ -59,7 +52,6 @@ class WebinarController extends Controller
         if(!$item[0]->url || !$item[0]->uri){
             $this->CC->setCanonical($item[0]->_qname);
         }
-        
         return view('professional.webinar')->with($params); 
     }
 }

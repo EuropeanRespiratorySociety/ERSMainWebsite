@@ -67,6 +67,9 @@
     @if($item->eventDates)
         <p class="date"><span class="icon s7-date"></span> {{ $item->eventDates }}</p>
     @endif
+    @if($item->faculty &&  $item->contentType == "event_webinar")
+        <p class="sponsor">{{ $item->faculty }}</p>
+    @endif
     @if(!$home)
         <div class="lead-card">{!! $item->shortLead !!}</div>
     @endif
