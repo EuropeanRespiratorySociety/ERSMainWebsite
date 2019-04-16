@@ -30,12 +30,37 @@
       ]
   ))
 @stop()
+<style>
+    #ersMainWebsite .event-items-content .event-items-right .md-chips .md-chip{
+      margin: 0 5px 3px 0;
+      display: inline-block;
+      padding: 6px 12px 0;
+      border-radius: 28px;
+      font-size: 13px;
+      height:28px;
+    }
 
+    div.md-chip-disease{
+      background: #F3E5F5;
+      color: #4A148C;
+    }
+
+    div.md-chip-method{
+      background: #D0F8CE;
+      color: #0D5302;
+    }
+
+
+
+</style>
 @section('content')
 <div class="ers-content event-items-content">
   <div class="row">
     <div class="col-md-3 left-photo-map">
-      <div class="medium-grey-bg">
+
+      <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
+
+      {{-- <div class="medium-grey-bg">
         @if($item->image)
         <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
         @endif
@@ -50,7 +75,7 @@
         @if(isset($relatedItems))
             @include('partials.related-items', array('relatedItems' => $relatedItems)) 
         @endif
-      </div>
+      </div> --}}
 
       @if ($item->sponsors[0]->text || $item->sponsors[0]->image)
           @if($item->slug === "potentially-operable-lung-cancer")
@@ -93,32 +118,32 @@
           @endif
         </div>
         <h2 class="text-left clearfix date-venue">
-        <!--<a href=""><span class="icon s7-angle-left pull-left" style="font-size: 24px;"></span></a>-->
         <label>{{$item->eventDates}} @if(isset($item->eventLocation))<a href="javascript:void(0)" class="cursor_default">{{$item->eventLocation}}</a>@endif</label>
-        <!--<a href=""><span class="icon s7-angle-right pull-right" style="font-size: 24px;"></span></a>-->
         </h2>
       </div>
 
       <div class="row" style="margin-top:20px;">
         <div class="col-md-6 col-xs-6 text-left event-items-category">
-          <p><em>{{$item->type}}</em></p>
-          View <a href="/professional-development/courses">all ERS courses</a>
+            <p><em>Webinar</em></p>
+            {{-- <p><em>{{$item->type}}</em></p> --}}
+          View <a href="/professional-development/ers-webinars">all ERS Webinar</a>
         </div>
         <div class="col-md-6 col-xs-6 text-right">
-          @if($item->programme)  
+            <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary text-left bt-course-programme">
+                <span class="icon s7-next-2" style="font-size: 24px;"></span>
+                  {{$item->programmeButtonText ? $item->programmeButtonText : 'Log in to the Webinar' }}
+              </a>
+          {{-- @if($item->programme)  
             <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary text-left bt-course-programme">
               <span class="icon s7-map" style="font-size: 24px;"></span>
                 {{$item->programmeButtonText ? $item->programmeButtonText : 'Course Programme' }}
             </a>
-          @endif
+          @endif --}}
         </div>
       </div>
       <h2 class="article-title">{{$item->title}}</h2>
-      @if($item->organisers)
-      <h5 class="ers-course-organisers"><b>Organisers :</b> {{$item->organisers}}</h5>
-      @endif
       @if($item->faculty)
-      <h5 class="ers-course-organisers"><b>Faculty :</b> {{$item->faculty}}</h5>
+      <h5 class="ers-course-organisers">{{$item->faculty}}</h5>
       @endif
       @if($item->disclosure)
       <h5><a href="{{$item->disclosure}}" target="_blank">Faculty disclosure</a></b></h5>
@@ -130,187 +155,31 @@
       </div>
     </div>
     {{-- Beginning Right Side-bar --}}
-    <div class="col-md-3 white-bg event-items-tab">
+    <div class="col-md-3 event-items-right white-bg right-column-smaller">
+          {{-- Target audience and Diseases --}}
+          <div class=" text-left" style="padding: 0 15px;">
+            <h4 style="font-size:15px;"><strong>Target Audience</strong></h4>
+            <ul>
+              <li>Lecture including case presentations</li>
+              <li>Lecture including case presentations</li>
+              <li>Lecture including case presentations</li>
 
-            <div class="col-md-9 col-md-offset-1 xs-mb-15">
-                 <img src="https://cdn.ersnet.org/images/people/leadership/Gilbert_Massard.png" class="img-circle" style="margin-top:20px;">
-                 <p class="photo_caption"><strong>Gilbert Massard</strong>Educational Programmes Director<br></p>
-             </div>
-         </div>
-         <div class="row">
-             <div class="col-md-12">   
-                 <p>Professor Gilbert Massard, Thoracic Surgeon Consultant, is currently the Director of the Lung Transplantation Department at the University Hospital of Strasbourg.</p>
-             </div>
+            </ul>
+            <h4 style="font-size:15px; margin-top:30px;"><strong>Diseases / Methods</strong></h4>
 
-
-
-
-
-
-      <div class="tab-container">
-        <ul class="nav nav-tabs">
-        @if($item->venue->name ||
-            $item->venue->url ||
-            $item->venue->phoneNumber ||
-            $item->venue->streetAddress ||
-            $item->venue->streetAddress2 ||
-            $item->venue->streetAddress3 ||
-            $item->venue->postalCode ||
-            $item->venue->city ||
-            $item->venue->info )
-          <li class="active"><a href="#venue" data-toggle="tab">
-            <span class="icon icon-hotel"></span>Venue and<br>accomodation</a>
-          </li>
-        @endif
-        @if($item->bursaryApplication->text
-            || $item->bursaryApplication->deadline
-            || $item->bursaryApplication->notificationOfResults
-            || $item->bursaryApplication->applyButtonUrl)
-          <li><a href="#bursary" data-toggle="tab">
-            <span class="icon s7-piggy"></span>Bursary<br>application</a>
-          </li>
-        @endif
-        </ul>
-
-        <div class="tab-content text-left">
-          <div id="venue" class="tab-pane active cont">
-
-            <div class="ers-scroller nano scrollable" style="height:500px;">
-                <div class="nano-content" style="padding-bottom:200px:">
-                @if($item->practicalInfo)  
-                  <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary text-left bt-practicalInfo">
-                    <span class="icon s7-info" style="font-size: 24px;"></span>
-                    {{$item->practicalInfoButton ? $item->practicalInfoButton : 'Practical Info'}}
-                  </a>
-                @endif
-                <ul class="list-group">
-                  @if($item->technicalInfo)
-                  <li class="list-group-item"><a data-toggle="modal" data-target="#md-technical-info" type="button" class=""><span class="s7-tools"></span>Technical Info</a></li>
-                  @endif        
-                  @if($item->venue->name ||
-                      $item->venue->url ||
-                      $item->venue->phoneNumber ||
-                      $item->venue->streetAddress ||
-                      $item->venue->streetAddress2 ||
-                      $item->venue->streetAddress3 ||
-                      $item->venue->postalCode ||
-                      $item->venue->city ||
-                      $item->venue->info )
-                  <li class="list-group-item"><a data-toggle="modal" data-target="#md-venue_accommodation" type="button" class="cursor_pointer">Venue</a></li>
-                  @endif
-                  @if($item->suggestedAccommodation[0]->name || $item->suggestedAccommodation[0]->streetAddress)
-                  <li class="list-group-item"><a data-toggle="modal" data-target="#md-venues" type="button" class="cursor_pointer">Suggested Accommodation</a></li>
-                  @endif
-                </ul>
-                <hr>
-                <div class="list-group" style="padding-bottom:400px">
-                @if($item->feeList->junior)
-                  <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
-                    <span class="badge">
-                      &euro; {{ $item->feeList->junior }}
-                    </span> Early Career <br>ERS Members
-                  </a>
-                @endif
-                @if($item->feeList->ersMember)
-                  <a href="javascript:void(0)" class="list-group-item cursor_default">
-                    <span class="badge">
-                      &euro; {{ $item->feeList->ersMember}}
-                    </span> 
-                    @if($item->slug == "potentially-operable-lung-cancer")
-                      ERS/ESTS members
-                    @else 
-                      ERS members
-                    @endif
-                  </a>
-                @endif 
-                @if($item->feeList->nonErsMember)
-                  <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
-                    <span class="badge">
-                      &euro; {{ $item->feeList->nonErsMember }}
-                    </span> Non-ERS Members
-                  </a>
-                @endif  
-                @if($item->feeList->industry)
-                  <a href="javascript:void(0)" class="list-group-item cursor_default">
-                    <span class="badge">
-                      &euro; {{ $item->feeList->industry }}
-                    </span> Industry<br>(ERS Members & non-Members)
-                  </a>
-                @endif
-                @if($item->feeList->liveStreaming)
-                  <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
-                    <span class="badge">&euro; {{ $item->feeList->liveStreaming}}</span>
-                    <span>
-                      <i style="font-size: 15px; position: relative; top: 3px;" class="s7-video"></i>
-                      Live stream
-                    </span>
-                  </a>
-                @endif
-                @if($item->slug == "potentially-operable-lung-cancer")
-                <p style="margin: 15px 0;">The Member fee is applicable to active ERS and ESTS members at the time of registration.  The fee includes two nights’ accommodation.</p>
-                @endif
-                @if($item->earlybirdDeadline)
-                  <p>Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from a €50 discount on registration fees{{$item->feeList->liveStreaming ? ' (excluding live streaming)': '' }}.</p>
-                @endif
-
-                </div>
-              </div>
+            <div class="md-chips ">
+                <div class="md-chip md-chip-disease">Thoracic oncology</div>
+                <div class="md-chip md-chip-disease">Thoracic oncology</div>
+                <div class="md-chip md-chip-method">General respiratory patient care</div>
             </div>
-            
-            <div class="event-items-right-bt">
-            @if($item->extendedDeadline)
-            <p class="deadline">EXTENDED registration deadline : {{$item->extendedDeadline}}</p>
-            @endif
-            @if($item->cancellationPolicy)
-            <p><a data-toggle="modal" data-target="#md-cancellation" type="button" class="cursor_pointer">Cancellation policy</a></p>
-            @endif
-            @if($item->travelInfo)
-            <p><a data-toggle="modal" data-target="#md-travel_info" type="button" class="cursor_pointer">Travel Info</a></p>
-            @endif
-            @if($item->registerButton->link && !$item->fullyBooked)
-            <p>Registering for someone else ? Contact {!! Html::mailto('sandy.borlat@ersnet.org', 'Sandy Borlat') !!}</p>
-            @if(strpos($item->registerButton->link, '@'))
-                <a href="{{'mailto:'.$item->registerButton->link}}" class="btn btn-primary tab-register-bt">
-                  {{ $item->registerButton->text or Register}}
-                </a>
-            @else
-                <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
-                {{ $item->registerButton->text or Register}}
-            </a>
-            @endif
-            @endif
-            @if($item->fullyBooked)
-              <p>Contact {!! Html::mailto('education@ersnet.org', 'education@ersnet.org') !!} to be added to the waiting list.</p>
-              <a href="javascript:void(0)" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
-            @endif
-            </div>
+
           </div>
 
-          @if($item->bursaryApplication->text
-            || $item->bursaryApplication->deadline
-            || $item->bursaryApplication->notificationOfResults
-            || $item->bursaryApplication->applyButtonUrl)
-          <div id="bursary" class="tab-pane cont">
-                     @if($item->bursaryApplication->text)
-                      {!!$item->bursaryApplication->text!!}
-                     @endif
-                     <ul>
-                     @if($item->bursaryApplication->deadline)
-                     <li>Bursaries application deadline:<b>{{$item->bursaryApplication->deadline}}</b></li>
-                     @endif
-                     @if($item->bursaryApplication->notificationOfResults)
-                     <li>Notification of selection results:<b>{{$item->bursaryApplication->notificationOfResults}}</b></li>
-                     @endif
-                     </ul>
-                     @if($item->bursaryApplication->applyButtonUrl)
-                      <a href="{{$item->bursaryApplication->applyButtonUrl}}" class="btn btn-primary tab-register-bt">Apply</a>
-                     @endif
-          </div>
-          @endif
-          <div id="messages" class="tab-pane"> </div>
+          {{-- Target audience and Diseases end--}}
+          <div class="white-bg sticky-infobox">
+            <p class="text-left">For more information, contact {!! Html::mailto('fellowships@ersnet.org', 'fellowships@ersnet.org') !!}</p>
+            <a href=" https://my.ersnet.org/Fellowships/Main" target="_blank" class="btn btn-lg  btn-primary sticky-btn" >Registration</a>
         </div>
-      </div>
-
     </div>
     {{-- End Right Sidebar --}}
   </div>

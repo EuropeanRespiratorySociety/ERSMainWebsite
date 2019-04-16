@@ -53,7 +53,7 @@ class WebinarController extends Controller
     public function show($slug)
     {
         $results = $this->CC->getItem($slug);
-        $item = $this->CC->parseDigestItems($results['rows']);
+        $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0]; 
         
         if(!$item[0]->url || !$item[0]->uri){
