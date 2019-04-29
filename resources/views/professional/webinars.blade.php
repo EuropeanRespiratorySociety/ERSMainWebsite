@@ -20,7 +20,7 @@
               <div class="page-head">
                   <h2 class="">@if(isset($item->title)){{$item->title}}@endif</h2>
               </div>
-              <div class="col-md-9 center-block lead">
+              <div class="col-md-7 center-block lead text-left" style="margin-bottom:80px;">
                   @if(isset($item->body)){!!$item->body!!}@endif
               </div>
 

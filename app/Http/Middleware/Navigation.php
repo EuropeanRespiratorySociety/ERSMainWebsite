@@ -196,9 +196,9 @@ class Navigation
                 'class' => "ga-prof-dev"));
                 $menu->professionalDevelopment->add('Courses','professional-development/courses')->link->attr(array(
                   'class' => "ga-prof-dev"));
-                $menu->professionalDevelopment->add('Webinars','professional-development/ers-webinars')
-                ->link->attr(array(
-                  'class' => "ga-prof-dev"));
+                // $menu->professionalDevelopment->add('Webinars','professional-development/ers-webinars')
+                // ->link->attr(array(
+                //   'class' => "ga-prof-dev"));
                 $menu->professionalDevelopment->add('Respiratory Digests','professional-development/respiratory-digests')
                 ->link->attr(array(
                   'class' => "ga-prof-dev"));
