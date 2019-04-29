@@ -59,7 +59,7 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-                <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+                <img src="https://cdn.ersnet.org/images/people/leadership/John-Hurst.png" class="img-circle">
 		            <p class="photo_caption"><strong>John Hurst</strong>
 		            ERS Monograph Chief Editor <br>
 		            </p>
@@ -88,8 +88,7 @@
             Education Advisor<br>
           </p>
        </div>
-      
-	        	
+
 
 
 
