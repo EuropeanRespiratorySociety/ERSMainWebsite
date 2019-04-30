@@ -116,7 +116,7 @@
                   </a>
             @endif
             @if($item->fullyBooked)
-              <p>Contact {!! Html::mailto('education@ersnet.org', 'education@ersnet.org') !!} to be added to the waiting list.</p>
+              <p>Contact {!! Html::mailto('e-learning@ersnet.org', 'e-learning@ersnet.org') !!} to be added to the waiting list.</p>
               <a href="javascript:void(0)" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
             @endif
             
