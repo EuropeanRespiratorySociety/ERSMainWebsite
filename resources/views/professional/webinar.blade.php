@@ -69,9 +69,9 @@
         @endif
       </div>
       <h2 class="article-title">{{$item->title}}</h2>
-      {{-- @if($item->faculty)
+      @if($item->faculty)
       <h5 class="ers-course-organisers">{{$item->faculty}}</h5>
-      @endif --}}
+      @endif
 
       <div class="article text-left">
         @if($item->body){!!$item->lead!!}@endif
