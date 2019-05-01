@@ -36,7 +36,7 @@
 <div class="ers-content event-items-content">
   <div class="row">
     <div class="col-md-3 left-photo-map">
-      <p><img src="https://cdn.ersnet.org/preview/node/o:22bb984bff4360c07b17?name=image500&size=500&v=1342761:2dccc510fcf8a504449f" class="img-rounded img-responsive"></p>
+      <p><img src="https://cdn.ersnet.org/images/course/webnar-article.png" class="img-rounded img-responsive"></p>
     </div>
 
     <div class="col-md-6 lighter-grey-bg ers-course-info">
