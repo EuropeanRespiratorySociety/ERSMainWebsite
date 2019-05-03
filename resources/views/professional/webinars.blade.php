@@ -22,7 +22,13 @@
               </div>
               <div class="col-md-7 center-block lead text-left" style="margin-bottom:80px;">
                   @if(isset($item->body)){!!$item->body!!}@endif
+                  {{-- <div class="text-right" style="margin-top:40px;">
+                    <a href="https://ersnet.org" type="button" class="btn btn-space btn-primary btn-rounded btn-sm">
+                      <i style="font-size:20px;padding-right: 8px;" class="icon s7-video"></i>Past webinars
+                    </a>
+                  </div> --}}
               </div>
+
 
               <div class="row row_event">
                   @include('partials.items', array('items' => $items))
