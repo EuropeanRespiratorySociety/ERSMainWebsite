@@ -234,7 +234,7 @@
 		            Christophe von Garnier
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Taiwan</strong><br>
+		         	<strong>Chinese Taipei</strong><br>
                 Chun-Hua Wang
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
