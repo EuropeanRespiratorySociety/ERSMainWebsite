@@ -53,7 +53,6 @@
         <label>{{$item->eventDates}}</label>
         </h2>
       </div>
-
       <div class="row" style="margin-top:20px;">
         <div class="col-md-6 col-xs-6 text-left event-items-category">
             <p><em>{{$item->type}}</em></p>
@@ -77,6 +76,7 @@
         @if($item->body){!!$item->lead!!}@endif
         @if($item->body){!!$item->body!!}@endif
       </div>
+     
     </div>
     {{-- Beginning Right Side-bar --}}
     <div class="col-md-3 event-items-right white-bg right-column-smaller">

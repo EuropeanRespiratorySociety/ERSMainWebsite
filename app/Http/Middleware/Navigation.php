@@ -196,9 +196,6 @@ class Navigation
                 'class' => "ga-prof-dev"));
                 $menu->professionalDevelopment->add('Courses','professional-development/courses')->link->attr(array(
                   'class' => "ga-prof-dev"));
-                // $menu->professionalDevelopment->add('Webinars','professional-development/ers-webinars')
-                // ->link->attr(array(
-                //   'class' => "ga-prof-dev"));
                 $menu->professionalDevelopment->add('Respiratory Digests','professional-development/respiratory-digests')
                 ->link->attr(array(
                   'class' => "ga-prof-dev"));
@@ -240,6 +237,10 @@ class Navigation
                     // $menu->professionalDevelopment->add('HERMES exams','http://hermes.ersnet.org/exams.html')
                                             // ->link->attr(array('target' => '_blank'));
 
+                $menu->professionalDevelopment->add('Webinars','professional-development/ers-webinars')
+                ->link->attr(array(
+                  'class' => "ga-prof-dev"));
+                  
                 $menu->professionalDevelopment->add('CPD','professional-development/cpd')
                 ->link->attr(array('style' => 'display:none'));
                 $menu->professionalDevelopment->add('PhD Overview','professional-development/phd-overview')

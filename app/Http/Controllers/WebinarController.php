@@ -22,7 +22,8 @@ class WebinarController extends Controller
      */
   public function index()
   { 
-    $item = $this->CC->getItem('ers-webinar');
+    //Select ers-webinars ers:category
+    $item = $this->CC->getItem('ers-webinars');
     $item = $this->CC->parseItems($item['rows']);
     $params['item'] = (object) $item[0];
 
@@ -50,8 +51,10 @@ class WebinarController extends Controller
         $params['item'] =  (object) $item[0]; 
         
         if(!$item[0]->url || !$item[0]->uri){
+           
             $this->CC->setCanonical($item[0]->_qname);
         }
+        
         return view('professional.webinar')->with($params); 
     }
 }

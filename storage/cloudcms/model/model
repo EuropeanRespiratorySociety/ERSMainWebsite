@@ -60,6 +60,7 @@ model:
     suggestedAccommodation: [{ name: false, url: false, streetAddress: false, streetAddress2: false, streetAddress3: false, city: false, postalCode: false, country: false, phoneNumber: false, info: false }]
     registerButton: { link: false, text: false }
     externalLink: { link: false, text: false }
+    contentLink: { link: false, text: false }
     bursaryApplication: { text: false, deadline: false, notificationOfResults: false, applyButtonUrl: false }
     mentorship: { text: false, deadline: false, notificationOfResults: false, applyButtonUrl: false }
     abstracts: { text: false, deadline: false, notificationOfResults: false, applyButtonUrl: false }
