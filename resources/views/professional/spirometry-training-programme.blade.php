@@ -11,10 +11,9 @@
 @section('content')
 <div class="ers-content event-items-content article-items">
   <div class="row">
-
-    <div class="col-md-9 light-grey-bg">
+      <div class="{{ $item->flags->text ? 'col-md-9 light-grey-bg' : 'col-md-12 light-grey-bg'}}">
       <div class="row">
-        <div class="col-md-4 medium-grey-bg left-photo-map">
+        <div class="{{ $item->flags->text ? 'col-md-4 medium-grey-bg left-photo-map' : 'col-md-3 medium-grey-bg left-photo-map'}}">
           @if($item->image)
           <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
           @endif
@@ -27,9 +26,7 @@
             @include('partials.related-items', array('relatedItems' => $relatedItems)) 
           @endif
       </div>
-
-        <div class="col-md-8 event-items-fs-title">
-
+      <div class="{{ $item->flags->text ? 'col-md-8 event-items-fs-title' : 'col-md-9 event-items-fs-title'}}">
           <div class="page-head"><h2 class="article-title">{{$item->title}}</h2></div>
 
           @if($item->body)
@@ -49,13 +46,12 @@
 
    </div>
   <!-- Beginning Right Side-bar -->
-   <div class="col-md-3 white-bg event-items-right">
-      @if($item->flags->text)
-            <div class="alert {{'alert-'.$item->flags->color }}">
-            <div class="message"> {{ $item->flags->text }}</div>
-            </div>
-      @endif
-    <div class="list-group text-left">
+  @if($item->flags->text)
+  <div class="col-md-3 white-bg event-items-right">     
+    <div class="alert {{'alert-'.$item->flags->color }}">
+      <div class="message"> {{ $item->flags->text }}</div>
+      </div>
+    {{-- <div class="list-group text-left">
       <span href="javascript:void(0)" class="list-group-item clearfix cursor_default">
       <span class="icon s7-copy-file"></span>
       <p>
@@ -77,9 +73,10 @@
             @endif
           </ul>
       </p>
-    </span>
-    </div>
+      </span>
+    </div> --}}
   </div>
+  @endif
 {{-- END Right Side-bar --}}
 </div>
 </div>
