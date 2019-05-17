@@ -101,9 +101,10 @@ Route::group(['prefix' => 'congress-and-events'], function () {
     Route::get('ers-research-seminars', 'RedirectController@researchSeminars');
     Route::get('ers-presidential-summits', 'ResearchController@summits');
     Route::get('ers-presidential-summits/{slug}', 'ResearchController@showRS');
-    Route::get('mechanisms-of-acute-exacerbation-of-respiratory-disease', 'LscController@index');
-    Route::get('mechanisms-of-acute-exacerbation-of-respiratory-disease/{slug}', 'LscController@show');
+    Route::get('metabolic-alterations-in-lung-ageing-and-disease', 'LscController@index');
+    Route::get('metabolic-alterations-in-lung-ageing-and-disease/{slug}', 'LscController@show');
     Route::get('the-lung-science-conference/{slug}', 'LscController@show');
+    Route::get('respiratory-failure-and-mechanical-ventilation-conference', 'LscController@acuteRespiratoryFailure');
     Route::get('events-calendar', 'CalendarController@index');
     Route::get('ers-2018', 'LscController@paris');
     Route::get('ers-respiratory-updates', 'LscController@respiratoryUpdate');
@@ -116,6 +117,10 @@ Route::group(['prefix' => 'professional-development'], function () {
     Route::get('courses/{slug}', 'CourseController@show');
     Route::get('spirometry-training-programme', 'SpirometryController@index');
     Route::get('spirometry-training-programme/{slug}', 'SpirometryController@show');
+    Route::get('respiratory-digests', 'RespiratoryDigestController@index');
+    Route::get('respiratory-digests/{slug}', 'RespiratoryDigestController@show');
+    Route::get('ers-webinars', 'WebinarController@index');
+    Route::get('ers-webinars/{slug}', 'WebinarController@show');
     Route::group(['prefix' => 'fellowships'], function () {
         Route::get('short-term-research-training-fellowships', 'FellowshipController@indexShortTerm');
         Route::get('short-term-research-training-fellowships/{slug?}', 'FellowshipController@indexShortTerm');
@@ -142,8 +147,22 @@ Route::group(['prefix' => 'professional-development'], function () {
           Route::get('/', 'HermesController@National');
           Route::get('/{slug}', 'HermesController@show');
         });
+        Route::group(['prefix' => 'host-an-ers-hermes-self-assessment-course-in-your-city-or-country'], function () {
+          Route::get('/', 'HermesController@selfAsessmentCourse');
+          Route::get('/{slug}', 'HermesController@show');
+        });
         Route::get('/{slug}', 'HermesController@show');
     });
+
+    Route::group(['prefix' => 'cpd'], function () {
+      Route::get('/{slug}', 'CpdController@show');
+    });
+
+    Route::group(['prefix' => 'phd-overview'], function () {
+      Route::get('/', 'CpdController@phd');
+      Route::get('/{slug}', 'CpdController@show');
+    });
+
     Route::get('ers-curriculum-design-a-summary-of-projects', 'GeneralController@curriculmDesign');
     
     Route::get('examination-committee', 'GeneralController@ExamCommittee');
@@ -155,7 +174,9 @@ Route::group(['prefix' => 'professional-development'], function () {
     Route::get('research', 'RedirectController@research'); 
     Route::get('research/research-seminars', 'ResearchController@researchSeminars'); 
     Route::get('research/research-seminars/{slug}', 'ResearchController@showRS'); 
-    Route::get('research/clinical-research-collaborations', 'ResearchController@CRC'); 
+    Route::get('research/clinical-research-collaborations', 'ResearchController@CRC');
+    Route::get('research/task-forces', 'ResearchController@taskForces');
+    Route::get('research/pragmatic-trial-endorsement', 'ResearchController@pragmaticTrials'); 
     Route::get('research/{slug}', 'ResearchController@show');   
     
 
@@ -171,6 +192,7 @@ Route::group(['prefix' => 'professional-development'], function () {
 
     Route::get('authors', 'NewsController@authors');
     Route::get('authors/{slug}', 'NewsController@showAuthor');
+    // Route::get('/website-survey', 'GeneralController@show');
 
     //Route::get('cc', 'CloudCms@requestTest');
     Route::get('full-search', 'CloudCms@fullSearch');

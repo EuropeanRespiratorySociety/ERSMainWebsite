@@ -234,8 +234,9 @@
                 <p style="margin: 15px 0;">The Member fee is applicable to active ERS and ESTS members at the time of registration.  The fee includes two nights’ accommodation.</p>
                 @endif
                 @if($item->earlybirdDeadline)
-                <p>Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from a €50 discount on registration fees{{$item->feeList->liveStreaming ? ' (excluding live streaming)': '' }}.</p>
+                  <p>Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from a €50 discount on registration fees{{$item->feeList->liveStreaming ? ' (excluding live streaming)': '' }}.</p>
                 @endif
+
                 </div>
               </div>
             </div>
@@ -252,9 +253,15 @@
             @endif
             @if($item->registerButton->link && !$item->fullyBooked)
             <p>Registering for someone else ? Contact {!! Html::mailto('sandy.borlat@ersnet.org', 'Sandy Borlat') !!}</p>
-            <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
+            @if(strpos($item->registerButton->link, '@'))
+                <a href="{{'mailto:'.$item->registerButton->link}}" class="btn btn-primary tab-register-bt">
+                  {{ $item->registerButton->text or Register}}
+                </a>
+            @else
+                <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
                 {{ $item->registerButton->text or Register}}
             </a>
+            @endif
             @endif
             @if($item->fullyBooked)
               <p>Contact {!! Html::mailto('education@ersnet.org', 'education@ersnet.org') !!} to be added to the waiting list.</p>
@@ -301,7 +308,8 @@
   @include('elements.modal.cancellation', array('item' => $item)) 
   @include('elements.modal.travel-info', array('item' => $item))  
   @include('elements.modal.technical-info', array('item' => $item))
-  @include('elements.modal.sponsors', array('item' => $item))   
+  @include('elements.modal.sponsors', array('item' => $item))
+  {{-- @include('partials.survey-monkey') --}}
 @stop()
 {{--END Modal contents div--}} 
 

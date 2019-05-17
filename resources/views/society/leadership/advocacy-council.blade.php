@@ -21,32 +21,26 @@
 			</div>
 
 			<div class="row leadership-people" style="padding-top: 40px;">
-				<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/christina_gratziou.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Christina Gratziou</strong>
-		            Chair of the Advocacy Council <br>
-		            </p>
-	        	</div>
 	            <div class="col-md-4 xs-mb-15">
-                <img src="https://cdn.ersnet.org/images/people/leadership/Ildiko-Horvath.png" class="img-circle">
-	                <p class="photo_caption"><strong>Ildiko Horvath</strong>
-	               Chair-Elect of the Advocacy Council<br>
+                <img src="https://cdn.ersnet.org/images/people/leadership/Joajen_Vestbo.jpg" class="img-circle">
+                <p class="photo_caption"><strong>Jørgen Vestbo</strong>
+                    Advocacy Council Chair<br>
 	                </p>
 	            </div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/mina_gaga.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Mina Gaga</strong>
+                <img src="https://cdn.ersnet.org/images/people/leadership/Tobias_Welte.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Tobias Welte</strong>
 		            President<br></p>
 	        	</div>
 	            <div class="col-md-4 xs-mb-15">
-	                <img src="https://cdn.ersnet.org/images/people/leadership/Tobias_Welte.jpg" class="img-circle">
-	                <p class="photo_caption"><strong>Tobias Welte</strong>
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Thierry-Troosters.png" class="img-circle">
+	                <p class="photo_caption"><strong>Thierry Troosters</strong>
 	                President-Elect<br>
 					</p>
 	            </div>
 	            <div class="col-md-4 xs-mb-15">
-               		<img src="https://cdn.ersnet.org/images/people/leadership/Thierry-Troosters.png" class="img-circle">
-	                <p class="photo_caption"><strong>Thierry Troosters</strong>
+               		<img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+	                <p class="photo_caption"><strong>Anita Simonds</strong>
 	                Vice President<br>
 					</p>
 	            </div>
@@ -75,23 +69,29 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/Peter_Calverley.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Peter Calverley</strong>
-		            Advocacy Council expert on COPD<br>
-		            </p>
-	        	</div>
-	        	<div class="col-md-4 xs-mb-15">
 					<img src="https://cdn.ersnet.org/images/people/leadership/Ivan_Solovic.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>Ivan Solovic</strong>
-		            Chair of the Ad hoc Working Group on TB Advocacy<br>
+                  Advocacy Council expert on TB<br>
 		            </p>
-	        	</div>
-
-
-	        	
-	        	
-	        	
-		   
+            </div>
+	        	<div class="col-md-4 xs-mb-15">
+              <img src="https://cdn.ersnet.org/images/people/leadership/Guy_Joos.jpg" class="img-circle">
+              <p class="photo_caption"><strong>Guy Joos</strong>
+                Advocacy Council expert on NCDs<br>
+              </p>
+            </div>
+	        	<div class="col-md-4 xs-mb-15">
+              <img src="https://cdn.ersnet.org/images/people/leadership/Carlos_Robalo.jpg" class="img-circle">
+              <p class="photo_caption"><strong>Carlos Robalo</strong>
+                Secretary General<br>
+              </p>
+            </div>
+	        	<div class="col-md-4 xs-mb-15">
+              <img src="https://cdn.ersnet.org/images/people/leadership/Joanna-Chorostowska.png" class="img-circle">
+              <p class="photo_caption"><strong>Joanna Chorostowska-Wynimko</strong>
+                Secretary General elect<br>
+              </p>
+            </div>
 
 
 			</div>

@@ -9,9 +9,9 @@
               )) 
 @stop()
 @section('content')
-<div class="ers-content event-items-content">
-  <div class="row">
-    <div class="col-md-3 medium-grey-bg left-photo-map">
+<div class="ers-content event-items-content" >
+  <div class="row" style="display: flex;flex-wrap: wrap;">
+    <div class="col-md-3 col-xs-12 medium-grey-bg left-photo-map">
       @if($item->image)
       <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
       @endif
@@ -27,21 +27,22 @@
           @include('partials.related-items', array('relatedItems' => $relatedItems)) 
       @endif
     
+    <h4 class="hidden-xs hidden-sm" style="margin: 20px 0 0 25px;text-align:left;">With the financial support of:</h4>
 
     @foreach ($item->sponsors as $sponsor)
-    <div class="course-sponsor text-left">
+    <div class="hidden-xs hidden-sm course-sponsor text-left" style="background:transparent;padding: 0 10px 0 26px;">
         @if($sponsor->text)
         <div class="course-sponsor-wrapper">
-          @if($sponsor->image)
-          <div class="course-sponsor-image col-md-4 col-xs-4 pull-left">
-              <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: right center; background-size: contain;"></p>
-          </div> 
-          @endif
-          @if($sponsor->text)
-          <div class="course-sponsor-right  col-md-8 col-xs-8 pull-right">
-              <h4 class="text-left">{{$sponsor->text}}</h4>
-          </div>
-          @endif
+            @if($sponsor->image)
+            <div class="course-sponsor-image col-md-12 col-xs-12 center-block" style="background:#fff;">
+                <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: center center; background-size: contain;"></p>
+            </div> 
+            @endif
+            {{--@if($sponsor->text)
+            <div class="course-sponsor-right  col-md-5 col-xs-5 pull-right">
+                <h4 class="text-left">{{$sponsor->text}}</h4>
+            </div>
+            @endif  --}}
         </div>
         @endif
     </div>

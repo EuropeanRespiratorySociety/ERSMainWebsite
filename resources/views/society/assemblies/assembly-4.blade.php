@@ -1,6 +1,6 @@
       <div class="section fp-auto-height" style="min-height:1000px;">
           <div class="main-content">
-          <div class="page-head"><h2>ERS Assembly 4: Clinical physiology and sleep</h2></div>
+          <div class="page-head"><h2>ERS Assembly 4: Sleep and Breathing disorders; and clinical physiology</h2></div>
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
@@ -56,8 +56,8 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 04.02<br>
-                    Chair: Winfried Randerath<br>
-                    Secretary: Ramon Farré</p>
+                    Chair: Sophia. E. Schiza<br>
+                    Secretary: Dries Testelmans</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-sleep-and-control" type="button" class="btn btn-default pull-right">More</button>

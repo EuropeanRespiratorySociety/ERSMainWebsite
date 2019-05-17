@@ -13,7 +13,7 @@
             background-image: url('{{ $item->image}}'); 
             background-position: center {{$item->itemImageAlignment or center }};"
 
-    @elseif(($item->image && $item->flags->text) || ($item->flags->text && $item->fullyBooked) || ($item->type && $item->flags->text)) 
+    @elseif(($item->image && $item->flags->text) || ($item->flags->text && $item->fullyBooked) || ($item->type && $item->flags->text) || ($item->type && $item->fullyBooked)) 
         style="height:50px;" 
     @else 
         style="height:24px;" 

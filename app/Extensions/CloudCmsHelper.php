@@ -108,6 +108,8 @@ class CloudCmsHelper
         return $results;    
     }
 
+
+
     /**
     * Get all associated items that have a specific relation and sort them by a field
     * @param string $startNode (QName of the starting node)
@@ -124,9 +126,10 @@ class CloudCmsHelper
         $results = CC::nodes()
             ->queryRelatives($startNode, $query)
             ->addParams(['type' => $type])
+            // ->addParams(['sort' => '{"_system.created_on.ms": '.$direction.'}']) 
             ->addParams(['sort' => '{"'.$field.'": '.$direction.'}']) 
             ->addParams(['metadata' => 'true'])
-            ->addParams(['limit' => 400]) 
+            ->addParams(['limit' => 400])
             ->addParams(['full' => 'true'])
             ->get();    
         $results = $this->validateResults($results);       
@@ -227,11 +230,11 @@ class CloudCmsHelper
     /**
     * This function set the coordinates in CC the inject param let's you send only
     * the data that needs to be added to the node. Without it we need to send the
-    * whole node to replace it. The accuracy is a value returned by Google's API
+    * whole node to replace it.
     * @param string $node
     * @param string $lat
     * @param string $long
-    * @param string $accuracy
+    * @param string $accuracy - A value returned by Google's API
     * @return void
     */
     public function setCoordinates($node, $lat, $long, $accuracy){
@@ -397,6 +400,12 @@ class CloudCmsHelper
         return $items->parsed; 
 	}
 
+    public function parseDigestItems($data, $lead = false){
+        $items = new CloudCmsParser;
+        $items->parseDigest($data, $lead);
+        return $items->parsed; 
+    }
+    
     /**
     * Validates the results, if token is not valid, forces a refresh of the request
     * @return mixed $results

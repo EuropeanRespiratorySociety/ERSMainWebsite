@@ -192,18 +192,18 @@
           <li>
               <a href="{{ 
                 $item->title == 'ERS HERMES examination in adult respiratory medicine' 
-                ? 'https://ers.box.com/s/k3d7nsadfotmmo8cx2be98d38kd2ktvh' 
-                : 'https://ers.box.com/s/2oflb7o1qsdghiqzhmgq8ef2lrx9n9an' 
+                ? 'https://ers.box.com/s/j3sp41ovw4i5vw7g3upqbx107ijipzk4' 
+                : 'https://ers.box.com/s/qr7ocr68keve6o8s1dwj27hci4e0x4qn' 
               }}" target="blank">
                 Preparation Guidebook
               </a>
           </li>
           <li>
             @if($item->title == "ERS HERMES examination in adult respiratory medicine" )
-              <a href="https://ers.box.com/s/ocpzzhwco2eed4sbd3qp0g482l54j2vn" target="blank">Terms and Conditions</a>
+              <a href="https://ers.box.com/s/ksty63r3k1jiu1rptifmax70vxlurpt6" target="blank">Terms and Conditions</a>
             @endif
             @if($item->title == "ERS HERMES examination in paediatric respiratory medicine" )
-              <a href="https://ers.box.com/s/fl48d0hltn4qd7aen28k926g3lwjlrky" target="blank">Terms and Conditions</a>
+              <a href="https://ers.box.com/s/ec61l8wzp32zbq1efxz4dcrn393cy3uh" target="blank">Terms and Conditions</a>
             @endif
           </li>
         </ul>

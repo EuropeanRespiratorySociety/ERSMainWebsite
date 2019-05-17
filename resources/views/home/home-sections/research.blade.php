@@ -23,7 +23,7 @@
       <!--FIN Funding opportunities-->
 
       <!--Task forces-->
-      <div class="col-md-3">
+      <div class="col-md-2">
         <h2><a href="{{url('research/task-forces')}}">Task forces</a></h2>
         <ul>
           <li><a target="_blank" href="http://www.ers-education.org/guidelines.aspx">Published guidelines</a></li>
@@ -35,7 +35,7 @@
       <!--FIN Task forces-->
 
       <!--Research Seminars-->
-      <div class="col-md-3">
+      <div class="col-md-2">
         <h2><a href="{{url('research/research-seminars')}}">Research Seminars</a></h2>
         <ul>
           <li><a href="{{url('research/research-seminars')}}">Upcoming events</a></li>
@@ -46,7 +46,7 @@
       <!--FIN Research Seminars-->
 
       {{-- START Research Agency --}}
-      <div class="col-md-3">
+      <div class="col-md-2">
         <h2><a href="{{url('research/research-agency')}}">Research Agency </a></h2>
         <ul>
           <li><a href="{{url('research/research-agency#current-activities')}}">Current activities</a></li>
@@ -56,6 +56,19 @@
         </ul>
       </div>
       {{-- END Research Agency --}}
+
+      {{-- START Pragmatic Trials Endorsement  --}}
+      <div class="col-md-3">
+        <h2><a href="{{url('/research/pragmatic-trial-endorsement')}}">Pragmatic Trials Endorsement </a></h2>
+        {{-- <ul>
+          <li><a href="{{url('research/research-agency#current-activities')}}">Current activities</a></li>
+          <li><a target="_blank" href="{{url('research/research-agency#working-group')}}">Working group</a></li>
+          --}}
+          
+        </ul>
+      </div>
+      {{-- END Pragmatic Trials Endorsement  --}}
+
 
 
     </div>

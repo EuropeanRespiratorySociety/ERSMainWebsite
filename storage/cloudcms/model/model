@@ -9,6 +9,7 @@ model:
     flags: [{ text: false, color: false }]
     ebusDate: false
     eventDate: false
+    eventTime: false
     eventEndDate: false
     eventLocation: false
     leadParagraph: false
@@ -59,6 +60,7 @@ model:
     suggestedAccommodation: [{ name: false, url: false, streetAddress: false, streetAddress2: false, streetAddress3: false, city: false, postalCode: false, country: false, phoneNumber: false, info: false }]
     registerButton: { link: false, text: false }
     externalLink: { link: false, text: false }
+    contentLink: { link: false, text: false }
     bursaryApplication: { text: false, deadline: false, notificationOfResults: false, applyButtonUrl: false }
     mentorship: { text: false, deadline: false, notificationOfResults: false, applyButtonUrl: false }
     abstracts: { text: false, deadline: false, notificationOfResults: false, applyButtonUrl: false }
@@ -78,6 +80,7 @@ model:
     diseases: false
     limits: { min: false, max: false }
     methods: false
+    targetAudiance: false
     membersOnly: false
     url: false
     uri: false

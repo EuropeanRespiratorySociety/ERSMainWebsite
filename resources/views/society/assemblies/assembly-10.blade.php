@@ -4,7 +4,7 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/people/leadership/Graham-Bothamley.jpg" class="img-circle">
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Graham-Bothamley.png" class="img-circle" width="120" height="120">
                   <p class="photo_caption">Head: Graham Bothamley</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="col-md-6 center-block">
-              <p >Assembly Early Career representative: Aran Singanayagam</p>
+              <p >Assembly Early Career representative: Cristina Calarasu</p>
             </div>
             <div class="col-md-6 center-block lead">
               The Infectious Diseases Assembly covers all issues of pulmonary and respiratory infections with a strong focus on pneumonia and antibiotic resistance, bronchiectasis, tuberculosis and non-tuberculous mycobacteria. This Assembly is one of the largest scientific assemblies of the ERS. Airway and pulmonary infections play an important role for outpatient, clinical and intensive care medicine in children and adults and the topics covered by the Assembly include bacterial, viral, fungal and parasitic infections. Prevention of infections and the emergence of antibiotic resistance play an important role in its scientific and educational activities and in interactions with the other Scientific Assemblies in the ERS. Members of the Assembly, especially the juniors, are engaged in educational activities through the ERS school and in large collaborative research networks including: 
@@ -64,7 +64,7 @@
                   <div class="card-content text-left">
                     <p>Group 10.02<br>
                     Chair: Raquel Almeida Ferreira Duarte Bessa Melo<a href=""></a><br>
-                    Secretary: Jan Heyckendorf</p>
+                    Secretary: Simon Tiberi</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-tuberculosis" type="button" class="btn btn-default pull-right">More</button>

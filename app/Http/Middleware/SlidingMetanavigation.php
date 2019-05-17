@@ -22,6 +22,9 @@ class SlidingMetanavigation
                 //the maximum depth is 4
 
                 $menu->add('MyERS', 'https://my.ersnet.org')->prepend('<i class="icon-my-ers icon"></i><span>')->append('</span>')->link->attr(array('class' => 'ga-metanav')); 
+                $menu->add('Membership', 'https://www.ersnet.org/the-society/membership')
+                        ->prepend('<i class="icon-business-card icon"></i><span>')->append('</span>')
+                        ->link->attr(array('class' => 'ga-metanav'));
                 $menu->add('Publications', url("#publications"))
                         ->prepend('<i class="icon-publications icon"></i><span>')
                         ->append('</span>')
@@ -37,9 +40,6 @@ class SlidingMetanavigation
                         ->link->attr(array('target' => '_blank', 'class' => 'ga-metanav'));
                 $menu->add('European Lung Foundation', 'http://www.europeanlung.org/en/')
                         ->prepend('<i class="icon-elf icon" style="font-size:40px"></i><span>')->append('</span>')
-                        ->link->attr(array('target' => '_blank', 'class' => 'ga-metanav'));
-                $menu->add('TB Consilium', 'https://www.tbconsilium.org/')
-                        ->prepend('<div class="tb_consilium_nav clearfix" style="margin-top:10px;"><i class="icon-ers icon pull-left"></i><i class="icon-who icon pull-right who-icon"></i></div><span>')->append('</span>')
                         ->link->attr(array('target' => '_blank', 'class' => 'ga-metanav'));
                 $menu->add('FIRS', 'https://www.firsnet.org/')
                         ->prepend('<div class="firs_nav clearfix" style="margin-top:10px;"></div><span>')->append('<div style="font-size:12px"><i>United for Lung Health</i></div></span>')

@@ -3,6 +3,13 @@
 <html lang="en">
   <head>
     <base href="/">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5Z6KP9');</script>
+    <!-- End Google Tag Manager -->
     <link rel="apple-touch-icon" sizes="57x57" href="https://cdn.ersnet.org/images/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://cdn.ersnet.org/images/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://cdn.ersnet.org/images/apple-icon-72x72.png">
@@ -46,21 +53,18 @@
 
     {{-- Cloud Front is the ERS CDN --}}
     <link rel="stylesheet" href="https://cdn.ersnet.org/css/all.css" type="text/css"/>
+     {{--<link rel="stylesheet" href="http://localhost:8889/css/all.css" type="text/css"/>--}} 
+
     {{-- <link rel="stylesheet" href="https://bootstrap.ersnet.org/css/all.css" type="text/css"/> --}}
     {{--<link rel="stylesheet" href="http://erstemplate.app/css/all.css" type="text/css"/>--}}
 
 
 </head>
 <body id="ersMainWebsite">
-{{-- Google Tag Manager --}}
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5Z6KP9"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5Z6KP9');</script>
-{{-- End Google Tag Manager --}}
+  {{-- Google Tag Manager (noscript) --}}
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z6KP9"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  {{-- End Google Tag Manager (noscript) --}}
 
     <div class="ers-wrapper ers-fixed-sidebar ers-white-header">
 

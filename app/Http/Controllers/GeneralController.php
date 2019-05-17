@@ -29,8 +29,8 @@ class GeneralController extends Controller
     public function euAffairs()
     { 
         $type = 'ers:category-association';
-        $field = "_system.created_on";
-        $direction = 1;
+        $field = "_system.created_on.ms";
+        $direction = -1;
         // The content of the cat is not yet managed in CC
         // if(!$params['category']->url || !$params['category']->uri)){
         //     $this->CC->setCanonical($params['category']->_qname, 'advocacy/eu-affairs');

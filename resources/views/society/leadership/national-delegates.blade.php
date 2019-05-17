@@ -10,15 +10,19 @@
 	        	<div class="col-md-4 national_delegates ">
 		         	<strong>Albania</strong><br>
 		            Daniela Xhemalaj
-	         	</div>
+             </div>
+             <div class="col-md-4 national_delegates ">
+              <strong>Algeria</strong><br>
+                Kada Bentata
+            </div>
 	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Algeria </strong><br>
-		            Abdelmajid Snouber
-	         	</div>
+		         	<strong>Armenia</strong><br>
+               Irina Khachatryan
+             </div>
 	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Australia</strong><br>
-		            Peter Middleton
-	         	</div>
+              <strong>Australia</strong><br>
+              Bruce Thompson
+            </div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Austria</strong><br>
 		            Natascha Tröster
@@ -29,7 +33,7 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Belgium</strong><br>
-		            Wim Janssens
+                Didier Cataldo
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Bosnia and Herzegovina</strong><br>
@@ -37,34 +41,29 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Brazil</strong><br>
-		            Renato Maciel
+                Jose Miguel Chatkin
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Bulgaria</strong><br>
-		            Diana Petkova
+               Blagoi Marinov
 	         	</div>
 
 	         	<div class="col-md-4 national_delegates ">
 	         		<strong>Canada</strong><br>
-	         		George A. Fox
-		         	
+	         		Diane Lougheed
 	         	</div>
 
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Chile</strong><br>
-		            Patricia Diaz Amor
+               Laura Mendoza
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>China</strong><br>
-		            Jiang Tao Lin
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
-		         	<strong>China</strong><br>
-		            Hao Tang
+               Jiang Tao Lin
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Colombia</strong><br>
-		            Carlos Andrés Celis Preciado
+               Delegate to be assigned
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Croatia</strong><br>
@@ -72,11 +71,11 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Cyprus</strong><br>
-		            Stavros Kassinos
+               Stylianos Kakoullis
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Czech Republic </strong><br>
-		            Miloslav Marel
+                Libor Fila
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Egypt</strong><br>
@@ -107,16 +106,12 @@
 		            Stavros Tryfon
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Greece</strong><br>
-		            Petros Bakakos
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Hungary</strong><br>
 		            Krisztina Bogos
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>India</strong><br>
-		            Sujeet Rajan
+               Raja Dhar
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Indonesia</strong><br>
@@ -124,21 +119,33 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Ireland</strong><br>
-		            Robert Rutherford
+               Delegate to be assigned
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Israel</strong><br>
 		            Amir Bar Shai
-	         	</div>
+             </div>
 	         	<div class="col-md-4 national_delegates ">
+                <strong>Italy</strong><br>
+                Stefano Nardini
+              </div>
+              <div class="col-md-4 national_delegates ">
 		         	<strong>Japan</strong><br>
-		            Shu Hashimoto
-	         	</div>
+                Yasuhiko Nishioka
+             </div>
+	         	<div class="col-md-4 national_delegates ">
+              <strong>Kazakhstan</strong><br>
+              Denis Vinnikov
+            </div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Kyrgyzstan</strong><br>
-		            Alina Altymysheva
-	         	</div>	         	
+               Batyr Osmonov
+             </div>
 	         	<div class="col-md-4 national_delegates ">
+                <strong>Lithuania</strong><br>
+              Kestutis Malakauskas
+              </div>
+             <div class="col-md-4 national_delegates ">
 		         	<strong>Luxembourg</strong><br>
 		            Thierry Wagner
 	         	</div>
@@ -152,15 +159,15 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Malta</strong><br>
-		            Martin Balzan
+                Martin Balzan
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Norway</strong><br>
-		            Aina Akerø
+               Rune Nielsen
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Pakistan</strong><br>
-		            Hasnain Javed
+               Irfan Muhammad
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Philippines</strong><br>
@@ -173,7 +180,11 @@
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Portugal</strong><br>
 		            Paula Maria Gonçalves Pinto
-	         	</div>
+             </div>
+             <div class="col-md-4 national_delegates ">
+              <strong>Republic of Moldova</strong><br>
+                Oxana Munteanu
+            </div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Republic of Serbia</strong><br>
 		            Lidija M Ristić
@@ -183,20 +194,24 @@
 		            Ovidiu Fira-Mladinescu
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Russian Federation </strong><br>
+		         	<strong>Russian Federation</strong><br>
 		            Natalia Shaporova
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
+            </div>
+            <div class="col-md-4 national_delegates ">
+              <strong>Saudi Arabia</strong><br>
+                Omar Shahball
+            </div>
+            <div class="col-md-4 national_delegates ">
+              <strong>Senegal</strong><br>
+               Abdourakhmane Niang
+            </div>
+            <div class="col-md-4 national_delegates ">
 		         	<strong>Slovakia</strong><br>
-		            Tamás Ötvös
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Senegal</strong><br>
-		            Abdourakhmane Niang
+               Jan Plutinsky
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Slovenia</strong><br>
-		            Lea Leonardis
+               Delegate to be assigned
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>South Africa</strong><br>
@@ -204,11 +219,11 @@
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Spain</strong><br>
-		            Jose M. Marin Trigo
+               Luis Miguel Seijo Maceiras
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Sri Lanka</strong><br>
-		            Eshanth Perera
+               Manil Peiris
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Sweden</strong><br>
@@ -219,32 +234,36 @@
 		            Christophe von Garnier
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Taiwan</strong><br>
-		            Liang-Wen Hang
+		         	<strong>Chinese Taipei</strong><br>
+                Chun-Hua Wang
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Thailand</strong><br>
 		            Watchara Boonsawat
-	         	</div>
+             </div>
+	         	<div class="col-md-4 national_delegates ">
+                <strong>Tunisia</strong><br>
+                Agnès Hamzaoui
+              </div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Turkey</strong><br>
 		            Metin Akgun
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Ukraine</strong><br>
-		            Ivan Vishnivetsky 
+               Dmytro Butov 
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>United Kingdom </strong><br>
-		            Lisa Davies
+               Jonathan Bennett
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>United States of America </strong><br>
-		            Stephen Lazarus
+               Jeffrey Drazen
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>Vietnam</strong><br>
-		            Sy Duong-Quy
+		           Delegate to be assigned
 	         	</div>
 	        </div>
     	</div>

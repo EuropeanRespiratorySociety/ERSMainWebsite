@@ -68,15 +68,17 @@ class Navigation
                     ->link->attr(array('class' => 'ga-nav-society'));
                     $menu->membership->add('FAQs', 'the-society/membership#faqs' )
                     ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->membership->add('CERS', 'the-society/membership/cers' )
+                    ->link->attr(array('class' => 'ga-nav-society'));
                 $menu->theSociety->add('Assemblies', 'the-society/assemblies' )
                 ->link->attr(array('class' => 'ga-nav-society'));
-                    $menu->assemblies->add('1. Clinical', 'the-society/assemblies#clinical' )
+                    $menu->assemblies->add('1. General Pneumology', 'the-society/assemblies#general-pneumology' )
                     ->link->attr(array('class' => 'ga-nav-society'));
                     $menu->assemblies->add('2. Respiratory Intensive Care', 'the-society/assemblies#respiratory-intensive-care' )
                     ->link->attr(array('class' => 'ga-nav-society'));
                     $menu->assemblies->add('3. Basic and translational sciences', 'the-society/assemblies#basic-and-translational-sciences' )
                     ->link->attr(array('class' => 'ga-nav-society'));
-                    $menu->assemblies->add('4. Clinical physiology and sleep', 'the-society/assemblies#clinical-physiology' )
+                    $menu->assemblies->add('4. Sleep and Breathing disorders; and clinical physiology', 'the-society/assemblies#sleep-and-breathing-disorders' )
                     ->link->attr(array('class' => 'ga-nav-society'));
                     $menu->assemblies->add('5. Airway diseases, asthma and COPD', 'the-society/assemblies#airway-diseases' )
                     ->link->attr(array('class' => 'ga-nav-society'));
@@ -96,6 +98,8 @@ class Navigation
                     ->link->attr(array('class' => 'ga-nav-society'));
                     $menu->assemblies->add('13. Pulmonary Vascular Diseases', 'the-society/assemblies#pulmonary-vascular-diseases' )
                     ->link->attr(array('class' => 'ga-nav-society'));
+                    $menu->assemblies->add('14. Clinical Techniques, Imaging and Endoscopy', 'the-society/assemblies#clinical-techniques' )
+                    ->link->attr(array('class' => 'ga-nav-society'));                    
                 $menu->theSociety->add('News And Features', 'the-society/news' )
                 ->link->attr(array('class' => 'ga-nav-society'));
                     //$menu->newsAndFeatures->add('Respiratory Worldwide', 'the-society/news/respiratory-worldwide' );
@@ -118,7 +122,7 @@ class Navigation
                 $menu->congressAndEvents->add('ERS Satellites','congress-and-events/ers-satellite')
                 ->link->attr(array('class' => 'ga-nav-congress-and-events'));
                 //$menu->congressAndEvents->add('Paris 2018','congress-and-events/ers-2018');
-                $menu->congressAndEvents->add('The Lung Science Conference','congress-and-events/mechanisms-of-acute-exacerbation-of-respiratory-disease')
+                $menu->congressAndEvents->add('The Lung Science Conference','congress-and-events/metabolic-alterations-in-lung-ageing-and-disease')
                 ->link->attr(array('class' => 'ga-nav-congress-and-events'));
                     $menu->theLungScienceConference->add('Estoril, your host city','congress-and-events/the-lung-science-conference/estoril-your-host-city')->link->attr(array('style' => 'display:none'));
                     $menu->theLungScienceConference->add('Previous Conferences','http://old.ersnet.org/previous-conferences.html')
@@ -192,7 +196,10 @@ class Navigation
                 'class' => "ga-prof-dev"));
                 $menu->professionalDevelopment->add('Courses','professional-development/courses')->link->attr(array(
                   'class' => "ga-prof-dev"));
-                // $menu->professionalDevelopment->add('Webinar','professional-development/ers-webinar-discussion-of-severe-asthma-with-ers-experts');
+                $menu->professionalDevelopment->add('Respiratory Digests','professional-development/respiratory-digests')
+                ->link->attr(array(
+                  'class' => "ga-prof-dev"));
+                  // $menu->professionalDevelopment->add('Webinar','professional-development/ers-webinar-discussion-of-severe-asthma-with-ers-experts');
                 $menu->professionalDevelopment->add('Fellowships','professional-development/fellowships')
                   ->link->attr(array(
                     'class' => "ga-prof-dev"));
@@ -204,35 +211,40 @@ class Navigation
                     $menu->fellowships->add('RESPIRE 3 - Host Application','professional-development/fellowships/respire-3-host-application-and-web-registry')->link->attr(array('style' => 'display:none'));
                     $menu->fellowships->add('RESPIRE 3 - Marie Curie Post-doctoral Research Fellowships (MCF RESPIRE 3)','professional-development/fellowships/marie-curie-post-doctoral-research-fellowships-(respire-3)')->link->attr(array('style' => 'display:none'));
             
-                $menu->professionalDevelopment->add('Hermes examinations','professional-development/hermes')
+                $menu->professionalDevelopment->add('Hermes activities','professional-development/hermes')
                   ->link->attr(array(
                     'class' => "ga-prof-dev"));
-                    $menu->hermesExaminations->add('HERMES examination in adult respiratory medicine','professional-development/hermes/adult/ers-hermes-examination-in-adult-respiratory-medicine')
+                    $menu->hermesActivities->add('HERMES examination in adult respiratory medicine','professional-development/hermes/adult/ers-hermes-examination-in-adult-respiratory-medicine')
                       ->link->attr(array('style' => 'display:none'));
-                    $menu->hermesExaminations->add('Preparation: adult exam','professional-development/hermes/adult/preparation')
+                    $menu->hermesActivities->add('Preparation: adult exam','professional-development/hermes/adult/preparation')
                       ->link->attr(array('style' => 'display:none'));
-                    $menu->hermesExaminations->add('Eligibility, registration and fees: adult exam','professional-development/hermes/adult/eligibility-registration-and-fees')
+                    $menu->hermesActivities->add('Eligibility, registration and fees: adult exam','professional-development/hermes/adult/eligibility-registration-and-fees')
                       ->link->attr(array('style' => 'display:none'));
-                    $menu->hermesExaminations->add('Examination Committee: adult exam','professional-development/hermes/adult/examination-committee')
+                    $menu->hermesActivities->add('Examination Committee: adult exam','professional-development/hermes/adult/examination-committee')
                       ->link->attr(array('style' => 'display:none'));
-                    $menu->hermesExaminations->add('Diplomates: adult exam','professional-development/hermes/adult/diplomates-registry-adult')
+                    $menu->hermesActivities->add('Diplomates: adult exam','professional-development/hermes/adult/diplomates-registry-adult')
                       ->link->attr(array('style' => 'display:none'));
-                    $menu->hermesExaminations->add('HERMES examination in paediatric respiratory medicine','professional-development/hermes/paediatric/ers-hermes-examination-in-paediatric-respiratory-medicine')
+                    $menu->hermesActivities->add('HERMES examination in paediatric respiratory medicine','professional-development/hermes/paediatric/ers-hermes-examination-in-paediatric-respiratory-medicine')
                       ->link->attr(array('style' => 'display:none'));
-                    $menu->hermesExaminations->add('Preparation: paediatric exam','professional-development/hermes/paediatric/preparation-paediatric-exam')
+                    $menu->hermesActivities->add('Preparation: paediatric exam','professional-development/hermes/paediatric/preparation-paediatric-exam')
                       ->link->attr(array('style' => 'display:none'));
-                    $menu->hermesExaminations->add('Eligibility, registration and fees: paediatric exam','professional-development/hermes/paediatric/eligibility-registration-and-fees-paediatric-exam')
+                    $menu->hermesActivities->add('Eligibility, registration and fees: paediatric exam','professional-development/hermes/paediatric/eligibility-registration-and-fees-paediatric-exam')
                       ->link->attr(array('style' => 'display:none'));
-                    $menu->hermesExaminations->add('Examination Committee: adult exam','professional-development/hermes/paediatric/examination-committee')
+                    $menu->hermesActivities->add('Examination Committee: paediatric exam','professional-development/hermes/paediatric/examination-committee')
                       ->link->attr(array('style' => 'display:none'));
-                    $menu->hermesExaminations->add('Diplomates: paediatric exam','professional-development/hermes/diplomates-paediatric-exam')
+                    $menu->hermesActivities->add('Diplomates: paediatric exam','professional-development/hermes/diplomates-paediatric-exam')
                       ->link->attr(array('style' => 'display:none'));
                     // $menu->professionalDevelopment->add('HERMES exams','http://hermes.ersnet.org/exams.html')
                                             // ->link->attr(array('target' => '_blank'));
 
-
-
-
+                $menu->professionalDevelopment->add('Webinars','professional-development/ers-webinars')
+                ->link->attr(array(
+                  'class' => "ga-prof-dev"));
+                  
+                $menu->professionalDevelopment->add('CPD','professional-development/cpd')
+                ->link->attr(array('style' => 'display:none'));
+                $menu->professionalDevelopment->add('PhD Overview','professional-development/phd-overview')
+                ->link->attr(array('style' => 'display:none'));
 
                 //$menu->professionalDevelopment->add('Educational Activities','professional-development/educational-activities');
                 $menu->professionalDevelopment->add('Grants and Sponsorships','professional-development/grants-and-sponsorships')->link->attr(array(
@@ -241,8 +253,8 @@ class Navigation
                                             ->link->attr(array('target' => '_blank', 'class' => "ga-prof-dev"));                 
                 //$menu->professionalDevelopment->add('Junior Members','http://juniors.ersnet.org')
                                             //->link->attr(array('target' => '_blank')); 
-                $menu->professionalDevelopment->add('Respipedia','http://respipedia.ers-education.org/home.aspx')
-                                            ->link->attr(array('target' => '_blank', 'class' => "ga-prof-dev"));               
+                // $menu->professionalDevelopment->add('Respipedia','http://respipedia.ers-education.org/home.aspx')
+                //                             ->link->attr(array('target' => '_blank', 'class' => "ga-prof-dev"));
                 $menu->professionalDevelopment->add('Training Programmes','professional-development/ers-certified-training-programmes')
                   ->link->attr(array(
                   'class' => "ga-prof-dev"));
@@ -258,18 +270,20 @@ class Navigation
 
             $menu->add('Research','#research')
             ->link->attr(array('class' => 'ga-nav-research'));
-                $menu->research->add('Task Forces', 'research/task-forces')
+                $menu->research->add('Task Forces and Guidelines', 'research/task-forces')
                 ->link->attr(array('class' => 'ga-nav-research'));
-                $menu->research->add('Published Guidelines', 'research/published-guidelines')
-                ->link->attr(array('class' => 'ga-nav-research'));
+                // $menu->research->add('Published Guidelines', 'research/published-guidelines')
+                // ->link->attr(array('class' => 'ga-nav-research'));
                 $menu->research->add('Clinical Research Collaborations', 'research/clinical-research-collaborations')
                 ->link->attr(array('class' => 'ga-nav-research'));
                 $menu->research->add('Research Seminars', 'research/research-seminars')
                 ->link->attr(array('class' => 'ga-nav-research'));
                 $menu->research->add('Research Agency', 'research/research-agency')
                 ->link->attr(array('class' => 'ga-nav-research'));
+                $menu->research->add('Pragmatic Trials Endorsement', 'research/pragmatic-trial-endorsement')
+                ->link->attr(array('class' => 'ga-nav-research'));
 
-            $menu->add('Advocacy and patient resources','#advocacy')
+                $menu->add('Advocacy and patient resources','#advocacy')
             ->link->attr(array('class' => 'ga-nav-advocacy'));
                 $menu->advocacyAndPatientResources->add('EU-Affairs','advocacy/eu-affairs')
                 ->link->attr(array('class' => 'ga-nav-advocacy'));

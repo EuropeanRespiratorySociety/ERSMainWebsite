@@ -1,4 +1,4 @@
-      <div class="section fp-auto-height" style="min-height:1120px;">
+      <div class="section fp-auto-height" style="min-height:900px;">
           <div class="main-content">
           <div class="page-head"><h2>ERS Assembly 13: Pulmonary Vascular Diseases</h2></div>
 

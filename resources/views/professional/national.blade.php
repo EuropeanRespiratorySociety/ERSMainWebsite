@@ -126,11 +126,11 @@
   
   <script type="text/javascript">
     $(document).ready(function(){
-        var client = new $.RestClient('https://api.ersnet.org/', {
+        var apiUrl = '{{ env('API_URL') }}' ? '{{ env('API_URL') }}' : 'https://api.ersnet.org/' ;
+        var client = new $.RestClient(apiUrl, {
             cache: 60, //This will cache requests for 60 seconds
             cachableMethods: ["GET"] //This defines what method types can be cached (this is already set by default)
         });
-        // var client = new $.RestClient('http://localhost:3030/');
  
         client.add('calendar');
         client.calendar.read({type:'hermes'}).done(function (data){
@@ -145,25 +145,29 @@
               const title = events[i].title;
               const uri = events[i].uri;
               const leadParagraph = events[i].shortLead;
+              const createdPath = window.location.pathname + '/' + events[i].slug;
               const path = uri 
-                            ? uri 
-                            : `${window.location.pathname}/${events[i].slug}`
-              const anchor = `<a href="${path}">${title}</a>`
+                            ? uri
+                            : createdPath
+                            // : `${window.location.pathname}/${events[i].slug}`
+              const anchor = '<a href=\"' + path + '\">' + title + '</a>';
+              // const anchor = `<a href="${path}">${title}</a>`
+              const cardNational = '<div class="col-md-4 isotope"><div class="card card-event">'
+                + image
+                + '<div class="card-content text-left"><h3 class="title">'
+                +  anchor
+                + '</h3><p class="date" style="padding-bottom: 3px;"><span class="icon s7-map-marker"></span>'
+                +  events[i].eventLocation
+                + '</p><p class="date"><span class="icon s7-date"></span>'
+                + events[i].eventDates
+                + '</p>'
+                +  leadParagraph
+                + '</div><div class="card-action clearfix"><a href="'
+                + path
+                + '" class="btn btn-register">more</a></div></div></div>';
 
-              $(`<div class="col-md-4 isotope">
-                  <div class="card card-event">
-                      ${image}
-                      <div class="card-content text-left">
-                        <h3 class="title"> ${anchor}</h3>
-                        <p class="date" style="padding-bottom: 3px;"><span class="icon s7-map-marker"></span> ${events[i].eventLocation}</p>
-                        <p class="date"><span class="icon s7-date"></span> ${events[i].eventDates}</p>
-                        ${leadParagraph}
-                      </div>
-                      <div class="card-action clearfix">
-                          <a href="${path}" class="btn btn-register">more</a>
-                      </div>
-                  </div>
-                </div>`).appendTo($('#national'));
+
+              $(cardNational).appendTo($('#national'));
             }
         });
     });

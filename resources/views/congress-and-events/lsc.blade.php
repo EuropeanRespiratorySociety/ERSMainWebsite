@@ -64,6 +64,8 @@
           <p><em>@if($item->type){{$item->type}}@endif</em></p>
         </div>
         <div class="col-md-6 text-right">
+
+{{-- Put back this code if we solve the CDN issue--}}
           @if($item->programme)  
             <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary text-left">
               <span class="icon s7-map" style="font-size: 24px;"></span>
@@ -74,6 +76,8 @@
               @endif
             </a>
           @endif
+
+
           @if($item->programmeNotice)
           <p class="text-danger">{{$item->programmeNotice}}</p>
           @endif
@@ -130,10 +134,17 @@
               <div class="">
                 
                 @if($item->practicalInfo)
-                  <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary text-left">
-                    <span class="icon s7-map"></span>
-                    Practical Info
+                  @if($item->slug == "metabolic-alterations-in-lung-ageing-and-disease")
+                    <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary text-left">
+                      <span class="icon s7-map"></span>
+                      Practical Info
+                    </a>
+                  @elseif($item->slug == "respiratory-failure-and-mechanical-ventilation-conference")
+                    <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary text-left">
+                      <span class="icon s7-map"></span>
+                      {{$item->practicalInfoButton}}
                   </a>
+                  @endif
                 @endif
                 <ul class="list-group">
                   @if($item->mentorship->text)
@@ -193,13 +204,14 @@
                     </span> Industry <br>(ERS Members & non-Members)
                   </a>
                 @endif  
-  
+                @if($item->slug == "metabolic-alterations-in-lung-ageing-and-disease")
                   <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
                     <span class="badge">
                       &euro; 180
                     </span> Accompanying Person
                   </a>
-          
+                @endif
+
                 </div>
 
               </div>
@@ -209,7 +221,11 @@
             @if($item->title == "Mechanistic overlap between chronic lung injury and cancer")
             <p style="margin-bottom: 8px;" class="article-title"><a href="https://ers.app.box.com/s/mjji0rrc2rjwxn98qrdgzn77fse35bgk">Industry Group Reservation</a></p>
             @endif
+            @if($item->title == "Mechanistic overlap between chronic lung injury and cancer")
             <p>Any questions? Please contact {!! Html::mailto('scientific@ersnet.org', 'scientific@ersnet.org') !!}</p>
+            @elseif($item->slug == "respiratory-failure-and-mechanical-ventilation-conference")
+            <p>Any questions? Please contact {!! Html::mailto('education@ersnet.org', 'education@ersnet.org') !!}</p>
+            @endif
             @if($item->extendedDeadline)
             <p class="deadline">EXTENDED registration deadline : {{$item->extendedDeadline}}</p>
             @endif

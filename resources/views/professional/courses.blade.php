@@ -44,5 +44,7 @@
         percentPosition: true
         
     });
-</script>  
+</script>
+{{-- @include('partials.survey-monkey')   --}}
 @stop()
+

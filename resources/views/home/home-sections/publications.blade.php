@@ -16,7 +16,7 @@
                         </div>
                         <div class="card-content text-left">
                             <p>
-                                <i>The European Respiratory Journal</i> (ERJ) - 2017 impact factor 10.569 - is the official journal of the European Respiratory Society (ERS). It publishes clinical and...   
+                                <i>The European Respiratory Journal</i> (ERJ) - 2017 impact factor 12.242 - is the official journal of the European Respiratory Society (ERS). It publishes clinical and...   
                             </p>
                         </div>
                         <div class="card-action"> 	
@@ -139,7 +139,7 @@
                             </p>
                         </div>
                         <div class="card-action"> 	
-                            <a href="http://www.ersbuyersguide.org/" 
+                            <a href="https://ersguide.org/" 
                                 target="new_blank"
                                  class="ga-home btn btn-default pull-right">Read online</a>
                         </div>
@@ -188,8 +188,8 @@
                                 <i>The European Respiratory Roadmap</i> seeks to serve as a basis for the respiratory community to communicate with key decision and policy ...
                             </p>
                         </div>
-                        <div class="card-action"> 	
-                            <a href="http://www.ersroadmap.org" 
+                        <div class="card-action">
+                            <a href="/publications/european-respiratory-roadmap" 
                                 target="new_blank"
                                 class="ga-home btn btn-default pull-right">Read online</a>
                         </div>

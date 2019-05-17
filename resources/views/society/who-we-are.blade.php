@@ -13,7 +13,15 @@
   		<div class="section fp-auto-height">
   			<div class="main-content">
           <div class="page-head"><h2>{{$item->title}}</h2></div>
+
           <div class="col-md-7 center-block lead text-left">
+            <div style="width: 90%; margin: 0 auto;">
+              @if($item->video)
+                <div class="videoWrapper" style="margin-bottom: 40px;">
+                  {!!$item->video!!} 
+                </div>
+              @endif
+            </div>
             {!! $item->lead !!}
           </div>
           <div class="col-md-7 center-block lead text-left">
@@ -76,7 +84,7 @@
   <script type="text/javascript">
     $(document).ready(function(){
   	//initialize the javascript
-    App.whoWeAre();             
+    App.whoWeAre();
   });
 </script>
     @stop()

@@ -37,8 +37,8 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
                 <div class="bs-grid-block">
                   <div class="content">
                    <ul class="text-left">
-                    <li data-menuanchor="clinical">
-                      <a href="the-society/assemblies#clinical">1 Clinical</a>
+                    <li data-menuanchor="general-pneumology">
+                      <a href="the-society/assemblies#general-pneumology">1 General Pneumology</a>
                     </li>
                     <li data-menuanchor="respiratory-intensive-care">
                       <a href="the-society/assemblies#respiratory-intensive-care">2 Respiratory Intensive Care</a>
@@ -46,8 +46,8 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
                     <li data-menuanchor="basic-and-translational-sciences">
                       <a href="the-society/assemblies#basic-and-translational-sciences">3 Basic and translational sciences</a>
                     </li>
-                    <li data-menuanchor="clinical-physiology">
-                      <a href="the-society/assemblies#clinical-physiology">4 Clinical physiology and sleep</a>
+                    <li data-menuanchor="sleep-and-breathing-disorders">
+                      <a href="the-society/assemblies#sleep-and-breathing-disorders">4 Sleep and Breathing disorders; and clinical physiology</a>
                     </li>
                     <li data-menuanchor="airway-diseases">
                       <a href="the-society/assemblies#airway-diseases">5 Airway diseases, asthma and COPD</a>
@@ -74,6 +74,7 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
                             <li data-menuanchor="thoracic-oncology"><a href="the-society/assemblies#thoracic-oncology">11 Thoracic Oncology</a></li>
                             <li data-menuanchor="interstitial-lung-diseases"><a href="the-society/assemblies#interstitial-lung-diseases">12 Interstitial Lung Diseases</a></li>
                             <li data-menuanchor="pulmonary-vascular-diseases"><a href="the-society/assemblies#pulmonary-vascular-diseases">13 Pulmonary Vascular Diseases</a></li>
+                            <li data-menuanchor="clinical-techniques"><a href="the-society/assemblies#clinical-techniques">14 Clinical Techniques, Imaging and Endoscopy</a></li>
                           </ul>
                         </div>
                       </div>
@@ -138,6 +139,9 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
         <!-- Start Asesembly 13 -->  
             @include('society.assemblies.assembly-13')
         <!-- End Assembly 13 -->
+        <!-- Start Asesembly 14 -->  
+        @include('society.assemblies.assembly-14')
+        <!-- End Assembly 14 -->
       {{-- Footer --}}
       @include('footer')
     </div>
@@ -182,6 +186,24 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
     </div>
   </div>
 </div>
+<!--General Practice and Primary Care-->
+<div id="md-general-practice" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="text-left">
+          <h4>General Practice and Primary Care</h4>
+          <p>This Group is specifically aimed at general practitioners, nurses and other allied health professionals in primary care, chest physicians with an interest in what happens outside hospital, and primary care researchers. Our activities and influence within the ERS have grown considerably since we joined the Clinical Assembly in 2000.<br><br>
+          In Florence (2000), we organised our first Symposium on "Underdiagnosis and undertreatment of asthma and COPD in primary care". In Glasgow (2004), we organised, in co-ordination with our colleagues from Assembly 9, a stand-alone day programme for over 600 primary health professionals. In Stockholm (2007), both a multidisciplinary Primary Care Day (together with Assembly 9) and a well-attended Major Symposium on consultations were organised.<br>
+          As a relatively small but active Group we cooperate with national and international groups interested in respiratory disease research in primary care (such as the International Primary Care Respiratory Group (IPCRG), the World Organisation of Family Doctors (WONCA) and the European Lung Foundation (ELF)). We have open submission for abstracts for the annual Congresses, and welcome new members to our Group.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!--Imaging-->
 <div id="md-imaging" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
   <div class="modal-dialog">
@@ -216,8 +238,8 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
     </div>
   </div>
 </div>
-<!--General Practice and Primary Care-->
-<div id="md-general-practice" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+<!--M-Health/e-health-->
+<div id="md-m-e-health" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -225,10 +247,12 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
       </div>
       <div class="modal-body">
         <div class="text-left">
-          <h4>General Practice and Primary Care</h4>
-          <p>This Group is specifically aimed at general practitioners, nurses and other allied health professionals in primary care, chest physicians with an interest in what happens outside hospital, and primary care researchers. Our activities and influence within the ERS have grown considerably since we joined the Clinical Assembly in 2000.<br><br>
-          In Florence (2000), we organised our first Symposium on "Underdiagnosis and undertreatment of asthma and COPD in primary care". In Glasgow (2004), we organised, in co-ordination with our colleagues from Assembly 9, a stand-alone day programme for over 600 primary health professionals. In Stockholm (2007), both a multidisciplinary Primary Care Day (together with Assembly 9) and a well-attended Major Symposium on consultations were organised.<br>
-          As a relatively small but active Group we cooperate with national and international groups interested in respiratory disease research in primary care (such as the International Primary Care Respiratory Group (IPCRG), the World Organisation of Family Doctors (WONCA) and the European Lung Foundation (ELF)). We have open submission for abstracts for the annual Congresses, and welcome new members to our Group.</p>
+          <h4>M-Health/e-health</h4>
+          <p>This new group unites scientists and clinicians who are interest in m-Health and e-health tools in respiratory medicine. It is growing up issue that is becoming prominent component of healthcare all over the world.<br /><br />
+            Topics that are of particular interest include tele-monitoring, tele-rehabilitation, tele-consultation, telematics, electronic registers formation, early respiratory symptoms diagnosis, educational programmes for medical staff and patients.<br /><br />
+            Our aims are to be a platform that facilitates cooperation between specialists worldwide and to promote co-operation with other ERS Groups and societies.<br /><br />
+            Our Group is very young, but we are going to organise many activities within the ERS: Postgraduate Courses, Symposia, Meet-the-professor-sessions, establish guidelines etc.<br />
+            M-Health/e-health Group is open to any proposals for group activities such as Symposia, Task Forces and Research Seminars not only during the Congress, but also outside of the Congress activities.</p>
         </div>
       </div>
     </div>
@@ -618,7 +642,7 @@ However, ALL topics that would involve intensive care are welcomed. The group is
       </div>
       <div class="modal-body">
         <div class="text-left">
-          <h4>Paediatric Respiratory Physiology and Sleep</h4>
+          <h4>Paediatric Respiratory Epidemiology</h4>
           <p>
           This Group consists of epidemiologists, paediatricians and other health professionals and health scientists with interests in the early origins and environmental/genetic contributions to paediatric respiratory disease.<br><br>
 
@@ -865,18 +889,17 @@ As a Group we aim to be a platform that facilitates close cooperation between ba
   @stop()  
 
     @section('scripts')
-    {{--<script src="../js/fullpage.js" type="text/javascript"></script>--}}
-    {{--<script src="../js/app-assemblies.js" type="text/javascript"></script>--}}
-
-    {{--<script src="http://erstemplate.app/js/fullpage.js" type="text/javascript"></script>--}}
-    {{--<script src="http://erstemplate.app/js/app-assemblies.js" type="text/javascript"></script>--}}
+    {{-- <script src="../js/fullpage.js" type="text/javascript"></script> --}}
 
     {{-- <script src="https://bootstrap.ersnet.org/js/fullpage.js" type="text/javascript"></script>
     <script src="https://bootstrap.ersnet.org/js/app-assemblies.js" type="text/javascript"></script> --}}
 
     {{-- Cloud Front is the ERS CDN --}}
-    <script src="https://cdn.ersnet.org/js/fullpage.js" type="text/javascript"></script>
+     <script src="https://cdn.ersnet.org/js/fullpage.js" type="text/javascript"></script>
     <script src="https://cdn.ersnet.org/js/app-assemblies.js" type="text/javascript"></script>
+
+    {{-- Dev Server --}}
+    {{-- <script src="http://localhost:8889/js/app-assemblies.js" type="text/javascript"></script> --}}
 
     <script type="text/javascript">
       $(document).ready(function(){
@@ -884,4 +907,5 @@ As a Group we aim to be a platform that facilitates close cooperation between ba
         App.assemblies();             
       });
     </script>
+
   @stop()

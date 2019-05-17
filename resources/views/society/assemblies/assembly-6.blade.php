@@ -36,8 +36,8 @@ The Assembly is comprised of the following four groups:
                 </div> 
                 <div class="card-content text-left">
                   <p>Group 06.01<br>
-                    Chair: Anne Lindberg<br>
-                    Secretary: Quint Jennifer</p>
+                    Chair: Joan B Soriano<br>
+                    Secretary: Kurmi Om Prakash</p>
                     
                   </div>
                   <div class="card-action clearfix">
@@ -93,7 +93,7 @@ The Assembly is comprised of the following four groups:
                       </div> 
                       <div class="card-content text-left">
                         <p>Group 06.04<br>
-                          Chair: Seif Shaheen<br>
+                          Chair: Ian P. Hall<br>
                           Secretary: Melén Erik</p>
                         </div>
                         <div class="card-action clearfix">

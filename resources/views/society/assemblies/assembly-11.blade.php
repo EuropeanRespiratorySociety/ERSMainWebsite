@@ -5,13 +5,13 @@
             <div class="row">
              
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/people/leadership/Nir_Peled.jpg" class="img-circle">
-                  <p class="photo_caption">Head: Nir Peled</p>
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Jan-Van-Meerbeeck.png" class="img-circle">
+                  <p class="photo_caption">Head: Jan Van Meerbeeck</p>
                 </div>
 
                 <div class="col-md-3 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/people/leadership/Bogdan-Grigoriu.png" class="img-circle">
-                  <p class="photo_caption">Secretary: Bogdan Dragos Grigoriu</p>
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Thorsten-BLUM.png" class="img-circle">
+                  <p class="photo_caption">Secretary: Torsten Gerriet Blum</p>
                  
                 </div>
             </div>
@@ -40,8 +40,8 @@ The Assembly is comprised of the following two groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 11.01<br>
-                    Chair: Torsten Blum<br>
-                    Secretary: Matthew Evison</p>
+                    Chair: Rudolf M. Huber<br>
+                    Secretary: Georgia Hardavella</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-lung-cancer" type="button" class="btn btn-default pull-right">More</button>
@@ -58,8 +58,8 @@ The Assembly is comprised of the following two groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 11.02<br>
-                    Chair: Nick Maskell<br>
-                    Secretary: Sotirios Zarogiannis</p>
+                    Chair: Najib M. Rahman<br>
+                    Secretary: Kevin Blyth</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-pleural-and-mediastinal" type="button" class="btn btn-default pull-right">More</button>

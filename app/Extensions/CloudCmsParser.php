@@ -11,7 +11,6 @@ use Carbon\Carbon;
 use Lavary\Menu\Menu;
 use Intervention\Image\Facades\Image;
 use AlfredoRamos\ParsedownExtra\Facades\ParsedownExtra as Markdown;
-use Spatie\Geocoder\GeocoderFacade as Geocoder;
 
 class CloudCmsParser
 {
@@ -21,6 +20,25 @@ class CloudCmsParser
         $this->date = new DateHelper; 
         $this->parsed = [];
         $this->model = CC::setModel('ers:article');
+        //Have to set Manually 
+        $this->digestModel = [
+            'title' => false,
+            'slug' => false,
+            'author' => false,
+            'journal' => false,
+            'journalLink' => false,
+            'leadParagraph' => false,
+            'shortLead' => false,
+            'digestType' => false,
+            'digestAuthor' => false,
+            'comments' => false,
+            'url' => false,
+            'uri' => false,
+            'unPublished' => false,
+            '_system' => false,
+            '_qname' => false,
+            '_statistics' => false
+        ];
         $this->helper = new CloudCmsHelper;
     }
 
@@ -75,12 +93,12 @@ class CloudCmsParser
 
                     }
 
-                    if($item->venue->streetAddress && $item->venue->city && $item->venue->postalCode){
-                        if(!$item->loc->lat || !$item->loc->long){
-                            $coordinates = $this->helper->getCoordinates($item->venue);
-                            $this->helper->setCoordinates($item->_qname, $coordinates['lat'], $coordinates['lng'], $coordinates['accuracy']);
-                        }
-                    }
+                    // if($item->venue->streetAddress && $item->venue->city && $item->venue->postalCode){
+                    //     if(!$item->loc->lat || !$item->loc->long){
+                    //         $coordinates = $this->helper->getCoordinates($item->venue);
+                    //         $this->helper->setCoordinates($item->_qname, $coordinates['lat'], $coordinates['lng'], $coordinates['accuracy']);
+                    //     }
+                    // }
 
 
                     if($item->suggestedAccommodation){
@@ -136,23 +154,19 @@ class CloudCmsParser
                     }  
 
                     if($item->rulesAndRegulations){
-                        $file = CC::nodes()->getFile($item->rulesAndRegulations->title, "path/documents/rules-and-regulations/");
-                        $item->rulesAndRegulations = $file->fileUrl.'?v='.$item->_system->changeset;
+                        $item->rulesAndRegulations = $this->getFile($item->rulesAndRegulations->id, $item->_system->changeset);
                     }
 
                     if($item->programme){
-                        $file = CC::nodes()->getFile($item->programme->title, "path/documents/programme/");
-                        $item->programme = $file->fileUrl.'?v='.$item->_system->changeset;
+                        $item->programme = $this->getFile($item->programme->id, $item->_system->changeset);
                     }
 
                     if($item->practicalInfo){
-                        $file = CC::nodes()->getFile($item->practicalInfo->title, "path/documents/practical_info/");
-                        $item->practicalInfo = $file->fileUrl.'?v='.$item->_system->changeset;
+                        $item->practicalInfo = $this->getFile($item->practicalInfo->id, $item->_system->changeset);
                     }
 
                     if($item->disclosure){
-                        $file = CC::nodes()->getFile($item->disclosure->title, "path/documents/disclosures/");
-                        $item->disclosure = $file->fileUrl.'?v='.$item->_system->changeset;
+                        $item->disclosure = $this->getFile($item->disclosure->id, $item->_system->changeset);
                     }
 
                     // Video
@@ -166,9 +180,14 @@ class CloudCmsParser
                         $item->startDate = $this->date->ersDate($item->eventDate);
                         $item->endDate = $this->date->ersDate($item->eventEndDate);
                     } elseif($item->eventDate && !$item->eventEndDate){
-                        $item->eventDates = $this->date->ersDate($item->eventDate);
+                        $ersDateResult = $this->date->ersDate($item->eventDate);
+                        if($item->eventTime){
+                            $item->eventDates = $ersDateResult.' - '.$item->eventTime;
+                        }else{
+                            $item->eventDates = $ersDateResult;
+                        }
                         $item->startDateTimestamp = $this->date->toTimestamp($item->eventDate);
-                        $item->startDate = $item->eventDates;
+                        $item->startDate = $ersDateResult;
                         $item->endDate = false;
                     } else {
                         $item->eventDates = false;
@@ -217,6 +236,43 @@ class CloudCmsParser
             return $this->parsed; 
     }
 
+    public function parseDigest($items, $lead = false){
+        foreach ($items as $key => $i){
+            $item = array_replace_recursive($this->digestModel, $i);
+            //here we have a Laravel collection
+            $item = collect($item);
+            //We could cache the request?
+            //We create an object to simplify manipulations
+            $item = json_decode($item->toJson());
+            /** 
+            * Formating the properties
+            */
+            //we check if the article has been unpublished. If true we do not parse it
+            if(!$item->unPublished){
+                $item->title = $this->formatTitle($item->title);
+                // Markdown Fields
+                $item->lead = Markdown::parse($item->leadParagraph);
+
+                // Added fields to the model
+                $item->createdOn = isset($item->_system->created_on->timestamp) ? $this->date->ersDate($item->_system->created_on->timestamp) : false;
+                $item->modifiedOn = isset($item->_system->modified_on->timestamp) ? $this->date->ersDate($item->_system->modified_on->timestamp) : false;
+                $item->ms = $item->_system->modified_on->ms ?? false;   
+                $item->shortLead = $item->leadParagraph ? $this->truncate(strip_tags(Markdown::parse($item->leadParagraph)), 145) : false;
+                $item->hasRelatedArticles = $item->_statistics->{'ers:related-association'} ?? 0;
+                $item->hasAuthor = $item->_statistics->{'ers:author-association'} ?? 0;
+               
+                //removing empty arrays
+                foreach($item as $k => $v){
+                    if(empty($v)){
+                        $item->$k = false; 
+                    }
+                }
+                $this->parsed[$key] = $item;            
+            }
+        }
+        return $this->parsed; 
+    }
+
     protected function setTypeColor($type){
         if( $type == "ERS Course" || 
             $type == "ERS Online course" || 
@@ -231,6 +287,11 @@ class CloudCmsParser
 
         return "label-scientific";
 
+    }
+
+    protected function getFile($nodeId, $changeset){
+        $fileUrl = CC::nodes()->deploymentUrl.'/static?node='.$nodeId.'&v='.$changeset;
+        return $fileUrl;
     }
 
     protected function getDocuments($documents){

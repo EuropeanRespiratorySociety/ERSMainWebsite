@@ -4,12 +4,12 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/people/leadership/Geert_Verleden_square.jpg" class="img-circle">
-                  <p class="photo_caption">Head: Geert Verleden</p>
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Stefano-Elia.png" class="img-circle" width="120" height="120">
+                  <p class="photo_caption">Head: Stefano Elia</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/people/leadership/Stefano_Elia.JPG" class="img-circle">
-                  <p class="photo_caption">Secretary: Elia Stefano</p>
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Federica-Meloni-01.png" class="img-circle" width="120" height="120">
+                  <p class="photo_caption">Secretary: Federica Meloni</p>
                  
                 </div>
             </div>

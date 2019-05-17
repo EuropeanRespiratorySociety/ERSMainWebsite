@@ -7,7 +7,7 @@
                   <p class="photo_caption">Head: Raffaele Scala</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/people/leadership/Leo_Heunks.jpg" class="img-circle">
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Leo-Heunks.png" class="img-circle" width="120" height="120">
                   <p class="photo_caption">Secretary: Leo Heunks</p>
                  
                 </div>
@@ -29,8 +29,8 @@ The Assembly is comprised of the following two groups:
                     </div> 
                     <div class="card-content text-left">
                       <p>Group 02.01<br>
-                      Chair: Marcus Schultz<br>
-                      Secretary: Lígia Pires</p>
+                      Chair: Christian Karagiannidis<br>
+                      Secretary: Ignacio Martin-Loeches</p>
                     </div>
                     <div class="card-action clearfix">
                       <button data-toggle="modal" data-target="#md-acute-critical" type="button" class="btn btn-default pull-right">More</button>
