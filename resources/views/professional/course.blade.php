@@ -79,7 +79,7 @@
     <div class="col-md-6 lighter-grey-bg ers-course-info">
       <div class="header">
         <div class="clearfix notification">
-          @if($item->feeList->liveStreaming)
+          @if($item->feeList->liveStreaming || $item->feeList->liveStreamingNonErs)
             <p style="text-align:left;color:#d0043c;">
               <i style="font-size:26px;font-weight:bold;position:relative;top:5px;" class="s7-video"></i>
               <span>Live streaming will be available</span>
@@ -226,7 +226,16 @@
                     <span class="badge">&euro; {{ $item->feeList->liveStreaming}}</span>
                     <span>
                       <i style="font-size: 15px; position: relative; top: 3px;" class="s7-video"></i>
-                      Live stream
+                      Live stream ERS Members
+                    </span>
+                  </a>
+                @endif
+                @if($item->feeList->liveStreamingNonErs)
+                  <a href="javascript:void(0)" class="list-group-item cursor_default">
+                    <span class="badge">&euro; {{ $item->feeList->liveStreamingNonErs}}</span>
+                    <span>
+                      <i style="font-size: 15px; position: relative; top: 3px;" class="s7-video"></i>
+                      Live stream Non-ERS Members
                     </span>
                   </a>
                 @endif
@@ -234,7 +243,7 @@
                 <p style="margin: 15px 0;">The Member fee is applicable to active ERS and ESTS members at the time of registration.  The fee includes two nights’ accommodation.</p>
                 @endif
                 @if($item->earlybirdDeadline)
-                  <p>Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from a €50 discount on registration fees{{$item->feeList->liveStreaming ? ' (excluding live streaming)': '' }}.</p>
+                  <p>Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from a €50 discount on registration fees{{$item->feeList->liveStreaming || $item->feeList->liveStreamingNonErs ? ' (excluding live streaming)': '' }}.</p>
                 @endif
 
                 </div>
