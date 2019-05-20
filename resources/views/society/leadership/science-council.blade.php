@@ -20,9 +20,7 @@
 					<img src="https://cdn.ersnet.org/images/people/leadership/guy_brusselle.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>GUY BRUSSELLE</strong>
 		            Science Council Chair<br>
-		            <a href="http://old.ersnet.org/about-us/leadership/science-council.raw?task=callelement&amp;item_id=1057&amp;element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&amp;method=download" title="Download COI">Download COI</a>
 		            </p>
-
             </div>
 	        	<div class="col-md-4 xs-mb-15">
               <img src="https://cdn.ersnet.org/images/people/leadership/rory_morty.jpg" class="img-circle">
@@ -39,15 +37,11 @@
               <p class="photo_caption"><strong>Reinoud Gosens</strong>
                       Conference and Research Seminars Director<br>
             </div>
-                <div class="col-md-4 xs-mb-15">
-              <img src="https://cdn.ersnet.org/images/people/leadership/christopher_e_brightling.png" class="img-circle">
-                    <p class="photo_caption"><strong>Christopher E. Brightling</strong>
-                      Science Council Chair Elect<br>
-            </div>
               <div class="col-md-4 xs-mb-15">
                 <img src="https://cdn.ersnet.org/images/people/leadership/christopher_e_brightling.png" class="img-circle">
 		            <p class="photo_caption"><strong>Christopher E. Brightling</strong>
-		            CRC Director<br>
+								CRC Director<br>
+								Science Council Chair Elect<br>
             </div>
             <div class="col-md-4 xs-mb-15">
               <img src="https://cdn.ersnet.org/images/people/leadership/Maarten-van-den-Berge.png" class="img-circle">
