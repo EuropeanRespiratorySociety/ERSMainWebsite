@@ -16,7 +16,8 @@
     @endif
       <div class="top-box" @if(isset($items['mainNews']->highResImage))style="background-image: url('{{$items['mainNews']->highResImage}}');background-position: center {{$items['mainNews']->imageAlignment}}" @endif>
         @if($items['mainNews']->slug !== "early-bird-registration-is-open-for-the-ers-international-congress-2018-")
-          <div class="subject">
+        {{-- position:sticky to put blue box in bottom --}}
+          <div class="subject"> 
             <div class="text-center">
               <em>{{$items['mainNews']->title}}</em>
               @if($items['mainNews']->doNotDisplayCreatedOnOnHomepage != true)
