@@ -261,7 +261,7 @@
             <p><a data-toggle="modal" data-target="#md-travel_info" type="button" class="cursor_pointer">Travel Info</a></p>
             @endif
             @if($item->registerButton->link && !$item->fullyBooked)
-            <p>Registering for someone else ? Contact {!! Html::mailto('sandy.borlat@ersnet.org', 'Sandy Borlat') !!}</p>
+            <p>Registering for someone else ? Contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!}</p>
             @if(strpos($item->registerButton->link, '@'))
                 <a href="{{'mailto:'.$item->registerButton->link}}" class="btn btn-primary tab-register-bt">
                   {{ $item->registerButton->text or Register}}
@@ -273,7 +273,7 @@
             @endif
             @endif
             @if($item->fullyBooked)
-              <p>Contact {!! Html::mailto('education@ersnet.org', 'education@ersnet.org') !!} to be added to the waiting list.</p>
+              <p>Contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!} to be added to the waiting list.</p>
               <a href="javascript:void(0)" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
             @endif
             </div>
