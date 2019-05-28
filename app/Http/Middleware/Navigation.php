@@ -136,6 +136,8 @@ class Navigation
                 // $menu->congressAndEvents->add('Past International Congresses','congress-and-events/past-international-congresses');
                 $menu->congressAndEvents->add('Event endorsement','congress-and-events/external-events-endorsement')
                 ->link->attr(array('class' => 'ga-nav-congress-and-events'));
+                $menu->congressAndEvents->add('Respiratory Failure and Mechanical Ventilation Conference','congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference')
+                ->link->attr(array('class' => 'ga-nav-congress-and-events'));
             $menu->add('Publications','#publications')
                                             ->link->attr(array(
                                                 'class' => "ga-navigation"));

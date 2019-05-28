@@ -109,6 +109,7 @@ Route::group(['prefix' => 'congress-and-events'], function () {
     Route::get('ers-2018', 'LscController@paris');
     Route::get('ers-respiratory-updates', 'LscController@respiratoryUpdate');
     Route::get('ers-satellite', 'LscController@ersSatellite');
+    Route::get('ers-respiratory-failure-and-mechanical-ventilation-conference', 'RfmvController@index');
     Route::get('/{slug}', 'GeneralController@show');
 });
 
