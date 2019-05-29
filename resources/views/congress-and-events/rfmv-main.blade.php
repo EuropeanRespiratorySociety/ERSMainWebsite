@@ -25,7 +25,32 @@
                   {!! $item->body !!}
                 </div>
             </div>
-
+            <div class="row row_event">
+                @foreach ($relatedItems as $relatedItem)
+                    <div class="col-md-4 isotope">
+                        <div class="card card-event">
+                            <div class="card-content">
+                                <h3 class="title">   
+                                    @if($relatedItem->uri) 
+                                      <a href="{{url($relatedItem->uri)}}">{{ $relatedItem->title }}</a>
+                                    @elseif($item->url)
+                                      <a href="{{url($relatedItem->url)}}">{{ $relatedItem->title }}</a>                             
+                                    @else
+                                      {{ $relatedItem->title }}
+                                    @endif  
+                                    </h3>
+                            </div>
+                            <div class="card-action clearfix">
+                                    @if($relatedItem->uri) 
+                                      <a href="{{url($relatedItem->uri)}}" class="btn btn-register">more</a>
+                                    @elseif($item->url)
+                                      <a href="{{url($relatedItem->url)}}" class="btn btn-register">more</a>                     
+                                    @endif
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
             <div class="main-content">
                 <div class="page-head"><h4>Venue information:</h4></div>
                   <div class="col-md-7 center-block lead text-left">

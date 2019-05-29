@@ -14,6 +14,9 @@ model:
     eventLocation: false
     leadParagraph: false
     body: false
+    body2: false
+    body3: false
+    body4: false
     references: false
     articleOneColumn: false
     displayModifiedOnDate: false
