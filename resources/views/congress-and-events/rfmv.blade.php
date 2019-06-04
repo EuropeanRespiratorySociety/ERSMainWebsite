@@ -9,7 +9,11 @@
               )) 
 @stop()
 @section('content')
-
+<style>
+.alert-mobile-position div.col-xs-12 {
+  text-align: center;
+}
+</style>
 
 <div class="ers-content">
   	<div id="fullpage">
@@ -26,16 +30,17 @@
               {{-- <p>View <a href="congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference">all RF&MV</a></p>  
               <div class="page-head"><h2>{{$item->title}}</h2></div> --}}
               @if($item->registerButton->link)
-                <div role="alert" class="alert alert-info alert-dismissible center-block col-md-5 col-xs-12">
-                  <div class="row text-center" style="height: 80px; position: relative;">
-                    <div class="col-md-8 col-xs-12 ">
-                      <div style="position: absolute; top: 50%; -webkit-transform : translateY(-50%); transform : translateY(-50%);">
-                        <span class="icon s7-info"></span><span style="font-size: 18px;">{{ $item->registerButton->bannerText }}</span>
-                      </div>
+                <div role="alert" class="alert alert-info alert-dismissible alert-mobile-position center-block col-md-7 col-xs-12" style="margin-bottom: 10px;">
+                  <div class="row ">
+                    <div class="col-md-8 col-xs-12 text-left">
+                      <span class="icon s7-info"></span><span style="font-size: 18px;">{{ $item->registerButton->bannerText }}</span>
                     </div>
-                    <div class="col-md-4 col-xs-12">
-                      <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
-                          {{ $item->registerButton->text or Register}}</a>
+                    <div class="col-md-4 col-xs-12" >
+                      <div style="font-family:DinPro,sans-serif;font-size: 18px;">
+                      <a href="{{$item->registerButton->link}}" target="new_blank" style="color: #FFF;">
+                          {{ $item->registerButton->text or Register}}
+                      </a>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -62,19 +67,21 @@
                 </a>
               </div>
                 @endif
-                @if($item->programme)  
-                <div class="col-md-7 center-block lead text-left">
-                  <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary text-left">
-                    <span class="icon s7-map" style="font-size: 24px;"></span>
-                    {{$item->programmeButtonText}} 
-                  </a>
-                </div>
-                @endif
-                @if($item->externalLink->link)
-                <div class="col-md-7 center-block lead text-left">
-                  <a href="{{$item->externalLink->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
-                      {{ $item->externalLink->text}}
-                  </a>
+                @if($item->programme)
+                <div class="col-md-7 col-xs-12 row center-block" style="margin-bottom: 30px;">
+                  <div class="col-lg-6 col-md-12 col-xs-12 text-center" style="margin-bottom: 20px;">
+                    <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary text-left">
+                      <span class="icon s7-map" style="font-size: 24px;"></span>
+                      {{$item->programmeButtonText}} 
+                    </a>
+                  </div>
+                  @endif
+                  @if($item->externalLink->link)
+                  <div class="col-lg-6 col-md-12 col-xs-12 text-center">
+                    <a href="{{$item->externalLink->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
+                        {{ $item->externalLink->text}}
+                    </a>
+                  </div>
                 </div>
                 @endif
                 @if($item->body2)
@@ -96,44 +103,45 @@
                 <div class="row row_event">
                     @foreach ($relatedItems as $relatedItem)
                         <div class="col-md-4 isotope">
-                            <div class="card card-event">
-
-                                <div class="card-image"
-                                @if($relatedItem->image)
-                                    style="max-height:300px;
-                                        @if($relatedItem->imageSize)
-                                            @if($relatedItem->imageSize == 'large') height:300px; @else height:150px; @endif
-                                        @else height:150px; @endif
-                                        @if($relatedItem->itemImageBackgroundSize)
-                                            background-size: {{$relatedItem->itemImageBackgroundSize}};
-                                        @else
+                          <div class="card card-event">
+                            <div class="card-image"
+                              @if($relatedItem->highResImage)
+                                style="max-height:300px;
+                                  @if($relatedItem->imageSize)
+                                  @if($relatedItem->imageSize == 'large') height:300px; @else height:150px; @endif
+                                    @else height:150px; 
+                                  @endif
+                                  @if($relatedItem->itemImageBackgroundSize)
+                                    background-size: {{$relatedItem->itemImageBackgroundSize}};
+                                    @else
                                             background-size:100%;
-                                        @endif
-                                        background-repeat: no-repeat; 
-                                        background-image: url('{{ $relatedItem->image}}'); 
-                                        background-position: center {{$relatedItem->itemImageAlignment or center }};"
-                                @endif style="height:50px;"  >
+                                  @endif
+                                  background-repeat: no-repeat; 
+                                  background-image: url('{{ $relatedItem->highResImage}}'); 
+                                  background-position: center {{$relatedItem->itemImageAlignment or center }};"
+                                  @endif
+                                  style="height:50px;"  >
                             </div>
-                                <div class="card-content">
+                            <div class="card-content">
                                     <h3 class="title">   
-                                        @if($relatedItem->uri) 
-                                          <a href="{{url($relatedItem->uri)}}">{{ $relatedItem->title }}</a>
-                                        @elseif($item->url)
-                                          <a href="{{url($relatedItem->url)}}">{{ $relatedItem->title }}</a>                             
-                                        @else
-                                          {{ $relatedItem->title }}
-                                        @endif  
-                                        </h3>
-                                        <div class="lead-card">{!! $relatedItem->lead !!}</div>
+                                      @if($relatedItem->uri) 
+                                        <a href="{{url($relatedItem->uri)}}">{{ $relatedItem->title }}</a>
+                                      @elseif($item->url)
+                                        <a href="{{url($relatedItem->url)}}">{{ $relatedItem->title }}</a>
+                                      @else
+                                        {{ $relatedItem->title }}
+                                      @endif  
+                                    </h3>
+                                    <div class="lead-card">{!! $relatedItem->lead !!}</div>
                                 </div>
                                 <div class="card-action clearfix">
-                                        @if($relatedItem->uri) 
-                                          <a href="{{url($relatedItem->uri)}}" class="btn btn-register">more</a>
-                                        @elseif($item->url)
-                                          <a href="{{url($relatedItem->url)}}" class="btn btn-register">more</a>                     
-                                        @endif
+                                  @if($relatedItem->uri) 
+                                    <a href="{{url($relatedItem->uri)}}" class="btn btn-register">more</a>
+                                  @elseif($item->url)
+                                    <a href="{{url($relatedItem->url)}}" class="btn btn-register">more</a>                     
+                                  @endif
                                 </div>
-                            </div>
+                           </div>
                         </div>
                     @endforeach
                 </div>

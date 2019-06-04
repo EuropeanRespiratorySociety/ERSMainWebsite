@@ -9,8 +9,6 @@
               )) 
 @stop()
 @section('content')
-
-
 <div class="ers-content">
   <div id="fullpage">
     <div class="section fp-auto-height">
@@ -34,14 +32,17 @@
             {!! $item->body !!}
           </div>
 
-  
+            @if($relatedItems)
             <div class="col-md-12 row row_event" style="padding-top: 30px;">
                 @foreach ($relatedItems as $relatedItem)
                     <div class="col-md-4 isotope">
                       <div class="card card-event">
-                        <div class="card-image">
-    
-                        </div>
+                        @if($relatedItem->highResImage)
+                          <div class="card-image" style="height: 150px;background-repeat: no-repeat; background-image: url('{{$relatedItem->highResImage}}'); 
+                              background-position: center; background-size:100%;">
+                          </div>
+                        @endif
+
                         <div class="card-content">
                           <h3 class="title">
                               @if($relatedItem->uri) 
@@ -64,15 +65,12 @@
                     </div>
                 @endforeach
             </div>
+            @endif
         </div>
 
         <div class="main-content" style="background: #f1f1f1; padding-bottom: 40px;">
           <div class="page-head"><h3>Venue information:</h3></div>
-            <div class="col-md-7 center-block lead text-left" style="
-            background: #fff;
-            padding: 30px;
-            border: 1px solid #eee;
-        ">
+            <div class="col-md-7 center-block lead text-left" style="background: #fff; padding: 30px; border: 1px solid #eee;">
               <p>
                   @if($item->venue->info){!!$item->venue->info!!}@endif
                   @if($item->venue->url)
@@ -107,7 +105,7 @@
         </div>
         <div class="row">
           @if($item->loc->lat && $item->loc->long)
-            <div id="map"></div>
+            <div id="map" style="height: 400px;"></div>
           @endif
         </div>
     </div>
