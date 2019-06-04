@@ -29,6 +29,7 @@ class RfmvController extends Controller
     if(!$item[0]->url || !$item[0]->uri){
         $this->CC->setCanonical($item[0]->_qname);
     }
+    $params['relatedItems'] = false;
     if($item[0]->hasRelatedArticles > 0){
         $related = $this->CC->getOutgoingAssociationSorted($item[0]->_qname, 'ers:related-association');
         $relatedItems = $this->CC->parseItems($related['rows']);

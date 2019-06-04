@@ -24,6 +24,7 @@
             <div class="col-md-7 center-block lead text-left">
               {!! $item->body !!}
             </div>
+            @if($relatedItems)
             <div class="col-md-12 row row_event" style="padding-top: 30px;">
                 @foreach ($relatedItems as $relatedItem)
                     <div class="col-md-4 isotope">
@@ -53,6 +54,7 @@
                     </div>
                 @endforeach
             </div>
+            @endif
         </div>
 
         <div class="main-content" style="background: #f1f1f1; padding-bottom: 40px;">
