@@ -22,16 +22,9 @@
             <div class="main-content">
               <p>View <a href="congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference">all RF&MV</a></p>  
               <div class="page-head"><h2>{{$item->title}}</h2></div>
-              @if($item->abstracts->applyButtonUrl)
-              {{ $item->abstracts->text }}
-              <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
-                    {{ $item->registerButton->text or Register}}
-              </a>
-            </p>
-            @endif
               @if($item->registerButton->link)
               <p>
-                    Registration is now open
+                  {{ $item->registerButton->bannerText }}
               <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
                     {{ $item->registerButton->text or Register}}
               </a>
