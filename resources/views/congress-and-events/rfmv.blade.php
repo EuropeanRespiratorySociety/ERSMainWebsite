@@ -18,18 +18,36 @@
             <div class="top-box" style="height: 400px; background-image: url('{{$item->highResImage}}'); background-position: center {{$item->imageAlignment}}">
             </div>
             @endif
-
+            <div style="box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);box-sizing: border-box;padding-bottom: 30px;">
+                <div class="page-head" style="margin-bottom: 15px;"><h2>{{$item->title}}</h2></div>
+                <p>View <a href="congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference">all RF&MV</a></p>
+            </div>
             <div class="main-content">
-              <p>View <a href="congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference">all RF&MV</a></p>  
-              <div class="page-head"><h2>{{$item->title}}</h2></div>
+              {{-- <p>View <a href="congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference">all RF&MV</a></p>  
+              <div class="page-head"><h2>{{$item->title}}</h2></div> --}}
               @if($item->registerButton->link)
+                <div role="alert" class="alert alert-info alert-dismissible center-block col-md-5 col-xs-12">
+                  <div class="row text-center" style="height: 80px; position: relative;">
+                    <div class="col-md-8 col-xs-12 ">
+                      <div style="position: absolute; top: 50%; -webkit-transform : translateY(-50%); transform : translateY(-50%);">
+                        <span class="icon s7-info"></span><span style="font-size: 18px;">{{ $item->registerButton->bannerText }}</span>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                      <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
+                          {{ $item->registerButton->text or Register}}</a>
+                    </div>
+                  </div>
+                </div>
+              @endif
+              {{-- @if($item->registerButton->link)
               <p>
                   {{ $item->registerButton->bannerText }}
               <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
                     {{ $item->registerButton->text or Register}}
               </a>
             </p>
-            @endif
+            @endif --}}
               @if($item->earlybirdDeadline)
               <p>Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from a €50 discount on registration fees.</p>
             @endif

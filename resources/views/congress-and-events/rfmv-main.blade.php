@@ -18,12 +18,23 @@
         <div class="top-box" style="height: 400px; background-image: url('{{$item->highResImage}}'); background-position: center {{$item->imageAlignment}}">
         </div>
         @endif
-
         <div class="main-content">
-          <div class="page-head"><h2>{{$item->title}}</h2></div>
-            <div class="col-md-7 center-block lead text-left">
-              {!! $item->body !!}
-            </div>
+          <div class="page-head" style="margin-bottom: 0px;"><h2>{{$item->title}}</h2></div>
+          <h3 class="text-center clearfix date-venue" style="font-family:DinPro,sans-serif;font-size: 21px;margin-bottom: 20px;">
+            {{$item->eventDates}} @if(isset($item->eventLocation)){{$item->eventLocation}}</a>@endif
+          </h3>
+          @if($item->registerButton->link)
+          <p style="margin-bottom: 60px;">
+            <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
+                  {{ $item->registerButton->text or Register}}
+            </a>
+          </p>
+          @endif  
+          <div class="col-md-7 center-block lead text-left">
+            {!! $item->body !!}
+          </div>
+
+  
             <div class="col-md-12 row row_event" style="padding-top: 30px;">
                 @foreach ($relatedItems as $relatedItem)
                     <div class="col-md-4 isotope">
