@@ -239,12 +239,6 @@
       </div>
       <div class="row">
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Laura Montangero</strong>
-            Senior Coordinator<br>
-            T +41 21 213 01 75<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Soraya Barazin</strong>
             Senior Coordinator<br>
             T +41 21 213 01 72<br>
@@ -267,7 +261,13 @@
             Assistant<br>
             T +41 21 213 01 86<br>
             </p>
-        </div>        
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>Emma Favrod</strong>
+            Assistant<br>
+            T +41 21 213 01 75<br>
+            </p>
+        </div>
       </div>
     </div>
     </div>
