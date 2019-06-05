@@ -9,6 +9,41 @@
               )) 
 @stop()
 @section('content')
+
+<style>
+  .alert-mobile-position span.banner-text {
+    display: block;
+    width: auto;
+    line-height: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .alert-mobile-position span.banner-link {
+    display: block;
+    width: auto;
+    text-align: center;
+    text-transform: uppercase;
+    }
+  
+  
+  
+  @media screen and (min-width: 1024px){
+    .alert-mobile-position span.banner-text {
+      display: inline-block;
+      line-height: 43px;
+      margin-bottom: 0px;
+    }
+  
+    .alert-mobile-position span.banner-link {
+    display: block;
+    width: auto;
+    float: right;
+    text-transform: uppercase;
+    }
+  }
+  </style>
+
 <div class="ers-content">
   <div id="fullpage">
     <div class="section fp-auto-height">
@@ -21,14 +56,31 @@
           <h3 class="text-center clearfix date-venue" style="font-family:DinPro,sans-serif;font-size: 21px;margin-bottom: 20px;">
             {{$item->eventDates}} @if(isset($item->eventLocation)){{$item->eventLocation}}</a>@endif
           </h3>
+
           @if($item->registerButton->link)
+          <div role="alert" class="alert alert-info alert-dismissible alert-mobile-position center-block col-md-5 col-xs-12" style="margin-bottom: 10px; padding: 10px 18px;">
+            <div class="row">
+              <div class="col-md-12 col-xs-12 text-left">
+                <span class="banner-text" style="font-size: 16px;">{{ $item->registerButton->bannerText }}</span>
+                <span class="banner-link" style="font-family:DinPro,sans-serif;font-size: 16px;background-color: #FFF; padding: 10px;border-radius: 3px;">
+                  <a href="{{$item->registerButton->link}}" target="new_blank" style="color: #116FC3;">
+                      {{ $item->registerButton->text or Register}}
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        @endif
+
+
+          {{-- @if($item->registerButton->link)
           <p style="margin-bottom: 60px;">
             <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
                   {{ $item->registerButton->text or Register}}
             </a>
           </p>
-          @endif  
-          <div class="col-md-7 center-block lead text-left">
+          @endif --}}
+          <div class="col-md-7 center-block lead text-left" style="margin-top: 50px;">
             {!! $item->body !!}
           </div>
 

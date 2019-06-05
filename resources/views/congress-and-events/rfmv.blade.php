@@ -10,8 +10,40 @@
 @stop()
 @section('content')
 <style>
-.alert-mobile-position div.col-xs-12 {
+.alert-mobile-position span.banner-text {
+  display: block;
+  width: auto;
+  line-height: 22px;
+  margin-bottom: 10px;
   text-align: center;
+}
+
+.alert-mobile-position span.banner-link {
+  display: block;
+  width: auto;
+  text-align: center;
+  text-transform: uppercase;
+  }
+
+img[alt=float]{
+  float: left;
+  width: 150px;
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 1024px){
+  .alert-mobile-position span.banner-text {
+    display: inline-block;
+    line-height: 43px;
+    margin-bottom: 0px;
+  }
+
+  .alert-mobile-position span.banner-link {
+  display: block;
+  width: auto;
+  float: right;
+  text-transform: uppercase;
+  }
 }
 </style>
 
@@ -30,17 +62,15 @@
               {{-- <p>View <a href="congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference">all RF&MV</a></p>  
               <div class="page-head"><h2>{{$item->title}}</h2></div> --}}
               @if($item->registerButton->link)
-                <div role="alert" class="alert alert-info alert-dismissible alert-mobile-position center-block col-md-7 col-xs-12" style="margin-bottom: 10px;">
+                <div role="alert" class="alert alert-info alert-dismissible alert-mobile-position center-block col-md-7 col-xs-12" style="margin-bottom: 10px;padding: 10px 18px;">
                   <div class="row ">
-                    <div class="col-md-8 col-xs-12 text-left">
-                      <span class="icon s7-info"></span><span style="font-size: 18px;">{{ $item->registerButton->bannerText }}</span>
-                    </div>
-                    <div class="col-md-4 col-xs-12" >
-                      <div style="font-family:DinPro,sans-serif;font-size: 18px;">
-                      <a href="{{$item->registerButton->link}}" target="new_blank" style="color: #FFF;">
-                          {{ $item->registerButton->text or Register}}
-                      </a>
-                    </div>
+                    <div class="col-md-12 col-xs-12 text-left">
+                      <span class="banner-text" style="font-size: 16px;">{{ $item->registerButton->bannerText }}</span>
+                      <span class="banner-link" style="font-family:DinPro,sans-serif;font-size: 16px;background-color: #FFF; padding: 10px;border-radius: 3px;">
+                        <a href="{{$item->registerButton->link}}" target="new_blank" style="color: #116FC3;">
+                            {{ $item->registerButton->text or Register}}
+                        </a>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -148,7 +178,7 @@
                 @endif  
                 @if($item->venue->postalCode || $item->venue->city || $item->venue->country)
                 <div class="main-content">
-                    <div class="page-head"><h4>Venue information:</h4></div>
+                    <div class="page-head"><h3>Venue information:</h3></div>
                       <div class="col-md-7 center-block lead text-left">
                         <p>
                             @if($item->venue->info){!!$item->venue->info!!}@endif
