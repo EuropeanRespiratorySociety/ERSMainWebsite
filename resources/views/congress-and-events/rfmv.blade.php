@@ -10,6 +10,15 @@
 @stop()
 @section('content')
 <style>
+  table{
+    margin-top: 15px;
+  }
+  table thead {
+    font-size: 15px;
+  }
+  table td {
+    font-size: 16px;
+  }
 .alert-mobile-position span.banner-text {
   display: block;
   width: auto;
@@ -27,7 +36,7 @@
 
 img[alt=float]{
   float: left;
-  width: 150px;
+  width: 130px;
   margin-right: 20px;
 }
 
@@ -62,7 +71,7 @@ img[alt=float]{
               {{-- <p>View <a href="congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference">all RF&MV</a></p>  
               <div class="page-head"><h2>{{$item->title}}</h2></div> --}}
               @if($item->registerButton->link)
-                <div role="alert" class="alert alert-info alert-dismissible alert-mobile-position center-block col-md-7 col-xs-12" style="margin-bottom: 10px;padding: 10px 18px;">
+                <div role="alert" class="alert alert-info alert-dismissible alert-mobile-position center-block col-md-8 col-xs-12" style="margin-bottom: 10px;padding: 10px 18px;">
                   <div class="row ">
                     <div class="col-md-12 col-xs-12 text-left">
                       <span class="banner-text" style="font-size: 16px;">{{ $item->registerButton->bannerText }}</span>
@@ -86,11 +95,11 @@ img[alt=float]{
               @if($item->earlybirdDeadline)
               <p>Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from a €50 discount on registration fees.</p>
             @endif
-                <div class="col-md-7 center-block lead text-left">
+                <div class="col-md-8 center-block lead text-left">
                   {!! $item->body !!}
                 </div>
                 @if($item->practicalInfo)  
-                <div class="col-md-7 center-block lead text-left">
+                <div class="col-md-8 center-block lead text-left">
                 <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary text-left bt-practicalInfo">
                   <span class="icon s7-info" style="font-size: 24px;"></span>
                   {{$item->practicalInfoButton ? $item->practicalInfoButton : 'Practical Info'}}
@@ -115,17 +124,17 @@ img[alt=float]{
                 </div>
                 @endif
                 @if($item->body2)
-                <div class="col-md-7 center-block lead text-left">
+                <div class="col-md-8 center-block lead text-left">
                   {!! $item->body2 !!}
                 </div>
                 @endif
                 @if($item->body3)
-                <div class="col-md-7 center-block lead text-left">
+                <div class="col-md-8 center-block lead text-left">
                   {!! $item->body3 !!}
                 </div>
                 @endif
                 @if($item->body4)
-                <div class="col-md-7 center-block lead text-left">
+                <div class="col-md-8 center-block lead text-left">
                   {!! $item->body4 !!}
                 </div>
                 @endif
@@ -151,6 +160,9 @@ img[alt=float]{
                                   background-position: center {{$relatedItem->itemImageAlignment or center }};"
                                   @endif
                                   style="height:50px;"  >
+                                  @if($relatedItem->registerButton->bannerText)
+                                  <span class="label label-danger">Submit your abstract now!</span>
+                                  @endif
                             </div>
                             <div class="card-content">
                                     <h3 class="title">   
@@ -179,7 +191,7 @@ img[alt=float]{
                 @if($item->venue->postalCode || $item->venue->city || $item->venue->country)
                 <div class="main-content">
                     <div class="page-head"><h3>Venue information:</h3></div>
-                      <div class="col-md-7 center-block lead text-left">
+                      <div class="col-md-8 center-block lead text-left">
                         <p>
                             @if($item->venue->info){!!$item->venue->info!!}@endif
                             @if($item->venue->url)
