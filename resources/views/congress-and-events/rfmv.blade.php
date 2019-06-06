@@ -40,6 +40,11 @@ img[alt=float]{
   margin-right: 20px;
 }
 
+img[alt=float-rfmv-sponsor]{
+  float: left;
+  width: 170px;
+  margin-right: 20px;
+}
 @media screen and (min-width: 1024px){
   .alert-mobile-position span.banner-text {
     display: inline-block;
