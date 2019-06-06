@@ -130,9 +130,9 @@ img[alt=float]{
                 </div>
                 @endif
                 @if($relatedItems)
-                <div class="row row_event">
+                <div class="row row_event col-md-offset-2" style="margin-bottom: 50px;">
                     @foreach ($relatedItems as $relatedItem)
-                        <div class="col-md-4 isotope">
+                        <div class="col-md-5 isotope ">
                           <div class="card card-event">
                             <div class="card-image"
                               @if($relatedItem->highResImage)
@@ -144,7 +144,7 @@ img[alt=float]{
                                   @if($relatedItem->itemImageBackgroundSize)
                                     background-size: {{$relatedItem->itemImageBackgroundSize}};
                                     @else
-                                            background-size:100%;
+                                    background-size:100%;
                                   @endif
                                   background-repeat: no-repeat; 
                                   background-image: url('{{ $relatedItem->highResImage}}'); 
