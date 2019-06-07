@@ -71,15 +71,6 @@
             </div>
           </div>
         @endif
-
-
-          {{-- @if($item->registerButton->link)
-          <p style="margin-bottom: 60px;">
-            <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
-                  {{ $item->registerButton->text or Register}}
-            </a>
-          </p>
-          @endif --}}
           <div class="col-md-7 center-block lead text-left" style="margin-top: 50px;">
             {!! $item->body !!}
           </div>
@@ -148,9 +139,6 @@
                   @if($item->venue->postalCode){{$item->venue->postalCode}}@endif
                   @if($item->venue->city){{$item->venue->city}}@endif<br>
                   @if($item->venue->country){{$item->venue->country}}@endif
-                  {{-- @if($item->loc->lat && $item->loc->long)
-                      <div id="map"></div>
-                  @endif --}}
               </p>
             </div>
           </div>

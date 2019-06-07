@@ -73,8 +73,6 @@ img[alt=float-rfmv-sponsor]{
                 <p>View <a href="congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference">all RF&MV</a></p>
             </div>
             <div class="main-content">
-              {{-- <p>View <a href="congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference">all RF&MV</a></p>  
-              <div class="page-head"><h2>{{$item->title}}</h2></div> --}}
               @if($item->registerButton->link)
                 <div role="alert" class="alert alert-info alert-dismissible alert-mobile-position center-block col-md-8 col-xs-12" style="margin-bottom: 10px;padding: 10px 18px;">
                   <div class="row ">
@@ -89,14 +87,6 @@ img[alt=float-rfmv-sponsor]{
                   </div>
                 </div>
               @endif
-              {{-- @if($item->registerButton->link)
-              <p>
-                  {{ $item->registerButton->bannerText }}
-              <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
-                    {{ $item->registerButton->text or Register}}
-              </a>
-            </p>
-            @endif --}}
               @if($item->earlybirdDeadline)
               <p>Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from a €50 discount on registration fees.</p>
             @endif
@@ -119,8 +109,8 @@ img[alt=float-rfmv-sponsor]{
                       {{$item->programmeButtonText}} 
                     </a>
                   </div>
-                  @endif
-                  @if($item->externalLink->link)
+                @endif
+                @if($item->externalLink->link)
                   <div class="col-lg-6 col-md-12 col-xs-12 text-center">
                     <a href="{{$item->externalLink->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
                         {{ $item->externalLink->text}}
@@ -165,8 +155,8 @@ img[alt=float-rfmv-sponsor]{
                                   background-position: center {{$relatedItem->itemImageAlignment or center }};"
                                   @endif
                                   style="height:50px;"  >
-                                  @if($relatedItem->registerButton->bannerText)
-                                  <span class="label label-danger">Submit your abstract now!</span>
+                                  @if($relatedItem->registerButton->text)
+                                  <span class="label label-danger">{{$relatedItem->registerButton->text}}</span>
                                   @endif
                             </div>
                             <div class="card-content">
