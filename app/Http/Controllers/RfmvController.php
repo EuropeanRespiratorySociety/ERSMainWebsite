@@ -23,7 +23,7 @@ class RfmvController extends Controller
      */
   public function index()
   { 
-    $results = $this->CC->getItem('rfmv-main');
+    $results = $this->CC->getItem('ers-respiratory-failure-and-mechanical-ventilation-conference');
     $item = $this->CC->parseItems($results['rows']);
     $params['item'] =  (object) $item[0]; 
     if(!$item[0]->url || !$item[0]->uri){
@@ -36,7 +36,6 @@ class RfmvController extends Controller
         $params['relatedItems'] =  (object) $relatedItems;
     }
     return view('congress-and-events.rfmv-main')->with($params);    
-
   }
 
     /**
