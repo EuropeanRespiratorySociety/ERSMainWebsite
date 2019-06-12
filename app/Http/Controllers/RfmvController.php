@@ -55,8 +55,10 @@ class RfmvController extends Controller
         }
         if($item[0]->hasRelatedArticles > 0){
            $related = $this->CC->getOutgoingAssociationSorted($item[0]->_qname, 'ers:related-association');
-           $relatedItems = $this->CC->parseItems($related['rows']);
-           $params['relatedItems'] =  (object) $relatedItems;
+            if($related['total_rows'] > 0){
+                $relatedItems = $this->CC->parseItems($related['rows']);
+                $params['relatedItems'] =  (object) $relatedItems;
+            }
         }
         return view('congress-and-events.rfmv')->with($params); 
     }

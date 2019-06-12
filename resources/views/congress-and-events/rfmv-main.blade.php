@@ -70,7 +70,7 @@
               </div>
             </div>
           </div>
-        @endif
+          @endif
           <div class="col-md-7 center-block lead text-left" style="margin-top: 50px;">
             {!! $item->body !!}
           </div>

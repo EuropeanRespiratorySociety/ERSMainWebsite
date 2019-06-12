@@ -183,42 +183,46 @@ img[alt=float-rfmv-sponsor]{
                     @endforeach
                 </div>
                 @endif  
+
                 @if($item->venue->postalCode || $item->venue->city || $item->venue->country)
-                <div class="main-content">
-                    <div class="page-head"><h3>Venue information:</h3></div>
-                      <div class="col-md-8 center-block lead text-left">
-                        <p>
-                            @if($item->venue->info){!!$item->venue->info!!}@endif
-                            @if($item->venue->url)
-                              <a target="_blank" href="{{$item->venue->url}}">
-                            @endif 
-                              @if($item->venue->name){{$item->venue->name}}@endif
-                            @if($item->venue->url)
-                              </a>
-                            @endif
-                            <br/>
-                            @if($item->venue->phoneNumber)
-                              Phone: {{$item->venue->phoneNumber}}<br>
-                            @endif
-                            @if($item->venue->streetAddress)
-                              {{$item->venue->streetAddress}}<br>
-                            @endif
-                            @if($item->venue->streetAddress2)
-                              {{$item->venue->streetAddress2}}<br>
-                            @endif
-                            @if($item->venue->streetAddress3)
-                              {{$item->venue->streetAddress3}}<br>
-                            @endif
-                            @if($item->venue->postalCode){{$item->venue->postalCode}}@endif
-                            @if($item->venue->city){{$item->venue->city}}@endif<br>
-                            @if($item->venue->country){{$item->venue->country}}@endif
-                            @if($item->loc->lat && $item->loc->long)
-                                <div id="map"></div>
-                            @endif
-                          </p>
-                      </div>
+                <div class="main-content" >
+                  <div class="page-head"><h3>Venue information:</h3></div>
+                  <div class="col-md-8 center-block lead text-left">
+                      <p>
+                          @if($item->venue->info){!!$item->venue->info!!}@endif
+                          @if($item->venue->url)
+                            <a target="_blank" href="{{$item->venue->url}}">
+                          @endif 
+                            @if($item->venue->name){{$item->venue->name}}@endif
+                          @if($item->venue->url)
+                            </a>
+                          @endif
+                          <br/>
+                          @if($item->venue->phoneNumber)
+                            Phone: {{$item->venue->phoneNumber}}<br>
+                          @endif
+                          @if($item->venue->streetAddress)
+                            {{$item->venue->streetAddress}}<br>
+                          @endif
+                          @if($item->venue->streetAddress2)
+                            {{$item->venue->streetAddress2}}<br>
+                          @endif
+                          @if($item->venue->streetAddress3)
+                            {{$item->venue->streetAddress3}}<br>
+                          @endif
+                          @if($item->venue->postalCode){{$item->venue->postalCode}}@endif
+                          @if($item->venue->city){{$item->venue->city}}@endif<br>
+                          @if($item->venue->country){{$item->venue->country}}@endif
+                      </p>
+                    </div>
                   </div>
+                </div>
+                <div class="row">
+                  @if($item->loc->lat && $item->loc->long)
+                    <div id="map" style="height: 400px;"></div>
                   @endif
+                </div>
+                @endif 
             </div>
         </div>
     </div>
