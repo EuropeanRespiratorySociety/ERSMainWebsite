@@ -10,6 +10,11 @@
 @stop()
 @section('content')
 <style>
+  .marker-blue{
+    background: linear-gradient(transparent 5%, #c1e0ff 5%);
+    border-radius:2px;
+  }
+
   table{
     margin-top: 15px;
   }
@@ -88,7 +93,7 @@ img[alt=float-rfmv-sponsor]{
                 </div>
               @endif
               @if($item->earlybirdDeadline)
-              <p>Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from a €50 discount on registration fees.</p>
+              <p><span class="marker-blue">Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from reduced registration fees.</span></p>
             @endif
                 <div class="col-md-8 center-block lead text-left">
                   {!! $item->body !!}
