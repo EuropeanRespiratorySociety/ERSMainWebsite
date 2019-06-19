@@ -64,6 +64,15 @@ img[alt=float-rfmv-sponsor]{
   text-transform: uppercase;
   }
 }
+
+@media screen and (max-width: 480px){
+  .btn .icon{
+   display: none;
+  }
+}
+
+
+}
 </style>
 
 <div class="ers-content">
@@ -106,23 +115,24 @@ img[alt=float-rfmv-sponsor]{
                 </a>
               </div>
                 @endif
-                @if($item->programme)
-                <div class="col-md-7 col-xs-12 row center-block" style="margin-bottom: 30px;">
-                  <div class="col-lg-6 col-md-12 col-xs-12 text-center" style="margin-bottom: 20px;">
-                    <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary text-left">
+                @if($item->programme || $item->externalLink->link)
+                <div class="col-lg-10 col-md-7 col-xs-12 row center-block" style="margin-bottom: 30px;">
+                  <div class="col-lg-6 col-lg-offset-3 col-md-12 col-xs-12 text-center" style="margin-bottom: 20px;">
+                    @if($item->programme)
+                    <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary text-left" style="margin-bottom: 10px;">
                       <span class="icon s7-map" style="font-size: 24px;"></span>
                       {{$item->programmeButtonText}} 
                     </a>
+                    @endif
+                    @if($item->externalLink->link)
+                      <a href="{{$item->externalLink->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
+                          {{ $item->externalLink->text}}
+                      </a>
+                    @endif
+                   </div>
                   </div>
                 @endif
-                @if($item->externalLink->link)
-                  <div class="col-lg-6 col-md-12 col-xs-12 text-center">
-                    <a href="{{$item->externalLink->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
-                        {{ $item->externalLink->text}}
-                    </a>
-                  </div>
-                </div>
-                @endif
+                
                 @if($item->body2)
                 <div class="col-md-8 center-block lead text-left">
                   {!! $item->body2 !!}
