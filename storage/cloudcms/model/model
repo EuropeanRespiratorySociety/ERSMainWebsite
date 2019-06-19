@@ -14,6 +14,9 @@ model:
     eventLocation: false
     leadParagraph: false
     body: false
+    body2: false
+    body3: false
+    body4: false
     references: false
     articleOneColumn: false
     displayModifiedOnDate: false
@@ -58,7 +61,7 @@ model:
     venue: { name: false, url: false, streetAddress: false, streetAddress2: false, streetAddress3: false, city: false, postalCode: false, country: false, phoneNumber: false, info: false }
     ebusVenues: [{ name: false, url: false, streetAddress: false, streetAddress2: false, streetAddress3: false, city: false, postalCode: false, country: false, phoneNumber: false, info: false }]
     suggestedAccommodation: [{ name: false, url: false, streetAddress: false, streetAddress2: false, streetAddress3: false, city: false, postalCode: false, country: false, phoneNumber: false, info: false }]
-    registerButton: { link: false, text: false }
+    registerButton: { link: false, text: false, bannerText: false }
     externalLink: { link: false, text: false }
     contentLink: { link: false, text: false }
     bursaryApplication: { text: false, deadline: false, notificationOfResults: false, applyButtonUrl: false }
