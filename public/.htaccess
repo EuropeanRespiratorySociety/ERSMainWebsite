@@ -187,6 +187,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         # N
         Redirect 301 /ntmaward https://www.ersnet.org/professional-development/grants-and-sponsorships/medical-education-grant
         # R
+        Redirect 301 /rfmv https://www.ersnet.org/congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference
         Redirect 301 /research-seminar https://www.ersnet.org/research/research-seminars
         Redirect 301 /resp-update https://www.ersnet.org/congress-and-events/ers-respiratory-updates
         Redirect 301 /congress-and-events/ers-resppiratory-updates https://www.ersnet.org/congress-and-events/ers-respiratory-updates
