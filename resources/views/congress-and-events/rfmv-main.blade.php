@@ -52,8 +52,14 @@
         </div>
         @endif
         <div class="main-content">
-          <div class="page-head" style="margin-bottom: 0px;"><h2>{{$item->title}}</h2></div>
-          <h3 class="text-center clearfix date-venue" style="font-family:DinPro,sans-serif;font-size: 21px;margin-bottom: 20px;">
+          <div class="page-head" style="margin-bottom: 0px;">
+            <h2>{{$item->title}}</h2>
+            <h3 class="text-center clearfix date-venue" style="font-family:DinPro,sans-serif;font-size: 20px;color:#016fc4;margin-top:0;">
+              #RFMV2020
+            </h3>
+          </div>
+
+          <h3 class="text-center clearfix date-venue" style="font-family:DinPro,sans-serif;font-size: 20px;margin-bottom: 20px;margin-top: 35px;">
             {{$item->eventDates}} @if(isset($item->eventLocation)){{$item->eventLocation}}</a>@endif
           </h3>
 
