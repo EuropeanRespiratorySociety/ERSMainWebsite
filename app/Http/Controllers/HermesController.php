@@ -77,7 +77,7 @@ class HermesController extends Controller
      */
     public function ExamCommitteeAdult()
     { 
-        $results = $this->CC->getItem('examination-committee');
+        $results = $this->CC->getItem('examination-committee-adult');
         $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0]; 
 
@@ -105,7 +105,7 @@ class HermesController extends Controller
      */
     public function ExamCommitteePaediatric()
     { 
-        $results = $this->CC->getItem('examination-committee');
+        $results = $this->CC->getItem('examination-committee-paediatric');
         $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0]; 
 

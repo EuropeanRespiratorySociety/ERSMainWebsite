@@ -186,6 +186,11 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         # Redirect 301 /the-society/news/mobile https://www.ersnet.org/mobile
         # N
         Redirect 301 /ntmaward https://www.ersnet.org/professional-development/grants-and-sponsorships/medical-education-grant
+
+        # P
+        Redirect 301 /professional-development/hermes/paediatric/examination-committee https://www.ersnet.org/professional-development/hermes/paediatric/examination-committee-paediatric
+        Redirect 301 /professional-development/hermes/adult/examination-committee https://www.ersnet.org/professional-development/hermes/paediatric/examination-committee-adult
+
         # R
         Redirect 301 /rfmv https://www.ersnet.org/congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference
         Redirect 301 /research-seminar https://www.ersnet.org/research/research-seminars
