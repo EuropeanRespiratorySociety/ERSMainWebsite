@@ -26,26 +26,27 @@
         @if(isset($relatedItems))
             @include('partials.related-items', array('relatedItems' => $relatedItems)) 
         @endif
-    
+    @if($item->sponsors && $item->sponsors[0]->text)
     <h4 class="hidden-xs hidden-sm" style="margin: 20px 0 0 25px;text-align:left;">With the financial support of:</h4>
-    @foreach ($item->sponsors as $sponsor)
-    <div class="hidden-xs hidden-sm course-sponsor text-left" style="background:transparent;padding: 0 10px 0 26px;">
-        @if($sponsor->text)
-        <div class="course-sponsor-wrapper">
-            @if($sponsor->image)
-            <div class="course-sponsor-image col-md-12 col-xs-12 center-block" style="background:#fff;">
-                <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: center center; background-size: contain;"></p>
-            </div> 
-            @endif
-            {{--@if($sponsor->text)
-            <div class="course-sponsor-right  col-md-5 col-xs-5 pull-right">
-                <h4 class="text-left">{{$sponsor->text}}</h4>
-            </div>
-            @endif  --}}
-        </div>
-        @endif
-    </div>
-    @endforeach
+      @foreach ($item->sponsors as $sponsor)
+      <div class="hidden-xs hidden-sm course-sponsor text-left" style="background:transparent;padding: 0 10px 0 26px;">
+          @if($sponsor->text)
+          <div class="course-sponsor-wrapper">
+              @if($sponsor->image)
+              <div class="course-sponsor-image col-md-12 col-xs-12 center-block" style="background:#fff;">
+                  <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: center center; background-size: contain;"></p>
+              </div> 
+              @endif
+              {{--@if($sponsor->text)
+              <div class="course-sponsor-right  col-md-5 col-xs-5 pull-right">
+                  <h4 class="text-left">{{$sponsor->text}}</h4>
+              </div>
+              @endif  --}}
+          </div>
+          @endif
+      </div>
+      @endforeach
+    @endif
     </div>
 
     <div class="col-md-6 lighter-grey-bg">
@@ -78,7 +79,7 @@
         </div>
         <div class="col-md-6 text-right">
           
-            <a href="https://ers.box.com/s/9k7fof40vyurv8kkqg2j109vrn5sxpw" target="_blank" type="button" class="btn btn-light-primary text-left">
+            <a href="https://ers.box.com/s/9k7fof40vyurv8kkqg2j109vrn5sxpwj" target="_blank" type="button" class="btn btn-light-primary text-left">
               <span class="icon s7-map" style="font-size: 24px;"></span>
                {{$item->programmeButtonText ? $item->programmeButtonText : 'Programme' }}
             </a>
