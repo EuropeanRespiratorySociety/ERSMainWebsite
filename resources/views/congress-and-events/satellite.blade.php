@@ -64,12 +64,12 @@
         <!--<a href="javascript:void(0)"><span class="icon s7-angle-right pull-right" style="font-size: 24px;"></span></a>-->
         </h2>
       </div>
-      <div class="row">
+      {{-- <div class="row">
         <div class="col-md-9 center-block" style="margin-top: -40px; margin-bottom: 60px; padding: 0 20px;">
           <p class="text-danger" style="font-size:17px;line-height: 1.5em;">The recordings of the ERS Satellite sessions on <em>Advances in Precision Medicine in COPD and ILD</em> are now available.</p>
           <a href="https://www.ers-satellites.org/auth/"  target="_blank"class="btn btn-primary tab-register-bt">Watch now</a>
         </div>
-      </div>
+      </div> --}}
 
       <div class="row">
         <div class="col-md-6 text-left event-items-category">
@@ -78,7 +78,7 @@
         </div>
         <div class="col-md-6 text-right">
           
-            <a href="https://ers.box.com/shared/static/u9m4tlsio4mqzzurx0gi5lalj4cfse5b.pdf" target="_blank" type="button" class="btn btn-light-primary text-left">
+            <a href="https://ers.box.com/s/9k7fof40vyurv8kkqg2j109vrn5sxpw" target="_blank" type="button" class="btn btn-light-primary text-left">
               <span class="icon s7-map" style="font-size: 24px;"></span>
                {{$item->programmeButtonText ? $item->programmeButtonText : 'Programme' }}
             </a>
@@ -102,7 +102,7 @@
       <div class="article text-left">
         {!!$item->lead!!}
         <div class="videoWrapper" style="margin-top: 15px;">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/DIFq5Yl-f-k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/LcNkN-pAMWI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
           {!!$item->body!!}
       </div>

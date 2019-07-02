@@ -119,8 +119,8 @@ class Navigation
                // ->link->attr(array('class' => 'ga-nav-congress-and-events'));
                 $menu->congressAndEvents->add('ERS Respiratory Updates','congress-and-events/ers-respiratory-updates')
                 ->link->attr(array('class' => 'ga-nav-congress-and-events'));
-               // $menu->congressAndEvents->add('ERS Satellites','congress-and-events/ers-satellite')
-               // ->link->attr(array('class' => 'ga-nav-congress-and-events'));
+                $menu->congressAndEvents->add('ERS Satellites','congress-and-events/ers-satellite')
+                ->link->attr(array('class' => 'ga-nav-congress-and-events'));
                 //$menu->congressAndEvents->add('Paris 2018','congress-and-events/ers-2018');
                 $menu->congressAndEvents->add('The Lung Science Conference','congress-and-events/metabolic-alterations-in-lung-ageing-and-disease')
                 ->link->attr(array('class' => 'ga-nav-congress-and-events'));
