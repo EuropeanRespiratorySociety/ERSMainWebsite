@@ -176,6 +176,7 @@
             </div> --}}
           </div>
           <hr class="visible-xs visible-sm">
+          @if($item->sponsors && $item->sponsors[0]->text)
           <h4 class="visible-xs visible-sm" style="margin: 50px 0 0 25px;text-align:left;">With the financial support of:</h4>
           @foreach ($item->sponsors as $sponsor)
           <div class="visible-xs visible-sm course-sponsor text-left" style="background:transparent;padding: 0 10px 0 10px;">
@@ -195,6 +196,7 @@
               @endif
           </div>
           @endforeach
+          @endif
           <div class="nano-pane" style="display: block;"><div class="nano-slider" style="height: 50px; transform: translate(0px, 0px);"></div></div></div>        {{--
           <div id="venue" class="tab-pane active cont">
 
