@@ -89,8 +89,8 @@
       <div>
         
         <h2 class="article-title">
-          {{-- <i class="icon-ers icon" style="font-size:42px; color:#d0043c; position:relative; top:6px; right:12px;"></i>{{$item->title}} --}}
-          <img class="img-responsive" src="https://ers.box.com/shared/static/5ya4sr85d4ucuu25o8d6ewmvxujef3vf.jpg">
+          <i class="icon-ers icon" style="font-size:42px; color:#d0043c; position:relative; top:6px; right:12px;"></i>{{$item->title}}
+          {{-- <img class="img-responsive" src="https://ers.box.com/shared/static/5ya4sr85d4ucuu25o8d6ewmvxujef3vf.jpg"> --}}
         </h2>
       </div>
       @if($item->organisers)
