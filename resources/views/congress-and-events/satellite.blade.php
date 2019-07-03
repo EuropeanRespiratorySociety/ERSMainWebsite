@@ -73,22 +73,25 @@
       </div> --}}
 
       <div class="row">
-        <div class="col-md-6 text-left event-items-category">
+        {{-- <div class="col-md-6 text-left event-items-category">
           <p><em>ERS Satellites</em></p>
            View <a href="/congress-and-events/events-calendar">all events</a>
-        </div>
-        <div class="col-md-6 text-right">
+        </div> --}}
+        <div class="col-md-12 text-right">
           
             <a href="https://ers.box.com/s/9k7fof40vyurv8kkqg2j109vrn5sxpwj" target="_blank" type="button" class="btn btn-light-primary text-left">
               <span class="icon s7-map" style="font-size: 24px;"></span>
                {{$item->programmeButtonText ? $item->programmeButtonText : 'Programme' }}
             </a>
-          <p>This programme has been created by the European Respiratory Society and there has been no external influence on the content or choice of speakers.</p>
+          {{-- <p>This programme has been created by the European Respiratory Society and there has been no external influence on the content or choice of speakers.</p> --}}
         </div>
       </div>
       <div>
         
-        <h2 class="article-title"><i class="icon-ers icon" style="font-size:42px; color:#d0043c; position:relative; top:6px; right:12px;"></i>{{$item->title}}</h2>
+        <h2 class="article-title">
+          <i class="icon-ers icon" style="font-size:42px; color:#d0043c; position:relative; top:6px; right:12px;"></i>{{$item->title}}
+          {{-- <img class="img-responsive" src="https://ers.box.com/shared/static/5ya4sr85d4ucuu25o8d6ewmvxujef3vf.jpg"> --}}
+        </h2>
       </div>
       @if($item->organisers)
       <h5><b>Organisers :</b> {{$item->organisers}}</h5>
