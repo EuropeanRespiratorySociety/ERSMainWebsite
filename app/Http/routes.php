@@ -116,7 +116,9 @@ Route::group(['prefix' => 'congress-and-events'], function () {
 
 Route::group(['prefix' => 'professional-development'], function () {
     Route::get('courses', 'CourseController@index');
-    Route::get('courses/{slug}', 'CourseController@show');
+    Route::get('courses/{slug}/{template}', 'CourseController@show');
+    Route::get('thoracic-ultrasound-training-programme', 'TrainingProgrammeController@thoracicUltrasound');
+    Route::get('endobronchial-ultrasound-certified-training-programme', 'TrainingProgrammeController@endobronchialUltrasound');
     Route::get('spirometry-training-programme', 'SpirometryController@index');
     Route::get('spirometry-training-programme/{slug}', 'SpirometryController@show');
     Route::get('respiratory-digests', 'RespiratoryDigestController@index');
