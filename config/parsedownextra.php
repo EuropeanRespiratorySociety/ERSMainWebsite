@@ -9,7 +9,7 @@ return [
 				
 				'AutoFormat.RemoveEmpty'	=> true,
 				'HTML.Doctype'             	=> 'XHTML 1.0 Transitional',
-				'HTML.Allowed'				=> '*[class],*[id],h1,h2,h3,h4,h5,h6,div,b,strong,i,em,a[href|title|name],ul,ol,li,p,br,span,img[width|height|alt|src],code,pre,hr,sup,table,thead,tbody,tr,th,td,iframe[src|width|height|class|frameborder|style]',
+				'HTML.Allowed'				=> '*[class],*[id],h1,h2,h3,h4,h5,h6,div,b,strong,i,em,a[href|title|name],ul,ol,li,p,br,span,img[width|height|alt|src],code,pre,hr,sup,sub,table,thead,tbody,tr,th,td,iframe[src|width|height|class|frameborder|style]',
 				'HTML.Nofollow'				=> true,
 				'HTML.TargetBlank'			=> true,
 				"HTML.SafeIframe"          => true,
