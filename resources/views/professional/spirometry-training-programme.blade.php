@@ -39,7 +39,7 @@
       </div>
       <a name="spirometry-courses"></a>
       <div class="main-content" style="padding-top:0px;">
-          <h3 class="text-left" style="font-size:24px;font-family:'Amiri', 'serif';">Upcoming programmes 2018/2019</h3>
+          <h3 class="text-left" style="font-size:24px;font-family:'Amiri', 'serif';">Upcoming programmes 2019/2020</h3>
           <div class="row row_event " id="spirometry-programme" style="display: flex; flex-wrap: wrap;">
           </div>
       </div>
