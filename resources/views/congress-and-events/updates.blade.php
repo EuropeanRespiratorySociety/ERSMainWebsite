@@ -224,7 +224,9 @@
             @endif
             @if($item->registerButton->link && !$item->fullyBooked)
               <p>Registering for someone else ? Contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!}</p>
-              <a data-toggle="modal" data-target="#md-register" class="btn btn-primary tab-register-bt">Register</a>
+              <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
+                Register
+              </a>
             @endif
             @if($item->fullyBooked)
               <p>Please contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!} to be added to the waiting list.</p>
@@ -272,7 +274,7 @@
   @include('elements.modal.travel-info', array('item' => $item))  
   @include('elements.modal.technical-info', array('item' => $item))
 
-  <div id="md-register" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+  {{-- <div id="md-register" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
   <div class="modal-dialog">
     <div class="modal-content" style = "padding-bottom: 30px;">
       <div class="modal-header">
@@ -291,7 +293,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> --}}
 
 @stop()  
 {{--END Modal contents div--}}  
