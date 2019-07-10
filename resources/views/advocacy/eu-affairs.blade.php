@@ -175,6 +175,19 @@
                           </div>
                         </div><!-- 4th row close-->
 
+                        <div class="row publish-row">
+                          <div class="col-md-3 col-xs-6">
+                            <a href="https://ers.box.com/s/uiuf8lo7xtofqcm6sdayz8dizlptot2c" target="_blank">
+                              <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/Paris_Declaration.png">
+                              <p>Paris Declaration - <br />ENGLISH<br />
+                            </a>
+                            <a href="https://ers.box.com/s/4jp4nr247vglmyia1a5bn3ielvn2l0ta" target="_blank"><span>French</span></a><br />
+                            </p>
+                            </a>
+                          </div>
+                        </div><!-- 5th row close-->
+
+
 
 				        </div><!-- eu_a_2 close -->
                 <div id="eu_a_3" class="tab-pane">   
