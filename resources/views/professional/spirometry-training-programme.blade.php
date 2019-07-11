@@ -9,6 +9,15 @@
               )) 
 @stop()
 @section('content')
+
+<style>
+  img[alt="float130"] {
+    float: left;
+    width: 130px;
+    margin-right: 20px;
+  }
+</style>
+
 <div class="ers-content event-items-content article-items">
   <div class="row">
       <div class="{{ $item->flags->text ? 'col-md-9 light-grey-bg' : 'col-md-12 light-grey-bg'}}">
