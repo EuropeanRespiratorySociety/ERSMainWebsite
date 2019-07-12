@@ -170,7 +170,7 @@
                                 <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/HZ_Positionspapier_ENG.png">
                                 <p>The Health Impact of Air Pollution - ENGLISH<br />
                             </a>
-                            <a href="https://ers.app.box.com/file/434450380547" target="_blank"><span>German</span></a>
+                            <a href="https://ers.box.com/s/9z4s6ffoqvouv0w0cdw0oxb5vae352e0" target="_blank"><span>German</span></a>
                               </p>
                           </div>
                         </div><!-- 4th row close-->
