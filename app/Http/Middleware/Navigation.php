@@ -24,7 +24,7 @@ class Navigation
                     ->link->attr(array('class' => 'ga-nav-society'));
                     $menu->whoWeAre->add('Leadership and committees', 'the-society/who-we-are/leadership')
                         ->link->attr(array('class' => 'ga-nav-society'));
-                        $menu->leadershipAndCommittees->add('National Delegates', 'the-society/who-we-are/leadership/national-delegates')
+                        $menu->leadershipAndCommittees->add('CERS Members and Observers', 'the-society/who-we-are/leadership/cers-members-and-observers')
                         ->link->attr(array('class' => 'ga-nav-society'));
                         $menu->leadershipAndCommittees->add('Science Council', 'the-society/who-we-are/leadership/science-council')
                         ->link->attr(array('class' => 'ga-nav-society'));
