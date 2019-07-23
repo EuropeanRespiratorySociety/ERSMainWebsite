@@ -125,7 +125,7 @@
           
                 
         <div class="list-group text-left">
-            @if($item->ebusVenues[0])
+            @if($item->ebusVenues[0] && ($item->ebusVenues[0]->name || $item->ebusVenues[0]->streetAddress))
             <span href="javascript:void(0)" class="list-group-item clearfix cursor_default">
                 <span class="icon icon-hotel" style="display: block;
                                                     font-size: 30px;
@@ -136,14 +136,15 @@
                             float: left;
                             width: 75%;
                             margin: 0;">
-                <a data-toggle="modal" data-target="#md-venues" type="button" class="btn btn-default" 
-                style="float: left;
+                  <a data-toggle="modal" data-target="#md-venues" type="button" class="btn btn-default" 
+                    style="float: left;
                     margin-top: 5px;
                     padding: 0;"> 
-                {{ count($item->ebusVenues) === 1 ? 'VENUE' : 'VENUES' }}<br>
-                <span></span></span>
+                  {{ count($item->ebusVenues) === 1 ? 'VENUE' : 'VENUES' }}<br>
+                  </a>
+                <span></span>
                 </p>
-            </a>
+              </span>
             @endif
         </div>
         <hr class="visible-xs visible-sm">
