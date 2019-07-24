@@ -107,7 +107,7 @@
       </div>
     </div>
     <!-- Beginning Right Side-bar -->
-  <div class="col-md-3 white-bg event-items-tab">
+  <div class="col-xs-12 col-md-3 white-bg event-items-tab">
       <div class="tab-container">
          {{-- <ul class="nav nav-tabs">
         @if($item->ebusVenues)
@@ -146,8 +146,29 @@
                 </p>
               </span>
             @endif
+
+
+
         </div>
-        <hr class="visible-xs visible-sm">
+
+      </div>   
+            <div class="event-items-right-bt">
+              @if($item->registerButton->link && !$item->fullyBooked)
+                <p>Registering for someone else ? Contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!}</p>
+                <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
+                    {{ $item->registerButton->text or Register}}
+                </a>
+              @endif
+            {{-- @if($item->extendedDeadline) --}}
+            <p class="deadline">EXTENDED registration deadline : {{$item->extendedDeadline}}</p>
+            {{-- @endif --}}
+
+            </div>
+
+          </div>
+          <div id="messages" class="tab-pane"> </div>
+
+          <hr class="visible-xs visible-sm">
           @if($item->sponsors && $item->sponsors[0]->text)
           <h4 class="visible-xs visible-sm" style="margin: 50px 0 0 25px;text-align:left;">With the financial support of:</h4>
           @foreach ($item->sponsors as $sponsor)
@@ -164,17 +185,7 @@
           </div>
           @endforeach
           @endif
-      </div>   
-            <div class="event-items-right-bt">
-            
-            @if($item->extendedDeadline)
-            <p class="deadline">EXTENDED registration deadline : {{$item->extendedDeadline}}</p>
-            @endif
 
-            </div>
-
-          </div>
-          <div id="messages" class="tab-pane"> </div>
         </div>
       </div>
 
@@ -196,20 +207,7 @@
         </div>
         <div class="modal-body">
         <div class="row">
-          <div class="col-md-6">
-            @if($item->registerButton->link && !$item->fullyBooked)
-              {{-- <p>Registering for someone else ? Contact {!! Html::mailto('sandy.borlat@ersnet.org', 'Sandy Borlat') !!}</p> --}}
-              @if(strpos($item->registerButton->link, '@'))
-                <a href="{{'mailto:'.$item->registerButton->link}}" target="_blank" class="btn btn-primary tab-register-bt">
-                  In person
-                </a>
-              @else
-                <a href="{{$item->registerButton->link}}" target="_blank"  class="btn btn-primary tab-register-bt">
-                  In person
-                </a>
-              @endif
-            @endif
-          </div>
+
           <div class="col-md-6">
             <a href="https://www.ers-satellites.org/" class="btn btn-primary tab-register-bt" target="_blank">Online</a>
           </div>
