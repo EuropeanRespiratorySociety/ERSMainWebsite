@@ -289,13 +289,13 @@ class CloudCmsHelper
         $nonERS = false;
 
         foreach ($items as $key => $item) {
-
+            $nonERS = false;
             $item = (object) $item;
 
             if($item->nonErsCalendarItem || $item->ersEndorsedEvent) {
                 $nonERS = true;
             }
-
+            
             if($item->featuredCourse && $courseCounter <= 4){
                 $sorted['featuredCourses'][] = $item;
                 $courseCounter++;
@@ -305,7 +305,7 @@ class CloudCmsHelper
                 $sorted['featuredResearchItems'][] = $item;
                 $fundingCounter++;
             }
-
+           
             if($item->category2 && $calendarCounter <= 5 && !$nonERS){
                 if($cal->isCalendar($item->category2) || $item->category->title == "Events Calendar"){
                     if(isset($sorted['firstEvent'])){
