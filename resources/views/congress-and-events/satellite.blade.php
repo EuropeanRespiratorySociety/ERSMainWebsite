@@ -159,9 +159,9 @@
                     {{ $item->registerButton->text or Register}}
                 </a>
               @endif
-            {{-- @if($item->extendedDeadline) --}}
+            @if($item->extendedDeadline)
             <p class="deadline">EXTENDED registration deadline : {{$item->extendedDeadline}}</p>
-            {{-- @endif --}}
+            @endif
 
             </div>
 
