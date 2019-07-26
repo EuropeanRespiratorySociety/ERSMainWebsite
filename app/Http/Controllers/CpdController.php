@@ -21,23 +21,22 @@ class CpdController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-     public function index()
-  {
-    $results = $this->CC->getItem('cpd');
-    $item = $this->CC->parseItems($results['rows']);
-    $params['item'] =  (object) $item[0];
-
-    if(!$item[0]->url || !$item[0]->uri){
-        $this->CC->setCanonical($item[0]->_qname);
+    public function index()
+    { 
+        $results = $this->CC->getItem('cpd');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] =  (object) $item[0]; 
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
+        }
+        $params['relatedItems'] = false;
+        if($item[0]->hasRelatedArticles > 0){
+            $related = $this->CC->getOutgoingAssociationSorted($item[0]->_qname, 'ers:related-association');
+            $relatedItems = $this->CC->parseItems($related['rows']);
+            $params['relatedItems'] =  (object) $relatedItems;
+        }
+        return view('professional.cpd-main')->with($params);    
     }
-    if($item[0]->hasRelatedArticles > 0){
-        $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
-        $relatedItems = $this->CC->parseItems($related['rows']);
-        $params['relatedItems'] =  (object) $relatedItems; 
-    }    
-
-    return view('articles.item')->with($params); 
-}
 
 
 
@@ -99,24 +98,43 @@ class CpdController extends Controller
     public function show($slug)
     { 
         $results = $this->CC->getItem($slug);
-
         $item = $this->CC->parseItems($results['rows']);
+        $item[0]->modules = $this->prepareModules($item[0]->diseaseModules);
+        
         $params['item'] =  (object) $item[0]; 
-
+        //dd($params);
         if(!$item[0]->url || !$item[0]->uri){
             $this->CC->setCanonical($item[0]->_qname);
         }
-
-        if($item[0]->hasRelatedArticles > 0){
-          $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
-          $params['relatedItems'] = $this->CC->parseItems($related['rows']);
-      }
-
-      $results = $this->CC->getAssociation($item[0]->_qname);
-        $items = $this->CC->parseItems($results['rows']);
-        $params['items'] =  $items;
-
-        return view('articles.item')->with($params);
+       
+        return view('professional.cpd')->with($params);
     }
 
+    private function prepareModules($diseaseModules){
+        //split the array of modules to several arrays of 10 modules each
+        $modulesChunk = array_chunk($diseaseModules,10);
+        $result = [] ;
+        $first = 1;
+        $last = 0;
+        foreach($modulesChunk as $index => $modules){
+            $last = $last + count($modules);
+            $uiModules = new UiModules($first, $last, $modules);
+            $first = $first + count($modules);
+            array_push($result, $uiModules);
+        }
+        //dd($result);
+        return $result;
+    }
+
+}
+
+class UiModules
+{
+    public function __construct($first, $last, $modules)
+    {
+        $this->modules = $modules;
+        $this->first = $first;
+        $this->last = $last;
+        $this->sectionLabel = "Modules $first-$last";
+    }
 }

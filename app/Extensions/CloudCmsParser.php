@@ -74,6 +74,12 @@ class CloudCmsParser
                     $item->body2 = Markdown::parse($item->body2);
                     $item->body3 = Markdown::parse($item->body3);
                     $item->body4 = Markdown::parse($item->body4);
+
+                    if($item->diseaseModules){
+                        foreach($item->diseaseModules as $value){
+                            $value->description = Markdown::parse($value->description);
+                        }
+                    }
                     
                     if($item->popUp){
                         $item->popUp = Markdown::parse($item->popUp);
