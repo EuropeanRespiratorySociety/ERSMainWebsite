@@ -117,11 +117,13 @@
                       @endforeach
                   </div>
                 </div>
-                
             </div> 
             <div class="main-content">
-              <div class="row">
+              
               @foreach ($item->modules as $indexModules => $modules)
+                @if($indexModules%2==1)
+                  <div class="row">
+                @endif     
                 <div class="col-sm-6">
                   <a id="modules{{$modules->first}}-{{$modules->last}}"></a>
                   <h3 class="text-left">{{ $modules->sectionLabel }}</h3>   
@@ -142,8 +144,10 @@
                   @endforeach
                   </div><!-- close accordion -->     
                 </div> <!-- close col-sm-6 -->
+                @if($indexModules%2==1)
+                  </div>
+                @endif    
               @endforeach
-              </div>
             </div>
         </div>
     </div>
