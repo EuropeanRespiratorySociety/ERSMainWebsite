@@ -30,7 +30,7 @@
                     <div class="col-md-4 isotope">
                       <div class="card card-event">
                         @if($relatedItem->highResImage)
-                          <div class="card-image" style="height: 150px;background-repeat: no-repeat; background-image: url('{{$relatedItem->highResImage}}'); 
+                          <div class="card-image" style="height: 150px;background-repeat: no-repeat; background-image: url('{{$relatedItem->image}}'); 
                               background-position: center; background-size:100%;">
                           </div>
                         @endif
