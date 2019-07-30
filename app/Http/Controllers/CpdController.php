@@ -111,18 +111,20 @@ class CpdController extends Controller
     }
 
     private function prepareModules($diseaseModules){
-        //split the array of modules to several arrays of 10 modules each
-        $modulesChunk = array_chunk($diseaseModules,10);
         $result = [] ;
-        $first = 1;
-        $last = 0;
-        foreach($modulesChunk as $index => $modules){
-            $last = $last + count($modules);
-            $uiModules = new UiModules($first, $last, $modules);
-            $first = $first + count($modules);
-            array_push($result, $uiModules);
+        if($diseaseModules){
+            //split the array of modules to several arrays of 10 modules each
+            $modulesChunk = array_chunk($diseaseModules,10);
+            
+            $first = 1;
+            $last = 0;
+            foreach($modulesChunk as $index => $modules){
+                $last = $last + count($modules);
+                $uiModules = new UiModules($first, $last, $modules);
+                $first = $first + count($modules);
+                array_push($result, $uiModules);
+            }
         }
-        //dd($result);
         return $result;
     }
 
