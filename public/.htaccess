@@ -187,7 +187,8 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         # N
         Redirect 301 /ntmaward https://www.ersnet.org/professional-development/grants-and-sponsorships/medical-education-grant
         Redirect 301 /the-society/who-we-are/leadership/national-delegates https://www.ersnet.org/the-society/who-we-are/leadership/cers-members-and-observers
-
+        # P
+        Redirect 301 /professional-development/fellowships/marie-curie-post-doctoral-research-fellowships-(respire-3) https://www.ersnet.org/professional-development/fellowships/marie-curie-post-doctoral-research-fellowships-respire
         # R
         Redirect 301 /rfmv https://www.ersnet.org/congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference
         Redirect 301 /research-seminar https://www.ersnet.org/research/research-seminars
