@@ -139,10 +139,10 @@
                     @endif
                     @if($item->slug == "clinical-training-fellowship")
                       <li>
-                        <a href="https://ers.box.com/shared/static/vvzxghtnbjh01r6sibuvy6qet5k4szj1.doc">End of training report - Host supervisor</a>
+                        <a href="https://ers.box.com/s/uk46661psoebs88gbxlwoumobfx7iqrf" target="_blank">End of training report - Host supervisor</a>
                       </li>
                       <li>
-                        <a href="https://ers.box.com/shared/static/rv3nvtz5dxvqcuganbx2c4ezgxnjoqry.doc">End of training report - Fellowship recipient</a>
+                        <a href="https://ers.box.com/s/84k7bimytiibtkgdytkya6ub0wwnle7b" target="_blank">End of training report - Fellowship recipient</a>
                       </li>
                     @endif
                     @if($item->rulesAndRegulations)
