@@ -9,6 +9,25 @@
               )) 
 @stop()
 @section('content')
+<style>
+  .ers-content .card-event .card-content .title-icon{
+    font-size: 18px;
+    font-family: DinPro,sans-serif;
+    color: #4680E4;
+    line-height: 110%;
+    text-transform: uppercase;
+  }
+
+  .title-icon a {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 85px;
+    line-height: 130%;
+  }
+
+ </style>
 <div class="ers-content">
   <div id="fullpage">
     <div class="section fp-auto-height">
@@ -30,17 +49,17 @@
                     <div class="col-md-4 isotope">
                       <div class="card card-event">
                         @if($relatedItem->highResImage)
-                          <div class="card-image" style="height: 150px;background-repeat: no-repeat; background-image: url('{{$relatedItem->image}}'); 
+                          <div class="md-card-head" style="height: 90px;background-repeat: no-repeat; background-image: url('{{$relatedItem->image}}'); 
                               background-position: center; background-size:100%;">
                           </div>
                         @endif
 
                         <div class="card-content">
-                          <h3 class="title">
+                          <h3 class="title-icon" style="background-image: url('https://cdn.ersnet.org/preview/node/o:116e0a350956095e89eb?name=img130'); background-repeat: no-repeat; background-position: left; background-size: contain; height: 75px; position: relative;">
                               @if($relatedItem->uri) 
                                 <a href="{{url($relatedItem->uri)}}">{{ $relatedItem->title }}</a>
                               @elseif($item->url)
-                                <a href="{{url($relatedItem->url)}}">{{ $relatedItem->title }}</a>                             
+                                <a href="{{url($relatedItem->url)}}">{{ $relatedItem->title }}</a>
                               @else
                                 {{ $relatedItem->title }}
                               @endif  
