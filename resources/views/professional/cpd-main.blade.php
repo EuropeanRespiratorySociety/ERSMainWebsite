@@ -44,7 +44,7 @@
           </div>
 
             @if($relatedItems)
-            <div class="col-md-12 row row_event" style="padding-top: 30px;">
+            <div class="col-md-12 row row_event" style="padding: 30px 0;">
                 @foreach ($relatedItems as $relatedItem)
                     <div class="col-md-4 isotope">
                       <div class="card card-event">
