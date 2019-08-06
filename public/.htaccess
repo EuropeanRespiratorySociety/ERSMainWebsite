@@ -182,13 +182,15 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /plainpackaging https://www.ersnet.org/advocacy/eu-affairs/plain-packaging-protects-our-youth-support-the-campaign
         Redirect 301 /presidentialsummits https://www.ersnet.org/congress-and-events/ers-presidential-summits/a-public-health-approach-to-respiratory-health
         Redirect 301 /pd https://www.ersnet.org/#professional-development
+        Redirect 301 /professional-development/fellowships/marie-curie-post-doctoral-research-fellowships-(respire-3) https://www.ersnet.org/professional-development/fellowships/marie-curie-post-doctoral-research-fellowships-respire
+        Redirect 301 /professional-development/hermes/adult/examination-committee https://www.ersnet.org/professional-development/hermes/adult/examination-committee-adult
+        Redirect 301 /professional-development/hermes/paediatric/examination-committee https://www.ersnet.org/professional-development/hermes/paediatric/examination-committee-paediatric
+
         # M
         # Redirect 301 /the-society/news/mobile https://www.ersnet.org/mobile
         # N
         Redirect 301 /ntmaward https://www.ersnet.org/professional-development/grants-and-sponsorships/medical-education-grant
         Redirect 301 /the-society/who-we-are/leadership/national-delegates https://www.ersnet.org/the-society/who-we-are/leadership/cers-members-and-observers
-        # P
-        Redirect 301 /professional-development/fellowships/marie-curie-post-doctoral-research-fellowships-(respire-3) https://www.ersnet.org/professional-development/fellowships/marie-curie-post-doctoral-research-fellowships-respire
         # R
         Redirect 301 /rfmv https://www.ersnet.org/congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference
         Redirect 301 /research-seminar https://www.ersnet.org/research/research-seminars
