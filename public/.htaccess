@@ -267,14 +267,18 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         # S
         Redirect 301 /spiroguidelines https://ers.box.com/s/ah1g4gf2kuppzj29b43ls7i1yhiw76my
         Redirect 301 /spirometrycourses http://hermes.ersnet.org/activities/2012-03-15-09-52-59/upcoming-courses-spirometry.html
-        Redirect 301 /sleephandbook http://books.ersjournals.com/about#handbooks 
+        Redirect 301 /sleephandbook http://books.ersjournals.com/about#handbooks
+
         # T 
         Redirect 301 /terms-and-conditions https://ers.box.com/v/terms-and-conditions
         # Redirect 301 /terms-and-conditions-hermes https://ers.box.com/v/hermes-terms-and-conditions
         Redirect 301 /the-society/news/register-for-free-to-attend-ers-satellites-on-severe-asthma https://www.ersnet.org/congress-and-events/ers-satellite
         # Redirect 301 /the-society/news/world-no-tobacco-day-2019--get-involved- https://www.ersnet.org/the-society/news/world-no-tobacco-day-2019--get-involved-
+        Redirect 301 /the-society/news/ers-international-congress-2019-madrid-register-now-to-join-us-in-person-or-online-home https://erscongress.org/
+        
         # Number
         Redirect 301 /10PrinciplesforLungHealth https://ers.box.com/s/zj0x90cz9cwutldzlxbnoglzonmmnrbk
+
 
 
 # ----------------------------------------------------------------------
