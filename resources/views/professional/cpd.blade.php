@@ -112,7 +112,7 @@
             </div>
             @endif
             <div style="box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);box-sizing: border-box;padding-bottom: 30px;">
-                <div class="page-head" style="margin-bottom: 15px;height: 75px;"><h2 style="background-image: url('https://cdn.ersnet.org/preview/node/o:116e0a350956095e89eb?name=img130'); background-repeat: no-repeat; background-position: left; background-size: contain; padding-left: 65px;">{{$item->title}}</h2></div>
+                <div class="page-head" style="margin-bottom: 15px;height: 75px;"><h2 style="background-image: url('https://cdn.ersnet.org/preview/node/o:19b310aa5ac1db5d4baa?name=img130'); background-repeat: no-repeat; background-position: left; background-size: contain; padding-left: 65px;">{{$item->title}}</h2></div>
                 <p>View <a href="professional-development/cpd">all CPD</a></p>
                 <div class="row">
                   <div class="col-sm-8 center-block text-center" style="margin-top: 20px;">
