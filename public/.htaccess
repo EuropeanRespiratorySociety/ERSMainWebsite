@@ -172,7 +172,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         # L
         Redirect 301 /leadersblog https://www.ersnet.org/the-society/news/respiratory-matters
         Redirect 301 /lsc https://www.ersnet.org/congress-and-events/the-lung-science-conference
-        Redirect 301 /congress-and-events/the-lung-science-conference https://www.ersnet.org/congress-and-events/mechanisms-of-acute-exacerbation-of-respiratory-disease
+        Redirect 301 /congress-and-events/the-lung-science-conference https://www.ersnet.org/congress-and-events/metabolic-alterations-in-lung-ageing-and-disease
         # M
         Redirect 301 /membership https://www.ersnet.org/the-society/membership
         # O
@@ -210,7 +210,6 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /the-society/news/apply-for-the-erj%E2%80%99s-early-career-editorial-team-mentoring-programme https://www.ersnet.org/the-society/news/apply-for-the-erj-early-career-editorial-team-mentoring-programme
         Redirect 301 /the-society/news/apply-for-the-erj’s-early-career-editorial-team-mentoring-programme https://www.ersnet.org/the-society/news/apply-for-the-erj-early-career-editorial-team-mentoring-programme
         Redirect 301 /the-society/news/ers-satellites-home https://www.ersnet.org/congress-and-events/ers-satellite
-        Redirect 301 /the-society/news/mechanisms-of-acute-exacerbation-of-respiratory-disease-home https://www.ersnet.org/congress-and-events/mechanisms-of-acute-exacerbation-of-respiratory-disease
         Redirect 301 /the-society/news/sleep-and-breathing-conference-11-13-april-2019-marseille-register-now-home https://sleepandbreathing.org/
 
 
