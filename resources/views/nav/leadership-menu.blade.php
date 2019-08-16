@@ -8,7 +8,7 @@
 
     <p><strong>Leadership</strong></p>
     <ul class="list-group">
-    	<li class="list-group-item"><a href="the-society/who-we-are/leadership/national-delegates">National Delegates</a></li>
+    	<li class="list-group-item"><a href="the-society/who-we-are/leadership/cers-members-and-observers">CERS Members and Observers</a></li>
     	<li class="list-group-item"><a href="the-society/who-we-are/leadership/science-council">Science Council</a></li>
         <li class="list-group-item"><a href="the-society/who-we-are/leadership/assembly-heads">Assembly Heads</a></li>
     	<li class="list-group-item"><a href="the-society/who-we-are/leadership/education-council">Education Council</a></li>
