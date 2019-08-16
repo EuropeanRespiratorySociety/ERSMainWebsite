@@ -17,6 +17,11 @@
       margin-right: auto;
       padding: 15px 0;
     }
+    #ersMainWebsite .article-items .article-text .article img[alt="float130"] {
+      float: left;
+      width: 130px;
+      margin-right: 20px;
+    }
 </style>
 
 <div class="ers-content article-items">
