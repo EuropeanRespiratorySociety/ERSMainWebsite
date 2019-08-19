@@ -55,7 +55,7 @@
                         @endif
 
                         <div class="card-content">
-                          <h3 class="title-icon" style="background-image: url('https://cdn.ersnet.org/preview/node/o:19b310aa5ac1db5d4baa?name=img130'); background-repeat: no-repeat; background-position: left; background-size: contain; height: 70px; position: relative;">
+                          <h3 class="title-icon" style="background-image: url('{{$relatedItem->image}}'); background-repeat: no-repeat; background-position: left; background-size: contain; height: 70px; position: relative;">
                               @if($relatedItem->uri) 
                                 <a href="{{url($relatedItem->uri)}}">{{ $relatedItem->title }}</a>
                               @elseif($item->url)
