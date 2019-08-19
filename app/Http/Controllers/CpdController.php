@@ -31,7 +31,7 @@ class CpdController extends Controller
         }
         $params['relatedItems'] = false;
         if($item[0]->hasRelatedArticles > 0){
-            $related = $this->CC->getOutgoingAssociationSorted($item[0]->_qname, 'ers:related-association');
+            $related = $this->CC->getOutgoingAssociationSorted($item[0]->_qname, 'ers:related-association', 'title');
             $relatedItems = $this->CC->parseItems($related['rows']);
             $params['relatedItems'] =  (object) $relatedItems;
         }
