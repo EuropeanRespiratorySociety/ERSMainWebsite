@@ -45,10 +45,10 @@ class TrainingProgrammeController extends Controller
      * @return $params with all CloudCMS Infomation
      */
   private function setParamsByCategory($categoryName){
-    $category = $this->CC->getItem($categoryName);
+    $category = $this->CC->getPublishedItem($categoryName);
     $category = $this->CC->parseItems($category['rows']);
     $params['category'] = (object) $category[0];
-
+    
     if(!$category[0]->url || !$category[0]->uri){
         $this->CC->setCanonical($category[0]->_qname);
     }

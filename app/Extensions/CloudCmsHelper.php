@@ -162,11 +162,28 @@ class CloudCmsHelper
     }
     
     /**
-    * Get a single article (or category) by slug
+    * Get a single article (or category) by slug 
     * @param string $slug (slug-of-the-artice)
     */
 	public function getItem($slug){
 		$query = '{"slug": "'.$slug.'"}';
+		$result = CC::nodes()
+                    ->query($query)
+                    ->addParams(['full' => 'true'])
+                    ->addParams(['metadata' => 'true'])   
+                    ->get(); 
+        $result = $this->validateResults($result);               
+        return $result;            
+    }
+    
+    /**
+    * Get a single article (or category) by slug and published
+    * @param string $slug (slug-of-the-artice)
+    */
+	public function getPublishedItem($slug){
+        $query = '{"slug": "'.$slug.'",
+            "unPublished": { "$ne": true }
+        }';
 		$result = CC::nodes()
                     ->query($query)
                     ->addParams(['full' => 'true'])
