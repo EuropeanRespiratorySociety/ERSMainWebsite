@@ -172,7 +172,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         # L
         Redirect 301 /leadersblog https://www.ersnet.org/the-society/news/respiratory-matters
         Redirect 301 /lsc https://www.ersnet.org/congress-and-events/the-lung-science-conference
-        Redirect 301 /congress-and-events/the-lung-science-conference https://www.ersnet.org/congress-and-events/mechanisms-of-acute-exacerbation-of-respiratory-disease
+        Redirect 301 /congress-and-events/the-lung-science-conference https://www.ersnet.org/congress-and-events/metabolic-alterations-in-lung-ageing-and-disease
         # M
         Redirect 301 /membership https://www.ersnet.org/the-society/membership
         # O
@@ -210,7 +210,6 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /the-society/news/apply-for-the-erj%E2%80%99s-early-career-editorial-team-mentoring-programme https://www.ersnet.org/the-society/news/apply-for-the-erj-early-career-editorial-team-mentoring-programme
         Redirect 301 /the-society/news/apply-for-the-erj’s-early-career-editorial-team-mentoring-programme https://www.ersnet.org/the-society/news/apply-for-the-erj-early-career-editorial-team-mentoring-programme
         Redirect 301 /the-society/news/ers-satellites-home https://www.ersnet.org/congress-and-events/ers-satellite
-        Redirect 301 /the-society/news/mechanisms-of-acute-exacerbation-of-respiratory-disease-home https://www.ersnet.org/congress-and-events/mechanisms-of-acute-exacerbation-of-respiratory-disease
         Redirect 301 /the-society/news/sleep-and-breathing-conference-11-13-april-2019-marseille-register-now-home https://sleepandbreathing.org/
         Redirect 301 /tus https://www.ersnet.org/professional-development/thoracic-ultrasound-training-programme
 
@@ -268,14 +267,18 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         # S
         Redirect 301 /spiroguidelines https://ers.box.com/s/ah1g4gf2kuppzj29b43ls7i1yhiw76my
         Redirect 301 /spirometrycourses http://hermes.ersnet.org/activities/2012-03-15-09-52-59/upcoming-courses-spirometry.html
-        Redirect 301 /sleephandbook http://books.ersjournals.com/about#handbooks 
+        Redirect 301 /sleephandbook http://books.ersjournals.com/about#handbooks
+
         # T 
         Redirect 301 /terms-and-conditions https://ers.box.com/v/terms-and-conditions
         # Redirect 301 /terms-and-conditions-hermes https://ers.box.com/v/hermes-terms-and-conditions
         Redirect 301 /the-society/news/register-for-free-to-attend-ers-satellites-on-severe-asthma https://www.ersnet.org/congress-and-events/ers-satellite
         # Redirect 301 /the-society/news/world-no-tobacco-day-2019--get-involved- https://www.ersnet.org/the-society/news/world-no-tobacco-day-2019--get-involved-
+        Redirect 301 /the-society/news/ers-international-congress-2019-madrid-register-now-to-join-us-in-person-or-online-home https://erscongress.org/
+        
         # Number
         Redirect 301 /10PrinciplesforLungHealth https://ers.box.com/s/zj0x90cz9cwutldzlxbnoglzonmmnrbk
+
 
 
 # ----------------------------------------------------------------------
