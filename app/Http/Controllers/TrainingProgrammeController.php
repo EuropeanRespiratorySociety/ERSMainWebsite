@@ -53,8 +53,16 @@ class TrainingProgrammeController extends Controller
         $this->CC->setCanonical($category[0]->_qname);
     }
 
-    $results = $this->CC->getAssociation($category[0]->_qname);
+    $results = $this->CC->getAssociation($category[0]->_qname,'ers:category-association');
     $params['items'] =  $this->CC->parseItems($results['rows']);
+    $items = $this->CC->parseItems($results['rows']);
+    
+    $sortedItems = array_values(array_sort($items, function ($value) {
+      if($value->calendar) {
+          return $value->calendar->timestamp;
+      }
+    }));
+    $params['items'] = (object) $sortedItems; 
     return $params;
   }
 }
