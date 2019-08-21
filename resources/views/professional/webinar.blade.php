@@ -11,12 +11,11 @@
 
 <style>
     #ersMainWebsite .event-items-content .event-items-right .md-chips .md-chip{
-      margin: 0 5px 3px 0;
+      margin: 0 5px 8px 0;
       display: inline-block;
-      padding: 6px 12px 0;
+      padding: 6px 12px 6px;
       border-radius: 28px;
       font-size: 13px;
-      height:28px;
     }
 
     div.md-chip-disease{
