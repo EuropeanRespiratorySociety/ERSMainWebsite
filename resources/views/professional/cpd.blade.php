@@ -23,7 +23,6 @@
 
   .font-din{
     font-family: DinPro,sans-serif;
-    color: #333;
   }
   
   h4.panel-title {
@@ -123,7 +122,21 @@
                 </div>
             </div> 
             <div class="main-content">
-              
+                @if($item->programme)
+               <div class="row">
+                 <div class="col-sm-2 col-md-2 col-xs-12 pull-left" style="margin: 10px 0 20px;">
+                    <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary text-left bt-course-programme" style="margin: 0 15px;">
+                      <span class="icon icon-handout" style="font-size: 24px;"></span>
+                      @if($item->programmeButtonText)
+                        {{$item->programmeButtonText}} 
+                      @else
+                        View this syllabus in a file
+                      @endif
+                    </a>
+                 </div> 
+               </div>
+               @endif
+
               @foreach ($item->modules as $indexModules => $modules)
                 @if($indexModules%2==1)
                   <div class="row">
