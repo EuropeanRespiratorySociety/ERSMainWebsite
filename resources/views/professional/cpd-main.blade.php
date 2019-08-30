@@ -43,40 +43,20 @@
             {!! $item->body !!}
           </div>
 
-            @if($relatedItems)
             <div class="col-md-12 row row_event" style="padding: 30px 0;">
-                @foreach ($relatedItems as $relatedItem)
                     <div class="col-md-4 isotope">
                       <div class="card card-event">
-                        @if($relatedItem->highResImage)
-                          <div class="md-card-head" style="height: 90px;background-repeat: no-repeat; background-image: url('{{$relatedItem->image}}'); 
-                              background-position: center; background-size:100%;">
-                          </div>
-                        @endif
-
                         <div class="card-content">
-                          <h3 class="title-icon" style="background-image: url('{{$relatedItem->image}}'); background-repeat: no-repeat; background-position: left; background-size: contain; height: 70px; position: relative;">
-                              @if($relatedItem->uri) 
-                                <a href="{{url($relatedItem->uri)}}">{{ $relatedItem->title }}</a>
-                              @elseif($item->url)
-                                <a href="{{url($relatedItem->url)}}">{{ $relatedItem->title }}</a>
-                              @else
-                                {{ $relatedItem->title }}
-                              @endif  
+                          <h3 class="title-icon" style="background-repeat: no-repeat; background-position: left; background-size: contain; height: 70px; position: relative;">
+                              <a href="{{url($modulesUrl)}}">View Modules</a>
                           </h3>
                         </div>
                         <div class="card-action clearfix">
-                          @if($relatedItem->uri) 
-                            <a href="{{url($relatedItem->uri)}}" class="btn btn-register">more</a>
-                          @elseif($item->url)
-                            <a href="{{url($relatedItem->url)}}" class="btn btn-register">more</a>                     
-                          @endif
+                            <a href="{{url($modulesUrl)}}" class="btn btn-register">more</a>
                         </div>
                       </div>
                     </div>
-                @endforeach
             </div>
-            @endif
         </div>
     </div>
 </div>

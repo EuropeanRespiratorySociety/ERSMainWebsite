@@ -161,6 +161,7 @@ Route::group(['prefix' => 'professional-development'], function () {
     Route::group(['prefix' => 'cpd'], function () {
       Route::get('/', 'CpdController@index');
       Route::get('/test-cpd', 'CpdController@testCPD');
+      Route::get('/modules', 'CpdController@cpdModules');
       Route::get('/{slug}', 'CpdController@show');
     });
 
