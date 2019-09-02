@@ -56,31 +56,6 @@ class CpdController extends Controller
         return view('professional.phd-overview')->with($params); 
     }
 
-
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function testCPD()
-    {
-        $results = $this->CC->getItem('test-cpd');
-        $item = $this->CC->parseItems($results['rows']);
-        $params['item'] =  (object) $item[0];
-
-        if(!$item[0]->url || !$item[0]->uri){
-            $this->CC->setCanonical($item[0]->_qname);
-        }
-        if($item[0]->hasRelatedArticles > 0){
-            $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
-            $relatedItems = $this->CC->parseItems($related['rows']);
-            // $params['relatedItems'] =  (object) $relatedItems; 
-        }    
-
-        return view('professional.cpd-test')->with($params); 
-    }
-
     /**
      * Display a listing of the resource.
      *
@@ -90,8 +65,6 @@ class CpdController extends Controller
     { 
         $results = $this->CC->getItem('cpd');
         $item = $this->CC->parseItems($results['rows']);
-
-        // qname of ers:article with cpd slug on cloudCMS is : o:bc1a3ec65d1684de970b
         $related = $this->CC->getOutgoingAssociationSorted($item[0]->_qname, 'ers:related-association', 'title');
         $items = $this->CC->parseItems($related['rows']);
         foreach($items as $index => $item){
@@ -99,28 +72,7 @@ class CpdController extends Controller
         }
         $params['items'] =  (object) $items;
         
-       // dd($params);
-        return view('professional.cpd')->with($params);
-    }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function show($slug)
-    { 
-        $results = $this->CC->getItem($slug);
-        $item = $this->CC->parseItems($results['rows']);
-        $item[0]->modules = $this->prepareModules($item[0]->diseaseModules);
-        
-        $params['item'] =  (object) $item[0]; 
-        //dd($params);
-        if(!$item[0]->url || !$item[0]->uri){
-            $this->CC->setCanonical($item[0]->_qname);
-        }
-       
-        return view('professional.cpd')->with($params);
+        return view('professional.cpd-test')->with($params);
     }
 
     private function prepareModules($diseaseModules){
