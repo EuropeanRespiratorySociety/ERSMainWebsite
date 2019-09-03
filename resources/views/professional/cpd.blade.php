@@ -121,7 +121,7 @@
                                 <div class="row">
                                     <div class="col-sm-8 center-block text-center" style="margin-top: 20px;">
                                         @foreach ($item->modules as $indexModules => $modules)
-                                    <div class="md-chip font-din md-chip-clickable md-chip-textlink md-chip-hover md-chip-anchor-cpd"><a href="/professional-development/cpd/modules#disease{{$index}}-modules{{$modules->first}}-{{$modules->last}}">{{ $modules->sectionLabel }}</a></div>
+                                          <div class="md-chip font-din md-chip-clickable md-chip-textlink md-chip-hover md-chip-anchor-cpd"><a href="/professional-development/cpd/modules#disease{{$index}}-modules{{$modules->first}}-{{$modules->last}}">{{ $modules->sectionLabel }}</a></div>
                                         @endforeach
                                     </div>
                                   </div>
@@ -146,15 +146,15 @@
                                   <div class="col-sm-6">
                                   <a id="disease{{$index}}-modules{{$modules->first}}-{{$modules->last}}"></a>
                                     <h3 class="text-left">{{ $modules->sectionLabel }}</h3>   
-                                    <div id="accordion{{$indexModules}}" class="panel-group accordion accordion-semi">
+                                    <div id="accordion-disease{{$index}}-{{$indexModules}}" class="panel-group accordion accordion-semi">
                                     @foreach ($modules->modules as $indexModule => $module)
                                       <div class="panel panel-default panel-shadow">
                                         <div class="panel-heading">
-                                          <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion{{$indexModules}}" href="#ac{{$indexModules}}-{{$indexModule}}" aria-expanded="false" class="collapsed">
+                                          <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion-disease{{$index}}-{{$indexModules}}" href="#ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" aria-expanded="false" class="collapsed">
                                             <i class="icon s7-angle-down"></i>{{ $module->title }}</a>
                                           </h4>
                                         </div>
-                                        <div id="ac{{$indexModules}}-{{$indexModule}}" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                        <div id="ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
                                           <div class="panel-body text-left font-din list-sublist">
                                             {!! $module->description !!}
                                           </div>

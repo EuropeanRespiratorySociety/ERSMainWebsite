@@ -72,7 +72,7 @@ class CpdController extends Controller
         }
         $params['items'] =  (object) $items;
         
-        return view('professional.cpd-test')->with($params);
+        return view('professional.cpd')->with($params);
     }
 
     private function prepareModules($diseaseModules){
