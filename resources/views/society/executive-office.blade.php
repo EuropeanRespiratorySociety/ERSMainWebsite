@@ -727,9 +727,9 @@
           <h2 class="">Publications</h2>
       </div>
 
-      <div class="col-md-8 center-block lead"><strong>Publication Office</strong><br><br>
+      <div class="col-md-8 center-block lead"><strong>Publications Office</strong><br><br>
       European Respiratory Society : Sheffield S10 2PX United Kingdom<br><br>
-      TEL +44 114 267 2860&nbsp;&nbsp;/&nbsp;&nbsp;FAX +44 114 266 5064&nbsp;&nbsp;/&nbsp;&nbsp;E-Mail {!! Html::mailto('info@ersj.org.uk', 'info@ersj.org.uk') !!}
+      TEL +44 114 267 2860&nbsp;&nbsp;/&nbsp;&nbsp;FAX +44 114 266 5064&nbsp;&nbsp;/&nbsp;&nbsp;E-Mail {!! Html::mailto('journals@ersnet.org', 'journals@ersnet.org') !!}
       </div>
 
       <div class="row">
