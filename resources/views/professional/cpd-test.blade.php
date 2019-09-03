@@ -1,12 +1,12 @@
 @extends('template')
 @section('meta')
-        {{-- @include('partials.meta', array('meta' =>
+        @include('partials.meta', array('meta' =>
               [
-              'url' => isset($item->url) ? $item->url : null , 
-              'title' => $item->title
+              'url' => "https://ersnet.org/professional-development/cpd/modules" , 
+              'title' => "CPD Modules"
               ],
-              ['pagination' => isset($pagination) ? $pagination : null]
-              ))  --}}
+              ['pagination' => null]
+              )) 
 @stop()
 @section('content')
 <style>
@@ -78,8 +78,6 @@
      content: counters(item, ".") " "; counter-increment: item 
   }
 
-
-
   @media screen and (min-width: 1024px){
     .alert-mobile-position span.banner-text {
         display: inline-block;
@@ -148,7 +146,7 @@
                                     <h3 class="text-left">{{ $modules->sectionLabel }}</h3>   
                                     <div id="accordion-disease{{$index}}-{{$indexModules}}" class="panel-group accordion accordion-semi">
                                     @foreach ($modules->modules as $indexModule => $module)
-                                      <div class="panel panel-default panel-shadow">
+                                      <div class="panel panel-default panel-shadow" data-toggle="modal" data-target="#md-recommender" data-module="{{ $module->title }}">
                                         <div class="panel-heading">
                                           <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion-disease{{$index}}-{{$indexModules}}" href="#ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" aria-expanded="false" class="collapsed">
                                             <i class="icon s7-angle-down"></i>{{ $module->title }}</a>
@@ -178,6 +176,68 @@
     </div>
 </div>
 @stop()  
+
+@section('modals')
+  @include('elements.modal.recommender') 
+@stop()  
+
+@section('scripts')
+<script src="/js/jquery.rest.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+  // $('[data-toggle="modal"]').hover(function(e) {
+  //   var modalId = $(this).data('target');
+  //   alert($(e.relatedTarget).data('module'))
+  //   $(modalId).modal('show');
+  // });
+  $("#md-recommender").on("show.bs.modal", function(e) {
+    var apiUrl = '{{ env('API_URL') }}' ? '{{ env('API_URL') }}' : 'https://api.ersnet.org/' ;
+    var client = new $.RestClient(apiUrl, {
+        cache: 60, 
+        cachableMethods: ["GET"] 
+    });
+    client.add('courses');
+    client.courses.read().done(function (data){
+      const events = data.data;
+      var cards = "";
+      for( let i = 0; i < events.length ; i++){
+        const image = events[i].image ? '<div class="card-image"'
+                  +'style="background-size:cover;background-repeat: no-repeat;height:150px;'
+                  +'background-image: url(\'' + events[i].image + '\');'
+                  +'background-position: center center;"></div>'
+                  : '';
+
+        const title = events[i].title;
+        const uri = events[i].uri;
+        const leadParagraph = events[i].shortLead;
+        const createdPath = window.location.pathname + '/' + events[i].slug;
+        const path = uri 
+                      ? uri
+                      : createdPath
+        const anchor = '<a href=\"' + path + '\">' + title + '</a>';
+        const card = '<div class="col-md-4 isotope"><div class="card card-event">'
+          + image
+          + '<div class="card-content text-left"><h3 class="title">'
+          +  anchor
+          + '</h3><p class="date" style="padding-bottom: 3px;"><span class="icon s7-map-marker"></span>'
+          +  events[i].eventLocation
+          + '</p><p class="date"><span class="icon s7-date"></span>'
+          + events[i].eventDates
+          + '</p>'
+          +  leadParagraph
+          + '</div><div class="card-action clearfix"><a href="'
+          + path
+          + '" class="btn btn-register">more</a></div></div></div>';
+        cards += card;
+      }
+      const test = '<div><p>'+ $(e.relatedTarget).data('module') +'</p>' + cards + '</div>'
+      $(".modal-body").html(test);
+    });
+  });
+});
+
+</script>
+@stop()
 
 
 
