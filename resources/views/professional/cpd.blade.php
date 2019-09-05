@@ -109,6 +109,47 @@
             <div class="main-content">
                 <div class="row">
                     <div class="col-sm-12">
+
+                        <div>
+                            
+
+                          <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                              <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" style="background-image: url('https://cdn.ersnet.org/preview/node/o:917f0c892a0accc57278?name=image500&amp;size=500'); background-repeat: no-repeat; background-position: center; background-size: contain; display: block;"><span style="display: none;">Home</span></a></li>
+                              <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                              <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+                              <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">SettingsSettingsSettings</a></li>
+                              <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">SettingsSettingsSettings</a></li>
+                              <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">SettingsSettingsSettings</a></li>
+                              <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">SettingsSettingsSettings</a></li>
+                              <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">SettingsSettingsSettings</a></li>
+                              <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">SettingsSettingsSettings</a></li>
+                              <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">SettingsSettingsSettings</a></li>
+                              <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">SettingsSettingsSettings</a></li>
+                              <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">SettingsSettingsSettings</a></li>
+                            </ul>
+                          
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                              <div role="tabpanel" class="tab-pane active" id="home">...</div>
+                              <div role="tabpanel" class="tab-pane" id="profile">...</div>
+                              <div role="tabpanel" class="tab-pane" id="messages">...</div>
+                              <div role="tabpanel" class="tab-pane" id="settings">...</div>
+                              <div role="tabpanel" class="tab-pane" id="settings">...</div>
+                              <div role="tabpanel" class="tab-pane" id="settings">...</div>
+                              <div role="tabpanel" class="tab-pane" id="settings">...</div>
+                              <div role="tabpanel" class="tab-pane" id="settings">...</div>
+                              <div role="tabpanel" class="tab-pane" id="settings">...</div>
+                              <div role="tabpanel" class="tab-pane" id="settings">...</div>
+                              <div role="tabpanel" class="tab-pane" id="settings">...</div>
+                              <div role="tabpanel" class="tab-pane" id="settings">...</div>
+                            </div>
+                          
+                          </div>
+
+
+
+
                       <div class="tab-container">
                         <ul class="nav nav-tabs">
                             @foreach ($items as $index => $item)
@@ -179,6 +220,14 @@
 </div>
 @stop()  
 
+
+{{-- @section('scripts')
+<script src="https://cdn.ersnet.org/js/jquery.scrolling-tabs.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $('.nav-tabs').scrollingTabs();
+
+</script>
+@stop() --}}
 
 
 
