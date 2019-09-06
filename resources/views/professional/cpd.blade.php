@@ -10,6 +10,10 @@
 @stop()
 @section('content')
 <style>
+  .cpd-card-frame{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  }
+
   .scrolling-wrapper-flexbox {
     display: flex;
     flex-wrap: nowrap;
@@ -147,7 +151,7 @@
             <div class="main-content">
                 <div class="row">
                     <div class="col-sm-12">
-                      <div> <!-- start the tab block -->
+                      <div class="cpd-card-frame"> <!-- start the tab block -->
                         <div class="scrolling-wrapper-flexbox scrolling-wrapper-flexbox_color__blue" role="tablist" >
                           @foreach ($items as $index => $item)
                             <div role="presentation" class="scrollable-object active">
@@ -187,25 +191,25 @@
                                     @foreach ($item->modules as $indexModules => $modules)
                                     @if($indexModules%2==1)
                                       <div class="row">
-                                    @endif     
+                                    @endif
                                     <div class="col-sm-6">
                                     <a id="disease{{$index}}-modules{{$modules->first}}-{{$modules->last}}"></a>
                                       <h3 class="text-left">{{ $modules->sectionLabel }}</h3>   
                                       <div id="accordion-disease{{$index}}-{{$indexModules}}" class="panel-group accordion accordion-semi">
                                         @foreach ($modules->modules as $indexModule => $module)
-                                          <div class="panel panel-default panel-shadow">
-                                            <div class="panel-heading">
-                                              <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion-disease{{$index}}-{{$indexModules}}" href="#ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" aria-expanded="false" class="collapsed">
-                                                <i class="icon s7-angle-down"></i>{{ $module->title }}</a>
-                                              </h4>
-                                            </div>
-                                            <div id="ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                              <div class="panel-body text-left font-din list-sublist">
-                                                {!! $module->description !!}
-                                              </div>
+                                        <div class="panel panel-default panel-shadow" data-toggle="modal" data-target="#md-recommender" data-module="{{ $module->title }}">
+                                          <div class="panel-heading">
+                                            <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion-disease{{$index}}-{{$indexModules}}" href="#ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" aria-expanded="false" class="collapsed">
+                                              <i class="icon s7-angle-down"></i>{{ $module->title }}</a>
+                                            </h4>
+                                          </div>
+                                          <div id="ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                            <div class="panel-body text-left font-din list-sublist">
+                                              {!! $module->description !!}
                                             </div>
                                           </div>
-                                        @endforeach
+                                        </div>
+                                      @endforeach
                                       </div><!-- close accordion -->     
                                     </div> <!-- close col-sm-6 -->
                                     @if($indexModules%2==1)
@@ -230,15 +234,64 @@
 </div> <!-- ers-content -->
 @stop()  
 
+@section('modals')
+  @include('elements.modal.recommender') 
+@stop()  
 
-{{-- @section('scripts')
-<script src="https://cdn.ersnet.org/js/jquery.scrolling-tabs.js" type="text/javascript"></script>
+@section('scripts')
+<script src="/js/jquery.rest.min.js" type="text/javascript"></script>
 <script type="text/javascript">
-  $('.nav-tabs').scrollingTabs();
+$(function() {
+  // $('[data-toggle="modal"]').hover(function(e) {
+  //   var modalId = $(this).data('target');
+  //   alert($(e.relatedTarget).data('module'))
+  //   $(modalId).modal('show');
+  // });
+  $("#md-recommender").on("show.bs.modal", function(e) {
+    var apiUrl = '{{ env('API_URL') }}' ? '{{ env('API_URL') }}' : 'https://api.ersnet.org/' ;
+    var client = new $.RestClient(apiUrl, {
+        cache: 60, 
+        cachableMethods: ["GET"] 
+    });
+    client.add('courses');
+    client.courses.read().done(function (data){
+      const events = data.data;
+      var cards = "";
+      for( let i = 0; i < events.length ; i++){
+        const image = events[i].image ? '<div class="card-image"'
+                  +'style="background-size:cover;background-repeat: no-repeat;height:150px;'
+                  +'background-image: url(\'' + events[i].image + '\');'
+                  +'background-position: center center;"></div>'
+                  : '';
+
+        const title = events[i].title;
+        const uri = events[i].uri;
+        const leadParagraph = events[i].shortLead;
+        const createdPath = window.location.pathname + '/' + events[i].slug;
+        const path = uri 
+                      ? uri
+                      : createdPath
+        const anchor = '<a href=\"' + path + '\">' + title + '</a>';
+        const card = '<div class="col-md-4 isotope"><div class="card card-event">'
+          + image
+          + '<div class="card-content text-left"><h3 class="title">'
+          +  anchor
+          + '</h3><p class="date" style="padding-bottom: 3px;"><span class="icon s7-map-marker"></span>'
+          +  events[i].eventLocation
+          + '</p><p class="date"><span class="icon s7-date"></span>'
+          + events[i].eventDates
+          + '</p>'
+          +  leadParagraph
+          + '</div><div class="card-action clearfix"><a href="'
+          + path
+          + '" class="btn btn-register">more</a></div></div></div>';
+        cards += card;
+      }
+      const test = '<div><p>'+ $(e.relatedTarget).data('module') +'</p>' + cards + '</div>'
+      $(".modal-body").html(test);
+    });
+  });
+});
 
 </script>
-@stop() --}}
-
-
-
-
+@stop()
