@@ -188,6 +188,8 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /professional-development/fellowships/marie-curie-post-doctoral-research-fellowships-(respire-3) https://www.ersnet.org/professional-development/fellowships/marie-curie-post-doctoral-research-fellowships-respire
         Redirect 301 /professional-development/hermes/adult/examination-committee https://www.ersnet.org/professional-development/hermes/adult/examination-committee-adult
         Redirect 301 /professional-development/hermes/paediatric/examination-committee https://www.ersnet.org/professional-development/hermes/paediatric/examination-committee-paediatric
+        Redirect 301 /professional-development/fellowships/respire-3-host-application-and-web-registry https://www.ersnet.org/professional-development/fellowships/respire-host-application-and-web-registry
+
 
         # M
         # Redirect 301 /the-society/news/mobile https://www.ersnet.org/mobile
