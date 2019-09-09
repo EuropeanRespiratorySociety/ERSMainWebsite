@@ -136,22 +136,22 @@
                     <div class="panel panel-default panel-shadow">
                       <div class="panel-heading">
                         <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion{{$indexModules}}" href="#ac{{$indexModules}}-{{$indexModule}}" aria-expanded="false" class="collapsed">
-                          <i class="icon s7-angle-down"></i>{{ $module->title }}</a>
+                          <i class="icon s7-angle-down"></i>{{ $module->positionNumber }}. {{ $module->title }}</a>
                         </h4>
                       </div>
                       <div id="ac{{$indexModules}}-{{$indexModule}}" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
                         <div class="panel-body text-left font-din list-sublist">
-                          {!! $module->description !!}
+                          {!! $module->body !!}
                         </div>
                       </div>
                     </div>
                   @endforeach
-                  </div><!-- close accordion -->     
-                </div> <!-- close col-sm-6 -->
+                  </div>   
+                </div> 
                 @if($indexModules%2==1)
                   </div>
                 @endif    
-              @endforeach
+              @endforeach 
             </div>
         </div>
     </div>
