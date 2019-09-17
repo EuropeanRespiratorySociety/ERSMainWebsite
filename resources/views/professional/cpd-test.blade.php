@@ -154,7 +154,7 @@
                                         </div>
                                         <div id="ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
                                           <div class="panel-body text-left font-din list-sublist">
-                                            {!! $module->description !!}
+                                            {!! $module->body !!}
                                           </div>
                                         </div>
                                       </div>
