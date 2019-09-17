@@ -229,17 +229,22 @@ class CloudCmsParser
                     $item->ms = $item->_system->modified_on->ms ?? false;   
                     $item->shortLead = $item->leadParagraph ? $this->truncate(strip_tags(Markdown::parse($item->leadParagraph)), 145) : false;
                     $item->hasRelatedArticles = $item->_statistics->{'ers:related-association'} ?? 0;
+                    $item->hasRelatedCpdModules = $item->_statistics->{'ers:cpd-article-module-association'} ?? 0;
+                    $item->hasRelatedModules = $item->_statistics->{'ers:article-module-association'} ?? 0;
                     $item->hasAuthor = $item->_statistics->{'ers:author-association'} ?? 0;
                     $item->salutation = $item->salutation ?? false;
                     $item->firstName = $item->firstName ?? false;
                     $item->lastName = $item->lastName ?? false;
+
+                    $item->diseaseModules = $this->concatCpdModules($item);
                     //removing empty arrays
                     foreach($item as $k => $v){
                         if(empty($v)){
                             $item->$k = false; 
                         }
                     }
-                    $this->parsed[$key] = $item;               
+                    $this->parsed[$key] = $item;            
+
                 }
             }
             return $this->parsed; 
@@ -382,5 +387,37 @@ class CloudCmsParser
         return $array['0'];
     }
 
-
+    public function concatCpdModules($item){
+        $diseaseModules = [];
+        if(isset($item->cpdAirwayDisease)){
+            $diseaseModules = array_merge($diseaseModules, $item->cpdAirwayDisease);
+        }
+        if(isset($item->cpdInterstitialDisease)){
+            $diseaseModules = array_merge($diseaseModules, $item->cpdInterstitialDisease);
+        }
+        if(isset($item->cpdPaediatricDisease)){
+            $diseaseModules = array_merge($diseaseModules, $item->cpdPaediatricDisease);
+        }
+        if(isset($item->cpdPulmonaryDisease)){
+            $diseaseModules = array_merge($diseaseModules, $item->cpdPulmonaryDisease);
+        }
+        if(isset($item->cpdCriticalCareDisease)){
+            $diseaseModules = array_merge($diseaseModules, $item->cpdCriticalCareDisease);
+        }
+        if(isset($item->cpdInfectionsDisease)){
+            $diseaseModules = array_merge($diseaseModules, $item->cpdInfectionsDisease);
+        }
+        if(isset($item->cpdSleepDisease)){
+            $diseaseModules = array_merge($diseaseModules, $item->cpdSleepDisease);
+        }
+        if(isset($item->cpdThoracicDisease)){
+            $diseaseModules = array_merge($diseaseModules, $item->cpdThoracicDisease);
+        }
+        $positionNumber = 1;
+        foreach($diseaseModules as $index => $diseaseModule){
+            $diseaseModule->positionNumber = $positionNumber++;
+            $diseaseModule->body = Markdown::parse($diseaseModule->body);
+        }
+        return $diseaseModules;
+    }
 }

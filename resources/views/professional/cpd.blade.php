@@ -1,19 +1,18 @@
 @extends('template')
 @section('meta')
-        {{-- @include('partials.meta', array('meta' =>
-              [
-              'url' => isset($item->url) ? $item->url : null , 
-              'title' => $item->title
-              ],
-              ['pagination' => isset($pagination) ? $pagination : null]
-              ))  --}}
+@include('partials.meta', array('meta' =>
+[
+'url' => "https://ersnet.org/professional-development/cpd/modules" , 
+'title' => "CPD Modules"
+],
+['pagination' => null]
+)) 
 @stop()
 @section('content')
 <style>
   .cpd-card-frame{
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
   }
-
   .scrolling-wrapper-flexbox {
     display: flex;
     flex-wrap: nowrap;
@@ -22,36 +21,29 @@
     border-radius: 8px 8px 0 0;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
       }
-
   .scrolling-wrapper-flexbox::-webkit-scrollbar {
     display: none;
   }
-
   .scrolling-wrapper-flexbox_color__blue {
     background-color: #015291;
   }
-
   .scrolling-wrapper-flexbox .scrollable-object {
     flex: 0 0 auto;
     margin-left: 12px;
   }
-
   .scrollable-object a{
     display: block;
     padding: 12px;
     border-radius: 28px;
   }
-
   .scrollable-object_color__blue{
     background-color: #ccc;
     color: #015291
   }
-
   .scrolling-wrapper-flexbox .scrollable-object span{
     padding: 10px 10px 10px 45px;
     font-size: 16px;
   }
-
   .ers-white-header .page-head {
     border-bottom: none;
   }
@@ -62,16 +54,13 @@
     border: 1px solid #e8e7e7;
     background-color: #F9F9F9;
   }
-
   .font-din{
     font-family: DinPro,sans-serif;
   }
   
   h4.panel-title {
     font-size: 16px !important;
-
   }
-
   .md-chip{
       margin: 0 5px 3px 0;
       display: inline-block;
@@ -80,33 +69,26 @@
       font-size: 13px;
       height:28px;
     }
-
   .md-chip a {
     color: #333;
   }
-
   .md-chip-anchor-cpd {
     margin: 0 0 10px 0;
   }
-
   .md-chip-textlink{
     background: #e0e0e0;
     color: #333;
     }
-
   .md-chip-clickable {
   cursor: pointer;
   }
-
   .md-chip-hover:hover {
     background: #ccc;
   }
-
   div.list-sublist ol li>ol>li{
     padding-left: 11px;
     text-indent: -22px;
   }
-
   div.list-sublist ol {
      counter-reset: item;
      padding-inline-start: 12px;
@@ -119,16 +101,12 @@
   div.list-sublist li:before {
      content: counters(item, ".") " "; counter-increment: item 
   }
-
-
-
   @media screen and (min-width: 1024px){
     .alert-mobile-position span.banner-text {
         display: inline-block;
         line-height: 43px;
         margin-bottom: 0px;
     }
-
   .alert-mobile-position span.banner-link {
     display: block;
     width: auto;
@@ -136,7 +114,6 @@
     text-transform: uppercase;
     }
    }
-
    @media screen and (max-width: 480px){
     .btn .icon{
     display: none;
@@ -205,7 +182,7 @@
                                           </div>
                                           <div id="ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
                                             <div class="panel-body text-left font-din list-sublist">
-                                              {!! $module->description !!}
+                                              {!! $module->body !!}
                                             </div>
                                           </div>
                                         </div>
@@ -219,13 +196,7 @@
                               </div>
                             @endforeach
                         </div> <!-- close the tab content -->
-
                       </div> <!-- close the tab block -->
-                          
-
-
-
-
                     </div> <!-- col-sm-12 -->
                 </div> <!-- row -->
             </div> <!-- main-content -->
@@ -263,7 +234,6 @@ $(function() {
                   +'background-image: url(\'' + events[i].image + '\');'
                   +'background-position: center center;"></div>'
                   : '';
-
         const title = events[i].title;
         const uri = events[i].uri;
         const leadParagraph = events[i].shortLead;
@@ -305,6 +275,5 @@ $(function() {
     });
   });
 });
-
 </script>
 @stop()
