@@ -140,7 +140,11 @@
                         <!-- Tab panes -->
                         <div class="tab-content" style="overflow: auto;">
                             @foreach ($items as $index => $item)
-                              <div id="{{$item->slug}}" class="tab-pane cont">
+                              @if($index == 0)
+                                <div id="{{$item->slug}}" class="tab-pane cont active">
+                              @else
+                                <div id="{{$item->slug}}" class="tab-pane cont">
+                              @endif                       
                                   <div class="row">
                                       <div style="display:inline-block;">
                                           <h2 style="background-image:url('{{$item->image}}'); background-repeat: no-repeat; background-position: left; background-size: contain; padding-left: 65px;margin-top: 60px;">{{$item->title}}</h2>
