@@ -52,7 +52,7 @@ class CpdController extends Controller
             $relatedItems = $this->CC->parseItems($related['rows']);
             $params['relatedItems'] =  (object) $relatedItems; 
         }    
-
+        
         return view('professional.phd-overview')->with($params); 
     }
 
@@ -65,13 +65,16 @@ class CpdController extends Controller
     { 
         $results = $this->CC->getItem('cpd');
         $item = $this->CC->parseItems($results['rows']);
-        $related = $this->CC->getOutgoingAssociationSorted($item[0]->_qname, 'ers:related-association', 'title');
-        $items = $this->CC->parseItems($related['rows']);
-        foreach($items as $index => $item){
-            $item->modules = $this->prepareModules($item->diseaseModules);
+        $params['item'] =  (object) $item[0];
+
+        if($item[0]->hasRelatedArticles > 0){
+            $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
+            $items = $this->CC->parseItems($related['rows']);
+            foreach($items as $index => $item){
+                $item->modules = $this->prepareModules($item->diseaseModules);
+                }
+            $params['items'] =  (object) $items;
         }
-        $params['items'] =  (object) $items;
-        
         return view('professional.cpd')->with($params);
     }
 
@@ -80,7 +83,6 @@ class CpdController extends Controller
         if($diseaseModules){
             //split the array of modules to several arrays of 10 modules each
             $modulesChunk = array_chunk($diseaseModules,10);
-            
             $first = 1;
             $last = 0;
             foreach($modulesChunk as $index => $modules){
