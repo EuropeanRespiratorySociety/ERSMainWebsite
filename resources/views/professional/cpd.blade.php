@@ -9,7 +9,66 @@
 )) 
 @stop()
 @section('content')
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+</head>
 <style>
+
+
+ .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+  .swiper-container_color__blue {
+    background-color: #015291;
+  }
+.swiper-slide {
+  padding: 15px 0;
+  text-align: left;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide_color__blue {
+  background-color: #015291;
+}
+
+  .scrollable-chip a{
+    display: block;
+    padding: 12px;
+    border-radius: 28px;
+  }
+
+  .scrollable-chip_color__gray{
+    background-color: #ccc;
+    color: #015291
+  }
+
+  .scrollable-chip span{
+    padding: 10px 10px 10px 45px;
+    font-size: 16px;
+  }
+
+  .swiper-wrapper_color__blue {
+    background-color: #015291;
+  }
+
+
+
+
   .cpd-card-frame{
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
   }
@@ -129,6 +188,36 @@
                 <div class="row">
                     <div class="col-sm-12">
                       <div class="cpd-card-frame"> <!-- start the tab block -->
+
+
+                        <div class="swiper-container swiper-container_color__blue">
+                            <div class="swiper-wrapper swiper-wrapper_color__blue">
+                              @foreach ($items as $index => $item)
+                               <div class="swiper-slide swiper-slide_color__blue active scrollable-chip">
+                                 <a href="#{{$item->slug}}" data-toggle="tab" aria-expanded="false" class="scrollable-chip_color__gray"><span class="font-din" style="background-image:url('{{$item->image}}'); background-repeat: no-repeat; background-position: left; background-size: contain;">{{$item->title}}</span></a>
+                                </div>
+                              @endforeach
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+
+
+
+
+                        {{-- <div class="swiper-container swiper-container_color__blue">
+                            <div class="swiper-wrapper swiper-wrapper_color__blue">
+                              @foreach ($items as $index => $item)
+                               <div class="swiper-slide swiper-slide_color__blue active scrollable-chip">
+                                 <a href="#{{$item->slug}}" data-toggle="tab" aria-expanded="false" class="scrollable-chip_color__gray"><span class="font-din" style="background-image:url('{{$item->image}}'); background-repeat: no-repeat; background-position: left; background-size: contain;">{{$item->title}}</span></a>
+                                </div>
+                              @endforeach
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div> --}}
+
+
                         <div class="scrolling-wrapper-flexbox scrolling-wrapper-flexbox_color__blue" role="tablist" >
                           @foreach ($items as $index => $item)
                             <div role="presentation" class="scrollable-object active">
@@ -210,6 +299,37 @@
 @stop()  
 
 @section('scripts')
+<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+<script>
+var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      // init: false,
+      navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 20,
+        }
+        // 1024: {
+        //   slidesPerView: 5,
+        //   spaceBetween: 50,
+        // },
+      }
+    });
+
+</script>
 <script src="/js/jquery.rest.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 $(function() {
