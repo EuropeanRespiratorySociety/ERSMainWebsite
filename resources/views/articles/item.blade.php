@@ -84,7 +84,7 @@
     {{--  Beginning Main Content Area  --}}
     {{--  Beginning Right Side-bar  --}}
     <div class="col-md-3 white-bg right-photo">
-      <div class="right-photo-inner">
+      <div class="right-photo-inner" @if(!$item->image && $item->video)style="width: inherit" @endif>
         @if($item->image)
           <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
         @endif
@@ -108,7 +108,7 @@
             <div id="map"></div>
         @endif
         @if($item->video)
-          <div class="videoWrapper" style="min-height:300px">
+          <div class="videoWrapper" style="min-height:300px; @if(!$item->image && $item->video)margin-right: 10px; @endif">
             {!!$item->video!!} 
           </div>
         @endif
