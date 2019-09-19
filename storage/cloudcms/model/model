@@ -4,6 +4,7 @@ model:
     slug: false
     tags: false
     contentType: false
+    diseaseModules: false
     k4EventId: false
     type: false
     flags: [{ text: false, color: false }]

@@ -204,6 +204,8 @@ class Navigation
             $menu->add('Professional development','#professional-development')
               ->link->attr(array(
                 'class' => "ga-prof-dev"));
+                $menu->professionalDevelopment->add('Continuing Professional Development','professional-development/cpd')->link->attr(array(
+                  'class' => "ga-prof-dev"));
                 $menu->professionalDevelopment->add('Courses','professional-development/courses')->link->attr(array(
                   'class' => "ga-prof-dev"));
                 $menu->professionalDevelopment->add('Respiratory Digests','professional-development/respiratory-digests')
@@ -251,8 +253,7 @@ class Navigation
                 ->link->attr(array(
                   'class' => "ga-prof-dev"));
                   
-                $menu->professionalDevelopment->add('CPD','professional-development/cpd')
-                ->link->attr(array('style' => 'display:none'));
+                
                 $menu->professionalDevelopment->add('PhD Overview','professional-development/phd-overview')
                 ->link->attr(array('style' => 'display:none'));
 
