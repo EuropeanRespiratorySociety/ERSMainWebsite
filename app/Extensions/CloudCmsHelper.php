@@ -95,7 +95,7 @@ class CloudCmsHelper
     * @param string $type (Optional - type of association e.g. ers:category-association)
     * @return array
     */
-    public function getAssociation($_qname, $type = 'ers:category-association' ){
+    public function getAssociation($_qname, $type = 'ers:category-association', $limit = 25){
         $query = '{ "unPublished": { "$ne": true}}';
 
         $results = CC::nodes()
@@ -103,6 +103,7 @@ class CloudCmsHelper
             ->addParams(['type' => $type])
             ->addParams(['metadata' => 'true'])
             ->addParams(['full' => 'true'])
+            ->addParams(['limit' => $limit])
             ->get();
         $results = $this->validateResults($results);      
         return $results;    
