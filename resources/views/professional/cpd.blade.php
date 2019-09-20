@@ -122,20 +122,33 @@
                 </div>
             </div> 
             <div class="main-content">
-                @if($item->programme)
-               <div class="row">
-                 <div class="col-sm-2 col-md-2 col-xs-12 pull-left" style="margin: 10px 0 20px;">
-                    <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary text-left bt-course-programme" style="margin: 0 15px;">
+               <div class="row" style="padding-left: 35px;" >
+                <div class="btn-toolbar xs12">
+                  <div class="btn-group">
+                    @if($item->programme)
+                     <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary btn-space text-left bt-course-programme">
                       <span class="icon icon-handout" style="font-size: 24px;"></span>
-                      @if($item->programmeButtonText)
-                        {{$item->programmeButtonText}} 
-                      @else
-                        View this syllabus in a file
-                      @endif
+                        @if($item->programmeButtonText)
+                          {{$item->programmeButtonText}} 
+                        @else
+                          Download syllabus
+                        @endif
                     </a>
-                 </div> 
+                    @endif
+
+                    @if($item->practicalInfo)
+                      <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary btn-space text-left bt-course-programme">
+                          <span class="icon icon-handout" style="font-size: 24px;"></span>
+                          @if($item->practicalInfoButton)
+                            {{$item->practicalInfoButton}} 
+                          @else
+                            Programme
+                          @endif
+                      </a>
+                    @endif
+                    </div>
+                  </div>
                </div>
-               @endif
 
               @foreach ($item->modules as $indexModules => $modules)
                 @if($indexModules%2==1)
