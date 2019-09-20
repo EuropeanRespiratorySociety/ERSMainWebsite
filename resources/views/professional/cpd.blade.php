@@ -10,99 +10,34 @@
 @stop()
 @section('content')
 <head>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 <style>
-
-
- .swiper-container {
-      width: 100%;
-      height: 100%;
-    }
-
-  .swiper-container_color__blue {
-    background-color: #015291;
-  }
-.swiper-slide {
-  padding: 15px 0;
-  text-align: left;
-  font-size: 18px;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-.swiper-slide_color__blue {
-  background-color: #015291;
-}
-
-  .scrollable-chip a{
-    display: block;
-    padding: 12px;
-    border-radius: 28px;
-  }
-
-  .scrollable-chip_color__gray{
-    background-color: #ccc;
-    color: #015291
-  }
-
-  .scrollable-chip span{
-    padding: 10px 10px 10px 45px;
-    font-size: 16px;
-  }
-
-  .swiper-wrapper_color__blue {
-    background-color: #015291;
-  }
-
-
-
-
   .cpd-card-frame{
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
   }
-  .scrolling-wrapper-flexbox {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding: 12px 0; 
-    border-radius: 8px 8px 0 0;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-      }
-  .scrolling-wrapper-flexbox::-webkit-scrollbar {
-    display: none;
-  }
+
   .scrolling-wrapper-flexbox_color__blue {
     background-color: #015291;
   }
-  .scrolling-wrapper-flexbox .scrollable-object {
-    flex: 0 0 auto;
-    margin-left: 12px;
-  }
+
   .scrollable-object a{
     display: block;
     padding: 12px;
     border-radius: 28px;
   }
+
   .scrollable-object_color__blue{
     background-color: #ccc;
     color: #015291
   }
-  .scrolling-wrapper-flexbox .scrollable-object span{
+
+  .scrollable-object span{
     padding: 10px 10px 10px 45px;
     font-size: 16px;
   }
+
   .ers-white-header .page-head {
     border-bottom: none;
   }
@@ -189,54 +124,28 @@
                     <div class="col-sm-12">
                       <div class="cpd-card-frame"> <!-- start the tab block -->
 
-
-                        <div class="swiper-container swiper-container_color__blue">
-                            <div class="swiper-wrapper swiper-wrapper_color__blue">
-                              @foreach ($items as $index => $item)
-                               <div class="swiper-slide swiper-slide_color__blue active scrollable-chip">
-                                 <a href="#{{$item->slug}}" data-toggle="tab" aria-expanded="false" class="scrollable-chip_color__gray"><span class="font-din" style="background-image:url('{{$item->image}}'); background-repeat: no-repeat; background-position: left; background-size: contain;">{{$item->title}}</span></a>
-                                </div>
-                              @endforeach
+                            <div class="columns">
+                              <div class="owl-carousel owl-theme scrolling-wrapper-flexbox_color__blue" style="padding: 0 0 0 15px;">
+                                @foreach ($items as $index => $item)
+                                  <div role="presentation" class="item scrollable-object active" style="width:auto;padding: 15px 0;">
+                                      <a href="#{{$item->slug}}" data-toggle="tab" aria-expanded="false" class="scrollable-object_color__blue"><span class="font-din" style="background-image:url('{{$item->image}}'); background-repeat: no-repeat; background-position: left; background-size: contain; ">{{$item->title}}</span></a>
+                                  </div>
+                                @endforeach
+                              </div>
                             </div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                        </div>
 
-
-
-
-                        {{-- <div class="swiper-container swiper-container_color__blue">
-                            <div class="swiper-wrapper swiper-wrapper_color__blue">
-                              @foreach ($items as $index => $item)
-                               <div class="swiper-slide swiper-slide_color__blue active scrollable-chip">
-                                 <a href="#{{$item->slug}}" data-toggle="tab" aria-expanded="false" class="scrollable-chip_color__gray"><span class="font-din" style="background-image:url('{{$item->image}}'); background-repeat: no-repeat; background-position: left; background-size: contain;">{{$item->title}}</span></a>
-                                </div>
-                              @endforeach
-                            </div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                        </div> --}}
-
-
-                        <div class="scrolling-wrapper-flexbox scrolling-wrapper-flexbox_color__blue" role="tablist" >
-                          @foreach ($items as $index => $item)
-                            <div role="presentation" class="scrollable-object active">
-                              <a href="#{{$item->slug}}" data-toggle="tab" aria-expanded="false" class="scrollable-object_color__blue"><span class="font-din" style="background-image:url('{{$item->image}}'); background-repeat: no-repeat; background-position: left; background-size: contain; ">{{$item->title}}</span></a>
-                            </div>
-                          @endforeach
-                        </div>
 
                         <!-- Tab panes -->
                         <div class="tab-content" style="overflow: auto;">
                             @foreach ($items as $index => $item)
-                              @if($index == 0)
-                                <div id="{{$item->slug}}" class="tab-pane cont active">
-                              @else
-                                <div id="{{$item->slug}}" class="tab-pane cont">
-                              @endif                       
-                                  <div class="row">
+                            @if($index == 0)
+                              <div id="{{$item->slug}}" class="tab-pane cont active">
+                            @else
+                              <div id="{{$item->slug}}" class="tab-pane cont">
+                            @endif
+                                <div class="row">
                                       <div style="display:inline-block;">
-                                          <h2 style="background-image:url('{{$item->image}}'); background-repeat: no-repeat; background-position: left; background-size: contain; padding-left: 65px;margin-top: 60px;">{{$item->title}}</h2>
+                                          <h2 style="background-image:url('{{$item->image}}'); background-repeat: no-repeat; background-position: left; background-size: contain; padding:5px 0 5px 56px;margin-top: 55px;">{{$item->title}}</h2>
                                         </div>
                                       <div class="col-sm-8 center-block text-center" style="margin-top: 20px;">
                                           @foreach ($item->modules as $indexModules => $modules)
@@ -303,37 +212,22 @@
 @stop()  
 
 @section('scripts')
-<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+<script src="https://cdn.ersnet.org/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdn.ersnet.org/js/owl.carousel.min.js" type="text/javascript"></script>
 <script>
-var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      // init: false,
-      navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 4,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 5,
-          spaceBetween: 20,
-        }
-        // 1024: {
-        //   slidesPerView: 5,
-        //   spaceBetween: 50,
-        // },
-      }
-    });
+$(document).ready(function() {
+  $('.owl-carousel').owlCarousel({
+    margin: 10,
+    loop: false,
+    autoWidth: true,
+    items: 3
+  })
+})
+
 
 </script>
+
+
 <script src="/js/jquery.rest.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 $(function() {
