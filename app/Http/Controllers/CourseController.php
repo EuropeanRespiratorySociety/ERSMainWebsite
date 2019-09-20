@@ -32,7 +32,7 @@ class CourseController extends Controller
             $this->CC->setCanonical($item[0]->_qname, 'professional-development/courses');
         }
 
-        $results = $this->CC->getAssociation($params['item']->_qname);
+        $results = $this->CC->getAssociation($params['item']->_qname, 'ers:category-association', 50);
         $items = $this->CC->parseItems($results['rows']);
         $sorted = $this->CC->sortItems($items);
         $params['items'] =  $sorted; 
