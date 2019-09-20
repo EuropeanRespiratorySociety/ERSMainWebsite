@@ -210,10 +210,6 @@
                Jan Plutinsky
 	         	</div>
 	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Slovenia</strong><br>
-               Delegate to be assigned
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
 		         	<strong>South Africa</strong><br>
 		            Umesh Gangaram Lalloo
 	         	</div>
@@ -260,10 +256,6 @@
 	         	<div class="col-md-4 national_delegates ">
 		         	<strong>United States of America </strong><br>
                Jeffrey Drazen
-	         	</div>
-	         	<div class="col-md-4 national_delegates ">
-		         	<strong>Vietnam</strong><br>
-		           Delegate to be assigned
 	         	</div>
 	        </div>
     	</div>
