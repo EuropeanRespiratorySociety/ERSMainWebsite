@@ -166,7 +166,8 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /cpd/RS https://www.ersnet.org/professional-development/cpd/cpd-sleep-and-breathing-disorders
         Redirect 301 /cpd/TO https://www.ersnet.org/professional-development/cpd/cpd-thoracic-oncology
         Redirect 301 /CPD https://www.ersnet.org/professional-development/cpd
-        
+        Redirect 301 /cpd https://www.ersnet.org/professional-development/cpd
+
         # E
         Redirect 301 /ebus https://www.ersnet.org/professional-development/endobronchial-ultrasound-certified-training-programme
         Redirect 301 /educationgrant https://www.ersnet.org/professional-development/grants-and-sponsorships/medical-education-grant
