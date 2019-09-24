@@ -181,20 +181,6 @@
                                           </div>
                                         </div>
                                      </div>
-                                    {{-- @if($item->programme)
-                                    <div class="row">
-                                      <div class="col-sm-2 col-md-2 col-xs-12 pull-left" style="margin: 10px 0 20px;">
-                                          <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary text-left bt-course-programme" style="margin: 0 15px;">
-                                            <span class="icon icon-handout" style="font-size: 24px;"></span>
-                                            @if($item->programmeButtonText)
-                                              {{$item->programmeButtonText}} 
-                                            @else
-                                              View this syllabus in a file
-                                            @endif
-                                          </a>
-                                      </div> 
-                                    </div>
-                                    @endif --}}
                                     @foreach ($item->modules as $indexModules => $modules)
                                     @if($indexModules%2==1)
                                       <div class="row">
@@ -211,10 +197,10 @@
                                                 <div style="padding-top: 8px;"><span><i class="icon s7-angle-down"></i>{{ $module->title }}</span></div>
                                                 <div style="flex-grow: 1 !important; -webkit-box-flex:1 !important;"></div>
                                                 <object class="hidden-md hidden-lg hidden-sm">
-                                                  <button type="button" data-toggle="modal" data-target="#md-recommender" class="btn btn-alt2 btn-shade1 btn-rad btn-xs">Events</button>
+                                                  <button type="button" onclick="showRecommendation('{{$module->qname}}')" class="btn btn-alt2 btn-shade1 btn-rad btn-xs">Events</button>
                                                 </object>
                                                 <object class="hidden-xs" >
-                                                  <button type="button" data-toggle="modal" data-target="#md-recommender" class="btn btn-alt2 btn-shade1 btn-rad btn-sm">Related Events</button>
+                                                  <button type="button" onclick="showRecommendation('{{$module->qname}}')" class="btn btn-alt2 btn-shade1 btn-rad btn-sm">Related Events</button>
                                                 </object>
                                               </a>
                                             </h4>
@@ -267,68 +253,21 @@ $(document).ready(function() {
 
 <script src="/js/jquery.rest.min.js" type="text/javascript"></script>
 <script type="text/javascript">
-$(function() {
-  // $('[data-toggle="modal"]').hover(function(e) {
-  //   var modalId = $(this).data('target');
-  //   alert($(e.relatedTarget).data('module'))
-  //   $(modalId).modal('show');
-  // });
-  $("#md-recommender").on("show.bs.modal", function(e) {
-    var apiUrl = '{{ env('API_URL') }}' ? '{{ env('API_URL') }}' : 'https://api.ersnet.org/' ;
-    var client = new $.RestClient(apiUrl, {
-        cache: 60, 
-        cachableMethods: ["GET"] 
-    });
-    client.add('courses');
-    client.courses.read().done(function (data){
-      const events = data.data;
-      var cards = "";
-      for( let i = 0; i < events.length ; i++){
-        const image = events[i].image ? '<div class="card-image"'
-                  +'style="background-size:cover;background-repeat: no-repeat;height:150px;'
-                  +'background-image: url(\'' + events[i].image + '\');'
-                  +'background-position: center center;"></div>'
-                  : '';
-        const title = events[i].title;
-        const uri = events[i].uri;
-        const leadParagraph = events[i].shortLead;
-        const createdPath = window.location.pathname + '/' + events[i].slug;
-        const path = uri 
-                      ? uri
-                      : createdPath
-        const anchor = '<a href=\"' + path + '\">' + title + '</a>';
-        const card = '<div class="col-md-12"><div class="card card-event">'
-          + image
-          + '<div class="card-content text-left"><h3 class="title">'
-          +  anchor
-          + '</h3><p class="date" style="padding-bottom: 3px;"><span class="icon s7-map-marker"></span>'
-          +  events[i].eventLocation
-          + '</p><p class="date"><span class="icon s7-date"></span>'
-          + events[i].eventDates
-          + '</p>'
-          +  leadParagraph
-          + '</div><div class="card-action clearfix"><a href="'
-          + path
-          + '" class="btn btn-register">more</a></div></div></div>';
-        // const card = '<div class="col-md-4 isotope"><div class="card card-event">'
-        //   + image
-        //   + '<div class="card-content text-left"><h3 class="title">'
-        //   +  anchor
-        //   + '</h3><p class="date" style="padding-bottom: 3px;"><span class="icon s7-map-marker"></span>'
-        //   +  events[i].eventLocation
-        //   + '</p><p class="date"><span class="icon s7-date"></span>'
-        //   + events[i].eventDates
-        //   + '</p>'
-        //   +  leadParagraph
-        //   + '</div><div class="card-action clearfix"><a href="'
-        //   + path
-        //   + '" class="btn btn-register">more</a></div></div></div>';
-        cards += card;
-      }
-      const test = '<div><p>'+ $(e.relatedTarget).data('module') +'</p>' + cards + '</div>'
-      $(".modal-body").html(test);
-    });
-  });
-});
-</script>
+  function showRecommendation(qname){
+      $.ajax({
+          method: 'GET', 
+          url: '/professional-development/cpd/modules/' + qname, 
+          success: function(response){ 
+            const test = '<div><p>'+ response +'</p></div>'
+            $(".modal-body").html(test);
+            $("#md-recommender").modal('show');
+          },
+          error: function(jqXHR, textStatus, errorThrown) { 
+            const test = '<div><p>Something wrong appened, please refresh the page and try again.</p></div>'
+            $(".modal-body").html(test);
+            $("#md-recommender").modal('show');
+          }
+      });
+    }
+  </script>
 @stop()
