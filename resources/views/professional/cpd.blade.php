@@ -54,6 +54,7 @@
   
   h4.panel-title {
     font-size: 16px !important;
+    margin-top: 0 !important;
   }
   .md-chip{
       margin: 0 5px 3px 0;
@@ -171,15 +172,24 @@
                                     @if($indexModules%2==1)
                                       <div class="row">
                                     @endif
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-6 col-xs-12">
                                     <a id="disease{{$index}}-modules{{$modules->first}}-{{$modules->last}}"></a>
                                       <h3 class="text-left">{{ $modules->sectionLabel }}</h3>   
                                       <div id="accordion-disease{{$index}}-{{$indexModules}}" class="panel-group accordion accordion-semi">
                                         @foreach ($modules->modules as $indexModule => $module)
-                                        <div class="panel panel-default panel-shadow" data-toggle="modal" data-target="#md-recommender" data-module="{{ $module->title }}">
+                                        <div class="panel panel-default panel-shadow" >
                                           <div class="panel-heading">
-                                            <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion-disease{{$index}}-{{$indexModules}}" href="#ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" aria-expanded="false" class="collapsed">
-                                              <i class="icon s7-angle-down"></i>{{ $module->title }}</a>
+                                            <h4 class="panel-title font-din text-left" >
+                                              <a data-toggle="collapse" data-module="{{ $module->title }}" data-parent="#accordion-disease{{$index}}-{{$indexModules}}" href="#ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" aria-expanded="false" class="collapsed accordinon-with-button" style="display: flex; align-items: center; justify-content: center;flex-direction: row; padding: 12px 10px;">
+                                                <div style="padding-top: 8px;"><span><i class="icon s7-angle-down"></i>{{ $module->title }}</span></div>
+                                                <div style="flex-grow: 1 !important; -webkit-box-flex:1 !important;"></div>
+                                                <object class="hidden-md hidden-lg hidden-sm">
+                                                  <button type="button" data-toggle="modal" data-target="#md-recommender" class="btn btn-alt2 btn-shade1 btn-rad btn-xs">Events</button>
+                                                </object>
+                                                <object class="hidden-xs" >
+                                                  <button type="button" data-toggle="modal" data-target="#md-recommender" class="btn btn-alt2 btn-shade1 btn-rad btn-sm">Related Events</button>
+                                                </object>
+                                              </a>
                                             </h4>
                                           </div>
                                           <div id="ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
