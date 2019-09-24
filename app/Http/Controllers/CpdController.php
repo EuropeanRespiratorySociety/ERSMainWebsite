@@ -25,12 +25,18 @@ class CpdController extends Controller
     { 
         $results = $this->CC->getItem('cpd');
         $item = $this->CC->parseItems($results['rows']);
-        $params['item'] =  (object) $item[0]; 
-        if(!$item[0]->url || !$item[0]->uri){
-            $this->CC->setCanonical($item[0]->_qname);
+        $params['item'] =  (object) $item[0];
+
+        if($item[0]->hasRelatedArticles > 0){
+            $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
+            $items = $this->CC->parseItems($related['rows']);
+            foreach($items as $index => $item){
+                $item->modules = $this->prepareModules($item->diseaseModules);
+                }
+            $params['items'] =  (object) $items;
         }
-        $params['modulesUrl'] = $item[0]->uri."/modules";
-        return view('professional.cpd-main')->with($params);    
+        
+        return view('professional.cpd')->with($params);
     }
 
     /**
@@ -54,28 +60,6 @@ class CpdController extends Controller
         }    
         
         return view('professional.phd-overview')->with($params); 
-    }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function cpdModules()
-    { 
-        $results = $this->CC->getItem('cpd');
-        $item = $this->CC->parseItems($results['rows']);
-        $params['item'] =  (object) $item[0];
-
-        if($item[0]->hasRelatedArticles > 0){
-            $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
-            $items = $this->CC->parseItems($related['rows']);
-            foreach($items as $index => $item){
-                $item->modules = $this->prepareModules($item->diseaseModules);
-                }
-            $params['items'] =  (object) $items;
-        }
-        return view('professional.cpd')->with($params);
     }
 
      /**

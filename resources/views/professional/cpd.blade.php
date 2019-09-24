@@ -12,7 +12,7 @@
 <head>
     <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-</head>
+</head> 
 <style>
   .cpd-card-frame{
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
@@ -120,7 +120,17 @@
 <div class="ers-content">
   	<div id="fullpage">
         <div class="section fp-auto-height">
+            @if($item->highResImage)
+            <div class="top-box" style="height: 400px; background-image: url('{{$item->highResImage}}'); background-position: center {{$item->imageAlignment}}">
+            </div>
+            @endif
             <div class="main-content">
+                <div class="page-head" style="margin-bottom: 0px;">
+                    <h2>{{$item->title}}</h2>
+                  </div>
+                  <div class="col-md-7 center-block lead text-left" style="margin-top: 50px;">
+                    {!! $item->body !!}
+                  </div>
                 <div class="row">
                     <div class="col-sm-12">
                       <div class="cpd-card-frame"> <!-- start the tab block -->
@@ -235,7 +245,6 @@
 @stop()  
 
 @section('scripts')
-<script src="https://cdn.ersnet.org/js/jquery.min.js" type="text/javascript"></script>
 <script src="https://cdn.ersnet.org/js/owl.carousel.min.js" type="text/javascript"></script>
 <script>
 $(document).ready(function() {
@@ -246,17 +255,15 @@ $(document).ready(function() {
     items: 3
   })
 })
+</script> 
 
 
-</script>
 
-
-<script src="/js/jquery.rest.min.js" type="text/javascript"></script>
 <script type="text/javascript">
   function showRecommendation(qname){
       $.ajax({
           method: 'GET', 
-          url: '/professional-development/cpd/modules/' + qname, 
+          url: '/professional-development/cpd/' + qname, 
           success: function(response){ 
             const test = '<div><p>'+ response +'</p></div>'
             $(".modal-body").html(test);
