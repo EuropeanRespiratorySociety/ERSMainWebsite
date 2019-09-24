@@ -2,14 +2,18 @@
 @section('meta')
         @include('partials.meta', array('meta' =>
               [
-              'url' => isset($item->url) ? $item->url : null , 
-              'title' => $item->title
+              'url' => "https://ersnet.org/professional-development/cpd/modules" , 
+              'title' => "CPD Modules"
               ],
-              ['pagination' => isset($pagination) ? $pagination : null]
+              ['pagination' => null]
               )) 
 @stop()
 @section('content')
 <style>
+  .ers-white-header .page-head {
+    border-bottom: none;
+  }
+  
   .panel-shadow{
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.10), 0 2px 3px 0 rgba(0,0,0,.12);
     box-sizing: border-box;
@@ -19,7 +23,6 @@
 
   .font-din{
     font-family: DinPro,sans-serif;
-    color: #333;
   }
   
   h4.panel-title {
@@ -47,7 +50,7 @@
   .md-chip-textlink{
     background: #e0e0e0;
     color: #333;
-}
+    }
 
   .md-chip-clickable {
   cursor: pointer;
@@ -75,1321 +78,133 @@
      content: counters(item, ".") " "; counter-increment: item 
   }
 
-
-
-@media screen and (min-width: 1024px){
-  .alert-mobile-position span.banner-text {
-    display: inline-block;
-    line-height: 43px;
-    margin-bottom: 0px;
-  }
+  @media screen and (min-width: 1024px){
+    .alert-mobile-position span.banner-text {
+        display: inline-block;
+        line-height: 43px;
+        margin-bottom: 0px;
+    }
 
   .alert-mobile-position span.banner-link {
-  display: block;
-  width: auto;
-  float: right;
-  text-transform: uppercase;
-  }
-}
+    display: block;
+    width: auto;
+    float: right;
+    text-transform: uppercase;
+    }
+   }
 
-@media screen and (max-width: 480px){
-  .btn .icon{
-   display: none;
-  }
-}
-
-
-}
+   @media screen and (max-width: 480px){
+    .btn .icon{
+    display: none;
+    }
+   }
+    }
 </style>
 
 <div class="ers-content">
   	<div id="fullpage">
         <div class="section fp-auto-height">
-            @if($item->highResImage)
-            <div class="top-box" style="height: 400px; background-image: url('{{$item->highResImage}}'); background-position: center {{$item->imageAlignment}}">
-            </div>
-            @endif
-            <div style="box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);box-sizing: border-box;padding-bottom: 30px;">
-                <div class="page-head" style="margin-bottom: 15px;"><h2>Test CPD</h2></div>
-                <p>View <a href="congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference">all RF&MV</a></p>
-                <div class="row">
-                  <div class="col-sm-8 center-block text-center" style="margin-top: 20px;">
-                      <div class="md-chip font-din md-chip-clickable md-chip-textlink md-chip-hover md-chip-anchor-cpd"><a href="/professional-development/cpd/test-cpd#module10">Modules 1-10</a></div>
-                      <div class="md-chip font-din md-chip-clickable md-chip-textlink md-chip-hover md-chip-anchor-cpd"><a href="/professional-development/cpd/test-cpd#module20">Modules 11-20</a></div>
-                      <div class="md-chip font-din md-chip-clickable md-chip-textlink md-chip-hover md-chip-anchor-cpd"><a href="/professional-development/cpd/test-cpd#module30">Modules 21-30</a></div>
-                      <div class="md-chip font-din md-chip-clickable md-chip-textlink md-chip-hover md-chip-anchor-cpd"><a href="/professional-development/cpd/test-cpd#module40">Modules 31-40</a></div>
-                      <div class="md-chip font-din md-chip-clickable md-chip-textlink md-chip-hover md-chip-anchor-cpd"><a href="/professional-development/cpd/test-cpd#module50">Modules 41-50</a></div>
-                      <div class="md-chip font-din md-chip-clickable md-chip-textlink md-chip-hover md-chip-anchor-cpd"><a href="/professional-development/cpd/test-cpd#module60">Modules 51-60</a></div>
-                  </div>
-                </div>
-                
-            </div>
             <div class="main-content">
-
-                <div class="col-md-8 center-block lead text-left">
-                  {!! $item->body !!}
-                </div>
-
-                @if($item->body2)
-                <div class="col-md-8 center-block lead text-left">
-                  {!! $item->body2 !!}
-                </div>
-                @endif
-                @if($item->body3)
-                <div class="col-md-8 center-block lead text-left">
-                  {!! $item->body3 !!}
-                </div>
-                @endif
-                @if($item->body4)
-                <div class="col-md-8 center-block lead text-left">
-                  {!! $item->body4 !!}
-                </div>
-                @endif
-
                 <div class="row">
-                    <div class="col-sm-6">
-                      <a id="module10"></a>
-                      <h3 class="text-left">Module1-10</h3>
-                      <div id="accordion10" class="panel-group accordion accordion-semi">
-                        <div class="panel panel-default panel-shadow">
-                          <div class="panel-heading">
-                            <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion10" href="#ac10-1" aria-expanded="false" class="collapsed">
-                              <i class="icon s7-angle-down"></i>1. Anatomy and development of the respiratory system including malformations</a></h4>
-                          </div>
-                          <div id="ac10-1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                            <div class="panel-body text-left font-din list-sublist">
-                              <ol>
-                                <li>Pleura
-                                    <ol>
-                                      <li>Principles of measured and calculated ABG data</li>
-                                      <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                      <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                      <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                    </ol>
-                                </li>
-                                <li>Lungs</li>
-                                <li>Bronchopulmonary segments</li>
-                                <li>Trachea and bronchi</li>
-                                <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                <li>Pulmonary vasculature and lymphatic drainage</li>
-                                <li>Mediastinum</li>
-                                <li>Diaphragm</li>
-                                <li>Development</li>
-                              </ol>
+                    <div class="col-sm-12">
+                      <div class="tab-container">
+                        <ul class="nav nav-tabs">
+                            @foreach ($items as $index => $item)
+                              <li class=""><a href="#{{$item->slug}}" data-toggle="tab" aria-expanded="false"><span style="background-image: url('{{$item->image}}'); background-repeat: no-repeat; background-position: left; background-size: contain; padding-left: 65px;">{{$item->title}}</span></a></li>
+                            @endforeach
+                        </ul>
+                        <div class="tab-content">
+                          @foreach ($items as $index => $item)
+                            <div id="{{$item->slug}}" class="tab-pane cont">
+                                <div class="row">
+                                    <div class="col-sm-8 center-block text-center" style="margin-top: 20px;">
+                                        @foreach ($item->modules as $indexModules => $modules)
+                                          <div class="md-chip font-din md-chip-clickable md-chip-textlink md-chip-hover md-chip-anchor-cpd"><a href="/professional-development/cpd/modules#disease{{$index}}-modules{{$modules->first}}-{{$modules->last}}">{{ $modules->sectionLabel }}</a></div>
+                                        @endforeach
+                                    </div>
+                                  </div>
+                                  @if($item->programme)
+                                  <div class="row">
+                                    <div class="col-sm-2 col-md-2 col-xs-12 pull-left" style="margin: 10px 0 20px;">
+                                       <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary text-left bt-course-programme" style="margin: 0 15px;">
+                                         <span class="icon icon-handout" style="font-size: 24px;"></span>
+                                         @if($item->programmeButtonText)
+                                           {{$item->programmeButtonText}} 
+                                         @else
+                                           View this syllabus in a file
+                                         @endif
+                                       </a>
+                                    </div> 
+                                  </div>
+                                  @endif
+                                  @foreach ($item->modules as $indexModules => $modules)
+                                  @if($indexModules%2==1)
+                                    <div class="row">
+                                  @endif     
+                                  <div class="col-sm-6">
+                                  <a id="disease{{$index}}-modules{{$modules->first}}-{{$modules->last}}"></a>
+                                    <h3 class="text-left">{{ $modules->sectionLabel }}</h3>   
+                                    <div id="accordion-disease{{$index}}-{{$indexModules}}" class="panel-group accordion accordion-semi">
+                                    @foreach ($modules->modules as $indexModule => $module)
+                                      <div class="panel panel-default panel-shadow">
+                                        <div class="panel-heading" style="background-color: #015291;">
+                                          <h4 class="panel-title font-din text-left">
+                                            <a data-toggle="collapse" data-parent="#accordion-disease{{$index}}-{{$indexModules}}" href="#ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" aria-expanded="false" class="collapsed">
+                                              <i class="icon s7-angle-down"></i>{{ $module->title }}</a>
+                                          </h4>
+                                          <button onclick="showRecommendation('{{$module->qname}}')">Click me</button>
+                                        </div>
+                                        <div id="ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                          <div class="panel-body text-left font-din list-sublist">
+                                            {!! $module->body !!}
+                                          </div>
+                                        </div>
+                                      </div>
+                                    @endforeach
+                                    </div><!-- close accordion -->     
+                                  </div> <!-- close col-sm-6 -->
+                                  @if($indexModules%2==1)
+                                    </div>
+                                  @endif    
+                                @endforeach
                             </div>
-                          </div>
+                          @endforeach
                         </div>
-
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading">
-                              <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion10" href="#ac10-2" aria-expanded="false" class="collapsed">
-                                <i class="icon s7-angle-down"></i>2. Tobacco - risk factors and epidemiology</a>
-                              </h4>
-                            </div>
-                            <div id="ac10-2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                              <div class="panel-body text-left font-din list-sublist">
-                                <ol>
-                                  <li>Pleura
-                                      <ol>
-                                        <li>Principles of measured and calculated ABG data</li>
-                                        <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                        <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                        <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                      </ol>
-                                  </li>
-                                  <li>Lungs</li>
-                                  <li>Bronchopulmonary segments</li>
-                                  <li>Trachea and bronchi</li>
-                                  <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                  <li>Pulmonary vasculature and lymphatic drainage</li>
-                                  <li>Mediastinum</li>
-                                  <li>Diaphragm</li>
-                                  <li>Development</li>
-                                </ol>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading">
-                              <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion10" href="#ac10-3" aria-expanded="false" class="collapsed">
-                                <i class="icon s7-angle-down"></i>3. Indoor and outdoor pollution</a>
-                              </h4>
-                            </div>
-                            <div id="ac10-3" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                              <div class="panel-body text-left font-din list-sublist">
-                                <ol>
-                                  <li>Pleura
-                                      <ol>
-                                        <li>Principles of measured and calculated ABG data</li>
-                                        <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                        <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                        <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                      </ol>
-                                  </li>
-                                  <li>Lungs</li>
-                                  <li>Bronchopulmonary segments</li>
-                                  <li>Trachea and bronchi</li>
-                                  <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                  <li>Pulmonary vasculature and lymphatic drainage</li>
-                                  <li>Mediastinum</li>
-                                  <li>Diaphragm</li>
-                                  <li>Development</li>
-                                </ol>
-                              </div>
-                            </div>
-                        </div>
-
-
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading">
-                              <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion10" href="#ac10-4" aria-expanded="false" class="collapsed">
-                                <i class="icon s7-angle-down"></i>4. Respiratory hazards associated with occupational factors</a>
-                              </h4>
-                            </div>
-                            <div id="ac10-4" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                              <div class="panel-body text-left font-din list-sublist">
-                                <ol>
-                                  <li>Pleura
-                                      <ol>
-                                        <li>Principles of measured and calculated ABG data</li>
-                                        <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                        <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                        <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                      </ol>
-                                  </li>
-                                  <li>Lungs</li>
-                                  <li>Bronchopulmonary segments</li>
-                                  <li>Trachea and bronchi</li>
-                                  <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                  <li>Pulmonary vasculature and lymphatic drainage</li>
-                                  <li>Mediastinum</li>
-                                  <li>Diaphragm</li>
-                                  <li>Development</li>
-                                </ol>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading">
-                              <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion10" href="#ac10-5" aria-expanded="false" class="collapsed">
-                                <i class="icon s7-angle-down"></i>5. Asbestos-related diseases</a>
-                              </h4>
-                            </div>
-                            <div id="ac10-5" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                              <div class="panel-body text-left font-din list-sublist">
-                                <ol>
-                                  <li>Pleura
-                                      <ol>
-                                        <li>Principles of measured and calculated ABG data</li>
-                                        <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                        <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                        <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                      </ol>
-                                  </li>
-                                  <li>Lungs</li>
-                                  <li>Bronchopulmonary segments</li>
-                                  <li>Trachea and bronchi</li>
-                                  <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                  <li>Pulmonary vasculature and lymphatic drainage</li>
-                                  <li>Mediastinum</li>
-                                  <li>Diaphragm</li>
-                                  <li>Development</li>
-                                </ol>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading">
-                              <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion10" href="#ac10-6" aria-expanded="false" class="collapsed">
-                                <i class="icon s7-angle-down"></i>6. Lung cancer screening</a>
-                              </h4>
-                            </div>
-                            <div id="ac10-6" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                              <div class="panel-body text-left font-din list-sublist">
-                                <ol>
-                                  <li>Pleura
-                                      <ol>
-                                        <li>Principles of measured and calculated ABG data</li>
-                                        <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                        <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                        <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                      </ol>
-                                  </li>
-                                  <li>Lungs</li>
-                                  <li>Bronchopulmonary segments</li>
-                                  <li>Trachea and bronchi</li>
-                                  <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                  <li>Pulmonary vasculature and lymphatic drainage</li>
-                                  <li>Mediastinum</li>
-                                  <li>Diaphragm</li>
-                                  <li>Development</li>
-                                </ol>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading">
-                              <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion10" href="#ac10-7" aria-expanded="false" class="collapsed">
-                                <i class="icon s7-angle-down"></i>7. Signs and symptoms</a></h4>
-                            </div>
-                            <div id="ac10-7" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                              <div class="panel-body text-left font-din list-sublist">
-                                <ol>
-                                  <li>Pleura
-                                      <ol>
-                                        <li>Principles of measured and calculated ABG data</li>
-                                        <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                        <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                        <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                      </ol>
-                                  </li>
-                                  <li>Lungs</li>
-                                  <li>Bronchopulmonary segments</li>
-                                  <li>Trachea and bronchi</li>
-                                  <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                  <li>Pulmonary vasculature and lymphatic drainage</li>
-                                  <li>Mediastinum</li>
-                                  <li>Diaphragm</li>
-                                  <li>Development</li>
-                                </ol>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading">
-                              <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion10" href="#ac10-8" aria-expanded="false" class="collapsed">
-                                <i class="icon s7-angle-down"></i>8. Imaging techniques</a>
-                              </h4>
-                            </div>
-                            <div id="ac10-8" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                              <div class="panel-body text-left font-din list-sublist">
-                                <ol>
-                                  <li>Pleura
-                                      <ol>
-                                        <li>Principles of measured and calculated ABG data</li>
-                                        <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                        <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                        <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                      </ol>
-                                  </li>
-                                  <li>Lungs</li>
-                                  <li>Bronchopulmonary segments</li>
-                                  <li>Trachea and bronchi</li>
-                                  <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                  <li>Pulmonary vasculature and lymphatic drainage</li>
-                                  <li>Mediastinum</li>
-                                  <li>Diaphragm</li>
-                                  <li>Development</li>
-                                </ol>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading">
-                              <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion10" href="#ac10-9" aria-expanded="false" class="collapsed">
-                                <i class="icon s7-angle-down"></i>9. Bronchoscopy</a>
-                              </h4>
-                            </div>
-                            <div id="ac10-9" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                              <div class="panel-body text-left font-din list-sublist">
-                                <ol>
-                                  <li>Pleura
-                                      <ol>
-                                        <li>Principles of measured and calculated ABG data</li>
-                                        <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                        <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                        <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                      </ol>
-                                  </li>
-                                  <li>Lungs</li>
-                                  <li>Bronchopulmonary segments</li>
-                                  <li>Trachea and bronchi</li>
-                                  <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                  <li>Pulmonary vasculature and lymphatic drainage</li>
-                                  <li>Mediastinum</li>
-                                  <li>Diaphragm</li>
-                                  <li>Development</li>
-                                </ol>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading">
-                              <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion10" href="#ac10-10" aria-expanded="false" class="collapsed">
-                                <i class="icon s7-angle-down"></i>10. Advanced endoscopy</a>
-                              </h4>
-                            </div>
-                            <div id="ac10-10" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                              <div class="panel-body text-left font-din list-sublist">
-                                <ol>
-                                  <li>Pleura
-                                      <ol>
-                                        <li>Principles of measured and calculated ABG data</li>
-                                        <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                        <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                        <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                      </ol>
-                                  </li>
-                                  <li>Lungs</li>
-                                  <li>Bronchopulmonary segments</li>
-                                  <li>Trachea and bronchi</li>
-                                  <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                  <li>Pulmonary vasculature and lymphatic drainage</li>
-                                  <li>Mediastinum</li>
-                                  <li>Diaphragm</li>
-                                  <li>Development</li>
-                                </ol>
-                              </div>
-                            </div>
-                        </div>
-
-                      </div><!-- close accordion -->
-
-
-                    </div> <!-- close col-sm-6 -->
-                    <div class="col-sm-6">
-                        <a id="module20"></a>
-                        <h3 class="text-left">Module11-20</h3>
-                        <div id="accordion20" class="panel-group accordion accordion-semi">
-                          <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading">
-                              <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion20" href="#ac20-1" aria-expanded="false" class="collapsed">
-                                <i class="icon s7-angle-down"></i>11. Anatomy and development of the respiratory system including malformations</a>
-                              </h4>
-                            </div>
-                            <div id="ac20-1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                              <div class="panel-body text-left font-din list-sublist">
-                                <ol>
-                                  <li>Pleura
-                                      <ol>
-                                        <li>Principles of measured and calculated ABG data</li>
-                                        <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                        <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                        <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                      </ol>
-                                  </li>
-                                  <li>Lungs</li>
-                                  <li>Bronchopulmonary segments</li>
-                                  <li>Trachea and bronchi</li>
-                                  <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                  <li>Pulmonary vasculature and lymphatic drainage</li>
-                                  <li>Mediastinum</li>
-                                  <li>Diaphragm</li>
-                                  <li>Development</li>
-                                </ol>
-                              </div>
-                            </div>
-                          </div>
-  
-                          <div class="panel panel-default panel-shadow">
-                              <div class="panel-heading">
-                                <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion20" href="#ac20-2" aria-expanded="false" class="collapsed">
-                                  <i class="icon s7-angle-down"></i>12. Tobacco - risk factors and epidemiology</a>
-                                </h4>
-                              </div>
-                              <div id="ac20-2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body text-left font-din list-sublist">
-                                  <ol>
-                                    <li>Pleura
-                                        <ol>
-                                          <li>Principles of measured and calculated ABG data</li>
-                                          <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                          <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                          <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                        </ol>
-                                    </li>
-                                    <li>Lungs</li>
-                                    <li>Bronchopulmonary segments</li>
-                                    <li>Trachea and bronchi</li>
-                                    <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                    <li>Pulmonary vasculature and lymphatic drainage</li>
-                                    <li>Mediastinum</li>
-                                    <li>Diaphragm</li>
-                                    <li>Development</li>
-                                  </ol>
-                                </div>
-                              </div>
-                          </div>
-  
-                          <div class="panel panel-default panel-shadow">
-                              <div class="panel-heading">
-                                <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion20" href="#ac20-3" aria-expanded="false" class="collapsed">
-                                  <i class="icon s7-angle-down"></i>13. Indoor and outdoor pollution</a>
-                                </h4>
-                              </div>
-                              <div id="ac20-3" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body text-left font-din list-sublist">
-                                  <ol>
-                                    <li>Pleura
-                                        <ol>
-                                          <li>Principles of measured and calculated ABG data</li>
-                                          <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                          <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                          <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                        </ol>
-                                    </li>
-                                    <li>Lungs</li>
-                                    <li>Bronchopulmonary segments</li>
-                                    <li>Trachea and bronchi</li>
-                                    <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                    <li>Pulmonary vasculature and lymphatic drainage</li>
-                                    <li>Mediastinum</li>
-                                    <li>Diaphragm</li>
-                                    <li>Development</li>
-                                  </ol>
-                                </div>
-                              </div>
-                          </div>
-  
-  
-                          <div class="panel panel-default panel-shadow">
-                              <div class="panel-heading">
-                                <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion20" href="#ac20-4" aria-expanded="false" class="collapsed">
-                                  <i class="icon s7-angle-down"></i>14. Respiratory hazards associated with occupational factors</a>
-                                </h4>
-                              </div>
-                              <div id="ac20-4" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body text-left font-din list-sublist">
-                                  <ol>
-                                    <li>Pleura
-                                        <ol>
-                                          <li>Principles of measured and calculated ABG data</li>
-                                          <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                          <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                          <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                        </ol>
-                                    </li>
-                                    <li>Lungs</li>
-                                    <li>Bronchopulmonary segments</li>
-                                    <li>Trachea and bronchi</li>
-                                    <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                    <li>Pulmonary vasculature and lymphatic drainage</li>
-                                    <li>Mediastinum</li>
-                                    <li>Diaphragm</li>
-                                    <li>Development</li>
-                                  </ol>
-                                </div>
-                              </div>
-                          </div>
-  
-                          <div class="panel panel-default panel-shadow">
-                              <div class="panel-heading">
-                                <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion20" href="#ac20-5" aria-expanded="false" class="collapsed">
-                                  <i class="icon s7-angle-down"></i>15. Asbestos-related diseases</a>
-                                </h4>
-                              </div>
-                              <div id="ac20-5" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body text-left font-din list-sublist">
-                                  <ol>
-                                    <li>Pleura
-                                        <ol>
-                                          <li>Principles of measured and calculated ABG data</li>
-                                          <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                          <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                          <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                        </ol>
-                                    </li>
-                                    <li>Lungs</li>
-                                    <li>Bronchopulmonary segments</li>
-                                    <li>Trachea and bronchi</li>
-                                    <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                    <li>Pulmonary vasculature and lymphatic drainage</li>
-                                    <li>Mediastinum</li>
-                                    <li>Diaphragm</li>
-                                    <li>Development</li>
-                                  </ol>
-                                </div>
-                              </div>
-                          </div>
-  
-                          <div class="panel panel-default panel-shadow">
-                              <div class="panel-heading">
-                                <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion20" href="#ac20-6" aria-expanded="false" class="collapsed">
-                                  <i class="icon s7-angle-down"></i>16. Lung cancer screening</a>
-                                </h4>
-                              </div>
-                              <div id="ac20-6" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body text-left font-din list-sublist">
-                                  <ol>
-                                    <li>Pleura
-                                        <ol>
-                                          <li>Principles of measured and calculated ABG data</li>
-                                          <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                          <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                          <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                        </ol>
-                                    </li>
-                                    <li>Lungs</li>
-                                    <li>Bronchopulmonary segments</li>
-                                    <li>Trachea and bronchi</li>
-                                    <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                    <li>Pulmonary vasculature and lymphatic drainage</li>
-                                    <li>Mediastinum</li>
-                                    <li>Diaphragm</li>
-                                    <li>Development</li>
-                                  </ol>
-                                </div>
-                              </div>
-                          </div>
-  
-                          <div class="panel panel-default panel-shadow">
-                              <div class="panel-heading">
-                                <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion20" href="#ac20-7" aria-expanded="false" class="collapsed">
-                                  <i class="icon s7-angle-down"></i>17. Signs and symptoms</a></h4>
-                              </div>
-                              <div id="ac20-7" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body text-left font-din list-sublist">
-                                  <ol>
-                                    <li>Pleura
-                                        <ol>
-                                          <li>Principles of measured and calculated ABG data</li>
-                                          <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                          <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                          <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                        </ol>
-                                    </li>
-                                    <li>Lungs</li>
-                                    <li>Bronchopulmonary segments</li>
-                                    <li>Trachea and bronchi</li>
-                                    <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                    <li>Pulmonary vasculature and lymphatic drainage</li>
-                                    <li>Mediastinum</li>
-                                    <li>Diaphragm</li>
-                                    <li>Development</li>
-                                  </ol>
-                                </div>
-                              </div>
-                          </div>
-  
-                          <div class="panel panel-default panel-shadow">
-                              <div class="panel-heading">
-                                <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion20" href="#ac20-8" aria-expanded="false" class="collapsed">
-                                  <i class="icon s7-angle-down"></i>18. Imaging techniques</a>
-                                </h4>
-                              </div>
-                              <div id="ac20-8" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body text-left font-din list-sublist">
-                                  <ol>
-                                    <li>Pleura
-                                        <ol>
-                                          <li>Principles of measured and calculated ABG data</li>
-                                          <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                          <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                          <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                        </ol>
-                                    </li>
-                                    <li>Lungs</li>
-                                    <li>Bronchopulmonary segments</li>
-                                    <li>Trachea and bronchi</li>
-                                    <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                    <li>Pulmonary vasculature and lymphatic drainage</li>
-                                    <li>Mediastinum</li>
-                                    <li>Diaphragm</li>
-                                    <li>Development</li>
-                                  </ol>
-                                </div>
-                              </div>
-                          </div>
-  
-                          <div class="panel panel-default panel-shadow">
-                              <div class="panel-heading">
-                                <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion20" href="#ac20-9" aria-expanded="false" class="collapsed">
-                                  <i class="icon s7-angle-down"></i>19. Bronchoscopy</a>
-                                </h4>
-                              </div>
-                              <div id="ac20-9" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body text-left font-din list-sublist">
-                                  <ol>
-                                    <li>Pleura
-                                        <ol>
-                                          <li>Principles of measured and calculated ABG data</li>
-                                          <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                          <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                          <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                        </ol>
-                                    </li>
-                                    <li>Lungs</li>
-                                    <li>Bronchopulmonary segments</li>
-                                    <li>Trachea and bronchi</li>
-                                    <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                    <li>Pulmonary vasculature and lymphatic drainage</li>
-                                    <li>Mediastinum</li>
-                                    <li>Diaphragm</li>
-                                    <li>Development</li>
-                                  </ol>
-                                </div>
-                              </div>
-                          </div>
-  
-                          <div class="panel panel-default panel-shadow">
-                              <div class="panel-heading">
-                                <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion20" href="#ac20-10" aria-expanded="false" class="collapsed">
-                                  <i class="icon s7-angle-down"></i>20. Anatomy and development of the respiratory system including malformations</a>
-                                </h4>
-                              </div>
-                              <div id="ac20-10" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body text-left font-din list-sublist">
-                                  <ol>
-                                    <li>Pleura
-                                        <ol>
-                                          <li>Principles of measured and calculated ABG data</li>
-                                          <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                          <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                          <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                        </ol>
-                                    </li>
-                                    <li>Lungs</li>
-                                    <li>Bronchopulmonary segments</li>
-                                    <li>Trachea and bronchi</li>
-                                    <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                    <li>Pulmonary vasculature and lymphatic drainage</li>
-                                    <li>Mediastinum</li>
-                                    <li>Diaphragm</li>
-                                    <li>Development</li>
-                                  </ol>
-                                </div>
-                              </div>
-                          </div>
-  
-  
-                        </div><!-- close accordion -->
-                    </div> <!-- close col-sm-6 -->
-                </div><!-- close 1st row -->
-
-                <div class="row">
-                    <div class="col-sm-6">
-                      <h3 class="text-left">Module21-30</h3>
-                      <a id="module30"></a>
-                      <div id="accordion10" class="panel-group accordion accordion-semi">
-                        <div class="panel panel-default panel-shadow">
-                          <div class="panel-heading">
-                            <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion10" href="#ac10-1" aria-expanded="false" class="collapsed">
-                              <i class="icon s7-angle-down"></i>1. Anatomy and development of the respiratory system including malformations</a></h4>
-                          </div>
-                          <div id="ac10-1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                            <div class="panel-body text-left font-din list-sublist">
-                              <ol>
-                                <li>Pleura
-                                    <ol>
-                                      <li>Principles of measured and calculated ABG data</li>
-                                      <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                      <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                      <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                    </ol>
-                                </li>
-                                <li>Lungs</li>
-                                <li>Bronchopulmonary segments</li>
-                                <li>Trachea and bronchi</li>
-                                <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                <li>Pulmonary vasculature and lymphatic drainage</li>
-                                <li>Mediastinum</li>
-                                <li>Diaphragm</li>
-                                <li>Development</li>
-                              </ol>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading">
-                              <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion10" href="#ac10-2" aria-expanded="false" class="collapsed">
-                                <i class="icon s7-angle-down"></i>2. Tobacco - risk factors and epidemiology</a>
-                              </h4>
-                            </div>
-                            <div id="ac10-2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                              <div class="panel-body text-left font-din list-sublist">
-                                <ol>
-                                  <li>Pleura
-                                      <ol>
-                                        <li>Principles of measured and calculated ABG data</li>
-                                        <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                        <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                        <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                      </ol>
-                                  </li>
-                                  <li>Lungs</li>
-                                  <li>Bronchopulmonary segments</li>
-                                  <li>Trachea and bronchi</li>
-                                  <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                  <li>Pulmonary vasculature and lymphatic drainage</li>
-                                  <li>Mediastinum</li>
-                                  <li>Diaphragm</li>
-                                  <li>Development</li>
-                                </ol>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading">
-                              <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion10" href="#ac10-3" aria-expanded="false" class="collapsed">
-                                <i class="icon s7-angle-down"></i>3. Indoor and outdoor pollution</a>
-                              </h4>
-                            </div>
-                            <div id="ac10-3" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                              <div class="panel-body text-left font-din list-sublist">
-                                <ol>
-                                  <li>Pleura
-                                      <ol>
-                                        <li>Principles of measured and calculated ABG data</li>
-                                        <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                        <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                        <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                      </ol>
-                                  </li>
-                                  <li>Lungs</li>
-                                  <li>Bronchopulmonary segments</li>
-                                  <li>Trachea and bronchi</li>
-                                  <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                  <li>Pulmonary vasculature and lymphatic drainage</li>
-                                  <li>Mediastinum</li>
-                                  <li>Diaphragm</li>
-                                  <li>Development</li>
-                                </ol>
-                              </div>
-                            </div>
-                        </div>
-
-
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading">
-                              <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion10" href="#ac10-4" aria-expanded="false" class="collapsed">
-                                <i class="icon s7-angle-down"></i>4. Respiratory hazards associated with occupational factors</a>
-                              </h4>
-                            </div>
-                            <div id="ac10-4" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                              <div class="panel-body text-left font-din list-sublist">
-                                <ol>
-                                  <li>Pleura
-                                      <ol>
-                                        <li>Principles of measured and calculated ABG data</li>
-                                        <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                        <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                        <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                      </ol>
-                                  </li>
-                                  <li>Lungs</li>
-                                  <li>Bronchopulmonary segments</li>
-                                  <li>Trachea and bronchi</li>
-                                  <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                  <li>Pulmonary vasculature and lymphatic drainage</li>
-                                  <li>Mediastinum</li>
-                                  <li>Diaphragm</li>
-                                  <li>Development</li>
-                                </ol>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading">
-                              <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion10" href="#ac10-5" aria-expanded="false" class="collapsed">
-                                <i class="icon s7-angle-down"></i>5. Asbestos-related diseases</a>
-                              </h4>
-                            </div>
-                            <div id="ac10-5" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                              <div class="panel-body text-left font-din list-sublist">
-                                <ol>
-                                  <li>Pleura
-                                      <ol>
-                                        <li>Principles of measured and calculated ABG data</li>
-                                        <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                        <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                        <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                      </ol>
-                                  </li>
-                                  <li>Lungs</li>
-                                  <li>Bronchopulmonary segments</li>
-                                  <li>Trachea and bronchi</li>
-                                  <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                  <li>Pulmonary vasculature and lymphatic drainage</li>
-                                  <li>Mediastinum</li>
-                                  <li>Diaphragm</li>
-                                  <li>Development</li>
-                                </ol>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading">
-                              <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion10" href="#ac10-6" aria-expanded="false" class="collapsed">
-                                <i class="icon s7-angle-down"></i>6. Lung cancer screening</a>
-                              </h4>
-                            </div>
-                            <div id="ac10-6" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                              <div class="panel-body text-left font-din list-sublist">
-                                <ol>
-                                  <li>Pleura
-                                      <ol>
-                                        <li>Principles of measured and calculated ABG data</li>
-                                        <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                        <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                        <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                      </ol>
-                                  </li>
-                                  <li>Lungs</li>
-                                  <li>Bronchopulmonary segments</li>
-                                  <li>Trachea and bronchi</li>
-                                  <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                  <li>Pulmonary vasculature and lymphatic drainage</li>
-                                  <li>Mediastinum</li>
-                                  <li>Diaphragm</li>
-                                  <li>Development</li>
-                                </ol>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading">
-                              <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion10" href="#ac10-7" aria-expanded="false" class="collapsed">
-                                <i class="icon s7-angle-down"></i>7. Signs and symptoms</a></h4>
-                            </div>
-                            <div id="ac10-7" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                              <div class="panel-body text-left font-din list-sublist">
-                                <ol>
-                                  <li>Pleura
-                                      <ol>
-                                        <li>Principles of measured and calculated ABG data</li>
-                                        <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                        <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                        <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                      </ol>
-                                  </li>
-                                  <li>Lungs</li>
-                                  <li>Bronchopulmonary segments</li>
-                                  <li>Trachea and bronchi</li>
-                                  <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                  <li>Pulmonary vasculature and lymphatic drainage</li>
-                                  <li>Mediastinum</li>
-                                  <li>Diaphragm</li>
-                                  <li>Development</li>
-                                </ol>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading">
-                              <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion10" href="#ac10-8" aria-expanded="false" class="collapsed">
-                                <i class="icon s7-angle-down"></i>8. Imaging techniques</a>
-                              </h4>
-                            </div>
-                            <div id="ac10-8" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                              <div class="panel-body text-left font-din list-sublist">
-                                <ol>
-                                  <li>Pleura
-                                      <ol>
-                                        <li>Principles of measured and calculated ABG data</li>
-                                        <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                        <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                        <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                      </ol>
-                                  </li>
-                                  <li>Lungs</li>
-                                  <li>Bronchopulmonary segments</li>
-                                  <li>Trachea and bronchi</li>
-                                  <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                  <li>Pulmonary vasculature and lymphatic drainage</li>
-                                  <li>Mediastinum</li>
-                                  <li>Diaphragm</li>
-                                  <li>Development</li>
-                                </ol>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading">
-                              <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion10" href="#ac10-9" aria-expanded="false" class="collapsed">
-                                <i class="icon s7-angle-down"></i>9. Bronchoscopy</a>
-                              </h4>
-                            </div>
-                            <div id="ac10-9" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                              <div class="panel-body text-left font-din list-sublist">
-                                <ol>
-                                  <li>Pleura
-                                      <ol>
-                                        <li>Principles of measured and calculated ABG data</li>
-                                        <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                        <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                        <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                      </ol>
-                                  </li>
-                                  <li>Lungs</li>
-                                  <li>Bronchopulmonary segments</li>
-                                  <li>Trachea and bronchi</li>
-                                  <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                  <li>Pulmonary vasculature and lymphatic drainage</li>
-                                  <li>Mediastinum</li>
-                                  <li>Diaphragm</li>
-                                  <li>Development</li>
-                                </ol>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading">
-                              <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion10" href="#ac10-10" aria-expanded="false" class="collapsed">
-                                <i class="icon s7-angle-down"></i>10. Advanced endoscopy</a>
-                              </h4>
-                            </div>
-                            <div id="ac10-10" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                              <div class="panel-body text-left font-din list-sublist">
-                                <ol>
-                                  <li>Pleura
-                                      <ol>
-                                        <li>Principles of measured and calculated ABG data</li>
-                                        <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                        <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                        <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                      </ol>
-                                  </li>
-                                  <li>Lungs</li>
-                                  <li>Bronchopulmonary segments</li>
-                                  <li>Trachea and bronchi</li>
-                                  <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                  <li>Pulmonary vasculature and lymphatic drainage</li>
-                                  <li>Mediastinum</li>
-                                  <li>Diaphragm</li>
-                                  <li>Development</li>
-                                </ol>
-                              </div>
-                            </div>
-                        </div>
-
-                      </div><!-- close accordion -->
-
-
-                    </div> <!-- close col-sm-6 -->
-                    <div class="col-sm-6">
-                        <a id="module40"></a>
-                        <h3 class="text-left">Module31-40</h3>
-                        <div id="accordion20" class="panel-group accordion accordion-semi">
-                          <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading">
-                              <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion20" href="#ac20-1" aria-expanded="false" class="collapsed">
-                                <i class="icon s7-angle-down"></i>11. Anatomy and development of the respiratory system including malformations</a>
-                              </h4>
-                            </div>
-                            <div id="ac20-1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                              <div class="panel-body text-left font-din list-sublist">
-                                <ol>
-                                  <li>Pleura
-                                      <ol>
-                                        <li>Principles of measured and calculated ABG data</li>
-                                        <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                        <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                        <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                      </ol>
-                                  </li>
-                                  <li>Lungs</li>
-                                  <li>Bronchopulmonary segments</li>
-                                  <li>Trachea and bronchi</li>
-                                  <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                  <li>Pulmonary vasculature and lymphatic drainage</li>
-                                  <li>Mediastinum</li>
-                                  <li>Diaphragm</li>
-                                  <li>Development</li>
-                                </ol>
-                              </div>
-                            </div>
-                          </div>
-  
-                          <div class="panel panel-default panel-shadow">
-                              <div class="panel-heading">
-                                <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion20" href="#ac20-2" aria-expanded="false" class="collapsed">
-                                  <i class="icon s7-angle-down"></i>12. Tobacco - risk factors and epidemiology</a>
-                                </h4>
-                              </div>
-                              <div id="ac20-2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body text-left font-din list-sublist">
-                                  <ol>
-                                    <li>Pleura
-                                        <ol>
-                                          <li>Principles of measured and calculated ABG data</li>
-                                          <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                          <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                          <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                        </ol>
-                                    </li>
-                                    <li>Lungs</li>
-                                    <li>Bronchopulmonary segments</li>
-                                    <li>Trachea and bronchi</li>
-                                    <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                    <li>Pulmonary vasculature and lymphatic drainage</li>
-                                    <li>Mediastinum</li>
-                                    <li>Diaphragm</li>
-                                    <li>Development</li>
-                                  </ol>
-                                </div>
-                              </div>
-                          </div>
-  
-                          <div class="panel panel-default panel-shadow">
-                              <div class="panel-heading">
-                                <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion20" href="#ac20-3" aria-expanded="false" class="collapsed">
-                                  <i class="icon s7-angle-down"></i>13. Indoor and outdoor pollution</a>
-                                </h4>
-                              </div>
-                              <div id="ac20-3" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body text-left font-din list-sublist">
-                                  <ol>
-                                    <li>Pleura
-                                        <ol>
-                                          <li>Principles of measured and calculated ABG data</li>
-                                          <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                          <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                          <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                        </ol>
-                                    </li>
-                                    <li>Lungs</li>
-                                    <li>Bronchopulmonary segments</li>
-                                    <li>Trachea and bronchi</li>
-                                    <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                    <li>Pulmonary vasculature and lymphatic drainage</li>
-                                    <li>Mediastinum</li>
-                                    <li>Diaphragm</li>
-                                    <li>Development</li>
-                                  </ol>
-                                </div>
-                              </div>
-                          </div>
-  
-  
-                          <div class="panel panel-default panel-shadow">
-                              <div class="panel-heading">
-                                <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion20" href="#ac20-4" aria-expanded="false" class="collapsed">
-                                  <i class="icon s7-angle-down"></i>14. Respiratory hazards associated with occupational factors</a>
-                                </h4>
-                              </div>
-                              <div id="ac20-4" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body text-left font-din list-sublist">
-                                  <ol>
-                                    <li>Pleura
-                                        <ol>
-                                          <li>Principles of measured and calculated ABG data</li>
-                                          <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                          <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                          <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                        </ol>
-                                    </li>
-                                    <li>Lungs</li>
-                                    <li>Bronchopulmonary segments</li>
-                                    <li>Trachea and bronchi</li>
-                                    <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                    <li>Pulmonary vasculature and lymphatic drainage</li>
-                                    <li>Mediastinum</li>
-                                    <li>Diaphragm</li>
-                                    <li>Development</li>
-                                  </ol>
-                                </div>
-                              </div>
-                          </div>
-  
-                          <div class="panel panel-default panel-shadow">
-                              <div class="panel-heading">
-                                <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion20" href="#ac20-5" aria-expanded="false" class="collapsed">
-                                  <i class="icon s7-angle-down"></i>15. Asbestos-related diseases</a>
-                                </h4>
-                              </div>
-                              <div id="ac20-5" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body text-left font-din list-sublist">
-                                  <ol>
-                                    <li>Pleura
-                                        <ol>
-                                          <li>Principles of measured and calculated ABG data</li>
-                                          <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                          <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                          <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                        </ol>
-                                    </li>
-                                    <li>Lungs</li>
-                                    <li>Bronchopulmonary segments</li>
-                                    <li>Trachea and bronchi</li>
-                                    <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                    <li>Pulmonary vasculature and lymphatic drainage</li>
-                                    <li>Mediastinum</li>
-                                    <li>Diaphragm</li>
-                                    <li>Development</li>
-                                  </ol>
-                                </div>
-                              </div>
-                          </div>
-  
-                          <div class="panel panel-default panel-shadow">
-                              <div class="panel-heading">
-                                <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion20" href="#ac20-6" aria-expanded="false" class="collapsed">
-                                  <i class="icon s7-angle-down"></i>16. Lung cancer screening</a>
-                                </h4>
-                              </div>
-                              <div id="ac20-6" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body text-left font-din list-sublist">
-                                  <ol>
-                                    <li>Pleura
-                                        <ol>
-                                          <li>Principles of measured and calculated ABG data</li>
-                                          <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                          <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                          <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                        </ol>
-                                    </li>
-                                    <li>Lungs</li>
-                                    <li>Bronchopulmonary segments</li>
-                                    <li>Trachea and bronchi</li>
-                                    <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                    <li>Pulmonary vasculature and lymphatic drainage</li>
-                                    <li>Mediastinum</li>
-                                    <li>Diaphragm</li>
-                                    <li>Development</li>
-                                  </ol>
-                                </div>
-                              </div>
-                          </div>
-  
-                          <div class="panel panel-default panel-shadow">
-                              <div class="panel-heading">
-                                <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion20" href="#ac20-7" aria-expanded="false" class="collapsed">
-                                  <i class="icon s7-angle-down"></i>17. Signs and symptoms</a></h4>
-                              </div>
-                              <div id="ac20-7" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body text-left font-din list-sublist">
-                                  <ol>
-                                    <li>Pleura
-                                        <ol>
-                                          <li>Principles of measured and calculated ABG data</li>
-                                          <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                          <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                          <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                        </ol>
-                                    </li>
-                                    <li>Lungs</li>
-                                    <li>Bronchopulmonary segments</li>
-                                    <li>Trachea and bronchi</li>
-                                    <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                    <li>Pulmonary vasculature and lymphatic drainage</li>
-                                    <li>Mediastinum</li>
-                                    <li>Diaphragm</li>
-                                    <li>Development</li>
-                                  </ol>
-                                </div>
-                              </div>
-                          </div>
-  
-                          <div class="panel panel-default panel-shadow">
-                              <div class="panel-heading">
-                                <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion20" href="#ac20-8" aria-expanded="false" class="collapsed">
-                                  <i class="icon s7-angle-down"></i>18. Imaging techniques</a>
-                                </h4>
-                              </div>
-                              <div id="ac20-8" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body text-left font-din list-sublist">
-                                  <ol>
-                                    <li>Pleura
-                                        <ol>
-                                          <li>Principles of measured and calculated ABG data</li>
-                                          <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                          <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                          <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                        </ol>
-                                    </li>
-                                    <li>Lungs</li>
-                                    <li>Bronchopulmonary segments</li>
-                                    <li>Trachea and bronchi</li>
-                                    <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                    <li>Pulmonary vasculature and lymphatic drainage</li>
-                                    <li>Mediastinum</li>
-                                    <li>Diaphragm</li>
-                                    <li>Development</li>
-                                  </ol>
-                                </div>
-                              </div>
-                          </div>
-  
-                          <div class="panel panel-default panel-shadow">
-                              <div class="panel-heading">
-                                <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion20" href="#ac20-9" aria-expanded="false" class="collapsed">
-                                  <i class="icon s7-angle-down"></i>19. Bronchoscopy</a>
-                                </h4>
-                              </div>
-                              <div id="ac20-9" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body text-left font-din list-sublist">
-                                  <ol>
-                                    <li>Pleura
-                                        <ol>
-                                          <li>Principles of measured and calculated ABG data</li>
-                                          <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                          <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                          <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                        </ol>
-                                    </li>
-                                    <li>Lungs</li>
-                                    <li>Bronchopulmonary segments</li>
-                                    <li>Trachea and bronchi</li>
-                                    <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                    <li>Pulmonary vasculature and lymphatic drainage</li>
-                                    <li>Mediastinum</li>
-                                    <li>Diaphragm</li>
-                                    <li>Development</li>
-                                  </ol>
-                                </div>
-                              </div>
-                          </div>
-  
-                          <div class="panel panel-default panel-shadow">
-                              <div class="panel-heading">
-                                <h4 class="panel-title font-din text-left"><a data-toggle="collapse" data-parent="#accordion20" href="#ac20-10" aria-expanded="false" class="collapsed">
-                                  <i class="icon s7-angle-down"></i>20. Anatomy and development of the respiratory system including malformations</a>
-                                </h4>
-                              </div>
-                              <div id="ac20-10" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="panel-body text-left font-din list-sublist">
-                                  <ol>
-                                    <li>Pleura
-                                        <ol>
-                                          <li>Principles of measured and calculated ABG data</li>
-                                          <li>Physiology and pathophysiology of oxygenation, carbon dioxide removal and acid-base homeostasis</li>
-                                          <li>Assessment and appropriate use of ABG data during the diagnostic process</li>
-                                          <li>Calculation of secondary parameters such as the A-aO2 gradient, PaO2/FiO2 ratioand anion gap</li>
-                                        </ol>
-                                    </li>
-                                    <li>Lungs</li>
-                                    <li>Bronchopulmonary segments</li>
-                                    <li>Trachea and bronchi</li>
-                                    <li>Changes in chest X-rays during mechanical ventilation, recruitment manoeuvres and positive pressure ventilation</li>
-                                    <li>Pulmonary vasculature and lymphatic drainage</li>
-                                    <li>Mediastinum</li>
-                                    <li>Diaphragm</li>
-                                    <li>Development</li>
-                                  </ol>
-                                </div>
-                              </div>
-                          </div>
-  
-  
-                        </div><!-- close accordion -->
-                    </div> <!-- close col-sm-6 -->
-                </div><!-- close 2ns row -->
-
-
-
-            </div><!-- close main content -->
+                      </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 @stop()  
+
+@section('modals')
+  @include('elements.modal.recommender') 
+@stop()  
+
 @section('scripts')
-  @include('elements.map.script', array('item' => $item))  
-@stop() 
+<script src="/js/jquery.rest.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+function showRecommendation(qname){
+    $.ajax({
+        method: 'GET', 
+        url: '/professional-development/cpd/modules/' + qname, 
+        success: function(response){ 
+          const test = '<div><p>'+ response +'</p></div>'
+          $(".modal-body").html(test);
+          $("#md-recommender").modal('show');
+        },
+        error: function(jqXHR, textStatus, errorThrown) { 
+          const test = '<div><p>Something wrong appened, please refresh the page and try again.</p></div>'
+          $(".modal-body").html(test);
+          $("#md-recommender").modal('show');
+        }
+    });
+  }
+</script>
+@stop()
+
 
 
 
