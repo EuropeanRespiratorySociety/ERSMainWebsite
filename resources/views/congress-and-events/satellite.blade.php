@@ -151,7 +151,7 @@
 
         </div>
 
-      </div>   
+       
             <div class="event-items-right-bt">
               @if($item->registerButton->link && !$item->fullyBooked)
                 <p>Registering for someone else ? Contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!}</p>
@@ -159,10 +159,13 @@
                     {{ $item->registerButton->text or Register}}
                 </a>
               @endif
-            @if($item->extendedDeadline)
-            <p class="deadline">EXTENDED registration deadline : {{$item->extendedDeadline}}</p>
-            @endif
-
+              @if($item->extendedDeadline)
+              <p class="deadline">EXTENDED registration deadline : {{$item->extendedDeadline}}</p>
+              @endif 
+              <br /><br />
+                <a href="https://www.ers-satellites.org" target="new_blank"  class="btn btn-primary tab-register-bt">
+                  Login to Live Streaming
+                </a>
             </div>
 
           </div>
