@@ -2,11 +2,11 @@
 @section('meta')
 @include('partials.meta', array('meta' =>
 [
-'url' => "https://ersnet.org/professional-development/cpd/modules" , 
-'title' => "CPD Modules"
-],
-['pagination' => null]
-)) 
+              'url' => isset($item->url) ? $item->url : null , 
+              'title' => $item->title
+              ],
+              ['pagination' => isset($pagination) ? $pagination : null]
+              )) 
 @stop()
 @section('content')
 <head>
@@ -160,7 +160,7 @@
                                         </div>
                                       <div class="col-sm-8 center-block text-center" style="margin-top: 20px;">
                                           @foreach ($item->modules as $indexModules => $modules)
-                                            <div class="md-chip font-din md-chip-clickable md-chip-textlink md-chip-hover md-chip-anchor-cpd"><a href="/professional-development/cpd/modules#disease{{$index}}-modules{{$modules->first}}-{{$modules->last}}">{{ $modules->sectionLabel }}</a></div>
+                                            <div class="md-chip font-din md-chip-clickable md-chip-textlink md-chip-hover md-chip-anchor-cpd"><a href="/professional-development/cpd#disease{{$index}}-modules{{$modules->first}}-{{$modules->last}}">{{ $modules->sectionLabel }}</a></div>
                                           @endforeach
                                       </div>
                                     </div>
