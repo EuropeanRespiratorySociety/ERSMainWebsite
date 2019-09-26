@@ -7,6 +7,7 @@ use Iluminate\Http\Request;
 use App\Http\Requests;
 
 use App\Extensions\CloudCmsHelper as CC;
+use Carbon\Carbon;
 
 class CpdController extends Controller
 {
@@ -22,7 +23,7 @@ class CpdController extends Controller
      */
 
     public function index()
-    { 
+    {
         $results = $this->CC->getItem('cpd');
         $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0];
@@ -71,16 +72,24 @@ class CpdController extends Controller
     { 
         $related = $this->CC->getAssociationSorted($qname, 'ers:article-module-association');
         $items = $this->CC->parseItems($related['rows']);
+        $sortedItems = array_values(array_sort($items, function ($value) {
+            if($value->calendar) {
+                return $value->calendar->timestamp;
+            }
+            //return the current date + 5 years (for the items without eventDate)
+            return ((Carbon::now())->addYears(5))->timestamp;
+          }));
         $htmlResult = ""; 
-        if(count($items) == 0){
+        
+        if(count($sortedItems) == 0){
             $htmlResult .= "No results";
         }else{ 
-            foreach($items as $index => $item){
+            foreach($sortedItems as $index => $item){
                 $flag = $item->fullyBooked == true ? 'Fully Booked' : '';
                 if($flag == ''){
                     $flag = $item->flags->text != false ? $item->flags->text : ''; 
                 }
-                $articleStyle = "flex-basis: 70%;margin-top: 10px;padding-right: 132px; ";
+                $articleStyle = "flex-basis: 70%;margin-top: 10px;padding-right: 132px; min-height:100px";
                 if($item->image == false){
                     $articleStyle = "flex-basis: 100%;margin-top: 10px;";
                 }
