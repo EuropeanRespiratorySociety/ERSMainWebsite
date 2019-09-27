@@ -38,10 +38,6 @@
     font-size: 16px;
   }
 
-  .ers-white-header .page-head {
-    border-bottom: none;
-  }
-  
   .panel-shadow{
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.10), 0 2px 3px 0 rgba(0,0,0,.12);
     box-sizing: border-box;
@@ -125,26 +121,24 @@
             </div>
             @endif
             <div class="main-content">
-                <div class="page-head" style="margin-bottom: 0px;">
-                    <h2>{{$item->title}}</h2>
-                  </div>
-                  <div class="col-md-7 center-block lead text-left" style="margin-top: 50px;">
-                    {!! $item->body !!}
-                  </div>
+              <div class="page-head" style="margin-bottom: 0px;">
+                  <h2>{{$item->title}}</h2>
+              </div><!-- /page-head -->
+              <div class="col-md-7 center-block lead text-left" style="margin-top: 50px;">
+                {!! $item->body !!}
+              </div><!-- /col-md-7 -->
                 <div class="row">
                     <div class="col-sm-12">
                       <div class="cpd-card-frame"> <!-- start the tab block -->
-
-                            <div class="columns">
-                              <div class="owl-carousel owl-theme scrolling-wrapper-flexbox_color__blue" style="padding: 0 0 0 15px;">
-                                @foreach ($items as $index => $item)
-                                  <div role="presentation" class="item scrollable-object active" style="width:auto;padding: 15px 0;">
-                                      <a href="#{{$item->slug}}" data-toggle="tab" aria-expanded="false" class="scrollable-object_color__blue"><span class="font-din" style="background-image:url('{{$item->image}}'); background-repeat: no-repeat; background-position: left; background-size: contain; ">{{$item->title}}</span></a>
-                                  </div>
-                                @endforeach
+                        <div class="columns">
+                          <div class="owl-carousel owl-theme scrolling-wrapper-flexbox_color__blue" style="padding: 0 0 0 15px;">
+                            @foreach ($items as $index => $item)
+                              <div role="presentation" class="item scrollable-object active" style="width:auto;padding: 15px 0;">
+                                  <a href="#{{$item->slug}}" data-toggle="tab" aria-expanded="false" class="scrollable-object_color__blue"><span class="font-din" style="background-image:url('{{$item->image}}'); background-repeat: no-repeat; background-position: left; background-size: contain; ">{{$item->title}}</span></a>
                               </div>
-                            </div>
-
+                            @endforeach
+                          </div>
+                        </div><!-- /columns -->
 
                         <!-- Tab panes -->
                         <div class="tab-content" style="overflow: auto;">
@@ -164,11 +158,11 @@
                                           @endforeach
                                       </div>
                                     </div>
-                                    <div class="row" style="padding-left: 35px;" >
+                                    <div class="row" style="margin: 20px 0 0 20px;" >
                                       <div class="btn-toolbar xs12">
                                         <div class="btn-group">
                                           @if($item->programme)
-                                           <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary btn-space text-left bt-course-programme">
+                                          <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary btn-space text-left bt-course-programme">
                                             <span class="icon icon-handout" style="font-size: 24px;"></span>
                                               @if($item->programmeButtonText)
                                                 {{$item->programmeButtonText}} 
@@ -190,7 +184,7 @@
                                           @endif
                                           </div>
                                         </div>
-                                     </div>
+                                    </div>
                                     @foreach ($item->modules as $indexModules => $modules)
                                     @if($indexModules%2==1)
                                       <div class="row">
@@ -204,7 +198,7 @@
                                           <div class="panel-heading">
                                             <h4 class="panel-title font-din text-left" >
                                               <a data-toggle="collapse" data-module="{{ $module->title }}" data-parent="#accordion-disease{{$index}}-{{$indexModules}}" href="#ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" aria-expanded="false" class="collapsed accordinon-with-button" style="display: flex; align-items: center; justify-content: center;flex-direction: row; padding: 12px 10px;">
-                                                <div style="padding-top: 8px;"><span><i class="icon s7-angle-down"></i>{{ $module->positionNumber }}. {{ $module->title }}</span></div>
+                                                <div style="margin-left: 1em; text-indent: -1.5em;"><span><i class="icon s7-angle-down" style="text-indent: 0em;"></i>{{ $module->positionNumber }}. {{ $module->title }}</span></div>
                                                 <div style="flex-grow: 1 !important; -webkit-box-flex:1 !important;"></div>
                                                 <object class="hidden-md hidden-lg hidden-sm">
                                                   <button type="button" onclick="showRecommendation('{{$module->qname}}')" class="btn btn-alt2 btn-shade1 btn-rad btn-xs">Events</button>
@@ -230,7 +224,7 @@
                                   @endforeach
                               </div>
                             @endforeach
-                        </div> <!-- close the tab content -->
+                        </div> <!-- /tab content -->
                       </div> <!-- close the tab block -->
                     </div> <!-- col-sm-12 -->
                 </div> <!-- row -->
