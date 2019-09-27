@@ -204,7 +204,7 @@
                                           <div class="panel-heading">
                                             <h4 class="panel-title font-din text-left" >
                                               <a data-toggle="collapse" data-module="{{ $module->title }}" data-parent="#accordion-disease{{$index}}-{{$indexModules}}" href="#ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" aria-expanded="false" class="collapsed accordinon-with-button" style="display: flex; align-items: center; justify-content: center;flex-direction: row; padding: 12px 10px;">
-                                                <div style="padding-top: 8px;"><span><i class="icon s7-angle-down"></i>{{ $module->title }}</span></div>
+                                                <div style="padding-top: 8px;"><span><i class="icon s7-angle-down"></i>{{ $module->positionNumber }}. {{ $module->title }}</span></div>
                                                 <div style="flex-grow: 1 !important; -webkit-box-flex:1 !important;"></div>
                                                 <object class="hidden-md hidden-lg hidden-sm">
                                                   <button type="button" onclick="showRecommendation('{{$module->qname}}')" class="btn btn-alt2 btn-shade1 btn-rad btn-xs">Events</button>
