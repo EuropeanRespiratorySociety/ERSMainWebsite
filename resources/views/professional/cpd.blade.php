@@ -197,15 +197,17 @@
                                         <div class="panel panel-default panel-shadow" >
                                           <div class="panel-heading">
                                             <h4 class="panel-title font-din text-left" >
-                                              <a data-toggle="collapse" data-module="{{ $module->title }}" data-parent="#accordion-disease{{$index}}-{{$indexModules}}" href="#ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" aria-expanded="false" class="collapsed accordinon-with-button" style="display: flex; align-items: center; justify-content: center;flex-direction: row; padding: 12px 10px;">
-                                                <div style="margin-left: 1em; text-indent: -1.5em;"><span><i class="icon s7-angle-down" style="text-indent: 0em;"></i>{{ $module->positionNumber }}. {{ $module->title }}</span></div>
+                                              <a data-toggle="collapse" data-module="{{ $module->title }}" data-parent="#accordion-disease{{$index}}-{{$indexModules}}" 
+                                                href="#ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" aria-expanded="false" class="collapsed accordinon-with-button" 
+                                                style="display: flex; align-items: center; justify-content: center;flex-direction: row; padding: 12px 10px;">
+                                                <div style="margin-left: 1em; text-indent: -1.5em;">
+                                                  <span><i class="icon s7-angle-down" style="text-indent: 0em;"></i>{{ $module->positionNumber }}. {{ $module->title }}</span>
+                                                </div>
                                                 <div style="flex-grow: 1 !important; -webkit-box-flex:1 !important;"></div>
-                                                <object class="hidden-md hidden-lg hidden-sm">
-                                                  <button type="button" onclick="showRecommendation('{{$module->qname}}')" class="btn btn-alt2 btn-shade1 btn-rad btn-xs">Events</button>
-                                                </object>
-                                                <object class="hidden-xs" >
-                                                  <button type="button" onclick="showRecommendation('{{$module->qname}}')" class="btn btn-alt2 btn-shade1 btn-rad btn-sm">Related Events</button>
-                                                </object>
+                                                <button type="button" onclick="showRecommendation('{{$module->qname}}')" class="btn btn-alt2 btn-shade1 btn-rad btn-xs" style="z-index:9999">
+                                                  <span class="hidden-md hidden-lg hidden-sm">Events</span>
+                                                  <span class="hidden-xs">Related Events</span>
+                                                </button>    
                                               </a>
                                             </h4>
                                           </div>
