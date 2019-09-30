@@ -94,7 +94,7 @@ The Assembly is comprised of the following four groups:
                       <div class="card-content text-left">
                         <p>Group 06.04<br>
                           Chair: Ian P. Hall<br>
-                          Secretary: Melén Erik</p>
+                          Secretary: Klaus Bonnelykke</p>
                         </div>
                         <div class="card-action clearfix">
                           <button data-toggle="modal" data-target="#md-genes-and-environment" type="button" class="btn btn-default pull-right">More</button>

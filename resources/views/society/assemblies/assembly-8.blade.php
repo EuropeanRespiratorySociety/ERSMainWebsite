@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="col-md-6 center-block">
-              <p >Assembly Early Career representative: Elodie Lhuillier</p>
+              <p >Assembly Early Career representative: Merel E. Hellemons</p>
             </div>
             <div class="col-md-6 center-block lead">
               Assembly 8 includes physicians and surgeons with an extraordinary knowledge of the state of the art in the field of Lung Transplantation and Thoracic Surgery. Its groups are strongly engaged collaborative work with the other Scientific Assemblies, focussing on surgical options for the treatment of lung diseases. <br>
@@ -37,8 +37,8 @@ The Assembly is comprised of the following two groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 08.01<br>
-                    Chair: Tezel Cagatay<br>
-                    Secretary: Bertolaccini Luca</p>
+                    Chair: Marcello Migliore<br>
+                    Secretary: Kalliopi Athanassiadi</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-thoracic-surgery" type="button" class="btn btn-default pull-right">More</button>
@@ -55,8 +55,8 @@ The Assembly is comprised of the following two groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 08.02<br>
-                    Chair: Christian Benden<br>
-                    Secretary: Vos Robin</p>
+                    Chair: Robin Vos<br>
+                    Secretary: Michael Perch</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-transplantation" type="button" class="btn btn-default pull-right">More</button>
