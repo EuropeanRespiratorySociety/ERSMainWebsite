@@ -110,7 +110,55 @@
     display: none;
     }
    }
-    }
+  
+  .loader{
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  position: relative;
+  margin: 0 auto;
+  }
+
+/* LOADER 1 */
+
+#loader-1:before, #loader-1:after{
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 10px solid transparent;
+  border-top-color: #3498db;
+}
+
+#loader-1:before{
+  z-index: 100;
+  animation: spin 1s infinite;
+}
+
+#loader-1:after{
+  border: 10px solid #ccc;
+}
+
+@keyframes spin{
+  0%{
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100%{
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+ }
 </style>
 
 <div class="ers-content">
@@ -197,18 +245,21 @@
                                         <div class="panel panel-default panel-shadow" >
                                           <div class="panel-heading">
                                             <h4 class="panel-title font-din text-left" >
+                                                <div id="action-{{$index}}-{{$indexModules}}-{{$indexModule}}">
+                                                    
+                                                    <button type="button" onclick="showRecommendation('{{$module->qname}}')" class="btn btn-alt2 btn-shade1 btn-rad btn-xs" style="margin:10px 10px 0px 10px">
+                                                      <span class="hidden-md hidden-lg hidden-sm">Events</span>
+                                                      <span class="hidden-xs">Related Events</span>
+                                                    </button>
+                                                  </div>    
                                               <a data-toggle="collapse" data-module="{{ $module->title }}" data-parent="#accordion-disease{{$index}}-{{$indexModules}}" 
-                                                href="#ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" aria-expanded="false" class="collapsed accordinon-with-button" 
-                                                style="display: flex; align-items: center; justify-content: center;flex-direction: row; padding: 12px 10px;">
+                                                href="#ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" aria-expanded="false" class="collapsed accordinon-with-button"
+                                                >
                                                 <div style="margin-left: 1em; text-indent: -1.5em;">
                                                   <span><i class="icon s7-angle-down" style="text-indent: 0em;"></i>{{ $module->positionNumber }}. {{ $module->title }}</span>
                                                 </div>
-                                                <div style="flex-grow: 1 !important; -webkit-box-flex:1 !important;"></div>
-                                                <button type="button" onclick="showRecommendation('{{$module->qname}}')" class="btn btn-alt2 btn-shade1 btn-rad btn-xs" style="z-index:9999">
-                                                  <span class="hidden-md hidden-lg hidden-sm">Events</span>
-                                                  <span class="hidden-xs">Related Events</span>
-                                                </button>    
                                               </a>
+                                              
                                             </h4>
                                           </div>
                                           <div id="ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
@@ -250,6 +301,14 @@ $(document).ready(function() {
     autoWidth: true,
     items: 3
   })
+  $(".collapse").on('show.bs.collapse', function(e) {
+    const divActionId = (this.id).replace("ac-disease","action-")
+    document.getElementById(divActionId).style.backgroundColor="#015291";
+  })
+  $(".collapse").on('hide.bs.collapse', function(e) {
+    const divActionId = (this.id).replace("ac-disease","action-")
+    document.getElementById(divActionId).style.backgroundColor="#fff";
+  })
 })
 </script> 
 
@@ -257,18 +316,16 @@ $(document).ready(function() {
 
 <script type="text/javascript">
   function showRecommendation(qname){
+    $(".modal-body").html('<div class="loader" id="loader-1"></div>');
+    $("#md-recommender").modal('show');
       $.ajax({
           method: 'GET', 
           url: '/professional-development/cpd/' + qname, 
           success: function(response){ 
-            const test = '<div><p>'+ response +'</p></div>'
-            $(".modal-body").html(test);
-            $("#md-recommender").modal('show');
+            $(".modal-body").html('<div><p>'+ response +'</p></div>');
           },
           error: function(jqXHR, textStatus, errorThrown) { 
-            const test = '<div><p>Something wrong appened, please refresh the page and try again.</p></div>'
-            $(".modal-body").html(test);
-            $("#md-recommender").modal('show');
+            $(".modal-body").html('<div><p>Something wrong appened, please refresh the page and try again.</p></div>');
           }
       });
     }
