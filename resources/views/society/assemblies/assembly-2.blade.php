@@ -7,7 +7,7 @@
                   <p class="photo_caption">Head: Leo Heunks</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="http://localhost:8888/images/people/leadership/Marcus-Schultz.png" class="img-circle" width="120" height="120">
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Marcus-Schultz.png" class="img-circle" width="120" height="120">
                   <p class="photo_caption">Secretary: Marcus Schultz</p>
                  
                 </div>

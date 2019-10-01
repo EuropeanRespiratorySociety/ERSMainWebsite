@@ -51,7 +51,7 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+					<img src="https://cdn.ersnet.org/images/people/leadership/Maxime-Patout.png" class="img-circle">
 		            <p class="photo_caption"><strong>Maxime Patout</strong>
 		            Assembly 2
 		            </p>
@@ -63,7 +63,7 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="http://localhost:8888/images/people/leadership/Andrea-Crespo.png" class="img-circle">
+					<img src="https://cdn.ersnet.org/images/people/leadership/Andrea-Crespo.png" class="img-circle">
 		            <p class="photo_caption"><strong>Andrea Crespo Sedano</strong>
 		            Assembly 4<br>
 		            </p>
@@ -81,13 +81,13 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="http://localhost:8888/images/people/leadership/Cristina-Ardura-Garcia.png" class="img-circle">
+					<img src="https://cdn.ersnet.org/images/people/leadership/Cristina-Ardura-Garcia.png" class="img-circle">
 		            <p class="photo_caption"><strong>Cristina Ardura-Garcia</strong>
 		            Assembly 7<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="http://localhost:8888/images/people/leadership/Merel-E-Hellemons.png" class="img-circle">
+					<img src="https://cdn.ersnet.org/images/people/leadership/Merel-E-Hellemons.png" class="img-circle">
 		            <p class="photo_caption"><strong>Merel E. Hellemons</strong>
 		            Assembly 8<br>
 		            </p>

@@ -16,12 +16,12 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="http://localhost:8888/images/people/leadership/Marcus-Schultz.png" class="img-circle">
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Marcus-Schultz.png" class="img-circle">
 		            <p class="photo_caption"><strong>Marcus Schultz</strong>
 		            Respiratory Intensive Care <br>
 		        </div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="http://localhost:8888/images/people/leadership/Meiners-Silke.png" class="img-circle">
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Meiners-Silke.png" class="img-circle">
 		            <p class="photo_caption"><strong>Silke Meiners</strong>
 		            Basic and translational sciences<br>
 		        </div>
