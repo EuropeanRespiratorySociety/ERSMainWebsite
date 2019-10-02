@@ -110,7 +110,7 @@
     display: none;
     }
    }
-  
+   /* https://bootsnipp.com/snippets/V73xN */
   .loader{
   width: 20px;
   height: 20px;
