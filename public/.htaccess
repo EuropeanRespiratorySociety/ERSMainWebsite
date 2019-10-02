@@ -173,6 +173,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /educationgrant https://www.ersnet.org/professional-development/grants-and-sponsorships/medical-education-grant
         Redirect 301 /eu https://www.ersnet.org/advocacy/eu-affairs
         Redirect 301 /exams https://www.ersnet.org/professional-development/hermes
+        Redirect 301 /ers-respiratory-updates-2019-join-us-online-or-in-person-for-the-latest-clinical-updates-home https://www.ersnet.org/congress-and-events/ers-respiratory-updates
         # F
         Redirect 301 /fellowships http://www.ersnet.org/professional-development/fellowships
         Redirect 301 /funding http://www.ersnet.org/professional-development/grants-and-sponsorships
