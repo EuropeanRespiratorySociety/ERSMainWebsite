@@ -69,7 +69,7 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+                <img src="https://cdn.ersnet.org/images/people/leadership/Sara-Jane-Bonvini.png" class="img-circle">
 		            <p class="photo_caption"><strong> Sara Jane Bonvini</strong>
 		            Assembly 5<br>
 		            </p>
