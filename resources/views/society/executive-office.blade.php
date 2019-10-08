@@ -655,7 +655,7 @@
       <div class="row">
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Florence Blocklet</strong>
-            Web Developper<br>
+            Web Developer<br>
             T +41 21 213 01 46<br>
             </p>
         </div>
