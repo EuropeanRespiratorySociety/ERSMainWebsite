@@ -246,7 +246,6 @@
                                           <div class="panel-heading">
                                             <h4 class="panel-title font-din text-left" >
                                                 <div id="action-{{$index}}-{{$indexModules}}-{{$indexModule}}">
-                                                    
                                                     <button type="button" onclick="showRecommendation('{{$module->qname}}')" class="btn btn-alt2 btn-shade1 btn-rad btn-xs" style="margin:10px 10px 0px 10px">
                                                       <span class="hidden-md hidden-lg hidden-sm">Events</span>
                                                       <span class="hidden-xs">Related Events</span>
@@ -259,7 +258,6 @@
                                                   <span><i class="icon s7-angle-down" style="text-indent: 0em;"></i>{{ $module->positionNumber }}. {{ $module->title }}</span>
                                                 </div>
                                               </a>
-                                              
                                             </h4>
                                           </div>
                                           <div id="ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
@@ -329,5 +327,10 @@ $(document).ready(function() {
           }
       });
     }
+
+    function test(t){
+      alert(t);
+    }
+
   </script>
 @stop()
