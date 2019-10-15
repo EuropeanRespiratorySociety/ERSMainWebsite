@@ -32,29 +32,29 @@
               </div>
       
           <div class="row leadership-people" style="padding-top: 40px;">
-                <div class="col-md-6 xs-mb-15">
-                    <h4 style="margin-bottom:30px;"><strong>Examination Committee Chair</strong></h4>
-                    <img src="https://cdn.ersnet.org/images/people/examination-committee/Robert-Primhak.png" class="img-circle">
-                    <p class="photo_caption"><strong>Dr Robert Primhak</strong></p>
-                    <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
-                        <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                          - Retired Paediatrician</p>
-                        <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                          - Senior Lecturer</p>
-                        <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">- Former Consultant Respiratory Paediatrician at Sheffield Children's Hospital</p>
-                    </div>
-                </div>
-                <div class="col-md-6 xs-mb-15">
-                  <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                  <img src="https://cdn.ersnet.org/images/people/examination-committee/Jayesh-M-Bhatt.png" class="img-circle">
-                  <p class="photo_caption"><strong>Dr Jayesh M Bhatt</strong></p>
-                  <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
-                    <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                      - Consultant Respiratory Paediatrician</p>
-                    <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">- Nottingham University Hospitals NHS Trust</p>
-                    <p style="margin-bottom: 30px;">- Nottingham, United Kingdom</p>
-                  </div>
+            <div class="col-md-6 xs-mb-15">
+              <h4 style="margin-bottom:30px;"><strong>Examination Committee Chair</strong></h4>
+              <img src="https://cdn.ersnet.org/images/people/examination-committee/Jurg-Hammer.png" class="img-circle">
+              <p class="photo_caption"><strong>Prof. Jürg Hammer</strong></p>
+              <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
+                <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                  - Deputy Head of the Division of Respiratory and Critical Care Medicine</p>
+                <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                  - University Children's Hospital Basel</p>
+                <p style="margin-bottom:0px;">- Basel, Switzerland</p>
               </div>
+            </div>
+            <div class="col-md-6 xs-mb-15">
+              <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
+              <img src="https://cdn.ersnet.org/images/people/examination-committee/Jayesh-M-Bhatt.png" class="img-circle">
+              <p class="photo_caption"><strong>Dr Jayesh M Bhatt</strong></p>
+              <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
+                <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                  - Consultant Respiratory Paediatrician</p>
+                <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">- Nottingham University Hospitals NHS Trust</p>
+                <p style="margin-bottom: 30px;">- Nottingham, United Kingdom</p>
+              </div>
+            </div>
               <div class="col-md-6 xs-mb-15">
                 <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
                 <img src="https://cdn.ersnet.org/images/people/examination-committee/Raffaella-Nenna-02.png" class="img-circle">
@@ -89,18 +89,6 @@
                         - Medical University of Graz</p>
                       <p>- Graz, Austria</p>
                     </div> --}}
-                </div>
-                <div class="col-md-6 xs-mb-15">
-                    <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                    <img src="https://cdn.ersnet.org/images/people/examination-committee/Jurg-Hammer.png" class="img-circle">
-                    <p class="photo_caption"><strong>Prof. Jürg Hammer</strong></p>
-                    <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
-                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                        - Deputy Head of the Division of Respiratory and Critical Care Medicine</p>
-                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                        - University Children's Hospital Basel</p>
-                      <p style="margin-bottom:0px;">- Basel, Switzerland</p>
-                    </div>
                 </div>
                 <div class="col-md-6 xs-mb-15">
                     <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
