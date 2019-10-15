@@ -160,7 +160,6 @@ Route::group(['prefix' => 'professional-development'], function () {
 
     Route::group(['prefix' => 'cpd'], function () {
       Route::get('/', 'CpdController@index');
-      Route::get('/backup', 'CpdController@indexBackup');
       Route::get('/{qname}', 'CpdController@showRecommendation');
     });
 

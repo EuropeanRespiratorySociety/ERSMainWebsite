@@ -32,11 +32,7 @@
     background-color: #ccc;
     color: #015291;
     font-family: DinPro,sans-serif;
-  }
-
-  .scrollable-object span{
-    padding: 10px 10px 10px 10px; 
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .panel-shadow{
@@ -177,9 +173,9 @@
                 {!! $item->body !!}
               </div><!-- /col-md-7 -->
               <div class="row">
-                <div class="col-sm-12 hidden-xs">
+                <div class="col-sm-12 hidden-xs" style="background-color: #015291">
                   <div class="columns">
-                    <div style="padding: 0 0 0 15px;">
+                    <div style="padding: 0 0 0 15px">
                       @foreach ($items as $index => $item)
                         <div role="presentation" class="scrollable-object active col-md-3" style="padding: 15px" >
                             <a href="/professional-development/cpd#{{$item->slug}}" data-toggle="tab" aria-expanded="false" class="scrollable-object_color__blue"> 
@@ -195,7 +191,7 @@
                     <div class="owl-carousel owl-theme scrolling-wrapper-flexbox_color__blue" style="padding: 0 0 0 15px;">
                     @foreach ($items as $index => $item)
                       <div role="presentation" class="item scrollable-object active" style="width:auto;padding: 15px 0;">
-                        <a href="#{{$item->slug}}" data-toggle="tab" aria-expanded="false" class="scrollable-object_color__blue">{{$item->title}}</a>
+                        <a href="/professional-development/cpd#{{$item->slug}}" data-toggle="tab" aria-expanded="false" class="scrollable-object_color__blue">{{$item->title}}</a>
                       </div>
                     @endforeach
                     </div>
