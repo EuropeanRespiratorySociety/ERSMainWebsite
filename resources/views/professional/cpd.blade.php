@@ -10,8 +10,8 @@
 @stop()
 @section('content')
 <head>
-    <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head> 
 <style>
   .cpd-card-frame{
@@ -30,11 +30,12 @@
 
   .scrollable-object_color__blue{
     background-color: #ccc;
-    color: #015291
+    color: #015291;
+    font-family: DinPro,sans-serif;
   }
 
   .scrollable-object span{
-    padding: 10px 10px 10px 45px;
+    padding: 10px 10px 10px 10px; 
     font-size: 16px;
   }
 
@@ -175,22 +176,37 @@
               <div class="col-md-7 center-block lead text-left" style="margin-top: 50px;">
                 {!! $item->body !!}
               </div><!-- /col-md-7 -->
-                <div class="row">
-                    <div class="col-sm-12">
-                      <div class="cpd-card-frame"> <!-- start the tab block -->
-                        <div class="columns">
-                          <div class="owl-carousel owl-theme scrolling-wrapper-flexbox_color__blue" style="padding: 0 0 0 15px;">
-                            @foreach ($items as $index => $item)
-                              <div role="presentation" class="item scrollable-object active" style="width:auto;padding: 15px 0;">
-                                  <a href="#{{$item->slug}}" data-toggle="tab" aria-expanded="false" class="scrollable-object_color__blue"><span class="font-din" style="background-image:url('{{$item->image}}'); background-repeat: no-repeat; background-position: left; background-size: contain; ">{{$item->title}}</span></a>
-                              </div>
-                            @endforeach
-                          </div>
-                        </div><!-- /columns -->
-
+              <div class="row">
+                <div class="col-sm-12 hidden-xs">
+                  <div class="columns">
+                    <div style="padding: 0 0 0 15px;">
+                      @foreach ($items as $index => $item)
+                        <div role="presentation" class="scrollable-object active col-md-3" style="padding: 15px" >
+                            <a href="/professional-development/cpd#{{$item->slug}}" data-toggle="tab" aria-expanded="false" class="scrollable-object_color__blue"> 
+                              <img src="{{$item->image}}" style="width: 35px;padding-right:5px">{{$item->title}}
+                            </a> 
+                        </div>
+                      @endforeach
+                    </div>
+                  </div><!-- /columns -->
+                </div>
+                <div class="col-sm-12 hidden-md hidden-lg hidden-sm">
+                  <div class="columns">
+                    <div class="owl-carousel owl-theme scrolling-wrapper-flexbox_color__blue" style="padding: 0 0 0 15px;">
+                    @foreach ($items as $index => $item)
+                      <div role="presentation" class="item scrollable-object active" style="width:auto;padding: 15px 0;">
+                        <a href="#{{$item->slug}}" data-toggle="tab" aria-expanded="false" class="scrollable-object_color__blue">{{$item->title}}</a>
+                      </div>
+                    @endforeach
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row cpd-card-frame">
+                  <div class="col-sm-12">
                         <!-- Tab panes -->
                         <div class="tab-content" style="overflow: auto;">
-                            @foreach ($items as $index => $item)
+                            @foreach ($items as $index => $item)               
                             @if($index == 0)
                               <div id="{{$item->slug}}" class="tab-pane cont active">
                             @else
@@ -247,7 +263,7 @@
                                             <h4 class="panel-title font-din text-left" >
                                                 <div id="action-{{$index}}-{{$indexModules}}-{{$indexModule}}" style="text-align:right">
                                                     <button type="button" onclick="showRecommendation('{{$module->qname}}')" class="btn btn-xs btn-info btn-rounded btn-shade1 btn-rad " style="margin:10px 10px 0px 10px">
-                                                      Related Events
+                                                      Learning activities
                                                     </button>
                                                   </div>    
                                               <a data-toggle="collapse" data-module="{{ $module->title }}" data-parent="#accordion-disease{{$index}}-{{$indexModules}}" 
@@ -275,7 +291,7 @@
                               </div>
                             @endforeach
                         </div> <!-- /tab content -->
-                      </div> <!-- close the tab block -->
+                      
                     </div> <!-- col-sm-12 -->
                 </div> <!-- row -->
             </div> <!-- main-content -->

@@ -3,7 +3,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
-        <h3 class="modal-title">Related Events</h3>
+        <h3 class="modal-title">Learning activities</h3>
       </div>
       <div class="modal-body"></div>
       <div class="modal-footer">
