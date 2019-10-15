@@ -169,7 +169,7 @@
               <div class="page-head" style="margin-bottom: 0px;">
                   <h2>{{$item->title}}</h2>
               </div><!-- /page-head -->
-              <div class="col-md-7 center-block lead text-left" style="margin-top: 50px;">
+              <div class="col-md-7 center-block lead" style="margin-top: 50px;">
                 {!! $item->body !!}
               </div><!-- /col-md-7 -->
               <div class="row">
