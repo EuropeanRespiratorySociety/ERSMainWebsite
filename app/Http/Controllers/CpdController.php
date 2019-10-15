@@ -40,6 +40,24 @@ class CpdController extends Controller
         return view('professional.cpd')->with($params);
     }
 
+    public function indexBackup()
+    {
+        $results = $this->CC->getItem('cpd');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] =  (object) $item[0];
+
+        if($item[0]->hasRelatedArticles > 0){
+            $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
+            $items = $this->CC->parseItems($related['rows']);
+            foreach($items as $index => $item){
+                $item->modules = $this->prepareModules($item->diseaseModules);
+                }
+            $params['items'] =  (object) $items;
+        }
+        
+        return view('professional.cpd-backup')->with($params);
+    }
+
     /**
      * Display a listing of the resource.
      *

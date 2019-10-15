@@ -168,7 +168,7 @@
             <div class="top-box" style="height: 400px; background-image: url('{{$item->highResImage}}'); background-position: center {{$item->imageAlignment}}">
             </div>
             @endif
-            <div >
+            <div class="main-content">
               <div class="page-head" style="margin-bottom: 0px;">
                   <h2>{{$item->title}}</h2>
               </div><!-- /page-head -->
@@ -240,14 +240,15 @@
                                     <div class="col-sm-6 col-xs-12">
                                     <a id="disease{{$index}}-modules{{$modules->first}}-{{$modules->last}}"></a>
                                       <h3 class="text-left">{{ $modules->sectionLabel }}</h3>   
-                                      <div id="accordion-disease{{$index}}-{{$indexModules}}" class="panel-group accordion">
+                                      <div id="accordion-disease{{$index}}-{{$indexModules}}" class="panel-group accordion accordion-semi">
                                         @foreach ($modules->modules as $indexModule => $module)
                                         <div class="panel panel-default panel-shadow" >
                                           <div class="panel-heading">
                                             <h4 class="panel-title font-din text-left" >
-                                                <div id="action-{{$index}}-{{$indexModules}}-{{$indexModule}}" style="text-align:right">
-                                                    <button type="button" onclick="showRecommendation('{{$module->qname}}')" class="btn btn-xs btn-info btn-rounded btn-shade1 btn-rad " style="margin:10px 10px 0px 10px">
-                                                      Related Events
+                                                <div id="action-{{$index}}-{{$indexModules}}-{{$indexModule}}">
+                                                    <button type="button" onclick="showRecommendation('{{$module->qname}}')" class="btn btn-alt2 btn-shade1 btn-rad btn-xs" style="margin:10px 10px 0px 10px">
+                                                      <span class="hidden-md hidden-lg hidden-sm">Events</span>
+                                                      <span class="hidden-xs">Related Events</span>
                                                     </button>
                                                   </div>    
                                               <a data-toggle="collapse" data-module="{{ $module->title }}" data-parent="#accordion-disease{{$index}}-{{$indexModules}}" 
@@ -259,7 +260,7 @@
                                               </a>
                                             </h4>
                                           </div>
-                                          <div id="ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" class="panel-collapse collapse" style="background-color: #fff" aria-expanded="false" style="height: 0px;">
+                                          <div id="ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
                                             <div class="panel-body text-left font-din list-sublist">
                                               {!! $module->body !!}
                                             </div>
@@ -297,6 +298,14 @@ $(document).ready(function() {
     loop: false,
     autoWidth: true,
     items: 3
+  })
+  $(".collapse").on('show.bs.collapse', function(e) {
+    const divActionId = (this.id).replace("ac-disease","action-")
+    document.getElementById(divActionId).style.backgroundColor="#015291";
+  })
+  $(".collapse").on('hide.bs.collapse', function(e) {
+    const divActionId = (this.id).replace("ac-disease","action-")
+    document.getElementById(divActionId).style.backgroundColor="#fff";
   })
 })
 </script> 
