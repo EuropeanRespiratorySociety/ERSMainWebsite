@@ -85,6 +85,10 @@ class CpdController extends Controller
             $htmlResult .= "No results";
         }else{ 
             foreach($sortedItems as $index => $item){
+                $type = $item->type;
+                if($item->_type == "ers:digest-article"){
+                    $type = "Respiratory digest";
+                }
                 $flag = $item->fullyBooked == true ? 'Fully Booked' : '';
                 if($flag == ''){
                     $flag = $item->flags->text != false ? $item->flags->text : ''; 
@@ -95,7 +99,7 @@ class CpdController extends Controller
                 }
                 $htmlResult .= '<div class="card card-event" style="font-family: DinPro,sans-serif;">';
                 $htmlResult .=      '<div style="display: flex; flex-direction: row; padding: 10px 15px 5px;">';
-                $htmlResult .=          '<div>'.$item->type.'</div>';
+                $htmlResult .=          '<div>'.$type.'</div>';
                 $htmlResult .=          '<div style="flex-grow: 1 !important; -webkit-box-flex:1 !important;"></div>';
                 $htmlResult .=          '<div style="color:#cf003d">'.$flag.'</div>';
                 $htmlResult .=      '</div>';
