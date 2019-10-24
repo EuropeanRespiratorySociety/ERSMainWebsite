@@ -104,7 +104,6 @@ Route::group(['prefix' => 'congress-and-events'], function () {
     Route::get('metabolic-alterations-in-lung-ageing-and-disease', 'LscController@index');
     Route::get('metabolic-alterations-in-lung-ageing-and-disease/{slug}', 'LscController@show');
     Route::get('the-lung-science-conference/{slug}', 'LscController@show');
-    Route::get('respiratory-failure-and-mechanical-ventilation-conference', 'LscController@acuteRespiratoryFailure');
     Route::get('events-calendar', 'CalendarController@index');
     Route::get('ers-2018', 'LscController@paris');
     Route::get('ers-respiratory-updates', 'LscController@respiratoryUpdate');
