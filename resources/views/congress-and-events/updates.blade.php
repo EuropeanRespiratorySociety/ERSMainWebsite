@@ -231,6 +231,10 @@
               <p>Please contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!} to be added to the waiting list.</p>
               <a href="javascript:void(0)" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
             @endif
+            <br /><br />
+                <a href="https://ersnet.us4.list-manage.com/track/click?u=07b6a7283a1da5b8e4d63ae64&id=fc7463820d&e=e4ae1c21d6" target="new_blank"  class="btn btn-primary tab-register-bt">
+                  Login to Live Streaming
+                </a>
           </div>
 
         </div>
