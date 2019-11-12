@@ -33,17 +33,23 @@
                   President<br>
                 </p>
             </div>
-	        	<div class="col-md-4 xs-mb-15">
+	        	{{-- <div class="col-md-4 xs-mb-15">
                 <img src="https://cdn.ersnet.org/images/people/leadership/Tobias_Welte.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>Tobias Welte</strong>
                 Past President<br></p>
-	        	</div>
+	        	</div> --}}
 	            <div class="col-md-4 xs-mb-15">
                		<img src="https://cdn.ersnet.org/images/people/leadership/Anita-Simonds.png" class="img-circle">
 	                <p class="photo_caption"><strong>Anita Simonds</strong>
                     President Elect<br>
-					</p>
-	            </div>
+					        </p>
+              </div>
+	            <div class="col-md-4 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/leadership/Humbert-Marc.png" class="img-circle">
+               <p class="photo_caption"><strong>Marc Humbert</strong>
+                 Vice President<br>
+               </p>
+           </div>
             	<div class="col-md-4 xs-mb-15">
 					<img src="https://cdn.ersnet.org/images/people/leadership/Isabel-Saraiva.png" class="img-circle">
 		            <p class="photo_caption"><strong>Isabel Saraiva</strong>
