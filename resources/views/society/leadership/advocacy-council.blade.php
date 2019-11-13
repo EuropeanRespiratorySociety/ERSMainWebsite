@@ -33,11 +33,6 @@
                   President<br>
                 </p>
             </div>
-	        	{{-- <div class="col-md-4 xs-mb-15">
-                <img src="https://cdn.ersnet.org/images/people/leadership/Tobias_Welte.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Tobias Welte</strong>
-                Past President<br></p>
-	        	</div> --}}
 	            <div class="col-md-4 xs-mb-15">
                		<img src="https://cdn.ersnet.org/images/people/leadership/Anita-Simonds.png" class="img-circle">
 	                <p class="photo_caption"><strong>Anita Simonds</strong>
@@ -86,6 +81,11 @@
                 Advocacy Council expert on NCDs<br>
               </p>
             </div>
+	        	<div class="col-md-4 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/leadership/Tobias_Welte.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Tobias Welte</strong>
+                  Representative of the Biomed Alliance<br></p>
+	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
               <img src="https://cdn.ersnet.org/images/people/leadership/Joanna-Chorostowska.png" class="img-circle">
               <p class="photo_caption"><strong>Joanna Chorostowska-Wynimko</strong>
