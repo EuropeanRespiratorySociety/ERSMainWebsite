@@ -87,16 +87,18 @@ img[alt=float-rfmv-sponsor]{
                 <p>View <a href="congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference">all RF&MV</a></p>
             </div>
             <div class="main-content">
-              @if($item->registerButton->link)
+              @if($item->registerButton->bannerText)
                 <div role="alert" class="alert alert-info alert-dismissible alert-mobile-position center-block col-md-8 col-xs-12" style="margin-bottom: 10px;padding: 10px 18px;">
                   <div class="row ">
                     <div class="col-md-12 col-xs-12 text-left">
                       <span class="banner-text" style="font-size: 16px;">{{ $item->registerButton->bannerText }}</span>
+                      @if($item->registerButton->link)
                       <span class="banner-link" style="font-family:DinPro,sans-serif;font-size: 16px;background-color: #FFF; padding: 10px;border-radius: 3px;">
                         <a href="{{$item->registerButton->link}}" target="new_blank" style="color: #116FC3;">
                             {{ $item->registerButton->text or Register}}
                         </a>
                       </span>
+                      @endif
                     </div>
                   </div>
                 </div>
