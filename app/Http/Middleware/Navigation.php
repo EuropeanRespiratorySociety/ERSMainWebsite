@@ -127,8 +127,8 @@ class Navigation
                     $menu->theLungScienceConference->add('Estoril, your host city','congress-and-events/metabolic-alterations-in-lung-ageing-and-disease/estoril-your-host-city')->link->attr(array('style' => 'display:none'));
                     $menu->theLungScienceConference->add('Previous Conferences','http://old.ersnet.org/previous-conferences.html')
                                             ->link->attr(array('target' => '_blank','style' => 'display:none'));
-                // $menu->congressAndEvents->add('Sleep and Breathing Conference','https://sleepandbreathing.org')
-                // ->link->attr(array('class' => 'ga-nav-congress-and-events'));
+                $menu->congressAndEvents->add('Sleep and Breathing Conference','https://sleepandbreathing.org')
+                 ->link->attr(array('class' => 'ga-nav-congress-and-events'));
                 $menu->congressAndEvents->add('ERS Presidential Summits','congress-and-events/ers-presidential-summits')
                 ->link->attr(array('class' => 'ga-nav-congress-and-events'));
                 $menu->congressAndEvents->add('ERS Research Seminars','congress-and-events/ers-research-seminars')
