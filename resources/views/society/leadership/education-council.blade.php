@@ -14,7 +14,17 @@
 		            <p class="photo_caption"><strong>Daiana Stolz</strong>
 		            Education Council Chair <br>
 		            </p>
-	        	</div>
+            </div>
+            
+              <div class="col-md-4 xs-mb-15">
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Richard-Costello.png" class="img-circle">
+                  <p class="photo_caption"><strong>Richard Costello</strong>
+                    Education Council Chair Elect<br>
+                  </p>
+            </div>
+
+
+
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="https://cdn.ersnet.org/images/people/leadership/Stefano_Aliberti.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>Stefano Aliberti</strong>
@@ -64,8 +74,8 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Lieuwe-Bos.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>LIEUWE BOS</strong>
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Maxime-Patout-2.png" class="img-circle">
+		            <p class="photo_caption"><strong>Maxime Patout</strong>
 		            Early Career Representative<br>
 		            </p>
 	        	</div>
