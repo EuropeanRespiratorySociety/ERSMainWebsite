@@ -74,7 +74,7 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Maxime-Patout-2.png" class="img-circle">
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Maxime-Patout.png" class="img-circle">
 		            <p class="photo_caption"><strong>Maxime Patout</strong>
 		            Early Career Representative<br>
 		            </p>
