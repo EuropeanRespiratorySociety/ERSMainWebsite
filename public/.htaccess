@@ -230,6 +230,8 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /tus https://www.ersnet.org/professional-development/thoracic-ultrasound-training-programme
         Redirect 301 /the-society/news/ers-respiratory-updates-2019-join-us-online-or-in-person-for-the-latest-clinical-updates-home https://www.ersnet.org/congress-and-events/ers-respiratory-updates
         Redirect 301 /the-society/news/lung-science-conference-metabolic-alterations-in-lung-ageing-and-disease-home https://www.ersnet.org/congress-and-events/metabolic-alterations-in-lung-ageing-and-disease
+        Redirect 301 /the-society/news/register-now-for-the-respiratory-failure-and-mechanical-ventilation-conference-2020-home https://www.ersnet.org/congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference
+
 
 
     ### External redirects
