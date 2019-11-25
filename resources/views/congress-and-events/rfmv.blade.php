@@ -109,32 +109,29 @@ img[alt=float-rfmv-sponsor]{
                 <div class="col-md-8 center-block lead text-left">
                   {!! $item->body !!}
                 </div>
+                @if($item->programme)  
+                <div class="col-md-8 center-block text-center">
+                  <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary text-left" style="margin-bottom: 10px;">
+                    <span class="icon s7-map" style="font-size: 24px;"></span>
+                    {{$item->programmeButtonText}} 
+                  </a>
+                </div>
+                @endif 
+                @if($item->externalLink->link)  
+                <div class="col-md-8 center-block text-center">
+                  <a href="{{$item->externalLink->link}}" target="new_blank"  class="btn btn-primary tab-register-bt"  style="margin-bottom: 10px;">
+                    {{ $item->externalLink->text}}
+                </a>
+                </div>
+                @endif 
                 @if($item->practicalInfo)  
-                <div class="col-md-8 center-block lead text-left">
-                <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary text-left bt-practicalInfo">
+                <div class="col-md-8 center-block text-center">
+                <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary text-left bt-practicalInfo"  style="margin-bottom: 10px;">
                   <span class="icon s7-info" style="font-size: 24px;"></span>
                   {{$item->practicalInfoButton ? $item->practicalInfoButton : 'Practical Info'}}
                 </a>
-              </div>
-                @endif
-                @if($item->programme || $item->externalLink->link)
-                <div class="col-lg-10 col-md-7 col-xs-12 row center-block" style="margin-bottom: 30px;">
-                  <div class="col-lg-6 col-lg-offset-3 col-md-12 col-xs-12 text-center" style="margin-bottom: 20px;">
-                    @if($item->programme)
-                    <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary text-left" style="margin-bottom: 10px;">
-                      <span class="icon s7-map" style="font-size: 24px;"></span>
-                      {{$item->programmeButtonText}} 
-                    </a>
-                    @endif
-                    @if($item->externalLink->link)
-                      <a href="{{$item->externalLink->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
-                          {{ $item->externalLink->text}}
-                      </a>
-                    @endif
-                   </div>
-                  </div>
-                @endif
-                
+                </div>
+                @endif                 
                 @if($item->body2)
                 <div class="col-md-8 center-block lead text-left">
                   {!! $item->body2 !!}
