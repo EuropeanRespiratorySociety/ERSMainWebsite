@@ -95,7 +95,7 @@ class CloudCmsHelper
     * @param string $type (Optional - type of association e.g. ers:category-association)
     * @return array
     */
-    public function getAssociation($_qname, $type = 'ers:category-association' ){
+    public function getAssociation($_qname, $type = 'ers:category-association', $limit = 25){
         $query = '{ "unPublished": { "$ne": true}}';
 
         $results = CC::nodes()
@@ -103,6 +103,7 @@ class CloudCmsHelper
             ->addParams(['type' => $type])
             ->addParams(['metadata' => 'true'])
             ->addParams(['full' => 'true'])
+            ->addParams(['limit' => $limit])
             ->get();
         $results = $this->validateResults($results);      
         return $results;    
@@ -126,7 +127,6 @@ class CloudCmsHelper
         $results = CC::nodes()
             ->queryRelatives($startNode, $query)
             ->addParams(['type' => $type])
-            // ->addParams(['sort' => '{"_system.created_on.ms": '.$direction.'}']) 
             ->addParams(['sort' => '{"'.$field.'": '.$direction.'}']) 
             ->addParams(['metadata' => 'true'])
             ->addParams(['limit' => 400])
@@ -137,11 +137,54 @@ class CloudCmsHelper
     }
 
     /**
-    * Get a single article (or category) by slug
+    * Get all associated items that have a specific relation and sort them by a field
+    * @param string $startNode (QName of the starting node)
+    * @param string $type (Optional - type of association e.g. ers:category-association)
+    * @param string $field (Optional - the field to sort on)
+    * @param int $direction (the sorting direction 1 or -1)
+    */
+    public function getOutgoingAssociationSorted($startNode, $type, $field = "_system.created_on.ms", $direction = 1){
+        $query = '{ 
+            "unPublished": { "$ne": true},
+            "_type": { "$ne": "ers:notifications"}
+        }';
+
+        $results = CC::nodes()
+            ->queryRelatives($startNode, $query)
+            ->addParams(['type' => $type])
+            ->addParams(['sort' => '{"'.$field.'": '.$direction.'}']) 
+            ->addParams(['metadata' => 'true'])
+            ->addParams(['direction' => 'OUTGOING'])
+            ->addParams(['limit' => 400])
+            ->addParams(['full' => 'true'])
+            ->get();    
+        $results = $this->validateResults($results);       
+        return $results;    
+    }
+    
+    /**
+    * Get a single article (or category) by slug 
     * @param string $slug (slug-of-the-artice)
     */
 	public function getItem($slug){
 		$query = '{"slug": "'.$slug.'"}';
+		$result = CC::nodes()
+                    ->query($query)
+                    ->addParams(['full' => 'true'])
+                    ->addParams(['metadata' => 'true'])   
+                    ->get(); 
+        $result = $this->validateResults($result);               
+        return $result;            
+    }
+    
+    /**
+    * Get a single article (or category) by slug and published
+    * @param string $slug (slug-of-the-artice)
+    */
+	public function getPublishedItem($slug){
+        $query = '{"slug": "'.$slug.'",
+            "unPublished": { "$ne": true }
+        }';
 		$result = CC::nodes()
                     ->query($query)
                     ->addParams(['full' => 'true'])
@@ -264,13 +307,13 @@ class CloudCmsHelper
         $nonERS = false;
 
         foreach ($items as $key => $item) {
-
+            $nonERS = false;
             $item = (object) $item;
 
             if($item->nonErsCalendarItem || $item->ersEndorsedEvent) {
                 $nonERS = true;
             }
-
+            
             if($item->featuredCourse && $courseCounter <= 4){
                 $sorted['featuredCourses'][] = $item;
                 $courseCounter++;
@@ -280,7 +323,7 @@ class CloudCmsHelper
                 $sorted['featuredResearchItems'][] = $item;
                 $fundingCounter++;
             }
-
+           
             if($item->category2 && $calendarCounter <= 5 && !$nonERS){
                 if($cal->isCalendar($item->category2) || $item->category->title == "Events Calendar"){
                     if(isset($sorted['firstEvent'])){

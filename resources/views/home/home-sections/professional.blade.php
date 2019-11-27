@@ -1,10 +1,14 @@
 <div class="section home-professional-content fp-auto-height">
 	<div class="main-content">
-		<div class="page-head"><h2>Professional development</h2></div>
+		<div class="page-head"><h2>Continuing Professional development</h2></div>
 		<div class="row">
 			<div class="col-md-6 center-block lead">
-				We are committed to driving standards in respiratory health through education and professional development opportunities. We offer a range of activities from e-learning, interactive teaching and activities to harmonise education standards, alongside funding opportunities for fellowships, awards and grants.
-				<div class="space"></div>
+				Continuing professional development (CPD) encompasses all the teaching and learning activities that a respiratory professional may follow to ensure that they are up-to-date and in touch with today’s clinical practice. CPD is essential for all professionals to ensure better patient care and outcomes. ERS funded a PhD to understand how re-validation is organised on an international level and how it supports medical specialists in remaining competent professional.
+        <div class="space"></div>
+        <p><a class="ga-home-edu" href="{{url('professional-development/cpd')}}">- More on the CPD project</a></p>
+        <p><a class="ga-home-edu" href="{{url('professional-development/phd-overview')}}">- More on the PhD project</a></p>
+        <div class="space"></div>
+        <div class="space"></div>
 			</div>
 		</div>
 		<div class="row text-left row-professional">

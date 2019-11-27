@@ -32,131 +32,108 @@
               </div>
       
           <div class="row leadership-people" style="padding-top: 40px;">
-                <div class="col-md-6 xs-mb-15">
-                    <h4 style="margin-bottom:30px;"><strong>Examination Committee Chair</strong></h4>
-                    <img src="https://cdn.ersnet.org/images/people/examination-committee/Robert-Primhak.png" class="img-circle">
-                    <p class="photo_caption"><strong>Dr Robert Primhak</strong></p>
-                    <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
-                        <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                          - Retired Paediatrician</p>
-                        <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                          - Senior Lecturer</p>
-                        <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">- Former Consultant Respiratory Paediatrician at Sheffield Children's Hospital</p>
-                    </div>
-                </div>
-                <div class="col-md-6 xs-mb-15">
-                  <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                  <img src="https://cdn.ersnet.org/images/people/examination-committee/Jayesh-M-Bhatt.png" class="img-circle">
-                  <p class="photo_caption"><strong>Dr Jayesh M Bhatt</strong></p>
-                  <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
-                    <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                      - Consultant Respiratory Paediatrician</p>
-                    <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">- Nottingham University Hospitals NHS Trust</p>
-                    <p style="margin-bottom: 30px;">- Nottingham, United Kingdom</p>
-                  </div>
+            <div class="col-md-6 xs-mb-15">
+              <h4 style="margin-bottom:30px;"><strong>Examination Committee Chair</strong></h4>
+              <img src="https://cdn.ersnet.org/images/people/examination-committee/Jurg-Hammer.png" class="img-circle">
+              <p class="photo_caption"><strong>Prof. Jürg Hammer</strong></p>
+              <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
+                <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                  - Deputy Head of the Division of Respiratory and Critical Care Medicine</p>
+                <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                  - University Children's Hospital Basel</p>
+                <p style="margin-bottom:0px;">- Basel, Switzerland</p>
               </div>
-              <div class="col-md-6 xs-mb-15">
-                <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                <img src="https://cdn.ersnet.org/images/people/examination-committee/Raffaella-Nenna-02.png" class="img-circle">
-                <p class="photo_caption"><strong>Dr Raffaella Nenna</strong></p>
-                <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
-                  <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                    - Researcher "Sapienza" University of Rome</p>
-                  <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:40px;">- Rome, Italy</p>
-                </div>
+            </div>
+            <div class="col-md-6 xs-mb-15">
+              <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
+              <img src="https://cdn.ersnet.org/images/people/examination-committee/Nicole-Beydon.png" class="img-circle">
+              <p class="photo_caption"><strong>Dr Nicole Beydon</strong></p>
+              <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
+                <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                  - Unit of Pulmonary Function Test and Sleep Medicine Study</p>
+                <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">- Department of Physiology</p>
+                <p style="margin-bottom:0px;">- Armand Trousseau Paediatric University Hospital (APHP)</p>
+                <p>- Paris, France</p>
               </div>
-                <div class="col-md-6 xs-mb-15">
-                    <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                    <img src="https://cdn.ersnet.org/images/people/examination-committee/Nicole-Beydon.png" class="img-circle">
-                    <p class="photo_caption"><strong>Dr Nicole Beydon</strong></p>
-                    <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
-                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                        - Unit of Pulmonary Function Test and Sleep Medicine Study</p>
-                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">- Department of Physiology</p>
-                      <p style="margin-bottom:0px;">- Armand Trousseau Paediatric University Hospital (APHP)</p>
-                      <p>- Paris, France</p>
-                </div>
-                {{-- <div class="col-md-6 xs-mb-15">
-                    <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                    <img src="https://cdn.ersnet.org/images/people/examination-committee/Ernst-Eber.png" class="img-circle">
-                    <p class="photo_caption"><strong>Prof. Ernst Eber</strong></p>
-                    <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
-                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                        - Division of Paediatric Pulmonology and Allergology</p>
-                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                        - Department of Paediatrics and Adolescent Medicine</p>
-                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                        - Medical University of Graz</p>
-                      <p>- Graz, Austria</p>
-                    </div> --}}
-                </div>
-                <div class="col-md-6 xs-mb-15">
-                    <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                    <img src="https://cdn.ersnet.org/images/people/examination-committee/Jurg-Hammer.png" class="img-circle">
-                    <p class="photo_caption"><strong>Prof. Jürg Hammer</strong></p>
-                    <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
-                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                        - Deputy Head of the Division of Respiratory and Critical Care Medicine</p>
-                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                        - University Children's Hospital Basel</p>
-                      <p style="margin-bottom:0px;">- Basel, Switzerland</p>
-                    </div>
-                </div>
-                <div class="col-md-6 xs-mb-15">
-                    <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                    <img src="https://cdn.ersnet.org/images/people/examination-committee/Antonio-Martinez-Gimeno.png" class="img-circle">
-                    <p class="photo_caption"><strong>Dr Antonio Martínez-Gimeno</strong></p>
-                    <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
-                        <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                          - Hospital Virgen de la Salud</p>
-                        <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:50px;">
-                          - Toledo, Spain
-                        </p>
-                    </div>
-                </div>
-                {{-- <div class="col-md-6 xs-mb-15">
-                    <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                    <img src="https://cdn.ersnet.org/images/people/examination-committee/Fabio-Midulla.png" class="img-circle">
-                    <p class="photo_caption"><strong>Prof. Fabio Midulla</strong></p>
-                    <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
-                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                        - Paediatric Emergency Unit</p>
-                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                        - Ospedale Policlinico Umberto I</p>
-                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                        - Sapienza University of Rome</p>
-                      <p>- Rome, Italy</p>
-                    </div>
-                </div> --}}
-                {{-- <div class="col-md-6 xs-mb-15">
-                    <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                    <img src="https://cdn.ersnet.org/images/people/examination-committee/Jimmy-Paton.png" class="img-circle">
-                    <p class="photo_caption"><strong>Dr Jimmy Paton</strong></p>
-                    <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
-                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                        - Reader in Paediatric Respiratory Medicine</p>
-                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                        - Division of Developmental Medicine</p>
-                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">- University of Glasgow</p>
-                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">- Royal Hospital for Sick Children</p>
-                      <p>- Glasgow, UK</p>
-                    </div>
-                </div> --}}
+            </div>
 
-                <div class="col-md-6 xs-mb-15">
-                    <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
-                    <img src="https://cdn.ersnet.org/images/people/examination-committee/Robert-Ross-Russell.png" class="img-circle">
-                    <p class="photo_caption"><strong>Dr Robert Ross-Russell</strong></p>
-                    <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
-                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                        - Consultant</p>
-                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                        - Paediatric Intensive Care and Respiratory Paediatrics</p>
-                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">- University of Glasgow</p>
-                      <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">- Addenbrookes Hospital</p>
-                      <p>- Cambridge, UK</p>
-                    </div>
-                </div>
+
+            <div class="col-md-6 xs-mb-15">
+              <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
+              <img src="https://cdn.ersnet.org/images/people/examination-committee/Jayesh-M-Bhatt.png" class="img-circle">
+              <p class="photo_caption"><strong>Dr Jayesh M Bhatt</strong></p>
+              <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
+                <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                  - Consultant Respiratory Paediatrician</p>
+                <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">- Nottingham University Hospitals NHS Trust</p>
+                <p style="margin-bottom: 0px;">- Nottingham, United Kingdom</p>
+              </div>
+            </div>
+            <div class="col-md-6 xs-mb-15">
+              <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
+              <img src="https://cdn.ersnet.org/images/people/examination-committee/Katerina-Haidopoulou.png" class="img-circle">
+              <p class="photo_caption"><strong>Prof. Katerina Haidopoulou</strong></p>
+              <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
+                <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                  - Associate Professor of Paediatric Respiratory Medicine University Hospital AHEPA</p>
+                <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                  - Thessaloniki Aristotle University of Thessaloniki</p>
+                <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">- Greece</p>
+              </div>
+           </div>
+           <div class="col-md-6 xs-mb-15">
+            <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
+            <img src="https://cdn.ersnet.org/images/people/examination-committee/Antonio-Martinez-Gimeno.png" class="img-circle">
+            <p class="photo_caption"><strong>Dr Antonio Martínez-Gimeno</strong></p>
+            <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
+                <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                  - Hospital Virgen de la Salud</p>
+                <p style="text-indent: -0.7em;padding-left:0.7em;">
+                  - Toledo, Spain
+                </p>
+            </div>
+          </div>
+          <div class="col-md-6 xs-mb-15">
+            <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
+            <img src="https://cdn.ersnet.org/images/people/examination-committee/Raffaella-Nenna-02.png" class="img-circle">
+            <p class="photo_caption"><strong>Dr Raffaella Nenna</strong></p>
+            <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
+              <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                - Researcher "Sapienza" University of Rome</p>
+              <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:40px;">- Rome, Italy</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 xs-mb-15">
+              <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
+              <img src="https://cdn.ersnet.org/images/people/examination-committee/Robert-Ross-Russell.png" class="img-circle">
+              <p class="photo_caption"><strong>Dr Robert Ross-Russell</strong></p>
+              <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
+                <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                  - Consultant</p>
+                <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                  - Paediatric Intensive Care and Respiratory Paediatrics</p>
+                <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">- University of Glasgow</p>
+                <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">- Addenbrookes Hospital</p>
+                <p>- Cambridge, UK</p>
+              </div>
+          </div>
+
+          <div class="col-md-6 xs-mb-15">
+            <h4 style="margin-bottom:30px;"><strong>Committee Member</strong></h4>
+            <img src="https://cdn.ersnet.org/images/people/examination-committee/Annelies-Zwitserloot.png" class="img-circle">
+            <p class="photo_caption"><strong>Dr Annelies M.  Zwitserloot</strong></p>
+            <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
+              <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                - Paediatric Pulmonologist</p>
+              <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
+                - Beatrix Children’s Hospital</p>
+              <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">- University Medical Center Groningen</p>
+              <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:55px;">- Netherlands</p>
+            </div>
+        </div>
+
+
 
           </div>
         </div>

@@ -43,7 +43,7 @@
     <div class="col-md-6 lighter-grey-bg ers-research-seminar-info">
       <div class="header">
         <div class="clearfix notification">
-          @if($item->feeList->liveStreaming === 0)
+          @if($item->feeList->liveStreaming === 0 || $item->feeList->liveStreamingNonErs === 0)
             <p style="text-align:left;color:#d0043c;">
               <i style="font-size:26px;font-weight:bold;position:relative;top:5px;" class="s7-video"></i>
               <span>Live streaming will be available</span>
@@ -95,6 +95,7 @@
 
     </div>
 
+
     <!-- Beginning Right Side-bar -->
     <div class="col-md-3 white-bg event-items-tab">
       <div class="tab-container">
@@ -118,6 +119,10 @@
                   </a>
                 @endif
                 <p>Any questions? Please contact{!! Html::mailto('scientific@ersnet.org', 'scientific@ersnet.org') !!}</p>
+
+                @if($item->registerButton->link)
+                <a href="{{$item->registerButton->link}}" target="_blank" class="btn btn-primary item-register-bt">{{$item->registerButton->text}}</a>
+                @endif
               </div>
             </div>
             @if($item->sponsors[0]->text || $item->sponsors[0]->image)
