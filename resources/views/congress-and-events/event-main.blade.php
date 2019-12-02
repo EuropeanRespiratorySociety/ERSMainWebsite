@@ -54,13 +54,15 @@
         <div class="main-content">
           <div class="page-head" style="margin-bottom: 0px;">
             <h2>{{$item->title}}</h2>
+            @if($item->subTitle)
             <h3 class="text-center clearfix date-venue" style="font-family:DinPro,sans-serif;font-size: 20px;color:#016fc4;margin-top:0;">
-              #RFMV2020
+              {{$item->subTitle}}
             </h3>
+            @endif
           </div>
 
           <h3 class="text-center clearfix date-venue" style="font-family:DinPro,sans-serif;font-size: 20px;margin-bottom: 20px;margin-top: 35px;">
-            {{$item->eventDates}} @if(isset($item->eventLocation)){{$item->eventLocation}}</a>@endif
+            {{$item->eventDates}} @if(isset($item->eventLocation)){{$item->eventLocation}}@endif
           </h3>
 
           @if($item->registerButton->link)
@@ -87,8 +89,8 @@
                     <div class="col-md-4 isotope">
                       <div class="card card-event">
                         @if($relatedItem->highResImage)
-                          <div class="card-image" style="height: 150px;background-repeat: no-repeat; background-image: url('{{$relatedItem->highResImage}}'); 
-                              background-position: center; background-size:100%;">
+                          <div class="card-image" style="max-height:300px;height:150px;background-repeat: no-repeat; background-image: url('{{$relatedItem->highResImage}}'); 
+                              background-position: center; background-size:cover;">
                           </div>
                         @endif
 
