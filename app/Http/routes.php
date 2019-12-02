@@ -108,8 +108,12 @@ Route::group(['prefix' => 'congress-and-events'], function () {
     Route::get('ers-2018', 'LscController@paris');
     Route::get('ers-respiratory-updates', 'LscController@respiratoryUpdate');
     Route::get('ers-satellite', 'LscController@ersSatellite');
-    Route::get('ers-respiratory-failure-and-mechanical-ventilation-conference', 'RfmvController@index');
-    Route::get('ers-respiratory-failure-and-mechanical-ventilation-conference/{slug}', 'RfmvController@show');
+    Route::get('ers-respiratory-failure-and-mechanical-ventilation-conference', 'EventController@rfmvIndex');
+    Route::get('ers-respiratory-failure-and-mechanical-ventilation-conference/{slug}', 'EventController@rfmvShow');
+    Route::get('ers-small-event-example', 'EventController@smallEventIndex');
+    Route::get('ers-small-event-example/{slug}', 'EventController@smallEventShow');
+    Route::get('ers-lung-science-conference', 'EventController@lscIndex');
+    Route::get('ers-lung-science-conference/{slug}', 'EventController@lscShow');
     Route::get('/{slug}', 'GeneralController@show');
 });
 
