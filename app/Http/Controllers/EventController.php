@@ -52,9 +52,9 @@ class EventController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-  public function smallEventIndex()
+  public function lscIndex()
   { 
-    $results = $this->CCH->getItem('ers-small-event-example');
+    $results = $this->CCH->getItem('ers-lung-science-conference');
     $params = $this->buildParamsModel($results['rows']);
     return view('congress-and-events.event-main')->with($params);    
   }
@@ -65,11 +65,11 @@ class EventController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function smallEventShow($slug)
+    public function lscShow($slug)
     {
         $results = $this->CCH->getItem($slug);
         $params = $this->buildParamsModel($results['rows']);
-        $params['landingPage'] = (object)   array('title' => 'all Small Event', 'link' => 'congress-and-events/ers-small-event-example');
+        $params['landingPage'] = (object)   array('title' => 'all LSC', 'link' => 'congress-and-events/ers-lung-science-conference');
         return view('congress-and-events.event')->with($params); 
     }
 
