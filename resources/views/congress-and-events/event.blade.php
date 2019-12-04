@@ -106,6 +106,38 @@ img[alt=float-rfmv-sponsor]{
               @if($item->earlybirdDeadline)
               <p class="rfmv-eb-notification">Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from reduced registration fees.</p>
             @endif
+
+
+            @if($faculties)
+            <div class="row">
+              @foreach ($faculties as $faculty)
+              <div class="col-md-3 xs-mb-15">
+                  <img src="{{$faculty->imgSrc}}" class="img-circle">
+                  <p class="photo_caption"><strong>{{$faculty->fullName}}</strong>
+                    {!!$faculty->title!!} <br>
+                    <a data-toggle="modal" data-target="#md-{{$faculty->id}}" type="button" class="">More</a>
+                  </p>
+                  <div id="md-{{$faculty->id}}" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button " data-dismiss="modal" aria-hidden="true" class="close"><i class="icon s7-close"></i></button>
+                              <h3 class="modal-title">{{$faculty->fullName}}</h3>
+                          </div>
+                        <div class="modal-body">
+                          <div class="text-left">
+                            <p>{!!$faculty->description!!}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              @endforeach
+            </div>
+            @endif
+
                 <div class="col-md-8 center-block lead text-left">
                   {!! $item->body !!}
                 </div>
