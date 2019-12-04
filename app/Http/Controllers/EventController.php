@@ -28,7 +28,7 @@ class EventController extends Controller
   public function rfmvIndex()
   { 
     $results = $this->CCH->getItem('ers-respiratory-failure-and-mechanical-ventilation-conference');
-    $params = $this->buildParamsModel($results['rows']);
+    $params = $this->buildParamsModel($results['rows']);    
     return view('congress-and-events.event-main')->with($params);    
   }
 
@@ -43,6 +43,7 @@ class EventController extends Controller
         $results = $this->CCH->getItem($slug);
         $params = $this->buildParamsModel($results['rows']);
         $params['landingPage'] = (object)   array('title' => 'all RF&MV', 'link' => 'congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference');
+        $params['faculties'] = $this->rfmvFaculties($slug);
         return view('congress-and-events.event')->with($params); 
     }
 
@@ -70,6 +71,7 @@ class EventController extends Controller
         $results = $this->CCH->getItem($slug);
         $params = $this->buildParamsModel($results['rows']);
         $params['landingPage'] = (object)   array('title' => 'all LSC', 'link' => 'congress-and-events/ers-lung-science-conference');
+        $params['faculties'] = false;
         return view('congress-and-events.event')->with($params); 
     }
 
@@ -98,5 +100,67 @@ class EventController extends Controller
             $params['relatedItems'] =  (object) $item[0]->related;
         }
         return $params;
+    }
+
+    private function rfmvFaculties($slug){
+        if($slug === "rfmv-programme"){
+            $faculty1 = new UiFaculty(
+                "faculty1",
+                "https://cdn.ersnet.org/images/people/leadership/Sara-Jane-Bonvini.png",
+                "Professor Alexandre Demoule",
+                "Medical Director and Principal Investigator,<br> Sorbonne Université",
+                "Factors that make this new conference unique include the large variety of topics covered over the three specialist tracks, the hands on state-of-the-art sessions, and the inclusion of renowned speakers from all over the world. <br> It is difficult to choose a particular highlight within the programme, as it is fantastic from the beginning to end! Early career professionals are especially encouraged to attend, as the programme has been developed with them in mind to ensure it is accessible."
+            );
+            $faculty2 = new UiFaculty(
+                "faculty2",
+                "https://cdn.ersnet.org/images/people/leadership/Sara-Jane-Bonvini.png",
+                "Professor Alexandre Demoule",
+                "Medical Director and Principal Investigator,<br> Sorbonne Université",
+                "Factors that make this new conference unique include the large variety of topics covered over the three specialist tracks, the hands on state-of-the-art sessions, and the inclusion of renowned speakers from all over the world. It is difficult to choose a particular highlight within the programme, as it is fantastic from the beginning to end! Early career professionals are especially encouraged to attend, as the programme has been developed with them in mind to ensure it is accessible."
+            );
+            $faculty3 = new UiFaculty(
+                "faculty3",
+                "https://cdn.ersnet.org/images/people/leadership/Sara-Jane-Bonvini.png",
+                "Professor Alexandre Demoule",
+                "Medical Director and Principal Investigator,<br> Sorbonne Université",
+                "Factors that make this new conference unique include the large variety of topics covered over the three specialist tracks, the hands on state-of-the-art sessions, and the inclusion of renowned speakers from all over the world. It is difficult to choose a particular highlight within the programme, as it is fantastic from the beginning to end! Early career professionals are especially encouraged to attend, as the programme has been developed with them in mind to ensure it is accessible."
+            );
+            $faculty4 = new UiFaculty(
+                "faculty4",
+                "https://cdn.ersnet.org/images/people/leadership/Sara-Jane-Bonvini.png",
+                "Professor Alexandre Demoule",
+                "Medical Director and Principal Investigator,<br> Sorbonne Université",
+                "Factors that make this new conference unique include the large variety of topics covered over the three specialist tracks, the hands on state-of-the-art sessions, and the inclusion of renowned speakers from all over the world. It is difficult to choose a particular highlight within the programme, as it is fantastic from the beginning to end! Early career professionals are especially encouraged to attend, as the programme has been developed with them in mind to ensure it is accessible."
+            );
+            $faculty5 = new UiFaculty(
+                "faculty5",
+                "https://cdn.ersnet.org/images/people/leadership/Sara-Jane-Bonvini.png",
+                "Professor Alexandre Demoule",
+                "Medical Director and Principal Investigator,<br> Sorbonne Université",
+                "Factors that make this new conference unique include the large variety of topics covered over the three specialist tracks, the hands on state-of-the-art sessions, and the inclusion of renowned speakers from all over the world. It is difficult to choose a particular highlight within the programme, as it is fantastic from the beginning to end! Early career professionals are especially encouraged to attend, as the programme has been developed with them in mind to ensure it is accessible."
+            );
+            return (object) array(
+                $faculty1,
+                $faculty2,
+                $faculty3,
+                $faculty4, 
+                $faculty5            
+            );
+        }else{
+            return false;
+        }
+    }
+}
+
+
+class UiFaculty
+{
+    public function __construct($id, $imgSrc, $fullName, $title, $description)
+    {
+        $this->id = $id;
+        $this->imgSrc = $imgSrc;
+        $this->fullName = $fullName;
+        $this->title = $title;
+        $this->description = $description;
     }
 }
