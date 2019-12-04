@@ -295,6 +295,8 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /the-society/news/register-for-free-to-attend-ers-satellites-on-severe-asthma https://www.ersnet.org/congress-and-events/ers-satellite
         # Redirect 301 /the-society/news/world-no-tobacco-day-2019--get-involved- https://www.ersnet.org/the-society/news/world-no-tobacco-day-2019--get-involved-
         Redirect 301 /the-society/news/ers-international-congress-2019-madrid-register-now-to-join-us-in-person-or-online-home https://erscongress.org/
+        Redirect 301 /the-society/news/send-us-your-topics-suggestions-for-the-sleep-and-breathing-conference-2021-home https://sleepandbreathing.org/articles/programme-2021
+
         
         # Number
         Redirect 301 /10PrinciplesforLungHealth https://ers.box.com/s/zj0x90cz9cwutldzlxbnoglzonmmnrbk
