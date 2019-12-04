@@ -126,7 +126,8 @@ img[alt=float-rfmv-sponsor]{
                           </div>
                         <div class="modal-body">
                           <div class="text-left">
-                            <p>{!!$faculty->description!!}}</p>
+                            <p>{!!$faculty->description!!}
+                            </p>
                           </div>
                         </div>
                       </div>
