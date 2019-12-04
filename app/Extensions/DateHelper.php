@@ -54,11 +54,14 @@ class DateHelper
         if($start !== false){
             $startDate = new \DateTime($start);
             $start = Carbon::instance($startDate);            
-
+            
             if($end !== false){
             	$endDate = new \DateTime($end);   
             	$end = Carbon::instance($endDate);
-
+                
+                if($start->format('Y') != $end->format('Y')) {
+                    return $start->day.' '.$start->format('F').', '.$start->year.' - '.$end->day.' '.$end->format('F').', '.$end->year;    
+                }
                 if($start->format('F') != $end->format('F')) {
                     return $start->day.' '.$start->format('F').' - '.$end->day.' '.$end->format('F').', '.$end->year;    
                 }

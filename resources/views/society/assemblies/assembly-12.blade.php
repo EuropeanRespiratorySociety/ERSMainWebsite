@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="col-md-6 center-block">
-              <p >Assembly Early Career representative: Alfaro Tiago</p>
+              <p >Assembly Early Career representative: Tiago Alfaro</p>
             </div>
             <div class="col-md-6 center-block lead">
         

@@ -239,12 +239,6 @@
       </div>
       <div class="row">
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Laura Montangero</strong>
-            Senior Coordinator<br>
-            T +41 21 213 01 75<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Soraya Barazin</strong>
             Senior Coordinator<br>
             T +41 21 213 01 72<br>
@@ -267,7 +261,13 @@
             Assistant<br>
             T +41 21 213 01 86<br>
             </p>
-        </div>        
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>Emma Favrod</strong>
+            Assistant<br>
+            T +41 21 213 01 75<br>
+            </p>
+        </div>
       </div>
     </div>
     </div>
@@ -335,30 +335,16 @@
 
     <!--Section Press and Communications-->
     <div class="section fp-auto-height">
-    <div class="main-content">
-      <div class="page-head">
-          <h2 class="">Communications</h2>
-      </div>
-      <div class="row">
-          <div class="col-md-4 col-md-offset-4 xs-mb-15">
-            <img src="https://cdn.ersnet.org/images/people/executive-office/Dan-Graham.png" class="img-circle">
-            <p class="photo_caption"><strong>Daniel Graham</strong>
-              Head of Communications<br>
-            T +41 21 213 01 01<br>
-            </p>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-md-3 xs-mb-15">
-              <p class="photo_caption"><strong>Dawn Ould</strong>
-                Senior Communications Coordinator<br>
-                T +44 114 267 2876<br>
-              </p>
-          </div>
-          <div class="col-md-3 xs-mb-15">
-            <p class="photo_caption"><strong>Tim Steele</strong>
-              Communications Coordinator<br>
-              T +44 114 267 2876<br>
+      <div class="main-content">
+        <div class="page-head">
+            <h2 class="">Communications</h2>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-3 col-md-offset-3 xs-mb-15">
+            <p class="photo_caption"><strong>Dawn Ould</strong>
+              Senior Communications Coordinator<br>
+              T +44 114 267 2866<br>
             </p>
           </div>
           <div class="col-md-3 xs-mb-15">
@@ -366,14 +352,12 @@
               Communications Coordinator<br>
               T +44 114 267 2866<br>
               </p>
-         </div>
-
+          </div>
+  
+        </div>
       </div>
-    </div>
-    </div>
+      </div>
     <!--Fin Press and Communications-->
-
-
 
     <!--Section Education-->
     <div class="section fp-auto-height">
@@ -397,13 +381,6 @@
             T +41 21 213 01 74<br>
             </p>
         </div>
-        <!--div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Julie-Lyn Noël</strong>
-            Projects Leader<br>
-            T +41 21 213 01 77<br>
-            Julie-Lyn.Noel@ersnet.org
-            </p>
-        </div-->
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Pascal Kurosinski</strong>
             E-learning Senior Coordinator<br>
@@ -486,25 +463,19 @@
           </div>
       </div>
       <div class="row">
-        <div class="col-md-3 xs-mb-15">
+        <div class="col-md-4 xs-mb-15">
           <p class="photo_caption"><strong>MAEVE BARRY</strong>
             Policy Officer<br>
             T +32 2 238 53 68<br>
             </p>
         </div>
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Marine Faure</strong>
-            Policy Officer<br>
-            T +32 2 238 53 62<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
+        <div class="col-md-4 xs-mb-15">
           <p class="photo_caption"><strong>NEJLA DELIKUS</strong>
             Office Coordinator<br>
             T +32 2 238 53 60<br>
             </p>
         </div>
-        <div class="col-md-3 xs-mb-15">
+        <div class="col-md-4 xs-mb-15">
           <p class="photo_caption"><strong>Roberta Sadauskaite</strong>
             Policy Officer<br>
             T +32 2 238 53 64<br>
@@ -531,19 +502,19 @@
           </div>
       </div>
       <div class="row">
-        <div class="col-md-3 xs-mb-15">
+        <div class="col-md-4 xs-mb-15">
           <p class="photo_caption"><strong>Courtney Coleman</strong>
             Patient Involvement and Engagement<br>
             T +44 114 267 2875<br>
             </p>
         </div>
-        <div class="col-md-3 xs-mb-15">
+        <div class="col-md-4 xs-mb-15">
           <p class="photo_caption"><strong>Rachel Orritt</strong>
             Information and Education<br>
-            T +44 114 267 2872<br>
+            T +44 114 322 0645<br>
             </p>
         </div>
-        <div class="col-md-3 xs-mb-15">
+        <div class="col-md-4 xs-mb-15">
           <p class="photo_caption"><strong>Jeanette Boyd</strong>
             Patients Projects<br>
             T +44 114 267 2872<br>
@@ -655,7 +626,7 @@
       <div class="row">
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Florence Blocklet</strong>
-            Web Developper<br>
+            Web Developer<br>
             T +41 21 213 01 46<br>
             </p>
         </div>
@@ -727,14 +698,14 @@
           <h2 class="">Publications</h2>
       </div>
 
-      <div class="col-md-8 center-block lead"><strong>Publication Office</strong><br><br>
+      <div class="col-md-8 center-block lead"><strong>Publications Office</strong><br><br>
       European Respiratory Society : Sheffield S10 2PX United Kingdom<br><br>
-      TEL +44 114 267 2860&nbsp;&nbsp;/&nbsp;&nbsp;FAX +44 114 266 5064&nbsp;&nbsp;/&nbsp;&nbsp;E-Mail {!! Html::mailto('info@ersj.org.uk', 'info@ersj.org.uk') !!}
+      TEL +44 114 267 2860&nbsp;&nbsp;/&nbsp;&nbsp;FAX +44 114 266 5064&nbsp;&nbsp;/&nbsp;&nbsp;E-Mail {!! Html::mailto('journals@ersnet.org', 'journals@ersnet.org') !!}
       </div>
 
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
-            <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+           <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle"> 
             <p class="photo_caption"><strong>Elin Reeves</strong>
             Director of Publications<br>
             T +44 114 267 2873<br>
@@ -776,33 +747,21 @@
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Alyson Cann</strong>
             Technical Editor<br>
-            T +44 114 267 2870<br>
+            T +44 114 322 0650<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Jonathan Hansen</strong>
             Technical Editor<br>
-            T +44 114 267 2879<br>
+            T +44 114 322 0641<br>
             </p>
         </div>
-        <!--div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Fiona Marks</strong>
-            Technical Editor<br>
-            T +44 114 267 2867<br>
-            </p>
-        </div-->
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Catherine Pumphrey</strong>
             Technical Editor<br>
-            T +44 114 267 2878<br>
+            T +44 114 322 0649<br>
             </p>
         </div>
-        <!--div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>David Sadler</strong>
-            Technical Editor<br>
-            T +44 114 267 2866<br>
-            </p>
-        </div-->
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Kay Sharpe</strong>
             Administration Coordinator<br>
@@ -824,7 +783,7 @@
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Ben Watson</strong>
             Artworker<br>
-            T +44 114 267 2871<br>
+            T +44 114 322 0642<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">

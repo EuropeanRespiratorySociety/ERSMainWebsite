@@ -95,7 +95,7 @@ class CloudCmsHelper
     * @param string $type (Optional - type of association e.g. ers:category-association)
     * @return array
     */
-    public function getAssociation($_qname, $type = 'ers:category-association' ){
+    public function getAssociation($_qname, $type = 'ers:category-association', $limit = 25){
         $query = '{ "unPublished": { "$ne": true}}';
 
         $results = CC::nodes()
@@ -103,6 +103,7 @@ class CloudCmsHelper
             ->addParams(['type' => $type])
             ->addParams(['metadata' => 'true'])
             ->addParams(['full' => 'true'])
+            ->addParams(['limit' => $limit])
             ->get();
         $results = $this->validateResults($results);      
         return $results;    
@@ -162,11 +163,28 @@ class CloudCmsHelper
     }
     
     /**
-    * Get a single article (or category) by slug
+    * Get a single article (or category) by slug 
     * @param string $slug (slug-of-the-artice)
     */
 	public function getItem($slug){
 		$query = '{"slug": "'.$slug.'"}';
+		$result = CC::nodes()
+                    ->query($query)
+                    ->addParams(['full' => 'true'])
+                    ->addParams(['metadata' => 'true'])   
+                    ->get(); 
+        $result = $this->validateResults($result);               
+        return $result;            
+    }
+    
+    /**
+    * Get a single article (or category) by slug and published
+    * @param string $slug (slug-of-the-artice)
+    */
+	public function getPublishedItem($slug){
+        $query = '{"slug": "'.$slug.'",
+            "unPublished": { "$ne": true }
+        }';
 		$result = CC::nodes()
                     ->query($query)
                     ->addParams(['full' => 'true'])
@@ -289,13 +307,13 @@ class CloudCmsHelper
         $nonERS = false;
 
         foreach ($items as $key => $item) {
-
+            $nonERS = false;
             $item = (object) $item;
 
             if($item->nonErsCalendarItem || $item->ersEndorsedEvent) {
                 $nonERS = true;
             }
-
+            
             if($item->featuredCourse && $courseCounter <= 4){
                 $sorted['featuredCourses'][] = $item;
                 $courseCounter++;
@@ -305,7 +323,7 @@ class CloudCmsHelper
                 $sorted['featuredResearchItems'][] = $item;
                 $fundingCounter++;
             }
-
+           
             if($item->category2 && $calendarCounter <= 5 && !$nonERS){
                 if($cal->isCalendar($item->category2) || $item->category->title == "Events Calendar"){
                     if(isset($sorted['firstEvent'])){

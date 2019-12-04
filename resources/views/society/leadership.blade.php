@@ -76,7 +76,7 @@ $(document).ready(function(){
     client.leadership.read().done(function (data){
         const l = data.data;
         const leadership = l.map(i => {
-            const linkDoi = `<a data-toggle="modal" data-target="#md-${i.Contact.FirstName.split(' ').join('') + i.Contact.LastName.split(' ').join('')}"type="button" class="">Declaration of Interests</a>`
+           const linkDoi = `<a data-toggle="modal" data-target="#md-${i.Contact.ContactId}" type="button" class="">Declaration of Interests</a>`
             const person = `
                 <div class="col-md-4 xs-mb-15">
                     <img src="${i.Contact.PhotoUrl || 'images/120x120.jpg' }" class="img-circle">
@@ -279,7 +279,7 @@ $(document).ready(function(){
                 `;
 
             const modal = `
-                <div id="md-${i.Contact.FirstName.split(' ').join('') + i.Contact.LastName.split(' ').join('')}" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+                <div id="md-${i.Contact.ContactId}" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
                     <div class="modal-dialog">
                         <div class="modal-content">
                         ${header}

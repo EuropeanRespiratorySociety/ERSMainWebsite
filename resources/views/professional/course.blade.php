@@ -133,7 +133,8 @@
     <div class="col-md-3 white-bg event-items-tab">
       <div class="tab-container">
         <ul class="nav nav-tabs">
-        @if($item->venue->name ||
+          <li class="active"><a href="#venue" data-toggle="tab">
+            @if($item->venue->name ||
             $item->venue->url ||
             $item->venue->phoneNumber ||
             $item->venue->streetAddress ||
@@ -142,10 +143,12 @@
             $item->venue->postalCode ||
             $item->venue->city ||
             $item->venue->info )
-          <li class="active"><a href="#venue" data-toggle="tab">
             <span class="icon icon-hotel"></span>Venue and<br>accomodation</a>
+            @else
+            <span class="icon s7-info"></span>General<br>Information</a>
+            @endif
+            
           </li>
-        @endif
         @if($item->bursaryApplication->text
             || $item->bursaryApplication->deadline
             || $item->bursaryApplication->notificationOfResults
@@ -284,22 +287,22 @@
             || $item->bursaryApplication->notificationOfResults
             || $item->bursaryApplication->applyButtonUrl)
           <div id="bursary" class="tab-pane cont">
-                     @if($item->bursaryApplication->text)
-                      {!!$item->bursaryApplication->text!!}
-                     @endif
-                     <ul>
-                     @if($item->bursaryApplication->deadline)
-                     <li>Bursaries application deadline:<b>{{$item->bursaryApplication->deadline}}</b></li>
-                     @endif
-                     @if($item->bursaryApplication->notificationOfResults)
-                     <li>Notification of selection results:<b>{{$item->bursaryApplication->notificationOfResults}}</b></li>
-                     @endif
-                     </ul>
-                     @if($item->bursaryApplication->applyButtonUrl)
-                      <a href="{{$item->bursaryApplication->applyButtonUrl}}" class="btn btn-primary tab-register-bt">Apply</a>
-                     @endif
-          </div>
-          @endif
+              @if($item->bursaryApplication->text)
+              {!!$item->bursaryApplication->text!!}
+              @endif
+              <ul>
+              @if($item->bursaryApplication->deadline)
+              <li>Bursaries application deadline:<b>{{$item->bursaryApplication->deadline}}</b></li>
+              @endif
+              @if($item->bursaryApplication->notificationOfResults)
+              <li>Notification of selection results:<b>{{$item->bursaryApplication->notificationOfResults}}</b></li>
+              @endif
+              </ul>
+              @if($item->bursaryApplication->applyButtonUrl)
+              <a href="{{$item->bursaryApplication->applyButtonUrl}}" class="btn btn-primary tab-register-bt">Apply</a>
+              @endif
+            </div>
+            @endif
           <div id="messages" class="tab-pane"> </div>
         </div>
       </div>

@@ -72,8 +72,8 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 09.03<br>
-                    Chair: Janelle Yorke<br>
-                    Secretary: Russell Anne-Marie</p>
+                    Chair: Andreja Sajnic<br>
+                    Secretary: Marco Clari</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-nurses" type="button" class="btn btn-default pull-right">More</button>

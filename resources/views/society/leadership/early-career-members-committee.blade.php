@@ -51,26 +51,26 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/Lieuwe-Bos.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>LIEUWE BOS</strong>
-		            Chair of the ECM Committee<br>Assembly 2
+					<img src="https://cdn.ersnet.org/images/people/leadership/Maxime-Patout.png" class="img-circle">
+		            <p class="photo_caption"><strong>Maxime Patout</strong>
+		            Assembly 2
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/Sabine Bartel.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>SABINE BARTEL</strong>
+					<img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Niki Ubags</strong>
 		            Assembly 3<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/Isaac Almendros.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>ISAAC ALMENDROS</strong>
+					<img src="https://cdn.ersnet.org/images/people/leadership/Andrea-Crespo.png" class="img-circle">
+		            <p class="photo_caption"><strong>Andrea Crespo Sedano</strong>
 		            Assembly 4<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/Alexander Mathioudakis.JPG" class="img-circle">
-		            <p class="photo_caption"><strong>ALEXANDER MATHIOUDAKIS</strong>
+                <img src="https://cdn.ersnet.org/images/people/leadership/Sara-Jane-Bonvini.png" class="img-circle">
+		            <p class="photo_caption"><strong> Sara Jane Bonvini</strong>
 		            Assembly 5<br>
 		            </p>
 	        	</div>
@@ -81,14 +81,14 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/Raffaella Nenna.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>RAFFAELLA NENNA</strong>
+					<img src="https://cdn.ersnet.org/images/people/leadership/Cristina-Ardura-Garcia.png" class="img-circle">
+		            <p class="photo_caption"><strong>Cristina Ardura-Garcia</strong>
 		            Assembly 7<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/Elodie Lhuillier.png" class="img-circle">
-		            <p class="photo_caption"><strong>ELODIE LHUILLIER</strong>
+					<img src="https://cdn.ersnet.org/images/people/leadership/Merel-E-Hellemons.png" class="img-circle">
+		            <p class="photo_caption"><strong>Merel E. Hellemons</strong>
 		            Assembly 8<br>
 		            </p>
 	        	</div>
@@ -105,13 +105,13 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/KLIMENTINI BOSTANTZOGLOU.PNG" class="img-circle">
-		            <p class="photo_caption"><strong>NINA BOSTANTZOGLOU</strong>
+					<img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Adrien Costantini</strong>
 		            Assembly 11<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-                <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+                <img src="https://cdn.ersnet.org/images/people/leadership/TIAGO-ALFARO.png" class="img-circle">
                       <p class="photo_caption"><strong>Tiago Alfaro</strong>
                       Assembly 12<br>
                       </p>

@@ -10,6 +10,11 @@
 @stop()
 @section('content')
 <style>
+  .rfmv-eb-notification{
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
   table{
     margin-top: 15px;
   }
@@ -59,6 +64,15 @@ img[alt=float-rfmv-sponsor]{
   text-transform: uppercase;
   }
 }
+
+@media screen and (max-width: 480px){
+  .btn .icon{
+   display: none;
+  }
+}
+
+
+}
 </style>
 
 <div class="ers-content">
@@ -70,54 +84,54 @@ img[alt=float-rfmv-sponsor]{
             @endif
             <div style="box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);box-sizing: border-box;padding-bottom: 30px;">
                 <div class="page-head" style="margin-bottom: 15px;"><h2>{{$item->title}}</h2></div>
-                <p>View <a href="congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference">all RF&MV</a></p>
+                <p>View <a href="{{ $landingPage->link }}">{{ $landingPage->title }}</a></p>
             </div>
             <div class="main-content">
-              @if($item->registerButton->link)
+              @if($item->registerButton->bannerText)
                 <div role="alert" class="alert alert-info alert-dismissible alert-mobile-position center-block col-md-8 col-xs-12" style="margin-bottom: 10px;padding: 10px 18px;">
                   <div class="row ">
                     <div class="col-md-12 col-xs-12 text-left">
                       <span class="banner-text" style="font-size: 16px;">{{ $item->registerButton->bannerText }}</span>
+                      @if($item->registerButton->link)
                       <span class="banner-link" style="font-family:DinPro,sans-serif;font-size: 16px;background-color: #FFF; padding: 10px;border-radius: 3px;">
                         <a href="{{$item->registerButton->link}}" target="new_blank" style="color: #116FC3;">
                             {{ $item->registerButton->text or Register}}
                         </a>
                       </span>
+                      @endif
                     </div>
                   </div>
                 </div>
               @endif
               @if($item->earlybirdDeadline)
-              <p>Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from a €50 discount on registration fees.</p>
+              <p class="rfmv-eb-notification">Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from reduced registration fees.</p>
             @endif
                 <div class="col-md-8 center-block lead text-left">
                   {!! $item->body !!}
                 </div>
+                @if($item->programme)  
+                <div class="col-md-8 center-block text-center">
+                  <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary text-left" style="margin-bottom: 10px;">
+                    <span class="icon s7-map" style="font-size: 24px;"></span>
+                    {{$item->programmeButtonText}} 
+                  </a>
+                </div>
+                @endif 
+                @if($item->externalLink->link)  
+                <div class="col-md-8 center-block text-center">
+                  <a href="{{$item->externalLink->link}}" target="new_blank"  class="btn btn-primary tab-register-bt"  style="margin-bottom: 10px;">
+                    {{ $item->externalLink->text}}
+                </a>
+                </div>
+                @endif 
                 @if($item->practicalInfo)  
-                <div class="col-md-8 center-block lead text-left">
-                <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary text-left bt-practicalInfo">
+                <div class="col-md-8 center-block text-center">
+                <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary text-left bt-practicalInfo"  style="margin-bottom: 10px;">
                   <span class="icon s7-info" style="font-size: 24px;"></span>
                   {{$item->practicalInfoButton ? $item->practicalInfoButton : 'Practical Info'}}
                 </a>
-              </div>
-                @endif
-                @if($item->programme)
-                <div class="col-md-7 col-xs-12 row center-block" style="margin-bottom: 30px;">
-                  <div class="col-lg-6 col-md-12 col-xs-12 text-center" style="margin-bottom: 20px;">
-                    <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary text-left">
-                      <span class="icon s7-map" style="font-size: 24px;"></span>
-                      {{$item->programmeButtonText}} 
-                    </a>
-                  </div>
-                @endif
-                @if($item->externalLink->link)
-                  <div class="col-lg-6 col-md-12 col-xs-12 text-center">
-                    <a href="{{$item->externalLink->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
-                        {{ $item->externalLink->text}}
-                    </a>
-                  </div>
                 </div>
-                @endif
+                @endif                 
                 @if($item->body2)
                 <div class="col-md-8 center-block lead text-left">
                   {!! $item->body2 !!}
@@ -138,43 +152,38 @@ img[alt=float-rfmv-sponsor]{
                     @foreach ($relatedItems as $relatedItem)
                         <div class="col-md-5 isotope ">
                           <div class="card card-event">
+
+                              
                             <div class="card-image"
                               @if($relatedItem->highResImage)
-                                style="max-height:300px;
-                                  @if($relatedItem->imageSize)
-                                  @if($relatedItem->imageSize == 'large') height:300px; @else height:150px; @endif
-                                    @else height:150px; 
-                                  @endif
-                                  @if($relatedItem->itemImageBackgroundSize)
-                                    background-size: {{$relatedItem->itemImageBackgroundSize}};
-                                    @else
-                                    background-size:100%;
-                                  @endif
-                                  background-repeat: no-repeat; 
-                                  background-image: url('{{ $relatedItem->highResImage}}'); 
-                                  background-position: center {{$relatedItem->itemImageAlignment or center }};"
-                                  @endif
+                                style="max-height:300px;height:150px;background-repeat: no-repeat; background-image: url('{{$relatedItem->highResImage}}'); 
+                                background-position: center; background-size:cover;"
+                                @endif
                                   style="height:50px;"  >
-                                  @if($relatedItem->registerButton->text)
+
+                                  @if(isset($relatedItem->registerButton) && isset($relatedItem->registerButton->text))
                                   <span class="label label-danger">{{$relatedItem->registerButton->text}}</span>
-                                  @endif
+                                  @endif  
+
                             </div>
                             <div class="card-content">
                                     <h3 class="title">   
-                                      @if($relatedItem->uri) 
+                                      @if(isset($relatedItem->uri)) 
                                         <a href="{{url($relatedItem->uri)}}">{{ $relatedItem->title }}</a>
-                                      @elseif($item->url)
+                                      @elseif(isset($relatedItem->url))
                                         <a href="{{url($relatedItem->url)}}">{{ $relatedItem->title }}</a>
                                       @else
                                         {{ $relatedItem->title }}
                                       @endif  
                                     </h3>
-                                    <div class="lead-card">{!! $relatedItem->lead !!}</div>
+                                    @if(isset($relatedItem->leadParagraph))
+                                    <div class="lead-card">{!! $relatedItem->leadParagraph !!}</div>
+                                    @endif 
                                 </div>
                                 <div class="card-action clearfix">
-                                  @if($relatedItem->uri) 
+                                  @if(isset($relatedItem->uri)) 
                                     <a href="{{url($relatedItem->uri)}}" class="btn btn-register">more</a>
-                                  @elseif($item->url)
+                                  @elseif(isset($relatedItem->url))
                                     <a href="{{url($relatedItem->url)}}" class="btn btn-register">more</a>                     
                                   @endif
                                 </div>
