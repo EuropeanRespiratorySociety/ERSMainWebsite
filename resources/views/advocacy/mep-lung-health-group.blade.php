@@ -57,7 +57,7 @@
            <div class="col-md-3 xs-mb-15">
              <img src="https://cdn.ersnet.org/images/people/mep/dolors-montserrat.png" class="img-circle">
              <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197711/DOLORS_MONTSERRAT/home" target="_blank">Dolors MONTSERRAT</a></strong>
-               Non-attached, Italy
+               EPP, Spain
              </p>
            </div>
          </div>
