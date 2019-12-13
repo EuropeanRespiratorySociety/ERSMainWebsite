@@ -25,7 +25,7 @@
                     <div class="col-md-4">
                         <div class="card card-primary card-event" style="background-color: #015291;">
                             <div class="card-image" style="height:24px;">
-                              <span class="label label-danger">Call Closed</span>
+                              <span class="label label-danger">Call Open</span>
                             </div>
                             <div class="card-title text-left">
                                 <h3>GOLD MEDALS</h3>
@@ -44,7 +44,7 @@
                     <div class="col-md-4">
                         <div class="card card-primary card-event" style="background-color: #015291;">
                             <div class="card-image" style="height:24px;">
-                                <span class="label label-danger">Call Closed</span>
+                                <span class="label label-danger">Call Open</span>
                             </div>
                             <div class="card-title  text-left">
                                 <h3>SPECIAL HONOURS</h3>
@@ -62,7 +62,7 @@
                     <div class="col-md-4">
                         <div class="card card-primary card-event" style="background-color: #015291;">
                             <div class="card-image" style="height:24px;">
-                                <span class="label label-danger">Call Closed</span>
+                                <span class="label label-danger">Call Open</span>
                             </div>
                             <div class="card-title  text-left">
                                 <h3>RESEARCH EXCELLENCE</h3>
@@ -113,6 +113,7 @@
                 <div class="col-md-7 center-block lead" >
                     <p style="padding-bottom:10px;">Learn more about past winners of ERS awards for research excellence:</p>
                     <ul class="list-unstyled  center-block text-left" style="width:10%;" >
+                      <li><a href="https://erscongress.org/funding-awards-2019/gold-medals-main-awards.html">2019</a></li>
                       <li><a href="https://erscongress.org/about-ers-2018/awards-grants-and-fellowships-2018/142-awards-grants-and-fellowships/574-ers-award-winners-2018.html">2018</a></li>
                       <li><a href="https://erscongress.org/about-ers-2017/119-about-ers/500-award-winners-2017.html">2017</a></li>
                       <li><a href="https://erscongress.org/about-ers/98-about-ers/421-ers-award-winners-2016.html">2016</a></li>
