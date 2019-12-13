@@ -107,8 +107,8 @@
       </div>
     </div>
     <!-- Beginning Right Side-bar -->
-  <div class="col-xs-12 col-md-3 white-bg event-items-tab">
-      <div class="tab-container">
+  <div class="col-xs-12 col-md-3 white-bg event-items-tab" style="position: static;">
+      <div class="tab-container" style="position: static;">
          {{-- <ul class="nav nav-tabs">
         @if($item->ebusVenues)
           <li class="active"><a href="#venue" data-toggle="tab">
@@ -121,7 +121,7 @@
           </li>
         @endif
         </ul> --}}
-        <div class="tab-content text-left">
+        <div class="tab-content text-left" style="position: static;">
           
                 
         <div class="list-group text-left">
@@ -146,13 +146,34 @@
                 </p>
               </span>
             @endif
-
-
-
         </div>
 
+
+          <div class="row" style="min-width: 250px;padding-bottom: 80px;">
+              <div class=" col-md-12 col-xs-6">
+                      <div>
+                        <img src="../images/events/DGP-01.png" class="img-responsive" style="padding-top: 20px;"/>
+                      </div>
+                      <div>
+                        <img src="../images/events/SANI-01.png" class="img-responsive" style="padding-top: 30px;"/>
+                      </div>
+                      <div>
+                        <img src="../images/events/SIP-IRS-01.png" class="img-responsive" style="padding-top: 30px;"/>
+                      </div>
+                      <div>
+                        <img src="../images/events/SPLF-01.png" class="img-responsive" style="padding-top: 30px;"/>
+                      </div>
+                      <div>
+                        <img src="../images/events/SEPAR-01.png" class="img-responsive" style="padding-top: 30px;"/>
+                      </div>
+                      <div>
+                        <img src="../images/events/BTS-01.jpg" class="img-responsive" style="padding-top: 30px;"/>
+                      </div>
+                    </div>
+              </div>
+        
        
-            <div class="event-items-right-bt">
+            <div class="event-items-right-bt" style="position: static;">
               @if($item->registerButton->link && !$item->fullyBooked)
                 <p>Registering for someone else ? Contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!}</p>
                 <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
@@ -168,31 +189,30 @@
                 </a>
             </div>
 
-          </div>
+          </div> {{-- close row --}}
+
+
           <div id="messages" class="tab-pane"> </div>
+            <hr class="visible-xs visible-sm">
+            @if($item->sponsors && $item->sponsors[0]->text)
+            <h4 class="visible-xs visible-sm" style="margin: 50px 0 0 25px;text-align:left;">With the financial support of:</h4>
+            @foreach ($item->sponsors as $sponsor)
+            <div class="visible-xs visible-sm course-sponsor text-left" style="background:transparent;padding: 0 10px 0 10px;">
+                @if($sponsor->text)
+                <div class="course-sponsor-wrapper">
+                    @if($sponsor->image)
+                    <div class="course-sponsor-image col-md-12 col-xs-12 center-block" style="background:#fff;">
+                        <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: center center; background-size: contain;"></p>
+                    </div> 
+                    @endif
+                </div>
+                @endif
+            </div>
+            @endforeach
+            @endif
+          </div>{{-- close message --}}
 
-          <hr class="visible-xs visible-sm">
-          @if($item->sponsors && $item->sponsors[0]->text)
-          <h4 class="visible-xs visible-sm" style="margin: 50px 0 0 25px;text-align:left;">With the financial support of:</h4>
-          @foreach ($item->sponsors as $sponsor)
-          <div class="visible-xs visible-sm course-sponsor text-left" style="background:transparent;padding: 0 10px 0 10px;">
-              @if($sponsor->text)
-              <div class="course-sponsor-wrapper">
-                  @if($sponsor->image)
-                  <div class="course-sponsor-image col-md-12 col-xs-12 center-block" style="background:#fff;">
-                      <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: center center; background-size: contain;"></p>
-                  </div> 
-                  @endif
-              </div>
-              @endif
-          </div>
-          @endforeach
-          @endif
-
-        </div>
       </div>
-
-    </div>
     <!-- End Right Sidebar -->
   </div>
 </div>
