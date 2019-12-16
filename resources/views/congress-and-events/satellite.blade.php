@@ -121,7 +121,7 @@
           </li>
         @endif
         </ul> --}}
-        <div class="tab-content text-left" style="position: static;">
+        <div class="tab-content text-left" style="position: static;width: 100%;">
           
                 
         <div class="list-group text-left">
@@ -149,31 +149,29 @@
         </div>
 
 
-          <div class="row" style="min-width: 250px;padding-bottom: 80px;">
-              <div class=" col-md-12 col-xs-6">
-                      <div>
-                        <img src="../images/events/DGP-01.png" class="img-responsive" style="padding-top: 20px;"/>
-                      </div>
-                      <div>
-                        <img src="../images/events/SANI-01.png" class="img-responsive" style="padding-top: 30px;"/>
-                      </div>
-                      <div>
-                        <img src="../images/events/SIP-IRS-01.png" class="img-responsive" style="padding-top: 30px;"/>
-                      </div>
-                      <div>
-                        <img src="../images/events/SPLF-01.png" class="img-responsive" style="padding-top: 30px;"/>
-                      </div>
-                      <div>
-                        <img src="../images/events/SEPAR-01.png" class="img-responsive" style="padding-top: 30px;"/>
-                      </div>
-                      <div>
-                        <img src="../images/events/BTS-01.jpg" class="img-responsive" style="padding-top: 30px;"/>
-                      </div>
-                    </div>
+        <div style="padding-bottom: 50px;width: 95%;">
+            <div>
+              <img src="https://cdn.ersnet.org/preview/node/o:51138d5464ef2ce9dbc4?name=img500&amp;v1" class="img-responsive" style="padding-top: 20px;" alt="DGP" />
+            </div>
+            <div>
+              <img src="https://cdn.ersnet.org/preview/node/o:fcc088ed51cb04512b7f?name=img500&amp;v1" class="img-responsive" style="padding-top: 30px;" alt="BeRS" />
+            </div>
+            <div>
+                <img src="https://cdn.ersnet.org/preview/node/o:f5250ab5ac8360a38f81?name=img500&amp;v1" class="img-responsive" style="padding-top: 30px;" alt="SIP" />
               </div>
-        
+            <div>
+                <img src="https://cdn.ersnet.org/preview/node/o:eb480913a2e6194a5bcf?name=img500&amp;v1" class="img-responsive" style="padding-top: 30px;" alt="SRP" />
+            </div>
+            <div>
+                <img src="https://cdn.ersnet.org/preview/node/o:7cf57ff2d1e4a3937e61?name=img500&amp;v1" class="img-responsive" style="padding-top: 30px;" alt="AIPO" />
+              </div>
+            <div>
+                <img src="https://cdn.ersnet.org/preview/node/o:1081e91dea7bb394e275?name=img500&amp;v1" class="img-responsive" style="padding-top: 30px;" alt="FIP" />
+            </div>
+        </div>
+
        
-            <div class="event-items-right-bt" style="position: static;">
+            <div class="event-items-right-bt" style="position: static;width: 100%;">
               @if($item->registerButton->link && !$item->fullyBooked)
                 <p>Registering for someone else ? Contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!}</p>
                 <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
