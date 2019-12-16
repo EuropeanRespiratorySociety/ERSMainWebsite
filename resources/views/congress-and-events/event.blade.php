@@ -114,7 +114,7 @@ img[alt=float-rfmv-sponsor]{
                 @if($faculties)
                 <div class="row" style="margin-top:50px;margin-bottom: 30px;">
                   @foreach ($faculties as $faculty)
-                  <div class="col-md-3 xs-mb-15">
+                  <div class="col-md-4 xs-mb-15">
                       <img src="{{$faculty->imgSrc}}" class="img-circle">
                       <p class="photo_caption"><strong>{{$faculty->fullName}}</strong>
                         {!!$faculty->title!!} <br>
