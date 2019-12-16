@@ -150,8 +150,9 @@
 
 
         <div style="padding-bottom: 50px;width: 95%;">
+          <h4 style="margin: 40px 0 15px;">With the endorsement of:</h4>
             <div>
-              <img src="https://cdn.ersnet.org/preview/node/o:51138d5464ef2ce9dbc4?name=img500&amp;v1" class="img-responsive" style="padding-top: 20px;" alt="DGP" />
+              <img src="https://cdn.ersnet.org/preview/node/o:51138d5464ef2ce9dbc4?name=img500&amp;v1" class="img-responsive"  alt="DGP" />
             </div>
             <div>
               <img src="https://cdn.ersnet.org/preview/node/o:fcc088ed51cb04512b7f?name=img500&amp;v1" class="img-responsive" style="padding-top: 30px;" alt="BeRS" />
