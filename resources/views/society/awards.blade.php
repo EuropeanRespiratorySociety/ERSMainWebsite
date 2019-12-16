@@ -32,7 +32,7 @@
                             </div> 
 
                             <div class="card-content  text-left" style="min-height: 165px;">
-                                <p style="line-height: 150%;">ERS presents Gold Medal Awards with grants of €50,000 to researchers who have made outstanding contributions in the fields of Asthma, COPD, IPF and Lung Cancer.</p>
+                                <p style="line-height: 150%;">ERS presents Gold Medal Awards with grants of €50,000 to researchers who have made outstanding contributions in the fields of Asthma, COPD, IPF.</p>
                             </div>
                             
                             <div class="card-action" position="absolute; bottom:0;">
