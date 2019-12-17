@@ -157,14 +157,6 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /courses https://www.ersnet.org/professional-development/courses
         Redirect 301 /congress-and-events/past-international-congresses https://www.ersnet.org/congress-and-events/ers-international-congress
         Redirect 301 /congress-and-events/ers-2018 https://www.ersnet.org/congress-and-events/ers-international-congress
-        Redirect 301 /cpd/AD https://www.ersnet.org/professional-development/cpd/cpd-airways-diseases
-        Redirect 301 /cpd/CC https://www.ersnet.org/professional-development/cpd/cpd-respiratory-critical-care
-        Redirect 301 /cpd/ILD https://www.ersnet.org/professional-development/cpd/cpd-interstitial-lung-diseases
-        Redirect 301 /cpd/PRM https://www.ersnet.org/professional-development/cpd/cpd-paediatric-respiratory-diseases
-        Redirect 301 /cpd/PVD https://www.ersnet.org/professional-development/cpd/cpd-pulmonary-vascular-diseases
-        Redirect 301 /cpd/RI https://www.ersnet.org/professional-development/cpd/cpd-respiratory-infections
-        Redirect 301 /cpd/RS https://www.ersnet.org/professional-development/cpd/cpd-sleep-and-breathing-disorders
-        Redirect 301 /cpd/TO https://www.ersnet.org/professional-development/cpd/cpd-thoracic-oncology
         Redirect 301 /CPD https://www.ersnet.org/professional-development/cpd
         Redirect 301 /cpd https://www.ersnet.org/professional-development/cpd
 

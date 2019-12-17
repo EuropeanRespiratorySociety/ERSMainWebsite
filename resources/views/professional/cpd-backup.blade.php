@@ -14,83 +14,8 @@
   <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head> 
 <style>
-
-
-.cp_tooltiptext {
-	position: relative;
-	top: -75px;
-	left: 0px;
-	cursor: pointer;
-  display: block;
-  width: 75px;
-  height: 75px;
-}
-
-
-.cp_tooltiptext::after {
-	position: absolute;
-  opacity: 0;
-	transition: all 0.3s ease 0s;
-	top: 55px;/*HOVERのスタート位置*/
-	left: 15px;
-	display: block;
-	padding: 0.2em 0.5em;
-	content: attr(data-tooltip);
-	white-space: nowrap;
-	color: #ffffff;
-	border-radius: 6px;
-	background: #1b2538;
-}
-
-.cp_tooltiptext:hover::after {
-	top: 80px;/*HOVER位置*/
-	opacity: 1;
-  z-index: 3;
-}
-
-.circle-icon-link figcaption{
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    position: absolute;
-    display: block;
-    top: 0;
-    opacity: 0;
-    cursor: default;
-    background: rgba(0,0,0,0.2);
-  }
-
-
-.circle-icon-link:hover figcaption {
-  opacity: 1;
-  transition:all 0.6s ease;
-
-}
-  .circle-icon-link {
-    position: relative;
-    width: 75px;
-    height: 75px;
-}
-
-
-.btn-active:hover {
-    color: #fff;
-    background-color: #FF6E60;
-    border-color: #FF6E60;
-  }
-
-
-.btn-active:active {
-    color: #fff;
-    background-color: #FF6E60;
-    border-color: #FF6E60;
-
-  }
-
-  .btn-active{
-    background-color: #EC4E20;
-    border-color: #EC4E20;
-    color: #fff;
+  .cpd-card-frame{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
   }
 
   .scrolling-wrapper-flexbox_color__blue {
@@ -244,29 +169,11 @@
               <div class="page-head" style="margin-bottom: 0px;">
                   <h2>{{$item->title}}</h2>
               </div><!-- /page-head -->
-              {{-- <div class="col-md-7 center-block lead" style="margin-top: 50px;">
+              <div class="col-md-7 center-block lead" style="margin-top: 50px;">
                 {!! $item->body !!}
-              </div> --}}
-              <!-- /col-md-7 -->
+              </div><!-- /col-md-7 -->
               <div class="row">
-                <div class="col-sm-12 col-lg-offset-2 col-md-offset-1 hidden-xs" style="margin-top: 20px; margin-bottom:  15px;" >
-                    <div class="columns">
-                      <div style="padding: 0 0 0 15px">
-                        @foreach ($items as $index => $item)
-                          <div role="presentation" class=" col-lg-1 col-md-3 " style="padding: 15px" >
-                            <figure class="circle-icon-link">
-                              <a href="/professional-development/cpd#{{$item->slug}}" data-toggle="tab" aria-expanded="false"> 
-                                <img src="{{$item->image}}" style="width: 75px;">
-                                <figcaption></figcaption>
-                                <span data-tooltip="{{$item->title}}" class="cp_tooltiptext"></span>
-                              </a>
-                            </figure>
-                          </div>
-                        @endforeach
-                      </div>
-                    </div><!-- /columns -->
-                  </div>
-                {{-- <div class="col-sm-12 hidden-xs" style="box-shadow: 0 6px 5px -5px rgba(0,0,0,.16), 0 6px 10px -10px rgba(0,0,0,.12);box-sizing: border-box;padding-bottom: 30px; z-index: 7" >
+                <div class="col-sm-12 hidden-xs" style="background-color: #015291">
                   <div class="columns">
                     <div style="padding: 0 0 0 15px">
                       @foreach ($items as $index => $item)
@@ -278,7 +185,7 @@
                       @endforeach
                     </div>
                   </div><!-- /columns -->
-                </div> --}}
+                </div>
                 <div class="col-sm-12 hidden-md hidden-lg hidden-sm">
                   <div class="columns">
                     <div class="owl-carousel owl-theme scrolling-wrapper-flexbox_color__blue" style="padding: 0 0 0 15px;">
@@ -291,7 +198,7 @@
                   </div>
                 </div>
                 
-                <div class="row">
+                <div class="row cpd-card-frame">
                   <div class="col-sm-12">
                         <!-- Tab panes -->
                         <div class="tab-content" style="overflow: auto;">
@@ -311,6 +218,33 @@
                                           @endforeach
                                       </div>
                                     </div>
+                                    <div class="row" style="margin: 20px 0 0 20px;" >
+                                      <div class="btn-toolbar xs12">
+                                        <div class="btn-group">
+                                          @if($item->programme)
+                                          <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary btn-space text-left bt-course-programme">
+                                            <span class="icon icon-handout" style="font-size: 24px;"></span>
+                                              @if($item->programmeButtonText)
+                                                {{$item->programmeButtonText}} 
+                                              @else
+                                                Download syllabus
+                                              @endif
+                                          </a>
+                                          @endif
+                      
+                                          @if($item->practicalInfo)
+                                            <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary btn-space text-left bt-course-programme">
+                                                <span class="icon icon-handout" style="font-size: 24px;"></span>
+                                                @if($item->practicalInfoButton)
+                                                  {{$item->practicalInfoButton}} 
+                                                @else
+                                                  Programme
+                                                @endif
+                                            </a>
+                                          @endif
+                                          </div>
+                                        </div>
+                                    </div>
                                     @foreach ($item->modules as $indexModules => $modules)
                                     @if($indexModules%2==1)
                                       <div class="row">
@@ -324,7 +258,7 @@
                                           <div class="panel-heading">
                                             <h4 class="panel-title font-din text-left" >
                                                 <div id="action-{{$index}}-{{$indexModules}}-{{$indexModule}}" style="text-align:right">
-                                                    <button type="button" onclick="showRecommendation('{{$module->qname}}')" class="btn btn-xs btn-active btn-rounded btn-shade1 btn-rad " style="margin:10px 10px 0px 10px">
+                                                    <button type="button" onclick="showRecommendation('{{$module->qname}}')" class="btn btn-xs btn-info btn-rounded btn-shade1 btn-rad " style="margin:10px 10px 0px 10px">
                                                       Learning activities
                                                     </button>
                                                   </div>    
@@ -352,35 +286,6 @@
                                   @endforeach
                               </div>
                             @endforeach
-
-                            <div class="row" style="margin: 20px 0 0 20px;" >
-                              <div class="btn-toolbar xs12">
-                                <div class="btn-group">
-                                  @if($item->programme)
-                                  <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary btn-space text-left bt-course-programme">
-                                    <span class="icon icon-handout" style="font-size: 24px;"></span>
-                                      @if($item->programmeButtonText)
-                                        {{$item->programmeButtonText}} 
-                                      @else
-                                        Download syllabus
-                                      @endif
-                                  </a>
-                                  @endif
-              
-                                  @if($item->practicalInfo)
-                                    <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary btn-space text-left bt-course-programme">
-                                        <span class="icon icon-handout" style="font-size: 24px;"></span>
-                                        @if($item->practicalInfoButton)
-                                          {{$item->practicalInfoButton}} 
-                                        @else
-                                          Programme
-                                        @endif
-                                    </a>
-                                  @endif
-                                  </div>
-                                </div>
-                            </div>
-
                         </div> <!-- /tab content -->
                       
                     </div> <!-- col-sm-12 -->
