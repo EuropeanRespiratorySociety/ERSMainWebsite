@@ -50,6 +50,16 @@ img[alt=float-rfmv-sponsor]{
   width: 170px;
   margin-right: 20px;
 }
+
+img[alt=float-event-sponsor-logo]{
+  float: left;
+  display: block;
+  height: 90px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+
+}
+
 @media screen and (min-width: 1024px){
   .alert-mobile-position span.banner-text {
     display: inline-block;
