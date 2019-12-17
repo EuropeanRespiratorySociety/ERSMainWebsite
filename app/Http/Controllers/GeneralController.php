@@ -63,6 +63,7 @@ class GeneralController extends Controller
         return view('advocacy.eu-projects')->with($params);
     }
 
+
     /**
      * Display a listing of the resource.
      *
@@ -199,7 +200,6 @@ class GeneralController extends Controller
 
         return view('society.awards')->with($params);
     }
-
 
     /**
      * Display the specified resource.

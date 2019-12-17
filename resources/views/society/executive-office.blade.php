@@ -344,7 +344,7 @@
           <div class="col-md-3 col-md-offset-3 xs-mb-15">
             <p class="photo_caption"><strong>Dawn Ould</strong>
               Senior Communications Coordinator<br>
-              T +44 114 267 2876<br>
+              T +44 114 267 2866<br>
             </p>
           </div>
           <div class="col-md-3 xs-mb-15">
@@ -511,7 +511,7 @@
         <div class="col-md-4 xs-mb-15">
           <p class="photo_caption"><strong>Rachel Orritt</strong>
             Information and Education<br>
-            T +44 114 267 2872<br>
+            T +44 114 322 0645<br>
             </p>
         </div>
         <div class="col-md-4 xs-mb-15">
@@ -747,19 +747,19 @@
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Alyson Cann</strong>
             Technical Editor<br>
-            T +44 114 267 2870<br>
+            T +44 114 322 0650<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Jonathan Hansen</strong>
             Technical Editor<br>
-            T +44 114 267 2879<br>
+            T +44 114 322 0641<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Catherine Pumphrey</strong>
             Technical Editor<br>
-            T +44 114 267 2878<br>
+            T +44 114 322 0649<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
@@ -783,7 +783,7 @@
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Ben Watson</strong>
             Artworker<br>
-            T +44 114 267 2871<br>
+            T +44 114 322 0642<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">

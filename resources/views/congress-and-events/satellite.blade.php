@@ -107,8 +107,8 @@
       </div>
     </div>
     <!-- Beginning Right Side-bar -->
-  <div class="col-xs-12 col-md-3 white-bg event-items-tab">
-      <div class="tab-container">
+  <div class="col-xs-12 col-md-3 white-bg event-items-tab" style="position: static;">
+      <div class="tab-container" style="position: static;">
          {{-- <ul class="nav nav-tabs">
         @if($item->ebusVenues)
           <li class="active"><a href="#venue" data-toggle="tab">
@@ -121,7 +121,7 @@
           </li>
         @endif
         </ul> --}}
-        <div class="tab-content text-left">
+        <div class="tab-content text-left" style="position: static;width: 100%;">
           
                 
         <div class="list-group text-left">
@@ -146,13 +146,33 @@
                 </p>
               </span>
             @endif
+        </div>
 
 
-
+        <div style="padding-bottom: 50px;width: 95%;">
+          <h4 style="margin: 40px 0 15px;">With the endorsement of:</h4>
+            <div>
+              <img src="https://cdn.ersnet.org/preview/node/o:51138d5464ef2ce9dbc4?name=img500&amp;v1" class="img-responsive"  alt="DGP" />
+            </div>
+            <div>
+              <img src="https://cdn.ersnet.org/preview/node/o:fcc088ed51cb04512b7f?name=img500&amp;v1" class="img-responsive" style="padding-top: 30px;" alt="BeRS" />
+            </div>
+            <div>
+                <img src="https://cdn.ersnet.org/preview/node/o:f5250ab5ac8360a38f81?name=img500&amp;v1" class="img-responsive" style="padding-top: 30px;" alt="SIP" />
+              </div>
+            <div>
+                <img src="https://cdn.ersnet.org/preview/node/o:eb480913a2e6194a5bcf?name=img500&amp;v1" class="img-responsive" style="padding-top: 30px;" alt="SRP" />
+            </div>
+            <div>
+                <img src="https://cdn.ersnet.org/preview/node/o:7cf57ff2d1e4a3937e61?name=img500&amp;v1" class="img-responsive" style="padding-top: 30px;" alt="AIPO" />
+              </div>
+            <div>
+                <img src="https://cdn.ersnet.org/preview/node/o:1081e91dea7bb394e275?name=img500&amp;v1" class="img-responsive" style="padding-top: 30px;" alt="FIP" />
+            </div>
         </div>
 
        
-            <div class="event-items-right-bt">
+            <div class="event-items-right-bt" style="position: static;width: 100%;">
               @if($item->registerButton->link && !$item->fullyBooked)
                 <p>Registering for someone else ? Contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!}</p>
                 <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
@@ -168,31 +188,30 @@
                 </a>
             </div>
 
-          </div>
+          </div> {{-- close row --}}
+
+
           <div id="messages" class="tab-pane"> </div>
+            <hr class="visible-xs visible-sm">
+            @if($item->sponsors && $item->sponsors[0]->text)
+            <h4 class="visible-xs visible-sm" style="margin: 50px 0 0 25px;text-align:left;">With the financial support of:</h4>
+            @foreach ($item->sponsors as $sponsor)
+            <div class="visible-xs visible-sm course-sponsor text-left" style="background:transparent;padding: 0 10px 0 10px;">
+                @if($sponsor->text)
+                <div class="course-sponsor-wrapper">
+                    @if($sponsor->image)
+                    <div class="course-sponsor-image col-md-12 col-xs-12 center-block" style="background:#fff;">
+                        <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: center center; background-size: contain;"></p>
+                    </div> 
+                    @endif
+                </div>
+                @endif
+            </div>
+            @endforeach
+            @endif
+          </div>{{-- close message --}}
 
-          <hr class="visible-xs visible-sm">
-          @if($item->sponsors && $item->sponsors[0]->text)
-          <h4 class="visible-xs visible-sm" style="margin: 50px 0 0 25px;text-align:left;">With the financial support of:</h4>
-          @foreach ($item->sponsors as $sponsor)
-          <div class="visible-xs visible-sm course-sponsor text-left" style="background:transparent;padding: 0 10px 0 10px;">
-              @if($sponsor->text)
-              <div class="course-sponsor-wrapper">
-                  @if($sponsor->image)
-                  <div class="course-sponsor-image col-md-12 col-xs-12 center-block" style="background:#fff;">
-                      <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: center center; background-size: contain;"></p>
-                  </div> 
-                  @endif
-              </div>
-              @endif
-          </div>
-          @endforeach
-          @endif
-
-        </div>
       </div>
-
-    </div>
     <!-- End Right Sidebar -->
   </div>
 </div>
