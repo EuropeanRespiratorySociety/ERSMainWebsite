@@ -166,7 +166,7 @@
 
 
 
-        <div style="padding-bottom: 50px;width: 95%;">
+        <div style="padding: 40px 0;width: 95%;">
           <h4 style="margin: 40px 0 15px;">With the endorsement of:</h4>
             <div>
               <img src="https://cdn.ersnet.org/preview/node/o:51138d5464ef2ce9dbc4?name=img500&amp;v1" class="img-responsive"  alt="DGP" />
