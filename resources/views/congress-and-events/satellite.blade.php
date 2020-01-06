@@ -83,7 +83,7 @@
       </div>
       <div>
         
-        <h2 class="article-title">
+        <h2 style="margin: 0 0 15px;">
           {{-- <i class="icon-ers icon" style="font-size:42px; color:#d0043c; position:relative; top:6px; right:12px;"></i>{{$item->title}}--}}
           <img class="img-responsive" src="https://ers.box.com/shared/static/5ya4sr85d4ucuu25o8d6ewmvxujef3vf.png"> 
         </h2>
@@ -148,8 +148,25 @@
             @endif
         </div>
 
+        <div class="event-items-right-bt" style="position: static;width: 100%;">
+            @if($item->registerButton->link && !$item->fullyBooked)
+              <p>Registering for someone else ? Contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!}</p>
+              <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
+                  {{ $item->registerButton->text or Register}}
+              </a>
+            @endif
+            @if($item->extendedDeadline)
+            <p class="deadline">EXTENDED registration deadline : {{$item->extendedDeadline}}</p>
+            @endif 
+            <br /><br />
+              <a href="https://www.ers-satellites.org" target="new_blank"  class="btn btn-primary tab-register-bt">
+                Login to Live Streaming
+              </a>
+          </div>
 
-        <div style="padding-bottom: 50px;width: 95%;">
+
+
+        <div style="padding: 40px 0;width: 95%;">
           <h4 style="margin: 40px 0 15px;">With the endorsement of:</h4>
             <div>
               <img src="https://cdn.ersnet.org/preview/node/o:51138d5464ef2ce9dbc4?name=img500&amp;v1" class="img-responsive"  alt="DGP" />
@@ -171,22 +188,6 @@
             </div>
         </div>
 
-       
-            <div class="event-items-right-bt" style="position: static;width: 100%;">
-              @if($item->registerButton->link && !$item->fullyBooked)
-                <p>Registering for someone else ? Contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!}</p>
-                <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
-                    {{ $item->registerButton->text or Register}}
-                </a>
-              @endif
-              @if($item->extendedDeadline)
-              <p class="deadline">EXTENDED registration deadline : {{$item->extendedDeadline}}</p>
-              @endif 
-              <br /><br />
-                <a href="https://www.ers-satellites.org" target="new_blank"  class="btn btn-primary tab-register-bt">
-                  Login to Live Streaming
-                </a>
-            </div>
 
           </div> {{-- close row --}}
 
