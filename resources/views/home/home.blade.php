@@ -46,13 +46,10 @@
     @include('home.home-sections.publications')
 
     {{-- Start Section 5 --}} 
-    @include('home.home-sections.professional', array(
-              'items' => isset($items['featuredCourses']) ? $items['featuredCourses'] : false
-              ))
+    @include('home.home-sections.professional')
 
-     {{-- Start Section 6 --}} 
-    @include('home.home-sections.research', array(
-              'items' => isset($items['featuredResearchItems']) ? $items['featuredResearchItems'] : false))
+    {{-- Start Section 6 --}} 
+    @include('home.home-sections.research')
 
      {{-- Start Section 7 --}}  
     @include('home.home-sections.advocacy')
