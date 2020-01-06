@@ -13,9 +13,8 @@
     <div class="section fp-auto-height">
     @if(isset($items['mainNews']))
     <a href="{{url('the-society/news/'.$items['mainNews']->slug)}}">
-    @endif
+    @endif 
       <div class="top-box" @if(isset($items['mainNews']->highResImage))style="background-image: url('{{$items['mainNews']->highResImage}}');background-position: center {{$items['mainNews']->imageAlignment}}" @endif>
-        @if($items['mainNews']->slug !== "early-bird-registration-is-open-for-the-ers-international-congress-2018-")
         {{-- style="position: -webkit-sticky; position: sticky;margin-bottom:15px" to put blue box in bottom - -webkit-sticky; for IOS--}}
           <div class="subject"> 
             <div class="text-center">
@@ -25,7 +24,6 @@
               @endif
             </div> 
           </div>
-        @endif
       </div>
           @if(isset($items['mainNews']))
     </a>

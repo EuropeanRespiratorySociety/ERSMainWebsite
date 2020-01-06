@@ -361,64 +361,64 @@ class CloudCmsHelper
             ->get();
     }
 
-    /**
-    * Sort the all the elments that have been selected to appear on the homepage
-    * 
-    *@param Object $items
-    *@return Array $sorted
-    */
-    public function sortHomepage($items ){
-        $cal = new DateHelper;
-        $articleCounter = 1;
-        $calendarCounter = 1;
-        $fundingCounter = 1;
-        $courseCounter = 1;
-        $nonERS = false;
+    // /**
+    // * Sort the all the elments that have been selected to appear on the homepage
+    // * 
+    // *@param Object $items
+    // *@return Array $sorted
+    // */
+    // public function sortHomepage($items ){
+    //     $cal = new DateHelper;
+    //     $articleCounter = 1;
+    //     $calendarCounter = 1;
+    //     $fundingCounter = 1;
+    //     $courseCounter = 1;
+    //     $nonERS = false;
 
-        foreach ($items as $key => $item) {
-            $nonERS = false;
-            $item = (object) $item;
+    //     foreach ($items as $key => $item) {
+    //         $nonERS = false;
+    //         $item = (object) $item;
 
-            if($item->nonErsCalendarItem || $item->ersEndorsedEvent) {
-                $nonERS = true;
-            }
+    //         if($item->nonErsCalendarItem || $item->ersEndorsedEvent) {
+    //             $nonERS = true;
+    //         }
             
-            if($item->featuredCourse && $courseCounter <= 4){
-                $sorted['featuredCourses'][] = $item;
-                $courseCounter++;
-            }
-            //Featured Funding == Research Section
-            if($item->featuredFunding && $fundingCounter <= 4){
-                $sorted['featuredResearchItems'][] = $item;
-                $fundingCounter++;
-            }
+    //         if($item->featuredCourse && $courseCounter <= 4){
+    //             $sorted['featuredCourses'][] = $item;
+    //             $courseCounter++;
+    //         }
+    //         //Featured Funding == Research Section
+    //         if($item->featuredFunding && $fundingCounter <= 4){
+    //             $sorted['featuredResearchItems'][] = $item;
+    //             $fundingCounter++;
+    //         }
            
-            if($item->category2 && $calendarCounter <= 5 && !$nonERS){
-                if($cal->isCalendar($item->category2) || $item->category->title == "Events Calendar"){
-                    if(isset($sorted['firstEvent'])){
-                        $sorted['calendar'][] = $item;  
-                    }
-                    if($calendarCounter <= 1){
-                        $sorted['firstEvent'] = $item;
-                    }
-                    $calendarCounter++;
-                }
-            }
+    //         if($item->category2 && $calendarCounter <= 5 && !$nonERS){
+    //             if($cal->isCalendar($item->category2) || $item->category->title == "Events Calendar"){
+    //                 if(isset($sorted['firstEvent'])){
+    //                     $sorted['calendar'][] = $item;  
+    //                 }
+    //                 if($calendarCounter <= 1){
+    //                     $sorted['firstEvent'] = $item;
+    //                 }
+    //                 $calendarCounter++;
+    //             }
+    //         }
             
-            if($item->contentType == "article" && $articleCounter <= 4){
+    //         if($item->contentType == "article" && $articleCounter <= 4){
 
-                if($item->mainNews != true){
-                    $sorted['news'][] = $item;
-                }
+    //             if($item->mainNews != true){
+    //                 $sorted['news'][] = $item;
+    //             }
 
-                if($articleCounter <= 1 || $item->mainNews == true){
-                    $sorted['mainNews'] = $item;
-                }
-                $articleCounter++;
-            }
-        }
-        return $sorted;
-    }
+    //             if($articleCounter <= 1 || $item->mainNews == true){
+    //                 $sorted['mainNews'] = $item;
+    //             }
+    //             $articleCounter++;
+    //         }
+    //     }
+    //     return $sorted;
+    // }
 
 
     /**

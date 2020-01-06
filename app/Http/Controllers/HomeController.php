@@ -62,7 +62,8 @@ class HomeController extends Controller
             "availableOnHomepage": "true",
             "contentType":"article",
             "unPublished": { "$ne": true },
-            "mainNews": { "$ne": true }
+            "mainNews": { "$ne": true },
+            "type":"News"
         }'; 
         $newResults = $this->CC->getContentByQuery($newsQuery, 3, -1, false);
         $newItems = $this->CC->parseItems($newResults['rows']);
