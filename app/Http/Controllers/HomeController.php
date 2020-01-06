@@ -74,11 +74,7 @@ class HomeController extends Controller
         //HomePage Sciences and Education
         $eventsResults = $this->CC->getHomePageEvents();
         $events = $this->CC->parseItems($eventsResults['rows'], true);
-        $sortedEvents = array_values(array_sort($events, function ($value) {
-            if($value->calendar) {
-                return $value->calendar->timestamp;
-            }
-          }));
+        $sortedEvents = $this->CC->sortItems($events);
         $calendarCounter = 0;
         foreach ($sortedEvents as $key => $eventItem) {
             $item = (object) $eventItem;
