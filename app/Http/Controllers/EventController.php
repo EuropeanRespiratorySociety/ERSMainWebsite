@@ -115,7 +115,7 @@ class EventController extends Controller
                 "faculty2",
                 "https://cdn.ersnet.org/preview/node/o:52b05b116f22297adef6?name=img120&v1",
                 "Dr Lise Piquilloud",
-                "Associate Physician, Medical Senior Lecturer and Privat-Docent, Intensive Adult Medicine, University of Lausanne",
+                "Adult Intensive Care and Burn Unit, University Hospital of Lausanne and University of Lausanne",
                 "&quot;Take the great opportunity to meet specialists from chronic, acute and paediatric respiratory failure at the same conference. I encourage early career professionals to attend and get a comprehensive coverage of the main topics in the field.&quot;"
             );
             $faculty3 = new UiFaculty(
