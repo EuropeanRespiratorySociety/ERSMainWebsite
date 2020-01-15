@@ -72,14 +72,14 @@
 
 
     </div>
-  {{-- START Cards --}}
+  {{-- START Cards 
     @if($items)
         <hr style="margin:50px 0; border-top: 1px solid #ddd;">
         <div class="row row_event">
             @include('partials.items', array('items' => $items, 'class' => 'col-md-3'))
         </div>
     @endif
-  {{-- END Cards --}}    
+  END Cards --}}    
 
   </div>  
 </div>
