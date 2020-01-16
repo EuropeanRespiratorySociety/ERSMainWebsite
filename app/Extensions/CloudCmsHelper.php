@@ -236,6 +236,75 @@ class CloudCmsHelper
         return $results; 
 
     }
+    
+    /**
+    * Call CloudCMS with a specific request
+    * To use this method do not forget to set the skip value to false if you do not need pagination
+    * @param string $query 
+    * @param int $limit (Optional - Number of results)
+    * @param int $sort (Optional - Direction)
+    * @param int $skip (Optional - Used for pagination)
+    */
+    public function getContentByQuery($query, $limit=25, $sort = -1, $skip = null){
+        
+        if($skip === null){
+            $results = CC::nodes()
+                        ->query($query)
+                        ->addParams(['metadata' => 'true'])
+                        ->addParams(['limit' => $limit])
+                        ->get();
+            $results = $this->validateResults($results);               
+            return $results; 
+        } 
+        if($skip === false){
+            $results = CC::nodes()
+                        ->query($query)  
+                        ->addParams(['full' => 'true']) 
+                        ->addParams(['metadata' => 'true'])
+                        ->addParams(['sort' => '{"_system.created_on.ms": '.$sort.'}']) 
+                        ->addParams(['limit' => $limit])
+                        ->get();
+            $results = $this->validateResults($results);                          
+            return $results; 
+        } 
+        $results = CC::nodes()
+                        ->query($query)
+                        ->addParams(['full' => 'true']) 
+                        ->addParams(['metadata' => 'true'])
+                        ->addParams(['sort' => '{"_system.created_on.ms": '.$sort.'}']) 
+                        ->addParams(['skip' => $skip]) 
+                        ->addParams(['limit' => $limit])
+                        ->get();
+        $results = $this->validateResults($results);                          
+        return $results; 
+    }
+
+     /**
+    * Get all node with the category association EventCalendar on CloudCMS 
+    * + available on Home page, not fully booked and ers event 
+    * @param string $field (Optional - the field to sort on)
+    * @param int $direction (the sorting direction 1 or -1)
+    */
+    public function getHomePageEvents($field = "_system.created_on.ms", $direction = 1){
+        $query = '{ 
+            "unPublished": { "$ne": true},
+            "availableOnHomepage": "true",
+            "nonErsCalendarItem": { "$ne": true},
+            "fullyBooked":{ "$ne": true}
+        }';
+
+        $results = CC::nodes()
+            ->queryRelatives('o:cc1c5be57719dade0371', $query) //qname for event_calendar category on CloudCMS
+            ->addParams(['type' =>'ers:category-association'])
+            ->addParams(['sort' => '{"'.$field.'": '.$direction.'}']) 
+            ->addParams(['metadata' => 'true'])
+            ->addParams(['limit' => 25])
+            ->addParams(['full' => 'true'])
+            ->get();    
+        $results = $this->validateResults($results);       
+        return $results;    
+    }
+
     /**
     * Paginate the results 
     * @param array $results
@@ -292,64 +361,64 @@ class CloudCmsHelper
             ->get();
     }
 
-    /**
-    * Sort the all the elments that have been selected to appear on the homepage
-    * 
-    *@param Object $items
-    *@return Array $sorted
-    */
-    public function sortHomepage($items ){
-        $cal = new DateHelper;
-        $articleCounter = 1;
-        $calendarCounter = 1;
-        $fundingCounter = 1;
-        $courseCounter = 1;
-        $nonERS = false;
+    // /**
+    // * Sort the all the elments that have been selected to appear on the homepage
+    // * 
+    // *@param Object $items
+    // *@return Array $sorted
+    // */
+    // public function sortHomepage($items ){
+    //     $cal = new DateHelper;
+    //     $articleCounter = 1;
+    //     $calendarCounter = 1;
+    //     $fundingCounter = 1;
+    //     $courseCounter = 1;
+    //     $nonERS = false;
 
-        foreach ($items as $key => $item) {
-            $nonERS = false;
-            $item = (object) $item;
+    //     foreach ($items as $key => $item) {
+    //         $nonERS = false;
+    //         $item = (object) $item;
 
-            if($item->nonErsCalendarItem || $item->ersEndorsedEvent) {
-                $nonERS = true;
-            }
+    //         if($item->nonErsCalendarItem || $item->ersEndorsedEvent) {
+    //             $nonERS = true;
+    //         }
             
-            if($item->featuredCourse && $courseCounter <= 4){
-                $sorted['featuredCourses'][] = $item;
-                $courseCounter++;
-            }
-            //Featured Funding == Research Section
-            if($item->featuredFunding && $fundingCounter <= 4){
-                $sorted['featuredResearchItems'][] = $item;
-                $fundingCounter++;
-            }
+    //         if($item->featuredCourse && $courseCounter <= 4){
+    //             $sorted['featuredCourses'][] = $item;
+    //             $courseCounter++;
+    //         }
+    //         //Featured Funding == Research Section
+    //         if($item->featuredFunding && $fundingCounter <= 4){
+    //             $sorted['featuredResearchItems'][] = $item;
+    //             $fundingCounter++;
+    //         }
            
-            if($item->category2 && $calendarCounter <= 5 && !$nonERS){
-                if($cal->isCalendar($item->category2) || $item->category->title == "Events Calendar"){
-                    if(isset($sorted['firstEvent'])){
-                        $sorted['calendar'][] = $item;  
-                    }
-                    if($calendarCounter <= 1){
-                        $sorted['firstEvent'] = $item;
-                    }
-                    $calendarCounter++;
-                }
-            }
+    //         if($item->category2 && $calendarCounter <= 5 && !$nonERS){
+    //             if($cal->isCalendar($item->category2) || $item->category->title == "Events Calendar"){
+    //                 if(isset($sorted['firstEvent'])){
+    //                     $sorted['calendar'][] = $item;  
+    //                 }
+    //                 if($calendarCounter <= 1){
+    //                     $sorted['firstEvent'] = $item;
+    //                 }
+    //                 $calendarCounter++;
+    //             }
+    //         }
             
-            if($item->contentType == "article" && $articleCounter <= 4){
+    //         if($item->contentType == "article" && $articleCounter <= 4){
 
-                if($item->mainNews != true){
-                    $sorted['news'][] = $item;
-                }
+    //             if($item->mainNews != true){
+    //                 $sorted['news'][] = $item;
+    //             }
 
-                if($articleCounter <= 1 || $item->mainNews == true){
-                    $sorted['mainNews'] = $item;
-                }
-                $articleCounter++;
-            }
-        }
-        return $sorted;
-    }
+    //             if($articleCounter <= 1 || $item->mainNews == true){
+    //                 $sorted['mainNews'] = $item;
+    //             }
+    //             $articleCounter++;
+    //         }
+    //     }
+    //     return $sorted;
+    // }
 
 
     /**

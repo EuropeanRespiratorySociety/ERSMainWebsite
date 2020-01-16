@@ -157,19 +157,12 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /courses https://www.ersnet.org/professional-development/courses
         Redirect 301 /congress-and-events/past-international-congresses https://www.ersnet.org/congress-and-events/ers-international-congress
         Redirect 301 /congress-and-events/ers-2018 https://www.ersnet.org/congress-and-events/ers-international-congress
-        Redirect 301 /cpd/AD https://www.ersnet.org/professional-development/cpd/cpd-airways-diseases
-        Redirect 301 /cpd/CC https://www.ersnet.org/professional-development/cpd/cpd-respiratory-critical-care
-        Redirect 301 /cpd/ILD https://www.ersnet.org/professional-development/cpd/cpd-interstitial-lung-diseases
-        Redirect 301 /cpd/PRM https://www.ersnet.org/professional-development/cpd/cpd-paediatric-respiratory-diseases
-        Redirect 301 /cpd/PVD https://www.ersnet.org/professional-development/cpd/cpd-pulmonary-vascular-diseases
-        Redirect 301 /cpd/RI https://www.ersnet.org/professional-development/cpd/cpd-respiratory-infections
-        Redirect 301 /cpd/RS https://www.ersnet.org/professional-development/cpd/cpd-sleep-and-breathing-disorders
-        Redirect 301 /cpd/TO https://www.ersnet.org/professional-development/cpd/cpd-thoracic-oncology
         Redirect 301 /CPD https://www.ersnet.org/professional-development/cpd
         Redirect 301 /cpd https://www.ersnet.org/professional-development/cpd
 
         # E
         Redirect 301 /ebus https://www.ersnet.org/professional-development/endobronchial-ultrasound-certified-training-programme
+        Redirect 301 /ebus1 https://www.ersnet.org/professional-development/courses/ebus-training-programme-part-1---heidelberg--february-2020
         Redirect 301 /educationgrant https://www.ersnet.org/professional-development/grants-and-sponsorships/medical-education-grant
         Redirect 301 /eu https://www.ersnet.org/advocacy/eu-affairs
         Redirect 301 /exams https://www.ersnet.org/professional-development/hermes
@@ -295,6 +288,8 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /the-society/news/register-for-free-to-attend-ers-satellites-on-severe-asthma https://www.ersnet.org/congress-and-events/ers-satellite
         # Redirect 301 /the-society/news/world-no-tobacco-day-2019--get-involved- https://www.ersnet.org/the-society/news/world-no-tobacco-day-2019--get-involved-
         Redirect 301 /the-society/news/ers-international-congress-2019-madrid-register-now-to-join-us-in-person-or-online-home https://erscongress.org/
+        Redirect 301 /the-society/news/send-us-your-topics-suggestions-for-the-sleep-and-breathing-conference-2021-home https://sleepandbreathing.org/articles/programme-2021
+
         
         # Number
         Redirect 301 /10PrinciplesforLungHealth https://ers.box.com/s/zj0x90cz9cwutldzlxbnoglzonmmnrbk

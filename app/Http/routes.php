@@ -110,8 +110,6 @@ Route::group(['prefix' => 'congress-and-events'], function () {
     Route::get('ers-satellite', 'LscController@ersSatellite');
     Route::get('ers-respiratory-failure-and-mechanical-ventilation-conference', 'EventController@rfmvIndex');
     Route::get('ers-respiratory-failure-and-mechanical-ventilation-conference/{slug}', 'EventController@rfmvShow');
-    Route::get('ers-small-event-example', 'EventController@smallEventIndex');
-    Route::get('ers-small-event-example/{slug}', 'EventController@smallEventShow');
     Route::get('ers-lung-science-conference', 'EventController@lscIndex');
     Route::get('ers-lung-science-conference/{slug}', 'EventController@lscShow');
     Route::get('/{slug}', 'GeneralController@show');
@@ -163,13 +161,11 @@ Route::group(['prefix' => 'professional-development'], function () {
 
     Route::group(['prefix' => 'cpd'], function () {
       Route::get('/', 'CpdController@index');
-      Route::get('/test-cpd', 'CpdController@testCPD');
-      Route::get('/{slug}', 'CpdController@show');
+      Route::get('/{qname}', 'CpdController@showRecommendation');
     });
 
     Route::group(['prefix' => 'phd-overview'], function () {
       Route::get('/', 'CpdController@phd');
-      Route::get('/{slug}', 'CpdController@show');
     });
 
     Route::get('ers-curriculum-design-a-summary-of-projects', 'GeneralController@curriculmDesign');
@@ -196,6 +192,7 @@ Route::group(['prefix' => 'professional-development'], function () {
         return view('advocacy.policy-areas');
     });
     Route::get('advocacy/policy-areas/{slug}', 'GeneralController@show');
+    Route::get('advocacy/mep-lung-health-group', function(){ return view('advocacy.mep-lung-health-group');});
     Route::get('advocacy/{slug}', 'GeneralController@show');
     Route::get('related/{slug}', 'GeneralController@show');
 

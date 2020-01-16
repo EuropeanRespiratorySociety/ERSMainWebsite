@@ -295,8 +295,10 @@ class Navigation
                 ->link->attr(array('class' => 'ga-nav-research'));
 
                 $menu->add('Advocacy and patient resources','#advocacy')
-            ->link->attr(array('class' => 'ga-nav-advocacy'));
+                ->link->attr(array('class' => 'ga-nav-advocacy'));
                 $menu->advocacyAndPatientResources->add('EU-Affairs','advocacy/eu-affairs')
+                ->link->attr(array('class' => 'ga-nav-advocacy'));
+                $menu->advocacyAndPatientResources->add('MEP lung health group','advocacy/mep-lung-health-group')
                 ->link->attr(array('class' => 'ga-nav-advocacy'));
                 $menu->advocacyAndPatientResources->add('EU-Projects','advocacy/eu-projects')
                 ->link->attr(array('class' => 'ga-nav-advocacy'));
