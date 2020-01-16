@@ -12,7 +12,7 @@
       <div class="modal-body">
         @if($item->category->title == "ERS Courses")
           <h3 style="padding: 0 40px;">
-            This course has received support from the following companies:
+            This course has received the following support:
           </h3>
         @endif
           @foreach ($item->sponsors as $sponsor)

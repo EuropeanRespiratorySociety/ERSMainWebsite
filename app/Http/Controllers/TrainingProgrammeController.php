@@ -57,11 +57,7 @@ class TrainingProgrammeController extends Controller
     $params['items'] =  $this->CC->parseItems($results['rows']);
     $items = $this->CC->parseItems($results['rows']);
     
-    $sortedItems = array_values(array_sort($items, function ($value) {
-      if($value->calendar) {
-          return $value->calendar->timestamp;
-      }
-    }));
+    $sortedItems = $this->CC->sortItems($items);
     $params['items'] = (object) $sortedItems; 
     return $params;
   }
