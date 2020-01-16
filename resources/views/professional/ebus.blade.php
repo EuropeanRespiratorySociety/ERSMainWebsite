@@ -18,7 +18,17 @@
     @if(isset($relatedItems))
         @include('partials.related-items', array('relatedItems' => $relatedItems)) 
     @endif
+    @if ($item->sponsors[0]->text || $item->sponsors[0]->image)
+      <div class="course-sponsor text-left">
+        <div class="course-sponsor-wrapper">
+            <div class="col-md-12 col-xs-12" style="position: relative; top: 30%;">
+              <h4 class="text-center" style="font-size: 20px;"><a data-toggle="modal" data-target="#sponsors-info" type="button" class="cursor_pointer">Event support</a></h4>
+            </div>
+        </div>
+      </div>
+    @endif
     </div>
+    
     <div class="col-md-6 lighter-grey-bg">
       <div class="header">
         <div class="clearfix notification">
@@ -206,6 +216,7 @@
   @include('elements.modal.cancellation', array('item' => $item)) 
   @include('elements.modal.travel-info', array('item' => $item))  
   @include('elements.modal.technical-info', array('item' => $item))
+  @include('elements.modal.sponsors', array('item' => $item))
 @stop()  
 {{--END Modal contents div--}}  
 
