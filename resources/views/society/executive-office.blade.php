@@ -734,25 +734,25 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Alice Bartlett</strong>
-            Technical Editor<br>
+            Technical Editor/Managing Editor of Breathe<br>
             T +44 114 267 2878<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Neil Bullen</strong>
-            Senior Technical Editor<br>
+            Senior Technical Editor/Managing Editor of ERJ<br>
             T +44 114 267 2879<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Alyson Cann</strong>
-            Technical Editor<br>
+            Technical Editor/Managing Editor of ERR<br>
             T +44 114 322 0650<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Jonathan Hansen</strong>
-            Technical Editor<br>
+            Technical Editor/Managing Editor of ERJ Open Research<br>
             T +44 114 322 0641<br>
             </p>
         </div>
@@ -788,7 +788,7 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Rachel Gozzard</strong>
-            Technical Editor<br>
+            Technical Editor/Managing Editor of ERS Monograph<br>
             T +44 114 267 2870<br>
             </p>
         </div>
