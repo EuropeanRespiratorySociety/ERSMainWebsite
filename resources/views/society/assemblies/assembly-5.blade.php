@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="col-md-6 center-block">
-              <p >Assembly Early Career representative: Sara Jane Bonvini</p>
+              <p >Assembly Early Career representative: Carolina Gotera</p>
             </div>
             <div class="col-md-6 center-block lead">
               A substantial number of pharmacologists and basic scientists have joined the clinicians in Assembly 5.  The major disease focus of the Assembly is translational research in asthma, COPD and cough with additional interests in non-CF bronchiectasis, bronchiolitis and upper airways.
