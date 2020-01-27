@@ -233,126 +233,120 @@
  }
 </style>
 
-<div class="ers-content">
-  	<div id="fullpage">
-        <div class="section fp-auto-height">
-            @if($item->highResImage)
-            <div class="top-box" style="height: 400px; background-image: url('{{$item->highResImage}}'); background-position: center {{$item->imageAlignment}}">
-            </div>
-            @endif
-            <div >
-              <div class="page-head" style="margin-bottom: 0px;">
-                  <h2>{{$item->title}}</h2>
-              </div><!-- /page-head -->
-              {{-- <div class="col-md-7 center-block lead" style="margin-top: 50px;">
-                {!! $item->body !!}
-              </div> --}}
-              <!-- /col-md-7 -->
-              <div class="row">
-                <div class="col-sm-12 col-lg-offset-2 col-md-offset-1 hidden-xs" style="margin-top: 20px; margin-bottom:  15px;" >
-                    <div class="columns">
-                      <div style="padding: 0 0 0 15px">
-                        @foreach ($items as $index => $item)
-                          <div role="presentation" class=" col-lg-1 col-md-3 " style="padding: 15px" >
-                            <figure class="circle-icon-link">
-                              <a href="/professional-development/cpd#{{$item->slug}}" data-toggle="tab" aria-expanded="false"> 
-                                <img src="{{$item->image}}" style="width: 75px;">
-                                <figcaption></figcaption>
-                                <span data-tooltip="{{$item->title}}" class="cp_tooltiptext"></span>
-                              </a>
-                            </figure>
-                          </div>
-                        @endforeach
-                      </div>
-                    </div><!-- /columns -->
-                  </div>
-                {{-- <div class="col-sm-12 hidden-xs" style="box-shadow: 0 6px 5px -5px rgba(0,0,0,.16), 0 6px 10px -10px rgba(0,0,0,.12);box-sizing: border-box;padding-bottom: 30px; z-index: 7" >
-                  <div class="columns">
-                    <div style="padding: 0 0 0 15px">
-                      @foreach ($items as $index => $item)
-                        <div role="presentation" class="scrollable-object active col-md-3" style="padding: 15px" >
-                            <a href="/professional-development/cpd#{{$item->slug}}" data-toggle="tab" aria-expanded="false" class="scrollable-object_color__blue"> 
-                              <img src="{{$item->image}}" style="width: 35px;padding-right:5px">{{$item->title}}
-                            </a> 
-                        </div>
-                      @endforeach
-                    </div>
-                  </div><!-- /columns -->
-                </div> --}}
-                <div class="col-sm-12 hidden-md hidden-lg hidden-sm">
-                  <div class="columns">
-                    <div class="owl-carousel owl-theme scrolling-wrapper-flexbox_color__blue" style="padding: 0 0 0 15px;">
+<div class="ers-content"> <!-- ers-content -->
+  	<div id="fullpage"><!-- fullpage -->
+      <div class="section fp-auto-height"><!-- section fp-auto-height -->
+          @if($item->highResImage)
+          <div class="top-box" style="height: 400px; background-image: url('{{$item->highResImage}}'); background-position: center {{$item->imageAlignment}}">
+          </div>
+          @endif
+          <div><!-- main-content -->
+            <div class="page-head" style="margin-bottom: 0px;"><!-- page-head -->
+                <h2>{{$item->title}}</h2>
+            </div><!-- page-head -->
+            <div class="row"> <!-- row -->
+              <div class="col-sm-12 col-lg-offset-2 col-md-offset-1 hidden-xs" style="margin-top: 20px; margin-bottom:  15px;" ><!-- Tab header desktop -->
+                <div class="columns"><!-- columns -->
+                  <div style="padding: 0 0 0 15px"><!-- circle -->
                     @foreach ($items as $index => $item)
-                      <div role="presentation" class="item scrollable-object active" style="width:auto;padding: 15px 0;">
-                        <a href="/professional-development/cpd#{{$item->slug}}" data-toggle="tab" aria-expanded="false" class="scrollable-object_color__blue">{{$item->title}}</a>
-                      </div>
+                      <div role="presentation" class=" col-lg-1 col-md-3 " style="padding: 15px" > <!-- presentation -->
+                        <figure class="circle-icon-link">
+                          <a href="/professional-development/cpd#{{$item->slug}}" data-toggle="tab" aria-expanded="false"> 
+                            <img src="{{$item->image}}" style="width: 75px;">
+                            <figcaption></figcaption>
+                            <span data-tooltip="{{$item->title}}" class="cp_tooltiptext"></span>
+                          </a>
+                        </figure>
+                      </div><!-- /presentation -->
                     @endforeach
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="row">
-                  <div class="col-sm-12">
-                        <!-- Tab panes -->
-                        <div class="tab-content" style="overflow: auto;">
-                            @foreach ($items as $index => $item)               
-                            @if($index == 0)
-                              <div id="{{$item->slug}}" class="tab-pane cont active">
-                            @else
-                              <div id="{{$item->slug}}" class="tab-pane cont">
-                            @endif
-                                <div class="row">
-                                      <div style="display:inline-block;">
-                                          <h2 style="background-image:url('{{$item->image}}'); background-repeat: no-repeat; background-position: left; background-size: contain; padding:5px 0 5px 56px;margin-top: 55px;">{{$item->title}}</h2>
-                                        </div>
-                                      <div class="col-sm-8 center-block text-center" style="margin-top: 20px;">
-                                          @foreach ($item->modules as $indexModules => $modules)
-                                            <div class="md-chip font-din md-chip-clickable md-chip-textlink md-chip-hover md-chip-anchor-cpd"><a href="/professional-development/cpd#disease{{$index}}-modules{{$modules->first}}-{{$modules->last}}">{{ $modules->sectionLabel }}</a></div>
-                                          @endforeach
-                                      </div>
-                                    </div>
-                                    @foreach ($item->modules as $indexModules => $modules)
-                                    @if($indexModules%2==1)
-                                      <div class="row">
-                                    @endif
-                                    <div class="col-sm-6 col-xs-12">
-                                    <a id="disease{{$index}}-modules{{$modules->first}}-{{$modules->last}}"></a>
-                                      <h3 class="text-left">{{ $modules->sectionLabel }}</h3>   
-                                      <div id="accordion-disease{{$index}}-{{$indexModules}}" class="panel-group accordion">
-                                        @foreach ($modules->modules as $indexModule => $module)
-                                        <div class="panel panel-default panel-shadow" >
-                                          <div class="panel-heading">
-                                            <h4 class="panel-title font-din text-left" >
-                                                <div id="action-{{$index}}-{{$indexModules}}-{{$indexModule}}" style="text-align:right">
-                                                    <button type="button" onclick="showRecommendation('{{$module->qname}}')" class="btn btn-xs btn-active btn-rounded btn-shade1 btn-rad " style="margin:10px 10px 0px 10px">
-                                                      Learning activities
-                                                    </button>
-                                                  </div>    
-                                              <a data-toggle="collapse" data-module="{{ $module->title }}" data-parent="#accordion-disease{{$index}}-{{$indexModules}}" 
-                                                href="#ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" aria-expanded="false" class="collapsed accordinon-with-button"
-                                                >
-                                                <div style="margin-left: 1em; text-indent: -1.5em;">
-                                                  <span><i class="icon s7-angle-down" style="text-indent: 0em;"></i>{{ $module->positionNumber }}. {{ $module->title }}</span>
-                                                </div>
-                                              </a>
-                                            </h4>
-                                          </div>
-                                          <div id="ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" class="panel-collapse collapse" style="background-color: #fff" aria-expanded="false" style="height: 0px;">
-                                            <div class="panel-body text-left font-din list-sublist">
-                                              {!! $module->body !!}
-                                            </div>
-                                          </div>
-                                        </div>
-                                      @endforeach
-                                      </div><!-- close accordion -->     
-                                    </div> <!-- close col-sm-6 -->
-                                    @if($indexModules%2==1)
-                                      </div>
-                                    @endif    
-                                  @endforeach
+                  </div><!-- /circle -->
+                </div><!-- /columns -->
+              </div><!-- /Tab header desktop -->
+              <div class="col-sm-12 hidden-md hidden-lg hidden-sm"><!-- Tab header mobile tablet-->
+                <div class="columns"><!-- columns -->
+                  <div class="owl-carousel owl-theme scrolling-wrapper-flexbox_color__blue" style="padding: 0 0 0 15px;" ><!-- circle -->
+                  @foreach ($items as $index => $item)
+                    <div role="presentation" class="item scrollable-object active" style="width:auto;padding: 15px 0;"> <!-- presentation -->
+                      <a href="/professional-development/cpd#{{$item->slug}}" data-toggle="tab" aria-expanded="false" class="scrollable-object_color__blue">
+                        {{$item->title}}
+                      </a>
+                    </div><!-- /presentation -->
+                  @endforeach
+                  </div><!-- /circle -->
+                </div><!-- /columns -->
+              </div><!-- /Tab header mobile tablet-->
+              
+              <div class="row">
+                <div class="col-sm-12">
+                      <!-- Tab panes -->
+                      <div class="tab-content" style="overflow: auto;">
+                          @foreach ($items as $index => $item)          
+                          @if($index == 0)
+                          <div id="{{$item->slug}}" class="tab-pane cont active">
+                          @else
+                          <div id="{{$item->slug}}" class="tab-pane cont">
+                          @endif
+                            <div class="row"><!-- div row -->
+                              <div style="display:inline-block;">
+                                <h2 style="background-image:url('{{$item->image}}'); background-repeat: no-repeat; background-position: left; background-size: contain; padding:5px 0 5px 56px;margin-top: 55px;">{{$item->title}}</h2>
                               </div>
-                            @endforeach
+                              <div class="col-sm-8 center-block text-center" style="margin-top: 20px;">
+                                @foreach ($item->modules as $indexModules => $modules)
+                                <div class="md-chip font-din md-chip-clickable md-chip-textlink md-chip-hover md-chip-anchor-cpd">
+                                  <a href="/professional-development/cpd#disease{{$index}}-modules{{$modules->first}}-{{$modules->last}}">{{ $modules->sectionLabel }}</a>
+                                </div>
+                                @endforeach
+                              </div>
+                            </div><!-- /div row -->
 
+                            
+                            <!-- module and accodion -->
+                            @foreach ($item->modules as $indexModules => $modules)
+                            @if($indexModules%2==0)
+                            <div class="row"> <!-- div row -->
+                            @endif
+                              <div class="col-sm-6 col-xs-12"><!-- col-sm-6 col-xs-12 -->  
+                                <a id="disease{{$index}}-modules{{$modules->first}}-{{$modules->last}}"></a>
+                                <h3 class="text-left">{{ $modules->sectionLabel }}</h3>   
+                                <div id="accordion-disease{{$index}}-{{$indexModules}}" class="panel-group accordion"><!-- anel-group accordion -->  
+                                @foreach ($modules->modules as $indexModule => $module)
+                                <div class="panel panel-default panel-shadow" > <!-- module accordion -->
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title font-din text-left" >
+                                      <div id="action-{{$index}}-{{$indexModules}}-{{$indexModule}}" style="text-align:right">
+                                        <button type="button" onclick="showRecommendation('{{$module->qname}}')" class="btn btn-xs btn-active btn-rounded btn-shade1 btn-rad " style="margin:10px 10px 0px 10px">
+                                          Learning activities
+                                        </button>
+                                      </div>    
+                                      <a data-toggle="collapse" data-module="{{ $module->title }}" data-parent="#accordion-disease{{$index}}-{{$indexModules}}" 
+                                        href="#ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" aria-expanded="false" class="collapsed accordinon-with-button"
+                                        >
+                                        <div style="margin-left: 1em; text-indent: -1.5em;">
+                                          <span><i class="icon s7-angle-down" style="text-indent: 0em;"></i>{{ $module->positionNumber }}. {{ $module->title }}</span>
+                                        </div>
+                                      </a>
+                                    </h4>
+                                  </div>
+                                  <div id="ac-disease{{$index}}-{{$indexModules}}-{{$indexModule}}" class="panel-collapse collapse" style="background-color: #fff" aria-expanded="false" style="height: 0px;">
+                                    <div class="panel-body text-left font-din list-sublist">
+                                      {!! $module->body !!}
+                                    </div>
+                                  </div>
+                                </div><!-- /module accordion -->
+                                @endforeach
+                                </div><!-- /panel-group accordion -->     
+                              </div> <!-- close col-sm-6 col-xs-12 -->
+                            @if($indexModules%2==1) 
+                            </div>
+                            <!-- /div row -->
+                            @elseif((count($item->modules) - 1) == $indexModules) <!--If the number of colums for the module is odd, close the last div row-->
+                            </div>
+                            <!-- /div row -->
+                            @endif 
+                            @endforeach
+                            <!-- end module and accordion -->
+
+                            <!-- Download documents -->
                             <div class="row" style="margin: 20px 0 0 20px;" >
                               <div class="btn-toolbar xs12">
                                 <div class="btn-group">
@@ -380,13 +374,14 @@
                                   </div>
                                 </div>
                             </div>
-
-                        </div> <!-- /tab content -->
-                      
-                    </div> <!-- col-sm-12 -->
-                </div> <!-- row -->
-            </div> <!-- main-content -->
-        </div> <!-- section fp-auto-height -->
+                            <!-- End Download documents -->
+                          </div>
+                      @endforeach
+                    </div> <!-- /tab content -->
+                  </div> <!-- col-sm-12 -->
+              </div> <!-- row -->
+          </div> <!-- main-content -->
+      </div> <!-- section fp-auto-height -->
     </div> <!-- fullpage -->
 </div> <!-- ers-content -->
 @stop()  
