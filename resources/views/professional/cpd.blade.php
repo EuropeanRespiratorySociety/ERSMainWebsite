@@ -420,10 +420,5 @@ $(document).ready(function() {
           }
       });
     }
-
-    function test(t){
-      alert(t);
-    }
-
   </script>
 @stop()
