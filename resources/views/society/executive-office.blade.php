@@ -317,8 +317,8 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Nicolas Luginbuhl</strong>
-            Marketing &amp; Corporate Relations Coordinator<br>
-            T +41 21 213 01 63<br>
+            Senior Coordinator<br>
+            T +41 21 213 01 65<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
