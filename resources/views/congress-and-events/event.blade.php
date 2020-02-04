@@ -136,7 +136,7 @@ img[alt=float-event-sponsor-logo]{
               <div class="row">
                 <div class="alert alert-info alert-mobile-position col-md-8 col-xs-10  offset-xs-1 center-block" style="display: table; height: 100%;">
                   <div class="banner-text">
-                    {{ $item->registerButton->bannerText }}
+                    {!! $item->registerButton->bannerText !!}
                   </div>
                   @if($item->registerButton->link)
                     <div class="banner-link">
