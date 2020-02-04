@@ -23,14 +23,14 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Raffaele_Scala.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Raffaele Scala</strong>
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Leo-Heunks.png" class="img-circle">
+		            <p class="photo_caption"><strong>Leo Heunks</strong>
 		            Respiratory Intensive Care<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/P_Hiemstra_2016.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Pieter Hiemstra</strong>
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Catherine_Green.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Catherine Greene</strong>
 		            Basic and translational sciences<br>
 		            </p>
 	        	</div>

@@ -248,7 +248,12 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
       <div class="modal-body">
         <div class="text-left">
           <h4>M-Health/e-health</h4>
-          <p></p>
+          <p>The ERS Group 01.04 was launched in 2019 to bring together health care professionals with an interest in implementing digital health technologies in respiratory medicine. Most of the members are clinicians but there is a growing interest among physiologists, physiotherapists, radiologists, nurses and lung function technologists.<br>
+            The main areas of interest of the group are artificial intelligence, machine learning, big data, deep learning, virtual, augmented and mixed realities, mobile health, open platforms, clinical information systems, telemonitoring, teleassistance, and telerehabilitation.<br>
+            One of the main goals of the Group is to increase the number of specialists with an interest in e-Health/m-Health. To achieve this goal, the officers of the Group and Assembly 1 actively promote group activities at the annual ERS Congress (such as thematic poster, poster discussion and oral presentation sessions, symposia, and postgraduate courses), and propose ERS Research Seminars, Webinars, and Task Forces.<br>
+            At the ERS Congress 2019 in Madrid, the group organised two sessions that gave an opportunity to more than 30 participants to present their studies.<br>
+            Every two months group members receive a literature update on telemedicine of clinically relevant English-language articles.<br>
+            We welcome everyone with an interest in digital health to join the group.</p>
         </div>
       </div>
     </div>
@@ -903,7 +908,5 @@ As a Group we aim to be a platform that facilitates close cooperation between ba
         App.assemblies();             
       });
     </script>
-    <script>(function(t,e,s,o){var n,a,c;t.SMCX=t.SMCX||[],e.getElementById(o)||(n=e.getElementsByTagName(s),a=n[n.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=o,c.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd23T5PSOYBbHHr8dkWMsg_2B1COwL0pR7WrIQCsxQT1aPW.js"].join(""),a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script>
 
-    @include('partials.survey-monkey')  
   @stop()

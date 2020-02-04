@@ -23,7 +23,7 @@
       
       <ul class="nav navbar-nav navbar-right ers-icons-nav" style="background-color:#fff;border-color:#eee;">
               <li class="dropdown">
-                <a href="https://new.ersnet.org/search"  role="button" class="dropdown-toggle">
+                <a href="{{url(env('NEW_URL') ? env('NEW_URL') : 'https://new.ersnet.org/search')}}"  role="button" class="dropdown-toggle">
                   <span style="color:#777" class="icon s7-search"></span>
                 </a>
               </li>

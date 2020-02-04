@@ -20,6 +20,9 @@ class Metanavigation
         \Menu::make('Metanav', function($menu){
 
             $menu->add('MyERS', 'https://my.ersnet.org')->link->attr(array('class' => 'ga-metanav'))/*->prepend('<i class="s7-culture icon"></i><span>')->append('</span>')*/; 
+            $menu->add('Membership', 'https://www.ersnet.org/the-society/membership')
+            ->link->attr(array('class' => 'ga-metanav'))
+            /*->prepend('<i class="icon-business-card icon"></i><span>')->append('</span>')*/;
             $menu->add('Publications', url("#publications"))->link->attr(array('class' => 'ga-metanav'))/*->prepend('<i class="s7-culture icon"></i><span>')->append('</span>')*/; 
             $menu->add('e-learning', 'http://www.ers-education.org/home.aspx')
                     ->link->attr(array('target' => '_blank'))

@@ -54,12 +54,20 @@
                     <div class="row text-center">
                       <div class="col-md-9  col-xs-12 center-block">
                         <div class="row publish-row">
-                          <div class="col-md-3 col-xs-6" style="margin-top: 30px;">
-                              <a href="https://ers.app.box.com/s/zj0x90cz9cwutldzlxbnoglzonmmnrbk" target="_blank">
-                                  <img class="img-responsive horizonal-doc" src="https://cdn.ersnet.org/images/publications/euaffair/ERS-10principles-v8.png">
-                                  <p>ERS 10 principles for lung health</p>
-                              </a>
-                          </div>
+                            <div class="col-md-3 col-xs-6">
+                                <a href="https://ers.app.box.com/v/Air-Pollution-Mythbuster" target="_blank">
+                                    <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/Air-Pollution-and-Health-Facts-Myths-ENG.png">
+                                    <p>Air Pollution and Health Facts & Myths - ENGLISH<br />
+                                </a>
+                                  </p>
+                              </div>
+                            <div class="col-md-3 col-xs-6" >
+                                <a href="https://ers.app.box.com/s/zj0x90cz9cwutldzlxbnoglzonmmnrbk" target="_blank">
+                                    <img class="img-responsive horizonal-doc" src="https://cdn.ersnet.org/images/publications/euaffair/ERS-10principles-v8.png" style="margin-top: 30px;margin-bottom: 30px;">
+                                    <p style="margin-bottom: 30px;">ERS 10 principles for lung health</p>
+                                </a>
+                            </div>
+                            
                           <div class="col-md-3 col-xs-6">
                             <a href="https://ers.box.com/s/6nzucj9rpoos0hatob0n79x8qji3bkxe" target="_blank">
                                 <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/Ambitions_for_Europe.png">
@@ -75,7 +83,12 @@
                                   </p>
                               </a>
                           </div>
-                          <div class="col-md-3 col-xs-6">
+                          
+                         
+                        </div><!-- 1st row close-->
+
+                        <div class="row publish-row">
+                           <div class="col-md-3 col-xs-6">
                               <a href="https://ers.box.com/s/d6htk1qf8wgb93b861u4p2wdguxyr9md" target="_blank">
                                   <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/LATAM REPORT_Second_EN_DEF.png">
                                   <p>Tobacco control in Latin-American and Iberian countries – Volume 2 - ENGLISH<br />
@@ -83,9 +96,6 @@
                                   </p>
                               </a>
                           </div>
-                        </div><!-- 1st row close-->
-
-                        <div class="row publish-row">
                           <div class="col-md-3 col-xs-6">
                             <a href="https://ers.app.box.com/s/druntvdpyex1akxos8ps4upheomqodi9" target="_blank">
                                 <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/ERS_TB_RECOM_EN_V1.png">
@@ -107,19 +117,19 @@
                                 <p>A selection of EU-funded respiratory research projects</p>
                             </a>
                           </div>
-                         <div class="col-md-3 col-xs-6">
-                            <a href="https://ers.box.com/s/gwyieuuurl9rl41gn1sd39e5zqbw5wdv"target="_blank">
-                                <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/2016.02.22-2nd-ERS-TB-leaflet-(official)_HD-no-crop.png">
-                                <p>The tuberculosis threat – Working together to combat TB</p>
-                            </a>
-                          </div>
                         </div><!-- 2nd row close-->
 
                         <div class="row publish-row">
-                          <div class="col-md-3 col-xs-6">
-                            <a href="https://ers.box.com/s/j0eeswrbcci2l3lekiuyu4yh24i0yvxn" target="_blank">
-                                <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/2016_HLFL_COPD-in-Europe-brochure_v2.png">
-                                <p>COPD in Europe</p>
+                            <div class="col-md-3 col-xs-6">
+                                <a href="https://ers.box.com/s/j0eeswrbcci2l3lekiuyu4yh24i0yvxn" target="_blank">
+                                    <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/2016_HLFL_COPD-in-Europe-brochure_v2.png">
+                                    <p>COPD in Europe</p>
+                                </a>
+                              </div>
+                           <div class="col-md-3 col-xs-6">
+                            <a href="https://ers.box.com/s/gwyieuuurl9rl41gn1sd39e5zqbw5wdv"target="_blank">
+                                <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/2016.02.22-2nd-ERS-TB-leaflet-(official)_HD-no-crop.png">
+                                <p>The tuberculosis threat – Working together to combat TB</p>
                             </a>
                           </div>
                           <div class="col-md-3 col-xs-6">
@@ -134,15 +144,15 @@
                                 <p>Spotlight on clean air and health</p>
                             </a>
                           </div>
+                        </div><!-- 3rd row close-->
+
+                        <div class="row publish-row">
                           <div class="col-md-3 col-xs-6">
                             <a href="https://www.ersnet.org/pdf/publications/air-quality-ENG.pdf" target="_blank">
                                 <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/air-quality-ENG.png">
                                 <p>Air quality and health</p>
                             </a>
                           </div>
-                        </div><!-- 3rd row close-->
-
-                        <div class="row publish-row">
                           <div class="col-md-3 col-xs-6">
                             <a href="/publications/european-respiratory-roadmap">
                                 <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/roadmap-euaffair.png">
@@ -155,7 +165,28 @@
                                 <p>European respiratory roadmap – healthcare professionals version</p>
                             </a>
                           </div>
+                          <div class="col-md-3 col-xs-6">
+                            <a href="https://ers.box.com/s/m0oqeszvh60wc0szclb7udekemgl4zuu" target="_blank">
+                                <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/HZ_Positionspapier_ENG.png">
+                                <p>The Health Impact of Air Pollution - ENGLISH<br />
+                            </a>
+                            <a href="https://ers.box.com/s/9z4s6ffoqvouv0w0cdw0oxb5vae352e0" target="_blank"><span>German</span></a>
+                              </p>
+                          </div>
                         </div><!-- 4th row close-->
+
+                        <div class="row publish-row">
+                          <div class="col-md-3 col-xs-6">
+                            <a href="https://ers.box.com/s/uiuf8lo7xtofqcm6sdayz8dizlptot2c" target="_blank">
+                              <img class="img-responsive" src="https://cdn.ersnet.org/images/publications/euaffair/Paris_Declaration.png">
+                              <p>Paris Declaration - <br />ENGLISH<br />
+                            </a>
+                            <a href="https://ers.box.com/s/4jp4nr247vglmyia1a5bn3ielvn2l0ta" target="_blank"><span>French</span></a><br />
+                            </p>
+                            </a>
+                          </div>
+                        </div><!-- 5th row close-->
+
 
 
 				        </div><!-- eu_a_2 close -->

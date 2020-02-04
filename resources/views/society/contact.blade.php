@@ -22,7 +22,7 @@
             </p></div>
           </div>
           <div class="col-md-4">
-            <h4><strong>ERS Publications, ELF and Communications Office </strong></h4>
+            <h4><strong>ERS Publications, ELF and Communications Office</strong></h4>
             <div class="col-md-8 center-block lead"><p>
               442 Glossop Road <br>Sheffield<br>S10 2PX<br>UK<br><br>
               T + 44 114 267 28 60<br/>
@@ -30,9 +30,9 @@
             </p></div>
           </div>
           <div class="col-md-4">
-            <h4><strong>ERS Advocacy Office </strong></h4>
+            <h4><strong>ERS Advocacy Office</strong></h4>
             <div class="col-md-8 center-block lead"><p>
-              49-51 Rue de Tréves <br>BE-1040<br>Brussels<br>Belgium<br><br>
+              49-51 Rue de Tréves<br>BE-1040<br>Brussels<br>Belgium<br><br>
               T +32 2 238 53 60<br/>
               F +32 2 238 53 61 
             </p></div>
@@ -94,5 +94,5 @@
   @stop()  
 
   @section('scripts')
-  @include('partials.survey-monkey')  
+  {{-- @include('partials.survey-monkey')   --}}
   @stop()

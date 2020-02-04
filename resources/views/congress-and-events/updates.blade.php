@@ -9,9 +9,9 @@
               )) 
 @stop()
 @section('content')
-<div class="ers-content event-items-content">
-  <div class="row">
-    <div class="col-md-3 medium-grey-bg left-photo-map">
+<div class="ers-content event-items-content" >
+  <div class="row" style="display: flex;flex-wrap: wrap;">
+    <div class="col-md-3 col-xs-12 medium-grey-bg left-photo-map">
       @if($item->image)
       <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
       @endif
@@ -27,21 +27,22 @@
           @include('partials.related-items', array('relatedItems' => $relatedItems)) 
       @endif
     
+    <h4 class="hidden-xs hidden-sm" style="margin: 20px 0 0 25px;text-align:left;">With the financial support of:</h4>
 
     @foreach ($item->sponsors as $sponsor)
-    <div class="course-sponsor text-left">
+    <div class="hidden-xs hidden-sm course-sponsor text-left" style="background:transparent;padding: 0 10px 0 26px;">
         @if($sponsor->text)
         <div class="course-sponsor-wrapper">
-          @if($sponsor->image)
-          <div class="course-sponsor-image col-md-4 col-xs-4 pull-left">
-              <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: right center; background-size: contain;"></p>
-          </div> 
-          @endif
-          @if($sponsor->text)
-          <div class="course-sponsor-right  col-md-8 col-xs-8 pull-right">
-              <h4 class="text-left">{{$sponsor->text}}</h4>
-          </div>
-          @endif
+            @if($sponsor->image)
+            <div class="course-sponsor-image col-md-12 col-xs-12 center-block" style="background:#fff;">
+                <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: center center; background-size: contain;"></p>
+            </div> 
+            @endif
+            {{--@if($sponsor->text)
+            <div class="course-sponsor-right  col-md-5 col-xs-5 pull-right">
+                <h4 class="text-left">{{$sponsor->text}}</h4>
+            </div>
+            @endif  --}}
         </div>
         @endif
     </div>
@@ -99,118 +100,117 @@
       </div>
     </div>
     <!-- Beginning Right Side-bar -->
-  <div class="col-md-3 white-bg event-items-tab">
-      <div class="tab-container">
-        {{-- <ul class="nav nav-tabs">
-        @if($item->ebusVenues)
-          <li class="active"><a href="#venue" data-toggle="tab">
-            <span class="icon icon-hotel"></span>Venues and Dates</a>
-          </li>
-        @endif
-        @if($item->bursaryApplication && !empty($item->bursaryApplication))
-          <li><a href="#bursary" data-toggle="tab">
-            <span class="icon s7-piggy"></span>Bursary<br>application</a>
-          </li>
-        @endif
-        </ul> --}}
+  <div class="col-xs-12 col-md-3 white-bg event-items-tab">
+    <div class="tab-container">
+      {{-- <ul class="nav nav-tabs">
+      @if($item->ebusVenues)
+        <li class="active"><a href="#venue" data-toggle="tab">
+          <span class="icon icon-hotel"></span>Venues and Dates</a>
+        </li>
+      @endif
+      @if($item->bursaryApplication && !empty($item->bursaryApplication))
+        <li><a href="#bursary" data-toggle="tab">
+          <span class="icon s7-piggy"></span>Bursary<br>application</a>
+        </li>
+      @endif
+      </ul> --}}
 
-        <div class="tab-content text-left">
-          <div id="venue" class="tab-pane active cont">
+      <div class="tab-content text-left">
+        <div id="venue" class="tab-pane active cont">
+          <div class="list-group text-left">
+              {{--  <a href="javascript:void(0)" class="list-group-item clearfix cursor_default">
+                  <span class="icon s7-alarm" style="display: block;
+                                                      font-size: 30px;
+                                                      float: left;
+                                                      margin-right: 10px;">
+                  </span>
+                  <p style="font-size: 12.5px;
+                              float: left;
+                              width: 75%;
+                              margin: 0;">
+                  EARLYBIRD DEADLINE : <br>
+                  <span>18 October, 2017</span>
+                  </p>
+              </a>  --}}
+              @if($item->ebusVenues[0])
+              <span href="javascript:void(0)" class="list-group-item clearfix cursor_default">
+                  <span class="icon icon-hotel" style="display: block;
+                                                      font-size: 30px;
+                                                      float: left;
+                                                      margin-right: 10px;">
+                  </span>
+                  <p style="font-size: 12.5px;
+                              float: left;
+                              width: 75%;
+                              margin: 0;">
+                  <a data-toggle="modal" data-target="#md-venues" type="button" class="btn btn-default" 
+                  style="float: left;
+                      margin-top: 5px;
+                      padding: 0;"> 
+                  {{ count($item->ebusVenues) === 1 ? 'VENUE' : 'VENUES' }}<br>
+                  <span></span></span>
+                  </p>
+              </a>
+              @endif
+          </div>
 
-        <div class="list-group text-left">
-            {{--  <a href="javascript:void(0)" class="list-group-item clearfix cursor_default">
-                <span class="icon s7-alarm" style="display: block;
-                                                    font-size: 30px;
-                                                    float: left;
-                                                    margin-right: 10px;">
-                </span>
-                <p style="font-size: 12.5px;
-                            float: left;
-                            width: 75%;
-                            margin: 0;">
-                EARLYBIRD DEADLINE : <br>
-                <span>18 October, 2017</span>
-                </p>
-            </a>  --}}
-            @if($item->ebusVenues[0])
-            <span href="javascript:void(0)" class="list-group-item clearfix cursor_default">
-                <span class="icon icon-hotel" style="display: block;
-                                                    font-size: 30px;
-                                                    float: left;
-                                                    margin-right: 10px;">
-                </span>
-                <p style="font-size: 12.5px;
-                            float: left;
-                            width: 75%;
-                            margin: 0;">
-                <a data-toggle="modal" data-target="#md-venues" type="button" class="btn btn-default" 
-                style="float: left;
-                    margin-top: 5px;
-                    padding: 0;"> 
-                {{ count($item->ebusVenues) === 1 ? 'VENUE' : 'VENUES' }}<br>
-                <span></span></span>
-                </p>
-            </a>
-            @endif
-        </div>
-
-            {{--  <div class="ers-scroller nano scrollable" style="height:450px;">
-                <div class="nano-content">   
-                @if($item->practicalInfo)  
-                  <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary text-left">
-                    <span class="icon s7-map" style="font-size: 24px;"></span>
-                    {{$item->practicalInfoButton or 'Practical Info'}}
-                  </a>
+          {{--  <div class="ers-scroller nano scrollable" style="height:450px;">
+              <div class="nano-content">   
+              @if($item->practicalInfo)  
+                <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary text-left">
+                  <span class="icon s7-map" style="font-size: 24px;"></span>
+                  {{$item->practicalInfoButton or 'Practical Info'}}
+                </a>
+              @endif
+              <ul class="list-group">
+                @if($item->technicalInfo)
+                <li class="list-group-item"><a data-toggle="modal" data-target="#md-technical-info" type="button" class=""><span class="s7-tools"></span>Technical Info</a></li>
                 @endif
-                <ul class="list-group">
-                  @if($item->technicalInfo)
-                  <li class="list-group-item"><a data-toggle="modal" data-target="#md-technical-info" type="button" class=""><span class="s7-tools"></span>Technical Info</a></li>
-                  @endif
 
-                  @if($item->suggestedAccommodation[0]->name || $item->suggestedAccommodation[0]->streetAddress)
-                  <li class="list-group-item"><a data-toggle="modal" data-target="#md-suggested_accommodation" type="button" class="">Suggested Accommodation</a></li>
-                  @endif
-                </ul>
-                <hr>
-                <div class="list-group">
+                @if($item->suggestedAccommodation[0]->name || $item->suggestedAccommodation[0]->streetAddress)
+                <li class="list-group-item"><a data-toggle="modal" data-target="#md-suggested_accommodation" type="button" class="">Suggested Accommodation</a></li>
+                @endif
+              </ul>
+              <hr>
+              <div class="list-group">
+              
+                <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
+                  <span class="badge">
+                    &euro; 139
+                  </span> Early career Members <br />
+                  <p class="text-small text-right text-mute" style="margin-right: 9px;">Earlybird &euro; 99</p>
+                </a>
+              
+              
+                <a href="javascript:void(0)" class="list-group-item cursor_default">
+                  <span class="badge">
+                    &euro; 159
+                  </span> ERS Members <br />
+                  <p class="text-small text-right text-mute" style="margin-right: 9px;">Earlybird &euro; 139</p>
+                </a>
+              
+              
+                <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
+                  <span class="badge">
+                    &euro; 199
+                  </span> Non-ERS Members <br />
+                  <p class="text-small text-right text-mute" style="margin-right: 9px;">Earlybird &euro; 159</p>
+                </a>
+              
+                <a href="javascript:void(0)" class="list-group-item cursor_default">
+                  <span class="badge">
+                    &euro; 99
+                  </span> Online access <br />
+                  <p class="text-small text-right text-mute" style="margin-right: 9px;">Earlybird &euro; 59</p>
+                </a>
                 
-                  <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
-                    <span class="badge">
-                      &euro; 139
-                    </span> Early career Members <br />
-                    <p class="text-small text-right text-mute" style="margin-right: 9px;">Earlybird &euro; 99</p>
-                  </a>
-                
-                
-                  <a href="javascript:void(0)" class="list-group-item cursor_default">
-                    <span class="badge">
-                      &euro; 159
-                    </span> ERS Members <br />
-                    <p class="text-small text-right text-mute" style="margin-right: 9px;">Earlybird &euro; 139</p>
-                  </a>
-               
-                
-                  <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
-                    <span class="badge">
-                      &euro; 199
-                    </span> Non-ERS Members <br />
-                    <p class="text-small text-right text-mute" style="margin-right: 9px;">Earlybird &euro; 159</p>
-                  </a>
-                
-                  <a href="javascript:void(0)" class="list-group-item cursor_default">
-                    <span class="badge">
-                      &euro; 99
-                    </span> Online access <br />
-                    <p class="text-small text-right text-mute" style="margin-right: 9px;">Earlybird &euro; 59</p>
-                  </a>
-                 
-                </div>
-
-
               </div>
-            </div>  --}}
-            
-            <div class="event-items-right-bt">
+
+
+            </div>
+          </div>  --}}
+          
+          <div class="event-items-right-bt">
             @if($item->extendedDeadline)
             <p class="deadline">EXTENDED registration deadline : {{$item->extendedDeadline}}</p>
             @endif
@@ -222,42 +222,72 @@
             <p><a data-toggle="modal" data-target="#md-travel_info" type="button" class="">Travel Info</a></p>
             @endif
             @if($item->registerButton->link && !$item->fullyBooked)
-              <p>Registering for someone else ? Contact {!! Html::mailto('sandy.borlat@ersnet.org', 'Sandy Borlat') !!}</p>
-              <a data-toggle="modal" data-target="#md-register" class="btn btn-primary tab-register-bt">Register</a>
+              <p>Registering for someone else ? Contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!}</p>
+              <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
+                Register
+              </a>
             @endif
             @if($item->fullyBooked)
-              <p>Please contact {!! Html::mailto('educaion@ersnet.org', 'education@ersnet.org') !!} to be added to the waiting list.</p>
+              <p>Please contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!} to be added to the waiting list.</p>
               <a href="javascript:void(0)" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
             @endif
-            </div>
+            <br /><br />
+                <a href="https://ersnet.us4.list-manage.com/track/click?u=07b6a7283a1da5b8e4d63ae64&id=fc7463820d&e=e4ae1c21d6" target="new_blank"  class="btn btn-primary tab-register-bt">
+                  Login to Live Streaming
+                </a>
+          </div>
 
-          </div>
-           {{-- @if($item->bursaryApplication->text
-            || $item->bursaryApplication->deadline
-            || $item->bursaryApplication->notificationOfResults
-            || $item->bursaryApplication->applyButtonUrl)
-          <div id="bursary" class="tab-pane cont">
-            @if($item->bursaryApplication->text)
-            {!!$item->bursaryApplication->text!!}
-            @endif
-            <ul>
-            @if($item->bursaryApplication->deadline)
-            <li>Bursaries application deadline:<b>{{$item->bursaryApplication->deadline}}</b></li>
-            @endif
-            @if($item->bursaryApplication->notificationOfResults)
-            <li>Notification of selection results:<b>{{$item->bursaryApplication->notificationOfResults}}</b></li>
-            @endif
-            </ul>
-            @if($item->bursaryApplication->applyButtonUrl)
-            <a href="{{$item->bursaryApplication->applyButtonUrl}}" class="btn btn-primary tab-register-bt">Apply</a>
-            @endif
-          </div>
-          @endif --}}
-          <div id="messages" class="tab-pane"> </div>
         </div>
-      </div>
+          {{-- @if($item->bursaryApplication->text
+          || $item->bursaryApplication->deadline
+          || $item->bursaryApplication->notificationOfResults
+          || $item->bursaryApplication->applyButtonUrl)
+        <div id="bursary" class="tab-pane cont">
+          @if($item->bursaryApplication->text)
+          {!!$item->bursaryApplication->text!!}
+          @endif
+          <ul>
+          @if($item->bursaryApplication->deadline)
+          <li>Bursaries application deadline:<b>{{$item->bursaryApplication->deadline}}</b></li>
+          @endif
+          @if($item->bursaryApplication->notificationOfResults)
+          <li>Notification of selection results:<b>{{$item->bursaryApplication->notificationOfResults}}</b></li>
+          @endif
+          </ul>
+          @if($item->bursaryApplication->applyButtonUrl)
+          <a href="{{$item->bursaryApplication->applyButtonUrl}}" class="btn btn-primary tab-register-bt">Apply</a>
+          @endif
+        </div>
+        @endif --}}
+        <div id="messages" class="tab-pane"> </div>
 
+
+
+        <hr class="visible-xs visible-sm">
+          @if($item->sponsors && $item->sponsors[0]->text)
+          <h4 class="visible-xs visible-sm" style="margin: 50px 0 0 25px;text-align:left;">With the financial support of:</h4>
+          @foreach ($item->sponsors as $sponsor)
+          <div class="visible-xs visible-sm course-sponsor text-left" style="background:transparent;padding: 0 10px 0 10px;">
+              @if($sponsor->text)
+              <div class="course-sponsor-wrapper">
+                  @if($sponsor->image)
+                  <div class="course-sponsor-image col-md-12 col-xs-12 center-block" style="background:#fff;">
+                      <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: center center; background-size: contain;"></p>
+                  </div> 
+                  @endif
+              </div>
+              @endif
+          </div>
+          @endforeach
+          @endif
+
+
+
+
+      </div>
     </div>
+
+  </div>
     <!-- End Right Sidebar -->
   </div>
 </div>
@@ -271,7 +301,7 @@
   @include('elements.modal.travel-info', array('item' => $item))  
   @include('elements.modal.technical-info', array('item' => $item))
 
-  <div id="md-register" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+  {{-- <div id="md-register" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
   <div class="modal-dialog">
     <div class="modal-content" style = "padding-bottom: 30px;">
       <div class="modal-header">
@@ -290,7 +320,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> --}}
 
 @stop()  
 {{--END Modal contents div--}}  

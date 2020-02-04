@@ -13,18 +13,17 @@
     <div class="section fp-auto-height">
     @if(isset($items['mainNews']))
     <a href="{{url('the-society/news/'.$items['mainNews']->slug)}}">
-    @endif
+    @endif 
       <div class="top-box" @if(isset($items['mainNews']->highResImage))style="background-image: url('{{$items['mainNews']->highResImage}}');background-position: center {{$items['mainNews']->imageAlignment}}" @endif>
-        @if($items['mainNews']->slug !== "early-bird-registration-is-open-for-the-ers-international-congress-2018-")
-          <div class="subject">
+        {{-- style="position: -webkit-sticky; position: sticky;margin-bottom:15px" to put blue box in bottom - -webkit-sticky; for IOS--}}
+          <div class="subject"> 
             <div class="text-center">
-              <em>{{$items['mainNews']->title}}</em>
+              <span>{{$items['mainNews']->title}}</span>
               @if($items['mainNews']->doNotDisplayCreatedOnOnHomepage != true)
                 <h4><em>{{$items['mainNews']->createdOn}}</em></h4>
               @endif
             </div> 
           </div>
-        @endif
       </div>
           @if(isset($items['mainNews']))
     </a>
@@ -45,13 +44,10 @@
     @include('home.home-sections.publications')
 
     {{-- Start Section 5 --}} 
-    @include('home.home-sections.professional', array(
-              'items' => isset($items['featuredCourses']) ? $items['featuredCourses'] : false
-              ))
+    @include('home.home-sections.professional')
 
-     {{-- Start Section 6 --}} 
-    @include('home.home-sections.research', array(
-              'items' => isset($items['featuredResearchItems']) ? $items['featuredResearchItems'] : false))
+    {{-- Start Section 6 --}} 
+    @include('home.home-sections.research')
 
      {{-- Start Section 7 --}}  
     @include('home.home-sections.advocacy')

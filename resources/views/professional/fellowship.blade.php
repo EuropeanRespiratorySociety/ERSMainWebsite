@@ -139,10 +139,10 @@
                     @endif
                     @if($item->slug == "clinical-training-fellowship")
                       <li>
-                        <a href="https://ers.box.com/shared/static/vvzxghtnbjh01r6sibuvy6qet5k4szj1.doc">End of training report - Host supervisor</a>
+                        <a href="https://ers.box.com/s/uk46661psoebs88gbxlwoumobfx7iqrf" target="_blank">End of training report - Host supervisor</a>
                       </li>
                       <li>
-                        <a href="https://ers.box.com/shared/static/rv3nvtz5dxvqcuganbx2c4ezgxnjoqry.doc">End of training report - Fellowship recipient</a>
+                        <a href="https://ers.box.com/s/84k7bimytiibtkgdytkya6ub0wwnle7b" target="_blank">End of training report - Fellowship recipient</a>
                       </li>
                     @endif
                     @if($item->rulesAndRegulations)
@@ -151,6 +151,14 @@
                          {{ $item->title == "Clinical Training Fellowship" ? "Application guidelines" : "Rules & Regulations"}}
                       </a>
                     </li>
+                    @endif
+                    @if($item->slug == "clinical-training-fellowship")
+                      <li>
+                        <a href="https://ers.box.com/s/bjrur0nkvs3i5nl8drbzsm9x19pb07dy" target="_blank">Host Supervisor Acceptance Form</a>
+                      </li>
+                      <li>
+                        <a href="https://ers.box.com/s/zsv7zercyseb19tmm6r9swwncjye9d65" target="_blank">Home Supervisor Release Form</a>
+                      </li>
                     @endif
                   </ul>
               </p>
@@ -224,7 +232,7 @@
 @stop()  
 
 @section('scripts')
-  @if($item->title == "Marie Curie Post-doctoral Research Fellowships (RESPIRE 3)")
+  {{-- @if($item->title == "Marie Curie Post-doctoral Research Fellowships (RESPIRE 3)")
     @include('partials.survey-monkey')  
-  @endif
+  @endif --}}
 @stop()

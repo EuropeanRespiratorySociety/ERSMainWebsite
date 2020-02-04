@@ -13,9 +13,18 @@
 		            <img src="https://cdn.ersnet.org/images/people/leadership/Daiana-Stolz2.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>Daiana Stolz</strong>
 		            Education Council Chair <br>
-		            <a title="Download COI" href="https://ers.box.com/s/bcaonlkqkkus3ee7zwq9hi18f902g9wi">Download COI</a>
 		            </p>
-	        	</div>
+            </div>
+            
+              <div class="col-md-4 xs-mb-15">
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Richard-Costello.png" class="img-circle">
+                  <p class="photo_caption"><strong>Richard Costello</strong>
+                    Education Council Chair Elect<br>
+                  </p>
+            </div>
+
+
+
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="https://cdn.ersnet.org/images/people/leadership/Stefano_Aliberti.jpg" class="img-circle">
 		            <p class="photo_caption"><strong>Stefano Aliberti</strong>
@@ -59,20 +68,36 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-                <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+                <img src="https://cdn.ersnet.org/images/people/leadership/John-Hurst.png" class="img-circle">
 		            <p class="photo_caption"><strong>John Hurst</strong>
 		            ERS Monograph Chief Editor <br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Lieuwe-Bos.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>LIEUWE BOS</strong>
-		            Early Career Representative <br>
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Maxime-Patout.png" class="img-circle">
+		            <p class="photo_caption"><strong>Maxime Patout</strong>
+		            Early Career Representative<br>
 		            </p>
 	        	</div>
+	        	<div class="col-md-4 xs-mb-15">
+              <img src="https://cdn.ersnet.org/images/people/leadership/Soren-Huwendiek.png" class="img-circle">
+              <p class="photo_caption"><strong>Sören Huwendiek</strong>
+                Education Advisor<br>
+              </p>
+          </div>
+          <div class="col-md-4 xs-mb-15">
+            <img src="https://cdn.ersnet.org/images/people/leadership/Janet-Grant.png" class="img-circle">
+            <p class="photo_caption"><strong>Janet Grant</strong>
+              Education Advisor<br>
+            </p>
+        </div>
+        <div class="col-md-4 xs-mb-15">
+          <img src="https://cdn.ersnet.org/images/people/leadership/Lars-Konge.png" class="img-circle">
+          <p class="photo_caption"><strong>Lars Konge</strong>
+            Education Advisor<br>
+          </p>
+       </div>
 
-	        	
-	        	
 
 
 

@@ -17,6 +17,12 @@
       margin-right: auto;
       padding: 15px 0;
     }
+
+    #ersMainWebsite .article-items .article-text .article img[alt="float130"] {
+      float: left;
+      width: 130px;
+      margin-right: 20px;
+    }
 </style>
 
 <div class="ers-content article-items">
@@ -78,7 +84,7 @@
     {{--  Beginning Main Content Area  --}}
     {{--  Beginning Right Side-bar  --}}
     <div class="col-md-3 white-bg right-photo">
-      <div class="right-photo-inner">
+      <div class="right-photo-inner" @if(!$item->image && $item->video)style="width: inherit" @endif>
         @if($item->image)
           <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
         @endif
@@ -102,7 +108,7 @@
             <div id="map"></div>
         @endif
         @if($item->video)
-          <div class="videoWrapper" style="min-height:300px">
+          <div class="videoWrapper" style="min-height:300px; @if(!$item->image && $item->video)margin-right: 10px; @endif">
             {!!$item->video!!} 
           </div>
         @endif
@@ -131,8 +137,8 @@
 
 @section('scripts')
   @include('elements.map.script', array('item' => $item))
-  @if($item->title == "ERS welcomes the positive results of NELSON trial")
+  {{-- @if($item->title == "ERS welcomes the positive results of NELSON trial")
     @include('partials.survey-monkey')  
-  @endif
+  @endif --}}
 
 @stop()

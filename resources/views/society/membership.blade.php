@@ -48,7 +48,11 @@
     @include('society.membership.membership-categories', array('item' => $items->catAndFees))
 
     {{-- Start Section 2 --}} 
+    @include('society.membership.membership-cers', array('item' => $items->faqs))
+
+    {{-- Start Section 3 --}} 
     @include('society.membership.membership-faqs', array('item' => $items->faqs))
+    
       {{-- Footer --}}
       @include('footer')
 
@@ -78,6 +82,6 @@
   });
   </script>
   
-  @include('partials.survey-monkey')  
+  {{-- @include('partials.survey-monkey')   --}}
 
 @stop()

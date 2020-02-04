@@ -87,6 +87,12 @@
             <li>
             <a href="https://ers.box.com/shared/static/tcwxn8cna9c14b4rxsfhvftechs4npoo.pdf">Application Guidelines</a>
             </li>
+            <li>
+              <a href="https://ers.box.com/s/zjf6nnaufdok4d62hzh4lrjtcgq5ta70" target="_blank">Host Supervisor Acceptance Form</a>
+            </li>
+            <li>
+              <a href="https://ers.box.com/s/bmsg0g5dzj8yvq61veyc9si9r8clspdw" target="_blank">Home Supervisor Release Form</a>
+            </li>
             @if($category->popUpText)
               <li>
                   <a data-toggle="modal" data-target="#md-popUp" class="cursor_pointer">{{$category->popUpText}}</a><br>

@@ -4,15 +4,20 @@ model:
     slug: false
     tags: false
     contentType: false
+    diseaseModules: false
     k4EventId: false
     type: false
     flags: [{ text: false, color: false }]
     ebusDate: false
     eventDate: false
+    eventTime: false
     eventEndDate: false
     eventLocation: false
     leadParagraph: false
     body: false
+    body2: false
+    body3: false
+    body4: false
     references: false
     articleOneColumn: false
     displayModifiedOnDate: false
@@ -44,7 +49,7 @@ model:
     technicalInfo: false
     popUp: false
     popUpText: false
-    feeList: { junior: false, ersMember: false, nonErsMember: false, industry: false, liveStreaming: false }
+    feeList: { junior: false, ersMember: false, nonErsMember: false, industry: false, liveStreaming: false, liveStreamingNonErs: false }
     cancellationPolicy: false
     travelInfo: false
     organisers: false
@@ -57,8 +62,9 @@ model:
     venue: { name: false, url: false, streetAddress: false, streetAddress2: false, streetAddress3: false, city: false, postalCode: false, country: false, phoneNumber: false, info: false }
     ebusVenues: [{ name: false, url: false, streetAddress: false, streetAddress2: false, streetAddress3: false, city: false, postalCode: false, country: false, phoneNumber: false, info: false }]
     suggestedAccommodation: [{ name: false, url: false, streetAddress: false, streetAddress2: false, streetAddress3: false, city: false, postalCode: false, country: false, phoneNumber: false, info: false }]
-    registerButton: { link: false, text: false }
+    registerButton: { link: false, text: false, bannerText: false }
     externalLink: { link: false, text: false }
+    contentLink: { link: false, text: false }
     bursaryApplication: { text: false, deadline: false, notificationOfResults: false, applyButtonUrl: false }
     mentorship: { text: false, deadline: false, notificationOfResults: false, applyButtonUrl: false }
     abstracts: { text: false, deadline: false, notificationOfResults: false, applyButtonUrl: false }
@@ -78,6 +84,7 @@ model:
     diseases: false
     limits: { min: false, max: false }
     methods: false
+    targetAudiance: false
     membersOnly: false
     url: false
     uri: false

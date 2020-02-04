@@ -117,14 +117,6 @@
             <span class="icon icon-hotel"></span>Registration and<br>accommodation</a>
           </li>
         @endif
-        @if($item->bursaryApplication->text
-            || $item->bursaryApplication->deadline
-            || $item->bursaryApplication->notificationOfResults
-            || $item->bursaryApplication->applyButtonUrl)
-          <li><a href="#bursary" data-toggle="tab">
-            <span class="icon s7-piggy"></span>Bursary<br>application</a>
-          </li>
-        @endif
         </ul>
 
         <div class="tab-content text-left">
@@ -134,7 +126,7 @@
               <div class="">
                 
                 @if($item->practicalInfo)
-                  @if($item->slug == "mechanisms-of-acute-exacerbation-of-respiratory-disease")
+                  @if($item->slug == "metabolic-alterations-in-lung-ageing-and-disease")
                     <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary text-left">
                       <span class="icon s7-map"></span>
                       Practical Info
@@ -204,7 +196,7 @@
                     </span> Industry <br>(ERS Members & non-Members)
                   </a>
                 @endif  
-                @if($item->slug == "mechanisms-of-acute-exacerbation-of-respiratory-disease")
+                @if($item->slug == "metabolic-alterations-in-lung-ageing-and-disease")
                   <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
                     <span class="badge">
                       &euro; 180
@@ -246,27 +238,6 @@
             </div>
 
           </div>
-          @if($item->bursaryApplication->text
-              || $item->bursaryApplication->deadline
-              || $item->bursaryApplication->notificationOfResults
-              || $item->bursaryApplication->applyButtonUrl)
-          <div id="bursary" class="tab-pane cont">
-                     @if($item->bursaryApplication->text)
-                     {!!$item->bursaryApplication->text!!}
-                     @endif
-                     <ul>
-                       @if($item->bursaryApplication->deadline)
-                        <li>Bursaries application deadline: <b>{{$item->bursaryApplication->deadline}}</b></li>
-                       @endif
-                       @if($item->bursaryApplication->notificationOfResults)
-                        <li>Notification of selection results: <b>{{$item->bursaryApplication->notificationOfResults}}</b></li>
-                       @endif
-                    </ul>
-                     @if($item->bursaryApplication->applyButtonUrl)
-                        <a href="{{$item->bursaryApplication->applyButtonUrl}}" class="btn btn-primary tab-register-bt">Apply</a>
-                     @endif
-          </div>
-          @endif
         </div>
       </div>
 

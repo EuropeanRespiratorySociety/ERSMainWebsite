@@ -21,10 +21,10 @@
 
             <div class="main-content">
               <div class="page-head"><h2>{{$item->title}}</h2></div>
-              <div class="col-md-7 center-block lead text-left">
+              <div class="col-md-7 center-block lead">
                   {!! $item->lead !!}
                 </div>
-                <div class="col-md-7 center-block lead text-left">
+                <div class="col-md-7 center-block lead">
                   {!! $item->body !!}
                 </div>
             </div>
@@ -46,10 +46,10 @@
 
 @stop()  
 
-
+{{-- 
 @section('modals')
   @include('partials.modal-items', array('items' => $items))
-  {{-- FREE PopUp --}}
+
   @if($item->popUp)
   <div id="md-popUp" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
     <div class="modal-dialog">
@@ -67,11 +67,11 @@
     </div>
   </div>
   @endif
-  {{-- end FREE PopUp --}}
-@stop()
+@stop() --}}
 
 @section('scripts')
-<script src="https://jpillora.com/jquery.rest/dist/1/jquery.rest.min.js"></script>
+{{-- <script src="https://jpillora.com/jquery.rest/dist/1/jquery.rest.min.js"></script> --}}
+<script src="/js/jquery.rest.min.js" type="text/javascript"></script>
 
 <script type="text/javascript">
   String.prototype.trunc = String.prototype.trunc ||
@@ -83,11 +83,11 @@
       var apiUrl = '{{ env('API_URL') }}' ? '{{ env('API_URL') }}' : 'https://api.ersnet.org/' ;
       var client = new $.RestClient(apiUrl, {
           cache: 60, //This will cache requests for 60 seconds
-          cachableMethods: ["GET"] //This defines what method types can be cached (this is already set by default)
+          cachableMethods: ["GET"]//This defines what method types can be cached (this is already set by default)
       });
 
       client.add('respiratory-digest');
-      client['respiratory-digest'].read().done(function (data){
+      client['respiratory-digest'].read({limit:100}).done(function (data){
           var events = data.data;
           for( var i = 0; i < events.length ; i++){
               const title = events[i].title.trunc(100);
@@ -111,7 +111,7 @@
                         + '<p style="color:#015291;"><strong>Digest Author(s): ' + digestAuthors + '</strong></p>'
                         + '<h3 class="title" style="text-transform: none;">' + anchor + '</h3>'
                         + '<p>Author(s): ' + author + '</p>'
-                        + '<p><a href="' + journalLink + '">' + journal + '</a></p>'
+                        + '<p><a href="' + journalLink + '"target="_blank">' + journal + '</a></p>'
                         + leadParagraph
                       + '</div>'
                       + '<div class="card-action clearfix">'

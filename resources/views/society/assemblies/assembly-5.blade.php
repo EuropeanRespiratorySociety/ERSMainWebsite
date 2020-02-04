@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="col-md-6 center-block">
-              <p >Assembly Early Career representative: Alexander Mathioudakis</p>
+              <p >Assembly Early Career representative: Carolina Gotera</p>
             </div>
             <div class="col-md-6 center-block lead">
               A substantial number of pharmacologists and basic scientists have joined the clinicians in Assembly 5.  The major disease focus of the Assembly is translational research in asthma, COPD and cough with additional interests in non-CF bronchiectasis, bronchiolitis and upper airways.
@@ -59,8 +59,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 05.02<br>
-                    Chair: Jose Luis Lopez-Campos<br>
-                    Secretary: Schleich Florence</p>
+                    Chair: Florence Schleich<br>
+                    Secretary: Fabio L. M. Ricciardolo</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-monitoring-airway" type="button" class="btn btn-default pull-right">More</button>
@@ -77,8 +77,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 05.03<br>
-                    Chair: Apostolos Bossios<br>
-                    Secretary: Idzko Marco</p>
+                    Chair: Marco Idzko<br>
+                    Secretary: Sergio Dortas Junior</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-allergy-and-immunology" type="button" class="btn btn-default pull-right">More</button>

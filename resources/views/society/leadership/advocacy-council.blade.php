@@ -26,24 +26,25 @@
                 <p class="photo_caption"><strong>Jørgen Vestbo</strong>
                     Advocacy Council Chair<br>
 	                </p>
-	            </div>
-	        	<div class="col-md-4 xs-mb-15">
-                <img src="https://cdn.ersnet.org/images/people/leadership/Tobias_Welte.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Tobias Welte</strong>
-		            President<br></p>
-	        	</div>
+              </div>
+              <div class="col-md-4 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/leadership/Thierry-Troosters.png" class="img-circle">
+                <p class="photo_caption"><strong>Thierry Troosters</strong>
+                  President<br>
+                </p>
+            </div>
 	            <div class="col-md-4 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/people/leadership/Thierry-Troosters.png" class="img-circle">
-	                <p class="photo_caption"><strong>Thierry Troosters</strong>
-	                President-Elect<br>
-					</p>
-	            </div>
-	            <div class="col-md-4 xs-mb-15">
-               		<img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+               		<img src="https://cdn.ersnet.org/images/people/leadership/Anita-Simonds.png" class="img-circle">
 	                <p class="photo_caption"><strong>Anita Simonds</strong>
-	                Vice President<br>
-					</p>
-	            </div>
+                    President Elect<br>
+					        </p>
+              </div>
+	            <div class="col-md-4 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/leadership/Humbert-Marc.png" class="img-circle">
+               <p class="photo_caption"><strong>Marc Humbert</strong>
+                 Vice President<br>
+               </p>
+           </div>
             	<div class="col-md-4 xs-mb-15">
 					<img src="https://cdn.ersnet.org/images/people/leadership/Isabel-Saraiva.png" class="img-circle">
 		            <p class="photo_caption"><strong>Isabel Saraiva</strong>
@@ -81,18 +82,22 @@
               </p>
             </div>
 	        	<div class="col-md-4 xs-mb-15">
-              <img src="https://cdn.ersnet.org/images/people/leadership/Carlos_Robalo.jpg" class="img-circle">
-              <p class="photo_caption"><strong>Carlos Robalo</strong>
+                <img src="https://cdn.ersnet.org/images/people/leadership/Tobias_Welte.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Tobias Welte</strong>
+                  Representative of the Biomed Alliance<br></p>
+	        	</div>
+	        	<div class="col-md-4 xs-mb-15">
+              <img src="https://cdn.ersnet.org/images/people/leadership/Joanna-Chorostowska.png" class="img-circle">
+              <p class="photo_caption"><strong>Joanna Chorostowska-Wynimko</strong>
                 Secretary General<br>
               </p>
             </div>
 	        	<div class="col-md-4 xs-mb-15">
-              <img src="https://cdn.ersnet.org/images/people/leadership/Joanna-Chorostowska.png" class="img-circle">
-              <p class="photo_caption"><strong>Joanna Chorostowska-Wynimko</strong>
-                Secretary General elect<br>
+              <img src="https://cdn.ersnet.org/images/people/leadership/Arzu-Yorgancıoglu.png" class="img-circle">
+              <p class="photo_caption"><strong>AYŞE ARZU YORGANCIOĞLU</strong>
+                Advocacy Council Chair Elect<br>
               </p>
             </div>
-
 
 			</div>
 

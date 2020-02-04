@@ -18,7 +18,17 @@
     @if(isset($relatedItems))
         @include('partials.related-items', array('relatedItems' => $relatedItems)) 
     @endif
+    @if ($item->sponsors[0]->text || $item->sponsors[0]->image)
+      <div class="course-sponsor text-left">
+        <div class="course-sponsor-wrapper">
+            <div class="col-md-12 col-xs-12" style="position: relative; top: 30%;">
+              <h4 class="text-center" style="font-size: 20px;"><a data-toggle="modal" data-target="#sponsors-info" type="button" class="cursor_pointer">Event support</a></h4>
+            </div>
+        </div>
+      </div>
+    @endif
     </div>
+    
     <div class="col-md-6 lighter-grey-bg">
       <div class="header">
         <div class="clearfix notification">
@@ -158,11 +168,11 @@
             <p><a data-toggle="modal" data-target="#md-travel_info" type="button" class="">Travel Info</a></p>
             @endif
             @if(isset($item->registerButton->link) && !$item->fullyBooked)
-              <p>Registering for someone else ? Contact {!! Html::mailto('sandy.borlat@ersnet.org', 'Sandy Borlat') !!}</p>
+              <p>Registering for someone else ? Contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!}</p>
               <a href="{{$item->registerButton->link}}" class="btn btn-primary tab-register-bt">Register</a>
             @endif
             @if($item->fullyBooked)
-              <p>Please contact {!! Html::mailto('educaion@ersnet.org', 'education@ersnet.org') !!} to be added to the waiting list.</p>
+              <p>Please contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!} to be added to the waiting list.</p>
               <a href="javascript:void(0)" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
             @endif
             </div>
@@ -206,6 +216,7 @@
   @include('elements.modal.cancellation', array('item' => $item)) 
   @include('elements.modal.travel-info', array('item' => $item))  
   @include('elements.modal.technical-info', array('item' => $item))
+  @include('elements.modal.sponsors', array('item' => $item))
 @stop()  
 {{--END Modal contents div--}}  
 

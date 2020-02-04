@@ -79,7 +79,7 @@
     <div class="col-md-6 lighter-grey-bg ers-course-info">
       <div class="header">
         <div class="clearfix notification">
-          @if($item->feeList->liveStreaming)
+          @if($item->feeList->liveStreaming || $item->feeList->liveStreamingNonErs)
             <p style="text-align:left;color:#d0043c;">
               <i style="font-size:26px;font-weight:bold;position:relative;top:5px;" class="s7-video"></i>
               <span>Live streaming will be available</span>
@@ -133,7 +133,8 @@
     <div class="col-md-3 white-bg event-items-tab">
       <div class="tab-container">
         <ul class="nav nav-tabs">
-        @if($item->venue->name ||
+          <li class="active"><a href="#venue" data-toggle="tab">
+            @if($item->venue->name ||
             $item->venue->url ||
             $item->venue->phoneNumber ||
             $item->venue->streetAddress ||
@@ -142,10 +143,12 @@
             $item->venue->postalCode ||
             $item->venue->city ||
             $item->venue->info )
-          <li class="active"><a href="#venue" data-toggle="tab">
             <span class="icon icon-hotel"></span>Venue and<br>accomodation</a>
+            @else
+            <span class="icon s7-info"></span>General<br>Information</a>
+            @endif
+            
           </li>
-        @endif
         @if($item->bursaryApplication->text
             || $item->bursaryApplication->deadline
             || $item->bursaryApplication->notificationOfResults
@@ -226,7 +229,16 @@
                     <span class="badge">&euro; {{ $item->feeList->liveStreaming}}</span>
                     <span>
                       <i style="font-size: 15px; position: relative; top: 3px;" class="s7-video"></i>
-                      Live stream
+                      Live stream ERS Members
+                    </span>
+                  </a>
+                @endif
+                @if($item->feeList->liveStreamingNonErs)
+                  <a href="javascript:void(0)" class="list-group-item cursor_default">
+                    <span class="badge">&euro; {{ $item->feeList->liveStreamingNonErs}}</span>
+                    <span>
+                      <i style="font-size: 15px; position: relative; top: 3px;" class="s7-video"></i>
+                      Live stream Non-ERS Members
                     </span>
                   </a>
                 @endif
@@ -234,7 +246,7 @@
                 <p style="margin: 15px 0;">The Member fee is applicable to active ERS and ESTS members at the time of registration.  The fee includes two nights’ accommodation.</p>
                 @endif
                 @if($item->earlybirdDeadline)
-                  <p>Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from a €50 discount on registration fees{{$item->feeList->liveStreaming ? ' (excluding live streaming)': '' }}.</p>
+                  <p>Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from a €50 discount on registration fees{{$item->feeList->liveStreaming || $item->feeList->liveStreamingNonErs ? ' (excluding live streaming)': '' }}.</p>
                 @endif
 
                 </div>
@@ -252,7 +264,7 @@
             <p><a data-toggle="modal" data-target="#md-travel_info" type="button" class="cursor_pointer">Travel Info</a></p>
             @endif
             @if($item->registerButton->link && !$item->fullyBooked)
-            <p>Registering for someone else ? Contact {!! Html::mailto('sandy.borlat@ersnet.org', 'Sandy Borlat') !!}</p>
+            <p>Registering for someone else ? Contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!}</p>
             @if(strpos($item->registerButton->link, '@'))
                 <a href="{{'mailto:'.$item->registerButton->link}}" class="btn btn-primary tab-register-bt">
                   {{ $item->registerButton->text or Register}}
@@ -264,7 +276,7 @@
             @endif
             @endif
             @if($item->fullyBooked)
-              <p>Contact {!! Html::mailto('education@ersnet.org', 'education@ersnet.org') !!} to be added to the waiting list.</p>
+              <p>Contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!} to be added to the waiting list.</p>
               <a href="javascript:void(0)" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
             @endif
             </div>
@@ -275,22 +287,22 @@
             || $item->bursaryApplication->notificationOfResults
             || $item->bursaryApplication->applyButtonUrl)
           <div id="bursary" class="tab-pane cont">
-                     @if($item->bursaryApplication->text)
-                      {!!$item->bursaryApplication->text!!}
-                     @endif
-                     <ul>
-                     @if($item->bursaryApplication->deadline)
-                     <li>Bursaries application deadline:<b>{{$item->bursaryApplication->deadline}}</b></li>
-                     @endif
-                     @if($item->bursaryApplication->notificationOfResults)
-                     <li>Notification of selection results:<b>{{$item->bursaryApplication->notificationOfResults}}</b></li>
-                     @endif
-                     </ul>
-                     @if($item->bursaryApplication->applyButtonUrl)
-                      <a href="{{$item->bursaryApplication->applyButtonUrl}}" class="btn btn-primary tab-register-bt">Apply</a>
-                     @endif
-          </div>
-          @endif
+              @if($item->bursaryApplication->text)
+              {!!$item->bursaryApplication->text!!}
+              @endif
+              <ul>
+              @if($item->bursaryApplication->deadline)
+              <li>Bursaries application deadline:<b>{{$item->bursaryApplication->deadline}}</b></li>
+              @endif
+              @if($item->bursaryApplication->notificationOfResults)
+              <li>Notification of selection results:<b>{{$item->bursaryApplication->notificationOfResults}}</b></li>
+              @endif
+              </ul>
+              @if($item->bursaryApplication->applyButtonUrl)
+              <a href="{{$item->bursaryApplication->applyButtonUrl}}" class="btn btn-primary tab-register-bt">Apply</a>
+              @endif
+            </div>
+            @endif
           <div id="messages" class="tab-pane"> </div>
         </div>
       </div>
@@ -309,7 +321,7 @@
   @include('elements.modal.travel-info', array('item' => $item))  
   @include('elements.modal.technical-info', array('item' => $item))
   @include('elements.modal.sponsors', array('item' => $item))
-  @include('partials.survey-monkey')
+  {{-- @include('partials.survey-monkey') --}}
 @stop()
 {{--END Modal contents div--}} 
 

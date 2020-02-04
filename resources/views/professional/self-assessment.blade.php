@@ -112,7 +112,8 @@
 @section('scripts')
   @include('elements.map.script', array('item' => $item)) 
   
-  <script src="https://jpillora.com/jquery.rest/dist/1/jquery.rest.min.js"></script>
+  {{-- <script src="https://jpillora.com/jquery.rest/dist/1/jquery.rest.min.js"></script> --}}
+<script src="/js/jquery.rest.min.js" type="text/javascript"></script>
   
   <script type="text/javascript">
     $(document).ready(function(){
@@ -121,8 +122,6 @@
             cache: 60, //This will cache requests for 60 seconds
             cachableMethods: ["GET"] //This defines what method types can be cached (this is already set by default)
         });
-       // var client = new $.RestClient('https://api.ersnet.org/');
-        console.log("rest");
         client.add('calendar');
         client.calendar.read({type:'selfAssessment'}).done(function (data){
             const events = data.data;

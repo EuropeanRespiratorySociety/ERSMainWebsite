@@ -61,11 +61,14 @@
     @if($item->eventLocation)
         <p class="place"><span class="icon s7-map-marker"></span> {{ $item->eventLocation }}</p>
     @endif
-    @if($item->feeList->liveStreaming)
+    @if(($item->feeList->liveStreaming) || ($item->feeList->liveStreamingNonErs) || ($item->type == "Research Seminar" && ($item->feeList->liveStreaming === 0 || $item->feeList->liveStreamingNonErs === 0)))
         <p class="place" style="color:#d0043c"><span class="icon s7-video" style="color:#d0043c;"></span> Live streaming available</p>    
     @endif
     @if($item->eventDates)
         <p class="date"><span class="icon s7-date"></span> {{ $item->eventDates }}</p>
+    @endif
+    @if($item->faculty &&  $item->contentType == "event_webinar")
+        <p class="sponsor">{{ $item->faculty }}</p>
     @endif
     @if(!$home)
         <div class="lead-card">{!! $item->shortLead !!}</div>
