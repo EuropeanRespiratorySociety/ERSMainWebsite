@@ -48,7 +48,7 @@
                         @if($digest->uri)
                           <a href="{{$digest->uri}}" class="btn btn-register">more</a>
                         @else
-                          <a href="{{$_SERVER['REQUEST_URI']}}/{{$digest->slug}}" class="btn btn-register">test</a>
+                          <a href="{{$_SERVER['REQUEST_URI']}}/{{$digest->slug}}" class="btn btn-register">more</a>
                         @endif
                       </div>
                   </div>
