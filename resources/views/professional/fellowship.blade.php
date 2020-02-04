@@ -152,6 +152,14 @@
                       </a>
                     </li>
                     @endif
+                    @if($item->slug == "clinical-training-fellowship")
+                      <li>
+                        <a href="https://ers.box.com/s/bjrur0nkvs3i5nl8drbzsm9x19pb07dy" target="_blank">Host Supervisor Acceptance Form</a>
+                      </li>
+                      <li>
+                        <a href="https://ers.box.com/s/zsv7zercyseb19tmm6r9swwncjye9d65" target="_blank">Home Supervisor Release Form</a>
+                      </li>
+                    @endif
                   </ul>
               </p>
             </span>

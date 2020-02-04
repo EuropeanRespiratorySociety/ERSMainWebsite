@@ -46,10 +46,10 @@
 
 @stop()  
 
-
+{{-- 
 @section('modals')
   @include('partials.modal-items', array('items' => $items))
-  {{-- FREE PopUp --}}
+
   @if($item->popUp)
   <div id="md-popUp" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
     <div class="modal-dialog">
@@ -67,8 +67,7 @@
     </div>
   </div>
   @endif
-  {{-- end FREE PopUp --}}
-@stop()
+@stop() --}}
 
 @section('scripts')
 {{-- <script src="https://jpillora.com/jquery.rest/dist/1/jquery.rest.min.js"></script> --}}
@@ -84,11 +83,11 @@
       var apiUrl = '{{ env('API_URL') }}' ? '{{ env('API_URL') }}' : 'https://api.ersnet.org/' ;
       var client = new $.RestClient(apiUrl, {
           cache: 60, //This will cache requests for 60 seconds
-          cachableMethods: ["GET"] //This defines what method types can be cached (this is already set by default)
+          cachableMethods: ["GET"]//This defines what method types can be cached (this is already set by default)
       });
 
       client.add('respiratory-digest');
-      client['respiratory-digest'].read().done(function (data){
+      client['respiratory-digest'].read({limit:100}).done(function (data){
           var events = data.data;
           for( var i = 0; i < events.length ; i++){
               const title = events[i].title.trunc(100);

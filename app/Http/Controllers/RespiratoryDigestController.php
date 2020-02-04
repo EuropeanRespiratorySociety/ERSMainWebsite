@@ -31,14 +31,15 @@ class RespiratoryDigestController extends Controller
         $this->CC->setCanonical($item[0]->_qname);
     }
 
-    if($item[0]->hasRelatedArticles > 0){
-      $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
-      $relatedItems = $this->CC->parseItems($related['rows']);
-      $params['relatedItems'] =  (object) $relatedItems;
-  }
+//     if($item[0]->hasRelatedArticles > 0){
+//       $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
+//       $relatedItems = $this->CC->parseItems($related['rows']);
+//       $params['relatedItems'] =  (object) $relatedItems;
+      
+//   }
 
-    $results = $this->CC->getAssociation($item[0]->_qname);
-    $params['items'] =  $this->CC->parseItems($results['rows']);
+//     $results = $this->CC->getAssociation($item[0]->_qname);
+//     $params['items'] =  $this->CC->parseItems($results['rows']);
 
     return view('professional.respiratory-digests')->with($params);  
 
