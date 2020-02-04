@@ -24,19 +24,34 @@
   table td {
     font-size: 16px;
   }
-.alert-mobile-position span.banner-text {
-  display: block;
-  width: auto;
-  line-height: 22px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.alert-mobile-position span.banner-link {
-  display: block;
-  width: auto;
-  text-align: center;
-  text-transform: uppercase;
+  .alert-mobile-position div.banner-text {
+    font-family:DinPro,sans-serif;
+    font-size: 16px;
+    display: table-cell;
+    vertical-align:middle;
+    text-align: left;
+    float: none;
+    padding-right: 10px;
+    width: 90%;
+  }
+  
+  .alert-mobile-position div.banner-link {
+    display: table-cell;
+    vertical-align:middle;
+    float: none;
+  }
+  
+  .alert-mobile-position div.banner-link span {
+    font-family:DinPro,sans-serif;
+    font-size: 16px;
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    display: table-cell;
+    vertical-align:middle;
+    float: none;
+    min-width: 160px;
   }
 
 img[alt=float]{
@@ -79,6 +94,26 @@ img[alt=float-event-sponsor-logo]{
   .btn .icon{
    display: none;
   }
+
+  .alert-mobile-position div.banner-text {
+      text-align: center;
+      display: block;
+      width: auto;
+      margin-bottom: 5px;
+    }
+
+    .alert-mobile-position div.banner-link {
+      display: block;
+      width: 100%;
+    }
+
+    .alert-mobile-position div.banner-link span {
+      display: block;
+      width: 100%;
+      
+    }
+
+
 }
 
 
@@ -98,24 +133,27 @@ img[alt=float-event-sponsor-logo]{
             </div>
             <div class="main-content">
               @if($item->registerButton->bannerText)
-                <div role="alert" class="alert alert-info alert-dismissible alert-mobile-position center-block col-md-8 col-xs-12" style="margin-bottom: 10px;padding: 10px 18px;">
-                  <div class="row ">
-                    <div class="col-md-12 col-xs-12 text-left">
-                      <span class="banner-text" style="font-size: 16px;">{{ $item->registerButton->bannerText }}</span>
-                      @if($item->registerButton->link)
-                      <span class="banner-link" style="font-family:DinPro,sans-serif;font-size: 16px;background-color: #FFF; padding: 10px;border-radius: 3px;">
+              <div class="row">
+                <div class="alert alert-info alert-mobile-position col-md-8 col-xs-10  offset-xs-1 center-block" style="display: table; height: 100%;">
+                  <div class="banner-text">
+                    {{ $item->registerButton->bannerText }}
+                  </div>
+                  @if($item->registerButton->link)
+                    <div class="banner-link">
+                      <span class="banner-link">
                         <a href="{{$item->registerButton->link}}" target="new_blank" style="color: #116FC3;">
                             {{ $item->registerButton->text or Register}}
                         </a>
                       </span>
-                      @endif
                     </div>
-                  </div>
+                  @endif
                 </div>
+              </div>
               @endif
+
               @if($item->earlybirdDeadline)
-              <p class="rfmv-eb-notification">Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from reduced registration fees.</p>
-            @endif
+                <p class="rfmv-eb-notification">Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from reduced registration fees.</p>
+              @endif
 
                 <div class="col-md-8 center-block lead text-left">
                   {!! $item->body !!}
