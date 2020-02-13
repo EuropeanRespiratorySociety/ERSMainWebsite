@@ -224,6 +224,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /the-society/news/ers-respiratory-updates-2019-join-us-online-or-in-person-for-the-latest-clinical-updates-home https://www.ersnet.org/congress-and-events/ers-respiratory-updates
         Redirect 301 /the-society/news/lung-science-conference-metabolic-alterations-in-lung-ageing-and-disease-home https://www.ersnet.org/congress-and-events/metabolic-alterations-in-lung-ageing-and-disease
         Redirect 301 /the-society/news/register-to-attend-or-live-stream-the-respiratory-failure-and-mechanical-ventilation-conference-home https://www.ersnet.org/congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference
+        Redirect 301 /the-society/news/ers-satellites-2020-copd-asthma-lung-cancer-and-infection-join-us-online-for-free-on-21-22-february-home https://www.ersnet.org/congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference
 
 
     ### External redirects
