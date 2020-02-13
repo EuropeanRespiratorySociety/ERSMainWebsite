@@ -30,9 +30,11 @@
                             <div class="card-title text-left">
                                 <h3>GOLD MEDALS</h3>
                             </div> 
-
-                            <div class="card-content  text-left" style="min-height: 165px;">
-                                <p style="line-height: 150%;">ERS presents Gold Medal Awards with grants of €50,000 to researchers who have made outstanding contributions in the fields of Asthma, COPD, IPF.</p>
+                            <div class="card-content  text-left" style="min-height: 165px; padding-top: 0px;">
+                              <!-- Start This info will be removed after 28th FEB 2020 -->
+                              <p style="line-height: 150%;font-size: 17px;"><span class="icon s7-info" style="font-size: 17px;vertical-align: middle;color: #fff;padding-right: 3px;margin-bottom: 15px;"></span><strong>Extended Deadline to 28th February 2020</strong></p>
+                              <!-- End This info will be removed after 28th FEB 2020 -->
+                              <p style="line-height: 150%;">ERS presents Gold Medal Awards with grants of €50,000 to researchers who have made outstanding contributions in the fields of Asthma, COPD, IPF.</p>
                             </div>
                             
                             <div class="card-action" position="absolute; bottom:0;">
@@ -50,8 +52,11 @@
                                 <h3>SPECIAL HONOURS</h3>
                             </div> 
 
-                            <div class="card-content  text-left">
-                                <p style="line-height: 150%;">Each year at Congress, ERS bestows a number of prestigious honours upon selected individuals based on their achievements in the field of respiratory medicine.</p>
+                            <div class="card-content  text-left"  style="min-height: 165px; padding-top: 0px;">
+                              <!-- Start This info will be removed after 28th FEB 2020 -->
+                              <p style="line-height: 150%;font-size: 17px;"><span class="icon s7-info" style="font-size: 17px;vertical-align: middle;color: #fff;padding-right: 3px;margin-bottom: 15px;"></span><strong>Extended Deadline to 28th February 2020</strong></p>
+                              <!-- End This info will be removed after 28th FEB 2020 -->
+                              <p style="line-height: 150%;">Each year at Congress, ERS bestows a number of prestigious honours upon selected individuals based on their achievements in the field of respiratory medicine.</p>
                             </div>
                             
                             <div class="card-action">
@@ -66,9 +71,12 @@
                             </div>
                             <div class="card-title  text-left">
                                 <h3>RESEARCH EXCELLENCE</h3>
-                            </div>                 
-                            <div class="card-content  text-left" style="min-height: 165px;">
-                                <p style="line-height: 150%;">A variety of sponsored awards are presented to individuals who have excelled in research in respiratory science and medicine. </p>
+                            </div>
+                            <div class="card-content  text-left" style="min-height: 165px; padding-top: 0px;">
+                              <!-- Start This info will be removed after 28th FEB 2020 -->
+                              <p style="line-height: 150%;font-size: 17px;"><span class="icon s7-info" style="font-size: 17px;vertical-align: middle;color: #fff;padding-right: 3px;margin-bottom: 15px;"></span><strong>Extended Deadline to 28th February 2020</strong></p>
+                              <!-- End This info will be removed after 28th FEB 2020 -->
+                              <p style="line-height: 150%;">A variety of sponsored awards are presented to individuals who have excelled in research in respiratory science and medicine. </p>
                             </div>
                             
                             <div class="card-action">
