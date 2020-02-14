@@ -30,7 +30,7 @@
                       Conference and Research Seminars Director<br>
             </div>
             <div class="col-md-4 xs-mb-15">
-              <img src="https://cdn.ersnet.org/images/people/leadership/Maarten-van-den-Berge.png" class="img-circle">
+              <img src="https://cdn.ersnet.org/images/people/leadership/Maarten-van-der-Berge-2.png" class="img-circle">
               <p class="photo_caption"><strong>Maarten van den Berge</strong>
                 CRC Director<br>
           </div>
@@ -40,8 +40,8 @@
 		            Guidelines Director<br>
 		        </div>		        
 		        <div class="col-md-4 xs-mb-15">
-              <img src="https://cdn.ersnet.org/images/people/leadership/Sara-Jane-Bonvini.png" class="img-circle">
-              <p class="photo_caption"><strong>SARA JANE BONVINI</strong>
+              <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+              <p class="photo_caption"><strong>Pending</strong>
 		            Early-Career Member Representative<br>
 		        </div>
 
