@@ -169,8 +169,17 @@
             @endif
             @if(isset($item->registerButton->link) && !$item->fullyBooked)
               <p>Registering for someone else ? Contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!}</p>
-              <a href="{{$item->registerButton->link}}" class="btn btn-primary tab-register-bt">Register</a>
-            @endif
+              @if(strpos($item->registerButton->link, '@'))
+              <a href="{{'mailto:'.$item->registerButton->link}}" class="btn btn-primary tab-register-bt">
+                {{ $item->registerButton->text or Register}}
+              </a>
+              @else
+              <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
+                {{ $item->registerButton->text or Register}}
+              </a>
+              @endif
+            @endif         
+
             @if($item->fullyBooked)
               <p>Please contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!} to be added to the waiting list.</p>
               <a href="javascript:void(0)" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
