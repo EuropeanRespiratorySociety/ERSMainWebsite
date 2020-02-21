@@ -39,7 +39,13 @@
                     <div class="card-content text-left">
                       <p class="btn-rounded early_bird" >{{$digest->digestTypeTruncate}}</p>
                         <p style="color:#015291;"><strong>Digest Author(s): {{$digest->digestAuthorsTruncate}}</strong></p>
-                        <h3 class="title" style="text-transform: none;"><a href='{{$digest->uri}}'> {{$digest->titleTruncate}} </a></h3>
+                        <h3 class="title" style="text-transform: none;">
+                          @if($digest->uri)
+                            <a href='{{$digest->uri}}'> {{$digest->titleTruncate}} </a>
+                          @else
+                            <a href="{{$_SERVER['REQUEST_URI']}}/{{$digest->slug}}"> {{$digest->titleTruncate}} </a>
+                          @endif
+                        </h3>
                         <p>Author(s): {{$digest->authorTruncate}} </p>
                         <p><a href="{{$digest->journalLink}}"target="_blank">{{$digest->journalTruncate}}</a></p>
                         {!! $digest->shortLead !!}
