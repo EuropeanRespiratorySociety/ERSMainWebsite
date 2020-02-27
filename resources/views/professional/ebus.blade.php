@@ -8,28 +8,38 @@
               ['pagination' => isset($pagination) ? $pagination : null]
               )) 
 @stop()
+
 @section('content')
 <div class="ers-content event-items-content">
   <div class="row">
+    {{-- begin part1 --}}
     <div class="col-md-3 medium-grey-bg left-photo-map">
     @if($item->image)
     <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
     @endif
     @if(isset($relatedItems))
-        @include('partials.related-items', array('relatedItems' => $relatedItems)) 
+      @include('partials.related-items', array('relatedItems' => $relatedItems)) 
     @endif
     @if ($item->sponsors[0]->text || $item->sponsors[0]->image)
-      <div class="course-sponsor text-left">
-        <div class="course-sponsor-wrapper">
-            <div class="col-md-12 col-xs-12" style="position: relative; top: 30%;">
-              <h4 class="text-center" style="font-size: 20px;"><a data-toggle="modal" data-target="#sponsors-info" type="button" class="cursor_pointer">Event support</a></h4>
-            </div>
-        </div>
+      <h4 class="hidden-xs hidden-sm" style="margin: 20px 0 0 25px;text-align:left;">This educational activity has received support from the following companies:</h4>
+      @foreach ($item->sponsors as $sponsor)
+      <div class="hidden-xs hidden-sm course-sponsor text-left" style="background:transparent;padding: 0 10px 10px 26px;">
+          @if($sponsor->text)
+          <div class="course-sponsor-wrapper">
+              @if($sponsor->image)
+              <div class="course-sponsor-image col-md-12 col-xs-12 center-block" style="background:#fff;">
+                  <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: center center; background-size: contain;"></p>
+              </div> 
+              @endif
+          </div>
+          @endif
       </div>
+      @endforeach
     @endif
     </div>
-    
-    <div class="col-md-6 lighter-grey-bg">
+    {{-- end part1 --}}
+    {{-- begin part2 --}}
+    <div class="col-md-6 lighter-grey-bg ers-course-info">
       <div class="header">
         <div class="clearfix notification">
           @if($item->flags)
@@ -40,18 +50,16 @@
           @endif
         </div>
         <h2 class="text-left clearfix date-venue">
-        <!--<a href="javascript:void(0)"><span class="icon s7-angle-left pull-left" style="font-size: 24px;"></span></a>-->
         <label>{{$item->eventDates}} @if(isset($item->eventLocation))<a>{{$item->eventLocation}}</a>@endif</label>
-        <!--<a href="javascript:void(0)"><span class="icon s7-angle-right pull-right" style="font-size: 24px;"></span></a>-->
         </h2>
       </div>
 
       <div class="row">
-        <div class="col-md-6 text-left event-items-category">
+        <div class="col-md-6 col-xs-6 text-left event-items-category">
           <p><em>@if($item->type){{$item->type}}@endif</em></p>
           View <a href="/professional-development/courses">all ERS courses</a>
         </div>
-        <div class="col-md-6 text-right">
+        <div class="col-md-6 col-xs-6 text-right">
           @if(isset($item->programme))  
             <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary text-left">
               <span class="icon s7-map" style="font-size: 24px;"></span>
@@ -79,8 +87,9 @@
         {!!$item->body!!}
       </div>
     </div>
-    <!-- Beginning Right Side-bar -->
-    <div class="col-md-3 white-bg event-items-tab">
+    {{-- end part2--}}
+    {{-- begin part3--}}
+    <div class="col-md-3 col-xs-12 white-bg event-items-tab">
       <div class="tab-container">
         <ul class="nav nav-tabs">
         @if($item->ebusVenues)
@@ -100,7 +109,6 @@
 
         <div class="tab-content text-left">
           <div id="venue" class="tab-pane active cont">
-
             <div class="ers-scroller nano scrollable" style="height:350px;">
                 <div class="nano-content">   
                 @if(isset($item->practicalInfo))  
@@ -153,10 +161,11 @@
                 @if($item->earlybirdDeadline)
                 <p>Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from a €50 discount on registration fees.</p>
                 @endif
-              </div>
+                </div>
               </div>
             </div>
-            
+
+            {{-- --}}
             <div class="event-items-right-bt">
             @if($item->extendedDeadline)
             <p class="deadline">EXTENDED registration deadline : {{$item->extendedDeadline}}</p>
@@ -185,6 +194,7 @@
               <a href="javascript:void(0)" class="btn btn-primary disabled tab-register-bt">Fully Booked</a>
             @endif
             </div>
+            {{-- --}}
 
           </div>
            @if($item->bursaryApplication->text
@@ -192,29 +202,50 @@
             || $item->bursaryApplication->notificationOfResults
             || $item->bursaryApplication->applyButtonUrl)
           <div id="bursary" class="tab-pane cont">
-                     @if($item->bursaryApplication->text)
-                      {!!$item->bursaryApplication->text!!}
-                     @endif
-                     <ul>
-                     @if($item->bursaryApplication->deadline)
-                     <li>Bursaries application deadline:<b>{{$item->bursaryApplication->deadline}}</b></li>
-                     @endif
-                     @if($item->bursaryApplication->notificationOfResults)
-                     <li>Notification of selection results:<b>{{$item->bursaryApplication->notificationOfResults}}</b></li>
-                     @endif
-                     </ul>
-                     @if($item->bursaryApplication->applyButtonUrl)
-                      <a href="{{$item->bursaryApplication->applyButtonUrl}}" class="btn btn-primary tab-register-bt">Apply</a>
-                     @endif
+            @if($item->bursaryApplication->text)
+            {!!$item->bursaryApplication->text!!}
+            @endif
+            <ul>
+            @if($item->bursaryApplication->deadline)
+            <li>Bursaries application deadline:<b>{{$item->bursaryApplication->deadline}}</b></li>
+            @endif
+            @if($item->bursaryApplication->notificationOfResults)
+            <li>Notification of selection results:<b>{{$item->bursaryApplication->notificationOfResults}}</b></li>
+            @endif
+            </ul>
+            @if($item->bursaryApplication->applyButtonUrl)
+            <a href="{{$item->bursaryApplication->applyButtonUrl}}" class="btn btn-primary tab-register-bt">Apply</a>
+            @endif
           </div>
           @endif
-          <div id="messages" class="tab-pane"> </div>
+          <div id="messages" class="tab-pane">
+          </div>
+          </div>
         </div>
       </div>
-
+    <!-- end part3 -->
     </div>
-    <!-- End Right Sidebar -->
-  </div>
+    
+
+    <div> 
+      <hr class="visible-xs visible-sm">
+      @if($item->sponsors && $item->sponsors[0]->text)
+      <h4 class="visible-xs visible-sm" style="margin: 50px 0 0 25px;text-align:left;">This educational activity has received support from the following companies: </h4>
+      @foreach ($item->sponsors as $sponsor)
+      <div class="visible-xs visible-sm course-sponsor text-left" style="background:transparent;padding: 0 10px 0 10px;">
+          @if($sponsor->text)
+          <div class="course-sponsor-wrapper">
+              @if($sponsor->image)
+              <div class="course-sponsor-image col-md-12 col-xs-12 center-block" style="background:#fff;">
+                  <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: center center; background-size: contain;"></p>
+              </div> 
+              @endif
+          </div>
+          @endif
+      </div>
+      @endforeach
+      @endif
+    </div>
 </div>
 @stop()
 
@@ -225,7 +256,6 @@
   @include('elements.modal.cancellation', array('item' => $item)) 
   @include('elements.modal.travel-info', array('item' => $item))  
   @include('elements.modal.technical-info', array('item' => $item))
-  @include('elements.modal.sponsors', array('item' => $item))
 @stop()  
 {{--END Modal contents div--}}  
 
