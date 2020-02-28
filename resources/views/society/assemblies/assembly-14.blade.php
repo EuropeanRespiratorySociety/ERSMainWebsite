@@ -8,7 +8,7 @@
                   <p class="photo_caption">Head: Jouke T. Annema</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                 <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+                 <img src="https://cdn.ersnet.org/images/people/leadership/Walter-de-Wever.png" class="img-circle">
                   <p class="photo_caption">Secretary: Walter de Wever</p>
                 </div>
             </div>
