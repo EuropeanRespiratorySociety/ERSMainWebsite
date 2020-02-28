@@ -4,7 +4,13 @@
     @endif
     <div class="related-items text-left">
       <div class="card card-default card-events">
-      <span class="label {{ $related->typeColor }}">@if($related->eventDates){{$related->eventDates}}@endif</span>
+      <span class="label {{ $related->typeColor }}">
+        @if($related->eventDates)
+          {{$related->eventDates}}
+        @elseif($related->type == "ERS Webinar")
+          {{$related->type}}
+        @endif
+      </span>
       <div class="card-content 
                   @if($related->image) 
                     col-md-8 col-xs-8 

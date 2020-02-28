@@ -281,7 +281,8 @@ class CloudCmsParser
             $type == "ERS Skill workshop" || 
             $type == "ERS Skills course"|| 
             $type == "ERS Endorsed activity" || 
-            $type == "Hands-on"){
+            $type == "Hands-on" ||
+            $type == "ERS Webinar"){
             
             return "label-school";
         }
