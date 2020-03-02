@@ -52,7 +52,9 @@
         <h2 class="text-left clearfix date-venue">
         <label>{{$item->eventDates}} @if(isset($item->eventLocation))<a>{{$item->eventLocation}}</a>@endif</label>
         </h2>
+        <!-- Should be delete after coronavirus -->
         <div class="text-left"><br/>Information: <a href="/the-society/news/ers-statement-covid-19-and-upcoming-ers-events">ERS Statement on COVID-19 and upcoming ERS events</a></div>
+        <!-- End Should be delete after coronavirus -->
       </div>
 
       <div class="row">
