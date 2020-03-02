@@ -34,8 +34,8 @@
 @section('content')
 <div class="ers-content event-items-content">
   <div class="row">
-    <div class="col-md-3 left-photo-map">
-      <div class="medium-grey-bg">
+    {{-- begin part1 --}}
+    <div class="col-md-3 medium-grey-bg left-photo-map">
         @if($item->image)
         <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
         @endif
@@ -48,34 +48,27 @@
             <div id="map"></div>
         @endif
         @if(isset($relatedItems))
-            @include('partials.related-items', array('relatedItems' => $relatedItems)) 
+          @include('partials.related-items', array('relatedItems' => $relatedItems)) 
         @endif
-      </div>
-
-      @if ($item->sponsors[0]->text || $item->sponsors[0]->image)
-          @if($item->slug === "potentially-operable-lung-cancer")
-            <div class="course-sponsor text-left">
-              <div class="course-sponsor-wrapper">
-                <div class="course-sponsor-image col-md-7 col-xs-7 pull-right">
-                  <p style="background-image: url('{{ $item->sponsors[0]->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: right center; background-size: contain;"></p>
+        @if ($item->sponsors[0]->text || $item->sponsors[0]->image)
+        <h4 class="hidden-xs hidden-sm" style="margin: 20px 0 0 25px;text-align:left;">This educational activity has received support from the following companies:</h4>
+        @foreach ($item->sponsors as $sponsor)
+        <div class="hidden-xs hidden-sm course-sponsor text-left" style="background:transparent;padding: 0px 10px 10px 26px;">
+            @if($sponsor->text)
+            <div class="course-sponsor-wrapper">
+                @if($sponsor->image)
+                <div class="course-sponsor-image col-md-12 col-xs-12 center-block" style="background:#fff;">
+                    <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: center center; background-size: contain;"></p>
                 </div> 
-                <div class="course-sponsor-right  col-md-5 col-xs-5 pull-left">
-                  <h4 class="text-left">{{$item->sponsors[0]->text}}</h4>
-                </div>
+                @endif
             </div>
-          </div>
-          @else
-            <div class="course-sponsor text-left">
-                <div class="course-sponsor-wrapper">
-                    <div class="col-md-12 col-xs-12" style="position: relative; top: 30%;">
-                      <h4 class="text-center" style="font-size: 20px;"><a data-toggle="modal" data-target="#sponsors-info" type="button" class="cursor_pointer">Event support</a></h4>
-                    </div>
-                </div>
-            </div>
-          @endif
-      @endif
+            @endif
+        </div>
+        @endforeach
+        @endif
     </div>
-
+    {{-- end part1 --}}
+    {{-- begin part2 --}}
     <div class="col-md-6 lighter-grey-bg ers-course-info">
       <div class="header">
         <div class="clearfix notification">
@@ -93,9 +86,7 @@
           @endif
         </div>
         <h2 class="text-left clearfix date-venue">
-        <!--<a href=""><span class="icon s7-angle-left pull-left" style="font-size: 24px;"></span></a>-->
         <label>{{$item->eventDates}} @if(isset($item->eventLocation))<a href="javascript:void(0)" class="cursor_default">{{$item->eventLocation}}</a>@endif</label>
-        <!--<a href=""><span class="icon s7-angle-right pull-right" style="font-size: 24px;"></span></a>-->
         </h2>
       </div>
 
@@ -129,8 +120,10 @@
         @if($item->body){!!$item->body!!}@endif
       </div>
     </div>
-    {{-- Beginning Right Side-bar --}}
-    <div class="col-md-3 white-bg event-items-tab">
+    {{-- end part2 --}}
+
+    {{-- begin part3 --}}
+    <div class="col-md-3 col-xs-12 white-bg event-items-tab">
       <div class="tab-container">
         <ul class="nav nav-tabs">
           <li class="active"><a href="#venue" data-toggle="tab">
@@ -161,9 +154,8 @@
 
         <div class="tab-content text-left">
           <div id="venue" class="tab-pane active cont">
-
             <div class="ers-scroller nano scrollable" style="height:500px;">
-                <div class="nano-content" style="padding-bottom:200px:">
+              <div class="nano-content" style="padding-bottom:200px:">
                 @if($item->practicalInfo)  
                   <a href="{{$item->practicalInfo}}" target="_blank" type="button" class="btn btn-light-primary text-left bt-practicalInfo">
                     <span class="icon s7-info" style="font-size: 24px;"></span>
@@ -203,11 +195,7 @@
                     <span class="badge">
                       &euro; {{ $item->feeList->ersMember}}
                     </span> 
-                    @if($item->slug == "potentially-operable-lung-cancer")
-                      ERS/ESTS members
-                    @else 
-                      ERS members
-                    @endif
+                    ERS members
                   </a>
                 @endif 
                 @if($item->feeList->nonErsMember)
@@ -242,13 +230,9 @@
                     </span>
                   </a>
                 @endif
-                @if($item->slug == "potentially-operable-lung-cancer")
-                <p style="margin: 15px 0;">The Member fee is applicable to active ERS and ESTS members at the time of registration.  The fee includes two nights’ accommodation.</p>
-                @endif
                 @if($item->earlybirdDeadline)
                   <p>Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from a €50 discount on registration fees{{$item->feeList->liveStreaming || $item->feeList->liveStreamingNonErs ? ' (excluding live streaming)': '' }}.</p>
                 @endif
-
                 </div>
               </div>
             </div>
@@ -264,16 +248,23 @@
             <p><a data-toggle="modal" data-target="#md-travel_info" type="button" class="cursor_pointer">Travel Info</a></p>
             @endif
             @if($item->registerButton->link && !$item->fullyBooked)
-            <p>Registering for someone else ? Contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!}</p>
-            @if(strpos($item->registerButton->link, '@'))
-                <a href="{{'mailto:'.$item->registerButton->link}}" class="btn btn-primary tab-register-bt">
+              <!-- 
+               Special case for this course
+               CloudCMS URL : https://ers.cloudcms.net/#/projects/5a138baba2337b783074/documents/b303196cf03933bcbe10/properties
+               The condition can be delete after this event : 09/04/2020
+              -->
+              @if($item->slug != "joint-ests-ers-course-on-thoracic-oncology--pleura--mediastinum-and-rare-tumours") 
+                <p>Registering for someone else ? Contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!}</p>
+              @endif
+              @if(strpos($item->registerButton->link, '@'))
+                  <a href="{{'mailto:'.$item->registerButton->link}}" class="btn btn-primary tab-register-bt">
+                    {{ $item->registerButton->text or Register}}
+                  </a>
+              @else
+                  <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
                   {{ $item->registerButton->text or Register}}
-                </a>
-            @else
-                <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
-                {{ $item->registerButton->text or Register}}
-            </a>
-            @endif
+              </a>
+              @endif
             @endif
             @if($item->fullyBooked)
               <p>Contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!} to be added to the waiting list.</p>
@@ -286,7 +277,7 @@
             || $item->bursaryApplication->deadline
             || $item->bursaryApplication->notificationOfResults
             || $item->bursaryApplication->applyButtonUrl)
-          <div id="bursary" class="tab-pane cont">
+            <div id="bursary" class="tab-pane cont">
               @if($item->bursaryApplication->text)
               {!!$item->bursaryApplication->text!!}
               @endif
@@ -302,14 +293,33 @@
               <a href="{{$item->bursaryApplication->applyButtonUrl}}" class="btn btn-primary tab-register-bt">Apply</a>
               @endif
             </div>
-            @endif
+          @endif
           <div id="messages" class="tab-pane"> </div>
         </div>
       </div>
-
+    </div>
+    {{-- end part3--}}
     </div>
     {{-- End Right Sidebar --}}
-  </div>
+    <div > 
+      <hr class="visible-xs visible-sm">
+      @if($item->sponsors && $item->sponsors[0]->text)
+      <h4 class="visible-xs visible-sm" style="margin: 50px 0 0 25px;text-align:left;">This educational activity has received support from the following companies: </h4>
+      @foreach ($item->sponsors as $sponsor)
+      <div class="visible-xs visible-sm course-sponsor text-left" style="background:transparent;padding: 0 10px 0 10px;">
+          @if($sponsor->text)
+          <div class="course-sponsor-wrapper">
+              @if($sponsor->image)
+              <div class="course-sponsor-image col-md-12 col-xs-12 center-block" style="background:#fff;">
+                  <p style="background-image: url('{{ $sponsor->image }}'); background-repeat: no-repeat; background-size:100%; width: 100%; height: 100%; background-position: center center; background-size: contain;"></p>
+              </div> 
+              @endif
+          </div>
+          @endif
+      </div>
+      @endforeach
+      @endif
+    </div>
 </div>
 @stop() 
 
@@ -320,8 +330,6 @@
   @include('elements.modal.cancellation', array('item' => $item)) 
   @include('elements.modal.travel-info', array('item' => $item))  
   @include('elements.modal.technical-info', array('item' => $item))
-  @include('elements.modal.sponsors', array('item' => $item))
-  {{-- @include('partials.survey-monkey') --}}
 @stop()
 {{--END Modal contents div--}} 
 

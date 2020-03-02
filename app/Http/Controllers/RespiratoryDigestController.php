@@ -31,14 +31,16 @@ class RespiratoryDigestController extends Controller
         $this->CC->setCanonical($item[0]->_qname);
     }
 
-    if($item[0]->hasRelatedArticles > 0){
-      $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
-      $relatedItems = $this->CC->parseItems($related['rows']);
-      $params['relatedItems'] =  (object) $relatedItems;
-  }
-
-    $results = $this->CC->getAssociation($item[0]->_qname);
-    $params['items'] =  $this->CC->parseItems($results['rows']);
+    /** 083f2e21cb0c286eeb91: id of sloukides (the article should be review) **/ 
+    $listDigestArticleQuery = '{
+        "_type" : "ers:digest-article",
+        "unPublished": { "$ne": true },
+        "_system.modified_by_principal_id": {
+            $nin: ["083f2e21cb0c286eeb91"] 
+        }
+    }'; 
+    $listDigestArticleResults = $this->CC->getContentByQuery($listDigestArticleQuery, 100, -1, false);
+    $params['items'] = $this->CC->parseDigestItems($listDigestArticleResults['rows']);
 
     return view('professional.respiratory-digests')->with($params);  
 

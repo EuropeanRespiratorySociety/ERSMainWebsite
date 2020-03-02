@@ -98,8 +98,8 @@
             </p>
           </a>
           @endif
-          @if($item->title == "Marie Curie Post-doctoral Research Fellowships (RESPIRE 3)")
-              <span href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
+          @if($item->slug == "marie-curie-post-doctoral-research-fellowships-respire")
+              <span href="javascript:void(0)" class="list-group-item clearfix cursor_default">
               <span class="icon s7-copy-file"></span>
               <p>
                 DOCUMENTS : <br>
@@ -107,10 +107,10 @@
                           float: left;
                           margin-left: 10px;">
                     <li>
-                    <a href="https://ers.box.com/shared/static/9pyrc941p92a1i2ltmggyykrrk1n8ju5.pdf">Application Guidelines</a>
+                    <a href="https://ers.app.box.com/s/dvv398ilayofjd0dy6d3dim574o6oejd" target="_blank">Application Guidelines</a>
                     </li>
                     <li>
-                    <a href="https://ers.box.com/shared/static/h4johsv2crcz1xnghmi1hwzs786i8ith.pdf">Frequently Asked Questions (FAQs)</a>
+                    <a href="https://ers.app.box.com/s/ctoz44zj4ho0rvyu7am41scucwuoko0z" target="_blank">Frequently Asked Questions (FAQs)</a>
                     </li>
                     @if($item->popUpText)
                     <li>
@@ -151,6 +151,14 @@
                          {{ $item->title == "Clinical Training Fellowship" ? "Application guidelines" : "Rules & Regulations"}}
                       </a>
                     </li>
+                    @endif
+                    @if($item->slug == "clinical-training-fellowship")
+                      <li>
+                        <a href="https://ers.box.com/s/bjrur0nkvs3i5nl8drbzsm9x19pb07dy" target="_blank">Host Supervisor Acceptance Form</a>
+                      </li>
+                      <li>
+                        <a href="https://ers.box.com/s/zsv7zercyseb19tmm6r9swwncjye9d65" target="_blank">Home Supervisor Release Form</a>
+                      </li>
                     @endif
                   </ul>
               </p>

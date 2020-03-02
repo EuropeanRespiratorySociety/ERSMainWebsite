@@ -63,7 +63,7 @@
         @if($item->slug == 'privacy-test' || $item->slug == 'privacy' || $item->slug == 'cookies-policy')
           <hr>
           <h4 style="font-size: 14px; font-weight: bold;" class="date mod">modified on: {{ $item->modifiedOn }}</h4>
-          <h4 style="font-size: 14px; font-weight: bold;" class="date mod">latest version: {{ $item->_system->changeset }}</h4>
+          {{-- <h4 style="font-size: 14px; font-weight: bold;" class="date mod">latest version: {{ $item->_system->changeset }}</h4> --}}
           <hr>
         @endif
         @if($item->lead){!! $item->lead !!}@endif

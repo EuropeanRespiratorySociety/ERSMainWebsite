@@ -25,14 +25,13 @@
                     <div class="col-md-4">
                         <div class="card card-primary card-event" style="background-color: #015291;">
                             <div class="card-image" style="height:24px;">
-                              <span class="label label-danger">Call Open</span>
+                              <span class="label label-danger">Call Closed</span>
                             </div>
                             <div class="card-title text-left">
                                 <h3>GOLD MEDALS</h3>
                             </div> 
-
-                            <div class="card-content  text-left" style="min-height: 165px;">
-                                <p style="line-height: 150%;">ERS presents Gold Medal Awards with grants of €50,000 to researchers who have made outstanding contributions in the fields of Asthma, COPD, IPF.</p>
+                            <div class="card-content  text-left" style="min-height: 165px; padding-top: 0px;">
+                              <p style="line-height: 150%;">ERS presents Gold Medal Awards with grants of €50,000 to researchers who have made outstanding contributions in the fields of Asthma, COPD, IPF.</p>
                             </div>
                             
                             <div class="card-action" position="absolute; bottom:0;">
@@ -44,14 +43,14 @@
                     <div class="col-md-4">
                         <div class="card card-primary card-event" style="background-color: #015291;">
                             <div class="card-image" style="height:24px;">
-                                <span class="label label-danger">Call Open</span>
+                                <span class="label label-danger">Call Closed</span>
                             </div>
                             <div class="card-title  text-left">
                                 <h3>SPECIAL HONOURS</h3>
                             </div> 
 
-                            <div class="card-content  text-left">
-                                <p style="line-height: 150%;">Each year at Congress, ERS bestows a number of prestigious honours upon selected individuals based on their achievements in the field of respiratory medicine.</p>
+                            <div class="card-content  text-left"  style="min-height: 165px; padding-top: 0px;">
+                              <p style="line-height: 150%;">Each year at Congress, ERS bestows a number of prestigious honours upon selected individuals based on their achievements in the field of respiratory medicine.</p>
                             </div>
                             
                             <div class="card-action">
@@ -62,13 +61,13 @@
                     <div class="col-md-4">
                         <div class="card card-primary card-event" style="background-color: #015291;">
                             <div class="card-image" style="height:24px;">
-                                <span class="label label-danger">Call Open</span>
+                                <span class="label label-danger">Call Closed</span>
                             </div>
                             <div class="card-title  text-left">
                                 <h3>RESEARCH EXCELLENCE</h3>
-                            </div>                 
-                            <div class="card-content  text-left" style="min-height: 165px;">
-                                <p style="line-height: 150%;">A variety of sponsored awards are presented to individuals who have excelled in research in respiratory science and medicine. </p>
+                            </div>
+                            <div class="card-content  text-left" style="min-height: 165px; padding-top: 0px;">
+                              <p style="line-height: 150%;">A variety of sponsored awards are presented to individuals who have excelled in research in respiratory science and medicine. </p>
                             </div>
                             
                             <div class="card-action">

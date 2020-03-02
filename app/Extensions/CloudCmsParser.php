@@ -43,9 +43,6 @@ class CloudCmsParser
     }
 
 	public function parse($items, $lead = false){
-        //   if(empty($items) && App::environment() != 'local' && request()->path() != "search"){
-        //         abort(404);
-        //     }
             foreach ($items as $key => $i){
                 //$item += $this->model;
                 $item = array_replace_recursive($this->model, $i);
@@ -61,7 +58,6 @@ class CloudCmsParser
                 //We could cache the request?
                 //We create an object to simplify manipulations
                 $item = json_decode($item->toJson());
-                //dd($item);
                 /** 
                 * Formating the properties
                 */
@@ -95,14 +91,6 @@ class CloudCmsParser
                         $item->venue->info = Markdown::parse($item->venue->info);
 
                     }
-
-                    // if($item->venue->streetAddress && $item->venue->city && $item->venue->postalCode){
-                    //     if(!$item->loc->lat || !$item->loc->long){
-                    //         $coordinates = $this->helper->getCoordinates($item->venue);
-                    //         $this->helper->setCoordinates($item->_qname, $coordinates['lat'], $coordinates['lng'], $coordinates['accuracy']);
-                    //     }
-                    // }
-
 
                     if($item->suggestedAccommodation){
                         $this->parseVenues($item->suggestedAccommodation);
@@ -262,6 +250,11 @@ class CloudCmsParser
                 $item->lead = Markdown::parse($item->leadParagraph);
 
                 // Added fields to the model
+                $item->titleTruncate = $item->title ? $this->truncate($item->title, 100) : false;
+                $item->digestTypeTruncate = $item->digestType ? $this->truncate($item->digestType, 30) : false;
+                $item->digestAuthorsTruncate = $item->digestAuthor ? $this->truncate($item->digestAuthor, 40) : false;
+                $item->journalTruncate = $item->journal ? $this->truncate($item->journal, 60) : false;
+                $item->authorTruncate = $item->author ? $this->truncate($item->author, 50) : false;
                 $item->createdOn = isset($item->_system->created_on->timestamp) ? $this->date->ersDate($item->_system->created_on->timestamp) : false;
                 $item->modifiedOn = isset($item->_system->modified_on->timestamp) ? $this->date->ersDate($item->_system->modified_on->timestamp) : false;
                 $item->ms = $item->_system->modified_on->ms ?? false;   
@@ -288,7 +281,8 @@ class CloudCmsParser
             $type == "ERS Skill workshop" || 
             $type == "ERS Skills course"|| 
             $type == "ERS Endorsed activity" || 
-            $type == "Hands-on"){
+            $type == "Hands-on" ||
+            $type == "ERS Webinar"){
             
             return "label-school";
         }
