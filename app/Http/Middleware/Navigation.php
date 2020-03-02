@@ -136,15 +136,15 @@ class Navigation
                 // $menu->congressAndEvents->add('Past International Congresses','congress-and-events/past-international-congresses');
                 $menu->congressAndEvents->add('Event endorsement','congress-and-events/external-events-endorsement')
                 ->link->attr(array('class' => 'ga-nav-congress-and-events'));
-                // $menu->congressAndEvents->add('Respiratory Failure and Mechanical <br /> Ventilation Conference','congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference')->nickname('rfmv')
-                // ->link->attr(array('class' => 'ga-nav-congress-and-events'));
-                // $menu->rfmv->add('Registration','congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference/rfmv-registration')->link->attr(array('style' => 'display:none'));
-                // $menu->rfmv->add('Programme','congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference/rfmv-programme')->link->attr(array('style' => 'display:none'));
-                // $menu->rfmv->add('Abstract and case submission','congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference/rfmv-abstract-and-case-submission')->link->attr(array('style' => 'display:none'));
-                // $menu->rfmv->add('Accommodation and practical information','congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference/rfmv-accommodation-and-practical-information')->link->attr(array('style' => 'display:none'));
-                // $menu->rfmv->add('Industry','congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference/rfmv-industry')->link->attr(array('style' => 'display:none'));
-                // $menu->rfmv->add('Abstract submission','congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference/rfmv-abstract-submission')->link->attr(array('style' => 'display:none'));
-                // $menu->rfmv->add('Case submission','congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference/rfmv-case-submission')->link->attr(array('style' => 'display:none'));
+                $menu->congressAndEvents->add('Respiratory Failure and Mechanical <br /> Ventilation Conference','congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference')->nickname('rfmv')
+                ->link->attr(array('class' => 'ga-nav-congress-and-events'));
+                $menu->rfmv->add('Registration','congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference/rfmv-registration')->link->attr(array('style' => 'display:none'));
+                $menu->rfmv->add('Programme','congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference/rfmv-programme')->link->attr(array('style' => 'display:none'));
+                $menu->rfmv->add('Abstract and case submission','congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference/rfmv-abstract-and-case-submission')->link->attr(array('style' => 'display:none'));
+                $menu->rfmv->add('Accommodation and practical information','congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference/rfmv-accommodation-and-practical-information')->link->attr(array('style' => 'display:none'));
+                $menu->rfmv->add('Industry','congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference/rfmv-industry')->link->attr(array('style' => 'display:none'));
+                $menu->rfmv->add('Abstract submission','congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference/rfmv-abstract-submission')->link->attr(array('style' => 'display:none'));
+                $menu->rfmv->add('Case submission','congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference/rfmv-case-submission')->link->attr(array('style' => 'display:none'));
             
                $menu->add('Publications','#publications')
                                             ->link->attr(array(
