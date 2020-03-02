@@ -169,7 +169,7 @@ class Navigation
                                             ->link->attr(array(
                                                 'target' => '_blank',
                                                 'class' => "ga-navigation"));
-                $menu->publications->add('Guidelines', 'http://www.ers-education.org/pages/default.aspx?id=2005')
+                $menu->publications->add('Guidelines', 'https://www.ers-education.org/guidelines/')
                                             ->link->attr(array(
                                                 'target' => '_blank',
                                                 'class' => "ga-navigation"));
