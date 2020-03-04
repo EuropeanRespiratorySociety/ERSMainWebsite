@@ -57,6 +57,9 @@
         <label>{{$item->eventDates}} <a href="javascript:void(0)">{{$item->eventLocation}}</a></label>
         <!--<a href=""><span class="icon s7-angle-right pull-right" style="font-size: 24px;"></span></a>-->
         </h2>
+        <!-- Should be delete after coronavirus -->
+        <div class="text-left"><br/>Information: <a href="/the-society/news/ers-statement-on-covid-19-and-the-lung-science-conference-2020">ERS Statement on COVID-19 and the Lung Science Conference</a></div>
+        <!-- End Should be delete after coronavirus -->
       </div>
 
       <div class="row">

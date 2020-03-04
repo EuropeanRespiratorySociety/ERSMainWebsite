@@ -48,9 +48,11 @@
               <p class="pull-right text-danger">Fully Booked</p>
           @endif
         </div>
+        @if($item->eventDates)
         <h2 class="text-left clearfix date-venue">
-        <label>{{$item->eventDates}}</label>
+          <label>{{$item->eventDates}}</label>
         </h2>
+        @endif
       </div>
       <div class="row" style="margin-top:20px;">
         <div class="col-md-6 col-xs-6 text-left event-items-category">

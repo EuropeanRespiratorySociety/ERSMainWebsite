@@ -310,15 +310,15 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Leslye Lacroix</strong>
+          <p class="photo_caption"><strong>Fanny-Anh Le Hoang</strong>
             Marketing &amp; Corporate Relations Coordinator<br>
             T +41 21 213 01 63<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Nicolas Luginbuhl</strong>
-            Marketing &amp; Corporate Relations Coordinator<br>
-            T +41 21 213 01 63<br>
+            Marketing &amp; Corporate Relations Senior Coordinator <br>
+            T +41 21 213 01 65<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
@@ -395,13 +395,13 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Melanie Jessner</strong>
-            Educational Programmes Coordinator<br>
+            Educational Programmes Senior Coordinator<br>
             T +41 21 213 01 85<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Albert Jimenez</strong>
-            Educational Activities Coordinator<br>
+            Educational Programmes Senior Coordinator<br>
             T +41 21 213 01 96<br>
             </p>
         </div>
@@ -424,15 +424,21 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Fanny-Anh Le Hoang</strong>
-            Educational Programmes Assistant<br>
-            T +41 21 213 01 82<br>
+          <p class="photo_caption"><strong>Anca Matei</strong>
+            Educational Programmes Coordinator<br>
+            T +41 21 213 01 94<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Anca Matei</strong>
+          <p class="photo_caption"><strong>Jenai Kisseleff</strong>
+            Educational Administrative Assistant<br>
+            T +41 21 213 01 93<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>Marco Gallardo</strong>
             Educational Programmes Assistant<br>
-            T +41 21 213 01 94<br>
+            T +41 21 213 01 51<br>
             </p>
         </div>
        
