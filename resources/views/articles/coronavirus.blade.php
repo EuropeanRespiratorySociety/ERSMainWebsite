@@ -2,8 +2,8 @@
 @section('meta')
         @include('partials.meta', array('meta' =>
               [
-              'url' => isset($category->url) ? $category->url : null , 
-              'title' => $category->title
+              'url' => "https://www.ersnet.org/the-society/news/novel-coronavirus-outbreak--update-and-information-for-healthcare-professionals", 
+              'title' => $category->subTitle
               ],
               ['pagination' => isset($pagination) ? $pagination : null]
               )) 

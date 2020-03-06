@@ -221,35 +221,30 @@ class NewsController extends Controller
         $category = $this->CC->getPublishedItem("coronavirus-section");
         $category = $this->CC->parseItems($category['rows']);
         $params['category'] = (object) $category[0];
-        
-        // if(!$category[0]->url || !$category[0]->uri){
-        //     $this->CC->setCanonical($category[0]->_qname);
-        // }
-    
-        $results = $this->CC->getAssociation($category[0]->_qname,'ers:category-association');
+            
+        $results = $this->CC->getAssociationSorted($category[0]->_qname,'ers:category-association', "_system.created_on.ms", -1);
         $items = $this->CC->parseItems($results['rows']);
-        
-        $sortedItems = $this->CC->sortItems($items);
 
-        $news =  array_where($sortedItems, function ($key, $value) {
+        $news =  array_where($items, function ($key, $value) {
             return $value->_type == "ers:article" && $value->contentType == "article";
         });
         $params['news'] = (count($news) == 0) ? false : (object)  $news;
 
-        $respiratoryDigests = array_where($sortedItems, function ($key, $value) {
+        $respiratoryDigests = array_where($items, function ($key, $value) {
             return $value->_type == "ers:digest-article";
         });
         $params['respiratoryDigests'] = (count($respiratoryDigests) == 0) ? false : (object)  $respiratoryDigests;
         
-        $webinars = array_where($sortedItems, function ($key, $value) {
+        $webinars = array_where($items, function ($key, $value) {
             return $value->_type == "ers:article" && $value->contentType == "event_webinar";
         });
         $params['webinars'] = (count($webinars) == 0) ? false : (object)  $webinars;
 
-        $events = array_where($sortedItems, function ($key, $value) {
+        $events = array_where($items, function ($key, $value) {
             return $value->_type == "ers:article" && $value->contentType != "article" && $value->contentType != "event_webinar";
         });
-        $params['events'] = (count($events) == 0) ? false : (object)  $events;
+        $sortedEvents = $this->CC->sortItems($events);
+        $params['events'] = (count($sortedEvents) == 0) ? false : (object)  $sortedEvents;
 
         return view('articles.coronavirus')->with($params); 
     }
