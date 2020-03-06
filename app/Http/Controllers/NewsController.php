@@ -211,4 +211,47 @@ class NewsController extends Controller
         return view('articles.author')->with($params); 
     }
 
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function coronavirus()
+    {
+        $category = $this->CC->getPublishedItem("coronavirus-section");
+        $category = $this->CC->parseItems($category['rows']);
+        $params['category'] = (object) $category[0];
+        
+        // if(!$category[0]->url || !$category[0]->uri){
+        //     $this->CC->setCanonical($category[0]->_qname);
+        // }
+    
+        $results = $this->CC->getAssociation($category[0]->_qname,'ers:category-association');
+        $items = $this->CC->parseItems($results['rows']);
+        
+        $sortedItems = $this->CC->sortItems($items);
+
+        $news =  array_where($sortedItems, function ($key, $value) {
+            return $value->_type == "ers:article" && $value->contentType == "article";
+        });
+        $params['news'] = (count($news) == 0) ? false : (object)  $news;
+
+        $respiratoryDigests = array_where($sortedItems, function ($key, $value) {
+            return $value->_type == "ers:digest-article";
+        });
+        $params['respiratoryDigests'] = (count($respiratoryDigests) == 0) ? false : (object)  $respiratoryDigests;
+        
+        $webinars = array_where($sortedItems, function ($key, $value) {
+            return $value->_type == "ers:article" && $value->contentType == "event_webinar";
+        });
+        $params['webinars'] = (count($webinars) == 0) ? false : (object)  $webinars;
+
+        $events = array_where($sortedItems, function ($key, $value) {
+            return $value->_type == "ers:article" && $value->contentType != "article" && $value->contentType != "event_webinar";
+        });
+        $params['events'] = (count($events) == 0) ? false : (object)  $events;
+
+        return view('articles.coronavirus')->with($params); 
+    }
+
 }
