@@ -250,12 +250,7 @@
             T +41 21 213 01 97<br>
             </p>
         </div>
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Nutcha Prakkamakul</strong>
-            Coordinator<br>
-            T +41 21 213 01 69<br>
-            </p>
-        </div>
+
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Sandy Borlat</strong>
             Assistant<br>
@@ -266,6 +261,12 @@
           <p class="photo_caption"><strong>Emma Favrod</strong>
             Assistant<br>
             T +41 21 213 01 75<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>Camille Perret-Gentil</strong>
+            Coordinator<br>
+            T +41 21 213 01 69<br>
             </p>
         </div>
       </div>
@@ -341,19 +342,25 @@
         </div>
   
         <div class="row">
-          <div class="col-md-3 col-md-offset-3 xs-mb-15">
+          <div class="col-md-4 xs-mb-15">
             <p class="photo_caption"><strong>Dawn Ould</strong>
               Senior Communications Coordinator<br>
               T +44 114 267 2866<br>
             </p>
           </div>
-          <div class="col-md-3 xs-mb-15">
+          <div class="col-md-4 xs-mb-15">
             <p class="photo_caption"><strong>Beth Maguire</strong>
               Communications Coordinator<br>
               T +44 114 267 2866<br>
               </p>
           </div>
-  
+          <div class="col-md-4 xs-mb-15">
+            <p class="photo_caption"><strong>Helen Birthwhistle</strong>
+              Communications Assistant<br>
+              T +44 114 267 2866<br>
+              </p>
+          </div>
+
         </div>
       </div>
       </div>
@@ -430,15 +437,15 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Jenai Kisseleff</strong>
-            Educational Administrative Assistant<br>
-            T +41 21 213 01 93<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Marco Gallardo</strong>
             Educational Programmes Assistant<br>
             T +41 21 213 01 51<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>Jenai Kisseleff</strong>
+            Educational Programmes Assistant<br>
+            T +41 21 213 01 93<br>
             </p>
         </div>
        
@@ -526,6 +533,19 @@
             T +44 114 267 2872<br>
             </p>
         </div>
+        <div class="col-md-4 xs-mb-15">
+          <p class="photo_caption"><strong>Jessica Denning</strong>
+            Communications & Education Coordinator<br>
+            T +44 114 322 0645<br>
+            </p>
+        </div>
+        <div class="col-md-4 xs-mb-15">
+          <p class="photo_caption"><strong>Winnie Mvunga</strong>
+            Patient Involvement & Engagement<br>
+            T +44 114 322 0651<br>
+            </p>
+        </div>
+
       </div>
     </div>
     </div>
@@ -573,7 +593,7 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Françoise Thonnard</strong>
-          Junior Accountant<br>
+          Accountant<br>
             T +41 21 213 01 21<br>
             </p>
         </div>
@@ -686,7 +706,7 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Joanne Stevenson</strong>
+          <p class="photo_caption"><strong>Amy Auer</strong>
             Membership Coordinator<br>
             T +41 21 213 01 42<br>
             </p>
@@ -813,8 +833,8 @@
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
             <img src="https://cdn.ersnet.org/images/people/executive-office/Celine-Genton.png" class="img-circle">
-            <p class="photo_caption"><strong>Celine Genton</strong>
-            Head of Scientific Activities<br>
+            <p class="photo_caption"><strong>Céline Genton</strong>
+            Director of Scientific Activities<br>
             T +41 21 213 01 59<br>
             </p>
           </div>
@@ -833,12 +853,6 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>David Rigau</strong>
-            Methodologist<br>
-            T +41 21 213 01 87<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Thomy Tonia</strong>
           Senior Methodologist<br>
             T +41 21 213 01 87<br>
@@ -846,7 +860,7 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Maeve Tsu</strong>
-            Funding Programme Assistant<br>
+            Funding Programme Coordinator<br>
             T +41 21 213 01 83<br>
             </p>
         </div>
@@ -860,6 +874,18 @@
           <p class="photo_caption"><strong>Alessandra Marguerat</strong>
             Scientific Administrative Assistant<br>
             T +41 21 213 01 66<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>Valerija Arsovski</strong>
+            Scientific Administrative Assistant<br>
+            T +41 21 213 01 58<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>Emmanuelle Berret</strong>
+            Scientific Administrative Assistant<br>
+            
             </p>
         </div>
         
