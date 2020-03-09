@@ -240,33 +240,33 @@
       <div class="row">
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Soraya Barazin</strong>
-            Senior Coordinator<br>
+            Congress &amp; Events Senior Coordinator<br>
             T +41 21 213 01 72<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Felix Yip</strong>
-            Coordinator<br>
+            Congress &amp; Events Senior Coordinator<br>
             T +41 21 213 01 97<br>
             </p>
         </div>
 
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Sandy Borlat</strong>
-            Assistant<br>
+            Congress &amp; Events Assistant<br>
             T +41 21 213 01 86<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Emma Favrod</strong>
-            Assistant<br>
-            T +41 21 213 01 75<br>
+          <p class="photo_caption"><strong>Camille Perret-Gentil</strong>
+            Congress &amp; Events Coordinator<br>
+            T +41 21 213 01 69<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Camille Perret-Gentil</strong>
-            Coordinator<br>
-            T +41 21 213 01 69<br>
+          <p class="photo_caption"><strong>Emma Favrod</strong>
+            Congress &amp; Events Assistant<br>
+            T +41 21 213 01 75<br>
             </p>
         </div>
       </div>
