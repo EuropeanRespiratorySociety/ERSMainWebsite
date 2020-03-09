@@ -253,7 +253,7 @@
 
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Sandy Borlat</strong>
-            Congress &amp; Events Assistant<br>
+            Congress &amp; Events Coordinator<br>
             T +41 21 213 01 86<br>
             </p>
         </div>
