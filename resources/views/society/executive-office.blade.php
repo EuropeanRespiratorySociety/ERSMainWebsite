@@ -884,7 +884,7 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Emmanuelle Berret</strong>
-            Scientific Administrative Assistant<br>
+            Associate Project Manager<br>
             
             </p>
         </div>
