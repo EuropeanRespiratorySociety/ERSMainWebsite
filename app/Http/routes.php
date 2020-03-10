@@ -140,11 +140,13 @@ Route::group(['prefix' => 'professional-development'], function () {
     Route::group(['prefix' => 'hermes'], function () {
         Route::get('/', 'HermesController@index');
         Route::group(['prefix' => 'adult'], function () {
+          //FBL 20200309 : Not use Route::get('/', 'HermesController@show');
           Route::get('/', 'HermesController@show');
           Route::get('/examination-committee-adult', 'HermesController@ExamCommitteeAdult');
           Route::get('/{slug}', 'HermesController@show');
         });
         Route::group(['prefix' => 'paediatric'], function () {
+          //FBL 20200309 : Not use Route::get('/', 'HermesController@show');
           Route::get('/', 'HermesController@show');
           Route::get('/examination-committee-paediatric', 'HermesController@ExamCommitteePaediatric');
           Route::get('/{slug}', 'HermesController@show');

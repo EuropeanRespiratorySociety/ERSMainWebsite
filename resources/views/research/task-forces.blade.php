@@ -26,7 +26,7 @@
           @if(isset($relatedItems))
             @include('partials.related-items', array('relatedItems' => $relatedItems)) 
           @endif
-          
+          {{-- FBL20200309 : sponsors not available for task-forces article (content type "article", no sponsors property available) --}}
           @foreach ($item->sponsors as $sponsor)
           <div class="course-sponsor text-left">
             @if($sponsor->text)
