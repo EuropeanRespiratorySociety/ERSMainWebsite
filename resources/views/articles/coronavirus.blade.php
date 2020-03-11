@@ -41,7 +41,7 @@
       <div class="page-head">
         <h2 class="">{{$item->title}}</h2>
       </div>
-      <div class="article lead">
+      <div class="article text-left lead">
         @if($item->leadParagraph){!! $item->leadParagraph !!}@endif
       </div>
       <div class="main-content" style="padding-top: 0px;">
@@ -70,7 +70,7 @@
               <div class="card-image" style="max-height:300px;height:150px;
                 background-size:100%;
                 background-repeat: no-repeat; 
-                background-image: url('https://cdn.ersnet.org/preview/node/o:a7ecb7582cc94b020050?name=image500&size=500'); 
+                background-image: url('https://cdn.ersnet.org/preview/node/o:7f042ec84d85292bcbd8?name=image500&size=500'); 
                 background-position: center ;">
               </div>
               <div class="card-content">
