@@ -18,7 +18,7 @@
     @else 
         style="height:24px;" 
     @endif >
-    @if(!isset($deleteTypeFlag) && $item->type)
+    @if($item->type)
     <span class="label {{ $item->typeColor }}">{{ $item->type }}</span>
     @endif
     @if($item->flags->text)

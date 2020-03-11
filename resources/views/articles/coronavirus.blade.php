@@ -3,7 +3,7 @@
         @include('partials.meta', array('meta' =>
               [
               'url' => "https://www.ersnet.org/the-society/news/novel-coronavirus-outbreak--update-and-information-for-healthcare-professionals", 
-              'title' => $category->subTitle
+              'title' => $item->title
               ],
               ['pagination' => isset($pagination) ? $pagination : null]
               )) 
@@ -26,64 +26,132 @@
 
 <div class="ers-content article-items">
   <div class="row">
-    {{--  Beginning Main Content Area  --}}
-    <div class="col-md-9 lighter-grey-bg article-text">
+    <div class="col-md-12 lighter-grey-bg">
+      <div class="top-box" style="height: 400px; background-image: url('{{$item->highResImage}}'); background-position: center {{$item->imageAlignment}}">
+      </div>
+    </div>
+    <div class="col-md-12 lighter-grey-bg article-text">
       <div class="header">
         <div class="clearfix notification">
-          @if($category->flags)
-            <p style="margin-top:10px;padding: 0 10px;" class="pull-right alert {{'alert-'.$category->flags->color }}">{{ $category->flags->text }}</p>
+          @if($item->flags)
+            <p style="margin-top:10px;padding: 0 10px;" class="pull-right alert {{'alert-'.$item->flags->color }}">{{ $item->flags->text }}</p>
           @endif 
         </div>
       </div>
       <div class="page-head">
-        <h2 class="">{{$category->subTitle}}</h2>
+        <h2 class="">{{$item->title}}</h2>
       </div>
-      <div class="article text-left">
-        @if($category->body){!! $category->body !!}@endif
+      <div class="article lead">
+        @if($item->leadParagraph){!! $item->leadParagraph !!}@endif
       </div>
-      @if($news)
-      <div class="row row_event">
-        <h2 class="text-left" style="padding-left: 15px;">News</h2>
-        @include('partials.items',array('items' => $news, 'deleteTypeFlag' => true))
+      <div class="main-content" style="padding-top: 0px;">
+        <div class="row row_event " style="position: relative; ">
+          <div class="col-md-4 isotope">
+            <div class="card card-event">
+              <div class="card-image" style="max-height:300px;height:150px;
+                background-size:100%;
+                background-repeat: no-repeat; 
+                background-image: url('https://cdn.ersnet.org/preview/node/o:573a0ba3e2b35f1b386b?name=image500&size=500'); 
+                background-position: center ;">
+              </div>
+              <div class="card-content">
+                <h3 class="title">
+                  <a href="/the-society/news/ers-statement-covid-19-and-upcoming-ers-events" target="_blank">COVID-19 and ERS events</a>
+                </h3>
+                <div class="lead-card">Information regarding upcoming events organised by ERS.</div>
+              </div>
+              <div class="card-action clearfix">
+                <a href="/the-society/news/ers-statement-covid-19-and-upcoming-ers-events" target="new_blank" class="btn btn-register">More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 isotope">
+            <div class="card card-event">
+              <div class="card-image" style="max-height:300px;height:150px;
+                background-size:100%;
+                background-repeat: no-repeat; 
+                background-image: url('https://cdn.ersnet.org/preview/node/o:a7ecb7582cc94b020050?name=image500&size=500'); 
+                background-position: center ;">
+              </div>
+              <div class="card-content">
+                <h3 class="title">
+                  <a href="https://www.ers-education.org/events/coronavirus-webinar-series" target="_blank">Webinars</a>
+                </h3>
+                <div class="lead-card">Expert-led webinars that provide updates on the management of COVID-19 in China, clinical consequences, epidemiology and research potential.</div>
+              </div>
+              <div class="card-action clearfix">
+                <a href="https://www.ers-education.org/events/coronavirus-webinar-series" target="new_blank" class="btn btn-register">More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 isotope">
+            <div class="card card-event">
+              <div class="card-image" style="max-height:300px;height:150px;
+                background-size:100%;
+                background-repeat: no-repeat; 
+                background-image: url('https://cdn.ersnet.org/preview/node/o:b4fd05e53e84d155b59d?name=image500&size=500'); 
+                background-position: center ;">
+              </div>
+              <div class="card-content">
+                <h3 class="title">
+                  <a href="https://erj.ersjournals.com/cc/sars-cov-2-and-covid-19" target="_blank">Publications</a>
+                </h3>
+                <div class="lead-card">The latest articles from ERS publications on SARS-CoV-2 and COVID-19. All articles are available via open access.</div>
+              </div>
+              <div class="card-action clearfix">
+                <a href="https://erj.ersjournals.com/cc/sars-cov-2-and-covid-19" target="new_blank" class="btn btn-register">More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row_event " style="position: relative; ">
+          <div class="col-md-4 isotope">
+            <div class="card card-event">
+              <div class="card-image" style="max-height:300px;height:150px;
+                background-size:100%;
+                background-repeat: no-repeat; 
+                background-image: url('https://cdn.ersnet.org/preview/node/o:8f35316c3ca9046497f6?name=image500&size=500 '); 
+                background-position: center ;">
+              </div>
+              <div class="card-content">
+                <h3 class="title">
+                  <a href="https://www.ersnet.org/professional-development/respiratory-digests" target="_blank">Research summaries</a>
+                </h3>
+                <div class="lead-card">ERS Respiratory Digests provide summaries of new and significant research, including important early COVID-19 publications.</div>
+              </div>
+              <div class="card-action clearfix">
+                <a href="https://www.ersnet.org/professional-development/respiratory-digests" target="new_blank" class="btn btn-register">More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 isotope">
+            <div class="card card-event">
+              <div class="card-image" style="max-height:300px;height:150px;
+                background-size:100%;
+                background-repeat: no-repeat; 
+                background-image: url('https://cdn.ersnet.org/preview/node/o:9433c3e520df628530f1?name=image500&size=500'); 
+                background-position: center ;">
+              </div>
+              <div class="card-content">
+                <h3 class="title">
+                  <a href="https://www.europeanlung.org/en/news-and-events/news/covid-19-%E2%80%93-your-questions-answered-by-a-respiratory-expert" target="_blank">Patient Q&A</a>
+                </h3>
+                <div class="lead-card">ERS infections experts answered questions sent to the European Lung Foundation by respiratory patients.</div>
+              </div>
+              <div class="card-action clearfix">
+                <a href="https://www.europeanlung.org/en/news-and-events/news/covid-19-%E2%80%93-your-questions-answered-by-a-respiratory-expert" target="new_blank" class="btn btn-register">More</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      @endif
-      @if($webinars)
-      <div class="row row_event">
-        <h2 class="text-left" style="padding-left: 15px;">Webinars</h2>
-        @include('partials.items', array('items' => $webinars, 'deleteTypeFlag' => true))
+      <div class="article text-left lead">
+        @if($item->body){!! $item->body !!}@endif
       </div>
-      @endif
-      @if($respiratoryDigests)
-      <div class="row row_event">
-        <h2 class="text-left" style="padding-left: 15px;">Research summaries</h2>
-        <p class="text-left" style="padding-left: 15px;">ERS Respiratory Digests provide summaries of new and significant research. The latest articles focus on important early COVID-19 publications. </p>
-        @include('partials.items', array('items' => $respiratoryDigests, 'deleteTypeFlag' => true))
-      </div>
-      @endif
-      @if($events)
-      <div class="row row_event">
-        <h2 class="text-left" style="padding-left: 15px;">Events</h2>
-        @include('partials.items', array('items' => $events))
-      </div>
-      @endif
-
-      {{-- Footer --}}
+     
       @include('footer')
     </div>
-    {{--  Beginning Right Side-bar  --}}
-    <div class="col-md-3 white-bg right-photo">
-      <div class="right-photo-inner">
-        @if($category->image)
-          <p><img src="{{ $category->image }}" class="img-rounded img-responsive"></p>
-        @endif   
-        @if($category->video)
-          <div class="videoWrapper" style="min-height:300px">
-            {!!$category->video!!} 
-          </div>
-        @endif
-      </div>
-    </div>
-    {{--  End Right Sidebar  --}}
+    
   </div>
 </div>
 

@@ -218,33 +218,9 @@ class NewsController extends Controller
      */
     public function coronavirus()
     {
-        $category = $this->CC->getPublishedItem("coronavirus-section");
-        $category = $this->CC->parseItems($category['rows']);
-        $params['category'] = (object) $category[0];
-            
-        $results = $this->CC->getAssociationSorted($category[0]->_qname,'ers:category-association', "_system.created_on.ms", -1);
-        $items = $this->CC->parseItems($results['rows']);
-
-        $news =  array_where($items, function ($key, $value) {
-            return $value->_type == "ers:article" && $value->contentType == "article";
-        });
-        $params['news'] = (count($news) == 0) ? false : (object)  $news;
-
-        $respiratoryDigests = array_where($items, function ($key, $value) {
-            return $value->_type == "ers:digest-article";
-        });
-        $params['respiratoryDigests'] = (count($respiratoryDigests) == 0) ? false : (object)  $respiratoryDigests;
-        
-        $webinars = array_where($items, function ($key, $value) {
-            return $value->_type == "ers:article" && $value->contentType == "event_webinar";
-        });
-        $params['webinars'] = (count($webinars) == 0) ? false : (object)  $webinars;
-
-        $events = array_where($items, function ($key, $value) {
-            return $value->_type == "ers:article" && $value->contentType != "article" && $value->contentType != "event_webinar";
-        });
-        $sortedEvents = $this->CC->sortItems($events);
-        $params['events'] = (count($sortedEvents) == 0) ? false : (object)  $sortedEvents;
+        $results = $this->CC->getItem("novel-coronavirus-outbreak");
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] =  (object) $item[0];
 
         return view('articles.coronavirus')->with($params); 
     }
