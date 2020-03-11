@@ -355,7 +355,7 @@
               </p>
           </div>
           <div class="col-md-4 xs-mb-15">
-            <p class="photo_caption"><strong>Helen Birthwhistle</strong>
+            <p class="photo_caption"><strong>Helen Birtwhistle</strong>
               Communications Assistant<br>
               T +44 114 267 2866<br>
               </p>
