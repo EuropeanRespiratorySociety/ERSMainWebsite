@@ -76,7 +76,8 @@
           @if($item->category->title == "Respiratory Worldwide" )
             <p><img src="https://cdn.ersnet.org/images/news/respiratory-logo.jpg" class="img-rounded img-responsive" style="width:350px;"></p>
            @endif
-        @endif        
+        @endif       
+        {{-- FBL20200309 : sponsors not available for national-and-regional-society-cooperation article (content type "article", no sponsors property available) --}} 
         @if($item->sponsors[0]->text)
           @if($item->image)
             <hr>

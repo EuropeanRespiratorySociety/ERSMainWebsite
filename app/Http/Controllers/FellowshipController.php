@@ -117,6 +117,7 @@ class FellowshipController extends Controller
      */
     public function indexIndustry()
     {   
+        // FBL20200309 : no article with this slug in CloudCMS
         $category = $this->CC->getItem('ers-fellowships-in-industry');
         $category = $this->CC->parseItems($category['rows']);
         $params['category'] = $category[0];
@@ -162,6 +163,7 @@ class FellowshipController extends Controller
         }
 
         $category = $params['item']->category->title ?? false;
+        //FBL 20200309: No article with this category
         if($category == "ERS Fellowships in Industry" ) {
             return view('professional.industry')->with($params);
         }

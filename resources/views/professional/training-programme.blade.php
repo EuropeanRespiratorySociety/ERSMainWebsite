@@ -55,6 +55,9 @@
         @if($category->image)
           <p><img src="{{ $category->image }}" class="img-rounded img-responsive"></p>
         @endif    
+        {{-- FBL20200309 : sponsors not available for thoracic-ultrasound-training-programme 
+          and endobronchial-ultrasound-certified-training-programme
+          category (no sponsors property available) --}}
         @if($category->sponsors[0]->text)
           @if($category->image)
             <hr>

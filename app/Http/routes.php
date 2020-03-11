@@ -79,6 +79,7 @@ Route::group(['prefix' => 'the-society/news'], function () {
     Route::get('respiratory-matters', 'NewsController@indexRespiratoryMatters');
     Route::get('respiratory-worldwide/{slug}', 'NewsController@show');    
     Route::get('respiratory-matters/{slug}', 'NewsController@show');    
+    Route::get('novel-coronavirus-outbreak--update-and-information-for-healthcare-professionals', 'NewsController@coronavirus');
     Route::get('/{slug}', 'NewsController@show');
 });
 
@@ -139,11 +140,13 @@ Route::group(['prefix' => 'professional-development'], function () {
     Route::group(['prefix' => 'hermes'], function () {
         Route::get('/', 'HermesController@index');
         Route::group(['prefix' => 'adult'], function () {
+          //FBL 20200309 : Not use Route::get('/', 'HermesController@show');
           Route::get('/', 'HermesController@show');
           Route::get('/examination-committee-adult', 'HermesController@ExamCommitteeAdult');
           Route::get('/{slug}', 'HermesController@show');
         });
         Route::group(['prefix' => 'paediatric'], function () {
+          //FBL 20200309 : Not use Route::get('/', 'HermesController@show');
           Route::get('/', 'HermesController@show');
           Route::get('/examination-committee-paediatric', 'HermesController@ExamCommitteePaediatric');
           Route::get('/{slug}', 'HermesController@show');

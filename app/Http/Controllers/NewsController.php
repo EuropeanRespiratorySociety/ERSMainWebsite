@@ -211,4 +211,18 @@ class NewsController extends Controller
         return view('articles.author')->with($params); 
     }
 
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function coronavirus()
+    {
+        $results = $this->CC->getItem("novel-coronavirus-outbreak");
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] =  (object) $item[0];
+
+        return view('articles.coronavirus')->with($params); 
+    }
+
 }
