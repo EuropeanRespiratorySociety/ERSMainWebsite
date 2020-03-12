@@ -885,7 +885,7 @@
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Emmanuelle Berret</strong>
             Associate Project Manager<br>
-            
+            T +41 21 213 01 82<br>
             </p>
         </div>
         
