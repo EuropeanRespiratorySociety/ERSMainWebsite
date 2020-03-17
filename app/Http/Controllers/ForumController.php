@@ -32,7 +32,7 @@ class ForumController extends Controller
         "unPublished": { "$ne": true }
     }'; 
     $listForumArticleResults = $this->CC->getContentByQuery($listForumArticleQuery, 100, -1, false);
-    $params['items'] = $this->CC->parseItems($listForumArticleResults['rows']);
+    $params['items'] = $this->CC->parseDigestItems($listForumArticleResults['rows']);
     return view('forum.main')->with($params);  
 
   }
@@ -46,7 +46,7 @@ class ForumController extends Controller
     public function show($slug)
     {
         $results = $this->CC->getItem($slug);
-        $item = $this->CC->parseItems($results['rows']);
+        $item = $this->CC->parseDigestItems($results['rows']);
         $params['item'] =  (object) $item[0]; 
         
         if(!$item[0]->url || !$item[0]->uri){

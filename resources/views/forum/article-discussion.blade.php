@@ -31,50 +31,52 @@
       background: #D0F8CE;
       color: #0D5302;
     }
+
+
+
+
 </style>
 
 <div class="ers-content event-items-content">
     <div class="main-content">
-      <div class="col-md-9 center-block lead text-center">
+      <div class="col-md-7 center-block lead text-left">
+
         <div class="row" style="margin-top:40px;">
             <div class="col-md-6 col-xs-6 text-left event-items-category">
-             @if($item->flags->text)<p><em>{{$item->flags->text}}</em></p>@endif
-              View <a href="/coronavirus/discussion-forum">all Discussion</a>
+              <p><em>{{$item->digestType}}</em></p>
+                View <a href="/coronavirus/discussion-forum">all Discussion</a>
             </div>
         </div>
-        <h2 class="article-title" style="margin-top:50px;">{{$item->title}}</h2>
-        <h4 class="">@if($item->subTitle){{$item->subTitle}}@endif</h4>
-        <div style="margin: 30px 0 8px;">
-          <h4 style="font-family: Amiri, serif;"><strong>Author(s):</strong> {{$item->organisers}}</h4>
-          <p>{!! $item->references !!}</a></p>
-        </div>
-        @if($item->diseases || $item->methods)
-          <div class="md-chips">
-            @if($item->diseases)
-              @foreach ($item->diseases as $disease)
-                <div class="md-chip md-chip-disease">{{$disease}}</div>
-              @endforeach
-            @endif
-            @if($item->methods)
-              @foreach ($item->methods as $method)
-                <div class="md-chip md-chip-method">{{$method}}</div>
-              @endforeach
+          <h2 class="article-title" style="margin-top:50px;">{{$item->title}}</h2>
+          <div style="margin: 30px 0 8px;">
+            <h4 style="font-family: Amiri, serif;"><strong>Author(s):</strong> {{$item->author}}</h4>
+            <p><a href="{{$item->journalLink}}" target="_blank">{{$item->journal}}</a></p>
+          </div>
+          @if($item->diseases || $item->methods)
+            <div class="md-chips">
+              @if($item->diseases)
+                @foreach ($item->diseases as $disease)
+                  <div class="md-chip md-chip-disease">{{$disease}}</div>
+                @endforeach
+              @endif
+              @if($item->methods)
+                @foreach ($item->methods as $method)
+                  <div class="md-chip md-chip-method">{{$method}}</div>
+                @endforeach
+              @endif
+            </div>
+          @endif
+          <div style="margin-top:60px;">
+            <p ><span style="color:#015291;font-family: Amiri, serif;"><strong>Digest Author(s):</strong> {{$item->digestAuthor}}</span>&nbsp;/&nbsp;{{$item->createdOn}}</p>
+            @if($item->lead)
+              <div class="lead center-block" style="font-family: Amiri, serif;">{!! $item->lead !!}</div>
             @endif
           </div>
-        @endif
-        <div style="margin-top:60px;">
-          @if($item->lead)
-            <div class="lead center-block" style="font-family: Amiri, serif;">{!! $item->lead !!}</div>
+          @if($item->comments == true)
+          <hr>
+          <div id="disqus_thread"></div>
           @endif
-        </div>
-       
-      </div>
-      <div class="col-md-10 center-block ">
-        @if($item->comments == true)
-        <hr>
-        <div id="disqus_thread"></div>
-        @endif
-      </div>
+      </div>{{-- col-md-7 --}}
     </div>{{-- main-content --}}
 </div> {{-- ers-content --}}
 @stop()  

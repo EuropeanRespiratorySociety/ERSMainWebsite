@@ -32,29 +32,29 @@
 
         <div class="section fp-autoa-height faqs-content ">
             <div class="main-content light-grey-bg">
-              <div class="col-md-10 center-block row row_event " style="display: flex; flex-wrap: wrap;">
-                @foreach ($items as $index => $item)
+              <div class="col-md-10 center-block row row_event " id="respiratory-digest" style="display: flex; flex-wrap: wrap;">
+                @foreach ($items as $index => $digest)
                 <div class="col-md-4 isotope">
                   <div class="card card-event">
                     <div class="card-content text-left">
-                        @if(isset($item->flag->text))
-                            <p class="btn-rounded early_bird" >{{$item->flag->text}}</p>
-                        @endif
-                        <p style="color:#015291;"><strong>Article Author(s): {{$item->organisers}}</strong></p>
+                      <p class="btn-rounded early_bird" >{{$digest->digestTypeTruncate}}</p>
+                        <p style="color:#015291;"><strong>Digest Author(s): {{$digest->digestAuthorsTruncate}}</strong></p>
                         <h3 class="title" style="text-transform: none;">
-                          @if($item->uri)
-                            <a href='{{$item->uri}}'> {{$item->title}} </a>
+                          @if($digest->uri)
+                            <a href='{{$digest->uri}}'> {{$digest->titleTruncate}} </a>
                           @else
-                            <a href="{{$_SERVER['REQUEST_URI']}}/{{$item->slug}}"> {{$item->title}} </a>
+                            <a href="{{$_SERVER['REQUEST_URI']}}/{{$digest->slug}}"> {{$digest->titleTruncate}} </a>
                           @endif
                         </h3>
-                        {!! $item->shortLead !!}
+                        <p>Author(s): {{$digest->authorTruncate}} </p>
+                        <p><a href="{{$digest->journalLink}}"target="_blank">{{$digest->journalTruncate}}</a></p>
+                        {!! $digest->shortLead !!}
                       </div>'
                       <div class="card-action clearfix">
-                        @if($item->uri)
-                          <a href="{{$item->uri}}" class="btn btn-register">more</a>
+                        @if($digest->uri)
+                          <a href="{{$digest->uri}}" class="btn btn-register">more</a>
                         @else
-                          <a href="{{$_SERVER['REQUEST_URI']}}/{{$item->slug}}" class="btn btn-register">more</a>
+                          <a href="{{$_SERVER['REQUEST_URI']}}/{{$digest->slug}}" class="btn btn-register">more</a>
                         @endif
                       </div>
                   </div>
