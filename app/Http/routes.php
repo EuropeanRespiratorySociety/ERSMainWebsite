@@ -81,6 +81,12 @@ Route::group(['prefix' => 'the-society/news'], function () {
     Route::get('respiratory-matters/{slug}', 'NewsController@show');    
     Route::get('novel-coronavirus-outbreak--update-and-information-for-healthcare-professionals', 'NewsController@coronavirus');
     Route::get('/{slug}', 'NewsController@show');
+   
+});
+
+Route::group(['prefix' => 'coronavirus'], function () {
+  Route::get('discussion-forum', 'ForumController@index');
+  Route::get('discussion-forum/{slug}', 'ForumController@show');
 });
 
 //Few redirects to avoid user missbehaviours

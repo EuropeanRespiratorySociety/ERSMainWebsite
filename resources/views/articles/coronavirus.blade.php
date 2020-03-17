@@ -143,6 +143,25 @@
               </div>
             </div>
           </div>
+          <div class="col-md-4 isotope">
+            <div class="card card-event">
+              <div class="card-image" style="max-height:300px;height:150px;
+                background-size:100%;
+                background-repeat: no-repeat; 
+                background-image: url('https://cdn.ersnet.org/preview/node/o:8f35316c3ca9046497f6?name=image500&size=500 '); 
+                background-position: center ;">
+              </div>
+              <div class="card-content" style="min-height: 180px;">
+                <h3 class="title">
+                  <a href="/coronavirus/discussion-forum" target="_blank">Forum Discussion</a>
+                </h3>
+                <div class="lead-card" >ERS Coronavis forum discussion provide bla bla bla.</div>
+              </div>
+              <div class="card-action clearfix">
+                <a href="/coronavirus/discussion-forum" target="new_blank" class="btn btn-register">More</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="article text-left lead">
