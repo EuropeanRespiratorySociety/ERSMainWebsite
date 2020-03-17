@@ -26,7 +26,7 @@
           @if(isset($relatedItems))
             @include('partials.related-items', array('relatedItems' => $relatedItems)) 
           @endif
-          
+          {{-- FBL20200309 : sponsors not available for task-forces article (content type "article", no sponsors property available) --}}
           @foreach ($item->sponsors as $sponsor)
           <div class="course-sponsor text-left">
             @if($sponsor->text)
@@ -78,9 +78,9 @@
               APPLICATION DEADLINE : <br>
             </p>
             <div style="clear:left;">
-              <p style="margin-top: 8px;">ERS/ATS joint Task Forces: <br /><strong>31 July 2019</strong></p>
-              <p style="margin-top: 8px;">ERS Short Guideline and Short Statement: <br /><strong>Year-round</strong></p>
               <p style="margin-top: 8px;">ERS Guidelines, Statement and Technical Standard: <br /><strong>01 February 2020 and 01 June 2020</strong></p>
+              <p style="margin-top: 8px;">ERS Short Guideline and Short Statement: <br /><strong>Year-round</strong></p>
+              <p style="margin-top: 8px;">ERS/ATS joint Task Forces: <br /><strong>31 July 2020</strong></p>
             </div>
           </a>
           @if($item->deadlines->notification || $item->deadlines->notification2)

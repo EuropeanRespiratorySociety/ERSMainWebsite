@@ -56,8 +56,7 @@
 
       <div class="row">
           <div class="col-md-9 col-md-offset-1 xs-mb-15">
-              <img src="http://localhost:8888/images/people/leadership/Carolin-Selbach.png" class="img-circle" style="margin-top:20px;">
-              {{-- <img src="https://cdn.ersnet.org/images/people/leadership/Carolin-Selbach.png" class="img-circle" style="margin-top:20px;"> --}}
+              <img src="https://cdn.ersnet.org/images/people/leadership/Carolin-Selbach.png" class="img-circle" style="margin-top:20px;">
                <p class="photo_caption"><strong>Carolin Selbach</strong>PhD Candidate at Maastricht University<br></p>
            </div>
        </div>

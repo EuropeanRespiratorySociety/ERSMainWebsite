@@ -1,3 +1,4 @@
+{{-- FBL 20200309: Blade file not use --}}
 @extends('template')
 @section('meta')
         @include('partials.meta', array('meta' =>

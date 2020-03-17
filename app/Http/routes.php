@@ -79,6 +79,7 @@ Route::group(['prefix' => 'the-society/news'], function () {
     Route::get('respiratory-matters', 'NewsController@indexRespiratoryMatters');
     Route::get('respiratory-worldwide/{slug}', 'NewsController@show');    
     Route::get('respiratory-matters/{slug}', 'NewsController@show');    
+    Route::get('novel-coronavirus-outbreak--update-and-information-for-healthcare-professionals', 'NewsController@coronavirus');
     Route::get('/{slug}', 'NewsController@show');
 });
 
@@ -104,13 +105,14 @@ Route::group(['prefix' => 'congress-and-events'], function () {
     Route::get('metabolic-alterations-in-lung-ageing-and-disease', 'LscController@index');
     Route::get('metabolic-alterations-in-lung-ageing-and-disease/{slug}', 'LscController@show');
     Route::get('the-lung-science-conference/{slug}', 'LscController@show');
-    Route::get('respiratory-failure-and-mechanical-ventilation-conference', 'LscController@acuteRespiratoryFailure');
     Route::get('events-calendar', 'CalendarController@index');
     Route::get('ers-2018', 'LscController@paris');
     Route::get('ers-respiratory-updates', 'LscController@respiratoryUpdate');
     Route::get('ers-satellite', 'LscController@ersSatellite');
-    Route::get('ers-respiratory-failure-and-mechanical-ventilation-conference', 'RfmvController@index');
-    Route::get('ers-respiratory-failure-and-mechanical-ventilation-conference/{slug}', 'RfmvController@show');
+    Route::get('ers-respiratory-failure-and-mechanical-ventilation-conference', 'EventController@rfmvIndex');
+    Route::get('ers-respiratory-failure-and-mechanical-ventilation-conference/{slug}', 'EventController@rfmvShow');
+    Route::get('ers-lung-science-conference', 'EventController@lscIndex');
+    Route::get('ers-lung-science-conference/{slug}', 'EventController@lscShow');
     Route::get('/{slug}', 'GeneralController@show');
 });
 
@@ -138,11 +140,13 @@ Route::group(['prefix' => 'professional-development'], function () {
     Route::group(['prefix' => 'hermes'], function () {
         Route::get('/', 'HermesController@index');
         Route::group(['prefix' => 'adult'], function () {
+          //FBL 20200309 : Not use Route::get('/', 'HermesController@show');
           Route::get('/', 'HermesController@show');
           Route::get('/examination-committee-adult', 'HermesController@ExamCommitteeAdult');
           Route::get('/{slug}', 'HermesController@show');
         });
         Route::group(['prefix' => 'paediatric'], function () {
+          //FBL 20200309 : Not use Route::get('/', 'HermesController@show');
           Route::get('/', 'HermesController@show');
           Route::get('/examination-committee-paediatric', 'HermesController@ExamCommitteePaediatric');
           Route::get('/{slug}', 'HermesController@show');
@@ -159,12 +163,12 @@ Route::group(['prefix' => 'professional-development'], function () {
     });
 
     Route::group(['prefix' => 'cpd'], function () {
-      Route::get('/{slug}', 'CpdController@show');
+      Route::get('/', 'CpdController@index');
+      Route::get('/{qname}', 'CpdController@showRecommendation');
     });
 
     Route::group(['prefix' => 'phd-overview'], function () {
       Route::get('/', 'CpdController@phd');
-      Route::get('/{slug}', 'CpdController@show');
     });
 
     Route::get('ers-curriculum-design-a-summary-of-projects', 'GeneralController@curriculmDesign');
@@ -191,6 +195,7 @@ Route::group(['prefix' => 'professional-development'], function () {
         return view('advocacy.policy-areas');
     });
     Route::get('advocacy/policy-areas/{slug}', 'GeneralController@show');
+    Route::get('advocacy/mep-lung-health-group', function(){ return view('advocacy.mep-lung-health-group');});
     Route::get('advocacy/{slug}', 'GeneralController@show');
     Route::get('related/{slug}', 'GeneralController@show');
 

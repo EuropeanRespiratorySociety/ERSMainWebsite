@@ -54,6 +54,17 @@
             @endif
           @endif
         @endif
+
+        @if($item->video)
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-xs-12" style="padding-bottom:40px;min-height:300px;">
+              <div class="videoWrapper">
+                {!!$item->video!!} 
+              </div>
+          </div>
+        </div>
+        @endif
+
         @if($item->lead){!! $item->lead !!}@endif
         @if($item->body){!! $item->body !!}@endif
       </div>
@@ -64,13 +75,14 @@
       {{-- Footer --}}
       @include('footer')
     </div>
-    {{--  Beginning Main Content Area  --}}
+    {{--  Closing Main Content Area  --}}
     {{--  Beginning Right Side-bar  --}}
     <div class="col-md-3 white-bg right-photo">
       <div class="right-photo-inner" style="position: static; padding: 15px;">
         @if($item->image)
           <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
         @endif
+        {{-- FBL20200309 : sponsors not available for ers-hermes-examinations article (content type "article", no sponsors property available) --}}
         @if($item->sponsors[0]->text)
           @if($item->image)
             <hr>
@@ -85,11 +97,11 @@
         @if($item->loc->lat && $item->loc->long)
             <div id="map"></div>
         @endif
-        @if($item->video)
+        {{-- @if($item->video)
           <div class="videoWrapper" style="min-height:300px">
             {!!$item->video!!} 
           </div>
-        @endif
+        @endif --}}
         @if(isset($relatedItems))
           @include('partials.related-items', array('relatedItems' => $relatedItems)) 
         @endif

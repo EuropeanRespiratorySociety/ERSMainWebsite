@@ -57,6 +57,9 @@
         <label>{{$item->eventDates}} <a href="javascript:void(0)">{{$item->eventLocation}}</a></label>
         <!--<a href=""><span class="icon s7-angle-right pull-right" style="font-size: 24px;"></span></a>-->
         </h2>
+        <!-- Should be delete after coronavirus -->
+        <div class="text-left"><br/>Information: <a href="/the-society/news/ers-statement-on-covid-19-and-the-lung-science-conference-2020">ERS Statement on COVID-19 and the Lung Science Conference</a></div>
+        <!-- End Should be delete after coronavirus -->
       </div>
 
       <div class="row">
@@ -115,14 +118,6 @@
         @if($item->venue)
           <li class="active"><a href="#venue" data-toggle="tab">
             <span class="icon icon-hotel"></span>Registration and<br>accommodation</a>
-          </li>
-        @endif
-        @if($item->bursaryApplication->text
-            || $item->bursaryApplication->deadline
-            || $item->bursaryApplication->notificationOfResults
-            || $item->bursaryApplication->applyButtonUrl)
-          <li><a href="#bursary" data-toggle="tab">
-            <span class="icon s7-piggy"></span>Bursary<br>application</a>
           </li>
         @endif
         </ul>
@@ -246,27 +241,6 @@
             </div>
 
           </div>
-          @if($item->bursaryApplication->text
-              || $item->bursaryApplication->deadline
-              || $item->bursaryApplication->notificationOfResults
-              || $item->bursaryApplication->applyButtonUrl)
-          <div id="bursary" class="tab-pane cont">
-                     @if($item->bursaryApplication->text)
-                     {!!$item->bursaryApplication->text!!}
-                     @endif
-                     <ul>
-                       @if($item->bursaryApplication->deadline)
-                        <li>Bursaries application deadline: <b>{{$item->bursaryApplication->deadline}}</b></li>
-                       @endif
-                       @if($item->bursaryApplication->notificationOfResults)
-                        <li>Notification of selection results: <b>{{$item->bursaryApplication->notificationOfResults}}</b></li>
-                       @endif
-                    </ul>
-                     @if($item->bursaryApplication->applyButtonUrl)
-                        <a href="{{$item->bursaryApplication->applyButtonUrl}}" class="btn btn-primary tab-register-bt">Apply</a>
-                     @endif
-          </div>
-          @endif
         </div>
       </div>
 

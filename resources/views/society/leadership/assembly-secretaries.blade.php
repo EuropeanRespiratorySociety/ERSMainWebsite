@@ -16,13 +16,13 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Leo-Heunks.png" class="img-circle">
-		            <p class="photo_caption"><strong>Leo Heunks</strong>
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Marcus-Schultz.png" class="img-circle">
+		            <p class="photo_caption"><strong>Marcus Schultz</strong>
 		            Respiratory Intensive Care <br>
 		        </div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Catherine_Green.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Catherine Greene</strong>
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Silke-Meiners.png" class="img-circle">
+		            <p class="photo_caption"><strong>Silke Meiners</strong>
 		            Basic and translational sciences<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
@@ -71,7 +71,7 @@
 		            Interstitial Lung Diseases<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/ANTON-VONK-NOORDEGRAAF.png" class="img-circle">
+		            <img src="https://cdn.ersnet.org/images/people/leadership/A-Vonk-Noordegraaf.png" class="img-circle">
 		            <p class="photo_caption"><strong>Anton Vonk Noordegraaf</strong>
 		            Pulmonary Vascular Diseases<br>
 		        </div>

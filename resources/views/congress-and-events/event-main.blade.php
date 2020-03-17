@@ -11,37 +11,60 @@
 @section('content')
 
 <style>
-  .alert-mobile-position span.banner-text {
-    display: block;
-    width: auto;
-    line-height: 22px;
-    margin-bottom: 10px;
-    text-align: center;
+  .alert-mobile-position div.banner-text {
+    font-family:DinPro,sans-serif;
+    font-size: 16px;
+    display: table-cell;
+    vertical-align:middle;
+    text-align: left;
+    float: none;
+    padding-right: 10px;
+    width: 90%;
   }
   
-  .alert-mobile-position span.banner-link {
-    display: block;
-    width: auto;
-    text-align: center;
-    text-transform: uppercase;
-    }
-  
-  
-  
-  @media screen and (min-width: 1024px){
-    .alert-mobile-position span.banner-text {
-      display: inline-block;
-      line-height: 43px;
-      margin-bottom: 0px;
-    }
-  
-    .alert-mobile-position span.banner-link {
-    display: block;
-    width: auto;
-    float: right;
-    text-transform: uppercase;
-    }
+  .alert-mobile-position div.banner-link {
+    display: table-cell;
+    vertical-align:middle;
+    float: none;
   }
+  
+  .alert-mobile-position div.banner-link span {
+    font-family:DinPro,sans-serif;
+    font-size: 16px;
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    display: table-cell;
+    vertical-align:middle;
+    float: none;
+    min-width: 160px;
+  }
+
+
+  @media screen and (max-width: 480px) {
+    .alert-mobile-position div.banner-text {
+      text-align: center;
+      display: block;
+      width: auto;
+      margin-bottom: 5px;
+    }
+
+    .alert-mobile-position div.banner-link {
+      display: block;
+      width: 100%;
+    }
+
+    .alert-mobile-position div.banner-link span {
+      display: block;
+      width: 100%;
+      
+    }
+
+
+  }
+
+
   </style>
 
 <div class="ers-content">
@@ -54,30 +77,40 @@
         <div class="main-content">
           <div class="page-head" style="margin-bottom: 0px;">
             <h2>{{$item->title}}</h2>
+            @if($item->subTitle)
             <h3 class="text-center clearfix date-venue" style="font-family:DinPro,sans-serif;font-size: 20px;color:#016fc4;margin-top:0;">
-              #RFMV2020
+              {{$item->subTitle}}
             </h3>
+            @endif
           </div>
 
           <h3 class="text-center clearfix date-venue" style="font-family:DinPro,sans-serif;font-size: 20px;margin-bottom: 20px;margin-top: 35px;">
-            {{$item->eventDates}} @if(isset($item->eventLocation)){{$item->eventLocation}}</a>@endif
+            {{$item->eventDates}} @if(isset($item->eventLocation)){{$item->eventLocation}}@endif
           </h3>
 
-          @if($item->registerButton->link)
-          <div role="alert" class="alert alert-info alert-dismissible alert-mobile-position center-block col-md-5 col-xs-12" style="margin-bottom: 10px; padding: 10px 18px;">
-            <div class="row">
-              <div class="col-md-12 col-xs-12 text-left">
-                <span class="banner-text" style="font-size: 16px;">{{ $item->registerButton->bannerText }}</span>
-                <span class="banner-link" style="font-family:DinPro,sans-serif;font-size: 16px;background-color: #FFF; padding: 10px;border-radius: 3px;">
-                  <a href="{{$item->registerButton->link}}" target="new_blank" style="color: #116FC3;">
-                      {{ $item->registerButton->text or Register}}
-                  </a>
-                </span>
+
+          @if($item->registerButton->bannerText)
+          <div class="row">
+            <div class="alert alert-info alert-mobile-position col-md-8 col-xs-10  offset-xs-1 center-block" style="display: table; height: 100%;">
+              <div class="banner-text">
+                {!! $item->registerButton->bannerText !!}
               </div>
+              @if($item->registerButton->link)
+                <div class="banner-link">
+                  <span class="banner-link">
+                    <a href="{{$item->registerButton->link}}" target="new_blank" style="color: #116FC3;">
+                      {{ $item->registerButton->text or Register}}
+                    </a>
+                  </span>
+                </div>
+              @endif
             </div>
           </div>
           @endif
-          <div class="col-md-7 center-block lead text-left" style="margin-top: 50px;">
+
+
+
+          <div class="col-md-8 center-block lead text-left" style="margin-top: 50px;">
             {!! $item->body !!}
           </div>
 
@@ -87,8 +120,8 @@
                     <div class="col-md-4 isotope">
                       <div class="card card-event">
                         @if($relatedItem->highResImage)
-                          <div class="card-image" style="height: 150px;background-repeat: no-repeat; background-image: url('{{$relatedItem->highResImage}}'); 
-                              background-position: center; background-size:100%;">
+                          <div class="card-image" style="max-height:300px;height:150px;background-repeat: no-repeat; background-image: url('{{$relatedItem->highResImage}}'); 
+                              background-position: center; background-size:cover;">
                           </div>
                         @endif
 

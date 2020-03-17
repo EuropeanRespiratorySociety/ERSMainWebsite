@@ -43,9 +43,6 @@ class CloudCmsParser
     }
 
 	public function parse($items, $lead = false){
-        //   if(empty($items) && App::environment() != 'local' && request()->path() != "search"){
-        //         abort(404);
-        //     }
             foreach ($items as $key => $i){
                 //$item += $this->model;
                 $item = array_replace_recursive($this->model, $i);
@@ -61,7 +58,6 @@ class CloudCmsParser
                 //We could cache the request?
                 //We create an object to simplify manipulations
                 $item = json_decode($item->toJson());
-                //dd($item);
                 /** 
                 * Formating the properties
                 */
@@ -95,14 +91,6 @@ class CloudCmsParser
                         $item->venue->info = Markdown::parse($item->venue->info);
 
                     }
-
-                    // if($item->venue->streetAddress && $item->venue->city && $item->venue->postalCode){
-                    //     if(!$item->loc->lat || !$item->loc->long){
-                    //         $coordinates = $this->helper->getCoordinates($item->venue);
-                    //         $this->helper->setCoordinates($item->_qname, $coordinates['lat'], $coordinates['lng'], $coordinates['accuracy']);
-                    //     }
-                    // }
-
 
                     if($item->suggestedAccommodation){
                         $this->parseVenues($item->suggestedAccommodation);
@@ -223,17 +211,22 @@ class CloudCmsParser
                     $item->ms = $item->_system->modified_on->ms ?? false;   
                     $item->shortLead = $item->leadParagraph ? $this->truncate(strip_tags(Markdown::parse($item->leadParagraph)), 145) : false;
                     $item->hasRelatedArticles = $item->_statistics->{'ers:related-association'} ?? 0;
+                    $item->hasRelatedCpdModules = $item->_statistics->{'ers:cpd-article-module-association'} ?? 0;
+                    $item->hasRelatedModules = $item->_statistics->{'ers:article-module-association'} ?? 0;
                     $item->hasAuthor = $item->_statistics->{'ers:author-association'} ?? 0;
                     $item->salutation = $item->salutation ?? false;
                     $item->firstName = $item->firstName ?? false;
                     $item->lastName = $item->lastName ?? false;
+
+                    $item->diseaseModules = $this->concatCpdModules($item);
                     //removing empty arrays
                     foreach($item as $k => $v){
                         if(empty($v)){
                             $item->$k = false; 
                         }
                     }
-                    $this->parsed[$key] = $item;               
+                    $this->parsed[$key] = $item;            
+
                 }
             }
             return $this->parsed; 
@@ -257,6 +250,11 @@ class CloudCmsParser
                 $item->lead = Markdown::parse($item->leadParagraph);
 
                 // Added fields to the model
+                $item->titleTruncate = $item->title ? $this->truncate($item->title, 100) : false;
+                $item->digestTypeTruncate = $item->digestType ? $this->truncate($item->digestType, 30) : false;
+                $item->digestAuthorsTruncate = $item->digestAuthor ? $this->truncate($item->digestAuthor, 40) : false;
+                $item->journalTruncate = $item->journal ? $this->truncate($item->journal, 60) : false;
+                $item->authorTruncate = $item->author ? $this->truncate($item->author, 50) : false;
                 $item->createdOn = isset($item->_system->created_on->timestamp) ? $this->date->ersDate($item->_system->created_on->timestamp) : false;
                 $item->modifiedOn = isset($item->_system->modified_on->timestamp) ? $this->date->ersDate($item->_system->modified_on->timestamp) : false;
                 $item->ms = $item->_system->modified_on->ms ?? false;   
@@ -283,7 +281,8 @@ class CloudCmsParser
             $type == "ERS Skill workshop" || 
             $type == "ERS Skills course"|| 
             $type == "ERS Endorsed activity" || 
-            $type == "Hands-on"){
+            $type == "Hands-on" ||
+            $type == "ERS Webinar"){
             
             return "label-school";
         }
@@ -376,5 +375,37 @@ class CloudCmsParser
         return $array['0'];
     }
 
-
+    public function concatCpdModules($item){
+        $diseaseModules = [];
+        if(isset($item->cpdAirwayDisease)){
+            $diseaseModules = array_merge($diseaseModules, $item->cpdAirwayDisease);
+        }
+        if(isset($item->cpdInterstitialDisease)){
+            $diseaseModules = array_merge($diseaseModules, $item->cpdInterstitialDisease);
+        }
+        if(isset($item->cpdPaediatricDisease)){
+            $diseaseModules = array_merge($diseaseModules, $item->cpdPaediatricDisease);
+        }
+        if(isset($item->cpdPulmonaryDisease)){
+            $diseaseModules = array_merge($diseaseModules, $item->cpdPulmonaryDisease);
+        }
+        if(isset($item->cpdCriticalCareDisease)){
+            $diseaseModules = array_merge($diseaseModules, $item->cpdCriticalCareDisease);
+        }
+        if(isset($item->cpdInfectionsDisease)){
+            $diseaseModules = array_merge($diseaseModules, $item->cpdInfectionsDisease);
+        }
+        if(isset($item->cpdSleepDisease)){
+            $diseaseModules = array_merge($diseaseModules, $item->cpdSleepDisease);
+        }
+        if(isset($item->cpdThoracicDisease)){
+            $diseaseModules = array_merge($diseaseModules, $item->cpdThoracicDisease);
+        }
+        $positionNumber = 1;
+        foreach($diseaseModules as $index => $diseaseModule){
+            $diseaseModule->positionNumber = $positionNumber++;
+            $diseaseModule->body = Markdown::parse($diseaseModule->body);
+        }
+        return $diseaseModules;
+    }
 }
