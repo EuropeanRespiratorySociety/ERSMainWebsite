@@ -35,7 +35,7 @@
 
 <div class="ers-content event-items-content">
     <div class="main-content">
-      <div class="col-md-12 center-block lead text-center">
+      <div class="col-md-9 center-block lead text-center">
         <div class="row" style="margin-top:40px;">
             <div class="col-md-6 col-xs-6 text-left event-items-category">
              @if($item->flags->text)<p><em>{{$item->flags->text}}</em></p>@endif
@@ -69,7 +69,7 @@
         </div>
        
       </div>
-      <div class="col-md-12 center-block ">
+      <div class="col-md-10 center-block ">
         @if($item->comments == true)
         <hr>
         <div id="disqus_thread"></div>
