@@ -31,27 +31,17 @@
       background: #D0F8CE;
       color: #0D5302;
     }
-
-
-
-
 </style>
 
 <div class="ers-content event-items-content">
     <div class="main-content">
       <div class="col-md-7 center-block lead text-left">
-
         <div class="row" style="margin-top:40px;">
             <div class="col-md-6 col-xs-6 text-left event-items-category">
-              <p><em>{{$item->digestType}}</em></p>
-                View <a href="/coronavirus/discussion-forum">all Discussion</a>
+                View <a href="/covid-19-blog">all COVID-19 Blog</a>
             </div>
         </div>
           <h2 class="article-title" style="margin-top:50px;">{{$item->title}}</h2>
-          <div style="margin: 30px 0 8px;">
-            <h4 style="font-family: Amiri, serif;"><strong>Author(s):</strong> {{$item->author}}</h4>
-            <p><a href="{{$item->journalLink}}" target="_blank">{{$item->journal}}</a></p>
-          </div>
           @if($item->diseases || $item->methods)
             <div class="md-chips">
               @if($item->diseases)
@@ -67,10 +57,8 @@
             </div>
           @endif
           <div style="margin-top:60px;">
-            <p ><span style="color:#015291;font-family: Amiri, serif;"><strong>Digest Author(s):</strong> {{$item->digestAuthor}}</span>&nbsp;/&nbsp;{{$item->createdOn}}</p>
-            @if($item->lead)
-              <div class="lead center-block" style="font-family: Amiri, serif;">{!! $item->lead !!}</div>
-            @endif
+            <p ><span style="color:#015291;font-family: Amiri, serif;"><strong>Blog Author(s):</strong> {{$item->author}}</span>&nbsp;/&nbsp;{{$item->createdOn}}</p>
+            <div class="lead center-block" style="font-family: Amiri, serif;">{!! $item->lead !!}</div>
           </div>
           @if($item->comments == true)
           <hr>

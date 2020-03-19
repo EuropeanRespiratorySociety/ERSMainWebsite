@@ -61,7 +61,7 @@
                 <div class="lead-card">Information regarding upcoming events organised by ERS.</div>
               </div>
               <div class="card-action clearfix">
-                <a href="/the-society/news/ers-statement-covid-19-and-upcoming-ers-events" target="new_blank" class="btn btn-register">More</a>
+                <a href="/the-society/news/ers-statement-covid-19-and-upcoming-ers-events" target="_blank" class="btn btn-register">More</a>
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@
                 <div class="lead-card">Expert-led webinars that provide updates on the management of COVID-19 in China, clinical consequences, epidemiology and research potential.</div>
               </div>
               <div class="card-action clearfix">
-                <a href="https://www.ers-education.org/events/coronavirus-webinar-series" target="new_blank" class="btn btn-register">More</a>
+                <a href="https://www.ers-education.org/events/coronavirus-webinar-series" target="_blank" class="btn btn-register">More</a>
               </div>
             </div>
           </div>
@@ -99,7 +99,7 @@
                 <div class="lead-card">The latest articles from ERS publications on SARS-CoV-2 and COVID-19. All articles are available via open access.</div>
               </div>
               <div class="card-action clearfix">
-                <a href="https://erj.ersjournals.com/cc/sars-cov-2-and-covid-19" target="new_blank" class="btn btn-register">More</a>
+                <a href="https://erj.ersjournals.com/cc/sars-cov-2-and-covid-19" target="_blank" class="btn btn-register">More</a>
               </div>
             </div>
           </div>
@@ -120,7 +120,7 @@
                 <div class="lead-card" >ERS Respiratory Digests provide summaries of new and significant research, including important early COVID-19 publications.</div>
               </div>
               <div class="card-action clearfix">
-                <a href="/professional-development/respiratory-digests" target="new_blank" class="btn btn-register">More</a>
+                <a href="/professional-development/respiratory-digests" target="_blank" class="btn btn-register">More</a>
               </div>
             </div>
           </div>
@@ -139,7 +139,7 @@
                 <div class="lead-card">ERS infections experts answered questions sent to the European Lung Foundation by respiratory patients.</div>
               </div>
               <div class="card-action clearfix">
-                <a href="https://www.europeanlung.org/en/news-and-events/news/covid-19-%E2%80%93-your-questions-answered-by-a-respiratory-expert" target="new_blank" class="btn btn-register">More</a>
+                <a href="https://www.europeanlung.org/en/news-and-events/news/covid-19-%E2%80%93-your-questions-answered-by-a-respiratory-expert" target="_blank" class="btn btn-register">More</a>
               </div>
             </div>
           </div>
@@ -153,12 +153,12 @@
               </div>
               <div class="card-content" style="min-height: 180px;">
                 <h3 class="title">
-                  <a href="/coronavirus/discussion-forum" target="_blank">Forum Discussion</a>
+                  <a href="/covid-19-blog" target="_blank">COVID-19 Blog</a>
                 </h3>
-                <div class="lead-card" >ERS Coronavis forum discussion provide bla bla bla.</div>
+                <div class="lead-card" >Access our blogs created by our contributors, comment them or ask us to publish yours !</div>
               </div>
               <div class="card-action clearfix">
-                <a href="/coronavirus/discussion-forum" target="new_blank" class="btn btn-register">More</a>
+                <a href="/covid-19-blog" target="_blank" class="btn btn-register">More</a>
               </div>
             </div>
           </div>
