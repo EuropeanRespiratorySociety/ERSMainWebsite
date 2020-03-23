@@ -70,7 +70,7 @@ class CloudCmsParser
                     $item->body2 = Markdown::parse($item->body2);
                     $item->body3 = Markdown::parse($item->body3);
                     $item->body4 = Markdown::parse($item->body4);
-                    
+
                     if($item->popUp){
                         $item->popUp = Markdown::parse($item->popUp);
                     }

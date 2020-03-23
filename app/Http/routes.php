@@ -79,8 +79,9 @@ Route::group(['prefix' => 'the-society/news'], function () {
     Route::get('respiratory-matters', 'NewsController@indexRespiratoryMatters');
     Route::get('respiratory-worldwide/{slug}', 'NewsController@show');    
     Route::get('respiratory-matters/{slug}', 'NewsController@show');    
-    Route::get('novel-coronavirus-outbreak--update-and-information-for-healthcare-professionals', 'NewsController@coronavirus');
+    Route::get('novel-coronavirus-outbreak--update-and-information-for-healthcare-professionals', 'Covid19Controller@index');
     Route::get('/{slug}', 'NewsController@show');
+   
 });
 
 //Few redirects to avoid user missbehaviours
@@ -202,7 +203,8 @@ Route::group(['prefix' => 'professional-development'], function () {
     Route::get('authors', 'NewsController@authors');
     Route::get('authors/{slug}', 'NewsController@showAuthor');
     // Route::get('/website-survey', 'GeneralController@show');
-
+    Route::get('covid-19-blog', 'Covid19Controller@indexBlog');
+    Route::get('covid-19-blog/{slug}', 'Covid19Controller@showBlog');
     //Route::get('cc', 'CloudCms@requestTest');
     Route::get('full-search', 'CloudCms@fullSearch');
 
