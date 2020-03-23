@@ -70,7 +70,7 @@
               <div class="card-image" style="max-height:300px;height:150px;
                 background-size:100%;
                 background-repeat: no-repeat; 
-                background-image: url('https://cdn.ersnet.org/preview/node/o:06ff9fdc6b4950aca6d3?name=image500&size=500 '); 
+                background-image: url('https://cdn.ersnet.org/preview/node/o:06ff9fdc6b4950aca6d3?name=image500&size=500'); 
                 background-position: center ;">
               </div>
               <div class="card-content" style="min-height: 180px;">
@@ -89,7 +89,7 @@
               <div class="card-image" style="max-height:300px;height:150px;
                 background-size:100%;
                 background-repeat: no-repeat; 
-                background-image: url('https://cdn.ersnet.org/preview/node/o:8f35316c3ca9046497f6?name=image500&size=500 '); 
+                background-image: url('https://cdn.ersnet.org/preview/node/o:7ae1e79084f2530b0109?name=image500&size=500'); 
                 background-position: center ;">
               </div>
               <div class="card-content" style="min-height: 180px;">
@@ -148,7 +148,7 @@
               <div class="card-image" style="max-height:300px;height:150px;
                 background-size:100%;
                 background-repeat: no-repeat; 
-                background-image: url('https://cdn.ersnet.org/preview/node/o:8f35316c3ca9046497f6?name=image500&size=500 '); 
+                background-image: url('https://cdn.ersnet.org/preview/node/o:8f35316c3ca9046497f6?name=image500&size=500'); 
                 background-position: center ;">
               </div>
               <div class="card-content" style="min-height: 180px;">
