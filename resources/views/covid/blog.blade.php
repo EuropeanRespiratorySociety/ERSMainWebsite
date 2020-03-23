@@ -38,7 +38,7 @@
       <div class="col-md-7 center-block lead text-left">
         <div class="row" style="margin-top:40px;">
             <div class="col-md-6 col-xs-6 text-left event-items-category">
-                View <a href="/covid-19-blog">all COVID-19 Blog</a>
+                View <a href="/covid-19-blog">all In the line of duty</a>
             </div>
         </div>
           <h2 class="article-title" style="margin-top:50px;">{{$item->title}}</h2>

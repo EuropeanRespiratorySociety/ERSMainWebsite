@@ -46,7 +46,7 @@
       </div>
       <div class="main-content" style="padding-top: 0px;">
         <div class="row row_event " style="position: relative; ">
-          <div class="col-md-4 isotope">
+          {{-- <div class="col-md-4 isotope">
             <div class="card card-event">
               <div class="card-image" style="max-height:300px;height:150px;
                 background-size:100%;
@@ -62,6 +62,44 @@
               </div>
               <div class="card-action clearfix">
                 <a href="/the-society/news/ers-statement-covid-19-and-upcoming-ers-events" target="_blank" class="btn btn-register">More</a>
+              </div>
+            </div>
+          </div> --}}
+          <div class="col-md-4 isotope">
+            <div class="card card-event">
+              <div class="card-image" style="max-height:300px;height:150px;
+                background-size:100%;
+                background-repeat: no-repeat; 
+                background-image: url('https://cdn.ersnet.org/preview/node/o:06ff9fdc6b4950aca6d3?name=image500&size=500 '); 
+                background-position: center ;">
+              </div>
+              <div class="card-content" style="min-height: 180px;">
+                <h3 class="title">
+                  <a href="https://covid19-forum.ersnet.org/" target="_blank">COMMUNITY FORUM</a>
+                </h3>
+                <div class="lead-card">The COVID-19 Forum is a dedicated space for ERS members and the wider healthcare community to connect, discuss and share your experiences of COVID-19. To get involved, sign in with your myERS account details and join a discussion.</div>
+              </div>
+              <div class="card-action clearfix">
+                <a href="https://covid19-forum.ersnet.org/" target="_blank" class="btn btn-register">JOIN THE DISCUSSION</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 isotope">
+            <div class="card card-event">
+              <div class="card-image" style="max-height:300px;height:150px;
+                background-size:100%;
+                background-repeat: no-repeat; 
+                background-image: url('https://cdn.ersnet.org/preview/node/o:8f35316c3ca9046497f6?name=image500&size=500 '); 
+                background-position: center ;">
+              </div>
+              <div class="card-content" style="min-height: 180px;">
+                <h3 class="title">
+                  <a href="/covid-19-blog" target="_blank">IN THE LINE OF DUTY</a>
+                </h3>
+                <div class="lead-card">Healthcare workers on the front lines share their stories of treating and managing COVID-19.</div>
+              </div>
+              <div class="card-action clearfix">
+                <a href="/covid-19-blog" target="_blank" class="btn btn-register">More</a>
               </div>
             </div>
           </div>
@@ -84,6 +122,8 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="row row_event " style="position: relative; ">
           <div class="col-md-4 isotope">
             <div class="card card-event">
               <div class="card-image" style="max-height:300px;height:150px;
@@ -103,8 +143,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="row row_event " style="position: relative; ">
           <div class="col-md-4 isotope">
             <div class="card card-event">
               <div class="card-image" style="max-height:300px;height:150px;
@@ -143,25 +181,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 isotope">
-            <div class="card card-event">
-              <div class="card-image" style="max-height:300px;height:150px;
-                background-size:100%;
-                background-repeat: no-repeat; 
-                background-image: url('https://cdn.ersnet.org/preview/node/o:8f35316c3ca9046497f6?name=image500&size=500 '); 
-                background-position: center ;">
-              </div>
-              <div class="card-content" style="min-height: 180px;">
-                <h3 class="title">
-                  <a href="/covid-19-blog" target="_blank">COVID-19 Blog</a>
-                </h3>
-                <div class="lead-card" >Access our blogs created by our contributors, comment them or ask us to publish yours !</div>
-              </div>
-              <div class="card-action clearfix">
-                <a href="/covid-19-blog" target="_blank" class="btn btn-register">More</a>
-              </div>
-            </div>
-          </div>
+          {{-- https://covid19-forum.ersnet.org/ --}}
         </div>
       </div>
       <div class="article text-left lead">
