@@ -46,25 +46,6 @@
       </div>
       <div class="main-content" style="padding-top: 0px;">
         <div class="row row_event " style="position: relative; ">
-          {{-- <div class="col-md-4 isotope">
-            <div class="card card-event">
-              <div class="card-image" style="max-height:300px;height:150px;
-                background-size:100%;
-                background-repeat: no-repeat; 
-                background-image: url('https://cdn.ersnet.org/preview/node/o:573a0ba3e2b35f1b386b?name=image500&size=500'); 
-                background-position: center ;">
-              </div>
-              <div class="card-content" style="min-height: 180px;">
-                <h3 class="title">
-                  <a href="/the-society/news/ers-statement-covid-19-and-upcoming-ers-events" target="_blank">COVID-19 and ERS events</a>
-                </h3>
-                <div class="lead-card">Information regarding upcoming events organised by ERS.</div>
-              </div>
-              <div class="card-action clearfix">
-                <a href="/the-society/news/ers-statement-covid-19-and-upcoming-ers-events" target="_blank" class="btn btn-register">More</a>
-              </div>
-            </div>
-          </div> --}}
           <div class="col-md-4 isotope">
             <div class="card card-event">
               <div class="card-image" style="max-height:300px;height:150px;
