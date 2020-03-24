@@ -55,11 +55,11 @@
                 background-image: url('https://cdn.ersnet.org/preview/node/o:06ff9fdc6b4950aca6d3?name=image500&size=500'); 
                 background-position: center ;">
               </div>
-              <div class="card-content" style="min-height: 180px;">
+              <div class="card-content" style="min-height: 200px;">
                 <h3 class="title">
                   <a href="https://covid19-forum.ersnet.org/" target="_blank">COMMUNITY FORUM</a>
                 </h3>
-                <div class="lead-card">The COVID-19 Forum is a dedicated space for ERS members and the wider healthcare community to connect, discuss and share your experiences of COVID-19. Sign in with your myERS details and join a discussion.</div>
+                <div class="lead-card">A dedicated space for ERS members and the wider healthcare community to connect, discuss and share your experiences of COVID-19. Sign in with your myERS details and join a discussion.</div>
               </div>
               <div class="card-action clearfix">
                 <a href="https://covid19-forum.ersnet.org/" target="_blank" class="btn btn-register">JOIN THE DISCUSSION</a>
@@ -74,7 +74,7 @@
                 background-image: url('https://cdn.ersnet.org/preview/node/o:d16b6acf06ae5cb658e1?name=image500&size=500'); 
                 background-position: center ;">
               </div>
-              <div class="card-content" style="min-height: 180px;">
+              <div class="card-content" style="min-height: 200px;">
                 <h3 class="title">
                   <a href="/covid-19-blog" target="_blank">IN THE LINE OF DUTY</a>
                 </h3>
@@ -93,7 +93,7 @@
                 background-image: url('https://cdn.ersnet.org/preview/node/o:7f042ec84d85292bcbd8?name=image500&size=500'); 
                 background-position: center ;">
               </div>
-              <div class="card-content" style="min-height: 180px;">
+              <div class="card-content" style="min-height: 200px;">
                 <h3 class="title">
                   <a href="https://www.ers-education.org/events/coronavirus-webinar-series" target="_blank">Webinars</a>
                 </h3>
@@ -114,7 +114,7 @@
                 background-image: url('https://cdn.ersnet.org/preview/node/o:b4fd05e53e84d155b59d?name=image500&size=500'); 
                 background-position: center ;">
               </div>
-              <div class="card-content" style="min-height: 180px;">
+              <div class="card-content" style="min-height: 200px;">
                 <h3 class="title">
                   <a href="https://erj.ersjournals.com/cc/sars-cov-2-and-covid-19" target="_blank">Publications</a>
                 </h3>
@@ -133,7 +133,7 @@
                 background-image: url('https://cdn.ersnet.org/preview/node/o:8f35316c3ca9046497f6?name=image500&size=500'); 
                 background-position: center ;">
               </div>
-              <div class="card-content" style="min-height: 180px;">
+              <div class="card-content" style="min-height: 200px;">
                 <h3 class="title">
                   <a href="/professional-development/respiratory-digests" target="_blank">Research summaries</a>
                 </h3>
@@ -152,7 +152,7 @@
                 background-image: url('https://cdn.ersnet.org/preview/node/o:9433c3e520df628530f1?name=image500&size=500'); 
                 background-position: center ;">
               </div>
-              <div class="card-content" style="min-height: 180px;">
+              <div class="card-content" style="min-height: 200px;">
                 <h3 class="title">
                   <a href="https://www.europeanlung.org/en/news-and-events/news/covid-19-%E2%80%93-your-questions-answered-by-a-respiratory-expert" target="_blank">Patient Q&A</a>
                 </h3>
