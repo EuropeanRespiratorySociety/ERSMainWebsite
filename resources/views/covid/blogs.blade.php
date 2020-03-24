@@ -24,7 +24,9 @@
                 <h2 class="">{{$item->title}}</h2>
               </div>
               <div class="col-md-7 center-block lead" style="margin-bottom:80px;">
-                @if(isset($item->body)){!!$item->body!!}@endif
+                <div class="text-left">
+                  @if(isset($item->body)){!!$item->body!!}@endif
+                </div>
                 @if($item->registerButton->link)
                 <div class="text-right" style="margin-top:40px;">
                   <a href="{{$item->registerButton->link}}" type="button" class="btn btn-space btn-primary btn-rounded btn-sm" target="_blank">

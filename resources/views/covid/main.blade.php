@@ -37,6 +37,7 @@
             <p style="margin-top:10px;padding: 0 10px;" class="pull-right alert {{'alert-'.$item->flags->color }}">{{ $item->flags->text }}</p>
           @endif 
         </div>
+        <div class="text-left"><br/>Information: <a href="/the-society/news/ers-statement-covid-19-and-upcoming-ers-events">ERS Statement on COVID-19 and upcoming ERS events</a></div>
       </div>
       <div class="page-head">
         <h2 class="">{{$item->title}}</h2>
@@ -58,7 +59,7 @@
                 <h3 class="title">
                   <a href="https://covid19-forum.ersnet.org/" target="_blank">COMMUNITY FORUM</a>
                 </h3>
-                <div class="lead-card">The COVID-19 Forum is a dedicated space for ERS members and the wider healthcare community to connect, discuss and share your experiences of COVID-19. To get involved, sign in with your myERS account details and join a discussion.</div>
+                <div class="lead-card">The COVID-19 Forum is a dedicated space for ERS members and the wider healthcare community to connect, discuss and share your experiences of COVID-19. Sign in with your myERS details and join a discussion.</div>
               </div>
               <div class="card-action clearfix">
                 <a href="https://covid19-forum.ersnet.org/" target="_blank" class="btn btn-register">JOIN THE DISCUSSION</a>
