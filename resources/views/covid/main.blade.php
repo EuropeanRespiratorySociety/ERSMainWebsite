@@ -89,7 +89,7 @@
               <div class="card-image" style="max-height:300px;height:150px;
                 background-size:100%;
                 background-repeat: no-repeat; 
-                background-image: url('https://cdn.ersnet.org/preview/node/o:7ae1e79084f2530b0109?name=image500&size=500'); 
+                background-image: url('https://cdn.ersnet.org/preview/node/o:d16b6acf06ae5cb658e1?name=image500&size=500'); 
                 background-position: center ;">
               </div>
               <div class="card-content" style="min-height: 180px;">
