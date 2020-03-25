@@ -8,7 +8,7 @@
                   <p class="photo_caption">Head: Catherine Greene</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/people/leadership/Meiners-Silke.png" class="img-circle">
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Silke-Meiners.png" class="img-circle">
                   <p class="photo_caption">Secretary: Silke Meiners</p>
                  
                 </div>

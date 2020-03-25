@@ -240,31 +240,32 @@
       <div class="row">
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Soraya Barazin</strong>
-            Senior Coordinator<br>
+            Congress &amp; Events Senior Coordinator<br>
             T +41 21 213 01 72<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Felix Yip</strong>
-            Coordinator<br>
+            Congress &amp; Events Senior Coordinator<br>
             T +41 21 213 01 97<br>
             </p>
         </div>
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Nutcha Prakkamakul</strong>
-            Coordinator<br>
-            T +41 21 213 01 69<br>
-            </p>
-        </div>
+
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Sandy Borlat</strong>
-            Assistant<br>
+            Congress &amp; Events Coordinator<br>
             T +41 21 213 01 86<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>Camille Perret-Gentil</strong>
+            Congress &amp; Events Coordinator<br>
+            T +41 21 213 01 69<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Emma Favrod</strong>
-            Assistant<br>
+            Congress &amp; Events Assistant<br>
             T +41 21 213 01 75<br>
             </p>
         </div>
@@ -310,15 +311,15 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Leslye Lacroix</strong>
+          <p class="photo_caption"><strong>Fanny-Anh Le Hoang</strong>
             Marketing &amp; Corporate Relations Coordinator<br>
             T +41 21 213 01 63<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Nicolas Luginbuhl</strong>
-            Marketing &amp; Corporate Relations Coordinator<br>
-            T +41 21 213 01 63<br>
+            Marketing &amp; Corporate Relations Senior Coordinator <br>
+            T +41 21 213 01 65<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
@@ -341,19 +342,25 @@
         </div>
   
         <div class="row">
-          <div class="col-md-3 col-md-offset-3 xs-mb-15">
+          <div class="col-md-4 xs-mb-15">
             <p class="photo_caption"><strong>Dawn Ould</strong>
               Senior Communications Coordinator<br>
               T +44 114 267 2866<br>
             </p>
           </div>
-          <div class="col-md-3 xs-mb-15">
+          <div class="col-md-4 xs-mb-15">
             <p class="photo_caption"><strong>Beth Maguire</strong>
               Communications Coordinator<br>
               T +44 114 267 2866<br>
               </p>
           </div>
-  
+          <div class="col-md-4 xs-mb-15">
+            <p class="photo_caption"><strong>Helen Birtwhistle</strong>
+              Communications Assistant<br>
+              T +44 114 267 2866<br>
+              </p>
+          </div>
+
         </div>
       </div>
       </div>
@@ -395,13 +402,13 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Melanie Jessner</strong>
-            Educational Programmes Coordinator<br>
+            Educational Programmes Senior Coordinator<br>
             T +41 21 213 01 85<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Albert Jimenez</strong>
-            Educational Activities Coordinator<br>
+            Educational Programmes Senior Coordinator<br>
             T +41 21 213 01 96<br>
             </p>
         </div>
@@ -424,15 +431,21 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Fanny-Anh Le Hoang</strong>
-            Educational Programmes Assistant<br>
-            T +41 21 213 01 82<br>
+          <p class="photo_caption"><strong>Anca Matei</strong>
+            Educational Programmes Coordinator<br>
+            T +41 21 213 01 94<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Anca Matei</strong>
+          <p class="photo_caption"><strong>Marco Gallardo</strong>
             Educational Programmes Assistant<br>
-            T +41 21 213 01 94<br>
+            T +41 21 213 01 51<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>Jenai Kisseleff</strong>
+            Educational Programmes Assistant<br>
+            T +41 21 213 01 93<br>
             </p>
         </div>
        
@@ -520,6 +533,19 @@
             T +44 114 267 2872<br>
             </p>
         </div>
+        <div class="col-md-4 xs-mb-15">
+          <p class="photo_caption"><strong>Jessica Denning</strong>
+            Communications & Education Coordinator<br>
+            T +44 114 322 0645<br>
+            </p>
+        </div>
+        <div class="col-md-4 xs-mb-15">
+          <p class="photo_caption"><strong>Winnie Mvunga</strong>
+            Patient Involvement & Engagement<br>
+            T +44 114 322 0651<br>
+            </p>
+        </div>
+
       </div>
     </div>
     </div>
@@ -567,7 +593,7 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Françoise Thonnard</strong>
-          Junior Accountant<br>
+          Accountant<br>
             T +41 21 213 01 21<br>
             </p>
         </div>
@@ -680,7 +706,7 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Joanne Stevenson</strong>
+          <p class="photo_caption"><strong>Amy Auer</strong>
             Membership Coordinator<br>
             T +41 21 213 01 42<br>
             </p>
@@ -807,8 +833,8 @@
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
             <img src="https://cdn.ersnet.org/images/people/executive-office/Celine-Genton.png" class="img-circle">
-            <p class="photo_caption"><strong>Celine Genton</strong>
-            Head of Scientific Activities<br>
+            <p class="photo_caption"><strong>Céline Genton</strong>
+            Director of Scientific Activities<br>
             T +41 21 213 01 59<br>
             </p>
           </div>
@@ -827,12 +853,6 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>David Rigau</strong>
-            Methodologist<br>
-            T +41 21 213 01 87<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Thomy Tonia</strong>
           Senior Methodologist<br>
             T +41 21 213 01 87<br>
@@ -840,7 +860,7 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Maeve Tsu</strong>
-            Funding Programme Assistant<br>
+            Funding Programme Coordinator<br>
             T +41 21 213 01 83<br>
             </p>
         </div>
@@ -854,6 +874,18 @@
           <p class="photo_caption"><strong>Alessandra Marguerat</strong>
             Scientific Administrative Assistant<br>
             T +41 21 213 01 66<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>Valerija Arsovski</strong>
+            Scientific Administrative Assistant<br>
+            T +41 21 213 01 58<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>Emmanuelle Berret</strong>
+            Associate Project Manager<br>
+            T +41 21 213 01 82<br>
             </p>
         </div>
         

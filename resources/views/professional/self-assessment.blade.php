@@ -73,6 +73,7 @@
         @if($item->image)
           <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
         @endif
+        {{-- FBL20200309 : sponsors not available for host-an-ers-hermes-self-assessment-course-in-your-city-or-country article (content type "article", no sponsors property available) --}}
         @if($item->sponsors[0]->text)
           @if($item->image)
             <hr>
@@ -140,7 +141,7 @@
                       +'</div></div></div>';
 
                 const courseTitleAdult = '<h3>Upcoming ERS HERMES self-assessment courses in adult respiratory medicine</h3>';
-                const courseTitlePaediatric = '<h3>Upcoming ERS HERMES self-assessment courses in pediatric respiratory medicine</h3>';
+                const courseTitlePaediatric = '<h3>Upcoming ERS HERMES self-assessment courses in paediatric respiratory medicine</h3>';
 
 
 

@@ -152,6 +152,7 @@
         @if($item->image)
           <p><img src="{{ $item->image }}" class="img-rounded img-responsive"></p>
         @endif
+        {{-- FBL20200309 : sponsors not available for examination-committee-adult article (content type "article", no sponsors property available) --}}
         @if($item->sponsors[0]->text)
           @if($item->image)
             <hr>

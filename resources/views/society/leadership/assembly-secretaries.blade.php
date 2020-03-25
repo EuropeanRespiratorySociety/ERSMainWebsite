@@ -21,7 +21,7 @@
 		            Respiratory Intensive Care <br>
 		        </div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Meiners-Silke.png" class="img-circle">
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Silke-Meiners.png" class="img-circle">
 		            <p class="photo_caption"><strong>Silke Meiners</strong>
 		            Basic and translational sciences<br>
 		        </div>
@@ -71,7 +71,7 @@
 		            Interstitial Lung Diseases<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/ANTON-VONK-NOORDEGRAAF.png" class="img-circle">
+		            <img src="https://cdn.ersnet.org/images/people/leadership/A-Vonk-Noordegraaf.png" class="img-circle">
 		            <p class="photo_caption"><strong>Anton Vonk Noordegraaf</strong>
 		            Pulmonary Vascular Diseases<br>
 		        </div>

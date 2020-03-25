@@ -51,15 +51,16 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/Maxime-Patout.png" class="img-circle">
+					<img src="https://cdn.ersnet.org/images/people/leadership/Maxime-Patout-3.png" class="img-circle">
 		            <p class="photo_caption"><strong>Maxime Patout</strong>
 		            Assembly 2
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+					<img src="https://cdn.ersnet.org/images/people/leadership/Niki-Ubags.png" class="img-circle">
 		            <p class="photo_caption"><strong>Niki Ubags</strong>
-		            Assembly 3<br>
+                  Chair of the ECM Committee<br>
+                  Assembly 3<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
