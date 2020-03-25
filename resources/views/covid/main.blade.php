@@ -43,7 +43,7 @@
         <h2 class="">{{$item->title}}</h2>
       </div>
       <div class="article text-left lead">
-        @if($item->leadParagraph){!! $item->leadParagraph !!}@endif
+        @if($item->lead){!! $item->lead !!}@endif
       </div>
       <div class="main-content" style="padding-top: 0px;">
         <div class="row row_event " style="position: relative; ">
