@@ -76,12 +76,12 @@
               </div>
               <div class="card-content" style="min-height: 200px;">
                 <h3 class="title">
-                  <a href="/covid-19-blog" target="_blank">IN THE LINE OF DUTY</a>
+                  <a href="/covid-19-blog" class="ga-covid-blog" target="_blank">IN THE LINE OF DUTY</a>
                 </h3>
                 <div class="lead-card">Healthcare workers on the front lines share their stories of treating and managing COVID-19.</div>
               </div>
               <div class="card-action clearfix">
-                <a href="/covid-19-blog" target="_blank" class="btn btn-register">More</a>
+                <a href="/covid-19-blog" target="_blank" class="btn btn-register ga-covid-blog">More</a>
               </div>
             </div>
           </div>
@@ -116,12 +116,12 @@
               </div>
               <div class="card-content" style="min-height: 200px;">
                 <h3 class="title">
-                  <a href="https://erj.ersjournals.com/cc/sars-cov-2-and-covid-19" target="_blank">Publications</a>
+                  <a href="https://erj.ersjournals.com/cc/sars-cov-2-and-covid-19" class="ga-covid-publications" target="_blank">Publications</a>
                 </h3>
                 <div class="lead-card">The latest articles from ERS publications on SARS-CoV-2 and COVID-19. All articles are available via open access.</div>
               </div>
               <div class="card-action clearfix">
-                <a href="https://erj.ersjournals.com/cc/sars-cov-2-and-covid-19" target="_blank" class="btn btn-register">More</a>
+                <a href="https://erj.ersjournals.com/cc/sars-cov-2-and-covid-19" target="_blank" class="btn btn-register ga-covid-publications">More</a>
               </div>
             </div>
           </div>
