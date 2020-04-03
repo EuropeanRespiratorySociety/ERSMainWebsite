@@ -57,7 +57,7 @@
               </div>
               <div class="card-content" style="min-height: 200px;">
                 <h3 class="title">
-                  <a href="https://covid19-forum.ersnet.org/" target="_blank">COMMUNITY FORUM</a>
+                  <a href="https://covid19-forum.ersnet.org/" class="ga-covid-forum" target="_blank">COMMUNITY FORUM</a>
                 </h3>
                 <div class="lead-card">A dedicated space for ERS members and the wider healthcare community to connect, discuss and share your experiences of COVID-19. Sign in with your myERS details and join a discussion.</div>
               </div>
@@ -95,12 +95,12 @@
               </div>
               <div class="card-content" style="min-height: 200px;">
                 <h3 class="title">
-                  <a href="https://www.ers-education.org/events/coronavirus-webinar-series" target="_blank">Webinars</a>
+                  <a href="https://www.ers-education.org/events/coronavirus-webinar-series" class="ga-covid-webinars" target="_blank">Webinars</a>
                 </h3>
                 <div class="lead-card">Expert-led webinars that provide updates on the management of COVID-19 in China, clinical consequences, epidemiology and research potential.</div>
               </div>
               <div class="card-action clearfix">
-                <a href="https://www.ers-education.org/events/coronavirus-webinar-series" target="_blank" class="btn btn-register">More</a>
+                <a href="https://www.ers-education.org/events/coronavirus-webinar-series" target="_blank" class="btn btn-register ga-covid-webinars">More</a>
               </div>
             </div>
           </div>
@@ -135,12 +135,12 @@
               </div>
               <div class="card-content" style="min-height: 200px;">
                 <h3 class="title">
-                  <a href="/professional-development/respiratory-digests" target="_blank">Research summaries</a>
+                  <a href="/professional-development/respiratory-digests" class="ga-covid-research" target="_blank">Research summaries</a>
                 </h3>
                 <div class="lead-card" >ERS Respiratory Digests provide summaries of new and significant research, including important early COVID-19 publications.</div>
               </div>
               <div class="card-action clearfix">
-                <a href="/professional-development/respiratory-digests" target="_blank" class="btn btn-register">More</a>
+                <a href="/professional-development/respiratory-digests" target="_blank" class="btn btn-register ga-covid-research">More</a>
               </div>
             </div>
           </div>
@@ -154,12 +154,12 @@
               </div>
               <div class="card-content" style="min-height: 200px;">
                 <h3 class="title">
-                  <a href="https://www.europeanlung.org/en/news-and-events/news/covid-19-%E2%80%93-your-questions-answered-by-a-respiratory-expert" target="_blank">Patient Q&A</a>
+                  <a href="https://www.europeanlung.org/en/news-and-events/news/covid-19-%E2%80%93-your-questions-answered-by-a-respiratory-expert" class="ga-covid-qa" target="_blank">Patient Q&A</a>
                 </h3>
                 <div class="lead-card">ERS infections experts answered questions sent to the European Lung Foundation by respiratory patients.</div>
               </div>
               <div class="card-action clearfix">
-                <a href="https://www.europeanlung.org/en/news-and-events/news/covid-19-%E2%80%93-your-questions-answered-by-a-respiratory-expert" target="_blank" class="btn btn-register">More</a>
+                <a href="https://www.europeanlung.org/en/news-and-events/news/covid-19-%E2%80%93-your-questions-answered-by-a-respiratory-expert" target="_blank" class="btn btn-register ga-covid-qa">More</a>
               </div>
             </div>
           </div>
