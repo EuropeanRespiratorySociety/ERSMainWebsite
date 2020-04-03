@@ -62,7 +62,7 @@
                 <div class="lead-card">A dedicated space for ERS members and the wider healthcare community to connect, discuss and share your experiences of COVID-19. Sign in with your myERS details and join a discussion.</div>
               </div>
               <div class="card-action clearfix">
-                <a href="https://covid19-forum.ersnet.org/" target="_blank" class="btn btn-register">JOIN THE DISCUSSION</a>
+                <a href="https://covid19-forum.ersnet.org/" target="_blank" class="btn btn-register ga-covid-forum">JOIN THE DISCUSSION</a>
               </div>
             </div>
           </div>
