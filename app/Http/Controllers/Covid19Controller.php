@@ -34,13 +34,13 @@ class Covid19Controller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function covidWeekly()
+    public function breakingNews()
     {
-        $results = $this->CC->getItem("covid-19-weekly");
+        $results = $this->CC->getItem("breaking-covid-19");
         $item = $this->CC->parseItems($results['rows']);
         $params['item'] =  (object) $item[0];
 
-        return view('covid.weeklyNews')->with($params); 
+        return view('covid.breakingNews')->with($params); 
     }
 
     /**
