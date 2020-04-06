@@ -48,7 +48,7 @@
                         </div> 
 
                         <div class="card-action">
-                            <a href="#" target="new_blank" class="btn btn-default pull-right">Link</a>
+                            <a href="https://ers.box.com/v/COVID19-Breaking-News-Round-Up" target="new_blank" class="btn btn-default pull-right">Download</a>
                         </div>
                     </div>
                   </div>
@@ -63,7 +63,7 @@
                         </div> 
 
                         <div class="card-action">
-                            <a href="#" target="new_blank" class="btn btn-default pull-right">Link</a>
+                            <a href="https://ers.box.com/v/COVID19-Research-Round-Up" target="new_blank" class="btn btn-default pull-right">Download</a>
                         </div>
                     </div>
                   </div>
@@ -78,7 +78,7 @@
                         </div> 
 
                         <div class="card-action">
-                            <a href="#" target="new_blank" class="btn btn-default pull-right">Link</a>
+                            <a href="https://ers.box.com/v/COVID19-Clinical-Trial-Update" target="new_blank" class="btn btn-default pull-right">Download</a>
                         </div>
                     </div>
                   </div>

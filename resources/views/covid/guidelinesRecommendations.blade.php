@@ -75,7 +75,7 @@
                   <div class="text-left" style="font-size: 16px;font-family: DinPro,sans-serif;padding: 5px 15px; background: #fff; margin-bottom: 40px;" >
                     <h5 style="margin-bottom: 5px;"><strong>Please note: </strong></h5>
                     <p>
-                      due to the ongoing nature of the outbreak, the documents have not been prepared using the typical methods for practice guidelines according to classic ERS methodology.
+                      Due to the ongoing nature of the outbreak, the documents have not been prepared using the typical methods for practice guidelines according to classic ERS methodology.
                     </p>
                   </div>
 
