@@ -203,6 +203,8 @@ Route::group(['prefix' => 'professional-development'], function () {
     Route::get('authors', 'NewsController@authors');
     Route::get('authors/{slug}', 'NewsController@showAuthor');
     // Route::get('/website-survey', 'GeneralController@show');
+    Route::get('covid-19-weekly', 'Covid19Controller@covidWeekly');
+    Route::get('covid-19-guidelines-and-recommendations-directory', 'Covid19Controller@covidGuidelines');
     Route::get('covid-19-blog', 'Covid19Controller@indexBlog');
     Route::get('covid-19-blog/{slug}', 'Covid19Controller@showBlog');
     //Route::get('cc', 'CloudCms@requestTest');
