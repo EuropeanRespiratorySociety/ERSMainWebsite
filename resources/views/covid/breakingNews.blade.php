@@ -32,11 +32,6 @@
                 <div class="text-left">
                   @if(isset($item->lead)){!!$item->lead!!}@endif
                 </div>
-                <div class="text-right" style="margin-top:40px;">
-                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=GSkxKAQNFUGoajzAH-Mf72cKowmbY-1Opi9qoM0nB25UMVlNUzJCM1k5VUNITEtIMzY3NEhQRDY4OS4u" type="button" class="btn btn-space btn-primary btn-rounded btn-sm" target="_blank">
-                    Submit guidelines or recommendations
-                  </a>
-                </div>
               </div>
             </div>
             <div class="article-text" style="margin-bottom: 80px;">
