@@ -57,9 +57,9 @@
               </div>
               <div class="card-content" style="min-height: 220px;">
                 <h3 class="title">
-                  <a href="/breaking-covid-19" class="ga-covid-breaking" target="_blank">Breaking COVID-19 from ERS: NEWS, RESEARCH & CLINICAL TRIAL ROUND-UP</a>
+                  <a href="/breaking-covid-19" class="ga-covid-breaking" target="_blank">DAILY ROUND UP: NEWS, RESEARCH AND CLINICAL TRIALS</a>
                 </h3>
-                <div class="lead-card">Breaking COVID-19 from ERS shares a selection of the latest news, peer-reviewed research and data and ongoing clinical trials related to SARS-CoV-2 and COVID-19.
+                <div class="lead-card">ERS's Daily round-up features the latest news, research and clinical trials related to SARS-CoV-2 and COVID-19 as selected by an expert reviewer.
                 </div>
               </div>
               <div class="card-action clearfix">
