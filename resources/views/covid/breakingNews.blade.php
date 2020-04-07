@@ -87,7 +87,7 @@
                 <div class="text-left" style="font-size: 16px;margin: 20px 0 80px; font-family: DinPro,sans-serif; padding:0 35px;">
                   <h5 style="margin-bottom: 5px;"><strong>Disclaimer:</strong></h5>
                   <p>
-                    The content shared in the Breaking COVID-19 from ERS section is gathered from a range of external sources. The European Respiratory Society (ERS) is not responsible for the accuracy of the content published by external sources.
+                    The content shared in the Daily round-up section is gathered from a range of external sources. The European Respiratory Society (ERS) is not responsible for the accuracy of the content published by external sources.
                   </p>
                 </div>
               </div>
