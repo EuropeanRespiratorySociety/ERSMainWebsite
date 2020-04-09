@@ -159,7 +159,7 @@
               </div>
               <div class="card-content" style="min-height: 220px;">
                 <h3 class="title">
-                  <a href="https://www.ers-education.org/events/coronavirus-webinar-series" class="ga-covid-webinars" target="_blank">Webinars</a>
+                  <a href="https://www.ers-education.org/events/coronavirus-webinar-series" class="ga-covid-webinars" target="_blank">Webinars and video series</a>
                 </h3>
                 <div class="lead-card">Expert-led webinars that provide updates on the management of COVID-19 in China, clinical consequences, epidemiology and research potential.</div>
               </div>
