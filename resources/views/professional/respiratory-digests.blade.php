@@ -55,9 +55,9 @@
                       </div>'
                       <div class="card-action clearfix">
                         @if($digest->uri)
-                          <a href="{{$digest->uri}}" class="btn btn-register">more</a>
+                          <a href="{{$digest->uri}}@if($isCovid19Page == true)?covid19=true @endif" class="btn btn-register">more</a>
                         @else
-                          <a href="{{$_SERVER['REQUEST_URI']}}/{{$digest->slug}}" class="btn btn-register">more</a>
+                          <a href="{{$_SERVER['REQUEST_URI']}}/{{$digest->slug}}@if($isCovid19Page == true)?covid19=true @endif" class="btn btn-register">more</a>
                         @endif
                       </div>
                     </div>

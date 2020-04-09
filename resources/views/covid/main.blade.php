@@ -148,47 +148,6 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 isotope">
-            <div class="card card-event">
-              <div class="card-image" style="max-height:300px;height:150px;
-                background-size:100%;
-                background-repeat: no-repeat; 
-                background-image: url('https://cdn.ersnet.org/preview/node/o:9433c3e520df628530f1?name=image500&size=500'); 
-                background-position: center ;">
-              </div>
-              <div class="card-content" style="min-height: 220px;">
-                <h3 class="title">
-                  <a href="https://www.europeanlung.org/en/news-and-events/news/covid-19-%E2%80%93-your-questions-answered-by-a-respiratory-expert" class="ga-covid-qa" target="_blank">Patient Q&A</a>
-                </h3>
-                <div class="lead-card">ERS infections experts answered questions sent to the European Lung Foundation by respiratory patients.</div>
-              </div>
-              <div class="card-action clearfix">
-                <a href="https://www.europeanlung.org/en/news-and-events/news/covid-19-%E2%80%93-your-questions-answered-by-a-respiratory-expert" target="_blank" class="btn btn-register ga-covid-qa">More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row row_event " style="position: relative; ">
-          <div class="col-md-4 isotope">
-            <div class="card card-event">
-              <div class="card-image" style="max-height:300px;height:150px;
-                background-size:100%;
-                background-repeat: no-repeat; 
-                background-image: url('https://cdn.ersnet.org/preview/node/o:8f35316c3ca9046497f6?name=image500&size=500'); 
-                background-position: center ;">
-              </div>
-              <div class="card-content" style="min-height: 220px;">
-                <h3 class="title">
-                  <a href="/professional-development/respiratory-digests" class="ga-covid-research" target="_blank">Research summaries</a>
-                </h3>
-                <div class="lead-card" >ERS Respiratory Digests provide summaries of new and significant research, including important early COVID-19 publications.</div>
-              </div>
-              <div class="card-action clearfix">
-                <a href="/professional-development/respiratory-digests" target="_blank" class="btn btn-register ga-covid-research">More</a>
-              </div>
-            </div>
-          </div>
 
           <div class="col-md-4 isotope">
             <div class="card card-event">
@@ -210,7 +169,48 @@
             </div>
           </div>
 
-          {{-- https://covid19-forum.ersnet.org/ --}}
+          <div class="row row_event " style="position: relative; ">
+            <div class="col-md-4 isotope">
+              <div class="card card-event">
+                <div class="card-image" style="max-height:300px;height:150px;
+                  background-size:100%;
+                  background-repeat: no-repeat; 
+                  background-image: url('https://cdn.ersnet.org/preview/node/o:8f35316c3ca9046497f6?name=image500&size=500'); 
+                  background-position: center ;">
+                </div>
+                <div class="card-content" style="min-height: 220px;">
+                  <h3 class="title">
+                    <a href="/professional-development/respiratory-digests" class="ga-covid-research" target="_blank">Research summaries</a>
+                  </h3>
+                  <div class="lead-card" >ERS Respiratory Digests provide summaries of new and significant research, including important early COVID-19 publications.</div>
+                </div>
+                <div class="card-action clearfix">
+                  <a href="/professional-development/respiratory-digests?covid19=true" target="_blank" class="btn btn-register ga-covid-research">More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 isotope">
+              <div class="card card-event">
+                <div class="card-image" style="max-height:300px;height:150px;
+                  background-size:100%;
+                  background-repeat: no-repeat; 
+                  background-image: url('https://cdn.ersnet.org/preview/node/o:9433c3e520df628530f1?name=image500&size=500'); 
+                  background-position: center ;">
+                </div>
+                <div class="card-content" style="min-height: 220px;">
+                  <h3 class="title">
+                    <a href="https://www.europeanlung.org/en/news-and-events/news/covid-19-%E2%80%93-your-questions-answered-by-a-respiratory-expert" class="ga-covid-qa" target="_blank">Patient Q&A</a>
+                  </h3>
+                  <div class="lead-card">ERS infections experts answered questions sent to the European Lung Foundation by respiratory patients.</div>
+                </div>
+                <div class="card-action clearfix">
+                  <a href="https://www.europeanlung.org/en/news-and-events/news/covid-19-%E2%80%93-your-questions-answered-by-a-respiratory-expert" target="_blank" class="btn btn-register ga-covid-qa">More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
       <div class="article text-left lead">
