@@ -19,21 +19,38 @@
             </div>
             @endif
 
-            <div class="main-content" style="background-color: #fff;padding-bottom: 40px;">
-              <div class="clearfix notification">
-                @if($item->flags)
-                  <p style="margin-top:10px;padding: 0 10px;" class="pull-right alert {{'alert-'.$item->flags->color }}">{{ $item->flags->text }}</p>
-                @endif 
-              </div>
-              <div class="page-head">
-                <h2 class="">{{$item->title}}</h2>
-              </div>
-              <div class="col-md-7 center-block lead" style="margin-bottom:30px;">
-                <div class="text-left">
-                  @if(isset($item->lead)){!!$item->lead!!}@endif
+              <div class="row" style="background-color: #fff;padding-bottom: 40px; min-height: 100%; overflow: hidden;">
+                <div class="col-md-2" style="padding-right: 0;" >
+                  <div class="clearfix notification" style="margin:20px 0 0 10px;min-width: 200px;">
+                    @if($item->flags)
+                      <p style=" padding: 0 10px;" class="pull-left alert {{'alert-'.$item->flags->color }}">{{ $item->flags->text }}</p>
+                    @endif 
+                  </div>
                 </div>
-              </div>
-            </div>
+
+                <div class="col-md-7  " style=" padding-bottom: 32767px; margin-bottom: -32767px;padding-right: 60px;">
+                  <div class="page-head" style="margin-top: 80px;">
+                    <h2 class="">{{$item->title}}</h2>
+                  </div>
+                  <div class="col-md-12 center-block lead" style="margin-bottom:30px;">
+                    <div class="text-left">
+                      @if(isset($item->lead)){!!$item->lead!!}@endif
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 medium-grey-bg" style="padding-bottom: 32767px; margin-bottom: -32767px;">
+                  <div class="row">
+                    <div class="col-md-9 col-md-offset-1 xs-mb-15">
+                      <img src="https://cdn.ersnet.org/images/people/leadership/Carolin-Selbach.png" class="img-circle" style="margin-top:20px; width: 120px;">
+                      <p class="photo_caption"><strong>Carolin Selbach</strong>PhD Candidate at Maastricht University<br></p>
+                    </div>
+                  </div>
+                </div>
+             </div>
+
+
+
+
             <div class="article-text" style="margin-bottom: 80px;">
               <div class="main-content">
                 <div class="row">
@@ -95,5 +112,4 @@
         </div>
     </div>
 </div>
-@stop()  
-
+@stop()
