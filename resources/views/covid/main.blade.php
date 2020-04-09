@@ -180,7 +180,7 @@
               </div>
               <div class="card-content" style="min-height: 220px;">
                 <h3 class="title">
-                  <a href="/professional-development/respiratory-digests" class="ga-covid-research" target="_blank">Research summaries</a>
+                  <a href="/professional-development/respiratory-digests?covid19=true" class="ga-covid-research" target="_blank">Research summaries</a>
                 </h3>
                 <div class="lead-card" >ERS Respiratory Digests provide summaries of new and significant research, including important early COVID-19 publications.</div>
               </div>
