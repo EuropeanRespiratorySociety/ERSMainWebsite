@@ -11,6 +11,19 @@
 @section('content')
 
 
+<style>
+.title-lead {
+  padding-right: 60px;
+}
+
+@media screen and (max-width: 991px) {
+  .title-lead {
+    padding-right: 0px;
+  }
+}
+  </style>
+
+
 <div class="ers-content article-items">
     <div id="fullpage">
         <div class="section fp-auto-height">
@@ -28,7 +41,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-7  " style=" padding-bottom: 32767px; margin-bottom: -32767px;padding-right: 60px;">
+                <div class="col-md-7 title-lead" style="padding-bottom: 32767px; margin-bottom: -32767px;">
                   <div class="page-head" style="margin-top: 80px;">
                     <h2 class="">{{$item->title}}</h2>
                   </div>
@@ -41,15 +54,13 @@
                 <div class="col-md-3 medium-grey-bg" style="padding-bottom: 32767px; margin-bottom: -32767px;">
                   <div class="row">
                     <div class="col-md-9 col-md-offset-1 xs-mb-15">
-                      <img src="https://cdn.ersnet.org/images/people/leadership/Carolin-Selbach.png" class="img-circle" style="margin-top:20px; width: 120px;">
-                      <p class="photo_caption"><strong>Carolin Selbach</strong>PhD Candidate at Maastricht University<br></p>
+                      <h3 style="font-family: DinPro,sans-serif;font-size: 20px; margin-top: 50px;">Meet the reviewer</h3>
+                      <img src="https://cdn.ersnet.org/images/people/leadership/George-Karakiulakis.png" class="img-circle" style="margin-top:10px; width: 120px;">
+                      <p class="photo_caption"><strong>George Karakiulakis</strong>MD, PhD, is Emeritus Professor of Pharmacology in the School of Medicine at Aristotle University of Thessaloniki, Greece.<br></p>
                     </div>
                   </div>
                 </div>
              </div>
-
-
-
 
             <div class="article-text" style="margin-bottom: 80px;">
               <div class="main-content">
