@@ -56,7 +56,7 @@
                     <div class="col-md-9 col-md-offset-1 xs-mb-15">
                       <h3 style="font-family: DinPro,sans-serif;font-size: 20px; margin-top: 50px;">Meet the reviewer</h3>
                       <img src="https://cdn.ersnet.org/images/people/leadership/George-Karakiulakis.png" class="img-circle" style="margin-top:10px; width: 120px;">
-                      <p class="photo_caption"><strong>George Karakiulakis</strong>MD, PhD, is Emeritus Professor of Pharmacology in the School of Medicine at Aristotle University of Thessaloniki, Greece.<br></p>
+                      <p class="photo_caption"><strong>George Karakiulakis</strong>MD, PhD<br />Emeritus Professor of Pharmacology in the School of Medicine at Aristotle University of Thessaloniki, Greece.<br></p>
                     </div>
                   </div>
                 </div>
