@@ -57,9 +57,9 @@
               </div>
               <div class="card-content" style="min-height: 220px;">
                 <h3 class="title">
-                  <a href="/breaking-covid-19" class="ga-covid-breaking" target="_blank">Breaking COVID-19 from ERS: NEWS, RESEARCH & CLINICAL TRIAL ROUND-UP</a>
+                  <a href="/breaking-covid-19" class="ga-covid-breaking" target="_blank">DAILY ROUND UP: NEWS, RESEARCH AND CLINICAL TRIALS</a>
                 </h3>
-                <div class="lead-card">Breaking COVID-19 from ERS shares a selection of the latest news, peer-reviewed research and data and ongoing clinical trials related to SARS-CoV-2 and COVID-19.
+                <div class="lead-card">ERS's Daily round-up features the latest news, research and clinical trials related to SARS-CoV-2 and COVID-19 as selected by an expert reviewer.
                 </div>
               </div>
               <div class="card-action clearfix">
@@ -148,6 +148,48 @@
               </div>
             </div>
           </div>
+
+          <div class="col-md-4 isotope">
+            <div class="card card-event">
+              <div class="card-image" style="max-height:300px;height:150px;
+                background-size:100%;
+                background-repeat: no-repeat; 
+                background-image: url('https://cdn.ersnet.org/preview/node/o:7f042ec84d85292bcbd8?name=image500&size=500'); 
+                background-position: center ;">
+              </div>
+              <div class="card-content" style="min-height: 220px;">
+                <h3 class="title">
+                  <a href="https://www.ers-education.org/events/coronavirus-webinar-series" class="ga-covid-webinars" target="_blank">Webinars and video series</a>
+                </h3>
+                <div class="lead-card">Expert-led webinars that provide updates on the management of COVID-19 in China, clinical consequences, epidemiology and research potential.</div>
+              </div>
+              <div class="card-action clearfix">
+                <a href="https://www.ers-education.org/events/coronavirus-webinar-series" target="_blank" class="btn btn-register ga-covid-webinars">More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row_event " style="position: relative; ">
+          <div class="col-md-4 isotope">
+            <div class="card card-event">
+              <div class="card-image" style="max-height:300px;height:150px;
+                background-size:100%;
+                background-repeat: no-repeat; 
+                background-image: url('https://cdn.ersnet.org/preview/node/o:8f35316c3ca9046497f6?name=image500&size=500'); 
+                background-position: center ;">
+              </div>
+              <div class="card-content" style="min-height: 220px;">
+                <h3 class="title">
+                  <a href="/professional-development/respiratory-digests?covid19=true" class="ga-covid-research" target="_blank">Research summaries</a>
+                </h3>
+                <div class="lead-card" >ERS Respiratory Digests provide summaries of new and significant research, including important early COVID-19 publications.</div>
+              </div>
+              <div class="card-action clearfix">
+                <a href="/professional-development/respiratory-digests?covid19=true" target="_blank" class="btn btn-register ga-covid-research">More</a>
+              </div>
+            </div>
+          </div>
+
           <div class="col-md-4 isotope">
             <div class="card card-event">
               <div class="card-image" style="max-height:300px;height:150px;
@@ -168,50 +210,8 @@
             </div>
           </div>
         </div>
+        
 
-        <div class="row row_event " style="position: relative; ">
-          <div class="col-md-4 isotope">
-            <div class="card card-event">
-              <div class="card-image" style="max-height:300px;height:150px;
-                background-size:100%;
-                background-repeat: no-repeat; 
-                background-image: url('https://cdn.ersnet.org/preview/node/o:8f35316c3ca9046497f6?name=image500&size=500'); 
-                background-position: center ;">
-              </div>
-              <div class="card-content" style="min-height: 220px;">
-                <h3 class="title">
-                  <a href="/professional-development/respiratory-digests" class="ga-covid-research" target="_blank">Research summaries</a>
-                </h3>
-                <div class="lead-card" >ERS Respiratory Digests provide summaries of new and significant research, including important early COVID-19 publications.</div>
-              </div>
-              <div class="card-action clearfix">
-                <a href="/professional-development/respiratory-digests" target="_blank" class="btn btn-register ga-covid-research">More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 isotope">
-            <div class="card card-event">
-              <div class="card-image" style="max-height:300px;height:150px;
-                background-size:100%;
-                background-repeat: no-repeat; 
-                background-image: url('https://cdn.ersnet.org/preview/node/o:7f042ec84d85292bcbd8?name=image500&size=500'); 
-                background-position: center ;">
-              </div>
-              <div class="card-content" style="min-height: 220px;">
-                <h3 class="title">
-                  <a href="https://www.ers-education.org/events/coronavirus-webinar-series" class="ga-covid-webinars" target="_blank">Webinars</a>
-                </h3>
-                <div class="lead-card">Expert-led webinars that provide updates on the management of COVID-19 in China, clinical consequences, epidemiology and research potential.</div>
-              </div>
-              <div class="card-action clearfix">
-                <a href="https://www.ers-education.org/events/coronavirus-webinar-series" target="_blank" class="btn btn-register ga-covid-webinars">More</a>
-              </div>
-            </div>
-          </div>
-
-          {{-- https://covid19-forum.ersnet.org/ --}}
-        </div>
       </div>
       <div class="article text-left lead">
         @if($item->body){!! $item->body !!}@endif

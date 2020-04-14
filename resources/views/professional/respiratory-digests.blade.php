@@ -34,16 +34,19 @@
             <div class="main-content light-grey-bg">
               <div class="col-md-10 center-block row row_event " id="respiratory-digest" style="display: flex; flex-wrap: wrap;">
                 @foreach ($items as $index => $digest)
-                <div class="col-md-4 isotope">
-                  <div class="card card-event">
-                    <div class="card-content text-left">
-                      <p class="btn-rounded early_bird" >{{$digest->digestTypeTruncate}}</p>
+                  <div class="col-md-4 isotope">
+                    <div class="card card-event">
+                      <div class="card-image" style="height:24px;">
+                        @if($digest->isCovid19)<span class="label label-danger">COVID-19</span>@endif
+                      </div>
+                      <div class="card-content text-left" style="padding-top: 0px">
+                        <p class="btn-rounded early_bird" >{{$digest->digestTypeTruncate}}</p>
                         <p style="color:#015291;"><strong>Digest Author(s): {{$digest->digestAuthorsTruncate}}</strong></p>
                         <h3 class="title" style="text-transform: none;">
                           @if($digest->uri)
-                            <a href='{{$digest->uri}}'> {{$digest->titleTruncate}} </a>
+                            <a href='{{$digest->uri}}@if($isCovid19Page == true)?covid19=true @endif'> {{$digest->titleTruncate}} </a>
                           @else
-                            <a href="{{$_SERVER['REQUEST_URI']}}/{{$digest->slug}}"> {{$digest->titleTruncate}} </a>
+                            <a href="{{$_SERVER['REQUEST_URI']}}/{{$digest->slug}}@if($isCovid19Page == true)?covid19=true @endif"> {{$digest->titleTruncate}} </a>
                           @endif
                         </h3>
                         <p>Author(s): {{$digest->authorTruncate}} </p>
@@ -52,13 +55,13 @@
                       </div>'
                       <div class="card-action clearfix">
                         @if($digest->uri)
-                          <a href="{{$digest->uri}}" class="btn btn-register">more</a>
+                          <a href="{{$digest->uri}}@if($isCovid19Page == true)?covid19=true @endif" class="btn btn-register">more</a>
                         @else
-                          <a href="{{$_SERVER['REQUEST_URI']}}/{{$digest->slug}}" class="btn btn-register">more</a>
+                          <a href="{{$_SERVER['REQUEST_URI']}}/{{$digest->slug}}@if($isCovid19Page == true)?covid19=true @endif" class="btn btn-register">more</a>
                         @endif
                       </div>
+                    </div>
                   </div>
-                </div>
                 @endforeach
               </div>
             </div>
