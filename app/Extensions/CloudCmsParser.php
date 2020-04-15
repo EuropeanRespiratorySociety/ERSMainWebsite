@@ -32,6 +32,7 @@ class CloudCmsParser
             'digestType' => false,
             'digestAuthor' => false,
             'comments' => false,
+            'isCovid19' => false,
             'url' => false,
             'uri' => false,
             'unPublished' => false,

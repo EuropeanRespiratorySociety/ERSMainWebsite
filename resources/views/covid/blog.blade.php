@@ -60,10 +60,16 @@
             <p ><span style="color:#015291;font-family: Amiri, serif;"><strong>Blog Author(s):</strong> {{$item->author}}</span>&nbsp;/&nbsp;{{$item->createdOn}}</p>
             <div class="lead center-block" style="font-family: Amiri, serif;">{!! $item->lead !!}</div>
           </div>
+
           @if($item->comments == true)
           <hr>
           <div id="disqus_thread"></div>
           @endif
+          <div>
+            <p style="font-size: 16px;margin: 20px 0 80px;">
+              <strong>Blog disclaimer:&nbsp;</strong>The opinions expressed in the blogs and comments section do not reflect the opinions of the European Respiratory Society (ERS). ERS is also not responsible for the accuracy of the information provided within.
+            </p>
+          </div>
       </div>{{-- col-md-7 --}}
     </div>{{-- main-content --}}
 </div> {{-- ers-content --}}

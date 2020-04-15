@@ -44,7 +44,11 @@
         <div class="row" style="margin-top:40px;">
             <div class="col-md-6 col-xs-6 text-left event-items-category">
               <p><em>{{$item->digestType}}</em></p>
+              @if($isCovid19Page == true)
+                View <a href="/professional-development/respiratory-digests?covid19=true">all COVID-19 Respiratory Digests</a>
+              @else
                 View <a href="/professional-development/respiratory-digests">all Respiratory Digests</a>
+              @endif
             </div>
         </div>
           <h2 class="article-title" style="margin-top:50px;">{{$item->title}}</h2>

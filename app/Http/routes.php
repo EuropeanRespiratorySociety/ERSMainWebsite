@@ -103,8 +103,8 @@ Route::group(['prefix' => 'congress-and-events'], function () {
     Route::get('ers-research-seminars', 'RedirectController@researchSeminars');
     Route::get('ers-presidential-summits', 'ResearchController@summits');
     Route::get('ers-presidential-summits/{slug}', 'ResearchController@showRS');
-    Route::get('metabolic-alterations-in-lung-ageing-and-disease', 'LscController@index');
-    Route::get('metabolic-alterations-in-lung-ageing-and-disease/{slug}', 'LscController@show');
+    //Route::get('metabolic-alterations-in-lung-ageing-and-disease', 'LscController@index');
+    //Route::get('metabolic-alterations-in-lung-ageing-and-disease/{slug}', 'LscController@show');
     Route::get('the-lung-science-conference/{slug}', 'LscController@show');
     Route::get('events-calendar', 'CalendarController@index');
     Route::get('ers-2018', 'LscController@paris');
@@ -203,6 +203,8 @@ Route::group(['prefix' => 'professional-development'], function () {
     Route::get('authors', 'NewsController@authors');
     Route::get('authors/{slug}', 'NewsController@showAuthor');
     // Route::get('/website-survey', 'GeneralController@show');
+    Route::get('breaking-covid-19', 'Covid19Controller@breakingNews');
+    Route::get('covid-19-guidelines-and-recommendations-directory', 'Covid19Controller@covidGuidelines');
     Route::get('covid-19-blog', 'Covid19Controller@indexBlog');
     Route::get('covid-19-blog/{slug}', 'Covid19Controller@showBlog');
     //Route::get('cc', 'CloudCms@requestTest');

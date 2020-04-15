@@ -34,6 +34,34 @@ class Covid19Controller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function breakingNews()
+    {
+        $results = $this->CC->getItem("breaking-covid-19");
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] =  (object) $item[0];
+
+        return view('covid.breakingNews')->with($params); 
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function covidGuidelines()
+    {
+        $results = $this->CC->getItem("covid-19-guidelines-and-recommendations-directory");
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] =  (object) $item[0];
+
+        return view('covid.guidelinesRecommendations')->with($params); 
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function indexBlog()
     { 
         $item = $this->CC->getItem('covid-19-blog');
