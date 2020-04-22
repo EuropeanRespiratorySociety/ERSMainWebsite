@@ -159,6 +159,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /congress-and-events/ers-2018 https://www.ersnet.org/congress-and-events/ers-international-congress
         Redirect 301 /CPD https://www.ersnet.org/professional-development/cpd
         Redirect 301 /cpd https://www.ersnet.org/professional-development/cpd
+        Redirect 301 /covid19 https://www.ersnet.org/the-society/news/novel-coronavirus-outbreak--update-and-information-for-healthcare-professionals
 
         # E
         Redirect 301 /ebus https://www.ersnet.org/professional-development/endobronchial-ultrasound-certified-training-programme

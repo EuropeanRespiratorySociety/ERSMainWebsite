@@ -1,4 +1,7 @@
-  @extends('template')
+  {{--
+    Section move in myERS 20200422
+    
+    @extends('template')
 @section('meta')
         @include('partials.meta', array('meta' =>
               [
@@ -30,12 +33,9 @@
         <div class="col-md-8 center-block lead">4, Avenue Ste-Luce CH 1003 Lausanne Switzerland<br><br>
         TEL +41 21 213 01 01&nbsp;&nbsp;/&nbsp;&nbsp;FAX +41 21 213 01 00</div>
 
-        <!--Map-->
         <div id="map_lausanne" style="width: 700px; height:50px;">
       
         </div>
-        <!--Fin Map-->
-
 
 
         <div class="row">
@@ -62,10 +62,7 @@
             </p>
           </div>
         </div>
-
-        <!--Departments Menu-->
         <div class="row row_depertment">
-            <!--Congress-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -76,8 +73,6 @@
                     </div>
                 </div>
             </div>
-
-            <!--Corporate-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -88,9 +83,6 @@
                     </div>
                 </div>
             </div>
-
-
-            <!--Press and Communications-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -101,9 +93,6 @@
                     </div>
                 </div>
             </div>
-
-
-            <!--Education-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -114,8 +103,6 @@
                     </div>
                 </div>
             </div>
-
-            <!--Advocacy and EU Affairs-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -126,8 +113,6 @@
                     </div>
                 </div>
             </div>
-
-            <!--ELF-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -138,8 +123,6 @@
                     </div>
                 </div>
             </div>
-
-            <!--Finance-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -150,8 +133,6 @@
                     </div>
                 </div>
             </div>
-
-            <!--IT-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -163,7 +144,6 @@
                 </div>
             </div>
             
-            <!--Membership-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -175,7 +155,6 @@
                 </div>
             </div>
 
-            <!--Publications-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -187,7 +166,6 @@
                 </div>
             </div>
 
-            <!--Scientific activities-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -199,7 +177,6 @@
                 </div>
             </div>
             
-            <!--Scientific Events-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -209,20 +186,10 @@
                         <a href="the-society/who-we-are/executive-office#scientific-events">Scientific Events</a>
                     </div>
                 </div>
-            </div>
-
-            
-            
-            
+            </div> 
         </div>
-        <!--Fin Departments Menu-->
-
-
-
     </div>
     </div>
-
-    <!--Section Congress-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -272,9 +239,6 @@
       </div>
     </div>
     </div>
-    <!--Fin Section Congress-->
-
-    <!--Section Corporate Relations-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -332,9 +296,6 @@
       </div>
     </div>
     </div>
-    <!--Fin Section Corporate Relations-->
-
-    <!--Section Press and Communications-->
     <div class="section fp-auto-height">
       <div class="main-content">
         <div class="page-head">
@@ -364,9 +325,6 @@
         </div>
       </div>
       </div>
-    <!--Fin Press and Communications-->
-
-    <!--Section Education-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -452,9 +410,6 @@
       </div>
     </div>
     </div>
-    <!--Fin Section Education-->
-
-    <!--Section EU Affairs-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -497,9 +452,6 @@
       </div>
     </div>
     </div>
-    <!--Fin Section EU Affairs-->
-
-    <!--Section ELF-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -549,9 +501,6 @@
       </div>
     </div>
     </div>
-    <!--Fin Section ELF-->
-
-    <!--Section Finance-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -632,9 +581,6 @@
       </div>
     </div>
     </div>
-    <!--Fin Section Finance-->
-
-    <!--Section IT Infrastructure and Service-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -689,9 +635,6 @@
       </div>
     </div>
     </div>
-    <!--Fin IT Infrastructure and Service-->
-
-    <!--Section Membership-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -715,9 +658,6 @@
       </div>
     </div>
     </div>
-    <!--Fin Section Membership-->
-
-    <!--Section Publications-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -822,9 +762,6 @@
       </div>
     </div>
     </div>
-    <!--Fin Section Publications-->
-
-    <!--Section Scientific activities-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -892,10 +829,6 @@
       </div>
     </div>
     </div>
-    <!--Fin Scientific activities-->
-
-    
-    <!--Section Scientific Events-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -945,46 +878,18 @@
       </div>
     </div>
     </div>
-    <!--Fin Section Scientific Events-->
-
-    
-
-          {{-- Footer --}}
       @include('footer')
-
-
-
-
-     
-
     </div>
   </div>
-
-
-
-
-
-
     @stop()  
 
     @section('scripts')
-    {{-- <script src="https://cdn.ersnet.org/js/fullpage.js" type="text/javascript"></script> --}}
-    {{-- <script src="https://cdn.ersnet.org/js/app-assemblies.js" type="text/javascript"></script> --}}
-
-    {{-- <<script src="http://erstemplate.app/js/fullpage.js" type="text/javascript"></script>> --}}
-    {{-- <<script src="http://erstemplate.app/js/app-executive-office.js" type="text/javascript"></script>> --}}
-
-    {{-- <script src="https://bootstrap.ersnet.org/js/fullpage.js" type="text/javascript"></script>
-    <script src="https://bootstrap.ersnet.org/js/app-executive-office.js" type="text/javascript"></script> --}}
-
-    {{-- Cloud Front is the ERS CDN --}}
     <script src="https://cdn.ersnet.org/js/fullpage.js" type="text/javascript"></script>
     <script src="https://cdn.ersnet.org/js/app-executive-office.js" type="text/javascript"></script>
 
     <script type="text/javascript">
       $(document).ready(function(){
-        //initialize the javascript
         App.executiveOffice();             
       });
     </script>
-    @stop()
+    @stop() --}}

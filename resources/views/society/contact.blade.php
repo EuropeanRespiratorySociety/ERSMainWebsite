@@ -45,49 +45,7 @@
           <div class="col-md-6 col-md-offset-3" style="margin-top: 50px; margin-bottom:50px;">
           <a href="https://forms.ersnet.org/contact" class="btn btn-primary btn-lg"><span class="s7-mail icon"></span>Contact form</a>
           </div>
-        </div>
-        <div class="page-head">
-            <h3 class="">Or find staff contact details</h3>
-        </div>
-        <div class="row">
-          <div class="col-md-3 col-md-offset-4">
-           <ul class="text-left">
-            <li>
-              <a href="the-society/who-we-are/executive-office#congress">Congress and Events</a>
-            </li>
-            <li>
-              <a href="the-society/who-we-are/executive-office#educational">Educational Activities</a>
-            </li>
-            <li>
-              <a href="the-society/who-we-are/executive-office#eu">EU Affairs</a>
-            </li>
-            <li>
-              <a href="the-society/who-we-are/executive-office#elf">European Lung Fundation</a>
-            </li>
-            <li>
-              <a href="the-society/who-we-are/executive-office">Executive Office</a>
-            </li>
-            <li>
-              <a href="the-society/who-we-are/executive-office">Executive Department</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <ul class="text-left">
-            <li>
-              <a href="the-society/who-we-are/executive-office#finance">Finance</a>
-            </li>
-            <li>
-              <a href="the-society/who-we-are/executive-office#it">IT Infrastructure and Services</a>
-            </li>
-            <li><a href="the-society/who-we-are/executive-office#corporate">Marketing and Corporate Relations</a></li>
-            <li><a href="the-society/who-we-are/executive-office#membership">Membership and National Societies Relations</a></li>
-            <li><a href="the-society/who-we-are/executive-office#publications">Publications</a></li>
-            <li><a href="the-society/who-we-are/executive-office#press">Press and Communications</a></li>
-            <li><a href="the-society/who-we-are/executive-office#scientific">Scientific Activities</a></li>
-          </ul>
-        </div>
-      </div> 
+        </div> 
     </div> 
   </div>  
 

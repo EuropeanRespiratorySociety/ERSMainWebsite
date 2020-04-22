@@ -59,7 +59,7 @@
                 <h3 class="title">
                   <a href="/breaking-covid-19" class="ga-covid-breaking" target="_blank">DAILY ROUND UP: NEWS, RESEARCH AND CLINICAL TRIALS</a>
                 </h3>
-                <div class="lead-card">ERS's Daily round-up features the latest news, research and clinical trials related to SARS-CoV-2 and COVID-19 as selected by an expert reviewer.
+                <div class="lead-card">ERS's Daily round-up features the latest news, research and clinical trials related to SARS-CoV-2 and COVID-19 as selected by a reviewer.
                 </div>
               </div>
               <div class="card-action clearfix">
