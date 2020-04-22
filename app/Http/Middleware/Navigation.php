@@ -44,8 +44,8 @@ class Navigation
                         ->link->attr(array('class' => 'ga-nav-society'));
                         $menu->leadershipAndCommittees->add('Open Positions', 'the-society/who-we-are/leadership/open-positions')
                         ->link->attr(array('class' => 'ga-nav-society'));
-                    $menu->whoWeAre->add('Executive office', 'the-society/who-we-are/executive-office')
-                    ->link->attr(array('class' => 'ga-nav-society'));
+                    // $menu->whoWeAre->add('Executive office', 'the-society/who-we-are/executive-office')
+                    // ->link->attr(array('class' => 'ga-nav-society'));
                     $menu->whoWeAre->add('Governance and Transparency', 'the-society/who-we-are/ers-governance-and-transparency')
                     ->link->attr(array('class' => 'ga-nav-society'));
                     $menu->whoWeAre->add('Awards', 'the-society/who-we-are/awards' )
