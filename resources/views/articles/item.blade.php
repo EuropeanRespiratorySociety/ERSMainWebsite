@@ -73,6 +73,40 @@
             <p><i>Respiratory Worldwide aims to stimulate communication and interaction between national and regional respiratory societies and ERS. These articles have not been (peer) reviewed and are not official ERS content.</i></p>
           @endif
         @endif
+        @if($item->slug == "burden-of-asthma")
+          <ul>
+            <li>
+              <strong>ERS Vision videos:</strong>
+            </li>
+          </ul>
+          <h4><a href="https://ersvision.org/special-series/unmet-needs-in-asthma" target="_blank">Professor Klaus Rabe discusses the major unmet needs in asthma</a></h4>
+          <div class="row">
+            <div class="col-md-10 center-block">
+              <div class="videoWrapper"style="margin-top: 15px;margin-bottom: 15px;">
+                <iframe src="https://www.youtube.com/embed/RwEiu90M0Gs"frameborder="0"allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <h4><a href="https://ersvision.org/special-series/unmet-needs-in-paediatric-asthma" target="_blank">Professor Erika von Mutius presents the major unmet needs in paediatric asthma</a></h4>
+          <div class="row">
+            <div class="col-md-10 center-block">
+              <div class="videoWrapper"style="margin-top: 15px;margin-bottom: 15px;">
+                <iframe src="https://www.youtube.com/embed/H-Q8tjtB_hM"frameborder="0"allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <h4><a href="https://ersvision.org/videos/severe-asthma" target="_blank">Professor Klaus Rabe discusses the major unmet needs in asthma</a></h4>
+          <p>
+            Professors Guy Brusselle, Andrew Bush and Sally Wenzel explore the issues, recent advances and knowledge gaps as we move towards more effective diagnosis and treatment of severe asthma.
+          </p>
+          <div class="row">
+            <div class="col-md-10 center-block">
+              <div class="videoWrapper"style="margin-top: 15px;margin-bottom: 15px;">
+                <iframe src="https://www.youtube.com/embed/HGuq0JQPgdk"frameborder="0"allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        @endif
       </div>
       @if($item->comments == true)
       <hr>
