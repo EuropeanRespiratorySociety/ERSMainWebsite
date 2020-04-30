@@ -79,7 +79,7 @@
               <strong>ERS Vision videos:</strong>
             </li>
           </ul>
-          <h4><a href="https://ersvision.org/special-series/unmet-needs-in-asthma" target="_blank">Professor Klaus Rabe discusses the major unmet needs in asthma</a></h4>
+          <h4>Professor Klaus Rabe discusses the major unmet needs in asthma</h4>
           <div class="row">
             <div class="col-md-10 center-block">
               <div class="videoWrapper"style="margin-top: 15px;margin-bottom: 15px;">
@@ -87,7 +87,8 @@
               </div>
             </div>
           </div>
-          <h4><a href="https://ersvision.org/special-series/unmet-needs-in-paediatric-asthma" target="_blank">Professor Erika von Mutius presents the major unmet needs in paediatric asthma</a></h4>
+          <br/>
+          <h4>Professor Erika von Mutius presents the major unmet needs in paediatric asthma</h4>
           <div class="row">
             <div class="col-md-10 center-block">
               <div class="videoWrapper"style="margin-top: 15px;margin-bottom: 15px;">
@@ -95,7 +96,8 @@
               </div>
             </div>
           </div>
-          <h4><a href="https://ersvision.org/videos/severe-asthma" target="_blank">Professor Klaus Rabe discusses the major unmet needs in asthma</a></h4>
+          <br/>
+          <h4>Professor Klaus Rabe discusses the major unmet needs in asthma</h4>
           <p>
             Professors Guy Brusselle, Andrew Bush and Sally Wenzel explore the issues, recent advances and knowledge gaps as we move towards more effective diagnosis and treatment of severe asthma.
           </p>
@@ -106,6 +108,8 @@
               </div>
             </div>
           </div>
+          <br/>
+          <h4><a href="http://www.ersvision.org/" target="_blank">Access more ERS Vision videos</a></h4>
         @endif
       </div>
       @if($item->comments == true)
