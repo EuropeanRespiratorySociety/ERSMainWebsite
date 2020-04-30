@@ -97,7 +97,7 @@
             </div>
           </div>
           <br/>
-          <h4>Professor Klaus Rabe discusses the major unmet needs in asthma</h4>
+          <h4>Severe asthma</h4>
           <p>
             Professors Guy Brusselle, Andrew Bush and Sally Wenzel explore the issues, recent advances and knowledge gaps as we move towards more effective diagnosis and treatment of severe asthma.
           </p>
