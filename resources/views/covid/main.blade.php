@@ -200,18 +200,40 @@
               </div>
               <div class="card-content" style="min-height: 220px;">
                 <h3 class="title">
-                  <a href="https://www.europeanlung.org/en/news-and-events/news/covid-19-%E2%80%93-your-questions-answered-by-a-respiratory-expert" class="ga-covid-qa" target="_blank">Patient Q&A</a>
+                  <a href="https://www.europeanlung.org/covid-19/" class="ga-covid-qa" target="_blank">PATIENT MATERIALS</a>
                 </h3>
-                <div class="lead-card">ERS infections experts answered questions sent to the European Lung Foundation by respiratory patients.</div>
+                <div class="lead-card">Access ELF materials for respiratory patients, relatives and caregivers, developed with ERS experts and available in multiple languages.</div>
               </div>
               <div class="card-action clearfix">
-                <a href="https://www.europeanlung.org/en/news-and-events/news/covid-19-%E2%80%93-your-questions-answered-by-a-respiratory-expert" target="_blank" class="btn btn-register ga-covid-qa">More</a>
+                <a href="https://www.europeanlung.org/covid-19/" target="_blank" class="btn btn-register ga-covid-qa">More</a>
               </div>
             </div>
           </div>
         </div>
         
 
+      </div>
+
+      <div class="text-left" style="font-size: 16px;margin: 30px 0px 80px; font-family: DinPro,sans-serif; padding: 5px 15px; background: #fff;">
+        <p style="margin: 20px 0 20px 10px ;">
+          The following companies are supporting this ERS initiative through grants. Grantors have no influence on the content or development of this platform.
+        </p>
+        <div class="row center-block" >
+          <div class="col-md-3 col-xs-12 text-center" style="margin-bottom: 20px;" >
+            <img src="https://cdn.ersnet.org/preview/node/o:b176756e1fef8e1f1a9f">
+          </div>
+          <div class="col-md-3 col-xs-12 text-center" style="margin-bottom: 20px;" >
+            <img src="https://cdn.ersnet.org/preview/node/f8a6d608cfc05b8b1db8">
+          </div>
+          <div class="col-md-3 col-xs-12 text-center" style="margin-bottom: 20px;" >
+            <img src="https://cdn.ersnet.org/preview/node/5704cae538e1db1f6e5f" >
+          </div>
+          <div class="col-md-2 col-xs-12 text-center" style="margin-bottom: 20px;" >
+            <img src="https://cdn.ersnet.org/preview/node/66be3746738803253d47" >
+          </div>
+
+
+        </div>
       </div>
       <div class="article text-left lead">
         @if($item->body){!! $item->body !!}@endif
