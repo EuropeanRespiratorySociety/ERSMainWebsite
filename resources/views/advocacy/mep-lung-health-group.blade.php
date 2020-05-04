@@ -15,10 +15,15 @@
     <div id="fullpage">
       <div class="main-content">
         <div class="page-head">
-          <h2 class="">MEP lung health group</h2>
+          <h2 class="">{{$item->title}}</h2>
         </div>
 
-
+        <div class="col-md-7 center-block lead text-left">
+          {!! $item->lead !!}
+        </div>
+        <div class="col-md-7 center-block lead text-left">
+          {!! $item->body !!}
+        </div>
         <div class="row" style="padding-top: 40px;">
          <div class="col-md-3 xs-mb-15">
           <img src="https://cdn.ersnet.org/images/people/mep/nicolas-gonzalez-casares.png" class="img-circle">

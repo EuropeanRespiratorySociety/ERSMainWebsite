@@ -202,6 +202,25 @@ class GeneralController extends Controller
     }
 
     /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function mep()
+    { 
+        $results = $this->CC->getItem('mep-lung-health-group');
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] =  (object) $item[0]; 
+
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
+        }
+
+        return view('advocacy.mep-lung-health-group')->with($params);
+    }
+
+
+    /**
      * Display the specified resource.
      *
      * @param  int  $id

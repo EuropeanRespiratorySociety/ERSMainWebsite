@@ -196,7 +196,7 @@ Route::group(['prefix' => 'professional-development'], function () {
         return view('advocacy.policy-areas');
     });
     Route::get('advocacy/policy-areas/{slug}', 'GeneralController@show');
-    Route::get('advocacy/mep-lung-health-group', function(){ return view('advocacy.mep-lung-health-group');});
+    Route::get('advocacy/mep-lung-health-group', 'GeneralController@mep');
     Route::get('advocacy/{slug}', 'GeneralController@show');
     Route::get('related/{slug}', 'GeneralController@show');
 
