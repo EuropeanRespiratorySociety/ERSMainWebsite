@@ -37,7 +37,7 @@
     <div class="col-md-3 col-xs-12 medium-grey-bg left-photo-map">
       <p><img src="https://cdn.ersnet.org/images/course/webinar-image500x333.jpg" class="img-rounded img-responsive"></p>
       @if($item->sponsors && $item->sponsors[0]->text)
-    <h4 class="hidden-xs hidden-sm" style="margin: 20px 0 0 25px;text-align:left;">The following compagnies are supporting this ERS initiative through grants. Grantors have no influence on the content or development of this platform.</h4>
+    <h4 class="hidden-xs hidden-sm" style="margin: 20px 0 0 25px;text-align:left;">The following companies are supporting this ERS initiative through grants. Grantors have no influence on the content or development of this platform.</h4>
       @foreach ($item->sponsors as $sponsor)
       <div class="hidden-xs hidden-sm course-sponsor text-left" style="background:transparent;padding: 0 10px 0 26px;">
           @if($sponsor->text)
@@ -143,7 +143,7 @@
     <div > 
       <hr class="visible-xs visible-sm">
       @if($item->sponsors && $item->sponsors[0]->text)
-      <h4 class="visible-xs visible-sm" style="margin: 50px 0 0 25px;text-align:left;">The following compagnies are supporting this ERS initiative through grants. Grantors have no influence on the content or development of this platform.</h4>
+      <h4 class="visible-xs visible-sm" style="margin: 50px 0 0 25px;text-align:left;">The following companies are supporting this ERS initiative through grants. Grantors have no influence on the content or development of this platform.</h4>
       @foreach ($item->sponsors as $sponsor)
       <div class="visible-xs visible-sm course-sponsor text-left" style="background:transparent;padding: 0 10px 0 10px;">
           @if($sponsor->text)
