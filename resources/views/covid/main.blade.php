@@ -219,17 +219,17 @@
           The following companies are supporting this ERS initiative through grants. Grantors have no influence on the content or development of this platform.
         </p>
         <div class="row center-block" >
-          <div class="col-md-3 col-md-offset-1 col-xs-12 text-center" style="margin-bottom: 20px;" >
-            <img src="https://cdn.ersnet.org/preview/node/o:b176756e1fef8e1f1a9f">
+          <div class="col-md-3 col-sm-4 col-md-offset-1 col-xs-12 text-center" style="margin-bottom: 20px;margin-right: 10px;" >
+            <img src="https://cdn.ersnet.org/preview/node/o:a383ea083f7c42cf7556">
           </div>
-          <div class="col-md-3 col-xs-12 text-center" style="margin-bottom: 20px;" >
-            <img src="https://cdn.ersnet.org/preview/node/f8a6d608cfc05b8b1db8">
+          <div class="col-md-3 col-sm-4 col-xs-12 text-center" style="margin-bottom: 20px;" >
+            <img src="https://cdn.ersnet.org/preview/node/o:f8a6d608cfc05b8b1db8">
           </div>
-          <div class="col-md-2 col-xs-12 text-center" style="margin-bottom: 20px;" >
-            <img src="https://cdn.ersnet.org/preview/node/f19015ca12a6ed42169a" >
+          <div class="col-md-2 col-sm-2 col-xs-12 text-center" style="margin-bottom: 20px;" >
+            <img src="https://cdn.ersnet.org/preview/node/o:f19015ca12a6ed42169a" >
           </div>
-          <div class="col-md-2 col-xs-12 text-center" style="margin-bottom: 20px;" >
-            <img src="https://cdn.ersnet.org/preview/node/66be3746738803253d47" >
+          <div class="col-md-2 col-sm-2 col-xs-12 text-center" style="margin-bottom: 20px;" >
+            <img src="https://cdn.ersnet.org/preview/node/o:66be3746738803253d47" >
           </div>
         </div>
       </div>
