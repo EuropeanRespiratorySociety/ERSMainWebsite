@@ -26,7 +26,7 @@
                         <li class="list-group-item panel ">
                             <div class="card card-event">
                                 <div class="card-image">
-                                    <img class="img-responsive" src="https://53ed64a9-671f-4e65-9f57-5e736e3d5d62-hosted.cloudcms.net/preview/node/o:3b6cdd220500ffd9de0b?name=image500&amp;size=500">
+                                    <img class="img-responsive" src="https://cdn.ersnet.org/preview/node/o:3b6cdd220500ffd9de0b">
                                 </div>
                                 <div class="card-title text-left">
                                     <h3>Press Office</h3>
