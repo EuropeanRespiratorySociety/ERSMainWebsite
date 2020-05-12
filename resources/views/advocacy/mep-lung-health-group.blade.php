@@ -49,7 +49,6 @@
               EPP, Croatia
             </p>
           </div>
-
         </div>
 
         <div class="row" style="padding-top: 40px;">
@@ -65,8 +64,58 @@
                EPP, Spain
              </p>
            </div>
-         </div>
+           <div class="col-md-3 xs-mb-15">
+            <img src="https://cdn.ersnet.org/images/people/mep/Gianna-GANCIA.png" class="img-circle">
+            <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197582/GIANNA_GANCIA/home" target="_blank">Gianna GANCIA</a></strong>
+              ID, Italy
+            </p>
+          </div>
+          <div class="col-md-3 xs-mb-15">
+            <img src="https://cdn.ersnet.org/images/people/mep/Ondrej-KNOTEK.png" class="img-circle">
+            <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197528/ONDREJ_KNOTEK/home" target="_blank">Ondřej KNOTEK</a></strong>
+              Renew, the Czech Republic
+            </p>
+          </div>
+         
+        </div>
 
+        <div class="row" style="padding-top: 40px;">
+          <div class="col-md-3 xs-mb-15">
+           <img src="https://cdn.ersnet.org/images/people/mep/Istvan-UJHELYI.png" class="img-circle">
+           <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/124705/ISTVAN_UJHELYI/home" target="_blank">István UJHELYI</a></strong>
+            S&D, Hungary
+           </p>
+           </div>
+           <div class="col-md-3 xs-mb-15">
+             <img src="https://cdn.ersnet.org/images/people/mep/Sara-CERDAS.png" class="img-circle">
+             <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197641/SARA_CERDAS/home" target="_blank">Sara CERDAS</a></strong>
+              S&D, Portugal
+             </p>
+           </div>
+           <div class="col-md-3 xs-mb-15">
+            <img src="https://cdn.ersnet.org/images/people/mep/Marisa-MATIAS.png" class="img-circle">
+            <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/96820/MARISA_MATIAS/home" target="_blank">Marisa MATIAS</a></strong>
+              GUE-NGL, Portugal
+            </p>
+          </div>
+          <div class="col-md-3 xs-mb-15">
+            <img src="https://cdn.ersnet.org/images/people/mep/Maria-da-Graca-CARVALHO.png" class="img-circle">
+            <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/96867/MARIA+DA+GRACA_CARVALHO/home" target="_blank">Maria da Graça CARVALHO</a></strong>
+              EPP, Portugal
+            </p>
+          </div>
+
+
+        </div>
+
+        <div class="row" style="padding-top: 40px;">
+          <div class="col-md-3 xs-mb-15">
+           <img src="https://cdn.ersnet.org/images/people/mep/Sean-KELLY.png" class="img-circle">
+           <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/96668/SEAN_KELLY/home" target="_blank">Seán KELLY</a></strong>
+            EPP, Ireland
+           </p>
+           </div>
+        </div>
     </div>
 
 
