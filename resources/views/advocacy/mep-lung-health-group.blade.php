@@ -9,124 +9,122 @@
 @stop()
     @section('content')
 
-    <div class="ers-content executive-content" style="margin-left:0;">
-        <div class="ers-content membership-content">
+<div class="executive-content" style="margin-left:0;">
+  <div class="ers-content membership-content">
       
-    <div id="fullpage">
-      <div class="main-content">
-        <div class="page-head">
-          <h2 class="">{{$item->title}}</h2>
-        </div>
+        <div id="fullpage">
+          <div class="main-content">
+            <div class="page-head">
+              <h2 class="">{{$item->title}}</h2>
+            </div>
 
-        <div class="col-md-7 center-block lead text-left">
-          {!! $item->lead !!}
-        </div>
-        <div class="col-md-7 center-block lead text-left">
-          {!! $item->body !!}
-        </div>
-        <div class="row" style="padding-top: 40px;">
-         <div class="col-md-3 xs-mb-15">
-          <img src="https://cdn.ersnet.org/images/people/mep/nicolas-gonzalez-casares.png" class="img-circle">
-          <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197718/NICOLAS_GONZALEZ+CASARES/home" target="_blank">Nicolás GONZÁLEZ CASARES</a></strong>
-            S&D, Spain
-          </p>
-          </div>
-          <div class="col-md-3 xs-mb-15">
-            <img src="https://cdn.ersnet.org/images/people/mep/eleonora-evi.png" class="img-circle">
-            <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/124779/ELEONORA_EVI/home" target="_blank">Eleonora EVI</a></strong>
-              Non-attached, Italy
-            </p>
-          </div>
-          <div class="col-md-3 xs-mb-15">
-            <img src="https://cdn.ersnet.org/images/people/mep/manuel-pizarro.png" class="img-circle">
-            <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197732/MANUEL_PIZARRO/home" target="_blank">Manuel PIZARRO</a></strong>
-              S&D, Portugal
-            </p>
-          </div>
-          <div class="col-md-3 xs-mb-15">
-            <img src="https://cdn.ersnet.org/images/people/mep/zeljana-zovko.png" class="img-circle">
-            <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/185341/ZELJANA_ZOVKO/home" target="_blank">Željana ZOVKO</a></strong>
-              EPP, Croatia
-            </p>
-          </div>
-        </div>
+            <div class="col-md-7 center-block lead text-left">
+              {!! $item->lead !!}
+            </div>
+            <div class="col-md-7 center-block lead text-left">
+              {!! $item->body !!}
+            </div>
+            <div class="row" style="padding-top: 40px;">
+              <div class="col-md-3 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/mep/nicolas-gonzalez-casares.png" class="img-circle">
+                <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197718/NICOLAS_GONZALEZ+CASARES/home" target="_blank">Nicolás GONZÁLEZ CASARES</a></strong>
+                  S&D, Spain
+                </p>
+              </div>
+              <div class="col-md-3 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/mep/eleonora-evi.png" class="img-circle">
+                <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/124779/ELEONORA_EVI/home" target="_blank">Eleonora EVI</a></strong>
+                  Non-attached, Italy
+                </p>
+              </div>
+              <div class="col-md-3 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/mep/manuel-pizarro.png" class="img-circle">
+                <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197732/MANUEL_PIZARRO/home" target="_blank">Manuel PIZARRO</a></strong>
+                  S&D, Portugal
+                </p>
+              </div>
+              <div class="col-md-3 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/mep/zeljana-zovko.png" class="img-circle">
+                <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/185341/ZELJANA_ZOVKO/home" target="_blank">Željana ZOVKO</a></strong>
+                  EPP, Croatia
+                </p>
+              </div>
+            </div>
 
-        <div class="row" style="padding-top: 40px;">
-          <div class="col-md-3 xs-mb-15">
-           <img src="https://cdn.ersnet.org/images/people/mep/marian-jean-marinescu.png" class="img-circle">
-           <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/33982/MARIAN-JEAN_MARINESCU/home" target="_blank">Marian-Jean MARINESCU</a></strong>
-            EPP, Romania
-           </p>
-           </div>
-           <div class="col-md-3 xs-mb-15">
-             <img src="https://cdn.ersnet.org/images/people/mep/dolors-montserrat.png" class="img-circle">
-             <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197711/DOLORS_MONTSERRAT/home" target="_blank">Dolors MONTSERRAT</a></strong>
-               EPP, Spain
-             </p>
-           </div>
-           <div class="col-md-3 xs-mb-15">
-            <img src="https://cdn.ersnet.org/images/people/mep/Gianna-GANCIA.png" class="img-circle">
-            <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197582/GIANNA_GANCIA/home" target="_blank">Gianna GANCIA</a></strong>
-              ID, Italy
-            </p>
-          </div>
-          <div class="col-md-3 xs-mb-15">
-            <img src="https://cdn.ersnet.org/images/people/mep/Ondrej-KNOTEK.png" class="img-circle">
-            <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197528/ONDREJ_KNOTEK/home" target="_blank">Ondřej KNOTEK</a></strong>
-              Renew, the Czech Republic
-            </p>
-          </div>
-         
-        </div>
+            <div class="row" style="padding-top: 40px;">
+              <div class="col-md-3 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/mep/marian-jean-marinescu.png" class="img-circle">
+                <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/33982/MARIAN-JEAN_MARINESCU/home" target="_blank">Marian-Jean MARINESCU</a></strong>
+                  EPP, Romania
+                </p>
+              </div>
+              <div class="col-md-3 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/mep/dolors-montserrat.png" class="img-circle">
+                <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197711/DOLORS_MONTSERRAT/home" target="_blank">Dolors MONTSERRAT</a></strong>
+                  EPP, Spain
+                </p>
+              </div>
+              <div class="col-md-3 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/mep/Gianna-GANCIA.png" class="img-circle">
+                <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197582/GIANNA_GANCIA/home" target="_blank">Gianna GANCIA</a></strong>
+                  ID, Italy
+                </p>
+              </div>
+              <div class="col-md-3 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/mep/Ondrej-KNOTEK.png" class="img-circle">
+                <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197528/ONDREJ_KNOTEK/home" target="_blank">Ondřej KNOTEK</a></strong>
+                  Renew, the Czech Republic
+                </p>
+              </div>
+            </div>
 
-        <div class="row" style="padding-top: 40px;">
-          <div class="col-md-3 xs-mb-15">
-           <img src="https://cdn.ersnet.org/images/people/mep/Istvan-UJHELYI.png" class="img-circle">
-           <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/124705/ISTVAN_UJHELYI/home" target="_blank">István UJHELYI</a></strong>
-            S&D, Hungary
-           </p>
-           </div>
-           <div class="col-md-3 xs-mb-15">
-             <img src="https://cdn.ersnet.org/images/people/mep/Sara-CERDAS.png" class="img-circle">
-             <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197641/SARA_CERDAS/home" target="_blank">Sara CERDAS</a></strong>
-              S&D, Portugal
-             </p>
-           </div>
-           <div class="col-md-3 xs-mb-15">
-            <img src="https://cdn.ersnet.org/images/people/mep/Marisa-MATIAS.png" class="img-circle">
-            <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/96820/MARISA_MATIAS/home" target="_blank">Marisa MATIAS</a></strong>
-              GUE-NGL, Portugal
-            </p>
-          </div>
-          <div class="col-md-3 xs-mb-15">
-            <img src="https://cdn.ersnet.org/images/people/mep/Maria-da-Graca-CARVALHO.png" class="img-circle">
-            <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/96867/MARIA+DA+GRACA_CARVALHO/home" target="_blank">Maria da Graça CARVALHO</a></strong>
-              EPP, Portugal
-            </p>
-          </div>
+            <div class="row" style="padding-top: 40px;">
+              <div class="col-md-3 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/mep/Istvan-UJHELYI.png" class="img-circle">
+                <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/124705/ISTVAN_UJHELYI/home" target="_blank">István UJHELYI</a></strong>
+                  S&D, Hungary
+                </p>
+              </div>
+              <div class="col-md-3 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/mep/Sara-CERDAS.png" class="img-circle">
+                <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197641/SARA_CERDAS/home" target="_blank">Sara CERDAS</a></strong>
+                  S&D, Portugal
+                </p>
+              </div>
+              <div class="col-md-3 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/mep/Marisa-MATIAS.png" class="img-circle">
+                <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/96820/MARISA_MATIAS/home" target="_blank">Marisa MATIAS</a></strong>
+                  GUE-NGL, Portugal
+                </p>
+              </div>
+              <div class="col-md-3 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/mep/Maria-da-Graca-CARVALHO.png" class="img-circle">
+                <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/96867/MARIA+DA+GRACA_CARVALHO/home" target="_blank">Maria da Graça CARVALHO</a></strong>
+                  EPP, Portugal
+                </p>
+              </div>
+            </div>
 
+            <div class="row" style="padding-top: 40px;">
+              <div class="col-md-3 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/mep/Sean-KELLY.png" class="img-circle">
+                <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/96668/SEAN_KELLY/home" target="_blank">Seán KELLY</a></strong>
+                  EPP, Ireland
+                </p>
+              </div>
+              <div class="col-md-3 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/mep/Tudor-CIUHODARU.png" class="img-circle">
+                <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197657/TUDOR_CIUHODARU/home" target="_blank">Tudor CIUHODARU</a></strong>
+                  S&D, Romania
+                </p>
+              </div>
+            </div>
 
-        </div>
+          </div><!-- close main-content -->
+        </div><!-- close full page -->
 
-        <div class="row" style="padding-top: 40px;">
-          <div class="col-md-3 xs-mb-15">
-           <img src="https://cdn.ersnet.org/images/people/mep/Sean-KELLY.png" class="img-circle">
-           <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/96668/SEAN_KELLY/home" target="_blank">Seán KELLY</a></strong>
-            EPP, Ireland
-           </p>
-           </div>
-        </div>
-    </div>
-
-
-
-
-
-
-     
-
-    </div>
-  </div>
+  </div><!-- ers-content -->
+</div><!-- membership-content -->
 
 
 
