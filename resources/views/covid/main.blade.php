@@ -175,6 +175,44 @@
               <div class="card-image" style="max-height:300px;height:150px;
                 background-size:100%;
                 background-repeat: no-repeat; 
+                background-image: url('https://cdn.ersnet.org/preview/node/o:f33a4f45d55fe1f5b7a3?name=image500&size=500'); 
+                background-position: center ;">
+              </div>
+              <div class="card-content" style="min-height: 220px;">
+                <h3 class="title">
+                  <a href="https://www.ers-education.org/covid-19/rfmv-ers-content-useful-for-covid-19-preparedness.aspx" class="ga-covid-rfmv" target="_blank">RESPIRATORY FAILURE AND MECHANICAL VENTILATION RESOURCES</a>
+                </h3>
+                <div class="lead-card">Recent presentations and training materials focused on ventilation and the mechanics of breathing.</div>
+              </div>
+              <div class="card-action clearfix">
+                <a href="https://www.ers-education.org/covid-19/rfmv-ers-content-useful-for-covid-19-preparedness.aspx" target="_blank" class="btn btn-register ga-covid-rfmv">More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 isotope">
+            <div class="card card-event">
+              <div class="card-image" style="max-height:300px;height:150px;
+                background-size:100%;
+                background-repeat: no-repeat; 
+                background-image: url('https://cdn.ersnet.org/preview/node/o:6b02d67af326fd70bb2f?name=image500&size=500&v=1372726:7928b36307b89de87444'); 
+                background-position: center ;">
+              </div>
+              <div class="card-content" style="min-height: 220px;">
+                <h3 class="title">
+                  <a href="/research/covid-19-surveys" class="ga-covid-survey" target="_blank">COVID-19 SURVEYS</a>
+                </h3>
+                <div class="lead-card">Access and contribute to ongoing COVID-19 surveys that are led or endorsed by ERS. Your responses help to advance understanding of COVID-19 across respiratory specialities.</div>
+              </div>
+              <div class="card-action clearfix">
+                <a href="/research/covid-19-surveys" target="_blank" class="btn btn-register ga-covid-survey">More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 isotope">
+            <div class="card card-event">
+              <div class="card-image" style="max-height:300px;height:150px;
+                background-size:100%;
+                background-repeat: no-repeat; 
                 background-image: url('https://cdn.ersnet.org/preview/node/o:8f35316c3ca9046497f6?name=image500&size=500'); 
                 background-position: center ;">
               </div>
@@ -190,6 +228,9 @@
             </div>
           </div>
 
+        </div>
+        
+        <div class="row row_event " style="position: relative; ">
           <div class="col-md-4 isotope">
             <div class="card card-event">
               <div class="card-image" style="max-height:300px;height:150px;
@@ -210,7 +251,7 @@
             </div>
           </div>
         </div>
-        
+
 
       </div>
 
