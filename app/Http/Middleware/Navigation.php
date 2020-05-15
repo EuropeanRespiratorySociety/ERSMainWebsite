@@ -122,11 +122,13 @@ class Navigation
                 $menu->congressAndEvents->add('ERS Satellites','congress-and-events/ers-satellite')
                 ->link->attr(array('class' => 'ga-nav-congress-and-events'));
                 //$menu->congressAndEvents->add('Paris 2018','congress-and-events/ers-2018');
-                // $menu->congressAndEvents->add('The Lung Science Conference','congress-and-events/metabolic-alterations-in-lung-ageing-and-disease')
-                // ->link->attr(array('class' => 'ga-nav-congress-and-events'));
-                //     $menu->theLungScienceConference->add('Estoril, your host city','congress-and-events/metabolic-alterations-in-lung-ageing-and-disease/estoril-your-host-city')->link->attr(array('style' => 'display:none'));
-                //     $menu->theLungScienceConference->add('Previous Conferences','http://old.ersnet.org/previous-conferences.html')
-                //                             ->link->attr(array('target' => '_blank','style' => 'display:none'));
+                $menu->congressAndEvents->add('The Lung Science Conference','congress-and-events/ers-lung-science-conference')->nickname('lsc')
+                ->link->attr(array('class' => 'ga-nav-congress-and-events'));
+                $menu->lsc->add('Registration','congress-and-events/ers-lung-science-conference/lsc-registration')->link->attr(array('style' => 'display:none'));
+                $menu->lsc->add('Programme','congress-and-events/ers-lung-science-conference/lsc-programme')->link->attr(array('style' => 'display:none'));
+                $menu->lsc->add('Abstracts and Bursaries','congress-and-events/ers-lung-science-conference/lsc-abstracts-and-bursaries')->link->attr(array('style' => 'display:none'));
+                $menu->lsc->add('Accommodation and practical information','congress-and-events/ers-lung-science-conference/lsc-accommodation-and-practical-information')->link->attr(array('style' => 'display:none'));
+                $menu->lsc->add('Exhibition','congress-and-events/ers-lung-science-conference/lsc-exhibition')->link->attr(array('style' => 'display:none'));
                 $menu->congressAndEvents->add('Sleep and Breathing Conference','https://sleepandbreathing.org')
                  ->link->attr(array('class' => 'ga-nav-congress-and-events'));
                 $menu->congressAndEvents->add('ERS Presidential Summits','congress-and-events/ers-presidential-summits')
