@@ -98,7 +98,7 @@ class CpdController extends Controller
                     $articleStyle = "flex-basis: 100%;margin-top: 10px;";
                 }
                 if($item->contentType == "learning_resources" && $item->externalLink->link){
-                    $item->uri = $item->externalLink->link;
+                    $item->uri = "https://www.ers-education.org/cpd-recommandation.aspx?idParent=".$item->externalLink->link;
                 }
                 $htmlResult .= '<div class="card card-event" style="font-family: DinPro,sans-serif;">';
                 $htmlResult .=      '<div style="display: flex; flex-direction: row; padding: 10px 15px 5px;">';
