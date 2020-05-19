@@ -287,6 +287,8 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /the-society/news/ers-international-congress-2019-madrid-register-now-to-join-us-in-person-or-online-home https://erscongress.org/
         Redirect 301 /the-society/news/send-us-your-topics-suggestions-for-the-sleep-and-breathing-conference-2021-home https://sleepandbreathing.org/articles/programme-2021
 
+        #T
+        Redirect 301 /virtual-school https://www.ersnet.org/professional-development/courses/virtual-school-in-adult-and-paediatric-respiratory-medicine
         
         # Number
         Redirect 301 /10PrinciplesforLungHealth https://ers.box.com/s/zj0x90cz9cwutldzlxbnoglzonmmnrbk
