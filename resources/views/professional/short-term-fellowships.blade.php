@@ -111,7 +111,7 @@
 
 
 @if($category->registerButton->link)
-  <a href="{{$category->registerButton->link}}" target="_blank" class="btn btn-primary item-register-bt">{{$category->registerButton->text}}</a>
+  <a href="{{$category->registerButton->link}}" target="_blank" class="btn btn-primary item-register-bt ga-event-registration">{{$category->registerButton->text}}</a>
 @endif  
 </div>
 

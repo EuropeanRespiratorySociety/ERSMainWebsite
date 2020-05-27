@@ -283,7 +283,7 @@
                     {{ $item->registerButton->text or Register}}
                   </a>
               @else
-                  <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
+                  <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt ga-event-registration">
                   {{ $item->registerButton->text or Register}}
               </a>
               @endif

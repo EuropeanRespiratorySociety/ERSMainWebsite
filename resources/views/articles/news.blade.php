@@ -124,7 +124,7 @@
           <div class="modal-body">
             <div class="text-center">
                 <div class="list-group ">
-                        <h3><a href="http://eepurl.com/jL9of" target="_blank" class="list-group-item">ERS Newsletter</a></h3>
+                        <h3><a href="http://eepurl.com/jL9of" target="_blank" class="list-group-item ga-newsletter-subscribe">ERS Newsletter</a></h3>
                         <h3><a href="https://forms.ersnet.org/respiratory-matters" target="_blank" class="list-group-item">Respiratory Matters</a></h3>
                         {{--<h3><a href="https://forms.ersnet.org/respiratory-world-wide" target="_blank" class="list-group-item">Respiratory Worldwide</a></h3>--}}
                         <h3><a href="http://www.ersvision.org/video-alert-subscription" target="_blank" class="list-group-item">ERS Vision</a></h3>

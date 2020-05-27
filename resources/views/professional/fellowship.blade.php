@@ -207,7 +207,7 @@
               <p>For more information, contact {!! Html::mailto('fellowships@ersnet.org', 'fellowships@ersnet.org') !!}</p>
               @endif
               {{--<p>Registering for someone else ? Contact {!! Html::mailto('education@ersnet.org', 'Felix Yip') !!}</p>--}}
-              <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
+              <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt ga-event-registration">
                 {{ $item->registerButton->text or Register}}
             </a>
             @endif
