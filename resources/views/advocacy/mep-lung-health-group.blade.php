@@ -118,6 +118,27 @@
                   S&D, Romania
                 </p>
               </div>
+              <div class="col-md-3 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/mep/Alexis-GEORGOULIS.png" class="img-circle">
+                <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197819/ALEXIS_GEORGOULIS/home" target="_blank">Alexis GEORGOULIS</a></strong>
+                  GUE-NGL, Greece
+                </p>
+              </div>
+              <div class="col-md-3 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/mep/Miriam-DALLI.png" class="img-circle">
+                <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/124970/MIRIAM_DALLI/home" target="_blank">Miriam DALLI</a></strong>
+                  S&D, Malta
+                </p>
+              </div>
+            </div>
+
+            <div class="row" style="padding-top: 40px;">
+              <div class="col-md-3 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/mep/Maria-ARENA.png" class="img-circle">
+                <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/124936/MARIA_ARENA/home" target="_blank">Maria ARENA</a></strong>
+                  S&D, Belgium
+                </p>
+              </div>
             </div>
 
           </div><!-- close main-content -->
