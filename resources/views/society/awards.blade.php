@@ -96,11 +96,11 @@
                     <br /><br />--}} <h3>Previous Award winners:
                     </h3> 
                     <ul class="list-unstyled  center-block text-left" style="width:10%;" >
-                        <li><a href="https://erscongress.org/funding-awards-2019/gold-medals-main-awards.html">2019</a></li>
-                        <li><a href="https://erscongress.org/about-ers-2018/awards-grants-and-fellowships-2018/142-awards-grants-and-fellowships/574-ers-award-winners-2018.html">2018</a></li>
-                        <li><a href="https://erscongress.org/about-ers-2017/119-about-ers/500-award-winners-2017.html">2017</a></li>
-                        <li><a href="https://erscongress.org/about-ers/98-about-ers/421-ers-award-winners-2016.html">2016</a></li>
-                        <li><a href="https://erscongress.org/component/content/article/72-categories-2015/332-awards.html">2015</a></li>
+                        <li><a href="https://old.erscongress.org/funding-awards-2019/gold-medals-main-awards.html" target="_blank">2019</a></li>
+                        <li><a href="https://old.erscongress.org/about-ers-2018/awards-grants-and-fellowships-2018/142-awards-grants-and-fellowships/574-ers-award-winners-2018.html" target="_blank">2018</a></li>
+                        <li><a href="https://old.erscongress.org/about-ers-2017/119-about-ers/500-award-winners-2017.html" target="_blank">2017</a></li>
+                        <li><a href="https://old.erscongress.org/about-ers/98-about-ers/421-ers-award-winners-2016.html" target="_blank">2016</a></li>
+                        <li><a href="https://old.erscongress.org/component/content/article/72-categories-2015/332-awards.html" target="_blank">2015</a></li>
                     </ul>
                 </div>
             </div><!-- main-content text for Apply or nominate on Gold medals page-->
