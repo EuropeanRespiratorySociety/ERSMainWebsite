@@ -204,27 +204,53 @@
                   </a>
                 @else
                 <!-- End Special case: Should be delete after the 4 of july 2020-->
+                <!-- Added Special condition for ERS/ESTS joint course : Should be delete after 25/11/2021-->
                   @if($item->feeList->junior)
-                    <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
-                      <span class="badge">
-                        &euro; {{ $item->feeList->junior }}
-                      </span> Early Career <br>ERS Members
-                    </a>
+                    @if(strpos($item->slug, 'ers-ests')!== false)
+                      <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
+                        <span class="badge">
+                          &euro; {{ $item->feeList->junior }}
+                        </span> Early Career <br>ERS/ESTS Members
+                      </a>
+                    @else
+                      <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
+                        <span class="badge">
+                          &euro; {{ $item->feeList->junior }}
+                        </span> Early Career <br>ERS Members
+                      </a>
+                    @endif
                   @endif
                   @if($item->feeList->ersMember)
-                    <a href="javascript:void(0)" class="list-group-item cursor_default">
-                      <span class="badge">
-                        &euro; {{ $item->feeList->ersMember}}
-                      </span> 
-                      ERS members
-                    </a>
+                    @if(strpos($item->slug, 'ers-ests')!== false)
+                      <a href="javascript:void(0)" class="list-group-item cursor_default">
+                        <span class="badge">
+                          &euro; {{ $item->feeList->ersMember}}
+                        </span> 
+                        ERS/ESTS members
+                      </a>
+                    @else
+                      <a href="javascript:void(0)" class="list-group-item cursor_default">
+                        <span class="badge">
+                          &euro; {{ $item->feeList->ersMember}}
+                        </span> 
+                        ERS members
+                      </a>
+                    @endif
                   @endif 
                   @if($item->feeList->nonErsMember)
-                    <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
-                      <span class="badge">
-                        &euro; {{ $item->feeList->nonErsMember }}
-                      </span> Non-ERS Members
-                    </a>
+                    @if(strpos($item->slug, 'ers-ests')!== false)
+                      <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
+                        <span class="badge">
+                          &euro; {{ $item->feeList->nonErsMember }}
+                        </span> Non-ERS/ESTS Members
+                      </a>
+                    @else
+                      <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
+                        <span class="badge">
+                          &euro; {{ $item->feeList->nonErsMember }}
+                        </span> Non-ERS Members
+                      </a>
+                    @endif
                   @endif  
                   @if($item->feeList->industry)
                     <a href="javascript:void(0)" class="list-group-item cursor_default">
@@ -233,6 +259,7 @@
                       </span> Industry<br>(ERS Members & non-Members)
                     </a>
                   @endif
+                <!-- Until here -- Added Special condition for ERS/ESTS joint course  : Should be delete after 25/11/2021-->
                   @if($item->feeList->liveStreaming)
                     <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
                       <span class="badge">&euro; {{ $item->feeList->liveStreaming}}</span>
