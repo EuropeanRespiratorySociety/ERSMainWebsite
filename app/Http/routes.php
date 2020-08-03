@@ -59,7 +59,7 @@ Route::group(['prefix' => 'the-society/who-we-are'], function () {
     Route::get('awards/research-excellence/{slug}', 'GeneralController@researchExcellence'); 
     Route::get('awards/{slug}', 'GeneralController@show'); 
     Route::group(['prefix' => 'leadership'], function () { 
-        Route::get('cers-members-and-observers', function(){return view('society.leadership.cers-members-and-observers');});
+        Route::get('national-delegates', function(){return view('society.leadership.national-delegates');});
         Route::get('science-council', function(){return view('society.leadership.science-council');});
         Route::get('assembly-heads', function(){return view('society.leadership.assembly-heads');});
         Route::get('education-council', function(){return view('society.leadership.education-council');});
