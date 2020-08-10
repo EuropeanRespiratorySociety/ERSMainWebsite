@@ -168,6 +168,7 @@ Route::group(['prefix' => 'professional-development'], function () {
 
     Route::group(['prefix' => 'phd-overview'], function () {
       Route::get('/', 'CpdController@phd');
+      Route::get('/{slug}', 'CpdController@showPhpOverview');
     });
 
     Route::get('ers-curriculum-design-a-summary-of-projects', 'GeneralController@curriculmDesign');
