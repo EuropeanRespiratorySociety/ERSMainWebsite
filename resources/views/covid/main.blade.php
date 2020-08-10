@@ -280,11 +280,11 @@
           </div>
         </div>
         <div class="row center-block sp-img-responsive" >
-          <div class="text-center col-md-3 col-sm-4 col-md-offset-1 col-xs-12" style="margin-bottom: 20px;padding-top: 10px;" >
+          <div class="text-center col-md-3 col-sm-4 col-md-offset-1 col-xs-12" style="margin-bottom: 20px;" >
             <img src="https://cdn.ersnet.org/preview/node/o:84e4146221060b4d8439" >
           </div>
           <div class="col-md-3 col-sm-4 col-xs-12 text-center" style="margin-bottom: 20px;padding-left: 15px;" >
-            <img src="https://cdn.ersnet.org/preview/node/o:00f04d807895c1dd3339">
+            <img src="https://cdn.ersnet.org/preview/node/o:3961c7e56700b5c834ed">
           </div>
 
         </div>
