@@ -22,6 +22,12 @@
       width: 130px;
       margin-right: 20px;
     }
+
+    .sp-img-responsive img{
+      width:100%;
+      max-width: 100%;
+      height: auto;
+    }
 </style>
 
 <div class="ers-content article-items">
@@ -169,7 +175,7 @@
             </div>
           </div>
         </div>
-        <div class="row row_event " style="position: relative; ">
+        <div class="row row_event sp-img" style="position: relative; ">
           <div class="col-md-4 isotope">
             <div class="card card-event">
               <div class="card-image" style="max-height:300px;height:150px;
@@ -259,7 +265,7 @@
         <p style="margin: 20px 0 20px 10px ;">
           The following companies are supporting this ERS initiative through grants. Grantors have no influence on the content or development of this platform.
         </p>
-        <div class="row center-block" >
+        <div class="row center-block sp-img-responsive" >
           <div class="col-md-3 col-sm-4 col-md-offset-1 col-xs-12 text-center" style="margin-bottom: 20px;margin-right: 10px;" >
             <img src="https://cdn.ersnet.org/preview/node/o:a383ea083f7c42cf7556">
           </div>
@@ -272,6 +278,15 @@
           <div class="col-md-2 col-sm-2 col-xs-12 text-center" style="margin-bottom: 20px;" >
             <img src="https://cdn.ersnet.org/preview/node/o:66be3746738803253d47" >
           </div>
+        </div>
+        <div class="row center-block sp-img-responsive" >
+          <div class="text-center col-md-3 col-sm-4 col-md-offset-1 col-xs-12" style="margin-bottom: 20px;" >
+            <img src="https://cdn.ersnet.org/preview/node/o:4ce2375e566ef3ee1003" >
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-12 text-center" style="margin-bottom: 20px;padding-left: 15px;padding-top: 10px;" >
+            <img src="https://cdn.ersnet.org/preview/node/o:00f04d807895c1dd3339">
+          </div>
+
         </div>
       </div>
       <div class="article text-left lead">
