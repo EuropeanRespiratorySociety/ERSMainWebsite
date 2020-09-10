@@ -36,8 +36,8 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 09.01<br>
-                    Chair: Aisling Mcgowan<br>
-                    Secretary: Karl Sylvester</p>
+                    Chair: Karl Sylvester<br>
+                    Secretary: Rachel Ong-Salvador</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-respiratory-function" type="button" class="btn btn-default pull-right">More</button>
@@ -55,7 +55,7 @@ The Assembly is comprised of the following three groups:
                   <div class="card-content text-left">
                     <p>Group 09.02<br>
                     Chair: Chris Burtin<br>
-                    Secretary: Deniz Inal-Ince</p>
+                    Secretary: Andre Nyberg</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-physiotherapists" type="button" class="btn btn-default pull-right">More</button>

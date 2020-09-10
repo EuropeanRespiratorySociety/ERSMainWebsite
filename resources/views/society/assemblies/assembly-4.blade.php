@@ -35,8 +35,8 @@ The Assembly is comprised of the following three groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 04.01<br>
-                    Chair: Samuel Verges<br>
-                    Secretary: Sam Bayat</p>
+                    Chair: Sam Bayat<br>
+                    Secretary: William Stringer</p>
                     
                   </div>
                   <div class="card-action clearfix">

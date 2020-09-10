@@ -65,7 +65,7 @@
             </div>
             <div class="col-md-4 national_delegates ">
               <strong>Senegal</strong><br>
-               Abdourakhmane Niang
+                Comabani Flora Elodie Koudessi
             </div>
             <div class="col-md-4 national_delegates ">
 		         	<strong>Slovakia</strong><br>

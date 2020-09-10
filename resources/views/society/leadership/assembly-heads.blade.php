@@ -41,20 +41,20 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Antonio-Spanevello.png" class="img-circle">
-		            <p class="photo_caption"><strong>Antonio Spanevello</strong>
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Omar-Usmani-2.png" class="img-circle">
+		            <p class="photo_caption"><strong>Omar S. Usmani</strong>
 		            Airway diseases, asthma and COPD<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Christer_Jansen.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Christer Janson</strong>
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Suppli-Ulrik.png" class="img-circle">
+		            <p class="photo_caption"><strong>Charlotte Suppli Ulrik</strong>
 		            Epidemiology and Environment<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Jonathan-Grigg.png" class="img-circle">
-		            <p class="photo_caption"><strong>Jonathan Grigg</strong>
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Marielle-Pijnenburg-2.png" class="img-circle">
+		            <p class="photo_caption"><strong>Marielle W.H. Pijnenburg</strong>
 		            Paediatrics <br>
 		            </p>
 	        	</div>
@@ -71,8 +71,8 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/Graham-Bothamley.png" class="img-circle">
-					<p class="photo_caption"><strong>Graham Bothamley</strong> 
+					<img src="https://cdn.ersnet.org/images/people/leadership/Eva-Polverino.png" class="img-circle">
+					<p class="photo_caption"><strong>Eva Polverino</strong> 
 		            Respiratory Infections <br>
 		            </p>
 	        	</div>

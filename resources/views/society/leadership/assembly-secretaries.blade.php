@@ -31,18 +31,18 @@
                   Sleep and Breathing disorders; and clinical physiology<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Omar-Usmani-2.png" class="img-circle">
-		            <p class="photo_caption"><strong>Omar Usmani</strong>
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Apostolos-Bossios.png" class="img-circle">
+		            <p class="photo_caption"><strong>Apostolos Bossios</strong>
 		            Airway diseases, asthma and COPD <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Suppli-Ulrik.png" class="img-circle">
-		            <p class="photo_caption"><strong>Charlotte Suppli-Ulrik</strong>
+		            <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Ane Johannessen</strong>
 		            Epidemiology and Environment<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Marielle-Pijnenburg-2.png" class="img-circle">
-		            <p class="photo_caption"><strong>Marielle Pijnenburg</strong>
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Alexander-Moller.png" class="img-circle">
+		            <p class="photo_caption"><strong>Alexander Möller</strong>
 		            Paediatrics<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
@@ -56,8 +56,8 @@
 		            Allied Respiratory Professionals <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Eva-Polverino.png" class="img-circle">
-		            <p class="photo_caption"><strong>Eva Polverino</strong>
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Raquel-Duarte.png" class="img-circle">
+		            <p class="photo_caption"><strong>Raquel Duarte</strong>
 		            Respiratory Infections <br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
