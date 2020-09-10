@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="col-md-6 center-block">
-              <p >Assembly Early Career representative: Jana De Brandt</p>
+              <p >Assembly Early Career representative: Joana Patricia dos Santos Cruz</p>
             </div>
             <div class="col-md-6 center-block lead">
               It is increasingly recognised that allied healthcare professionals play an important role in the diagnosis, treatment and care of patients with pulmonary diseases. This Assembly is an opportunity to learn from each other's disciplines and achieve better patient outcomes. <br>

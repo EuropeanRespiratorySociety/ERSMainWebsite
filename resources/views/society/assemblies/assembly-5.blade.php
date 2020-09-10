@@ -9,7 +9,7 @@
                  
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/people/leadership/Omar-Usmani-2.png" class="img-circle">
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Apostolos-Bossios.png" class="img-circle">
                   <p class="photo_caption">Secretary: Apostolos Bossios</p>
                 </div>
             </div>

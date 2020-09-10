@@ -70,7 +70,7 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-                <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+                <img src="https://cdn.ersnet.org/images/people/leadership/Carolina-Gotera.png" class="img-circle">
 		            <p class="photo_caption"><strong>Carolina Gotera</strong>
 		            Assembly 5<br>
 		            </p>
@@ -94,8 +94,8 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/Jana_De_Brandt.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Jana de Brandt</strong>
+					<img src="https://cdn.ersnet.org/images/people/leadership/Joana-Cruz.png" class="img-circle">
+		            <p class="photo_caption"><strong>Joana Patricia dos Santos Cruz</strong>
 		            Assembly 9<br>
 		            </p>
 	        	</div>
@@ -106,8 +106,8 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/Joana-Cruz.png" class="img-circle">
-		            <p class="photo_caption"><strong>Joana Patricia dos Santos Cruz</strong>
+					<img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Adrien Costantini</strong>
 		            Assembly 11<br>
 		            </p>
 	        	</div>

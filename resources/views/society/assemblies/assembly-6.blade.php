@@ -14,7 +14,7 @@
             </div>
           </div>
           <div class="col-md-6 center-block">
-            <p >Assembly Early Career representative: Andre Amaral</p>
+            <p >Assembly Early Career representative: Orianne Dumas</p>
           </div>
           <div class="col-md-6 center-block lead">
             This is an interdisciplinary Assembly, which includes not only pulmonologists, but also epidemiologists, clinicians, statisticians, occupational doctors, air pollution scientists and health educators. Smoking and the environment are important issues for respiratory disease and this Assembly is involved in many activities to promote public awareness and scientific research in the field. <br>
