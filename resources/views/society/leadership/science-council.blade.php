@@ -17,7 +17,7 @@
 				<div class="col-md-4 xs-mb-15">
 					<img src="https://cdn.ersnet.org/images/people/leadership/christopher_e_brightling.png" class="img-circle">
 					<p class="photo_caption"><strong>Christopher E. Brightling</strong>
-						Science Council Chair<br>
+						Science Council Chair Test<br>
 				</div>
 				<div class="col-md-4 xs-mb-15">
 					<img src="https://cdn.ersnet.org/images/people/leadership/LOUISE-E-DONNELLY.png" class="img-circle">
