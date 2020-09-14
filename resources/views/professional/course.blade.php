@@ -88,7 +88,11 @@
         <h2 class="text-left clearfix date-venue">
         <label>{{$item->eventDates}} @if(isset($item->eventLocation))<a href="javascript:void(0)" class="cursor_default">{{$item->eventLocation}}</a>@endif</label>
         </h2>
-        <div class="text-left"><br/>Information: <a href="/the-society/news/ers-statement-covid-19-and-upcoming-ers-events">ERS Statement on COVID-19 and upcoming ERS events</a></div>
+        <!-- Should be delete after coronavirus -->
+        @if($item->slug != "clinical-exercise-testing-basic-principles-and-practice")
+          <div class="text-left"><br/>Information: <a href="/the-society/news/ers-statement-covid-19-and-upcoming-ers-events">ERS Statement on COVID-19 and upcoming ERS events</a></div>
+        @endif
+        <!-- End Should be delete after coronavirus -->
       </div>
 
       <div class="row" style="margin-top:20px;">
@@ -184,52 +188,96 @@
                 </ul>
                 <hr>
                 <div class="list-group" style="padding-bottom:400px">
-                @if($item->feeList->junior)
+                <!-- Begin Special case: Should be delete after the 4 of july 2020-->
+                @if($item->slug == "virtual-school-in-adult-and-paediatric-respiratory-medicine")
                   <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
-                    <span class="badge">
-                      &euro; {{ $item->feeList->junior }}
-                    </span> Early Career <br>ERS Members
+                    <span class="badge"> Free </span> 
+                    Virtual school
                   </a>
-                @endif
-                @if($item->feeList->ersMember)
                   <a href="javascript:void(0)" class="list-group-item cursor_default">
-                    <span class="badge">
-                      &euro; {{ $item->feeList->ersMember}}
-                    </span> 
-                    ERS members
+                    <span class="badge"> &euro; 50</span> 
+                    Virtual school <br>+ Paediatric Q&A extension
                   </a>
-                @endif 
-                @if($item->feeList->nonErsMember)
                   <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
-                    <span class="badge">
-                      &euro; {{ $item->feeList->nonErsMember }}
-                    </span> Non-ERS Members
+                    <span class="badge"> &euro; 50</span> 
+                    Virtual school <br>+ Adult Q&A extension
                   </a>
-                @endif  
-                @if($item->feeList->industry)
-                  <a href="javascript:void(0)" class="list-group-item cursor_default">
-                    <span class="badge">
-                      &euro; {{ $item->feeList->industry }}
-                    </span> Industry<br>(ERS Members & non-Members)
-                  </a>
-                @endif
-                @if($item->feeList->liveStreaming)
-                  <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
-                    <span class="badge">&euro; {{ $item->feeList->liveStreaming}}</span>
-                    <span>
-                      <i style="font-size: 15px; position: relative; top: 3px;" class="s7-video"></i>
-                      Live stream ERS Members
-                    </span>
-                  </a>
-                @endif
-                @if($item->feeList->liveStreamingNonErs)
-                  <a href="javascript:void(0)" class="list-group-item cursor_default">
-                    <span class="badge">&euro; {{ $item->feeList->liveStreamingNonErs}}</span>
-                    <span>
-                      <i style="font-size: 15px; position: relative; top: 3px;" class="s7-video"></i>
-                      Live stream Non-ERS Members
-                    </span>
-                  </a>
+                @else
+                <!-- End Special case: Should be delete after the 4 of july 2020-->
+                <!-- Added Special condition for ERS/ESTS joint course : Should be delete after 25/11/2021-->
+                  @if($item->feeList->junior)
+                    @if(strpos($item->slug, 'ers-ests')!== false)
+                      <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
+                        <span class="badge">
+                          &euro; {{ $item->feeList->junior }}
+                        </span> Early Career <br>ERS/ESTS Members
+                      </a>
+                    @else
+                      <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
+                        <span class="badge">
+                          &euro; {{ $item->feeList->junior }}
+                        </span> Early Career <br>ERS Members
+                      </a>
+                    @endif
+                  @endif
+                  @if($item->feeList->ersMember)
+                    @if(strpos($item->slug, 'ers-ests')!== false)
+                      <a href="javascript:void(0)" class="list-group-item cursor_default">
+                        <span class="badge">
+                          &euro; {{ $item->feeList->ersMember}}
+                        </span> 
+                        ERS/ESTS members
+                      </a>
+                    @else
+                      <a href="javascript:void(0)" class="list-group-item cursor_default">
+                        <span class="badge">
+                          &euro; {{ $item->feeList->ersMember}}
+                        </span> 
+                        ERS members
+                      </a>
+                    @endif
+                  @endif 
+                  @if($item->feeList->nonErsMember)
+                    @if(strpos($item->slug, 'ers-ests')!== false)
+                      <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
+                        <span class="badge">
+                          &euro; {{ $item->feeList->nonErsMember }}
+                        </span> Non-ERS/ESTS Members
+                      </a>
+                    @else
+                      <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
+                        <span class="badge">
+                          &euro; {{ $item->feeList->nonErsMember }}
+                        </span> Non-ERS Members
+                      </a>
+                    @endif
+                  @endif  
+                  @if($item->feeList->industry)
+                    <a href="javascript:void(0)" class="list-group-item cursor_default">
+                      <span class="badge">
+                        &euro; {{ $item->feeList->industry }}
+                      </span> Industry<br>(ERS Members & non-Members)
+                    </a>
+                  @endif
+                <!-- Until here -- Added Special condition for ERS/ESTS joint course  : Should be delete after 25/11/2021-->
+                  @if($item->feeList->liveStreaming)
+                    <a href="javascript:void(0)" class="list-group-item medium-grey-bg cursor_default">
+                      <span class="badge">&euro; {{ $item->feeList->liveStreaming}}</span>
+                      <span>
+                        <i style="font-size: 15px; position: relative; top: 3px;" class="s7-video"></i>
+                        Live stream ERS Members
+                      </span>
+                    </a>
+                  @endif
+                  @if($item->feeList->liveStreamingNonErs)
+                    <a href="javascript:void(0)" class="list-group-item cursor_default">
+                      <span class="badge">&euro; {{ $item->feeList->liveStreamingNonErs}}</span>
+                      <span>
+                        <i style="font-size: 15px; position: relative; top: 3px;" class="s7-video"></i>
+                        Live stream Non-ERS Members
+                      </span>
+                    </a>
+                  @endif
                 @endif
                 @if($item->earlybirdDeadline)
                   <p>Register before the early-bird deadline on <strong>{{ $item->earlybirdDeadline}}</strong> to benefit from a €50 discount on registration fees{{$item->feeList->liveStreaming || $item->feeList->liveStreamingNonErs ? ' (excluding live streaming)': '' }}.</p>
@@ -262,7 +310,7 @@
                     {{ $item->registerButton->text or Register}}
                   </a>
               @else
-                  <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
+                  <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt ga-event-registration">
                   {{ $item->registerButton->text or Register}}
               </a>
               @endif

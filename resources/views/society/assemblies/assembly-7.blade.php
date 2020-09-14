@@ -4,13 +4,13 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/people/leadership/Jonathan-Grigg.png" class="img-circle">
-                  <p class="photo_caption">Head: Jonathan Grigg</p>
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Marielle-Pijnenburg-2.png" class="img-circle">
+                  <p class="photo_caption">Head: Marielle W.H. Pijnenburg</p>
                  
                 </div>
                 <div class="col-md-3 xs-mb-15">
-               <img src="https://cdn.ersnet.org/images/people/leadership/Marielle-Pijnenburg-2.png" class="img-circle">
-                  <p class="photo_caption">Secretary: Marielle Pijnenburg</p>
+               <img src="https://cdn.ersnet.org/images/people/leadership/Alexander-Moller.png" class="img-circle">
+                  <p class="photo_caption">Secretary: Alexander Möller</p>
                 </div>
             </div>
             <div class="col-md-6 center-block">
@@ -55,7 +55,7 @@ The Assembly is comprised of the following eight groups:
                   <div class="card-content text-left">
                     <p>Group 07.02<br>
                     Chair: Sejal Saglani<br>
-                    Secretary: Angela Zacharasiewicz</p>
+                    Secretary: Erol Gaillard</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-paediatric-asthma" type="button" class="btn btn-default pull-right">More</button>
@@ -72,8 +72,8 @@ The Assembly is comprised of the following eight groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 07.03<br>
-                    Chair: Jürg Barben<br>
-                    Secretary: Alex Horsley</p>
+                    Chair: Stojka Fustik<br>
+                    Secretary: Mirjam Stahl</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-cystic-fibrosis" type="button" class="btn btn-default pull-right">More</button>
@@ -90,8 +90,8 @@ The Assembly is comprised of the following eight groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 07.04<br>
-                    Chair: Fernandes Ricardo Miguel Ribeiro Marques Cunha<br>
-                    Secretary: Marijke Proesmans</p>
+                    Chair: Marijke Proesmans<br>
+                    Secretary: Stefan Unger</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-paediatric-respiratory-infection" type="button" class="btn btn-default pull-right">More</button>
@@ -144,8 +144,8 @@ The Assembly is comprised of the following eight groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 07.07<br>
-                    Chair: Deborah Snijders<br>
-                    Secretary: Dirk Schramm</p>
+                    Chair: Dirk Schramm<br>
+                    Secretary: Raffaella Nenna</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-paediatric-bronchology" type="button" class="btn btn-default pull-right">More</button>
@@ -162,8 +162,8 @@ The Assembly is comprised of the following eight groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 07.08<br>
-                      Chair: Robbert Rottier<br>
-                      Secretary: Silvia Carraro
+                      Chair: Rory Morty<br>
+                      Secretary: Adaeze Ayuk
                     </p>
                   </div>
                   <div class="card-action clearfix">

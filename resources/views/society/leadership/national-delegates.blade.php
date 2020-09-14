@@ -4,7 +4,7 @@
 	<div class="col-md-10">
     	<div class="main-content">
 	        <div class="page-head">
-	        	<h2 class="">CERS Members and Observers</h2>
+	        	<h2 class="">National Delegates</h2>
 	        </div>
 	        <div class="row" style="padding-top: 30px;">
 	        	<div class="col-md-4 national_delegates ">
@@ -65,7 +65,7 @@
             </div>
             <div class="col-md-4 national_delegates ">
               <strong>Senegal</strong><br>
-               Abdourakhmane Niang
+                Comabani Flora Elodie Koudessi
             </div>
             <div class="col-md-4 national_delegates ">
 		         	<strong>Slovakia</strong><br>

@@ -129,7 +129,7 @@ img[alt=float-event-sponsor-logo]{
             @endif
             <div style="box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);box-sizing: border-box;padding-bottom: 30px;">
                 <div class="page-head" style="margin-bottom: 15px;"><h2>{{$item->title}}</h2></div>
-                <p>View <a href="{{ $landingPage->link }}">{{ $landingPage->title }}</a></p>
+                <h4><a href="{{ $landingPage->link }}">{{ $landingPage->title }}</a></h4>
             </div>
             <div class="main-content">
               @if($item->registerButton->bannerText)

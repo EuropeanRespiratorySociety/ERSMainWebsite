@@ -81,7 +81,9 @@
             <label>{{$item->eventDates}} @if(isset($item->eventLocation))<a href="javascript:void(0)" class="cursor_default">{{$item->eventLocation}}</a>@endif</label>
               <a href=""><span class="icon s7-angle-right pull-right" style="font-size: 24px;"></span></a> 
             </h2> 
+            <!-- Should be delete after coronavirus -->
             <div class="text-left"><br/>Information: <a href="/the-society/news/ers-statement-covid-19-and-upcoming-ers-events">ERS Statement on COVID-19 and upcoming ERS events</a></div>
+            <!-- End Should be delete after coronavirus -->
           </div>
 
           <div class="row" style="margin-top:20px;">
@@ -120,8 +122,11 @@
     </div>
    <!-- Beginning Right Side-bar -->
    <div class="col-md-3 white-bg event-items-right">
-    @if($item->title == "ERS HERMES examination in adult respiratory medicine" 
+    {{-- @if($item->title == "ERS HERMES examination in adult respiratory medicine" 
     || $item->title == "ERS HERMES examination in paediatric respiratory medicine"
+    || strpos($item->title, "self-assessment")) --}}
+    @if(strpos($item->title, "in adult") 
+    || strpos($item->title, "in paediatric")
     || strpos($item->title, "self-assessment"))
     <div class="alert alert-info">
     <div class="message">REGISTRATION DEADLINE<br> {{ $item->deadline}}.</div>
@@ -226,7 +231,7 @@
   <p><a data-toggle="modal" data-target="#md-travel_info" type="button" class="cursor_pointer">Travel Info</a></p>
   @endif
   @if($item->registerButton->link && !$item->fullyBooked)
-  <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
+  <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt ga-event-registration">
       {{ $item->registerButton->text or Register}}
   </a>
   @endif

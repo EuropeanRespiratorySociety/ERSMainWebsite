@@ -19,21 +19,7 @@ class HomeController extends Controller
     {
         $this->CC = new CC();
         $this->date = new DateHelper; 
-    }
-
-    // /**
-    //  * Show the application dashboard.
-    //  *
-    //  * @return \Illuminate\Http\Response
-    //  */
-    // //Old way to build the homePage (change for the new version the 01/01/2020)
-    // public function index()
-    // {
-    //     $results = $this->CC->getContentByProperty("availableOnHomepage", "true", -1, false);
-    //     $items = $this->CC->parseItems($results['rows']);
-    //     $params['items'] =  $this->CC->sortHomepage($items);
-    //     return response()->view('home.home', $params)->setTtl(60 * 60 * 24 * 7); //caching a week
-    // }    
+    }  
 
     /**
      * Show the application dashboard.
@@ -58,6 +44,18 @@ class HomeController extends Controller
         }
 
         //News Section
+        //begin covid section for special Covid-19 Breaking News
+        $numberOfNews = 3;
+        $covidResults = $this->CC->getPublishedItem("breaking-covid-19");
+        $covidNews = null;
+        if($covidResults['total_rows'] != 0){
+            $numberOfNews = 2; //Normally news sections have 3 news by default but if there are breaking-covid-19 published on CloudCMS, we take this one for the third one
+            $covidItem = $this->CC->parseItems($covidResults['rows']);
+            $covidItem[0]->title = "COVID-19 " . $covidItem[0]->title;
+            $covidItem[0]->image = $covidItem[0]->highResImage;
+            $covidNews = (object) $covidItem[0];
+        }
+        
         $newsQuery = '{
             "availableOnHomepage": "true",
             "contentType":"article",
@@ -65,12 +63,18 @@ class HomeController extends Controller
             "mainNews": { "$ne": true },
             "type":"News"
         }'; 
-        $newResults = $this->CC->getContentByQuery($newsQuery, 3, -1, false);
+        $newResults = $this->CC->getContentByQuery($newsQuery, $numberOfNews, -1, false);
         $newItems = $this->CC->parseItems($newResults['rows']);
         foreach ($newItems as $key => $newItem) {
             $item = (object) $newItem;
             $sorted['news'][] = $item;  
         }
+        //begin covid section for special Covid-19 Breaking News
+        if($covidNews != null){
+            $sorted['news'][] = $covidNews;
+        }
+        //end covid
+        //end news section
        
         //HomePage Sciences and Education
         $eventsResults = $this->CC->getHomePageEvents();

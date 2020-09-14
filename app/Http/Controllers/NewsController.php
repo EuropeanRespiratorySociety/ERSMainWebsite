@@ -210,5 +210,4 @@ class NewsController extends Controller
 
         return view('articles.author')->with($params); 
     }
-
 }

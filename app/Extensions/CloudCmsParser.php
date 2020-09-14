@@ -32,6 +32,7 @@ class CloudCmsParser
             'digestType' => false,
             'digestAuthor' => false,
             'comments' => false,
+            'isCovid19' => false,
             'url' => false,
             'uri' => false,
             'unPublished' => false,
@@ -70,7 +71,11 @@ class CloudCmsParser
                     $item->body2 = Markdown::parse($item->body2);
                     $item->body3 = Markdown::parse($item->body3);
                     $item->body4 = Markdown::parse($item->body4);
-                    
+                    $item->shouldHaveRegisterButton = true;
+                    if(isset($item->contentType) && $item->contentType == "event_webinar"){
+                        $item->shouldHaveRegisterButton = isset($item->isCovid19) ? !$item->isCovid19 : true;
+                    }
+                   
                     if($item->popUp){
                         $item->popUp = Markdown::parse($item->popUp);
                     }

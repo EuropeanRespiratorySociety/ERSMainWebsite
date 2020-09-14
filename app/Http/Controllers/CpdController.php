@@ -63,6 +63,29 @@ class CpdController extends Controller
         return view('professional.phd-overview')->with($params); 
     }
 
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function showPhpOverview($slug)
+    {
+        $results = $this->CC->getItem($slug);
+        $item = $this->CC->parseItems($results['rows']);
+        $params['item'] =  (object) $item[0];
+
+        if(!$item[0]->url || !$item[0]->uri){
+            $this->CC->setCanonical($item[0]->_qname);
+        }
+        if($item[0]->hasRelatedArticles > 0){
+            $related = $this->CC->getAssociationSorted($item[0]->_qname, 'ers:related-association');
+            $relatedItems = $this->CC->parseItems($related['rows']);
+            $params['relatedItems'] =  (object) $relatedItems; 
+        }    
+        
+        return view('professional.phd-overview')->with($params); 
+    }
+
      /**
      * Display a listing of the resource.
      *
@@ -96,6 +119,9 @@ class CpdController extends Controller
                 $articleStyle = "flex-basis: 70%;margin-top: 10px;padding-right: 132px; min-height:100px";
                 if($item->image == false){
                     $articleStyle = "flex-basis: 100%;margin-top: 10px;";
+                }
+                if($item->contentType == "learning_resources" && $item->externalLink->link){
+                    $item->uri = "https://www.ers-education.org/cpd-recommandation.aspx?idP=".$item->externalLink->link;
                 }
                 $htmlResult .= '<div class="card card-event" style="font-family: DinPro,sans-serif;">';
                 $htmlResult .=      '<div style="display: flex; flex-direction: row; padding: 10px 15px 5px;">';

@@ -57,9 +57,10 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+					<img src="https://cdn.ersnet.org/images/people/leadership/Niki-Ubags.png" class="img-circle">
 		            <p class="photo_caption"><strong>Niki Ubags</strong>
-		            Assembly 3<br>
+                  Chair of the ECM Committee<br>
+                  Assembly 3<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
@@ -69,14 +70,14 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-                <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+                <img src="https://cdn.ersnet.org/images/people/leadership/Carolina-Gotera.png" class="img-circle">
 		            <p class="photo_caption"><strong>Carolina Gotera</strong>
 		            Assembly 5<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-	      	        <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Andre Amaral</strong>
+	      	        <img src="https://cdn.ersnet.org/images/people/leadership/Orianne-Dumas.png" class="img-circle">
+		            <p class="photo_caption"><strong>Orianne Dumas</strong>
 		            Assembly 6<br>
 		            </p>
 	        	</div>
@@ -93,8 +94,8 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/Jana_De_Brandt.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Jana de Brandt</strong>
+					<img src="https://cdn.ersnet.org/images/people/leadership/Joana-Cruz.png" class="img-circle">
+		            <p class="photo_caption"><strong>Joana Patricia dos Santos Cruz</strong>
 		            Assembly 9<br>
 		            </p>
 	        	</div>

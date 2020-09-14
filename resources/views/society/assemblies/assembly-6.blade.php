@@ -4,17 +4,17 @@
 
           <div class="row">
             <div class="col-md-3 col-md-offset-3 xs-mb-15">
-              <img src="https://cdn.ersnet.org/images/people/leadership/Christer_Jansen.jpg" class="img-circle">
-              <p class="photo_caption">Head: Christer Janson</p>
+              <img src="https://cdn.ersnet.org/images/people/leadership/Suppli-Ulrik.png" class="img-circle">
+              <p class="photo_caption">Head: Charlotte Suppli Ulrik</p>
 
             </div>
             <div class="col-md-3 xs-mb-15">
-               <img src="https://cdn.ersnet.org/images/people/leadership/Suppli-Ulrik.png" class="img-circle">
-              <p class="photo_caption">Secretary: Charlotte Suppli-Ulrik</p>
+               <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
+              <p class="photo_caption">Secretary: Ane Johannessen</p>
             </div>
           </div>
           <div class="col-md-6 center-block">
-            <p >Assembly Early Career representative: Andre Amaral</p>
+            <p >Assembly Early Career representative: Orianne Dumas</p>
           </div>
           <div class="col-md-6 center-block lead">
             This is an interdisciplinary Assembly, which includes not only pulmonologists, but also epidemiologists, clinicians, statisticians, occupational doctors, air pollution scientists and health educators. Smoking and the environment are important issues for respiratory disease and this Assembly is involved in many activities to promote public awareness and scientific research in the field. <br>
@@ -57,8 +57,8 @@ The Assembly is comprised of the following four groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 06.02<br>
-                      Chair: David Fishwick<br>
-                      Secretary: Rafael De La Hoz</p>
+                      Chair: Rafael E. de la Hoz<br>
+                      Secretary: Sara De Matteis</p>
                     </div>
                     <div class="card-action clearfix">
                       <button data-toggle="modal" data-target="#md-occupational-and-environmental" type="button" class="btn btn-default pull-right">More</button>
@@ -75,8 +75,8 @@ The Assembly is comprised of the following four groups:
                     </div> 
                     <div class="card-content text-left">
                       <p>Group 06.03<br>
-                        Chair: Sofia Ravara<br>
-                        Secretary: Elif Dagli</p>
+                        Chair: Elif Dagli<br>
+                        Secretary: Stamatoula Tsikrika</p>
                       </div>
                       <div class="card-action clearfix">
                         <button data-toggle="modal" data-target="#md-tobacco-smoking-control" type="button" class="btn btn-default pull-right">More</button>

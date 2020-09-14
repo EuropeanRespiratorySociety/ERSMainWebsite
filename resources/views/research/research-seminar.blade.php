@@ -61,7 +61,9 @@
         <label>@if($item->eventDates){{$item->eventDates}}@endif @if($item->eventLocation){{$item->eventLocation}} @endif</label>
         <!--<a href=""><span class="icon s7-angle-right pull-right" style="font-size: 24px;"></span></a>-->
         </h2>
-        <div class="text-left"><br/>Information: <a href="/the-society/news/ers-statement-covid-19-and-upcoming-ers-events">ERS Statement on COVID-19 and upcoming ERS events</a></div>
+         <!-- Should be delete after coronavirus -->
+         <div class="text-left"><br/>Information: <a href="/the-society/news/ers-statement-covid-19-and-upcoming-ers-events">ERS Statement on COVID-19 and upcoming ERS events</a></div>
+         <!-- End Should be delete after coronavirus -->
       </div>
 
       <div class="row">
@@ -122,7 +124,7 @@
                 <p>Any questions? Please contact{!! Html::mailto('scientific@ersnet.org', 'scientific@ersnet.org') !!}</p>
 
                 @if($item->registerButton->link)
-                <a href="{{$item->registerButton->link}}" target="_blank" class="btn btn-primary item-register-bt">{{$item->registerButton->text}}</a>
+                <a href="{{$item->registerButton->link}}" target="_blank" class="btn btn-primary item-register-bt ga-event-registration">{{$item->registerButton->text}}</a>
                 @endif
               </div>
             </div>

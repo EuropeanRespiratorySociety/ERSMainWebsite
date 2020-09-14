@@ -40,8 +40,8 @@
 		            Guidelines Director<br>
 		        </div>		        
 		        <div class="col-md-4 xs-mb-15">
-              <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
-              <p class="photo_caption"><strong>Pending</strong>
+              <img src="https://cdn.ersnet.org/images/people/leadership/Niki-Ubags.png" class="img-circle">
+              <p class="photo_caption"><strong>Niki Ubags</strong>
 		            Early-Career Member Representative<br>
 		        </div>
 

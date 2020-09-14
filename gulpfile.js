@@ -66,15 +66,15 @@ gulp.task('generate-service-worker', function(callback) {
 			    }
 			  }
 		},
-	    {
-	  		urlPattern: /^https:\/\/www\.ersnet\.org\/the-society\/who-we-are\/executive-office/,
-	  		handler: 'networkFirst',
-	  		options: {
-			    cache: {
-			      name: 'ers-offline-pages-executive-office'
-			    }
-			  }
-		},
+	    // {
+	  	// 	urlPattern: /^https:\/\/www\.ersnet\.org\/the-society\/who-we-are\/executive-office/,
+	  	// 	handler: 'networkFirst',
+	  	// 	options: {
+		// 	    cache: {
+		// 	      name: 'ers-offline-pages-executive-office'
+		// 	    }
+		// 	  }
+		// },
 	    {
 	  		urlPattern: /^https:\/\/www\.ersnet\.org\/the-society\/who-we-are\/statutes-policies-and-annual-report/,
 	  		handler: 'networkFirst',

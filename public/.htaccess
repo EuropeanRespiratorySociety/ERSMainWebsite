@@ -159,10 +159,11 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /congress-and-events/ers-2018 https://www.ersnet.org/congress-and-events/ers-international-congress
         Redirect 301 /CPD https://www.ersnet.org/professional-development/cpd
         Redirect 301 /cpd https://www.ersnet.org/professional-development/cpd
+        Redirect 301 /covid19 https://www.ersnet.org/the-society/news/novel-coronavirus-outbreak--update-and-information-for-healthcare-professionals
 
         # E
         Redirect 301 /ebus https://www.ersnet.org/professional-development/endobronchial-ultrasound-certified-training-programme
-        Redirect 301 /ebus1 https://www.ersnet.org/professional-development/courses/ebus-training-programme-part-1---heidelberg--february-2020
+        Redirect 301 /ebus1 https://www.ersnet.org/professional-development/courses/ebus-training-programme-part-1---athens--october-2020
         Redirect 301 /educationgrant https://www.ersnet.org/professional-development/grants-and-sponsorships/medical-education-grant
         Redirect 301 /eu https://www.ersnet.org/advocacy/eu-affairs
         Redirect 301 /exams https://www.ersnet.org/professional-development/hermes
@@ -176,8 +177,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /join-ers https://my.ersnet.org
         # L
         Redirect 301 /leadersblog https://www.ersnet.org/the-society/news/respiratory-matters
-        Redirect 301 /lsc https://www.ersnet.org/congress-and-events/the-lung-science-conference
-        Redirect 301 /congress-and-events/the-lung-science-conference https://www.ersnet.org/congress-and-events/metabolic-alterations-in-lung-ageing-and-disease
+        Redirect 301 /lsc https://www.ersnet.org/congress-and-events/ers-lung-science-conference
         # M
         Redirect 301 /membership https://www.ersnet.org/the-society/membership
         # O
@@ -199,7 +199,6 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         # Redirect 301 /the-society/news/mobile https://www.ersnet.org/mobile
         # N
         Redirect 301 /ntmaward https://www.ersnet.org/professional-development/grants-and-sponsorships/medical-education-grant
-        Redirect 301 /the-society/who-we-are/leadership/national-delegates https://www.ersnet.org/the-society/who-we-are/leadership/cers-members-and-observers
         # R
         Redirect 301 /rfmv https://www.ersnet.org/congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference
         Redirect 301 /research-seminar https://www.ersnet.org/research/research-seminars
@@ -214,6 +213,7 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /school https://www.ersnet.org/professional-development/courses
         Redirect 301 /spiro https://www.ersnet.org/professional-development/spirometry-training-programme
         Redirect 301 /sleep https://www.ersnet.org/professional-development/respiratory-sleep-certified-training-programme
+        Redirect 301 /spiroresults https://www.ersnet.org/professional-development/courses/online-session-on-clinical-interpretation-of-spirometry-results
         # T
         Redirect 301 /the-society/news/ers-clinical-research-collaboration-‘tbnet’-wins-2018-memento-award-for-neglected-diseases https://www.ersnet.org/the-society/news/ers-clinical-research-collaboration-tbnet-wins-2018-memento-award-for-neglected-diseases
         Redirect 301 /the-society/news/apply-for-the-erj%E2%80%99s-early-career-editorial-team-mentoring-programme https://www.ersnet.org/the-society/news/apply-for-the-erj-early-career-editorial-team-mentoring-programme
@@ -222,10 +222,8 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /the-society/news/sleep-and-breathing-conference-11-13-april-2019-marseille-register-now-home https://sleepandbreathing.org/
         Redirect 301 /tus https://www.ersnet.org/professional-development/thoracic-ultrasound-training-programme
         Redirect 301 /the-society/news/ers-respiratory-updates-2019-join-us-online-or-in-person-for-the-latest-clinical-updates-home https://www.ersnet.org/congress-and-events/ers-respiratory-updates
-        Redirect 301 /the-society/news/lung-science-conference-metabolic-alterations-in-lung-ageing-and-disease-home https://www.ersnet.org/congress-and-events/metabolic-alterations-in-lung-ageing-and-disease
         Redirect 301 /the-society/news/ers-satellites-2020-copd-asthma-lung-cancer-and-infection-join-us-online-for-free-on-20-21-february-home https://www.ersnet.org/congress-and-events/ers-satellite
-        Redirect 301 /the-society/news/lung-science-conference--metabolic-alterations-in-lung-ageing-and-disease-join-us-on-5-8-march-2020-home https://www.ersnet.org/congress-and-events/metabolic-alterations-in-lung-ageing-and-disease
-
+        Redirect 301 /the-society/who-we-are/leadership/cers-members-and-observers https://www.ersnet.org/the-society/who-we-are/leadership/national-delegates
 
     ### External redirects
         RewriteCond %{HTTP_HOST} ^whitebook.ersnet.org$ [NC]
@@ -290,6 +288,8 @@ AddOutputFilterByType DEFLATE "application/atom+xml" "application/javascript" "a
         Redirect 301 /the-society/news/ers-international-congress-2019-madrid-register-now-to-join-us-in-person-or-online-home https://erscongress.org/
         Redirect 301 /the-society/news/send-us-your-topics-suggestions-for-the-sleep-and-breathing-conference-2021-home https://sleepandbreathing.org/articles/programme-2021
 
+        #T
+        Redirect 301 /virtual-school https://www.ersnet.org/professional-development/courses/virtual-school-in-adult-and-paediatric-respiratory-medicine
         
         # Number
         Redirect 301 /10PrinciplesforLungHealth https://ers.box.com/s/zj0x90cz9cwutldzlxbnoglzonmmnrbk

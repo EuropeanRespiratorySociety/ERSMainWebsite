@@ -4,13 +4,13 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/people/leadership/Antonio-Spanevello.png" class="img-circle">
-                  <p class="photo_caption">Head: Antonio Spanevello</p>
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Omar-Usmani-2.png" class="img-circle">
+                  <p class="photo_caption">Head: Omar S. Usmani</p>
                  
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/people/leadership/Omar-Usmani-2.png" class="img-circle">
-                  <p class="photo_caption">Secretary: Omar Usmani </p>
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Apostolos-Bossios.png" class="img-circle">
+                  <p class="photo_caption">Secretary: Apostolos Bossios</p>
                 </div>
             </div>
             <div class="col-md-6 center-block">

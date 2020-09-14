@@ -42,7 +42,7 @@ class EventController extends Controller
     {
         $results = $this->CCH->getItem($slug);
         $params = $this->buildParamsModel($results['rows']);
-        $params['landingPage'] = (object)   array('title' => 'all RF&MV', 'link' => 'congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference');
+        $params['landingPage'] = (object)   array('title' => 'View all RF&MV', 'link' => 'congress-and-events/ers-respiratory-failure-and-mechanical-ventilation-conference');
         $params['faculties'] = $this->rfmvFaculties($slug);
         return view('congress-and-events.event')->with($params); 
     }
@@ -70,7 +70,7 @@ class EventController extends Controller
     {
         $results = $this->CCH->getItem($slug);
         $params = $this->buildParamsModel($results['rows']);
-        $params['landingPage'] = (object)   array('title' => 'all LSC', 'link' => 'congress-and-events/ers-lung-science-conference');
+        $params['landingPage'] = (object)   array('title' => 'Back to all LSC 2021 information', 'link' => 'congress-and-events/ers-lung-science-conference');
         $params['faculties'] = false;
         return view('congress-and-events.event')->with($params); 
     }

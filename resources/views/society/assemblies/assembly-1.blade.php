@@ -53,8 +53,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 01.02<br>
-                    Chair: Frits Franssen<br>
-                    Secretary: Guido Vagheggini</p>
+                    Chair: Guido Vagheggini<br>
+                    Secretary: Rachael A. Evans</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-rehabilitation" type="button" class="btn btn-default pull-right">More</button>

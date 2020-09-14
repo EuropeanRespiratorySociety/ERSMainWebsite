@@ -55,11 +55,20 @@
    <div class="col-md-3 event-items-right medium-grey-bg" style="font-family: 'Amiri', serif;">
 
       <div class="row">
-          <div class="col-md-9 col-md-offset-1 xs-mb-15">
-              <img src="https://cdn.ersnet.org/images/people/leadership/Carolin-Selbach.png" class="img-circle" style="margin-top:20px;">
-               <p class="photo_caption"><strong>Carolin Selbach</strong>PhD Candidate at Maastricht University<br></p>
-           </div>
-       </div>
+        @if($item->slug == "phd-archive")
+        <div class="col-md-9 col-md-offset-1 xs-mb-15">
+          <img src="https://cdn.ersnet.org/images/people/leadership/Carolin-Selbach.png" class="img-circle" style="margin-top:20px;">
+           <p class="photo_caption"><strong>Carolin Selbach</strong>PhD Candidate at Maastricht University<br></p>
+        </div>
+        @else
+        <div class="col-md-9 col-md-offset-1 xs-mb-15">
+          <img src="https://cdn.ersnet.org/images/people/leadership/Sai-Sreenidhi-Ram.png" class="img-circle" style="margin-top:20px;">
+           <p class="photo_caption"><strong>Sai Sreenidhi Ram</strong>PhD Candidate at Institute for Medical Education,<br>University of Bern</p>
+         </div>
+         @endif
+      </div>
+
+       
        {{-- <div class="row">
            <div class="col-md-12">   
               <p>Associate Professor and Consultant

@@ -112,6 +112,9 @@
                     <li>
                     <a href="https://ers.app.box.com/s/ctoz44zj4ho0rvyu7am41scucwuoko0z" target="_blank">Frequently Asked Questions (FAQs)</a>
                     </li>
+                    <li>
+                      <a href="https://ers.box.com/s/e6govt6ev71icjf5etsanhk9o0gan5kn" target="_blank">Annex I – RESPIRE4 Overview</a>
+                    </li>
                     @if($item->popUpText)
                     <li>
                       <a data-toggle="modal" data-target="#md-popUp" class="cursor_pointer">{{$item->popUpText}}</a>
@@ -207,7 +210,7 @@
               <p>For more information, contact {!! Html::mailto('fellowships@ersnet.org', 'fellowships@ersnet.org') !!}</p>
               @endif
               {{--<p>Registering for someone else ? Contact {!! Html::mailto('education@ersnet.org', 'Felix Yip') !!}</p>--}}
-              <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt">
+              <a href="{{$item->registerButton->link}}" target="new_blank"  class="btn btn-primary tab-register-bt ga-event-registration">
                 {{ $item->registerButton->text or Register}}
             </a>
             @endif

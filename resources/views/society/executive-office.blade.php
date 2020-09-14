@@ -1,4 +1,7 @@
-  @extends('template')
+  {{--
+    Section move in myERS 20200422
+    
+    @extends('template')
 @section('meta')
         @include('partials.meta', array('meta' =>
               [
@@ -30,12 +33,9 @@
         <div class="col-md-8 center-block lead">4, Avenue Ste-Luce CH 1003 Lausanne Switzerland<br><br>
         TEL +41 21 213 01 01&nbsp;&nbsp;/&nbsp;&nbsp;FAX +41 21 213 01 00</div>
 
-        <!--Map-->
         <div id="map_lausanne" style="width: 700px; height:50px;">
       
         </div>
-        <!--Fin Map-->
-
 
 
         <div class="row">
@@ -62,10 +62,7 @@
             </p>
           </div>
         </div>
-
-        <!--Departments Menu-->
         <div class="row row_depertment">
-            <!--Congress-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -76,8 +73,6 @@
                     </div>
                 </div>
             </div>
-
-            <!--Corporate-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -88,9 +83,6 @@
                     </div>
                 </div>
             </div>
-
-
-            <!--Press and Communications-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -101,9 +93,6 @@
                     </div>
                 </div>
             </div>
-
-
-            <!--Education-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -114,8 +103,6 @@
                     </div>
                 </div>
             </div>
-
-            <!--Advocacy and EU Affairs-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -126,8 +113,6 @@
                     </div>
                 </div>
             </div>
-
-            <!--ELF-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -138,8 +123,6 @@
                     </div>
                 </div>
             </div>
-
-            <!--Finance-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -150,8 +133,6 @@
                     </div>
                 </div>
             </div>
-
-            <!--IT-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -163,7 +144,6 @@
                 </div>
             </div>
             
-            <!--Membership-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -175,7 +155,6 @@
                 </div>
             </div>
 
-            <!--Publications-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -187,7 +166,6 @@
                 </div>
             </div>
 
-            <!--Scientific activities-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -199,7 +177,6 @@
                 </div>
             </div>
             
-            <!--Scientific Events-->
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-image">
@@ -209,20 +186,10 @@
                         <a href="the-society/who-we-are/executive-office#scientific-events">Scientific Events</a>
                     </div>
                 </div>
-            </div>
-
-            
-            
-            
+            </div> 
         </div>
-        <!--Fin Departments Menu-->
-
-
-
     </div>
     </div>
-
-    <!--Section Congress-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -240,40 +207,38 @@
       <div class="row">
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Soraya Barazin</strong>
-            Senior Coordinator<br>
+            Congress &amp; Events Senior Coordinator<br>
             T +41 21 213 01 72<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Felix Yip</strong>
-            Coordinator<br>
+            Congress &amp; Events Senior Coordinator<br>
             T +41 21 213 01 97<br>
             </p>
         </div>
-        <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Nutcha Prakkamakul</strong>
-            Coordinator<br>
-            T +41 21 213 01 69<br>
-            </p>
-        </div>
+
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Sandy Borlat</strong>
-            Assistant<br>
+            Congress &amp; Events Coordinator<br>
             T +41 21 213 01 86<br>
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>Camille Perret-Gentil</strong>
+            Congress &amp; Events Coordinator<br>
+            T +41 21 213 01 69<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Emma Favrod</strong>
-            Assistant<br>
+            Congress &amp; Events Assistant<br>
             T +41 21 213 01 75<br>
             </p>
         </div>
       </div>
     </div>
     </div>
-    <!--Fin Section Congress-->
-
-    <!--Section Corporate Relations-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -331,9 +296,6 @@
       </div>
     </div>
     </div>
-    <!--Fin Section Corporate Relations-->
-
-    <!--Section Press and Communications-->
     <div class="section fp-auto-height">
       <div class="main-content">
         <div class="page-head">
@@ -341,25 +303,28 @@
         </div>
   
         <div class="row">
-          <div class="col-md-3 col-md-offset-3 xs-mb-15">
+          <div class="col-md-4 xs-mb-15">
             <p class="photo_caption"><strong>Dawn Ould</strong>
               Senior Communications Coordinator<br>
               T +44 114 267 2866<br>
             </p>
           </div>
-          <div class="col-md-3 xs-mb-15">
+          <div class="col-md-4 xs-mb-15">
             <p class="photo_caption"><strong>Beth Maguire</strong>
               Communications Coordinator<br>
               T +44 114 267 2866<br>
               </p>
           </div>
-  
+          <div class="col-md-4 xs-mb-15">
+            <p class="photo_caption"><strong>Helen Birtwhistle</strong>
+              Communications Assistant<br>
+              T +44 114 267 2866<br>
+              </p>
+          </div>
+
         </div>
       </div>
       </div>
-    <!--Fin Press and Communications-->
-
-    <!--Section Education-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -430,24 +395,21 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Jenai Kisseleff</strong>
-            Educational Administrative Assistant<br>
-            T +41 21 213 01 93<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Marco Gallardo</strong>
             Educational Programmes Assistant<br>
             T +41 21 213 01 51<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>Jenai Kisseleff</strong>
+            Educational Programmes Assistant<br>
+            T +41 21 213 01 93<br>
             </p>
         </div>
        
       </div>
     </div>
     </div>
-    <!--Fin Section Education-->
-
-    <!--Section EU Affairs-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -490,9 +452,6 @@
       </div>
     </div>
     </div>
-    <!--Fin Section EU Affairs-->
-
-    <!--Section ELF-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -526,12 +485,22 @@
             T +44 114 267 2872<br>
             </p>
         </div>
+        <div class="col-md-4 xs-mb-15">
+          <p class="photo_caption"><strong>Jessica Denning</strong>
+            Communications & Education Coordinator<br>
+            T +44 114 322 0645<br>
+            </p>
+        </div>
+        <div class="col-md-4 xs-mb-15">
+          <p class="photo_caption"><strong>Winnie Mvunga</strong>
+            Patient Involvement & Engagement<br>
+            T +44 114 322 0651<br>
+            </p>
+        </div>
+
       </div>
     </div>
     </div>
-    <!--Fin Section ELF-->
-
-    <!--Section Finance-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -573,7 +542,7 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Françoise Thonnard</strong>
-          Junior Accountant<br>
+          Accountant<br>
             T +41 21 213 01 21<br>
             </p>
         </div>
@@ -612,9 +581,6 @@
       </div>
     </div>
     </div>
-    <!--Fin Section Finance-->
-
-    <!--Section IT Infrastructure and Service-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -669,9 +635,6 @@
       </div>
     </div>
     </div>
-    <!--Fin IT Infrastructure and Service-->
-
-    <!--Section Membership-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -686,7 +649,7 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>Joanne Stevenson</strong>
+          <p class="photo_caption"><strong>Amy Auer</strong>
             Membership Coordinator<br>
             T +41 21 213 01 42<br>
             </p>
@@ -695,9 +658,6 @@
       </div>
     </div>
     </div>
-    <!--Fin Section Membership-->
-
-    <!--Section Publications-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -802,9 +762,6 @@
       </div>
     </div>
     </div>
-    <!--Fin Section Publications-->
-
-    <!--Section Scientific activities-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -813,8 +770,8 @@
       <div class="row">
           <div class="col-md-4 col-md-offset-4 xs-mb-15">
             <img src="https://cdn.ersnet.org/images/people/executive-office/Celine-Genton.png" class="img-circle">
-            <p class="photo_caption"><strong>Celine Genton</strong>
-            Head of Scientific Activities<br>
+            <p class="photo_caption"><strong>Céline Genton</strong>
+            Director of Scientific Activities<br>
             T +41 21 213 01 59<br>
             </p>
           </div>
@@ -833,12 +790,6 @@
             </p>
         </div>
         <div class="col-md-3 xs-mb-15">
-          <p class="photo_caption"><strong>David Rigau</strong>
-            Methodologist<br>
-            T +41 21 213 01 87<br>
-            </p>
-        </div>
-        <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Thomy Tonia</strong>
           Senior Methodologist<br>
             T +41 21 213 01 87<br>
@@ -846,7 +797,7 @@
         </div>
         <div class="col-md-3 xs-mb-15">
           <p class="photo_caption"><strong>Maeve Tsu</strong>
-            Funding Programme Assistant<br>
+            Funding Programme Coordinator<br>
             T +41 21 213 01 83<br>
             </p>
         </div>
@@ -862,14 +813,22 @@
             T +41 21 213 01 66<br>
             </p>
         </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>Valerija Arsovski</strong>
+            Scientific Administrative Assistant<br>
+            T +41 21 213 01 58<br>
+            </p>
+        </div>
+        <div class="col-md-3 xs-mb-15">
+          <p class="photo_caption"><strong>Emmanuelle Berret</strong>
+            Associate Project Manager<br>
+            T +41 21 213 01 82<br>
+            </p>
+        </div>
         
       </div>
     </div>
     </div>
-    <!--Fin Scientific activities-->
-
-    
-    <!--Section Scientific Events-->
     <div class="section fp-auto-height">
     <div class="main-content">
       <div class="page-head">
@@ -919,46 +878,18 @@
       </div>
     </div>
     </div>
-    <!--Fin Section Scientific Events-->
-
-    
-
-          {{-- Footer --}}
       @include('footer')
-
-
-
-
-     
-
     </div>
   </div>
-
-
-
-
-
-
     @stop()  
 
     @section('scripts')
-    {{-- <script src="https://cdn.ersnet.org/js/fullpage.js" type="text/javascript"></script> --}}
-    {{-- <script src="https://cdn.ersnet.org/js/app-assemblies.js" type="text/javascript"></script> --}}
-
-    {{-- <<script src="http://erstemplate.app/js/fullpage.js" type="text/javascript"></script>> --}}
-    {{-- <<script src="http://erstemplate.app/js/app-executive-office.js" type="text/javascript"></script>> --}}
-
-    {{-- <script src="https://bootstrap.ersnet.org/js/fullpage.js" type="text/javascript"></script>
-    <script src="https://bootstrap.ersnet.org/js/app-executive-office.js" type="text/javascript"></script> --}}
-
-    {{-- Cloud Front is the ERS CDN --}}
     <script src="https://cdn.ersnet.org/js/fullpage.js" type="text/javascript"></script>
     <script src="https://cdn.ersnet.org/js/app-executive-office.js" type="text/javascript"></script>
 
     <script type="text/javascript">
       $(document).ready(function(){
-        //initialize the javascript
         App.executiveOffice();             
       });
     </script>
-    @stop()
+    @stop() --}}

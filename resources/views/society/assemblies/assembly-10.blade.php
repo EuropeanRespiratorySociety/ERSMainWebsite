@@ -4,12 +4,12 @@
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/people/leadership/Graham-Bothamley.png" class="img-circle" width="120" height="120">
-                  <p class="photo_caption">Head: Graham Bothamley</p>
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Eva-Polverino.png" class="img-circle" width="120" height="120">
+                  <p class="photo_caption">Head: Eva Polverino</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                 <img src="https://cdn.ersnet.org/images/people/leadership/Eva-Polverino.png" class="img-circle">
-                  <p class="photo_caption">Secretary: Eva Polverino</p>
+                 <img src="https://cdn.ersnet.org/images/people/leadership/Raquel-Duarte.png" class="img-circle">
+                  <p class="photo_caption">Secretary: Raquel Duarte</p>
                  
                 </div>
             </div>
@@ -45,8 +45,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 10.01<br>
-                    Chair: James Chalmers<br>
-                    Secretary: Michael Loebinger</p>
+                    Chair: Michael Loebinger<br>
+                    Secretary: Pieter Goeminne</p>
                   </div>
                   <div class="card-action clearfix">
                     <button data-toggle="modal" data-target="#md-respiratory-infections" type="button" class="btn btn-default pull-right">More</button>
@@ -63,7 +63,7 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 10.02<br>
-                    Chair: Raquel Almeida Ferreira Duarte Bessa Melo<a href=""></a><br>
+                    Chair: Alberto Garcia-Basteiro<br>
                     Secretary: Simon Tiberi</p>
                   </div>
                   <div class="card-action clearfix">

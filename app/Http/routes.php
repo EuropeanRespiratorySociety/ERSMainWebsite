@@ -48,7 +48,7 @@ Route::group(['middleware' => ['web']], function () {
     //The order matters!!!
 Route::group(['prefix' => 'the-society/who-we-are'], function () { 
     Route::get('/', 'WhoWeAreController@index');
-    Route::get('executive-office', function(){ return view('society.executive-office');});
+    //Route::get('executive-office', function(){ return view('society.executive-office');});
     Route::get('leadership', function(){ return view('society.leadership');});
     Route::get('awards', 'GeneralController@awards');  
     Route::get('awards/gold-medals', 'GeneralController@goldMedals'); 
@@ -59,7 +59,7 @@ Route::group(['prefix' => 'the-society/who-we-are'], function () {
     Route::get('awards/research-excellence/{slug}', 'GeneralController@researchExcellence'); 
     Route::get('awards/{slug}', 'GeneralController@show'); 
     Route::group(['prefix' => 'leadership'], function () { 
-        Route::get('cers-members-and-observers', function(){return view('society.leadership.cers-members-and-observers');});
+        Route::get('national-delegates', function(){return view('society.leadership.national-delegates');});
         Route::get('science-council', function(){return view('society.leadership.science-council');});
         Route::get('assembly-heads', function(){return view('society.leadership.assembly-heads');});
         Route::get('education-council', function(){return view('society.leadership.education-council');});
@@ -79,7 +79,9 @@ Route::group(['prefix' => 'the-society/news'], function () {
     Route::get('respiratory-matters', 'NewsController@indexRespiratoryMatters');
     Route::get('respiratory-worldwide/{slug}', 'NewsController@show');    
     Route::get('respiratory-matters/{slug}', 'NewsController@show');    
+    Route::get('novel-coronavirus-outbreak--update-and-information-for-healthcare-professionals', 'Covid19Controller@index');
     Route::get('/{slug}', 'NewsController@show');
+   
 });
 
 //Few redirects to avoid user missbehaviours
@@ -101,8 +103,6 @@ Route::group(['prefix' => 'congress-and-events'], function () {
     Route::get('ers-research-seminars', 'RedirectController@researchSeminars');
     Route::get('ers-presidential-summits', 'ResearchController@summits');
     Route::get('ers-presidential-summits/{slug}', 'ResearchController@showRS');
-    Route::get('metabolic-alterations-in-lung-ageing-and-disease', 'LscController@index');
-    Route::get('metabolic-alterations-in-lung-ageing-and-disease/{slug}', 'LscController@show');
     Route::get('the-lung-science-conference/{slug}', 'LscController@show');
     Route::get('events-calendar', 'CalendarController@index');
     Route::get('ers-2018', 'LscController@paris');
@@ -139,11 +139,13 @@ Route::group(['prefix' => 'professional-development'], function () {
     Route::group(['prefix' => 'hermes'], function () {
         Route::get('/', 'HermesController@index');
         Route::group(['prefix' => 'adult'], function () {
+          //FBL 20200309 : Not use Route::get('/', 'HermesController@show');
           Route::get('/', 'HermesController@show');
           Route::get('/examination-committee-adult', 'HermesController@ExamCommitteeAdult');
           Route::get('/{slug}', 'HermesController@show');
         });
         Route::group(['prefix' => 'paediatric'], function () {
+          //FBL 20200309 : Not use Route::get('/', 'HermesController@show');
           Route::get('/', 'HermesController@show');
           Route::get('/examination-committee-paediatric', 'HermesController@ExamCommitteePaediatric');
           Route::get('/{slug}', 'HermesController@show');
@@ -166,6 +168,7 @@ Route::group(['prefix' => 'professional-development'], function () {
 
     Route::group(['prefix' => 'phd-overview'], function () {
       Route::get('/', 'CpdController@phd');
+      Route::get('/{slug}', 'CpdController@showPhpOverview');
     });
 
     Route::get('ers-curriculum-design-a-summary-of-projects', 'GeneralController@curriculmDesign');
@@ -192,14 +195,17 @@ Route::group(['prefix' => 'professional-development'], function () {
         return view('advocacy.policy-areas');
     });
     Route::get('advocacy/policy-areas/{slug}', 'GeneralController@show');
-    Route::get('advocacy/mep-lung-health-group', function(){ return view('advocacy.mep-lung-health-group');});
+    Route::get('advocacy/mep-lung-health-group', 'GeneralController@mep');
     Route::get('advocacy/{slug}', 'GeneralController@show');
     Route::get('related/{slug}', 'GeneralController@show');
 
     Route::get('authors', 'NewsController@authors');
     Route::get('authors/{slug}', 'NewsController@showAuthor');
     // Route::get('/website-survey', 'GeneralController@show');
-
+    Route::get('breaking-covid-19', 'Covid19Controller@breakingNews');
+    Route::get('covid-19-guidelines-and-recommendations-directory', 'Covid19Controller@covidGuidelines');
+    Route::get('covid-19-blog', 'Covid19Controller@indexBlog');
+    Route::get('covid-19-blog/{slug}', 'Covid19Controller@showBlog');
     //Route::get('cc', 'CloudCms@requestTest');
     Route::get('full-search', 'CloudCms@fullSearch');
 
