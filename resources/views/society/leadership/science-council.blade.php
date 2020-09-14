@@ -14,39 +14,41 @@
 			</div> --}}
 
 			<div class="row leadership-people" style="padding-top: 40px;">
-          <div class="col-md-4 xs-mb-15">
-              <img src="https://cdn.ersnet.org/images/people/leadership/christopher_e_brightling.png" class="img-circle">
-              <p class="photo_caption"><strong>Christopher E. Brightling</strong>
-                Science Council Chair<br>
-          </div>
-	        	<div class="col-md-4 xs-mb-15">
-              <img src="https://cdn.ersnet.org/images/people/leadership/LOUISE-E-DONNELLY.png" class="img-circle">
-		            <p class="photo_caption"><strong>Louise E. Donnelly</strong>
-                  Fellowship and Awards Director<br>
-            </div>
-	        	<div class="col-md-4 xs-mb-15">
-              <img src="https://cdn.ersnet.org/images/people/leadership/Reinoud-Gosens.png" class="img-circle">
-              <p class="photo_caption"><strong>Reinoud Gosens</strong>
-                      Conference and Research Seminars Director<br>
-            </div>
-            <div class="col-md-4 xs-mb-15">
-              <img src="https://cdn.ersnet.org/images/people/leadership/Maarten-van-der-Berge-2.png" class="img-circle">
-              <p class="photo_caption"><strong>Maarten van den Berge</strong>
-                CRC Director<br>
-          </div>
+				<div class="col-md-4 xs-mb-15">
+					<img src="https://cdn.ersnet.org/images/people/leadership/christopher_e_brightling.png" class="img-circle">
+					<p class="photo_caption"><strong>Christopher E. Brightling</strong>
+						Science Council Chair<br>
+				</div>
+				<div class="col-md-4 xs-mb-15">
+					<img src="https://cdn.ersnet.org/images/people/leadership/LOUISE-E-DONNELLY.png" class="img-circle">
+						<p class="photo_caption"><strong>Louise E. Donnelly</strong>
+					Fellowship and Awards Director<br>
+				</div>
+				<div class="col-md-4 xs-mb-15">
+					<img src="https://cdn.ersnet.org/images/people/leadership/Reinoud-Gosens.png" class="img-circle">
+					<p class="photo_caption"><strong>Reinoud Gosens</strong>
+						Conference and Research Seminars Director<br>
+				</div>
+				<div class="col-md-4 xs-mb-15">
+					<img src="https://cdn.ersnet.org/images/people/leadership/Maarten-van-der-Berge-2.png" class="img-circle">
+					<p class="photo_caption"><strong>Maarten van den Berge</strong>
+						CRC Director<br>
+				</div>
 		        <div class="col-md-4 xs-mb-15">
 					<img src="https://cdn.ersnet.org/images/people/leadership/Nicolas-Roche-03.png" class="img-circle" width="120" height="120">
 		            <p class="photo_caption"><strong>Nicolas Roche</strong>
 		            Guidelines Director<br>
 		        </div>		        
 		        <div class="col-md-4 xs-mb-15">
-              <img src="https://cdn.ersnet.org/images/people/leadership/Niki-Ubags.png" class="img-circle">
-              <p class="photo_caption"><strong>Niki Ubags</strong>
-		            Early-Career Member Representative<br>
+					<img src="https://cdn.ersnet.org/images/people/leadership/Niki-Ubags.png" class="img-circle">
+					<p class="photo_caption"><strong>Niki Ubags</strong>
+							Early-Career Member Representative<br>
+				</div>
+				<div class="col-md-4 xs-mb-15">
+					<img src="https://cdn.ersnet.org/images/people/leadership/Andrew_Bush.png" class="img-circle">
+					<p class="photo_caption"><strong>Andrew Bush</strong>
+						Guidelines Director Elect<br>
 		        </div>
-
-
-
 			</div>
 
 			<!--Departments Menu-->
