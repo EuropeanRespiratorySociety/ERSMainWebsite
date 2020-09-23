@@ -44,11 +44,11 @@
               <p class="photo_caption"><strong>Niki Ubags</strong>
 		            Early-Career Member Representative<br>
 		        </div>
-				<div class="col-md-4 xs-mb-15">
+				{{-- <div class="col-md-4 xs-mb-15">
 					<img src="https://cdn.ersnet.org/images/people/leadership/Andrew_Bush.jpg" class="img-circle">
 					<p class="photo_caption"><strong>Andrew Bush</strong>
 						Guidelines Director Elect<br>
-		        </div>
+		        </div> --}}
 
 
 			</div>
