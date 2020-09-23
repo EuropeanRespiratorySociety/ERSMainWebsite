@@ -283,10 +283,12 @@
           <div class="text-center col-md-3 col-sm-4 col-md-offset-1 col-xs-12" style="margin-bottom: 20px;" >
             <img src="https://cdn.ersnet.org/preview/node/o:84e4146221060b4d8439" >
           </div>
-          <div class="col-md-3 col-sm-4 col-xs-12 text-center" style="margin-bottom: 20px;padding-left: 15px;" >
+          <div class="col-md-3 col-sm-4 col-xs-12 text-center" style="margin-bottom: 20px;" >
             <img src="https://cdn.ersnet.org/preview/node/o:3961c7e56700b5c834ed">
           </div>
-
+          <div class="col-md-3 col-sm-4 col-xs-12 text-center" style="margin-bottom: 20px;padding-left: 15px;" >
+            <img src="https://cdn.ersnet.org/preview/node/o:0d23fb0e6a1aad1b85b2">
+          </div>
         </div>
       </div>
       <div class="article text-left lead">
