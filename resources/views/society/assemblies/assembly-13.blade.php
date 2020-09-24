@@ -59,7 +59,7 @@
                 </div>
               </div>
 
-              <div class="col-md-4">
+              {{-- FBL 20200924 <div class="col-md-4">
                  <div class="card card-padded">
                   <div class="card-image">
                   </div>
@@ -75,15 +75,7 @@
                     <!-- <button data-toggle="modal" data-target="#md-respiratory-infections" type="button" class="btn btn-default pull-right">More</button> -->
                   </div>
                 </div>
-              </div>
-
-           
-
-         
- 
-      
-
-
+              </div> --}}
             </div>
 
           </div>  

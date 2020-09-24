@@ -41,7 +41,8 @@
                   <div class="card-image">
                   </div>
                   <div class="card-title text-left">
-                    <h3>Respiratory Infections</h3>
+                    {{-- FBL 20200924 <h3>Respiratory Infections</h3> --}}
+                    <h3>Respiratory Infections and Bronchiectasis</h3>
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 10.01<br>
@@ -59,7 +60,8 @@
                   <div class="card-image">
                   </div>
                   <div class="card-title text-left">
-                    <h3>Tuberculosis</h3>
+                    {{-- FBL 20200924 <h3>Tuberculosis</h3> --}}
+                    <h3>Tuberculosis and Non-Tuberculous mycobacterial diseases</h3>
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 10.02<br>
@@ -72,15 +74,24 @@
                 </div>
               </div>
 
-           
-
-           
-
-         
- 
-      
-
-
+              {{-- FBL 20200924 --}}
+              <div class="col-md-4">
+                <div class="card card-padded">
+                  <div class="card-image">
+                  </div>
+                  <div class="card-title text-left">
+                    <h3>Adult CF</h3>
+                  </div> 
+                  <div class="card-content text-left">
+                    <p>Group 10.03<br>
+                    <br>
+                    </p>
+                  </div>
+                  <div class="card-action clearfix">
+                    {{-- <button data-toggle="modal" data-target="" type="button" class="btn btn-default pull-right">More</button> --}}
+                  </div>
+                </div>
+              </div>
             </div>
 
           </div>  

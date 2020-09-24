@@ -360,11 +360,16 @@ Its members are interested in the mechanisms of disease related to acute lung in
       <div class="modal-body">
         <div class="text-left">
           <h4>Clinical respiratory physiology, exercise and functional imaging</h4>
-          <p>TGroup 4.01 has been recently formed by merging two long long-established Groups, Gas exchange and Exercise and Respiratory Structure and Function.<br><br>
+          {{-- FBL 20200924 <p>TGroup 4.01 has been recently formed by merging two long long-established Groups, Gas exchange and Exercise and Respiratory Structure and Function.<br><br>
 
 The aims of the group are a) to provide up-to-date perspectives and opportunities for research and education in both clinical and basic respiratory physiology and biology, through a strong integrative, multidisciplinary and multi-scale approach and b) to facilitate the translation of respiratory and exercise physiology science into the clinical evaluation and treatment of cardio-respiratory diseases.<br>
 The main topics of the Group are the clinical, physiological and patho-physiological aspects of airway, lung and chest wall mechanics, gas exchange and transport mechanisms, respiratory and peripheral muscles action and metabolism, exercise physiology and pathophysiology, namely factors limiting exercise in health and disease, clinical manifestations of cardio-respiratory diseases during exercise and exercise-based rehabilitation strategies. Special attention is also given to new methods and technologies for the analysis and assessment of respiratory system structure and function.
-Through ERS resources, the Group promotes, facilitates and coordinates proposals for research and education projects, Symposia for the annual Congress, Task Forces, Research Seminars, awards in the field of Clinical Physiology and Exercise.</p>
+Through ERS resources, the Group promotes, facilitates and coordinates proposals for research and education projects, Symposia for the annual Congress, Task Forces, Research Seminars, awards in the field of Clinical Physiology and Exercise.</p> --}}
+<p>This Group 1.05 has been recently formed by merging two long long-established Groups, Gas exchange and Exercise and Respiratory Structure and Function.<br><br>
+
+  The aims of the group are a) to provide up-to-date perspectives and opportunities for research and education in both clinical and basic respiratory physiology and biology, through a strong integrative, multidisciplinary and multi-scale approach and b) to facilitate the translation of respiratory and exercise physiology science into the clinical evaluation and treatment of cardio-respiratory diseases.<br>
+  The main topics of the Group are the clinical, physiological and patho-physiological aspects of airway, lung and chest wall mechanics, gas exchange and transport mechanisms, respiratory and peripheral muscles action and metabolism, exercise physiology and pathophysiology, namely factors limiting exercise in health and disease, clinical manifestations of cardio-respiratory diseases during exercise and exercise-based rehabilitation strategies. Special attention is also given to new methods and technologies for the analysis and assessment of respiratory system structure and function.
+  Through ERS resources, the Group promotes, facilitates and coordinates proposals for research and education projects, Symposia for the annual Congress, Task Forces, Research Seminars, awards in the field of Clinical Physiology and Exercise.</p>
         </div>
       </div>
     </div>
@@ -507,7 +512,7 @@ Our Group works closely with the Epidemiology Group and the Clinical Assembly. A
   </div>
 </div>
 <!--Genes and environment-->
-<div id="md-genes-and-environment" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+{{-- FBL 20200924 <div id="md-genes-and-environment" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -524,7 +529,7 @@ Studying gene-by-environment interactions is the focus of many current studies o
       </div>
     </div>
   </div>
-</div>
+</div> --}}
 <!--Paediatric Respiratory Physiology and Sleep-->
 <div id="md-paediatric-respiratory" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
   <div class="modal-dialog">
@@ -581,7 +586,8 @@ The Group Chair and Secretary welcome any suggestions ERS members might have to 
       </div>
       <div class="modal-body">
         <div class="text-left">
-          <h4>Paediatric Respiratory Physiology and Sleep</h4>
+          {{-- FBL 20200924 <h4>Paediatric Respiratory Physiology and Sleep</h4> --}}
+          <h4>Paediatric Cystic Fibrosis (CF)</h4>
           <p>
           This group focuses on cystic fibrosis (CF), a complex, challenging and multidisciplinary disease. The symposia and poster sessions during the ERS congress are a lively platform where paediatricians, paediatric pulmonologists, pulmonologists, microbiologists, radiologists and allied respiratory health professionals meet and discuss their interests.<br><br>
 
@@ -780,10 +786,19 @@ In addition, this group aims to develop the knowledge, clinical and scientific s
       </div>
       <div class="modal-body">
         <div class="text-left">
-          <h4>Respiratory Infections</h4>
+          {{-- FBL 20200924 <h4>Respiratory Infections</h4> 
           <p>Respiratory infections are associated with increased morbitity, high health cost and in specific groups of patients with increased mortality (elderly, comorbitities, immunocopromized patients etc).<br><br>  
 
-For this reason the major targets of Respiratory Infections Assembly 10.1 of ERS are:<br>
+            For this reason the major targets of Respiratory Infections Assembly 10.1 of ERS are:<br>
+            <ul>
+              <li>the education on early adequate and appropriate treatment of those infections (guidelines, networks etc), </li>
+              <li>the prevention (vaccination projects etc) </li>
+              <li>the research activities</li>
+            </ul>--}}
+          <h4>Respiratory Infections and Bronchiectasis</h4> 
+          <p>Respiratory infections and bronchiectasis are associated with increased morbitity, high health cost and in specific groups of patients with increased mortality (elderly, comorbitities, immunocopromized patients etc).<br><br>  
+
+For this reason the major targets of Respiratory Infections and Bronchiectasis Assembly 10.1 of ERS are:<br>
 <ul>
   <li>the education on early adequate and appropriate treatment of those infections (guidelines, networks etc), </li>
   <li>the prevention (vaccination projects etc) </li>
@@ -804,7 +819,8 @@ For this reason the major targets of Respiratory Infections Assembly 10.1 of ERS
       </div>
       <div class="modal-body">
         <div class="text-left">
-          <h4>Tuberculosis</h4>
+          {{-- FBL 20200924 <h4>Tuberculosis</h4> --}}
+          <h4>Tuberculosis and Non-Tuberculous mycobacterial diseases</h4>
           <p>Tuberculosis (TB) and other mycobacterial (NTM) diseases are the topics of this group. Despite a global fall in TB incidence, Europe is noted for its high numbers of TB in its capital cities, related to migration.  The eastern part of the European Region also has the highest and fastest growing incidence of multidrug- and extensively-resistant tuberculosis (M/XDRTB) of any part of the world.  Western Europe has a low incidence of TB and therefore is ideally placed to investigate latent tuberculosis.  HIV-associated mycobacterial diseases remain an important topic for this assembly.<br><br>
 
 Recent advances in tests, such as the IFN-g release assays, led to a resurgent interest in clinical research.  This has been mirrored by the number of abstracts presented at our annual congress and journal articles in the European Respiratory Journal.  New drugs are being explored in clinical trials.  Advances in genetic sequencing and the role of the “omics” (e.g. genomics, transcriptomics, proteomics, metabolomics) are now being applied to clinical mycobacterial disease and promise an expanding role of this group in the life of the European Respiratory Society.<br><br>
@@ -873,7 +889,8 @@ Among this Group, we would like to help the respiratory physician's practice by 
       </div>
       <div class="modal-body">
         <div class="text-left">
-          <h4>Lung and airway developmental biology</h4>
+          {{-- FBL 20200924 <h4>Lung and airway developmental biology</h4> --}}
+          <h4>Paediatric lung cell and molecular biology</h4>
           <p>This new group within the Paediatrics Assembly focuses on lung and airway development, and the relationship between lung and airway development and respiratory heath during childhood and beyond. It is intended that we will drive cutting-edge, basic science research into lung and airway development, and bridge the gap between basic science and translational paediatric pulmonology. 
  <br><br>
 As a Group we aim to be a platform that facilitates close cooperation between basic scientists working in the arena of lung developmental biology and clinicians actively engaged in the practice of paediatric and adult respiratory medicine. This Group also aims to address the early (paediatric) origins of adult lung disease, and the long-term sequelae of early lung disease. We encourage our members to submit abstracts from their groups on these and other aspects of lung development, and to give active input into the activities of the Group.

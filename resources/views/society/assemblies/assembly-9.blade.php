@@ -81,14 +81,24 @@ The Assembly is comprised of the following three groups:
                 </div>
               </div>
 
-              
-             
-
-             
-
-             
- 
-
+              {{-- FBL 20200924 --}}
+              <div class="col-md-4">
+                <div class="card card-padded">
+                  <div class="card-image">
+                  </div>
+                  <div class="card-title text-left">
+                    <h3>Psychologists & Behavioural Scientists</h3>
+                  </div> 
+                  <div class="card-content text-left">
+                    <p>Group 09.04<br>
+                    <br>
+                    </p>
+                  </div>
+                  <div class="card-action clearfix">
+                    {{-- <button data-toggle="modal" data-target="" type="button" class="btn btn-default pull-right">More</button> --}}
+                  </div>
+                </div>
+              </div>
             </div>
 
           </div>  

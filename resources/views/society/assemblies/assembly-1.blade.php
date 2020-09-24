@@ -1,6 +1,9 @@
       <div class="section fp-auto-height" id="">
           <div class="main-content">
-          <div class="page-head"><h2>ERS Assembly 1: General Pneumology</h2></div>
+          <div class="page-head">
+            {{-- FBL 20200924 <h2>ERS Assembly 1: General Pneumology</h2> --}}
+            <h2>ERS Assembly 1: Respiratory clinical care and physiology</h2>
+          </div>
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
@@ -97,7 +100,27 @@
                   </div>
                 </div>
               </div>
+              {{-- FBL 20200924 --}}
+              <div class="col-md-4">
+                <div class="card card-padded">
+                  <div class="card-image">
+                  </div>
+                  <div class="card-title text-left">
+                    <h3>Clinical respiratory physiology, exercise and functional imaging</h3>
+                  </div> 
+                  <div class="card-content text-left">
+                    <p>Group 01.05<br>
+                    Chair: Sam Bayat<br>
+                    Secretary: William Stringer</p>
+                    
+                  </div>
+                  <div class="card-action clearfix">
+                    <button data-toggle="modal" data-target="#md-clinical-respiratory" type="button" class="btn btn-default pull-right">More</button>
 
+                  </div>
+                  
+                </div>
+              </div>
 
             </div>
 

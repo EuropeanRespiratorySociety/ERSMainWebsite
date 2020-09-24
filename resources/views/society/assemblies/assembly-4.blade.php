@@ -1,6 +1,9 @@
       <div class="section fp-auto-height" style="min-height:1000px;">
           <div class="main-content">
-          <div class="page-head"><h2>ERS Assembly 4: Sleep and Breathing disorders; and clinical physiology</h2></div>
+          <div class="page-head">
+            {{-- FBL 20200924 <h2>ERS Assembly 4: Sleep and Breathing disorders; and clinical physiology</h2> --}}
+            <h2>ERS Assembly 4: Sleep Disordered Breathing</h2>
+          </div>
 
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 xs-mb-15">
@@ -26,7 +29,7 @@ The Assembly is comprised of the following three groups:
           
 
             <div class="row　row_assemblies_card clearfix">
-              <div class="col-md-4">
+              {{-- FBL 20200924 <div class="col-md-4">
                 <div class="card card-padded">
                   <div class="card-image">
                   </div>
@@ -45,7 +48,7 @@ The Assembly is comprised of the following three groups:
                   </div>
                   
                 </div>
-              </div>
+              </div> --}}
 
               <div class="col-md-4">
                 <div class="card card-padded">
@@ -55,7 +58,8 @@ The Assembly is comprised of the following three groups:
                     <h3>Sleep and Control of Breathing</h3>
                   </div> 
                   <div class="card-content text-left">
-                    <p>Group 04.02<br>
+                    {{-- FBL 20200924 <p>Group 04.02<br> --}}
+                    <p>Group 04.01<br>
                     Chair: Sophia. E. Schiza<br>
                     Secretary: Dries Testelmans</p>
                   </div>
@@ -64,9 +68,6 @@ The Assembly is comprised of the following three groups:
                   </div>
                 </div>
               </div>
-
- 
-
             </div>
 
           </div>  
