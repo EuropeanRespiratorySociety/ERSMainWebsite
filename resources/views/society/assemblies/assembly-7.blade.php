@@ -68,7 +68,6 @@ The Assembly is comprised of the following eight groups:
                   <div class="card-image">
                   </div>
                   <div class="card-title text-left">
-                    {{-- FBL 20200924 <h3>Cystic Fibrosis</h3> --}}
                     <h3>Paediatric Cystic Fibrosis (CF)</h3>
                   </div> 
                   <div class="card-content text-left">
@@ -159,7 +158,6 @@ The Assembly is comprised of the following eight groups:
                   <div class="card-image">
                   </div>
                   <div class="card-title text-left">
-                    {{-- FBL 20200924 <h3>Lung and airway developmental biology</h3> --}}
                     <h3>Paediatric lung cell and molecular biology</h3>
                   </div> 
                   <div class="card-content text-left">

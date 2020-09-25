@@ -72,7 +72,8 @@ class Navigation
                     ->link->attr(array('class' => 'ga-nav-society'));
                 $menu->theSociety->add('Assemblies', 'the-society/assemblies' )
                 ->link->attr(array('class' => 'ga-nav-society'));
-                    $menu->assemblies->add('1. General Pneumology', 'the-society/assemblies#general-pneumology' )
+                    // $menu->assemblies->add('1. General Pneumology', 'the-society/assemblies#general-pneumology' )
+                    $menu->assemblies->add('1. Clinical respiratory physiology, exercise and functional imaging', 'the-society/assemblies#clinical-respiratory-physiology' )
                     ->link->attr(array('class' => 'ga-nav-society'));
                     $menu->assemblies->add('2. Respiratory Intensive Care', 'the-society/assemblies#respiratory-intensive-care' )
                     ->link->attr(array('class' => 'ga-nav-society'));

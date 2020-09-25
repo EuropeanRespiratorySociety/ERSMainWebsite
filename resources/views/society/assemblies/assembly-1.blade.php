@@ -1,7 +1,6 @@
       <div class="section fp-auto-height" id="">
           <div class="main-content">
           <div class="page-head">
-            {{-- FBL 20200924 <h2>ERS Assembly 1: General Pneumology</h2> --}}
             <h2>ERS Assembly 1: Respiratory clinical care and physiology</h2>
           </div>
 
@@ -100,7 +99,7 @@
                   </div>
                 </div>
               </div>
-              {{-- FBL 20200924 --}}
+             
               <div class="col-md-4">
                 <div class="card card-padded">
                   <div class="card-image">

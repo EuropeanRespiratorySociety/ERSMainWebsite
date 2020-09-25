@@ -41,7 +41,6 @@
                   <div class="card-image">
                   </div>
                   <div class="card-title text-left">
-                    {{-- FBL 20200924 <h3>Respiratory Infections</h3> --}}
                     <h3>Respiratory Infections and Bronchiectasis</h3>
                   </div> 
                   <div class="card-content text-left">
@@ -60,7 +59,6 @@
                   <div class="card-image">
                   </div>
                   <div class="card-title text-left">
-                    {{-- FBL 20200924 <h3>Tuberculosis</h3> --}}
                     <h3>Tuberculosis and Non-Tuberculous mycobacterial diseases</h3>
                   </div> 
                   <div class="card-content text-left">
@@ -73,8 +71,6 @@
                   </div>
                 </div>
               </div>
-
-              {{-- FBL 20200924 --}}
               <div class="col-md-4">
                 <div class="card card-padded">
                   <div class="card-image">

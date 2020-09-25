@@ -1,7 +1,6 @@
       <div class="section fp-auto-height" style="min-height:1100px;">
           <div class="main-content">
           <div class="page-head">
-            {{-- FBL 20200924 <h2>ERS Assembly 5: Airway Diseases, Asthma and COPD</h2> --}}
             <h2>ERS Assembly 5: Airway Diseases, Asthma, COPD and Chronic Cough</h2>
           </div>
 

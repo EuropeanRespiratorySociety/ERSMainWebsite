@@ -83,27 +83,6 @@ The Assembly is comprised of the following four groups:
                       </div>
                     </div>
                   </div>
-
-                  {{-- FBL 20200924 <div class="col-md-4">
-                    <div class="card card-padded">
-                      <div class="card-image">
-                      </div>
-                      <div class="card-title text-left">
-                        <h3>Genes and environment</h3>
-                      </div> 
-                      <div class="card-content text-left">
-                        <p>Group 06.04<br>
-                          Chair: Ian P. Hall<br>
-                          Secretary: Klaus Bonnelykke</p>
-                        </div>
-                        <div class="card-action clearfix">
-                          <button data-toggle="modal" data-target="#md-genes-and-environment" type="button" class="btn btn-default pull-right">More</button>
-                        </div>
-                      </div>
-                    </div> --}}
-
-
-
                   </div>
 
                 </div>  

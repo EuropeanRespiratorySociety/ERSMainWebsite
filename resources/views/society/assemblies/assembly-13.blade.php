@@ -59,23 +59,6 @@
                 </div>
               </div>
 
-              {{-- FBL 20200924 <div class="col-md-4">
-                 <div class="card card-padded">
-                  <div class="card-image">
-                  </div>
-                  <div class="card-title text-left">
-                    <h3>Right ventricle</h3>
-                  </div> 
-                  <div class="card-content text-left">
-                    <p>Group 13.03<br>
-                    Chair: Harm Jan Bogaard<br>
-                    Secretary: Frances S. De Man</p>
-                  </div>
-                  <div class="card-action clearfix">
-                    <!-- <button data-toggle="modal" data-target="#md-respiratory-infections" type="button" class="btn btn-default pull-right">More</button> -->
-                  </div>
-                </div>
-              </div> --}}
             </div>
 
           </div>  

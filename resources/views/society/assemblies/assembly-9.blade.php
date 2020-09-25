@@ -80,8 +80,6 @@ The Assembly is comprised of the following three groups:
                   </div>
                 </div>
               </div>
-
-              {{-- FBL 20200924 --}}
               <div class="col-md-4">
                 <div class="card card-padded">
                   <div class="card-image">
