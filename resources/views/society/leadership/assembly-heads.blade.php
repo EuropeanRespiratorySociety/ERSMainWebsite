@@ -18,7 +18,7 @@
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="https://cdn.ersnet.org/images/people/leadership/Hilary-Pinnock.png" class="img-circle">
 		            <p class="photo_caption"><strong>Hilary Pinnock</strong>
-                  General Pneumology<br>
+						Respiratory clinical care and physiology<br>
 		            {{-- <a href="http://www.ersnet.org/about-us/leadership/science-council/assembly-heads.raw?task=callelement&amp;item_id=422&amp;element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&amp;method=download" title="Download COI">Download COI</a> --}}
 		            </p>
 	        	</div>
@@ -37,13 +37,13 @@
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="https://cdn.ersnet.org/images/people/leadership/Andrea-Aliverti.png" class="img-circle">
 		            <p class="photo_caption"><strong>Andrea Aliverti</strong>
-                  Sleep and Breathing disorders; and clinical physiology<br>
+						Sleep Disordered Breathing<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
 		            <img src="https://cdn.ersnet.org/images/people/leadership/Omar-Usmani-2.png" class="img-circle">
 		            <p class="photo_caption"><strong>Omar S. Usmani</strong>
-		            Airway diseases, asthma and COPD<br>
+						Airway Diseases, Asthma, COPD and Chronic Cough<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">

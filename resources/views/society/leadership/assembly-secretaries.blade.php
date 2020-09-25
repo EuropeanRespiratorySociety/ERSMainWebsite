@@ -11,7 +11,7 @@
 		        <div class="col-md-4 xs-mb-15">
               <img src="https://cdn.ersnet.org/images/people/leadership/Ioannis-Vogiatzis-02.png" class="img-circle">
               <p class="photo_caption"><strong>Ioannis Vogiatzis</strong>
-                  General Pneumology<br>
+				Respiratory clinical care and physiology<br>
 		            {{-- <a href="/about-us/leadership/education-council/assembly-secretaries.raw?task=callelement&amp;item_id=1065&amp;element=92a7de3e-9cbe-4faa-a76a-9b026b7cf9f9&amp;method=download" title="Download COI">Download COI</a> --}}
 		            </p>
 	        	</div>
@@ -28,12 +28,12 @@
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="https://cdn.ersnet.org/images/people/leadership/Pierantonio-Laveneziana.png" class="img-circle">
 		            <p class="photo_caption"><strong>Pierantonio Laveneziana</strong>
-                  Sleep and Breathing disorders; and clinical physiology<br>
+						Sleep Disordered Breathing<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="https://cdn.ersnet.org/images/people/leadership/Apostolos-Bossios.png" class="img-circle">
 		            <p class="photo_caption"><strong>Apostolos Bossios</strong>
-		            Airway diseases, asthma and COPD <br>
+						Airway Diseases, Asthma, COPD and Chronic Cough<br>
 		        </div>
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="https://cdn.ersnet.org/images/120x120.jpg" class="img-circle">
