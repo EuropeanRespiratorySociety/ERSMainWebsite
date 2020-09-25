@@ -18,7 +18,7 @@
             </div>
             <div class="col-md-6 center-block lead">
               It is increasingly recognised that allied healthcare professionals play an important role in the diagnosis, treatment and care of patients with pulmonary diseases. This Assembly is an opportunity to learn from each other's disciplines and achieve better patient outcomes. <br>
-The Assembly is comprised of the following three groups:
+The Assembly is comprised of the following four groups:
 
             </div>
 

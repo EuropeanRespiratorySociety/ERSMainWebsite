@@ -16,14 +16,11 @@
               <p >Assembly Early Career representative: Ramjug Sheila</p>
             </div>
             <div class="col-md-6 center-block lead">
-              There are three groups within Assembly 13:
+              There are two groups within Assembly 13:
             </div>
 
-
-          
-
             <div class="row　row_assemblies_card clearfix">
-              <div class="col-md-4">
+              <div class="col-md-4 col-md-offset-2">
                  <div class="card card-padded">
                   <div class="card-image">
                   </div>

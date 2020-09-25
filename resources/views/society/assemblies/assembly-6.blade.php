@@ -19,7 +19,7 @@
           <div class="col-md-6 center-block lead">
             This is an interdisciplinary Assembly, which includes not only pulmonologists, but also epidemiologists, clinicians, statisticians, occupational doctors, air pollution scientists and health educators. Smoking and the environment are important issues for respiratory disease and this Assembly is involved in many activities to promote public awareness and scientific research in the field. <br>
 Members of the Assembly welcome collaboration with other Assemblies to work on common programmes.
-The Assembly is comprised of the following four groups:
+The Assembly is comprised of the following three groups:
 
           </div>
 

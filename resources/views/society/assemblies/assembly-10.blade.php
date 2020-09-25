@@ -28,7 +28,7 @@
 
               <br><br>
 
-              There are two groups within Assembly 10:
+              There are three groups within Assembly 10:
 
             </div>
 
@@ -36,7 +36,7 @@
           
 
             <div class="row　row_assemblies_card clearfix">
-              <div class="col-md-4 col-md-offset-2">
+              <div class="col-md-4">
                  <div class="card card-padded">
                   <div class="card-image">
                   </div>

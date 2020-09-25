@@ -20,7 +20,7 @@
             </div>
             <div class="col-md-6 center-block lead">
               Assembly 4 covers a range of topics that provide important links between research and clinical medicine. It has broad scope and includes integrative aspects of respiratory physiology, sleep apnoea and associated health problems and cellular and molecular physiology. <br>
-The Assembly is comprised of the following three groups:
+The Assembly is comprised of the following group:
 
             </div>
 

@@ -565,7 +565,7 @@ The Group Chair and Secretary welcome any suggestions ERS members might have to 
         <div class="text-left">
           <h4>Paediatric Cystic Fibrosis (CF)</h4>
           <p>
-          This group focuses on cystic fibrosis (CF), a complex, challenging and multidisciplinary disease. The symposia and poster sessions during the ERS congress are a lively platform where paediatricians, paediatric pulmonologists, pulmonologists, microbiologists, radiologists and allied respiratory health professionals meet and discuss their interests.<br><br>
+          This group focuses on paediatric cystic fibrosis (CF), a complex, challenging and multidisciplinary disease. The symposia and poster sessions during the ERS congress are a lively platform where paediatricians, paediatric pulmonologists, pulmonologists, microbiologists, radiologists and allied respiratory health professionals meet and discuss their interests.<br><br>
 
 In CF, new therapeutic strategies and diagnostic tools are applied which often find their way into the treatment of other pulmonary diseases. The care of CF patients is a team effort and we therefore aim for close collaboration with other groups and assemblies including groups with adult pulmonologists with whom we share common interests. We encourage our members to submit their abstracts on CF and give active input.
           </p>
