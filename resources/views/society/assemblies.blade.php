@@ -37,11 +37,8 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
                 <div class="bs-grid-block">
                   <div class="content">
                    <ul class="text-left">
-                    {{-- <li data-menuanchor="general-pneumology">
-                      <a href="the-society/assemblies#general-pneumology">1 General Pneumology</a>
-                    </li> --}}
-                    <li data-menuanchor="clinical-respiratory-physiology">
-                      <a href="the-society/assemblies#clinical-respiratory-physiology">1 Clinical respiratory physiology, exercise and functional imaging</a>
+                    <li data-menuanchor="general-pneumology">
+                      <a href="the-society/assemblies#general-pneumology">1 Respiratory clinical care and physiology</a>
                     </li>
                     <li data-menuanchor="respiratory-intensive-care">
                       <a href="the-society/assemblies#respiratory-intensive-care">2 Respiratory Intensive Care</a>
@@ -50,10 +47,10 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
                       <a href="the-society/assemblies#basic-and-translational-sciences">3 Basic and translational sciences</a>
                     </li>
                     <li data-menuanchor="sleep-and-breathing-disorders">
-                      <a href="the-society/assemblies#sleep-and-breathing-disorders">4 Sleep and Breathing disorders; and clinical physiology</a>
+                      <a href="the-society/assemblies#sleep-and-breathing-disorders">4 Sleep Disordered Breathing</a>
                     </li>
                     <li data-menuanchor="airway-diseases">
-                      <a href="the-society/assemblies#airway-diseases">5 Airway diseases, asthma and COPD</a>
+                      <a href="the-society/assemblies#airway-diseases">5 Airway Diseases, Asthma, COPD and Chronic Cough</a>
                     </li>
                     <li data-menuanchor="epidemiology-and-environment">
                       <a href="the-society/assemblies#epidemiology-and-environment">6 Epidemiology and Environment</a>
