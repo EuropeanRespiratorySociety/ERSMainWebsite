@@ -37,8 +37,8 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
                 <div class="bs-grid-block">
                   <div class="content">
                    <ul class="text-left">
-                    <li data-menuanchor="general-pneumology">
-                      <a href="the-society/assemblies#general-pneumology">1 Respiratory clinical care and physiology</a>
+                    <li data-menuanchor="respiratory-clinical-care-and-physiology">
+                      <a href="the-society/assemblies#respiratory-clinical-care-and-physiology">1 Respiratory clinical care and physiology</a>
                     </li>
                     <li data-menuanchor="respiratory-intensive-care">
                       <a href="the-society/assemblies#respiratory-intensive-care">2 Respiratory Intensive Care</a>
@@ -46,8 +46,8 @@ Members can log in to ‘<a href="https://my.ersnet.org">myERS</a>’ and join o
                     <li data-menuanchor="basic-and-translational-sciences">
                       <a href="the-society/assemblies#basic-and-translational-sciences">3 Basic and translational sciences</a>
                     </li>
-                    <li data-menuanchor="sleep-and-breathing-disorders">
-                      <a href="the-society/assemblies#sleep-and-breathing-disorders">4 Sleep Disordered Breathing</a>
+                    <li data-menuanchor="sleep-disordered-breathing">
+                      <a href="the-society/assemblies#sleep-disordered-breathing">4 Sleep Disordered Breathing</a>
                     </li>
                     <li data-menuanchor="airway-diseases">
                       <a href="the-society/assemblies#airway-diseases">5 Airway Diseases, Asthma, COPD and Chronic Cough</a>

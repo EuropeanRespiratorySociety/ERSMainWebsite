@@ -80,8 +80,8 @@
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 10.03<br>
-                    <br>
-                    </p>
+                      Chair: Eva Polverino<br>
+                      Secretary: Raquel Duarte</p>
                   </div>
                   <div class="card-action clearfix">
                     {{-- <button data-toggle="modal" data-target="" type="button" class="btn btn-default pull-right">More</button> --}}
