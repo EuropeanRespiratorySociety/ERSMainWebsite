@@ -22,50 +22,50 @@
 
 			<div class="row leadership-people" style="padding-top: 40px;">
 	            <div class="col-md-4 xs-mb-15">
-                <img src="https://cdn.ersnet.org/images/people/leadership/Joajen_Vestbo.jpg" class="img-circle">
-                <p class="photo_caption"><strong>Jørgen Vestbo</strong>
+                <img src="https://cdn.ersnet.org/images/people/leadership/Arzu-Yorgancıoglu.png" class="img-circle">
+                <p class="photo_caption"><strong>AYŞE ARZU YORGANCIOĞLU</strong>
                     Advocacy Council Chair<br>
 	                </p>
               </div>
-              <div class="col-md-4 xs-mb-15">
-                <img src="https://cdn.ersnet.org/images/people/leadership/Thierry-Troosters.png" class="img-circle">
-                <p class="photo_caption"><strong>Thierry Troosters</strong>
-                  President<br>
-                </p>
-            </div>
 	            <div class="col-md-4 xs-mb-15">
                		<img src="https://cdn.ersnet.org/images/people/leadership/Anita-Simonds.png" class="img-circle">
 	                <p class="photo_caption"><strong>Anita Simonds</strong>
-                    President Elect<br>
+                    President<br>
 					        </p>
               </div>
 	            <div class="col-md-4 xs-mb-15">
                 <img src="https://cdn.ersnet.org/images/people/leadership/Humbert-Marc.png" class="img-circle">
                <p class="photo_caption"><strong>Marc Humbert</strong>
-                 Vice President<br>
+                President Elect<br>
                </p>
            </div>
-            	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/Isabel-Saraiva.png" class="img-circle">
-		            <p class="photo_caption"><strong>Isabel Saraiva</strong>
+           <div class="col-md-4 xs-mb-15">
+              <img src="https://cdn.ersnet.org/images/people/leadership/Carlos_Robalo.jpg" class="img-circle">
+            <p class="photo_caption"><strong>CARLOS ROBALO CORDEIRO</strong>
+              Vice President<br>
+            </p>
+          </div>
+           <div class="col-md-4 xs-mb-15">
+					    <img src="https://cdn.ersnet.org/images/people/leadership/Kjeld-Hansen.png" class="img-circle">
+		            <p class="photo_caption"><strong>Kjeld Hansen</strong>
 		            European Lung Foundation Chair<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/Charlotta-Pisinger.png" class="img-circle">
-		            <p class="photo_caption"><strong>Charlotta Pisinger</strong>
+					<img src="https://cdn.ersnet.org/images/people/leadership/Jonathan-Grigg.png" class="img-circle">
+		            <p class="photo_caption"><strong>Jonathan Grigg</strong>
 		            Chair of the ERS Tobacco Control Committee<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/Barbara-Hoffmann.png" class="img-circle">
-		            <p class="photo_caption"><strong>Barbara Hoffmann</strong>
+					<img src="https://cdn.ersnet.org/images/people/leadership/Zorana-Andersen.png" class="img-circle">
+		            <p class="photo_caption"><strong>Zorana Andersen</strong>
 		            Chair of the ERS Environment and Health Committee<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-					<img src="https://cdn.ersnet.org/images/people/leadership/Constantine_Vardavas.JPG" class="img-circle">
-		            <p class="photo_caption"><strong>Constantine Vardavas</strong>
+					<img src="https://cdn.ersnet.org/images/people/leadership/Craig-Wheelock.png" class="img-circle">
+		            <p class="photo_caption"><strong>Craig Wheelock</strong>
 		            Director of Scientific Relations with the EU<br>
 		            </p>
 	        	</div>
@@ -92,12 +92,7 @@
                 Secretary General<br>
               </p>
             </div>
-	        	<div class="col-md-4 xs-mb-15">
-              <img src="https://cdn.ersnet.org/images/people/leadership/Arzu-Yorgancıoglu.png" class="img-circle">
-              <p class="photo_caption"><strong>AYŞE ARZU YORGANCIOĞLU</strong>
-                Advocacy Council Chair Elect<br>
-              </p>
-            </div>
+
 
 			</div>
 
