@@ -56,15 +56,13 @@
 
       <div class="row">
           <div class="col-md-9 col-md-offset-1 xs-mb-15">
-               <img src="https://cdn.ersnet.org/images/people/leadership/Stefano_Aliberti.jpg" class="img-circle" style="margin-top:20px;">
-               <p class="photo_caption"><strong>Stefano Aliberti</strong>Curriculum Development Director<br></p>
+               <img src="https://cdn.ersnet.org/images/people/leadership/Giovanni_Sotgiu.jpg" class="img-circle" style="margin-top:20px;">
+               <p class="photo_caption"><strong>Giovanni Sotgiu</strong>Curriculum Development Director<br></p>
            </div>
        </div>
        <div class="row">
            <div class="col-md-12">   
-              <p>Associate Professor and Consultant
-                  Department of Pathophysiology and Transplantation, University of Milan
-                  Internal Medicine Department, Respiratory Unit and Cystic Fibrosis Adult Center
+              <p>Professor of Medical Statistics and Clinical Epidemiology, Department of Medical, Surgical and Experimental Sciences, University of Sassari, Italy
               </p>
            </div>
        </div>

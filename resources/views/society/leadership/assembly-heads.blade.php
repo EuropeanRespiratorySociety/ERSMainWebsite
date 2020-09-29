@@ -35,8 +35,8 @@
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Andrea-Aliverti.png" class="img-circle">
-		            <p class="photo_caption"><strong>Andrea Aliverti</strong>
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Sophia-Schiza.png" class="img-circle">
+		            <p class="photo_caption"><strong>Sophia Schiza</strong>
 						Sleep Disordered Breathing<br>
 		            </p>
 	        	</div>

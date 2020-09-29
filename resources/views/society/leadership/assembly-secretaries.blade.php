@@ -25,11 +25,11 @@
 		            <p class="photo_caption"><strong>Silke Meiners</strong>
 		            Basic and translational sciences<br>
 		        </div>
-		        <div class="col-md-4 xs-mb-15">
+		        {{-- <div class="col-md-4 xs-mb-15">
 		            <img src="https://cdn.ersnet.org/images/people/leadership/Pierantonio-Laveneziana.png" class="img-circle">
 		            <p class="photo_caption"><strong>Pierantonio Laveneziana</strong>
 						Sleep Disordered Breathing<br>
-		        </div>
+		        </div> --}}
 		        <div class="col-md-4 xs-mb-15">
 		            <img src="https://cdn.ersnet.org/images/people/leadership/Apostolos-Bossios.png" class="img-circle">
 		            <p class="photo_caption"><strong>Apostolos Bossios</strong>

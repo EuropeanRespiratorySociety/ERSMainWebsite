@@ -10,31 +10,22 @@
 
 	        <div class="row leadership-people">
 		        <div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Daiana-Stolz2.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Daiana Stolz</strong>
+              <img src="https://cdn.ersnet.org/images/people/leadership/Richard-Costello.png" class="img-circle">
+              <p class="photo_caption"><strong>Richard Costello</strong>
 		            Education Council Chair <br>
 		            </p>
             </div>
-            
-              <div class="col-md-4 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/people/leadership/Richard-Costello.png" class="img-circle">
-                  <p class="photo_caption"><strong>Richard Costello</strong>
-                    Education Council Chair Elect<br>
-                  </p>
-            </div>
-
-
 
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Stefano_Aliberti.jpg" class="img-circle">
-		            <p class="photo_caption"><strong>Stefano Aliberti</strong>
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Giovanni_Sotgiu.jpg" class="img-circle">
+		            <p class="photo_caption"><strong>Giovanni Sotgiu</strong>
 		            Curriculum Development Director<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
-		            <img src="https://cdn.ersnet.org/images/people/leadership/Gilbert_Massard.png" class="img-circle">
-		            <p class="photo_caption"><strong>Gilbert Massard</strong>
-                  Programmes Director<br>
+		            <img src="https://cdn.ersnet.org/images/people/leadership/Pierantonio-Laveneziana.png" class="img-circle">
+		            <p class="photo_caption"><strong>Pierantonio Laveneziana</strong>
+                  Educational Programmes director<br>
 		            </p>
 	        	</div>
 	        	<div class="col-md-4 xs-mb-15">
