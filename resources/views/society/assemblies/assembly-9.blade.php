@@ -89,7 +89,8 @@ The Assembly is comprised of the following four groups:
                   </div> 
                   <div class="card-content text-left">
                     <p>Group 09.04<br>
-                    <br>
+                      Chair: Martijn A. Spruit<br>
+                      Secretary: Daniel Langer</p>
                     </p>
                   </div>
                   <div class="card-action clearfix">
