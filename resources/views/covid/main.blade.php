@@ -275,7 +275,7 @@
           <div class="col-md-2 col-sm-2 col-xs-12 text-center" style="margin-bottom: 20px;" >
             <img src="https://cdn.ersnet.org/preview/node/o:f19015ca12a6ed42169a" >
           </div>
-          <div class="col-md-2 col-sm-2 col-xs-12 text-center" style="margin-bottom: 20px;" >
+          <div class="col-md-2 col-sm-2 col-xs-12 text-center" style="margin-bottom: 20px;margin-top: 20px;" >
             <img src="https://cdn.ersnet.org/preview/node/o:66be3746738803253d47" >
           </div>
         </div>
@@ -286,8 +286,8 @@
           <div class="col-md-3 col-sm-4 col-xs-12 text-center" style="margin-bottom: 20px;" >
             <img src="https://cdn.ersnet.org/preview/node/o:3961c7e56700b5c834ed">
           </div>
-          <div class="col-md-3 col-sm-4 col-xs-12 text-center" style="margin-bottom: 20px;padding-left: 15px;" >
-            <img src="https://cdn.ersnet.org/preview/node/o:0d23fb0e6a1aad1b85b2">
+          <div class="col-md-4 col-sm-4 col-xs-12 text-center" style="margin-bottom: 20px;padding-left: 15px;" >
+            <img src="https://cdn.ersnet.org/preview/node/o:d644ad39b6b2a3b80d21">
           </div>
         </div>
       </div>
