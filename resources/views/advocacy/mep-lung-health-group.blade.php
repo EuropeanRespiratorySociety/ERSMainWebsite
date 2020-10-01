@@ -24,7 +24,12 @@
             <div class="col-md-7 center-block lead text-left">
               {!! $item->body !!}
             </div>
-            <div class="row" style="padding-top: 40px;">
+            <div class="row" style="margin-bottom: 0px;">
+              <div class="col-md-12 col-xs-12 xs-mb-15 col-xs-offset-4 col-md-offset-0">
+                <h3 class="text-left">List of supporters:</h3>
+              </div>
+            </div>
+            <div class="row" style="padding-top: 10px;">
               <div class="col-md-3 xs-mb-15">
                 <img src="https://cdn.ersnet.org/images/people/mep/nicolas-gonzalez-casares.png" class="img-circle">
                 <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197718/NICOLAS_GONZALEZ+CASARES/home" target="_blank">Nicolás GONZÁLEZ CASARES</a></strong>
