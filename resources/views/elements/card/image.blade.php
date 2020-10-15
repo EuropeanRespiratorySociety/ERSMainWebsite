@@ -12,9 +12,8 @@
             background-repeat: no-repeat; 
             background-image: url('{{ $item->image}}'); 
             background-position: center {{$item->itemImageAlignment or center }};"
-
     @elseif(($item->image && $item->flags->text) || ($item->flags->text && $item->fullyBooked) || ($item->type && $item->flags->text) || ($item->type && $item->fullyBooked)) 
-        style="height:50px;" 
+        style="height:50px;"
     @else 
         style="height:24px;" 
     @endif >
@@ -23,6 +22,11 @@
     @endif
     @if($item->flags->text)
     <span class="label {{ 'label-'.$item->flags->color }}">{{ $item->flags->text }}</span>
+    @endif
+    @if(isset($item->contentType) && $item->contentType == "event_webinar")
+      @if(isset($item->isCovid19) && $item->isCovid19)
+        <span class="label label-danger" style="position:absolute; top:0; right:auto; left:0;">COVID-19</span>
+      @endif
     @endif
     @if($item->fullyBooked)
        <span class="label label-danger">Fully Booked</span>
