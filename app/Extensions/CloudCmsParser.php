@@ -72,9 +72,11 @@ class CloudCmsParser
                     $item->body3 = Markdown::parse($item->body3);
                     $item->body4 = Markdown::parse($item->body4);
                     $item->shouldHaveRegisterButton = true;
-                    
-                    if(isset($item->contentType) && $item->contentType == "event_webinar"){
-                        $item->shouldHaveRegisterButton = isset($item->sponsors) && is_array($item->sponsors) ? count($item->sponsors) === 0 : true;
+
+                    if(isset($item->contentType) && $item->contentType == "event_webinar" && isset($item->sponsors) && is_array($item->sponsors)){
+                        if(count($item->sponsors > 0)){
+                            $item->shouldHaveRegisterButton =  false;
+                        }
                     }
 
                     if($item->popUp){
