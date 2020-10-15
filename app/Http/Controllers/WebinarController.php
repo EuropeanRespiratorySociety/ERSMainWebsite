@@ -33,8 +33,8 @@ class WebinarController extends Controller
     $results = $this->CC->getAssociation($params['item']->_qname);
     $items = $this->CC->parseItems($results['rows']);
     $sorted = $this->CC->sortItems($items);
-    dd($params);
     $params['items'] =  $sorted; 
+    dd($params);
     return view('professional.webinars')->with($params);  
 
   }
