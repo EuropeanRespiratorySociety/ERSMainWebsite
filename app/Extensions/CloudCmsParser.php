@@ -74,7 +74,7 @@ class CloudCmsParser
                     $item->shouldHaveRegisterButton = true;
 
                     if(isset($item->contentType) && $item->contentType == "event_webinar" && isset($item->sponsors) && is_array($item->sponsors)){
-                        if(count($item->sponsors > 0)){
+                        if(count($item->sponsors) > 0){
                             $item->shouldHaveRegisterButton =  false;
                         }
                     }
