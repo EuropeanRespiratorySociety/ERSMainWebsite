@@ -34,7 +34,6 @@ class WebinarController extends Controller
     $items = $this->CC->parseItems($results['rows']);
     $sorted = $this->CC->sortItems($items);
     $params['items'] =  $sorted; 
-    dd($params);
     return view('professional.webinars')->with($params);  
 
   }
