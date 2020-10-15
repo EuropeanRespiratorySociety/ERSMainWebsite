@@ -31,7 +31,6 @@ class WebinarController extends Controller
         $this->CC->setCanonical($item[0]->_qname, 'professional-development/ers-webinars');
     }
     $results = $this->CC->getAssociation($params['item']->_qname);
-    dd($results);
     $items = $this->CC->parseItems($results['rows']);
     $sorted = $this->CC->sortItems($items);
     $params['items'] =  $sorted; 
