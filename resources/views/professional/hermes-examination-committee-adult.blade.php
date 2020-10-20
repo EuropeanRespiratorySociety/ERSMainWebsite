@@ -69,21 +69,6 @@
                 </div>
             </div>
 
-            <div class="col-md-6 xs-mb-15">
-              <h4 style="margin-bottom: 30px;"><strong>Committee Member</strong></h4>
-              <img src="https://cdn.ersnet.org/images/people/examination-committee/Tobias-Lange.png" class="img-circle">
-              <p class="photo_caption"><strong>Dr Tobias J. Lange</strong></p>
-              <div style="margin: 0 auto;width:70%;" class="text-left photo_caption">
-                <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                  - Department of Internal Medicine II</p>
-                <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                  - Division of Pneumology</p>
-                <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
-                  - University Medical Centre Regensburg</p>
-                <p>- Regensburg, Germany</p>
-              </div>
-           </div>
-
            <div class="col-md-6 xs-mb-15">
             <h4 style="margin-bottom:35px;"><strong>Committee Member</strong></h4>
             <img src="https://cdn.ersnet.org/images/people/examination-committee/Yvonne-Nussbaumer.png" class="img-circle">
@@ -93,7 +78,7 @@
                 - Clinic of Pulmonary and Internal Medicine</p>
               <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
                 - Kantonsspital Schaffhausen</p>
-              <p>- Schaffhausen, Switzerland</p>
+              <p style="margin-bottom: 40px;">- Schaffhausen, Switzerland</p>
             </div>
            </div>
 
@@ -106,7 +91,7 @@
                   - Professor and Medical Director</p>
                 <p style="text-indent: -0.7em;padding-left:0.7em;margin-bottom:0px;">
                   - Bethanien Hospital</p>
-                <p style="margin-bottom: 40px;">- Solingen, Germany</p>
+                <p>- Solingen, Germany</p>
               </div>
           </div>
 
