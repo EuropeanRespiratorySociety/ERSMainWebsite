@@ -62,7 +62,7 @@
         <span class="icon s7-alarm"></span>
         <p>
           APPLICATION DEADLINE : <br>
-          <span>January each year</span>
+          <span>4th January 2021</span>
         </p>
       </a>
       <a href="javascript:void(0)" class="list-group-item lighter-grey-bg clearfix cursor_default">
@@ -87,7 +87,7 @@
                   float: left;
                   margin-left: 10px;">
             <li>
-            <a href="https://ers.box.com/s/ktk52dqmvn89kvqi7eqcu9t6q0d0gmjv">LTRF 2020 Application Guidelines</a>
+            <a href="https://ers.box.com/s/ktk52dqmvn89kvqi7eqcu9t6q0d0gmjv">LTRF 2021 Application Guidelines</a>
             </li>
             @if($category->popUpText)
             <li>
