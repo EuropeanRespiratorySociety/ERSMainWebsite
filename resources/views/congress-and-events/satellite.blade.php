@@ -74,10 +74,11 @@
         </div> --}}
         <div class="col-md-12 text-right">
           
-            <a href="https://ers.box.com/s/9k7fof40vyurv8kkqg2j109vrn5sxpwj" target="_blank" type="button" class="btn btn-light-primary text-left">
+            {{--<a href="https://ers.box.com/s/9k7fof40vyurv8kkqg2j109vrn5sxpwj" target="_blank" type="button" class="btn btn-light-primary text-left">
               <span class="icon s7-map" style="font-size: 24px;"></span>
                {{$item->programmeButtonText ? $item->programmeButtonText : 'Programme' }}
-            </a>
+            </a>--}}
+
           {{-- <p>This programme has been created by the European Respiratory Society and there has been no external influence on the content or choice of speakers.</p> --}}
         </div>
       </div>
@@ -148,6 +149,7 @@
             @endif
         </div>
 
+        @if(($item->registerButton->link && !$item->fullyBooked) || ($item->extendedDeadline))
         <div class="event-items-right-bt" style="position: static;width: 100%;">
             @if($item->registerButton->link && !$item->fullyBooked)
               <p>Registering for someone else ? Contact {!! Html::mailto('registration@ersnet.org', 'registration@ersnet.org') !!}</p>
@@ -158,34 +160,28 @@
             @if($item->extendedDeadline)
             <p class="deadline">EXTENDED registration deadline : {{$item->extendedDeadline}}</p>
             @endif 
-            <br /><br />
-              <a href="https://www.ers-satellites.org" target="new_blank"  class="btn btn-primary tab-register-bt">
+            {{--<br /><br />
+               <a href="https://www.ers-satellites.org" target="new_blank"  class="btn btn-primary tab-register-bt">
                 Login to Live Streaming
-              </a>
-          </div>
+              </a> --}}
+        </div>
+        @endif
 
 
 
-        <div style="padding: 40px 0;width: 95%;">
+        <div style="width: 95%;">
           <h4 style="margin: 40px 0 15px;">With the endorsement of:</h4>
             <div>
-              <img src="https://cdn.ersnet.org/preview/node/o:51138d5464ef2ce9dbc4?name=img500&amp;v1" class="img-responsive"  alt="DGP" />
+              <img src="https://cdn.ersnet.org/preview/node/o:e6240ecc4327e549cc6d" class="img-responsive"  alt="OGP" />
+            </div>
+
+            <div>
+                <img src="https://cdn.ersnet.org/preview/node/o:99f84405efa0555e4354" class="img-responsive" style="padding-top: 30px;" alt="SPP" />
             </div>
             <div>
-              <img src="https://cdn.ersnet.org/preview/node/o:fcc088ed51cb04512b7f?name=img500&amp;v1" class="img-responsive" style="padding-top: 30px;" alt="BeRS" />
-            </div>
-            <div>
-                <img src="https://cdn.ersnet.org/preview/node/o:f5250ab5ac8360a38f81?name=img500&amp;v1" class="img-responsive" style="padding-top: 30px;" alt="SIP" />
-              </div>
-            <div>
-                <img src="https://cdn.ersnet.org/preview/node/o:eb480913a2e6194a5bcf?name=img500&amp;v1" class="img-responsive" style="padding-top: 30px;" alt="SRP" />
-            </div>
-            <div>
-                <img src="https://cdn.ersnet.org/preview/node/o:7cf57ff2d1e4a3937e61?name=img500&amp;v1" class="img-responsive" style="padding-top: 30px;" alt="AIPO" />
-              </div>
-            <div>
-                <img src="https://cdn.ersnet.org/preview/node/o:1081e91dea7bb394e275?name=img500&amp;v1" class="img-responsive" style="padding-top: 30px;" alt="FIP" />
-            </div>
+              <img src="https://cdn.ersnet.org/preview/node/o:5e0921f2509db04074d1" class="img-responsive" style="padding-top: 30px;" alt="TTS" />
+          </div>
+            
         </div>
 
 
