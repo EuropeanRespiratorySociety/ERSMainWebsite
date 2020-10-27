@@ -101,9 +101,11 @@
 
       <div class="article text-left">
         {!!$item->lead!!}
-        <div class="videoWrapper" style="margin-top: 15px;">
+        <!-- video start -->
+        {{-- <div class="videoWrapper" style="margin-top: 15px;">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/LcNkN-pAMWI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        </div> --}}
+        <!-- video end -->
           {!!$item->body!!}
       </div>
     </div>
