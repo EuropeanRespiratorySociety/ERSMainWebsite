@@ -124,7 +124,7 @@ img[alt=float-event-sponsor-logo]{
   	<div id="fullpage">
         <div class="section fp-auto-height">
             @if($item->highResImage)
-            <div class="top-box" style="height: 400px; background-image: url('{{$item->highResImage}}'); background-position: center {{$item->imageAlignment}}">
+            <div class="top-box" style="height: 400px; background-image: url('{{$item->highResImage}}'); background-position: @if($item->slug == "lsc-accommodation-and-practical-information")left @else center @endif {{$item->imageAlignment}}">
             </div>
             @endif
             <div style="box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);box-sizing: border-box;padding-bottom: 30px;">
