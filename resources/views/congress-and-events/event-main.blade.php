@@ -150,6 +150,7 @@
             @endif
         </div>
 
+        @if($item->loc->lat && $item->loc->long)
         <div class="main-content" style="background: #f1f1f1; padding-bottom: 40px;">
           <div class="page-head"><h3>Venue information:</h3></div>
             <div class="col-md-7 center-block lead text-left" style="background: #fff; padding: 30px; border: 1px solid #eee;">
@@ -183,10 +184,9 @@
           </div>
         </div>
         <div class="row">
-          @if($item->loc->lat && $item->loc->long)
             <div id="map" style="height: 400px;"></div>
-          @endif
         </div>
+        @endif
     </div>
 </div>
 @stop()  
