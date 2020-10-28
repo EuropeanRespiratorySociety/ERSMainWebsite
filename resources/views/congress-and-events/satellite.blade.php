@@ -72,15 +72,23 @@
           <p><em>ERS Satellites</em></p>
            View <a href="/congress-and-events/events-calendar">all events</a>
         </div> --}}
-        <div class="col-md-12 text-right">
-          
-            {{--<a href="https://ers.box.com/s/9k7fof40vyurv8kkqg2j109vrn5sxpwj" target="_blank" type="button" class="btn btn-light-primary text-left">
+
+          <div class="col-md-12 col-xs-12 text-right">
+            @if(isset($item->programme))  
+              <a href="{{$item->programme}}" target="_blank" type="button" class="btn btn-light-primary text-left">
+                <span class="icon s7-map" style="font-size: 24px;"></span>
+                {{$item->programmeButtonText ? $item->programmeButtonText : 'Programme' }}
+              </a>
+            @endif
+            @if($item->programmeNotice)
+            <p class="text-danger">{{$item->programmeNotice}}</p>
+            @endif
+            {{-- <a href="https://ers.box.com/s/9k7fof40vyurv8kkqg2j109vrn5sxpwj" target="_blank" type="button" class="btn btn-light-primary text-left">
               <span class="icon s7-map" style="font-size: 24px;"></span>
                {{$item->programmeButtonText ? $item->programmeButtonText : 'Programme' }}
-            </a>--}}
-
-          {{-- <p>This programme has been created by the European Respiratory Society and there has been no external influence on the content or choice of speakers.</p> --}}
-        </div>
+            </a> --}}
+            {{-- <p>This programme has been created by the European Respiratory Society and there has been no external influence on the content or choice of speakers.</p> --}}
+          </div>
       </div>
       <div>
         
