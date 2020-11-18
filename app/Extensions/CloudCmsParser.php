@@ -217,6 +217,9 @@ class CloudCmsParser
                     $item->ms = $item->_system->modified_on->ms ?? false;   
                     $item->shortLead = $item->leadParagraph ? $this->truncate(strip_tags(Markdown::parse($item->leadParagraph)), 145) : false;
                     $item->hasRelatedArticles = $item->_statistics->{'ers:related-association'} ?? 0;
+                    if(isset($item->related) && is_array($item->related)) {
+                      $item->hasRelatedArticles = true;
+                    }
                     $item->hasRelatedCpdModules = $item->_statistics->{'ers:cpd-article-module-association'} ?? 0;
                     $item->hasRelatedModules = $item->_statistics->{'ers:article-module-association'} ?? 0;
                     $item->hasAuthor = $item->_statistics->{'ers:author-association'} ?? 0;
