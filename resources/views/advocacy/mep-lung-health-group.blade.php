@@ -18,8 +18,8 @@
  
  
 .brands_item img {
-  width: 220px;
-  height: 120px;
+  width: 190px;
+  height: 180px;
   object-fit: contain;
 }
 
@@ -163,21 +163,33 @@
                 </p>
               </div>
               <div class="col-md-3 xs-mb-15">
-                <img src="https://cdn.ersnet.org/images/people/mep/Miriam-DALLI.png" class="img-circle">
-                <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/124970/MIRIAM_DALLI/home" target="_blank">Miriam DALLI</a></strong>
-                  S&D, Malta
-                </p>
-              </div>
-            </div>
-
-            <div class="row" style="padding-top: 40px;">
-              <div class="col-md-3 xs-mb-15">
                 <img src="https://cdn.ersnet.org/images/people/mep/Maria-ARENA.png" class="img-circle">
                 <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/124936/MARIA_ARENA/home" target="_blank">Maria ARENA</a></strong>
                   S&D, Belgium
                 </p>
               </div>
             </div>
+
+
+            <div class="row" style="margin-bottom: 0px;">
+              <div class="col-md-12 col-xs-12 xs-mb-15">
+                <h3 class="text-left mep-subtitile">Steering Groups:</h3>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3 xs-mb-15 brands_item ">
+                <a href="https://www.efanet.org/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn.ersnet.org/preview/node/o:ca8d125e73aa04be7a01" alt="EFA">
+                </a>
+              </div>
+              <div class="col-md-3 xs-mb-15 brands_item">
+                <a href="https://alpha1plus.be/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn.ersnet.org/preview/node/o:27b0039ce1f4c649f643" alt="PHA Europe">
+                </a>
+              </div>
+            </div>
+
 
             <div class="row" style="margin-bottom: 0px;">
               <div class="col-md-12 col-xs-12 xs-mb-15">
@@ -189,11 +201,6 @@
               <div class="col-md-3 xs-mb-15 brands_item ">
                 <a href="https://alpha1plus.be/" target="_blank" rel="noopener noreferrer">
                   <img src="https://cdn.ersnet.org/preview/node/o:48333c90fb67933cfa30" alt="Alpha1plus">
-                </a>
-              </div>
-              <div class="col-md-3 xs-mb-15 brands_item">
-                <a href="https://alpha1plus.be/" target="_blank" rel="noopener noreferrer">
-                  <img src="https://cdn.ersnet.org/preview/node/o:27b0039ce1f4c649f643" alt="PHA Europe">
                 </a>
               </div>
             </div>
