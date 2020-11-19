@@ -8,6 +8,39 @@
               )) 
 @stop()
     @section('content')
+<style>
+.brands {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 1rem;
+  list-style: none;
+}
+ 
+ 
+.brands_item img {
+  width: 220px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.brands_item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  box-sizing: border-box;
+  background: #fff;
+
+}
+
+@media screen and (max-width: 480px){
+  .mep-subtitile{
+    text-align: center !important;
+    margin-top: 60px;
+  }
+}
+</style>
 
 <div class="executive-content" style="margin-left:0;">
   <div class="ers-content membership-content">
@@ -25,8 +58,8 @@
               {!! $item->body !!}
             </div>
             <div class="row" style="margin-bottom: 0px;">
-              <div class="col-md-12 col-xs-12 xs-mb-15 col-xs-offset-4 col-md-offset-0">
-                <h3 class="text-left">List of supporters:</h3>
+              <div class="col-md-12 col-xs-12 xs-mb-15">
+                <h3 class="text-left mep-subtitile">List of supporters:</h3>
               </div>
             </div>
             <div class="row" style="padding-top: 10px;">
@@ -145,6 +178,26 @@
                 </p>
               </div>
             </div>
+
+            <div class="row" style="margin-bottom: 0px;">
+              <div class="col-md-12 col-xs-12 xs-mb-15">
+                <h3 class="text-left mep-subtitile">Supporting organisations:</h3>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3 xs-mb-15 brands_item ">
+                <a href="https://alpha1plus.be/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn.ersnet.org/preview/node/o:48333c90fb67933cfa30" alt="Alpha1plus">
+                </a>
+              </div>
+              <div class="col-md-3 xs-mb-15 brands_item">
+                <a href="https://alpha1plus.be/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn.ersnet.org/preview/node/o:27b0039ce1f4c649f643" alt="PHA Europe">
+                </a>
+              </div>
+            </div>
+
 
           </div><!-- close main-content -->
         </div><!-- close full page -->
