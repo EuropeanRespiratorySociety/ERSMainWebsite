@@ -173,14 +173,24 @@
 
             <div class="row" style="margin-bottom: 0px;">
               <div class="col-md-12 col-xs-12 xs-mb-15">
-                <h3 class="text-left mep-subtitile">Steering Groups:</h3>
+                <h3 class="text-left mep-subtitile">Steering Group:</h3>
               </div>
             </div>
 
             <div class="row">
               <div class="col-md-3 xs-mb-15 brands_item ">
+                <a href="https://www.cf-europe.eu/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn.ersnet.org/preview/node/o:f07d9353d98b9cad0334" alt="CF Europe">
+                </a>
+              </div>
+              <div class="col-md-3 xs-mb-15 brands_item ">
                 <a href="https://www.efanet.org/" target="_blank" rel="noopener noreferrer">
                   <img src="https://cdn.ersnet.org/preview/node/o:ca8d125e73aa04be7a01" alt="EFA">
+                </a>
+              </div>
+              <div class="col-md-3 xs-mb-15 brands_item ">
+                <a href="https://www.lungcancereurope.eu/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn.ersnet.org/preview/node/o:9c85f494b592876ffa03" alt="LuCE">
                 </a>
               </div>
               <div class="col-md-3 xs-mb-15 brands_item">
