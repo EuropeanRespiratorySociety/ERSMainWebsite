@@ -179,13 +179,13 @@
 
             <div class="row">
               <div class="col-md-3 xs-mb-15 brands_item ">
-                <a href="https://www.cf-europe.eu/" target="_blank" rel="noopener noreferrer">
-                  <img src="https://cdn.ersnet.org/preview/node/o:f07d9353d98b9cad0334" alt="CF Europe">
+                <a href="https://www.efanet.org/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn.ersnet.org/preview/node/o:ca8d125e73aa04be7a01" alt="EFA">
                 </a>
               </div>
               <div class="col-md-3 xs-mb-15 brands_item ">
-                <a href="https://www.efanet.org/" target="_blank" rel="noopener noreferrer">
-                  <img src="https://cdn.ersnet.org/preview/node/o:ca8d125e73aa04be7a01" alt="EFA">
+                <a href="https://www.cf-europe.eu/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn.ersnet.org/preview/node/o:f07d9353d98b9cad0334" alt="CF Europe">
                 </a>
               </div>
               <div class="col-md-3 xs-mb-15 brands_item ">
