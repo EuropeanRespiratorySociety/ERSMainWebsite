@@ -29,7 +29,7 @@ class RespiratoryDigestController extends Controller
             "_type" : "ers:digest-article",
             "unPublished": { "$ne": true },
             "_system.modified_by_principal_id": {
-                $nin: ["083f2e21cb0c286eeb91"] 
+                $nin: ["083f2e21cb0c286eeb91",""] 
             }
         }'; 
 
@@ -39,7 +39,7 @@ class RespiratoryDigestController extends Controller
             "unPublished": { "$ne": true },
             "isCovid19" : true,
             "_system.modified_by_principal_id": {
-                $nin: ["083f2e21cb0c286eeb91"] 
+                $nin: ["083f2e21cb0c286eeb91","fa9799485b7aea06c077"] 
             }
         }'; 
         $isCovid19Page = true;
