@@ -194,7 +194,7 @@
                 </a>
               </div>
               <div class="col-md-3 xs-mb-15 brands_item">
-                <a href="https://alpha1plus.be/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.phaeurope.org/" target="_blank" rel="noopener noreferrer">
                   <img src="https://cdn.ersnet.org/preview/node/o:27b0039ce1f4c649f643" alt="PHA Europe">
                 </a>
               </div>
