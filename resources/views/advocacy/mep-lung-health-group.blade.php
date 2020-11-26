@@ -188,6 +188,11 @@
                   <img src="https://cdn.ersnet.org/preview/node/o:f07d9353d98b9cad0334" alt="CF Europe">
                 </a>
               </div>
+              <div class="col-md-3 xs-mb-15 brands_item">
+                <a href="https://www.eu-ipff.org/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn.ersnet.org/preview/node/o:92e14a04bb9b6fdb2f5a" alt="EU IPFF">
+                </a>
+              </div>
               <div class="col-md-3 xs-mb-15 brands_item ">
                 <a href="https://www.lungcancereurope.eu/" target="_blank" rel="noopener noreferrer">
                   <img src="https://cdn.ersnet.org/preview/node/o:9c85f494b592876ffa03" alt="LuCE">
@@ -198,6 +203,7 @@
                   <img src="https://cdn.ersnet.org/preview/node/o:27b0039ce1f4c649f643" alt="PHA Europe">
                 </a>
               </div>
+
             </div>
 
 
