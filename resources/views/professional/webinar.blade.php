@@ -18,6 +18,10 @@
       font-size: 13px;
     }
 
+    div.md-chips{
+      margin-bottom: 200px;
+    }
+
     div.md-chip-disease{
       background: #F3E5F5;
       color: #4A148C;
@@ -28,6 +32,11 @@
       color: #0D5302;
     }
 
+    @media screen and (max-width: 480px){
+      div.md-chips{
+        margin-bottom: 50px;
+      }
+    }
 
 
 </style>
@@ -96,7 +105,7 @@
      
     </div>
     {{-- Beginning Right Side-bar --}}
-    <div class="col-md-3 event-items-right white-bg right-column-smaller">
+    <div class="col-md-3 event-items-right white-bg right-column-smaller" style="overflow: auto;" >
           {{-- Target audience and Diseases --}}
           <div class=" text-left" style="padding: 0 15px;">
             @if($item->targetAudiance)
@@ -109,7 +118,7 @@
             @endif
             @if($item->diseases || $item->methods)
               <h4 style="font-size:15px; margin-top:30px;"><strong>Diseases / Methods</strong></h4>
-              <div class="md-chips ">
+              <div class="md-chips">
                   @if($item->diseases)
                     @foreach ($item->diseases as $disease)
                       <div class="md-chip md-chip-disease">{{$disease}}</div>
