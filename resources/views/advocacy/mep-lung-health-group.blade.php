@@ -42,7 +42,7 @@
 }
 </style>
 
-<div class="executive-content" style="margin-left:0;">
+<div  style="margin-left:0;">
   <div class="ers-content membership-content">
       
         <div id="fullpage">
