@@ -203,6 +203,11 @@
                   <img src="https://cdn.ersnet.org/preview/node/o:27b0039ce1f4c649f643" alt="PHA Europe">
                 </a>
               </div>
+              <div class="col-md-3 xs-mb-15 brands_item">
+                <a href="https://www.tbcoalition.eu/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn.ersnet.org/preview/node/o:0ca3656c3fd712381c4c" alt="TB coalition">
+                </a>
+              </div>
 
             </div>
 
