@@ -163,7 +163,7 @@
                 </p>
               </div>
               <div class="col-md-3 xs-mb-15">
-                <img src="http://localhost:8888/images/people/mep/Jutta-PAULUS.png" class="img-circle">
+                <img src="https://cdn.ersnet.org/images/people/mep/Jutta-PAULUS.png" class="img-circle">
                 <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197466/JUTTA_PAULUS/home" target="_blank">Jutta PAULUS</a></strong>
                   Greens, Germany
                 </p>
