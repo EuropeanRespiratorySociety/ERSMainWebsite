@@ -62,8 +62,8 @@
                 <h3 class="text-left mep-subtitile">List of supporters:</h3>
               </div>
             </div>
-            <div class="row" style="padding-top: 10px;">
-              <div class="col-md-3 xs-mb-15">
+            <div class="row" style="padding-top: 10px;padding-bottom: 40px;">
+              <div class="col-md-3 xs-mb-15" >
                 <img src="https://cdn.ersnet.org/images/people/mep/nicolas-gonzalez-casares.png" class="img-circle">
                 <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197718/NICOLAS_GONZALEZ+CASARES/home" target="_blank">Nicolás GONZÁLEZ CASARES</a></strong>
                   S&D, Spain
@@ -81,15 +81,13 @@
                   S&D, Portugal
                 </p>
               </div>
-              <div class="col-md-3 xs-mb-15">
+              <div class="col-md-3 xs-mb-15" style="margin-bottom: 40px;">
                 <img src="https://cdn.ersnet.org/images/people/mep/zeljana-zovko.png" class="img-circle">
                 <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/185341/ZELJANA_ZOVKO/home" target="_blank">Željana ZOVKO</a></strong>
                   EPP, Croatia
                 </p>
               </div>
-            </div>
 
-            <div class="row" style="padding-top: 40px;">
               <div class="col-md-3 xs-mb-15">
                 <img src="https://cdn.ersnet.org/images/people/mep/marian-jean-marinescu.png" class="img-circle">
                 <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/33982/MARIAN-JEAN_MARINESCU/home" target="_blank">Marian-Jean MARINESCU</a></strong>
@@ -114,9 +112,7 @@
                   Renew, the Czech Republic
                 </p>
               </div>
-            </div>
 
-            <div class="row" style="padding-top: 40px;">
               <div class="col-md-3 xs-mb-15">
                 <img src="https://cdn.ersnet.org/images/people/mep/Istvan-UJHELYI.png" class="img-circle">
                 <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/124705/ISTVAN_UJHELYI/home" target="_blank">István UJHELYI</a></strong>
@@ -141,9 +137,7 @@
                   EPP, Portugal
                 </p>
               </div>
-            </div>
 
-            <div class="row" style="padding-top: 40px;">
               <div class="col-md-3 xs-mb-15">
                 <img src="https://cdn.ersnet.org/images/people/mep/Sean-KELLY.png" class="img-circle">
                 <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/96668/SEAN_KELLY/home" target="_blank">Seán KELLY</a></strong>
@@ -168,6 +162,13 @@
                   S&D, Belgium
                 </p>
               </div>
+              <div class="col-md-3 xs-mb-15">
+                <img src="http://localhost:8888/images/people/mep/Jutta-PAULUS.png" class="img-circle">
+                <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197466/JUTTA_PAULUS/home" target="_blank">Jutta PAULUS</a></strong>
+                  Greens, Germany
+                </p>
+              </div>
+
             </div>
 
 
