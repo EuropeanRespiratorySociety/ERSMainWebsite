@@ -22,7 +22,7 @@
             <div class="main-content" style="padding-top:0; background-color: rgb(241, 241, 241);margin-bottom:40px;">
                 @if($item->slug == "awards") 
                 <div class="row awards" >
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="card card-primary card-event" style="background-color: #015291;">
                             <div class="card-image" style="height:24px;">
                               <span class="label label-school">Call Open</span>
@@ -40,7 +40,7 @@
                         </div><!-- card card-primary card-padded -->
                     </div><!-- col-md-4 -->
 
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="card card-primary card-event" style="background-color: #015291;">
                             <div class="card-image" style="height:24px;">
                               <span class="label label-school">Call Open</span>
@@ -58,23 +58,22 @@
                             </div>
                         </div><!-- card card-primary card-padded -->
                     </div><!-- col-md-4 -->
-                    <!-- Bellow card is temporally commented out -->
-                    {{-- <div class="col-md-4">
+                    <div class="col-md-4">
                         <div class="card card-primary card-event" style="background-color: #015291;">
                             <div class="card-image" style="height:24px;">
                               <span class="label label-school">Call Open</span>
                             </div>
                             <div class="card-title  text-left">
-                                <h3>MAIN AWARDS</h3>
+                                <h3>ERS MAIN AWARDS</h3>
                             </div>
                             <div class="card-content  text-left" style="min-height: 165px; padding-top: 0px;">
-                              <p style="line-height: 150%;">Main Awards aim to honour researchers with an excellent track record in the specific fields of the awards and the potential for further outstanding developments.</p>
+                              <p style="line-height: 150%;">ERS Main Awards offer various amounts of funding to researchers who have submitted an outstanding research project in the specific field of the award.</p>
                             </div>
                             <div class="card-action">
                                 <a href="{{url('the-society/who-we-are/awards/research-excellence')}}" class="btn btn-dark-primary pull-right">More</a>
                             </div>
-                        </div>
-                    </div> --}}
+                        </div><!-- card card-primary card-padded -->
+                    </div><!-- col-md-4 -->
 
                 </div><!-- row for card -->
                 @endif
