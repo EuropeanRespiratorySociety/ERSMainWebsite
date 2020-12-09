@@ -22,16 +22,16 @@
             <div class="main-content" style="padding-top:0; background-color: rgb(241, 241, 241);margin-bottom:40px;">
                 @if($item->slug == "awards") 
                 <div class="row awards" >
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="card card-primary card-event" style="background-color: #015291;">
                             <div class="card-image" style="height:24px;">
-                              <span class="label label-danger">Call Closed</span>
+                              <span class="label label-school">Call Open</span>
                             </div>
                             <div class="card-title text-left">
-                                <h3>GOLD MEDALS</h3>
+                                <h3>ERS MID-CAREER GOLD MEDALS</h3>
                             </div> 
                             <div class="card-content  text-left" style="min-height: 165px; padding-top: 0px;">
-                              <p style="line-height: 150%;">ERS presents Gold Medal Awards with grants of €50,000 to researchers who have made outstanding contributions in the fields of Asthma, COPD, IPF.</p>
+                              <p style="line-height: 150%;">ERS Mid-Career Gold Medal’s aim to honour researchers with an excellent track record in the specific fields of the awards and the potential for further outstanding developments.</p>
                             </div>
                             
                             <div class="card-action" position="absolute; bottom:0;">
@@ -40,17 +40,17 @@
                         </div><!-- card card-primary card-padded -->
                     </div><!-- col-md-4 -->
 
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="card card-primary card-event" style="background-color: #015291;">
                             <div class="card-image" style="height:24px;">
-                                <span class="label label-danger">Call Closed</span>
+                              <span class="label label-school">Call Open</span>
                             </div>
                             <div class="card-title  text-left">
                                 <h3>SPECIAL HONOURS</h3>
-                            </div> 
+                            </div>
 
                             <div class="card-content  text-left"  style="min-height: 165px; padding-top: 0px;">
-                              <p style="line-height: 150%;">Each year at Congress, ERS bestows a number of prestigious honours upon selected individuals based on their achievements in the field of respiratory medicine.</p>
+                              <p style="line-height: 150%;">ERS bestows a number of prestigious honours upon selected individuals based on their achievements or potential for future contribution in the field of respiratory medicine.</p>
                             </div>
                             
                             <div class="card-action">
@@ -58,23 +58,23 @@
                             </div>
                         </div><!-- card card-primary card-padded -->
                     </div><!-- col-md-4 -->
-                    <div class="col-md-4">
+                    <!-- Bellow card is temporally commented out -->
+                    {{-- <div class="col-md-4">
                         <div class="card card-primary card-event" style="background-color: #015291;">
                             <div class="card-image" style="height:24px;">
-                                <span class="label label-danger">Call Closed</span>
+                              <span class="label label-school">Call Open</span>
                             </div>
                             <div class="card-title  text-left">
-                                <h3>RESEARCH EXCELLENCE</h3>
+                                <h3>MAIN AWARDS</h3>
                             </div>
                             <div class="card-content  text-left" style="min-height: 165px; padding-top: 0px;">
-                              <p style="line-height: 150%;">A variety of sponsored awards are presented to individuals who have excelled in research in respiratory science and medicine. </p>
+                              <p style="line-height: 150%;">Main Awards aim to honour researchers with an excellent track record in the specific fields of the awards and the potential for further outstanding developments.</p>
                             </div>
-                            
                             <div class="card-action">
                                 <a href="{{url('the-society/who-we-are/awards/research-excellence')}}" class="btn btn-dark-primary pull-right">More</a>
                             </div>
-                        </div><!-- card card-primary card-padded -->
-                    </div><!-- col-md-4 --> 
+                        </div>
+                    </div> --}}
 
                 </div><!-- row for card -->
                 @endif
@@ -93,9 +93,10 @@
 
                 <div class="col-md-7 center-block lead" >
                    {{-- <p style="padding-bottom:10px;">Applications and nominations for the 2017 ERS Gold Medal Awards are now closed. The winners will be announced at this year’s ERS International Congress.
-                    <br /><br />--}} <h3>Previous Award winners:
+                    <br /><br />--}} <h3>Previous Winners:
                     </h3> 
                     <ul class="list-unstyled  center-block text-left" style="width:10%;" >
+                        <li><a href="https://erscongress.org/funding-awards-2020/ers-award-winners-2020" target="_blank">2020</a></li>
                         <li><a href="https://old.erscongress.org/funding-awards-2019/gold-medals-main-awards.html" target="_blank">2019</a></li>
                         <li><a href="https://old.erscongress.org/about-ers-2018/awards-grants-and-fellowships-2018/142-awards-grants-and-fellowships/574-ers-award-winners-2018.html" target="_blank">2018</a></li>
                         <li><a href="https://old.erscongress.org/about-ers-2017/119-about-ers/500-award-winners-2017.html" target="_blank">2017</a></li>
@@ -112,6 +113,7 @@
                 <div class="col-md-7 center-block lead" >
                     <p style="padding-bottom:10px;">Learn more about past winners of ERS awards for research excellence:</p>
                     <ul class="list-unstyled  center-block text-left" style="width:10%;" >
+                      <li><a href="https://erscongress.org/funding-awards-2020/ers-award-winners-2020" target="_blank">2020</a></li>
                       <li><a href="https://old.erscongress.org/funding-awards-2019/gold-medals-main-awards.html" target="_blank">2019</a></li>
                       <li><a href="https://old.erscongress.org/about-ers-2018/awards-grants-and-fellowships-2018/142-awards-grants-and-fellowships/574-ers-award-winners-2018.html" target="_blank">2018</a></li>
                       <li><a href="https://old.erscongress.org/about-ers-2017/119-about-ers/500-award-winners-2017.html" target="_blank">2017</a></li>
