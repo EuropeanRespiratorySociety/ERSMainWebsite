@@ -43,12 +43,21 @@
 @section('scripts')
 <script type="text/javascript">
     $('.row_event').isotope({
-        layoutMode: 'packery',
-        packery: {
-            columnWidth: '.isotope'
-        },            
-        percentPosition: true
-    });
+        // layoutMode: 'packery',
+        // packery: {
+        //     columnWidth: '.isotope'
+        // },
+        layoutMode: 'masonry',
+        masonry: {
+          columnWidth: '.isotope',
+          horizontalOrder: true
+        },
+        percentPosition: true,
+        },
+
+    );
+
+    
 </script>
 @stop()
 
