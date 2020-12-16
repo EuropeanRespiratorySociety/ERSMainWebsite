@@ -189,6 +189,16 @@
                   <img src="https://cdn.ersnet.org/preview/node/o:f07d9353d98b9cad0334" alt="CF Europe">
                 </a>
               </div>
+              <div class="col-md-3 xs-mb-15 brands_item ">
+                <a href="https://www.europeanlung.org/en/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn.ersnet.org/preview/node/o:c9d3e4bea2c342361e16" alt="ELF">
+                </a>
+              </div>
+              <div class="col-md-3 xs-mb-15 brands_item ">
+                <a href="https://www.ersnet.org/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn.ersnet.org/preview/node/o:b31e60256d72ff35f0c9" alt="ERS">
+                </a>
+              </div>
               <div class="col-md-3 xs-mb-15 brands_item">
                 <a href="https://www.eu-ipff.org/" target="_blank" rel="noopener noreferrer">
                   <img src="https://cdn.ersnet.org/preview/node/o:92e14a04bb9b6fdb2f5a" alt="EU IPFF">
