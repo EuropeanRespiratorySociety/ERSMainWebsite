@@ -41,6 +41,8 @@
 
 
 @section('scripts')
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+{{-- This CDN has been added to use the horisontalOrder feature. --}}
 <script type="text/javascript">
     $('.row_event').isotope({
         // layoutMode: 'packery',
@@ -48,11 +50,11 @@
         //     columnWidth: '.isotope'
         // },
         layoutMode: 'masonry',
+        percentPosition: true,
         masonry: {
           columnWidth: '.isotope',
           horizontalOrder: true
-        },
-        percentPosition: true,
+        }
         },
 
     );
