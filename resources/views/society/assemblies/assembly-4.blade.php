@@ -5,23 +5,15 @@
           </div>
 
             <div class="row">
-              <!--Start: This is a temprary part -->
-              <div class="col-md-4"></div>
-              <div class="col-md-4 xs-mb-15">
-                <img src="https://cdn.ersnet.org/images/people/leadership/Sophia-Schiza.png" class="img-circle">
-                <p class="photo_caption">Head: Sophia Schiza</p>
-              </div>
-              <div class="col-md-4"></div>
-              <!-- Finish:This is a temprary part -->
-                {{-- <div class="col-md-3 col-md-offset-3 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/people/leadership/Andrea-Aliverti.png" class="img-circle">
-                  <p class="photo_caption">Head: Andrea Aliverti</p>
+                <div class="col-md-3 col-md-offset-3 xs-mb-15">
+                  <img src="https://cdn.ersnet.org/images/people/examination-committee/Winfried-Randerath.png" class="img-circle">
+                  <p class="photo_caption">Head: Winfried Randerath</p>
                 </div>
                 <div class="col-md-3 xs-mb-15">
-                  <img src="https://cdn.ersnet.org/images/people/leadership/Pierantonio-Laveneziana.png" class="img-circle">
-                  <p class="photo_caption">Secretary: Pierantonio Laveneziana</p>
+                  <img src="https://cdn.ersnet.org/images/people/leadership/Sophia-Schiza.png" class="img-circle">
+                  <p class="photo_caption">Secretary: Sophia Schiza</p>
                  
-                </div> --}}
+                </div>
             </div>
             <div class="col-md-6 center-block">
               <p >Assembly Early Career representative: Andrea Crespo Sedano</p>
