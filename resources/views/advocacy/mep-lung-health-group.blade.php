@@ -235,6 +235,11 @@
                   <img src="https://cdn.ersnet.org/preview/node/o:48333c90fb67933cfa30" alt="Alpha1plus">
                 </a>
               </div>
+              <div class="col-md-3 xs-mb-15 brands_item ">
+                <a href="https://www.ipcrg.org/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn.ersnet.org/preview/node/o:ac5a8721fecc5f2d066b" alt="IPCRG">
+                </a>
+              </div>
             </div>
 
 
