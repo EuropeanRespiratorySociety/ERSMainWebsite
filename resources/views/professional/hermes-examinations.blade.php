@@ -121,7 +121,7 @@
       </div>
     </div>
    <!-- Beginning Right Side-bar -->
-   <div class="col-md-3 white-bg event-items-right">
+   <div class="col-md-3 white-bg event-items-right" style="padding-bottom:300px; overflow: auto;">
     {{-- @if($item->title == "ERS HERMES examination in adult respiratory medicine" 
     || $item->title == "ERS HERMES examination in paediatric respiratory medicine"
     || strpos($item->title, "self-assessment")) --}}
@@ -225,7 +225,7 @@
   <p class="deadline">EXTENDED registration deadline : {{$item->extendedDeadline}}</p>
   @endif
   @if($item->cancellationPolicy)
-  <p><a data-toggle="modal" data-target="#md-cancellation" type="button" class="cursor_pointer">Cancellation policy</a></p>
+  <p style="margin-bottom: 5px;"><a data-toggle="modal" data-target="#md-cancellation" type="button" class="cursor_pointer">Cancellation policy</a></p>
   @endif
   @if($item->travelInfo)
   <p><a data-toggle="modal" data-target="#md-travel_info" type="button" class="cursor_pointer">Travel Info</a></p>

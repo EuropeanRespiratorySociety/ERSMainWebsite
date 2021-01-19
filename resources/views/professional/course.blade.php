@@ -290,6 +290,11 @@
             @if($item->extendedDeadline)
             <p class="deadline">EXTENDED registration deadline : {{$item->extendedDeadline}}</p>
             @endif
+            @if($item->eventLocation === "Online")
+            <p style="margin-bottom: 5px;"><a href="https://ers.box.com/s/f7moxpps5objzttkszwhpqrq6833vva0" target="_blank" type="button" class="cursor_pointer">General Terms & Conditions</a></p>
+            @else
+            <p style="margin-bottom: 5px;"><a href="https://ers.box.com/s/gop603kqyxoog3ztnd8hsn6sxpo794ex" target="_blank" type="button" class="cursor_pointer">General Terms & Conditions</a></p>
+            @endif
             @if($item->cancellationPolicy)
             <p><a data-toggle="modal" data-target="#md-cancellation" type="button" class="cursor_pointer">Cancellation policy</a></p>
             @endif

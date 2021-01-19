@@ -23,7 +23,7 @@
               <div class="col-md-7 center-block lead text-left" style="margin-bottom:80px;">
                   @if(isset($item->body)){!!$item->body!!}@endif
                   <div class="text-right" style="margin-top:40px;">
-                    <a href="https://www.ers-education.org/events/webinars.aspx#pastwebinars" type="button" class="btn btn-space btn-primary btn-rounded btn-sm" target="_blank">
+                    <a href="https://www.ers-education.org/events/webinars" type="button" class="btn btn-space btn-primary btn-rounded btn-sm" target="_blank">
                       <i style="font-size:20px;padding-right: 8px;" class="icon s7-video"></i>Past webinars
                     </a>
                   </div>
@@ -41,14 +41,25 @@
 
 
 @section('scripts')
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+{{-- This CDN has been added to use the horisontalOrder feature. --}}
 <script type="text/javascript">
     $('.row_event').isotope({
-        layoutMode: 'packery',
-        packery: {
-            columnWidth: '.isotope'
-        },            
-        percentPosition: true
-    });
+        // layoutMode: 'packery',
+        // packery: {
+        //     columnWidth: '.isotope'
+        // },
+        layoutMode: 'masonry',
+        percentPosition: true,
+        masonry: {
+          columnWidth: '.isotope',
+          horizontalOrder: true
+        }
+        },
+
+    );
+
+    
 </script>
 @stop()
 

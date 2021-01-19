@@ -78,9 +78,9 @@
               APPLICATION DEADLINE : <br>
             </p>
             <div style="clear:left;">
-              <p style="margin-top: 8px;">ERS Guidelines, Statement and Technical Standard: <br /><strong>01 February 2020 and 01 September 2020</strong></p>
+              <p style="margin-top: 8px;">ERS Guidelines, Statement and Technical Standard: <br /><strong>01 February 2021</strong></p>
               <p style="margin-top: 8px;">ERS Short Guideline and Short Statement: <br /><strong>Year-round</strong></p>
-              <p style="margin-top: 8px;">ERS/ATS joint Task Forces: <br /><strong>31 August 2020</strong></p>
+              <p style="margin-top: 8px;">ERS/ATS joint Task Forces: <br /><strong>July 2021</strong></p>
             </div>
           </a>
           @if($item->deadlines->notification || $item->deadlines->notification2)
@@ -129,7 +129,7 @@
                           float: left;
                           margin-left: 10px;">
                     <li>
-                      <a target="_blank" href="https://ers.box.com/shared/static/qj9d0ykhj87dxxn8vplnmsiv8rl083m8.doc">ERS Task Force Guideline and Application Form</a>
+                      <a target="_blank" href="https://ers.box.com/shared/static/qj9d0ykhj87dxxn8vplnmsiv8rl083m8.doc">ERS Task Force Guidance 2021</a>
                     </li>
                     <li>
                       <a target="_blank" href="https://ers.box.com/s/zgy9kimhu6knj459ax0zupjl5v36x92t">ERS Short Guideline and Short Statement Guideline and Application Form</a>

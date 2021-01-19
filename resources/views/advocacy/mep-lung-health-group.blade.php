@@ -42,7 +42,7 @@
 }
 </style>
 
-<div class="executive-content" style="margin-left:0;">
+<div  style="margin-left:0;">
   <div class="ers-content membership-content">
       
         <div id="fullpage">
@@ -62,8 +62,8 @@
                 <h3 class="text-left mep-subtitile">List of supporters:</h3>
               </div>
             </div>
-            <div class="row" style="padding-top: 10px;">
-              <div class="col-md-3 xs-mb-15">
+            <div class="row" style="padding-top: 10px;padding-bottom: 40px;">
+              <div class="col-md-3 xs-mb-15" >
                 <img src="https://cdn.ersnet.org/images/people/mep/nicolas-gonzalez-casares.png" class="img-circle">
                 <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197718/NICOLAS_GONZALEZ+CASARES/home" target="_blank">Nicolás GONZÁLEZ CASARES</a></strong>
                   S&D, Spain
@@ -81,15 +81,13 @@
                   S&D, Portugal
                 </p>
               </div>
-              <div class="col-md-3 xs-mb-15">
+              <div class="col-md-3 xs-mb-15" style="margin-bottom: 40px;">
                 <img src="https://cdn.ersnet.org/images/people/mep/zeljana-zovko.png" class="img-circle">
                 <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/185341/ZELJANA_ZOVKO/home" target="_blank">Željana ZOVKO</a></strong>
                   EPP, Croatia
                 </p>
               </div>
-            </div>
 
-            <div class="row" style="padding-top: 40px;">
               <div class="col-md-3 xs-mb-15">
                 <img src="https://cdn.ersnet.org/images/people/mep/marian-jean-marinescu.png" class="img-circle">
                 <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/33982/MARIAN-JEAN_MARINESCU/home" target="_blank">Marian-Jean MARINESCU</a></strong>
@@ -114,9 +112,7 @@
                   Renew, the Czech Republic
                 </p>
               </div>
-            </div>
 
-            <div class="row" style="padding-top: 40px;">
               <div class="col-md-3 xs-mb-15">
                 <img src="https://cdn.ersnet.org/images/people/mep/Istvan-UJHELYI.png" class="img-circle">
                 <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/124705/ISTVAN_UJHELYI/home" target="_blank">István UJHELYI</a></strong>
@@ -141,9 +137,7 @@
                   EPP, Portugal
                 </p>
               </div>
-            </div>
 
-            <div class="row" style="padding-top: 40px;">
               <div class="col-md-3 xs-mb-15">
                 <img src="https://cdn.ersnet.org/images/people/mep/Sean-KELLY.png" class="img-circle">
                 <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/96668/SEAN_KELLY/home" target="_blank">Seán KELLY</a></strong>
@@ -168,6 +162,13 @@
                   S&D, Belgium
                 </p>
               </div>
+              <div class="col-md-3 xs-mb-15">
+                <img src="https://cdn.ersnet.org/images/people/mep/Jutta-PAULUS.png" class="img-circle">
+                <p class="photo_caption"><strong><a href="https://www.europarl.europa.eu/meps/en/197466/JUTTA_PAULUS/home" target="_blank">Jutta PAULUS</a></strong>
+                  Greens, Germany
+                </p>
+              </div>
+
             </div>
 
 
@@ -189,15 +190,36 @@
                 </a>
               </div>
               <div class="col-md-3 xs-mb-15 brands_item ">
+                <a href="https://www.europeanlung.org/en/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn.ersnet.org/preview/node/o:c9d3e4bea2c342361e16" alt="ELF">
+                </a>
+              </div>
+              <div class="col-md-3 xs-mb-15 brands_item ">
+                <a href="https://www.ersnet.org/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn.ersnet.org/preview/node/o:b31e60256d72ff35f0c9" alt="ERS">
+                </a>
+              </div>
+              <div class="col-md-3 xs-mb-15 brands_item">
+                <a href="https://www.eu-ipff.org/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn.ersnet.org/preview/node/o:92e14a04bb9b6fdb2f5a" alt="EU IPFF">
+                </a>
+              </div>
+              <div class="col-md-3 xs-mb-15 brands_item ">
                 <a href="https://www.lungcancereurope.eu/" target="_blank" rel="noopener noreferrer">
                   <img src="https://cdn.ersnet.org/preview/node/o:9c85f494b592876ffa03" alt="LuCE">
                 </a>
               </div>
               <div class="col-md-3 xs-mb-15 brands_item">
-                <a href="https://alpha1plus.be/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.phaeurope.org/" target="_blank" rel="noopener noreferrer">
                   <img src="https://cdn.ersnet.org/preview/node/o:27b0039ce1f4c649f643" alt="PHA Europe">
                 </a>
               </div>
+              <div class="col-md-3 xs-mb-15 brands_item">
+                <a href="https://www.tbcoalition.eu/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn.ersnet.org/preview/node/o:0ca3656c3fd712381c4c" alt="TB coalition">
+                </a>
+              </div>
+
             </div>
 
 
@@ -211,6 +233,11 @@
               <div class="col-md-3 xs-mb-15 brands_item ">
                 <a href="https://alpha1plus.be/" target="_blank" rel="noopener noreferrer">
                   <img src="https://cdn.ersnet.org/preview/node/o:48333c90fb67933cfa30" alt="Alpha1plus">
+                </a>
+              </div>
+              <div class="col-md-3 xs-mb-15 brands_item ">
+                <a href="https://www.ipcrg.org/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn.ersnet.org/preview/node/o:ac5a8721fecc5f2d066b" alt="IPCRG">
                 </a>
               </div>
             </div>
