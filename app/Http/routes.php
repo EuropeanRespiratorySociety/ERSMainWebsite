@@ -90,7 +90,7 @@ Route::group(['prefix' => 'the-society/news'], function () {
     Route::get('publications', 'RedirectController@publications');
     Route::get('professional-development', 'RedirectController@professionalDevelopment');
     Route::get('advocacy', 'RedirectController@advocacy');
-    
+    Route::get('live-webinars', 'RedirectController@livewebinars');
     Route::get('publications/{slug}', 'GeneralController@show');
 
     Route::get('the-society/membership', 'MembershipController@index');
