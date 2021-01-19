@@ -23,7 +23,7 @@
 			<div class="error-number"></div>
             <p class="error-description">This page will be ready soon.</p>
 
-            <div class="btn btn-lg btn-alt-special"> <a class="error-goback-text" href="/">Return to the home page</a></div>
+            <div class=""> <a class="error-goback-text" href="/">Return to the home page</a></div>
           </div>
         </div>
       </div>
