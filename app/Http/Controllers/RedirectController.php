@@ -78,6 +78,16 @@ class RedirectController extends Controller
         return redirect('/research/research-seminars');  
     }        
 
+     /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function livewebinars()
+    { 
+        return view('errors.noavailable'); 
+    }        
+
 
 
 }
